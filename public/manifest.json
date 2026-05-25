@@ -1,0 +1,15 @@
+{
+  "name": "TripSync — Plan trips together",
+  "short_name": "TripSync",
+  "description": "The collaborative travel workspace — shared maps, AI place discovery, smart itineraries, and fair expense splitting.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#1E3A8A",
+  "categories": ["travel", "productivity", "lifestyle"],
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

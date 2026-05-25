@@ -1,0 +1,55 @@
+{
+  "name": "tripsync",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "scripts": {
+    "dev": "bun --bun vite",
+    "build": "bun --bun vite build",
+    "preview": "bun --bun vite preview",
+    "start": "bun run server.js",
+    "lint": "eslint .",
+    "test": "bun test scripts/",
+    "embed": "bun run scripts/embed-assets.js",
+    "bundle": "bun run build && bun run embed",
+    "compile": "bun run bundle && bun build ./server.js --compile --minify --outfile tripsync",
+    "compile:linux-x64": "bun run bundle && bun build ./server.js --compile --minify --target=bun-linux-x64 --outfile tripsync-linux-x64",
+    "compile:linux-arm64": "bun run bundle && bun build ./server.js --compile --minify --target=bun-linux-arm64 --outfile tripsync-linux-arm64",
+    "compile:darwin-x64": "bun run bundle && bun build ./server.js --compile --minify --target=bun-darwin-x64 --outfile tripsync-darwin-x64",
+    "compile:darwin-arm64": "bun run bundle && bun build ./server.js --compile --minify --target=bun-darwin-arm64 --outfile tripsync-darwin-arm64",
+    "compile:windows-x64": "bun run bundle && bun build ./server.js --compile --minify --target=bun-windows-x64 --outfile tripsync-windows-x64.exe",
+    "compile:all": "bun run compile:linux-x64 && bun run compile:linux-arm64 && bun run compile:darwin-x64 && bun run compile:darwin-arm64 && bun run compile:windows-x64"
+  },
+  "dependencies": {
+    "@vis.gl/react-google-maps": "^1.8.3",
+    "date-fns": "^4.1.0",
+    "firebase": "^11.10.0",
+    "lucide-react": "^1.16.0",
+    "openai": "^4.104.0",
+    "react": "^19.2.6",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.15.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@happy-dom/global-registrator": "^20.9.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "happy-dom": "^20.9.0",
+    "vite": "^8.0.12"
+  },
+  "trustedDependencies": [
+    "@firebase/util",
+    "protobufjs"
+  ]
+}

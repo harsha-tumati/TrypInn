@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+embedded-assets.js
+
+# Compiled Bun executables
+tripsync
+tripsync-*
+
+# Bun
+.bun/
+*.bun-build
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Env files (do not commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# Misc
+lint.txt

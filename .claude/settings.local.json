@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(npx eslint *)",
+      "Bash(bun --version)",
+      "Bash(bun install *)",
+      "Bash(bun pm *)",
+      "Bash(bun run *)",
+      "Bash(bun build *)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(awk '{print $NF}')",
+      "Bash(awk ' *)",
+      "Bash(echo \"lint exit=$?\")",
+      "Bash(awk '/^\\\\/Users/{f=$0} /react-hooks\\\\/\\(exhaustive-deps|set-state-in-effect|immutability\\)/{match\\($0,/[0-9]+:[0-9]+/\\); print f \":\" substr\\($0,RSTART,RLENGTH\\) \" \" $NF}')",
+      "Bash(awk '/^\\\\/Users/{f=$0} /react-hooks\\\\/\\(set-state-in-effect|immutability\\)/{getline msg; print f \" — line context\"}')",
+      "Bash(bun -e ' *)",
+      "Bash(sed -n '40,48p' src/App.jsx)",
+      "Bash(sed -n '28,38p' src/components/ReadMore.jsx)",
+      "Bash(sed -n '48,58p' src/pages/CreateTripPage.jsx)",
+      "Bash(sed -n '162,170p' src/pages/TripsPage.jsx)",
+      "Bash(sed -n '28,46p' src/App.jsx)",
+      "Bash(sed -n '10,37p' src/components/ReadMore.jsx)",
+      "Bash(bun add *)",
+      "Bash(node -e \"try{require.resolve\\('happy-dom'\\);console.log\\('happy-dom ok'\\)}catch\\(e\\){console.log\\('no'\\)}\")",
+      "Bash(bun test *)",
+      "Bash(grep -rni \"create.\\\\{0,3\\\\}trip\" src/ --include=\"*.jsx\" --include=\"*.js\" -n)",
+      "Bash(grep -rni \"create.\\\\{0,3\\\\}trip\" src/ --include=\"*.jsx\" -n)"
+    ]
+  }
+}
