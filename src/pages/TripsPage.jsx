@@ -1,4 +1,4 @@
-// src/pages/TripsPage.jsx — TripSync home (Gen-Z vibrant revamp)
+// src/pages/TripsPage.jsx — Trypinn home (Gen-Z vibrant revamp)
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -195,7 +195,7 @@ export default function TripsPage() {
     const [loading, setLoading] = useState(true);
     const [showAIChat, setShowAIChat] = useState(false);
     const [chatMessages, setChatMessages] = useState([
-        { id: '1', type: 'ai', content: "Hey! I'm your TripSync AI concierge ✨ Tell me a vibe, a budget or a city — I'll help you build the trip." },
+        { id: '1', type: 'ai', content: "Hey! I'm your Trypinn AI concierge ✨ Tell me a vibe, a budget or a city — I'll help you build the trip." },
     ]);
     const [chatInput, setChatInput] = useState('');
 
@@ -392,7 +392,7 @@ export default function TripsPage() {
                 .map(m => (m.type === 'user' ? `User: ${m.content}` : `AI: ${m.content}`))
                 .join('\n');
             // We use getSuggestions with a travel-assistant prompt
-            const prompt = `You are a friendly AI travel concierge for TripSync. Answer this travel question helpfully and concisely (2-4 sentences max). Conversation so far:\n${history}\n\nUser: ${userMsg}`;
+            const prompt = `You are a friendly AI travel concierge for Trypinn. Answer this travel question helpfully and concisely (2-4 sentences max). Conversation so far:\n${history}\n\nUser: ${userMsg}`;
             // Directly call openai chat via a lightweight fetch
             const { default: OpenAI } = await import('openai');
             const openai = new OpenAI({ apiKey: import.meta.env.VITE_OPENAI_API_KEY, dangerouslyAllowBrowser: true });
@@ -469,7 +469,7 @@ export default function TripsPage() {
                     </h1>
                     <p className="hp-sub hp-pop hp-pop-2">
                         Drop your dream destinations, rally the crew, vote on the plan and split the costs —
-                        TripSync handles the boring bits so you can just go.
+                        Trypinn handles the boring bits so you can just go.
                     </p>
 
                     {/* Trip-photo pile — travel vibe for phones/tablets */}

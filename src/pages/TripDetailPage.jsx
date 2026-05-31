@@ -413,8 +413,8 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         if (navigator.share) {
             try {
                 await navigator.share({
-                    title: `Join my trip "${trip.name}" on TripSync`,
-                    text: trip.description || `Join my trip "${trip.name}" on TripSync!`,
+                    title: `Join my trip "${trip.name}" on Trypinn`,
+                    text: trip.description || `Join my trip "${trip.name}" on Trypinn!`,
                     url: shareUrl,
                 });
                 return;
@@ -453,7 +453,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             <Map
                 defaultCenter={center}
                 defaultZoom={allMapPlaces.length > 0 ? 12 : 5}
-                mapId="tripsync-map"
+                mapId="trypinn-map"
                 colorScheme="LIGHT"
                 style={{ width: '100%', height: '100%' }}
                 gestureHandling="greedy"
@@ -884,10 +884,10 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         </button>
                     </div>
                     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                        <a href={`https://wa.me/?text=${encodeURIComponent(`Join my trip "${trip.name}" on TripSync! ${shareUrl}`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#22c55e', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <a href={`https://wa.me/?text=${encodeURIComponent(`Join my trip "${trip.name}" on Trypinn! ${shareUrl}`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#22c55e', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             WhatsApp
                         </a>
-                        <a href={`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(`Join my trip "${trip.name}" on TripSync!`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#3b82f6', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <a href={`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(`Join my trip "${trip.name}" on Trypinn!`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#3b82f6', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             Telegram
                         </a>
                     </div>

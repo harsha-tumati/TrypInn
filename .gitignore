@@ -32,4 +32,3 @@ bun-debug.log*
 lint.txt
 
 firestore.rules
-firestore.json

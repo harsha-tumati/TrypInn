@@ -73,7 +73,7 @@ export default function ChatPage() {
                 await sendMessage({
                     tripId: selectedTrip.id,
                     uid: 'ai_assistant',
-                    senderName: 'TripSync AI',
+                    senderName: 'Trypinn AI',
                     text: reply,
                 });
             } catch (e) {
@@ -81,7 +81,7 @@ export default function ChatPage() {
                 await sendMessage({
                     tripId: selectedTrip.id,
                     uid: 'ai_assistant',
-                    senderName: 'TripSync AI',
+                    senderName: 'Trypinn AI',
                     text: "Sorry, I'm having trouble thinking right now.",
                 });
             } finally {
@@ -245,7 +245,7 @@ export default function ChatPage() {
                             <Sparkles size={18} color="#fff" />
                         </div>
                         <div style={{ flex: 1, maxWidth: '78%', minWidth: 0 }}>
-                            <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: 'clamp(13px, 1.7vw, 14.5px)', marginBottom: 6 }}>TripSync AI</div>
+                            <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: 'clamp(13px, 1.7vw, 14.5px)', marginBottom: 6 }}>Trypinn AI</div>
                             <div className="chat-bubble chat-bubble-ai" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-indigo)', animation: 'pulse 1s infinite', display: 'inline-block' }}></span>
                                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-indigo)', animation: 'pulse 1s infinite 0.2s', display: 'inline-block' }}></span>

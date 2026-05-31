@@ -1,7 +1,7 @@
 import React, { useId } from 'react';
 
 /**
- * TripSync brand mark — a location pin with a warm sunset (gold → coral)
+ * Trypinn brand mark — a location pin with a warm sunset (gold → coral)
  * gradient and a clean negative-space core, so the tile colour shows
  * through the hole. Sits on a coloured tile (.navbar-brand-icon,
  * .login-logo, .join-logo) but also reads well on any background.

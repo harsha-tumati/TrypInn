@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   TripSync · Aether Design System — v6.0
+   Trypinn · Aether Design System — v6.0
    Light · Cinematic · Spatial · Editorial · 2026
    ═══════════════════════════════════════════════════════════════ */
 
@@ -4517,6 +4517,182 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
   .hp-reveal { opacity: 1; translate: 0 0; transition: none; }
   .hp-pop { animation: none; }
   .hp-deco, .hp-marquee-track, .hp-ai-typing span, .hp-ai-fab-ping { animation: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PWA · Standalone-mode optimizations
+   Applied when the app is installed to the home screen.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Overscroll bounce prevention (all modes) ─────────────────── */
+html, body {
+  overscroll-behavior-y: contain;
+}
+
+/* ── Standalone-specific tweaks ───────────────────────────────── */
+@media (display-mode: standalone) {
+  /* Push content below the phone's status bar / notch */
+  html {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* Color the status-bar safe area to match the nav background */
+  html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: env(safe-area-inset-top);
+    background: rgba(251, 250, 248, 0.97);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    z-index: 9999;
+  }
+
+  /* Navigation bars: prevent accidental text selection on long-press */
+  .navbar,
+  .trip-top-nav-unified,
+  .trip-bottom-nav {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide scrollbars for a cleaner native-app feel */
+  .trip-content-modern,
+  .page-container,
+  .planner-page,
+  .itinerary-scroll-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .trip-content-modern::-webkit-scrollbar,
+  .page-container::-webkit-scrollbar,
+  .planner-page::-webkit-scrollbar,
+  .itinerary-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Prevent pull-to-refresh on the entire app shell */
+  body {
+    overscroll-behavior-y: contain;
+  }
+
+  /* Tap highlight removal for a cleaner native feel */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ── PWA Install Banner ──────────────────────────────────────── */
+.pwa-install-banner {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  max-width: 440px;
+  margin: 0 auto;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--void);
+  color: var(--ink-on-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2xl);
+  animation: slideUp 0.5s var(--ease-spring);
+}
+
+/* On mobile with bottom nav, push the banner above the nav */
+@media (max-width: 767px) {
+  .pwa-install-banner {
+    bottom: calc(var(--trip-bottom-nav-h) + env(safe-area-inset-bottom) + 16px);
+  }
+}
+
+.pwa-install-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.pwa-install-icon-wrap {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  color: var(--amber-bright);
+}
+
+.pwa-install-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.pwa-install-text strong {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pwa-install-text span {
+  font-size: 12px;
+  color: var(--ink-on-dark-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pwa-install-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.pwa-install-btn {
+  background: #fff;
+  color: var(--void);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  white-space: nowrap;
+}
+.pwa-install-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+}
+
+.pwa-install-dismiss {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+.pwa-install-dismiss:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ── Print ───────────────────────────────────────────────────── */

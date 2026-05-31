@@ -48,7 +48,7 @@ export default function ExpensesPage() {
     async function handleSettleCopy(owes, idx) {
         const from = owes.from === user?.uid ? 'You' : (members.find(m => m.uid === owes.from)?.name || 'Friend');
         const to = owes.to === user?.uid ? 'You' : (members.find(m => m.uid === owes.to)?.name || 'Friend');
-        const text = `${from} → ${to}: ₹${owes.amount.toFixed(2)} (TripSync · ${selectedTrip?.name || 'trip'})`;
+        const text = `${from} → ${to}: ₹${owes.amount.toFixed(2)} (Trypinn · ${selectedTrip?.name || 'trip'})`;
         try {
             if (navigator.clipboard?.writeText) {
                 await navigator.clipboard.writeText(text);

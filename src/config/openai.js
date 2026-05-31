@@ -101,7 +101,7 @@ Return JSON in this exact format:
  * AI Trip Assistant — context-aware chat using GPT-4o Mini.
  */
 export async function chatWithAssistant({ messages, tripContext }) {
-    const systemPrompt = `You are TripSync AI, a helpful travel assistant. 
+    const systemPrompt = `You are Trypinn AI, a helpful travel assistant. 
 You are assisting with a trip to ${tripContext.destination}.
 Trip dates: ${tripContext.startDate} to ${tripContext.endDate}.
 Selected places: ${tripContext.selectedPlaces?.join(', ') || 'none yet'}.

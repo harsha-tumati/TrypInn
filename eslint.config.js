@@ -5,7 +5,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist', 'embedded-assets.js', 'tripsync', 'tripsync-*']),
+  globalIgnores(['dist', 'embedded-assets.js', 'trypinn', 'trypinn-*']),
   // Server-side & build scripts (Bun runtime) — node + Bun globals
   {
     files: ['server.js', 'scripts/**/*.js'],

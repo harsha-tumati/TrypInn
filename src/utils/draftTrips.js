@@ -3,7 +3,7 @@
 // their ids on the device (localStorage) so the home dashboard can list them
 // until the user claims the trip to their profile.
 
-const KEY = 'tripsync_drafts';
+const KEY = 'trypinn_drafts';
 
 export function getDraftIds() {
     try {

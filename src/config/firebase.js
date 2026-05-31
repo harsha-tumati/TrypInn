@@ -23,7 +23,7 @@ if (!firebaseConfigured) {
     // to harmless placeholders so the UI still renders; auth/Firestore calls
     // simply won't succeed until a real .env is provided.
     console.warn(
-        '[TripSync] Firebase is not configured. Create a .env file with your ' +
+        '[Trypinn] Firebase is not configured. Create a .env file with your ' +
         'VITE_FIREBASE_* keys (see .env.example). Auth and data sync are disabled until then.'
     );
 }
@@ -32,7 +32,7 @@ const firebaseConfig = firebaseConfigured
     ? rawConfig
     : {
         apiKey: 'tripsync-placeholder-key',
-        authDomain: 'tripsync.firebaseapp.com',
+        authDomain: 'trypinn.firebaseapp.com',
         projectId: 'tripsync-placeholder',
         storageBucket: 'tripsync-placeholder.appspot.com',
         messagingSenderId: '000000000000',

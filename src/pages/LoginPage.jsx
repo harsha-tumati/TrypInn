@@ -46,7 +46,7 @@ export default function LoginPage() {
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                         <span className="eyebrow">Travel · Together</span>
                     </div>
-                    <h1 className="login-app-name">TripSync</h1>
+                    <h1 className="login-app-name">Trypinn</h1>
                     <p className="login-tagline">Plan trips together, effortlessly.</p>
                 </div>
 

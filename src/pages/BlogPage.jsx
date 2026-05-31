@@ -12,11 +12,11 @@ function useBlogSeo(post) {
         const prevDesc = metaEl?.getAttribute('content') || '';
 
         document.title = post
-            ? `${post.title} · TripSync Blog`
-            : 'TripSync Blog — Travel tips & trip-planning guides';
+            ? `${post.title} · Trypinn Blog`
+            : 'Trypinn Blog — Travel tips & trip-planning guides';
         const desc = post
             ? post.metaDescription
-            : 'Travel tips, planning guides, and stories to fuel your next adventure with TripSync.';
+            : 'Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.';
         if (metaEl) metaEl.setAttribute('content', desc);
 
         let ld;
@@ -29,8 +29,8 @@ function useBlogSeo(post) {
                 headline: post.title,
                 description: post.metaDescription,
                 image: post.coverImage,
-                author: { '@type': 'Organization', name: post.author || 'TripSync' },
-                publisher: { '@type': 'Organization', name: 'TripSync' },
+                author: { '@type': 'Organization', name: post.author || 'Trypinn' },
+                publisher: { '@type': 'Organization', name: 'Trypinn' },
                 keywords: (post.tags || []).join(', '),
             });
             document.head.appendChild(ld);
@@ -50,7 +50,7 @@ const BLOG_POSTS = [
         metaDescription: "Money is the No.1 cause of group-trip friction. Learn a simple, fair system to split travel expenses, track who paid what, and settle up with zero awkwardness.",
         excerpt: "One person always ends up paying for the cab, another for dinner, and by day three nobody remembers who owes whom. Here's a fair, drama-free way to handle trip money.",
         coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
-        author: 'TripSync Team',
+        author: 'Trypinn Team',
         date: 'May 20, 2026',
         readTime: '6 min read',
         tags: ['Group Travel', 'Expenses', 'Trip Planning'],
@@ -75,7 +75,7 @@ The single biggest mistake is figuring out the money *during* the trip. Have a f
 
 Receipts fade, memories fade faster. The trick is to log a shared expense the second it happens — who paid, how much, and who it covers. Thirty seconds in the moment saves an hour of arguing later.
 
-This is exactly why TripSync has a built-in **Expenses** tab: anyone in the group can add a cost, tag who it's split among, and the running balance updates live for everyone.
+This is exactly why Trypinn has a built-in **Expenses** tab: anyone in the group can add a cost, tag who it's split among, and the running balance updates live for everyone.
 
 ## Let the Math Settle Itself
 
@@ -89,7 +89,7 @@ Here's the part people overcomplicate. You don't need everyone to pay everyone b
 
 Money systems work best when they stay invisible. Log quietly, settle once, and never let a ₹200 cab ride turn into a cold shoulder. The goal of the trip is the trip — not the accounting.
 
-Plan your next group getaway on TripSync and let the Expenses tab do the awkward math for you.`,
+Plan your next group getaway on Trypinn and let the Expenses tab do the awkward math for you.`,
     },
     {
         id: 'weekend-getaways-bengaluru',
@@ -97,7 +97,7 @@ Plan your next group getaway on TripSync and let the Expenses tab do the awkward
         metaDescription: "Skip the crowds. Discover 12 underrated weekend getaways near Bengaluru — hills, waterfalls, heritage towns and quiet beaches, all within a comfortable drive.",
         excerpt: "Coorg and Ooty are lovely — and packed. Here are twelve quieter escapes within driving distance of Bengaluru, perfect for a spontaneous two-day reset.",
         coverImage: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
-        author: 'TripSync Team',
+        author: 'Trypinn Team',
         date: 'May 18, 2026',
         readTime: '9 min read',
         tags: ['Weekend Trips', 'India', 'Itinerary'],
@@ -140,7 +140,7 @@ Here are twelve underrated getaways, all within a comfortable drive.
 
 The difference between a great weekend trip and a stressful one is rarely the destination — it's the logistics. Lock the dates early, map your stops in order so you're not doubling back, and share the plan so nobody's asking "what's next?" at every turn.
 
-Drop any of these into TripSync, let it route your stops in the smartest order, and you'll spend the weekend exploring instead of negotiating.`,
+Drop any of these into Trypinn, let it route your stops in the smartest order, and you'll spend the weekend exploring instead of negotiating.`,
     },
     {
         id: 'pre-trip-checklist',
@@ -148,7 +148,7 @@ Drop any of these into TripSync, let it route your stops in the smartest order, 
         metaDescription: "A practical pre-trip checklist for stress-free travel. Nine things travelers consistently forget — from offline maps to power banks — and how to never miss them again.",
         excerpt: "It's never the passport people forget — it's the small stuff that quietly wrecks a trip. Here's the checklist we run before every single departure.",
         coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
-        author: 'TripSync Team',
+        author: 'Trypinn Team',
         date: 'May 14, 2026',
         readTime: '5 min read',
         tags: ['Trip Planning', 'Travel Tips', 'Checklist'],
@@ -183,7 +183,7 @@ Here's the nine-point checklist we run before every departure.
 
 ## Make the Checklist a Habit
 
-The best travelers aren't lucky — they're systematic. Build the plan once, share it, and let everyone tick off their own list. TripSync keeps your route, itinerary and group on the same page, so the only surprises on your trip are the good ones.`,
+The best travelers aren't lucky — they're systematic. Build the plan once, share it, and let everyone tick off their own list. Trypinn keeps your route, itinerary and group on the same page, so the only surprises on your trip are the good ones.`,
     },
     {
         id: 'group-trip-planner',
@@ -191,7 +191,7 @@ The best travelers aren't lucky — they're systematic. Build the plan once, sha
         metaDescription: "Planning a trip with friends doesn't have to be stressful. Discover how a group trip planner app can save your sanity, coordinate itineraries, and keep everyone happy.",
         excerpt: "We've all been there — that excited WhatsApp group that quickly spirals into chaos. Here's how we broke the curse and planned a seamless itinerary across India.",
         coverImage: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80',
-        author: 'TripSync Team',
+        author: 'Trypinn Team',
         date: 'May 16, 2026',
         readTime: '8 min read',
         tags: ['Group Travel', 'Trip Planning', 'AI', 'India'],
@@ -228,11 +228,11 @@ Whether you're organizing a massive family reunion or planning a tight backpacki
 
 ---
 
-## Enter TripSync: The Collaborative Tool We Didn't Know We Needed
+## Enter Trypinn: The Collaborative Tool We Didn't Know We Needed
 
-After abandoning our third attempt at a shared spreadsheet, we decided to try something different. We moved our entire brainstorming phase to a **travel planning app** called **TripSync**.
+After abandoning our third attempt at a shared spreadsheet, we decided to try something different. We moved our entire brainstorming phase to a **travel planning app** called **Trypinn**.
 
-If you haven't heard of it yet, **TripSync** is a collaborative trip-planning web application designed specifically to let groups map out their journeys together in real-time. Think of it like Google Docs, but entirely optimized for maps, routes, and travel itineraries.
+If you haven't heard of it yet, **Trypinn** is a collaborative trip-planning web application designed specifically to let groups map out their journeys together in real-time. Think of it like Google Docs, but entirely optimized for maps, routes, and travel itineraries.
 
 The moment we opened our shared dashboard, the dynamic changed. Instead of one designated "trip captain" bearing the brunt of the logistics, everyone became an active participant.
 
@@ -250,11 +250,11 @@ Seeing pins appear on the map in real-time as people added ideas turned a stress
 
 ### 2. Built-In AI Smart Suggestions
 
-We knew the major landmarks we wanted to hit, but we were clueless about the hidden gems along the route. TripSync features an integrated AI engine that analyzes your current stops and suggests nearby places to visit.
+We knew the major landmarks we wanted to hit, but we were clueless about the hidden gems along the route. Trypinn features an integrated AI engine that analyzes your current stops and suggests nearby places to visit.
 
 ### 3. Route Optimization That Saves Hours
 
-There is nothing worse than backtracking through city traffic because you planned your day inefficiently. TripSync automatically visualizes your entire itinerary on an interactive map and shows you the optimal routes between stops. If you've placed your lunch spot miles away from your morning activity, the visual layout instantly alerts you, allowing you to reorder your day with a simple drag-and-drop gesture.
+There is nothing worse than backtracking through city traffic because you planned your day inefficiently. Trypinn automatically visualizes your entire itinerary on an interactive map and shows you the optimal routes between stops. If you've placed your lunch spot miles away from your morning activity, the visual layout instantly alerts you, allowing you to reorder your day with a simple drag-and-drop gesture.
 
 ---
 
@@ -276,7 +276,7 @@ If you are traveling on a budget, your accommodation sets the tone for your enti
 
 Group travel doesn't have to be synonymous with stress. With the right strategy and a collaborative mindset, building your dream vacation can be just as exciting as the trip itself. Stop drowning in chaotic group chat threads and disjointed spreadsheets.
 
-Gather your travel crew, fire up your browser, and start mapping out your next collective adventure in real-time on TripSync!`,
+Gather your travel crew, fire up your browser, and start mapping out your next collective adventure in real-time on Trypinn!`,
     },
     {
         id: 'goa-india',
@@ -284,7 +284,7 @@ Gather your travel crew, fire up your browser, and start mapping out your next c
         metaDescription: "Discover the best beaches, historical Portuguese architecture, and vibrant nightlife in Goa. Perfect for group trips and solo adventures.",
         excerpt: "Pristine beaches, vibrant nightlife, and Portuguese heritage. Perfect for groups seeking sun, sand, and adventure.",
         coverImage: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80',
-        author: 'TripSync Experts',
+        author: 'Trypinn Experts',
         date: 'May 10, 2026',
         readTime: '6 min read',
         tags: ['Beach', 'Nightlife', 'India', 'Heritage'],
@@ -343,7 +343,7 @@ Though technically a natural wonder, it's a monumental sight. This majestic four
 ---
 
 ## Plan Your Goa Trip
-Planning a group trip to Goa? Keep track of everyone's beach preferences, coordinate your scuba diving slots, and organize your restaurant choices using **TripSync**.`
+Planning a group trip to Goa? Keep track of everyone's beach preferences, coordinate your scuba diving slots, and organize your restaurant choices using **Trypinn**.`
     },
     {
         id: 'bali-indonesia',
@@ -403,7 +403,7 @@ Known for its stunning cliffside ocean views.
 
 ![Mount Batur Sunrise](https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80)
 
-Organize your Bali adventure seamlessly with **TripSync**, ensuring you never miss a sunset or a temple visit.`
+Organize your Bali adventure seamlessly with **Trypinn**, ensuring you never miss a sunset or a temple visit.`
     },
     {
         id: 'santorini-greece',
@@ -411,7 +411,7 @@ Organize your Bali adventure seamlessly with **TripSync**, ensuring you never mi
         metaDescription: "Discover Santorini's blue domes, whitewashed villages, and dramatic sunsets. A complete guide to the romantic Greek island.",
         excerpt: "Iconic blue domes, stunning sunsets, and whitewashed villages. The ultimate romantic Mediterranean escape.",
         coverImage: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80',
-        author: 'TripSync Experts',
+        author: 'Trypinn Experts',
         date: 'May 05, 2026',
         readTime: '5 min read',
         tags: ['Romantic', 'Mediterranean', 'Greece'],
@@ -460,7 +460,7 @@ The vibrant capital of the island, offering stunning views, shopping, and nightl
 
 ---
 
-Coordinate your romantic getaway or group holiday using **TripSync** to share flight details and accommodation links easily.`
+Coordinate your romantic getaway or group holiday using **Trypinn** to share flight details and accommodation links easily.`
     },
     {
         id: 'leh-ladakh',
@@ -518,7 +518,7 @@ Once claimed as the highest motorable road in the world, this pass offers thrill
 
 ---
 
-Planning a road trip to Ladakh requires careful route mapping and acclimatization stops. Use **TripSync** to plot your exact daily driving routes.`
+Planning a road trip to Ladakh requires careful route mapping and acclimatization stops. Use **Trypinn** to plot your exact daily driving routes.`
     },
     {
         id: 'dubai-uae',
@@ -526,7 +526,7 @@ Planning a road trip to Ladakh requires careful route mapping and acclimatizatio
         metaDescription: "Experience the ultimate luxury in Dubai. From the Burj Khalifa to desert safaris, plan your extravagant UAE trip.",
         excerpt: "Futuristic skyline, world-class shopping, and desert adventures. Where modern luxury meets Arabian culture.",
         coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
-        author: 'TripSync Experts',
+        author: 'Trypinn Experts',
         date: 'April 28, 2026',
         readTime: '6 min read',
         tags: ['Luxury', 'Cityscape', 'UAE'],
@@ -569,7 +569,7 @@ Explore the historic Al Fahidi neighborhood, ride a traditional Abra across Duba
 
 ---
 
-Share your lavish Dubai itinerary with your friends using **TripSync**.`
+Share your lavish Dubai itinerary with your friends using **Trypinn**.`
     },
     {
         id: 'kerala-india',
@@ -577,7 +577,7 @@ Share your lavish Dubai itinerary with your friends using **TripSync**.`
         metaDescription: "Discover the tranquil backwaters, lush tea estates, and rich culture of Kerala, India.",
         excerpt: "Serene backwaters, lush tea plantations, and Ayurvedic retreats. God's Own Country awaits.",
         coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80',
-        author: 'TripSync Team',
+        author: 'Trypinn Team',
         date: 'April 25, 2026',
         readTime: '7 min read',
         tags: ['Nature', 'Relaxation', 'India'],
@@ -619,7 +619,7 @@ A breathtaking hill station known for its rolling hills covered in emerald-green
 
 ---
 
-Build your Kerala road trip step-by-step with **TripSync**, allowing everyone in your family to pitch in their favorite stops.`
+Build your Kerala road trip step-by-step with **Trypinn**, allowing everyone in your family to pitch in their favorite stops.`
     }
 ];
 
@@ -677,7 +677,7 @@ function BlogList({ onSelectPost }) {
         <div className="blog-page">
             <div className="blog-hero">
                 <div className="blog-hero-inner">
-                    <h1>TripSync Blog</h1>
+                    <h1>Trypinn Blog</h1>
                     <p>Travel tips, planning guides, and stories to fuel your next adventure</p>
                 </div>
             </div>
@@ -804,7 +804,7 @@ function BlogDetail({ post, onBack }) {
                 {/* CTA */}
                 <div className="blog-cta">
                     <h3>Ready to plan your trip?</h3>
-                    <p>Start collaborating with your group in real-time on TripSync</p>
+                    <p>Start collaborating with your group in real-time on Trypinn</p>
                     <Link to="/trips" className="blog-cta-btn">Start Planning Free →</Link>
                 </div>
             </div>

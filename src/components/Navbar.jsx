@@ -38,9 +38,9 @@ export default function Navbar() {
 
     return (
         <nav className={`navbar${scrolled ? ' navbar-scrolled' : ''}`} aria-label="Primary">
-            <Link to="/" className="navbar-brand" aria-label="TripSync home">
+            <Link to="/" className="navbar-brand" aria-label="Trypinn home">
                 <span className="navbar-brand-icon" aria-hidden="true"><BrandMark size={21} /></span>
-                <span className="navbar-brand-name">TripSync</span>
+                <span className="navbar-brand-name">Trypinn</span>
             </Link>
 
             <div className="navbar-actions">

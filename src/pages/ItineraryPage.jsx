@@ -65,7 +65,7 @@ function ItineraryContent({ onOpenMap }) {
         // Saving to a profile needs an account — bounce to login, then resume
         // the claim automatically once the user lands back on this page.
         if (!user) {
-            try { sessionStorage.setItem('tripsync_claim', selectedTrip.id); } catch { /* storage unavailable */ }
+            try { sessionStorage.setItem('trypinn_claim', selectedTrip.id); } catch { /* storage unavailable */ }
             navigate('/login', { state: { from: `/trip/${selectedTrip.id}/itinerary` } });
             return;
         }
@@ -86,9 +86,9 @@ function ItineraryContent({ onOpenMap }) {
     useEffect(() => {
         if (!user || !selectedTrip) return;
         let pending = null;
-        try { pending = sessionStorage.getItem('tripsync_claim'); } catch { /* storage unavailable */ }
+        try { pending = sessionStorage.getItem('trypinn_claim'); } catch { /* storage unavailable */ }
         if (pending !== selectedTrip.id || isTripClaimed(selectedTrip)) return;
-        try { sessionStorage.removeItem('tripsync_claim'); } catch { /* storage unavailable */ }
+        try { sessionStorage.removeItem('trypinn_claim'); } catch { /* storage unavailable */ }
         (async () => {
             try {
                 await claimTrip(selectedTrip.id, user.uid);

@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-// TripSync · Bun production server
+// Trypinn · Bun production server
 // Serves the built Vite SPA. When compiled with `bun build --compile`,
 // dist/ assets are embedded via ./embedded-assets.js — the binary is self-contained.
 
@@ -156,10 +156,17 @@ const server = serve({
 
         const rel = safeRel(url.pathname);
         if (rel) {
-            const isAsset = url.pathname.startsWith('/assets/');
-            const cache = isAsset
-                ? 'public, max-age=31536000, immutable'
-                : 'public, max-age=3600';
+            // PWA-critical files: sw.js must never be stale, manifest can be short-lived.
+            let cache;
+            if (rel === 'sw.js') {
+                cache = 'no-cache, no-store, must-revalidate';
+            } else if (rel === 'manifest.json') {
+                cache = 'public, max-age=300';
+            } else if (url.pathname.startsWith('/assets/')) {
+                cache = 'public, max-age=31536000, immutable';
+            } else {
+                cache = 'public, max-age=3600';
+            }
 
             const fromEmbed = serveEmbedded(rel, { cache });
             if (fromEmbed) return fromEmbed;
@@ -186,7 +193,7 @@ const displayHost = HOST === '0.0.0.0' ? 'localhost' : HOST;
 const source = EMBEDDED.size > 0
     ? `embedded (${EMBEDDED.size} assets)`
     : `disk (./dist)`;
-console.log(`\n  TripSync · serving ${source} at http://${displayHost}:${server.port}\n`);
+console.log(`\n  Trypinn · serving ${source} at http://${displayHost}:${server.port}\n`);
 
 for (const sig of ['SIGINT', 'SIGTERM']) {
     process.on(sig, () => {

@@ -1,7 +1,7 @@
-# TripSync: Product Requirements & Technical Specification Document
+# Trypinn: Product Requirements & Technical Specification Document
 
 ## 1. Executive Summary & Vision
-TripSync is a production-grade, real-time collaborative travel planning platform. It acts as a multiplayer workspace where groups of travelers can brainstorm, organize, and finalize complex itineraries. By leveraging Google Maps for geospatial accuracy, OpenAI for intelligent discovery, and Firebase for zero-latency data synchronization, TripSync eliminates the fragmentation of traditional group planning (which usually spans across WhatsApp, Excel, and Google Docs).
+Trypinn is a production-grade, real-time collaborative travel planning platform. It acts as a multiplayer workspace where groups of travelers can brainstorm, organize, and finalize complex itineraries. By leveraging Google Maps for geospatial accuracy, OpenAI for intelligent discovery, and Firebase for zero-latency data synchronization, Trypinn eliminates the fragmentation of traditional group planning (which usually spans across WhatsApp, Excel, and Google Docs).
 
 ---
 
@@ -31,7 +31,7 @@ TripSync is a production-grade, real-time collaborative travel planning platform
 ---
 
 ## 3. Global Architecture & The "Real-Time Reflection" Engine
-A core tenant of TripSync is **ubiquitous data synchronization**. The application uses a single source of truth (Firebase Firestore) combined with a global React Context (`TripContext.jsx`).
+A core tenant of Trypinn is **ubiquitous data synchronization**. The application uses a single source of truth (Firebase Firestore) combined with a global React Context (`TripContext.jsx`).
 
 **How Data Propagation Works (The "Reflect Everywhere" Concept):**
 When *User A* performs an action on their device, Firestore pushes a WebSocket update to all active clients (*User B, User C*). The `TripContext` instantly updates the application state.
@@ -160,7 +160,7 @@ This is the core engine of the application where the blueprint of the trip is bu
 ## 6. Technical Integration Specifications
 
 ### 6.1. Google Maps Infrastructure
-TripSync heavily relies on the client-side Google Maps JavaScript API to bypass backend CORS constraints and rate limits.
+Trypinn heavily relies on the client-side Google Maps JavaScript API to bypass backend CORS constraints and rate limits.
 - **PlacesService**: Used by `placesService.js` to execute `findPlaceFromText()`. This translates arbitrary user searches (or AI output) into canonical Google Place IDs, retrieving high-res photos and ratings.
 - **DirectionsService**: Used by `routeService.js` to calculate travel logistics. By passing an array of coordinates and setting `optimizeWaypoints: true`, Google servers solve the Traveling Salesperson Problem, returning the optimal order and an encoded polyline representing the road path.
 - **Geocoder**: Used as a fallback to convert raw addresses into Lat/Lng coordinates if PlacesService fails.
@@ -177,4 +177,4 @@ TripSync heavily relies on the client-side Google Maps JavaScript API to bypass 
 - **`expenses/{expenseId}`**: `{ tripId, amount, paidBy: userId, splitAmong: [userId1, userId2] }`
 
 ## 7. Conclusion
-TripSync's architecture is built around the philosophy that travel planning is inherently collaborative and dynamic. By pushing all heavy lifting to Google APIs and relying on Firebase for instant state propagation, TripSync ensures that no matter what screen a user is on, they are always looking at the absolute most up-to-date version of the trip.
+Trypinn's architecture is built around the philosophy that travel planning is inherently collaborative and dynamic. By pushing all heavy lifting to Google APIs and relying on Firebase for instant state propagation, Trypinn ensures that no matter what screen a user is on, they are always looking at the absolute most up-to-date version of the trip.

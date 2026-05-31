@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet, useParams, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { TripProvider, useTrip } from './context/TripContext';
@@ -7,17 +7,23 @@ import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import TripTopNav from './components/TripTopNav';
 import TripBottomNav from './components/TripBottomNav';
-import LoginPage from './pages/LoginPage';
+import InstallPrompt from './components/InstallPrompt';
+
+// ── Eager: landing / dashboard ──────────────────────────────────────
 import TripsPage from './pages/TripsPage';
-import CreateTripPage from './pages/CreateTripPage';
-import PollsPage from './pages/PollsPage';
-import ChatPage from './pages/ChatPage';
-import ItineraryPage from './pages/ItineraryPage';
-import ExpensesPage from './pages/ExpensesPage';
-import BlogPage from './pages/BlogPage';
-import JoinTripPage from './pages/JoinTripPage';
-import PlannerPage from './pages/PlannerPage';
-import MembersPage from './pages/MembersPage';
+
+// ── Lazy-loaded routes (code-split) ─────────────────────────────────
+const LoginPage = lazy(() => import('./pages/LoginPage'));
+const CreateTripPage = lazy(() => import('./pages/CreateTripPage'));
+const PollsPage = lazy(() => import('./pages/PollsPage'));
+const ChatPage = lazy(() => import('./pages/ChatPage'));
+const ItineraryPage = lazy(() => import('./pages/ItineraryPage'));
+const ExpensesPage = lazy(() => import('./pages/ExpensesPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const JoinTripPage = lazy(() => import('./pages/JoinTripPage'));
+const PlannerPage = lazy(() => import('./pages/PlannerPage'));
+const MembersPage = lazy(() => import('./pages/MembersPage'));
+
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from './config/firebase';
 import MapsProvider from './components/MapsProvider';
@@ -25,6 +31,15 @@ import { isTripClaimed } from './utils/draftTrips';
 import { joinTripByCode, isTripMember } from './services/firestoreService';
 import { Users, LogIn, Loader } from 'lucide-react';
 import { GuestModeProvider } from './context/GuestModeContext';
+
+// ── Suspense fallback ────────────────────────────────────────────────
+function RouteFallback() {
+    return (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
+            <div className="spinner" />
+        </div>
+    );
+}
 
 function GuestJoinBanner({ inviteCode }) {
     const { selectedTrip } = useTrip();
@@ -177,35 +192,37 @@ function ScrollToTop() {
 
 function AppRoutes() {
     return (
-        <Routes>
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/join/:inviteCode" element={<JoinTripPage />} />
+        <Suspense fallback={<RouteFallback />}>
+            <Routes>
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/join/:inviteCode" element={<JoinTripPage />} />
 
-            {/* Home / dashboard lives at the root */}
-            <Route path="/" element={<><Navbar /><MapsProvider><TripsPage /></MapsProvider></>} />
-            <Route path="/trips" element={<Navigate to="/" replace />} />
-            <Route path="/trips/create" element={<><Navbar /><CreateTripPage /></>} />
+                {/* Home / dashboard lives at the root */}
+                <Route path="/" element={<><Navbar /><MapsProvider><TripsPage /></MapsProvider></>} />
+                <Route path="/trips" element={<Navigate to="/" replace />} />
+                <Route path="/trips/create" element={<><Navbar /><CreateTripPage /></>} />
 
-            {/* Trip detail layout — unified nav inside TripLayout */}
-            <Route path="/trip/:tripId" element={<TripLayout />}>
-                <Route index element={<PlannerPage />} />
-                <Route path="map" element={<MapRouteRedirect />} />
-                <Route path="itinerary" element={<ItineraryPage />} />
-                {/* Collaborative sections — gated until the trip is claimed */}
-                <Route element={<ClaimedRoute />}>
-                    <Route path="polls" element={<PollsPage />} />
-                    <Route path="chat" element={<ChatPage />} />
-                    <Route path="expenses" element={<ExpensesPage />} />
-                    <Route path="members" element={<MembersPage />} />
+                {/* Trip detail layout — unified nav inside TripLayout */}
+                <Route path="/trip/:tripId" element={<TripLayout />}>
+                    <Route index element={<PlannerPage />} />
+                    <Route path="map" element={<MapRouteRedirect />} />
+                    <Route path="itinerary" element={<ItineraryPage />} />
+                    {/* Collaborative sections — gated until the trip is claimed */}
+                    <Route element={<ClaimedRoute />}>
+                        <Route path="polls" element={<PollsPage />} />
+                        <Route path="chat" element={<ChatPage />} />
+                        <Route path="expenses" element={<ExpensesPage />} />
+                        <Route path="members" element={<MembersPage />} />
+                    </Route>
                 </Route>
-            </Route>
 
-            {/* Marketing / SEO routes */}
-            <Route path="/blog" element={<><Navbar /><BlogPage /></>} />
-            <Route path="/blog/:postId" element={<><Navbar /><BlogPage /></>} />
+                {/* Marketing / SEO routes */}
+                <Route path="/blog" element={<><Navbar /><BlogPage /></>} />
+                <Route path="/blog/:postId" element={<><Navbar /><BlogPage /></>} />
 
-            <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+                <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+        </Suspense>
     );
 }
 
@@ -216,6 +233,7 @@ export default function App() {
                 <TripProvider>
                     <ScrollToTop />
                     <AppRoutes />
+                    <InstallPrompt />
                 </TripProvider>
             </AuthProvider>
         </BrowserRouter>
