@@ -3967,10 +3967,21 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 
 /* ── Scroll-reveal — uses the `translate` property so element
    `transform` (tilts, hovers) stays free to compose with it ── */
+/* Visible by default so content is readable with zero JavaScript (the homepage
+   uses deferred hydration). The entrance animates TRANSLATE ONLY — never opacity
+   — so text is always at full opacity and never fails a contrast check mid-
+   animation. The JS IntersectionObserver still toggles .is-in (same end state). */
 .hp-reveal {
-  opacity: 0;
-  translate: 0 32px;
-  transition: opacity 0.7s var(--ease-out), translate 0.7s var(--ease-out);
+  opacity: 1;
+  translate: 0 0;
+  transition: translate 0.7s var(--ease-out);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hp-reveal { animation: hp-reveal-in 0.7s var(--ease-out) both; }
+}
+@keyframes hp-reveal-in {
+  from { translate: 0 32px; }
+  to { translate: 0 0; }
 }
 .hp-reveal.is-in { opacity: 1; translate: 0 0; }
 
@@ -4005,9 +4016,9 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 }
 .hp-section-sub {
   margin: 13px auto 0; max-width: 540px;
-  font-size: 15.5px; line-height: 1.6; color: var(--ink-muted);
+  font-size: 15.5px; line-height: 1.6; color: #475569;
 }
-.hp-section-sub em { color: var(--coral); font-style: normal; font-weight: 800; }
+.hp-section-sub em { color: #C2410C; font-style: normal; font-weight: 800; }
 
 /* ── Buttons ── */
 .hp-btn {
@@ -4020,7 +4031,7 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 }
 .hp-btn:hover { transform: translateY(-2px); }
 .hp-btn-lg { height: 58px; padding: 0 30px; font-size: 16px; }
-.hp-btn-coral { background: var(--coral); color: #fff; box-shadow: 0 14px 30px -12px rgba(255, 107, 74, 0.7); }
+.hp-btn-coral { background: var(--coral); color: #2A1D02; box-shadow: 0 14px 30px -12px rgba(255, 107, 74, 0.7); }
 .hp-btn-coral:hover { filter: brightness(1.06); }
 .hp-btn-indigo { background: var(--grad-accent); color: #fff; box-shadow: 0 14px 30px -12px rgba(30, 58, 138, 0.6); }
 .hp-btn-indigo:hover { filter: brightness(1.08); }
@@ -4047,7 +4058,9 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 /* ── HERO ── */
 .hp-hero {
   position: relative; overflow: hidden;
-  padding: 100px 24px 96px;
+  /* Vertically center the hero content within the viewport-height section. */
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 80px 24px;
   min-height: calc(100dvh - 62px); /* fill the viewport — marquee lands at the bottom edge */
   text-align: center;
   background: radial-gradient(900px 520px at 50% 0%, #fff, transparent), var(--base);
@@ -4274,7 +4287,7 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
   font-size: 30px; border-radius: 18px;
   background: var(--warm); border: 1.5px solid rgba(244, 180, 0, 0.32);
 }
-.hp-step-n { font-size: 46px; font-weight: 800; letter-spacing: -0.05em; color: rgba(30, 58, 138, 0.13); }
+.hp-step-n { font-size: 46px; font-weight: 800; letter-spacing: -0.05em; color: rgba(30, 58, 138, 0.62); }
 .hp-step h3 { margin: 0 0 8px; font-size: 19px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
 .hp-step p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--ink-muted); }
 
@@ -4305,7 +4318,7 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
   padding: 14px 18px; border-radius: 18px; max-width: 90%;
   font-size: 13.5px; font-weight: 600; line-height: 1.5;
 }
-.hp-ai-msg-u { align-self: flex-end; background: var(--coral); color: #fff; border-bottom-right-radius: 5px; }
+.hp-ai-msg-u { align-self: flex-end; background: var(--coral); color: #2A1D02; border-bottom-right-radius: 5px; }
 .hp-ai-msg-a {
   align-self: flex-start; color: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -4456,7 +4469,7 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 }
 @media (max-width: 640px) {
   .hp-section { padding: 58px 18px; }
-  .hp-hero { padding: 100px 14px 64px; }
+  .hp-hero { padding: 80px 14px; }
   .hp-search { flex-direction: column; align-items: stretch; }
   .hp-search-btn { width: 100%; justify-content: center; }
   .hp-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 26px 16px; padding: 38px 20px; }

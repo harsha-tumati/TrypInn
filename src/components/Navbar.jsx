@@ -48,6 +48,7 @@ export default function Navbar() {
                     <a
                         href="/#my-trips-section"
                         className="navbar-link"
+                        aria-label="My trips"
                         onClick={(e) => {
                             if (pathname === '/') {
                                 e.preventDefault();
@@ -63,12 +64,13 @@ export default function Navbar() {
                 <NavLink
                     to="/blog"
                     className={({ isActive }) => `navbar-link${isActive ? ' active' : ''}`}
+                    aria-label="Blogs"
                 >
                     <BookOpen size={15} aria-hidden="true" />
                     <span className="navbar-link-label">Blogs</span>
                 </NavLink>
 
-                <button type="button" className="navbar-cta" onClick={() => navigate('/', { state: { openPlanModal: true } })}>
+                <button type="button" className="navbar-cta" aria-label="Plan a trip" onClick={() => navigate('/', { state: { openPlanModal: true } })}>
                     <Plus size={16} aria-hidden="true" />
                     <span className="navbar-cta-label">Plan a trip</span>
                 </button>

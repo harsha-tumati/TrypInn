@@ -29,7 +29,7 @@ test('app renders non-empty content into #root without env config', async () => 
     const html = root.innerHTML;
     expect(html.length).toBeGreaterThan(200);          // not blank
     expect(html).toContain('Trypinn');                // brand rendered
-    expect(/Where to next/i.test(html)).toBe(true);    // home dashboard rendered
+    expect(/Plan trips/i.test(html)).toBe(true);       // hero headline rendered
 
     reactRoot.unmount();
 });

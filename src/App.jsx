@@ -7,7 +7,10 @@ import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import TripTopNav from './components/TripTopNav';
 import TripBottomNav from './components/TripBottomNav';
-const InstallPrompt = lazy(() => import('./components/InstallPrompt'));
+// Eager (not lazy): InstallPrompt renders null until the beforeinstallprompt
+// event, so it adds nothing to the initial paint — but a lazy Suspense boundary
+// would not resolve during prerender and would trip React #419 on hydration.
+import InstallPrompt from './components/InstallPrompt';
 
 import TripsPage from './pages/TripsPage';
 import MapsProvider from './components/MapsProvider';
@@ -258,9 +261,7 @@ export default function App() {
                     <SkipLink />
                     <ScrollToTop />
                     <AppRoutes />
-                    <Suspense fallback={null}>
-                        <InstallPrompt />
-                    </Suspense>
+                    <InstallPrompt />
                 </TripProvider>
             </AuthProvider>
         </BrowserRouter>

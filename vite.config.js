@@ -58,17 +58,23 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('react-router')) return 'vendor-router'
-            if (id.includes('react-dom')) return 'vendor-react'
-            if (id.includes('react')) return 'vendor-react'
-            if (id.includes('scheduler')) return 'vendor-react'
-            if (id.includes('firebase')) return 'vendor-firebase'
-            if (id.includes('openai')) return 'vendor-openai'
-            if (id.includes('@vis.gl')) return 'vendor-maps'
-            if (id.includes('date-fns')) return 'vendor-date-fns'
-            return 'vendor'
-          }
+          if (!id.includes('node_modules')) return
+          // Match specific libs BEFORE the generic react-core check below —
+          // react-datepicker, @vis.gl/react-google-maps and lucide-react all
+          // contain "react" in their path and would otherwise be swept into
+          // vendor-react (eagerly loaded on the homepage). Keeping them in their
+          // own chunks lets them stay lazy (datepicker/maps only load inside the
+          // modal/when Maps is enabled).
+          if (id.includes('react-router')) return 'vendor-router'
+          if (id.includes('react-datepicker')) return 'vendor-datepicker'
+          if (id.includes('@vis.gl') || id.includes('react-google-maps')) return 'vendor-maps'
+          if (id.includes('lucide-react')) return 'vendor-icons'
+          if (id.includes('firebase')) return 'vendor-firebase'
+          if (id.includes('openai')) return 'vendor-openai'
+          // React core (react, react-dom, scheduler) — the only big vendor we
+          // want on the initial homepage path.
+          if (/[\\/]react-dom[\\/]/.test(id) || /[\\/]react[\\/]/.test(id) || /[\\/]scheduler[\\/]/.test(id) || id.includes('react/jsx-runtime')) return 'vendor-react'
+          return 'vendor'
         },
       },
     },

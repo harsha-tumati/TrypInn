@@ -33,3 +33,5 @@ lint.txt
 
 lighthouse-report*.json
 bundle-stats.html
+
+.claude/

@@ -83,18 +83,35 @@ function notFound(message = 'Not found') {
     });
 }
 
-function applySecurityHeaders(res, { cache } = {}) {
+function applySecurityHeaders(res, { cache, encoding } = {}) {
     res.headers.set('x-content-type-options', 'nosniff');
     res.headers.set('referrer-policy', 'strict-origin-when-cross-origin');
     res.headers.set('x-frame-options', 'SAMEORIGIN');
-    // Content Security Policy — allows inline styles (Vite) and connects to Firebase, Google Maps, Unsplash
-    res.headers.set('content-security-policy', "default-src 'self'; script-src 'self' https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://maps.googleapis.com https://*.googleusercontent.com; connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://api.openai.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';");
+    // Content Security Policy — inline styles (Vite critical CSS + style attrs), self-hosted
+    // fonts, and connects to Firebase, Google Maps and OpenAI. No external font origins.
+    res.headers.set('content-security-policy', "default-src 'self'; script-src 'self' https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://images.unsplash.com https://maps.googleapis.com https://maps.gstatic.com https://*.googleusercontent.com; connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://api.openai.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';");
     // Permissions Policy — disable unused browser features
     res.headers.set('permissions-policy', 'geolocation=(self), camera=(), microphone=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), display-capture=(), encrypted-media=(), fullscreen=(self), picture-in-picture=()');
     // HSTS — only sent over HTTPS connections (ignored over HTTP)
     res.headers.set('strict-transport-security', 'max-age=63072000; includeSubDomains; preload');
     if (cache) res.headers.set('cache-control', cache);
+    if (encoding) {
+        res.headers.set('content-encoding', encoding);
+        res.headers.set('vary', 'Accept-Encoding');
+    }
     return res;
+}
+
+// Precompressed-asset negotiation. Text assets are emitted with .br/.gz
+// siblings at build time; serve the best variant the client accepts.
+const ENCODINGS = [
+    { ext: '.br', enc: 'br' },
+    { ext: '.gz', enc: 'gzip' },
+];
+
+function acceptedEncodings(req) {
+    const ae = (req.headers.get('accept-encoding') || '').toLowerCase();
+    return ENCODINGS.filter((e) => ae.includes(e.enc));
 }
 
 function bytesFromAsset(asset) {
@@ -106,28 +123,43 @@ function bytesFromAsset(asset) {
     return out;
 }
 
-function serveEmbedded(rel, { cache } = {}) {
+function serveEmbedded(rel, { cache, encodings = [] } = {}) {
+    // Prefer a precompressed sibling the client accepts.
+    for (const { ext, enc } of encodings) {
+        const asset = EMBEDDED.get(rel + ext);
+        if (asset) {
+            const res = new Response(bytesFromAsset(asset), { headers: { 'content-type': mimeFor(rel) } });
+            return applySecurityHeaders(res, { cache, encoding: enc });
+        }
+    }
     const asset = EMBEDDED.get(rel);
     if (!asset) return null;
-    const body = bytesFromAsset(asset);
-    const res = new Response(body, { headers: { 'content-type': mimeFor(rel) } });
+    const res = new Response(bytesFromAsset(asset), { headers: { 'content-type': mimeFor(rel) } });
     return applySecurityHeaders(res, { cache });
 }
 
-async function serveDisk(rel, { cache } = {}) {
+async function serveDisk(rel, { cache, encodings = [] } = {}) {
     // `rel` is /-separated; convert each segment for the host filesystem.
     const absPath = nodeJoin(DIST_DIR, ...rel.split('/'));
+    // Prefer a precompressed sibling the client accepts.
+    for (const { ext, enc } of encodings) {
+        const cf = file(absPath + ext);
+        if (await cf.exists()) {
+            const res = new Response(cf, { headers: { 'content-type': mimeFor(rel) } });
+            return applySecurityHeaders(res, { cache, encoding: enc });
+        }
+    }
     const f = file(absPath);
     if (!(await f.exists())) return null;
     const res = new Response(f, { headers: { 'content-type': mimeFor(rel) } });
     return applySecurityHeaders(res, { cache });
 }
 
-async function serveIndex() {
+async function serveIndex(encodings = []) {
     const cache = 'public, max-age=0, must-revalidate';
     return (
-        serveEmbedded('index.html', { cache }) ??
-        (await serveDisk('index.html', { cache })) ??
+        serveEmbedded('index.html', { cache, encodings }) ??
+        (await serveDisk('index.html', { cache, encodings })) ??
         notFound()
     );
 }
@@ -155,9 +187,11 @@ const server = serve({
             return new Response('ok', { status: 200, headers: { 'content-type': 'text/plain' } });
         }
 
+        const encodings = acceptedEncodings(req);
+
         // Root → index.html
         if (url.pathname === '/' || url.pathname === '/index.html') {
-            return serveIndex();
+            return serveIndex(encodings);
         }
 
         const rel = safeRel(url.pathname);
@@ -174,16 +208,16 @@ const server = serve({
                 cache = 'public, max-age=3600';
             }
 
-            const fromEmbed = serveEmbedded(rel, { cache });
+            const fromEmbed = serveEmbedded(rel, { cache, encodings });
             if (fromEmbed) return fromEmbed;
 
-            const fromDisk = await serveDisk(rel, { cache });
+            const fromDisk = await serveDisk(rel, { cache, encodings });
             if (fromDisk) return fromDisk;
         }
 
         // SPA fallback for non-asset routes.
         if (!url.pathname.includes('.')) {
-            return serveIndex();
+            return serveIndex(encodings);
         }
 
         return notFound();

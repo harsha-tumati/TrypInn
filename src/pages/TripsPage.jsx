@@ -10,10 +10,18 @@ import { formatDate } from '../utils/dateHelpers';
 import { suggestTripName } from '../utils/tripName';
 import { hasCoords } from '../utils/geo';
 import { MAPS_ENABLED } from '../config/maps';
-const PlacesPicker = lazy(() => import('../components/PlacesPicker'));
+// PlacesPicker renders in the above-the-fold hero, so it is imported eagerly
+// (not lazy): this lets it be server-prerendered and hydrated without a node
+// swap, keeping LCP fast. Its Maps dependency is already on the homepage path
+// via MapsProvider, so this adds no extra initial chunk.
+import PlacesPicker from '../components/PlacesPicker';
+// Modal is always present in the homepage tree (rendered with open=false), so a
+// lazy import would suspend during prerender and collapse the page to the route
+// spinner. Import it eagerly; its heavy children below stay lazy (the closed
+// modal returns null, so they are never rendered until the modal opens).
+import Modal from '../components/Modal';
 const DateRangePicker = lazy(() => import('../components/DateRangePicker'));
 const LocationAutocomplete = lazy(() => import('../components/LocationAutocomplete'));
-const Modal = lazy(() => import('../components/Modal'));
 import {
     Plus, Link2, MapPin, Calendar, Users, Sparkles, Star, MessageCircle,
     Send, X, ArrowRight, Compass, Flame, Quote, Zap,
@@ -566,7 +574,7 @@ export default function TripsPage() {
                         <Reveal key={s.n} delay={i * 110} className="hp-step">
                             <div className="hp-step-top">
                                 <span className="hp-step-emoji">{s.emoji}</span>
-                                <span className="hp-step-n">{s.n}</span>
+                                <span className="hp-step-n" aria-hidden="true">{s.n}</span>
                             </div>
                             <h3>{s.title}</h3>
                             <p>{s.text}</p>
