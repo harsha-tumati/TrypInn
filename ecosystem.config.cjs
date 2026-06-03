@@ -21,14 +21,12 @@ module.exports = {
     {
       name: 'TrypInn',
 
-      // PM2's Bun fork container (ProcessContainerForkBun.js) uses require()
-      // to load the entry point, which fails on ESM files with top-level await.
-      // Workaround: make `bun` the interpreter and pass `./server.js` as the
-      // script — PM2 spawns `bun ./server.js` directly, bypassing the wrapper.
-      // If bun is not on PM2's PATH (e.g. systemd), use the absolute path:
-      // interpreter: '/home/ubuntu/.bun/bin/bun'
-      script: './server.js',
-      interpreter: '/home/ubuntu/.bun/bin/bun',
+      // PM2's Bun fork container always uses require() to load the entry point,
+      // which fails on ESM files with top-level await (server.js).
+      // server-pm2.cjs is a tiny CJS shim that PM2 can safely require(); it
+      // bridges to the real server via dynamic import('./server.js').
+      script: './server-pm2.cjs',
+      interpreter: 'bun',
 
       // Bun.serve() binds a single port; PM2 cluster mode is not used. To scale
       // horizontally, run multiple instances on different ports behind a
