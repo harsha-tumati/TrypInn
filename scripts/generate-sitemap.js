@@ -1,8 +1,19 @@
 #!/usr/bin/env node
 /**
- * Enhanced sitemap generator for Trypinn.
- * Produces sitemap.xml with <lastmod>, image extensions, and proper priorities.
- * Also generates rss.xml for blog feed discovery with original posts included.
+ * SEO-optimized sitemap & RSS generator for Trypinn.
+ *
+ * Outputs:
+ *   public/sitemap.xml          → Sitemap index (primary entry point)
+ *   public/sitemap-static.xml   → Static marketing pages
+ *   public/sitemap-posts.xml    → Blog posts with image extensions
+ *   public/rss.xml              → RSS 2.0 feed with media extensions
+ *
+ * SEO features:
+ *   – Split sitemap index for crawl-budget signalling
+ *   – Google image:sitemap extensions on every post (cover + inline)
+ *   – Tiered priorities (home 1.0, blog 0.9, originals 0.8, generated 0.6)
+ *   – Full ISO-8601 lastmod timestamps
+ *   – RSS with media:content, full article body, enclosures
  */
 import fs from 'fs';
 import path from 'path';
@@ -10,18 +21,13 @@ import path from 'path';
 const DOMAIN = 'https://trypinn.com';
 const BLOG_DIR = path.resolve('public', 'blogs');
 const CONTENT_DIR = path.join(BLOG_DIR, 'content');
-const OUT_SITEMAP = path.resolve('public', 'sitemap.xml');
-const OUT_RSS = path.resolve('public', 'rss.xml');
+const PUBLIC_DIR = path.resolve('public');
 
-const TODAY = new Date().toISOString().split('T')[0];
+const NOW = new Date();
+const TODAY_ISO = NOW.toISOString();                 // 2026-05-31T13:45:00.000Z
+const TODAY_DATE = NOW.toISOString().split('T')[0];  // 2026-05-31
 
-// ── Static pages ──
-const STATIC_PAGES = [
-  { loc: '/', changefreq: 'daily', priority: '1.0' },
-  { loc: '/blog', changefreq: 'weekly', priority: '0.9' },
-];
-
-// ── Original manual posts with full metadata for RSS ──
+// ── Original manual posts (mirrors BlogPage.jsx) ──
 const ORIGINAL_POSTS = [
   { id: 'split-group-trip-expenses', title: "How to Split Group Trip Expenses Fairly — Without the Awkward Money Talk", date: '2026-05-20', author: 'Trypinn Team', excerpt: "One person always ends up paying for the cab, another for dinner, and by day three nobody remembers who owes whom. Here's a fair, drama-free way to handle trip money.", coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?fm=webp&w=800&q=60', tags: ['Group Travel', 'Expenses', 'Trip Planning'] },
   { id: 'weekend-getaways-bengaluru', title: "12 Underrated Weekend Getaways Near Bengaluru for 2026", date: '2026-05-18', author: 'Trypinn Team', excerpt: "Coorg and Ooty are lovely — and packed. Here are twelve quieter escapes within driving distance of Bengaluru.", coverImage: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?fm=webp&w=800&q=60', tags: ['Weekend Trips', 'India', 'Itinerary'] },
@@ -35,6 +41,7 @@ const ORIGINAL_POSTS = [
   { id: 'kerala-india', title: "God's Own Country: The Serenity of Kerala", date: '2026-04-25', author: 'Trypinn Team', excerpt: "Serene backwaters, lush tea plantations, and Ayurvedic retreats. God's Own Country awaits.", coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60', tags: ['Nature', 'Relaxation', 'India'] },
 ];
 
+// ── Helpers ──
 function escapeXml(str) {
   if (!str) return '';
   return String(str)
@@ -45,70 +52,149 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
-function parseDate(dateStr) {
+function parseIsoDate(dateStr) {
+  try {
+    const d = new Date(dateStr);
+    if (!isNaN(d.getTime())) return d.toISOString();
+  } catch {}
+  return TODAY_ISO;
+}
+
+function parseDateOnly(dateStr) {
   try {
     const d = new Date(dateStr);
     if (!isNaN(d.getTime())) return d.toISOString().split('T')[0];
   } catch {}
-  return TODAY;
+  return TODAY_DATE;
 }
 
-// ── Load generated posts ──
+/** Extract inline images from markdown content: ![alt](url) */
+function extractInlineImages(content) {
+  if (!content) return [];
+  const images = [];
+  const regex = /!\[(.*?)\]\((.*?)\)/g;
+  let m;
+  while ((m = regex.exec(content)) !== null) {
+    images.push({ alt: m[1].trim(), url: m[2].trim() });
+  }
+  return images;
+}
+
+/** Simple markdown → HTML for RSS <content:encoded> */
+function mdToHtml(md) {
+  if (!md) return '';
+  return escapeXml(md)
+    // Headers
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    // Bold / italic
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // Images
+    .replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" loading="lazy" />')
+    // Links
+    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+    // Paragraphs (simple: wrap non-tag lines)
+    .replace(/^(?!<[a-z]).+$/gim, '<p>$&</p>')
+    // Line breaks
+    .replace(/\n/g, '');
+}
+
+// ── Load generated posts with full content ──
 function loadGeneratedPosts() {
   const indexPath = path.join(BLOG_DIR, 'index.json');
   if (!fs.existsSync(indexPath)) return [];
   const index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
   return index.map((p) => {
-    let coverImage = p.coverImage;
+    let full = { ...p };
     const contentPath = path.join(CONTENT_DIR, `${p.id}.json`);
     if (fs.existsSync(contentPath)) {
       try {
-        const full = JSON.parse(fs.readFileSync(contentPath, 'utf-8'));
-        coverImage = full.coverImage || coverImage;
+        full = { ...full, ...JSON.parse(fs.readFileSync(contentPath, 'utf-8')) };
       } catch {}
     }
-    return { ...p, coverImage };
+    return full;
   });
 }
 
-// ── Build sitemap.xml with accurate lastmod ──
-function buildSitemap(posts) {
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+// ═══════════════════════════════════════════════════════════════
+//  SITEMAP STATIC  – homepage, blog index, etc.
+// ═══════════════════════════════════════════════════════════════
+function buildSitemapStatic() {
+  const pages = [
+    { loc: '/',             changefreq: 'daily',   priority: '1.0', lastmod: TODAY_ISO },
+    { loc: '/blog',         changefreq: 'daily',   priority: '0.9', lastmod: TODAY_ISO },
+  ];
 
-  // Static pages
-  for (const p of STATIC_PAGES) {
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  for (const p of pages) {
     xml += `  <url>\n`;
     xml += `    <loc>${DOMAIN}${escapeXml(p.loc)}</loc>\n`;
-    xml += `    <lastmod>${TODAY}</lastmod>\n`;
+    xml += `    <lastmod>${p.lastmod}</lastmod>\n`;
     xml += `    <changefreq>${p.changefreq}</changefreq>\n`;
     xml += `    <priority>${p.priority}</priority>\n`;
     xml += `  </url>\n`;
   }
+  xml += `</urlset>\n`;
+  return xml;
+}
 
-  // Original posts with their actual publication dates as lastmod
-  for (const p of ORIGINAL_POSTS) {
+// ═══════════════════════════════════════════════════════════════
+//  SITEMAP POSTS  – original + generated blog posts with images
+// ═══════════════════════════════════════════════════════════════
+function buildSitemapPosts(originals, generated) {
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+
+  // Original posts – higher priority, established content
+  for (const p of originals) {
+    const lastmod = parseIsoDate(p.date);
     xml += `  <url>\n`;
     xml += `    <loc>${DOMAIN}/blog/${escapeXml(p.id)}</loc>\n`;
-    xml += `    <lastmod>${parseDate(p.date)}</lastmod>\n`;
+    xml += `    <lastmod>${lastmod}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
-    xml += `    <priority>0.7</priority>\n`;
-    xml += `  </url>\n`;
-  }
+    xml += `    <priority>0.8</priority>\n`;
 
-  // Generated posts with image sitemap extensions and actual post dates
-  for (const p of posts) {
-    xml += `  <url>\n`;
-    xml += `    <loc>${DOMAIN}/blog/${escapeXml(p.id)}</loc>\n`;
-    xml += `    <lastmod>${parseDate(p.date)}</lastmod>\n`;
-    xml += `    <changefreq>monthly</changefreq>\n`;
-    xml += `    <priority>0.7</priority>\n`;
     if (p.coverImage) {
       xml += `    <image:image>\n`;
       xml += `      <image:loc>${escapeXml(p.coverImage)}</image:loc>\n`;
-      xml += `      <image:caption>${escapeXml(p.title)}</image:caption>\n`;
+      xml += `      <image:title>${escapeXml(p.title)}</image:title>\n`;
+      xml += `      <image:caption>${escapeXml(p.excerpt || p.title)}</image:caption>\n`;
       xml += `    </image:image>\n`;
     }
+    xml += `  </url>\n`;
+  }
+
+  // Generated posts – slightly lower priority
+  for (const p of generated) {
+    const lastmod = parseIsoDate(p.date);
+    const inlineImages = extractInlineImages(p.content);
+    xml += `  <url>\n`;
+    xml += `    <loc>${DOMAIN}/blog/${escapeXml(p.id)}</loc>\n`;
+    xml += `    <lastmod>${lastmod}</lastmod>\n`;
+    xml += `    <changefreq>monthly</changefreq>\n`;
+    xml += `    <priority>0.6</priority>\n`;
+
+    // Cover image
+    if (p.coverImage) {
+      xml += `    <image:image>\n`;
+      xml += `      <image:loc>${escapeXml(p.coverImage)}</image:loc>\n`;
+      xml += `      <image:title>${escapeXml(p.title)}</image:title>\n`;
+      xml += `      <image:caption>${escapeXml(p.excerpt || p.metaDescription || p.title)}</image:caption>\n`;
+      xml += `    </image:image>\n`;
+    }
+
+    // Inline images from content (up to 5 to keep sitemap lean)
+    for (const img of inlineImages.slice(0, 5)) {
+      xml += `    <image:image>\n`;
+      xml += `      <image:loc>${escapeXml(img.url)}</image:loc>\n`;
+      xml += `      <image:title>${escapeXml(img.alt || p.title)}</image:title>\n`;
+      xml += `      <image:caption>${escapeXml(img.alt || p.excerpt || p.title)}</image:caption>\n`;
+      xml += `    </image:image>\n`;
+    }
+
     xml += `  </url>\n`;
   }
 
@@ -116,19 +202,40 @@ function buildSitemap(posts) {
   return xml;
 }
 
-// ── Build rss.xml with original posts included ──
+// ═══════════════════════════════════════════════════════════════
+//  SITEMAP INDEX  – entry point referenced by robots.txt
+// ═══════════════════════════════════════════════════════════════
+function buildSitemapIndex() {
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  xml += `  <sitemap>\n`;
+  xml += `    <loc>${DOMAIN}/sitemap-static.xml</loc>\n`;
+  xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
+  xml += `  </sitemap>\n`;
+  xml += `  <sitemap>\n`;
+  xml += `    <loc>${DOMAIN}/sitemap-posts.xml</loc>\n`;
+  xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
+  xml += `  </sitemap>\n`;
+  xml += `</sitemapindex>\n`;
+  return xml;
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  RSS 2.0 with media & content extensions
+// ═══════════════════════════════════════════════════════════════
 function buildRss(posts) {
-  // Use generated posts' actual titles from index, merged with originals
   const allPosts = [...ORIGINAL_POSTS, ...posts];
+  // Sort by date descending
+  allPosts.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
   const topPosts = allPosts.slice(0, 50);
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-  xml += `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">\n`;
+  xml += `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">\n`;
   xml += `  <channel>\n`;
   xml += `    <title>Trypinn Blog</title>\n`;
   xml += `    <link>${DOMAIN}/blog</link>\n`;
   xml += `    <description>Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.</description>\n`;
-  xml += `    <language>en-us</language>\n`;
+  xml += `    <language>en</language>\n`;
   xml += `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>\n`;
   xml += `    <pubDate>${new Date().toUTCString()}</pubDate>\n`;
   xml += `    <atom:link href="${DOMAIN}/rss.xml" rel="self" type="application/rss+xml" />\n`;
@@ -141,22 +248,34 @@ function buildRss(posts) {
   for (const p of topPosts) {
     const pubDate = p.date ? new Date(p.date).toUTCString() : new Date().toUTCString();
     const tags = p.tags || [];
+    const contentHtml = mdToHtml(p.content || p.excerpt || '');
+    const inlineImages = extractInlineImages(p.content || '');
+
     xml += `    <item>\n`;
     xml += `      <title>${escapeXml(p.title)}</title>\n`;
     xml += `      <link>${DOMAIN}/blog/${escapeXml(p.id)}</link>\n`;
     xml += `      <guid isPermaLink="true">${DOMAIN}/blog/${escapeXml(p.id)}</guid>\n`;
     xml += `      <pubDate>${pubDate}</pubDate>\n`;
     xml += `      <author>${escapeXml(p.author || 'Trypinn')}</author>\n`;
+
     if (tags.length > 0) {
       xml += tags.map((t) => `      <category>${escapeXml(t)}</category>\n`).join('');
     }
+
     if (p.coverImage) {
       xml += `      <enclosure url="${escapeXml(p.coverImage)}" type="image/webp" />\n`;
+      xml += `      <media:content url="${escapeXml(p.coverImage)}" type="image/webp" medium="image">\n`;
+      xml += `        <media:title>${escapeXml(p.title)}</media:title>\n`;
+      xml += `        <media:thumbnail url="${escapeXml(p.coverImage)}" />\n`;
+      xml += `      </media:content>\n`;
     }
+
     xml += `      <description>${escapeXml(p.excerpt || '')}</description>\n`;
+
     if (p.content) {
-      xml += `      <content:encoded><![CDATA[${p.content.slice(0, 2000)}]]></content:encoded>\n`;
+      xml += `      <content:encoded><![CDATA[${contentHtml}]]></content:encoded>\n`;
     }
+
     xml += `    </item>\n`;
   }
 
@@ -165,18 +284,57 @@ function buildRss(posts) {
   return xml;
 }
 
-// ── Main ──
+// ═══════════════════════════════════════════════════════════════
+//  ROBOTS.TXT  – updated to reference sitemap index
+// ═══════════════════════════════════════════════════════════════
+function buildRobotsTxt() {
+  return `User-agent: *
+Disallow: /login
+Disallow: /trip/
+Disallow: /trips/create
+Disallow: /join/
+
+Sitemap: ${DOMAIN}/sitemap.xml
+Sitemap: ${DOMAIN}/sitemap-index.xml
+`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  MAIN
+// ═══════════════════════════════════════════════════════════════
 function main() {
-  const posts = loadGeneratedPosts();
-  console.log(`📄 Loaded ${posts.length} blog posts from index.json`);
+  const generatedPosts = loadGeneratedPosts();
+  const totalUrls = 2 + ORIGINAL_POSTS.length + generatedPosts.length;
 
-  const sitemap = buildSitemap(posts);
-  fs.writeFileSync(OUT_SITEMAP, sitemap);
-  console.log(`✅ Sitemap written: ${OUT_SITEMAP} (${posts.length + STATIC_PAGES.length + ORIGINAL_POSTS.length} URLs)`);
+  // 1. Sitemap static pages
+  const sitemapStatic = buildSitemapStatic();
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-static.xml'), sitemapStatic);
+  console.log(`✅ sitemap-static.xml  → 2 URLs`);
 
-  const rss = buildRss(posts);
-  fs.writeFileSync(OUT_RSS, rss);
-  console.log(`✅ RSS feed written: ${OUT_RSS} (${Math.min(posts.length + ORIGINAL_POSTS.length, 50)} items)`);
+  // 2. Sitemap posts (original + generated)
+  const sitemapPosts = buildSitemapPosts(ORIGINAL_POSTS, generatedPosts);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-posts.xml'), sitemapPosts);
+  console.log(`✅ sitemap-posts.xml   → ${ORIGINAL_POSTS.length + generatedPosts.length} URLs`);
+
+  // 3. Sitemap index (primary entry point)
+  const sitemapIndex = buildSitemapIndex();
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-index.xml'), sitemapIndex);
+  console.log(`✅ sitemap-index.xml   → 2 child sitemaps`);
+
+  // 4. Legacy sitemap.xml = copy of index (backward compat)
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapIndex);
+  console.log(`✅ sitemap.xml         → legacy alias to index`);
+
+  // 5. RSS feed
+  const rss = buildRss(generatedPosts);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'rss.xml'), rss);
+  console.log(`✅ rss.xml             → ${Math.min(generatedPosts.length + ORIGINAL_POSTS.length, 50)} items`);
+
+  // 6. robots.txt
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'robots.txt'), buildRobotsTxt());
+  console.log(`✅ robots.txt          → updated with sitemap references`);
+
+  console.log(`\n📊 Total URLs in sitemap family: ${totalUrls}`);
 }
 
 main();

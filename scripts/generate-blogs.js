@@ -537,7 +537,7 @@ function generatePost(cache, seed, dest, template) {
           `Solo travel in ${d.n} is not about being alone — it is about being fully present.`,
           `If you have been considering a solo trip, ${d.n} is a forgiving place to start.`
         ])
-      ) + `\n\n${h2('Why ${d.n} Works for Solo Travelers')}\n\n` + para(
+      ) + `\n\n${h2(`Why ${d.n} Works for Solo Travelers`)}\n\n` + para(
         pick([
           `${d.n} has a rhythm that suits independent explorers. The infrastructure is solid, locals are generally welcoming, and there is enough variety to keep every day interesting without overwhelming you.`,
           `What makes ${d.n} ideal for solo travelers is the balance it strikes. It is accessible enough that you will never feel stranded, but foreign enough to feel like a real adventure.`
