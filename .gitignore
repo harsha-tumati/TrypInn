@@ -31,6 +31,5 @@ bun-debug.log*
 # Misc
 lint.txt
 
-firestore.rules
 lighthouse-report*.json
 bundle-stats.html

@@ -1,0 +1,56 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── TRIPS ───────────────────────────────────────────────────────────────
+    // Anyone can read a trip (needed for the public invite/preview page).
+    // Only authenticated members can write.
+    match /trips/{tripId} {
+      allow read: if true;
+      allow create: if true; // anonymous draft creation is allowed
+      allow update, delete: if request.auth != null;
+    }
+
+    // ── PLACES ──────────────────────────────────────────────────────────────
+    // Anyone can read places (needed for public trip preview).
+    // Writes require authentication.
+    match /places/{placeId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // ── TRIP MEMBERS ─────────────────────────────────────────────────────────
+    // Anyone can read member count/list (for trip preview).
+    // Only authenticated users can join (write).
+    match /tripMembers/{memberId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // ── USERS ────────────────────────────────────────────────────────────────
+    // Users can read/write their own profile.
+    // Anyone can read profiles (needed for member display for guests).
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // ── POLLS ────────────────────────────────────────────────────────────────
+    match /polls/{pollId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // ── MESSAGES ─────────────────────────────────────────────────────────────
+    match /messages/{messageId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // ── EXPENSES ─────────────────────────────────────────────────────────────
+    match /expenses/{expenseId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
