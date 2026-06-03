@@ -45,11 +45,11 @@ function cta() { return 'Plan your trip with Trypinn and discover the best this 
 
 function intro(dest, style) {
   const intros = [
-    `${dest} is one of those places that stays with you long after you leave. Whether you are ${style}, the experience is nothing short of transformative.`,
-    `There is something about ${dest} that captures the imagination of travelers worldwide. For those ${style}, this guide will show you the best of what awaits.`,
-    `${dest} offers a perfect blend of adventure and relaxation. If you are ${style}, you will find endless opportunities to create unforgettable memories.`,
-    `The magic of ${dest} lies in its ability to surprise you at every turn. This guide is for anyone ${style} who wants to experience the real heart of this incredible destination.`,
-    `Few places in the world can match the allure of ${dest}. Whether you are ${style} for the first time or returning for more, there is always something new to discover.`,
+    `${dest} is one of those places that stays with you long after you leave. Whether you are ${style}, the experience is nothing short of transformative. Every corner holds a story, every street a memory waiting to be made. In this guide, we will walk you through everything that makes ${dest} truly special — from its hidden gems to its must-see highlights — so you can plan a trip that feels authentically yours.`,
+    `There is something about ${dest} that captures the imagination of travelers worldwide. For those ${style}, this guide will show you the best of what awaits. Beyond the postcards and travel brochures lies a destination rich with culture, flavor, and adventure. We have put together everything you need to know — when to go, what to do, where to stay, and how to make the most of every moment — so your journey to ${dest} is as seamless as it is memorable.`,
+    `${dest} offers a perfect blend of adventure and relaxation. If you are ${style}, you will find endless opportunities to create unforgettable memories. The sights, sounds, and flavors of ${dest} come together in a way that feels both exciting and deeply comforting. This guide breaks down the essentials — from top attractions to local secrets — helping you craft an itinerary that matches your pace and your passions.`,
+    `The magic of ${dest} lies in its ability to surprise you at every turn. This guide is for anyone ${style} who wants to experience the real heart of this incredible destination. From sunrise viewpoints to late-night street food stalls, ${dest} rewards the curious traveler. We have gathered the best tips, must-visit spots, and practical advice to help you explore with confidence and leave with stories worth telling.`,
+    `Few places in the world can match the allure of ${dest}. Whether you are ${style} for the first time or returning for more, there is always something new to discover. The landscapes shift, the seasons change, and the culture continues to evolve — yet the essence of ${dest} remains irresistibly captivating. Let this guide be your companion as you uncover the experiences that make this destination one of a kind.`,
   ];
   return pick(intros);
 }
@@ -424,40 +424,48 @@ function generatePost(cache, seed, dest, template) {
 
 ${h2('Best Time to Visit')}
 
-The ideal time to explore ${d.n} depends on what you want to experience. ${pick(['Spring brings mild weather and blooming landscapes.','Summer offers long days perfect for outdoor adventures.','Autumn paints the scenery in golden hues with fewer crowds.','Winter transforms the landscape into a magical wonderland.'])}
+The ideal time to explore ${d.n} depends on what you want to experience. ${pick(['Spring brings mild weather and blooming landscapes, making it perfect for outdoor exploration and photography.','Summer offers long days perfect for outdoor adventures, though you should book accommodation well in advance.','Autumn paints the scenery in golden hues with fewer crowds, and the temperatures remain pleasant for walking tours.','Winter transforms the landscape into a magical wonderland, with festive markets and cozy indoor experiences.'])} Shoulder seasons often provide the best balance of good weather, manageable crowds, and reasonable prices.
 
 ${h2('Top Attractions')}
 
 ${bullet(
-  `${pick(['Iconic landmarks','Must-see sights','Famous attractions'])} that define ${d.n}`,
-  `Hidden ${pick(['gems','treasures','spots'])} only locals know about`,
-  `${pick(['Cultural','Historical','Natural'])} sites that tell the story of ${d.c}`,
-  `Scenic ${pick(['viewpoints','lookouts','vistas'])} for unforgettable photos`
+  `${pick(['Iconic landmarks','Must-see sights','Famous attractions'])} that define ${d.n} and should be on every first-time visitor's list`,
+  `Hidden ${pick(['gems','treasures','spots'])} only locals know about — quiet corners away from the tourist trail`,
+  `${pick(['Cultural','Historical','Natural'])} sites that tell the story of ${d.c} and its people through the ages`,
+  `Scenic ${pick(['viewpoints','lookouts','vistas'])} for unforgettable photos, especially during sunrise and sunset`
 )}
 
 ${imgAlt(`${d.n} landscape`, getImgInline(cache, seed, d, template))}
 
 ${h2('Local Cuisine')}
 
-No trip to ${d.n} is complete without sampling the local food. From street-side vendors to fine dining establishments, the culinary scene reflects the region's rich heritage and innovative spirit.
+No trip to ${d.n} is complete without sampling the local food. From street-side vendors to fine dining establishments, the culinary scene reflects the region's rich heritage and innovative spirit. Morning markets overflow with fresh produce, while evening food stalls serve up aromatic dishes that draw locals and visitors alike. Do not miss the chance to try a cooking class — it is one of the best ways to take a piece of ${d.n} home with you.
 
 ${h2('Getting Around')}
 
 ${pick([
-  `Public transport in ${d.n} is efficient and affordable, making it easy to explore without a car.`,
-  `Renting a vehicle gives you the freedom to discover ${d.n} at your own pace, especially for remote attractions.`,
-  `Walking is the best way to experience the true charm of ${d.n}, with most major sights within easy reach.`,
-  `A mix of public transport and occasional taxis offers the best balance of convenience and cost in ${d.n}.`
+  `Public transport in ${d.n} is efficient and affordable, making it easy to explore without a car. Buses and trains connect major sights, and day passes offer excellent value for active travelers.`,
+  `Renting a vehicle gives you the freedom to discover ${d.n} at your own pace, especially for remote attractions. Just be sure to familiarize yourself with local driving rules and parking options.`,
+  `Walking is the best way to experience the true charm of ${d.n}, with most major sights within easy reach. Comfortable shoes are essential, as you will likely cover several kilometers each day.`,
+  `A mix of public transport and occasional taxis offers the best balance of convenience and cost in ${d.n}. Ride-sharing apps are widely available and often more affordable than traditional taxis.`
 ])}
 
 ${h2('Where to Stay')}
 
 ${pick([
-  `From boutique hotels to family-run guesthouses, ${d.n} offers accommodation for every budget and style.`,
-  `Luxury resorts and budget hostels coexist in ${d.n}, giving travelers plenty of options.`,
-  `Homestays are a great way to immerse yourself in local culture while visiting ${d.n}.`,
-  `Book early during peak season to secure the best places to stay in ${d.n}.`
+  `From boutique hotels to family-run guesthouses, ${d.n} offers accommodation for every budget and style. Staying in the city center puts you within walking distance of major sights and dining options.`,
+  `Luxury resorts and budget hostels coexist in ${d.n}, giving travelers plenty of options. Consider your priorities — location, amenities, or atmosphere — and choose accordingly.`,
+  `Homestays are a great way to immerse yourself in local culture while visiting ${d.n}. Your hosts can offer insider tips that no guidebook can match.`,
+  `Book early during peak season to secure the best places to stay in ${d.n}. Last-minute options are available but often more expensive and less centrally located.`
 ])}
+
+${h2('Money-Saving Tips')}
+
+${bullet(
+  `Visit attractions early in the morning to avoid crowds and get better photos`,
+  `Eat where the locals eat — smaller restaurants often serve the most authentic food at lower prices`,
+  `Look for city passes that bundle multiple attractions at a discounted rate`
+)}
 
 ${cta()}`;
       break;
@@ -472,18 +480,18 @@ ${cta()}`;
 ${h2('Why Solo Travel in ' + d.n + ' is Special')}
 
 ${pick([
-  `Solo travel opens doors to experiences that group tours simply cannot match. In ${d.n}, the freedom to choose your own path creates memories that last a lifetime.`,
-  `There is a unique joy in traveling solo through ${d.n}. Every decision is yours, every discovery is personal, and every moment is exactly what you make of it.`,
-  `The rise of solo travel has transformed how we explore the world. In ${d.n}, you will find a growing community of independent travelers proving that this approach leads to richer journeys.`
+  `Solo travel opens doors to experiences that group tours simply cannot match. In ${d.n}, the freedom to choose your own path creates memories that last a lifetime. You set the pace, change plans on a whim, and discover places you never knew existed.`,
+  `There is a unique joy in traveling solo through ${d.n}. Every decision is yours, every discovery is personal, and every moment is exactly what you make of it. The confidence you gain from navigating a new place alone stays with you long after the trip ends.`,
+  `The rise of solo travel has transformed how we explore the world. In ${d.n}, you will find a growing community of independent travelers proving that this approach leads to richer journeys and deeper connections.`
 ])}
 
 ${h2('Safety Tips')}
 
 ${bullet(
-  'Share your itinerary with someone back home',
-  'Stay connected with a local SIM card or portable WiFi',
-  'Trust your instincts and avoid risky situations',
-  'Keep copies of important documents in multiple places'
+  'Share your full itinerary with someone back home and check in regularly',
+  'Stay connected with a local SIM card or portable WiFi device',
+  'Trust your instincts and avoid poorly lit or isolated areas after dark',
+  'Keep digital and physical copies of important documents in separate places'
 )}
 
 ${imgAlt(`Solo travel in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -491,18 +499,25 @@ ${imgAlt(`Solo travel in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Budget-Friendly Tips')}
 
 ${pick([
-  `Hostels and guesthouses in ${d.n} offer affordable accommodation without sacrificing comfort or location.`,
-  `Street food in ${d.n} is not just cheap — it is often the most authentic and delicious option available.`,
-  `Free walking tours are a fantastic way to learn about ${d.n} from knowledgeable locals while keeping costs down.`,
-  `Travel during shoulder season to enjoy ${d.n} with fewer crowds and lower prices.`
+  `Hostels and guesthouses in ${d.n} offer affordable accommodation without sacrificing comfort or location. Many also organize social events where you can meet fellow travelers.`,
+  `Street food in ${d.n} is not just cheap — it is often the most authentic and delicious option available. Follow the locals to find the best stalls.`,
+  `Free walking tours are a fantastic way to learn about ${d.n} from knowledgeable locals while keeping costs down. Just remember to tip your guide what you can afford.`,
+  `Travel during shoulder season to enjoy ${d.n} with fewer crowds and lower prices. The weather is often still pleasant, and attractions feel more intimate.`
 ])}
 
 ${h2('Meeting Other Travelers')}
 
 ${pick([
-  `Cafes, hostels, and walking tours in ${d.n} are natural meeting points for solo travelers from around the world.`,
-  `Join local events and meetups to connect with both locals and fellow travelers in ${d.n}.`,
-  `Social media groups dedicated to ${d.n} travel are great for finding travel buddies and getting real-time advice.`
+  `Cafes, hostels, and walking tours in ${d.n} are natural meeting points for solo travelers from around the world. A simple conversation over coffee can lead to shared adventures.`,
+  `Join local events and meetups to connect with both locals and fellow travelers in ${d.n}. Language exchanges and cooking classes are especially welcoming.`,
+  `Social media groups dedicated to ${d.n} travel are great for finding travel buddies and getting real-time advice from people who are already there.`
+])}
+
+${h2('Solo Dining and Evenings')}
+
+${pick([
+  `Eating alone in ${d.n} is perfectly normal and often enjoyable. Bring a book, sit at the bar, or simply people-watch while savoring your meal.`,
+  `Evening activities like night markets, live music venues, and cultural performances are ideal for solo travelers in ${d.n} — you can soak up the atmosphere without needing company.`
 ])}
 
 ${cta()}`;
@@ -518,10 +533,10 @@ ${cta()}`;
 ${h2('Kid-Friendly Activities')}
 
 ${bullet(
-  `Interactive museums and cultural centers that engage children of all ages`,
-  `Outdoor adventures like parks, beaches, and nature reserves perfect for burning energy`,
-  `Animal encounters and wildlife experiences that educate and entertain`,
-  `Hands-on workshops where kids can learn local crafts and traditions`
+  `Interactive museums and cultural centers that engage children of all ages with hands-on exhibits`,
+  `Outdoor adventures like parks, beaches, and nature reserves perfect for burning energy and exploring together`,
+  `Animal encounters and wildlife experiences that educate and entertain the whole family`,
+  `Hands-on workshops where kids can learn local crafts and traditions while parents enjoy watching them create`
 )}
 
 ${imgAlt(`Family travel in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -529,20 +544,27 @@ ${imgAlt(`Family travel in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Family Accommodation Tips')}
 
 ${pick([
-  `Look for family rooms or connecting rooms in ${d.n} to keep everyone together while maintaining some privacy.`,
-  `Apartments and vacation rentals in ${d.n} often offer better value for families, with kitchen facilities and extra space.`,
-  `All-inclusive resorts in ${d.n} can be a stress-free option, with meals, activities, and childcare included.`,
-  `Book accommodations near public transport to make getting around ${d.n} easier with children.`
+  `Look for family rooms or connecting rooms in ${d.n} to keep everyone together while maintaining some privacy. Many hotels offer cribs and high chairs on request.`,
+  `Apartments and vacation rentals in ${d.n} often offer better value for families, with kitchen facilities and extra space for everyone to spread out.`,
+  `All-inclusive resorts in ${d.n} can be a stress-free option, with meals, activities, and childcare included — perfect for parents who want a break too.`,
+  `Book accommodations near public transport to make getting around ${d.n} easier with children. A central location saves time and reduces travel fatigue.`
 ])}
 
 ${h2('Packing for Kids')}
 
 ${bullet(
-  'Pack snacks and entertainment for transit times',
-  'Bring comfortable walking shoes for everyone',
-  'Carry a small first-aid kit with familiar medications',
-  'Pack light but include comfort items from home'
+  'Pack snacks and entertainment for transit times — hungry or bored kids make travel harder',
+  'Bring comfortable walking shoes for everyone, including water-friendly options if beaches are on the itinerary',
+  'Carry a small first-aid kit with familiar medications, plasters, and any prescription essentials',
+  'Pack light but include comfort items from home — a favorite toy or blanket can make unfamiliar places feel safe'
 )}
+
+${h2('Keeping Everyone Happy')}
+
+${pick([
+  `Build downtime into your ${d.n} itinerary. Kids tire faster than adults, and a relaxed pace leads to better memories than a packed schedule.`,
+  `Let each family member choose one activity for the trip. When everyone has something to look forward to, the whole experience becomes more enjoyable.`
+])}
 
 ${cta()}`;
       break;
@@ -557,10 +579,10 @@ ${cta()}`;
 ${h2('Most Romantic Spots')}
 
 ${bullet(
-  `Sunset viewpoints that offer breathtaking panoramas over ${d.n}`,
-  `Secluded beaches and hidden coves perfect for private moments`,
-  `Candlelit restaurants serving the finest local cuisine`,
-  `Scenic walks through charming neighborhoods and historic streets`
+  `Sunset viewpoints that offer breathtaking panoramas over ${d.n} — bring a blanket and a bottle of wine`,
+  `Secluded beaches and hidden coves perfect for private moments away from the crowds`,
+  `Candlelit restaurants serving the finest local cuisine in intimate, softly lit settings`,
+  `Scenic walks through charming neighborhoods and historic streets hand in hand`
 )}
 
 ${imgAlt(`Romantic ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -568,19 +590,26 @@ ${imgAlt(`Romantic ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Romantic Activities')}
 
 ${pick([
-  `A private boat tour around ${d.n} at sunset is the perfect way to create lasting memories together.`,
-  `Couples spa treatments using local ingredients offer relaxation and rejuvenation in ${d.n}.`,
-  `Cooking classes for two let you learn the secrets of ${d.c}'s cuisine while bonding over delicious food.`,
-  `Hot air balloon rides over ${d.n} provide a magical perspective that you will never forget.`
+  `A private boat tour around ${d.n} at sunset is the perfect way to create lasting memories together. The golden light reflecting off the water creates a scene you will both treasure forever.`,
+  `Couples spa treatments using local ingredients offer relaxation and rejuvenation in ${d.n}. Book a side-by-side massage for the ultimate shared experience.`,
+  `Cooking classes for two let you learn the secrets of ${d.c}'s cuisine while bonding over delicious food. You will laugh, learn, and eat well — the perfect date.`,
+  `Hot air balloon rides over ${d.n} provide a magical perspective that you will never forget. Watching the landscape unfold beneath you at sunrise is pure romance.`
 ])}
 
 ${h2('Where to Stay')}
 
 ${pick([
-  `Boutique hotels in ${d.n} offer intimate settings with personalized service perfect for couples.`,
-  `Luxury resorts with private pools and ocean views create the ultimate romantic atmosphere in ${d.n}.`,
-  `Charming bed and breakfasts in ${d.n} provide cozy accommodations with home-cooked breakfasts.`,
-  `Villa rentals offer privacy and space for couples who want to create their own romantic retreat in ${d.n}.`
+  `Boutique hotels in ${d.n} offer intimate settings with personalized service perfect for couples. Look for properties with rooftop terraces or garden courtyards.`,
+  `Luxury resorts with private pools and ocean views create the ultimate romantic atmosphere in ${d.n}. Splurge on a suite with a balcony for breakfast with a view.`,
+  `Charming bed and breakfasts in ${d.n} provide cozy accommodations with home-cooked breakfasts. The personal touch makes these stays feel extra special.`,
+  `Villa rentals offer privacy and space for couples who want to create their own romantic retreat in ${d.n}. A private kitchen means candlelit dinners without leaving your room.`
+])}
+
+${h2('Planning the Perfect Evening')}
+
+${pick([
+  `Start with pre-dinner drinks at a rooftop bar overlooking ${d.n}, then move to a reservation at a restaurant known for both its food and its atmosphere.`,
+  `Surprise your partner with a picnic at one of ${d.n}'s scenic spots. Local cheeses, fresh bread, and a sunset view make for an unforgettable evening.`
 ])}
 
 ${cta()}`;
@@ -635,10 +664,10 @@ ${cta()}`;
 ${h2('Luxury Accommodation')}
 
 ${bullet(
-  `Five-star resorts with private beaches and butler service`,
-  `Boutique hotels housed in historic buildings with modern amenities`,
-  `Private villas with infinity pools and panoramic views`,
-  `Exclusive retreats offering spa treatments and wellness programs`
+  `Five-star resorts with private beaches and butler service where every need is anticipated before you ask`,
+  `Boutique hotels housed in historic buildings with modern amenities and impeccable design`,
+  `Private villas with infinity pools and panoramic views that make waking up a pleasure`,
+  `Exclusive retreats offering personalized spa treatments and wellness programs tailored to you`
 )}
 
 ${imgAlt(`Luxury in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -646,19 +675,26 @@ ${imgAlt(`Luxury in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Exclusive Experiences')}
 
 ${pick([
-  `Private guided tours of ${d.n}'s most iconic landmarks, away from the crowds and at your own pace.`,
-  `Helicopter tours offering breathtaking aerial views of ${d.n}'s most spectacular scenery.`,
-  `Yacht charters for exploring hidden coves and islands around ${d.n} in complete privacy.`,
-  `Michelin-starred dining experiences showcasing the finest culinary traditions of ${d.c}.`
+  `Private guided tours of ${d.n}'s most iconic landmarks, away from the crowds and at your own pace. Your expert guide shares stories that few visitors ever hear.`,
+  `Helicopter tours offering breathtaking aerial views of ${d.n}'s most spectacular scenery. The perspective from above reveals patterns and beauty invisible from the ground.`,
+  `Yacht charters for exploring hidden coves and islands around ${d.n} in complete privacy. A dedicated crew handles everything while you relax.`,
+  `Michelin-starred dining experiences showcasing the finest culinary traditions of ${d.c}. Multi-course tasting menus paired with exceptional wines create unforgettable evenings.`
 ])}
 
 ${h2('VIP Services')}
 
 ${pick([
-  `Personal concierge services in ${d.n} can arrange everything from restaurant reservations to private transportation.`,
-  `Fast-track airport services ensure seamless arrivals and departures from ${d.n}.`,
-  `Private chefs and in-villa dining bring gourmet experiences directly to your accommodation in ${d.n}.`,
-  `Luxury car rentals let you explore ${d.n} in style and comfort.`
+  `Personal concierge services in ${d.n} can arrange everything from restaurant reservations to private transportation. Nothing is too small or too ambitious.`,
+  `Fast-track airport services ensure seamless arrivals and departures from ${d.n}. Skip queues and start your holiday the moment you land.`,
+  `Private chefs and in-villa dining bring gourmet experiences directly to your accommodation in ${d.n}. Breakfast on your terrace has never tasted this good.`,
+  `Luxury car rentals let you explore ${d.n} in style and comfort. A chauffeur-driven vehicle means you can enjoy the scenery without worrying about navigation.`
+])}
+
+${h2('When to Splurge')}
+
+${pick([
+  `A private sunset dinner on a secluded beach in ${d.n} is worth every penny. The combination of exceptional food, perfect setting, and total privacy creates a memory that lasts forever.`,
+  `Upgrade to a suite with an ocean view in ${d.n}. Waking up to that panorama each morning transforms an ordinary trip into an extraordinary one.`
 ])}
 
 ${cta()}`;
@@ -674,10 +710,10 @@ ${cta()}`;
 ${h2('Extreme Sports')}
 
 ${bullet(
-  `Skydiving and paragliding over ${d.n}'s stunning landscapes`,
-  `White-water rafting on raging rivers that cut through ${d.n}`,
-  `Rock climbing and bouldering on world-class routes`,
-  `Bungee jumping from iconic bridges and platforms`
+  `Skydiving and paragliding over ${d.n}'s stunning landscapes — see the world from a perspective few ever experience`,
+  `White-water rafting on raging rivers that cut through ${d.n}'s dramatic terrain`,
+  `Rock climbing and bouldering on world-class routes that challenge every skill level`,
+  `Bungee jumping from iconic bridges and platforms that test your courage`
 )}
 
 ${imgAlt(`Adventure in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -685,20 +721,27 @@ ${imgAlt(`Adventure in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Wilderness Expeditions')}
 
 ${pick([
-  `Multi-day treks through ${d.n}'s remote wilderness offer a true test of endurance and reward with incredible scenery.`,
-  `Wildlife safaris in ${d.n} bring you face-to-face with some of the world's most magnificent animals in their natural habitat.`,
-  `Caving expeditions reveal hidden underground worlds beneath ${d.n} that few travelers ever see.`,
-  `Mountain expeditions in ${d.n} challenge experienced climbers with technical routes and high altitudes.`
+  `Multi-day treks through ${d.n}'s remote wilderness offer a true test of endurance and reward with incredible scenery. Pack light, prepare for changing weather, and embrace the solitude.`,
+  `Wildlife safaris in ${d.n} bring you face-to-face with some of the world's most magnificent animals in their natural habitat. Early mornings yield the best sightings.`,
+  `Caving expeditions reveal hidden underground worlds beneath ${d.n} that few travelers ever see. Stalactites, underground rivers, and vast chambers await.`,
+  `Mountain expeditions in ${d.n} challenge experienced climbers with technical routes and high altitudes. Proper acclimatization and local guides are essential.`
 ])}
 
 ${h2('Water Adventures')}
 
 ${bullet(
-  'Scuba diving in crystal-clear waters with vibrant marine life',
-  'Surfing legendary breaks that attract pros from around the world',
-  'Kayaking through dramatic fjords and along rugged coastlines',
-  'Snorkeling over coral reefs teeming with colorful fish'
+  'Scuba diving in crystal-clear waters with vibrant marine life and coral gardens',
+  'Surfing legendary breaks that attract pros from around the world — lessons available for beginners',
+  'Kayaking through dramatic fjords and along rugged coastlines at your own pace',
+  'Snorkeling over coral reefs teeming with colorful fish — no certification required'
 )}
+
+${h2('Planning Your Adventure')}
+
+${pick([
+  `Research operators carefully in ${d.n}. The best adventure companies prioritize safety, employ certified guides, and maintain equipment to high standards.`,
+  `Travel insurance that covers adventure activities is essential for ${d.n}. Standard policies often exclude extreme sports, so read the fine print.`
+])}
 
 ${cta()}`;
       break;
@@ -713,10 +756,10 @@ ${cta()}`;
 ${h2('Must-Try Dishes')}
 
 ${bullet(
-  `Signature street food that locals eat daily`,
-  `Traditional dishes passed down through generations`,
-  `Regional specialties unique to ${d.n}`,
-  `Modern interpretations of classic ${d.c} cuisine`
+  `Signature street food that locals eat daily — often the most authentic flavors in the city`,
+  `Traditional dishes passed down through generations, each with a story behind its creation`,
+  `Regional specialties unique to ${d.n} that you simply cannot find anywhere else`,
+  `Modern interpretations of classic ${d.c} cuisine by innovative young chefs`
 )}
 
 ${imgAlt(`Food in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -724,20 +767,27 @@ ${imgAlt(`Food in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Best Food Experiences')}
 
 ${pick([
-  `Night markets in ${d.n} are a feast for the senses, with stall after stall of sizzling, aromatic dishes.`,
-  `Cooking classes in ${d.n} teach you the secrets behind ${d.c}'s most beloved recipes.`,
-  `Food tours led by local guides reveal hidden culinary gems that tourists rarely discover.`,
-  `Farm-to-table restaurants in ${d.n} showcase the freshest local ingredients in creative preparations.`
+  `Night markets in ${d.n} are a feast for the senses, with stall after stall of sizzling, aromatic dishes. Arrive hungry and sample a little of everything.`,
+  `Cooking classes in ${d.n} teach you the secrets behind ${d.c}'s most beloved recipes. You will learn techniques and ingredient combinations that transform your home cooking.`,
+  `Food tours led by local guides reveal hidden culinary gems that tourists rarely discover. These stories add depth to every bite.`,
+  `Farm-to-table restaurants in ${d.n} showcase the freshest local ingredients in creative preparations. The menu changes with the seasons, so every visit is unique.`
 ])}
 
 ${h2('Dining Tips')}
 
 ${bullet(
-  'Ask locals for recommendations — they know the best hidden spots',
-  'Try the daily specials at local restaurants for authentic flavors',
-  'Visit markets early in the morning for the freshest produce',
-  'Do not be afraid to try unfamiliar dishes — surprises are often the best'
+  'Ask locals for recommendations — they know the best hidden spots that never appear in guidebooks',
+  'Try the daily specials at local restaurants for authentic flavors at their freshest',
+  'Visit markets early in the morning for the freshest produce and the liveliest atmosphere',
+  'Do not be afraid to try unfamiliar dishes — surprises are often the best meals of your trip'
 )}
+
+${h2('Drinks and Desserts')}
+
+${pick([
+  `Local beverages in ${d.n} tell their own story. From traditional teas to craft cocktails, drinks here reflect the region's history and creativity.`,
+  `Desserts in ${d.n} are an art form. Whether you prefer something light and refreshing or rich and indulgent, the local pastry scene will not disappoint.`
+])}
 
 ${cta()}`;
       break;
@@ -752,10 +802,10 @@ ${cta()}`;
 ${h2('Historical Sites')}
 
 ${bullet(
-  `Ancient temples and monuments that have stood for centuries`,
-  `Museums housing treasures of ${d.c}'s artistic and cultural heritage`,
-  `UNESCO World Heritage sites that preserve humanity's shared history`,
-  `Historic neighborhoods where the past comes alive`
+  `Ancient temples and monuments that have stood for centuries, bearing witness to the passage of time`,
+  `Museums housing treasures of ${d.c}'s artistic and cultural heritage — plan for at least half a day`,
+  `UNESCO World Heritage sites that preserve humanity's shared history in breathtaking settings`,
+  `Historic neighborhoods where the past comes alive in architecture, layout, and daily rituals`
 )}
 
 ${imgAlt(`Culture in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -763,20 +813,27 @@ ${imgAlt(`Culture in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Living Traditions')}
 
 ${pick([
-  `Festivals in ${d.n} bring ancient traditions to life with music, dance, and vibrant celebrations.`,
-  `Traditional craftspeople in ${d.n} keep centuries-old techniques alive through their daily work.`,
-  `Religious ceremonies in ${d.n} offer profound insights into the spiritual life of ${d.c}.`,
-  `Folk music and dance performances in ${d.n} preserve cultural stories for new generations.`
+  `Festivals in ${d.n} bring ancient traditions to life with music, dance, and vibrant celebrations. Check the calendar before you travel — timing your visit around a festival transforms the experience.`,
+  `Traditional craftspeople in ${d.n} keep centuries-old techniques alive through their daily work. Visiting their workshops offers a window into skills that are slowly disappearing.`,
+  `Religious ceremonies in ${d.n} offer profound insights into the spiritual life of ${d.c}. Observe respectfully and you may find moments of unexpected beauty.`,
+  `Folk music and dance performances in ${d.n} preserve cultural stories for new generations. The energy and emotion of live performances are impossible to replicate.`
 ])}
 
 ${h2('Art and Contemporary Culture')}
 
 ${bullet(
-  'Contemporary art galleries showcasing emerging local artists',
-  'Street art tours revealing urban creativity and social commentary',
-  'Theater and performance venues blending tradition with innovation',
+  'Contemporary art galleries showcasing emerging local artists who reinterpret tradition through modern lenses',
+  'Street art tours revealing urban creativity and social commentary in unexpected places',
+  'Theater and performance venues blending tradition with innovation in captivating ways',
   'Design districts where local artisans create modern interpretations of classic crafts'
 )}
+
+${h2('Respectful Travel')}
+
+${pick([
+  `Learn a few basic phrases in the local language before visiting ${d.n}. Even a simple greeting opens doors and shows respect.`,
+  `Dress modestly when visiting religious or traditional sites in ${d.n}. Observing local customs is a small gesture that goes a long way.`
+])}
 
 ${cta()}`;
       break;
@@ -791,10 +848,10 @@ ${cta()}`;
 ${h2('Day 1: Arrival and Exploration')}
 
 ${bullet(
-  `Check into your accommodation and get your bearings with a leisurely walk`,
-  `Visit the most iconic landmark for that perfect first impression`,
-  `Enjoy lunch at a local favorite restaurant`,
-  `Spend the afternoon exploring the main cultural or historic district`
+  `Check into your accommodation and get your bearings with a leisurely walk around the neighborhood`,
+  `Visit the most iconic landmark for that perfect first impression and those must-have photos`,
+  `Enjoy lunch at a local favorite restaurant — ask your hotel for recommendations`,
+  `Spend the afternoon exploring the main cultural or historic district at a relaxed pace`
 )}
 
 ${imgAlt(`Weekend in ${d.n}`, getImgInline(cache, seed, d, template))}
@@ -802,19 +859,26 @@ ${imgAlt(`Weekend in ${d.n}`, getImgInline(cache, seed, d, template))}
 ${h2('Day 2: Adventure and Departure')}
 
 ${bullet(
-  `Start early with a sunrise activity or scenic viewpoint`,
-  `Explore a neighborhood off the beaten tourist path`,
-  `Indulge in a memorable farewell meal featuring local specialties`,
-  `Pick up souvenirs at a local market before heading home`
+  `Start early with a sunrise activity or scenic viewpoint — the morning light is worth the alarm`,
+  `Explore a neighborhood off the beaten tourist path where locals actually live and work`,
+  `Indulge in a memorable farewell meal featuring local specialties you cannot find at home`,
+  `Pick up souvenirs at a local market before heading home — support small businesses and bring back stories`
 )}
 
 ${h2('Pro Tips for Weekend Travel')}
 
 ${pick([
-  `Book accommodation centrally in ${d.n} to minimize transit time and maximize exploration time.`,
-  `Make restaurant reservations in advance, especially for popular spots in ${d.n}.`,
-  `Use public transport apps to navigate ${d.n} efficiently during your short stay.`,
-  `Pack light so you can move quickly and avoid wasting time at baggage claim.`
+  `Book accommodation centrally in ${d.n} to minimize transit time and maximize exploration time. A good location is more important than luxury for a short trip.`,
+  `Make restaurant reservations in advance, especially for popular spots in ${d.n}. Weekend tables fill up fast.`,
+  `Use public transport apps to navigate ${d.n} efficiently during your short stay. Buy day passes to save money and time.`,
+  `Pack light so you can move quickly and avoid wasting time at baggage claim. A carry-on bag is your best friend for weekend trips.`
+])}
+
+${h2('Making It Memorable')}
+
+${pick([
+  `Even with just two days, ${d.n} can leave a lasting impression. Focus on quality over quantity — one deeply experienced moment beats five rushed ones.`,
+  `Leave some room for spontaneity in your ${d.n} itinerary. The best weekend memories often come from unplanned discoveries.`
 ])}
 
 ${cta()}`;
