@@ -20,6 +20,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
+import usePageSeo from '../hooks/usePageSeo';
 
 // Map a Firestore place doc to an editable planner stop.
 function placeToStop(p) {
@@ -119,7 +120,7 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
               <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Explore {regionName} ✨</h2>
               <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>Pick the spots you want to visit</p>
             </div>
-            <button onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#9ca3af', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
+            <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
           </div>
         </div>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
@@ -175,7 +176,7 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
             )}
             
             {!loading && (
-              <button onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:12, width:'100%' }}>
+              <button type="button" onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:12, width:'100%' }}>
                 + Load more places
               </button>
             )}
@@ -183,9 +184,9 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
           )}
         </div>
         <div style={{ padding: isMobile ? '12px 16px' : '16px 24px', borderTop:'1px solid #f1f5f9', flexShrink:0 }}>
-          <button disabled={pickedCount === 0}
+          <button type="button" disabled={pickedCount === 0}
             onClick={() => onConfirm(places.filter((_, i) => selected[i]))}
-            style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#9ca3af', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
+            style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#6b7280', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
             Add {pickedCount > 0 ? `${pickedCount} place${pickedCount>1?'s':''}` : 'places'} to trip
           </button>
         </div>
@@ -253,7 +254,7 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
         <div style={{ padding: isMobile ? 20 : 24 }}>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:20 }}>
             <h2 style={{ fontSize: isMobile ? 16 : 18, fontWeight:800, color:'#0f172a', margin:0 }}>Add a stop</h2>
-            <button onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#9ca3af', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={20}/></button>
+            <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={20}/></button>
           </div>
           <input ref={inputRef} value={input} onChange={e => { setInput(e.target.value); setSelectedPlaceInfo(null); }} placeholder="e.g. Puducherry  or  Hotel Amigos"
             style={{ width:'100%', padding:'12px 16px', borderRadius:12, border:'1.5px solid #e2e8f0', fontSize:16, outline:'none', marginBottom:20, boxSizing:'border-box', color:'#0f172a' }}
@@ -276,8 +277,8 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
             </div>
           </div>
 
-          <button disabled={!input.trim() || !mode} onClick={handleSubmit}
-            style={{ width:'100%', padding:'13px', borderRadius:12, border:'none', background: (!input.trim()||!mode)?'#e2e8f0':'linear-gradient(135deg,#1E3A8A,#1E3A8A)', color:(!input.trim()||!mode)?'#9ca3af':'#fff', fontWeight:700, fontSize:15, cursor:(!input.trim()||!mode)?'default':'pointer', transition:'all 200ms', minHeight:44 }}>
+          <button type="button" disabled={!input.trim() || !mode} onClick={handleSubmit}
+            style={{ width:'100%', padding:'13px', borderRadius:12, border:'none', background: (!input.trim()||!mode)?'#e2e8f0':'linear-gradient(135deg,#1E3A8A,#1E3A8A)', color:(!input.trim()||!mode)?'#6b7280':'#fff', fontWeight:700, fontSize:15, cursor:(!input.trim()||!mode)?'default':'pointer', transition:'all 200ms', minHeight:44 }}>
             {mode==='region' ? '🗺️ Explore places' : mode==='specific' ? '📍 Add stop' : 'Select type above'}
           </button>
         </div>
@@ -358,7 +359,7 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
               <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Must-visits on the way 🚗</h2>
               <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>Between {fromName} & {toName}</p>
             </div>
-            <button onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#9ca3af', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
+            <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
           </div>
         </div>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
@@ -411,16 +412,16 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
             )}
             
             {!loading && (
-              <button onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:8, width:'100%' }}>
+              <button type="button" onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:8, width:'100%' }}>
                 + Load more places
               </button>
             )}
           </div>
         </div>
         <div style={{ padding: isMobile ? '12px 16px' : '16px 24px', borderTop:'1px solid #f1f5f9', flexShrink:0 }}>
-          <button disabled={pickedCount === 0}
+          <button type="button" disabled={pickedCount === 0}
             onClick={() => onConfirm(places.filter((_, i) => selected[i]))}
-            style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#9ca3af', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
+            style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#6b7280', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
             Add {pickedCount > 0 ? `${pickedCount} place${pickedCount>1?'s':''}` : 'places'} to trip
           </button>
         </div>
@@ -821,10 +822,10 @@ function PlannerContent({ onOpenMap }) {
                         <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0, marginLeft: isMobile ? 60 : 0 }}>
                           {/* Reorder buttons */}
                           <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
-                            <button onClick={() => moveStop(realIndex, -1)} disabled={realIndex === 0} title="Move up" aria-label="Move stop up" style={{ background:'none', border:'none', cursor: realIndex === 0 ? 'default' : 'pointer', color: realIndex === 0 ? '#cbd5e1' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
+                            <button type="button" onClick={() => moveStop(realIndex, -1)} disabled={realIndex === 0} title="Move up" aria-label="Move stop up" style={{ background:'none', border:'none', cursor: realIndex === 0 ? 'default' : 'pointer', color: realIndex === 0 ? '#94a3b8' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
                               <ArrowUp size={14} />
                             </button>
-                            <button onClick={() => moveStop(realIndex, 1)} disabled={realIndex === stops.length - 1} title="Move down" aria-label="Move stop down" style={{ background:'none', border:'none', cursor: realIndex === stops.length - 1 ? 'default' : 'pointer', color: realIndex === stops.length - 1 ? '#cbd5e1' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
+                            <button type="button" onClick={() => moveStop(realIndex, 1)} disabled={realIndex === stops.length - 1} title="Move down" aria-label="Move stop down" style={{ background:'none', border:'none', cursor: realIndex === stops.length - 1 ? 'default' : 'pointer', color: realIndex === stops.length - 1 ? '#94a3b8' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
                               <ArrowDown size={14} />
                             </button>
                           </div>
@@ -835,7 +836,7 @@ function PlannerContent({ onOpenMap }) {
                               style={{ width:isMobile ? 60 : 52, border:'none', background:'transparent', fontSize:16, fontWeight:700, color:'#0f172a', outline:'none', textAlign:'center' }}/>
                             <span style={{ fontSize:11, color:'#64748b' }}>min</span>
                           </div>
-                          <button onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
+                          <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
                         </div>
                       )}
                       {isReal && isGuest && (
@@ -852,7 +853,7 @@ function PlannerContent({ onOpenMap }) {
                 {/* Route suggestions between real consecutive stops — hidden for guests */}
                 {isReal && !isGuest && realIndex < stops.length - 1 && stops[realIndex + 1] && (
                   <div style={{ margin: isMobile ? '4px 0 4px 44px' : '4px 0 4px 48px' }}>
-                    <button onClick={() => setRouteModal({ fromName: stop.name, toName: stops[realIndex + 1].name, afterIndex: realIndex, fromCoords: stop.lat ? { lat: stop.lat, lng: stop.lng } : null, toCoords: stops[realIndex + 1]?.lat ? { lat: stops[realIndex + 1].lat, lng: stops[realIndex + 1].lng } : null })} className="planner-route-btn">
+                    <button type="button" onClick={() => setRouteModal({ fromName: stop.name, toName: stops[realIndex + 1].name, afterIndex: realIndex, fromCoords: stop.lat ? { lat: stop.lat, lng: stop.lng } : null, toCoords: stops[realIndex + 1]?.lat ? { lat: stops[realIndex + 1].lat, lng: stops[realIndex + 1].lng } : null })} className="planner-route-btn">
                       <Route size={12}/> See must-visits on the way
                     </button>
                   </div>
@@ -864,7 +865,7 @@ function PlannerContent({ onOpenMap }) {
 
         {/* Add stop button — hidden for guests */}
         {!isGuest && (
-          <button onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>
+          <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>
             <Plus size={18}/> Add stop
           </button>
         )}
@@ -883,7 +884,7 @@ function PlannerContent({ onOpenMap }) {
               {/* Quick suggestion chips */}
               <div style={{ display:'flex', gap:6, flexWrap:'wrap', marginBottom:10 }}>
                 {['cafe', 'restaurant', 'temple', 'museum', 'park', 'hotel', 'beach', 'mall', 'ATM', 'pharmacy'].map(chip => (
-                  <button key={chip} onClick={async () => {
+                  <button type="button" key={chip} onClick={async () => {
                     setNearbyQuery(chip);
                     if (!stops.find(s=>s.lat)) return;
                     setLoadingNearby(true);
@@ -919,7 +920,7 @@ function PlannerContent({ onOpenMap }) {
                     placeholder="e.g. cafe, temple…"
                   />
                 </div>
-                <button
+                <button type="button"
                   onClick={async () => {
                     if (!nearbyQuery.trim() || !stops.find(s=>s.lat)) return;
                     setLoadingNearby(true);
@@ -946,7 +947,7 @@ function PlannerContent({ onOpenMap }) {
                       </ReadMore>
                       {r.rating && <div style={{ fontSize:10, color:'#f59e0b', marginTop:2 }}>⭐ {r.rating}</div>}
                     </div>
-                    <button 
+                    <button type="button" 
                       onClick={(e) => { e.stopPropagation(); addSpecificStop(r.name, { ...r, formatted: r.description }); }}
                       style={{ flexShrink:0, background:'#EEF3FC', color:'#1E3A8A', border:'none', borderRadius:8, padding:'6px 10px', fontSize:12, fontWeight:700, cursor:'pointer', alignSelf:'center' }}>
                       + Add
@@ -962,7 +963,7 @@ function PlannerContent({ onOpenMap }) {
           {isGuest ? (
             <div style={{ textAlign: 'center', padding: '4px 0' }}>
               <div style={{ fontSize: 13, color: '#64748b', marginBottom: 12 }}>🔒 Join this trip to edit the plan</div>
-              <button 
+              <button type="button" 
                 onClick={() => navigate(`/trip/${selectedTrip.id}/itinerary`)}
                 className="planner-build-btn"
                 style={{ background: '#f8fafc', color: '#334155', border: '1px solid #e2e8f0', cursor: 'pointer' }}
@@ -977,7 +978,7 @@ function PlannerContent({ onOpenMap }) {
             const isDisabled = (!isAlreadyBuilt && !canBuild) || saving;
             
             return (
-              <button 
+              <button type="button" 
                 onClick={isAlreadyBuilt ? () => navigate(`/trip/${selectedTrip.id}/itinerary`) : saveAndGo} 
                 disabled={isDisabled} 
                 className={`planner-build-btn ${isAlreadyBuilt ? 'is-built' : ''}`} 
@@ -1018,6 +1019,7 @@ function PlannerContent({ onOpenMap }) {
 }
 
 export default function PlannerPage() {
+  usePageSeo({ title: 'Trip Planner', robots: 'noindex, nofollow' });
   const [showMap, setShowMap] = useState(false);
   // The map needs Google Maps. Without a key, never mount MapView (its
   // <Map> would render outside an APIProvider and crash) or its toggle.

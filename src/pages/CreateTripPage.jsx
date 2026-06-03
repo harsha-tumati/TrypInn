@@ -8,6 +8,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
+import usePageSeo from '../hooks/usePageSeo';
 
 // ── Production-grade Google Places Autocomplete ──────────────────────────────
 function LocationAutocomplete({ value, onChange, onSelect, placeholder, id }) {
@@ -179,8 +180,8 @@ function CreateTripForm() {
                 <form onSubmit={handleCreate} style={{ padding: isMobile ? '20px 16px' : 24, display: 'flex', flexDirection: 'column', gap: 18 }}>
                     {/* Trip Name */}
                     <div>
-                        <label className="input-label">Trip Name</label>
-                        <input className="input-field" placeholder="e.g. Goa Getaway 2025" value={form.name} onChange={e => update('name', e.target.value)} style={{ minHeight: 44 }} />
+                        <label className="input-label" htmlFor="trip-name">Trip Name</label>
+                        <input id="trip-name" className="input-field" placeholder="e.g. Goa Getaway 2025" value={form.name} onChange={e => update('name', e.target.value)} style={{ minHeight: 44 }} />
                     </div>
 
                     {/* Starting & Ending point */}
@@ -211,18 +212,19 @@ function CreateTripForm() {
 
                     {/* Destination / Route */}
                     <div>
-                        <label className="input-label">
+                        <label className="input-label" htmlFor="trip-destination">
                             Destination / Route <span className="form-hint">(optional — add stops in the planner)</span>
                         </label>
-                        <input className="input-field" placeholder="e.g. Goa, Puducherry — or leave blank" value={form.destination} onChange={e => update('destination', e.target.value)} style={{ minHeight: 44 }} />
+                        <input id="trip-destination" className="input-field" placeholder="e.g. Goa, Puducherry — or leave blank" value={form.destination} onChange={e => update('destination', e.target.value)} style={{ minHeight: 44 }} />
                     </div>
 
                     {/* Description / Overview */}
                     <div>
-                        <label className="input-label">
+                        <label className="input-label" htmlFor="trip-description">
                             Trip Overview <span className="form-hint">(optional)</span>
                         </label>
                         <textarea
+                            id="trip-description"
                             className="input-field"
                             placeholder="Describe your trip plans, goals, or anything your group should know..."
                             value={form.description}
@@ -250,10 +252,10 @@ function CreateTripForm() {
 
                     {/* Budget */}
                     <div>
-                        <label className="input-label">Budget <span className="form-hint">(optional)</span></label>
+                        <label className="input-label" htmlFor="trip-budget">Budget <span className="form-hint">(optional)</span></label>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                             <span style={{ color: 'var(--color-primary-light)', fontWeight: 700, fontSize: 18 }}>₹</span>
-                            <input className="input-field" type="number" placeholder="15000" value={form.budget} onChange={e => update('budget', e.target.value)} style={{ minHeight: 44, flex: 1 }} />
+                            <input id="trip-budget" className="input-field" type="number" placeholder="15000" value={form.budget} onChange={e => update('budget', e.target.value)} style={{ minHeight: 44, flex: 1 }} />
                         </div>
                     </div>
 
@@ -276,6 +278,7 @@ function CreateTripForm() {
 }
 
 export default function CreateTripPage() {
+    usePageSeo({ title: 'Create a Trip', robots: 'noindex, nofollow' });
     return (
         <MapsProvider>
             <CreateTripForm />

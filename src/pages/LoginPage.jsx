@@ -5,8 +5,10 @@ import { useAuth } from '../context/AuthContext';
 import { firebaseConfigured } from '../config/firebase';
 import { Map, Vote, Calendar, MessageCircle, Wallet, AlertTriangle } from 'lucide-react';
 import BrandMark from '../components/BrandMark';
+import usePageSeo from '../hooks/usePageSeo';
 
 export default function LoginPage() {
+    usePageSeo({ title: 'Log in to Trypinn', robots: 'noindex, nofollow' });
     const { user, signInWithGoogle } = useAuth();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -96,7 +98,7 @@ export default function LoginPage() {
 
                 {error && <div className="login-error" role="alert">{error}</div>}
 
-                <button
+                <button type="button"
                     onClick={handleGoogleSignIn}
                     disabled={loading || !firebaseConfigured}
                     className="login-google-btn"

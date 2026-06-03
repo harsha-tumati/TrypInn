@@ -92,6 +92,7 @@ export default function PlacesPicker({ places, onChange, id, autoFocus = false }
                     onChange={(e) => setDraft(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder={MAPS_ENABLED ? 'Search a place to add…' : 'Type a place, press Enter to add'}
+                    aria-label={MAPS_ENABLED ? 'Search a place to add' : 'Type a place and press Enter to add'}
                     className="location-input"
                 />
             </div>

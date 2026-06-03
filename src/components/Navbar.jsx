@@ -93,7 +93,7 @@ export default function Navbar() {
                                     <div className="profile-dropdown-email">{userProfile?.email || ''}</div>
                                 </div>
                                 <div className="profile-dropdown-divider"></div>
-                                <button className="profile-signout-btn" onClick={handleSignOut} role="menuitem">
+                                <button type="button" className="profile-signout-btn" onClick={handleSignOut} role="menuitem">
                                     <LogOut size={16} aria-hidden="true" />
                                     <span>Sign Out</span>
                                 </button>

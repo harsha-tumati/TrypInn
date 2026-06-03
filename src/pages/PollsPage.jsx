@@ -5,8 +5,10 @@ import { useAuth } from '../context/AuthContext';
 import { useGuestMode } from '../context/GuestModeContext';
 import { castVote, closePoll } from '../services/firestoreService';
 import { BarChart3, Crown, Sparkles, Vote } from 'lucide-react';
+import usePageSeo from '../hooks/usePageSeo';
 
 export default function PollsPage() {
+    usePageSeo({ title: 'Trip Polls', robots: 'noindex, nofollow' });
     const { polls, places, selectedTrip } = useTrip();
     const { user } = useAuth();
     const isGuest = useGuestMode();

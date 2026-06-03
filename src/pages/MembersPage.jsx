@@ -3,8 +3,10 @@ import { useTrip } from '../context/TripContext';
 import { Users, Shield, Link as LinkIcon, Check } from 'lucide-react';
 import { useState } from 'react';
 import { useGuestMode } from '../context/GuestModeContext';
+import usePageSeo from '../hooks/usePageSeo';
 
 export default function MembersPage() {
+    usePageSeo({ title: 'Trip Members', robots: 'noindex, nofollow' });
     const { members, selectedTrip } = useTrip();
     const isGuest = useGuestMode();
     const [copied, setCopied] = useState(false);

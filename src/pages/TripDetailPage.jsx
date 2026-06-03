@@ -20,6 +20,7 @@ import PlaceThumb from '../components/PlaceThumb';
 import { Sparkles, Search, Plus, X, Trash2, ExternalLink, Globe, Navigation, LocateFixed, StopCircle, ArrowUp, ArrowDown, Route as RouteIcon, ChevronLeft } from 'lucide-react';
 import { TRENDING } from './TripsPage';
 import { useIsMobile } from '../hooks/useIsMobile';
+import usePageSeo from '../hooks/usePageSeo';
 
 const markerColors = { ai: '#EA4335', food: '#F29900', hidden_gem: '#34A853', nearby: '#4285F4', selected: '#EA4335', pinned: '#EA4335' };
 
@@ -41,8 +42,8 @@ function ImageCarousel({ images, name }) {
             <img src={images[idx]} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             {images.length > 1 && (
                 <>
-                    <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i === 0 ? images.length - 1 : i - 1)); }} aria-label="Previous photo" style={{ position: 'absolute', left: 4, top: '50%', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.5)', color: '#fff', border: 'none', borderRadius: '50%', width: arrowSize, height: arrowSize, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 36, minWidth: 36, WebkitTapHighlightColor: 'transparent' }}>‹</button>
-                    <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i === images.length - 1 ? 0 : i + 1)); }} aria-label="Next photo" style={{ position: 'absolute', right: 4, top: '50%', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.5)', color: '#fff', border: 'none', borderRadius: '50%', width: arrowSize, height: arrowSize, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 36, minWidth: 36, WebkitTapHighlightColor: 'transparent' }}>›</button>
+                    <button type="button" onClick={(e) => { e.stopPropagation(); setIdx(i => (i === 0 ? images.length - 1 : i - 1)); }} aria-label="Previous photo" style={{ position: 'absolute', left: 4, top: '50%', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.5)', color: '#fff', border: 'none', borderRadius: '50%', width: arrowSize, height: arrowSize, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 36, minWidth: 36, WebkitTapHighlightColor: 'transparent' }}>‹</button>
+                    <button type="button" onClick={(e) => { e.stopPropagation(); setIdx(i => (i === images.length - 1 ? 0 : i + 1)); }} aria-label="Next photo" style={{ position: 'absolute', right: 4, top: '50%', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.5)', color: '#fff', border: 'none', borderRadius: '50%', width: arrowSize, height: arrowSize, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 36, minWidth: 36, WebkitTapHighlightColor: 'transparent' }}>›</button>
                     <div style={{ position: 'absolute', bottom: 6, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 4 }}>
                         {images.map((_, i) => <div key={i} style={{ width: isMobile ? 8 : 6, height: isMobile ? 8 : 6, borderRadius: '50%', background: i === idx ? '#fff' : 'rgba(255,255,255,0.5)' }} />)}
                     </div>
@@ -53,6 +54,7 @@ function ImageCarousel({ images, name }) {
 }
 
 export default function MapView({ onExitMap, exitLabel = 'Back' }) {
+    usePageSeo({ title: 'Trip Map', robots: 'noindex, nofollow' });
     const { selectedTrip, setSelectedTrip, places, routeResult, setRouteResult, members } = useTrip();
     const { user } = useAuth();
     const isMobile = useIsMobile();
@@ -213,13 +215,12 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         }
     }
 
-    // Live Geolocation Tracking
+    // Live Geolocation Tracking — starts only after user opts in (avoids geolocation-on-start BP penalty)
+    const [isTrackingLocation, setIsTrackingLocation] = useState(false);
     useEffect(() => {
-        if (!tripActive || !user) return;
+        if (!tripActive || !user || !isTrackingLocation) return;
         let watchId;
         let lastUpdate = 0;
-        // Wrapped in a function so geolocation's own state updates are not
-        // flagged as synchronous setState in the effect body.
         const startTracking = () => {
             if (!('geolocation' in navigator)) {
                 setRouteError('Geolocation is not supported by your browser.');
@@ -248,7 +249,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         };
         startTracking();
         return () => { if (watchId) navigator.geolocation.clearWatch(watchId); };
-    }, [tripActive, trip?.id, user]);
+    }, [tripActive, trip?.id, user, isTrackingLocation]);
 
     // Personal Route Calculation
     useEffect(() => {
@@ -523,7 +524,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             <div style={{ display: 'flex', gap: 6, marginTop: 8 }}>
                                 {selectedPlace.isTemp ? (
                                     <>
-                                        <button className="btn btn-primary btn-sm" style={{ flex: 1, fontSize: 12, minHeight: 40 }}
+                                        <button type="button" className="btn btn-primary btn-sm" style={{ flex: 1, fontSize: 12, minHeight: 40 }}
                                             onClick={async () => {
                                                 await addPlaces(trip.id, [selectedPlace]);
                                                 setTemporarySuggestions(prev => prev.filter(p => p.name !== selectedPlace.name));
@@ -531,7 +532,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                             }}>
                                             + Add to trip
                                         </button>
-                                        <button className="btn btn-danger btn-sm" style={{ fontSize: 12, minHeight: 40 }}
+                                        <button type="button" className="btn btn-danger btn-sm" style={{ fontSize: 12, minHeight: 40 }}
                                             onClick={() => {
                                                 setTemporarySuggestions(prev => prev.filter(p => p.name !== selectedPlace.name));
                                                 setSelectedPlace(null);
@@ -541,11 +542,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                     </>
                                 ) : (
                                     <>
-                                        <button className="btn btn-secondary btn-sm" style={{ flex: 1, fontSize: 12, minHeight: 40 }}
+                                        <button type="button" className="btn btn-secondary btn-sm" style={{ flex: 1, fontSize: 12, minHeight: 40 }}
                                             onClick={() => togglePollPlace(selectedPlace.id)}>
                                             {pollPlaces.includes(selectedPlace.id) ? '🗳 In poll' : '+ Add to poll'}
                                         </button>
-                                        <button className="btn btn-danger btn-sm" aria-label="Remove place" style={{ fontSize: 12, minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                        <button type="button" className="btn btn-danger btn-sm" aria-label="Remove place" style={{ fontSize: 12, minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                                             onClick={() => { setConfirmDeletePlace(selectedPlace); setSelectedPlace(null); }}>
                                             <Trash2 size={14} />
                                         </button>
@@ -600,20 +601,20 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
             {/* Back to the Plan / Itinerary screen — top-right */}
             {onExitMap && (
-                <button className="tm-back" onClick={onExitMap} aria-label={`Back to ${exitLabel}`}>
+                <button type="button" className="tm-back" onClick={onExitMap} aria-label={`Back to ${exitLabel}`}>
                     <ChevronLeft size={17} aria-hidden="true" /> {exitLabel}
                 </button>
             )}
 
             {/* Floating controls — top-left */}
             <div className="tm-controls">
-                <button className="tm-ctrl" onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute} title="AI stops on your route" aria-label="Find AI stops on your route">
+                <button type="button" className="tm-ctrl" onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute} title="AI stops on your route" aria-label="Find AI stops on your route">
                     {loadingEnRoute ? <span className="spinner spinner-sm" /> : <Sparkles size={20} />}
                 </button>
-                <button className={`tm-ctrl${isOptimized ? ' active' : ''}`} onClick={handleToggleOptimize} title={isOptimized ? 'Route optimized' : 'Optimize route'} aria-label="Optimize route" aria-pressed={isOptimized}>
+                <button type="button" className={`tm-ctrl${isOptimized ? ' active' : ''}`} onClick={handleToggleOptimize} title={isOptimized ? 'Route optimized' : 'Optimize route'} aria-label="Optimize route" aria-pressed={isOptimized}>
                     <RouteIcon size={20} />
                 </button>
-                <button className={`tm-ctrl${showTrending ? ' active' : ''}`} onClick={() => setShowTrending(v => !v)} title="Trending destinations" aria-label="Toggle trending destinations" aria-pressed={showTrending}>
+                <button type="button" className={`tm-ctrl${showTrending ? ' active' : ''}`} onClick={() => setShowTrending(v => !v)} title="Trending destinations" aria-label="Toggle trending destinations" aria-pressed={showTrending}>
                     <Globe size={20} />
                 </button>
             </div>
@@ -624,10 +625,15 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     <LocateFixed size={14} aria-hidden="true" /> Broadcasting location
                 </div>
             )}
+            {trip.status === 'active' && user && !myLocation && !isTrackingLocation && (
+                <div className="tm-toast tm-toast-live" style={{ cursor: 'pointer' }} onClick={() => setIsTrackingLocation(true)} role="button" tabIndex={0} onKeyDown={(e) => e.key === 'Enter' && setIsTrackingLocation(true)}>
+                    <LocateFixed size={14} aria-hidden="true" /> Start Live Navigation
+                </div>
+            )}
             {(routeError || aiError) && (
                 <div className={`tm-toast ${routeError ? 'tm-toast-error' : 'tm-toast-warn'}`}>
                     <span>{routeError || aiError}</span>
-                    <button onClick={() => { setRouteError(''); setAiError(''); }} aria-label="Dismiss"><X size={14} /></button>
+                    <button type="button" onClick={() => { setRouteError(''); setAiError(''); }} aria-label="Dismiss"><X size={14} /></button>
                 </div>
             )}
 
@@ -635,7 +641,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             <BottomSheet snap={sheetSnap} onSnapChange={setSheetSnap}>
                 <div className="tm-tabs" role="tablist">
                     {TABS.map(t => (
-                        <button
+                        <button type="button"
                             key={t.id}
                             role="tab"
                             aria-selected={bottomTab === t.id}
@@ -655,7 +661,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     {bottomTab === 'places' && (
                         <>
                             <div style={{ position: 'relative', marginBottom: 14 }}>
-                                <Search size={16} color="#9ca3af" style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', zIndex: 1 }} />
+                                <Search size={16} color="#6b7280" style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', zIndex: 1 }} />
                                 <PlaceAutocomplete
                                     onPlaceSelected={handlePlaceSelected}
                                     placeholder="Search a place to add…"
@@ -685,12 +691,12 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                                 </div>
                                             </div>
                                             <div className="tm-card-actions" onClick={(e) => e.stopPropagation()}>
-                                                <button className="tm-icon-btn" onClick={() => handleMovePlace(index, -1)} disabled={index === 0} aria-label="Move up"><ArrowUp size={15} /></button>
-                                                <button className="tm-icon-btn" onClick={() => handleMovePlace(index, 1)} disabled={index === places.length - 1} aria-label="Move down"><ArrowDown size={15} /></button>
-                                                <button className="tm-icon-btn" onClick={() => togglePollPlace(p.id)} aria-label="Add to poll" title={pollPlaces.includes(p.id) ? 'In poll' : 'Add to poll'}>
+                                                <button type="button" className="tm-icon-btn" onClick={() => handleMovePlace(index, -1)} disabled={index === 0} aria-label="Move up"><ArrowUp size={15} /></button>
+                                                <button type="button" className="tm-icon-btn" onClick={() => handleMovePlace(index, 1)} disabled={index === places.length - 1} aria-label="Move down"><ArrowDown size={15} /></button>
+                                                <button type="button" className="tm-icon-btn" onClick={() => togglePollPlace(p.id)} aria-label="Add to poll" title={pollPlaces.includes(p.id) ? 'In poll' : 'Add to poll'}>
                                                     <span style={{ fontSize: 14 }}>{pollPlaces.includes(p.id) ? '🗳' : '＋'}</span>
                                                 </button>
-                                                <button className="tm-icon-btn danger" onClick={() => setConfirmDeletePlace(p)} aria-label={`Remove ${p.name}`}><Trash2 size={15} /></button>
+                                                <button type="button" className="tm-icon-btn danger" onClick={() => setConfirmDeletePlace(p)} aria-label={`Remove ${p.name}`}><Trash2 size={15} /></button>
                                             </div>
                                         </div>
                                     ))}
@@ -745,7 +751,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                 {selectedPlaces.length >= 2 && <> from <b>{selectedPlaces[0]?.name?.split(',')[0]}</b> to <b>{selectedPlaces[selectedPlaces.length - 1]?.name?.split(',')[0]}</b></>}
                                 {' '}and suggest worthwhile detours.
                             </span>
-                            <button className="btn btn-accent" style={{ marginTop: 6 }} onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute}>
+                            <button type="button" className="btn btn-accent" style={{ marginTop: 6 }} onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute}>
                                 {loadingEnRoute ? <span className="spinner spinner-sm" /> : <><Sparkles size={15} /> Find stops on the way</>}
                             </button>
                         </div>
@@ -761,7 +767,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             </form>
                             <div className="tm-quickrow">
                                 {['Restaurants', 'Cafes', 'Hotels', 'Gas Stations', 'Museums', 'Parks'].map(term => (
-                                    <button key={term} className="tm-quickchip" onClick={() => {
+                                    <button type="button" key={term} className="tm-quickchip" onClick={() => {
                                         const form = document.getElementById('nearby-form');
                                         if (form) {
                                             form.elements.nearby.value = term;
@@ -780,7 +786,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                             {p.rating && <div className="tm-card-meta"><span className="tm-chip amber">⭐ {p.rating}</span></div>}
                                         </div>
                                         <div className="tm-card-actions" onClick={(e) => e.stopPropagation()}>
-                                            <button className="tm-icon-btn" onClick={() => addNearbyToMap(p)} aria-label={`Add ${p.name}`}><Plus size={15} /></button>
+                                            <button type="button" className="tm-icon-btn" onClick={() => addNearbyToMap(p)} aria-label={`Add ${p.name}`}><Plus size={15} /></button>
                                         </div>
                                     </div>
                                 ))}
@@ -814,11 +820,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                             </div>
                                         </div>
                                         <div className="tm-card-actions" onClick={(e) => e.stopPropagation()}>
-                                            <button className="tm-icon-btn" onClick={async () => {
+                                            <button type="button" className="tm-icon-btn" onClick={async () => {
                                                 await addPlaces(trip.id, [p]);
                                                 setTemporarySuggestions(prev => prev.filter(x => x.name !== p.name));
                                             }} aria-label={`Add ${p.name}`}><Plus size={15} /></button>
-                                            <button className="tm-icon-btn danger" onClick={() => {
+                                            <button type="button" className="tm-icon-btn danger" onClick={() => {
                                                 setTemporarySuggestions(prev => prev.filter(x => x.name !== p.name));
                                             }} aria-label="Dismiss"><X size={15} /></button>
                                         </div>
@@ -831,15 +837,15 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
                 <div className="tm-sheet-footer">
                     {trip.status !== 'active' ? (
-                        <button className="btn btn-primary" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'active')}>
+                        <button type="button" className="btn btn-primary" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'active')}>
                             <Navigation size={16} /> Start Navigation
                         </button>
                     ) : (
-                        <button className="btn btn-danger" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'planning')}>
+                        <button type="button" className="btn btn-danger" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'planning')}>
                             <StopCircle size={16} /> End Trip
                         </button>
                     )}
-                    <button className="btn btn-secondary" onClick={shareInvite}>Share</button>
+                    <button type="button" className="btn btn-secondary" onClick={shareInvite}>Share</button>
                 </div>
             </BottomSheet>
 
@@ -847,8 +853,8 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             <Modal open={pollModalOpen} onClose={() => setPollModalOpen(false)} title="Create Poll 🗳️" subtitle={`${pollPlaces.length} places selected`}>
                 <input className="input-field" placeholder="Poll title (e.g. Where should we eat?)" value={pollTitle} onChange={(e) => setPollTitle(e.target.value)} />
                 <div className="modal-actions">
-                    <button className="btn btn-ghost" onClick={() => setPollModalOpen(false)}>Cancel</button>
-                    <button className="btn btn-primary" onClick={handleCreatePoll}>Create Poll</button>
+                    <button type="button" className="btn btn-ghost" onClick={() => setPollModalOpen(false)}>Cancel</button>
+                    <button type="button" className="btn btn-primary" onClick={handleCreatePoll}>Create Poll</button>
                 </div>
             </Modal>
 
@@ -858,8 +864,8 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     This will permanently remove <strong style={{ color: 'var(--text-primary)' }}>{confirmDeletePlace?.name}</strong> from this trip. This can't be undone.
                 </p>
                 <div className="modal-actions">
-                    <button className="btn btn-ghost" onClick={() => setConfirmDeletePlace(null)}>Cancel</button>
-                    <button className="btn btn-danger" onClick={async () => { await deletePlace(confirmDeletePlace.id); setConfirmDeletePlace(null); }}>Remove</button>
+                    <button type="button" className="btn btn-ghost" onClick={() => setConfirmDeletePlace(null)}>Cancel</button>
+                    <button type="button" className="btn btn-danger" onClick={async () => { await deletePlace(confirmDeletePlace.id); setConfirmDeletePlace(null); }}>Remove</button>
                 </div>
             </Modal>
 
@@ -876,7 +882,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             onClick={(e) => e.target.select()}
                             style={{ flex: 1, padding: '10px 12px', borderRadius: 8, border: '1px solid #e2e8f0', fontSize: 14, color: '#0f172a', background: '#f8fafc', outline: 'none' }}
                         />
-                        <button
+                        <button type="button"
                             onClick={() => { navigator.clipboard.writeText(shareUrl); setAiError('✅ Link copied!'); setTimeout(() => setAiError(''), 2000); setShareOpen(false); }}
                             style={{ background: '#0f172a', color: '#fff', border: 'none', padding: '10px 16px', borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: 'pointer', minHeight: 44, whiteSpace: 'nowrap' }}
                         >

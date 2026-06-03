@@ -19,6 +19,7 @@ import Modal from '../components/Modal';
 import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
+import usePageSeo from '../hooks/usePageSeo';
 
 function ItineraryContent({ onOpenMap }) {
     const { selectedTrip, setSelectedTrip, places } = useTrip();
@@ -816,7 +817,7 @@ function ItineraryContent({ onOpenMap }) {
                                 type="time"
                                 value={dayStartTime}
                                 onChange={(e) => setDayStartTime(e.target.value)}
-                                style={{ padding: isMobile ? '8px 10px' : '6px 12px', borderRadius: 8, border: '1px solid #cbd5e1', fontSize: isMobile ? 16 : 15, fontWeight: 600, outline: 'none', color: '#0f172a', background: '#f8fafc' }}
+                                style={{ padding: isMobile ? '8px 10px' : '6px 12px', borderRadius: 8, border: '1px solid #94a3b8', fontSize: isMobile ? 16 : 15, fontWeight: 600, outline: 'none', color: '#0f172a', background: '#f8fafc' }}
                             />
                         </div>
                     </div>
@@ -861,13 +862,13 @@ function ItineraryContent({ onOpenMap }) {
                                                 📅 Day {dayBoundaryDayIndex + 1} starts here
                                                 {/* Pull/Push controls — hidden for guests */}
                                                 {!isGuest && forcedDayMerges.has(place.id) ? (
-                                                    <button
+                                                    <button type="button"
                                                         onClick={() => setForcedDayMerges(prev => { const n = new Set(prev); n.delete(place.id); return n; })}
                                                         title="Undo merge"
                                                         style={{ background: '#fff', border: '1px solid #BFD0F0', borderRadius: 10, padding: '1px 7px', fontSize: 10, fontWeight: 700, color: '#1E3A8A', cursor: 'pointer' }}
                                                     >↩ Undo</button>
                                                 ) : !isGuest ? (
-                                                    <button
+                                                    <button type="button"
                                                         onClick={() => {
                                                             if (forcedDayBreaks.has(place.id)) {
                                                                 setForcedDayBreaks(prev => { const n = new Set(prev); n.delete(place.id); return n; });
@@ -880,7 +881,7 @@ function ItineraryContent({ onOpenMap }) {
                                                     >← Pull to Day {dayBoundaryDayIndex}</button>
                                                 ) : null}
                                                 {!isGuest && forcedDayBreaks.has(place.id) ? (
-                                                    <button
+                                                    <button type="button"
                                                         onClick={() => setForcedDayBreaks(prev => { const n = new Set(prev); n.delete(place.id); return n; })}
                                                         title="Undo push"
                                                         style={{ background: '#fff', border: '1px solid #BFD0F0', borderRadius: 10, padding: '1px 7px', fontSize: 10, fontWeight: 700, color: '#1E3A8A', cursor: 'pointer' }}
@@ -900,7 +901,7 @@ function ItineraryContent({ onOpenMap }) {
                                             }}>
                                                 {isCarryOver ? '🏨' : String.fromCharCode(65 + visibleIdx - (typeof activeView === 'number' && activeView > 0 ? 1 : 0))}
                                             </div>
-                                            <div style={{ width: 2, flex: 1, background: '#cbd5e1', margin: '4px 0' }} />
+                                            <div style={{ width: 2, flex: 1, background: '#94a3b8', margin: '4px 0' }} />
                                         </div>
 
                                         <div style={{
@@ -913,10 +914,10 @@ function ItineraryContent({ onOpenMap }) {
                                         }}>
                                             {/* Drag Handle (Hidden for start/end and guests) */}
                                             {!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest && (
-                                                <div style={{ display:'flex', flexDirection:'column', paddingRight: isMobile ? 12 : 16, borderRight:'1px solid #f1f5f9', cursor:'pointer', color:'#cbd5e1', alignItems:'center', justifyContent:'center' }}>
-                                                    <button onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#9ca3af', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▲</button>
+                                                <div style={{ display:'flex', flexDirection:'column', paddingRight: isMobile ? 12 : 16, borderRight:'1px solid #f1f5f9', cursor:'pointer', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}>
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▲</button>
                                                     <GripVertical size={16} style={{ margin: '4px 0' }} />
-                                                    <button onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#9ca3af', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▼</button>
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▼</button>
                                                 </div>
                                             )}
 
@@ -944,12 +945,12 @@ function ItineraryContent({ onOpenMap }) {
                                                             <div style={{ fontSize: 11, fontWeight: 700, color: '#92400e', background: '#fef3c7', border: '1px solid #fbbf24', padding: '6px 10px', borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginBottom: 6, width: '100%' }}>
                                                                 <span>⚠️ Likely closed/unsafe at this hour</span>
                                                                 {forcedDayBreaks.has(place.id) ? (
-                                                                    <button
+                                                                    <button type="button"
                                                                         onClick={() => setForcedDayBreaks(prev => { const n = new Set(prev); n.delete(place.id); return n; })}
                                                                         style={{ background: '#fff', border: '1px solid #fbbf24', borderRadius: 5, padding: '2px 8px', fontSize: 10, fontWeight: 700, color: '#92400e', cursor: 'pointer', whiteSpace: 'nowrap' }}
                                                                     >↩ Undo</button>
                                                                 ) : (
-                                                                    <button
+                                                                    <button type="button"
                                                                         onClick={() => setForcedDayBreaks(prev => new Set([...prev, place.id]))}
                                                                         style={{ background: '#f59e0b', border: 'none', borderRadius: 5, padding: '2px 8px', fontSize: 10, fontWeight: 700, color: '#fff', cursor: 'pointer', whiteSpace: 'nowrap' }}
                                                                     >→ Move to next day</button>
@@ -980,7 +981,7 @@ function ItineraryContent({ onOpenMap }) {
                                                                         min="0"
                                                                         value={durationMinutes}
                                                                         onChange={(e) => handleDurationChange(place.id, parseInt(e.target.value) || 0)}
-                                                                        style={{ width: isMobile ? 64 : 56, padding: isMobile ? '6px' : '4px', borderRadius: 6, border: '1px solid #cbd5e1', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
+                                                                        style={{ width: isMobile ? 64 : 56, padding: isMobile ? '6px' : '4px', borderRadius: 6, border: '1px solid #94a3b8', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
                                                                     />
                                                                     <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>min</span>
                                                                     {!userOverrides[place.id] && placeDurations[place.id] !== undefined && (
@@ -1003,7 +1004,7 @@ function ItineraryContent({ onOpenMap }) {
                                                             {arrivalTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                                         </div>
                                                         {!place.isStartingPoint && !place.isEndingPoint && (
-                                                            <div style={{ color: '#9ca3af', fontSize: 11, fontWeight: 500, marginTop: 2 }}>
+                                                            <div style={{ color: '#6b7280', fontSize: 11, fontWeight: 500, marginTop: 2 }}>
                                                                 until {departureTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                                             </div>
                                                         )}
@@ -1011,7 +1012,7 @@ function ItineraryContent({ onOpenMap }) {
 
                                                     {potentialPlaceMeal > 0 && !placeMealCancelled && (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 12, flexWrap: 'wrap' }}>
-                                                            <span style={{ color: '#cbd5e1' }}>•</span>
+                                                            <span style={{ color: '#94a3b8' }}>•</span>
                                                             <span style={{ color: '#f59e0b', fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 4 }}>
                                                                 🍽️ meal break
                                                             </span>
@@ -1021,44 +1022,44 @@ function ItineraryContent({ onOpenMap }) {
                                                                     min="0"
                                                                     value={potentialPlaceMeal}
                                                                     onChange={(e) => handleDurationChange(placeMealBreakId, parseInt(e.target.value) || 0)}
-                                                                    style={{ width: isMobile ? 56 : 48, padding: isMobile ? '4px' : '2px', borderRadius: 6, border: '1px solid #cbd5e1', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
+                                                                    style={{ width: isMobile ? 56 : 48, padding: isMobile ? '4px' : '2px', borderRadius: 6, border: '1px solid #94a3b8', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
                                                                 />
                                                                 <span style={{ fontSize: 11, color: '#64748b', fontWeight: 500 }}>m</span>
                                                             </div>
-                                                            <button onClick={() => toggleBreak(placeMealBreakId)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight:32 }}>Cancel</button>
+                                                            <button type="button" onClick={() => toggleBreak(placeMealBreakId)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight:32 }}>Cancel</button>
                                                         </div>
                                                     )}
                                                     {potentialPlaceMeal > 0 && placeMealCancelled && (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 12, flexWrap: 'wrap' }}>
-                                                            <span style={{ color: '#cbd5e1' }}>•</span>
-                                                            <span style={{ color: '#9ca3af', fontSize: 12, textDecoration: 'line-through' }}>
+                                                            <span style={{ color: '#94a3b8' }}>•</span>
+                                                            <span style={{ color: '#6b7280', fontSize: 12, textDecoration: 'line-through' }}>
                                                                 🍽️ Meal break ({potentialPlaceMeal}m)
                                                             </span>
-                                                            <button onClick={() => toggleBreak(placeMealBreakId)} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight:32 }}>Restore</button>
+                                                            <button type="button" onClick={() => toggleBreak(placeMealBreakId)} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight:32 }}>Restore</button>
                                                         </div>
                                                     )}
 
                                                     {isNightStay && (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 'auto', flexWrap: 'wrap' }}>
-                                                            <span style={{ color: '#cbd5e1' }}>•</span>
+                                                            <span style={{ color: '#94a3b8' }}>•</span>
                                                             <span style={{ color: '#172E6E', fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 4 }}>
                                                                 🌙 Night Stay
                                                             </span>
-                                                            <button onClick={() => setRemovedNightStays(prev => new Set([...prev, place.id]))} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight: 32 }}>Cancel</button>
+                                                            <button type="button" onClick={() => setRemovedNightStays(prev => new Set([...prev, place.id]))} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight: 32 }}>Cancel</button>
                                                         </div>
                                                     )}
                                                     {removedNightStays.has(place.id) && (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 'auto', flexWrap: 'wrap' }}>
-                                                            <span style={{ color: '#cbd5e1' }}>•</span>
-                                                            <span style={{ color: '#9ca3af', fontSize: 12, textDecoration: 'line-through' }}>
+                                                            <span style={{ color: '#94a3b8' }}>•</span>
+                                                            <span style={{ color: '#6b7280', fontSize: 12, textDecoration: 'line-through' }}>
                                                                 🌙 Night Stay
                                                             </span>
-                                                            <button onClick={() => setRemovedNightStays(prev => { const n = new Set(prev); n.delete(place.id); return n; })} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight: 32 }}>Restore</button>
+                                                            <button type="button" onClick={() => setRemovedNightStays(prev => { const n = new Set(prev); n.delete(place.id); return n; })} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 11, cursor: 'pointer', padding: isMobile ? '4px 8px' : '2px 6px', borderRadius: 4, fontWeight: 600, minHeight: 32 }}>Restore</button>
                                                         </div>
                                                     )}
                                                     {isSpansMidnight && (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 'auto' }}>
-                                                            <span style={{ color: '#cbd5e1' }}>•</span>
+                                                            <span style={{ color: '#94a3b8' }}>•</span>
                                                             <span style={{ color: '#15803d', fontSize: 12, fontWeight: 600 }}>📅 Spans 2 days</span>
                                                         </div>
                                                     )}
@@ -1086,7 +1087,7 @@ function ItineraryContent({ onOpenMap }) {
                                     {visibleIdx < visibleTimeline.length - 1 && (isCarryOver || !(isNightStay || isSpansMidnight)) && (
                                         <div style={{ display: 'flex', alignItems: 'center', marginBottom: 16 }}>
                                             <div style={{ width: 32, display: 'flex', justifyContent: 'center', marginRight: 16 }}>
-                                                <div style={{ width: 2, height: 40, background: '#cbd5e1' }} />
+                                                <div style={{ width: 2, height: 40, background: '#94a3b8' }} />
                                             </div>
                                             {(transitMinutes > 0 || transitDistance === 'Unroutable') && (
                                                 <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
@@ -1097,13 +1098,13 @@ function ItineraryContent({ onOpenMap }) {
                                                     ) : transitEvents.length === 0 ? (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#3b82f6', fontSize: 13, fontWeight: 600, paddingLeft: 32, marginBottom: 8 }}>
                                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                                                            Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#9ca3af', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
+                                                            Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#6b7280', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
                                                         </div>
                                                     ) : (
                                                         <div style={{ paddingLeft: 32, marginBottom: 4, flex: 1, paddingRight: 32 }}>
                                                             <div style={{ color: '#3b82f6', fontSize: 13, fontWeight: 600, marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
                                                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                                                                Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#9ca3af', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
+                                                                Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#6b7280', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
                                                             </div>
 
                                                             {transitEvents.map(event => (
@@ -1122,20 +1123,20 @@ function ItineraryContent({ onOpenMap }) {
                                                                                     min="0"
                                                                                     value={event.duration}
                                                                                     onChange={(e) => handleDurationChange(event.id, parseInt(e.target.value) || 0)}
-                                                                                    style={{ width: isMobile ? 56 : 48, padding: isMobile ? '3px 4px' : '1px 2px', borderRadius: 4, border: '1px solid #cbd5e1', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
+                                                                                    style={{ width: isMobile ? 56 : 48, padding: isMobile ? '3px 4px' : '1px 2px', borderRadius: 4, border: '1px solid #94a3b8', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
                                                                                 />
                                                                                 <span style={{ fontSize: 11, color: '#64748b' }}>m {event.name.toLowerCase()}</span>
                                                                             </div>
-                                                                            <button onClick={() => toggleBreak(event.id)} style={{ background: 'none', border: 'none', color: '#f97316', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>Skip</button>
-                                                                            <button onClick={() => deleteBreak(event.id)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>✕</button>
+                                                                            <button type="button" onClick={() => toggleBreak(event.id)} style={{ background: 'none', border: 'none', color: '#f97316', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>Skip</button>
+                                                                            <button type="button" onClick={() => deleteBreak(event.id)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>✕</button>
                                                                         </>
                                                                     ) : (
                                                                         <>
-                                                                            <span style={{ color: '#9ca3af', fontSize: 12, textDecoration: 'line-through' }}>
+                                                                            <span style={{ color: '#6b7280', fontSize: 12, textDecoration: 'line-through' }}>
                                                                                 {event.type === 'meal' ? '🍽️' : event.type === 'night_stay' ? '🏨' : '☕'} {event.name} ({event.duration}m)
                                                                             </span>
-                                                                            <button onClick={() => toggleBreak(event.id)} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>Restore</button>
-                                                                            <button onClick={() => deleteBreak(event.id)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>✕</button>
+                                                                            <button type="button" onClick={() => toggleBreak(event.id)} style={{ background: 'none', border: 'none', color: '#3b82f6', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>Restore</button>
+                                                                            <button type="button" onClick={() => deleteBreak(event.id)} style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 8px' : '1px 4px', fontWeight: 600, minHeight:28 }}>✕</button>
                                                                         </>
                                                                     )}
                                                                 </div>
@@ -1145,15 +1146,15 @@ function ItineraryContent({ onOpenMap }) {
 
                                                     {/* Add Break buttons — always visible */}
                                                     <div style={{ display: 'flex', gap: 8, marginLeft: 54, marginTop: 4, marginBottom: 8, flexWrap: 'wrap' }}>
-                                                        <button
+                                                        <button type="button"
                                                             onClick={() => addManualBreak(idx, 'meal')}
                                                             style={{ background: 'none', border: '1px dashed #f59e0b', color: '#f59e0b', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 10px' : '2px 8px', borderRadius: 4, fontWeight: 600, minHeight:32 }}
                                                         >+ Meal</button>
-                                                        <button
+                                                        <button type="button"
                                                             onClick={() => addManualBreak(idx, 'rest')}
                                                             style={{ background: 'none', border: '1px dashed #10b981', color: '#10b981', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 10px' : '2px 8px', borderRadius: 4, fontWeight: 600, minHeight:32 }}
                                                         >+ Rest</button>
-                                                        <button
+                                                        <button type="button"
                                                             onClick={() => addManualBreak(idx, 'night_stay')}
                                                             style={{ background: 'none', border: '1px dashed #172E6E', color: '#172E6E', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 10px' : '2px 8px', borderRadius: 4, fontWeight: 600, minHeight:32 }}
                                                         >+ Night Stay</button>
@@ -1194,7 +1195,7 @@ function ItineraryContent({ onOpenMap }) {
             {/* Right Sidebar - Tabbed: AI Suggestions / On the Way / Nearby */}
             {isMobile && sidebarMinimized ? (
                 /* Mobile Minimized Handle */
-                <button
+                <button type="button"
                     onClick={() => setSidebarMinimized(false)}
                     style={{
                         width: '100%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
@@ -1214,7 +1215,7 @@ function ItineraryContent({ onOpenMap }) {
                 {/* Sidebar Tabs */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '0 16px', marginBottom: 20, overflowX: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                     {[{ id: 'ai', label: '✨ AI' }, { id: 'onway', label: '🛣️ On the Way' }, { id: 'nearby', label: '🔍 Nearby' }].map(tab => (
-                        <button
+                        <button type="button"
                             key={tab.id}
                             onClick={() => setSidebarTab(tab.id)}
                             style={{
@@ -1227,7 +1228,7 @@ function ItineraryContent({ onOpenMap }) {
                         >{tab.label}</button>
                     ))}
                     {isMobile && (
-                        <button
+                        <button type="button"
                             onClick={() => setSidebarMinimized(true)}
                             title="Minimize"
                             style={{
@@ -1254,7 +1255,7 @@ function ItineraryContent({ onOpenMap }) {
                             ) : (
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                                     {aiSuggestions.map((sug, i) => (
-                                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: 12, border: '1px solid #f1f5f9', borderRadius: 12, cursor: 'pointer', transition: 'border 200ms' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#cbd5e1'} onMouseLeave={e => e.currentTarget.style.borderColor = '#f1f5f9'}>
+                                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: 12, border: '1px solid #f1f5f9', borderRadius: 12, cursor: 'pointer', transition: 'border 200ms' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#94a3b8'} onMouseLeave={e => e.currentTarget.style.borderColor = '#f1f5f9'}>
                                             <PlaceThumb place={sug} size={60} radius={8} />
                                             <div style={{ flex: 1 }}>
                                                 <div style={{ fontSize: 14, fontWeight: 600, color: '#0f172a', marginBottom: 4, lineHeight: 1.2 }}>{sug.name}</div>
@@ -1271,7 +1272,7 @@ function ItineraryContent({ onOpenMap }) {
                     {sidebarTab === 'onway' && (
                         <>
                             <p style={{ fontSize: 13, color: '#64748b', marginBottom: 16 }}>Must-visit stops between your route checkpoints</p>
-                            <button
+                            <button type="button"
                                 onClick={async () => {
                                     if (orderedPlaces.length < 2) return;
                                     setLoadingOnWay(true);
@@ -1297,7 +1298,7 @@ function ItineraryContent({ onOpenMap }) {
                                                 <div style={{ fontSize: 13, fontWeight: 700, color: '#0f172a', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.name}</div>
                                                 <div style={{ fontSize: 11, color: '#64748b', marginTop: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.description}</div>
                                             </div>
-                                            <button
+                                            <button type="button"
                                                 onClick={() => addToItinerary(r)}
                                                 style={{ flexShrink: 0, background: '#EEF3FC', color: '#1E3A8A', border: 'none', borderRadius: 8, padding: '5px 10px', fontSize: 11, fontWeight: 700, cursor: 'pointer', alignSelf: 'center', whiteSpace: 'nowrap', minHeight: 32 }}
                                             >+ Add</button>
@@ -1330,7 +1331,7 @@ function ItineraryContent({ onOpenMap }) {
                                         placeholder="e.g. cafe, temple, beach..."
                                     />
                                 </div>
-                                <button
+                                <button type="button"
                                     onClick={async () => {
                                         if (!nearbyQuery.trim() || !orderedPlaces[0]) return;
                                         setLoadingNearby(true);
@@ -1358,7 +1359,7 @@ function ItineraryContent({ onOpenMap }) {
                                             <div style={{ fontSize: 11, color: '#64748b', marginTop: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.description}</div>
                                             {r.rating && <div style={{ fontSize: 10, color: '#f59e0b', marginTop: 2 }}>⭐ {r.rating}</div>}
                                         </div>
-                                        <button
+                                        <button type="button"
                                             onClick={() => addToItinerary(r)}
                                             style={{ flexShrink: 0, background: '#EEF3FC', color: '#1E3A8A', border: 'none', borderRadius: 8, padding: '5px 10px', fontSize: 11, fontWeight: 700, cursor: 'pointer', alignSelf: 'center', whiteSpace: 'nowrap', minHeight: 32 }}
                                         >+ Add</button>
@@ -1407,10 +1408,10 @@ function ItineraryContent({ onOpenMap }) {
                             />
                         </div>
                         <div style={{ display: 'flex', gap: 12, marginTop: 8 }}>
-                            <button onClick={handleSaveBreak} style={{ flex: 1, background: '#0f172a', color: '#fff', border: 'none', padding: '12px', borderRadius: 8, fontSize: 14, fontWeight: 600, cursor: 'pointer', minHeight: 44 }}>
+                            <button type="button" onClick={handleSaveBreak} style={{ flex: 1, background: '#0f172a', color: '#fff', border: 'none', padding: '12px', borderRadius: 8, fontSize: 14, fontWeight: 600, cursor: 'pointer', minHeight: 44 }}>
                                 Save
                             </button>
-                            <button onClick={() => setEditingBreak(null)} style={{ flex: 1, background: '#f1f5f9', color: '#475569', border: '1px solid #e2e8f0', padding: '12px', borderRadius: 8, fontSize: 14, fontWeight: 600, cursor: 'pointer', minHeight: 44 }}>
+                            <button type="button" onClick={() => setEditingBreak(null)} style={{ flex: 1, background: '#f1f5f9', color: '#475569', border: '1px solid #e2e8f0', padding: '12px', borderRadius: 8, fontSize: 14, fontWeight: 600, cursor: 'pointer', minHeight: 44 }}>
                                 Cancel
                             </button>
                         </div>
@@ -1422,6 +1423,7 @@ function ItineraryContent({ onOpenMap }) {
 }
 
 export default function ItineraryPage() {
+    usePageSeo({ title: 'Trip Itinerary', robots: 'noindex, nofollow' });
     const [showMap, setShowMap] = useState(false);
     // The map needs Google Maps. Without a key, never mount MapView (its
     // <Map> would render outside an APIProvider and crash) or its toggle.

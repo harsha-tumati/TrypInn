@@ -32,3 +32,5 @@ bun-debug.log*
 lint.txt
 
 firestore.rules
+lighthouse-report*.json
+bundle-stats.html

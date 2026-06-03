@@ -6,8 +6,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { publicGetTripByInviteCode } from '../services/publicFirestoreService';
 import BrandMark from '../components/BrandMark';
+import usePageSeo from '../hooks/usePageSeo';
 
 export default function JoinTripPage() {
+    usePageSeo({ title: 'Join Trip', robots: 'noindex, nofollow' });
     const { inviteCode } = useParams();
     const navigate = useNavigate();
     const [error, setError] = useState('');

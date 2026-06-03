@@ -1,26 +1,19 @@
 // src/services/firestoreService.js
-import { db } from '../config/firebase';
-import {
-    collection,
-    doc,
-    addDoc,
-    setDoc,
-    updateDoc,
-    deleteDoc,
-    getDoc,
-    getDocs,
-    query,
-    where,
-    serverTimestamp,
-} from 'firebase/firestore';
 import { nanoid } from '../utils/nanoid';
+
+async function getFirebase() {
+    const [{ db }, { collection, doc, addDoc, setDoc, updateDoc, deleteDoc, getDoc, getDocs, query, where, serverTimestamp }] =
+        await Promise.all([
+            import('../config/firebase').then((m) => m.getFirebase()),
+            import('firebase/firestore'),
+        ]);
+    return { db, collection, doc, addDoc, setDoc, updateDoc, deleteDoc, getDoc, getDocs, query, where, serverTimestamp };
+}
 
 // ─── TRIPS ────────────────────────────────────────────────────────────────────
 
-// userId may be null — an anonymous trip is created as an unclaimed draft.
-// The planner and itinerary work on drafts; Expenses/Chat/Polls unlock only
-// once the trip is claimed to a profile (see claimTrip).
 export async function createTrip({ name, destination, description, startDate, endDate, budget, userId, startingPoint, endingPoint }) {
+    const { db, collection, addDoc, serverTimestamp, setDoc, doc } = await getFirebase();
     const inviteCode = nanoid(8);
     const tripRef = await addDoc(collection(db, 'trips'), {
         name,
@@ -38,7 +31,6 @@ export async function createTrip({ name, destination, description, startDate, en
         createdAt: serverTimestamp(),
     });
 
-    // Add the creator as a member only when there is one (claimed trips).
     if (userId) {
         await setDoc(doc(db, 'tripMembers', `${tripRef.id}_${userId}`), {
             tripId: tripRef.id,
@@ -53,9 +45,8 @@ export async function createTrip({ name, destination, description, startDate, en
     return tripRef.id;
 }
 
-// Claim an anonymous draft to a user's profile — this is what unlocks the
-// collaborative tabs (Expenses, Chat, Polls).
 export async function claimTrip(tripId, userId) {
+    const { db, updateDoc, doc, getDoc, setDoc, serverTimestamp } = await getFirebase();
     if (!tripId || !userId) throw new Error('A signed-in account is required to save this trip.');
     await updateDoc(doc(db, 'trips', tripId), { claimed: true, createdBy: userId });
     const memberRef = doc(db, 'tripMembers', `${tripId}_${userId}`);
@@ -72,8 +63,8 @@ export async function claimTrip(tripId, userId) {
     }
 }
 
-// Fetch trips by id — used to load anonymous drafts tracked in localStorage.
 export async function getTripsByIds(ids) {
+    const { db, getDoc, doc } = await getFirebase();
     const trips = [];
     for (const id of ids || []) {
         try {
@@ -85,23 +76,27 @@ export async function getTripsByIds(ids) {
 }
 
 export async function updateTripStatus(tripId, status) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'trips', tripId), { status });
 }
 
 export async function updatePlaceOrder(tripId, placeOrder) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'trips', tripId), { placeOrder });
 }
 
 export async function updateRouteConfig(tripId, routeConfig) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'trips', tripId), { routeConfig });
 }
 
-// Generic trip-field update — used by the planner's "Edit trip details".
 export async function updateTrip(tripId, fields) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'trips', tripId), fields);
 }
 
 export async function getUserTrips(userId) {
+    const { db, getDocs, query, collection, where, getDoc, doc } = await getFirebase();
     const membersSnap = await getDocs(
         query(collection(db, 'tripMembers'), where('uid', '==', userId))
     );
@@ -124,6 +119,7 @@ export async function getUserTrips(userId) {
 }
 
 export async function getTripByInviteCode(inviteCode) {
+    const { db, query, collection, where, getDocs } = await getFirebase();
     const q = query(collection(db, 'trips'), where('inviteCode', '==', inviteCode));
     const snap = await getDocs(q);
     if (snap.empty) return null;
@@ -132,18 +128,21 @@ export async function getTripByInviteCode(inviteCode) {
 }
 
 export async function getTripMemberCount(tripId) {
+    const { db, query, collection, where, getDocs } = await getFirebase();
     const q = query(collection(db, 'tripMembers'), where('tripId', '==', tripId));
     const snap = await getDocs(q);
     return snap.size;
 }
 
 export async function isTripMember(tripId, userId) {
+    const { db, doc, getDoc } = await getFirebase();
     const memberRef = doc(db, 'tripMembers', `${tripId}_${userId}`);
     const snap = await getDoc(memberRef);
     return snap.exists();
 }
 
 export async function joinTripByCode(inviteCode, userId) {
+    const { db, query, collection, where, getDocs, doc, getDoc, setDoc, serverTimestamp } = await getFirebase();
     const q = query(collection(db, 'trips'), where('inviteCode', '==', inviteCode));
     const snap = await getDocs(q);
     if (snap.empty) throw new Error('Invalid invite code');
@@ -168,6 +167,7 @@ export async function joinTripByCode(inviteCode, userId) {
 }
 
 export async function getTripMembers(tripId) {
+    const { db, query, collection, where, getDocs, getDoc, doc } = await getFirebase();
     const q = query(collection(db, 'tripMembers'), where('tripId', '==', tripId));
     const snap = await getDocs(q);
     const memberDocs = snap.docs.map((d) => d.data());
@@ -183,12 +183,14 @@ export async function getTripMembers(tripId) {
 }
 
 export async function getTripPlaces(tripId) {
+    const { db, query, collection, where, getDocs } = await getFirebase();
     const q = query(collection(db, 'places'), where('tripId', '==', tripId));
     const snap = await getDocs(q);
     return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
 }
 
 export async function updateMemberLocation(tripId, userId, lat, lng) {
+    const { db, updateDoc, doc, serverTimestamp } = await getFirebase();
     const memberDocId = `${tripId}_${userId}`;
     await updateDoc(doc(db, 'tripMembers', memberDocId), {
         currentLocation: { lat, lng },
@@ -199,11 +201,11 @@ export async function updateMemberLocation(tripId, userId, lat, lng) {
 // ─── PLACES ───────────────────────────────────────────────────────────────────
 
 export async function addPlaces(tripId, placesArray) {
+    const { db, collection, addDoc, serverTimestamp, updateDoc, doc, getDoc, query, where, getDocs } = await getFirebase();
     const results = [];
     for (const p of placesArray) {
         let existingId = null;
 
-        // If the place has a real Firestore ID (not a temporary 'stop-' prefix), check it directly
         if (p.id && !p.id.startsWith('stop-')) {
             const docRef = doc(db, 'places', p.id);
             const docSnap = await getDoc(docRef);
@@ -212,7 +214,6 @@ export async function addPlaces(tripId, placesArray) {
             }
         }
 
-        // Fallback: check if place already exists by name
         if (!existingId) {
             const q = query(collection(db, 'places'), where('tripId', '==', tripId), where('name', '==', p.name));
             const snap = await getDocs(q);
@@ -229,7 +230,7 @@ export async function addPlaces(tripId, placesArray) {
             if (p.lng !== undefined) updates.lng = p.lng;
             if (p.imageUrl !== undefined) updates.imageUrl = p.imageUrl;
             if (p.description !== undefined) updates.description = p.description;
-            
+
             if (Object.keys(updates).length > 0) {
                 await updateDoc(doc(db, 'places', existingId), updates);
             }
@@ -249,20 +250,24 @@ export async function addPlaces(tripId, placesArray) {
 }
 
 export async function togglePlaceSelected(placeId, selected) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'places', placeId), { selected });
 }
 
 export async function updatePlaceDuration(placeId, estimatedMinutes) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'places', placeId), { estimatedMinutes });
 }
 
 export async function deletePlace(placeId) {
+    const { db, deleteDoc, doc } = await getFirebase();
     await deleteDoc(doc(db, 'places', placeId));
 }
 
 // ─── POLLS ────────────────────────────────────────────────────────────────────
 
 export async function createPoll({ tripId, title, placeIds, createdBy }) {
+    const { db, collection, addDoc, serverTimestamp } = await getFirebase();
     const options = placeIds.map((placeId) => ({ placeId, votes: [] }));
     const ref = await addDoc(collection(db, 'polls'), {
         tripId,
@@ -276,13 +281,13 @@ export async function createPoll({ tripId, title, placeIds, createdBy }) {
 }
 
 export async function castVote({ pollId, placeId, userId }) {
+    const { db, doc, getDoc, updateDoc } = await getFirebase();
     const pollRef = doc(db, 'polls', pollId);
     const pollSnap = await getDoc(pollRef);
     if (!pollSnap.exists()) return;
 
     const data = pollSnap.data();
     const updatedOptions = data.options.map((opt) => {
-        // Remove previous vote from this user across all options
         const filteredVotes = opt.votes.filter((uid) => uid !== userId);
         if (opt.placeId === placeId) {
             return { ...opt, votes: [...filteredVotes, userId] };
@@ -294,6 +299,7 @@ export async function castVote({ pollId, placeId, userId }) {
 }
 
 export async function closePoll(pollId, _tripId) {
+    const { db, doc, getDoc, updateDoc } = await getFirebase();
     const pollRef = doc(db, 'polls', pollId);
     const pollSnap = await getDoc(pollRef);
     if (!pollSnap.exists()) return;
@@ -311,7 +317,6 @@ export async function closePoll(pollId, _tripId) {
 
     await updateDoc(pollRef, { status: 'closed', winnerId });
 
-    // Auto-select the winning place
     if (winnerId) {
         await togglePlaceSelected(winnerId, true);
     }
@@ -321,11 +326,12 @@ export async function closePoll(pollId, _tripId) {
 // ─── MESSAGES ─────────────────────────────────────────────────────────────────
 
 export async function sendMessage({ tripId, uid, text, placeRef = null, senderName, senderPhoto }) {
+    const { db, collection, addDoc, serverTimestamp } = await getFirebase();
     await addDoc(collection(db, 'messages'), {
         tripId,
         uid,
         senderName: senderName || null,
-        senderPhoto: senderPhoto || null,   // Firestore rejects undefined
+        senderPhoto: senderPhoto || null,
         text,
         placeRef: placeRef || null,
         timestamp: serverTimestamp(),
@@ -335,6 +341,7 @@ export async function sendMessage({ tripId, uid, text, placeRef = null, senderNa
 // ─── EXPENSES ─────────────────────────────────────────────────────────────────
 
 export async function addExpense({ tripId, title, amount, paidBy, splitAmong }) {
+    const { db, collection, addDoc, serverTimestamp } = await getFirebase();
     await addDoc(collection(db, 'expenses'), {
         tripId,
         title,
@@ -351,11 +358,9 @@ export function calcBalances(expenses, members) {
 
     for (const exp of expenses) {
         const share = exp.amount / exp.splitAmong.length;
-        // Payer gets credited
         if (balances[exp.paidBy] !== undefined) {
             balances[exp.paidBy] += exp.amount - share;
         }
-        // Others owe their share
         for (const uid of exp.splitAmong) {
             if (uid !== exp.paidBy && balances[uid] !== undefined) {
                 balances[uid] -= share;
@@ -368,5 +373,6 @@ export function calcBalances(expenses, members) {
 // ─── ITINERARY ────────────────────────────────────────────────────────────────
 
 export async function saveItinerary(tripId, itinerary) {
+    const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'trips', tripId), { itinerary });
 }

@@ -6,6 +6,7 @@ import { useGuestMode } from '../context/GuestModeContext';
 import { addExpense, calcBalances } from '../services/firestoreService';
 import Modal from '../components/Modal';
 import { Plus, IndianRupee, Users, TrendingUp, ArrowRight, Receipt, CheckCircle2 } from 'lucide-react';
+import usePageSeo from '../hooks/usePageSeo';
 
 const CATEGORY_META = {
     Accommodation: { color: '#2F4FA8', emoji: '🏨' },
@@ -25,6 +26,7 @@ const MEMBER_GRADIENTS = [
 ];
 
 export default function ExpensesPage() {
+    usePageSeo({ title: 'Trip Expenses', robots: 'noindex, nofollow' });
     const { expenses, selectedTrip, members } = useTrip();
     const { user } = useAuth();
     const isGuest = useGuestMode();

@@ -67,6 +67,7 @@ export default function PlaceAutocomplete({ onPlaceSelected, placeholder = "Sear
                 ref={inputRef}
                 className={className || "input-field"}
                 placeholder={placeholder}
+                aria-label={placeholder}
                 style={{ paddingLeft: 44, height: 48, fontSize: 16, width: '100%', background: 'transparent', border: 'none' }}
             />
         </div>

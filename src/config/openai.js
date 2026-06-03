@@ -1,14 +1,13 @@
 // src/config/openai.js
-import OpenAI from 'openai';
-
-// Lazily construct the client. The OpenAI SDK constructor throws when no API
-// key is available — doing that at module load would crash the entire app
-// (blank screen) before React mounts. Instead we defer it to first use, so
-// the app always renders and only AI features surface a clear error.
+// The OpenAI SDK is loaded dynamically so it NEVER lands in the initial
+// vendor chunk — this saves ~120KB on routes that don't use AI (e.g. /blog).
 let _client = null;
 
-function getOpenAI() {
+async function getOpenAI() {
     if (_client) return _client;
+    const [{ default: OpenAI }] = await Promise.all([
+        import('openai'),
+    ]);
     const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
     if (!apiKey) {
         throw new Error(
@@ -19,11 +18,11 @@ function getOpenAI() {
     return _client;
 }
 
-// Backwards-compatible accessor: `openai.chat.completions.create(...)` keeps
-// working, but the client is only built (and only throws) on first call.
+// Lazily fetch the chat completions API — the client (and the SDK) are only
+// loaded on the first AI call, so blog visitors never pay the download cost.
 const openai = {
     get chat() {
-        return getOpenAI().chat;
+        return { completions: { create: async (...args) => (await getOpenAI()).chat.completions.create(...args) } };
     },
 };
 

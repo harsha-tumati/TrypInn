@@ -74,7 +74,7 @@ export default function ReadMore({
             )}
 
             {showToggle && isClamped && (
-                <button
+                <button type="button"
                     className={`read-more-btn ${btnClassName}`}
                     onClick={() => setExpanded(!expanded)}
                     aria-expanded={expanded}
@@ -139,7 +139,7 @@ export function ReadMoreHTML({
             )}
 
             {isClamped && (
-                <button
+                <button type="button"
                     className={`read-more-btn ${btnClassName}`}
                     onClick={() => setExpanded(!expanded)}
                     aria-expanded={expanded}

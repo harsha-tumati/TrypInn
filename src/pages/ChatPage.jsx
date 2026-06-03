@@ -7,8 +7,10 @@ import { sendMessage } from '../services/firestoreService';
 import { chatWithAssistant } from '../config/openai';
 import { formatTimestamp } from '../utils/dateHelpers';
 import { Send, Sparkles, Users } from 'lucide-react';
+import usePageSeo from '../hooks/usePageSeo';
 
 export default function ChatPage() {
+    usePageSeo({ title: 'Trip Chat', robots: 'noindex, nofollow' });
     const { messages, selectedTrip, places, members } = useTrip();
     const { user, userProfile } = useAuth();
     const isGuest = useGuestMode();

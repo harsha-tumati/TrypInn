@@ -1,20 +1,19 @@
 // src/pages/TripsPage.jsx — Trypinn home (Gen-Z vibrant revamp)
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTrip } from '../context/TripContext';
-import { getUserTrips, getTripsByIds, joinTripByCode, createTrip, addPlaces } from '../services/firestoreService';
+// firestoreService and placesService are dynamically imported where needed
+// to keep them out of the critical initial bundle.
 import { getDraftIds, addDraftId, isTripClaimed } from '../utils/draftTrips';
-import { forwardGeocode } from '../services/placesService';
 import { formatDate } from '../utils/dateHelpers';
 import { suggestTripName } from '../utils/tripName';
 import { hasCoords } from '../utils/geo';
 import { MAPS_ENABLED } from '../config/maps';
-import PlacesPicker from '../components/PlacesPicker';
-import LocationAutocomplete from '../components/LocationAutocomplete';
-import Modal from '../components/Modal';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+const PlacesPicker = lazy(() => import('../components/PlacesPicker'));
+const DateRangePicker = lazy(() => import('../components/DateRangePicker'));
+const LocationAutocomplete = lazy(() => import('../components/LocationAutocomplete'));
+const Modal = lazy(() => import('../components/Modal'));
 import {
     Plus, Link2, MapPin, Calendar, Users, Sparkles, Star, MessageCircle,
     Send, X, ArrowRight, Compass, Flame, Quote, Zap,
@@ -42,37 +41,37 @@ export const TRENDING = [
 const HOT_DESTINATIONS = [
     {
         name: 'Goa, India',
-        image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=300&q=60',
         rating: 4.8, badge: '🔥 Trending', tag: 'Beaches & nightlife',
         desc: 'Sun-soaked beaches, sunset shacks and Portuguese charm — the group-trip classic.',
     },
     {
         name: 'Bali, Indonesia',
-        image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=300&q=60',
         rating: 4.9, badge: '⭐ Loved', tag: 'Temples & rice fields',
         desc: 'Rice terraces, jungle villas and waterfalls — wellness energy with a view.',
     },
     {
         name: 'Santorini, Greece',
-        image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=300&q=60',
         rating: 4.9, badge: '📸 Aesthetic', tag: 'Sunsets & blue domes',
         desc: 'Whitewashed cliffs and the most photogenic sunsets on the planet.',
     },
     {
         name: 'Leh, Ladakh',
-        image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=300&q=60',
         rating: 4.7, badge: '🏔️ Epic', tag: 'High passes & lakes',
         desc: 'Sky-high mountain passes, neon lakes and monasteries — the ultimate road trip.',
     },
     {
         name: 'Dubai, UAE',
-        image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=300&q=60',
         rating: 4.8, badge: '✨ Luxe', tag: 'Skyline & desert',
         desc: 'Futuristic skyline by day, desert dunes by night — main-character energy.',
     },
     {
         name: 'Kerala, India',
-        image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=300&q=60',
         rating: 4.9, badge: '🌿 Calm', tag: 'Backwaters & tea hills',
         desc: 'Houseboats, misty tea plantations and slow mornings — a proper reset.',
     },
@@ -101,39 +100,21 @@ const QUOTES = [
 ];
 
 const COLLAGE_IMAGES = [
-    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&q=80',
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&q=80',
-    'https://images.unsplash.com/photo-1504150558240-1bdefce0f4ce?w=500&q=80',
-    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&q=80',
-    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=500&q=80',
-    'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=500&q=80',
-    'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=500&q=80',
-    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80',
-    'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80',
-    'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=500&q=80',
-    'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=500&q=80',
-    'https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=500&q=80',
-    'https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?w=500&q=80',
-    'https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=500&q=80',
-    'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&q=80',
-];
-
-// Decorative tilted photo cards floating around the hero (desktop only).
-const HERO_DECO = [
-    { img: 'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=420&q=80', emoji: '🏝️', cls: 'hp-deco-1' },
-    { img: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=420&q=80', emoji: '🚐', cls: 'hp-deco-2' },
-    { img: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=420&q=80', emoji: '⛩️', cls: 'hp-deco-3' },
-    { img: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=420&q=80', emoji: '🎡', cls: 'hp-deco-4' },
-];
-
-// A playful pile of trip photos shown in the hero on phones/tablets —
-// the floating HERO_DECO cards are desktop-only, so smaller screens would
-// otherwise have no travel imagery up top.
-const HERO_STRIP = [
-    { img: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=240&q=80', emoji: '🏖️', label: 'Goa' },
-    { img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=240&q=80', emoji: '⛺', label: 'Leh' },
-    { img: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=240&q=80', emoji: '🌴', label: 'Kerala' },
-    { img: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=240&q=80', emoji: '🌺', label: 'Bali' },
+    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1504150558240-1bdefce0f4ce?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=170&q=60',
 ];
 
 // Deterministic trio of images for a trip card collage, keyed by trip id.
@@ -215,6 +196,7 @@ export default function TripsPage() {
     // A trip list = the signed-in user's claimed trips + anonymous drafts
     // created on this device. Drafts are tracked in localStorage.
     const fetchAllTrips = useCallback(async () => {
+        const { getUserTrips, getTripsByIds } = await import('../services/firestoreService');
         const claimed = user ? await getUserTrips(user.uid) : [];
         const draftIds = getDraftIds();
         const draftTrips = draftIds.length ? await getTripsByIds(draftIds) : [];
@@ -240,9 +222,13 @@ export default function TripsPage() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location.state]);
 
+    // Defer trip fetching until after initial paint to avoid blocking LCP
     useEffect(() => {
         let cancelled = false;
-        (async () => {
+        const schedule = typeof requestIdleCallback !== 'undefined'
+            ? requestIdleCallback
+            : (cb) => setTimeout(cb, 200);
+        const id = schedule(async () => {
             try {
                 const result = await fetchAllTrips();
                 if (!cancelled) setTrips(result);
@@ -251,8 +237,12 @@ export default function TripsPage() {
             } finally {
                 if (!cancelled) setLoading(false);
             }
-        })();
-        return () => { cancelled = true; };
+        });
+        return () => {
+            cancelled = true;
+            if (typeof cancelIdleCallback !== 'undefined') cancelIdleCallback(id);
+            else clearTimeout(id);
+        };
     }, [fetchAllTrips]);
 
     // Hide the browser scrollbar while the home page is mounted, for a
@@ -306,6 +296,10 @@ export default function TripsPage() {
         setCreateError('');
         setCreating(true);
         try {
+            const [{ createTrip, addPlaces }, { forwardGeocode }] = await Promise.all([
+                import('../services/firestoreService'),
+                import('../services/placesService'),
+            ]);
             const geocodeIfNeeded = async (place) => {
                 if (!place || hasCoords(place) || !MAPS_ENABLED) return place;
                 try {
@@ -414,12 +408,6 @@ export default function TripsPage() {
     const upcomingTrips = trips.filter(t => !t.endDate || new Date(t.endDate) >= new Date());
     const pastTrips = trips.filter(t => t.endDate && new Date(t.endDate) < new Date());
 
-    const dateGridStyle = {
-        display: 'grid',
-        gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
-        gap: 12,
-    };
-
     const renderTripCard = (trip, past = false) => (
         <div key={trip.id} className={`hp-trip-card${past ? ' is-past' : ''}`} onClick={() => openTrip(trip)} role="button" tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter') openTrip(trip); }}>
@@ -453,13 +441,6 @@ export default function TripsPage() {
                 <span className="hp-blob hp-blob-2" aria-hidden="true" />
                 <span className="hp-blob hp-blob-3" aria-hidden="true" />
 
-                {HERO_DECO.map((d) => (
-                    <div key={d.cls} className={`hp-deco ${d.cls}`} aria-hidden="true">
-                        <div className="hp-deco-img" style={{ backgroundImage: `url(${d.img})` }} />
-                        <span className="hp-deco-emoji">{d.emoji}</span>
-                    </div>
-                ))}
-
                 <div className="hp-hero-inner">
                     <span className="hp-eyebrow hp-pop">
                         <Sparkles size={13} aria-hidden="true" /> Group travel, minus the group-chat chaos
@@ -472,17 +453,6 @@ export default function TripsPage() {
                         Trypinn handles the boring bits so you can just go.
                     </p>
 
-                    {/* Trip-photo pile — travel vibe for phones/tablets */}
-                    <div className="hp-hero-strip hp-pop hp-pop-3" aria-hidden="true">
-                        {HERO_STRIP.map((s, i) => (
-                            <div key={s.label} className={`hp-strip-card hp-strip-${i}`}>
-                                <div className="hp-strip-img" style={{ backgroundImage: `url(${s.img})` }} />
-                                <span className="hp-strip-emoji">{s.emoji}</span>
-                                <span className="hp-strip-label">{s.label}</span>
-                            </div>
-                        ))}
-                    </div>
-
                     <div className="hp-search hp-pop hp-pop-3">
                         <div className="hp-search-field">
                             <PlacesPicker
@@ -494,7 +464,7 @@ export default function TripsPage() {
                                 <p className="hp-search-hint">Try “Goa”, “Tokyo” or a tiny town no one's heard of…</p>
                             )}
                         </div>
-                        <button className="hp-search-btn" onClick={handlePlanFromSearch} aria-label="Plan a trip">
+                        <button type="button" className="hp-search-btn" onClick={handlePlanFromSearch} aria-label="Plan a trip">
                             <Zap size={17} aria-hidden="true" />
                             {tripPlaces.length > 0 ? `Plan trip (${tripPlaces.length})` : 'Plan a trip'}
                         </button>
@@ -548,7 +518,7 @@ export default function TripsPage() {
                         <Reveal key={dest.name} delay={(i % 3) * 90} className={`hp-tilt hp-tilt-${i % 3}`}>
                             <div className="hp-dest-card">
                                 <div className="hp-dest-img" onClick={() => navigate(`/blog/${dest.name.toLowerCase().replace(/,?\s+/g, '-')}`)}>
-                                    <img src={dest.image} alt={dest.name} loading="lazy" />
+                                    <img src={dest.image} alt={dest.name} loading="lazy" width="300" height="198" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" />
                                     <span className="hp-dest-badge">{dest.badge}</span>
                                     <span className="hp-dest-rating"><Star size={12} fill="#fff" color="#fff" aria-hidden="true" /> {dest.rating}</span>
                                 </div>
@@ -556,7 +526,7 @@ export default function TripsPage() {
                                     <div className="hp-dest-tag">{dest.tag}</div>
                                     <h3>{dest.name}</h3>
                                     <p>{dest.desc}</p>
-                                    <button onClick={() => openCreateForDest(dest.name)}>
+                                    <button type="button" onClick={() => openCreateForDest(dest.name)}>
                                         Plan a trip here <ArrowRight size={14} aria-hidden="true" />
                                     </button>
                                 </div>
@@ -575,7 +545,7 @@ export default function TripsPage() {
                 </Reveal>
                 <Reveal className="hp-vibe-grid">
                     {VIBES.map((v) => (
-                        <button key={v.label} className="hp-vibe" style={{ '--vibe': v.c }} onClick={() => openCreateForDest(v.dest)}>
+                        <button type="button" key={v.label} className="hp-vibe" style={{ '--vibe': v.c }} onClick={() => openCreateForDest(v.dest)}>
                             <span className="hp-vibe-emoji">{v.emoji}</span>
                             <span className="hp-vibe-label">{v.label}</span>
                             <span className="hp-vibe-go"><ArrowRight size={15} aria-hidden="true" /></span>
@@ -614,10 +584,10 @@ export default function TripsPage() {
                         <h2>An AI concierge that gets the assignment.</h2>
                         <p>Tell it a vibe, a budget or a city. It finds hidden gems, builds day-by-day itineraries and answers the “but what do we DO there” question — instantly.</p>
                         <div className="hp-ai-btns">
-                            <button className="hp-btn hp-btn-coral" onClick={() => setShowAIChat(true)}>
+                            <button type="button" className="hp-btn hp-btn-coral" onClick={() => setShowAIChat(true)}>
                                 <MessageCircle size={16} aria-hidden="true" /> Chat with AI
                             </button>
-                            <button className="hp-btn hp-btn-glass" onClick={openCreateEmpty}>
+                            <button type="button" className="hp-btn hp-btn-glass" onClick={openCreateEmpty}>
                                 <Plus size={16} aria-hidden="true" /> Start a trip
                             </button>
                         </div>
@@ -637,7 +607,7 @@ export default function TripsPage() {
                         <span className="hp-kicker"><MapPin size={13} aria-hidden="true" /> Your trips</span>
                         <h2 className="hp-h2">Pick up where you left off</h2>
                     </div>
-                    <button className="hp-btn hp-btn-indigo" onClick={openCreateEmpty}>
+                    <button type="button" className="hp-btn hp-btn-indigo" onClick={openCreateEmpty}>
                         <Plus size={16} aria-hidden="true" /> New trip
                     </button>
                 </Reveal>
@@ -650,7 +620,7 @@ export default function TripsPage() {
                         <h3>No trips yet — let's fix that</h3>
                         <p>Plan your first adventure, no login needed. Join with a code if a friend already started one.</p>
                         <div className="hp-empty-btns">
-                            <button className="hp-btn hp-btn-coral" onClick={openCreateEmpty}><Plus size={16} aria-hidden="true" /> Plan your first trip</button>
+                            <button type="button" className="hp-btn hp-btn-coral" onClick={openCreateEmpty}><Plus size={16} aria-hidden="true" /> Plan your first trip</button>
                         </div>
                     </Reveal>
                 ) : (
@@ -708,10 +678,10 @@ export default function TripsPage() {
                     <h2>Stop talking about it.<br />Start planning it.</h2>
                     <p>Your next trip is one tap away — no login, no friction, no flaky group chat.</p>
                     <div className="hp-finalcta-btns">
-                        <button className="hp-btn hp-btn-coral hp-btn-lg" onClick={openCreateEmpty}>
+                        <button type="button" className="hp-btn hp-btn-coral hp-btn-lg" onClick={openCreateEmpty}>
                             <Plus size={18} aria-hidden="true" /> Plan a trip — free
                         </button>
-                        <button className="hp-btn hp-btn-glass hp-btn-lg" onClick={() => setShowAIChat(true)}>
+                        <button type="button" className="hp-btn hp-btn-glass hp-btn-lg" onClick={() => setShowAIChat(true)}>
                             <Sparkles size={18} aria-hidden="true" /> Ask the AI
                         </button>
                     </div>
@@ -720,7 +690,7 @@ export default function TripsPage() {
 
             {/* ══ FLOATING AI BUTTON ══ */}
             {!showAIChat && (
-                <button className="hp-ai-fab" onClick={() => setShowAIChat(true)} aria-label="Chat with AI travel assistant">
+                <button type="button" className="hp-ai-fab" onClick={() => setShowAIChat(true)} aria-label="Chat with AI travel assistant">
                     <Sparkles size={22} aria-hidden="true" />
                     <span className="hp-ai-fab-ping" aria-hidden="true" />
                 </button>
@@ -780,7 +750,7 @@ export default function TripsPage() {
                             placeholder="Ask anything about your trip…"
                             aria-label="Message AI assistant"
                         />
-                        <button onClick={handleSendChat} disabled={!chatInput.trim()} aria-label="Send message" style={{ minWidth: 46 }}>
+                        <button type="button" onClick={handleSendChat} disabled={!chatInput.trim()} aria-label="Send message" style={{ minWidth: 46 }}>
                             <Send size={18} />
                         </button>
                     </div>
@@ -826,11 +796,13 @@ export default function TripsPage() {
 
                     <div>
                         <label className="input-label" htmlFor="trip-places">Places you want to visit</label>
-                        <PlacesPicker
-                            id="trip-places"
-                            places={tripPlaces}
-                            onChange={(next) => { setTripPlaces(next); if (next.length) setCreateError(''); }}
-                        />
+                        <Suspense fallback={<div className="input-field" style={{ minHeight: 48 }}>Loading…</div>}>
+                            <PlacesPicker
+                                id="trip-places"
+                                places={tripPlaces}
+                                onChange={(next) => { setTripPlaces(next); if (next.length) setCreateError(''); }}
+                            />
+                        </Suspense>
                         {tripPlaces.length === 0 ? (
                             <p className="field-hint">
                                 {MAPS_ENABLED
@@ -839,17 +811,22 @@ export default function TripsPage() {
                             </p>
                         ) : (
                             <p className="field-hint">
-                                We'll name this trip <strong>“{suggestedTripName}”</strong>.
+                                We'll name this trip <strong>"{suggestedTripName}"</strong>.
                             </p>
                         )}
                     </div>
 
                     <div>
                         <label className="input-label">Trip Dates</label>
-                        <div style={dateGridStyle}>
-                            <DatePicker selected={createForm.startDate} onChange={(date) => setCreateForm({ ...createForm, startDate: date })} selectsStart startDate={createForm.startDate} endDate={createForm.endDate} minDate={new Date()} className="input-field" placeholderText="Start date" dateFormat="MMM d, yyyy" />
-                            <DatePicker selected={createForm.endDate} onChange={(date) => setCreateForm({ ...createForm, endDate: date })} selectsEnd startDate={createForm.startDate} endDate={createForm.endDate} minDate={createForm.startDate || new Date()} className="input-field" placeholderText="End date" dateFormat="MMM d, yyyy" />
-                        </div>
+                        <Suspense fallback={<div className="input-field" style={{ minHeight: 48 }}>Loading…</div>}>
+                            <DateRangePicker
+                                startDate={createForm.startDate}
+                                endDate={createForm.endDate}
+                                onStartChange={(date) => setCreateForm({ ...createForm, startDate: date })}
+                                onEndChange={(date) => setCreateForm({ ...createForm, endDate: date })}
+                                isMobile={isMobile}
+                            />
+                        </Suspense>
                     </div>
 
                     <div>
@@ -872,8 +849,6 @@ export default function TripsPage() {
                     </div>
                 </form>
             </Modal>
-
-
         </div>
     );
 }

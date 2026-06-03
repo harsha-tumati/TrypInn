@@ -42,7 +42,7 @@ button:hover{filter:brightness(1.15)}
 <div class="icon">✈️</div>
 <h1>You're offline</h1>
 <p>Trypinn needs an internet connection to sync your trips. Check your connection and try again.</p>
-<button onclick="location.reload()">Retry</button>
+<a href="" style="display:inline-block;background:#1E3A8A;color:#fff;border-radius:999px;padding:14px 32px;font-size:15px;font-weight:600;text-decoration:none;">Retry</a>
 </div>
 </body>
 </html>`;

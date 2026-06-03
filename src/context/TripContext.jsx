@@ -1,19 +1,18 @@
 // src/context/TripContext.jsx
 import { createContext, useContext, useState, useEffect, useMemo } from 'react';
-import { db } from '../config/firebase';
 import { isTripClaimed } from '../utils/draftTrips';
 import { useAuth } from './AuthContext';
-import {
-    collection,
-    doc,
-    onSnapshot,
-    query,
-    where,
-    orderBy,
-    getDoc,
-} from 'firebase/firestore';
 
 const TripContext = createContext(null);
+
+async function loadFirebase() {
+    const [{ db }, { collection, doc, onSnapshot, query, where, orderBy, getDoc }] =
+        await Promise.all([
+            import('../config/firebase').then((m) => m.getFirebase()),
+            import('firebase/firestore'),
+        ]);
+    return { db, collection, doc, onSnapshot, query, where, orderBy, getDoc };
+}
 
 export function TripProvider({ children }) {
     const { user } = useAuth();
@@ -28,47 +27,49 @@ export function TripProvider({ children }) {
     const [collabActive, setCollabActive] = useState(false);
 
     const currentTripId = selectedTrip?.id ?? null;
-    // Polls/chat/expenses/members are collaborative: they exist only once a trip is claimed.
-    // We now allow read access for guests, so we attach listeners as long as it's claimed.
     const collaborationReady = isTripClaimed(selectedTrip);
 
-    // When the active trip changes, clear trip-scoped state *synchronously
-    // during render* so consumers never see the previous trip's data while
-    // the new Firestore listeners spin up. This is React's sanctioned
-    // "adjust state when a prop changes" pattern — guarded so it runs once.
-    if (currentTripId !== activeTripId) {
-        setActiveTripId(currentTripId);
-        setPlaces([]);
-        setPolls([]);
-        setMessages([]);
-        setExpenses([]);
-        setMembers([]);
-        setRouteResult(null);
-    }
-
-    // When collaboration access is lost — sign-out, or the trip is no longer
-    // claimed — drop the collaborative data so it can't linger on screen after
-    // its listeners detach. Same render-phase pattern, guarded to run once.
-    if (collaborationReady !== collabActive) {
-        setCollabActive(collaborationReady);
-        if (!collaborationReady) {
+    // Reset derived state when the active trip changes — must be in useEffect
+    // to avoid React's "setState during render" warning and cascading renders.
+    useEffect(() => {
+        if (currentTripId !== activeTripId) {
+            setActiveTripId(currentTripId);
+            setPlaces([]);
             setPolls([]);
             setMessages([]);
             setExpenses([]);
             setMembers([]);
+            setRouteResult(null);
         }
-    }
+    }, [currentTripId, activeTripId]);
+
+    useEffect(() => {
+        if (collaborationReady !== collabActive) {
+            setCollabActive(collaborationReady);
+            if (!collaborationReady) {
+                setPolls([]);
+                setMessages([]);
+                setExpenses([]);
+                setMembers([]);
+            }
+        }
+    }, [collaborationReady, collabActive]);
 
     // Real-time listener for places in the selected trip
     useEffect(() => {
         if (!currentTripId) return;
-        const q = query(
-            collection(db, 'places'),
-            where('tripId', '==', currentTripId)
-        );
-        return onSnapshot(q, (snap) => {
-            setPlaces(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-        });
+        let unsub = null;
+        (async () => {
+            const { db, collection, query, where, onSnapshot } = await loadFirebase();
+            const q = query(
+                collection(db, 'places'),
+                where('tripId', '==', currentTripId)
+            );
+            unsub = onSnapshot(q, (snap) => {
+                setPlaces(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+            });
+        })();
+        return () => { if (unsub) unsub(); };
     }, [currentTripId]);
 
     const sortedPlaces = useMemo(() => {
@@ -81,7 +82,7 @@ export function TripProvider({ children }) {
                 if (idxA !== -1 && idxB !== -1) return idxA - idxB;
                 if (idxA !== -1) return -1;
                 if (idxB !== -1) return 1;
-                return 0; // maintain relative order for unordered items
+                return 0;
             });
         }
         return copy;
@@ -90,73 +91,100 @@ export function TripProvider({ children }) {
     // Real-time listener for polls
     useEffect(() => {
         if (!currentTripId || !collaborationReady) return;
-        const q = query(
-            collection(db, 'polls'),
-            where('tripId', '==', currentTripId),
-            orderBy('createdAt', 'desc')
-        );
-        return onSnapshot(q, (snap) => {
-            setPolls(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-        });
+        let unsub = null;
+        (async () => {
+            const { db, collection, query, where, orderBy, onSnapshot } = await loadFirebase();
+            const q = query(
+                collection(db, 'polls'),
+                where('tripId', '==', currentTripId),
+                orderBy('createdAt', 'desc')
+            );
+            unsub = onSnapshot(q, (snap) => {
+                setPolls(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+            });
+        })();
+        return () => { if (unsub) unsub(); };
     }, [currentTripId, collaborationReady]);
 
     // Real-time listener for chat messages
     useEffect(() => {
         if (!currentTripId || !collaborationReady) return;
-        const q = query(
-            collection(db, 'messages'),
-            where('tripId', '==', currentTripId),
-            orderBy('timestamp', 'asc')
-        );
-        return onSnapshot(q, (snap) => {
-            setMessages(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-        });
+        let unsub = null;
+        (async () => {
+            const { db, collection, query, where, orderBy, onSnapshot } = await loadFirebase();
+            const q = query(
+                collection(db, 'messages'),
+                where('tripId', '==', currentTripId),
+                orderBy('timestamp', 'asc')
+            );
+            unsub = onSnapshot(q, (snap) => {
+                setMessages(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+            });
+        })();
+        return () => { if (unsub) unsub(); };
     }, [currentTripId, collaborationReady]);
 
     // Real-time listener for expenses
     useEffect(() => {
         if (!currentTripId || !collaborationReady) return;
-        const q = query(
-            collection(db, 'expenses'),
-            where('tripId', '==', currentTripId),
-            orderBy('timestamp', 'desc')
-        );
-        return onSnapshot(q, (snap) => {
-            setExpenses(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-        });
+        let unsub = null;
+        (async () => {
+            const { db, collection, query, where, orderBy, onSnapshot } = await loadFirebase();
+            const q = query(
+                collection(db, 'expenses'),
+                where('tripId', '==', currentTripId),
+                orderBy('timestamp', 'desc')
+            );
+            unsub = onSnapshot(q, (snap) => {
+                setExpenses(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+            });
+        })();
+        return () => { if (unsub) unsub(); };
     }, [currentTripId, collaborationReady]);
 
     // Real-time listener for trip members (includes live location)
     useEffect(() => {
         if (!currentTripId || !collaborationReady) return;
-        const q = query(
-            collection(db, 'tripMembers'),
-            where('tripId', '==', currentTripId)
-        );
-
         let isMounted = true;
-        const userCache = {}; // Cache user details to avoid refetching on every location ping
+        let unsub = null;
+        const userCache = {};
 
-        const unsub = onSnapshot(q, async (snap) => {
-            const memberDocs = snap.docs.map(d => d.data());
-            const enrichedMembers = await Promise.all(memberDocs.map(async (m) => {
-                if (!userCache[m.uid]) {
-                    const userSnap = await getDoc(doc(db, 'users', m.uid));
-                    if (userSnap.exists()) {
-                        userCache[m.uid] = userSnap.data();
-                    } else {
-                        userCache[m.uid] = { displayName: 'Unknown User', photoURL: null };
-                    }
-                }
-                return { ...userCache[m.uid], role: m.role, currentLocation: m.currentLocation, locationUpdatedAt: m.locationUpdatedAt, uid: m.uid };
-            }));
+        (async () => {
+            const { db, collection, query, where, onSnapshot, getDoc, doc } = await loadFirebase();
+            const q = query(
+                collection(db, 'tripMembers'),
+                where('tripId', '==', currentTripId)
+            );
 
-            if (isMounted) setMembers(enrichedMembers);
-        });
+            unsub = onSnapshot(q, async (snap) => {
+                const memberDocs = snap.docs.map((d) => d.data());
+                const enrichedMembers = await Promise.all(
+                    memberDocs.map(async (m) => {
+                        if (!userCache[m.uid]) {
+                            const userSnap = await getDoc(doc(db, 'users', m.uid));
+                            if (userSnap.exists()) {
+                                userCache[m.uid] = userSnap.data();
+                            } else {
+                                userCache[m.uid] = { displayName: 'Unknown User', photoURL: null };
+                            }
+                        }
+                        return {
+                            ...userCache[m.uid],
+                            role: m.role,
+                            currentLocation: m.currentLocation,
+                            locationUpdatedAt: m.locationUpdatedAt,
+                            uid: m.uid,
+                        };
+                    })
+                );
+
+                if (isMounted) setMembers(enrichedMembers);
+            });
+        })();
 
         return () => {
             isMounted = false;
-            unsub();
+            if (unsub) unsub();
         };
     }, [currentTripId, collaborationReady]);
 

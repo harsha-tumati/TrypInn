@@ -1,23 +1,16 @@
 // src/context/AuthContext.jsx
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import { auth, db, googleProvider, firebaseConfigured } from '../config/firebase';
-import {
-    signInWithPopup,
-    signOut as firebaseSignOut,
-    onAuthStateChanged,
-} from 'firebase/auth';
-import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
+import { firebaseConfigured } from '../config/firebaseConfig';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [userProfile, setUserProfile] = useState(null);
-    // Start "loading" only when there is a real Firebase config to wait on;
-    // otherwise the app resolves immediately in a signed-out state.
     const [loading, setLoading] = useState(firebaseConfigured);
 
-    const ensureUserProfile = useCallback(async (firebaseUser) => {
+    const ensureUserProfile = useCallback(async (db, firebaseUser) => {
+        const { doc, setDoc, getDoc, serverTimestamp } = await import('firebase/firestore');
         const userRef = doc(db, 'users', firebaseUser.uid);
         const snap = await getDoc(userRef);
 
@@ -36,52 +29,83 @@ export function AuthProvider({ children }) {
     }, []);
 
     useEffect(() => {
-        // No real Firebase config — don't attach a listener that can't
-        // resolve. Initial state (signed-out, not loading) already reflects it.
         if (!firebaseConfigured) return;
 
-        const unsubscribe = onAuthStateChanged(
-            auth,
-            async (firebaseUser) => {
-                if (firebaseUser) {
-                    setUser(firebaseUser);
-                    try {
-                        setUserProfile(await ensureUserProfile(firebaseUser));
-                    } catch (e) {
-                        console.error('Failed to load user profile:', e);
+        let unsubscribe = null;
+        let cancelled = false;
+        let idleId = null;
+
+        const startAuth = async () => {
+            const [{ auth, db, googleProvider }, { onAuthStateChanged }] = await Promise.all([
+                import('../config/firebase').then((m) => m.getFirebase()),
+                import('firebase/auth'),
+            ]);
+            if (cancelled) return;
+
+            unsubscribe = onAuthStateChanged(
+                auth,
+                async (firebaseUser) => {
+                    if (cancelled) return;
+                    if (firebaseUser) {
+                        setUser(firebaseUser);
+                        try {
+                            setUserProfile(await ensureUserProfile(db, firebaseUser));
+                        } catch (e) {
+                            if (import.meta.env.DEV) console.error('Failed to load user profile:', e);
+                            setUserProfile(null);
+                        }
+                    } else {
+                        setUser(null);
                         setUserProfile(null);
                     }
-                } else {
+                    setLoading(false);
+                },
+                (error) => {
+                    if (cancelled) return;
+                    if (import.meta.env.DEV) console.error('Auth listener error:', error);
                     setUser(null);
                     setUserProfile(null);
+                    setLoading(false);
                 }
-                setLoading(false);
-            },
-            (error) => {
-                console.error('Auth listener error:', error);
-                setUser(null);
-                setUserProfile(null);
-                setLoading(false);
-            }
-        );
+            );
+        };
 
-        return unsubscribe;
+        // Defer Firebase auth init until the browser is idle — this keeps the
+        // main thread free during initial paint and dramatically improves TBT
+        // on mobile (where the 500KB Firebase chunk would otherwise jank).
+        const scheduleIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
+        idleId = scheduleIdle(startAuth, { timeout: 3000 });
+
+        return () => {
+            cancelled = true;
+            if (window.cancelIdleCallback) window.cancelIdleCallback(idleId);
+            else clearTimeout(idleId);
+            if (unsubscribe) unsubscribe();
+        };
     }, [ensureUserProfile]);
 
     const signInWithGoogle = useCallback(async () => {
+        const [{ auth, googleProvider }, { signInWithPopup }] = await Promise.all([
+            import('../config/firebase').then((m) => m.getFirebase()),
+            import('firebase/auth'),
+        ]);
         try {
             await signInWithPopup(auth, googleProvider);
         } catch (error) {
-            console.error('Google Sign-In error:', error);
+            if (import.meta.env.DEV) console.error('Google Sign-In error:', error);
             throw error;
         }
     }, []);
 
     const signOut = useCallback(async () => {
+        const [{ auth }, { signOut: firebaseSignOut }] = await Promise.all([
+            import('../config/firebase').then((m) => m.getFirebase()),
+            import('firebase/auth'),
+        ]);
         try {
             await firebaseSignOut(auth);
         } catch (error) {
-            console.error('Sign-out error:', error);
+            if (import.meta.env.DEV) console.error('Sign-out error:', error);
         }
     }, []);
 

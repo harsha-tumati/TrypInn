@@ -88,6 +88,7 @@ export default function LocationAutocomplete({ value, onChange, onSelect, placeh
                 value={value || ''}
                 onChange={handleChange}
                 placeholder={placeholder}
+                aria-label={placeholder}
                 className={`location-input${confirmed ? ' location-confirmed' : ''}`}
                 style={{ paddingRight: value ? 64 : 14 }}
             />

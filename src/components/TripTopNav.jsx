@@ -148,7 +148,7 @@ export default function TripTopNav() {
                                     <div className="profile-dropdown-email">{userProfile?.email || ''}</div>
                                 </div>
                                 <div className="profile-dropdown-divider" />
-                                <button
+                                <button type="button"
                                     className="profile-signout-btn"
                                     onClick={async () => { await signOut(); navigate('/login'); }}
                                     role="menuitem"

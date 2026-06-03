@@ -87,6 +87,12 @@ function applySecurityHeaders(res, { cache } = {}) {
     res.headers.set('x-content-type-options', 'nosniff');
     res.headers.set('referrer-policy', 'strict-origin-when-cross-origin');
     res.headers.set('x-frame-options', 'SAMEORIGIN');
+    // Content Security Policy — allows inline styles (Vite) and connects to Firebase, Google Maps, Unsplash
+    res.headers.set('content-security-policy', "default-src 'self'; script-src 'self' https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://maps.googleapis.com https://*.googleusercontent.com; connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://api.openai.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';");
+    // Permissions Policy — disable unused browser features
+    res.headers.set('permissions-policy', 'geolocation=(self), camera=(), microphone=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), display-capture=(), encrypted-media=(), fullscreen=(self), picture-in-picture=()');
+    // HSTS — only sent over HTTPS connections (ignored over HTTP)
+    res.headers.set('strict-transport-security', 'max-age=63072000; includeSubDomains; preload');
     if (cache) res.headers.set('cache-control', cache);
     return res;
 }

@@ -1,55 +1,77 @@
-// src/pages/BlogPage.jsx — SEO Blog Section
-import { useState, useEffect } from 'react';
+// src/pages/BlogPage.jsx — SEO Blog Section (max AEO/DEO)
+import { useState, useEffect, useCallback, useMemo, useTransition, memo } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Clock, User, Star } from 'lucide-react';
+import { ArrowLeft, Clock, User, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import usePageSeo, { schemas } from '../hooks/usePageSeo';
 
-// Sets the document title, meta description and Article JSON-LD for SEO.
-// Cleans up on unmount so list ↔ detail navigation stays correct.
-function useBlogSeo(post) {
-    useEffect(() => {
-        const prevTitle = document.title;
-        const metaEl = document.querySelector('meta[name="description"]');
-        const prevDesc = metaEl?.getAttribute('content') || '';
-
-        document.title = post
-            ? `${post.title} · Trypinn Blog`
-            : 'Trypinn Blog — Travel tips & trip-planning guides';
-        const desc = post
-            ? post.metaDescription
-            : 'Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.';
-        if (metaEl) metaEl.setAttribute('content', desc);
-
-        let ld;
-        if (post) {
-            ld = document.createElement('script');
-            ld.type = 'application/ld+json';
-            ld.textContent = JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'Article',
-                headline: post.title,
-                description: post.metaDescription,
-                image: post.coverImage,
-                author: { '@type': 'Organization', name: post.author || 'Trypinn' },
-                publisher: { '@type': 'Organization', name: 'Trypinn' },
-                keywords: (post.tags || []).join(', '),
-            });
-            document.head.appendChild(ld);
+// ── AEO: Extract H2 headings + following paragraph as FAQ items ──
+function extractFaqsFromContent(content) {
+    if (!content) return [];
+    const faqs = [];
+    const lines = content.split('\n');
+    let currentQ = null;
+    let currentA = [];
+    for (const line of lines) {
+        const h2Match = line.match(/^##\s+(.+)$/);
+        if (h2Match) {
+            if (currentQ && currentA.length > 0) {
+                faqs.push({ question: currentQ, answer: currentA.join(' ').trim() });
+            }
+            currentQ = h2Match[1].trim();
+            currentA = [];
+        } else if (currentQ && line.trim() && !line.startsWith('![') && !line.startsWith('- ')) {
+            currentA.push(line.trim());
         }
-        return () => {
-            document.title = prevTitle;
-            if (metaEl) metaEl.setAttribute('content', prevDesc);
-            if (ld) ld.remove();
-        };
-    }, [post]);
+    }
+    if (currentQ && currentA.length > 0) {
+        faqs.push({ question: currentQ, answer: currentA.join(' ').trim() });
+    }
+    return faqs.slice(0, 8);
 }
 
-const BLOG_POSTS = [
+// ── AEO: Extract HowTo steps from content for step-by-step posts ──
+function extractHowToSteps(content) {
+    if (!content) return null;
+    const lines = content.split('\n');
+    const steps = [];
+    let currentName = null;
+    let currentText = [];
+    for (const line of lines) {
+        const h2Match = line.match(/^##\s+(.+)$/);
+        if (h2Match) {
+            if (currentName && currentText.length > 0) {
+                steps.push({
+                    name: currentName,
+                    text: currentText.join(' ').trim().slice(0, 300),
+                });
+            }
+            currentName = h2Match[1].trim();
+            currentText = [];
+        } else if (currentName && line.trim() && !line.startsWith('![') && !line.startsWith('- ')) {
+            currentText.push(line.trim());
+        }
+    }
+    if (currentName && currentText.length > 0) {
+        steps.push({
+            name: currentName,
+            text: currentText.join(' ').trim().slice(0, 300),
+        });
+    }
+    return steps.length >= 3 ? steps.slice(0, 6) : null;
+}
+
+// ── AEO: Slugify heading text for anchor links ──
+function slugifyHeading(text) {
+    return text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').slice(0, 60).replace(/-+$/, '');
+}
+
+const ORIGINAL_POSTS = [
     {
         id: 'split-group-trip-expenses',
         title: "How to Split Group Trip Expenses Fairly — Without the Awkward Money Talk",
         metaDescription: "Money is the No.1 cause of group-trip friction. Learn a simple, fair system to split travel expenses, track who paid what, and settle up with zero awkwardness.",
         excerpt: "One person always ends up paying for the cab, another for dinner, and by day three nobody remembers who owes whom. Here's a fair, drama-free way to handle trip money.",
-        coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?fm=webp&w=800&q=60',
         author: 'Trypinn Team',
         date: 'May 20, 2026',
         readTime: '6 min read',
@@ -69,7 +91,7 @@ The single biggest mistake is figuring out the money *during* the trip. Have a f
 - **The splitting style:** Equal split is simplest. If incomes vary a lot, a "fair share" split (everyone contributes a comfortable amount) can work better.
 - **One source of truth:** Pick one place to log every shared expense — not three different chats and a memory.
 
-![Friends planning a budget together](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80)
+![Friends planning a budget together](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?fm=webp&w=1200&q=60)
 
 ## Log Expenses the Moment They Happen
 
@@ -96,7 +118,7 @@ Plan your next group getaway on Trypinn and let the Expenses tab do the awkward 
         title: "12 Underrated Weekend Getaways Near Bengaluru for 2026",
         metaDescription: "Skip the crowds. Discover 12 underrated weekend getaways near Bengaluru — hills, waterfalls, heritage towns and quiet beaches, all within a comfortable drive.",
         excerpt: "Coorg and Ooty are lovely — and packed. Here are twelve quieter escapes within driving distance of Bengaluru, perfect for a spontaneous two-day reset.",
-        coverImage: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?fm=webp&w=800&q=60',
         author: 'Trypinn Team',
         date: 'May 18, 2026',
         readTime: '9 min read',
@@ -115,7 +137,7 @@ Here are twelve underrated getaways, all within a comfortable drive.
 - **Yelagiri** — A compact hill station ideal for a one-night reset: paragliding, a calm lake, and cool air.
 - **Chikmagalur's edges** — Skip the town centre; the estates around Mullayanagiri stay peaceful midweek and shoulder-season.
 
-![Misty hills near Bengaluru](https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80)
+![Misty hills near Bengaluru](https://images.unsplash.com/photo-1502082553048-f009c37129b9?fm=webp&w=1200&q=60)
 
 ## Water & Waterfalls
 
@@ -147,7 +169,7 @@ Drop any of these into Trypinn, let it route your stops in the smartest order, a
         title: "The Smart Traveler's Pre-Trip Checklist: 9 Things People Always Forget",
         metaDescription: "A practical pre-trip checklist for stress-free travel. Nine things travelers consistently forget — from offline maps to power banks — and how to never miss them again.",
         excerpt: "It's never the passport people forget — it's the small stuff that quietly wrecks a trip. Here's the checklist we run before every single departure.",
-        coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?fm=webp&w=800&q=60',
         author: 'Trypinn Team',
         date: 'May 14, 2026',
         readTime: '5 min read',
@@ -171,7 +193,7 @@ Here's the nine-point checklist we run before every departure.
 - **Offline maps downloaded** — Save your destination's map before you lose signal in the hills.
 - **The right adapters and cables** — Count your devices, then count your cables. They rarely match.
 
-![Travel essentials laid out before packing](https://images.unsplash.com/photo-1553969546-2dc10dcc7c89?w=1200&q=80)
+![Travel essentials laid out before packing](https://images.unsplash.com/photo-1553969546-2dc10dcc7c89?fm=webp&w=1200&q=60)
 
 ## The Quietly Important Stuff
 
@@ -190,7 +212,7 @@ The best travelers aren't lucky — they're systematic. Build the plan once, sha
         title: "Planning a Group Trip Without Losing Your Mind — Here's the App That Saved Us",
         metaDescription: "Planning a trip with friends doesn't have to be stressful. Discover how a group trip planner app can save your sanity, coordinate itineraries, and keep everyone happy.",
         excerpt: "We've all been there — that excited WhatsApp group that quickly spirals into chaos. Here's how we broke the curse and planned a seamless itinerary across India.",
-        coverImage: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?fm=webp&w=800&q=60',
         author: 'Trypinn Team',
         date: 'May 16, 2026',
         readTime: '8 min read',
@@ -202,7 +224,7 @@ Then, reality hits.
 
 Fast forward two weeks, and that enthusiastic WhatsApp group has transformed into a chaotic graveyard of unanswered polls, conflicting flight screenshots, and radio silence. Rahul wants an action-packed itinerary with scuba diving and trek routes; Sneha wants to spend four hours sipping iced lattes at a bohemian cafe; and half the group hasn't even confirmed if they can get leave from work.
 
-![Friends checking map](https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=80)
+![Friends checking map](https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=1200&q=60)
 
 Trying to organize a group vacation can feel less like a holiday and more like a second full-time job. In fact, it's a running joke that the hardest part of any group trip isn't saving up the money—it's actually making it out of the group chat.
 
@@ -222,7 +244,7 @@ When you use a shared Google Sheet or a running note, a few things invariably go
 - **The Endless Scroll:** Crucial hotel recommendations and links get buried under 300 messages discussing where to eat dinner on night one.
 - **The Visualization Gap:** Looking at a list of addresses on a spreadsheet doesn't help you realize that the cute cafe you picked is a two-hour drive in the opposite direction from your afternoon museum tour.
 
-![Messy planning vs App](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80)
+![Messy planning vs App](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60)
 
 Whether you're organizing a massive family reunion or planning a tight backpacking stint where you occasionally meet up with friends, mapping out logistics requires a visual, real-time approach.
 
@@ -244,7 +266,7 @@ Here are the standout features that completely transformed how we put our route 
 
 The biggest game-changer was the ability for multiple users to add, remove, and reorder destinations simultaneously. If Sneha found a stunning cliffside viewpoint, she could drop it right into the itinerary. If Rahul noticed that a beach was right next to it, he could drag and drop it into the next time slot.
 
-![Group of friends laughing](https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1200&q=80)
+![Group of friends laughing](https://images.unsplash.com/photo-1539635278303-d4002c07eae3?fm=webp&w=1200&q=60)
 
 Seeing pins appear on the map in real-time as people added ideas turned a stressful chore into a fun, interactive pre-trip ritual. It gave everyone ownership over the vacation, completely eliminating the post-trip complaints of *"We only did what you wanted to do!"*
 
@@ -283,21 +305,21 @@ Gather your travel crew, fire up your browser, and start mapping out your next c
         title: "The Ultimate Guide to Goa: Beaches, Heritage, and Nightlife",
         metaDescription: "Discover the best beaches, historical Portuguese architecture, and vibrant nightlife in Goa. Perfect for group trips and solo adventures.",
         excerpt: "Pristine beaches, vibrant nightlife, and Portuguese heritage. Perfect for groups seeking sun, sand, and adventure.",
-        coverImage: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=800&q=60',
         author: 'Trypinn Experts',
         date: 'May 10, 2026',
         readTime: '6 min read',
         tags: ['Beach', 'Nightlife', 'India', 'Heritage'],
         featured: false,
         suggestedPlaces: [
-            { name: "Baga Beach", rating: 4.5, image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80" },
-            { name: "Fort Aguada", rating: 4.6, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Fort_aguada.jpg/800px-Fort_aguada.jpg" },
-            { name: "Dudhsagar Falls", rating: 4.8, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Doodhsagar_Fall.jpg/800px-Doodhsagar_Fall.jpg" },
-            { name: "Grande Island", rating: 4.7, image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800&q=80" }
+            { name: "Baga Beach", rating: 4.5, image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60" },
+            { name: "Fort Aguada", rating: 4.6, image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=800&q=60" },
+            { name: "Dudhsagar Falls", rating: 4.8, image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?fm=webp&w=800&q=60" },
+            { name: "Grande Island", rating: 4.7, image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=800&q=60" }
         ],
         content: `Goa is India's pocket-sized paradise, a kaleidoscopic blend of Indian and Portuguese cultures, sun, sea, sand, seafood, and spirituality.
 
-![Goa Beaches](https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&q=80)
+![Goa Beaches](https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60)
 
 ---
 
@@ -308,7 +330,7 @@ Goa isn't just about lounging on the sand; it's an adventurer's playground. Whet
 ### 🤿 Scuba Diving at Grande Island
 The waters around Grande Island offer some of the best scuba diving experiences in India. Explore vibrant coral reefs, swim alongside exotic marine life, and discover historical shipwrecks hidden beneath the Arabian Sea.
 
-![Scuba Diving in Goa](https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80)
+![Scuba Diving in Goa](https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=1200&q=60)
 
 ### 🏄‍♂️ Water Sports at Baga & Calangute
 Get your adrenaline pumping with parasailing, jet skiing, and banana boat rides on the bustling shores of Baga and Calangute beaches.
@@ -321,7 +343,7 @@ Get your adrenaline pumping with parasailing, jet skiing, and banana boat rides 
 - **Palolem Beach:** A picturesque, crescent-shaped beach in South Goa, known for its calm, shallow waters and laid-back "silent noise" parties.
 - **Anjuna Beach:** Famous for its trance parties, rocky shores, and the legendary Wednesday flea market where you can hunt for bohemian treasures.
 
-![Palolem Beach](https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&q=80)
+![Palolem Beach](https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60)
 
 ---
 
@@ -332,7 +354,7 @@ Goa's rich Portuguese history is etched into its stunning architecture and tower
 ### Basilica of Bom Jesus
 Located in Old Goa, this UNESCO World Heritage site showcases stunning baroque architecture and holds the mortal remains of St. Francis Xavier.
 
-![Basilica of Bom Jesus](https://images.unsplash.com/photo-1620766165457-a8025baa82e0?w=1200&q=80)
+![Basilica of Bom Jesus](https://images.unsplash.com/photo-1620766165457-a8025baa82e0?fm=webp&w=1200&q=60)
 
 ### Fort Aguada
 A well-preserved 17th-century Portuguese fort standing tall on Sinquerim Beach. It offers panoramic views of the Arabian Sea and features a historic four-storey lighthouse.
@@ -350,21 +372,21 @@ Planning a group trip to Goa? Keep track of everyone's beach preferences, coordi
         title: "Bali Backpacking: Temples, Terraces, and Tropical Bliss",
         metaDescription: "Explore Bali's ancient temples, lush rice terraces, and vibrant culture. The ultimate guide to a tropical Indonesian getaway.",
         excerpt: "Lush rice terraces, ancient temples, and tropical paradise. Experience culture, wellness, and natural beauty.",
-        coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60',
         author: 'Wanderlust Team',
         date: 'May 08, 2026',
         readTime: '7 min read',
         tags: ['Tropical', 'Wellness', 'Indonesia'],
         featured: false,
         suggestedPlaces: [
-            { name: "Ubud Monkey Forest", rating: 4.7, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Monkey_Forest.jpg/800px-Monkey_Forest.jpg" },
-            { name: "Uluwatu Temple", rating: 4.8, image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80" },
-            { name: "Tanah Lot", rating: 4.6, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TanahLot_2014.JPG/800px-TanahLot_2014.JPG" },
-            { name: "Mount Batur", rating: 4.9, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/View_Of_Mt.Batur_on_April_8th_2026.jpg/800px-View_Of_Mt.Batur_on_April_8th_2026.jpg" }
+            { name: "Ubud Monkey Forest", rating: 4.7, image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60" },
+            { name: "Uluwatu Temple", rating: 4.8, image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60" },
+            { name: "Tanah Lot", rating: 4.6, image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?fm=webp&w=800&q=60" },
+            { name: "Mount Batur", rating: 4.9, image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60" }
         ],
         content: `Bali, the famed Island of the Gods, stakes a serious claim to be paradise on earth. Its varied landscape of hills and mountains, rugged coastlines, and sandy beaches provide a picturesque backdrop to its colorful, deeply spiritual culture.
 
-![Bali Rice Terraces](https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80)
+![Bali Rice Terraces](https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=1200&q=60)
 
 ---
 
@@ -375,7 +397,7 @@ Bali offers everything from deep relaxation to extreme sports.
 ### 🏄‍♂️ Surfing at Uluwatu
 Catch some of the world's most famous waves at Uluwatu. Whether you're a seasoned pro or taking your first lesson, the Indian Ocean swells here are legendary.
 
-![Surfing in Bali](https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80)
+![Surfing in Bali](https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=1200&q=60)
 
 ### 🧘‍♀️ Yoga and Wellness in Ubud
 Immerse yourself in a holistic retreat. Ubud is the epicenter of Bali's spiritual wellness scene, featuring open-air yoga studios surrounded by the jungle.
@@ -389,7 +411,7 @@ The cultural heart of Bali, famous for its lush rainforests and terraced rice pa
 - **Tegallalang Rice Terrace:** Iconic, terraced landscapes perfect for photography.
 - **Sacred Monkey Forest Sanctuary:** A nature reserve and temple complex home to hundreds of macaques.
 
-![Monkey Forest Ubud](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Monkey_Forest.jpg/1200px-Monkey_Forest.jpg)
+![Monkey Forest Ubud](https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=1200&q=60)
 
 ### Uluwatu
 Known for its stunning cliffside ocean views.
@@ -401,7 +423,7 @@ Known for its stunning cliffside ocean views.
 - **Tanah Lot:** A rock formation home to the ancient Hindu pilgrimage temple Pura Tanah Lot.
 - **Mount Batur:** An active volcano offering breathtaking sunrise treks.
 
-![Mount Batur Sunrise](https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80)
+![Mount Batur Sunrise](https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=1200&q=60)
 
 Organize your Bali adventure seamlessly with **Trypinn**, ensuring you never miss a sunset or a temple visit.`
     },
@@ -410,21 +432,21 @@ Organize your Bali adventure seamlessly with **Trypinn**, ensuring you never mis
         title: "Santorini Sunsets: The Jewel of the Aegean",
         metaDescription: "Discover Santorini's blue domes, whitewashed villages, and dramatic sunsets. A complete guide to the romantic Greek island.",
         excerpt: "Iconic blue domes, stunning sunsets, and whitewashed villages. The ultimate romantic Mediterranean escape.",
-        coverImage: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60',
         author: 'Trypinn Experts',
         date: 'May 05, 2026',
         readTime: '5 min read',
         tags: ['Romantic', 'Mediterranean', 'Greece'],
         featured: false,
         suggestedPlaces: [
-            { name: "Oia Blue Domes", rating: 4.9, image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80" },
-            { name: "Red Beach", rating: 4.5, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Red_Beach_Santorini.jpg/800px-Red_Beach_Santorini.jpg" },
-            { name: "Amoudi Bay", rating: 4.8, image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80" },
-            { name: "Santo Wines", rating: 4.7, image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800&q=80" }
+            { name: "Oia Blue Domes", rating: 4.9, image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?fm=webp&w=800&q=60" },
+            { name: "Red Beach", rating: 4.5, image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60" },
+            { name: "Amoudi Bay", rating: 4.8, image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60" },
+            { name: "Santo Wines", rating: 4.7, image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=800&q=60" }
         ],
         content: `Santorini is a crescent-shaped island in the Aegean Sea, famous for its dramatic views, stunning sunsets, and white-washed houses clinging to cliffs.
 
-![Santorini Caldera](https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=1200&q=80)
+![Santorini Caldera](https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60)
 
 ---
 
@@ -433,7 +455,7 @@ Organize your Bali adventure seamlessly with **Trypinn**, ensuring you never mis
 ### ⛵ Sunset Catamaran Cruise
 Experience the iconic Santorini sunset from the water. Sail around the caldera, swim in the volcanic hot springs, and enjoy a fresh Greek barbecue on board.
 
-![Catamaran Cruise](https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80)
+![Catamaran Cruise](https://images.unsplash.com/photo-1502680390469-be75c86b636f?fm=webp&w=1200&q=60)
 
 ### 🍷 Wine Tasting Tour
 Volcanic ash soil makes for unique, crisp wines. Visit local vineyards to taste the island's famous Assyrtiko wine overlooking the Aegean Sea.
@@ -447,7 +469,7 @@ The most famous village in Santorini, renowned for its breathtaking sunset views
 - **Blue Dome Churches:** The iconic, photogenic spots seen on every postcard.
 - **Amoudi Bay:** A picturesque port at the base of Oia, perfect for fresh seafood.
 
-![Oia Blue Domes](https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1200&q=80)
+![Oia Blue Domes](https://images.unsplash.com/photo-1533105079780-92b9be482077?fm=webp&w=1200&q=60)
 
 ### Fira
 The vibrant capital of the island, offering stunning views, shopping, and nightlife.
@@ -456,7 +478,7 @@ The vibrant capital of the island, offering stunning views, shopping, and nightl
 - **Red Beach:** Famous for its striking red volcanic sand and towering red cliffs.
 - **Kamari Beach:** A popular black sand beach with excellent facilities.
 
-![Red Beach Santorini](https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&q=80)
+![Red Beach Santorini](https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60)
 
 ---
 
@@ -467,21 +489,21 @@ Coordinate your romantic getaway or group holiday using **Trypinn** to share fli
         title: "Adventure Awaits: Conquering Leh Ladakh",
         metaDescription: "A comprehensive guide to traveling Leh Ladakh, featuring high-altitude lakes, mountain passes, and ancient monasteries.",
         excerpt: "Breathtaking mountain passes, pristine lakes, and Buddhist monasteries. A paradise for adventurous souls.",
-        coverImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60',
         author: 'Mountain Explorer',
         date: 'May 02, 2026',
         readTime: '9 min read',
         tags: ['Adventure', 'Mountains', 'India'],
         featured: false,
         suggestedPlaces: [
-            { name: "Pangong Lake", rating: 4.9, image: "https://images.unsplash.com/photo-1582293041079-7814c2f12063?w=800&q=80" },
-            { name: "Nubra Valley", rating: 4.8, image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" },
-            { name: "Thiksey Monastery", rating: 4.7, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Thikse_Monastery.jpg/800px-Thikse_Monastery.jpg" },
-            { name: "Khardung La", rating: 4.6, image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80" }
+            { name: "Pangong Lake", rating: 4.9, image: "https://images.unsplash.com/photo-1582293041079-7814c2f12063?fm=webp&w=800&q=60" },
+            { name: "Nubra Valley", rating: 4.8, image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60" },
+            { name: "Thiksey Monastery", rating: 4.7, image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60" },
+            { name: "Khardung La", rating: 4.6, image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60" }
         ],
         content: `Ladakh, the "Land of High Passes," is a region in northern India known for its stunning, rugged landscapes, clear blue skies, and deep-rooted Buddhist culture.
 
-![Leh Landscape](https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80)
+![Leh Landscape](https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60)
 
 ---
 
@@ -490,7 +512,7 @@ Coordinate your romantic getaway or group holiday using **Trypinn** to share fli
 ### 🏍️ Motorcycle Expeditions
 Riding a Royal Enfield through the barren, majestic mountains of Ladakh is the ultimate road trip dream.
 
-![Motorcycle in Ladakh](https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80)
+![Motorcycle in Ladakh](https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60)
 
 ### ⛺ Stargazing in Nubra
 Far from city lights, the high-altitude cold desert of Nubra Valley offers some of the clearest, most spectacular starry skies in the world.
@@ -502,7 +524,7 @@ Far from city lights, the high-altitude cold desert of Nubra Valley offers some 
 ### Pangong Tso
 A high-altitude lake famous for its ever-changing hues of blue. It spans across India and Tibet, offering surreal, mesmerizing views.
 
-![Pangong Lake](https://images.unsplash.com/photo-1582293041079-7814c2f12063?w=1200&q=80)
+![Pangong Lake](https://images.unsplash.com/photo-1582293041079-7814c2f12063?fm=webp&w=1200&q=60)
 
 ### Nubra Valley
 A high-altitude cold desert where you can ride the double-humped Bactrian camels among the sand dunes of Hunder.
@@ -514,7 +536,7 @@ Once claimed as the highest motorable road in the world, this pass offers thrill
 - **Thiksey Monastery:** Strikingly resembling the Potala Palace in Tibet.
 - **Hemis Monastery:** The largest and wealthiest monastery in Ladakh.
 
-![Thiksey Monastery](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Thikse_Monastery.jpg/1200px-Thikse_Monastery.jpg)
+![Thiksey Monastery](https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60)
 
 ---
 
@@ -525,21 +547,21 @@ Planning a road trip to Ladakh requires careful route mapping and acclimatizatio
         title: "Dubai Uncovered: Luxury, Skyscrapers, and Deserts",
         metaDescription: "Experience the ultimate luxury in Dubai. From the Burj Khalifa to desert safaris, plan your extravagant UAE trip.",
         excerpt: "Futuristic skyline, world-class shopping, and desert adventures. Where modern luxury meets Arabian culture.",
-        coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60',
         author: 'Trypinn Experts',
         date: 'April 28, 2026',
         readTime: '6 min read',
         tags: ['Luxury', 'Cityscape', 'UAE'],
         featured: false,
         suggestedPlaces: [
-            { name: "Burj Khalifa", rating: 4.8, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/800px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg" },
-            { name: "Dubai Desert Safari", rating: 4.9, image: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&q=80" },
-            { name: "The Dubai Mall", rating: 4.7, image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" },
-            { name: "Palm Jumeirah", rating: 4.8, image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=80" }
+            { name: "Burj Khalifa", rating: 4.8, image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60" },
+            { name: "Dubai Desert Safari", rating: 4.9, image: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60" },
+            { name: "The Dubai Mall", rating: 4.7, image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60" },
+            { name: "Palm Jumeirah", rating: 4.8, image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?fm=webp&w=800&q=60" }
         ],
         content: `Dubai is a city of superlatives—home to the world's tallest building, largest mall, and most luxurious hotels. It's a dazzling metropolis that emerged from the desert sands.
 
-![Dubai Skyline](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80)
+![Dubai Skyline](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60)
 
 ---
 
@@ -548,7 +570,7 @@ Planning a road trip to Ladakh requires careful route mapping and acclimatizatio
 ### 🐪 Desert Safari & Dune Bashing
 Escape the city skyline and head into the vast Arabian desert. Experience adrenaline-pumping dune bashing, camel riding, and traditional Bedouin dinners under the stars.
 
-![Desert Safari](https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&q=80)
+![Desert Safari](https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60)
 
 ### 🪂 Skydiving over Palm Jumeirah
 For the ultimate thrill, jump out of a plane and freefall over the iconic man-made Palm Jumeirah island.
@@ -562,7 +584,7 @@ For the ultimate thrill, jump out of a plane and freefall over the iconic man-ma
 - **The Dubai Mall:** An expansive shopping and entertainment hub featuring an indoor aquarium and ice rink.
 - **Burj Al Arab:** The iconic sail-shaped luxury hotel.
 
-![Burj Khalifa](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1200px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg)
+![Burj Khalifa](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60)
 
 ### Old Dubai
 Explore the historic Al Fahidi neighborhood, ride a traditional Abra across Dubai Creek, and wander through the fragrant Spice and Gold Souks.
@@ -576,21 +598,21 @@ Share your lavish Dubai itinerary with your friends using **Trypinn**.`
         title: "God's Own Country: The Serenity of Kerala",
         metaDescription: "Discover the tranquil backwaters, lush tea estates, and rich culture of Kerala, India.",
         excerpt: "Serene backwaters, lush tea plantations, and Ayurvedic retreats. God's Own Country awaits.",
-        coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60',
         author: 'Trypinn Team',
         date: 'April 25, 2026',
         readTime: '7 min read',
         tags: ['Nature', 'Relaxation', 'India'],
         featured: false,
         suggestedPlaces: [
-            { name: "Alleppey Houseboats", rating: 4.9, image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" },
-            { name: "Munnar Tea Estates", rating: 4.8, image: "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=800&q=80" },
-            { name: "Fort Kochi", rating: 4.6, image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80" },
-            { name: "Wayanad", rating: 4.7, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Blue%2C_Green_%26_White.jpg/800px-Blue%2C_Green_%26_White.jpg" }
+            { name: "Alleppey Houseboats", rating: 4.9, image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60" },
+            { name: "Munnar Tea Estates", rating: 4.8, image: "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?fm=webp&w=800&q=60" },
+            { name: "Fort Kochi", rating: 4.6, image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60" },
+            { name: "Wayanad", rating: 4.7, image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60" }
         ],
         content: `Kerala, located on the tropical Malabar Coast of southwestern India, is famous for its palm-lined beaches, tranquil backwaters, and network of canals.
 
-![Kerala Backwaters](https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&q=80)
+![Kerala Backwaters](https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=1200&q=60)
 
 ---
 
@@ -599,7 +621,7 @@ Share your lavish Dubai itinerary with your friends using **Trypinn**.`
 ### 🚤 Houseboat Cruise in Alleppey
 Cruising through the serene backwaters on a traditional wooden houseboat is a quintessential Kerala experience. Wake up to the sounds of water birds and enjoy authentic South Indian cuisine cooked on board.
 
-![Alleppey Houseboat](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80)
+![Alleppey Houseboat](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60)
 
 ### 🌿 Ayurvedic Wellness Retreats
 Kerala is the birthplace of Ayurveda. Rejuvenate with traditional massages, herbal therapies, and yoga in the tranquil surroundings of luxury wellness resorts.
@@ -611,7 +633,7 @@ Kerala is the birthplace of Ayurveda. Rejuvenate with traditional massages, herb
 ### Munnar Tea Estates
 A breathtaking hill station known for its rolling hills covered in emerald-green tea plantations. The climate is cool and the views are spectacular.
 
-![Munnar Tea Plantations](https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=1200&q=80)
+![Munnar Tea Plantations](https://images.unsplash.com/photo-1593693411515-c20261bcad6e?fm=webp&w=1200&q=60)
 
 ### Culture and Heritage
 - **Kochi (Cochin):** A fascinating mix of Chinese fishing nets, Jewish synagogues, Portuguese houses, and Dutch architecture.
@@ -623,42 +645,69 @@ Build your Kerala road trip step-by-step with **Trypinn**, allowing everyone in 
     }
 ];
 
+// ── AEO: Render markdown with semantic HTML, anchor IDs on H2s, figure/figcaption ──
 function renderMarkdown(text) {
-    // Simple markdown renderer for blog posts
     const lines = text.split('\n');
     const elements = [];
     let i = 0;
+    const usedSlugs = new Set();
 
     while (i < lines.length) {
         const line = lines[i];
 
         if (line.startsWith('## ')) {
-            elements.push(<h2 key={i} className="blog-h2">{line.slice(3)}</h2>);
+            const headingText = line.slice(3);
+            let slug = slugifyHeading(headingText);
+            // Deduplicate slugs
+            let uniqueSlug = slug;
+            let suffix = 1;
+            while (usedSlugs.has(uniqueSlug)) {
+                uniqueSlug = `${slug}-${suffix}`;
+                suffix++;
+            }
+            usedSlugs.add(uniqueSlug);
+            elements.push(
+                <h2 key={i} id={uniqueSlug} className="blog-h2">
+                    <a href={`#${uniqueSlug}`} className="anchor-link" aria-hidden="true" tabIndex={-1}>#</a>
+                    {headingText}
+                </h2>
+            );
         } else if (line.startsWith('### ')) {
             elements.push(<h3 key={i} className="blog-h3">{line.slice(4)}</h3>);
         } else if (line === '---') {
             elements.push(<hr key={i} className="blog-hr" />);
         } else if (line.startsWith('- ')) {
+            const listItems = [line.slice(2)];
+            let j = i + 1;
+            while (j < lines.length && lines[j].startsWith('- ')) {
+                listItems.push(lines[j].slice(2));
+                j++;
+            }
             elements.push(
-                <li key={i} className="blog-li" dangerouslySetInnerHTML={{
-                    __html: line.slice(2)
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                }} />
+                <ul key={i} className="blog-ul">
+                    {listItems.map((item, idx) => (
+                        <li key={idx} className="blog-li" dangerouslySetInnerHTML={{
+                            __html: item
+                                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                        }} />
+                    ))}
+                </ul>
             );
+            i = j - 1;
         } else if (line.trim() === '') {
             // skip empty lines
         } else if (line.startsWith('![')) {
             const match = line.match(/!\[(.*?)\]\((.*?)\)/);
             if (match) {
                 elements.push(
-                    <div key={i} style={{ margin: '24px 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
-                        <img src={match[2]} alt={match[1]} style={{ width: '100%', maxHeight: '450px', objectFit: 'cover', display: 'block' }} loading="lazy" />
-                    </div>
+                    <figure key={i} style={{ margin: '24px 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                        <img src={match[2]} alt={match[1]} style={{ width: '100%', maxHeight: '450px', objectFit: 'cover', display: 'block' }} loading="lazy" decoding="async" width="800" height="500" />
+                        <figcaption style={{ padding: '10px 16px', fontSize: '0.85rem', color: '#6b7280', background: '#f9fafb', textAlign: 'center' }}>{match[1]}</figcaption>
+                    </figure>
                 );
             }
         } else {
-            // Regular paragraph
             const html = line
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em>$1</em>');
@@ -669,10 +718,126 @@ function renderMarkdown(text) {
     return elements;
 }
 
+const POSTS_PER_PAGE = 12;
+
+// ── Skeleton placeholder while index loads ──
+function BlogSkeleton() {
+    const cards = Array.from({ length: 6 });
+    return (
+        <div className="blog-page">
+            <div className="blog-hero">
+                <div className="blog-hero-inner">
+                    <div style={{ height: 48, width: 280, background: '#e5e7eb', borderRadius: 8, margin: '0 auto 16px' }} />
+                    <div style={{ height: 20, width: 400, background: '#e5e7eb', borderRadius: 6, margin: '0 auto' }} />
+                </div>
+            </div>
+            <div className="blog-container">
+                <div style={{ height: 28, width: 200, background: '#e5e7eb', borderRadius: 6, marginBottom: 24 }} />
+                <div className="blog-grid">
+                    {cards.map((_, i) => (
+                        <article key={i} className="blog-card" style={{ cursor: 'default' }}>
+                            <div className="blog-card-img" style={{ background: '#e5e7eb' }} />
+                            <div className="blog-card-body">
+                                <div style={{ height: 16, width: '40%', background: '#e5e7eb', borderRadius: 4, marginBottom: 12 }} />
+                                <div style={{ height: 24, width: '90%', background: '#e5e7eb', borderRadius: 4, marginBottom: 8 }} />
+                                <div style={{ height: 16, width: '95%', background: '#e5e7eb', borderRadius: 4, marginBottom: 4 }} />
+                                <div style={{ height: 16, width: '80%', background: '#e5e7eb', borderRadius: 4, marginBottom: 16 }} />
+                                <div style={{ height: 14, width: '50%', background: '#e5e7eb', borderRadius: 4, marginTop: 'auto' }} />
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// ── Blog Card (semantic link, memoized) ──
+const BlogCard = memo(function BlogCard({ post, idx, onSelect }) {
+    return (
+        <article className="blog-card">
+            <Link
+                to={`/blog/${post.id}`}
+                className="blog-card-link"
+                aria-label={`Read article: ${post.title}`}
+                onClick={(e) => { e.preventDefault(); onSelect(post.id); }}
+                style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
+            >
+                <div className="blog-card-img">
+                    <img src={post.coverImage} alt={post.title} loading={idx < 4 ? 'eager' : 'lazy'} decoding="async" width="400" height="250" fetchPriority={idx === 0 ? 'high' : undefined} />
+                </div>
+                <div className="blog-card-body">
+                    <div className="blog-card-tags">
+                        {post.tags.slice(0, 2).map(t => (
+                            <span key={t} className="blog-tag">{t}</span>
+                        ))}
+                    </div>
+                    <h3>{post.title}</h3>
+                    <p className="blog-card-excerpt">{post.excerpt}</p>
+                    <div className="blog-card-meta">
+                        <span><Clock size={14} /> {post.readTime}</span>
+                        <time dateTime={post.date ? new Date(post.date).toISOString() : undefined}>{post.date}</time>
+                    </div>
+                </div>
+            </Link>
+        </article>
+    );
+});
+
 // ── Blog List View ──
-function BlogList({ onSelectPost }) {
-    useBlogSeo(null);
-    const rest = BLOG_POSTS.filter(p => !p.featured);
+const BlogList = memo(function BlogList({ posts, onSelectPost }) {
+    usePageSeo({
+        title: 'Trypinn Blog — Travel tips & trip-planning guides',
+        description: 'Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.',
+        url: 'https://trypinn.com/blog',
+        type: 'website',
+        jsonLd: schemas.CollectionPage('Trypinn Blog', [...ORIGINAL_POSTS, ...posts].slice(0, 20)),
+    });
+    const [page, setPage] = useState(1);
+    const [renderCount, setRenderCount] = useState(4);
+
+    // Preload above-the-fold images
+    useEffect(() => {
+        const featured = ORIGINAL_POSTS.filter(p => p.featured);
+        const allPosts = [...featured, ...posts.filter(p => !p.featured)];
+        const visible = allPosts.slice(0, POSTS_PER_PAGE);
+        const preloadLinks = [];
+        visible.slice(0, 3).forEach(post => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = post.coverImage;
+            link.fetchPriority = 'high';
+            document.head.appendChild(link);
+            preloadLinks.push(link);
+        });
+        return () => {
+            preloadLinks.forEach(l => l.remove());
+        };
+    }, [posts, page]);
+
+    // Defer below-fold cards
+    useEffect(() => {
+        setRenderCount(4);
+        const total = Math.min(POSTS_PER_PAGE, posts.length + ORIGINAL_POSTS.length);
+        if (total <= 4) {
+            setRenderCount(total);
+            return;
+        }
+        const schedule = typeof requestIdleCallback !== 'undefined' ? requestIdleCallback : (cb) => setTimeout(cb, 200);
+        const id = schedule(() => setRenderCount(total), { timeout: 600 });
+        return () => {
+            if (typeof cancelIdleCallback !== 'undefined') cancelIdleCallback(id);
+            else clearTimeout(id);
+        };
+    }, [posts, page]);
+
+    const featured = ORIGINAL_POSTS.filter(p => p.featured);
+    const allPosts = [...featured, ...posts.filter(p => !p.featured)];
+    const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+    const start = (page - 1) * POSTS_PER_PAGE;
+    const visible = allPosts.slice(start, start + POSTS_PER_PAGE);
+
     return (
         <div className="blog-page">
             <div className="blog-hero">
@@ -683,130 +848,223 @@ function BlogList({ onSelectPost }) {
             </div>
 
             <div className="blog-container">
-                {/* Featured Post */}
-                {BLOG_POSTS.filter(p => p.featured).map(post => (
-                    <article key={post.id} className="blog-featured-card" onClick={() => onSelectPost(post.id)}>
-                        <div className="blog-featured-img">
-                            <img src={post.coverImage} alt={post.title} loading="lazy" />
-                            <div className="overlay" />
-                            <div className="blog-featured-badge">Featured</div>
-                            <div className="blog-featured-content">
-                                <div className="blog-card-tags">
-                                    {post.tags.slice(0, 2).map(t => (
-                                        <span key={t} className="blog-tag">{t}</span>
-                                    ))}
-                                </div>
-                                <h2>{post.title}</h2>
-                                <p className="blog-featured-excerpt">{post.excerpt}</p>
-                                <div className="blog-card-meta">
-                                    <span><User size={14} /> {post.author}</span>
-                                    <span><Clock size={14} /> {post.readTime}</span>
-                                    <span>{post.date}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                ))}
-
-                {/* All Posts Grid */}
-                <h2 className="blog-section-title">All articles</h2>
+                <h2 className="blog-section-title">All articles ({posts.length + ORIGINAL_POSTS.length})</h2>
                 <div className="blog-grid">
-                    {rest.map(post => (
-                        <article key={post.id} className="blog-card" onClick={() => onSelectPost(post.id)}>
-                            <div className="blog-card-img">
-                                <img src={post.coverImage} alt={post.title} loading="lazy" />
-                            </div>
+                    {visible.slice(0, renderCount).map((post, idx) => (
+                        <BlogCard key={post.id} post={post} idx={idx} onSelect={onSelectPost} />
+                    ))}
+                    {renderCount < visible.length && Array.from({ length: visible.length - renderCount }).map((_, i) => (
+                        <article key={`skel-${i}`} className="blog-card" style={{ cursor: 'default' }} aria-hidden="true">
+                            <div className="blog-card-img" style={{ background: '#e5e7eb' }} />
                             <div className="blog-card-body">
-                                <div className="blog-card-tags">
-                                    {post.tags.slice(0, 2).map(t => (
-                                        <span key={t} className="blog-tag">{t}</span>
-                                    ))}
-                                </div>
-                                <h3>{post.title}</h3>
-                                <p className="blog-card-excerpt">{post.excerpt}</p>
-                                <div className="blog-card-meta">
-                                    <span><Clock size={14} /> {post.readTime}</span>
-                                    <span>{post.date}</span>
-                                </div>
+                                <div style={{ height: 16, width: '40%', background: '#e5e7eb', borderRadius: 4, marginBottom: 12 }} />
+                                <div style={{ height: 24, width: '90%', background: '#e5e7eb', borderRadius: 4, marginBottom: 8 }} />
+                                <div style={{ height: 16, width: '95%', background: '#e5e7eb', borderRadius: 4, marginBottom: 4 }} />
+                                <div style={{ height: 16, width: '80%', background: '#e5e7eb', borderRadius: 4, marginBottom: 16 }} />
+                                <div style={{ height: 14, width: '50%', background: '#e5e7eb', borderRadius: 4, marginTop: 'auto' }} />
                             </div>
                         </article>
                     ))}
                 </div>
+
+                {/* Pagination with rel prev/next */}
+                {totalPages > 1 && (
+                    <nav aria-label="Blog pagination" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, marginTop: 40, marginBottom: 20 }}>
+                        <button type="button"
+                            onClick={() => setPage(p => Math.max(1, p - 1))}
+                            disabled={page === 1}
+                            aria-label="Previous page"
+                            rel={page > 1 ? 'prev' : undefined}
+                            style={{ padding: '8px 16px', borderRadius: 8, border: '1px solid #e5e7eb', background: page === 1 ? '#f3f4f6' : '#fff', cursor: page === 1 ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}
+                        >
+                            <ChevronLeft size={16} aria-hidden="true" /> Prev
+                        </button>
+                        <span style={{ fontSize: '0.9rem', color: '#6b7280', fontWeight: 500 }}>
+                            Page {page} of {totalPages}
+                        </span>
+                        <button type="button"
+                            onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                            disabled={page === totalPages}
+                            aria-label="Next page"
+                            rel={page < totalPages ? 'next' : undefined}
+                            style={{ padding: '8px 16px', borderRadius: 8, border: '1px solid #e5e7eb', background: page === totalPages ? '#f3f4f6' : '#fff', cursor: page === totalPages ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}
+                        >
+                            Next <ChevronRight size={16} aria-hidden="true" />
+                        </button>
+                    </nav>
+                )}
             </div>
         </div>
     );
+});
+
+// ── Related Articles Component ──
+function RelatedArticles({ currentPost, allPosts }) {
+    const related = useMemo(() => {
+        const candidates = allPosts.filter(p => p.id !== currentPost.id && p.tags.some(t => currentPost.tags.includes(t)));
+        return candidates.slice(0, 3);
+    }, [currentPost, allPosts]);
+
+    if (related.length === 0) return null;
+
+    return (
+        <aside className="blog-related" style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid #e5e7eb' }}>
+            <h2 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 600, marginBottom: 20 }}>You may also like</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
+                {related.map(post => (
+                    <article key={post.id} className="blog-card" style={{ minWidth: 0 }}>
+                        <Link to={`/blog/${post.id}`} className="blog-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                            <div className="blog-card-img" style={{ height: 140 }}>
+                                <img src={post.coverImage} alt={post.title} loading="lazy" decoding="async" width="300" height="140" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            <div className="blog-card-body" style={{ padding: 12 }}>
+                                <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600, lineHeight: 1.35, color: '#111827' }}>{post.title}</h4>
+                                <div className="blog-card-meta" style={{ marginTop: 8, fontSize: '0.8rem' }}>
+                                    <time dateTime={post.date ? new Date(post.date).toISOString() : undefined}>{post.date}</time>
+                                </div>
+                            </div>
+                        </Link>
+                    </article>
+                ))}
+            </div>
+        </aside>
+    );
 }
 
-// ── Blog Post Detail View ──
-function BlogDetail({ post, onBack }) {
-    useBlogSeo(post);
+// ── Blog Post Detail View (max AEO/DEO) ──
+function BlogDetail({ post, onBack, allPosts = [] }) {
+    const faqs = useMemo(() => extractFaqsFromContent(post.content), [post.content]);
+    const howToSteps = useMemo(() => extractHowToSteps(post.content), [post.content]);
+
+    const jsonLd = [
+        schemas.Article(post),
+        faqs.length >= 2 ? schemas.FAQPage(faqs) : null,
+        schemas.BreadcrumbList([
+            { name: 'Home', url: 'https://trypinn.com/' },
+            { name: 'Blog', url: 'https://trypinn.com/blog' },
+            { name: post.title, url: `https://trypinn.com/blog/${post.id}` },
+        ]),
+        howToSteps ? schemas.HowTo(post.title, howToSteps) : null,
+    ];
+
+    // DEO: TouristAttraction schemas for suggested places
+    if (post.suggestedPlaces?.length > 0) {
+        for (const place of post.suggestedPlaces) {
+            jsonLd.push(schemas.TouristAttraction(place.name, `${place.name} — highly rated destination`, place.image, place.rating));
+        }
+    }
+
+    usePageSeo({
+        title: post.title,
+        description: post.metaDescription || post.excerpt,
+        url: `https://trypinn.com/blog/${post.id}`,
+        image: post.coverImage,
+        type: 'article',
+        author: post.author || 'Trypinn',
+        publishedTime: post.date ? new Date(post.date).toISOString() : undefined,
+        keywords: post.tags,
+        jsonLd,
+        twitterData: {
+            label1: 'Written by',
+            data1: post.author || 'Trypinn',
+            label2: 'Est. reading time',
+            data2: post.readTime || '5 min read',
+        },
+    });
+
     return (
-        <article className="blog-detail">
-            <div className="blog-detail-hero">
-                <img src={post.coverImage} alt={post.title} />
+        <article className="blog-detail" itemScope itemType="https://schema.org/Article">
+            {/* Visible Breadcrumb Navigation */}
+            <nav aria-label="Breadcrumb" style={{ padding: '12px 24px', maxWidth: 720, margin: '0 auto', fontSize: '0.85rem', color: '#6b7280' }}>
+                <ol style={{ display: 'flex', alignItems: 'center', gap: 8, listStyle: 'none', margin: 0, padding: 0, flexWrap: 'wrap' }}>
+                    <li><Link to="/" style={{ color: '#6b7280', textDecoration: 'none' }}>Home</Link></li>
+                    <li aria-hidden="true">›</li>
+                    <li><Link to="/blog" style={{ color: '#6b7280', textDecoration: 'none' }}>Blog</Link></li>
+                    <li aria-hidden="true">›</li>
+                    <li aria-current="page" style={{ color: '#374151', fontWeight: 500 }}>{post.title}</li>
+                </ol>
+            </nav>
+
+            <header className="blog-detail-hero">
+                <img src={post.coverImage} alt={post.title} fetchPriority="high" decoding="async" width="800" height="500" itemProp="image" />
                 <div className="overlay" />
-                <button className="blog-back-btn" onClick={onBack}>
+                <button type="button" className="blog-back-btn" onClick={onBack}>
                     <ArrowLeft size={18} /> Back to all articles
                 </button>
                 <div className="blog-detail-hero-content">
                     <div className="blog-card-tags">
                         {post.tags.map(t => (
-                            <span key={t} className="blog-tag">{t}</span>
+                            <Link
+                                key={t}
+                                to={`/blog?tag=${encodeURIComponent(t)}`}
+                                className="blog-tag"
+                                style={{ textDecoration: 'none', cursor: 'pointer' }}
+                                onClick={(e) => e.preventDefault()}
+                            >
+                                {t}
+                            </Link>
                         ))}
                     </div>
-                    <h1>{post.title}</h1>
+                    <h1 itemProp="headline">{post.title}</h1>
                     <div className="blog-card-meta" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                        <span><User size={14} /> {post.author}</span>
+                        <span itemProp="author" itemScope itemType="https://schema.org/Organization">
+                            <User size={14} /> <span itemProp="name">{post.author}</span>
+                        </span>
                         <span><Clock size={14} /> {post.readTime}</span>
-                        <span>{post.date}</span>
+                        <time dateTime={post.date ? new Date(post.date).toISOString() : undefined} itemProp="datePublished">
+                            {post.date}
+                        </time>
                     </div>
                 </div>
-            </div>
+            </header>
 
             <div className="blog-detail-body">
-                <div className="blog-article">{renderMarkdown(post.content)}</div>
+                <div className="blog-article">{useMemo(() => renderMarkdown(post.content), [post.content])}</div>
 
-                {/* AI Suggested Places Carousel */}
                 {post.suggestedPlaces && post.suggestedPlaces.length > 0 && (
-                    <div style={{ marginTop: 48, marginBottom: 32 }}>
-                        <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 600, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <section style={{ marginTop: 48, marginBottom: 32 }} aria-label="Suggested places">
+                        <h2 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 600, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
                             <span style={{ fontSize: '1.2rem' }}>✨</span> AI Suggested Places
-                        </h3>
+                        </h2>
                         <div style={{ display: 'flex', gap: 'clamp(12px, 2vw, 20px)', overflowX: 'auto', paddingBottom: 24, scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}>
                             {post.suggestedPlaces.map((place, idx) => (
-                                <div key={idx} style={{ 
-                                    minWidth: 'clamp(160px, 56vw, 220px)', 
-                                    width: 'clamp(160px, 56vw, 220px)', 
-                                    borderRadius: 16, overflow: 'hidden', 
-                                    border: '1px solid #e5e7eb', backgroundColor: '#fff', 
-                                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)', 
-                                    flexShrink: 0, cursor: 'pointer', transition: 'transform 0.3s, box-shadow 0.3s' 
-                                }}
-                                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(0,0,0,0.12)'; }}
-                                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)'; }}
+                                <article
+                                    key={idx}
+                                    style={{
+                                        minWidth: 'clamp(160px, 56vw, 220px)',
+                                        width: 'clamp(160px, 56vw, 220px)',
+                                        borderRadius: 16, overflow: 'hidden',
+                                        border: '1px solid #e5e7eb', backgroundColor: '#fff',
+                                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                                        flexShrink: 0, cursor: 'pointer', transition: 'transform 0.3s, box-shadow 0.3s'
+                                    }}
+                                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(0,0,0,0.12)'; }}
+                                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)'; }}
                                 >
-                                    <div style={{ width: '100%', height: 'clamp(140px, 30vw, 180px)', backgroundColor: '#f3f4f6' }}>
-                                        <img src={place.image} alt={place.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
-                                    </div>
+                                    <figure style={{ width: '100%', height: 'clamp(140px, 30vw, 180px)', backgroundColor: '#f3f4f6', margin: 0 }}>
+                                        <img src={place.image} alt={place.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" decoding="async" width="220" height="180" />
+                                    </figure>
                                     <div style={{ padding: 'clamp(12px, 2vw, 16px)' }}>
                                         <h4 style={{ margin: 0, fontSize: 'clamp(1rem, 2.2vw, 1.1rem)', fontWeight: 700, color: '#111827', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{place.name}</h4>
                                         <div style={{ display: 'flex', alignItems: 'center', marginTop: 6, gap: 4 }}>
-                                            <Star size={16} fill="#facc15" color="#facc15" />
+                                            <Star size={16} fill="#facc15" color="#facc15" aria-hidden="true" />
                                             <span style={{ fontSize: '0.9rem', color: '#4b5563', fontWeight: 600 }}>{place.rating}</span>
                                         </div>
                                     </div>
-                                </div>
+                                </article>
                             ))}
                         </div>
-                    </div>
+                    </section>
                 )}
 
-                {/* CTA */}
-                <div className="blog-cta">
-                    <h3>Ready to plan your trip?</h3>
+                {/* Related Articles — DEO internal linking */}
+                <RelatedArticles currentPost={post} allPosts={allPosts} />
+
+                <footer className="blog-cta">
+                    <h2>Ready to plan your trip?</h2>
                     <p>Start collaborating with your group in real-time on Trypinn</p>
                     <Link to="/trips" className="blog-cta-btn">Start Planning Free →</Link>
-                </div>
+                </footer>
             </div>
         </article>
     );
@@ -817,17 +1075,100 @@ export default function BlogPage() {
     const { postId } = useParams();
     const navigate = useNavigate();
     const [selectedPostId, setSelectedPostId] = useState(null);
-    
-    // If URL has a postId, use that. Otherwise use local state (if any).
-    const activePostId = postId || selectedPostId;
-    const selectedPost = BLOG_POSTS.find(p => p.id === activePostId);
+    const [generatedPosts, setGeneratedPosts] = useState([]);
+    const [generatedMap, setGeneratedMap] = useState(new Map());
+    const [loadingIndex, setLoadingIndex] = useState(true);
+    const [loadingPost, setLoadingPost] = useState(false);
+    const [detailPost, setDetailPost] = useState(null);
 
-    if (selectedPost) {
-        return <BlogDetail post={selectedPost} onBack={() => {
+    const [isPending, startTransition] = useTransition();
+
+    // Fetch blog index on mount
+    useEffect(() => {
+        let cancelled = false;
+        startTransition(() => {
+            fetch('/blogs/index.json')
+                .then(r => r.json())
+                .then(data => {
+                    if (cancelled) return;
+                    setGeneratedPosts(data);
+                    const map = new Map();
+                    for (const p of data) map.set(p.id, p);
+                    setGeneratedMap(map);
+                    setLoadingIndex(false);
+                })
+                .catch(err => {
+                    if (import.meta.env.DEV) console.error('Failed to load blog index:', err);
+                    if (!cancelled) setLoadingIndex(false);
+                });
+        });
+        return () => { cancelled = true; };
+    }, [startTransition]);
+
+    const activePostId = postId || selectedPostId;
+
+    // Resolve post for detail view
+    useEffect(() => {
+        if (!activePostId) {
+            setDetailPost(null);
+            return;
+        }
+        const original = ORIGINAL_POSTS.find(p => p.id === activePostId);
+        if (original) {
+            setDetailPost(original);
+            return;
+        }
+        const cached = generatedMap.get(activePostId);
+        if (cached && cached.content) {
+            setDetailPost(cached);
+            return;
+        }
+        setLoadingPost(true);
+        let cancelled = false;
+        fetch(`/blogs/content/${activePostId}.json`)
+            .then(r => r.json())
+            .then(data => {
+                if (!cancelled) {
+                    setDetailPost(data);
+                    setGeneratedMap(prev => new Map(prev).set(activePostId, data));
+                }
+            })
+            .catch(err => {
+                if (import.meta.env.DEV) console.error('Failed to load post:', err);
+            })
+            .finally(() => {
+                if (!cancelled) setLoadingPost(false);
+            });
+        return () => { cancelled = true; };
+    }, [activePostId, generatedMap]);
+
+    // Build unified post list for related articles
+    const allPosts = useMemo(() => {
+        const gen = generatedPosts.map(p => ({ ...p, content: p.content || '' }));
+        return [...ORIGINAL_POSTS, ...gen];
+    }, [generatedPosts]);
+
+    if (activePostId && (detailPost || loadingPost)) {
+        if (loadingPost || !detailPost) {
+            return (
+                <div className="blog-page" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
+                    {/* AEO: aria-live for screen readers */}
+                    <div role="status" aria-live="polite" aria-atomic="true" style={{ textAlign: 'center' }}>
+                        <div style={{ width: 40, height: 40, border: '3px solid #e5e7eb', borderTopColor: '#FF6B4A', borderRadius: '50%', animation: 'spin 1s linear infinite', margin: '0 auto 16px' }} />
+                        <p style={{ color: '#6b7280' }}>Loading article...</p>
+                    </div>
+                </div>
+            );
+        }
+        return <BlogDetail post={detailPost} allPosts={allPosts} onBack={() => {
             navigate('/blog');
             setSelectedPostId(null);
         }} />;
     }
 
-    return <BlogList onSelectPost={(id) => navigate(`/blog/${id}`)} />;
+    if (loadingIndex || isPending) {
+        return <BlogSkeleton />;
+    }
+
+    return <BlogList posts={generatedPosts} onSelectPost={(id) => navigate(`/blog/${id}`)} />;
 }

@@ -12,8 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // Register the service worker (production only — avoids dev HMR interference).
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch((err) => {
-      console.warn('Service worker registration failed:', err);
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      // Silently ignore — service worker registration can fail in incognito
+      // or privacy modes, which is expected and not user-facing.
     });
   });
 }

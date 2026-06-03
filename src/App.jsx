@@ -7,10 +7,10 @@ import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import TripTopNav from './components/TripTopNav';
 import TripBottomNav from './components/TripBottomNav';
-import InstallPrompt from './components/InstallPrompt';
+const InstallPrompt = lazy(() => import('./components/InstallPrompt'));
 
-// ── Eager: landing / dashboard ──────────────────────────────────────
 import TripsPage from './pages/TripsPage';
+import MapsProvider from './components/MapsProvider';
 
 // ── Lazy-loaded routes (code-split) ─────────────────────────────────
 const LoginPage = lazy(() => import('./pages/LoginPage'));
@@ -24,18 +24,15 @@ const JoinTripPage = lazy(() => import('./pages/JoinTripPage'));
 const PlannerPage = lazy(() => import('./pages/PlannerPage'));
 const MembersPage = lazy(() => import('./pages/MembersPage'));
 
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from './config/firebase';
-import MapsProvider from './components/MapsProvider';
 import { isTripClaimed } from './utils/draftTrips';
-import { joinTripByCode, isTripMember } from './services/firestoreService';
+
 import { Users, LogIn, Loader } from 'lucide-react';
 import { GuestModeProvider } from './context/GuestModeContext';
 
 // ── Suspense fallback ────────────────────────────────────────────────
 function RouteFallback() {
     return (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
+        <div role="status" aria-label="Loading page" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
             <div className="spinner" />
         </div>
     );
@@ -58,11 +55,12 @@ function GuestJoinBanner({ inviteCode }) {
         }
         setJoining(true);
         try {
+            const { joinTripByCode } = await import('./services/firestoreService');
             await joinTripByCode(inviteCode, user.uid);
             setDone(true);
             setSearchParams({}); // Clear query if present
         } catch (e) {
-            console.error(e);
+            if (import.meta.env.DEV) console.error(e);
         } finally {
             setJoining(false);
         }
@@ -80,7 +78,7 @@ function GuestJoinBanner({ inviteCode }) {
                 You're viewing <strong>{selectedTrip?.name || 'this trip'}</strong> as a guest
                 {!user && <span style={{ opacity: 0.8, fontWeight: 400 }}> — sign in to join and collaborate</span>}
             </span>
-            <button
+            <button type="button"
                 onClick={handleJoin}
                 disabled={joining}
                 style={{
@@ -105,7 +103,7 @@ function TripLayout() {
     const inviteCodeParam = searchParams.get('invite');
 
     const claimed = isTripClaimed(selectedTrip);
-    
+
     // Calculate if they are a guest
     let isGuest = false;
     if (claimed) {
@@ -124,12 +122,16 @@ function TripLayout() {
             // Load trip from Firestore if navigating directly
             async function loadTrip() {
                 try {
+                    const [{ db }, { doc, getDoc }] = await Promise.all([
+                        import('./config/firebase'),
+                        import('firebase/firestore'),
+                    ]);
                     const tripSnap = await getDoc(doc(db, 'trips', tripId));
                     if (tripSnap.exists()) {
                         setSelectedTrip({ id: tripSnap.id, ...tripSnap.data() });
                     }
                 } catch (e) {
-                    console.error('Failed to load trip:', e);
+                    if (import.meta.env.DEV) console.error('Failed to load trip:', e);
                 }
             }
             loadTrip();
@@ -197,32 +199,54 @@ function AppRoutes() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/join/:inviteCode" element={<JoinTripPage />} />
 
-                {/* Home / dashboard lives at the root */}
-                <Route path="/" element={<><Navbar /><MapsProvider><TripsPage /></MapsProvider></>} />
+                <Route path="/" element={<><Navbar /><MapsProvider><main id="main-content"><TripsPage /></main></MapsProvider></>} />
                 <Route path="/trips" element={<Navigate to="/" replace />} />
-                <Route path="/trips/create" element={<><Navbar /><CreateTripPage /></>} />
+                <Route path="/trips/create" element={<><Navbar /><main id="main-content"><CreateTripPage /></main></>} />
 
-                {/* Trip detail layout — unified nav inside TripLayout */}
                 <Route path="/trip/:tripId" element={<TripLayout />}>
-                    <Route index element={<PlannerPage />} />
+                    <Route index element={<main id="main-content"><PlannerPage /></main>} />
                     <Route path="map" element={<MapRouteRedirect />} />
-                    <Route path="itinerary" element={<ItineraryPage />} />
-                    {/* Collaborative sections — gated until the trip is claimed */}
+                    <Route path="itinerary" element={<main id="main-content"><ItineraryPage /></main>} />
                     <Route element={<ClaimedRoute />}>
-                        <Route path="polls" element={<PollsPage />} />
-                        <Route path="chat" element={<ChatPage />} />
-                        <Route path="expenses" element={<ExpensesPage />} />
-                        <Route path="members" element={<MembersPage />} />
+                        <Route path="polls" element={<main id="main-content"><PollsPage /></main>} />
+                        <Route path="chat" element={<main id="main-content"><ChatPage /></main>} />
+                        <Route path="expenses" element={<main id="main-content"><ExpensesPage /></main>} />
+                        <Route path="members" element={<main id="main-content"><MembersPage /></main>} />
                     </Route>
                 </Route>
 
-                {/* Marketing / SEO routes */}
-                <Route path="/blog" element={<><Navbar /><BlogPage /></>} />
-                <Route path="/blog/:postId" element={<><Navbar /><BlogPage /></>} />
+                <Route path="/blog" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
+                <Route path="/blog/:postId" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
 
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </Suspense>
+    );
+}
+
+function SkipLink() {
+    return (
+        <a
+            href="#main-content"
+            style={{
+                position: 'absolute',
+                top: -40,
+                left: 0,
+                background: '#1E3A8A',
+                color: '#fff',
+                padding: '8px 16px',
+                zIndex: 100,
+                fontSize: 14,
+                fontWeight: 600,
+                textDecoration: 'none',
+                borderRadius: '0 0 8px 0',
+                transition: 'top 0.2s',
+            }}
+            onFocus={(e) => { e.currentTarget.style.top = 0; }}
+            onBlur={(e) => { e.currentTarget.style.top = '-40px'; }}
+        >
+            Skip to main content
+        </a>
     );
 }
 
@@ -231,9 +255,12 @@ export default function App() {
         <BrowserRouter>
             <AuthProvider>
                 <TripProvider>
+                    <SkipLink />
                     <ScrollToTop />
                     <AppRoutes />
-                    <InstallPrompt />
+                    <Suspense fallback={null}>
+                        <InstallPrompt />
+                    </Suspense>
                 </TripProvider>
             </AuthProvider>
         </BrowserRouter>
