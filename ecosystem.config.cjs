@@ -19,13 +19,16 @@
 module.exports = {
   apps: [
     {
-      name: 'trypinn',
+      name: 'TrypInn',
 
-      // Run server.js through the Bun runtime. If `bun` is not on PM2's PATH
-      // (e.g. under systemd), replace with the absolute path, commonly
-      // "/root/.bun/bin/bun" or "$HOME/.bun/bin/bun".
+      // PM2's Bun fork container (ProcessContainerForkBun.js) uses require()
+      // to load the entry point, which fails on ESM files with top-level await.
+      // Workaround: make `bun` the interpreter and pass `./server.js` as the
+      // script — PM2 spawns `bun ./server.js` directly, bypassing the wrapper.
+      // If bun is not on PM2's PATH (e.g. systemd), use the absolute path:
+      // interpreter: '/home/ubuntu/.bun/bin/bun'
       script: './server.js',
-      interpreter: 'bun',
+      interpreter: '/home/ubuntu/.bun/bin/bun',
 
       // Bun.serve() binds a single port; PM2 cluster mode is not used. To scale
       // horizontally, run multiple instances on different ports behind a
