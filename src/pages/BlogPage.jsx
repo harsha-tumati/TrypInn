@@ -1,5 +1,5 @@
 // src/pages/BlogPage.jsx — SEO Blog Section (max AEO/DEO)
-import { useState, useEffect, useCallback, useMemo, useTransition, memo } from 'react';
+import { useState, useEffect, useLayoutEffect, useCallback, useMemo, useTransition, memo } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock, User, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import usePageSeo, { schemas } from '../hooks/usePageSeo';
@@ -1106,6 +1106,11 @@ export default function BlogPage() {
     }, [startTransition]);
 
     const activePostId = postId || selectedPostId;
+
+    // Prevent stale scroll position when switching between list and detail
+    useLayoutEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, [activePostId]);
 
     // Resolve post for detail view
     useEffect(() => {
