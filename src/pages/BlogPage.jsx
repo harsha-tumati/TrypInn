@@ -757,7 +757,7 @@ const BlogCard = memo(function BlogCard({ post, idx, onSelect }) {
     return (
         <article className="blog-card">
             <Link
-                to={`/blog/${post.id}`}
+                to={`/travel-guides/${post.id}`}
                 className="blog-card-link"
                 aria-label={`Read article: ${post.title}`}
                 onClick={(e) => { e.preventDefault(); onSelect(post.id); }}
@@ -787,11 +787,11 @@ const BlogCard = memo(function BlogCard({ post, idx, onSelect }) {
 // ── Blog List View ──
 const BlogList = memo(function BlogList({ posts, onSelectPost }) {
     usePageSeo({
-        title: 'Trypinn Blog — Travel tips & trip-planning guides',
+        title: 'Trypinn Travel Guides — Travel tips & trip-planning guides',
         description: 'Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.',
-        url: 'https://trypinn.com/blog',
+        url: 'https://trypinn.com/travel-guides',
         type: 'website',
-        jsonLd: schemas.CollectionPage('Trypinn Blog', [...ORIGINAL_POSTS, ...posts].slice(0, 20)),
+        jsonLd: schemas.CollectionPage('Trypinn Travel Guides', [...ORIGINAL_POSTS, ...posts].slice(0, 20)),
     });
     const [page, setPage] = useState(1);
     const [renderCount, setRenderCount] = useState(4);
@@ -842,7 +842,7 @@ const BlogList = memo(function BlogList({ posts, onSelectPost }) {
         <div className="blog-page">
             <div className="blog-hero">
                 <div className="blog-hero-inner">
-                    <h1>Trypinn Blog</h1>
+                    <h1>Trypinn Travel Guides</h1>
                     <p>Travel tips, planning guides, and stories to fuel your next adventure</p>
                 </div>
             </div>
@@ -913,7 +913,7 @@ function RelatedArticles({ currentPost, allPosts }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
                 {related.map(post => (
                     <article key={post.id} className="blog-card" style={{ minWidth: 0 }}>
-                        <Link to={`/blog/${post.id}`} className="blog-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                        <Link to={`/travel-guides/${post.id}`} className="blog-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
                             <div className="blog-card-img" style={{ height: 140 }}>
                                 <img src={post.coverImage} alt={post.title} loading="lazy" decoding="async" width="300" height="140" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
@@ -941,8 +941,8 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
         faqs.length >= 2 ? schemas.FAQPage(faqs) : null,
         schemas.BreadcrumbList([
             { name: 'Home', url: 'https://trypinn.com/' },
-            { name: 'Blog', url: 'https://trypinn.com/blog' },
-            { name: post.title, url: `https://trypinn.com/blog/${post.id}` },
+            { name: 'Travel Guides', url: 'https://trypinn.com/travel-guides' },
+            { name: post.title, url: `https://trypinn.com/travel-guides/${post.id}` },
         ]),
         howToSteps ? schemas.HowTo(post.title, howToSteps) : null,
     ];
@@ -957,7 +957,7 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
     usePageSeo({
         title: post.title,
         description: post.metaDescription || post.excerpt,
-        url: `https://trypinn.com/blog/${post.id}`,
+        url: `https://trypinn.com/travel-guides/${post.id}`,
         image: post.coverImage,
         type: 'article',
         author: post.author || 'Trypinn',
@@ -979,7 +979,7 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
                 <ol style={{ display: 'flex', alignItems: 'center', gap: 8, listStyle: 'none', margin: 0, padding: 0, flexWrap: 'wrap' }}>
                     <li><Link to="/" style={{ color: '#6b7280', textDecoration: 'none' }}>Home</Link></li>
                     <li aria-hidden="true">›</li>
-                    <li><Link to="/blog" style={{ color: '#6b7280', textDecoration: 'none' }}>Blog</Link></li>
+                    <li><Link to="/travel-guides" style={{ color: '#6b7280', textDecoration: 'none' }}>Travel Guides</Link></li>
                     <li aria-hidden="true">›</li>
                     <li aria-current="page" style={{ color: '#374151', fontWeight: 500 }}>{post.title}</li>
                 </ol>
@@ -996,7 +996,7 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
                         {post.tags.map(t => (
                             <Link
                                 key={t}
-                                to={`/blog?tag=${encodeURIComponent(t)}`}
+                                to={`/travel-guides?tag=${encodeURIComponent(t)}`}
                                 className="blog-tag"
                                 style={{ textDecoration: 'none', cursor: 'pointer' }}
                                 onClick={(e) => e.preventDefault()}
@@ -1166,7 +1166,7 @@ export default function BlogPage() {
             );
         }
         return <BlogDetail post={detailPost} allPosts={allPosts} onBack={() => {
-            navigate('/blog');
+            navigate('/travel-guides');
             setSelectedPostId(null);
         }} />;
     }
@@ -1175,5 +1175,5 @@ export default function BlogPage() {
         return <BlogSkeleton />;
     }
 
-    return <BlogList posts={generatedPosts} onSelectPost={(id) => navigate(`/blog/${id}`)} />;
+    return <BlogList posts={generatedPosts} onSelectPost={(id) => navigate(`/travel-guides/${id}`)} />;
 }

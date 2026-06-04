@@ -1,0 +1,43 @@
+{
+  "state": "Goa",
+  "tagline": "Sun, sand, and Portuguese heritage on India's western coast",
+  "introduction": "Goa is one of those places that stays with you long after you leave. When searching for must visit places in Goa, you will find a perfect blend of adventure and relaxation. The best places to visit in Goa range from pristine beaches to historic churches. This travel guide to Goa covers the top tourist attractions in Goa, ensuring you don't miss out on the incredible things to do in Goa.",
+  "metaTitle": "25 Must Visit Places in Goa (2026) — Top Attractions | Trypinn",
+  "metaDescription": "Discover the best places to visit in Goa. From stunning beaches and historic churches to vibrant nightlife, explore the top tourist attractions in Goa.",
+  "categories": [
+    "beach",
+    "heritage",
+    "nightlife"
+  ],
+  "attractions": [
+    {
+      "name": "Baga Beach",
+      "description": "Known for its vibrant nightlife, water sports, and bustling shacks, Baga Beach is a favorite among tourists seeking an energetic atmosphere.",
+      "whyVisit": "It offers the perfect mix of thrilling water sports and lively beach shacks.",
+      "bestTime": "Late afternoon to late evening",
+      "duration": "3-4 hours",
+      "mapsSearch": "Baga Beach, North Goa, India",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Baga Beach, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
+      "slug": "baga-beach",
+      "position": 1,
+      "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=800&q=60"
+    },
+    {
+      "name": "Basilica of Bom Jesus",
+      "description": "A UNESCO World Heritage Site, this iconic basilica holds the mortal remains of St. Francis Xavier and features exquisite Baroque architecture.",
+      "whyVisit": "It is a stunning architectural marvel and a significant pilgrimage site.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Basilica of Bom Jesus, Old Goa, India",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Basilica of Bom Jesus, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
+      "slug": "basilica-of-bom-jesus",
+      "position": 2,
+      "coverImage": "https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?fm=webp&w=800&q=60"
+    }
+  ],
+  "slug": "goa",
+  "name": "Goa",
+  "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60"
+}

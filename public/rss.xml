@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Trypinn Blog</title>
-    <link>https://trypinn.com/blog</link>
+    <title>Trypinn Travel Guides</title>
+    <link>https://trypinn.com/travel-guides</link>
     <description>Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.</description>
     <language>en</language>
     <lastBuildDate>Wed, 03 Jun 2026 09:55:36 GMT</lastBuildDate>
@@ -10,13 +10,13 @@
     <atom:link href="https://trypinn.com/rss.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://trypinn.com/icon-192.png</url>
-      <title>Trypinn Blog</title>
-      <link>https://trypinn.com/blog</link>
+      <title>Trypinn Travel Guides</title>
+      <link>https://trypinn.com/travel-guides</link>
     </image>
     <item>
       <title>Family Travel in Iran: The Ultimate 2026 Guide</title>
-      <link>https://trypinn.com/blog/family-travel-in-iran-the-ultimate-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/family-travel-in-iran-the-ultimate-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/family-travel-in-iran-the-ultimate-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/family-travel-in-iran-the-ultimate-2026-guide</guid>
       <pubDate>Sat, 26 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Family Travel</category>
@@ -33,8 +33,8 @@
     </item>
     <item>
       <title>Solo Travel in Egypt: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-egypt-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-egypt-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-egypt-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-egypt-a-complete-guide-for-2026</guid>
       <pubDate>Sat, 26 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Solo Travel</category>
@@ -51,8 +51,8 @@
     </item>
     <item>
       <title>The Complete Delhi Travel Guide for 2026</title>
-      <link>https://trypinn.com/blog/the-complete-delhi-travel-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/the-complete-delhi-travel-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/the-complete-delhi-travel-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/the-complete-delhi-travel-guide-for-2026</guid>
       <pubDate>Thu, 24 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Delhi</category>
@@ -69,8 +69,8 @@
     </item>
     <item>
       <title>Culinary Journey Through Belgium: A Food Lover&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/culinary-journey-through-belgium-a-food-lovers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/culinary-journey-through-belgium-a-food-lovers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/culinary-journey-through-belgium-a-food-lovers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/culinary-journey-through-belgium-a-food-lovers-2026-guide</guid>
       <pubDate>Thu, 24 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Food Travel</category>
@@ -87,8 +87,8 @@
     </item>
     <item>
       <title>Romantic Getaway to Jordan: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-jordan-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-jordan-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-jordan-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-jordan-a-couples-guide-for-2026</guid>
       <pubDate>Tue, 22 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Couple Travel</category>
@@ -105,8 +105,8 @@
     </item>
     <item>
       <title>Iran on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/iran-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/iran-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/iran-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/iran-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Tue, 22 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Budget Travel</category>
@@ -123,8 +123,8 @@
     </item>
     <item>
       <title>Tahiti on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/tahiti-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/tahiti-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/tahiti-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/tahiti-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Tue, 22 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Budget Travel</category>
@@ -141,8 +141,8 @@
     </item>
     <item>
       <title>Solo Travel in Nepal: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-nepal-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-nepal-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-nepal-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-nepal-a-complete-guide-for-2026</guid>
       <pubDate>Sat, 19 Dec 2026 18:30:00 GMT</pubDate>
       <author>Wanderlust Team</author>
       <category>Solo Travel</category>
@@ -159,8 +159,8 @@
     </item>
     <item>
       <title>Romantic Getaway to New York City: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-new-york-city-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-new-york-city-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-new-york-city-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-new-york-city-a-couples-guide-for-2026</guid>
       <pubDate>Thu, 17 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Couple Travel</category>
@@ -177,8 +177,8 @@
     </item>
     <item>
       <title>Romantic Getaway to Singapore: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-singapore-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-singapore-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-singapore-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-singapore-a-couples-guide-for-2026</guid>
       <pubDate>Thu, 17 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Couple Travel</category>
@@ -195,8 +195,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Sydney: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-sydney-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-sydney-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-sydney-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-sydney-a-travelers-2026-guide</guid>
       <pubDate>Wed, 16 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Culture</category>
@@ -213,8 +213,8 @@
     </item>
     <item>
       <title>Family Travel in Lithuania: The Ultimate 2026 Guide</title>
-      <link>https://trypinn.com/blog/family-travel-in-lithuania-the-ultimate-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/family-travel-in-lithuania-the-ultimate-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/family-travel-in-lithuania-the-ultimate-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/family-travel-in-lithuania-the-ultimate-2026-guide</guid>
       <pubDate>Tue, 15 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Family Travel</category>
@@ -231,8 +231,8 @@
     </item>
     <item>
       <title>Weekend Escape to Hong Kong: Your 2026 Guide</title>
-      <link>https://trypinn.com/blog/weekend-escape-to-hong-kong-your-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/weekend-escape-to-hong-kong-your-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/weekend-escape-to-hong-kong-your-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/weekend-escape-to-hong-kong-your-2026-guide</guid>
       <pubDate>Tue, 15 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Weekend Getaway</category>
@@ -249,8 +249,8 @@
     </item>
     <item>
       <title>the Cook Islands on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/the-cook-islands-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/the-cook-islands-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/the-cook-islands-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/the-cook-islands-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Sun, 13 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Budget Travel</category>
@@ -267,8 +267,8 @@
     </item>
     <item>
       <title>Adventure Awaits in Myanmar: The 2026 Thrill-Seeker&apos;s Guide</title>
-      <link>https://trypinn.com/blog/adventure-awaits-in-myanmar-the-2026-thrill-seekers-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/adventure-awaits-in-myanmar-the-2026-thrill-seekers-guide</guid>
+      <link>https://trypinn.com/travel-guides/adventure-awaits-in-myanmar-the-2026-thrill-seekers-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/adventure-awaits-in-myanmar-the-2026-thrill-seekers-guide</guid>
       <pubDate>Fri, 11 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Adventure</category>
@@ -285,8 +285,8 @@
     </item>
     <item>
       <title>Jaipur on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/jaipur-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/jaipur-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/jaipur-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/jaipur-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Fri, 11 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Budget Travel</category>
@@ -303,8 +303,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Kyoto: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-kyoto-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-kyoto-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-kyoto-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-kyoto-a-travelers-2026-guide</guid>
       <pubDate>Wed, 09 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Culture</category>
@@ -321,8 +321,8 @@
     </item>
     <item>
       <title>The Complete Indonesia Travel Guide for 2026</title>
-      <link>https://trypinn.com/blog/the-complete-indonesia-travel-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/the-complete-indonesia-travel-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/the-complete-indonesia-travel-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/the-complete-indonesia-travel-guide-for-2026</guid>
       <pubDate>Wed, 09 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Indonesia</category>
@@ -339,8 +339,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Pune: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-pune-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-pune-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-pune-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-pune-a-travelers-2026-guide</guid>
       <pubDate>Sun, 06 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Culture</category>
@@ -357,8 +357,8 @@
     </item>
     <item>
       <title>Solo Travel in Barbados: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-barbados-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-barbados-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-barbados-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-barbados-a-complete-guide-for-2026</guid>
       <pubDate>Sat, 05 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Solo Travel</category>
@@ -375,8 +375,8 @@
     </item>
     <item>
       <title>The Complete Bahrain Travel Guide for 2026</title>
-      <link>https://trypinn.com/blog/the-complete-bahrain-travel-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/the-complete-bahrain-travel-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/the-complete-bahrain-travel-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/the-complete-bahrain-travel-guide-for-2026</guid>
       <pubDate>Fri, 04 Dec 2026 18:30:00 GMT</pubDate>
       <author>Wanderlust Team</author>
       <category>Bahrain</category>
@@ -393,8 +393,8 @@
     </item>
     <item>
       <title>Botswana on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/botswana-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/botswana-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/botswana-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/botswana-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Fri, 04 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Budget Travel</category>
@@ -411,8 +411,8 @@
     </item>
     <item>
       <title>Dubrovnik on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/dubrovnik-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/dubrovnik-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/dubrovnik-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/dubrovnik-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Thu, 03 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Budget Travel</category>
@@ -429,8 +429,8 @@
     </item>
     <item>
       <title>Solo Travel in Hawaii: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-hawaii-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-hawaii-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-hawaii-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-hawaii-a-complete-guide-for-2026</guid>
       <pubDate>Thu, 03 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Solo Travel</category>
@@ -447,8 +447,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Oregon: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-oregon-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-oregon-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-oregon-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-oregon-a-travelers-2026-guide</guid>
       <pubDate>Thu, 03 Dec 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Culture</category>
@@ -465,8 +465,8 @@
     </item>
     <item>
       <title>Georgia on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/georgia-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/georgia-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/georgia-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/georgia-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Wed, 02 Dec 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Budget Travel</category>
@@ -483,8 +483,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Panama: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-panama-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-panama-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-panama-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-panama-a-travelers-2026-guide</guid>
       <pubDate>Wed, 02 Dec 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Culture</category>
@@ -501,8 +501,8 @@
     </item>
     <item>
       <title>Luxury Travel in Kerala: The Ultimate 2026 Experience</title>
-      <link>https://trypinn.com/blog/luxury-travel-in-kerala-the-ultimate-2026-experience</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/luxury-travel-in-kerala-the-ultimate-2026-experience</guid>
+      <link>https://trypinn.com/travel-guides/luxury-travel-in-kerala-the-ultimate-2026-experience</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/luxury-travel-in-kerala-the-ultimate-2026-experience</guid>
       <pubDate>Thu, 26 Nov 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Luxury Travel</category>
@@ -519,8 +519,8 @@
     </item>
     <item>
       <title>Cultural Immersion in Indonesia: A Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/cultural-immersion-in-indonesia-a-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/cultural-immersion-in-indonesia-a-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/cultural-immersion-in-indonesia-a-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/cultural-immersion-in-indonesia-a-travelers-2026-guide</guid>
       <pubDate>Wed, 25 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Culture</category>
@@ -537,8 +537,8 @@
     </item>
     <item>
       <title>Romantic Getaway to Ireland: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-ireland-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-ireland-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-ireland-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-ireland-a-couples-guide-for-2026</guid>
       <pubDate>Wed, 25 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Couple Travel</category>
@@ -555,8 +555,8 @@
     </item>
     <item>
       <title>Adventure Awaits in the Andaman Islands: The 2026 Thrill-Seeker&apos;s Guide</title>
-      <link>https://trypinn.com/blog/adventure-awaits-in-the-andaman-islands-the-2026-thrill-seek</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/adventure-awaits-in-the-andaman-islands-the-2026-thrill-seek</guid>
+      <link>https://trypinn.com/travel-guides/adventure-awaits-in-the-andaman-islands-the-2026-thrill-seek</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/adventure-awaits-in-the-andaman-islands-the-2026-thrill-seek</guid>
       <pubDate>Tue, 24 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Adventure</category>
@@ -573,8 +573,8 @@
     </item>
     <item>
       <title>Culinary Journey Through Slovakia: A Food Lover&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/culinary-journey-through-slovakia-a-food-lovers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/culinary-journey-through-slovakia-a-food-lovers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/culinary-journey-through-slovakia-a-food-lovers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/culinary-journey-through-slovakia-a-food-lovers-2026-guide</guid>
       <pubDate>Tue, 24 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Food Travel</category>
@@ -591,8 +591,8 @@
     </item>
     <item>
       <title>Family Travel in Quebec: The Ultimate 2026 Guide</title>
-      <link>https://trypinn.com/blog/family-travel-in-quebec-the-ultimate-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/family-travel-in-quebec-the-ultimate-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/family-travel-in-quebec-the-ultimate-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/family-travel-in-quebec-the-ultimate-2026-guide</guid>
       <pubDate>Mon, 23 Nov 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Family Travel</category>
@@ -609,8 +609,8 @@
     </item>
     <item>
       <title>Culinary Journey Through Guam: A Food Lover&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/culinary-journey-through-guam-a-food-lovers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/culinary-journey-through-guam-a-food-lovers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/culinary-journey-through-guam-a-food-lovers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/culinary-journey-through-guam-a-food-lovers-2026-guide</guid>
       <pubDate>Mon, 23 Nov 2026 18:30:00 GMT</pubDate>
       <author>Wanderlust Team</author>
       <category>Food Travel</category>
@@ -627,8 +627,8 @@
     </item>
     <item>
       <title>Romantic Getaway to Barbados: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-barbados-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-barbados-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-barbados-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-barbados-a-couples-guide-for-2026</guid>
       <pubDate>Mon, 23 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Couple Travel</category>
@@ -645,8 +645,8 @@
     </item>
     <item>
       <title>Solo Travel in Jamaica: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-jamaica-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-jamaica-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-jamaica-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-jamaica-a-complete-guide-for-2026</guid>
       <pubDate>Mon, 23 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Solo Travel</category>
@@ -663,8 +663,8 @@
     </item>
     <item>
       <title>Family Travel in Morocco: The Ultimate 2026 Guide</title>
-      <link>https://trypinn.com/blog/family-travel-in-morocco-the-ultimate-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/family-travel-in-morocco-the-ultimate-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/family-travel-in-morocco-the-ultimate-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/family-travel-in-morocco-the-ultimate-2026-guide</guid>
       <pubDate>Mon, 23 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Family Travel</category>
@@ -681,8 +681,8 @@
     </item>
     <item>
       <title>Solo Travel in Pakistan: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-pakistan-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-pakistan-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-pakistan-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-pakistan-a-complete-guide-for-2026</guid>
       <pubDate>Sun, 22 Nov 2026 18:30:00 GMT</pubDate>
       <author>Adventure Crew</author>
       <category>Solo Travel</category>
@@ -699,8 +699,8 @@
     </item>
     <item>
       <title>Weekend Escape to Mexico City: Your 2026 Guide</title>
-      <link>https://trypinn.com/blog/weekend-escape-to-mexico-city-your-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/weekend-escape-to-mexico-city-your-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/weekend-escape-to-mexico-city-your-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/weekend-escape-to-mexico-city-your-2026-guide</guid>
       <pubDate>Sun, 22 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Weekend Getaway</category>
@@ -717,8 +717,8 @@
     </item>
     <item>
       <title>Weekend Escape to Pakistan: Your 2026 Guide</title>
-      <link>https://trypinn.com/blog/weekend-escape-to-pakistan-your-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/weekend-escape-to-pakistan-your-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/weekend-escape-to-pakistan-your-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/weekend-escape-to-pakistan-your-2026-guide</guid>
       <pubDate>Sat, 21 Nov 2026 18:30:00 GMT</pubDate>
       <author>Wanderlust Team</author>
       <category>Weekend Getaway</category>
@@ -735,8 +735,8 @@
     </item>
     <item>
       <title>Culinary Journey Through Arizona: A Food Lover&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/culinary-journey-through-arizona-a-food-lovers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/culinary-journey-through-arizona-a-food-lovers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/culinary-journey-through-arizona-a-food-lovers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/culinary-journey-through-arizona-a-food-lovers-2026-guide</guid>
       <pubDate>Sat, 21 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Food Travel</category>
@@ -753,8 +753,8 @@
     </item>
     <item>
       <title>Romantic Getaway to Bangladesh: A Couple&apos;s Guide for 2026</title>
-      <link>https://trypinn.com/blog/romantic-getaway-to-bangladesh-a-couples-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/romantic-getaway-to-bangladesh-a-couples-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/romantic-getaway-to-bangladesh-a-couples-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/romantic-getaway-to-bangladesh-a-couples-guide-for-2026</guid>
       <pubDate>Thu, 19 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Experts</author>
       <category>Couple Travel</category>
@@ -771,8 +771,8 @@
     </item>
     <item>
       <title>Adventure Awaits in Finland: The 2026 Thrill-Seeker&apos;s Guide</title>
-      <link>https://trypinn.com/blog/adventure-awaits-in-finland-the-2026-thrill-seekers-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/adventure-awaits-in-finland-the-2026-thrill-seekers-guide</guid>
+      <link>https://trypinn.com/travel-guides/adventure-awaits-in-finland-the-2026-thrill-seekers-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/adventure-awaits-in-finland-the-2026-thrill-seekers-guide</guid>
       <pubDate>Sun, 15 Nov 2026 18:30:00 GMT</pubDate>
       <author>Wanderlust Team</author>
       <category>Adventure</category>
@@ -789,8 +789,8 @@
     </item>
     <item>
       <title>Kenya on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/kenya-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/kenya-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/kenya-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/kenya-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Thu, 12 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Budget Travel</category>
@@ -807,8 +807,8 @@
     </item>
     <item>
       <title>The Complete Portugal Travel Guide for 2026</title>
-      <link>https://trypinn.com/blog/the-complete-portugal-travel-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/the-complete-portugal-travel-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/the-complete-portugal-travel-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/the-complete-portugal-travel-guide-for-2026</guid>
       <pubDate>Wed, 11 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Portugal</category>
@@ -825,8 +825,8 @@
     </item>
     <item>
       <title>Adventure Awaits in Costa Rica: The 2026 Thrill-Seeker&apos;s Guide</title>
-      <link>https://trypinn.com/blog/adventure-awaits-in-costa-rica-the-2026-thrill-seekers-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/adventure-awaits-in-costa-rica-the-2026-thrill-seekers-guide</guid>
+      <link>https://trypinn.com/travel-guides/adventure-awaits-in-costa-rica-the-2026-thrill-seekers-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/adventure-awaits-in-costa-rica-the-2026-thrill-seekers-guide</guid>
       <pubDate>Wed, 11 Nov 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Adventure</category>
@@ -843,8 +843,8 @@
     </item>
     <item>
       <title>Weekend Escape to Goa: Your 2026 Guide</title>
-      <link>https://trypinn.com/blog/weekend-escape-to-goa-your-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/weekend-escape-to-goa-your-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/weekend-escape-to-goa-your-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/weekend-escape-to-goa-your-2026-guide</guid>
       <pubDate>Sun, 08 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Weekend Getaway</category>
@@ -861,8 +861,8 @@
     </item>
     <item>
       <title>Denmark on a Budget: The Smart Traveler&apos;s 2026 Guide</title>
-      <link>https://trypinn.com/blog/denmark-on-a-budget-the-smart-travelers-2026-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/denmark-on-a-budget-the-smart-travelers-2026-guide</guid>
+      <link>https://trypinn.com/travel-guides/denmark-on-a-budget-the-smart-travelers-2026-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/denmark-on-a-budget-the-smart-travelers-2026-guide</guid>
       <pubDate>Sun, 08 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Budget Travel</category>
@@ -879,8 +879,8 @@
     </item>
     <item>
       <title>Adventure Awaits in Guatemala: The 2026 Thrill-Seeker&apos;s Guide</title>
-      <link>https://trypinn.com/blog/adventure-awaits-in-guatemala-the-2026-thrill-seekers-guide</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/adventure-awaits-in-guatemala-the-2026-thrill-seekers-guide</guid>
+      <link>https://trypinn.com/travel-guides/adventure-awaits-in-guatemala-the-2026-thrill-seekers-guide</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/adventure-awaits-in-guatemala-the-2026-thrill-seekers-guide</guid>
       <pubDate>Sat, 07 Nov 2026 18:30:00 GMT</pubDate>
       <author>Travel Editors</author>
       <category>Adventure</category>
@@ -897,8 +897,8 @@
     </item>
     <item>
       <title>Solo Travel in Puerto Rico: A Complete Guide for 2026</title>
-      <link>https://trypinn.com/blog/solo-travel-in-puerto-rico-a-complete-guide-for-2026</link>
-      <guid isPermaLink="true">https://trypinn.com/blog/solo-travel-in-puerto-rico-a-complete-guide-for-2026</guid>
+      <link>https://trypinn.com/travel-guides/solo-travel-in-puerto-rico-a-complete-guide-for-2026</link>
+      <guid isPermaLink="true">https://trypinn.com/travel-guides/solo-travel-in-puerto-rico-a-complete-guide-for-2026</guid>
       <pubDate>Thu, 05 Nov 2026 18:30:00 GMT</pubDate>
       <author>Trypinn Team</author>
       <category>Solo Travel</category>

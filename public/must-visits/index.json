@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "goa",
+    "name": "Goa",
+    "state": "Goa",
+    "tagline": "Sun, sand, and Portuguese heritage on India's western coast",
+    "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=400&q=60",
+    "attractionCount": 2,
+    "categories": [
+      "beach",
+      "heritage",
+      "nightlife"
+    ]
+  },
+  {
+    "slug": "jaipur",
+    "name": "Jaipur",
+    "state": "Rajasthan",
+    "tagline": "The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur",
+    "coverImage": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=400&q=60",
+    "attractionCount": 0,
+    "categories": [
+      "heritage",
+      "city",
+      "desert"
+    ]
+  },
+  {
+    "slug": "leh-ladakh",
+    "name": "Leh-Ladakh",
+    "state": "Ladakh",
+    "tagline": "High-altitude passes, turquoise lakes, and ancient Buddhist monasteries",
+    "coverImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=400&q=60",
+    "attractionCount": 0,
+    "categories": [
+      "mountain",
+      "adventure",
+      "spiritual"
+    ]
+  }
+]

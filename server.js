@@ -209,10 +209,17 @@ const server = serve({
                 cache = 'public, max-age=3600';
             }
 
-            const fromEmbed = serveEmbedded(rel, { cache, encodings });
+            // Only use precompressed (.br/.gz) variants for hashed /assets/
+            // files. For everything else (sitemap.xml, robots.txt, etc.), serve
+            // the uncompressed original — the reverse proxy handles live
+            // compression. This avoids issues where the proxy strips the
+            // Content-Encoding header but passes raw compressed bytes through.
+            const fileEncodings = url.pathname.startsWith('/assets/') ? encodings : [];
+
+            const fromEmbed = serveEmbedded(rel, { cache, encodings: fileEncodings });
             if (fromEmbed) return fromEmbed;
 
-            const fromDisk = await serveDisk(rel, { cache, encodings });
+            const fromDisk = await serveDisk(rel, { cache, encodings: fileEncodings });
             if (fromDisk) return fromDisk;
         }
 

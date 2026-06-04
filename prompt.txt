@@ -1,0 +1,180 @@
+You are an expert travel content creator, SEO specialist, and UX writer.
+
+Generate content for a travel website page.
+
+Page URL:
+`/must-visits/{destination}`
+
+Goal:
+Create the most useful page on the internet for travelers searching:
+
+* must visit places in {destination}
+* top attractions in {destination}
+* best places to visit in {destination}
+* tourist places in {destination}
+* things to do in {destination}
+
+CONTENT RULES:
+
+1. The page is NOT a blog.
+2. The page is a travel discovery directory.
+3. The page must be optimized for SEO while remaining useful to travelers.
+4. Write naturally and avoid keyword stuffing.
+5. Total page introduction length: 150-250 words.
+6. Every attraction must contain:
+
+   * Name
+   * One vibrant hero image prompt
+   * Short description (40-80 words)
+   * Why visit
+   * Best time to visit
+   * Recommended duration
+   * Google Maps search text
+7. Generate at least 25 attractions for major destinations.
+8. Prioritize the most popular attractions first.
+9. Content should feel premium and trustworthy.
+10. Include hidden gems after famous attractions.
+
+SEO REQUIREMENTS:
+
+The introduction should naturally include phrases such as:
+
+* must visit places in {destination}
+* best places to visit in {destination}
+* tourist attractions in {destination}
+* things to do in {destination}
+* travel guide to {destination}
+
+Do not repeat keywords unnaturally.
+
+IMAGE RULES:
+
+For every attraction generate a vibrant professional travel photography prompt:
+
+Format:
+
+"Ultra realistic travel photography, golden hour lighting, vibrant colors, destination landmark, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed"
+
+The prompt must be customized to the specific attraction.
+
+LOCATION REQUIREMENTS:
+
+Include:
+
+* Famous landmarks
+* Nature attractions
+* Beaches (if applicable)
+* Historical sites
+* Religious sites
+* Adventure spots
+* Hidden gems
+
+Sort attractions by popularity and tourist demand.
+
+
+these are the 100 such  locations
+Goa
+Leh-Ladakh
+Manali
+Kashmir
+Jaipur
+Udaipur
+Taj Mahal
+Rishikesh
+Varanasi
+Kerala Backwaters
+Andaman Islands
+Darjeeling
+Munnar
+Coorg
+Jaisalmer
+Amritsar
+Hampi
+Meghalaya
+Spiti Valley
+Rann of Kutch
+Shimla
+Ooty
+Nainital
+Mussoorie
+Gangtok
+Pondicherry
+Hyderabad
+Mysuru
+Chikmagalur
+Dharamshala
+Kodaikanal
+Tirupati
+Puri
+Madurai
+Agra
+Delhi
+Jodhpur
+Pushkar
+Auli
+Kovalam
+Wayanad
+Gokarna
+Varkala
+Shillong
+Cherrapunji
+Tawang
+Kasol
+Dalhousie
+Haridwar
+Ayodhya
+Rameswaram
+Mahabalipuram
+Thanjavur
+Bikaner
+Mount Abu
+Alleppey
+Thekkady
+Kumarakom
+Yercaud
+Diu
+Ziro
+Mawlynnong
+Nubra Valley
+Pangong Lake
+Yumthang Valley
+Pelling
+Dzukou Valley
+Orchha
+Khajuraho
+Sanchi
+Bhopal
+Ujjain
+Indore
+Bhubaneswar
+Konark
+Gulmarg
+Sonamarg
+Pahalgam
+Srinagar
+Patnitop
+Jim Corbett National Park
+Ranthambore National Park
+Kaziranga National Park
+Gir National Park
+Kanha National Park
+Bandhavgarh National Park
+Periyar National Park
+Nagarhole National Park
+Majuli
+Tarkarli
+Lonar
+Lonavala
+Mahabaleshwar
+Aurangabad
+Ajanta Caves
+Ellora Caves
+Kutch
+Dwarka
+Somnath
+Daman
+
+
+and also make sure that these pages are visible even without loggin in and also i dont want to put the button up in the nav bar i want it to be  below in the homepage only about a few location around 3 and there should be an option to click see all must-visigts theen this should show  like the  travel-guide  section images a descro[iption and some tags 
+
+

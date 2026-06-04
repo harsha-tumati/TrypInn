@@ -1157,17 +1157,17 @@ async function main() {
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>${DOMAIN}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>${DOMAIN}/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>${DOMAIN}/travel-guides</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>${DOMAIN}/login</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>${DOMAIN}/trips/create</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 `;
 
   const originalIds = ['split-group-trip-expenses','weekend-getaways-bengaluru','pre-trip-checklist','group-trip-planner','goa-india','bali-indonesia','santorini-greece','leh-ladakh','dubai-uae','kerala-india'];
   for (const oid of originalIds) {
-    sitemap += `  <url><loc>${DOMAIN}/blog/${oid}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>\n`;
+    sitemap += `  <url><loc>${DOMAIN}/travel-guides/${oid}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>\n`;
   }
   for (const p of posts) {
-    sitemap += `  <url><loc>${DOMAIN}/blog/${p.id}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>\n`;
+    sitemap += `  <url><loc>${DOMAIN}/travel-guides/${p.id}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>\n`;
   }
   sitemap += '</urlset>';
   fs.writeFileSync(path.resolve('public', 'sitemap.xml'), sitemap);

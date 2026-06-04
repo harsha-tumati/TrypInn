@@ -24,7 +24,7 @@ export default function TripBottomNav() {
             { to: 'chat', icon: MessageCircle, label: 'Chat' },
             { to: 'polls', icon: BarChart3, label: 'Polls' },
         ] : []),
-        { to: '/blog', icon: BookOpen, label: 'Blogs', absolute: true },
+        { to: '/travel-guides', icon: BookOpen, label: 'Guides', absolute: true },
     ];
 
     const hrefFor = (t) => (t.absolute ? t.to : `/trip/${tripId}${t.to ? '/' + t.to : ''}`);

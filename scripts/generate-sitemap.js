@@ -5,13 +5,13 @@
  * Outputs:
  *   public/sitemap.xml          → Sitemap index (primary entry point)
  *   public/sitemap-static.xml   → Static marketing pages
- *   public/sitemap-posts.xml    → Blog posts with image extensions
+ *   public/sitemap-posts.xml    → Travel guide posts with image extensions
  *   public/rss.xml              → RSS 2.0 feed with media extensions
  *
  * SEO features:
  *   – Split sitemap index for crawl-budget signalling
  *   – Google image:sitemap extensions on every post (cover + inline)
- *   – Tiered priorities (home 1.0, blog 0.9, originals 0.8, generated 0.6)
+ *   – Tiered priorities (home 1.0, travel-guides 0.9, originals 0.8, generated 0.6)
  *   – Full ISO-8601 lastmod timestamps
  *   – RSS with media:content, full article body, enclosures
  */
@@ -124,7 +124,8 @@ function loadGeneratedPosts() {
 function buildSitemapStatic() {
   const pages = [
     { loc: '/',             changefreq: 'daily',   priority: '1.0', lastmod: TODAY_ISO },
-    { loc: '/blog',         changefreq: 'daily',   priority: '0.9', lastmod: TODAY_ISO },
+    { loc: '/travel-guides',  changefreq: 'daily',   priority: '0.9', lastmod: TODAY_ISO },
+    { loc: '/must-visits',  changefreq: 'daily',   priority: '0.9', lastmod: TODAY_ISO },
   ];
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
@@ -152,7 +153,7 @@ function buildSitemapPosts(originals, generated) {
   for (const p of originals) {
     const lastmod = parseIsoDate(p.date);
     xml += `  <url>\n`;
-    xml += `    <loc>${DOMAIN}/blog/${escapeXml(p.id)}</loc>\n`;
+    xml += `    <loc>${DOMAIN}/travel-guides/${escapeXml(p.id)}</loc>\n`;
     xml += `    <lastmod>${lastmod}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
     xml += `    <priority>0.8</priority>\n`;
@@ -172,7 +173,7 @@ function buildSitemapPosts(originals, generated) {
     const lastmod = parseIsoDate(p.date);
     const inlineImages = extractInlineImages(p.content);
     xml += `  <url>\n`;
-    xml += `    <loc>${DOMAIN}/blog/${escapeXml(p.id)}</loc>\n`;
+    xml += `    <loc>${DOMAIN}/travel-guides/${escapeXml(p.id)}</loc>\n`;
     xml += `    <lastmod>${lastmod}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
     xml += `    <priority>0.6</priority>\n`;
@@ -203,9 +204,46 @@ function buildSitemapPosts(originals, generated) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+//  SITEMAP MUST-VISITS
+// ═══════════════════════════════════════════════════════════════
+function buildSitemapMustVisits() {
+  const indexPath = path.join(PUBLIC_DIR, 'must-visits', 'index.json');
+  if (!fs.existsSync(indexPath)) return null;
+  
+  let indexData = [];
+  try {
+    indexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  } catch (e) {
+    return null;
+  }
+
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+
+  for (const dest of indexData) {
+    xml += `  <url>\n`;
+    xml += `    <loc>${DOMAIN}/must-visits/${escapeXml(dest.slug)}</loc>\n`;
+    xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
+    xml += `    <changefreq>weekly</changefreq>\n`;
+    xml += `    <priority>0.85</priority>\n`;
+    
+    if (dest.coverImage) {
+      xml += `    <image:image>\n`;
+      xml += `      <image:loc>${escapeXml(dest.coverImage)}</image:loc>\n`;
+      xml += `      <image:title>Must Visit Places in ${escapeXml(dest.name)}</image:title>\n`;
+      xml += `    </image:image>\n`;
+    }
+    xml += `  </url>\n`;
+  }
+
+  xml += `</urlset>\n`;
+  return xml;
+}
+
+// ═══════════════════════════════════════════════════════════════
 //  SITEMAP INDEX  – entry point referenced by robots.txt
 // ═══════════════════════════════════════════════════════════════
-function buildSitemapIndex() {
+function buildSitemapIndex(hasMustVisits = false) {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
   xml += `  <sitemap>\n`;
@@ -216,6 +254,14 @@ function buildSitemapIndex() {
   xml += `    <loc>${DOMAIN}/sitemap-posts.xml</loc>\n`;
   xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
   xml += `  </sitemap>\n`;
+  
+  if (hasMustVisits) {
+    xml += `  <sitemap>\n`;
+    xml += `    <loc>${DOMAIN}/sitemap-must-visits.xml</loc>\n`;
+    xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
+    xml += `  </sitemap>\n`;
+  }
+  
   xml += `</sitemapindex>\n`;
   return xml;
 }
@@ -232,8 +278,8 @@ function buildRss(posts) {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">\n`;
   xml += `  <channel>\n`;
-  xml += `    <title>Trypinn Blog</title>\n`;
-  xml += `    <link>${DOMAIN}/blog</link>\n`;
+  xml += `    <title>Trypinn Travel Guides</title>\n`;
+  xml += `    <link>${DOMAIN}/travel-guides</link>\n`;
   xml += `    <description>Travel tips, planning guides, and stories to fuel your next adventure with Trypinn.</description>\n`;
   xml += `    <language>en</language>\n`;
   xml += `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>\n`;
@@ -241,8 +287,8 @@ function buildRss(posts) {
   xml += `    <atom:link href="${DOMAIN}/rss.xml" rel="self" type="application/rss+xml" />\n`;
   xml += `    <image>\n`;
   xml += `      <url>${DOMAIN}/icon-192.png</url>\n`;
-  xml += `      <title>Trypinn Blog</title>\n`;
-  xml += `      <link>${DOMAIN}/blog</link>\n`;
+  xml += `      <title>Trypinn Travel Guides</title>\n`;
+  xml += `      <link>${DOMAIN}/travel-guides</link>\n`;
   xml += `    </image>\n`;
 
   for (const p of topPosts) {
@@ -253,8 +299,8 @@ function buildRss(posts) {
 
     xml += `    <item>\n`;
     xml += `      <title>${escapeXml(p.title)}</title>\n`;
-    xml += `      <link>${DOMAIN}/blog/${escapeXml(p.id)}</link>\n`;
-    xml += `      <guid isPermaLink="true">${DOMAIN}/blog/${escapeXml(p.id)}</guid>\n`;
+    xml += `      <link>${DOMAIN}/travel-guides/${escapeXml(p.id)}</link>\n`;
+    xml += `      <guid isPermaLink="true">${DOMAIN}/travel-guides/${escapeXml(p.id)}</guid>\n`;
     xml += `      <pubDate>${pubDate}</pubDate>\n`;
     xml += `      <author>${escapeXml(p.author || 'Trypinn')}</author>\n`;
 
@@ -316,10 +362,18 @@ function main() {
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-posts.xml'), sitemapPosts);
   console.log(`✅ sitemap-posts.xml   → ${ORIGINAL_POSTS.length + generatedPosts.length} URLs`);
 
+  let hasMustVisits = false;
+  const sitemapMustVisits = buildSitemapMustVisits();
+  if (sitemapMustVisits) {
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-must-visits.xml'), sitemapMustVisits);
+    hasMustVisits = true;
+    console.log(`✅ sitemap-must-visits.xml → generated`);
+  }
+
   // 3. Sitemap index (primary entry point)
-  const sitemapIndex = buildSitemapIndex();
+  const sitemapIndex = buildSitemapIndex(hasMustVisits);
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-index.xml'), sitemapIndex);
-  console.log(`✅ sitemap-index.xml   → 2 child sitemaps`);
+  console.log(`✅ sitemap-index.xml   → ${hasMustVisits ? '3' : '2'} child sitemaps`);
 
   // 4. Legacy sitemap.xml = copy of index (backward compat)
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapIndex);

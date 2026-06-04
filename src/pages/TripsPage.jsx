@@ -1,6 +1,6 @@
 // src/pages/TripsPage.jsx — Trypinn home (Gen-Z vibrant revamp)
 import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTrip } from '../context/TripContext';
 // firestoreService and placesService are dynamically imported where needed
@@ -24,7 +24,7 @@ const DateRangePicker = lazy(() => import('../components/DateRangePicker'));
 const LocationAutocomplete = lazy(() => import('../components/LocationAutocomplete'));
 import {
     Plus, Link2, MapPin, Calendar, Users, Sparkles, Star, MessageCircle,
-    Send, X, ArrowRight, Compass, Flame, Quote, Zap,
+    Send, X, ArrowRight, Compass, Flame, Quote, Zap, ChevronRight, BookOpen,
 } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 
@@ -525,7 +525,7 @@ export default function TripsPage() {
                     {HOT_DESTINATIONS.map((dest, i) => (
                         <Reveal key={dest.name} delay={(i % 3) * 90} className={`hp-tilt hp-tilt-${i % 3}`}>
                             <div className="hp-dest-card">
-                                <div className="hp-dest-img" onClick={() => navigate(`/blog/${dest.name.toLowerCase().replace(/,?\s+/g, '-')}`)}>
+                                <div className="hp-dest-img" onClick={() => navigate(`/travel-guides/${dest.name.toLowerCase().replace(/,?\s+/g, '-')}`)}>
                                     <img src={dest.image} alt={dest.name} loading="lazy" width="300" height="198" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" />
                                     <span className="hp-dest-badge">{dest.badge}</span>
                                     <span className="hp-dest-rating"><Star size={12} fill="#fff" color="#fff" aria-hidden="true" /> {dest.rating}</span>
@@ -559,6 +559,45 @@ export default function TripsPage() {
                             <span className="hp-vibe-go"><ArrowRight size={15} aria-hidden="true" /></span>
                         </button>
                     ))}
+                </Reveal>
+            </section>
+
+            {/* ══ MUST-VISITS PREVIEW ══ */}
+            <section className="hp-section">
+                <Reveal className="hp-head">
+                    <span className="hp-kicker"><BookOpen size={13} aria-hidden="true" /> Explore destinations</span>
+                    <h2 className="hp-h2">Must-Visit Places 🗺️</h2>
+                    <p className="hp-section-sub">Curated guides with top attractions, hidden gems, and everything you need to plan.</p>
+                </Reveal>
+                <div className="hp-mv-grid">
+                    {[
+                        { slug: 'goa', name: 'Goa', tagline: 'Sun, sand, and Portuguese heritage on India\'s western coast', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=400&q=60', count: 28, tags: ['beach', 'nightlife', 'heritage'] },
+                        { slug: 'jaipur', name: 'Jaipur', tagline: 'The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur', image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=400&q=60', count: 26, tags: ['heritage', 'city', 'desert'] },
+                        { slug: 'leh-ladakh', name: 'Leh-Ladakh', tagline: 'High-altitude passes, turquoise lakes, and ancient Buddhist monasteries', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=400&q=60', count: 27, tags: ['mountain', 'adventure', 'spiritual'] },
+                    ].map(dest => (
+                        <Reveal key={dest.slug} className="mv-card" as="div">
+                            <Link to={`/must-visits/${dest.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                                <div className="mv-card-img">
+                                    <img src={dest.image} alt={`Must visit places in ${dest.name}`} loading="lazy" width="400" height="250" />
+                                    <span className="mv-card-count">{dest.count} places</span>
+                                </div>
+                                <div className="mv-card-body">
+                                    <h3>{dest.name}</h3>
+                                    <p className="mv-card-tagline">{dest.tagline}</p>
+                                    <div className="mv-card-tags">
+                                        {dest.tags.map(t => (
+                                            <span key={t} className="mv-tag">{t === 'beach' ? '🏖️' : t === 'heritage' ? '🏛️' : t === 'nightlife' ? '🌙' : t === 'city' ? '🏙️' : t === 'desert' ? '🏜️' : t === 'mountain' ? '🏔️' : t === 'adventure' ? '🧗' : t === 'spiritual' ? '🙏' : '📍'} {t.charAt(0).toUpperCase() + t.slice(1)}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </Link>
+                        </Reveal>
+                    ))}
+                </div>
+                <Reveal>
+                    <Link to="/must-visits" className="hp-mv-see-all">
+                        See all must-visit guides <ChevronRight size={16} />
+                    </Link>
                 </Reveal>
             </section>
 

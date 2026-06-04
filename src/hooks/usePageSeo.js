@@ -183,7 +183,7 @@ export const schemas = {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://trypinn.com/blog?q={search_term_string}',
+          urlTemplate: 'https://trypinn.com/travel-guides?q={search_term_string}',
         },
         'query-input': 'required name=search_term_string',
       },
@@ -232,7 +232,7 @@ export const schemas = {
       articleBody: post.content || '',
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://trypinn.com/blog/${post.id}`,
+        '@id': `https://trypinn.com/travel-guides/${post.id}`,
       },
       // AEO: speakable sections for voice assistants
       speakable: {
@@ -323,11 +323,11 @@ export const schemas = {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name,
-      url: 'https://trypinn.com/blog',
+      url: 'https://trypinn.com/travel-guides',
       hasPart: items.map((item, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `https://trypinn.com/blog/${item.id}`,
+        url: `https://trypinn.com/travel-guides/${item.id}`,
         name: item.title,
       })),
     };

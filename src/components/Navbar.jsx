@@ -62,12 +62,12 @@ export default function Navbar() {
                 )}
 
                 <NavLink
-                    to="/blog"
+                    to="/travel-guides"
                     className={({ isActive }) => `navbar-link${isActive ? ' active' : ''}`}
-                    aria-label="Blogs"
+                    aria-label="Travel Guides"
                 >
                     <BookOpen size={15} aria-hidden="true" />
-                    <span className="navbar-link-label">Blogs</span>
+                    <span className="navbar-link-label">Travel Guides</span>
                 </NavLink>
 
                 <button type="button" className="navbar-cta" aria-label="Plan a trip" onClick={() => navigate('/', { state: { openPlanModal: true } })}>

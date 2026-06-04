@@ -26,6 +26,7 @@ const BlogPage = lazy(() => import('./pages/BlogPage'));
 const JoinTripPage = lazy(() => import('./pages/JoinTripPage'));
 const PlannerPage = lazy(() => import('./pages/PlannerPage'));
 const MembersPage = lazy(() => import('./pages/MembersPage'));
+const MustVisitsPage = lazy(() => import('./pages/MustVisitsPage'));
 
 import { isTripClaimed } from './utils/draftTrips';
 
@@ -195,6 +196,12 @@ function ScrollToTop() {
     return null;
 }
 
+// SEO redirect: /blog/:postId → /travel-guides/:postId (preserves post slug)
+function BlogRedirect() {
+    const { postId } = useParams();
+    return <Navigate to={`/travel-guides/${postId}`} replace />;
+}
+
 function AppRoutes() {
     return (
         <Suspense fallback={<RouteFallback />}>
@@ -218,8 +225,14 @@ function AppRoutes() {
                     </Route>
                 </Route>
 
-                <Route path="/blog" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
-                <Route path="/blog/:postId" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
+                <Route path="/travel-guides" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
+                <Route path="/travel-guides/:postId" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
+
+                <Route path="/must-visits" element={<><Navbar /><main id="main-content"><MustVisitsPage /></main></>} />
+                <Route path="/must-visits/:destination" element={<><Navbar /><main id="main-content"><MustVisitsPage /></main></>} />
+                {/* SEO redirect: old /blog paths → /travel-guides */}
+                <Route path="/blog" element={<Navigate to="/travel-guides" replace />} />
+                <Route path="/blog/:postId" element={<BlogRedirect />} />
 
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
