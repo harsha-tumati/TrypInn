@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /login
-Disallow: /trip/
-Disallow: /trips/create
-Disallow: /join/
-
-Sitemap: https://trypinn.com/sitemap.xml
-Sitemap: https://trypinn.com/sitemap-index.xml
