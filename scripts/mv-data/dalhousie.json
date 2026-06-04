@@ -1,0 +1,270 @@
+{
+  "slug": "dalhousie",
+  "name": "Dalhousie",
+  "state": "Himachal Pradesh",
+  "tagline": "Colonial hill elegance wrapped in cedar forests and Dhauladhar views",
+  "categories": ["hill_station", "heritage", "nature"],
+  "highlights": ["victorian colonial architecture and church walks", "panoramic dhauladhar and pir panjal views"],
+  "attractions": [
+    {
+      "name": "Dainkund Peak",
+      "category": "viewpoint",
+      "description": "Dainkund or 'Singing Hill' at 9,000 feet is the highest peak near Dalhousie, reached by a 3 km trail from Pholani Devi temple through dense deodar and rhododendron forest. The summit rewards with a staggering 360-degree panorama — the Dhauladhar range, Pir Panjal, the Ravi Valley, and on clear winter days the distant Zanskar peaks. The Indian Air Force operates a station on the summit plateau. The forest trail itself is exceptional, with monal pheasants regularly sighted.",
+      "whyVisit": "The finest viewpoint in the Dalhousie area, offering one of the broadest Himalayan panoramas accessible by an easy forest walk.",
+      "bestTime": "October to December and March to May for clearest mountain views.",
+      "duration": "Half day",
+      "mapsSearch": "Dainkund Peak Dalhousie, Himachal Pradesh",
+      "imageQuery": "Dainkund Peak Dalhousie Dhauladhar panorama Himachal"
+    },
+    {
+      "name": "Khajjiar",
+      "category": "nature",
+      "description": "Known as the 'Mini-Switzerland of India', Khajjiar is a small lake set in a circular meadow of emerald grass at 6,500 feet, 24 km from Dalhousie. The perfectly flat-bottomed glacial bowl is surrounded by tall deodar cedars on three sides and a 12th-century Hindu temple on the fourth. The Swiss consulate in 1992 officially certified the resemblance to Switzerland. Pony rides across the meadow, paragliding, and zorbing operate seasonally. The setting in late afternoon golden light is genuinely magical.",
+      "whyVisit": "A perfectly circular alpine meadow with a sacred lake, ancient temple, and a Swiss government-certified view — unique in India.",
+      "bestTime": "March to June and September to December; covered in snow from January to February.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khajjiar Lake, Chamba, Himachal Pradesh",
+      "imageQuery": "Khajjiar Lake meadow deodar forest Himachal Pradesh"
+    },
+    {
+      "name": "Subhash Baoli",
+      "category": "heritage",
+      "description": "Subhash Baoli is a historic woodland spring and rest spot on the forested ridge above Dalhousie, named after Netaji Subhas Chandra Bose who spent several weeks here in 1937 during a period of declining health. A small memorial marks the exact spot of his accommodation. The forest trail to Subhash Baoli from Dalhousie is lined with old deodar trees and passes several colonial-era bungalows. The spring itself flows into a stone trough and the surrounding woodland is quiet and atmospheric.",
+      "whyVisit": "A forest walk combining Indian independence-movement history with the finest colonial-era woodland trail in Dalhousie.",
+      "bestTime": "March to June and September to November.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Subhash Baoli Dalhousie, Himachal Pradesh",
+      "imageQuery": "Subhash Baoli deodar forest trail Dalhousie Himachal"
+    },
+    {
+      "name": "St. Francis Catholic Church",
+      "category": "religious",
+      "description": "Built in 1894, St. Francis Catholic Church is one of Dalhousie's finest colonial-era buildings, a neo-Gothic structure of dressed stone with stained-glass windows and a square bell tower visible from across Gandhi Chowk. The interior retains its original timber pews, pale lime-washed walls, and the atmosphere of a highland English parish church. The church is an active parish and welcomes visitors. The exterior, framed by mature deodar and horse-chestnut trees, is one of the most photographed facades in the hill station.",
+      "whyVisit": "The most beautiful of Dalhousie's colonial churches — a perfectly preserved neo-Gothic landmark that defines the hill station's character.",
+      "bestTime": "Year-round; Sunday morning service for the full experience.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St Francis Catholic Church Dalhousie, Himachal Pradesh",
+      "imageQuery": "St Francis Church Dalhousie colonial Gothic stone Himachal"
+    },
+    {
+      "name": "Panchpula",
+      "category": "nature",
+      "description": "Panchpula, meaning 'five bridges', is a scenic spot 3 km from Dalhousie where the Aawe Pani stream descends through a forested ravine in a series of small cascades and pools, crossed by five stone bridges. The area is also a memorial to Ajit Singh, a revolutionary freedom fighter, whose samadhi (cenotaph) is set among the pines beside the lowest fall. The riverside path follows the stream upward through a cool, shaded gorge, passing ferns, wild raspberries, and balsam in summer.",
+      "whyVisit": "Dalhousie's most pleasant short walk — a forested waterfall trail doubled as a freedom movement memorial.",
+      "bestTime": "June to September for maximum water flow; April to June for cool forest walking.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Panchpula Dalhousie, Himachal Pradesh",
+      "imageQuery": "Panchpula waterfall stream forest Dalhousie Himachal"
+    },
+    {
+      "name": "Gandhi Chowk and Thandi Sadak",
+      "category": "heritage",
+      "description": "Gandhi Chowk is the commercial centre of Dalhousie, a pedestrian plaza of colonial-era shopfronts selling Himachali shawls, woolens, and local handicrafts. From here, the historic Thandi Sadak (Cold Road) — so called because it runs along the shaded north face of the Dalhousie ridge — extends through magnificent deodar forest toward Subhash Chowk. The road was laid by British engineers and remains the finest heritage walking route in the hill station, with several colonial bungalows visible along the way.",
+      "whyVisit": "The historic promenade of Dalhousie — colonial bungalows, cedar canopy, and the best Himachali wool shopping in one walk.",
+      "bestTime": "Year-round; morning walks between April and June are particularly fine.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gandhi Chowk Thandi Sadak Dalhousie, Himachal Pradesh",
+      "imageQuery": "Thandi Sadak Dalhousie colonial road deodar forest"
+    },
+    {
+      "name": "Chamera Lake",
+      "category": "lake",
+      "description": "Chamera Lake, 25 km from Dalhousie, is a large artificial reservoir created by the Chamera Hydro Electric Project on the Ravi River. The lake stretches for 17 km through forested hills and is one of Himachal Pradesh's most scenic water bodies. The Himachal Pradesh Tourism Development Corporation runs boating services here, and anglers come for mahseer and trout in the reservoir's clear green water. The drive from Dalhousie along the lake's southern shore through mixed pine and deodar forest is outstanding.",
+      "whyVisit": "A large and scenic reservoir ideal for boating and angling, set in forested hills just half an hour from Dalhousie.",
+      "bestTime": "March to June and September to November for boating; October to April for trout angling.",
+      "duration": "Half day",
+      "mapsSearch": "Chamera Lake Dalhousie, Chamba, Himachal Pradesh",
+      "imageQuery": "Chamera Lake reservoir Ravi River Dalhousie Himachal"
+    },
+    {
+      "name": "Kalatop Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Kalatop-Khajjiar Wildlife Sanctuary covers 30 square kilometres of dense deodar, oak, and rhododendron forest between Dalhousie and Khajjiar. The sanctuary harbours Himalayan black bears, leopards, barking deer, ghoral, and a rich bird community including Himalayan monal, western tragopan, and Eurasian treecreeper. A clearly marked forest trail leads from the Dalhousie road through the sanctuary's core, passing a forest rest house. Motor vehicles are prohibited inside the sanctuary, preserving the quiet of the forest.",
+      "whyVisit": "The best wildlife habitat close to Dalhousie — pristine deodar forest with bear and leopard sign on every forest walk.",
+      "bestTime": "March to May for birds; October to December for clear winter forest.",
+      "duration": "Half day",
+      "mapsSearch": "Kalatop Wildlife Sanctuary Dalhousie, Himachal Pradesh",
+      "imageQuery": "Kalatop Wildlife Sanctuary deodar forest Dalhousie Himachal"
+    },
+    {
+      "name": "St. Andrew's Church (Church of Scotland)",
+      "category": "religious",
+      "description": "St. Andrew's Church, dating from 1903, is a classic Presbyterian Highland-style church of unplastered local stone with a modest spire and original timber gallery inside. The church was built for Scottish soldiers and civil servants of the Raj and the Book of Remembrance inside lists Dalhousie residents who died in both World Wars. The graveyard surrounding the church contains headstones with inscriptions reflecting the full social spectrum of British India, from private soldiers to ICS officers.",
+      "whyVisit": "The most historically layered of Dalhousie's churches, with First and Second World War connections and a fascinating colonial graveyard.",
+      "bestTime": "Year-round.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St Andrews Church Dalhousie, Himachal Pradesh",
+      "imageQuery": "St Andrews Church Dalhousie stone colonial Presbyterian Himachal"
+    },
+    {
+      "name": "Sach Pass",
+      "category": "adventure",
+      "description": "Sach Pass at 14,500 feet connects Chamba district (Dalhousie's parent district) to the remote Pangi Valley in Lahaul. One of the last high-altitude passes to open after winter, the road traverses permanent glaciers, moraines, and sheer valley walls, offering some of the most dramatic mountain scenery in Himachal Pradesh. The route from Chamba town through Killar to Udaipur is a serious 4WD adventure journey taking two days. The pass is frequently featured in lists of the world's most dangerous mountain roads.",
+      "whyVisit": "A legendary high-altitude pass road combining glacier crossings, sheer drops, and a dramatic entry to the remotest part of Himachal.",
+      "bestTime": "July to September only when snow is cleared.",
+      "duration": "2 days from Chamba",
+      "mapsSearch": "Sach Pass Chamba, Himachal Pradesh",
+      "imageQuery": "Sach Pass glacier road Chamba Himachal Pradesh"
+    },
+    {
+      "name": "Chamba Town",
+      "category": "heritage",
+      "description": "Chamba, the ancient capital of the princely state of the same name, is 56 km from Dalhousie and one of the best-preserved hill-state capitals in Himalayan India. The Chaugan (town green) is flanked by the royal palace, the Laxmi Narayan temple complex — a group of six stone temples built between the 10th and 12th centuries — and a museum of rumal (embroidery), pahari miniature paintings, and bronze sculpture. The riverside Sui Mata temple and the annual Minjar fair are important cultural events.",
+      "whyVisit": "A medieval Himalayan capital with a 1,000-year-old temple complex, royal palace, and the finest collection of rumal embroidery in India.",
+      "bestTime": "March to June and September to November; Minjar Fair (July-August) for culture.",
+      "duration": "Full day",
+      "mapsSearch": "Chamba Town Laxmi Narayan Temple, Chamba, Himachal Pradesh",
+      "imageQuery": "Chamba Laxmi Narayan temple complex Himachal Pradesh medieval"
+    },
+    {
+      "name": "Bakrota Hills Walk",
+      "category": "nature",
+      "description": "The Bakrota Hills ridge forms the highest walkable crest directly above Dalhousie town, accessible from Subhash Chowk via a short uphill trail. The ridge path winds through mixed deodar and horse-chestnut forest with continuous views north across the Ravi Valley to the snow peaks of the Pir Panjal and Dhauladhar. Old colonial summer bungalows in various states of picturesque decay dot the hillside. In winter, after snowfall, the walk through silent white forest to the ridge is memorable.",
+      "whyVisit": "Dalhousie's finest evening walk — a forested ridge above the town with continuous Himalayan panoramas and colonial atmosphere.",
+      "bestTime": "March to June and September to November; December to February for snow walks.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bakrota Hills Walk Dalhousie, Himachal Pradesh",
+      "imageQuery": "Bakrota Hills ridge walk Dalhousie colonial bungalow Himachal"
+    },
+    {
+      "name": "Satdhara Falls",
+      "category": "waterfall",
+      "description": "Satdhara (Seven Springs) Falls, 4 km from Dalhousie, are so named because seven distinct mineral springs emerge from the hillside and converge before falling into a mossy ravine. The water contains traces of mica and is considered medicinal by locals. The falls are accessible from a short forest trail and the pool at the base is surrounded by dense fern growth and wildflowers. The sulphur-and-mineral smell of the spring water is noticeable from the path, giving the site an otherworldly character.",
+      "whyVisit": "Seven mineral springs converging into a single waterfall with reputed medicinal properties — one of Dalhousie's most unusual natural sites.",
+      "bestTime": "May to September.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Satdhara Falls Dalhousie, Himachal Pradesh",
+      "imageQuery": "Satdhara Falls seven springs Dalhousie Himachal forest"
+    },
+    {
+      "name": "Panch Pulla Waterfall",
+      "category": "waterfall",
+      "description": "Panch Pulla (also written Panchpula) is the series of falls on the Aawe Pani stream directly accessible from the Dalhousie-Khajjiar road. The largest of the five cascades drops about 15 metres into a deep pool, and a stone walkway with railings allows visitors to stand close to the spray. Local families picnic on the boulders beside the lower pools on weekends. The forest immediately around the falls is among the most photogenic in the Dalhousie area, particularly in autumn when chestnut and maple turn gold.",
+      "whyVisit": "Dalhousie's most accessible waterfall and picnic spot, with a beautiful autumn leaf-colour display in October-November.",
+      "bestTime": "July to September for maximum flow; October for autumn foliage.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Panch Pulla Waterfall Dalhousie, Himachal Pradesh",
+      "imageQuery": "Panch Pulla waterfall autumn foliage Dalhousie Himachal"
+    },
+    {
+      "name": "Dalhousie Public School (The Lawrence School)",
+      "category": "heritage",
+      "description": "The Lawrence School, Ghora Chowki (also historically known as Dalhousie Public School) is one of the original British colonial hill schools of India, housed in a grand Victorian stone building on a ridgeline above town. The school's chapel, playing fields, and main hall are classic examples of Raj-era institutional architecture. Former students include several Indian Army generals and civil servants of note. The ridge location offers views across multiple valleys simultaneously.",
+      "whyVisit": "A superb example of British colonial institutional architecture — the finest heritage building complex in the Dalhousie area.",
+      "bestTime": "Year-round; best photographed in morning light from the access road.",
+      "duration": "1 hour",
+      "mapsSearch": "Lawrence School Ghora Chowki Dalhousie, Himachal Pradesh",
+      "imageQuery": "Lawrence School Dalhousie colonial Victorian building Himachal"
+    },
+    {
+      "name": "Ganji Pahadi (Bare Hill)",
+      "category": "viewpoint",
+      "description": "Ganji Pahadi, or 'Bare Hill', is a treeless rocky summit accessible by a short trail from the Khajjiar road. Despite its unassuming name, the summit at around 7,800 feet offers a wide-angle view across the Chamba Valley, Ravi River, and the lower Dhauladhar ridges. In winter after snowfall, the open hillside becomes a popular local sledging spot. At dusk, the summit is a superb spot to watch alpenglow turn the Dhauladhar cliffs from white to pink to violet.",
+      "whyVisit": "The best sunset and alpenglow viewpoint in the Dalhousie area — a bare summit that amplifies the evening sky.",
+      "bestTime": "October to March for alpenglow; December to January for snowfields.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ganji Pahadi Dalhousie, Himachal Pradesh",
+      "imageQuery": "Ganji Pahadi viewpoint Dalhousie sunset Dhauladhar Himachal"
+    },
+    {
+      "name": "Ranjit Singh Museum (Bhuri Singh Museum, Chamba)",
+      "category": "museum",
+      "description": "The Bhuri Singh Museum in Chamba town, 56 km from Dalhousie, is one of the finest regional history museums in Himachal Pradesh, established in 1908 by the then-Raja Bhuri Singh. Its collection includes Chamba rumal (chain-stitch embroidery panels depicting Hindu epics), a remarkable assemblage of pahari miniature paintings in the Basohli and Guler styles, bronze sculptures of exceptional craftsmanship, and copper plates from the 10th century. The museum documents a living art tradition that continues in Chamba today.",
+      "whyVisit": "The definitive collection of Chamba's extraordinary textile and miniature painting traditions — essential context for the entire region.",
+      "bestTime": "Year-round; closed Mondays.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhuri Singh Museum Chamba, Himachal Pradesh",
+      "imageQuery": "Bhuri Singh Museum Chamba rumal miniature painting Himachal"
+    },
+    {
+      "name": "Tibetan Market, Dalhousie",
+      "category": "market",
+      "description": "A compact market of Tibetan-run stalls near Gandhi Chowk sells hand-woven Tibetan carpets, thangka paintings, silver jewellery with turquoise and coral, prayer wheels, incense, and Tibetan singing bowls at prices well below those in more touristed Dharamsala. The vendors are mostly Tibetan refugees who settled in Dalhousie in the 1960s. Their handicrafts represent genuine Tibetan craft traditions and the carpets in particular are of outstanding quality, some made to order with traditional designs.",
+      "whyVisit": "The best value Tibetan handicraft shopping in Himachal Pradesh outside Dharamsala — genuine quality from Tibetan refugee artisans.",
+      "bestTime": "Year-round; open daily.",
+      "duration": "1 hour",
+      "mapsSearch": "Tibetan Market Dalhousie, Himachal Pradesh",
+      "imageQuery": "Tibetan market Dalhousie thangka carpet jewellery Himachal"
+    },
+    {
+      "name": "Bal Chowki Falls",
+      "category": "waterfall",
+      "description": "Bal Chowki Falls are a lesser-known cascade hidden in a forested ravine 6 km from the centre of Dalhousie on the old Chamba road. The falls drop in two stages through dense balsam and wild ginger undergrowth into a clear pool. The forest around the falls shelters leopard cats and Himalayan palm civets according to local forest department records. Almost no tourists visit, making this a genuine hidden-gem natural spot within easy reach of Dalhousie.",
+      "whyVisit": "A hidden two-stage waterfall in wild cat habitat — Dalhousie's most completely undiscovered natural spot.",
+      "bestTime": "July to October for maximum flow.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bal Chowki Falls Dalhousie, Himachal Pradesh",
+      "imageQuery": "Bal Chowki waterfall hidden forest Dalhousie Himachal"
+    },
+    {
+      "name": "Rang Mahal Palace, Chamba",
+      "category": "palace",
+      "description": "Rang Mahal (Palace of Colours) was the inner palace of the Chamba royal family, built in the late 17th century and distinguished by its extraordinary interior wood panelling carved in the Mughal-Himachali fusion style. The palace is named for its original painted chambers, fragments of which survive. The building now houses a state craft centre where Chamba rumal and pahari painting artisans work in situ, allowing visitors to watch the creation of these UNESCO-listed craft traditions.",
+      "whyVisit": "A royal palace where living craftspeople practise a UNESCO-recognised art tradition in the original royal workshops.",
+      "bestTime": "Year-round; craftspeople work weekdays.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rang Mahal Palace Chamba, Himachal Pradesh",
+      "imageQuery": "Rang Mahal Palace Chamba carved wood Himachal Pradesh"
+    },
+    {
+      "name": "Dalhousie Scenic Drive (Khajjiar Road)",
+      "category": "nature",
+      "description": "The 24 km road from Dalhousie to Khajjiar is widely regarded as one of the most scenic mountain drives in Himachal Pradesh. The road traverses the Kalatop Wildlife Sanctuary through cathedral-like deodar forest, dips into the Khajjiar valley, and offers multiple pull-off viewpoints with long views across the Chamba hills. The forest canopy is continuous for most of the route and road conditions are excellent. In spring, the floor of the sanctuary is carpeted in wood anemones and Himalayan balsam.",
+      "whyVisit": "The most beautiful mountain drive near Dalhousie, through protected deodar forest with wildlife spotting en route.",
+      "bestTime": "March to May and September to November.",
+      "duration": "1-2 hours (one way with stops)",
+      "mapsSearch": "Dalhousie to Khajjiar Road, Himachal Pradesh",
+      "imageQuery": "Dalhousie Khajjiar road deodar forest drive Himachal"
+    },
+    {
+      "name": "Laxmi Narayan Temple Complex, Chamba",
+      "category": "temple",
+      "description": "The Laxmi Narayan complex in Chamba town comprises six temples built between the 10th and 18th centuries by successive rulers of the Chamba dynasty. The main Laxmi Narayan temple, dedicated to Vishnu, is an outstanding example of the Shikara style unique to the Chamba region — a hybrid of North Indian nagara and hill-state architectural traditions executed in locally quarried grey stone. The inner sanctum houses a 10th-century stone image of exceptional quality. The complex is a living place of worship.",
+      "whyVisit": "The finest medieval temple complex in Himachal Pradesh, spanning 800 years of Chamba dynastic patronage in one sacred precinct.",
+      "bestTime": "Year-round; October for the Sharad Navratri festival.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Laxmi Narayan Temple Complex Chamba, Himachal Pradesh",
+      "imageQuery": "Laxmi Narayan temple Chamba 10th century shikhara Himachal"
+    },
+    {
+      "name": "Mani Mahesh Lake Trek",
+      "category": "adventure",
+      "description": "Mani Mahesh Lake at 13,500 feet below Mani Mahesh Kailash peak (18,564 feet) is one of the holiest sites in Himachal Pradesh, with a massive annual yatra (pilgrimage) in August. The trek from Hadsar village is 13 km and ascends through alpine meadows, boulder fields, and glacial streams to the sacred lake. The lake is considered Shiva's private bath and no one is permitted to enter the water. The Mani Mahesh Kailash peak, which remains unclimbed, towers directly above the lake in a perfect pyramid.",
+      "whyVisit": "One of the Himalayas' most sacred pilgrimage treks, ending beneath an unclimbed holy peak that is genuinely one of India's most dramatic mountain scenes.",
+      "bestTime": "August to September during yatra season; June to July for a quieter approach.",
+      "duration": "2-3 days from Hadsar",
+      "mapsSearch": "Mani Mahesh Lake Trek Hadsar, Chamba, Himachal Pradesh",
+      "imageQuery": "Mani Mahesh Lake Kailash peak Chamba Himachal trek"
+    },
+    {
+      "name": "Chamunda Devi Temple, Chamba",
+      "category": "temple",
+      "description": "The Chamunda Devi temple on the banks of the Baner river near Chamba town is an active pilgrimage site dedicated to the fierce form of Durga. The temple's location on a wooded bluff above the river and its assemblage of stone sculptures, including several fine Mahishasuramardini images dated to the 10th-12th centuries, make it both a place of worship and a significant heritage site. The deity is the kul devi (clan goddess) of the Chamba royal family and of many hill communities in the district.",
+      "whyVisit": "A riverbank pilgrimage temple with excellent medieval sculpture and a genuinely devout local atmosphere away from tourist crowds.",
+      "bestTime": "Navratri (April and October) for festivals; year-round for heritage visitors.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chamunda Devi Temple Chamba, Himachal Pradesh",
+      "imageQuery": "Chamunda Devi Temple Chamba river Himachal Pradesh"
+    },
+    {
+      "name": "Dharamshala-Dalhousie Heritage Road",
+      "category": "heritage",
+      "description": "The old British-era mountain road connecting Dalhousie to the Kangra Valley through Pathankot passes several forgotten colonial-era dak bungalows, a cantonment, and the ghost-town remnants of smaller British hill station outposts. The road's original stone culverts, mileposts with British imperial measurements, and avenues of old horse-chestnut trees planted by the Public Works Department in the 1870s are all still in place. This drive is a journey through the archaeology of British India's mountain infrastructure.",
+      "whyVisit": "A living open-air museum of British India's mountain road engineering, from original mileposts to 150-year-old chestnut avenues.",
+      "bestTime": "October to November for autumn foliage on the chestnut avenues.",
+      "duration": "Half day drive",
+      "mapsSearch": "Dalhousie Pathankot Heritage Road, Himachal Pradesh",
+      "imageQuery": "Dalhousie colonial road milestone horse chestnut Himachal"
+    },
+    {
+      "name": "Salooni Village Trek",
+      "category": "adventure",
+      "description": "Salooni is a remote Gaddi shepherd village in the Tisa river valley of upper Chamba district, accessible from Dalhousie via a rough road and then a short walk. The village is the starting point for virtually unknown treks into the inner Pangi and Bharmour sub-divisions of Chamba. The surrounding forest and meadow landscape is pristine and the Gaddi communities here continue a semi-nomadic pastoralist lifestyle following their traditional transhumance cycle. A true explorer's trailhead.",
+      "whyVisit": "The best hidden gem departure point for off-grid Chamba trekking — Gaddi pastoral life and untouched inner-Himalayan forest.",
+      "bestTime": "May to October.",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Salooni Village Chamba, Himachal Pradesh",
+      "imageQuery": "Salooni village Gaddi shepherd Chamba Himachal hidden trek"
+    }
+  ]
+}

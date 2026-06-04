@@ -1,0 +1,260 @@
+{
+  "slug": "manali",
+  "name": "Manali",
+  "state": "Himachal Pradesh",
+  "tagline": "Mountains, meadows, and magic at every turn",
+  "categories": ["hill_station", "adventure", "nature"],
+  "highlights": ["rohtang pass", "solang valley"],
+  "attractions": [
+    {
+      "name": "Rohtang Pass",
+      "category": "adventure",
+      "description": "At 3,978 metres on the Pir Panjal Range, Rohtang Pass is the dramatic gateway from the Kullu Valley to the arid Lahaul-Spiti plateau. Even in summer, snow blankets the barren landscape where adventurers zip-line, try skiing, and ride snowmobiles. The pass commands staggering views of the Kullu valley on one side and the stark Chandra River gorge on the other. Entry requires a permit due to ecological sensitivity.",
+      "whyVisit": "The most accessible high-altitude snow point near Manali, with sweeping views of two contrasting Himalayan worlds.",
+      "bestTime": "May to October (closed in winter)",
+      "duration": "Full day",
+      "mapsSearch": "Rohtang Pass, Manali, Himachal Pradesh, India",
+      "imageQuery": "Rohtang Pass snow Manali"
+    },
+    {
+      "name": "Solang Valley",
+      "category": "adventure",
+      "description": "Just 14 km north of Manali, Solang Valley is Himachal Pradesh's premier adventure playground. In summer, the lush bowl of meadows hosts paragliding, zorbing, horse riding, mountain biking, and ropeway rides above the valley floor. In winter it transforms into a ski resort, with ski-lifts operating on the snowfields. The backdrop of Hanuman Tibba peak at 5,928 metres makes every activity feel monumental.",
+      "whyVisit": "Manali's most versatile adventure hub, offering both winter skiing and summer adrenaline sports.",
+      "bestTime": "December to February for skiing; April to June for summer sports",
+      "duration": "Half to full day",
+      "mapsSearch": "Solang Valley, Manali, Himachal Pradesh, India",
+      "imageQuery": "Solang Valley paragliding Manali"
+    },
+    {
+      "name": "Hadimba Devi Temple",
+      "category": "temple",
+      "description": "Built in 1553 AD, this pagoda-style wooden temple dedicated to Hadimba Devi — the wife of the Pandava Bhima — stands in a dense cedar forest at the edge of old Manali. The four-tiered roof is sheathed in overlapping wooden shingles, and the doorway is adorned with intricate carvings of animals, deities, and floral motifs. The surrounding deodar forest, thick with ferns and wildflowers, lends it an enchanted atmosphere.",
+      "whyVisit": "Manali's most sacred and visually distinctive shrine, set amid a magnificent deodar cedar forest.",
+      "bestTime": "Year-round; May for Hadimba festival",
+      "duration": "1 hour",
+      "mapsSearch": "Hadimba Devi Temple, Manali, Himachal Pradesh, India",
+      "imageQuery": "Hadimba Devi Temple Manali cedar forest"
+    },
+    {
+      "name": "Old Manali",
+      "category": "heritage",
+      "description": "Across the Manalsu Nullah from the modern town, Old Manali is a village of apple orchards, guesthouses draped in bougainvillea, and a charming Manu Rishi temple. The Manu temple, said to mark the spot where the sage Manu landed after the Great Flood, is one of the few temples dedicated to him in India. The café-lined lanes — including Café 1947 and Bob Dylan's favourite hangouts — pulse with backpacker energy.",
+      "whyVisit": "The authentic, laid-back heart of Manali, with apple orchards, bohemian cafés, and the rare Manu temple.",
+      "bestTime": "March to June; September to November",
+      "duration": "2-3 hours",
+      "mapsSearch": "Old Manali, Himachal Pradesh, India",
+      "imageQuery": "Old Manali village cafes apple orchards"
+    },
+    {
+      "name": "Beas River Rafting",
+      "category": "adventure",
+      "description": "The Beas River churns through a spectacular gorge between Manali and Kullu, offering Grade II-IV whitewater rafting across a 14-km stretch. The most popular run descends from Pirdi to Jhiri, passing through rapids named Troll, Double Trouble, and Cobra. Flanked by pine-clad ridges and snow-capped peaks, the run combines adrenaline with some of the most beautiful river scenery in the Himalayan foothills.",
+      "whyVisit": "The most thrilling and scenically spectacular whitewater rafting run in Himachal Pradesh.",
+      "bestTime": "May to July; September to October",
+      "duration": "2-3 hours",
+      "mapsSearch": "Beas River Rafting, Manali, Himachal Pradesh, India",
+      "imageQuery": "Beas River rafting Manali"
+    },
+    {
+      "name": "Sissu (Khoksar) and Lahaul Valley",
+      "category": "nature",
+      "description": "After crossing Rohtang, the Lahaul Valley opens dramatically — a high-altitude desert of silver rivers, glaciers, and mud-coloured mountains dotted with whitewashed Buddhist gompas and flat-roofed stone villages. Sissu village sits at a glacial lake beneath a roaring waterfall and is accessible without a permit via the Atal Tunnel. The 360-degree panorama of the Lahaul peaks from Sissu is among the finest in Himachal Pradesh.",
+      "whyVisit": "The most accessible window into the stark, serene world of the Lahaul trans-Himalayan plateau.",
+      "bestTime": "June to October",
+      "duration": "Full day",
+      "mapsSearch": "Sissu, Lahaul Valley, Himachal Pradesh, India",
+      "imageQuery": "Sissu Lahaul Valley waterfall Himachal"
+    },
+    {
+      "name": "Manali Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Covering 31 sq km of dense coniferous and broad-leaf forest above old Manali, this sanctuary shelters Himalayan brown bear, leopard, musk deer, bharal, snow cock, and over 180 bird species. The Jogni Waterfall trail passes through the sanctuary's lower reaches, while experienced trekkers explore the higher alpine zones. Autumn brings extraordinary foliage of chestnut, maple, and oak in shades of amber, gold, and crimson.",
+      "whyVisit": "A forested mountain sanctuary above Manali offering wildlife trails and a spectacular waterfall.",
+      "bestTime": "May to October",
+      "duration": "Half to full day",
+      "mapsSearch": "Manali Wildlife Sanctuary, Manali, Himachal Pradesh, India",
+      "imageQuery": "Manali Wildlife Sanctuary forest trek"
+    },
+    {
+      "name": "Naggar Castle",
+      "category": "heritage",
+      "description": "Built by Raja Sidh Singh of Kullu around 1500 AD and now converted into a heritage hotel, Naggar Castle is constructed in the Himalayan kath-kuni style — alternating layers of stone and cedar beams. The castle overlooks the Beas Valley from a steep hillside above Naggar village, 22 km south of Manali. The adjacent art gallery holds original paintings by Russian painter and philosopher Nicholas Roerich, who lived here for 20 years.",
+      "whyVisit": "A 500-year-old castle with Roerich's original Himalayan paintings and the finest valley view between Manali and Kullu.",
+      "bestTime": "March to June; September to November",
+      "duration": "2-3 hours",
+      "mapsSearch": "Naggar Castle, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Naggar Castle Kullu Valley Himachal"
+    },
+    {
+      "name": "Chandrakhani Pass Trek",
+      "category": "adventure",
+      "description": "The three-day trek from Naggar village over the Chandrakhani Pass (3,660 m) to the Malana valley traverses dense forest, flower-filled alpine meadows, and a high pass with a peerless panorama of the Kullu valley and Deo Tibba massif. The route connects to Malana, home to an ancient Aryan community that has maintained social isolation for centuries and claims descent from Alexander's soldiers.",
+      "whyVisit": "A perfect three-day high-altitude trek combining alpine scenery with access to Malana's enigmatic ancient culture.",
+      "bestTime": "May to June; September to October",
+      "duration": "3 days",
+      "mapsSearch": "Chandrakhani Pass, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Chandrakhani Pass trek Kullu Himachal"
+    },
+    {
+      "name": "Atal Tunnel (Rohtang Tunnel)",
+      "category": "heritage",
+      "description": "At 3,060 metres, the 8.8-km-long Atal Tunnel is the world's longest highway tunnel above 10,000 feet. Inaugurated in 2020, it ends Lahaul's annual six-month isolation from the rest of Himachal Pradesh. The north portal opens dramatically into the wide, glacier-fed Sissu plain. The tunnel itself, with its controlled lighting and emergency bays, is an engineering marvel carved through the Pir Panjal Range.",
+      "whyVisit": "A world-record engineering feat that connects two completely different Himalayan worlds year-round.",
+      "bestTime": "Year-round",
+      "duration": "30 minutes (transit)",
+      "mapsSearch": "Atal Tunnel, Rohtang, Manali, Himachal Pradesh, India",
+      "imageQuery": "Atal Tunnel Rohtang Manali"
+    },
+    {
+      "name": "Jogni Waterfall",
+      "category": "waterfall",
+      "description": "A 5-km forest trail from Old Manali through the wildlife sanctuary leads to the tiered Jogni Waterfall, which drops 30 metres in a series of cascades through moss-covered rocks into a deep pool. The route through apple orchards and deodar forest passes the small Chandra Nahan stream and a photogenic wooden footbridge. The falls are at their most thunderous in June-July after snowmelt.",
+      "whyVisit": "The most rewarding short trek from Manali, through forest and orchards to a beautiful multi-tiered waterfall.",
+      "bestTime": "May to September",
+      "duration": "3-4 hours return",
+      "mapsSearch": "Jogni Waterfall, Old Manali, Himachal Pradesh, India",
+      "imageQuery": "Jogni Waterfall Old Manali trek"
+    },
+    {
+      "name": "Vashisht Hot Springs and Temple",
+      "category": "temple",
+      "description": "The ancient stone village of Vashisht, 3 km from Manali, harbours two of the most sacred sulphur hot springs in Himachal Pradesh. The springs feed segregated bathing pools maintained by the village. Adjacent twin temples — one to Rama, one to the sage Vashisht — are elaborately carved in traditional Kath-Kuni woodwork. Bathing in the sulphurous waters is said to cure skin ailments and is a cherished ritual for pilgrims.",
+      "whyVisit": "Sacred natural hot springs in a beautifully carved medieval temple village above the Beas River.",
+      "bestTime": "Year-round; winter for the warming springs",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vashisht Hot Springs, Manali, Himachal Pradesh, India",
+      "imageQuery": "Vashisht Hot Springs temple Manali"
+    },
+    {
+      "name": "Kullu Dussehra Festival",
+      "category": "heritage",
+      "description": "While the rest of India wraps up Dussehra, Kullu valley's 7-day international celebration begins. Over 200 local deities (devtas) are brought from their villages on decorated palanquins and rathas in a spectacular procession to the Dhalpur Maidan in Kullu, 40 km south of Manali. The festival involves traditional music, folk dances, and local crafts fairs. It is listed as one of India's National Festivals.",
+      "whyVisit": "India's most extraordinary post-Dussehra festival, uniting over 200 deities in a unique Himalayan celebration.",
+      "bestTime": "October (Dussehra fortnight)",
+      "duration": "1-3 days",
+      "mapsSearch": "Kullu Dussehra, Dhalpur Maidan, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Kullu Dussehra festival procession Himachal"
+    },
+    {
+      "name": "Hampta Pass Trek",
+      "category": "adventure",
+      "description": "The 4-day Hampta Pass trek (4,270 m) is one of the most dramatically varied treks in the Indian Himalaya. Starting in the lush green meadows of the Kullu valley, it crosses the pass into the austere lunar desert of Lahaul's Chandra valley — a transformation so complete it feels like crossing to another planet. The meadow of Chika and the cliff-flanked Jwara camp are breathtakingly scenic.",
+      "whyVisit": "The most dramatic landscape transition in the Himalaya, from green valley to moonscape desert in one pass crossing.",
+      "bestTime": "June to September",
+      "duration": "4-5 days",
+      "mapsSearch": "Hampta Pass Trek, Manali, Himachal Pradesh, India",
+      "imageQuery": "Hampta Pass trek Manali Lahaul"
+    },
+    {
+      "name": "Malana Village",
+      "category": "heritage",
+      "description": "Perched high in a sealed side valley of the Kullu district, Malana is one of the world's oldest direct democracies, governed by its own parliament (Jamdagni Rishi's court) for centuries. The villagers, who claim Aryan descent, maintain strict social codes including prohibitions on outsiders touching their walls or temples. The village architecture, festivals, and unique dialect (Kanashi) form a cultural island unlike anything else in India.",
+      "whyVisit": "One of the world's oldest self-governing communities, preserving an ancient Aryan culture in strict isolation.",
+      "bestTime": "May to October",
+      "duration": "Full day",
+      "mapsSearch": "Malana Village, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Malana Village ancient Kullu Himachal"
+    },
+    {
+      "name": "Rohtang Glacier Trek",
+      "category": "glacier",
+      "description": "Beyond the main Rohtang Pass viewpoint, a trail leads across moraines to the snout of the Rohtang Glacier, the source of the Beas River. The route traverses a moonscape of polished rock, blue ice, and glacial lakes below the Shitidhar peak. The experience of walking on the glacier ice, tracing the river to its birthplace, and surveying the Himalayan panorama from the glacier's edge is profoundly raw and memorable.",
+      "whyVisit": "Walk to the glacial source of the Beas River on a raw Himalayan ice-field above the famous pass.",
+      "bestTime": "June to September",
+      "duration": "Full day",
+      "mapsSearch": "Rohtang Glacier, Manali, Himachal Pradesh, India",
+      "imageQuery": "Rohtang Glacier trek Himachal Pradesh"
+    },
+    {
+      "name": "Bhrigu Lake Trek",
+      "category": "lake",
+      "description": "The Bhrigu Lake trek (4,300 m) above Gulaba village is one of Manali's finest short treks, taking 2-3 days through a succession of flower-blanketed alpine meadows (bugyals) to a high-altitude lake sacred to Sage Bhrigu. The meadows are among the richest in the Himalaya, carpeted with primulas, blue poppies, and edelweiss. The lake remains frozen until July and mirrors the surrounding snow peaks with mirror-like clarity.",
+      "whyVisit": "One of the most colourful high-altitude meadow treks in the Himalaya, culminating at a sacred glacial lake.",
+      "bestTime": "June to October",
+      "duration": "2-3 days",
+      "mapsSearch": "Bhrigu Lake Trek, Manali, Himachal Pradesh, India",
+      "imageQuery": "Bhrigu Lake alpine meadow Manali"
+    },
+    {
+      "name": "Arjun Gufa (Arjuna's Cave)",
+      "category": "cave",
+      "description": "Hidden in the forest above Prini village, 7 km south of Manali, this ancient natural cave is believed to be the cave where the Pandava prince Arjuna meditated to obtain the Pashupatastra weapon from Lord Shiva. The cave sits beside a rushing stream in dense deodar forest. Few tourists find it, making the experience of sitting in the smoke-blackened stone chamber, lit only by butter lamps, remarkably authentic.",
+      "whyVisit": "A little-visited cave shrine of deep Mahabharata significance, hidden in pristine forest above the Beas.",
+      "bestTime": "April to October",
+      "duration": "2-3 hours",
+      "mapsSearch": "Arjuna's Cave, Prini, Manali, Himachal Pradesh, India",
+      "imageQuery": "Arjuna Cave Prini Manali Himachal"
+    },
+    {
+      "name": "Tirthan Valley",
+      "category": "nature",
+      "description": "South of Kullu, the Tirthan River carves a pristine valley that forms the buffer zone of the Great Himalayan National Park (a UNESCO World Heritage Site). Crystal-clear water, trout fishing, waterfalls, and walking trails through mixed oak-rhododendron forest make it Himachal's most serene nature escape. Guesthouses perched on boulders above the river and the absence of vehicles above Gushiani complete a perfect off-grid retreat.",
+      "whyVisit": "Himachal's most pristine river valley, a UNESCO buffer zone ideal for trout fishing and forested walking trails.",
+      "bestTime": "April to June; September to November",
+      "duration": "2-4 days",
+      "mapsSearch": "Tirthan Valley, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Tirthan Valley river Himachal Pradesh"
+    },
+    {
+      "name": "Great Himalayan National Park",
+      "category": "wildlife",
+      "description": "This UNESCO World Heritage Site covers 754 sq km of Western Himalayan high-alpine wilderness above Kullu. It shelters the western Himalayan tahr, snow leopard, Himalayan brown bear, musk deer, and over 375 bird species including the western tragopan (Himachal's state bird). The park has no roads — entry is only on foot, making encounters with wildlife and pristine forest completely authentic.",
+      "whyVisit": "A UNESCO-listed wilderness park accessible only on foot, sheltering some of the rarest fauna in the Himalaya.",
+      "bestTime": "May to June; September to October",
+      "duration": "3-7 days",
+      "mapsSearch": "Great Himalayan National Park, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Great Himalayan National Park trek Kullu"
+    },
+    {
+      "name": "Pin Parvati Pass Trek",
+      "category": "adventure",
+      "description": "One of the Himalaya's most challenging crossings, the Pin Parvati Pass (5,319 m) connects the lush Parvati Valley near Kasol with the arid Pin Valley in Spiti. The 10-day route traverses permanent snowfields, glaciated moraines, and an extremely technical final ascent. The reward is a crossing between two utterly different Himalayan ecosystems — Kullu's green forested valleys and Spiti's Tibetan plateau.",
+      "whyVisit": "The most technically demanding and scenically epic high pass crossing in Himachal Pradesh.",
+      "bestTime": "July to August",
+      "duration": "9-12 days",
+      "mapsSearch": "Pin Parvati Pass Trek, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Pin Parvati Pass glacier trek Himachal"
+    },
+    {
+      "name": "Kasol and Parvati Valley",
+      "category": "nature",
+      "description": "The Parvati River valley, southeast of Kullu, is one of India's most beautiful Himalayan corridors. Kasol village, a haven for Israeli travellers, sits at the valley's lower end surrounded by pine forests and the roaring green Parvati. Further upstream, Kheerganga's natural hot springs are reached via a stunning 12-km trek through waterfalls and forest. The valley's charming Israeli-influenced cafés, trance music, and riverside camping have earned it the nickname 'Mini Israel'.",
+      "whyVisit": "Himachal's most beloved backpacker valley, with hot springs, pine forests, and some of India's finest short treks.",
+      "bestTime": "March to June; September to November",
+      "duration": "2-5 days",
+      "mapsSearch": "Kasol, Parvati Valley, Himachal Pradesh, India",
+      "imageQuery": "Kasol Parvati Valley river Himachal"
+    },
+    {
+      "name": "Deo Tibba Base Camp Trek",
+      "category": "adventure",
+      "description": "The 8-day Deo Tibba Base Camp trek (4,350 m) from Jagatsukh village near Manali is one of the finest high-altitude treks in Himachal, passing through the Khanol meadows and the dramatic Chandrakhani La shoulder. The base camp sits in a boulder-strewn amphitheatre beneath the 6,001-metre Deo Tibba peak and its hanging glaciers. On clear days, the panorama stretches from the Lahaul peaks to the Dhauladhar range.",
+      "whyVisit": "One of Manali's finest multi-day treks, with outstanding alpine meadows and a dramatic glaciated peak base camp.",
+      "bestTime": "June to October",
+      "duration": "7-9 days",
+      "mapsSearch": "Deo Tibba Base Camp, Manali, Himachal Pradesh, India",
+      "imageQuery": "Deo Tibba Base Camp trek Manali"
+    },
+    {
+      "name": "Bijli Mahadev Temple",
+      "category": "temple",
+      "description": "Atop a 2,460-metre forested ridge 10 km from Kullu, Bijli Mahadev (Lightning Shiva) is one of the most revered Shiva temples in Himachal Pradesh. The 20-metre staff atop the temple is said to attract lightning strikes, which shatter the Shivalingam. Priests then reassemble it with butter and sawdust — symbolising Shiva's self-renewal. The panoramic view of the Kullu valley and Beas River from the ridge is outstanding.",
+      "whyVisit": "A mystical hilltop Shiva temple where lightning ritually shatters and renews the sacred lingam each monsoon.",
+      "bestTime": "March to October",
+      "duration": "3-4 hours",
+      "mapsSearch": "Bijli Mahadev Temple, Kullu, Himachal Pradesh, India",
+      "imageQuery": "Bijli Mahadev Temple Kullu valley"
+    },
+    {
+      "name": "Chhika and Sethan Meadows",
+      "category": "nature",
+      "description": "Hidden above the Hampta village trail, Chhika and Sethan are a pair of high-altitude meadows accessible in under two hours from the Manali-Leh highway. In summer, the meadows are carpeted with yellow buttercups and blue iris; in winter they transform into a powder-snow backcountry ski playground. The village of Sethan has basic homestays where local Himachali families serve butter tea and hand-rolled chapatis beside wood-burning stoves.",
+      "whyVisit": "Manali's closest high-altitude meadow escape, offering wildflowers in summer and powder skiing in winter.",
+      "bestTime": "May to June for flowers; December to February for snow",
+      "duration": "Half to full day",
+      "mapsSearch": "Sethan Village, Manali, Himachal Pradesh, India",
+      "imageQuery": "Sethan meadow wildflowers Manali Himachal"
+    }
+  ]
+}

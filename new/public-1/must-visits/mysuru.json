@@ -1,0 +1,447 @@
+{
+  "id": "mysuru",
+  "name": "Mysuru",
+  "state": "Karnataka",
+  "slug": "mysuru",
+  "tagline": "The cultural capital with royal palaces and sandalwood heritage",
+  "categories": [
+    "heritage",
+    "city",
+    "nature"
+  ],
+  "introduction": "Planning a trip to Mysuru? This travel guide to Mysuru covers the must visit places in Mysuru, the best places to visit in Mysuru, top tourist attractions in Mysuru, and exciting things to do in Mysuru.",
+  "metaTitle": "Top Things to Do in Mysuru | Travel Guide to Mysuru - TrypInn",
+  "metaDescription": "Discover must visit places in Mysuru, best places to visit in Mysuru, and top tourist attractions in Mysuru. Plan your perfect trip with TrypInn travel guide to Mysuru.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+    "alt": "Mysuru travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "mysuru-mysore-palace",
+      "name": "Mysore Palace",
+      "slug": "mysore-palace",
+      "description": "Located in scenic Mysuru, Mysore Palace offers an immersive experience into local culture. Exploring Mysore Palace is one of the top things to do in Mysuru.",
+      "whyVisit": "A visit to Mysore Palace is essential for understanding Mysuru.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Mysore Palace, Mysuru",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mysore Palace in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Mysore Palace in Mysuru"
+      },
+      "position": 1
+    },
+    {
+      "id": "mysuru-chamundi-hills",
+      "name": "Chamundi Hills",
+      "slug": "chamundi-hills",
+      "description": "Chamundi Hills is a must-see temple in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "A visit to Chamundi Hills is essential for understanding Mysuru.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Chamundi Hills, Mysuru",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamundi Hills in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Chamundi Hills in Mysuru"
+      },
+      "position": 2
+    },
+    {
+      "id": "mysuru-brindavan-gardens",
+      "name": "Brindavan Gardens",
+      "slug": "brindavan-gardens",
+      "description": "Nestled in Mysuru, Brindavan Gardens stands as a testament to architectural brilliance. This renowned garden attracts tourists who come to admire its stunning design. A visit to Brindavan Gardens is among the best things to do in Mysuru.",
+      "whyVisit": "Capture stunning photographs at Brindavan Gardens.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Brindavan Gardens, Mysuru",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Brindavan Gardens in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Brindavan Gardens in Mysuru"
+      },
+      "position": 3
+    },
+    {
+      "id": "mysuru-st-philomena-s-church",
+      "name": "St. Philomena's Church",
+      "slug": "st-philomena-s-church",
+      "description": "Nestled in Mysuru, St. Philomena's Church stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to St. Philomena's Church is among the best things to do in Mysuru.",
+      "whyVisit": "St. Philomena's Church offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "St. Philomena's Church, Mysuru",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, St. Philomena's Church in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "St. Philomena's Church in Mysuru"
+      },
+      "position": 4
+    },
+    {
+      "id": "mysuru-mysore-zoo",
+      "name": "Mysore Zoo",
+      "slug": "mysore-zoo",
+      "description": "Mysore Zoo is a must-see wildlife in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "Mysore Zoo offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "Full day",
+      "mapsSearch": "Mysore Zoo, Mysuru",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Mysore Zoo in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Mysore Zoo in Mysuru"
+      },
+      "position": 5
+    },
+    {
+      "id": "mysuru-jaganmohan-palace",
+      "name": "Jaganmohan Palace",
+      "slug": "jaganmohan-palace",
+      "description": "Nestled in Mysuru, Jaganmohan Palace stands as a testament to architectural brilliance. This renowned palace attracts tourists who come to admire its stunning design. A visit to Jaganmohan Palace is among the best things to do in Mysuru.",
+      "whyVisit": "Jaganmohan Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Afternoon",
+      "duration": "Full day",
+      "mapsSearch": "Jaganmohan Palace, Mysuru",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Jaganmohan Palace in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Jaganmohan Palace in Mysuru"
+      },
+      "position": 6
+    },
+    {
+      "id": "mysuru-karanji-lake",
+      "name": "Karanji Lake",
+      "slug": "karanji-lake",
+      "description": "A crown jewel of Mysuru, Karanji Lake captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Karanji Lake.",
+      "whyVisit": "Capture stunning photographs at Karanji Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "1-2 hours",
+      "mapsSearch": "Karanji Lake, Mysuru",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Karanji Lake in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Karanji Lake in Mysuru"
+      },
+      "position": 7
+    },
+    {
+      "id": "mysuru-rail-museum-mysore",
+      "name": "Rail Museum Mysore",
+      "slug": "rail-museum-mysore",
+      "description": "A crown jewel of Mysuru, Rail Museum Mysore captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Rail Museum Mysore.",
+      "whyVisit": "Rail Museum Mysore stands out as one of the most rewarding experiences.",
+      "bestTime": "Morning",
+      "duration": "Half day",
+      "mapsSearch": "Rail Museum Mysore, Mysuru",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Rail Museum Mysore in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Rail Museum Mysore in Mysuru"
+      },
+      "position": 8
+    },
+    {
+      "id": "mysuru-devaraja-market",
+      "name": "Devaraja Market",
+      "slug": "devaraja-market",
+      "description": "A crown jewel of Mysuru, Devaraja Market captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Devaraja Market.",
+      "whyVisit": "Capture stunning photographs at Devaraja Market.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Devaraja Market, Mysuru",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Devaraja Market in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Devaraja Market in Mysuru"
+      },
+      "position": 9
+    },
+    {
+      "id": "mysuru-srirangapatna",
+      "name": "Srirangapatna",
+      "slug": "srirangapatna",
+      "description": "Srirangapatna is one of the most iconic landmarks in Mysuru, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Srirangapatna promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Srirangapatna.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Srirangapatna, Mysuru",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Srirangapatna in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Srirangapatna in Mysuru"
+      },
+      "position": 10
+    },
+    {
+      "id": "mysuru-ranganathittu-bird-sanctuary",
+      "name": "Ranganathittu Bird Sanctuary",
+      "slug": "ranganathittu-bird-sanctuary",
+      "description": "Located in scenic Mysuru, Ranganathittu Bird Sanctuary offers an immersive experience into local culture. Exploring Ranganathittu Bird Sanctuary is one of the top things to do in Mysuru.",
+      "whyVisit": "Capture stunning photographs at Ranganathittu Bird Sanctuary.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Ranganathittu Bird Sanctuary, Mysuru",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Ranganathittu Bird Sanctuary in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Ranganathittu Bird Sanctuary in Mysuru"
+      },
+      "position": 11
+    },
+    {
+      "id": "mysuru-kukkarahalli-lake",
+      "name": "Kukkarahalli Lake",
+      "slug": "kukkarahalli-lake",
+      "description": "Nestled in Mysuru, Kukkarahalli Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Kukkarahalli Lake is among the best things to do in Mysuru.",
+      "whyVisit": "Capture stunning photographs at Kukkarahalli Lake.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Kukkarahalli Lake, Mysuru",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kukkarahalli Lake in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Kukkarahalli Lake in Mysuru"
+      },
+      "position": 12
+    },
+    {
+      "id": "mysuru-lalitha-mahal-palace",
+      "name": "Lalitha Mahal Palace",
+      "slug": "lalitha-mahal-palace",
+      "description": "Lalitha Mahal Palace is a must-see palace in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "A visit to Lalitha Mahal Palace is essential for understanding Mysuru.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Lalitha Mahal Palace, Mysuru",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lalitha Mahal Palace in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Lalitha Mahal Palace in Mysuru"
+      },
+      "position": 13
+    },
+    {
+      "id": "mysuru-grs-fantasy-park",
+      "name": "GRS Fantasy Park",
+      "slug": "grs-fantasy-park",
+      "description": "GRS Fantasy Park is a must-see park in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "Experience the unmatched beauty of GRS Fantasy Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "GRS Fantasy Park, Mysuru",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, GRS Fantasy Park in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "GRS Fantasy Park in Mysuru"
+      },
+      "position": 14
+    },
+    {
+      "id": "mysuru-folklore-museum",
+      "name": "Folklore Museum",
+      "slug": "folklore-museum",
+      "description": "A crown jewel of Mysuru, Folklore Museum captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Folklore Museum.",
+      "whyVisit": "Experience the unmatched beauty of Folklore Museum.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Folklore Museum, Mysuru",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Folklore Museum in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Folklore Museum in Mysuru"
+      },
+      "position": 15
+    },
+    {
+      "id": "mysuru-wax-museum-mysore",
+      "name": "Wax Museum Mysore",
+      "slug": "wax-museum-mysore",
+      "description": "A crown jewel of Mysuru, Wax Museum Mysore captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Wax Museum Mysore.",
+      "whyVisit": "Capture stunning photographs at Wax Museum Mysore.",
+      "bestTime": "Year-round",
+      "duration": "Quick",
+      "mapsSearch": "Wax Museum Mysore, Mysuru",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Wax Museum Mysore in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Wax Museum Mysore in Mysuru"
+      },
+      "position": 16
+    },
+    {
+      "id": "mysuru-krs-dam",
+      "name": "KRS Dam",
+      "slug": "krs-dam",
+      "description": "Nestled in Mysuru, KRS Dam stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to KRS Dam is among the best things to do in Mysuru.",
+      "whyVisit": "KRS Dam offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "KRS Dam, Mysuru",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, KRS Dam in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "KRS Dam in Mysuru"
+      },
+      "position": 17
+    },
+    {
+      "id": "mysuru-bonsai-garden",
+      "name": "Bonsai Garden",
+      "slug": "bonsai-garden",
+      "description": "Bonsai Garden is a must-see garden in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "Experience the unmatched beauty of Bonsai Garden.",
+      "bestTime": "Spring",
+      "duration": "Morning",
+      "mapsSearch": "Bonsai Garden, Mysuru",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Bonsai Garden in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Bonsai Garden in Mysuru"
+      },
+      "position": 18
+    },
+    {
+      "id": "mysuru-freedom-fighters-park",
+      "name": "Freedom Fighters Park",
+      "slug": "freedom-fighters-park",
+      "description": "Freedom Fighters Park is one of the most iconic landmarks in Mysuru, drawing visitors with its timeless charm. This park offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Freedom Fighters Park promises an unforgettable experience.",
+      "whyVisit": "A visit to Freedom Fighters Park is essential for understanding Mysuru.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Freedom Fighters Park, Mysuru",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Freedom Fighters Park in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Freedom Fighters Park in Mysuru"
+      },
+      "position": 19
+    },
+    {
+      "id": "mysuru-regional-museum-of-natural-history",
+      "name": "Regional Museum of Natural History",
+      "slug": "regional-museum-of-natural-history",
+      "description": "A crown jewel of Mysuru, Regional Museum of Natural History captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Regional Museum of Natural History.",
+      "whyVisit": "A visit to Regional Museum of Natural History is essential for understanding Mysuru.",
+      "bestTime": "Weekdays",
+      "duration": "Quick",
+      "mapsSearch": "Regional Museum of Natural History, Mysuru",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Regional Museum of Natural History in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Regional Museum of Natural History in Mysuru"
+      },
+      "position": 20
+    },
+    {
+      "id": "mysuru-chamundeshwari-temple",
+      "name": "Chamundeshwari Temple",
+      "slug": "chamundeshwari-temple",
+      "description": "Chamundeshwari Temple is one of the most iconic landmarks in Mysuru, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chamundeshwari Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Chamundeshwari Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chamundeshwari Temple, Mysuru",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamundeshwari Temple in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Chamundeshwari Temple in Mysuru"
+      },
+      "position": 21
+    },
+    {
+      "id": "mysuru-nandi-statue",
+      "name": "Nandi Statue",
+      "slug": "nandi-statue",
+      "description": "A crown jewel of Mysuru, Nandi Statue captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Nandi Statue.",
+      "whyVisit": "Experience the unmatched beauty of Nandi Statue.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nandi Statue, Mysuru",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Nandi Statue in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Nandi Statue in Mysuru"
+      },
+      "position": 22
+    },
+    {
+      "id": "mysuru-happy-man-park",
+      "name": "Happy Man Park",
+      "slug": "happy-man-park",
+      "description": "Located in scenic Mysuru, Happy Man Park offers an immersive experience into local culture. Exploring Happy Man Park is one of the top things to do in Mysuru.",
+      "whyVisit": "Capture stunning photographs at Happy Man Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Happy Man Park, Mysuru",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Happy Man Park in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Happy Man Park in Mysuru"
+      },
+      "position": 23
+    },
+    {
+      "id": "mysuru-crawford-hall",
+      "name": "Crawford Hall",
+      "slug": "crawford-hall",
+      "description": "Crawford Hall is a must-see heritage in Mysuru, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mysuru.",
+      "whyVisit": "Experience the unmatched beauty of Crawford Hall.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Crawford Hall, Mysuru",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Crawford Hall in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Crawford Hall in Mysuru"
+      },
+      "position": 24
+    },
+    {
+      "id": "mysuru-sandalwood-oil-factory",
+      "name": "Sandalwood Oil Factory",
+      "slug": "sandalwood-oil-factory",
+      "description": "A crown jewel of Mysuru, Sandalwood Oil Factory captivates every traveler with enchanting beauty. No trip to Mysuru is complete without visiting Sandalwood Oil Factory.",
+      "whyVisit": "Experience the unmatched beauty of Sandalwood Oil Factory.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Sandalwood Oil Factory, Mysuru",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Sandalwood Oil Factory in Mysuru, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Sandalwood Oil Factory in Mysuru"
+      },
+      "position": 25
+    }
+  ]
+}

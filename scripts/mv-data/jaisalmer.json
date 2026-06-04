@@ -1,0 +1,260 @@
+{
+  "slug": "jaisalmer",
+  "name": "Jaisalmer",
+  "state": "Rajasthan",
+  "tagline": "The Golden City rising from the Thar like a mirage in stone",
+  "categories": ["desert", "heritage", "historical"],
+  "highlights": ["living medieval fort town carved in golden sandstone", "camel safari into the Thar Desert's vast silence"],
+  "attractions": [
+    {
+      "name": "Jaisalmer Fort (Sonar Quila)",
+      "category": "fort",
+      "description": "Built in 1156 AD by Rawal Jaisal and rising 76 metres from the Trikuta Hill, Jaisalmer Fort is one of the world's largest fully inhabited medieval fortifications. Its sandstone walls glow amber at sunrise and deep gold at sunset, giving it the name Sonar Quila. Nearly 3,000 people — descendants of the original fort families — still live within its walls among palaces, temples, havelis, restaurants, and shops.",
+      "whyVisit": "One of the world's last living medieval forts, where actual families have lived for 900 years in an extraordinary golden-sandstone cityscape.",
+      "bestTime": "October to March; sunrise and sunset for the gold effect",
+      "duration": "Half to full day",
+      "mapsSearch": "Jaisalmer Fort Sonar Quila Rajasthan",
+      "imageQuery": "Jaisalmer Fort golden sandstone sunrise Sonar Quila"
+    },
+    {
+      "name": "Sam Sand Dunes",
+      "category": "desert",
+      "description": "The most accessible high dunes of the Thar Desert, Sam lies 42 km west of Jaisalmer on the road to the Pakistan border. Crescent-shaped barchans reach 30 metres and the crest-lines are sharp as a knife edge. At sunset, the western faces of the dunes turn burnt orange and carmine. Camel trains carry tourists to the dune crests, and camp operators set up tented villages behind the first dune line for overnight desert stays.",
+      "whyVisit": "The Thar's most spectacular dune landscape — the classic image of the Indian desert that exists in reality exactly as imagined.",
+      "bestTime": "October to February; sunset is the definitive experience",
+      "duration": "Sunset to overnight",
+      "mapsSearch": "Sam Sand Dunes Jaisalmer Rajasthan",
+      "imageQuery": "Sam Sand Dunes Jaisalmer sunset camel Thar"
+    },
+    {
+      "name": "Patwon Ki Haveli",
+      "category": "heritage",
+      "description": "The largest and most elaborately decorated haveli in Jaisalmer, Patwon Ki Haveli is actually a cluster of five connected mansions built between 1800 and 1860 by the Patwa family of jeweller-merchants. The facades are covered from base to rooftop in carved sandstone — lattice screens, peacock friezes, arch brackets, and balconies of extraordinary intricacy. Two mansions are government museums; the other three remain privately owned.",
+      "whyVisit": "The finest example of Rajasthani haveli architecture in existence — 5,000 sq ft of flawless stone-lattice carving.",
+      "bestTime": "Morning light on the eastern facade",
+      "duration": "1-2 hours",
+      "mapsSearch": "Patwon Ki Haveli Jaisalmer",
+      "imageQuery": "Patwon Ki Haveli Jaisalmer carved sandstone facade"
+    },
+    {
+      "name": "Camel Safari, Thar Desert",
+      "category": "adventure",
+      "description": "Multi-day camel safaris departing from Jaisalmer travel through remote sections of the Thar — past scattered villages, dry riverbeds, thorny acacia scrub, and isolated desert shrines — to reach camping spots far from any road. The landscape is deceptively varied: salt flats give way to fossil beds, wind-sculpted rock formations, and sudden oasis settlements. Overnight camps under a blazing desert sky are a highlight.",
+      "whyVisit": "The most authentic way to experience the Thar's solitude, scale, and starlit night sky away from tourist dune camps.",
+      "bestTime": "October to February",
+      "duration": "1-3 days",
+      "mapsSearch": "Camel Safari Jaisalmer Thar Desert overnight",
+      "imageQuery": "camel safari Jaisalmer Thar Desert overnight camp"
+    },
+    {
+      "name": "Nathmal Ki Haveli",
+      "category": "heritage",
+      "description": "Built in 1885 for Diwan Mohata Nathmal, this haveli was constructed simultaneously by two brothers — one building the left half, the other the right — resulting in a facade that is superficially symmetrical but reveals dozens of subtle differences on close examination. The carving includes elephants, horses, soldiers with guns, and a locomotive — making it the only traditional haveli in Rajasthan to depict modern 19th-century British technology.",
+      "whyVisit": "A unique architectural curiosity where two craftsmen's competing visions created a facade containing 19th-century trains and soldiers.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Nathmal Ki Haveli Jaisalmer",
+      "imageQuery": "Nathmal Ki Haveli Jaisalmer carved facade asymmetric"
+    },
+    {
+      "name": "Salim Singh Ki Haveli",
+      "category": "heritage",
+      "description": "Built around 1815 by Prime Minister Salim Singh, this 38-room haveli is recognisable by its extraordinary projecting top storey — a multi-arched pavilion cantilevered so far beyond the floors below that it appears to float. The stone peacock brackets supporting the overhanging rooms are masterworks of Rajasthani carving. Local legend says the owner attempted to extend it to the height of the fort palace, until the Maharawal ordered it stopped.",
+      "whyVisit": "Jaisalmer's most visually arresting building — a cantilevered stone pavilion that appears to defy gravity.",
+      "bestTime": "Morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Salim Singh Ki Haveli Jaisalmer",
+      "imageQuery": "Salim Singh Ki Haveli Jaisalmer cantilevered pavilion"
+    },
+    {
+      "name": "Jain Temples inside Jaisalmer Fort",
+      "category": "temple",
+      "description": "A cluster of seven interconnected Jain temples built between the 12th and 15th centuries occupies the southern quarter of Jaisalmer Fort. Dedicated to various Tirthankaras, the temples feature an astounding density of carved marble and sandstone — every pillar, ceiling panel, and bracket is a different design. The Shantinath Temple's central hall has a carved ceiling so dense that no stone surface is visible.",
+      "whyVisit": "The finest concentration of Jain temple architecture in Rajasthan, hidden inside a living medieval fort.",
+      "bestTime": "Morning (7–11 AM) when temples are open and light enters through the clerestory windows",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jain Temples Jaisalmer Fort",
+      "imageQuery": "Jain temples Jaisalmer Fort carved sandstone ceiling"
+    },
+    {
+      "name": "Gadisar Lake",
+      "category": "lake",
+      "description": "Built in 1367 by Maharawal Gadsi Singh to provide Jaisalmer with a reliable water source, Gadisar Lake is rimmed with ghats, chhatris (dome-pavilions), shrines, and temples. The Tilon Ki Pol gateway at the main entrance is a 19th-century arch built by a famous courtesan and so exquisite the Maharawal tried to demolish it — until she put a Vishnu shrine on top, making demolition sacrilegious. Migratory birds arrive in winter.",
+      "whyVisit": "A medieval reservoir whose shoreline architecture — including a courtesan's forbidden gateway — encapsulates Jaisalmer's layered social history.",
+      "bestTime": "Sunrise and sunset; November to February for migratory birds",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gadisar Lake Jaisalmer",
+      "imageQuery": "Gadisar Lake Jaisalmer chhatri reflection sunset"
+    },
+    {
+      "name": "Jaisalmer War Museum",
+      "category": "museum",
+      "description": "Inaugurated in 2015 on the Jaisalmer-Jodhpur highway, this army-run museum commemorates the Battle of Longewala (1971) — in which 120 Indian soldiers and a Hawker Hunter aircraft held off a 2,000-strong Pakistani tank column for an entire night. The museum displays the actual tanks captured in the battle, the original Hawker Hunter aircraft (serial BD-889) that turned the tide, and detailed maps and personal accounts.",
+      "whyVisit": "The only museum in India preserving the actual battlefield hardware from the Battle of Longewala — immortalised in the film 'Border'.",
+      "bestTime": "Year-round; cooler in morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jaisalmer War Museum Longewala",
+      "imageQuery": "Jaisalmer War Museum Longewala tank Hawker Hunter"
+    },
+    {
+      "name": "Khuri Sand Dunes",
+      "category": "desert",
+      "description": "Forty kilometres southwest of Jaisalmer, the village of Khuri sits at the edge of a compact but wild dune field owned by the Sodha Rajput community. Unlike Sam, Khuri has no paved road to the dunes and the village itself — whitewashed mud-and-thatch houses with geometric folk paintings (sanjhi) on the walls — is a registered heritage settlement. Overnight guests sleep on rope cots under the stars with no light pollution.",
+      "whyVisit": "Jaisalmer's most atmospheric desert village, where traditional architecture and genuine dune isolation coexist without commercial development.",
+      "bestTime": "October to February",
+      "duration": "Overnight",
+      "mapsSearch": "Khuri Sand Dunes Jaisalmer Rajasthan",
+      "imageQuery": "Khuri village sand dunes Jaisalmer authentic desert"
+    },
+    {
+      "name": "Kuldhara Abandoned Village",
+      "category": "heritage",
+      "description": "Once a prosperous Paliwal Brahmin settlement founded in the 13th century, Kuldhara was abandoned overnight in 1825 — all 400 families departing simultaneously under disputed but dramatic circumstances, allegedly to avoid a forced marriage demanded by the Diwan Salim Singh. The stone houses, lanes, and temple have stood empty since, slowly being reclaimed by sand. The Archaeological Survey of India partially maintains the ruins.",
+      "whyVisit": "A frozen-in-time ghost village whose entire population vanished in a single night 200 years ago, never to return.",
+      "bestTime": "Morning or late afternoon; haunting at dusk",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kuldhara Abandoned Village Jaisalmer",
+      "imageQuery": "Kuldhara ghost village abandoned Jaisalmer Rajasthan"
+    },
+    {
+      "name": "Desert National Park",
+      "category": "wildlife",
+      "description": "Covering 3,162 sq km of the western Thar, the Desert National Park protects the Great Indian Bustard — India's most endangered bird, with fewer than 150 individuals remaining. The park's fossil beds contain a remarkable concentration of 60-million-year-old marine fossils, evidence that the Thar was once a shallow sea. Jeep safaris from Jaisalmer also encounter the Indian wolf, desert fox, and blackbuck.",
+      "whyVisit": "The last viable habitat of the Great Indian Bustard — arguably India's most critically endangered vertebrate — in its native desert landscape.",
+      "bestTime": "October to March; Great Indian Bustard most active at dawn",
+      "duration": "Full day safari",
+      "mapsSearch": "Desert National Park Jaisalmer Great Indian Bustard",
+      "imageQuery": "Desert National Park Jaisalmer Great Indian Bustard wildlife"
+    },
+    {
+      "name": "Longewala Border Post",
+      "category": "heritage",
+      "description": "Ninety-eight kilometres from Jaisalmer on the road to the Pakistan border, Longewala is the site of the celebrated 1971 battle where Indian forces destroyed 34 Pakistani tanks in a defensive stand overnight. The original battlefield perimeter, vehicle tracks, and the first Pakistani tank to be disabled are preserved in situ. A small museum and Border Security Force post allow civilian visitors with prior permission.",
+      "whyVisit": "The actual battlefield of India's most famous desert victory — a historically significant site with original armour preserved in the sand.",
+      "bestTime": "October to March (requires prior BSF permission)",
+      "duration": "3-4 hours from Jaisalmer",
+      "mapsSearch": "Longewala Border Post Jaisalmer",
+      "imageQuery": "Longewala battlefield 1971 war Jaisalmer border"
+    },
+    {
+      "name": "Thar Heritage Museum",
+      "category": "museum",
+      "description": "Founded by local historian and collector Laxmi Narayan Khatri, this private museum in the old city houses 30 years of obsessive collecting — ancient manuscripts, musical instruments, textiles, opium equipment, and everyday objects of desert life that no government museum has thought to preserve. Khatri narrates each object's significance personally when present, turning a museum visit into a master class in Thar folk culture.",
+      "whyVisit": "The most personally curated and narrated museum in Rajasthan — a single collector's lifetime spent rescuing the living culture of the Thar.",
+      "bestTime": "Year-round; morning visits allow time with the founder",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thar Heritage Museum Jaisalmer",
+      "imageQuery": "Thar Heritage Museum Jaisalmer folk collection Rajasthan"
+    },
+    {
+      "name": "Bada Bagh (Royal Cenotaphs)",
+      "category": "heritage",
+      "description": "Six kilometres north of Jaisalmer, Bada Bagh — 'Big Garden' — contains the royal chhatri (cenotaph) complex of the Bhati Rajput rulers from the 16th to 20th centuries. Each ruler's chhatri sits on a raised plinth with an equestrian relief of the king above the entrance. The collection of 40-plus cenotaphs arranged in chronological order across a sandy hillside, with the fort visible on the horizon behind, creates one of Rajasthan's most cinematographic landscapes.",
+      "whyVisit": "A dynastic graveyard of golden sandstone chhatris spanning four centuries — the most evocative royal memorial complex in the Thar.",
+      "bestTime": "Sunset for long shadows across the cenotaphs",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bada Bagh Royal Cenotaphs Jaisalmer",
+      "imageQuery": "Bada Bagh cenotaphs Jaisalmer sunset Bhati Rajput"
+    },
+    {
+      "name": "Sunset Point, Sam Dunes",
+      "category": "viewpoint",
+      "description": "The crests of the Sam dunes become a moving stage at sunset — tourists and their camels silhouetted against the burning western sky, Rajasthani folk musicians playing sarangi and dholak on the sand, and the temperature dropping sharply from 40°C to 20°C within thirty minutes of dusk. The entire horizon from north to south offers nothing but dune-scape and sky, undisturbed by any structure.",
+      "whyVisit": "The single most iconic sunset view in Rajasthan — dunes, camels, musicians, and a blazing desert sky in one uninterrupted panorama.",
+      "bestTime": "5:30–7 PM October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sam Dunes Sunset Point Jaisalmer",
+      "imageQuery": "Sam Dunes sunset silhouette camel Jaisalmer Rajasthan"
+    },
+    {
+      "name": "Desert Cultural Centre & Museum",
+      "category": "museum",
+      "description": "Run by the government of Rajasthan near Gadisar Lake, this museum documents the material culture, folk performing arts, and natural history of the Thar Desert. It holds the largest collection of Kathputli (Rajasthani string puppets) in Rajasthan, a musical instrument gallery featuring the rare maati-bhaag and morchang, and a mineralogy section displaying desert agates and fossils from the Thar's ancient marine deposits.",
+      "whyVisit": "The most complete collection of Thar folk arts and crafts in a single venue, with rare puppet and instrument exhibits.",
+      "bestTime": "Evening puppet shows run in season",
+      "duration": "1-2 hours",
+      "mapsSearch": "Desert Cultural Centre Museum Jaisalmer",
+      "imageQuery": "Desert Cultural Centre Jaisalmer puppets Rajasthani folk"
+    },
+    {
+      "name": "Jaisalmer Haveli Walk, Old City",
+      "category": "heritage",
+      "description": "The lanes of Jaisalmer's old city immediately below and around the fort base are lined with merchant havelis from the 18th and 19th centuries — amber sandstone facades with increasingly elaborate carving as family wealth grew. The area between Amar Sagar Gate and the fort base contains perhaps twenty significant havelis within a 400-metre radius, including the lesser-visited Diwan Nathmal and Gopa Chowk havelis.",
+      "whyVisit": "Walking these lanes feels like moving through a living medieval city — every surface carved, every lane leading to another extraordinary building.",
+      "bestTime": "Early morning before vendors set up, for empty lanes and soft light",
+      "duration": "2 hours",
+      "mapsSearch": "Jaisalmer Old City Haveli Walk",
+      "imageQuery": "Jaisalmer old city lanes haveli carved sandstone walk"
+    },
+    {
+      "name": "Amar Sagar Lake and Step-well",
+      "category": "heritage",
+      "description": "Five kilometres west of Jaisalmer, the Amar Sagar artificial lake was built in the 17th century and is surrounded by a pleasure palace complex of the Bhati rulers. The adjacent Amar Sagar step-well (baoli) descends in multiple arcaded levels to the water table — a masterwork of functional stone architecture. The site is almost always empty of tourists and gives a direct feeling of the medieval desert hydraulic engineering that sustained Jaisalmer.",
+      "whyVisit": "A royal pleasure lake and ancient step-well almost completely overlooked by tourists — raw desert heritage with no crowds.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Amar Sagar Lake Step Well Jaisalmer",
+      "imageQuery": "Amar Sagar step-well baoli Jaisalmer heritage"
+    },
+    {
+      "name": "Lodhruva (Lodurva) Ancient Temples",
+      "category": "temple",
+      "description": "Fifteen kilometres northwest of Jaisalmer, Lodhruva was the ancient capital of the Bhati Rajputs before Jaisalmer was founded. The Jain temple complex here — particularly the Parshvanath Temple rebuilt in the 1970s on ancient foundations — is surrounded by desert scrub and the ruins of the old city. A pair of divine peacocks is said to visit the temple courtyard regularly, and carvings of the kalpavriksha (wish-fulfilling tree) cover the exterior.",
+      "whyVisit": "The forgotten pre-Jaisalmer capital with beautifully restored Jain temples in a true desert wilderness setting.",
+      "bestTime": "Morning or late afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lodhruva Jain Temple Jaisalmer ancient",
+      "imageQuery": "Lodhruva Jain temple Jaisalmer ancient desert"
+    },
+    {
+      "name": "Night Sky, Thar Desert Camp",
+      "category": "viewpoint",
+      "description": "With no significant light pollution within 100 km and an average of 325 clear nights per year, the Thar Desert around Jaisalmer offers some of the darkest skies accessible to travellers in South Asia. The Milky Way is visible as a solid band from October to March, and the Andromeda Galaxy (2.5 million light-years away) is naked-eye visible. Desert camp operators offer telescope sessions with trained guides.",
+      "whyVisit": "The clearest and darkest night sky in accessible India — stargazing that is transformative for urban travellers who have never seen the Milky Way.",
+      "bestTime": "October to March; new moon periods",
+      "duration": "Evening onwards",
+      "mapsSearch": "Night Sky Stargazing Jaisalmer Desert Camp",
+      "imageQuery": "Milky Way night sky Jaisalmer Thar desert camp stars"
+    },
+    {
+      "name": "Ramdevra Temple",
+      "category": "religious",
+      "description": "One hundred kilometres from Jaisalmer, the Ramdevra Temple is the shrine of Baba Ramdev — a 14th-century saint-king venerated jointly by both Hindus and Muslims as Ramapir and Ramshah Pir respectively. The annual Ramdevra fair (August-September) draws over 100,000 pilgrims of both faiths — one of India's most striking examples of religious syncretism, where Muslim devotees present chadar offerings at a Hindu shrine.",
+      "whyVisit": "One of India's rarest living examples of genuine Hindu-Muslim shared worship at a single shrine, active for 700 years.",
+      "bestTime": "August to September for the fair; year-round for the temple",
+      "duration": "Half day from Jaisalmer",
+      "mapsSearch": "Ramdevra Temple Jaisalmer Rajasthan",
+      "imageQuery": "Ramdevra Temple Jaisalmer pilgrimage Hindu Muslim"
+    },
+    {
+      "name": "Tanot Mata Temple",
+      "category": "religious",
+      "description": "One hundred twenty kilometres from Jaisalmer near the Pakistan border, Tanot Mata Temple is maintained by the Border Security Force, whose jawans are the temple's priests. During the 1965 and 1971 wars, Pakistani bombs reportedly fell on the temple but failed to explode — the unexploded ordnance is displayed in a museum within the compound. The BSF treats the goddess as a battalion deity and conducts daily rituals.",
+      "whyVisit": "A border-zone shrine maintained by the BSF, where unexploded wartime bombs stand as votive offerings in a museum beside an active goddess temple.",
+      "bestTime": "Year-round (border zone — carry ID)",
+      "duration": "3-4 hours from Jaisalmer",
+      "mapsSearch": "Tanot Mata Temple Jaisalmer border",
+      "imageQuery": "Tanot Mata Temple Jaisalmer BSF border Rajasthan"
+    },
+    {
+      "name": "Jaisalmer Desert Festival",
+      "category": "heritage",
+      "description": "Held annually in February on the Sam Sand Dunes, the three-day Desert Festival showcases Rajasthani folk performing arts — ghoomar dance, fire dancers, turban-tying contests, and the famous 'Mr. Desert' pageant. Camel races on the dunes, camel polo, and craft markets fill the days. The festival was established in the 1970s to promote tourism but has evolved into a genuine celebration of Thar cultural identity.",
+      "whyVisit": "The most concentrated expression of Thar folk culture in a festival format, staged on the dramatic backdrop of the Sam dunes.",
+      "bestTime": "February (dates follow the Hindu calendar)",
+      "duration": "1-3 days",
+      "mapsSearch": "Jaisalmer Desert Festival Sam Dunes",
+      "imageQuery": "Jaisalmer Desert Festival folk dance camel dunes"
+    },
+    {
+      "name": "Fossil Park, Akal",
+      "category": "nature",
+      "description": "Seventeen kilometres from Jaisalmer, the Akal Wood Fossil Park preserves the petrified remains of an ancient forest — tree stumps and logs turned to stone 180 million years ago during the Jurassic period. The largest fossil trunk is 3 metres in diameter. The site is maintained by the Geological Survey of India and the silicified wood is strikingly beautiful — amber and brown, retaining visible grain and knots.",
+      "whyVisit": "A 180-million-year-old Jurassic forest turned to stone in the desert — one of the oldest accessible fossil sites in India.",
+      "bestTime": "October to March; morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Akal Wood Fossil Park Jaisalmer",
+      "imageQuery": "Akal Fossil Park Jaisalmer petrified wood Jurassic"
+    }
+  ]
+}

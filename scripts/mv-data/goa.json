@@ -1,0 +1,267 @@
+{
+  "slug": "goa",
+  "name": "Goa",
+  "state": "Goa",
+  "tagline": "Sun, sand, and soulful shores await you",
+  "categories": [
+    "beach",
+    "heritage",
+    "city"
+  ],
+  "highlights": [
+    "baga beach",
+    "basilica of bom jesus"
+  ],
+  "attractions": [
+    {
+      "name": "Baga Beach",
+      "category": "beach",
+      "description": "Baga is Goa's most energetic stretch of golden sand, flanked by shack restaurants, water-sports operators, and a legendary nightlife strip. The wide beach accommodates parasailing, banana-boat rides, and jet-skiing by day, while Tito's Lane blazes with music after dark. Calm mornings reward early walkers with spectacular sunrise light over the Arabian Sea.",
+      "whyVisit": "The perfect blend of beach action, seafood shacks, and Goa's most iconic nightlife scene.",
+      "bestTime": "November to February",
+      "duration": "Half day to full day",
+      "mapsSearch": "Baga Beach, Calangute, Goa, India",
+      "imageQuery": "Baga Beach Goa"
+    },
+    {
+      "name": "Basilica of Bom Jesus",
+      "category": "religious",
+      "description": "A UNESCO World Heritage Site completed in 1605, this baroque masterpiece in Old Goa houses the mortal remains of St. Francis Xavier in a stunning silver casque atop a three-tiered marble mausoleum. The laterite stone façade, gilded altars, and frescoed interior make it one of the finest examples of Portuguese ecclesiastical architecture in Asia.",
+      "whyVisit": "One of Asia's most revered Catholic basilicas and a pinnacle of Indo-Portuguese Baroque art.",
+      "bestTime": "October to March, early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Basilica of Bom Jesus, Old Goa, Goa, India",
+      "imageQuery": "Basilica Bom Jesus Old Goa"
+    },
+    {
+      "name": "Calangute Beach",
+      "category": "beach",
+      "description": "Known as the 'Queen of Beaches,' Calangute is North Goa's largest and busiest beach, stretching nearly 7 km. The vibrant strip hums with beach-shack dining, souvenir stalls, and water sports. The wide, clean sand and gentle waves suit families and first-time visitors, while the town behind packs in boutiques, restaurants, and lively beach clubs.",
+      "whyVisit": "Goa's most accessible and lively beach with every amenity a first-time visitor needs.",
+      "bestTime": "November to February",
+      "duration": "3-5 hours",
+      "mapsSearch": "Calangute Beach, Goa, India",
+      "imageQuery": "Calangute Beach Goa"
+    },
+    {
+      "name": "Fort Aguada",
+      "category": "fort",
+      "description": "Built by the Portuguese in 1612 to guard against Dutch and Maratha attacks, Fort Aguada sits dramatically on a headland where the Mandovi River meets the sea. Its 13-metre lighthouse — the oldest of its kind in Asia — still stands. The ruins include a four-storey round tower, cisterns, and barracks offering sweeping panoramic views over Sinquerim Beach.",
+      "whyVisit": "The best-preserved Portuguese fort in Goa with commanding 360-degree sea and river views.",
+      "bestTime": "October to March, late afternoon for sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Fort Aguada, Sinquerim, Goa, India",
+      "imageQuery": "Fort Aguada Goa lighthouse"
+    },
+    {
+      "name": "Se Cathedral",
+      "category": "heritage",
+      "description": "Completed in 1619, Se Cathedral in Old Goa is the largest church in Asia and a UNESCO World Heritage Site. Dedicated to Catherine of Alexandria, its stark white Portuguese-Manueline exterior conceals a lavishly gilded interior with five altars. The famous Golden Bell, cast in Cuncolim and recovered by the Portuguese, is renowned for its rich, deep resonance.",
+      "whyVisit": "Asia's largest church is a monumental testament to Goa's four-century Portuguese legacy.",
+      "bestTime": "October to March, morning",
+      "duration": "1 hour",
+      "mapsSearch": "Se Cathedral, Old Goa, Goa, India",
+      "imageQuery": "Se Cathedral Old Goa"
+    },
+    {
+      "name": "Anjuna Beach",
+      "category": "beach",
+      "description": "Anjuna's rocky, cliff-edged shoreline became famous in the 1970s as a hippie haven; its Wednesday Flea Market remains the most colourful bazaar in Goa. Psychedelic parties, trance music, and a bohemian café culture define the vibe today. The dramatic laterite cliffs, azure water, and the historic Shiva Cafe make it a must for travellers craving something beyond the mainstream resort scene.",
+      "whyVisit": "Goa's original counterculture beach, home to the iconic Wednesday Flea Market.",
+      "bestTime": "November to February; Wednesday for the flea market",
+      "duration": "Half day",
+      "mapsSearch": "Anjuna Beach, Anjuna, Goa, India",
+      "imageQuery": "Anjuna Beach Goa"
+    },
+    {
+      "name": "Dudhsagar Waterfalls",
+      "category": "waterfall",
+      "description": "Plunging 310 metres in four cascades through thick forest on the Goa-Karnataka border, Dudhsagar — meaning 'Sea of Milk' — is India's fifth-highest waterfall. The Mandovi River creates this milky white torrent, framed by the Bhagwan Mahavir Wildlife Sanctuary. A Jeep safari or train ride through the jungle to reach the falls is itself a thrilling experience.",
+      "whyVisit": "One of India's tallest and most spectacular waterfalls, set within dense wildlife sanctuary.",
+      "bestTime": "July to October (monsoon), or October to December",
+      "duration": "Full day",
+      "mapsSearch": "Dudhsagar Waterfalls, Goa, India",
+      "imageQuery": "Dudhsagar Waterfall Goa"
+    },
+    {
+      "name": "Palolem Beach",
+      "category": "beach",
+      "description": "A crescent-shaped cove in South Goa's Canacona district, Palolem is framed by headlands cloaked in coconut palms and is consistently rated among India's most beautiful beaches. The calm, shallow lagoon is ideal for kayaking and swimming. Silent Noise parties — where revellers dance to wireless headphones — and dolphin-spotting boat trips are unique local offerings.",
+      "whyVisit": "South Goa's most scenic crescent beach, perfect for families and those seeking a quieter pace.",
+      "bestTime": "November to February",
+      "duration": "Full day",
+      "mapsSearch": "Palolem Beach, Canacona, Goa, India",
+      "imageQuery": "Palolem Beach South Goa"
+    },
+    {
+      "name": "Chapora Fort",
+      "category": "fort",
+      "description": "Perched on a basalt headland above the confluence of the Chapora River and the sea, this ruined 17th-century Portuguese fort offers one of Goa's most cinematic viewpoints. Featured in the Bollywood film Dil Chahta Hai, the crumbling ramparts frame sweeping vistas over Vagator and Morjim beaches. Sunset here, with fishing boats below and the sky ablaze, is unforgettable.",
+      "whyVisit": "The most photogenic fort in Goa, made iconic by Bollywood and blessed with stunning sunset views.",
+      "bestTime": "October to March, late afternoon",
+      "duration": "1 hour",
+      "mapsSearch": "Chapora Fort, Vagator, Goa, India",
+      "imageQuery": "Chapora Fort Vagator Goa"
+    },
+    {
+      "name": "Vagator Beach",
+      "category": "beach",
+      "description": "Vagator comprises three distinct coves separated by red laterite cliffs, all within walking distance of Chapora Fort. Big Vagator is wide and open; Little Vagator (Ozran) is secluded and dramatic. The beach anchors Goa's underground electronic music scene, with venues like Hilltop and Nine Bar hosting legendary outdoor parties. The vivid crimson-and-blue contrast of rock, sea, and sky is extraordinarily photogenic.",
+      "whyVisit": "Goa's most dramatic cliff-beach setting, the heartland of the state's underground music culture.",
+      "bestTime": "November to February",
+      "duration": "Half to full day",
+      "mapsSearch": "Vagator Beach, Vagator, Goa, India",
+      "imageQuery": "Vagator Beach red cliffs Goa"
+    },
+    {
+      "name": "Goa State Museum",
+      "category": "museum",
+      "description": "Located in Panaji, this museum chronicles Goa's rich and layered history across 18 galleries. The collection spans Hindu sculpture, Portuguese-era artefacts, Goan Christian art, bronze figurines, numismatics, and natural history exhibits. A series of wooden chariots used in Hindu festivals and intricate ivory carvings are among the most admired objects.",
+      "whyVisit": "The most comprehensive single repository of Goa's 2,000-year cultural and historical heritage.",
+      "bestTime": "Year-round, mornings",
+      "duration": "1-2 hours",
+      "mapsSearch": "Goa State Museum, Panaji, Goa, India",
+      "imageQuery": "Goa State Museum Panaji"
+    },
+    {
+      "name": "Fontainhas Latin Quarter",
+      "category": "heritage",
+      "description": "Panaji's Fontainhas is India's last surviving Latin quarter, a labyrinth of narrow cobblestone lanes lined with ochre, indigo, and terracotta Portuguese-era townhouses, tiled name-plates, and ornate iron balconies. The Chapel of St. Sebastian, art galleries, and Cação de Goa bakery anchor its cultural identity. The neighbourhood comes alive during the International Film Festival of India (IFFI) each November.",
+      "whyVisit": "The most perfectly preserved colonial neighbourhood in India, offering Lisbon in the tropics.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Fontainhas, Panaji, Goa, India",
+      "imageQuery": "Fontainhas Latin Quarter Panaji Goa"
+    },
+    {
+      "name": "Colva Beach",
+      "category": "beach",
+      "description": "Stretching 25 km along South Goa's coastline, Colva is the longest and most peaceful beach in the region. The broad, white-sand expanse is backed by a fishing village famed for its ornate Church of Our Lady of Mercy. The annual Menino Jesus Festival draws thousands of devotees. Fewer crowds than the north make it ideal for long walks and authentic Goan seafood at beachfront shacks.",
+      "whyVisit": "South Goa's longest beach, ideal for unhurried seaside days away from north Goa's bustle.",
+      "bestTime": "October to March",
+      "duration": "Half to full day",
+      "mapsSearch": "Colva Beach, Colva, South Goa, India",
+      "imageQuery": "Colva Beach South Goa"
+    },
+    {
+      "name": "Shanta Durga Temple",
+      "category": "temple",
+      "description": "Nestled in the forested hills of Ponda taluka, Shanta Durga is Goa's most visited Hindu temple and one of the wealthiest. The 18th-century structure blends Roman-Baroque architecture with Hindu temple tradition — a hallmark of Goan syncretic culture. The presiding deity, Shanta Durga, is depicted mediating between Shiva and Vishnu, making her a unique goddess of peace.",
+      "whyVisit": "Goa's most revered and architecturally distinctive Hindu temple, reflecting the state's unique cultural fusion.",
+      "bestTime": "October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Shanta Durga Temple, Ponda, Goa, India",
+      "imageQuery": "Shanta Durga Temple Ponda Goa"
+    },
+    {
+      "name": "Bhagwan Mahavir Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Goa's largest wildlife reserve covers 240 sq km of the Western Ghats and includes the Mollem National Park core zone. The sanctuary shelters tigers, leopards, gaur, Indian elephants, and over 200 bird species including the Malabar pied hornbill. The Devil's Canyon viewpoint and the ancient Tambdi Surla Mahadeva temple — a 12th-century Kadamba marvel deep in the forest — are exceptional highlights.",
+      "whyVisit": "Goa's best jungle experience, combining rare wildlife with a hidden medieval temple.",
+      "bestTime": "October to March",
+      "duration": "Full day",
+      "mapsSearch": "Bhagwan Mahavir Wildlife Sanctuary, Mollem, Goa, India",
+      "imageQuery": "Bhagwan Mahavir Wildlife Sanctuary Goa"
+    },
+    {
+      "name": "Morjim Beach",
+      "category": "beach",
+      "description": "At the mouth of the Chapora River, Morjim is a certified Olive Ridley turtle nesting site, patrolled by conservation volunteers from October to February. The vast, uncrowded stretch is popular with Russian expats and kitesurfers. The estuarine ecosystem supports flamingoes and kingfishers, making the northern end a rewarding birding spot. Sunset cruises departing from the river jetty are quietly spectacular.",
+      "whyVisit": "A nesting ground for endangered Olive Ridley sea turtles and a birder's haven at the river mouth.",
+      "bestTime": "October to February",
+      "duration": "Half day",
+      "mapsSearch": "Morjim Beach, Goa, India",
+      "imageQuery": "Morjim Beach turtle nesting Goa"
+    },
+    {
+      "name": "Arambol Beach",
+      "category": "beach",
+      "description": "North Goa's northernmost popular beach retains the free-spirited energy of old Goa. Beyond the main strip, a rocky path leads to a freshwater lagoon fringed by a banyan grove and a second cliff-backed cove. Fire-spinning performances, drum circles at sunset, yoga classes, and open-mic nights at cliffside cafés make Arambol the spiritual and artistic heartbeat of Goa's alternative community.",
+      "whyVisit": "Goa's most bohemian beach, beloved for its drum circles, freshwater lagoon, and artistic community.",
+      "bestTime": "November to February",
+      "duration": "Half to full day",
+      "mapsSearch": "Arambol Beach, Goa, India",
+      "imageQuery": "Arambol Beach sunset Goa"
+    },
+    {
+      "name": "Reis Magos Fort",
+      "category": "fort",
+      "description": "One of the oldest forts in Goa, Reis Magos was built by the Portuguese in 1551 on a rocky promontory at the Mandovi River's northern bank, commanding the river approach to Old Goa. Its beautifully restored interior now houses a museum of Goan history and contemporary art. The terrace offers an iconic framed view of Panaji's skyline across the river.",
+      "whyVisit": "The most beautifully restored fort in Goa with the finest river-view of Panaji's skyline.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Reis Magos Fort, Verem, Goa, India",
+      "imageQuery": "Reis Magos Fort Goa Mandovi River"
+    },
+    {
+      "name": "Spice Plantations of Ponda",
+      "category": "nature",
+      "description": "The rolling hills of Ponda taluka conceal dozens of spice plantations where cardamom, vanilla, pepper, cinnamon, nutmeg, and areca palms grow in lush profusion. Guided half-day tours at farms like Sahakari and Tropical Spice Plantation include a walk through the plantation, elephant rides, a cooking demonstration, and a traditional Goan thali lunch served on banana leaves.",
+      "whyVisit": "A sensory journey through Goa's spice heritage, paired with a home-cooked Goan feast.",
+      "bestTime": "October to March",
+      "duration": "Half day",
+      "mapsSearch": "Sahakari Spice Farm, Ponda, Goa, India",
+      "imageQuery": "Spice plantation Ponda Goa"
+    },
+    {
+      "name": "Church of Our Lady of the Immaculate Conception",
+      "category": "religious",
+      "description": "The iconic white baroque church crowning Panaji's central square is the most photographed building in Goa. Founded in 1541 and rebuilt in 1619, its distinctive twin-towered silhouette is the city's defining landmark. The ornate Baroque façade, flanked by zigzagging staircases, lights up brilliantly during the Feast of Our Lady in December, when the square transforms into a luminous fairground.",
+      "whyVisit": "Panaji's most photogenic landmark and the spiritual centrepiece of Goa's capital city.",
+      "bestTime": "October to March; evening for illuminated façade",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Church of Our Lady of the Immaculate Conception, Panaji, Goa, India",
+      "imageQuery": "Immaculate Conception Church Panaji Goa"
+    },
+    {
+      "name": "Cabo de Rama Fort",
+      "category": "fort",
+      "description": "Perched on a high, remote cape in South Goa, Cabo de Rama is named after the Hindu god Rama, who is said to have stayed here during his exile. The Portuguese captured and expanded the fort in 1763. Today the largely ruined battlements offer breathtaking, unobstructed views over empty beaches stretching in both directions — a dramatic, crowd-free alternative to north Goa's busy forts.",
+      "whyVisit": "South Goa's most atmospheric and least-visited fort, with vertiginous views over pristine coastline.",
+      "bestTime": "October to March, late afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Cabo de Rama Fort, South Goa, India",
+      "imageQuery": "Cabo de Rama Fort South Goa"
+    },
+    {
+      "name": "Mandrem Beach",
+      "category": "beach",
+      "description": "Tucked between Arambol and Morjim, Mandrem is North Goa's best-kept secret — a pristine, kilometre-long stretch separated from the road by a small creek. The shallow lagoon behind the dunes is a haven for river terns and cormorants. Boutique eco-resorts, a handful of excellent yoga shalas, and a total absence of jet-skis make it the meditative antidote to Goa's party beaches.",
+      "whyVisit": "A hidden creek-island beach that offers the seclusion of the Maldives within reach of north Goa.",
+      "bestTime": "November to February",
+      "duration": "Half to full day",
+      "mapsSearch": "Mandrem Beach, Goa, India",
+      "imageQuery": "Mandrem Beach serene Goa"
+    },
+    {
+      "name": "Butterfly Beach",
+      "category": "beach",
+      "description": "Accessible only by a 30-minute boat ride from Palolem or a steep jungle hike, Butterfly Beach is a tiny semi-circular cove named for the butterflies that swarm its bordering forest. The water is impossibly clear, the beach pristine white, and dolphins regularly frolic just offshore. There are no shacks, no roads, and no noise — just raw, unspoiled coastal paradise.",
+      "whyVisit": "Goa's most secluded beach, reachable only by sea, with near-guaranteed dolphin sightings.",
+      "bestTime": "November to March, morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Butterfly Beach, Canacona, South Goa, India",
+      "imageQuery": "Butterfly Beach Palolem Goa"
+    },
+    {
+      "name": "Tambdi Surla Mahadeva Temple",
+      "category": "temple",
+      "description": "Hidden deep inside the Bhagwan Mahavir Wildlife Sanctuary, this black basalt Shiva temple is Goa's oldest standing structure, built by the Kadamba dynasty in the 12th century. Remarkably preserved, its intricate carvings of dancing apsaras, lotus medallions, and mythological friezes are extraordinary examples of Hemadpanthi architecture. The jungle setting — with the Surla River nearby — makes it ethereally peaceful.",
+      "whyVisit": "Goa's oldest and most beautifully carved medieval temple, hidden within an ancient rainforest.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours (including travel)",
+      "mapsSearch": "Tambdi Surla Temple, Goa, India",
+      "imageQuery": "Tambdi Surla Temple Goa forest"
+    },
+    {
+      "name": "Chorla Ghats",
+      "category": "nature",
+      "description": "Where Goa, Maharashtra, and Karnataka converge in the Western Ghats, the Chorla Ghats form a biodiversity hotspot of misty evergreen forest and cascading streams. The drive along the NH748 hairpin bends is spectacular, passing through thick canopy alive with Malabar giant squirrels, hornbills, and endemic orchids. The Backwoods Camp at Chorla is Goa's finest jungle lodge, run by birding experts.",
+      "whyVisit": "Goa's most spectacular mountain scenery, sitting at the trijunction of three states in the Western Ghats.",
+      "bestTime": "October to March",
+      "duration": "Full day",
+      "mapsSearch": "Chorla Ghats, Goa, India",
+      "imageQuery": "Chorla Ghats misty forest Goa"
+    }
+  ]
+}

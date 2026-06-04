@@ -1,0 +1,260 @@
+{
+  "slug": "munnar",
+  "name": "Munnar",
+  "state": "Kerala",
+  "tagline": "Rolling green infinity of tea gardens and mountain mist",
+  "categories": ["hill_station", "nature", "adventure"],
+  "highlights": ["endless terraced tea gardens above 1600 metres", "last stronghold of the endangered Nilgiri tahr"],
+  "attractions": [
+    {
+      "name": "Eravikulam National Park",
+      "category": "wildlife",
+      "description": "Established in 1978 to protect the critically endangered Nilgiri tahr, Eravikulam covers 97 sq km of high-altitude montane grassland atop the Rajamala range reaching 2,695 m at Anamudi — South India's highest peak. The tahr population here, now over 700 animals, has become remarkably habituated to visitors and regularly grazes within metres of the viewing trail. The park closes February to March for calving season.",
+      "whyVisit": "The only reliable place in the world to see the Nilgiri tahr at close range in its natural habitat.",
+      "bestTime": "April to June and September to November; park closes Feb–Mar",
+      "duration": "3-4 hours",
+      "mapsSearch": "Eravikulam National Park Munnar",
+      "imageQuery": "Nilgiri tahr Eravikulam National Park Munnar"
+    },
+    {
+      "name": "Anamudi Peak",
+      "category": "adventure",
+      "description": "At 2,695 metres, Anamudi is the highest peak in the Western Ghats and peninsular India. The summit sits within Eravikulam National Park and trekking to the top requires a special permit from the forest department. The upper slopes are covered in shola grassland and the summit ridge gives a 360-degree view over Kerala, Tamil Nadu, and on clear days, the distant Arabian Sea glinting to the west.",
+      "whyVisit": "Summit South India's highest peak — a challenging but achievable high-altitude trek with extraordinary views.",
+      "bestTime": "September to February (permit required from forest dept)",
+      "duration": "Full day",
+      "mapsSearch": "Anamudi Peak Eravikulam Munnar",
+      "imageQuery": "Anamudi peak summit Western Ghats highest"
+    },
+    {
+      "name": "Mattupetty Dam and Lake",
+      "category": "lake",
+      "description": "Built in 1940 by the High Range Electricity Board, Mattupetty Dam impounds a scenic reservoir at 1,700 metres surrounded by tea gardens and shola forest. Speed boats and pedal boats are available on the lake, and the backdrop of forested hills reflected in the still water is quintessential Munnar. The nearby Indo-Swiss Livestock Project dairy farm raises high-yield crossbred cattle adapted to high altitude.",
+      "whyVisit": "Munnar's most scenic lake with boating against a backdrop of tea-carpeted hills, just 13 km from town.",
+      "bestTime": "October to March for clearest reflections",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mattupetty Dam Lake Munnar",
+      "imageQuery": "Mattupetty Lake Munnar tea gardens reflection"
+    },
+    {
+      "name": "Top Station Viewpoint",
+      "category": "viewpoint",
+      "description": "At 1,880 metres on the Tamil Nadu border, 34 km from Munnar, Top Station was the upper terminus of an aerial ropeway that carried tea from High Range estates down to the plains. The ropeway is long gone but the viewpoint remains extraordinary — a sheer escarpment drops 1,500 metres to the Kundala Valley below, and the view stretches across the Tamil Nadu plains all the way to Madurai on clear mornings.",
+      "whyVisit": "The most dramatic cliff-edge viewpoint in the Western Ghats with the greatest single vertical drop visible anywhere in Kerala.",
+      "bestTime": "Early morning before mist obscures the valley",
+      "duration": "1-2 hours",
+      "mapsSearch": "Top Station Viewpoint Munnar",
+      "imageQuery": "Top Station viewpoint Munnar Western Ghats valley"
+    },
+    {
+      "name": "Neelakurinji Bloom, Eravikulam",
+      "category": "nature",
+      "description": "Strobilanthes kunthiana — locally called neelakurinji — is a shrub that carpets the high grasslands of Eravikulam in a mass of violet-blue flowers every twelve years, turning the mountains of Munnar into a sea of blue. The previous bloom in 2018 attracted over 100,000 visitors. The next bloom is expected in 2030. Even outside bloom years, the shrubs dominate the Rajamala landscape and shape its ecology.",
+      "whyVisit": "A once-in-twelve-years natural spectacle that transforms entire mountain ranges into a violet carpet.",
+      "bestTime": "August to October 2030 for next bloom cycle",
+      "duration": "Half to full day",
+      "mapsSearch": "Neelakurinji Eravikulam Munnar bloom",
+      "imageQuery": "Neelakurinji bloom Munnar violet flowers Eravikulam"
+    },
+    {
+      "name": "Tea Museum, Nallathanni",
+      "category": "museum",
+      "description": "Operated by Tata Tea, this museum 1.5 km from Munnar town sits in a renovated 1920s tea factory and traces the history of tea cultivation in the High Range from the first Scottish planters in the 1870s. Exhibits include original withering troughs, hand-rollers, and a working miniature processing line. The colonial-era photographs of the early estate bungalows and coolie lines are particularly evocative.",
+      "whyVisit": "The most comprehensive tea history museum in South India, with original colonial-era processing machinery.",
+      "bestTime": "Year-round; closed Mondays",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tea Museum Nallathanni Munnar Tata Tea",
+      "imageQuery": "Tea Museum Munnar Tata colonial tea factory"
+    },
+    {
+      "name": "Kundala Lake",
+      "category": "lake",
+      "description": "An arch dam built in 1946 creates the elongated Kundala reservoir 20 km from Munnar, set at 1,700 m between tea-covered hillsides. The lake is particularly valued for the shikara (Kashmiri-style) boat rides unique in Kerala — the only place in the state where this type of boat is used. The surrounding tea garden is part of the Kanan Devan estate, one of the oldest in Munnar.",
+      "whyVisit": "Kerala's only shikara boating lake, offering a uniquely Kashmiri experience in a High Range tea-garden setting.",
+      "bestTime": "October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kundala Lake Munnar",
+      "imageQuery": "Kundala Lake shikara boat Munnar tea garden"
+    },
+    {
+      "name": "Attukal Waterfalls",
+      "category": "waterfall",
+      "description": "Located 9 km from Munnar on the Munnar-Palakkad road, Attukal Falls cascade down a 25-metre rock face through dense forest into a shallow pool accessible from the road. The falls are fed by year-round springs and remain active even in the dry season. The surrounding forest has cardamom and coffee growing under the shade of jackfruit trees, and the roadside area has vendors selling fresh forest honey.",
+      "whyVisit": "Munnar's most accessible waterfall with a genuine forested setting and excellent forest honey available nearby.",
+      "bestTime": "June to September for maximum flow; accessible year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Attukal Waterfalls Munnar Kerala",
+      "imageQuery": "Attukal Waterfalls Munnar forest cascade"
+    },
+    {
+      "name": "Chinnakanal Waterfalls (Power House Falls)",
+      "category": "waterfall",
+      "description": "Also known as Power House Falls, Chinnakanal is a multi-tiered waterfall 19 km south of Munnar that drops through a series of chutes and pools in a narrow gorge. The upper section is visible from the road; a short trail leads to a pool at the base. The surrounding Chinnakanal area is planted in cardamom and the air carries a distinctive spice fragrance mixed with waterfall mist.",
+      "whyVisit": "A powerful multi-tier waterfall set in cardamom country with a swimmable natural pool at its base.",
+      "bestTime": "July to January",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chinnakanal Waterfall Power House Falls Munnar",
+      "imageQuery": "Chinnakanal waterfall Munnar cardamom gorge"
+    },
+    {
+      "name": "Kanan Devan Tea Plantations",
+      "category": "nature",
+      "description": "The Kanan Devan Hills Plantations — now partially owned by its 12,000 estate workers through the Kanan Devan Hills Plantations Company Limited — cover over 23,000 hectares of the High Range. Driving through Munnar's hill roads, the estate's perfectly contoured tea rows follow every ridge and valley for miles. The estate headquarters at Munnar town includes the KDHP factory where visitors can observe mechanical processing.",
+      "whyVisit": "The world's largest single block of tea cultivation, encompassing the entire landscape of the Munnar region.",
+      "bestTime": "Year-round; most scenic in clear weather of October to April",
+      "duration": "Half day (self-drive through estate roads)",
+      "mapsSearch": "Kanan Devan Tea Plantation Munnar KDHP",
+      "imageQuery": "Kanan Devan tea plantation Munnar rows hillside"
+    },
+    {
+      "name": "Rajamala (Eravikulam) Grasslands Trek",
+      "category": "adventure",
+      "description": "The paved trail into Eravikulam's Rajamala grasslands rises steadily through open high-altitude montane vegetation above the tree line. Beyond the 3-km main visitor trail, forest department guided treks go deeper into the park toward the upper plateau where tahr are most concentrated. The combination of tahr sightings, views to Anamudi, and the unusual high-grassland ecosystem makes this unlike any other walk in Kerala.",
+      "whyVisit": "Kerala's best high-altitude grassland walk with near-guaranteed wildlife encounters above the treeline.",
+      "bestTime": "April to June and September to November",
+      "duration": "3-4 hours",
+      "mapsSearch": "Rajamala Grasslands Trek Eravikulam Munnar",
+      "imageQuery": "Rajamala grasslands Munnar tahr trekking"
+    },
+    {
+      "name": "Marayoor Sandalwood Forests",
+      "category": "nature",
+      "description": "Sixty kilometres north of Munnar, the dry deciduous forests of Marayoor are the only natural sandalwood (Santalum album) forests in Kerala, protected by the forest department with regular patrols. The sweet resinous scent of sandalwood permeates the air on warm afternoons. Marayoor is also famous for its jaggery industry — dozens of small units boil sugarcane in traditional clay pots — and for prehistoric megalithic dolmens.",
+      "whyVisit": "Kerala's only natural sandalwood forest, combined with living jaggery-making tradition and prehistoric dolmens.",
+      "bestTime": "November to February",
+      "duration": "Half day",
+      "mapsSearch": "Marayoor Sandalwood Forest Munnar Kerala",
+      "imageQuery": "Marayoor sandalwood forest Munnar Kerala"
+    },
+    {
+      "name": "Pothamedu Viewpoint",
+      "category": "viewpoint",
+      "description": "Just 3 km from Munnar town, the Pothamedu viewpoint overlooks a sweeping panorama of tea, coffee, and cardamom plantations filling a wide valley below a wall of forested ridges. It is the easiest walk from town — a 30-minute uphill stroll through tea bushes — and the view at the top captures everything that defines the Munnar landscape in a single frame. Sunset here colours the tea-covered hillsides gold.",
+      "whyVisit": "The closest and most rewarding short walk from Munnar town, combining exercise with the region's signature view.",
+      "bestTime": "Sunset for golden light over the tea gardens",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pothamedu Viewpoint Munnar",
+      "imageQuery": "Pothamedu viewpoint Munnar tea coffee sunset"
+    },
+    {
+      "name": "Echo Point",
+      "category": "nature",
+      "description": "Set on the banks of a shimmering lake near Kundala, Echo Point is named for the natural acoustic effect created by the forested cliffs across the water — a shout returns as a clear echo. While slightly commercialised, the lake setting is genuinely beautiful, with still water mirroring the surrounding tea hills. Horseback rides and rowboats are available, and the road in passes through dense shola forest.",
+      "whyVisit": "A scenic lakeside spot combining Munnar's tea-and-water landscape with a natural acoustic curiosity.",
+      "bestTime": "Morning before crowds arrive",
+      "duration": "1-2 hours",
+      "mapsSearch": "Echo Point Munnar Kundala",
+      "imageQuery": "Echo Point lake Munnar tea hills reflection"
+    },
+    {
+      "name": "Chokramudi Peak Trek",
+      "category": "adventure",
+      "description": "At 2,058 metres, Chokramudi is the closest trekking peak to Munnar town, reached by a forest department trail from the Rajamala road. The summit gives a 180-degree view of the Eravikulam plateau and distant plains of Tamil Nadu. The trail passes through stunted shola forest and high grassland where the endemic Munnar lily grows, and the walk can be completed in a single day from Munnar.",
+      "whyVisit": "The best short day-summit near Munnar with direct views into Eravikulam's core tahr habitat.",
+      "bestTime": "September to March",
+      "duration": "5-6 hours return",
+      "mapsSearch": "Chokramudi Peak Trek Munnar",
+      "imageQuery": "Chokramudi peak trek Munnar shola summit"
+    },
+    {
+      "name": "Suryanelli (Devikulam)",
+      "category": "nature",
+      "description": "The Devikulam region 15 km from Munnar is characterised by vast, open, undulating grassland plateaus above 1,400 m that feel more like the Scottish Highlands than South India. The Suryanelli valley in particular has no formal tourist infrastructure but is freely accessible by road — ideal for long walks through entirely empty countryside with occasional herds of gaur (Indian bison) visible on the slopes.",
+      "whyVisit": "Open highland plateau country with grazing gaur herds and zero tourist infrastructure — raw Western Ghats at its most elemental.",
+      "bestTime": "October to February",
+      "duration": "Half day",
+      "mapsSearch": "Devikulam Suryanelli Munnar grassland",
+      "imageQuery": "Devikulam plateau grassland Munnar gaur"
+    },
+    {
+      "name": "Lakkam Waterfalls",
+      "category": "waterfall",
+      "description": "Located within the Rajamala division of Eravikulam National Park, the Lakkam Falls are visible from the park road as a single tall curtain of white water descending from the escarpment above. The falls are part of a stream flowing from the high plateau and the spray creates a perpetual rainbow in morning light. The roadside viewpoint is free to access from the Munnar-Rajamala road.",
+      "whyVisit": "A dramatic single-drop waterfall viewed from the road within Eravikulam National Park — no hiking required.",
+      "bestTime": "June to January",
+      "duration": "30 minutes",
+      "mapsSearch": "Lakkam Waterfalls Eravikulam Munnar",
+      "imageQuery": "Lakkam waterfalls Eravikulam Munnar single drop"
+    },
+    {
+      "name": "Munnar Town Market",
+      "category": "market",
+      "description": "The small but well-stocked market in central Munnar town sells estate-direct teas in paper and tin packaging — orthodox, CTC, and the rare white tea from high-altitude estates. Shops also carry cardamom, pepper, clove, and dried ginger from nearby spice farms at much lower prices than in the cities. Several local co-operative stores stock home-made eucalyptus and cardamom-infused honey.",
+      "whyVisit": "The most direct source for estate-fresh Munnar tea and authentic High Range spices at producer prices.",
+      "bestTime": "Morning for freshest stock",
+      "duration": "1 hour",
+      "mapsSearch": "Munnar Town Market Kerala spices tea",
+      "imageQuery": "Munnar market tea spices cardamom Kerala"
+    },
+    {
+      "name": "Pallivasal Waterfalls",
+      "category": "waterfall",
+      "description": "Pallivasal, 8 km from Munnar on the Adimali road, is a series of cascades on the Mudrapuzha River set between large rounded granite boulders. The site is less developed than Attukal and has a more natural, untouched quality. The Pallivasal hydroelectric project, Kerala's first, was commissioned in 1940 and the original British-era powerhouse and intake structures are visible from the river bank.",
+      "whyVisit": "A naturally beautiful river cascade combined with Kerala's oldest hydroelectric infrastructure — rarely visited by tourists.",
+      "bestTime": "Monsoon to January for best flow",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pallivasal Waterfalls Munnar Mudrapuzha",
+      "imageQuery": "Pallivasal waterfall Munnar granite boulders river"
+    },
+    {
+      "name": "Kolukumalai Tea Estate",
+      "category": "heritage",
+      "description": "At 2,100 metres on the Tamil Nadu border, Kolukumalai is the world's highest tea estate, producing a small quantity of orthodox tea on extremely old bushes. The estate can only be reached by a steep 4WD road from Suryanelli. The factory uses century-old manual processing machinery — wooden rollers, flat drying tables — unchanged since the British era, and the single-origin tea sells out quickly each season.",
+      "whyVisit": "The world's highest tea estate using original colonial-era hand-processing equipment, producing some of India's rarest tea.",
+      "bestTime": "October to April (estate active); 4WD required",
+      "duration": "Full day from Munnar",
+      "mapsSearch": "Kolukumalai Tea Estate Munnar highest",
+      "imageQuery": "Kolukumalai tea estate highest altitude Munnar"
+    },
+    {
+      "name": "Meesapulimala Trek",
+      "category": "adventure",
+      "description": "At 2,640 metres, Meesapulimala is the second-highest peak in the Western Ghats and can be trekked with a permit from the forest department and a registered guide from Rhododendron Camp. The multi-day trail traverses the Pambar shola and connects to the Munnar high ranges. The trek passes through extensive patches of the rare endemic Nilgiri rhododendron that blooms spectacularly in April.",
+      "whyVisit": "The second-highest peak in peninsular India — a multi-day wilderness trek through rare Nilgiri rhododendron forest.",
+      "bestTime": "October to March; April for rhododendron bloom",
+      "duration": "2-3 days",
+      "mapsSearch": "Meesapulimala Trek Munnar Kerala",
+      "imageQuery": "Meesapulimala trek Munnar rhododendron high altitude"
+    },
+    {
+      "name": "Lockhart Gap Viewpoint",
+      "category": "viewpoint",
+      "description": "On the road from Munnar to Bodimettu near the Tamil Nadu border, Lockhart Gap is a narrow pass cut through a ridge at 1,670 m where the Western Ghats escarpment suddenly opens to reveal the Tamil Nadu plains 1,000 metres below. The gap is natural and the view is vertiginous — a sheer drop into heat and flatness from the cool, misty world of the tea gardens above.",
+      "whyVisit": "The most dramatic natural viewpoint on the Kerala-Tamil Nadu border, where two completely different climatic worlds meet.",
+      "bestTime": "Morning before valley haze develops",
+      "duration": "30 minutes",
+      "mapsSearch": "Lockhart Gap Viewpoint Munnar Tamil Nadu border",
+      "imageQuery": "Lockhart Gap Munnar escarpment Tamil Nadu plains"
+    },
+    {
+      "name": "Chinnar Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Located 60 km from Munnar at 450 to 2,400 metres elevation, Chinnar spans the driest part of the Western Ghats escarpment and protects one of the last Indian populations of the critically endangered grizzled giant squirrel. The sanctuary has elephant herds, leopards, spotted deer, and the rare star tortoise. Unlike Eravikulam, Chinnar offers multi-day trekking permits and guided river safaris.",
+      "whyVisit": "One of South India's driest and least-visited wildlife sanctuaries, the only place to see the grizzled giant squirrel in Kerala.",
+      "bestTime": "October to March",
+      "duration": "Full day to overnight",
+      "mapsSearch": "Chinnar Wildlife Sanctuary Munnar Kerala",
+      "imageQuery": "Chinnar Wildlife Sanctuary elephant dry forest Kerala"
+    },
+    {
+      "name": "Kundala Shola Forest",
+      "category": "nature",
+      "description": "The patches of ancient shola (tropical montane cloud forest) between the tea gardens near Kundala are remnant fragments of a forest type found only in the Western Ghats above 1,500 m. These gnarled, moss-covered trees rarely exceed 8 metres in height but harbour a disproportionate number of endemic species — Kerala's only known population of the Nilgiri wood pigeon nests here, and leopard tracks are regularly recorded.",
+      "whyVisit": "One of the most biodiverse ecosystems on Earth — a dense, ancient forest hidden between Munnar's tea gardens.",
+      "bestTime": "November to February for clearest air and active birds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kundala Shola Forest Munnar cloud forest",
+      "imageQuery": "shola forest Munnar cloud forest endemic Western Ghats"
+    },
+    {
+      "name": "Old Munnar (CSI Church and Tata Heritage Bungalows)",
+      "category": "heritage",
+      "description": "The CSI Christ Church in Old Munnar, built in 1910 by the Kannan Devan Hills Produce Company for its Scottish planter community, is a simple stone church with original stained glass and a graveyard of early estate managers. Surrounding it, several Tata Tea bungalows from the 1920s–1940s are still standing with their wide verandas and half-timbered facades — a rare intact colonial planter landscape in South India.",
+      "whyVisit": "The most intact cluster of colonial planter architecture in the Western Ghats, hidden in plain sight near Munnar town.",
+      "bestTime": "Year-round; morning light best for photography",
+      "duration": "1 hour",
+      "mapsSearch": "CSI Christ Church Old Munnar heritage",
+      "imageQuery": "CSI Christ Church Old Munnar colonial planter bungalow"
+    }
+  ]
+}

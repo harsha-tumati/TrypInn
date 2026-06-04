@@ -1,0 +1,267 @@
+{
+  "slug": "thanjavur",
+  "name": "Thanjavur",
+  "state": "Tamil Nadu",
+  "tagline": "The Chola capital where art, music, and faith reached their zenith",
+  "categories": [
+    "heritage",
+    "spiritual",
+    "historical"
+  ],
+  "highlights": [
+    "home to the brihadeeswara unesco world heritage temple",
+    "classical carnatic music and bharatanatyam birthplace"
+  ],
+  "attractions": [
+    {
+      "name": "Brihadeeswara Temple (Big Temple)",
+      "category": "temple",
+      "description": "Built by Chola emperor Rajaraja I between 1003 and 1010 CE, the Brihadeeswara Temple is one of the great achievements of world architecture. Its 66-metre vimana (tower) — the tallest in India at the time of construction — is capped by an 80-tonne monolithic cupola raised without cranes by ingenious ramps. The tower casts no noon shadow on the solstice. A UNESCO World Heritage Site of extraordinary mathematical and artistic precision.",
+      "whyVisit": "The supreme masterpiece of Chola architecture and one of the finest temples ever built — essential for any India heritage itinerary.",
+      "bestTime": "Sunrise or sunset; November to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Brihadeeswara Temple Thanjavur Tamil Nadu",
+      "imageQuery": "Brihadeeswara Temple Thanjavur Big Temple Chola"
+    },
+    {
+      "name": "Thanjavur Royal Palace and Museum",
+      "category": "palace",
+      "description": "A sprawling complex of towers, halls, and courtyards built by the Nayak and Maratha rulers of Thanjavur, the Royal Palace houses a remarkable collection of Chola bronze sculptures in its Art Gallery, an excellent Saraswathi Mahal Library (one of the rarest libraries in Asia with palm-leaf manuscripts), and a weapons arsenal. The Bell Tower offers views over the city and temple.",
+      "whyVisit": "The most comprehensive single collection of Chola bronze artistry in the world, including priceless Nataraja figures.",
+      "bestTime": "Morning; museum closes at 1 PM",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thanjavur Royal Palace Museum Tamil Nadu",
+      "imageQuery": "Thanjavur Royal Palace museum Chola bronze gallery"
+    },
+    {
+      "name": "Saraswathi Mahal Library",
+      "category": "museum",
+      "description": "Established in the 16th century by the Nayak rulers and expanded by the Marathas, this library within the Royal Palace complex holds over 66,000 manuscripts in Tamil, Telugu, Sanskrit, and Marathi — on palm leaf, paper, and vellum. Among its treasures are illustrated Sanskrit texts, Ayurvedic treatises, and a complete palm-leaf Mahabharata. The public display gallery exhibits rotating selections of the most extraordinary manuscripts.",
+      "whyVisit": "One of Asia's oldest functioning manuscript libraries — a window into 500 years of South Indian intellectual life.",
+      "bestTime": "Morning; closed Wednesdays",
+      "duration": "1 hour",
+      "mapsSearch": "Saraswathi Mahal Library Thanjavur Tamil Nadu",
+      "imageQuery": "Saraswathi Mahal Library Thanjavur manuscripts palm leaf"
+    },
+    {
+      "name": "Thanjavur Art Gallery (Chola Bronze Gallery)",
+      "category": "museum",
+      "description": "Within the Royal Palace complex, this gallery houses over 200 superb Chola bronze sculptures (9th-13th century), including multiple Nataraja (Shiva as cosmic dancer) figures, Uma-Maheshvara groups, and a monumental standing Vishnu. These bronzes — cast by the lost-wax process — are considered the finest sculptural tradition in Indian art. The Nataraja here exemplifies the concept of form animated by inner rhythm.",
+      "whyVisit": "The greatest collection of Chola bronzes in existence — the sculptural tradition that defined Indian classical art.",
+      "bestTime": "Morning",
+      "duration": "1.5 hours",
+      "mapsSearch": "Thanjavur Art Gallery Chola Bronzes Royal Palace",
+      "imageQuery": "Chola bronze Nataraja Thanjavur art gallery"
+    },
+    {
+      "name": "Schwartz Church (St. Peter's Church)",
+      "category": "heritage",
+      "description": "Built in 1779 by Danish missionary Christian Friedrich Schwartz, who served as both chaplain and diplomat in Thanjavur's Maratha court, this elegant colonial-era church contains a famous marble relief by the Danish sculptor Flaxman depicting Schwartz's deathbed scene with the Thanjavur Maratha king Serfoji II holding his hand. The church stands as an unexpected monument to genuine Indo-European friendship.",
+      "whyVisit": "A rare and touching testament to 18th-century Indo-Danish relations, with superb European sculptural art in South India.",
+      "bestTime": "Morning; any season",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Schwartz Church Thanjavur Tamil Nadu",
+      "imageQuery": "Schwartz Church Thanjavur colonial Tamil Nadu"
+    },
+    {
+      "name": "Airavatesvara Temple, Darasuram",
+      "category": "temple",
+      "description": "Built by Rajaraja II in the 12th century, the Airavatesvara Temple at Darasuram (5 km from Thanjavur) is part of the same UNESCO World Heritage designation as Brihadeeswara. Smaller but arguably more intricate, its outer walls are covered in miniature sculptural friezes of extraordinary refinement. The front chariot mandapam — carved as two stone wheels with elephants and horses — is one of the most imaginative architectural conceits in Indian temple art.",
+      "whyVisit": "More intimate than Brihadeeswara with unmatched sculptural detail, and far fewer visitors — a connoisseur's Chola temple.",
+      "bestTime": "Morning; November to February",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Airavatesvara Temple Darasuram Kumbakonam Tamil Nadu",
+      "imageQuery": "Airavatesvara Temple Darasuram Chola chariot mandapam"
+    },
+    {
+      "name": "Gangaikonda Cholapuram Temple",
+      "category": "temple",
+      "description": "Built by Rajendra Chola I in 1035 CE to celebrate his conquest reaching the Ganges, this temple (70 km north-east of Thanjavur) is the third UNESCO World Heritage Chola temple. Its 55-metre vimana rivals Brihadeeswara in ambition and its interior contains remarkable sculptures including a unique Ardhanarisvara, a 3-metre Nataraja, and the only known life-size lioness-shaped water gargoyle in Chola architecture.",
+      "whyVisit": "The triumphant sister temple to Brihadeeswara, equally grand but visited by a fraction of the tourists.",
+      "bestTime": "Morning; November to March",
+      "duration": "2 hours",
+      "mapsSearch": "Gangaikonda Cholapuram Temple Tamil Nadu",
+      "imageQuery": "Gangaikonda Cholapuram temple Chola vimana Tamil Nadu"
+    },
+    {
+      "name": "Brihadesvara Gopuram Detail Tour",
+      "category": "heritage",
+      "description": "A guided walk around the outer prakara (enclosure wall) of the Big Temple reveals frescoes inside the circumambulatory passage dating from the Chola period (subsequently covered by Nayak paintings but recently uncovered by ASI). The outer walls carry hundreds of relief sculptures of Shiva's forms, celestial musicians, dvarapalas, and inscriptions in Grantha script recording Rajaraja I's land grants and temple endowments.",
+      "whyVisit": "The inscription record alone makes this a historical document of the first order — the finest epigraphic evidence for medieval South Indian kingship.",
+      "bestTime": "Early morning guided tour with an ASI-approved guide",
+      "duration": "2 hours",
+      "mapsSearch": "Brihadeeswara Temple inscription wall Thanjavur",
+      "imageQuery": "Brihadeeswara Temple fresco inscription wall Chola"
+    },
+    {
+      "name": "Thanjavur Painting Workshop",
+      "category": "heritage",
+      "description": "Thanjavur painting — a 16th-century tradition developed under Maratha patronage — is characterised by rich, flat colours, gesso relief work, embedded precious stones, and gold foil. Several hereditary workshops in the old city, particularly around the palace area, allow visitors to watch master painters at work and commission original pieces. The subjects are predominantly Vaishnavite deities in iconic poses.",
+      "whyVisit": "Observe a living craft tradition that exists nowhere else in India and commission a genuinely handmade souvenir.",
+      "bestTime": "Morning when studios are most active",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thanjavur Painting Workshop Tamil Nadu",
+      "imageQuery": "Thanjavur painting gold foil traditional art workshop"
+    },
+    {
+      "name": "Veena Making Workshops",
+      "category": "heritage",
+      "description": "Thanjavur is the pre-eminent centre for making the veena — South India's classical plucked string instrument and the attribute of goddess Saraswathi. A cluster of hereditary craftsmen in the Salai Street area hand-carve resonance chambers from jackwood, inlay the neck with ivory or bone, and tune each instrument individually. Visiting a workshop while an instrument takes shape is a direct connection to living Carnatic musical tradition.",
+      "whyVisit": "See the instrument of Carnatic music being hand-crafted in the city where the tradition was perfected.",
+      "bestTime": "Morning; any season",
+      "duration": "1 hour",
+      "mapsSearch": "Veena Workshop Thanjavur Tamil Nadu",
+      "imageQuery": "veena instrument making workshop Thanjavur craftsman"
+    },
+    {
+      "name": "Sivaganga Park and Nandi",
+      "category": "nature",
+      "description": "The large ornamental tank (Sivaganga) in front of the Brihadeeswara Temple is flanked by colonnaded mandapams and a monumental Nandi bull carved from a single piece of granite, measuring over 3 metres in height and 5 metres in length. The Nandi is among the largest monolithic Nandis in India and faces the temple linga. The park around the tank is a pleasant evening walk for residents.",
+      "whyVisit": "The monolithic Nandi here is one of the three largest in India and integral to understanding the temple's cosmological axis.",
+      "bestTime": "Evening; October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Sivaganga Park Nandi Thanjavur Tamil Nadu",
+      "imageQuery": "monolithic Nandi Thanjavur Brihadeeswara Temple"
+    },
+    {
+      "name": "Kumbakonam Temples Circuit",
+      "category": "temple",
+      "description": "Kumbakonam (40 km from Thanjavur) is a dense cluster of major Shaiva and Vaishnava temples including the Aadhikumbeswarar Temple (a spectacular Chola-era original), the Sarangapani Temple (one of the 108 Divya Desams), and the Chakrapani Temple. The Mahamaham tank here hosts a massive festival every 12 years, bathing in which is believed equivalent to bathing in all India's sacred rivers simultaneously.",
+      "whyVisit": "The highest concentration of significant living temples within an hour of Thanjavur — an unmissable temple town.",
+      "bestTime": "November to February; morning puja",
+      "duration": "Full day",
+      "mapsSearch": "Kumbakonam Temples Tamil Nadu",
+      "imageQuery": "Kumbakonam Aadhikumbeswarar Temple Tamil Nadu Chola"
+    },
+    {
+      "name": "Navagraha Temples Circuit",
+      "category": "religious",
+      "description": "Within a 90-km radius of Thanjavur lie nine ancient temples each dedicated to one of the nine planetary deities (navagrahas) — a circuit unique to Tamil Nadu. Each temple is associated with a different celestial body, colour, day, and material. Pilgrims complete the circuit as a remedy for astrological afflictions. The temples at Thirunageswaram (Rahu), Suryanar Koil, and Kanjanur are particularly striking architecturally.",
+      "whyVisit": "A one-of-a-kind pilgrimage circuit of nine distinct ancient temples that exists nowhere else in the world.",
+      "bestTime": "November to February; full circuit requires two days",
+      "duration": "2 days",
+      "mapsSearch": "Navagraha Temples Circuit Kumbakonam Thanjavur Tamil Nadu",
+      "imageQuery": "Navagraha temples Tamil Nadu Suryanar Koil circuit"
+    },
+    {
+      "name": "Thanjavur Bronze Casting (Lost-Wax Foundry)",
+      "category": "heritage",
+      "description": "The sthapati community in Swamimalai (12 km from Thanjavur) still casts bronze idols by the same lost-wax (cire perdue) process used by Chola craftsmen a thousand years ago. Master sculptors model each piece in beeswax, encase it in clay, then pour molten five-metal (panchaloha) alloy. Visitors can watch this process, which takes weeks per idol and cannot be replicated by machine.",
+      "whyVisit": "Witness a 1,000-year-old bronze casting process still practiced identically to the technique that produced the world-famous Chola Natarajas.",
+      "bestTime": "Morning; any season",
+      "duration": "1-2 hours",
+      "mapsSearch": "Swamimalai Bronze Casting Foundry Tamil Nadu",
+      "imageQuery": "Swamimalai lost wax bronze casting Chola process"
+    },
+    {
+      "name": "Punnainallur Mariamman Temple",
+      "category": "temple",
+      "description": "Located 4 km from Thanjavur, this temple is dedicated to Mariamman, the rain and smallpox goddess widely revered in rural Tamil Nadu. Its enormous annual festival (Thaipusam and summer Panguni festivals) sees vast processions, firewalking, and devotees carrying kavadi. The temple's colourful gopuram is one of the most exuberantly decorated in the Thanjavur region.",
+      "whyVisit": "One of the most vibrant Amman temple traditions in the Delta region, reflecting grassroots Tamil devotional culture.",
+      "bestTime": "Festival days (April-May); early morning puja",
+      "duration": "45 minutes",
+      "mapsSearch": "Punnainallur Mariamman Temple Thanjavur Tamil Nadu",
+      "imageQuery": "Punnainallur Mariamman Temple festival Thanjavur"
+    },
+    {
+      "name": "Thiruvaiyaru (Thyagaraja Music Festival)",
+      "category": "heritage",
+      "description": "Thiruvaiyaru, 13 km from Thanjavur, is the birthplace of Saint Thyagaraja (1767-1847), the greatest composer in the Carnatic tradition. His annual Aradhana festival in January attracts thousands of musicians from across India to perform his kritis at his samadhi. The event is not a spectacle for tourists but an organic gathering of practicing musicians and one of South India's most moving cultural events.",
+      "whyVisit": "The most significant annual event in Carnatic music — a living memorial to the tradition's greatest composer.",
+      "bestTime": "January (Aradhana festival); 5-day event",
+      "duration": "Full day to attend",
+      "mapsSearch": "Thyagaraja Aradhana Thiruvaiyaru Thanjavur Tamil Nadu",
+      "imageQuery": "Thyagaraja Aradhana festival Thiruvaiyaru Carnatic music"
+    },
+    {
+      "name": "Papanasam (Pamba) River Ghats",
+      "category": "nature",
+      "description": "The Kaveri River near Papanasam (30 km from Thanjavur) forms a wide, shallow, sacred ghat where pilgrims perform ancestral rites (shraddha). The riverside is lined with priests, banana plantations, and small shrines. The Papanasam waterfall nearby is modest but creates a pleasant pool. The entire Kaveri Delta from which Thanjavur drew its agricultural wealth is visible in the surrounding paddy fields.",
+      "whyVisit": "The most important sacred river bathing ghat near Thanjavur, set within the breadbasket paddy delta landscape.",
+      "bestTime": "Morning; October to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Papanasam River Ghat Thanjavur Tamil Nadu Kaveri",
+      "imageQuery": "Kaveri river ghat Papanasam Thanjavur Tamil Nadu"
+    },
+    {
+      "name": "Thanjavur Medical and Botanical Garden",
+      "category": "garden",
+      "description": "A seldom-visited large botanical garden maintained by the Tamil Nadu government on the outskirts of Thanjavur, with a particularly strong collection of medicinal plants used in Siddha and Ayurvedic traditions. The garden's identification labels give both Tamil and Sanskrit names alongside uses, making a walk here double as an ethnobotany lesson. Old tamarind and jackfruit trees provide dense shade.",
+      "whyVisit": "A quiet, shaded, and genuinely educational green space showcasing traditional South Indian medicinal plant knowledge.",
+      "bestTime": "Morning; October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Botanical Garden Thanjavur Tamil Nadu",
+      "imageQuery": "Thanjavur botanical garden medicinal plants Tamil Nadu"
+    },
+    {
+      "name": "Brihadeeswara Temple Frescoes",
+      "category": "heritage",
+      "description": "Hidden inside the inner circumambulatory passage (pradakshina) of the Brihadeeswara Temple, a continuous band of 11th-century Chola frescoes depicting 81 forms of Shiva was rediscovered in the 1930s beneath later Nayak-period paintings. The Chola paintings — executed in red, yellow, white, and black with confident brushwork — are the oldest surviving fresco cycle in South India and are accessible to visitors on the inner circuit.",
+      "whyVisit": "The oldest surviving South Indian frescoes, discovered inside India's grandest temple — almost entirely unknown to general visitors.",
+      "bestTime": "Morning with flashlight; guided inner circumambulation",
+      "duration": "45 minutes",
+      "mapsSearch": "Brihadeeswara Temple frescoes inner corridor Thanjavur",
+      "imageQuery": "Brihadeeswara Temple Chola fresco inner passage Thanjavur"
+    },
+    {
+      "name": "Thanjavur Maratha Palace Music Hall",
+      "category": "heritage",
+      "description": "The Durbar Hall and music chambers of the Thanjavur Maratha Palace preserve the musical tradition of the Bhosale rulers who were themselves accomplished musicians and patrons of Carnatic music. The hall's acoustics were designed for Carnatic performance, and occasional evening concerts are held here, particularly during the music season. The ornate painted ceiling panels depicting the Ramayana are among the finest Maratha-period paintings in Tamil Nadu.",
+      "whyVisit": "Experience Carnatic music in a hall designed for it by 18th-century Maratha musician-kings.",
+      "bestTime": "During concert season (December-January); evening",
+      "duration": "1.5-2 hours for concert",
+      "mapsSearch": "Thanjavur Maratha Palace Music Hall Tamil Nadu",
+      "imageQuery": "Thanjavur Maratha Palace durbar hall painted ceiling"
+    },
+    {
+      "name": "Vijayanagara Period Temples, Thirubuvanam",
+      "category": "temple",
+      "description": "Thirubuvanam, 25 km from Thanjavur, contains the Kampahareswara Temple built in the 12th century with exceptional late-Chola sculptural detail. The temple is unusual for its 'Vikrama Chola' inscription records and for the exquisitely carved niche sculptures around its vimana that rank with the best at Darasuram. The town sees almost no tourists and retains an entirely authentic temple-town atmosphere.",
+      "whyVisit": "Late Chola temple sculpture of the highest quality in a living temple town with zero tourist infrastructure.",
+      "bestTime": "Morning; October to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Kampahareswara Temple Thirubuvanam Thanjavur Tamil Nadu",
+      "imageQuery": "Kampahareswara Temple Thirubuvanam Chola sculpture"
+    },
+    {
+      "name": "Old Town Canal Walk",
+      "category": "heritage",
+      "description": "The old town of Thanjavur is threaded by 19th-century irrigation canals and tank bunds lined with ancient pipal and neem trees. A morning walk along the South Main Street and Palace Road passes merchant houses with carved wooden brackets, the traditional kaivara shops selling bronze idols, and Brahmin agraharams (temple-side residential streets) largely unchanged since the Maratha period.",
+      "whyVisit": "The lived heritage of a classical South Indian temple city — less photogenic than monuments but more genuinely revealing.",
+      "bestTime": "Early morning when the town wakes up",
+      "duration": "1.5 hours",
+      "mapsSearch": "Thanjavur Old Town South Main Street Tamil Nadu",
+      "imageQuery": "Thanjavur old town street heritage canal Tamil Nadu"
+    },
+    {
+      "name": "Brihadeeswara Light Show",
+      "category": "heritage",
+      "description": "The Tamil Nadu Tourism Development Corporation runs a sound-and-light show at the Brihadeeswara Temple complex on selected evenings, narrating the story of Rajaraja I and the temple's construction. The floodlit temple at night — with the 66-metre vimana glowing against the dark sky and reflected in the Sivaganga tank — is a spectacle of considerable power, and the show provides historical context in an accessible format.",
+      "whyVisit": "Seeing the Big Temple floodlit at night transforms the daytime heritage experience into something genuinely theatrical.",
+      "bestTime": "Tuesday, Friday, and Saturday evenings (schedule varies)",
+      "duration": "1 hour",
+      "mapsSearch": "Brihadeeswara Temple light show Thanjavur Tamil Nadu",
+      "imageQuery": "Brihadeeswara Temple night floodlit Thanjavur"
+    },
+    {
+      "name": "Thiruvarangulam Siva Temple",
+      "category": "temple",
+      "description": "A little-known Chola-era temple 8 km from Thanjavur in open paddy country, Thiruvarangulam preserves exceptionally well-carved Chola-period sculptures in near-original condition in their architectural context — not removed to a museum. The temple is still in active worship, the village priest still performs daily puja, and the Kaveri Delta paddies stretching to the horizon complete a scene essentially unchanged for centuries.",
+      "whyVisit": "Original Chola sculptures in situ in a functioning village temple — the most authentic Chola experience near Thanjavur.",
+      "bestTime": "Morning puja; any season",
+      "duration": "1 hour",
+      "mapsSearch": "Thiruvarangulam Shiva Temple Thanjavur Tamil Nadu",
+      "imageQuery": "village Chola temple Kaveri Delta Thanjavur Tamil Nadu"
+    },
+    {
+      "name": "Elango Koothu Theatre (Therukoothu)",
+      "category": "heritage",
+      "description": "Therukoothu — Tamil street theatre — has been performed in the villages around Thanjavur for over a thousand years. Several temple festivals in the surrounding villages (particularly during Panguni and Purnima) feature all-night therukoothu performances of the Mahabharata and Ramayana in brilliant costumes, elaborate face paint, and traditional music. Connecting with a local guide or guesthouse to find an active performance is possible with planning.",
+      "whyVisit": "An all-night ancient Tamil performance tradition directly connected to Thanjavur's temple culture — nothing like it exists elsewhere.",
+      "bestTime": "Temple festival nights (March-May); advance planning needed",
+      "duration": "2-8 hours (performances run all night)",
+      "mapsSearch": "Therukoothu street theatre Thanjavur Tamil Nadu performance",
+      "imageQuery": "Therukoothu Tamil street theatre performance costume"
+    }
+  ]
+}

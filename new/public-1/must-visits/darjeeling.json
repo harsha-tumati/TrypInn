@@ -1,0 +1,447 @@
+{
+  "id": "darjeeling",
+  "name": "Darjeeling",
+  "state": "West Bengal",
+  "slug": "darjeeling",
+  "tagline": "Tea gardens, toy trains, and Himalayan panoramas",
+  "categories": [
+    "hill_station",
+    "nature",
+    "heritage"
+  ],
+  "introduction": "Planning a trip to Darjeeling? This travel guide to Darjeeling covers the must visit places in Darjeeling, the best places to visit in Darjeeling, top tourist attractions in Darjeeling, and exciting things to do in Darjeeling.",
+  "metaTitle": "Top Things to Do in Darjeeling | Travel Guide to Darjeeling - TrypInn",
+  "metaDescription": "Find the best places to visit in Darjeeling, must visit places in Darjeeling, and tourist attractions in Darjeeling. Plan your Darjeeling trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=1200&q=60",
+    "alt": "Darjeeling travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "darjeeling-tiger-hill",
+      "name": "Tiger Hill",
+      "slug": "tiger-hill",
+      "description": "Tiger Hill is a must-see viewpoint in Darjeeling, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Darjeeling.",
+      "whyVisit": "Tiger Hill offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Tiger Hill, Darjeeling",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Tiger Hill in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Tiger Hill in Darjeeling"
+      },
+      "position": 1
+    },
+    {
+      "id": "darjeeling-darjeeling-himalayan-railway",
+      "name": "Darjeeling Himalayan Railway",
+      "slug": "darjeeling-himalayan-railway",
+      "description": "Nestled in Darjeeling, Darjeeling Himalayan Railway stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Darjeeling Himalayan Railway is among the best things to do in Darjeeling.",
+      "whyVisit": "Darjeeling Himalayan Railway offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Darjeeling Himalayan Railway, Darjeeling",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Darjeeling Himalayan Railway in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Darjeeling Himalayan Railway in Darjeeling"
+      },
+      "position": 2
+    },
+    {
+      "id": "darjeeling-batasia-loop",
+      "name": "Batasia Loop",
+      "slug": "batasia-loop",
+      "description": "Batasia Loop is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Batasia Loop promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Batasia Loop.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Batasia Loop, Darjeeling",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Batasia Loop in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Batasia Loop in Darjeeling"
+      },
+      "position": 3
+    },
+    {
+      "id": "darjeeling-happy-valley-tea-estate",
+      "name": "Happy Valley Tea Estate",
+      "slug": "happy-valley-tea-estate",
+      "description": "Happy Valley Tea Estate is a must-see nature in Darjeeling, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Darjeeling.",
+      "whyVisit": "Happy Valley Tea Estate offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Happy Valley Tea Estate, Darjeeling",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Happy Valley Tea Estate in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Happy Valley Tea Estate in Darjeeling"
+      },
+      "position": 4
+    },
+    {
+      "id": "darjeeling-padmaja-naidu-zoo",
+      "name": "Padmaja Naidu Zoo",
+      "slug": "padmaja-naidu-zoo",
+      "description": "Nestled in Darjeeling, Padmaja Naidu Zoo stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Padmaja Naidu Zoo is among the best things to do in Darjeeling.",
+      "whyVisit": "A visit to Padmaja Naidu Zoo is essential for understanding Darjeeling.",
+      "bestTime": "Oct-Mar",
+      "duration": "3-4 hours",
+      "mapsSearch": "Padmaja Naidu Zoo, Darjeeling",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Padmaja Naidu Zoo in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Padmaja Naidu Zoo in Darjeeling"
+      },
+      "position": 5
+    },
+    {
+      "id": "darjeeling-ghoom-monastery",
+      "name": "Ghoom Monastery",
+      "slug": "ghoom-monastery",
+      "description": "A crown jewel of Darjeeling, Ghoom Monastery captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Ghoom Monastery.",
+      "whyVisit": "Ghoom Monastery stands out as one of the most rewarding experiences.",
+      "bestTime": "May-Sep",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ghoom Monastery, Darjeeling",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Ghoom Monastery in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Ghoom Monastery in Darjeeling"
+      },
+      "position": 6
+    },
+    {
+      "id": "darjeeling-japanese-peace-pagoda",
+      "name": "Japanese Peace Pagoda",
+      "slug": "japanese-peace-pagoda",
+      "description": "A crown jewel of Darjeeling, Japanese Peace Pagoda captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Japanese Peace Pagoda.",
+      "whyVisit": "Capture stunning photographs at Japanese Peace Pagoda.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Japanese Peace Pagoda, Darjeeling",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Japanese Peace Pagoda in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Japanese Peace Pagoda in Darjeeling"
+      },
+      "position": 7
+    },
+    {
+      "id": "darjeeling-rock-garden",
+      "name": "Rock Garden",
+      "slug": "rock-garden",
+      "description": "A crown jewel of Darjeeling, Rock Garden captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Rock Garden.",
+      "whyVisit": "Rock Garden stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rock Garden, Darjeeling",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Rock Garden in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Rock Garden in Darjeeling"
+      },
+      "position": 8
+    },
+    {
+      "id": "darjeeling-observatory-hill",
+      "name": "Observatory Hill",
+      "slug": "observatory-hill",
+      "description": "Located in scenic Darjeeling, Observatory Hill offers an immersive experience into local culture. Exploring Observatory Hill is one of the top things to do in Darjeeling.",
+      "whyVisit": "A visit to Observatory Hill is essential for understanding Darjeeling.",
+      "bestTime": "Clear days",
+      "duration": "30-60 min",
+      "mapsSearch": "Observatory Hill, Darjeeling",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Observatory Hill in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Observatory Hill in Darjeeling"
+      },
+      "position": 9
+    },
+    {
+      "id": "darjeeling-himalayan-mountaineering-institute",
+      "name": "Himalayan Mountaineering Institute",
+      "slug": "himalayan-mountaineering-institute",
+      "description": "Himalayan Mountaineering Institute is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Himalayan Mountaineering Institute promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Himalayan Mountaineering Institute.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Himalayan Mountaineering Institute, Darjeeling",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Himalayan Mountaineering Institute in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Himalayan Mountaineering Institute in Darjeeling"
+      },
+      "position": 10
+    },
+    {
+      "id": "darjeeling-senchal-lake",
+      "name": "Senchal Lake",
+      "slug": "senchal-lake",
+      "description": "Senchal Lake is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Senchal Lake promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Senchal Lake.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Senchal Lake, Darjeeling",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Senchal Lake in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Senchal Lake in Darjeeling"
+      },
+      "position": 11
+    },
+    {
+      "id": "darjeeling-singalila-national-park",
+      "name": "Singalila National Park",
+      "slug": "singalila-national-park",
+      "description": "Singalila National Park is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Singalila National Park promises an unforgettable experience.",
+      "whyVisit": "A visit to Singalila National Park is essential for understanding Darjeeling.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Singalila National Park, Darjeeling",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Singalila National Park in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Singalila National Park in Darjeeling"
+      },
+      "position": 12
+    },
+    {
+      "id": "darjeeling-lloyd-s-botanical-garden",
+      "name": "Lloyd's Botanical Garden",
+      "slug": "lloyd-s-botanical-garden",
+      "description": "Nestled in Darjeeling, Lloyd's Botanical Garden stands as a testament to architectural brilliance. This renowned garden attracts tourists who come to admire its stunning design. A visit to Lloyd's Botanical Garden is among the best things to do in Darjeeling.",
+      "whyVisit": "A visit to Lloyd's Botanical Garden is essential for understanding Darjeeling.",
+      "bestTime": "Spring",
+      "duration": "Half day",
+      "mapsSearch": "Lloyd's Botanical Garden, Darjeeling",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Lloyd's Botanical Garden in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Lloyd's Botanical Garden in Darjeeling"
+      },
+      "position": 13
+    },
+    {
+      "id": "darjeeling-ava-art-gallery",
+      "name": "Ava Art Gallery",
+      "slug": "ava-art-gallery",
+      "description": "Located in scenic Darjeeling, Ava Art Gallery offers an immersive experience into local culture. Exploring Ava Art Gallery is one of the top things to do in Darjeeling.",
+      "whyVisit": "Ava Art Gallery stands out as one of the most rewarding experiences.",
+      "bestTime": "Morning",
+      "duration": "Quick",
+      "mapsSearch": "Ava Art Gallery, Darjeeling",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Ava Art Gallery in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Ava Art Gallery in Darjeeling"
+      },
+      "position": 14
+    },
+    {
+      "id": "darjeeling-st-andrew-s-church",
+      "name": "St. Andrew's Church",
+      "slug": "st-andrew-s-church",
+      "description": "Located in scenic Darjeeling, St. Andrew's Church offers an immersive experience into local culture. Exploring St. Andrew's Church is one of the top things to do in Darjeeling.",
+      "whyVisit": "St. Andrew's Church stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "St. Andrew's Church, Darjeeling",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, St. Andrew's Church in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "St. Andrew's Church in Darjeeling"
+      },
+      "position": 15
+    },
+    {
+      "id": "darjeeling-mahakal-temple",
+      "name": "Mahakal Temple",
+      "slug": "mahakal-temple",
+      "description": "Mahakal Temple is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mahakal Temple promises an unforgettable experience.",
+      "whyVisit": "Mahakal Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Mahakal Temple, Darjeeling",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahakal Temple in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Mahakal Temple in Darjeeling"
+      },
+      "position": 16
+    },
+    {
+      "id": "darjeeling-chowrasta-mall",
+      "name": "Chowrasta Mall",
+      "slug": "chowrasta-mall",
+      "description": "A crown jewel of Darjeeling, Chowrasta Mall captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Chowrasta Mall.",
+      "whyVisit": "Chowrasta Mall offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Evening",
+      "mapsSearch": "Chowrasta Mall, Darjeeling",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Chowrasta Mall in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Chowrasta Mall in Darjeeling"
+      },
+      "position": 17
+    },
+    {
+      "id": "darjeeling-tenzing-rock",
+      "name": "Tenzing Rock",
+      "slug": "tenzing-rock",
+      "description": "A crown jewel of Darjeeling, Tenzing Rock captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Tenzing Rock.",
+      "whyVisit": "Capture stunning photographs at Tenzing Rock.",
+      "bestTime": "Pre-monsoon",
+      "duration": "2-4 hours",
+      "mapsSearch": "Tenzing Rock, Darjeeling",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Tenzing Rock in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Tenzing Rock in Darjeeling"
+      },
+      "position": 18
+    },
+    {
+      "id": "darjeeling-lebong-race-course",
+      "name": "Lebong Race Course",
+      "slug": "lebong-race-course",
+      "description": "Lebong Race Course is a must-see heritage in Darjeeling, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Darjeeling.",
+      "whyVisit": "Capture stunning photographs at Lebong Race Course.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Lebong Race Course, Darjeeling",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Lebong Race Course in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Lebong Race Course in Darjeeling"
+      },
+      "position": 19
+    },
+    {
+      "id": "darjeeling-dali-monastery",
+      "name": "Dali Monastery",
+      "slug": "dali-monastery",
+      "description": "Dali Monastery is a must-see monastery in Darjeeling, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Darjeeling.",
+      "whyVisit": "Dali Monastery offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dali Monastery, Darjeeling",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Dali Monastery in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Dali Monastery in Darjeeling"
+      },
+      "position": 20
+    },
+    {
+      "id": "darjeeling-rangeet-valley",
+      "name": "Rangeet Valley",
+      "slug": "rangeet-valley",
+      "description": "Rangeet Valley is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rangeet Valley promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Rangeet Valley.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Rangeet Valley, Darjeeling",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rangeet Valley in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Rangeet Valley in Darjeeling"
+      },
+      "position": 21
+    },
+    {
+      "id": "darjeeling-darjeeling-ropeway",
+      "name": "Darjeeling Ropeway",
+      "slug": "darjeeling-ropeway",
+      "description": "Darjeeling Ropeway is one of the most iconic landmarks in Darjeeling, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Darjeeling Ropeway promises an unforgettable experience.",
+      "whyVisit": "A visit to Darjeeling Ropeway is essential for understanding Darjeeling.",
+      "bestTime": "Mar-May",
+      "duration": "2-4 hours",
+      "mapsSearch": "Darjeeling Ropeway, Darjeeling",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Darjeeling Ropeway in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Darjeeling Ropeway in Darjeeling"
+      },
+      "position": 22
+    },
+    {
+      "id": "darjeeling-nightingale-park",
+      "name": "Nightingale Park",
+      "slug": "nightingale-park",
+      "description": "Located in scenic Darjeeling, Nightingale Park offers an immersive experience into local culture. Exploring Nightingale Park is one of the top things to do in Darjeeling.",
+      "whyVisit": "Nightingale Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nightingale Park, Darjeeling",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Nightingale Park in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Nightingale Park in Darjeeling"
+      },
+      "position": 23
+    },
+    {
+      "id": "darjeeling-bengal-natural-history-museum",
+      "name": "Bengal Natural History Museum",
+      "slug": "bengal-natural-history-museum",
+      "description": "A crown jewel of Darjeeling, Bengal Natural History Museum captivates every traveler with enchanting beauty. No trip to Darjeeling is complete without visiting Bengal Natural History Museum.",
+      "whyVisit": "A visit to Bengal Natural History Museum is essential for understanding Darjeeling.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bengal Natural History Museum, Darjeeling",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Bengal Natural History Museum in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Bengal Natural History Museum in Darjeeling"
+      },
+      "position": 24
+    },
+    {
+      "id": "darjeeling-kurseong-day-trip",
+      "name": "Kurseong Day Trip",
+      "slug": "kurseong-day-trip",
+      "description": "Kurseong Day Trip is a must-see hill station in Darjeeling, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Darjeeling.",
+      "whyVisit": "Kurseong Day Trip stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 days",
+      "mapsSearch": "Kurseong Day Trip, Darjeeling",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Kurseong Day Trip in Darjeeling, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kurseong Day Trip in Darjeeling"
+      },
+      "position": 25
+    }
+  ]
+}

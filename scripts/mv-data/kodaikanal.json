@@ -1,0 +1,260 @@
+{
+  "slug": "kodaikanal",
+  "name": "Kodaikanal",
+  "state": "Tamil Nadu",
+  "tagline": "Princess of Hill Stations in the Palani Hills",
+  "categories": ["hill_station", "nature", "heritage"],
+  "highlights": ["star-shaped kodaikanal lake", "misty palani hills forests"],
+  "attractions": [
+    {
+      "name": "Kodaikanal Lake",
+      "category": "lake",
+      "description": "A stunning star-shaped artificial lake spread over 60 acres at 2,285 metres above sea level, created in 1863 by Sir Vere Henry Levinge. Pedal boats, rowboats and horse rides along the 5-km promenade make it the beating heart of Kodaikanal. The surrounding eucalyptus and pine trees mirror perfectly in calm morning waters, creating an iconic Nilgiri Hills tableau.",
+      "whyVisit": "The defining landmark of Kodaikanal, magical at sunrise and sunset.",
+      "bestTime": "Early morning or late afternoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kodaikanal Lake Tamil Nadu",
+      "imageQuery": "Kodaikanal lake boats mist"
+    },
+    {
+      "name": "Coaker's Walk",
+      "category": "viewpoint",
+      "description": "A 1-km paved clifftop promenade built in 1872 by Lt. Coaker, offering vertiginous views of the Palani Hills, the plains of Dindigul 2,000 metres below, and on clear days, the distant town of Periyakulam. A telescope station lets visitors zoom into the valley villages. The path skirts sheer drops and is at its most dramatic in the evening when mist rolls in from the west.",
+      "whyVisit": "Best panoramic viewpoint in Kodaikanal with a dramatic drop into the plains.",
+      "bestTime": "Early morning for clearest views",
+      "duration": "1 hour",
+      "mapsSearch": "Coaker's Walk Kodaikanal Tamil Nadu",
+      "imageQuery": "Coaker's Walk Kodaikanal viewpoint"
+    },
+    {
+      "name": "Pillar Rocks",
+      "category": "nature",
+      "description": "Three colossal granite monoliths rising 122 metres from a verdant valley floor, draped in cloud and surrounded by dense shola forest. The formations were sculpted by millennia of wind and rain into near-vertical pillars. A well-maintained garden and viewing platform frame the spectacle. On misty evenings the rocks appear and disappear like apparitions — one of the most photographed sights in the Palani Hills.",
+      "whyVisit": "A raw geological wonder unlike anything else in Tamil Nadu's hill stations.",
+      "bestTime": "Morning before clouds obscure the peaks",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pillar Rocks Kodaikanal Tamil Nadu",
+      "imageQuery": "Pillar Rocks Kodaikanal granite"
+    },
+    {
+      "name": "Bryant Park",
+      "category": "garden",
+      "description": "A 20-acre botanical garden established in 1908 by H.D. Bryant of the Indian Civil Service, nestled beside Kodaikanal Lake. Home to over 325 species of roses, rare ferns, cycads, and the famed Kurinji shrub (Strobilanthes kunthiana) that blooms once every 12 years. The annual flower show in May draws thousands. Glasshouses shelter exotic orchids and cacti. Peacocks roam freely on the manicured lawns.",
+      "whyVisit": "A botanical showcase featuring the rare once-in-12-years Kurinji bloom.",
+      "bestTime": "May during the flower show, or any clear morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bryant Park Kodaikanal Tamil Nadu",
+      "imageQuery": "Bryant Park Kodaikanal botanical garden"
+    },
+    {
+      "name": "Dolphin's Nose",
+      "category": "viewpoint",
+      "description": "A flat rock ledge projecting out over a 6,600-foot drop, shaped uncannily like a dolphin's snout. The viewpoint overlooks the Silver Cascade waterfall, the Pambar valley, and on exceptionally clear days, Madurai in the plains. The 5-km trek through eucalyptus forest to reach it passes Echo Rock, a natural amphitheatre that bounces sounds back with perfect fidelity. Paragliding launches are made from a nearby slope.",
+      "whyVisit": "The most exhilarating viewpoint in Kodaikanal, combining trekking and panoramic drama.",
+      "bestTime": "Early morning, October to March",
+      "duration": "3-4 hours including trek",
+      "mapsSearch": "Dolphin's Nose Kodaikanal Tamil Nadu",
+      "imageQuery": "Dolphin's Nose viewpoint Kodaikanal"
+    },
+    {
+      "name": "Silver Cascade Falls",
+      "category": "waterfall",
+      "description": "A 55-metre cascade formed by the overflow of Kodaikanal Lake tumbling down a rocky hillside along the Kodaikanal–Palani highway (NH49). The waterfall is especially dramatic after monsoon rains when a silver-white sheet of water crashes into the pool below, misting the roadside stalls selling homemade wine and fruit jam. A stone staircase leads down to the base for a cool spray experience.",
+      "whyVisit": "The easiest accessible waterfall in Kodaikanal, spectacular in monsoon season.",
+      "bestTime": "July to October post-monsoon",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Silver Cascade Falls Kodaikanal Tamil Nadu",
+      "imageQuery": "Silver Cascade Falls Kodaikanal waterfall"
+    },
+    {
+      "name": "Bear Shola Falls",
+      "category": "waterfall",
+      "description": "A secluded two-tier waterfall located 2 km from Kodaikanal town, named after bears that once frequented the pool at its base. The falls are fed by a forest stream coursing through thick shola jungle, and the surrounding trails pass through stands of Rhododendron arboreum that blaze crimson in spring. The area is a designated forest reserve, keeping the environment pristine and less crowded than town viewpoints.",
+      "whyVisit": "A quiet, forest-fringed waterfall perfect for nature walks away from tourist crowds.",
+      "bestTime": "Post-monsoon, September to November",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bear Shola Falls Kodaikanal Tamil Nadu",
+      "imageQuery": "Bear Shola Falls Kodaikanal forest"
+    },
+    {
+      "name": "Perumal Peak",
+      "category": "nature",
+      "description": "The highest point in the Palani Hills at 2,513 metres, offering a 360-degree panorama over the entire Kodaikanal plateau, surrounding shola forests, and on exceptionally clear mornings the Vaigai plains far below. The trek to the summit (about 8 km one-way from Kodaikanal) passes grasslands, stunted montane forest, and abundant birdlife including Nilgiri flycatcher and Indian blackbird.",
+      "whyVisit": "The ultimate high-altitude trek in the Kodaikanal region with unrivalled summit views.",
+      "bestTime": "October to February, start by 6 am",
+      "duration": "Full day 7-8 hours",
+      "mapsSearch": "Perumal Peak Kodaikanal Palani Hills",
+      "imageQuery": "Perumal Peak Kodaikanal Palani Hills summit"
+    },
+    {
+      "name": "Berijam Lake",
+      "category": "lake",
+      "description": "A pristine forest reservoir inside the Kodaikanal Forest Reserve, 21 km from town, accessible only with a Forest Department permit (limit 60 vehicles per day). The lake is ringed by dense pine and eucalyptus plantation and untouched shola jungle, making it one of the best birding spots in the hills. Fishing is banned, keeping the water crystal clear. The drive through the reserve passes viewpoints over the plains.",
+      "whyVisit": "A permit-only forest lake offering silence, wildlife, and unspoilt Palani Hills scenery.",
+      "bestTime": "October to March, permits issued by 8 am",
+      "duration": "Half day",
+      "mapsSearch": "Berijam Lake Kodaikanal Forest Reserve",
+      "imageQuery": "Berijam Lake Kodaikanal forest reserve"
+    },
+    {
+      "name": "Kukkal Caves",
+      "category": "cave",
+      "description": "A cluster of natural rock-shelter caves located 27 km from Kodaikanal near Kukkal village, believed to have been inhabited by prehistoric Neolithic communities. Crude stone tools and megalithic burial artefacts have been discovered in the vicinity. The hike through rolling grassland and shola patches to reach the caves is itself rewarding, with superb views of the escarpment and sightings of Nilgiri tahr on the rocky slopes.",
+      "whyVisit": "Prehistory meets highland scenery on this off-beaten trekking route.",
+      "bestTime": "November to February",
+      "duration": "4-5 hours trek",
+      "mapsSearch": "Kukkal Caves Kodaikanal Tamil Nadu",
+      "imageQuery": "Kukkal Caves Kodaikanal prehistoric"
+    },
+    {
+      "name": "Shembaganur Museum of Natural History",
+      "category": "museum",
+      "description": "Housed in the Sacred Heart College campus founded by Jesuit missionaries in 1895, this museum displays over 500 species of orchids in a living herbarium alongside mounted specimens of Palani Hills fauna, geological samples, and tribal artefacts of the Palaiyar community. The orchid collection is one of the largest in India. The college chapel, built in Gothic style from locally quarried stone, is equally worth exploring.",
+      "whyVisit": "India's finest orchid collection combined with rare natural-history exhibits in a historic Jesuit campus.",
+      "bestTime": "Year-round, weekday mornings",
+      "duration": "1-2 hours",
+      "mapsSearch": "Shembaganur Museum Natural History Kodaikanal",
+      "imageQuery": "Shembaganur Museum orchids Kodaikanal"
+    },
+    {
+      "name": "Chettiar Park",
+      "category": "garden",
+      "description": "A well-manicured 8-acre public park at the northern end of Kodaikanal town, famous as the main venue for the Kurinji flower festival that occurs every 12 years. Outside bloom years, the park is a tranquil retreat with majestic century-old pines, ornamental flower beds, and a stone fountain. The park hosts the Kodai Jazz Festival in summer, transforming the lawns into an outdoor concert space.",
+      "whyVisit": "The epicentre of the legendary Kurinji bloom and a year-round peaceful green retreat.",
+      "bestTime": "May for flower show; December for Jazz Festival",
+      "duration": "1 hour",
+      "mapsSearch": "Chettiar Park Kodaikanal Tamil Nadu",
+      "imageQuery": "Chettiar Park Kodaikanal flowers"
+    },
+    {
+      "name": "La Saleth Church",
+      "category": "religious",
+      "description": "A striking neo-Gothic Catholic church built in 1884 by French missionaries on a hillock overlooking Kodaikanal Lake, named after the Marian apparition site in France. The church's interior features stained-glass windows depicting Stations of the Cross, a hand-carved wooden altar, and vaulted ceilings painted in cobalt blue. The exterior stone spire is a navigational landmark visible from most of central Kodaikanal.",
+      "whyVisit": "A serene colonial-era church with stunning architecture and lake views from its hillock.",
+      "bestTime": "Weekday mornings for peaceful atmosphere",
+      "duration": "45 minutes",
+      "mapsSearch": "La Saleth Church Kodaikanal Tamil Nadu",
+      "imageQuery": "La Saleth Church Kodaikanal Gothic"
+    },
+    {
+      "name": "Palani Murugan Temple (Lower Town)",
+      "category": "temple",
+      "description": "The base-camp temple complex at the foot of Palani hill, 65 km from Kodaikanal, dedicated to Lord Murugan in his ascetic Dandayudhapani form. While the summit shrine requires a climb of 693 steps or a ropeway ride, the lower precinct contains impressive Dravidian gopurams, a sacred tank, and a chariot festival court where the silver and gold chariots are kept. The temple's prasadam panchamritam is famous across Tamil Nadu.",
+      "whyVisit": "One of the Arupadai Veedu — six abodes of Murugan — with ancient Siddha heritage.",
+      "bestTime": "Thai Poosam festival (January–February)",
+      "duration": "3-4 hours",
+      "mapsSearch": "Palani Murugan Temple Palani Tamil Nadu",
+      "imageQuery": "Palani Murugan Temple Dandayudhapani hill"
+    },
+    {
+      "name": "Green Valley View (Suicide Point)",
+      "category": "viewpoint",
+      "description": "A dramatic cliff-edge platform perched 1,800 metres above sea level at the southern rim of the Kodaikanal plateau, gazing into the steep forested gorges of the Palani Hills. The valley below is a patchwork of cardamom and coffee estates. On hazy afternoons, layers of blue ridges recede to the horizon in a classic 'blue mountains' vista. The viewpoint has an iron safety railing and a small refreshment stall.",
+      "whyVisit": "The most vertigo-inducing valley panorama within easy reach of Kodaikanal town.",
+      "bestTime": "Morning before haze builds",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Green Valley View Kodaikanal Tamil Nadu",
+      "imageQuery": "Green Valley View Kodaikanal gorge"
+    },
+    {
+      "name": "Pine Forest",
+      "category": "nature",
+      "description": "A government-owned plantation of towering Pinus patula (Mexican weeping pine), planted in the 1940s along the Kodaikanal–Berijam road. Shafts of light pierce the 20-metre canopy onto a carpet of amber needles, creating an almost cathedral-like atmosphere. Horse rides through the groves are popular with families. The forest is particularly beautiful in early morning mist and after the monsoon when fungi sprout from the pine-needle floor.",
+      "whyVisit": "An atmospheric pine cathedral ideal for leisurely morning walks and photography.",
+      "bestTime": "Early morning, November to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pine Forest Kodaikanal Tamil Nadu",
+      "imageQuery": "Pine Forest Kodaikanal morning mist"
+    },
+    {
+      "name": "Mannavanur Lake",
+      "category": "lake",
+      "description": "A remote Government Fish Farm reservoir at 2,200 metres elevation, 25 km from Kodaikanal, encircled by rolling grassland and shola patches that remain largely unchanged from their primeval state. Gaur (Indian bison), spotted deer, and Nilgiri langurs are regularly sighted on the surrounding slopes. Migratory waterbirds including Eurasian teal and Common pochard winter on the lake. Toy-like thatched cottages of the Palaiyar tribe dot the hillsides.",
+      "whyVisit": "A wildlife-rich highland lake offering tranquility and rare fauna away from tourist hordes.",
+      "bestTime": "October to March for migratory birds",
+      "duration": "Half day",
+      "mapsSearch": "Mannavanur Lake Kodaikanal Tamil Nadu",
+      "imageQuery": "Mannavanur Lake Kodaikanal grassland"
+    },
+    {
+      "name": "Kodaikanal Solar Observatory",
+      "category": "museum",
+      "description": "One of India's foremost solar research stations, established in 1899 by the British Raj, perched at 2,343 metres above sea level. The observatory's instruments include a historic spectroheliograph and a Kodak photographic archive of solar images spanning over a century — among the world's longest continuous solar records. Short guided tours are offered on select days, explaining solar cycle monitoring and the Palani Hills microclimate.",
+      "whyVisit": "A working century-old observatory housing one of the world's longest solar photographic archives.",
+      "bestTime": "Weekday visits when tours are available",
+      "duration": "1 hour",
+      "mapsSearch": "Kodaikanal Solar Observatory Tamil Nadu",
+      "imageQuery": "Kodaikanal Solar Observatory telescope"
+    },
+    {
+      "name": "Vembattu Falls",
+      "category": "waterfall",
+      "description": "A lesser-known series of stepped cascades deep inside the Palani Hills forest, reachable by a 4-km trail from Vilpatti village. The falls descend through moss-covered granite in three distinct tiers before pooling in a natural swimming hole fringed by wild banana and tree ferns. The route passes through intact shola forest harbouring the endangered Nilgiri laughingthrush and occasional leopard tracks.",
+      "whyVisit": "An unspoilt, rarely visited waterfall requiring a forest hike — the real wilderness Kodaikanal.",
+      "bestTime": "November to January after monsoon runoff settles",
+      "duration": "4-5 hours with trek",
+      "mapsSearch": "Vembattu Falls Palani Hills Kodaikanal",
+      "imageQuery": "Vembattu Falls Palani Hills shola"
+    },
+    {
+      "name": "Fairy Falls",
+      "category": "waterfall",
+      "description": "A delicate 30-metre ribbon waterfall tucked into a mossy rock face about 3 km from Kodaikanal town on the Berijam Road. Unlike the more thunderous Silver Cascade, Fairy Falls threads through ferns and orchids growing directly from the wet cliff, creating an ethereal, lace-like appearance. The tiny pool at its base is cool and clear. The easy roadside trail makes it accessible yet it remains far quieter than the main tourist spots.",
+      "whyVisit": "A delicate, fern-draped waterfall with a fairy-tale atmosphere and minimal crowds.",
+      "bestTime": "Morning, July to October",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Fairy Falls Kodaikanal Berijam Road",
+      "imageQuery": "Fairy Falls Kodaikanal ferns waterfall"
+    },
+    {
+      "name": "Pambarpuram Government Sheep Farm",
+      "category": "nature",
+      "description": "A sprawling government sheep-breeding station at 2,200 metres elevation, 12 km from Kodaikanal, where herds of Ramnad White and Nilgiri sheep graze on emerald pastures framed by eucalyptus hills. The farm allows visitor access and is beloved by children. The surrounding open grassland is excellent for raptor spotting — Montagu's harrier and black-shouldered kite quarter the meadows in winter.",
+      "whyVisit": "A unique pastoral highland experience with rolling meadows and birdwatching.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pambarpuram Sheep Farm Kodaikanal Tamil Nadu",
+      "imageQuery": "Pambarpuram Sheep Farm Kodaikanal meadow"
+    },
+    {
+      "name": "Pommedu Organic Farm",
+      "category": "nature",
+      "description": "A certified organic homestead farm run by a local family on the outskirts of Kodaikanal, producing strawberries, passion fruit, plums, pears, and rare highland vegetables. Visitors can join farm tours, pick their own produce, and learn about chemical-free highland farming. The farmhouse café serves homemade jams, fresh juices, and wood-fired meals using only on-site produce — a true farm-to-table experience at 2,200 metres.",
+      "whyVisit": "A genuine farm-to-table organic experience unique to the Kodaikanal hill community.",
+      "bestTime": "April to June strawberry season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pommedu Organic Farm Kodaikanal Tamil Nadu",
+      "imageQuery": "organic farm strawberry Kodaikanal hills"
+    },
+    {
+      "name": "Gownd Rough Trail (Observatory–Pillar Rocks Trek)",
+      "category": "adventure",
+      "description": "A 12-km ridge trail linking Kodaikanal Solar Observatory to Pillar Rocks through the most remote section of the plateau, crossing open grassland, dense shola patches, and rocky outcrops. The route passes the seldom-visited Gownd's corner cliff — a sheer 300-metre escarpment with views east toward the plains. Wildlife encounters with gaur, muntjac, and Nilgiri tahrs are common. A local guide is essential.",
+      "whyVisit": "The finest full-day ridge trek in Kodaikanal, linking two landmarks through untouched shola.",
+      "bestTime": "November to February, start at 7 am",
+      "duration": "6-7 hours",
+      "mapsSearch": "Kodaikanal Solar Observatory trekking trail Palani",
+      "imageQuery": "Kodaikanal ridge trek shola forest grassland"
+    },
+    {
+      "name": "Kurinji Andavar Temple",
+      "category": "temple",
+      "description": "A small hilltop Murugan temple dedicated to Kurinji Andavar, the 'Lord of the Kurinji Hills', located 4 km from town on the Upper Shola Road. The temple commands a sweeping view of the Palani Hills and the plains of Madurai. The surrounding hillside is one of the prime habitats for the Strobilanthes kunthiana (Kurinji) plant, whose violet blossoms cover the slopes during the 12-year bloom cycle.",
+      "whyVisit": "A sacred hilltop temple intrinsically linked to Kodaikanal's legendary Kurinji flower.",
+      "bestTime": "Early morning or evening puja",
+      "duration": "1 hour",
+      "mapsSearch": "Kurinji Andavar Temple Kodaikanal Tamil Nadu",
+      "imageQuery": "Kurinji Andavar Temple Kodaikanal Murugan"
+    },
+    {
+      "name": "Pambar River Canyon",
+      "category": "nature",
+      "description": "A hidden geological marvel located 18 km south of Kodaikanal, where the Pambar River has carved a narrow basalt canyon over millions of years. The gorge walls rise 40 metres in places and are studded with wild orchids, mosses, and nesting pairs of Malabar whistling thrush. The river pools here are crystal clear and suitable for a refreshing dip. Very few visitors know of this gorge, making it a true hidden gem.",
+      "whyVisit": "A secret river gorge with wild orchids and total solitude — Kodaikanal's best-kept secret.",
+      "bestTime": "December to February when the river is clear",
+      "duration": "3-4 hours",
+      "mapsSearch": "Pambar River Kodaikanal canyon Palani Hills",
+      "imageQuery": "Pambar River canyon Palani Hills gorge"
+    }
+  ]
+}

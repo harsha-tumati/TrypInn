@@ -1,0 +1,190 @@
+{
+  "slug": "dzukou-valley",
+  "name": "Dzukou Valley",
+  "state": "Nagaland",
+  "tagline": "The valley of flowers that the northeast keeps secret",
+  "categories": ["nature", "adventure", "mountain"],
+  "highlights": ["rare dzukou lily blooms in july-august", "high-altitude trekking on nagaland-manipur border"],
+  "attractions": [
+    {
+      "name": "Dzukou Valley Floor",
+      "category": "nature",
+      "description": "The heart of the Dzukou Valley, a sweeping high-altitude bowl at 2,452 metres straddling the Nagaland-Manipur border, carpeted from July to August with the endemic Dzukou lily (Lilium mackliniae) in shades of pink and white. Rolling meadows of bamboo grass, sedge, and seasonal wildflowers stretch between dark forested ridges under wide open skies.",
+      "whyVisit": "One of Northeast India's most spectacular seasonal blooms — a true highland paradise.",
+      "bestTime": "July to August for lilies; October to November for clear skies",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Dzukou Valley Nagaland",
+      "imageQuery": "Dzukou valley flowers Nagaland Manipur"
+    },
+    {
+      "name": "Viswema Trailhead and Village",
+      "category": "adventure",
+      "description": "The main entry point to Dzukou Valley from the Nagaland side, starting from the Angami Naga village of Viswema, 28 km south of Kohima. The steep 8 km trail climbs 1,000 metres through dense subtropical forest and rhododendron thickets. Viswema itself is a model Angami village with traditional wooden morung (communal houses) and terraced jhum fields.",
+      "whyVisit": "The most used gateway to Dzukou, with a rewarding trek through primary Naga forest.",
+      "bestTime": "June to November",
+      "duration": "4-5 hours ascent",
+      "mapsSearch": "Viswema Village Dzukou Valley Trailhead Nagaland",
+      "imageQuery": "Viswema village trail Dzukou Nagaland"
+    },
+    {
+      "name": "Jakhama Trailhead",
+      "category": "adventure",
+      "description": "An alternative southern trailhead for Dzukou Valley from the Jakhama area near Kohima, offering a slightly gentler ascent through mixed oak and pine forest. The trail passes through agricultural terraces before entering the subalpine zone. Less crowded than the Viswema route, it is preferred by experienced trekkers seeking solitude.",
+      "whyVisit": "A quieter alternative trail to Dzukou with beautiful forest variety along the way.",
+      "bestTime": "June to November",
+      "duration": "4-5 hours ascent",
+      "mapsSearch": "Jakhama Dzukou Valley trek Nagaland",
+      "imageQuery": "Jakhama trek Dzukou valley Nagaland forest"
+    },
+    {
+      "name": "Dzukou Valley Campsite",
+      "category": "adventure",
+      "description": "A basic but idyllic campsite in the heart of the valley beside a clear stream, surrounded by meadows of lily and bamboo grass. The site has a forest department hut with bunk beds and a cook. Camping here at night reveals astonishing dark skies, and dawn brings mist rolling over the ridgelines in cinematic waves.",
+      "whyVisit": "Sleeping under Nagaland stars in a flower valley at 2,400 metres — deeply memorable.",
+      "bestTime": "July to August (lilies) or October to November (clear nights)",
+      "duration": "1-2 nights",
+      "mapsSearch": "Dzukou Valley Campsite Nagaland",
+      "imageQuery": "Dzukou valley campsite meadow Nagaland"
+    },
+    {
+      "name": "Dzukou River",
+      "category": "nature",
+      "description": "The valley's eponymous stream, a crystal-clear mountain river originating at the ridge and flowing through the valley floor. Its banks are dense with flowering plants and ferns, and the stream is one of the primary water sources for trekkers. Sitting by the river on a sunny day, surrounded by lilies and birdsong, is the quintessential Dzukou experience.",
+      "whyVisit": "The sparkling lifeline of the valley — a tranquil spot to sit and absorb Dzukou's magic.",
+      "bestTime": "July to September",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dzukou River valley stream Nagaland",
+      "imageQuery": "Dzukou river stream valley Nagaland"
+    },
+    {
+      "name": "Mt. Japfü Peak",
+      "category": "viewpoint",
+      "description": "At 3,048 metres, Japfü is the second-highest peak in Nagaland and a challenging day trek from Jakhama or a detour from the Dzukou trail. The summit hosts a small Christian cross erected by villagers, and on clear days commands a 360-degree view spanning the Dzukou valley, Kohima district, and the blue ranges of Manipur and Assam to the horizon.",
+      "whyVisit": "The highest accessible summit near Kohima with a panoramic view of the entire Dzukou landscape.",
+      "bestTime": "October to March for clear views",
+      "duration": "5-6 hours return from Jakhama",
+      "mapsSearch": "Mount Japfu Kohima Nagaland",
+      "imageQuery": "Mount Japfu summit Nagaland Kohima"
+    },
+    {
+      "name": "Rhododendron Forest on Dzukou Ridge",
+      "category": "nature",
+      "description": "The ridgeline trail between Viswema and the valley top passes through a magnificent old-growth rhododendron forest, where gnarled trees dripping with mosses and lichens form a cathedral-like canopy. In March and April the forest ignites in vivid reds and pinks as multiple rhododendron species bloom simultaneously at 2,000–2,400 metres.",
+      "whyVisit": "Northeast India's finest rhododendron bloom, encountered on the climb to Dzukou.",
+      "bestTime": "March to April",
+      "duration": "2-3 hours (part of the main trek)",
+      "mapsSearch": "Dzukou Valley rhododendron ridge Nagaland",
+      "imageQuery": "Dzukou ridge rhododendron forest Nagaland"
+    },
+    {
+      "name": "Dzukou Lily (Lilium mackliniae) Fields",
+      "category": "nature",
+      "description": "The endemic Dzukou lily (Lilium mackliniae), discovered in 1946 and named after botanist Jean Mackline, grows wild only in this valley and neighbouring Manipur hills. Its bell-shaped, nodding, deep-pink-to-white flowers carpet vast swathes of the valley in July and August, drawing botanists, photographers, and nature lovers from across India.",
+      "whyVisit": "To see India's rarest endemic lily blooming wild at scale — an experience found nowhere else on earth.",
+      "bestTime": "Mid-July to late August",
+      "duration": "Full day in valley",
+      "mapsSearch": "Dzukou lily fields Nagaland Manipur",
+      "imageQuery": "Dzukou lily Lilium mackliniae pink field"
+    },
+    {
+      "name": "Kohima War Cemetery",
+      "category": "heritage",
+      "description": "A beautifully maintained Commonwealth War Graves cemetery on the slopes of Garrison Hill, Kohima, commemorating the 1944 Battle of Kohima — one of WWII's most decisive battles. Over 1,400 soldiers of the 2nd British Division are buried here amid immaculate lawns. The famous inscription reads: 'When you go home, tell them of us and say, for your tomorrow we gave our today.'",
+      "whyVisit": "One of Asia's most moving war memorials and an essential historical counterpoint to the natural beauty of Dzukou.",
+      "bestTime": "Year-round; early morning for solitude",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Kohima War Cemetery Nagaland",
+      "imageQuery": "Kohima war cemetery WWII Nagaland"
+    },
+    {
+      "name": "Kohima Village (Old Kohima)",
+      "category": "heritage",
+      "description": "One of the largest Angami Naga villages in the world, spread across a ridge with traditional stone-paved paths, massive wooden morung, log drums, and stone monoliths erected to commemorate feasts of merit. The village is still inhabited and offers a living museum of Angami culture, with clan-based neighbourhoods (khels) maintaining distinct traditions.",
+      "whyVisit": "The living cultural heart of the Angami Naga people — architecture and traditions unchanged for generations.",
+      "bestTime": "Year-round; October for Hornbill Festival proximity",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kohima Village Old Kohima Nagaland",
+      "imageQuery": "Kohima village morung Angami Naga"
+    },
+    {
+      "name": "Kisama Heritage Village (Hornbill Festival)",
+      "category": "heritage",
+      "description": "Kisama, 12 km from Kohima, is the permanent venue for the Hornbill Festival (1–10 December), Nagaland's premier cultural extravaganza. The heritage village has permanent re-creations of traditional morungs from all 16 Naga tribes, and during the festival fills with warrior dances, chanting, traditional music, indigenous food, and handicraft markets.",
+      "whyVisit": "The Hornbill Festival offers a singular immersion into the diverse cultures of all 16 Naga tribes.",
+      "bestTime": "1–10 December for the festival; year-round for the village",
+      "duration": "2-4 hours (full day during festival)",
+      "mapsSearch": "Kisama Heritage Village Kohima Nagaland",
+      "imageQuery": "Kisama heritage village Hornbill Festival Nagaland"
+    },
+    {
+      "name": "Dzükou Valley Manipur Entry (Senapati Side)",
+      "category": "adventure",
+      "description": "The Manipur side of Dzukou Valley is accessed from the village of Mao near Senapati district. The trail from Mao Songsong village climbs through pine and oak forest to the valley. This approach is longer but scenically distinct, passing through Mao Naga settlements where traditional dress, local rice beer, and bamboo architecture remain part of everyday life.",
+      "whyVisit": "A less-travelled entry revealing the Manipuri face of Dzukou and Mao Naga culture.",
+      "bestTime": "October to November for the clearest views from the Manipur side",
+      "duration": "5-6 hours ascent",
+      "mapsSearch": "Dzukou Valley Mao Manipur entry Senapati",
+      "imageQuery": "Dzukou valley Manipur side Mao trek"
+    },
+    {
+      "name": "Pfutsero and Chida Valley",
+      "category": "nature",
+      "description": "Pfutsero is the highest town in Nagaland at 2,133 metres, two hours from Kohima. Nearby Chida Valley is a sweeping high pastoral plateau fringed by pine forest and dotted with small lakes. The area offers some of the cleanest air and most expansive highland scenery in Northeast India and serves as a quieter alternative base for exploring the Dzukou range.",
+      "whyVisit": "An underexplored highland alternative — sweeping meadows and pine forests with almost no tourist crowds.",
+      "bestTime": "March to May and September to November",
+      "duration": "Half day",
+      "mapsSearch": "Pfutsero Chida Valley Nagaland",
+      "imageQuery": "Pfutsero highland valley Nagaland pine"
+    },
+    {
+      "name": "Touphema Tourist Village",
+      "category": "heritage",
+      "description": "A model Naga village resort 41 km from Kohima built as a full-scale replica of a traditional Angami Naga village, with bamboo and wood cottages styled as local clan homes. Guests experience traditional Naga food, cultural performances, and a taste of village life. The pine forests around the village are excellent for morning birdwatching.",
+      "whyVisit": "The most comfortable and authentic Naga cultural immersion experience near Kohima.",
+      "bestTime": "October to March",
+      "duration": "Overnight",
+      "mapsSearch": "Touphema Tourist Village Nagaland",
+      "imageQuery": "Touphema tourist village Nagaland traditional"
+    },
+    {
+      "name": "Japfü Rhododendron and Bird Trail",
+      "category": "wildlife",
+      "description": "The forests of Mt. Japfü are a recognised Important Bird Area, hosting Blyth's tragopan, Naga wren-babbler, rufous-necked hornbill, and numerous pheasants. In spring the same forests erupt in rhododendron blooms visited by sunbirds and laughingthrushes. Local guides from Jakhama lead early-morning birdwatching walks starting before dawn.",
+      "whyVisit": "Northeast India's finest birdwatching hillside, home to rare and endemic species.",
+      "bestTime": "March to May (breeding season) and October to November",
+      "duration": "3-4 hours",
+      "mapsSearch": "Japfu mountain birdwatching Kohima Nagaland",
+      "imageQuery": "Blyth tragopan Nagaland Japfu bird"
+    },
+    {
+      "name": "Dzukou Valley Sunrise Ridge",
+      "category": "viewpoint",
+      "description": "The eastern rim of the Dzukou Valley forms a dramatic ridgeline where trekkers gather at dawn to watch the sun rise over the Manipur hills, flooding the lily-covered valley floor with golden light. On clear mornings, peaks in Manipur and even distant Assam are faintly visible. The view down into the valley from this ridge is the defining image of Dzukou.",
+      "whyVisit": "The classic sunrise vantage point of Dzukou — the photograph every trekker comes for.",
+      "bestTime": "Dawn, July to August (with lilies) or October to November",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dzukou Valley sunrise ridge viewpoint Nagaland",
+      "imageQuery": "Dzukou valley sunrise ridge Nagaland morning mist"
+    },
+    {
+      "name": "Naga Heritage Museum, Kohima",
+      "category": "museum",
+      "description": "A well-curated state museum in Kohima housing artefacts of all the major Naga tribes, including traditional weapons, ceremonial regalia, textiles, ornate headgear, and carved wooden panels from demolished morungs. Photographs and maps document the tribal geography of Nagaland and the story of the Naga people from pre-colonial times to statehood.",
+      "whyVisit": "Essential context for understanding the 16 tribes whose land you traverse on the Dzukou trek.",
+      "bestTime": "Year-round; mornings",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Nagaland State Museum Kohima",
+      "imageQuery": "Nagaland state museum Kohima tribal artefacts"
+    },
+    {
+      "name": "Dzukou Valley Winter Trek (Snow Season)",
+      "category": "adventure",
+      "description": "From December to February, Dzukou Valley receives occasional snowfall, transforming the brown winter meadows into a white highland landscape. Bamboo grass and bare shrubs emerge through the snow while the ridges gleam white under blue skies. Very few trekkers attempt the winter ascent, making it a true wilderness experience for hardy adventurers with proper gear.",
+      "whyVisit": "A snow-covered Dzukou is ethereal and almost entirely crowd-free — worth the cold.",
+      "bestTime": "December to February after snowfall",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Dzukou Valley winter snow trek Nagaland",
+      "imageQuery": "Dzukou valley snow winter Nagaland"
+    }
+  ]
+}

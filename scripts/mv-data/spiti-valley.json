@@ -1,0 +1,260 @@
+{
+  "slug": "spiti-valley",
+  "name": "Spiti Valley",
+  "state": "Himachal Pradesh",
+  "tagline": "Cold desert moonscape where ancient monasteries touch the sky",
+  "categories": ["mountain", "adventure", "spiritual"],
+  "highlights": ["world's highest inhabited villages and monasteries", "pristine high-altitude cold desert with zero light pollution"],
+  "attractions": [
+    {
+      "name": "Key Monastery (Ki Gompa)",
+      "category": "monastery",
+      "description": "Perched at 4,166 metres on a dramatic spur above the Spiti River, Key Monastery is the largest monastery in the Spiti Valley and the religious and educational centre of the region. Founded in the 11th century, it houses over 300 monks of the Gelug sect of Tibetan Buddhism. The multi-storey whitewashed complex, clinging impossibly to the clifftop, contains rare thangkas, ancient texts and Tibetan paintings. The festival of Gustor in June-July is marked by ceremonial mask dances (chham).",
+      "whyVisit": "The most iconic and architecturally spectacular monastery in Spiti — the building itself seems to defy both gravity and time.",
+      "bestTime": "June to October; Gustor festival for ceremonial dances",
+      "duration": "2-3 hours",
+      "mapsSearch": "Key Monastery Ki Gompa Spiti Valley Himachal Pradesh",
+      "imageQuery": "Key Monastery Ki Gompa Spiti Valley cliff perched"
+    },
+    {
+      "name": "Tabo Monastery",
+      "category": "monastery",
+      "description": "Founded in 996 CE, Tabo is the oldest continuously functioning monastery in India, sometimes called the 'Ajanta of the Himalayas'. Its nine temples contain the most complete cycle of early Indo-Tibetan Buddhist art in existence — ancient clay sculptures, wall paintings and stucco work executed by Kashmiri and Tibetan artisans over 1,000 years ago. The Dalai Lama has expressed a wish to retire here, and the monastery complex has been designated a UNESCO candidate site.",
+      "whyVisit": "India's oldest active monastery with 1,000-year-old frescoes — the most significant Buddhist art site in the entire Himalayan region.",
+      "bestTime": "May to October; Buddha Jayanti celebrations are particularly atmospheric",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tabo Monastery Spiti Valley Himachal Pradesh",
+      "imageQuery": "Tabo Monastery ancient frescoes Spiti Valley interior paintings"
+    },
+    {
+      "name": "Chandratal Lake",
+      "category": "lake",
+      "description": "Chandratal — the Lake of the Moon — is a high-altitude glacial lake at 4,300 metres in the Kunzum Pass area, shaped like a crescent moon and set in a bowl of ochre and violet mountains. The water shifts between deep sapphire, emerald and turquoise depending on the sky. Camping beside the lake under the Milky Way — with no artificial light for 100 kilometres — is considered one of the most transcendent outdoor experiences in India. The lake is sacred to local Buddhists.",
+      "whyVisit": "One of the highest and most beautiful lakes in India — the night sky from Chandratal's shores is virtually unmatched anywhere in the country.",
+      "bestTime": "July to mid-September (road opens after snowmelt; closes by October)",
+      "duration": "1-2 days (camping recommended)",
+      "mapsSearch": "Chandratal Lake Spiti Valley Himachal Pradesh",
+      "imageQuery": "Chandratal Lake moon lake Spiti Valley turquoise crescent"
+    },
+    {
+      "name": "Kaza Town",
+      "category": "heritage",
+      "description": "The administrative headquarters of Spiti, Kaza sits at 3,800 metres and is the largest settlement and main base for exploring the valley. The town has a pleasant mix of Buddhist monasteries, government buildings, local dhabas serving thukpa and butter tea, and a growing number of guesthouses. The Sakya Tangyud Monastery on the hill above town is an active institution, and the weekly market on Saturdays draws traders from across the valley.",
+      "whyVisit": "The pulse of Spiti Valley — the essential base camp for all major attractions, with genuine high-altitude Tibetan frontier town character.",
+      "bestTime": "June to October",
+      "duration": "1-2 days as a base",
+      "mapsSearch": "Kaza Town Spiti Valley Himachal Pradesh",
+      "imageQuery": "Kaza Town Spiti Valley mountain Himachal Pradesh high altitude"
+    },
+    {
+      "name": "Hikkim Village and World's Highest Post Office",
+      "category": "heritage",
+      "description": "Hikkim, at 4,400 metres, claims the world's highest functioning post office — a tiny building where travellers queue to send letters and postcards stamped with the altitude notation. The village itself is a cluster of flat-roofed stone houses surrounded by barley fields and chorten-studded ridges. Postal workers here operate in conditions of extreme isolation during winter, when the village is cut off by snow. A postcard sent from Hikkim post office is a cherished travel souvenir.",
+      "whyVisit": "Send a postcard from the world's highest post office — a small, completely unique experience in the heart of Spiti.",
+      "bestTime": "June to October",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hikkim Post Office Spiti Valley Himachal Pradesh highest",
+      "imageQuery": "Hikkim world's highest post office Spiti Valley Himachal Pradesh"
+    },
+    {
+      "name": "Komic Village",
+      "category": "heritage",
+      "description": "Komic, at 4,587 metres, claims to be the world's highest village connected by a motorable road. It consists of a few dozen households clustered around the Tangyud Monastery, which dates to the 14th century and contains rare statues and manuscripts. The village is located on a plateau with 360-degree views of snow peaks, brown mountains and the Spiti River valley far below. The silence here is absolute and the air so thin that even a slow walk causes breathlessness.",
+      "whyVisit": "Standing in a functioning village above 4,500 metres — growing crops, sustaining a monastery, living at an altitude most aircraft cruise below.",
+      "bestTime": "July to September",
+      "duration": "2-3 hours",
+      "mapsSearch": "Komic Village Spiti Valley highest village motorable road",
+      "imageQuery": "Komic Village highest village Spiti Valley Himachal Pradesh Tangyud Monastery"
+    },
+    {
+      "name": "Langza Village and Fossil Hill",
+      "category": "nature",
+      "description": "Langza, at 4,400 metres, is famous for two things: the 1,000-year-old Buddha statue that towers over the village against a backdrop of bare brown peaks, and the fossil-laden hillsides where ancient marine fossils — ammonites, belemnites — can be found scattered in the soil, evidence that this Himalayan plateau was once an ocean floor. The village remains are occupied year-round by a handful of families who offer homestays and cook fresh-caught trout in local streams.",
+      "whyVisit": "Fossils from a 50-million-year-old seabed at 4,400 metres — Langza is one of the most mind-bending geology field sites on earth.",
+      "bestTime": "June to October",
+      "duration": "Half day",
+      "mapsSearch": "Langza Village Buddha fossil Spiti Valley Himachal Pradesh",
+      "imageQuery": "Langza Village Buddha statue Spiti Valley fossils mountains"
+    },
+    {
+      "name": "Kunzum Pass",
+      "category": "viewpoint",
+      "description": "At 4,590 metres, Kunzum Pass is the dramatic high-altitude gateway between the Lahaul and Spiti valleys. The pass is marked by a circular stone shrine (Kunzum Mata Temple) where travellers traditionally circle three times for blessing before continuing. Panoramic views of the Chandra River valley, glaciated peaks of the Chandrabhaga range and the vast empty Spiti landscape unfold in every direction. The pass is snowbound October to May.",
+      "whyVisit": "The high-altitude threshold of the Spiti world — a ceremony of arrival and departure with one of the most formidable mountain panoramas in India.",
+      "bestTime": "July to mid-September when the road is clear",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kunzum Pass Spiti Valley Himachal Pradesh",
+      "imageQuery": "Kunzum Pass gateway Spiti Valley mountain Himachal Pradesh"
+    },
+    {
+      "name": "Dhankar Monastery and Lake",
+      "category": "monastery",
+      "description": "Dhankar Gompa clings to a knife-edge ridge between two cliff faces at 3,890 metres, with the Spiti and Pin rivers converging directly below. The ancient mud-brick monastery, declared one of the 100 most endangered heritage sites by the World Monuments Fund, contains remarkable 1,000-year-old paintings. A 45-minute climb above the monastery leads to Dhankar Lake — a small glacial lake cupped in the ridge with breathtaking valley views on both sides.",
+      "whyVisit": "The most precariously and dramatically situated monastery in the world — a mud-brick fortress on a blade of rock over a river confluence.",
+      "bestTime": "June to October",
+      "duration": "3-4 hours (monastery plus lake)",
+      "mapsSearch": "Dhankar Monastery Lake Spiti Valley Himachal Pradesh",
+      "imageQuery": "Dhankar Monastery cliff ridge Spiti Valley lake Himachal"
+    },
+    {
+      "name": "Pin Valley National Park",
+      "category": "wildlife",
+      "description": "Pin Valley National Park is a cold desert sanctuary at 3,500–6,600 metres protecting one of the most robust Snow Leopard populations in India. The Pin River valley is a transition zone between the wet Kullu forest zone and the dry Tibetan plateau. Besides Snow Leopards, the park shelters Siberian Ibex, Bharal (blue sheep), red fox and the bar-headed goose. The village of Mud at the valley's end offers homestays and some of the best Snow Leopard sighting opportunities in winter.",
+      "whyVisit": "The highest chance of sighting wild snow leopards in India — winter trips to Pin Valley are considered among the world's premium wildlife experiences.",
+      "bestTime": "November to February for snow leopard sightings; June to September for general wildlife",
+      "duration": "2-5 days",
+      "mapsSearch": "Pin Valley National Park Spiti Himachal Pradesh",
+      "imageQuery": "Pin Valley National Park snow leopard Spiti Himachal Pradesh"
+    },
+    {
+      "name": "Kibber Village",
+      "category": "heritage",
+      "description": "Kibber, at 4,270 metres, was once officially recognized as the world's highest inhabited village with a road link. The village clusters around a small monastery and is surrounded by terraced fields of pea, barley and mustard. The surrounding Kibber Wildlife Sanctuary protects Himalayan wolves, snow leopards and ibex. The open moorland above the village is one of the best places in Spiti to observe Himalayan foxes and eagles without a dedicated safari.",
+      "whyVisit": "A complete Spiti high-altitude village experience — monastery, farms, wildlife and extraordinary mountain views all within walking distance.",
+      "bestTime": "June to October",
+      "duration": "Half day",
+      "mapsSearch": "Kibber Village Spiti Valley Himachal Pradesh",
+      "imageQuery": "Kibber Village high altitude Spiti Valley monastery Himachal Pradesh"
+    },
+    {
+      "name": "Losar Village (Gateway to Spiti)",
+      "category": "heritage",
+      "description": "The first village after crossing Kunzum Pass from Lahaul, Losar is a small Spiti settlement at 4,079 metres with a distinctive chorten at its entrance and sweeping views across the river valley. The village has basic guesthouses and a warm community that represents traditional Spiti hospitality. The drive from Losar to Kaza follows the Spiti River through some of the most spectacular gorge and desert mountain scenery on the Manali-Kaza highway.",
+      "whyVisit": "The frontier village of Spiti — the first taste of the valley's scale, silence and high-altitude lifestyle as you descend from Kunzum.",
+      "bestTime": "June to October",
+      "duration": "1-2 hours",
+      "mapsSearch": "Losar Village Spiti Valley Himachal Pradesh",
+      "imageQuery": "Losar Village Spiti Valley chorten entrance river Himachal"
+    },
+    {
+      "name": "Gue Mummy (500-year-old preserved monk)",
+      "category": "heritage",
+      "description": "In the small village of Gue near Sumdo in the Spiti-Kinnaur border zone, a perfectly preserved 500-year-old mummy of a Buddhist monk sits cross-legged in a natural meditative posture. Discovered after a glacial melt in 2004, the mummy retains intact teeth, hair and skin. Local tradition holds it to be Sangha Tenzin, a lama who voluntarily mummified himself through the practice of self-mummification (sokushinbutsu). The mummy is housed in a small gompa open to respectful visitors.",
+      "whyVisit": "One of the most extraordinary and little-known cultural artefacts in the Himalayas — a 500-year-old mummified monk in perfect condition.",
+      "bestTime": "June to October",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gue Mummy preserved monk Spiti Valley Himachal Pradesh",
+      "imageQuery": "Gue Mummy preserved monk Spiti Valley Himachal Pradesh"
+    },
+    {
+      "name": "Nako Lake and Village",
+      "category": "lake",
+      "description": "Nako, on the Kinnaur-Spiti border at 3,662 metres, contains a sacred lake surrounded by willow trees and ringed by a circumambulatory path. The 1,000-year-old Nako Monastery cluster — four temples with remarkable Tibetan paintings — overlooks the lake. The combination of the turquoise lake, ancient temple walls and the towering peaks of the Kinnaur-Kailash range in the background creates one of the most compositionally perfect scenes in the Indian Himalayas.",
+      "whyVisit": "The most photogenic village in the Kinnaur-Spiti transition zone — a willow-fringed sacred lake with a 1,000-year-old monastery.",
+      "bestTime": "May to October",
+      "duration": "Half day",
+      "mapsSearch": "Nako Lake Village Kinnaur Spiti Himachal Pradesh",
+      "imageQuery": "Nako Lake monastery willows Kinnaur Spiti Himachal Pradesh"
+    },
+    {
+      "name": "Tashigang Village",
+      "category": "heritage",
+      "description": "Tashigang, near Kaza at 4,635 metres, contests with Komic for the title of world's highest motorable village. The tiny hamlet of stone houses, chortens and one small monastery is surrounded by utterly barren peaks. At this altitude, crops barely grow, but a few families tend kitchen gardens behind windbreak walls. The silence and isolation are so complete that this is often described by travellers as the closest they have ever come to feeling truly alone on earth.",
+      "whyVisit": "Quite possibly the highest permanently inhabited settlement reachable by road on earth — a limit-testing destination for high-altitude seekers.",
+      "bestTime": "July to September",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tashigang Village highest village Spiti Valley Himachal Pradesh",
+      "imageQuery": "Tashigang Village highest village Spiti Valley barren peaks"
+    },
+    {
+      "name": "Spiti River Valley Drive (Kaza to Sumdo)",
+      "category": "adventure",
+      "description": "The drive along the Spiti River from Kaza eastward toward Sumdo and the Tibet border is one of the most dramatic high-altitude road journeys in India. The river carves through a canyon of multicoloured geological strata — ochre, rust, grey and violet — while the road alternates between flat stretches and vertiginous cliff overhangs. Buddhist mani walls line the roadside, and the landscape grows increasingly barren as one approaches the border. No guardrails exist on many sections.",
+      "whyVisit": "The most cinematically spectacular drive in Himachal Pradesh — a geological gallery of raw Himalayan forces that unfolds over 50 km.",
+      "bestTime": "June to October (road closes in winter)",
+      "duration": "Full day",
+      "mapsSearch": "Spiti River Valley road drive Kaza Sumdo Himachal Pradesh",
+      "imageQuery": "Spiti River Valley drive canyon multicoloured rock Himachal Pradesh"
+    },
+    {
+      "name": "Lhalung Village and Serkhong Monastery",
+      "category": "monastery",
+      "description": "Located in a side valley off the main Spiti Road, Lhalung is one of the oldest and least-visited villages in Spiti, dominated by the ancient Serkhong Monastery which contains exceptional 13th-century wall paintings rivalling those of Tabo. The monastery also houses a rare collection of ancient texts and a 1,000-year-old juniper tree in its courtyard. Only a handful of monks maintain the site and visitors are welcomed with butter tea.",
+      "whyVisit": "The most undervisited major monastery in Spiti, with 13th-century frescoes that match Tabo in quality but receive almost no visitors.",
+      "bestTime": "June to October",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lhalung Village Serkhong Monastery Spiti Valley Himachal Pradesh",
+      "imageQuery": "Lhalung Monastery ancient paintings Spiti Valley Himachal Pradesh"
+    },
+    {
+      "name": "Mud Village (Pin Valley)",
+      "category": "heritage",
+      "description": "The last village in the Pin Valley before the trail ascends toward Pin-Parvati Pass, Mud is a traditional Spiti settlement where local families offer homestays and home-cooked meals of butter tea, tsampa and yak cheese. The village is the base for snow leopard tracking expeditions in winter and hiking into Pin Valley National Park in summer. The valley surrounding Mud is among the most pristine wild landscapes in Himachal Pradesh.",
+      "whyVisit": "The most authentic homestay and nature-immersion experience in Spiti — the gateway to India's best snow leopard country.",
+      "bestTime": "November to February for snow leopards; June to September for Pin Valley trekking",
+      "duration": "2-5 days",
+      "mapsSearch": "Mud Village Pin Valley Spiti Himachal Pradesh",
+      "imageQuery": "Mud Village Pin Valley Spiti Himachal Pradesh homestay snow"
+    },
+    {
+      "name": "Kungri Monastery",
+      "category": "monastery",
+      "description": "Located in the Pin Valley near Kungri village, Kungri Gompa is one of Spiti's most important Nyingma-sect monasteries — distinct from the predominantly Gelug monasteries elsewhere in Spiti. Founded over 900 years ago, it contains remarkable Buddhist iconography, thangka collections and holds an annual mask dance festival in late summer. The Pin River valley setting is among the most peaceful in all of Spiti.",
+      "whyVisit": "The most significant Nyingma monastery in Spiti — a different and ancient tradition from the Gelug mainstream, in a spectacular valley setting.",
+      "bestTime": "June to October; mask dance festival in August",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kungri Monastery Pin Valley Spiti Himachal Pradesh",
+      "imageQuery": "Kungri Monastery Pin Valley Nyingma Spiti Himachal Pradesh"
+    },
+    {
+      "name": "Spiti Stargazing (Zero Light Pollution Belt)",
+      "category": "nature",
+      "description": "The Spiti Valley is one of very few regions in South Asia with virtually zero artificial light pollution across hundreds of kilometres. On moonless nights between June and October, the Milky Way is visible as a solid band of light arching overhead, and falling stars streak every few minutes. Chandratal Lake, the meadows above Kaza and the Pin Valley grasslands are the best stargazing sites. Some guesthouses offer guided night sessions with basic telescopes and star charts.",
+      "whyVisit": "A night sky of unparalleled clarity — the Spiti Valley offers some of the finest stargazing conditions available anywhere in Asia.",
+      "bestTime": "New moon periods June through September",
+      "duration": "Evening",
+      "mapsSearch": "Spiti Valley dark sky stargazing Kaza Himachal Pradesh",
+      "imageQuery": "Spiti Valley stargazing Milky Way dark sky Himachal Pradesh night"
+    },
+    {
+      "name": "Kanamo Peak Trek",
+      "category": "adventure",
+      "description": "Kanamo Peak (6,250 m) near Kibber is considered one of the most accessible high-altitude summit climbs in the Indian Himalayas, requiring no technical mountaineering equipment for the standard route — just extreme fitness and acclimatization. The 360-degree summit view encompasses the entire Spiti Valley, Pin Valley, Rohtang La and peaks stretching into Tibet. Most climbers attempt it over two days from Kibber, with a high-camp at approximately 5,500 metres.",
+      "whyVisit": "The most accessible 6,000-metre peak in Spiti — a non-technical but genuinely extreme summit within reach of fit trekkers.",
+      "bestTime": "July to September",
+      "duration": "2-3 days",
+      "mapsSearch": "Kanamo Peak trek Kibber Spiti Valley Himachal Pradesh",
+      "imageQuery": "Kanamo Peak summit Spiti Valley high altitude Himachal Pradesh"
+    },
+    {
+      "name": "Kibber Wildlife Sanctuary (Snow Leopard Zone)",
+      "category": "wildlife",
+      "description": "The Kibber Wildlife Sanctuary encompasses the high-altitude cold desert zone above Kibber village, extending toward the Parechu River and Tibet border. This landscape of open scree slopes, ravines and alpine meadows is Spiti's most intensively monitored Snow Leopard habitat, with the Nature Conservation Foundation and Snow Leopard Trust conducting ongoing research. Visitors with local guide support can track footprints and scat trails, with sighting rates significantly higher than anywhere else in India.",
+      "whyVisit": "The single best-managed Snow Leopard viewing zone in India — guided tracking with expert naturalists offers genuine sighting opportunities.",
+      "bestTime": "December to February for snow leopard tracking",
+      "duration": "Full day to multiple days",
+      "mapsSearch": "Kibber Wildlife Sanctuary Snow Leopard Spiti Himachal Pradesh",
+      "imageQuery": "Kibber Wildlife Sanctuary snow leopard Spiti Himachal Pradesh"
+    },
+    {
+      "name": "Chicham Bridge",
+      "category": "adventure",
+      "description": "Completed in 2017, the Chicham Bridge spans a dramatic gorge of the Spiti River near Kibber at approximately 4,400 metres and is claimed to be one of Asia's highest bridges over a river gorge. The bridge connects Kibber to the isolated village of Chicham, which previously required a hazardous rope-pulley system to access. The view from the bridge — straight down into the multicoloured gorge with the Spiti River as a silver thread below — is both vertiginous and spectacular.",
+      "whyVisit": "A visceral crossing above one of the deepest gorges in Spiti — the view straight down into the chasm is not for the faint-hearted.",
+      "bestTime": "June to October",
+      "duration": "1 hour",
+      "mapsSearch": "Chicham Bridge Spiti Valley Himachal Pradesh",
+      "imageQuery": "Chicham Bridge gorge Spiti River Himachal Pradesh high altitude"
+    },
+    {
+      "name": "Kye Monastery Gustor Festival",
+      "category": "religious",
+      "description": "The Gustor festival at Key (Ki) Monastery, held over two days in the Tibetan month corresponding to late June or July, is Spiti's most spectacular religious event. Hundreds of monks in elaborate brocade costumes and gilded masks perform the Chham — sacred masked dances representing the defeat of evil — in the monastery courtyard, while hundreds of local villagers in traditional Spiti dress observe from the surrounding walls and rooftops. The event is one of the most visually remarkable in the Himalayan world.",
+      "whyVisit": "The most spectacular religious festival in the Spiti Valley — a riot of colour, mask and music at 4,166 metres.",
+      "bestTime": "Tibetan calendar date varies annually (usually June-July)",
+      "duration": "2 days",
+      "mapsSearch": "Key Monastery Gustor Festival Spiti Valley Himachal Pradesh",
+      "imageQuery": "Key Monastery Gustor Festival Cham dance monks Spiti"
+    },
+    {
+      "name": "Rohtang Pass",
+      "category": "adventure",
+      "description": "At 3,978 metres, Rohtang Pass is the primary road gateway between Manali and the Spiti and Lahaul valleys. The pass cuts through the Pir Panjal range and marks a dramatic climatic and landscape transition — lush Kullu forests on one side, cold arid plateau on the other. Snow remains on the pass into June, and driving through winter snow walls several metres high is a visceral introduction to Spiti's conditions. The pass closes entirely October to May, sealing Spiti from the Manali side.",
+      "whyVisit": "The most dramatic portal into the Spiti world — a high mountain pass where every step changes the climate, vegetation and culture underfoot.",
+      "bestTime": "June to October when road is open; June for snow walls at their highest",
+      "duration": "2-3 hours",
+      "mapsSearch": "Rohtang Pass Manali Spiti Himachal Pradesh",
+      "imageQuery": "Rohtang Pass snow mountains Manali Himachal Pradesh gateway"
+    }
+  ]
+}

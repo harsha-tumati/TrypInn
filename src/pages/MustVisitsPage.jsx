@@ -85,6 +85,7 @@ const DestinationCard = memo(function DestinationCard({ dest }) {
                     decoding="async"
                     width="400"
                     height="250"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60'; }}
                 />
                 <span className="mv-card-count">{dest.attractionCount} places</span>
             </div>
@@ -118,6 +119,7 @@ const AttractionCard = memo(function AttractionCard({ attraction, destination })
                     decoding="async"
                     width="400"
                     height="250"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60'; }}
                 />
                 <span className="mv-attraction-badge" style={{ background: cat.color }}>
                     {cat.emoji} {cat.label}
@@ -329,7 +331,10 @@ const MustVisitsDetail = memo(function MustVisitsDetail({ data }) {
 
     return (
         <div className="mv-page">
-            <div className="mv-detail-hero" style={{ backgroundImage: `url(${data.coverImage})` }}>
+            <div 
+                className="mv-detail-hero" 
+                style={{ backgroundImage: `url(${data.coverImage}), url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60)` }}
+            >
                 <div className="mv-detail-hero-overlay" />
                 <div className="mv-detail-hero-content">
                     <button type="button" className="mv-back-btn" onClick={() => navigate('/must-visits')}>
@@ -385,6 +390,16 @@ const MustVisitsDetail = memo(function MustVisitsDetail({ data }) {
                     ))}
                 </div>
 
+                {/* Long-form travel guide (SEO page content) */}
+                {Array.isArray(data.pageContent) && data.pageContent.length > 0 && (
+                    <section className="mv-pagecontent">
+                        <h2>Travel Guide to {data.name}</h2>
+                        {data.pageContent.map((para, i) => (
+                            <p key={i}>{para}</p>
+                        ))}
+                    </section>
+                )}
+
                 {/* Plan a trip CTA */}
                 <div className="mv-cta">
                     <h3>Ready to explore {data.name}?</h3>
@@ -405,6 +420,9 @@ export default function MustVisitsPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Prevent rendering with mismatched data during route transitions
+    const isDataMismatch = data !== null && (destination ? Array.isArray(data) : !Array.isArray(data));
+
     useEffect(() => {
         setLoading(true);
         setError(null);
@@ -422,7 +440,7 @@ export default function MustVisitsPage() {
             .catch(() => { setError('not_found'); setLoading(false); });
     }, [destination]);
 
-    if (loading) return <MustVisitsSkeleton />;
+    if (loading || isDataMismatch) return <MustVisitsSkeleton />;
 
     if (error || !data) {
         return (

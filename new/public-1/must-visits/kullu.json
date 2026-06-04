@@ -1,0 +1,447 @@
+{
+  "id": "kullu",
+  "name": "Kullu",
+  "state": "Himachal Pradesh",
+  "slug": "kullu",
+  "tagline": "Valley of gods with riverside camping",
+  "categories": [
+    "nature",
+    "adventure",
+    "river"
+  ],
+  "introduction": "Planning a trip to Kullu? This travel guide to Kullu covers the must visit places in Kullu, the best places to visit in Kullu, top tourist attractions in Kullu, and exciting things to do in Kullu.",
+  "metaTitle": "Best Places to Visit in Kullu | Tourist Attractions in Kullu - TrypInn",
+  "metaDescription": "Discover must visit places in Kullu, best places to visit in Kullu, and top tourist attractions in Kullu. Plan your perfect trip with TrypInn travel guide to Kullu.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=1200&q=60",
+    "alt": "Kullu travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "kullu-bageshwar",
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "Bageshwar is a must-see nature in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Bageshwar offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Bageshwar, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bageshwar in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Bageshwar in Kullu"
+      },
+      "position": 1
+    },
+    {
+      "id": "kullu-caving",
+      "name": "Caving",
+      "slug": "caving",
+      "description": "Located in scenic Kullu, Caving offers an immersive experience into local culture. Exploring Caving is one of the top things to do in Kullu.",
+      "whyVisit": "Experience the unmatched beauty of Caving.",
+      "bestTime": "Oct-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Caving, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Caving in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Caving in Kullu"
+      },
+      "position": 2
+    },
+    {
+      "id": "kullu-assi-ghat",
+      "name": "Assi Ghat",
+      "slug": "assi-ghat",
+      "description": "Assi Ghat is a must-see river in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Capture stunning photographs at Assi Ghat.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Assi Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Assi Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Assi Ghat in Kullu"
+      },
+      "position": 3
+    },
+    {
+      "id": "kullu-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "Nestled in Kullu, Jim Corbett National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Jim Corbett National Park is among the best things to do in Kullu.",
+      "whyVisit": "Capture stunning photographs at Jim Corbett National Park.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jim Corbett National Park, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Kullu"
+      },
+      "position": 4
+    },
+    {
+      "id": "kullu-snorkeling",
+      "name": "Snorkeling",
+      "slug": "snorkeling",
+      "description": "Nestled in Kullu, Snorkeling stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Snorkeling is among the best things to do in Kullu.",
+      "whyVisit": "Snorkeling stands out as one of the most rewarding experiences.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Full day",
+      "mapsSearch": "Snorkeling, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Snorkeling in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Snorkeling in Kullu"
+      },
+      "position": 5
+    },
+    {
+      "id": "kullu-dashashwamedh-ghat",
+      "name": "Dashashwamedh Ghat",
+      "slug": "dashashwamedh-ghat",
+      "description": "Nestled in Kullu, Dashashwamedh Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Dashashwamedh Ghat is among the best things to do in Kullu.",
+      "whyVisit": "A visit to Dashashwamedh Ghat is essential for understanding Kullu.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dashashwamedh Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Dashashwamedh Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Dashashwamedh Ghat in Kullu"
+      },
+      "position": 6
+    },
+    {
+      "id": "kullu-hemkund-sahib",
+      "name": "Hemkund Sahib",
+      "slug": "hemkund-sahib",
+      "description": "Located in scenic Kullu, Hemkund Sahib offers an immersive experience into local culture. Exploring Hemkund Sahib is one of the top things to do in Kullu.",
+      "whyVisit": "Capture stunning photographs at Hemkund Sahib.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hemkund Sahib, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Hemkund Sahib in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Hemkund Sahib in Kullu"
+      },
+      "position": 7
+    },
+    {
+      "id": "kullu-elephant-safari",
+      "name": "Elephant Safari",
+      "slug": "elephant-safari",
+      "description": "Nestled in Kullu, Elephant Safari stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Elephant Safari is among the best things to do in Kullu.",
+      "whyVisit": "A visit to Elephant Safari is essential for understanding Kullu.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Elephant Safari, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Safari in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Elephant Safari in Kullu"
+      },
+      "position": 8
+    },
+    {
+      "id": "kullu-tulsi-ghat",
+      "name": "Tulsi Ghat",
+      "slug": "tulsi-ghat",
+      "description": "Nestled in Kullu, Tulsi Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Tulsi Ghat is among the best things to do in Kullu.",
+      "whyVisit": "Tulsi Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tulsi Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Tulsi Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Tulsi Ghat in Kullu"
+      },
+      "position": 9
+    },
+    {
+      "id": "kullu-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "Nestled in Kullu, Mukteshwar stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Mukteshwar is among the best things to do in Kullu.",
+      "whyVisit": "Mukteshwar stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Mukteshwar, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in Kullu"
+      },
+      "position": 10
+    },
+    {
+      "id": "kullu-bungee-jumping",
+      "name": "Bungee Jumping",
+      "slug": "bungee-jumping",
+      "description": "Nestled in Kullu, Bungee Jumping stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Bungee Jumping is among the best things to do in Kullu.",
+      "whyVisit": "Capture stunning photographs at Bungee Jumping.",
+      "bestTime": "Oct-Jun",
+      "duration": "2-4 hours",
+      "mapsSearch": "Bungee Jumping, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Bungee Jumping in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Bungee Jumping in Kullu"
+      },
+      "position": 11
+    },
+    {
+      "id": "kullu-darabhanga-ghat",
+      "name": "Darabhanga Ghat",
+      "slug": "darabhanga-ghat",
+      "description": "A crown jewel of Kullu, Darabhanga Ghat captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting Darabhanga Ghat.",
+      "whyVisit": "Experience the unmatched beauty of Darabhanga Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Darabhanga Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Darabhanga Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Darabhanga Ghat in Kullu"
+      },
+      "position": 12
+    },
+    {
+      "id": "kullu-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nestled in Kullu, Nanda Devi National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Nanda Devi National Park is among the best things to do in Kullu.",
+      "whyVisit": "Nanda Devi National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nanda Devi National Park, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Kullu"
+      },
+      "position": 13
+    },
+    {
+      "id": "kullu-paragliding",
+      "name": "Paragliding",
+      "slug": "paragliding",
+      "description": "Nestled in Kullu, Paragliding stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Paragliding is among the best things to do in Kullu.",
+      "whyVisit": "Paragliding stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-May",
+      "duration": "Half day",
+      "mapsSearch": "Paragliding, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Paragliding in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Paragliding in Kullu"
+      },
+      "position": 14
+    },
+    {
+      "id": "kullu-bhadaini-ghat",
+      "name": "Bhadaini Ghat",
+      "slug": "bhadaini-ghat",
+      "description": "Located in scenic Kullu, Bhadaini Ghat offers an immersive experience into local culture. Exploring Bhadaini Ghat is one of the top things to do in Kullu.",
+      "whyVisit": "Experience the unmatched beauty of Bhadaini Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "Sunset",
+      "mapsSearch": "Bhadaini Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Bhadaini Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Bhadaini Ghat in Kullu"
+      },
+      "position": 15
+    },
+    {
+      "id": "kullu-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Munsiyari is a must-see nature in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Munsiyari offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Munsiyari, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Kullu"
+      },
+      "position": 16
+    },
+    {
+      "id": "kullu-snowboarding",
+      "name": "Snowboarding",
+      "slug": "snowboarding",
+      "description": "A crown jewel of Kullu, Snowboarding captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting Snowboarding.",
+      "whyVisit": "Snowboarding offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-May",
+      "duration": "Full day",
+      "mapsSearch": "Snowboarding, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Snowboarding in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Snowboarding in Kullu"
+      },
+      "position": 17
+    },
+    {
+      "id": "kullu-gaay-ghat",
+      "name": "Gaay Ghat",
+      "slug": "gaay-ghat",
+      "description": "Gaay Ghat is a must-see river in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Gaay Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gaay Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Gaay Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Gaay Ghat in Kullu"
+      },
+      "position": 18
+    },
+    {
+      "id": "kullu-patal-bhuvaneshwar",
+      "name": "Patal Bhuvaneshwar",
+      "slug": "patal-bhuvaneshwar",
+      "description": "Patal Bhuvaneshwar is a must-see nature in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Capture stunning photographs at Patal Bhuvaneshwar.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Patal Bhuvaneshwar, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Patal Bhuvaneshwar in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Patal Bhuvaneshwar in Kullu"
+      },
+      "position": 19
+    },
+    {
+      "id": "kullu-atv-riding",
+      "name": "ATV Riding",
+      "slug": "atv-riding",
+      "description": "A crown jewel of Kullu, ATV Riding captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting ATV Riding.",
+      "whyVisit": "Capture stunning photographs at ATV Riding.",
+      "bestTime": "Mar-May",
+      "duration": "Multi-day",
+      "mapsSearch": "ATV Riding, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, ATV Riding in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "ATV Riding in Kullu"
+      },
+      "position": 20
+    },
+    {
+      "id": "kullu-scindia-ghat",
+      "name": "Scindia Ghat",
+      "slug": "scindia-ghat",
+      "description": "A crown jewel of Kullu, Scindia Ghat captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting Scindia Ghat.",
+      "whyVisit": "Capture stunning photographs at Scindia Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Scindia Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Scindia Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Scindia Ghat in Kullu"
+      },
+      "position": 21
+    },
+    {
+      "id": "kullu-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "A crown jewel of Kullu, Gangolihat captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting Gangolihat.",
+      "whyVisit": "Experience the unmatched beauty of Gangolihat.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Gangolihat, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Kullu"
+      },
+      "position": 22
+    },
+    {
+      "id": "kullu-river-rafting",
+      "name": "River Rafting",
+      "slug": "river-rafting",
+      "description": "River Rafting is one of the most iconic landmarks in Kullu, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, River Rafting promises an unforgettable experience.",
+      "whyVisit": "A visit to River Rafting is essential for understanding Kullu.",
+      "bestTime": "Mar-May",
+      "duration": "Half day",
+      "mapsSearch": "River Rafting, Kullu",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, River Rafting in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "River Rafting in Kullu"
+      },
+      "position": 23
+    },
+    {
+      "id": "kullu-ganga-aarti-ghat",
+      "name": "Ganga Aarti Ghat",
+      "slug": "ganga-aarti-ghat",
+      "description": "Ganga Aarti Ghat is a must-see river in Kullu, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kullu.",
+      "whyVisit": "Capture stunning photographs at Ganga Aarti Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Ganga Aarti Ghat, Kullu",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ganga Aarti Ghat in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Ganga Aarti Ghat in Kullu"
+      },
+      "position": 24
+    },
+    {
+      "id": "kullu-almora",
+      "name": "Almora",
+      "slug": "almora",
+      "description": "A crown jewel of Kullu, Almora captivates every traveler with enchanting beauty. No trip to Kullu is complete without visiting Almora.",
+      "whyVisit": "A visit to Almora is essential for understanding Kullu.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Almora, Kullu",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Almora in Kullu, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Almora in Kullu"
+      },
+      "position": 25
+    }
+  ]
+}

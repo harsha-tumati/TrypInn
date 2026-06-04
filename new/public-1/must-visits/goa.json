@@ -1,0 +1,447 @@
+{
+  "id": "goa",
+  "name": "Goa",
+  "state": "Goa",
+  "slug": "goa",
+  "tagline": "Sun, sand, and Portuguese heritage on India's western coast",
+  "categories": [
+    "beach",
+    "heritage",
+    "nightlife"
+  ],
+  "introduction": "Planning a trip to Goa? This travel guide to Goa covers the must visit places in Goa, the best places to visit in Goa, top tourist attractions in Goa, and exciting things to do in Goa.",
+  "metaTitle": "Top Things to Do in Goa | Travel Guide to Goa - TrypInn",
+  "metaDescription": "Explore the best places to visit in Goa, top things to do in Goa, and must visit places in Goa. Your complete travel guide to Goa by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+    "alt": "Goa travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "goa-baga-beach",
+      "name": "Baga Beach",
+      "slug": "baga-beach",
+      "description": "Baga Beach is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Baga Beach promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Baga Beach.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Baga Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Baga Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Baga Beach in Goa"
+      },
+      "position": 1
+    },
+    {
+      "id": "goa-basilica-of-bom-jesus",
+      "name": "Basilica of Bom Jesus",
+      "slug": "basilica-of-bom-jesus",
+      "description": "Nestled in Goa, Basilica of Bom Jesus stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Basilica of Bom Jesus is among the best things to do in Goa.",
+      "whyVisit": "Basilica of Bom Jesus offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Basilica of Bom Jesus, Goa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Basilica of Bom Jesus in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Basilica of Bom Jesus in Goa"
+      },
+      "position": 2
+    },
+    {
+      "id": "goa-dudhsagar-falls",
+      "name": "Dudhsagar Falls",
+      "slug": "dudhsagar-falls",
+      "description": "Located in scenic Goa, Dudhsagar Falls offers an immersive experience into local culture. Exploring Dudhsagar Falls is one of the top things to do in Goa.",
+      "whyVisit": "Capture stunning photographs at Dudhsagar Falls.",
+      "bestTime": "Jul-Oct",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dudhsagar Falls, Goa",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Dudhsagar Falls in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Dudhsagar Falls in Goa"
+      },
+      "position": 3
+    },
+    {
+      "id": "goa-anjuna-beach",
+      "name": "Anjuna Beach",
+      "slug": "anjuna-beach",
+      "description": "Anjuna Beach is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Anjuna Beach promises an unforgettable experience.",
+      "whyVisit": "Anjuna Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-4 hours",
+      "mapsSearch": "Anjuna Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Anjuna Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Anjuna Beach in Goa"
+      },
+      "position": 4
+    },
+    {
+      "id": "goa-fort-aguada",
+      "name": "Fort Aguada",
+      "slug": "fort-aguada",
+      "description": "Located in scenic Goa, Fort Aguada offers an immersive experience into local culture. Exploring Fort Aguada is one of the top things to do in Goa.",
+      "whyVisit": "Fort Aguada offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Fort Aguada, Goa",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Fort Aguada in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Fort Aguada in Goa"
+      },
+      "position": 5
+    },
+    {
+      "id": "goa-palolem-beach",
+      "name": "Palolem Beach",
+      "slug": "palolem-beach",
+      "description": "A crown jewel of Goa, Palolem Beach captivates every traveler with enchanting beauty. No trip to Goa is complete without visiting Palolem Beach.",
+      "whyVisit": "Palolem Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Palolem Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Palolem Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Palolem Beach in Goa"
+      },
+      "position": 6
+    },
+    {
+      "id": "goa-chapora-fort",
+      "name": "Chapora Fort",
+      "slug": "chapora-fort",
+      "description": "Nestled in Goa, Chapora Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Chapora Fort is among the best things to do in Goa.",
+      "whyVisit": "Capture stunning photographs at Chapora Fort.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Chapora Fort, Goa",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Chapora Fort in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Chapora Fort in Goa"
+      },
+      "position": 7
+    },
+    {
+      "id": "goa-calangute-beach",
+      "name": "Calangute Beach",
+      "slug": "calangute-beach",
+      "description": "Nestled in Goa, Calangute Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Calangute Beach is among the best things to do in Goa.",
+      "whyVisit": "Calangute Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Calangute Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Calangute Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Calangute Beach in Goa"
+      },
+      "position": 8
+    },
+    {
+      "id": "goa-se-cathedral",
+      "name": "Se Cathedral",
+      "slug": "se-cathedral",
+      "description": "Se Cathedral is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Se Cathedral promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Se Cathedral.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Se Cathedral, Goa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Se Cathedral in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Se Cathedral in Goa"
+      },
+      "position": 9
+    },
+    {
+      "id": "goa-arambol-beach",
+      "name": "Arambol Beach",
+      "slug": "arambol-beach",
+      "description": "Arambol Beach is a must-see beach in Goa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Goa.",
+      "whyVisit": "Arambol Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Arambol Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Arambol Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Arambol Beach in Goa"
+      },
+      "position": 10
+    },
+    {
+      "id": "goa-spice-plantations",
+      "name": "Spice Plantations",
+      "slug": "spice-plantations",
+      "description": "A crown jewel of Goa, Spice Plantations captivates every traveler with enchanting beauty. No trip to Goa is complete without visiting Spice Plantations.",
+      "whyVisit": "Spice Plantations stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Spice Plantations, Goa",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Spice Plantations in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Spice Plantations in Goa"
+      },
+      "position": 11
+    },
+    {
+      "id": "goa-dona-paula",
+      "name": "Dona Paula",
+      "slug": "dona-paula",
+      "description": "Dona Paula is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Dona Paula promises an unforgettable experience.",
+      "whyVisit": "Dona Paula stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Dona Paula, Goa",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Dona Paula in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Dona Paula in Goa"
+      },
+      "position": 12
+    },
+    {
+      "id": "goa-butterfly-beach",
+      "name": "Butterfly Beach",
+      "slug": "butterfly-beach",
+      "description": "Located in scenic Goa, Butterfly Beach offers an immersive experience into local culture. Exploring Butterfly Beach is one of the top things to do in Goa.",
+      "whyVisit": "Butterfly Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-4 hours",
+      "mapsSearch": "Butterfly Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Butterfly Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Butterfly Beach in Goa"
+      },
+      "position": 13
+    },
+    {
+      "id": "goa-naval-aviation-museum",
+      "name": "Naval Aviation Museum",
+      "slug": "naval-aviation-museum",
+      "description": "Nestled in Goa, Naval Aviation Museum stands as a testament to architectural brilliance. This renowned museum attracts tourists who come to admire its stunning design. A visit to Naval Aviation Museum is among the best things to do in Goa.",
+      "whyVisit": "A visit to Naval Aviation Museum is essential for understanding Goa.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Naval Aviation Museum, Goa",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Naval Aviation Museum in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Naval Aviation Museum in Goa"
+      },
+      "position": 14
+    },
+    {
+      "id": "goa-anjuna-flea-market",
+      "name": "Anjuna Flea Market",
+      "slug": "anjuna-flea-market",
+      "description": "Anjuna Flea Market is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Anjuna Flea Market promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Anjuna Flea Market.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Anjuna Flea Market, Goa",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Anjuna Flea Market in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Anjuna Flea Market in Goa"
+      },
+      "position": 15
+    },
+    {
+      "id": "goa-reis-magos-fort",
+      "name": "Reis Magos Fort",
+      "slug": "reis-magos-fort",
+      "description": "Reis Magos Fort is a must-see fort in Goa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Goa.",
+      "whyVisit": "Reis Magos Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Reis Magos Fort, Goa",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Reis Magos Fort in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Reis Magos Fort in Goa"
+      },
+      "position": 16
+    },
+    {
+      "id": "goa-sinquerim-beach",
+      "name": "Sinquerim Beach",
+      "slug": "sinquerim-beach",
+      "description": "Nestled in Goa, Sinquerim Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Sinquerim Beach is among the best things to do in Goa.",
+      "whyVisit": "A visit to Sinquerim Beach is essential for understanding Goa.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Sinquerim Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Sinquerim Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Sinquerim Beach in Goa"
+      },
+      "position": 17
+    },
+    {
+      "id": "goa-shanta-durga-temple",
+      "name": "Shanta Durga Temple",
+      "slug": "shanta-durga-temple",
+      "description": "Located in scenic Goa, Shanta Durga Temple offers an immersive experience into local culture. Exploring Shanta Durga Temple is one of the top things to do in Goa.",
+      "whyVisit": "Shanta Durga Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Shanta Durga Temple, Goa",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Shanta Durga Temple in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Shanta Durga Temple in Goa"
+      },
+      "position": 18
+    },
+    {
+      "id": "goa-tito-s-street",
+      "name": "Tito's Street",
+      "slug": "tito-s-street",
+      "description": "A crown jewel of Goa, Tito's Street captivates every traveler with enchanting beauty. No trip to Goa is complete without visiting Tito's Street.",
+      "whyVisit": "A visit to Tito's Street is essential for understanding Goa.",
+      "bestTime": "Weekends",
+      "duration": "Half night",
+      "mapsSearch": "Tito's Street, Goa",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Tito's Street in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Tito's Street in Goa"
+      },
+      "position": 19
+    },
+    {
+      "id": "goa-colva-beach",
+      "name": "Colva Beach",
+      "slug": "colva-beach",
+      "description": "Colva Beach is one of the most iconic landmarks in Goa, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Colva Beach promises an unforgettable experience.",
+      "whyVisit": "Colva Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Colva Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Colva Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Colva Beach in Goa"
+      },
+      "position": 20
+    },
+    {
+      "id": "goa-church-of-st-cajetan",
+      "name": "Church of St. Cajetan",
+      "slug": "church-of-st-cajetan",
+      "description": "A crown jewel of Goa, Church of St. Cajetan captivates every traveler with enchanting beauty. No trip to Goa is complete without visiting Church of St. Cajetan.",
+      "whyVisit": "A visit to Church of St. Cajetan is essential for understanding Goa.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Church of St. Cajetan, Goa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Church of St. Cajetan in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Church of St. Cajetan in Goa"
+      },
+      "position": 21
+    },
+    {
+      "id": "goa-mollem-national-park",
+      "name": "Mollem National Park",
+      "slug": "mollem-national-park",
+      "description": "Located in scenic Goa, Mollem National Park offers an immersive experience into local culture. Exploring Mollem National Park is one of the top things to do in Goa.",
+      "whyVisit": "A visit to Mollem National Park is essential for understanding Goa.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Mollem National Park, Goa",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Mollem National Park in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Mollem National Park in Goa"
+      },
+      "position": 22
+    },
+    {
+      "id": "goa-vagator-beach",
+      "name": "Vagator Beach",
+      "slug": "vagator-beach",
+      "description": "A crown jewel of Goa, Vagator Beach captivates every traveler with enchanting beauty. No trip to Goa is complete without visiting Vagator Beach.",
+      "whyVisit": "Capture stunning photographs at Vagator Beach.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Vagator Beach, Goa",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Vagator Beach in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Vagator Beach in Goa"
+      },
+      "position": 23
+    },
+    {
+      "id": "goa-fontainhas",
+      "name": "Fontainhas",
+      "slug": "fontainhas",
+      "description": "Nestled in Goa, Fontainhas stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Fontainhas is among the best things to do in Goa.",
+      "whyVisit": "Fontainhas offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Fontainhas, Goa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Fontainhas in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Fontainhas in Goa"
+      },
+      "position": 24
+    },
+    {
+      "id": "goa-mangeshi-temple",
+      "name": "Mangeshi Temple",
+      "slug": "mangeshi-temple",
+      "description": "Located in scenic Goa, Mangeshi Temple offers an immersive experience into local culture. Exploring Mangeshi Temple is one of the top things to do in Goa.",
+      "whyVisit": "Capture stunning photographs at Mangeshi Temple.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mangeshi Temple, Goa",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mangeshi Temple in Goa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Mangeshi Temple in Goa"
+      },
+      "position": 25
+    }
+  ]
+}

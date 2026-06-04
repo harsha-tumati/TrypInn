@@ -1,0 +1,270 @@
+{
+  "slug": "taj-mahal",
+  "name": "Taj Mahal",
+  "state": "Uttar Pradesh",
+  "tagline": "Agra's eternal monument to love in white marble",
+  "categories": ["heritage", "historical", "spiritual"],
+  "highlights": ["sunrise glow on the world's greatest love monument", "mughal architecture spanning three centuries"],
+  "attractions": [
+    {
+      "name": "Taj Mahal",
+      "category": "heritage",
+      "description": "Built between 1632 and 1653 by Mughal Emperor Shah Jahan as a mausoleum for his beloved wife Mumtaz Mahal, the Taj Mahal is considered the finest example of Mughal architecture in the world. The white Makrana marble complex changes colour from pale pink at dawn to brilliant white at noon and golden at dusk. The symmetrical garden, reflecting pool, minarets, and central dome represent the pinnacle of Indo-Islamic architectural achievement. It is a UNESCO World Heritage Site.",
+      "whyVisit": "The Taj Mahal is simply one of the greatest buildings ever created — a mandatory pilgrimage for anyone visiting India.",
+      "bestTime": "Sunrise, October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Taj Mahal Agra Uttar Pradesh",
+      "imageQuery": "Taj Mahal sunrise Agra white marble"
+    },
+    {
+      "name": "Agra Fort",
+      "category": "fort",
+      "description": "A UNESCO World Heritage Site, Agra Fort is a magnificent red sandstone and marble fortress built primarily by Emperor Akbar from 1565. Within its 2.5 km walls lie palaces, mosques, audience halls, and the white marble apartments where Shah Jahan spent his last years under house arrest — with a distant view of the Taj Mahal he could see but never visit. The Diwan-i-Khas, Jahangiri Mahal, and Khas Mahal are architectural masterpieces within the complex.",
+      "whyVisit": "The fort gives context to the entire Mughal empire and offers a distant view of the Taj Mahal from Shah Jahan's prison apartment.",
+      "bestTime": "Morning, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Agra Fort Uttar Pradesh",
+      "imageQuery": "Agra Fort red sandstone Mughal"
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "category": "heritage",
+      "description": "Emperor Akbar's abandoned capital, built between 1571 and 1585 and deserted within 15 years due to water scarcity, is one of the best-preserved Mughal cities in the world. The Buland Darwaza, a soaring 54-metre victory gate, is among the largest gateways ever built. Within the complex: the Panch Mahal, Jodha Bai's Palace, Birbal's House, and the Tomb of Salim Chishti — a revered Sufi shrine still visited by pilgrims seeking blessings for children.",
+      "whyVisit": "A perfectly preserved ghost city that feels as though the Mughals left only yesterday.",
+      "bestTime": "Morning, October to February",
+      "duration": "3-4 hours",
+      "mapsSearch": "Fatehpur Sikri Agra Uttar Pradesh",
+      "imageQuery": "Fatehpur Sikri Buland Darwaza Mughal"
+    },
+    {
+      "name": "Mehtab Bagh",
+      "category": "garden",
+      "description": "A Mughal garden complex directly across the Yamuna River from the Taj Mahal, Mehtab Bagh (Moonlit Garden) was originally built by Babur and later restored by Shah Jahan as part of the Taj Mahal's design axis. The garden offers the finest unobstructed view of the Taj Mahal's rear facade from across the river. At sunrise, with morning mist on the Yamuna and the Taj glowing in the light, the perspective from here is arguably more beautiful than from inside the monument itself.",
+      "whyVisit": "The view of the Taj Mahal from across the Yamuna at sunrise is less crowded and arguably more beautiful than from inside.",
+      "bestTime": "Sunrise, October to March",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Mehtab Bagh Agra",
+      "imageQuery": "Mehtab Bagh Taj Mahal view Yamuna"
+    },
+    {
+      "name": "Itimad-ud-Daulah (Baby Taj)",
+      "category": "heritage",
+      "description": "Often called the 'Baby Taj,' this exquisite mausoleum was built between 1622 and 1628 by Empress Nur Jahan for her father Mirza Ghiyas Beg. It is the first Mughal structure built entirely in white marble and the first to feature the pietra dura inlay technique — intricate semi-precious stone mosaic work that would later be perfected at the Taj Mahal. Smaller and more intimate than the Taj, its delicate lattice screens and gem-inlaid panels repay close inspection.",
+      "whyVisit": "The pietra dura inlay work here is extraordinarily fine, and the monument is never crowded.",
+      "bestTime": "Morning light, October to March",
+      "duration": "1.5 hours",
+      "mapsSearch": "Itimad ud Daulah Agra Baby Taj",
+      "imageQuery": "Itimad ud Daulah Baby Taj Agra white marble"
+    },
+    {
+      "name": "Taj Mahal at Moonlight (Full Moon Night Viewing)",
+      "category": "heritage",
+      "description": "The Archaeological Survey of India permits a limited number of visitors to view the Taj Mahal on full moon nights and two nights before and after. Under moonlight, the white marble acquires an ethereal, bluish luminescence entirely unlike its daytime appearance. Viewings are restricted to 400 people in batches of 50, each allowed 30 minutes inside. Tickets must be booked well in advance and are among the most sought-after cultural experiences in India.",
+      "whyVisit": "The Taj Mahal glowing under a full moon is one of the most transcendent sights possible in India.",
+      "bestTime": "Full moon nights, October to March",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Taj Mahal night viewing Agra",
+      "imageQuery": "Taj Mahal full moon night glow"
+    },
+    {
+      "name": "Akbar's Tomb, Sikandra",
+      "category": "heritage",
+      "description": "Emperor Akbar designed his own mausoleum at Sikandra, 10 km from Agra, in a synthesis of Hindu, Islamic, Buddhist, and Jain architectural traditions — reflecting his syncretic Din-i-Ilahi philosophy. The massive five-storey structure of red sandstone and white marble is set within formal Mughal gardens. Deer roam freely through the gardens, and the main gate's four white marble minarets predate those of the Taj Mahal by three decades.",
+      "whyVisit": "Akbar's eclectic tomb and its deer-filled gardens are a serene counterpoint to the busy Taj Mahal.",
+      "bestTime": "Morning, October to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Akbar Tomb Sikandra Agra",
+      "imageQuery": "Akbar Tomb Sikandra Agra Mughal garden"
+    },
+    {
+      "name": "Taj Museum",
+      "category": "museum",
+      "description": "Located within the Taj Mahal complex near the western gate, the Taj Museum houses an impressive collection of original Mughal artefacts directly related to the monument's construction and history. Exhibits include Mughal paintings, astronomical instruments, jade pieces, original architectural drawings of the Taj, gold and silver coins of the period, and detailed documentation of the 20,000 artisans involved in building the mausoleum. Entry is free with a Taj Mahal ticket.",
+      "whyVisit": "The original Mughal drawings of the Taj and its construction-era artefacts add enormous depth to the monument visit.",
+      "bestTime": "During your Taj Mahal visit",
+      "duration": "45 minutes",
+      "mapsSearch": "Taj Museum Agra Taj Mahal complex",
+      "imageQuery": "Taj Museum Agra Mughal artefacts"
+    },
+    {
+      "name": "Jama Masjid Agra",
+      "category": "religious",
+      "description": "Built by Shah Jahan in 1648 and dedicated to his daughter Jahanara Begum, the Jama Masjid of Agra is one of the largest mosques in India. Its three bulbous marble domes, each striped in white and black, crown a broad red sandstone prayer hall accommodating thousands of worshippers. Situated in the heart of the old city near Agra Fort, the mosque is an active place of worship that remains busiest on Fridays. The rooftop view over the old city bazaar is striking.",
+      "whyVisit": "This magnificent working mosque is one of Shah Jahan's great but frequently overlooked commissions.",
+      "bestTime": "Friday mornings for atmosphere; avoid prayer times for casual visits",
+      "duration": "45 minutes",
+      "mapsSearch": "Jama Masjid Agra",
+      "imageQuery": "Jama Masjid Agra Shah Jahan mosque"
+    },
+    {
+      "name": "Kinari Bazaar (Agra's Old Market)",
+      "category": "market",
+      "description": "The labyrinthine lanes of Kinari Bazaar in old Agra have traded in embroidered fabrics, leather goods, and Mughal-style handicrafts for centuries. Today the market is famous for marble inlay work (pietra dura), leather shoes, and Agra's iconic petha sweet — a translucent sugary confection made from white pumpkin in dozens of flavours. The century-old Panchhi Petha shop near Agra Fort is considered the most authentic source for this local specialty.",
+      "whyVisit": "The only place to buy authentic handcrafted marble inlay souvenirs and sample freshly made petha sweets.",
+      "bestTime": "Morning, any season",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kinari Bazaar Agra old market",
+      "imageQuery": "Kinari Bazaar Agra market petha"
+    },
+    {
+      "name": "Tomb of Mariam-uz-Zamani (Mariam's Tomb)",
+      "category": "heritage",
+      "description": "Located in Sikandra near Akbar's Tomb, this late Mughal mausoleum is believed to be the tomb of Mariam-uz-Zamani, Emperor Akbar's Hindu Rajput wife and mother of Jahangir. The sandstone structure features fine carvings in a Hindu-Mughal fusion style. Far less visited than other Agra monuments, the overgrown garden setting adds an evocative quality. The site raises fascinating questions about religious synthesis in the Mughal court.",
+      "whyVisit": "A genuinely off-the-beaten-path Mughal tomb with a compelling story and almost no other tourists.",
+      "bestTime": "Morning, October to February",
+      "duration": "45 minutes",
+      "mapsSearch": "Mariam Tomb Sikandra Agra",
+      "imageQuery": "Mariam Tomb Sikandra Agra Mughal"
+    },
+    {
+      "name": "Chini Ka Rauza",
+      "category": "heritage",
+      "description": "A largely forgotten but striking Mughal mausoleum on the Yamuna riverbank north of Itimad-ud-Daulah, Chini Ka Rauza was built for Allama Afzal Khan Mullah, Shah Jahan's Persian prime minister, in the 1630s. Its name means 'China Tomb,' referring to the glazed Chinese and Persian tile work that once covered the entire exterior. Though the tiles are now largely eroded, significant patches of the original turquoise, blue, and yellow polychrome decoration survive, making it unique in Agra.",
+      "whyVisit": "The surviving Persian glazed tile work is unlike anything else in Agra and attracts almost no visitors.",
+      "bestTime": "Morning, October to March",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Chini Ka Rauza Agra Yamuna",
+      "imageQuery": "Chini Ka Rauza Agra tile tomb"
+    },
+    {
+      "name": "Keetham Lake (Sur Sarovar Bird Sanctuary)",
+      "category": "wildlife",
+      "description": "An artificial reservoir 20 km from Agra centre, Keetham Lake forms the core of the Sur Sarovar Bird Sanctuary, a Ramsar-listed wetland. Between November and March, over 165 species of migratory birds gather here, including Siberian cranes, bar-headed geese, painted storks, and Eurasian spoonbills. A crocodile rehabilitation centre at the lake has successfully reintroduced gharials into the Chambal River. Boat rides provide close views of birds at the water's edge.",
+      "whyVisit": "Siberian cranes and thousands of migratory birds within easy reach of Agra — completely unexpected.",
+      "bestTime": "Early morning, November to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sur Sarovar Bird Sanctuary Keetham Lake Agra",
+      "imageQuery": "Sur Sarovar bird sanctuary Agra migratory birds"
+    },
+    {
+      "name": "Swami Bagh Samadhi (Radhasoami Temple)",
+      "category": "religious",
+      "description": "Under construction since 1908 and still unfinished more than a century later, Swami Bagh is the mausoleum of Shiv Dayal Singh, founder of the Radhasoami spiritual movement. Its white marble carvings are executed entirely by hand using traditional techniques — no machinery is used — and the level of detail in the floral and geometric inlay rivals the Taj Mahal. The ongoing craftsmanship makes this an extraordinary living demonstration of Mughal stone-carving traditions.",
+      "whyVisit": "A living Mughal-craft miracle where you can watch artisans carving marble by hand exactly as they did 400 years ago.",
+      "bestTime": "Morning on weekdays when artisans are at work",
+      "duration": "1 hour",
+      "mapsSearch": "Swami Bagh Radhasoami Temple Agra",
+      "imageQuery": "Swami Bagh marble temple Agra carving"
+    },
+    {
+      "name": "Bateshwar Temple Complex",
+      "category": "temple",
+      "description": "Seventy kilometres from Agra on the Chambal riverbank, Bateshwar is a cluster of 101 Shiva temples dating from the Gurjar-Pratihara period (8th–10th century). Partially restored after centuries of decay and vandalism, the temples rise in terraced rows above the river. The Bateshwar Fair, held annually in October–November, is one of India's largest cattle fairs and a spectacular cultural event with folk performers, livestock trade, and lakhs of pilgrims.",
+      "whyVisit": "The ancient Shiva temples and the spectacular annual fair make this an extraordinary off-route experience.",
+      "bestTime": "October to November for the fair; any winter morning otherwise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bateshwar Temple Agra Chambal river",
+      "imageQuery": "Bateshwar Shiva temples Chambal river"
+    },
+    {
+      "name": "Agra Bear Rescue Facility",
+      "category": "wildlife",
+      "description": "Operated by Wildlife SOS at Sur Sarovar, this rehabilitation centre has rescued over 600 sloth bears from the illegal 'dancing bear' trade since 1999. Visitors can observe rescued bears in naturalistic enclosures, watch feeding sessions, and learn about India's most successful wildlife rescue programme. The centre also runs wildlife veterinary operations. Advance booking is required and proceeds fund bear care.",
+      "whyVisit": "A world-leading wildlife rescue centre where you can watch rescued dancing bears in their new home.",
+      "bestTime": "Morning sessions, year-round",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Wildlife SOS Bear Rescue Agra Sur Sarovar",
+      "imageQuery": "Wildlife SOS bear rescue Agra sloth bear"
+    },
+    {
+      "name": "Ram Bagh (Aram Bagh)",
+      "category": "garden",
+      "description": "Built by Mughal Emperor Babur in 1528, Ram Bagh is considered the oldest surviving Mughal garden in India — predating the Taj Mahal by over a century. Babur himself was buried here temporarily before his remains were moved to Kabul. The formal charbagh (four-quartered garden) layout, stepped terraces, and pavilions above the Yamuna River established the template for all subsequent Mughal gardens including the Taj Mahal's own grounds.",
+      "whyVisit": "Walking in India's oldest Mughal garden, which set the blueprint for the Taj Mahal's own design, is deeply evocative.",
+      "bestTime": "Morning, October to February",
+      "duration": "1 hour",
+      "mapsSearch": "Ram Bagh Aram Bagh Agra",
+      "imageQuery": "Ram Bagh Aram Bagh Agra Mughal garden"
+    },
+    {
+      "name": "Taj Nature Walk",
+      "category": "nature",
+      "description": "A forest reserve of about 50 hectares adjacent to the Taj Mahal, the Taj Nature Walk provides a buffer zone that protects the monument from industrial pollution. Trails wind through wild vegetation attracting butterflies, peacocks, nilgai antelope, and jackals. The walk ends at a viewing platform overlooking the Yamuna River with the Taj Mahal's rear facade visible across the water. Early mornings frequently offer misty atmospheric conditions rarely seen from the main entrance.",
+      "whyVisit": "A peaceful nature trail ending in a quiet Yamuna-bank view of the Taj Mahal completely free of crowds.",
+      "bestTime": "Early morning, October to February",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Taj Nature Walk Agra",
+      "imageQuery": "Taj Nature Walk Agra forest Yamuna"
+    },
+    {
+      "name": "Mankameshwar Temple",
+      "category": "temple",
+      "description": "One of Agra's most sacred and ancient Shiva temples, Mankameshwar sits on the eastern bank of the Yamuna River near the old city. The temple's Shiva lingam is believed to be thousands of years old, and the site is associated with the period of Lord Krishna's rule in the region. Every Monday the temple is thronged with devotees. The location on the riverbank ghats, with the sound of the Yamuna and the scent of incense, gives it an authentic spiritual atmosphere absent from tourist sites.",
+      "whyVisit": "The most genuinely atmospheric religious site in Agra, completely untouched by the tourist circuit.",
+      "bestTime": "Monday mornings for devotional activity",
+      "duration": "45 minutes",
+      "mapsSearch": "Mankameshwar Temple Agra Yamuna",
+      "imageQuery": "Mankameshwar Temple Agra Shiva Yamuna ghat"
+    },
+    {
+      "name": "Chambal Safari (National Chambal Sanctuary)",
+      "category": "wildlife",
+      "description": "The National Chambal Sanctuary, accessible from Agra within about 70 km, protects one of India's cleanest river ecosystems. Boat safaris on the Chambal River offer sightings of the critically endangered gharial crocodilian (with 95% of the global population here), freshwater dolphins, marsh mugger crocodiles, and extraordinary birdlife including skimmers and sandpipers on sandbars. The sandy cliffs and clear water make it one of India's most rewarding yet overlooked wildlife experiences.",
+      "whyVisit": "Gharials, Gangetic dolphins, and pristine river wilderness just 70 km from the Taj Mahal — a startling contrast.",
+      "bestTime": "Early morning, November to March",
+      "duration": "Half day",
+      "mapsSearch": "National Chambal Sanctuary gharial safari Agra",
+      "imageQuery": "Chambal River gharial crocodile safari India"
+    },
+    {
+      "name": "Agra Fort Sunset View (Musamman Burj)",
+      "category": "viewpoint",
+      "description": "The Musamman Burj, an octagonal white marble tower within Agra Fort, was Shah Jahan's private apartment during his eight-year imprisonment by his son Aurangzeb. The jali-screened balcony faces directly toward the Taj Mahal across the river bend — the last view the heartbroken emperor had of his wife's mausoleum. At sunset, both the Taj Mahal and the Yamuna River are simultaneously visible in shades of orange and gold, creating a deeply poignant tableau.",
+      "whyVisit": "The view of the Taj Mahal from Shah Jahan's prison balcony at sunset carries an emotional weight no photograph can capture.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "30 minutes within the fort visit",
+      "mapsSearch": "Musamman Burj Agra Fort Shah Jahan",
+      "imageQuery": "Musamman Burj Agra Fort Taj view sunset"
+    },
+    {
+      "name": "St. John's College Church, Agra",
+      "category": "heritage",
+      "description": "Built by American Presbyterian missionaries in 1850, St. John's College Church is among the finest Gothic Revival structures in northern India. The soaring sandstone nave, stained glass windows, and collegiate quadrangle create a piece of Oxbridge transplanted to the banks of the Yamuna. The adjacent college, founded in 1914, is one of Agra's premier institutions. The church remains an active place of worship with Sunday services that welcome visitors.",
+      "whyVisit": "A magnificent piece of colonial Gothic architecture that most Agra visitors walk past without noticing.",
+      "bestTime": "Sunday mornings",
+      "duration": "30 minutes",
+      "mapsSearch": "St John's College Church Agra",
+      "imageQuery": "St John's College Church Agra Gothic"
+    },
+    {
+      "name": "Taj Mahal Eastern Gate (Sunrise Entry)",
+      "category": "viewpoint",
+      "description": "While most tour groups enter through the western and southern gates, the eastern gate of the Taj Mahal typically has significantly shorter queues at opening time. The approach through the eastern gate's red sandstone forecourt, leading to the first sight of the white marble dome rising above the arch, delivers the classic reveal. Arriving for the first admission slot at sunrise in October–November ensures the monument nearly to oneself for the first 30 minutes.",
+      "whyVisit": "The first reveal of the Taj Mahal through the gateway arch at sunrise is one of the great visual experiences on earth.",
+      "bestTime": "Opening time at sunrise, October to November",
+      "duration": "Entry point only — factor into full visit",
+      "mapsSearch": "Taj Mahal East Gate Agra",
+      "imageQuery": "Taj Mahal gate reveal arch sunrise"
+    },
+    {
+      "name": "Anguri Bagh (Grape Garden), Agra Fort",
+      "category": "garden",
+      "description": "Tucked within Agra Fort between the Khas Mahal and Diwan-i-Khas, the Anguri Bagh is a perfectly proportioned Mughal charbagh with geometrically laid sunken flowerbeds. Built during Shah Jahan's reign, the garden once grew grapes, jasmine, and fragrant flowers for the royal apartments. The white marble carving surrounding the garden's borders and the underground chambers (hammam) beneath the garden add archaeological interest to its visual appeal.",
+      "whyVisit": "One of the best-preserved Mughal geometric gardens in India, hiding in plain sight within the fort.",
+      "bestTime": "Morning, during Agra Fort visit",
+      "duration": "20 minutes within the fort visit",
+      "mapsSearch": "Anguri Bagh Agra Fort",
+      "imageQuery": "Anguri Bagh Agra Fort Mughal garden"
+    },
+    {
+      "name": "Taj Mahal Calligraphy (Main Gate and Iwans)",
+      "category": "heritage",
+      "description": "The entire surface of the Taj Mahal's main entrance gate and the four great iwans flanking the tomb is covered in Quranic calligraphy in black marble inlay. The calligrapher Amanat Khan, who signed his work on the gateway, used an ingenious optical trick: the lettering increases in size as it rises higher, so it appears uniform in size when viewed from below. Up close, the quality of the calligraphic craftsmanship is breathtaking and rewards a long, careful examination.",
+      "whyVisit": "The optical illusion in the calligraphy, only visible when you look closely, is one of the Taj Mahal's best-kept secrets.",
+      "bestTime": "Morning light for best legibility",
+      "duration": "30 minutes within the Taj visit",
+      "mapsSearch": "Taj Mahal main gate calligraphy Agra",
+      "imageQuery": "Taj Mahal calligraphy gateway black marble inlay"
+    },
+    {
+      "name": "Agra's Petha Factories, Noori Gate",
+      "category": "market",
+      "description": "In the lanes around Noori Gate in old Agra, a cluster of traditional petha factories have produced this unique local sweet for generations. Visitors can watch the entire process: white pumpkin being boiled, crystallised in sugar syrup, and flavoured with kewra, saffron, or coconut. The oldest establishments have been at the same location for over 100 years. Buying petha fresh from the factory — still slightly warm — is a completely different experience from packaged versions.",
+      "whyVisit": "Watching and tasting petha made by hand in a 100-year-old factory is the most authentic food experience in Agra.",
+      "bestTime": "Morning when production is underway",
+      "duration": "45 minutes",
+      "mapsSearch": "Petha factory Noori Gate Agra old city",
+      "imageQuery": "Petha sweet factory Agra production"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "mumbai",
+  "name": "Mumbai",
+  "state": "Maharashtra",
+  "slug": "mumbai",
+  "tagline": "Maximum City of dreams and the sea",
+  "categories": [
+    "monument",
+    "beach",
+    "market"
+  ],
+  "introduction": "Welcome to Mumbai, where history meets beauty. This travel guide to Mumbai highlights the must visit places in Mumbai, best places to visit in Mumbai, tourist attractions in Mumbai, and things to do in Mumbai.",
+  "metaTitle": "Best Places to Visit in Mumbai | Tourist Attractions in Mumbai - TrypInn",
+  "metaDescription": "Discover must visit places in Mumbai, best places to visit in Mumbai, and top tourist attractions in Mumbai. Plan your perfect trip with TrypInn travel guide to Mumbai.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+    "alt": "Mumbai travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "mumbai-qutub-minar",
+      "name": "Qutub Minar",
+      "slug": "qutub-minar",
+      "description": "Qutub Minar is a must-see monument in Mumbai, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mumbai.",
+      "whyVisit": "Capture stunning photographs at Qutub Minar.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Qutub Minar, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Qutub Minar in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Qutub Minar in Mumbai"
+      },
+      "position": 1
+    },
+    {
+      "id": "mumbai-muzhappilangad-beach",
+      "name": "Muzhappilangad Beach",
+      "slug": "muzhappilangad-beach",
+      "description": "A crown jewel of Mumbai, Muzhappilangad Beach captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Muzhappilangad Beach.",
+      "whyVisit": "Muzhappilangad Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Muzhappilangad Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Muzhappilangad Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Muzhappilangad Beach in Mumbai"
+      },
+      "position": 2
+    },
+    {
+      "id": "mumbai-kr-market",
+      "name": "KR Market",
+      "slug": "kr-market",
+      "description": "A crown jewel of Mumbai, KR Market captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting KR Market.",
+      "whyVisit": "KR Market offers a perfect blend of history and scenery.",
+      "bestTime": "Weekends",
+      "duration": "Half day",
+      "mapsSearch": "KR Market, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, KR Market in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "KR Market in Mumbai"
+      },
+      "position": 3
+    },
+    {
+      "id": "mumbai-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is a must-see monument in Mumbai, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mumbai.",
+      "whyVisit": "Capture stunning photographs at Brihadeeswarar Temple.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Brihadeeswarar Temple, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Mumbai"
+      },
+      "position": 4
+    },
+    {
+      "id": "mumbai-kudle-beach",
+      "name": "Kudle Beach",
+      "slug": "kudle-beach",
+      "description": "Nestled in Mumbai, Kudle Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Kudle Beach is among the best things to do in Mumbai.",
+      "whyVisit": "Kudle Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-4 hours",
+      "mapsSearch": "Kudle Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Kudle Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Kudle Beach in Mumbai"
+      },
+      "position": 5
+    },
+    {
+      "id": "mumbai-mg-road",
+      "name": "MG Road",
+      "slug": "mg-road",
+      "description": "MG Road is one of the most iconic landmarks in Mumbai, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, MG Road promises an unforgettable experience.",
+      "whyVisit": "MG Road offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "MG Road, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, MG Road in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "MG Road in Mumbai"
+      },
+      "position": 6
+    },
+    {
+      "id": "mumbai-mysore-palace",
+      "name": "Mysore Palace",
+      "slug": "mysore-palace",
+      "description": "Nestled in Mumbai, Mysore Palace stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Mysore Palace is among the best things to do in Mumbai.",
+      "whyVisit": "Experience the unmatched beauty of Mysore Palace.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Mysore Palace, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Mysore Palace in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Mysore Palace in Mumbai"
+      },
+      "position": 7
+    },
+    {
+      "id": "mumbai-varkala-beach",
+      "name": "Varkala Beach",
+      "slug": "varkala-beach",
+      "description": "A crown jewel of Mumbai, Varkala Beach captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Varkala Beach.",
+      "whyVisit": "Varkala Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Varkala Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Varkala Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Varkala Beach in Mumbai"
+      },
+      "position": 8
+    },
+    {
+      "id": "mumbai-garuda-mall",
+      "name": "Garuda Mall",
+      "slug": "garuda-mall",
+      "description": "A crown jewel of Mumbai, Garuda Mall captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Garuda Mall.",
+      "whyVisit": "Garuda Mall stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Garuda Mall, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Garuda Mall in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Garuda Mall in Mumbai"
+      },
+      "position": 9
+    },
+    {
+      "id": "mumbai-sun-temple-konark",
+      "name": "Sun Temple Konark",
+      "slug": "sun-temple-konark",
+      "description": "A crown jewel of Mumbai, Sun Temple Konark captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Sun Temple Konark.",
+      "whyVisit": "A visit to Sun Temple Konark is essential for understanding Mumbai.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sun Temple Konark, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple Konark in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Sun Temple Konark in Mumbai"
+      },
+      "position": 10
+    },
+    {
+      "id": "mumbai-ramakrishna-beach",
+      "name": "Ramakrishna Beach",
+      "slug": "ramakrishna-beach",
+      "description": "A crown jewel of Mumbai, Ramakrishna Beach captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Ramakrishna Beach.",
+      "whyVisit": "Ramakrishna Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Ramakrishna Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Ramakrishna Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Ramakrishna Beach in Mumbai"
+      },
+      "position": 11
+    },
+    {
+      "id": "mumbai-lulu-mall",
+      "name": "Lulu Mall",
+      "slug": "lulu-mall",
+      "description": "Nestled in Mumbai, Lulu Mall stands as a testament to architectural brilliance. This renowned market attracts tourists who come to admire its stunning design. A visit to Lulu Mall is among the best things to do in Mumbai.",
+      "whyVisit": "Lulu Mall stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Lulu Mall, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Lulu Mall in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Lulu Mall in Mumbai"
+      },
+      "position": 12
+    },
+    {
+      "id": "mumbai-buland-darwaza",
+      "name": "Buland Darwaza",
+      "slug": "buland-darwaza",
+      "description": "Located in scenic Mumbai, Buland Darwaza offers an immersive experience into local culture. Exploring Buland Darwaza is one of the top things to do in Mumbai.",
+      "whyVisit": "Buland Darwaza stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Buland Darwaza, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Buland Darwaza in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Buland Darwaza in Mumbai"
+      },
+      "position": 13
+    },
+    {
+      "id": "mumbai-mahabalipuram-beach",
+      "name": "Mahabalipuram Beach",
+      "slug": "mahabalipuram-beach",
+      "description": "Mahabalipuram Beach is one of the most iconic landmarks in Mumbai, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mahabalipuram Beach promises an unforgettable experience.",
+      "whyVisit": "Mahabalipuram Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Mahabalipuram Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Mahabalipuram Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Mahabalipuram Beach in Mumbai"
+      },
+      "position": 14
+    },
+    {
+      "id": "mumbai-forum-mall",
+      "name": "Forum Mall",
+      "slug": "forum-mall",
+      "description": "Forum Mall is one of the most iconic landmarks in Mumbai, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Forum Mall promises an unforgettable experience.",
+      "whyVisit": "Forum Mall stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Forum Mall, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Forum Mall in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Forum Mall in Mumbai"
+      },
+      "position": 15
+    },
+    {
+      "id": "mumbai-taj-mahal",
+      "name": "Taj Mahal",
+      "slug": "taj-mahal",
+      "description": "Nestled in Mumbai, Taj Mahal stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Taj Mahal is among the best things to do in Mumbai.",
+      "whyVisit": "Taj Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Taj Mahal, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Taj Mahal in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Taj Mahal in Mumbai"
+      },
+      "position": 16
+    },
+    {
+      "id": "mumbai-gopalpur-beach",
+      "name": "Gopalpur Beach",
+      "slug": "gopalpur-beach",
+      "description": "Located in scenic Mumbai, Gopalpur Beach offers an immersive experience into local culture. Exploring Gopalpur Beach is one of the top things to do in Mumbai.",
+      "whyVisit": "Experience the unmatched beauty of Gopalpur Beach.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Gopalpur Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Gopalpur Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Gopalpur Beach in Mumbai"
+      },
+      "position": 17
+    },
+    {
+      "id": "mumbai-orion-mall",
+      "name": "Orion Mall",
+      "slug": "orion-mall",
+      "description": "A crown jewel of Mumbai, Orion Mall captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Orion Mall.",
+      "whyVisit": "Experience the unmatched beauty of Orion Mall.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Orion Mall, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Orion Mall in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Orion Mall in Mumbai"
+      },
+      "position": 18
+    },
+    {
+      "id": "mumbai-jahangir-mahal",
+      "name": "Jahangir Mahal",
+      "slug": "jahangir-mahal",
+      "description": "Jahangir Mahal is a must-see monument in Mumbai, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mumbai.",
+      "whyVisit": "Jahangir Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Jahangir Mahal, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jahangir Mahal in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Jahangir Mahal in Mumbai"
+      },
+      "position": 19
+    },
+    {
+      "id": "mumbai-tarkarli-beach",
+      "name": "Tarkarli Beach",
+      "slug": "tarkarli-beach",
+      "description": "A crown jewel of Mumbai, Tarkarli Beach captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Tarkarli Beach.",
+      "whyVisit": "Tarkarli Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Tarkarli Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Tarkarli Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Tarkarli Beach in Mumbai"
+      },
+      "position": 20
+    },
+    {
+      "id": "mumbai-brookefields-mall",
+      "name": "Brookefields Mall",
+      "slug": "brookefields-mall",
+      "description": "A crown jewel of Mumbai, Brookefields Mall captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Brookefields Mall.",
+      "whyVisit": "A visit to Brookefields Mall is essential for understanding Mumbai.",
+      "bestTime": "Oct-Mar",
+      "duration": "Evening",
+      "mapsSearch": "Brookefields Mall, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Brookefields Mall in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Brookefields Mall in Mumbai"
+      },
+      "position": 21
+    },
+    {
+      "id": "mumbai-gateway-of-india",
+      "name": "Gateway of India",
+      "slug": "gateway-of-india",
+      "description": "Nestled in Mumbai, Gateway of India stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Gateway of India is among the best things to do in Mumbai.",
+      "whyVisit": "Experience the unmatched beauty of Gateway of India.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gateway of India, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Gateway of India in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Gateway of India in Mumbai"
+      },
+      "position": 22
+    },
+    {
+      "id": "mumbai-talsari-beach",
+      "name": "Talsari Beach",
+      "slug": "talsari-beach",
+      "description": "Talsari Beach is one of the most iconic landmarks in Mumbai, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Talsari Beach promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Talsari Beach.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-4 hours",
+      "mapsSearch": "Talsari Beach, Mumbai",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Talsari Beach in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Talsari Beach in Mumbai"
+      },
+      "position": 23
+    },
+    {
+      "id": "mumbai-devaraja-market",
+      "name": "Devaraja Market",
+      "slug": "devaraja-market",
+      "description": "Devaraja Market is a must-see market in Mumbai, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mumbai.",
+      "whyVisit": "Devaraja Market stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "Evening",
+      "mapsSearch": "Devaraja Market, Mumbai",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Devaraja Market in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Devaraja Market in Mumbai"
+      },
+      "position": 24
+    },
+    {
+      "id": "mumbai-jantar-mantar",
+      "name": "Jantar Mantar",
+      "slug": "jantar-mantar",
+      "description": "A crown jewel of Mumbai, Jantar Mantar captivates every traveler with enchanting beauty. No trip to Mumbai is complete without visiting Jantar Mantar.",
+      "whyVisit": "Experience the unmatched beauty of Jantar Mantar.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Jantar Mantar, Mumbai",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jantar Mantar in Mumbai, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Jantar Mantar in Mumbai"
+      },
+      "position": 25
+    }
+  ]
+}

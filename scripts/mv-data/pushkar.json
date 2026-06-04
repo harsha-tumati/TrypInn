@@ -1,0 +1,260 @@
+{
+  "slug": "pushkar",
+  "name": "Pushkar",
+  "state": "Rajasthan",
+  "tagline": "Holy lake town where camels, pilgrims, and sunsets collide",
+  "categories": ["pilgrimage", "spiritual", "desert"],
+  "highlights": ["one of india's holiest lakes with 52 sacred bathing ghats", "world-famous camel fair drawing traders from across the thar desert"],
+  "attractions": [
+    {
+      "name": "Pushkar Lake (Pushkar Sarovar)",
+      "category": "lake",
+      "description": "One of the five most sacred lakes in Hinduism, Pushkar Sarovar is encircled by 52 ghats where pilgrims descend stone steps into the holy water. Mythology holds it was created by a lotus flower dropped by Brahma. Bathing on Kartik Purnima is believed to wash away all sins. The ghat circuit at dawn is extraordinarily atmospheric — conch shells, marigold garlands, chanting priests, and mist on the water.",
+      "whyVisit": "The most sacred lake in Rajasthan and one of the holiest bodies of water in all of Hindu India.",
+      "bestTime": "Dawn, any day; Kartik Purnima full moon for peak pilgrimage",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pushkar Lake Rajasthan",
+      "imageQuery": "Pushkar Lake ghats sunrise Rajasthan"
+    },
+    {
+      "name": "Brahma Temple",
+      "category": "temple",
+      "description": "One of the very few temples in the world dedicated to Brahma, the Hindu creator god, this 14th-century structure built in red stone and marble stands at the heart of Pushkar town. The main shrine houses a four-faced Brahma image beside his consort Savitri; a silver turtle on the floor of the sanctum and the marble goose (hans) vehicled deity are sacred features. The current structure was built by a Maratha noble in 1809.",
+      "whyVisit": "One of only a handful of Brahma temples in India — a genuinely rare and sacred pilgrimage site.",
+      "bestTime": "Morning puja between 6-8 am",
+      "duration": "45 minutes",
+      "mapsSearch": "Brahma Temple Pushkar",
+      "imageQuery": "Brahma Temple Pushkar Rajasthan"
+    },
+    {
+      "name": "Savitri Temple",
+      "category": "temple",
+      "description": "On the summit of Ratnagiri Hill overlooking Pushkar, this temple is dedicated to Brahma's consort Savitri who cursed Brahma to be worshipped only in Pushkar after he married Gayatri in her absence. A cable car (ropeway) now connects the town to the summit, offering panoramic views of the entire lake, the white town, and the Thar Desert stretching to the horizon. The sunrise from here is transcendent.",
+      "whyVisit": "The finest panoramic view of Pushkar's sacred lake and the Rajasthan desert at sunrise.",
+      "bestTime": "Sunrise or sunset",
+      "duration": "1.5-2 hours including cable car",
+      "mapsSearch": "Savitri Temple Pushkar Ropeway",
+      "imageQuery": "Savitri Temple hilltop Pushkar lake view"
+    },
+    {
+      "name": "Pushkar Camel Fair Grounds",
+      "category": "wildlife",
+      "description": "The Pushkar Camel Fair, held annually during Kartik Purnima (October/November), draws 50,000 camels, horses, and cattle alongside 400,000 people to the sandy fairgrounds just north of town. Camel traders decorate their animals with embroidered saddle cloths; competitions include camel races, moustache contests, and turban-tying. The sand dunes of the fairground provide one of Rajasthan's most cinematic landscapes.",
+      "whyVisit": "The largest camel fair in the world and one of India's most spectacular annual spectacles.",
+      "bestTime": "Kartik Purnima (October/November); fairgrounds open year-round",
+      "duration": "2-3 hours during fair; 1 hour otherwise",
+      "mapsSearch": "Pushkar Camel Fair Ground",
+      "imageQuery": "Pushkar Camel Fair camels Rajasthan"
+    },
+    {
+      "name": "Varaha Temple",
+      "category": "temple",
+      "description": "One of Pushkar's oldest temples, the Varaha Temple is dedicated to the boar incarnation of Vishnu (Varaha Avatar) who is believed to have appeared here. The original 12th-century structure was destroyed by Mughal emperor Aurangzeb and rebuilt in 1727 by the Maharaja of Amber. Its carved sandstone mandapa and the Varaha image within are architecturally and iconographically significant.",
+      "whyVisit": "Among Pushkar's oldest and most theologically significant temples, predating the modern town by centuries.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Varaha Temple Pushkar",
+      "imageQuery": "Varaha Temple Pushkar sandstone"
+    },
+    {
+      "name": "Man Mahal (Royal Rest House)",
+      "category": "heritage",
+      "description": "Built in the late 16th century by Raja Man Singh I of Amber as a rest house for Rajput royalty visiting Pushkar on pilgrimage, this haveli-style building on the main ghat now operates as a heritage hotel and government rest house. Its carved wooden balconies overhang Gau Ghat directly, giving some of the most intimate views of pilgrims bathing in the sacred lake directly below.",
+      "whyVisit": "The most historic building on the lake ghats, offering the best close-up lakeside views in Pushkar.",
+      "bestTime": "Dawn for ghat atmosphere",
+      "duration": "1 hour",
+      "mapsSearch": "Man Mahal Pushkar Ghat",
+      "imageQuery": "Man Mahal heritage ghat Pushkar"
+    },
+    {
+      "name": "Rangji Temple",
+      "category": "temple",
+      "description": "Pushkar's most architecturally distinctive temple, built in 1823 by a wealthy Marwari merchant family, combines South Indian Dravidian gopuram architecture with Rajput and Mughal elements in a striking fusion. Its towering painted gopuram towers above all other buildings in town and shelters a shrine to Rangji (a form of Vishnu). The interplay of South Indian and North Indian architectural forms is fascinating.",
+      "whyVisit": "Pushkar's tallest and most visually striking temple, a remarkable architectural hybrid unlike anything else in Rajasthan.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Rangji Temple Pushkar",
+      "imageQuery": "Rangji Temple gopuram Pushkar"
+    },
+    {
+      "name": "Rose Garden and Pushkar Rose Fields",
+      "category": "nature",
+      "description": "Pushkar is famous throughout India for its production of the Pushkar rose (Rosa damascena) used in essential oils, gulkand (rose preserve), and religious offerings. Between November and February, fields of rose bushes surround the town and a small rose garden near the main market can be visited. The main market is lined with rose water, rose oil, and rose petals sold as puja offerings.",
+      "whyVisit": "Pushkar's entire economy of fragrance centres on its rose fields — a sensory dimension most visitors miss entirely.",
+      "bestTime": "November to February for blooming",
+      "duration": "1 hour",
+      "mapsSearch": "Pushkar Rose Garden Rajasthan",
+      "imageQuery": "Pushkar rose fields Rajasthan"
+    },
+    {
+      "name": "Main Bazaar Street",
+      "category": "market",
+      "description": "Pushkar's single main street running between the lake ghats is a narrow lane of whitewashed shops selling silver jewellery, Rajasthani textiles, Rudraksha beads, sandalwood incense, silver ankle bells, and handmade paper. Cafes serving Israeli shakshouka and German strudel neighbour spice merchants and flower sellers — a psychedelic blend of sacred commerce and backpacker culture that has defined the town since the 1970s.",
+      "whyVisit": "The most eclectic bazaar street in Rajasthan where sacred goods and bohemian cafe culture coexist perfectly.",
+      "bestTime": "Morning or evening",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Pushkar Main Bazaar",
+      "imageQuery": "Pushkar bazaar street market Rajasthan"
+    },
+    {
+      "name": "Apteshwar Mahadev Temple",
+      "category": "temple",
+      "description": "Tucked in the narrow lanes of old Pushkar, the Apteshwar Shiva temple is one of the oldest in the town, its inner sanctum hewn from the living rock face with a Shiva lingam bathed continuously by a spring. The surrounding lanes are quieter than the lakefront and give a more authentic sense of the medieval pilgrimage town that existed before the tourist industry arrived.",
+      "whyVisit": "A rock-cut Shiva shrine in the old quarter that captures Pushkar's ancient pilgrimage character away from the crowds.",
+      "bestTime": "Early morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Apteshwar Mahadev Temple Pushkar",
+      "imageQuery": "Apteshwar Shiva temple Pushkar"
+    },
+    {
+      "name": "Pap Mochani (Gayatri) Temple",
+      "category": "temple",
+      "description": "Perched on Adhar Devi Hill on the northern edge of town, this temple to Gayatri (Brahma's second wife) occupies a natural cave in the sandstone cliff. The approach involves climbing 365 steps cut into the rock face, with views opening progressively over the lake and town. Like Savitri Temple, this hilltop shrine rewards effort with a spectacular desert panorama and a cool cave sanctum.",
+      "whyVisit": "A cave temple atop 365 steps with one of the most unobstructed views of Pushkar lake and the surrounding hills.",
+      "bestTime": "Early morning or sunset",
+      "duration": "1.5 hours",
+      "mapsSearch": "Gayatri Temple Pushkar Hill",
+      "imageQuery": "Gayatri Temple cave hill Pushkar"
+    },
+    {
+      "name": "Pushkar Sand Dunes Camel Safari",
+      "category": "adventure",
+      "description": "The sand dunes rolling north of the camel fair grounds offer one of Rajasthan's most accessible desert experiences. Local operators run one-hour to full-day camel safaris across the dunes, with the option of a desert camp overnight. The small scale of the dunes compared to Sam or Khuri means this is more intimate — just you, the camel, and the sand — and the sunset over the white temple town below is beautiful.",
+      "whyVisit": "A short but genuinely atmospheric camel safari with a view of Pushkar's temples across the sand dunes at sunset.",
+      "bestTime": "Late afternoon for sunset",
+      "duration": "1-3 hours",
+      "mapsSearch": "Pushkar Sand Dunes Camel Safari",
+      "imageQuery": "Pushkar sand dunes camel safari sunset"
+    },
+    {
+      "name": "Brahma Ghats Circuit",
+      "category": "religious",
+      "description": "Walking the full circuit of Pushkar's 52 ghats is a traditional pradakshina (circumambulation) performed by Hindu pilgrims. Each named ghat has its own legend and dedicated priest family. The walk passes Brahma Ghat (most sacred), Gau Ghat, Varah Ghat, Gandhi Ghat, and others, each with its small temple, flower seller, and pujari. The entire circuit takes about an hour and tells the layered story of the lake's sacred geography.",
+      "whyVisit": "Walking all 52 ghats is the essential pilgrimage act that lets you understand Pushkar's sacred geography end to end.",
+      "bestTime": "Dawn",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Pushkar Ghats Circuit",
+      "imageQuery": "Pushkar ghats circuit pilgrims lake"
+    },
+    {
+      "name": "Atmeshwar Temple",
+      "category": "temple",
+      "description": "One of Pushkar's 400+ temples, the Atmeshwar Shiva temple is unusually private — set in a courtyard compound in the old quarter, its sanctum contains an ancient Shiva lingam believed to be self-manifested (swayambhu). The temple is barely visited by foreigners yet is considered by local priests to be among the five most important shrines in the town. The carved courtyard pillars show fine medieval Rajput stonework.",
+      "whyVisit": "A forgotten but deeply sacred Shiva shrine with self-manifested lingam, almost entirely free of tourist footfall.",
+      "bestTime": "Morning",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Atmeshwar Temple Pushkar",
+      "imageQuery": "Atmeshwar Temple courtyard Pushkar"
+    },
+    {
+      "name": "Naga Pahar (Snake Mountain) Viewpoint",
+      "category": "viewpoint",
+      "description": "The ridge of Naga Pahar on the southeast side of Pushkar is less visited than Savitri or Gayatri Hills but offers an equally commanding panorama across the entire Pushkar valley — the white-domed lake town, the surrounding Aravalli ridges, and the camel fair grounds visible to the north. A rough trail leads to the top through scrub and rocks with excellent birding en route.",
+      "whyVisit": "Pushkar's least-known hilltop viewpoint with a full valley panorama and birding along an unmarked trail.",
+      "bestTime": "Early morning for birds and soft light",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Naga Pahar Pushkar viewpoint",
+      "imageQuery": "Pushkar valley panorama hills viewpoint"
+    },
+    {
+      "name": "Old Pushkar Quarter (Badi Basti)",
+      "category": "heritage",
+      "description": "Behind the tourist main street lies the original settlement of Pushkar — Badi Basti (old quarter) — a tangle of lanes between plastered haveli facades with carved wooden doorways, outdoor temples, and domestic courtyards. Residents dry chillies and marigolds on their rooftops, priests sit at threshold shrines, and the call-and-response of a pujari's morning puja floats over the rooftops in a scene unchanged for centuries.",
+      "whyVisit": "The living medieval heart of Pushkar where pilgrimage town life continues untouched by the tourist strip.",
+      "bestTime": "Early morning",
+      "duration": "1.5 hours",
+      "mapsSearch": "Old Pushkar Quarter Badi Basti",
+      "imageQuery": "Old Pushkar lanes havelis Rajasthan"
+    },
+    {
+      "name": "Saraswati Temple",
+      "category": "temple",
+      "description": "Situated on the southern ridge above Pushkar, this rarely visited temple is dedicated to Saraswati, goddess of learning and music. Smaller than Savitri Temple but just as elevated, it provides an alternative hilltop perspective and is usually visited only by local pilgrims. The trail winds through dry thorn scrub populated by langurs, peacocks, and the occasional monitor lizard.",
+      "whyVisit": "A quiet hilltop temple with desert views and wildlife, almost unknown to foreign visitors.",
+      "bestTime": "Early morning",
+      "duration": "1.5 hours",
+      "mapsSearch": "Saraswati Temple Pushkar Hill",
+      "imageQuery": "Saraswati Temple hilltop Pushkar"
+    },
+    {
+      "name": "Anasagar Lake and Daulat Bagh Gardens",
+      "category": "lake",
+      "description": "12 km from Pushkar in Ajmer, the Anasagar Lake was created in the 12th century by Anaji, grandfather of Prithviraj Chauhan. Jahangir built a marble baradari (pavilion) on its bank, and Shah Jahan added five more marble pavilions known as Daulat Bagh, set within a Mughal garden with canal channels and flower beds. The white marble pavilions at sunset are elegant and very lightly visited.",
+      "whyVisit": "Mughal marble pavilions on a medieval lake — a combination of architectural grace and tranquility close to Pushkar.",
+      "bestTime": "Evening",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Daulat Bagh Ajmer Anasagar Lake",
+      "imageQuery": "Daulat Bagh Anasagar Lake Ajmer"
+    },
+    {
+      "name": "Kishangarh Marble Art Village",
+      "category": "heritage",
+      "description": "50 km from Pushkar, Kishangarh is famous for two things: its distinctive 18th-century miniature painting style characterised by elongated eyes and the famous Bani Thani portrait — and its enormous open-air marble carving workshops where Makrana marble from nearby quarries is sculpted by hereditary artisans into deities, fountains, and temple elements. The combination of art history and living craft is unique.",
+      "whyVisit": "See the marble sculptors whose work fills every Indian temple, working in the open air as their ancestors did for centuries.",
+      "bestTime": "Morning",
+      "duration": "Half day trip from Pushkar",
+      "mapsSearch": "Kishangarh Marble Workshops Rajasthan",
+      "imageQuery": "Kishangarh marble carving workshop Rajasthan"
+    },
+    {
+      "name": "Pushkar Ropeway at Sunset",
+      "category": "viewpoint",
+      "description": "The cable car to Savitri Temple operates until just after sunset and the descent in the gondola as the sky turns amber and the lake below fills with the golden reflections of the ghats is one of the most magical travel moments in Rajasthan. The cable car itself hangs over a cliff face with vertiginous views straight down to the white town, and the summit at dusk is tinged rose-gold by the setting sun.",
+      "whyVisit": "The cable car descent at dusk frames Pushkar's sacred lake in fading golden light — an unmissable sunset moment.",
+      "bestTime": "30 minutes before sunset",
+      "duration": "45 minutes",
+      "mapsSearch": "Pushkar Ropeway Savitri Temple",
+      "imageQuery": "Pushkar ropeway cable car sunset lake"
+    },
+    {
+      "name": "Eklingji Temple Complex",
+      "category": "temple",
+      "description": "55 km from Pushkar near Udaipur, the Eklingji temple complex comprising 108 temples built between the 8th and 15th centuries is the tutelary shrine of the Mewar royal family. The main four-faced black marble Shiva lingam rises beneath a two-storeyed mandapa, and the surrounding walled complex contains beautifully carved subsidiary temples to Ganesh, Parvati, and Nandi. Still administered directly by the Maharana of Mewar.",
+      "whyVisit": "One of Rajasthan's finest temple complexes, still under royal patronage, with exceptional medieval Rajput carvings.",
+      "bestTime": "Morning puja",
+      "duration": "1.5 hours",
+      "mapsSearch": "Eklingji Temple Rajasthan",
+      "imageQuery": "Eklingji Temple black marble Shiva Rajasthan"
+    },
+    {
+      "name": "Pushkar Astronomical Tradition — Vedic Astrology Consultation",
+      "category": "religious",
+      "description": "Pushkar's Brahmin priest families maintain a system of family registers (gotras) recording the genealogy of millions of Hindu families going back dozens of generations. Pilgrims come to have their family tree recited from palm-leaf records and receive blessings for ancestors. The ghats are lined with pujaris who also perform Vedic astrological readings — an intangible living tradition as ancient as the pilgrimage itself.",
+      "whyVisit": "A living practice where Brahmin priests can read your family's pilgrimage records from manuscripts spanning centuries.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pushkar Brahmin Priests Ghats",
+      "imageQuery": "Pushkar priest puja ceremony ghats"
+    },
+    {
+      "name": "Ajmer Dargah Sharif",
+      "category": "religious",
+      "description": "15 km from Pushkar, the dargah of Sufi saint Khwaja Moinuddin Chishti is one of Islam's most visited pilgrimage sites in South Asia — drawing four million visitors annually including heads of state and prime ministers. The inner sanctum's silver-canopied tomb is surrounded by qawwali singers performing devotional music, and the shrine's giant iron cooking pots (degs) once fed thousands in a single night.",
+      "whyVisit": "One of the most visited holy sites in South Asia, radiating a Sufi spiritual atmosphere of extraordinary intensity.",
+      "bestTime": "Thursday evening for qawwali; Urs festival (April/May)",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Ajmer Dargah Sharif",
+      "imageQuery": "Ajmer Dargah Sharif shrine Rajasthan"
+    },
+    {
+      "name": "Pushkar Experimental Music Stage",
+      "category": "nightlife",
+      "description": "During the Camel Fair and in the months surrounding it, several rooftop terraces and open-air restaurants above the lake host informal evening gatherings of folk musicians — Manganiyar and Langa performers from the Thar Desert tradition, alongside visiting Western musicians who have wintered in the town for decades. The sessions are impromptu, intimate, and often extraordinarily beautiful under the desert stars.",
+      "whyVisit": "Pushkar's rooftop musical evenings during fair season are among the most spontaneously beautiful in Rajasthan.",
+      "bestTime": "October to November during fair season, 8 pm onwards",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pushkar rooftop restaurants lake view",
+      "imageQuery": "Pushkar rooftop music evening Rajasthan"
+    },
+    {
+      "name": "Neel Kanth Mahadev Temple (Remote)",
+      "category": "temple",
+      "description": "A 5-km trail through the Aravalli hills northeast of Pushkar leads to this isolated Shiva temple in a narrow forested gorge, almost unknown to foreign visitors. A spring feeds a natural pool at the temple's base where devotees bathe, peacocks call from the surrounding forest canopy, and the only sounds are water, wind, and bells. This is Pushkar's most complete escape from the pilgrimage town below.",
+      "whyVisit": "A forest-walk Shiva temple reached by a 5 km trail through the Aravallis — Pushkar's most peaceful hidden sanctuary.",
+      "bestTime": "Early morning, October to March",
+      "duration": "3-4 hours including walk",
+      "mapsSearch": "Neel Kanth Mahadev Temple Pushkar",
+      "imageQuery": "Neel Kanth Temple forest hills Pushkar"
+    }
+  ]
+}

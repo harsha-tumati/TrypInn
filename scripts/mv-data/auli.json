@@ -1,0 +1,237 @@
+{
+  "slug": "auli",
+  "name": "Auli",
+  "state": "Uttarakhand",
+  "tagline": "India's premier ski slopes framed by Himalayan giants",
+  "categories": [
+    "mountain",
+    "adventure",
+    "hill_station"
+  ],
+  "highlights": [
+    "best ski slopes in india with views of nanda devi and dunagiri",
+    "world's highest cable car connects auli to joshimath"
+  ],
+  "attractions": [
+    {
+      "name": "Auli Ski Slopes",
+      "category": "adventure",
+      "description": "Spread across 16 km of groomed runs between 2,519 and 3,049 metres altitude, Auli's ski slopes offer India's longest and best-quality skiing terrain. The main run drops 1.5 km with views of Nanda Devi (7,816 m), Mana Peak, and Kamet towering above the treeline. GMVN (Garhwal Mandal Vikas Nigam) operates ski equipment rental and certified instructors for beginners and intermediates.",
+      "whyVisit": "The best ski slopes in India with Himalayan panoramas that rival anything in the Alps for sheer grandeur.",
+      "bestTime": "January to March for skiing",
+      "duration": "Full day",
+      "mapsSearch": "Auli Ski Resort Uttarakhand",
+      "imageQuery": "Auli ski slopes Himalaya snow Uttarakhand"
+    },
+    {
+      "name": "Auli Gondola (Cable Car)",
+      "category": "adventure",
+      "description": "The Auli Ropeway stretches 4 km from Joshimath (1,890 m) to Auli (3,010 m) and is one of Asia's longest and highest cable car systems. The 16-cabin gondola ride takes 25 minutes and provides a gradual reveal of the Garhwal Himalaya — Nanda Devi, Trishul, Nilkantha, Dunagiri, Hathi Parbat, and Ghori Parbat — rising above the oak and rhododendron forest canopy below.",
+      "whyVisit": "A 4 km aerial journey over Himalayan forest that reveals one of the most magnificent mountain panoramas in Asia.",
+      "bestTime": "Morning for clear mountain views, year-round",
+      "duration": "1.5-2 hours round trip",
+      "mapsSearch": "Auli Ropeway Cable Car Joshimath",
+      "imageQuery": "Auli gondola cable car Himalaya"
+    },
+    {
+      "name": "Nanda Devi Panorama from Auli",
+      "category": "viewpoint",
+      "description": "The clearing at the top of Auli's ski slope frames one of the finest Himalayan panoramas accessible by cable car anywhere in India. Nanda Devi (7,816 m), India's second-highest peak and a UNESCO Biosphere Reserve, dominates the view along with Dunagiri (7,066 m), Mana Peak (7,272 m), Kamet (7,756 m), and Trishul (7,120 m) — a curtain of 7,000-metre peaks from one viewpoint.",
+      "whyVisit": "An unbroken panorama of six peaks above 7,000 metres, including Nanda Devi — India's finest accessible mountain view.",
+      "bestTime": "Early morning October to June; January for snow-covered foreground",
+      "duration": "1-2 hours",
+      "mapsSearch": "Auli Viewpoint Nanda Devi Uttarakhand",
+      "imageQuery": "Nanda Devi panorama Auli viewpoint snow"
+    },
+    {
+      "name": "Kuari Pass Trek",
+      "category": "adventure",
+      "description": "First mapped by Lord Curzon in 1905, the Kuari Pass (3,648 m) trek from the Auli region is considered one of the finest winter treks in India. The 13-16 km route through oak, rhododendron, and spruce forests opens onto the pass with a 270-degree Himalayan panorama across Nanda Devi, Trishul, Dronagiri, Chaukhamba, and Neelkanth peaks. Available as a 4-5 day circuit from Auli.",
+      "whyVisit": "Lord Curzon's favourite Himalayan trail, still delivering one of the most spectacular ridge-line panoramas in the range.",
+      "bestTime": "March to June and October to December",
+      "duration": "4-5 days",
+      "mapsSearch": "Kuari Pass Trek Auli Uttarakhand",
+      "imageQuery": "Kuari Pass trek panorama Himalaya Uttarakhand"
+    },
+    {
+      "name": "Auli Artificial Lake",
+      "category": "lake",
+      "description": "Created at an altitude of 2,914 metres to supply snow-making infrastructure for the ski slopes, Auli's man-made lake is Asia's highest artificial lake and a beautiful alpine feature in its own right. In summer it sits amid lush meadow with Himalayan peaks as backdrop; in winter it freezes completely and forms the centrepiece of the snowy ski plateau. Rhododendrons bloom crimson around its edges in April.",
+      "whyVisit": "Asia's highest man-made lake surrounded by Himalayan peaks and spring rhododendrons — genuinely ethereal.",
+      "bestTime": "April for rhododendrons; January for frozen lake",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Auli Artificial Lake Uttarakhand",
+      "imageQuery": "Auli artificial lake snow Himalaya"
+    },
+    {
+      "name": "Chattrakund Lake Trek",
+      "category": "lake",
+      "description": "A 6-km trail through mixed conifer and oak forest above Auli leads to this remote alpine lake at 3,200 metres, fed by glacial meltwater and ringed by a meadow of wildflowers in summer. The lake is sacred to Lord Shiva and a small shrine sits at its edge. The trail is quiet even by Auli standards — rarely more than a handful of trekkers on any given day, with excellent birding for Himalayan species.",
+      "whyVisit": "A high alpine glacial lake reached by a forest trail through birdsong and wildflowers, almost always empty of other trekkers.",
+      "bestTime": "June to October",
+      "duration": "Full day",
+      "mapsSearch": "Chattrakund Lake Trek Auli",
+      "imageQuery": "Chattrakund Lake alpine meadow Uttarakhand"
+    },
+    {
+      "name": "Joshimath Town",
+      "category": "heritage",
+      "description": "The base town for Auli, Joshimath (1,890 m) is also a major Hindu pilgrimage centre — it was the winter seat of Badrinath's main deity and holds the Adi Shankaracharya Math founded in 820 CE. The Narasimha Temple in town contains a black stone image of Vishnu with a gradually thinning right wrist, around which a prophecy says Joshimath will vanish when it breaks. Currently the town faces geological sinking threatening its old structure.",
+      "whyVisit": "The ancient gateway to Badrinath, with an 8th-century Shankaracharya math and a town living out an old Himalayan prophecy.",
+      "bestTime": "April to June and September to November",
+      "duration": "Half day",
+      "mapsSearch": "Joshimath Town Uttarakhand",
+      "imageQuery": "Joshimath temple town Uttarakhand Himalaya"
+    },
+    {
+      "name": "Narsingh Temple Joshimath",
+      "category": "temple",
+      "description": "The Narsingh (Narasimha) Temple in Joshimath houses the winter deity of Badrinath — the image of Vishnu in his man-lion avatar — which is brought down from Badrinath after the shrine closes each November. Pilgrims heading to the Char Dham circuit begin with prayers here. The temple dates its current structure to the 9th century and the priests are hereditary Namboodiri Brahmins from Kerala.",
+      "whyVisit": "The only place to see Badrinath's presiding deity during winter when the high-altitude shrine is snowbound.",
+      "bestTime": "November to April when the winter deity is present",
+      "duration": "45 minutes",
+      "mapsSearch": "Narsingh Temple Joshimath",
+      "imageQuery": "Narsingh Temple Joshimath winter deity"
+    },
+    {
+      "name": "Gorson Bugyal Meadow",
+      "category": "nature",
+      "description": "A 3-km walk through oak and rhododendron forest above Auli leads to Gorson Bugyal (3,056 m), an expansive high-altitude meadow that turns bright green in July and blazes with wildflowers through September. In winter the bugyal is buried under deep snow and used as an extended ski terrain. The meadow offers the same Himalayan panorama as Auli but from a more elevated and open perspective.",
+      "whyVisit": "Auli's most beautiful summer landscape — a high-altitude meadow carpeted in wildflowers with unobstructed mountain views.",
+      "bestTime": "July to September for wildflowers; December to February for skiing",
+      "duration": "Half day",
+      "mapsSearch": "Gorson Bugyal Auli Uttarakhand",
+      "imageQuery": "Gorson Bugyal meadow wildflowers Auli"
+    },
+    {
+      "name": "Kwani Bugyal",
+      "category": "nature",
+      "description": "Beyond Gorson Bugyal, a further 3 km leads to Kwani Bugyal (3,380 m), a second and larger alpine meadow considerably less visited than Gorson. The meadow provides a clear sightline to the Chaukhamba massif (7,138 m), Nilkantha, and the Alaknanda valley far below. Camping here overnight under a sky blazing with stars — with the Milky Way reflected in snow-melt pools — is one of the quietest Himalayan experiences available.",
+      "whyVisit": "A remote high alpine meadow beyond Gorson with Milky Way camping and zero crowds — Auli's best-kept secret.",
+      "bestTime": "June to September",
+      "duration": "2 days with overnight camp",
+      "mapsSearch": "Kwani Bugyal Auli Trek",
+      "imageQuery": "Kwani Bugyal alpine meadow Himalaya"
+    },
+    {
+      "name": "Nanda Devi Biosphere Reserve View Trek",
+      "category": "wildlife",
+      "description": "The inner sanctuary of the Nanda Devi National Park and Biosphere Reserve (UNESCO World Heritage Site) is closed to visitors, but the area around Lata village and Lata Kharak at the valley entrance gives extraordinary close-up views of Nanda Devi's south face from the valley floor. The trail from Lata village (40 km from Joshimath) passes through forests populated by Himalayan tahr, snow leopard tracks, and musk deer.",
+      "whyVisit": "The closest legal approach to Nanda Devi's glacial flanks, with genuine Himalayan wildlife in a UNESCO World Heritage landscape.",
+      "bestTime": "May to June and September to October",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Lata Village Nanda Devi Trek Uttarakhand",
+      "imageQuery": "Nanda Devi valley lata village trail"
+    },
+    {
+      "name": "Badrinath Temple",
+      "category": "temple",
+      "description": "95 km from Auli, Badrinath (3,133 m) is one of Hinduism's Char Dhams and the most sacred Vaishnav temple in North India. The black stone image of Vishnu as Badri Narayan in a meditative pose is set in a brightly painted temple facade against the stark backdrop of the Neelkanth (6,596 m) peak. Hot springs at Tapt Kund outside the temple allow pilgrims to bathe in near-boiling sulphurous water before worship.",
+      "whyVisit": "One of Hinduism's holiest sites, open only six months yearly, with a Himalayan mountain rising directly behind the temple.",
+      "bestTime": "May to June and September to October (open season)",
+      "duration": "Full day trip from Auli",
+      "mapsSearch": "Badrinath Temple Uttarakhand",
+      "imageQuery": "Badrinath Temple Neelkanth peak Himalaya"
+    },
+    {
+      "name": "Valley of Flowers National Park",
+      "category": "wildlife",
+      "description": "80 km from Auli, the Valley of Flowers (UNESCO World Heritage Site) is a 87 sq km high-altitude meadow at 3,658 m carpeted with 300+ species of alpine wildflowers between July and September. Frank Smythe discovered it in 1931 after summiting Kamet. The valley floor blooms with Primula, Brahmakamal, blue poppy, cobra lily, and dozens of Himalayan orchid species in one of the world's great botanical spectacles.",
+      "whyVisit": "A UNESCO World Heritage valley floor blazing with 300 wildflower species — one of the great natural spectacles of Asia.",
+      "bestTime": "Mid-July to mid-August for peak bloom",
+      "duration": "1-2 days",
+      "mapsSearch": "Valley of Flowers National Park Uttarakhand",
+      "imageQuery": "Valley of Flowers wildflowers Himalaya Uttarakhand"
+    },
+    {
+      "name": "Hemkund Sahib",
+      "category": "religious",
+      "description": "Adjacent to the Valley of Flowers trail at 4,329 metres, Hemkund Sahib is the world's highest Sikh Gurdwara, built beside a high-altitude glacial lake of the same name ringed by seven snow peaks. Guru Gobind Singh meditated here in a previous life according to Sikh scripture. The approach from Govindghat follows the same trail as Valley of Flowers for 13 km before forking higher. The gurdwara opens June to October.",
+      "whyVisit": "The world's highest Sikh gurdwara beside an icy glacial lake — a demanding but profoundly moving pilgrimage.",
+      "bestTime": "July to September",
+      "duration": "2 days from Govindghat",
+      "mapsSearch": "Hemkund Sahib Gurdwara Uttarakhand",
+      "imageQuery": "Hemkund Sahib gurdwara glacial lake Himalaya"
+    },
+    {
+      "name": "Tapovan Hot Springs",
+      "category": "nature",
+      "description": "A 14-km trek from Joshimath leads to Tapovan (2,740 m), a small ashram settlement above the Alaknanda gorge where natural hot spring pools bubble from the earth at temperatures up to 45°C. The ascent passes through one of the most dramatic river gorges in the Garhwal, with the hanging Shankaracharya Cave at Joshimath visible from the trail and Himalayan griffon vultures riding thermals overhead.",
+      "whyVisit": "Hot springs in a Himalayan gorge reached by a trail with dramatic river views — an ascetic's retreat and trekker's reward.",
+      "bestTime": "April to June and October to November",
+      "duration": "Full day",
+      "mapsSearch": "Tapovan Joshimath Hot Springs Uttarakhand",
+      "imageQuery": "Tapovan hot springs Alaknanda gorge Uttarakhand"
+    },
+    {
+      "name": "Chenab Lake Trek",
+      "category": "lake",
+      "description": "A less-documented 8-km trail from the upper ski fields of Auli leads through dense spruce and silver birch forest to Chenab Lake, a small pristine alpine lake at around 3,100 m. Almost no tourist infrastructure exists — the route requires a local guide and there are no tea stalls en route. The combination of old-growth forest silence, Himalayan monal pheasant sightings, and a mirror-still lake make it genuinely special.",
+      "whyVisit": "An undocumented alpine lake above Auli through old-growth forest where Himalayan monal pheasants are regularly seen.",
+      "bestTime": "May to October",
+      "duration": "Full day",
+      "mapsSearch": "Chenab Lake Auli Trek Uttarakhand",
+      "imageQuery": "Alpine lake spruce forest Auli Himalaya"
+    },
+    {
+      "name": "Auli GMVN Camp (Summer Camping)",
+      "category": "adventure",
+      "description": "Between April and November when snow has gone, GMVN (Garhwal Mandal Vikas Nigam) operates a permanent tent camp on the Auli ski plateau. Canvas and fibre-glass huts sit at 2,900 m amid a landscape that transforms entirely between seasons — the bare ski slopes fill with wildflowers, birds return to the forest, and the Himalayan panorama remains unchanged. Night temperatures drop to 5°C even in June, giving crisp mountain camping at a modest cost.",
+      "whyVisit": "Sleep at nearly 3,000 metres surrounded by 7,000-metre peaks — Himalayan camping at a government-operated site with no frills needed.",
+      "bestTime": "May to October",
+      "duration": "2-3 nights",
+      "mapsSearch": "Auli GMVN Tourist Rest House Uttarakhand",
+      "imageQuery": "Auli GMVN camp Himalaya summer meadow"
+    },
+    {
+      "name": "Vishnu Prayag",
+      "category": "religious",
+      "description": "20 km below Joshimath, the Vishnu Prayag is the first of the Panch Prayag (five sacred river confluences of Uttarakhand), where the Dhauliganga river joins the Alaknanda at a narrow gorge. A small Vishnu temple marks the confluence and the roar of the rivers merging between polished grey boulders is tremendous. The gorge walls above are streaked in shades of rust and ochre mineral staining.",
+      "whyVisit": "The first and least-visited of the five sacred Garhwal river confluences — raw Himalayan river power in a narrow gorge.",
+      "bestTime": "Morning, April to June and October to November",
+      "duration": "45 minutes",
+      "mapsSearch": "Vishnu Prayag Uttarakhand",
+      "imageQuery": "Vishnu Prayag confluence Alaknanda gorge Uttarakhand"
+    },
+    {
+      "name": "Winter Skiing at Night (Floodlit)",
+      "category": "adventure",
+      "description": "During the main ski season in January and February, select sections of Auli's ski runs are floodlit for evening skiing — a rare facility in India. Skiing down a groomed Himalayan slope at night with the lights of Joshimath twinkling 1,200 metres below and the dark silhouettes of Himalayan giants overhead is an experience available only here and at no other ski resort in India.",
+      "whyVisit": "India's only floodlit night skiing run on a Himalayan slope — utterly unique to Auli in the entire subcontinent.",
+      "bestTime": "January to February, evenings",
+      "duration": "2-3 hours",
+      "mapsSearch": "Auli Night Skiing GMVN Uttarakhand",
+      "imageQuery": "Auli night skiing floodlit Himalaya"
+    },
+    {
+      "name": "Bhavishya Badri Temple",
+      "category": "temple",
+      "description": "Deep in the forests of the Tapovan-Subain area, 20 km from Joshimath, the Bhavishya Badri (Future Badrinath) temple stands as a single small shrine marked only by a natural rock formation resembling Vishnu. According to scripture, when the current path to Badrinath becomes impassable due to geological changes, worship will shift here. The forest walk through rhododendron canopy to reach it is lovely.",
+      "whyVisit": "A prophesied future sacred site hidden in Himalayan forest — one of the most unusual pilgrimage destinations near Auli.",
+      "bestTime": "April to June and September to November",
+      "duration": "Half day trip",
+      "mapsSearch": "Bhavishya Badri Temple Subain Joshimath",
+      "imageQuery": "Bhavishya Badri temple forest Uttarakhand"
+    },
+    {
+      "name": "Auli to Gorson Bugyal Snow Trek",
+      "category": "adventure",
+      "description": "Between December and March when the forest trail to Gorson Bugyal is under 1-2 metres of snow, this 3-km route becomes an exhilarating snowshoe trek through oak forest weighted with snow. Snow bridges form over frozen streams, the trees create cathedrals of white, and the meadow at the end is a completely untracked white expanse with Himalayan peaks above. No other trekkers visible for most of the year.",
+      "whyVisit": "A snowshoeing trail through snow-weighted Himalayan oak forest with a hidden frozen meadow at the end.",
+      "bestTime": "December to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Auli Gorson Bugyal Snow Trek",
+      "imageQuery": "Gorson Bugyal snow trek forest Auli winter"
+    },
+    {
+      "name": "Pangarchulla Peak Summit",
+      "category": "adventure",
+      "description": "The highest adventure accessible from Auli, Pangarchulla Peak (4,700 m) is climbed as a 6-8 day high-altitude trek cum basic mountaineering route from the Auli-Gorson-Tali meadow chain. In March the final summit cone is a 45-degree snow slope requiring ice axe and crampons. The summit gives a 360-degree panorama of Nanda Devi, Kamet, Nar and Parbat, Dronagiri, and the deep Niti Valley — unrivalled in the area.",
+      "whyVisit": "The most rewarding high-altitude objective from Auli — a true summit at 4,700 m with the finest panorama in the Garhwal.",
+      "bestTime": "February to April for snow conditions; September to October",
+      "duration": "6-8 days",
+      "mapsSearch": "Pangarchulla Peak Trek Auli Uttarakhand",
+      "imageQuery": "Pangarchulla Peak summit panorama Himalaya"
+    }
+  ]
+}

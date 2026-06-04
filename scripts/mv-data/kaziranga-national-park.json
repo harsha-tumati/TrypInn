@@ -1,0 +1,190 @@
+{
+  "slug": "kaziranga-national-park",
+  "name": "Kaziranga National Park",
+  "state": "Assam",
+  "tagline": "Two-thirds of the world's one-horned rhinos on Brahmaputra floodplains",
+  "categories": ["wildlife", "nature", "adventure"],
+  "highlights": ["elephant-back rhino safaris at dawn", "largest one-horned rhino population on earth"],
+  "attractions": [
+    {
+      "name": "Elephant Safari (Western Range / Bagori)",
+      "category": "wildlife",
+      "description": "Elephant-back safaris at dawn in Kaziranga's Bagori western range are among India's most thrilling wildlife experiences. Mahout-guided elephants wade through tall elephant grass where jeeps cannot penetrate, bringing visitors within metres of one-horned rhinos, wild buffalo, and swamp deer. Sightings of multiple rhinos in a single hour are common, and the Brahmaputra floodplain stretching to the horizon is breathtaking at sunrise.",
+      "whyVisit": "No other place on Earth puts you this close to wild one-horned rhinos from elephant-back.",
+      "bestTime": "November to April, dawn departures only",
+      "duration": "1-2 hours",
+      "mapsSearch": "Elephant Safari Kaziranga Western Range Bagori",
+      "imageQuery": "elephant safari one horned rhino Kaziranga dawn"
+    },
+    {
+      "name": "Central Range (Kohora) Jeep Safari",
+      "category": "wildlife",
+      "description": "The Central or Kohora range is Kaziranga's most visited and most biodiverse zone. The safari circuit passes through classic Brahmaputra flood-plain habitat — tall grass, reed beds, oxbow lakes, and sal forest — where rhinos, Asian elephants, wild water buffalo, and tigers are all regularly encountered. Kohora is the main entry point and has the densest animal concentrations of any zone in the park.",
+      "whyVisit": "The highest overall wildlife density in the park with consistent rhino, buffalo, and tiger sightings.",
+      "bestTime": "November to April",
+      "duration": "3-4 hours",
+      "mapsSearch": "Central Range Kohora Jeep Safari Kaziranga",
+      "imageQuery": "one horned rhino Kaziranga central range jeep"
+    },
+    {
+      "name": "Eastern Range (Agoratoli) Safari",
+      "category": "wildlife",
+      "description": "The Eastern or Agoratoli range is the least-visited of Kaziranga's four main zones and offers a more tranquil safari experience. The terrain slopes toward the Karbi Anglong hills, creating a mosaic of forest and grassland unusual for the floodplain zones. Wild elephant herds are more numerous here than in the west, and the range is excellent for birding. Hoolock gibbons call from the adjacent hill forest.",
+      "whyVisit": "Fewer vehicles, more elephants, and the chance to hear India's only ape in the hillside forest.",
+      "bestTime": "November to April",
+      "duration": "3-4 hours",
+      "mapsSearch": "Eastern Range Agoratoli Kaziranga National Park",
+      "imageQuery": "wild elephant herd Kaziranga eastern range Assam"
+    },
+    {
+      "name": "Western Range (Bagori) Jeep Safari",
+      "category": "wildlife",
+      "description": "Beyond elephant safaris, the Western Range jeep circuit covers the Bagori area's open grasslands and seasonal lakes that attract the highest concentrations of rhinos during the dry season. The famous Diphlu river forms the southern boundary here, and late-afternoon drives along its banks yield wild water buffalo wallowing and fishing eagles diving. Tigers are spotted regularly in this range.",
+      "whyVisit": "Combine jeep and elephant safaris in the same zone for the most complete Kaziranga experience.",
+      "bestTime": "December to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Western Range Bagori Jeep Safari Kaziranga",
+      "imageQuery": "wild water buffalo Kaziranga Bagori western range"
+    },
+    {
+      "name": "One-Horned Indian Rhinoceros Viewing",
+      "category": "wildlife",
+      "description": "Kaziranga shelters approximately 2,600 greater one-horned rhinoceros — over two-thirds of the world's entire population. The species was hunted almost to extinction and rebounded entirely through Kaziranga's conservation success. Rhinos graze openly in the park's short-grass meadows, often in groups of five or more, and are entirely habituated to safari vehicles. Calves are a common sight from February onwards.",
+      "whyVisit": "Witness the greatest conservation comeback story in Asia at the epicentre of the species' survival.",
+      "bestTime": "November to April",
+      "duration": "Part of any safari",
+      "mapsSearch": "One Horned Rhinoceros Kaziranga National Park Assam",
+      "imageQuery": "Indian one horned rhinoceros Kaziranga close up"
+    },
+    {
+      "name": "Kaziranga Tiger Reserve Patrol Roads",
+      "category": "wildlife",
+      "description": "Kaziranga is also a designated Tiger Reserve with one of India's highest tiger densities relative to its 430 sq km area. Unlike most Indian parks, Kaziranga tigers are frequently sighted in open grassland rather than dense forest, making for spectacular daytime encounters. Anti-poaching patrol roads throughout the park are used for safari routes, contributing to Kaziranga's outstanding conservation record.",
+      "whyVisit": "Spot tigers in open grassland — far easier than the dense jungle settings of most other reserves.",
+      "bestTime": "February to April when grass is shorter",
+      "duration": "Part of zone safari",
+      "mapsSearch": "Tiger Sighting Kaziranga Tiger Reserve Assam",
+      "imageQuery": "Bengal tiger open grassland Kaziranga Assam"
+    },
+    {
+      "name": "Diphlu River Lodge Area",
+      "category": "nature",
+      "description": "The Diphlu River forms the southern edge of the Central Range and is one of Kaziranga's most scenic riparian corridors. Safari routes along the river bank yield sightings of smooth-coated otters, fishing cats, large water monitor lizards, and enormous pythons. The dappled light through riverine forest in the early morning creates exceptional photographic conditions, and the river itself is audible from the most famous resort properties nearby.",
+      "whyVisit": "A river corridor packed with reptiles, otters, and forest birds that open grassland safaris routinely bypass.",
+      "bestTime": "November to March",
+      "duration": "1-2 hours as part of safari",
+      "mapsSearch": "Diphlu River Kaziranga Central Range Assam",
+      "imageQuery": "Diphlu river otters Kaziranga riparian forest"
+    },
+    {
+      "name": "Kaziranga Orchid Park",
+      "category": "garden",
+      "description": "Adjacent to the Kohora entrance, Kaziranga Orchid and Biodiversity Park is a botanical garden showcasing over 500 species of orchids found in Assam and the Northeast. A curated trail passes through lush plantings of Vanda, Dendrobium, and rare Paphiopedilum slipper orchids. The park is managed by the state government and provides an excellent introduction to northeast India's extraordinary floral biodiversity before heading on safari.",
+      "whyVisit": "India's richest orchid collection in a single garden, right at the national park's doorstep.",
+      "bestTime": "March to May for peak flowering",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kaziranga Orchid Park Kohora Assam",
+      "imageQuery": "orchid park Kaziranga Assam biodiversity garden"
+    },
+    {
+      "name": "Brahmaputra River Cruise",
+      "category": "adventure",
+      "description": "The mighty Brahmaputra flows along Kaziranga's northern boundary and offers sunset cruises from the Neamati ghat that reveal a spectacular river landscape. River dolphins surface beside the boat, Gangetic dolphins are occasionally spotted, and flocks of bar-headed geese fly in formation overhead. The gravel bars visible from the boat are nesting grounds for endangered river terns and black-bellied terns.",
+      "whyVisit": "Experience the Brahmaputra at the park's edge with river dolphins, geese, and a golden sunset.",
+      "bestTime": "November to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Brahmaputra River Cruise Neamati Kaziranga",
+      "imageQuery": "Brahmaputra river cruise sunset Kaziranga dolphin"
+    },
+    {
+      "name": "Kakochang Waterfall",
+      "category": "waterfall",
+      "description": "Kakochang Falls is a picturesque multi-tiered waterfall set within dense tea garden and forest landscape near Bokakhat, just south of Kaziranga. The falls tumble through terraced hillsides of the Karbi Anglong plateau and are a popular excursion for park visitors. A short trail through the tea estate to the falls viewpoint passes workers' cottages and bungalows of the colonial-era garden.",
+      "whyVisit": "A beautiful waterfall visit combinable with a tea garden experience just 20 minutes from the park.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kakochang Waterfall Bokakhat Kaziranga Assam",
+      "imageQuery": "Kakochang waterfall tea estate Bokakhat Assam"
+    },
+    {
+      "name": "Assam Tea Estate Visit (Bokakhat)",
+      "category": "heritage",
+      "description": "The area surrounding Kaziranga is blanketed with colonial-era tea estates, several of which offer guided tours of the plucking fields, processing factories, and heritage planters' bungalows. Bokakhat tea estates are among the most accessible and produce single-estate second-flush Assam teas. Visitors walk between rows of manicured camellia bushes while learning about orthodox and CTC processing methods.",
+      "whyVisit": "Taste and tour a working Assam tea garden — one of the world's great tea-producing landscapes.",
+      "bestTime": "April to November for plucking season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tea Estate Tour Bokakhat Kaziranga Assam",
+      "imageQuery": "Assam tea estate plucking Bokakhat green rows"
+    },
+    {
+      "name": "Numaligarh (Nowgong) Ruins",
+      "category": "heritage",
+      "description": "The brick ruins of Numaligarh, 30 km east of Kaziranga, are the remains of a large 9th-century Ahom kingdom settlement. The Numaligarh oil refinery took its name from these ruins, which include sculptural fragments and tank embankments. The site is rarely visited by tourists and offers a quiet immersion in Assam's medieval Ahom civilisation, which ruled for six centuries and resisted Mughal invasions seventeen times.",
+      "whyVisit": "Ancient Ahom ruins in a completely tourist-free setting for history enthusiasts willing to seek them out.",
+      "bestTime": "November to March",
+      "duration": "1 hour",
+      "mapsSearch": "Numaligarh Ruins Golaghat Assam",
+      "imageQuery": "Numaligarh ruins Ahom kingdom Assam brick"
+    },
+    {
+      "name": "Pobitora Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Pobitora sanctuary, 48 km from Guwahati, has the highest density of one-horned rhinoceros per square kilometre of any protected area in the world — over 100 animals in just 38 sq km. Smaller and more accessible than Kaziranga, Pobitora offers elephant and jeep safaris with near-guaranteed rhino sightings. The sanctuary is an ideal complement to Kaziranga for dedicated rhino watchers.",
+      "whyVisit": "The world's highest rhino density — a short detour for an almost guaranteed close encounter.",
+      "bestTime": "November to April",
+      "duration": "Half day",
+      "mapsSearch": "Pobitora Wildlife Sanctuary Morigaon Assam",
+      "imageQuery": "one horned rhino Pobitora sanctuary dense grassland"
+    },
+    {
+      "name": "Mikir (Karbi Anglong) Hills Viewpoint",
+      "category": "viewpoint",
+      "description": "The Karbi Anglong hills rise immediately south of Kaziranga and provide elevated viewpoints over the entire Brahmaputra flood-plain and park. From the road ascending into Karbi Anglong district the view of Kaziranga's vast grasslands below — with occasional rhino silhouettes visible through binoculars — is genuinely majestic. The hills are also home to Karbi tribal communities with distinctive weaving and bamboo crafts.",
+      "whyVisit": "A bird's-eye panorama over the world's most important rhino habitat from the adjoining hilltop.",
+      "bestTime": "November to March for clear views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Karbi Anglong Hills Viewpoint Kaziranga Assam",
+      "imageQuery": "Karbi Anglong hills viewpoint Kaziranga floodplain"
+    },
+    {
+      "name": "Seba Sagar Lake",
+      "category": "lake",
+      "description": "Seba Sagar is one of several oxbow lakes in Kaziranga's peripheral landscape, formed by the changing course of the Brahmaputra. During winter migrations it hosts pelicans, cormorants, open-billed storks, and thousands of diving ducks. The lake is outside the park boundary and freely accessible, making it a zero-cost birdwatching spot that safari-focused tourists routinely overlook.",
+      "whyVisit": "Free winter waterbird spectacle on an oxbow lake that most Kaziranga visitors never discover.",
+      "bestTime": "November to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Seba Sagar Lake Kaziranga Assam oxbow",
+      "imageQuery": "Seba Sagar lake waterbirds storks Kaziranga Assam"
+    },
+    {
+      "name": "Guwahati City & Kamakhya Temple",
+      "category": "temple",
+      "description": "Guwahati, 215 km west of Kaziranga, is the gateway city for most visitors to the park. The Kamakhya temple on Nilachal Hill is one of the most powerful Shakti pithas in India, drawing pilgrims across the subcontinent. The Umananda island temple in the Brahmaputra and the Assam State Museum are also city highlights. Guwahati's Pan Bazar market is the best place to buy Assam silk and muga fabric.",
+      "whyVisit": "Begin or end your Kaziranga trip at one of India's most potent goddess temples and a dynamic river city.",
+      "bestTime": "October to March; Ambubachi Mela in June",
+      "duration": "Full day",
+      "mapsSearch": "Kamakhya Temple Guwahati Assam",
+      "imageQuery": "Kamakhya temple Guwahati Nilachal hill Assam"
+    },
+    {
+      "name": "Burachapori Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Burachapori sanctuary, 40 km east of Kohora on the north bank of the Brahmaputra, forms part of the Kaziranga-Karbi Anglong landscape. It shelters smaller but growing populations of rhino and elephant that have dispersed from the main park. The sanctuary's reed swamps and grasslands are nesting habitat for Bengal floricans — one of India's most critically endangered birds.",
+      "whyVisit": "The only accessible site in the region with Bengal florican nesting habitat — a birder's rarity.",
+      "bestTime": "March to May for Bengal florican",
+      "duration": "Half day",
+      "mapsSearch": "Burachapori Wildlife Sanctuary Assam",
+      "imageQuery": "Bengal florican grassland Burachapori Assam"
+    },
+    {
+      "name": "Kohora Village Cultural Walk",
+      "category": "heritage",
+      "description": "Kohora village next to the park's main gate is a Mising tribal settlement where traditional bamboo stilt houses (chang ghors) rise above flood level. Local women weave eri silk and muga fabric on traditional looms, and village guides offer walks through the homesteads explaining Mising customs, river-fishing techniques, and flood-season survival practices. The village has direct ecological memory of every major Brahmaputra flood.",
+      "whyVisit": "Meet the Mising community who have lived alongside Kaziranga's rhinos for generations.",
+      "bestTime": "November to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kohora Village Mising Tribe Kaziranga Assam",
+      "imageQuery": "Mising tribal village stilt house Kohora Assam"
+    }
+  ]
+}

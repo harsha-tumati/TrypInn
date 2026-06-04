@@ -113,24 +113,25 @@ Return ONLY valid raw JSON matching this structure exactly.
         data.slug = slug;
         data.name = destName;
 
-        // Fetch images
+        // Fetch images for the destination to use as a fallback pool
         const destImages = await fetchImages(`${destName} India`, 10);
         data.coverImage = destImages.length > 0 ? makeImgUrl(destImages[0], 1200) : 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60';
+        const fallbackIds = destImages.length > 0 ? destImages : ['1524492412937-b28074a5d7da'];
 
-        let imgIndex = 0;
-        const allAttractionImages = await fetchImages(`tourist attractions ${destName} India`, 30);
-        
         for (let i = 0; i < data.attractions.length; i++) {
             data.attractions[i].slug = slugify(data.attractions[i].name);
             data.attractions[i].position = i + 1;
             
-            // Assign a unique real image from unsplash (fallback to destination generic if we run out)
-            if (imgIndex < allAttractionImages.length) {
-                data.attractions[i].coverImage = makeImgUrl(allAttractionImages[imgIndex], 800);
-                imgIndex++;
+            // Try to fetch specific images for this attraction
+            const attrImages = await fetchImages(`${data.attractions[i].name} ${destName} India`, 3);
+            
+            if (attrImages.length > 0) {
+                data.attractions[i].coverImage = makeImgUrl(attrImages[0], 800);
             } else {
-                data.attractions[i].coverImage = makeImgUrl(allAttractionImages[Math.floor(Math.random() * allAttractionImages.length)], 800);
+                // Fallback to a random destination image
+                data.attractions[i].coverImage = makeImgUrl(fallbackIds[Math.floor(Math.random() * fallbackIds.length)], 800);
             }
+            await new Promise(r => setTimeout(r, 200)); // Sleep briefly to prevent rate limits
         }
 
         fs.writeFileSync(outFile, JSON.stringify(data, null, 2));

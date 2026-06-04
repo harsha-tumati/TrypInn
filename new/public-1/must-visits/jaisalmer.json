@@ -1,0 +1,447 @@
+{
+  "id": "jaisalmer",
+  "name": "Jaisalmer",
+  "state": "Rajasthan",
+  "slug": "jaisalmer",
+  "tagline": "The Golden City of desert forts and havelis in the Thar",
+  "categories": [
+    "desert",
+    "heritage",
+    "adventure"
+  ],
+  "introduction": "Planning a trip to Jaisalmer? This travel guide to Jaisalmer covers the must visit places in Jaisalmer, the best places to visit in Jaisalmer, top tourist attractions in Jaisalmer, and exciting things to do in Jaisalmer.",
+  "metaTitle": "Must Visit Places in Jaisalmer | Best Places to Visit in Jaisalmer - TrypInn",
+  "metaDescription": "Discover must visit places in Jaisalmer, best places to visit in Jaisalmer, and top tourist attractions in Jaisalmer. Plan your perfect trip with TrypInn travel guide to Jaisalmer.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+    "alt": "Jaisalmer travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "jaisalmer-jaisalmer-fort",
+      "name": "Jaisalmer Fort",
+      "slug": "jaisalmer-fort",
+      "description": "Located in scenic Jaisalmer, Jaisalmer Fort offers an immersive experience into local culture. Exploring Jaisalmer Fort is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Jaisalmer Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jaisalmer Fort, Jaisalmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaisalmer Fort in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Jaisalmer Fort in Jaisalmer"
+      },
+      "position": 1
+    },
+    {
+      "id": "jaisalmer-sam-sand-dunes",
+      "name": "Sam Sand Dunes",
+      "slug": "sam-sand-dunes",
+      "description": "Located in scenic Jaisalmer, Sam Sand Dunes offers an immersive experience into local culture. Exploring Sam Sand Dunes is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Sam Sand Dunes offers a perfect blend of history and scenery.",
+      "bestTime": "Night",
+      "duration": "Overnight",
+      "mapsSearch": "Sam Sand Dunes, Jaisalmer",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Sam Sand Dunes in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Sam Sand Dunes in Jaisalmer"
+      },
+      "position": 2
+    },
+    {
+      "id": "jaisalmer-patwon-ki-haveli",
+      "name": "Patwon Ki Haveli",
+      "slug": "patwon-ki-haveli",
+      "description": "A crown jewel of Jaisalmer, Patwon Ki Haveli captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Patwon Ki Haveli.",
+      "whyVisit": "Patwon Ki Haveli offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Patwon Ki Haveli, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Patwon Ki Haveli in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Patwon Ki Haveli in Jaisalmer"
+      },
+      "position": 3
+    },
+    {
+      "id": "jaisalmer-gadisar-lake",
+      "name": "Gadisar Lake",
+      "slug": "gadisar-lake",
+      "description": "Located in scenic Jaisalmer, Gadisar Lake offers an immersive experience into local culture. Exploring Gadisar Lake is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Capture stunning photographs at Gadisar Lake.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gadisar Lake, Jaisalmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Gadisar Lake in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Gadisar Lake in Jaisalmer"
+      },
+      "position": 4
+    },
+    {
+      "id": "jaisalmer-bada-bagh",
+      "name": "Bada Bagh",
+      "slug": "bada-bagh",
+      "description": "Located in scenic Jaisalmer, Bada Bagh offers an immersive experience into local culture. Exploring Bada Bagh is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Experience the unmatched beauty of Bada Bagh.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Bada Bagh, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Bada Bagh in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Bada Bagh in Jaisalmer"
+      },
+      "position": 5
+    },
+    {
+      "id": "jaisalmer-kuldhara-village",
+      "name": "Kuldhara Village",
+      "slug": "kuldhara-village",
+      "description": "Kuldhara Village is one of the most iconic landmarks in Jaisalmer, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kuldhara Village promises an unforgettable experience.",
+      "whyVisit": "A visit to Kuldhara Village is essential for understanding Jaisalmer.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kuldhara Village, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Kuldhara Village in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Kuldhara Village in Jaisalmer"
+      },
+      "position": 6
+    },
+    {
+      "id": "jaisalmer-salim-singh-ki-haveli",
+      "name": "Salim Singh Ki Haveli",
+      "slug": "salim-singh-ki-haveli",
+      "description": "Nestled in Jaisalmer, Salim Singh Ki Haveli stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Salim Singh Ki Haveli is among the best things to do in Jaisalmer.",
+      "whyVisit": "A visit to Salim Singh Ki Haveli is essential for understanding Jaisalmer.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Salim Singh Ki Haveli, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Salim Singh Ki Haveli in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Salim Singh Ki Haveli in Jaisalmer"
+      },
+      "position": 7
+    },
+    {
+      "id": "jaisalmer-nathmal-ki-haveli",
+      "name": "Nathmal Ki Haveli",
+      "slug": "nathmal-ki-haveli",
+      "description": "Nestled in Jaisalmer, Nathmal Ki Haveli stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Nathmal Ki Haveli is among the best things to do in Jaisalmer.",
+      "whyVisit": "Nathmal Ki Haveli offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nathmal Ki Haveli, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Nathmal Ki Haveli in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Nathmal Ki Haveli in Jaisalmer"
+      },
+      "position": 8
+    },
+    {
+      "id": "jaisalmer-desert-national-park",
+      "name": "Desert National Park",
+      "slug": "desert-national-park",
+      "description": "Desert National Park is a must-see wildlife in Jaisalmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaisalmer.",
+      "whyVisit": "Experience the unmatched beauty of Desert National Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Desert National Park, Jaisalmer",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Desert National Park in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Desert National Park in Jaisalmer"
+      },
+      "position": 9
+    },
+    {
+      "id": "jaisalmer-tanot-mata-temple",
+      "name": "Tanot Mata Temple",
+      "slug": "tanot-mata-temple",
+      "description": "Located in scenic Jaisalmer, Tanot Mata Temple offers an immersive experience into local culture. Exploring Tanot Mata Temple is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Tanot Mata Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tanot Mata Temple, Jaisalmer",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Tanot Mata Temple in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Tanot Mata Temple in Jaisalmer"
+      },
+      "position": 10
+    },
+    {
+      "id": "jaisalmer-longewala-war-memorial",
+      "name": "Longewala War Memorial",
+      "slug": "longewala-war-memorial",
+      "description": "Nestled in Jaisalmer, Longewala War Memorial stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Longewala War Memorial is among the best things to do in Jaisalmer.",
+      "whyVisit": "Longewala War Memorial offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Longewala War Memorial, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Longewala War Memorial in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Longewala War Memorial in Jaisalmer"
+      },
+      "position": 11
+    },
+    {
+      "id": "jaisalmer-akal-wood-fossil-park",
+      "name": "Akal Wood Fossil Park",
+      "slug": "akal-wood-fossil-park",
+      "description": "Akal Wood Fossil Park is one of the most iconic landmarks in Jaisalmer, drawing visitors with its timeless charm. This park offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Akal Wood Fossil Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Akal Wood Fossil Park.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Akal Wood Fossil Park, Jaisalmer",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Akal Wood Fossil Park in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Akal Wood Fossil Park in Jaisalmer"
+      },
+      "position": 12
+    },
+    {
+      "id": "jaisalmer-khaba-fort",
+      "name": "Khaba Fort",
+      "slug": "khaba-fort",
+      "description": "A crown jewel of Jaisalmer, Khaba Fort captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Khaba Fort.",
+      "whyVisit": "Khaba Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Khaba Fort, Jaisalmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Khaba Fort in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Khaba Fort in Jaisalmer"
+      },
+      "position": 13
+    },
+    {
+      "id": "jaisalmer-tazia-tower",
+      "name": "Tazia Tower",
+      "slug": "tazia-tower",
+      "description": "Nestled in Jaisalmer, Tazia Tower stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Tazia Tower is among the best things to do in Jaisalmer.",
+      "whyVisit": "Tazia Tower stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Tazia Tower, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Tazia Tower in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Tazia Tower in Jaisalmer"
+      },
+      "position": 14
+    },
+    {
+      "id": "jaisalmer-vyas-chhatri",
+      "name": "Vyas Chhatri",
+      "slug": "vyas-chhatri",
+      "description": "A crown jewel of Jaisalmer, Vyas Chhatri captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Vyas Chhatri.",
+      "whyVisit": "Vyas Chhatri offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Vyas Chhatri, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Vyas Chhatri in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Vyas Chhatri in Jaisalmer"
+      },
+      "position": 15
+    },
+    {
+      "id": "jaisalmer-amar-sagar-jain-temple",
+      "name": "Amar Sagar Jain Temple",
+      "slug": "amar-sagar-jain-temple",
+      "description": "A crown jewel of Jaisalmer, Amar Sagar Jain Temple captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Amar Sagar Jain Temple.",
+      "whyVisit": "A visit to Amar Sagar Jain Temple is essential for understanding Jaisalmer.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Amar Sagar Jain Temple, Jaisalmer",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Amar Sagar Jain Temple in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Amar Sagar Jain Temple in Jaisalmer"
+      },
+      "position": 16
+    },
+    {
+      "id": "jaisalmer-mool-sagar",
+      "name": "Mool Sagar",
+      "slug": "mool-sagar",
+      "description": "Nestled in Jaisalmer, Mool Sagar stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Mool Sagar is among the best things to do in Jaisalmer.",
+      "whyVisit": "Mool Sagar offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Mool Sagar, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Mool Sagar in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Mool Sagar in Jaisalmer"
+      },
+      "position": 17
+    },
+    {
+      "id": "jaisalmer-desert-camel-safari",
+      "name": "Desert Camel Safari",
+      "slug": "desert-camel-safari",
+      "description": "Desert Camel Safari is one of the most iconic landmarks in Jaisalmer, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Desert Camel Safari promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Desert Camel Safari.",
+      "bestTime": "Summer",
+      "duration": "2-4 hours",
+      "mapsSearch": "Desert Camel Safari, Jaisalmer",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Desert Camel Safari in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Desert Camel Safari in Jaisalmer"
+      },
+      "position": 18
+    },
+    {
+      "id": "jaisalmer-dune-bashing",
+      "name": "Dune Bashing",
+      "slug": "dune-bashing",
+      "description": "Located in scenic Jaisalmer, Dune Bashing offers an immersive experience into local culture. Exploring Dune Bashing is one of the top things to do in Jaisalmer.",
+      "whyVisit": "Experience the unmatched beauty of Dune Bashing.",
+      "bestTime": "Summer",
+      "duration": "2-4 hours",
+      "mapsSearch": "Dune Bashing, Jaisalmer",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Dune Bashing in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Dune Bashing in Jaisalmer"
+      },
+      "position": 19
+    },
+    {
+      "id": "jaisalmer-desert-camping",
+      "name": "Desert Camping",
+      "slug": "desert-camping",
+      "description": "Nestled in Jaisalmer, Desert Camping stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Desert Camping is among the best things to do in Jaisalmer.",
+      "whyVisit": "A visit to Desert Camping is essential for understanding Jaisalmer.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Desert Camping, Jaisalmer",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Desert Camping in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Desert Camping in Jaisalmer"
+      },
+      "position": 20
+    },
+    {
+      "id": "jaisalmer-jaisalmer-war-museum",
+      "name": "Jaisalmer War Museum",
+      "slug": "jaisalmer-war-museum",
+      "description": "A crown jewel of Jaisalmer, Jaisalmer War Museum captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Jaisalmer War Museum.",
+      "whyVisit": "Experience the unmatched beauty of Jaisalmer War Museum.",
+      "bestTime": "Weekdays",
+      "duration": "Quick",
+      "mapsSearch": "Jaisalmer War Museum, Jaisalmer",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Jaisalmer War Museum in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Jaisalmer War Museum in Jaisalmer"
+      },
+      "position": 21
+    },
+    {
+      "id": "jaisalmer-gopa-chowk",
+      "name": "Gopa Chowk",
+      "slug": "gopa-chowk",
+      "description": "Gopa Chowk is a must-see market in Jaisalmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaisalmer.",
+      "whyVisit": "Experience the unmatched beauty of Gopa Chowk.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gopa Chowk, Jaisalmer",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Gopa Chowk in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Gopa Chowk in Jaisalmer"
+      },
+      "position": 22
+    },
+    {
+      "id": "jaisalmer-surya-gate",
+      "name": "Surya Gate",
+      "slug": "surya-gate",
+      "description": "A crown jewel of Jaisalmer, Surya Gate captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Surya Gate.",
+      "whyVisit": "Surya Gate stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Surya Gate, Jaisalmer",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Surya Gate in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Surya Gate in Jaisalmer"
+      },
+      "position": 23
+    },
+    {
+      "id": "jaisalmer-laxminath-temple",
+      "name": "Laxminath Temple",
+      "slug": "laxminath-temple",
+      "description": "A crown jewel of Jaisalmer, Laxminath Temple captivates every traveler with enchanting beauty. No trip to Jaisalmer is complete without visiting Laxminath Temple.",
+      "whyVisit": "Experience the unmatched beauty of Laxminath Temple.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Laxminath Temple, Jaisalmer",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Laxminath Temple in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Laxminath Temple in Jaisalmer"
+      },
+      "position": 24
+    },
+    {
+      "id": "jaisalmer-silk-route-art-gallery",
+      "name": "Silk Route Art Gallery",
+      "slug": "silk-route-art-gallery",
+      "description": "Silk Route Art Gallery is one of the most iconic landmarks in Jaisalmer, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Silk Route Art Gallery promises an unforgettable experience.",
+      "whyVisit": "A visit to Silk Route Art Gallery is essential for understanding Jaisalmer.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Silk Route Art Gallery, Jaisalmer",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Silk Route Art Gallery in Jaisalmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Silk Route Art Gallery in Jaisalmer"
+      },
+      "position": 25
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "slug": "pangong-lake",
+  "name": "Pangong Lake",
+  "state": "Ladakh",
+  "tagline": "The impossibly blue high-altitude lake straddling India and China",
+  "categories": ["lake", "mountain", "adventure"],
+  "highlights": ["colour-shifting sapphire waters stretching 134 km to tibet", "3 idiots film location at chang la and lake shore made it india-famous"],
+  "attractions": [
+    {
+      "name": "Pangong Tso",
+      "category": "lake",
+      "description": "At 4,350 metres altitude, the 134-kilometre-long Pangong Tso is one of the world's largest high-altitude saltwater lakes, with roughly 60% of its area falling within Chinese-controlled Tibet. Its extraordinary water changes colour through the day — from deep indigo at dawn to a blinding turquoise at noon and steely silver at dusk — while snow-capped peaks reflect perfectly on its still surface.",
+      "whyVisit": "One of the most visually dramatic lakes on Earth, unlike anything else accessible in India.",
+      "bestTime": "May to September; October for solitude and autumn clarity",
+      "duration": "Half day minimum; overnight for sunrise",
+      "mapsSearch": "Pangong Tso Lake, Ladakh",
+      "imageQuery": "Pangong Tso lake blue water Ladakh mountains"
+    },
+    {
+      "name": "Spangmik Village (3 Idiots Location)",
+      "category": "heritage",
+      "description": "The small Ladakhi village of Spangmik on the southern shore of Pangong Tso is the spot from which the film '3 Idiots' finale sequence was shot, drawing millions of Indian tourists to Pangong annually. The village itself is an authentic settlement of stone houses and prayer flags where families operate camp-stays on the lake shore, allowing guests to wake up to the lake at arm's length.",
+      "whyVisit": "The iconic Bollywood-famous lake shore that sparked a national obsession with Pangong.",
+      "bestTime": "June to September",
+      "duration": "Overnight recommended",
+      "mapsSearch": "Spangmik Village, Pangong Lake, Ladakh",
+      "imageQuery": "Spangmik Pangong lake shore campsite Ladakh"
+    },
+    {
+      "name": "Chang La Pass",
+      "category": "adventure",
+      "description": "The 5,360-metre Chang La is the high-altitude pass traversed on the Leh-Pangong highway, making it one of the most commonly crossed extreme-altitude passes by tourist vehicles anywhere in the world. The summit is marked by a military post, a small temple to Thangu Devi, and a forest of prayer flags. The views of the surrounding range from the top are extraordinary.",
+      "whyVisit": "A must-do high-altitude pass crossing on the most popular road route in Ladakh.",
+      "bestTime": "May to October",
+      "duration": "Stop of 30-45 minutes en route",
+      "mapsSearch": "Chang La Pass, Ladakh",
+      "imageQuery": "Chang La pass prayer flags Ladakh high altitude"
+    },
+    {
+      "name": "Man Village, Pangong South Shore",
+      "category": "heritage",
+      "description": "Located further east along the southern shore beyond Spangmik, Man village is smaller and quieter and gives a more intimate sense of the traditional Changpa herder community. The village sits at the foot of a rocky scarp where bar-headed geese, Brahminy ducks, and great crested grebes nest along the reedy lake margins.",
+      "whyVisit": "Better birdwatching and more authentic Changpa culture with fewer tourists than Spangmik.",
+      "bestTime": "June to August for nesting birds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Man Village, Pangong Tso, Ladakh",
+      "imageQuery": "Man village Pangong lake birds Ladakh"
+    },
+    {
+      "name": "Merak Village",
+      "category": "heritage",
+      "description": "The last civilian village accessible on the southern shore, Merak is a remote Changpa settlement where semi-nomadic herders graze pashmina-producing cashmere goats and yaks on the lake-edge grasses. The village is extraordinarily isolated and the lake here widens to its fullest visible extent, providing some of the most photogenic and uncrowded Pangong vistas available.",
+      "whyVisit": "The most remote and spectacular viewpoint on the accessible southern shore.",
+      "bestTime": "June to September",
+      "duration": "2-3 hours",
+      "mapsSearch": "Merak Village, Pangong Lake, Ladakh",
+      "imageQuery": "Merak village Pangong Tso remote shore Ladakh"
+    },
+    {
+      "name": "Pangong Lake North Shore",
+      "category": "nature",
+      "description": "The northern shore of Pangong Tso, accessed via Shyok and recently opened roads, offers a completely different perspective on the lake — wilder, less visited, and with a close view of the Line of Actual Control. The contrast between the barren brown ridges of the north bank and the shimmering lake is even starker here, and the lighting for photography is exceptional in the afternoon.",
+      "whyVisit": "A far less crowded approach with dramatic LAC scenery and unique photography angles.",
+      "bestTime": "June to September",
+      "duration": "Half day",
+      "mapsSearch": "Pangong Lake North Shore, Ladakh",
+      "imageQuery": "Pangong Lake north shore Ladakh border"
+    },
+    {
+      "name": "Thakung Wetlands",
+      "category": "wildlife",
+      "description": "The marshy eastern end of Pangong Tso near Thakung village is a critical breeding habitat for several Himalayan waterbird species, including bar-headed geese, ruddy shelducks, and black-necked cranes. The reed beds and shallow delta where small streams enter the lake are spectacular in early summer when hundreds of nesting pairs are active simultaneously.",
+      "whyVisit": "The finest waterbird and migratory bird watching spot at Pangong Tso.",
+      "bestTime": "June to July for breeding birds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thakung Wetlands, Pangong Tso, Ladakh",
+      "imageQuery": "Thakung wetlands bar-headed geese Pangong Ladakh"
+    },
+    {
+      "name": "Lukung Village",
+      "category": "nature",
+      "description": "Lukung is the first village reached on the lake shore after the descent from Chang La and Durbuk, and many visitors make this their first Pangong viewpoint. A short walk from the road leads to a rocky lakeside area where the initial view of the lake's turquoise expanse opens dramatically before you — a scene that invariably produces a sharp intake of breath.",
+      "whyVisit": "The classic first full view of Pangong for most visitors arriving from Leh.",
+      "bestTime": "Morning, May to October",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Lukung Village, Pangong Lake, Ladakh",
+      "imageQuery": "Lukung village Pangong Lake first view Ladakh"
+    },
+    {
+      "name": "Durbuk",
+      "category": "heritage",
+      "description": "A roadside village on the highway between Chang La and Pangong, Durbuk is an important military and civilian hub with a petrol pump, small dhabas, and a vibrant local market. The surrounding landscape of ochre cliffs and dry riverbeds gives a taste of the moonscape terrain that characterises the Chang Chenmo valley before the lake appears.",
+      "whyVisit": "Last fuel and food stop before Pangong; good place to experience local Ladakhi roadside culture.",
+      "bestTime": "Year-round when accessible",
+      "duration": "30-minute stop",
+      "mapsSearch": "Durbuk, Chang Chenmo, Ladakh",
+      "imageQuery": "Durbuk village highway Ladakh desert mountains"
+    },
+    {
+      "name": "Pangong Lake Sunrise",
+      "category": "viewpoint",
+      "description": "Camping on the lake shore to witness sunrise over Pangong Tso is one of Ladakh's defining travel experiences. As the first light touches the Changthang ridgeline, the lake transitions from deep ink-blue to a fiery orange reflection before settling into its daytime turquoise. The absolute silence of the lake at dawn — broken only by diving grebes — is profoundly affecting.",
+      "whyVisit": "Arguably the most beautiful sunrise experience accessible by road in all of India.",
+      "bestTime": "June to September; stay in lakeside camps",
+      "duration": "Dawn hours",
+      "mapsSearch": "Pangong Lake camp, Spangmik, Ladakh",
+      "imageQuery": "Pangong Lake sunrise reflection dawn Ladakh"
+    },
+    {
+      "name": "Fingers of Pangong (Finger Area)",
+      "category": "nature",
+      "description": "The Finger Area refers to the rocky spurs — Fingers 1 through 8 — that jut into the northern shore of Pangong Tso and became well-known during the 2020 India-China standoff. Before military restrictions, trekking between the Fingers gave extraordinary close-up views of the lake from different elevations. The area's geological drama and strategic significance make it historically and visually unique.",
+      "whyVisit": "A geologically dramatic and geopolitically significant landscape unlike any other in India.",
+      "bestTime": "June to September (subject to current military access rules)",
+      "duration": "Half day",
+      "mapsSearch": "Finger Area Pangong Tso, Ladakh",
+      "imageQuery": "Pangong Finger area rocky spurs Ladakh"
+    },
+    {
+      "name": "Chushul Village",
+      "category": "heritage",
+      "description": "Chushul, on the southeastern fringe of the Pangong region, is a historically significant Changpa village adjacent to the site of the 1962 Sino-Indian War Battle of Chushul. A war memorial here honours Indian soldiers who defended this remote valley. The village itself is set in a spectacular bowl of mountains above the lake's eastern end.",
+      "whyVisit": "1962 war memorial and dramatic mountain scenery at the edge of the accessible Pangong region.",
+      "bestTime": "June to September",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chushul Village, Pangong, Ladakh",
+      "imageQuery": "Chushul village war memorial Ladakh 1962"
+    },
+    {
+      "name": "Rezang La War Memorial",
+      "category": "heritage",
+      "description": "Rezang La is the 5,360-metre pass above Chushul where the legendary Charlie Company of 13 Kumaon Regiment made its last stand against Chinese forces in November 1962. A granite memorial marks the site where 120 Indian soldiers died fighting vastly superior numbers. The memorial and the surrounding desolate high-altitude landscape make for a deeply moving visit.",
+      "whyVisit": "The most powerful memorial site in Ladakh, commemorating extraordinary military sacrifice.",
+      "bestTime": "June to September",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rezang La War Memorial, Chushul, Ladakh",
+      "imageQuery": "Rezang La war memorial Chushul Ladakh 1962"
+    },
+    {
+      "name": "Tangste Village",
+      "category": "heritage",
+      "description": "The largest village on the Leh-Pangong highway before the lake, Tangste has a small gompa, a military administrative presence, and the last ATM and reliable mobile signal before Pangong. The surrounding ochre and crimson eroded cliffs create a dramatic landscape that many visitors photograph without realising Tangste's name.",
+      "whyVisit": "Last civilised stop before Pangong with spectacular eroded cliff landscape.",
+      "bestTime": "Year-round when highway is open",
+      "duration": "30-minute stop",
+      "mapsSearch": "Tangste Village, Ladakh",
+      "imageQuery": "Tangste village red cliffs Ladakh highway"
+    },
+    {
+      "name": "Changthang Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "The vast cold desert plateau surrounding Pangong Tso and stretching to the Tibet border is protected as the Changthang Wildlife Sanctuary — one of the highest wildlife reserves in India. Kiang (Tibetan wild ass), Tibetan antelope (chiru), Tibetan gazelle, snow leopard, and wolves roam this austere landscape, which also supports the semi-nomadic Changpa herder culture.",
+      "whyVisit": "Exceptional high-altitude wildlife including snow leopard, kiang, and chiru in their natural plateau habitat.",
+      "bestTime": "November to February for snow leopard; June to August for grassland wildlife",
+      "duration": "Full day",
+      "mapsSearch": "Changthang Wildlife Sanctuary, Ladakh",
+      "imageQuery": "Changthang Wildlife Sanctuary kiang antelope Ladakh"
+    },
+    {
+      "name": "Tsomoriri Lake (Day Trip)",
+      "category": "lake",
+      "description": "Tsomoriri, 240 km south of Pangong, is Ladakh's other great high-altitude lake — deeper, quieter, and equally magnificent. The lake's cobalt waters are the breeding ground of the bar-headed goose, and the surrounding Changthang plateau offers superb wildlife and a profound sense of remoteness. Many Pangong visitors add a two-day extension to Tsomoriri.",
+      "whyVisit": "Ladakh's other world-class high-altitude lake — even more remote and wild than Pangong.",
+      "bestTime": "June to September",
+      "duration": "Overnight",
+      "mapsSearch": "Tsomoriri Lake, Ladakh",
+      "imageQuery": "Tsomoriri Lake Changthang plateau Ladakh blue"
+    },
+    {
+      "name": "Pangong Lake Frozen Surface (Winter)",
+      "category": "adventure",
+      "description": "From December to February, Pangong Tso freezes to depths of over a metre, forming a vast mirror of blue-white ice stretching to the horizon. The frozen lake has become a destination in its own right — visitors now drive onto the ice surface, and the Ladakh Ice Hockey Association plays games on it. The Pangong Ice Marathon, held in January, draws participants from across the world.",
+      "whyVisit": "Drive on a frozen Himalayan lake — one of India's most extreme and unforgettable winter experiences.",
+      "bestTime": "December to February",
+      "duration": "Full day",
+      "mapsSearch": "Pangong Lake frozen, Spangmik, Ladakh winter",
+      "imageQuery": "Pangong Lake frozen ice winter Ladakh"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "thanjavur",
+  "name": "Thanjavur",
+  "state": "Tamil Nadu",
+  "slug": "thanjavur",
+  "tagline": "Chola dynasty art and Brihadeeswarar glory",
+  "categories": [
+    "temple",
+    "monument",
+    "heritage"
+  ],
+  "introduction": "Thanjavur is a treasure trove of experiences. In this travel guide to Thanjavur, we reveal the must visit places in Thanjavur, the best places to visit in Thanjavur, iconic tourist attractions in Thanjavur, and amazing things to do in Thanjavur.",
+  "metaTitle": "Top Things to Do in Thanjavur | Travel Guide to Thanjavur - TrypInn",
+  "metaDescription": "Discover must visit places in Thanjavur, best places to visit in Thanjavur, and top tourist attractions in Thanjavur. Plan your perfect trip with TrypInn travel guide to Thanjavur.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+    "alt": "Thanjavur travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "thanjavur-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is a must-see temple in Thanjavur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Thanjavur.",
+      "whyVisit": "Brihadeeswarar Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Brihadeeswarar Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Thanjavur"
+      },
+      "position": 1
+    },
+    {
+      "id": "thanjavur-humayun-tomb",
+      "name": "Humayun Tomb",
+      "slug": "humayun-tomb",
+      "description": "Humayun Tomb is one of the most iconic landmarks in Thanjavur, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Humayun Tomb promises an unforgettable experience.",
+      "whyVisit": "Humayun Tomb offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Humayun Tomb, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Humayun Tomb in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Humayun Tomb in Thanjavur"
+      },
+      "position": 2
+    },
+    {
+      "id": "thanjavur-matanga-hill",
+      "name": "Matanga Hill",
+      "slug": "matanga-hill",
+      "description": "Located in scenic Thanjavur, Matanga Hill offers an immersive experience into local culture. Exploring Matanga Hill is one of the top things to do in Thanjavur.",
+      "whyVisit": "A visit to Matanga Hill is essential for understanding Thanjavur.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Matanga Hill, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Matanga Hill in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Matanga Hill in Thanjavur"
+      },
+      "position": 3
+    },
+    {
+      "id": "thanjavur-ranakpur-temple",
+      "name": "Ranakpur Temple",
+      "slug": "ranakpur-temple",
+      "description": "Ranakpur Temple is a must-see temple in Thanjavur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Thanjavur.",
+      "whyVisit": "Capture stunning photographs at Ranakpur Temple.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Ranakpur Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ranakpur Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Ranakpur Temple in Thanjavur"
+      },
+      "position": 4
+    },
+    {
+      "id": "thanjavur-diwan-i-khas",
+      "name": "Diwan-i-Khas",
+      "slug": "diwan-i-khas",
+      "description": "Diwan-i-Khas is one of the most iconic landmarks in Thanjavur, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Diwan-i-Khas promises an unforgettable experience.",
+      "whyVisit": "Diwan-i-Khas stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diwan-i-Khas, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Khas in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Khas in Thanjavur"
+      },
+      "position": 5
+    },
+    {
+      "id": "thanjavur-mahanavami-dibba",
+      "name": "Mahanavami Dibba",
+      "slug": "mahanavami-dibba",
+      "description": "Mahanavami Dibba is a must-see heritage in Thanjavur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Thanjavur.",
+      "whyVisit": "Experience the unmatched beauty of Mahanavami Dibba.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Mahanavami Dibba, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Mahanavami Dibba in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Mahanavami Dibba in Thanjavur"
+      },
+      "position": 6
+    },
+    {
+      "id": "thanjavur-lingaraj-temple",
+      "name": "Lingaraj Temple",
+      "slug": "lingaraj-temple",
+      "description": "Nestled in Thanjavur, Lingaraj Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Lingaraj Temple is among the best things to do in Thanjavur.",
+      "whyVisit": "Lingaraj Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Lingaraj Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Lingaraj Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Lingaraj Temple in Thanjavur"
+      },
+      "position": 7
+    },
+    {
+      "id": "thanjavur-jahangir-mahal",
+      "name": "Jahangir Mahal",
+      "slug": "jahangir-mahal",
+      "description": "Located in scenic Thanjavur, Jahangir Mahal offers an immersive experience into local culture. Exploring Jahangir Mahal is one of the top things to do in Thanjavur.",
+      "whyVisit": "A visit to Jahangir Mahal is essential for understanding Thanjavur.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Jahangir Mahal, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jahangir Mahal in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Jahangir Mahal in Thanjavur"
+      },
+      "position": 8
+    },
+    {
+      "id": "thanjavur-hazararama-temple",
+      "name": "Hazararama Temple",
+      "slug": "hazararama-temple",
+      "description": "Located in scenic Thanjavur, Hazararama Temple offers an immersive experience into local culture. Exploring Hazararama Temple is one of the top things to do in Thanjavur.",
+      "whyVisit": "Hazararama Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Hazararama Temple, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hazararama Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Hazararama Temple in Thanjavur"
+      },
+      "position": 9
+    },
+    {
+      "id": "thanjavur-khajuraho-temples",
+      "name": "Khajuraho Temples",
+      "slug": "khajuraho-temples",
+      "description": "Nestled in Thanjavur, Khajuraho Temples stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Khajuraho Temples is among the best things to do in Thanjavur.",
+      "whyVisit": "A visit to Khajuraho Temples is essential for understanding Thanjavur.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Khajuraho Temples, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Khajuraho Temples in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Khajuraho Temples in Thanjavur"
+      },
+      "position": 10
+    },
+    {
+      "id": "thanjavur-diwan-i-aam",
+      "name": "Diwan-i-Aam",
+      "slug": "diwan-i-aam",
+      "description": "Located in scenic Thanjavur, Diwan-i-Aam offers an immersive experience into local culture. Exploring Diwan-i-Aam is one of the top things to do in Thanjavur.",
+      "whyVisit": "A visit to Diwan-i-Aam is essential for understanding Thanjavur.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diwan-i-Aam, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Aam in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Aam in Thanjavur"
+      },
+      "position": 11
+    },
+    {
+      "id": "thanjavur-elephant-stables",
+      "name": "Elephant Stables",
+      "slug": "elephant-stables",
+      "description": "Nestled in Thanjavur, Elephant Stables stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Elephant Stables is among the best things to do in Thanjavur.",
+      "whyVisit": "Capture stunning photographs at Elephant Stables.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Elephant Stables, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Stables in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Elephant Stables in Thanjavur"
+      },
+      "position": 12
+    },
+    {
+      "id": "thanjavur-akshardham-temple",
+      "name": "Akshardham Temple",
+      "slug": "akshardham-temple",
+      "description": "Located in scenic Thanjavur, Akshardham Temple offers an immersive experience into local culture. Exploring Akshardham Temple is one of the top things to do in Thanjavur.",
+      "whyVisit": "Akshardham Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Akshardham Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Akshardham Temple in Thanjavur"
+      },
+      "position": 13
+    },
+    {
+      "id": "thanjavur-sheesh-mahal",
+      "name": "Sheesh Mahal",
+      "slug": "sheesh-mahal",
+      "description": "Sheesh Mahal is one of the most iconic landmarks in Thanjavur, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sheesh Mahal promises an unforgettable experience.",
+      "whyVisit": "Sheesh Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Sheesh Mahal, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Sheesh Mahal in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Sheesh Mahal in Thanjavur"
+      },
+      "position": 14
+    },
+    {
+      "id": "thanjavur-queen-bath",
+      "name": "Queen Bath",
+      "slug": "queen-bath",
+      "description": "Nestled in Thanjavur, Queen Bath stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Queen Bath is among the best things to do in Thanjavur.",
+      "whyVisit": "Capture stunning photographs at Queen Bath.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Queen Bath, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Queen Bath in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Queen Bath in Thanjavur"
+      },
+      "position": 15
+    },
+    {
+      "id": "thanjavur-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "Located in scenic Thanjavur, Siddhivinayak Temple offers an immersive experience into local culture. Exploring Siddhivinayak Temple is one of the top things to do in Thanjavur.",
+      "whyVisit": "Experience the unmatched beauty of Siddhivinayak Temple.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Siddhivinayak Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Thanjavur"
+      },
+      "position": 16
+    },
+    {
+      "id": "thanjavur-qutub-minar",
+      "name": "Qutub Minar",
+      "slug": "qutub-minar",
+      "description": "A crown jewel of Thanjavur, Qutub Minar captivates every traveler with enchanting beauty. No trip to Thanjavur is complete without visiting Qutub Minar.",
+      "whyVisit": "Qutub Minar offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Qutub Minar, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Qutub Minar in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Qutub Minar in Thanjavur"
+      },
+      "position": 17
+    },
+    {
+      "id": "thanjavur-malik-e-maidan",
+      "name": "Malik-e-Maidan",
+      "slug": "malik-e-maidan",
+      "description": "Malik-e-Maidan is a must-see heritage in Thanjavur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Thanjavur.",
+      "whyVisit": "Capture stunning photographs at Malik-e-Maidan.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Malik-e-Maidan, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Malik-e-Maidan in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Malik-e-Maidan in Thanjavur"
+      },
+      "position": 18
+    },
+    {
+      "id": "thanjavur-vitthal-temple",
+      "name": "Vitthal Temple",
+      "slug": "vitthal-temple",
+      "description": "Vitthal Temple is one of the most iconic landmarks in Thanjavur, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Vitthal Temple promises an unforgettable experience.",
+      "whyVisit": "Vitthal Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Vitthal Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vitthal Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Vitthal Temple in Thanjavur"
+      },
+      "position": 19
+    },
+    {
+      "id": "thanjavur-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is a must-see monument in Thanjavur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Thanjavur.",
+      "whyVisit": "Brihadeeswarar Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Brihadeeswarar Temple, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Thanjavur"
+      },
+      "position": 20
+    },
+    {
+      "id": "thanjavur-uppali-buruj",
+      "name": "Uppali Buruj",
+      "slug": "uppali-buruj",
+      "description": "A crown jewel of Thanjavur, Uppali Buruj captivates every traveler with enchanting beauty. No trip to Thanjavur is complete without visiting Uppali Buruj.",
+      "whyVisit": "Uppali Buruj offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Uppali Buruj, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Uppali Buruj in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Uppali Buruj in Thanjavur"
+      },
+      "position": 21
+    },
+    {
+      "id": "thanjavur-vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "slug": "vaishno-devi-temple",
+      "description": "Nestled in Thanjavur, Vaishno Devi Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Vaishno Devi Temple is among the best things to do in Thanjavur.",
+      "whyVisit": "Experience the unmatched beauty of Vaishno Devi Temple.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Vaishno Devi Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vaishno Devi Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Vaishno Devi Temple in Thanjavur"
+      },
+      "position": 22
+    },
+    {
+      "id": "thanjavur-india-gate",
+      "name": "India Gate",
+      "slug": "india-gate",
+      "description": "A crown jewel of Thanjavur, India Gate captivates every traveler with enchanting beauty. No trip to Thanjavur is complete without visiting India Gate.",
+      "whyVisit": "Capture stunning photographs at India Gate.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "India Gate, Thanjavur",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, India Gate in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "India Gate in Thanjavur"
+      },
+      "position": 23
+    },
+    {
+      "id": "thanjavur-pattadakal-temples",
+      "name": "Pattadakal Temples",
+      "slug": "pattadakal-temples",
+      "description": "Pattadakal Temples is one of the most iconic landmarks in Thanjavur, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pattadakal Temples promises an unforgettable experience.",
+      "whyVisit": "Pattadakal Temples offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Pattadakal Temples, Thanjavur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Pattadakal Temples in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Pattadakal Temples in Thanjavur"
+      },
+      "position": 24
+    },
+    {
+      "id": "thanjavur-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Nestled in Thanjavur, Kashi Vishwanath Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Kashi Vishwanath Temple is among the best things to do in Thanjavur.",
+      "whyVisit": "Experience the unmatched beauty of Kashi Vishwanath Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Kashi Vishwanath Temple, Thanjavur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Thanjavur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Thanjavur"
+      },
+      "position": 25
+    }
+  ]
+}

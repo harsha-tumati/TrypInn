@@ -1,0 +1,447 @@
+{
+  "id": "khajjiar",
+  "name": "Khajjiar",
+  "state": "Himachal Pradesh",
+  "slug": "khajjiar",
+  "tagline": "Mini Switzerland of India",
+  "categories": [
+    "hill_station",
+    "nature",
+    "lake"
+  ],
+  "introduction": "Welcome to Khajjiar, where history meets beauty. This travel guide to Khajjiar highlights the must visit places in Khajjiar, best places to visit in Khajjiar, tourist attractions in Khajjiar, and things to do in Khajjiar.",
+  "metaTitle": "Top Things to Do in Khajjiar | Travel Guide to Khajjiar - TrypInn",
+  "metaDescription": "Discover must visit places in Khajjiar, best places to visit in Khajjiar, and top tourist attractions in Khajjiar. Plan your perfect trip with TrypInn travel guide to Khajjiar.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1528127260108-a3aef7f22f7a?fm=webp&w=1200&q=60",
+    "alt": "Khajjiar travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "khajjiar-laitkor-peak",
+      "name": "Laitkor Peak",
+      "slug": "laitkor-peak",
+      "description": "Laitkor Peak is a must-see hill station in Khajjiar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajjiar.",
+      "whyVisit": "Capture stunning photographs at Laitkor Peak.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Laitkor Peak, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Laitkor Peak in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Laitkor Peak in Khajjiar"
+      },
+      "position": 1
+    },
+    {
+      "id": "khajjiar-valley-of-flowers",
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "Located in scenic Khajjiar, Valley of Flowers offers an immersive experience into local culture. Exploring Valley of Flowers is one of the top things to do in Khajjiar.",
+      "whyVisit": "Capture stunning photographs at Valley of Flowers.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Valley of Flowers, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers in Khajjiar"
+      },
+      "position": 2
+    },
+    {
+      "id": "khajjiar-akshardham-lake",
+      "name": "Akshardham Lake",
+      "slug": "akshardham-lake",
+      "description": "Nestled in Khajjiar, Akshardham Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Akshardham Lake is among the best things to do in Khajjiar.",
+      "whyVisit": "Akshardham Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Akshardham Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Akshardham Lake in Khajjiar"
+      },
+      "position": 3
+    },
+    {
+      "id": "khajjiar-mawsynram",
+      "name": "Mawsynram",
+      "slug": "mawsynram",
+      "description": "A crown jewel of Khajjiar, Mawsynram captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Mawsynram.",
+      "whyVisit": "Capture stunning photographs at Mawsynram.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Mawsynram, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawsynram in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Mawsynram in Khajjiar"
+      },
+      "position": 4
+    },
+    {
+      "id": "khajjiar-sattal",
+      "name": "Sattal",
+      "slug": "sattal",
+      "description": "Nestled in Khajjiar, Sattal stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Sattal is among the best things to do in Khajjiar.",
+      "whyVisit": "A visit to Sattal is essential for understanding Khajjiar.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Sattal, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Sattal in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Sattal in Khajjiar"
+      },
+      "position": 5
+    },
+    {
+      "id": "khajjiar-dal-lake",
+      "name": "Dal Lake",
+      "slug": "dal-lake",
+      "description": "Dal Lake is one of the most iconic landmarks in Khajjiar, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Dal Lake promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Dal Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Dal Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Dal Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Dal Lake in Khajjiar"
+      },
+      "position": 6
+    },
+    {
+      "id": "khajjiar-ward-lake",
+      "name": "Ward Lake",
+      "slug": "ward-lake",
+      "description": "Located in scenic Khajjiar, Ward Lake offers an immersive experience into local culture. Exploring Ward Lake is one of the top things to do in Khajjiar.",
+      "whyVisit": "Ward Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 days",
+      "mapsSearch": "Ward Lake, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Ward Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Ward Lake in Khajjiar"
+      },
+      "position": 7
+    },
+    {
+      "id": "khajjiar-bhimtal",
+      "name": "Bhimtal",
+      "slug": "bhimtal",
+      "description": "Nestled in Khajjiar, Bhimtal stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Bhimtal is among the best things to do in Khajjiar.",
+      "whyVisit": "A visit to Bhimtal is essential for understanding Khajjiar.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhimtal, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bhimtal in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Bhimtal in Khajjiar"
+      },
+      "position": 8
+    },
+    {
+      "id": "khajjiar-paravur-lake",
+      "name": "Paravur Lake",
+      "slug": "paravur-lake",
+      "description": "Paravur Lake is a must-see lake in Khajjiar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajjiar.",
+      "whyVisit": "Experience the unmatched beauty of Paravur Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Paravur Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Paravur Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Paravur Lake in Khajjiar"
+      },
+      "position": 9
+    },
+    {
+      "id": "khajjiar-smit-village",
+      "name": "Smit Village",
+      "slug": "smit-village",
+      "description": "A crown jewel of Khajjiar, Smit Village captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Smit Village.",
+      "whyVisit": "A visit to Smit Village is essential for understanding Khajjiar.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Smit Village, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Smit Village in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Smit Village in Khajjiar"
+      },
+      "position": 10
+    },
+    {
+      "id": "khajjiar-patal-bhuvaneshwar",
+      "name": "Patal Bhuvaneshwar",
+      "slug": "patal-bhuvaneshwar",
+      "description": "Located in scenic Khajjiar, Patal Bhuvaneshwar offers an immersive experience into local culture. Exploring Patal Bhuvaneshwar is one of the top things to do in Khajjiar.",
+      "whyVisit": "Patal Bhuvaneshwar stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Patal Bhuvaneshwar, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Patal Bhuvaneshwar in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Patal Bhuvaneshwar in Khajjiar"
+      },
+      "position": 11
+    },
+    {
+      "id": "khajjiar-kankaria-lake",
+      "name": "Kankaria Lake",
+      "slug": "kankaria-lake",
+      "description": "A crown jewel of Khajjiar, Kankaria Lake captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Kankaria Lake.",
+      "whyVisit": "Experience the unmatched beauty of Kankaria Lake.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Kankaria Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kankaria Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Kankaria Lake in Khajjiar"
+      },
+      "position": 12
+    },
+    {
+      "id": "khajjiar-nohkalikai-falls",
+      "name": "Nohkalikai Falls",
+      "slug": "nohkalikai-falls",
+      "description": "Nestled in Khajjiar, Nohkalikai Falls stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Nohkalikai Falls is among the best things to do in Khajjiar.",
+      "whyVisit": "A visit to Nohkalikai Falls is essential for understanding Khajjiar.",
+      "bestTime": "Oct-Dec",
+      "duration": "Weekend",
+      "mapsSearch": "Nohkalikai Falls, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Nohkalikai Falls in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Nohkalikai Falls in Khajjiar"
+      },
+      "position": 13
+    },
+    {
+      "id": "khajjiar-rajaji-national-park",
+      "name": "Rajaji National Park",
+      "slug": "rajaji-national-park",
+      "description": "A crown jewel of Khajjiar, Rajaji National Park captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Rajaji National Park.",
+      "whyVisit": "Rajaji National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Rajaji National Park, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rajaji National Park in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Rajaji National Park in Khajjiar"
+      },
+      "position": 14
+    },
+    {
+      "id": "khajjiar-sattal-lake",
+      "name": "Sattal Lake",
+      "slug": "sattal-lake",
+      "description": "Sattal Lake is one of the most iconic landmarks in Khajjiar, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sattal Lake promises an unforgettable experience.",
+      "whyVisit": "Sattal Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Sattal Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sattal Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Sattal Lake in Khajjiar"
+      },
+      "position": 15
+    },
+    {
+      "id": "khajjiar-living-root-bridge",
+      "name": "Living Root Bridge",
+      "slug": "living-root-bridge",
+      "description": "Located in scenic Khajjiar, Living Root Bridge offers an immersive experience into local culture. Exploring Living Root Bridge is one of the top things to do in Khajjiar.",
+      "whyVisit": "Experience the unmatched beauty of Living Root Bridge.",
+      "bestTime": "Year-round",
+      "duration": "Weekend",
+      "mapsSearch": "Living Root Bridge, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Living Root Bridge in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Living Root Bridge in Khajjiar"
+      },
+      "position": 16
+    },
+    {
+      "id": "khajjiar-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "Nestled in Khajjiar, Gangolihat stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Gangolihat is among the best things to do in Khajjiar.",
+      "whyVisit": "Capture stunning photographs at Gangolihat.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Gangolihat, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Khajjiar"
+      },
+      "position": 17
+    },
+    {
+      "id": "khajjiar-sankey-tank",
+      "name": "Sankey Tank",
+      "slug": "sankey-tank",
+      "description": "Sankey Tank is one of the most iconic landmarks in Khajjiar, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sankey Tank promises an unforgettable experience.",
+      "whyVisit": "A visit to Sankey Tank is essential for understanding Khajjiar.",
+      "bestTime": "Sep-Nov",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sankey Tank, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sankey Tank in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Sankey Tank in Khajjiar"
+      },
+      "position": 18
+    },
+    {
+      "id": "khajjiar-police-bazar",
+      "name": "Police Bazar",
+      "slug": "police-bazar",
+      "description": "Nestled in Khajjiar, Police Bazar stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Police Bazar is among the best things to do in Khajjiar.",
+      "whyVisit": "Experience the unmatched beauty of Police Bazar.",
+      "bestTime": "Oct-Dec",
+      "duration": "Weekend",
+      "mapsSearch": "Police Bazar, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Police Bazar in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Police Bazar in Khajjiar"
+      },
+      "position": 19
+    },
+    {
+      "id": "khajjiar-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "A crown jewel of Khajjiar, Mukteshwar captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Mukteshwar.",
+      "whyVisit": "A visit to Mukteshwar is essential for understanding Khajjiar.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mukteshwar, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in Khajjiar"
+      },
+      "position": 20
+    },
+    {
+      "id": "khajjiar-lower-lake",
+      "name": "Lower Lake",
+      "slug": "lower-lake",
+      "description": "Located in scenic Khajjiar, Lower Lake offers an immersive experience into local culture. Exploring Lower Lake is one of the top things to do in Khajjiar.",
+      "whyVisit": "Capture stunning photographs at Lower Lake.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Lower Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Lower Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Lower Lake in Khajjiar"
+      },
+      "position": 21
+    },
+    {
+      "id": "khajjiar-elephant-falls",
+      "name": "Elephant Falls",
+      "slug": "elephant-falls",
+      "description": "A crown jewel of Khajjiar, Elephant Falls captivates every traveler with enchanting beauty. No trip to Khajjiar is complete without visiting Elephant Falls.",
+      "whyVisit": "A visit to Elephant Falls is essential for understanding Khajjiar.",
+      "bestTime": "Summer",
+      "duration": "Weekend",
+      "mapsSearch": "Elephant Falls, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Falls in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Elephant Falls in Khajjiar"
+      },
+      "position": 22
+    },
+    {
+      "id": "khajjiar-binsar-wildlife-sanctuary",
+      "name": "Binsar Wildlife Sanctuary",
+      "slug": "binsar-wildlife-sanctuary",
+      "description": "Binsar Wildlife Sanctuary is one of the most iconic landmarks in Khajjiar, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Binsar Wildlife Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Binsar Wildlife Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Binsar Wildlife Sanctuary, Khajjiar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Binsar Wildlife Sanctuary in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Binsar Wildlife Sanctuary in Khajjiar"
+      },
+      "position": 23
+    },
+    {
+      "id": "khajjiar-vembanad-lake",
+      "name": "Vembanad Lake",
+      "slug": "vembanad-lake",
+      "description": "Nestled in Khajjiar, Vembanad Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Vembanad Lake is among the best things to do in Khajjiar.",
+      "whyVisit": "Vembanad Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vembanad Lake, Khajjiar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Vembanad Lake in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Vembanad Lake in Khajjiar"
+      },
+      "position": 24
+    },
+    {
+      "id": "khajjiar-dawki-river",
+      "name": "Dawki River",
+      "slug": "dawki-river",
+      "description": "Nestled in Khajjiar, Dawki River stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Dawki River is among the best things to do in Khajjiar.",
+      "whyVisit": "A visit to Dawki River is essential for understanding Khajjiar.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 days",
+      "mapsSearch": "Dawki River, Khajjiar",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Dawki River in Khajjiar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Dawki River in Khajjiar"
+      },
+      "position": 25
+    }
+  ]
+}

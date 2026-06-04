@@ -1,0 +1,447 @@
+{
+  "id": "orchha",
+  "name": "Orchha",
+  "state": "Madhya Pradesh",
+  "slug": "orchha",
+  "tagline": "Frozen-in-time temple town on the Betwa",
+  "categories": [
+    "temple",
+    "palace",
+    "monument"
+  ],
+  "introduction": "Planning a trip to Orchha? This travel guide to Orchha covers the must visit places in Orchha, the best places to visit in Orchha, top tourist attractions in Orchha, and exciting things to do in Orchha.",
+  "metaTitle": "Top Things to Do in Orchha | Travel Guide to Orchha - TrypInn",
+  "metaDescription": "Find the best places to visit in Orchha, must visit places in Orchha, and tourist attractions in Orchha. Plan your Orchha trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=1200&q=60",
+    "alt": "Orchha travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "orchha-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is a must-see temple in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Capture stunning photographs at Brihadeeswarar Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Brihadeeswarar Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Orchha"
+      },
+      "position": 1
+    },
+    {
+      "id": "orchha-shiv-vilas-palace",
+      "name": "Shiv Vilas Palace",
+      "slug": "shiv-vilas-palace",
+      "description": "Shiv Vilas Palace is a must-see palace in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Shiv Vilas Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Shiv Vilas Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Shiv Vilas Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Shiv Vilas Palace in Orchha"
+      },
+      "position": 2
+    },
+    {
+      "id": "orchha-panch-mahal",
+      "name": "Panch Mahal",
+      "slug": "panch-mahal",
+      "description": "Located in scenic Orchha, Panch Mahal offers an immersive experience into local culture. Exploring Panch Mahal is one of the top things to do in Orchha.",
+      "whyVisit": "Panch Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Panch Mahal, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Panch Mahal in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Panch Mahal in Orchha"
+      },
+      "position": 3
+    },
+    {
+      "id": "orchha-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Located in scenic Orchha, Kashi Vishwanath Temple offers an immersive experience into local culture. Exploring Kashi Vishwanath Temple is one of the top things to do in Orchha.",
+      "whyVisit": "Kashi Vishwanath Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Kashi Vishwanath Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Orchha"
+      },
+      "position": 4
+    },
+    {
+      "id": "orchha-prag-mahal",
+      "name": "Prag Mahal",
+      "slug": "prag-mahal",
+      "description": "Located in scenic Orchha, Prag Mahal offers an immersive experience into local culture. Exploring Prag Mahal is one of the top things to do in Orchha.",
+      "whyVisit": "Prag Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Prag Mahal, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Prag Mahal in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Prag Mahal in Orchha"
+      },
+      "position": 5
+    },
+    {
+      "id": "orchha-thanjavur-maratha-palace",
+      "name": "Thanjavur Maratha Palace",
+      "slug": "thanjavur-maratha-palace",
+      "description": "Nestled in Orchha, Thanjavur Maratha Palace stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Thanjavur Maratha Palace is among the best things to do in Orchha.",
+      "whyVisit": "Experience the unmatched beauty of Thanjavur Maratha Palace.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thanjavur Maratha Palace, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Thanjavur Maratha Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Thanjavur Maratha Palace in Orchha"
+      },
+      "position": 6
+    },
+    {
+      "id": "orchha-chamundi-temple",
+      "name": "Chamundi Temple",
+      "slug": "chamundi-temple",
+      "description": "Located in scenic Orchha, Chamundi Temple offers an immersive experience into local culture. Exploring Chamundi Temple is one of the top things to do in Orchha.",
+      "whyVisit": "A visit to Chamundi Temple is essential for understanding Orchha.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Chamundi Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamundi Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Chamundi Temple in Orchha"
+      },
+      "position": 7
+    },
+    {
+      "id": "orchha-mattancherry-palace",
+      "name": "Mattancherry Palace",
+      "slug": "mattancherry-palace",
+      "description": "Mattancherry Palace is one of the most iconic landmarks in Orchha, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mattancherry Palace promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Mattancherry Palace.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Mattancherry Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mattancherry Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Mattancherry Palace in Orchha"
+      },
+      "position": 8
+    },
+    {
+      "id": "orchha-gateway-of-india",
+      "name": "Gateway of India",
+      "slug": "gateway-of-india",
+      "description": "Gateway of India is a must-see monument in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Experience the unmatched beauty of Gateway of India.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gateway of India, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Gateway of India in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Gateway of India in Orchha"
+      },
+      "position": 9
+    },
+    {
+      "id": "orchha-tirupati-balaji-temple",
+      "name": "Tirupati Balaji Temple",
+      "slug": "tirupati-balaji-temple",
+      "description": "A crown jewel of Orchha, Tirupati Balaji Temple captivates every traveler with enchanting beauty. No trip to Orchha is complete without visiting Tirupati Balaji Temple.",
+      "whyVisit": "Tirupati Balaji Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Tirupati Balaji Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Tirupati Balaji Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Tirupati Balaji Temple in Orchha"
+      },
+      "position": 10
+    },
+    {
+      "id": "orchha-lake-palace",
+      "name": "Lake Palace",
+      "slug": "lake-palace",
+      "description": "Lake Palace is a must-see palace in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Capture stunning photographs at Lake Palace.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lake Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lake Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Lake Palace in Orchha"
+      },
+      "position": 11
+    },
+    {
+      "id": "orchha-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Nestled in Orchha, Brihadeeswarar Temple stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Brihadeeswarar Temple is among the best things to do in Orchha.",
+      "whyVisit": "Brihadeeswarar Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Brihadeeswarar Temple, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Orchha"
+      },
+      "position": 12
+    },
+    {
+      "id": "orchha-lingaraj-temple",
+      "name": "Lingaraj Temple",
+      "slug": "lingaraj-temple",
+      "description": "Lingaraj Temple is one of the most iconic landmarks in Orchha, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Lingaraj Temple promises an unforgettable experience.",
+      "whyVisit": "Lingaraj Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Lingaraj Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Lingaraj Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Lingaraj Temple in Orchha"
+      },
+      "position": 13
+    },
+    {
+      "id": "orchha-mysore-palace",
+      "name": "Mysore Palace",
+      "slug": "mysore-palace",
+      "description": "A crown jewel of Orchha, Mysore Palace captivates every traveler with enchanting beauty. No trip to Orchha is complete without visiting Mysore Palace.",
+      "whyVisit": "Capture stunning photographs at Mysore Palace.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mysore Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mysore Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Mysore Palace in Orchha"
+      },
+      "position": 14
+    },
+    {
+      "id": "orchha-diwan-i-khas",
+      "name": "Diwan-i-Khas",
+      "slug": "diwan-i-khas",
+      "description": "Diwan-i-Khas is a must-see monument in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "A visit to Diwan-i-Khas is essential for understanding Orchha.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diwan-i-Khas, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Khas in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Khas in Orchha"
+      },
+      "position": 15
+    },
+    {
+      "id": "orchha-khajuraho-temples",
+      "name": "Khajuraho Temples",
+      "slug": "khajuraho-temples",
+      "description": "Nestled in Orchha, Khajuraho Temples stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Khajuraho Temples is among the best things to do in Orchha.",
+      "whyVisit": "Khajuraho Temples stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Khajuraho Temples, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Khajuraho Temples in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Khajuraho Temples in Orchha"
+      },
+      "position": 16
+    },
+    {
+      "id": "orchha-cooch-behar-palace",
+      "name": "Cooch Behar Palace",
+      "slug": "cooch-behar-palace",
+      "description": "Cooch Behar Palace is a must-see palace in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Capture stunning photographs at Cooch Behar Palace.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Cooch Behar Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Cooch Behar Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Cooch Behar Palace in Orchha"
+      },
+      "position": 17
+    },
+    {
+      "id": "orchha-jahangir-mahal",
+      "name": "Jahangir Mahal",
+      "slug": "jahangir-mahal",
+      "description": "Nestled in Orchha, Jahangir Mahal stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Jahangir Mahal is among the best things to do in Orchha.",
+      "whyVisit": "Jahangir Mahal offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Jahangir Mahal, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jahangir Mahal in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Jahangir Mahal in Orchha"
+      },
+      "position": 18
+    },
+    {
+      "id": "orchha-birla-mandir",
+      "name": "Birla Mandir",
+      "slug": "birla-mandir",
+      "description": "Nestled in Orchha, Birla Mandir stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Birla Mandir is among the best things to do in Orchha.",
+      "whyVisit": "Experience the unmatched beauty of Birla Mandir.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Birla Mandir, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Birla Mandir in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Birla Mandir in Orchha"
+      },
+      "position": 19
+    },
+    {
+      "id": "orchha-amba-vilas-palace",
+      "name": "Amba Vilas Palace",
+      "slug": "amba-vilas-palace",
+      "description": "A crown jewel of Orchha, Amba Vilas Palace captivates every traveler with enchanting beauty. No trip to Orchha is complete without visiting Amba Vilas Palace.",
+      "whyVisit": "Amba Vilas Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Amba Vilas Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Amba Vilas Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Amba Vilas Palace in Orchha"
+      },
+      "position": 20
+    },
+    {
+      "id": "orchha-itmad-ud-daulah",
+      "name": "Itmad-ud-Daulah",
+      "slug": "itmad-ud-daulah",
+      "description": "Itmad-ud-Daulah is a must-see monument in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Itmad-ud-Daulah stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Itmad-ud-Daulah, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Itmad-ud-Daulah in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Itmad-ud-Daulah in Orchha"
+      },
+      "position": 21
+    },
+    {
+      "id": "orchha-sun-temple",
+      "name": "Sun Temple",
+      "slug": "sun-temple",
+      "description": "Located in scenic Orchha, Sun Temple offers an immersive experience into local culture. Exploring Sun Temple is one of the top things to do in Orchha.",
+      "whyVisit": "Sun Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sun Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Sun Temple in Orchha"
+      },
+      "position": 22
+    },
+    {
+      "id": "orchha-thirumalai-nayakkar-palace",
+      "name": "Thirumalai Nayakkar Palace",
+      "slug": "thirumalai-nayakkar-palace",
+      "description": "Located in scenic Orchha, Thirumalai Nayakkar Palace offers an immersive experience into local culture. Exploring Thirumalai Nayakkar Palace is one of the top things to do in Orchha.",
+      "whyVisit": "Thirumalai Nayakkar Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thirumalai Nayakkar Palace, Orchha",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Thirumalai Nayakkar Palace in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Thirumalai Nayakkar Palace in Orchha"
+      },
+      "position": 23
+    },
+    {
+      "id": "orchha-fatehpur-sikri",
+      "name": "Fatehpur Sikri",
+      "slug": "fatehpur-sikri",
+      "description": "Fatehpur Sikri is a must-see monument in Orchha, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Orchha.",
+      "whyVisit": "Fatehpur Sikri stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Fatehpur Sikri, Orchha",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Fatehpur Sikri in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Fatehpur Sikri in Orchha"
+      },
+      "position": 24
+    },
+    {
+      "id": "orchha-padmanabhaswamy-temple",
+      "name": "Padmanabhaswamy Temple",
+      "slug": "padmanabhaswamy-temple",
+      "description": "Nestled in Orchha, Padmanabhaswamy Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Padmanabhaswamy Temple is among the best things to do in Orchha.",
+      "whyVisit": "Padmanabhaswamy Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Padmanabhaswamy Temple, Orchha",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Padmanabhaswamy Temple in Orchha, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Padmanabhaswamy Temple in Orchha"
+      },
+      "position": 25
+    }
+  ]
+}

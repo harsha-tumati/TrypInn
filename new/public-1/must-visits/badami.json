@@ -1,0 +1,447 @@
+{
+  "id": "badami",
+  "name": "Badami",
+  "state": "Karnataka",
+  "slug": "badami",
+  "tagline": "Red sandstone cave temples and fort vistas",
+  "categories": [
+    "cave",
+    "temple",
+    "fort"
+  ],
+  "introduction": "Planning a trip to Badami? This travel guide to Badami covers the must visit places in Badami, the best places to visit in Badami, top tourist attractions in Badami, and exciting things to do in Badami.",
+  "metaTitle": "Must Visit Places in Badami | Best Places to Visit in Badami - TrypInn",
+  "metaDescription": "Find the best places to visit in Badami, must visit places in Badami, and tourist attractions in Badami. Plan your Badami trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+    "alt": "Badami travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "badami-pandavleni-caves",
+      "name": "Pandavleni Caves",
+      "slug": "pandavleni-caves",
+      "description": "Located in scenic Badami, Pandavleni Caves offers an immersive experience into local culture. Exploring Pandavleni Caves is one of the top things to do in Badami.",
+      "whyVisit": "Pandavleni Caves offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pandavleni Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Pandavleni Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Pandavleni Caves in Badami"
+      },
+      "position": 1
+    },
+    {
+      "id": "badami-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Located in scenic Badami, Kashi Vishwanath Temple offers an immersive experience into local culture. Exploring Kashi Vishwanath Temple is one of the top things to do in Badami.",
+      "whyVisit": "Experience the unmatched beauty of Kashi Vishwanath Temple.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kashi Vishwanath Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Badami"
+      },
+      "position": 2
+    },
+    {
+      "id": "badami-bangalore-fort",
+      "name": "Bangalore Fort",
+      "slug": "bangalore-fort",
+      "description": "Bangalore Fort is a must-see fort in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "Bangalore Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bangalore Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Bangalore Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Bangalore Fort in Badami"
+      },
+      "position": 3
+    },
+    {
+      "id": "badami-borra-caves",
+      "name": "Borra Caves",
+      "slug": "borra-caves",
+      "description": "Nestled in Badami, Borra Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Borra Caves is among the best things to do in Badami.",
+      "whyVisit": "Borra Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Avoid monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Borra Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Borra Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Borra Caves in Badami"
+      },
+      "position": 4
+    },
+    {
+      "id": "badami-padmanabhaswamy-temple",
+      "name": "Padmanabhaswamy Temple",
+      "slug": "padmanabhaswamy-temple",
+      "description": "Located in scenic Badami, Padmanabhaswamy Temple offers an immersive experience into local culture. Exploring Padmanabhaswamy Temple is one of the top things to do in Badami.",
+      "whyVisit": "Padmanabhaswamy Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Padmanabhaswamy Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Padmanabhaswamy Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Padmanabhaswamy Temple in Badami"
+      },
+      "position": 5
+    },
+    {
+      "id": "badami-kannur-fort",
+      "name": "Kannur Fort",
+      "slug": "kannur-fort",
+      "description": "Nestled in Badami, Kannur Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Kannur Fort is among the best things to do in Badami.",
+      "whyVisit": "A visit to Kannur Fort is essential for understanding Badami.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Kannur Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kannur Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Kannur Fort in Badami"
+      },
+      "position": 6
+    },
+    {
+      "id": "badami-akka-mahadevi-caves",
+      "name": "Akka Mahadevi Caves",
+      "slug": "akka-mahadevi-caves",
+      "description": "Nestled in Badami, Akka Mahadevi Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Akka Mahadevi Caves is among the best things to do in Badami.",
+      "whyVisit": "Akka Mahadevi Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Quick",
+      "mapsSearch": "Akka Mahadevi Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Akka Mahadevi Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Akka Mahadevi Caves in Badami"
+      },
+      "position": 7
+    },
+    {
+      "id": "badami-sri-venkateswara-temple",
+      "name": "Sri Venkateswara Temple",
+      "slug": "sri-venkateswara-temple",
+      "description": "Sri Venkateswara Temple is one of the most iconic landmarks in Badami, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sri Venkateswara Temple promises an unforgettable experience.",
+      "whyVisit": "A visit to Sri Venkateswara Temple is essential for understanding Badami.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Sri Venkateswara Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Venkateswara Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Sri Venkateswara Temple in Badami"
+      },
+      "position": 8
+    },
+    {
+      "id": "badami-chittorgarh-fort",
+      "name": "Chittorgarh Fort",
+      "slug": "chittorgarh-fort",
+      "description": "Chittorgarh Fort is one of the most iconic landmarks in Badami, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chittorgarh Fort promises an unforgettable experience.",
+      "whyVisit": "Chittorgarh Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Sunset",
+      "mapsSearch": "Chittorgarh Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Chittorgarh Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Chittorgarh Fort in Badami"
+      },
+      "position": 9
+    },
+    {
+      "id": "badami-junnar-caves",
+      "name": "Junnar Caves",
+      "slug": "junnar-caves",
+      "description": "Junnar Caves is a must-see cave in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "A visit to Junnar Caves is essential for understanding Badami.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Junnar Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Junnar Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Junnar Caves in Badami"
+      },
+      "position": 10
+    },
+    {
+      "id": "badami-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "Siddhivinayak Temple is a must-see temple in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "Capture stunning photographs at Siddhivinayak Temple.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Siddhivinayak Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Badami"
+      },
+      "position": 11
+    },
+    {
+      "id": "badami-kangra-fort",
+      "name": "Kangra Fort",
+      "slug": "kangra-fort",
+      "description": "Kangra Fort is a must-see fort in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "Capture stunning photographs at Kangra Fort.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Kangra Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kangra Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Kangra Fort in Badami"
+      },
+      "position": 12
+    },
+    {
+      "id": "badami-aurangabad-caves",
+      "name": "Aurangabad Caves",
+      "slug": "aurangabad-caves",
+      "description": "Nestled in Badami, Aurangabad Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Aurangabad Caves is among the best things to do in Badami.",
+      "whyVisit": "Aurangabad Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Avoid monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Aurangabad Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Aurangabad Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Aurangabad Caves in Badami"
+      },
+      "position": 13
+    },
+    {
+      "id": "badami-konark-sun-temple",
+      "name": "Konark Sun Temple",
+      "slug": "konark-sun-temple",
+      "description": "A crown jewel of Badami, Konark Sun Temple captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Konark Sun Temple.",
+      "whyVisit": "Konark Sun Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Konark Sun Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Konark Sun Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Konark Sun Temple in Badami"
+      },
+      "position": 14
+    },
+    {
+      "id": "badami-jaisalmer-fort",
+      "name": "Jaisalmer Fort",
+      "slug": "jaisalmer-fort",
+      "description": "Jaisalmer Fort is a must-see fort in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "Jaisalmer Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Jaisalmer Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaisalmer Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Jaisalmer Fort in Badami"
+      },
+      "position": 15
+    },
+    {
+      "id": "badami-ellora-caves",
+      "name": "Ellora Caves",
+      "slug": "ellora-caves",
+      "description": "Ellora Caves is one of the most iconic landmarks in Badami, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Ellora Caves promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Ellora Caves.",
+      "bestTime": "Avoid monsoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ellora Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Ellora Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Ellora Caves in Badami"
+      },
+      "position": 16
+    },
+    {
+      "id": "badami-golden-temple",
+      "name": "Golden Temple",
+      "slug": "golden-temple",
+      "description": "Golden Temple is one of the most iconic landmarks in Badami, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Golden Temple promises an unforgettable experience.",
+      "whyVisit": "Golden Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Golden Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Golden Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Golden Temple in Badami"
+      },
+      "position": 17
+    },
+    {
+      "id": "badami-bidar-fort",
+      "name": "Bidar Fort",
+      "slug": "bidar-fort",
+      "description": "Located in scenic Badami, Bidar Fort offers an immersive experience into local culture. Exploring Bidar Fort is one of the top things to do in Badami.",
+      "whyVisit": "Experience the unmatched beauty of Bidar Fort.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bidar Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Bidar Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Bidar Fort in Badami"
+      },
+      "position": 18
+    },
+    {
+      "id": "badami-kotappakonda-caves",
+      "name": "Kotappakonda Caves",
+      "slug": "kotappakonda-caves",
+      "description": "Kotappakonda Caves is a must-see cave in Badami, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Badami.",
+      "whyVisit": "Kotappakonda Caves offers a perfect blend of history and scenery.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kotappakonda Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Kotappakonda Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Kotappakonda Caves in Badami"
+      },
+      "position": 19
+    },
+    {
+      "id": "badami-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Located in scenic Badami, Brihadeeswarar Temple offers an immersive experience into local culture. Exploring Brihadeeswarar Temple is one of the top things to do in Badami.",
+      "whyVisit": "Capture stunning photographs at Brihadeeswarar Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Brihadeeswarar Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Badami"
+      },
+      "position": 20
+    },
+    {
+      "id": "badami-panhala-fort",
+      "name": "Panhala Fort",
+      "slug": "panhala-fort",
+      "description": "A crown jewel of Badami, Panhala Fort captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Panhala Fort.",
+      "whyVisit": "Capture stunning photographs at Panhala Fort.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Panhala Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Panhala Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Panhala Fort in Badami"
+      },
+      "position": 21
+    },
+    {
+      "id": "badami-elephanta-caves",
+      "name": "Elephanta Caves",
+      "slug": "elephanta-caves",
+      "description": "A crown jewel of Badami, Elephanta Caves captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Elephanta Caves.",
+      "whyVisit": "A visit to Elephanta Caves is essential for understanding Badami.",
+      "bestTime": "Avoid monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Elephanta Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Elephanta Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Elephanta Caves in Badami"
+      },
+      "position": 22
+    },
+    {
+      "id": "badami-somnath-temple",
+      "name": "Somnath Temple",
+      "slug": "somnath-temple",
+      "description": "A crown jewel of Badami, Somnath Temple captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Somnath Temple.",
+      "whyVisit": "Somnath Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Somnath Temple, Badami",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Somnath Temple in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Somnath Temple in Badami"
+      },
+      "position": 23
+    },
+    {
+      "id": "badami-gwalior-fort",
+      "name": "Gwalior Fort",
+      "slug": "gwalior-fort",
+      "description": "A crown jewel of Badami, Gwalior Fort captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Gwalior Fort.",
+      "whyVisit": "Experience the unmatched beauty of Gwalior Fort.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Gwalior Fort, Badami",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Gwalior Fort in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Gwalior Fort in Badami"
+      },
+      "position": 24
+    },
+    {
+      "id": "badami-belum-caves",
+      "name": "Belum Caves",
+      "slug": "belum-caves",
+      "description": "A crown jewel of Badami, Belum Caves captivates every traveler with enchanting beauty. No trip to Badami is complete without visiting Belum Caves.",
+      "whyVisit": "Capture stunning photographs at Belum Caves.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Belum Caves, Badami",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Belum Caves in Badami, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Belum Caves in Badami"
+      },
+      "position": 25
+    }
+  ]
+}

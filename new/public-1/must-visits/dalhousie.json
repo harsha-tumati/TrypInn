@@ -1,0 +1,447 @@
+{
+  "id": "dalhousie",
+  "name": "Dalhousie",
+  "state": "Himachal Pradesh",
+  "slug": "dalhousie",
+  "tagline": "Colonial hill station with pine hills",
+  "categories": [
+    "hill_station",
+    "nature",
+    "viewpoint"
+  ],
+  "introduction": "Welcome to Dalhousie, where history meets beauty. This travel guide to Dalhousie highlights the must visit places in Dalhousie, best places to visit in Dalhousie, tourist attractions in Dalhousie, and things to do in Dalhousie.",
+  "metaTitle": "Best Places to Visit in Dalhousie | Tourist Attractions in Dalhousie - TrypInn",
+  "metaDescription": "Discover must visit places in Dalhousie, best places to visit in Dalhousie, and top tourist attractions in Dalhousie. Plan your perfect trip with TrypInn travel guide to Dalhousie.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+    "alt": "Dalhousie travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "dalhousie-police-bazar",
+      "name": "Police Bazar",
+      "slug": "police-bazar",
+      "description": "Nestled in Dalhousie, Police Bazar stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Police Bazar is among the best things to do in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Police Bazar.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Police Bazar, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Police Bazar in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Police Bazar in Dalhousie"
+      },
+      "position": 1
+    },
+    {
+      "id": "dalhousie-bhimtal",
+      "name": "Bhimtal",
+      "slug": "bhimtal",
+      "description": "A crown jewel of Dalhousie, Bhimtal captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Bhimtal.",
+      "whyVisit": "Experience the unmatched beauty of Bhimtal.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhimtal, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bhimtal in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Bhimtal in Dalhousie"
+      },
+      "position": 2
+    },
+    {
+      "id": "dalhousie-araku-valley-view",
+      "name": "Araku Valley View",
+      "slug": "araku-valley-view",
+      "description": "Araku Valley View is a must-see viewpoint in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Araku Valley View.",
+      "bestTime": "Sunset",
+      "duration": "Quick",
+      "mapsSearch": "Araku Valley View, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Araku Valley View in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Araku Valley View in Dalhousie"
+      },
+      "position": 3
+    },
+    {
+      "id": "dalhousie-lady-hydari-park",
+      "name": "Lady Hydari Park",
+      "slug": "lady-hydari-park",
+      "description": "A crown jewel of Dalhousie, Lady Hydari Park captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Lady Hydari Park.",
+      "whyVisit": "Experience the unmatched beauty of Lady Hydari Park.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Lady Hydari Park, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Lady Hydari Park in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Lady Hydari Park in Dalhousie"
+      },
+      "position": 4
+    },
+    {
+      "id": "dalhousie-pithoragarh",
+      "name": "Pithoragarh",
+      "slug": "pithoragarh",
+      "description": "Pithoragarh is a must-see nature in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Pithoragarh.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pithoragarh, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pithoragarh in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Pithoragarh in Dalhousie"
+      },
+      "position": 5
+    },
+    {
+      "id": "dalhousie-honeymoon-point",
+      "name": "Honeymoon Point",
+      "slug": "honeymoon-point",
+      "description": "Nestled in Dalhousie, Honeymoon Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Honeymoon Point is among the best things to do in Dalhousie.",
+      "whyVisit": "Honeymoon Point stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Quick",
+      "mapsSearch": "Honeymoon Point, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Honeymoon Point in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Honeymoon Point in Dalhousie"
+      },
+      "position": 6
+    },
+    {
+      "id": "dalhousie-laitlum-canyons",
+      "name": "Laitlum Canyons",
+      "slug": "laitlum-canyons",
+      "description": "Located in scenic Dalhousie, Laitlum Canyons offers an immersive experience into local culture. Exploring Laitlum Canyons is one of the top things to do in Dalhousie.",
+      "whyVisit": "Laitlum Canyons stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Weekend",
+      "mapsSearch": "Laitlum Canyons, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Laitlum Canyons in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Laitlum Canyons in Dalhousie"
+      },
+      "position": 7
+    },
+    {
+      "id": "dalhousie-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "A crown jewel of Dalhousie, Gangolihat captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Gangolihat.",
+      "whyVisit": "A visit to Gangolihat is essential for understanding Dalhousie.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Gangolihat, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Dalhousie"
+      },
+      "position": 8
+    },
+    {
+      "id": "dalhousie-kolli-hills-view",
+      "name": "Kolli Hills View",
+      "slug": "kolli-hills-view",
+      "description": "Kolli Hills View is a must-see viewpoint in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "A visit to Kolli Hills View is essential for understanding Dalhousie.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kolli Hills View, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kolli Hills View in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Kolli Hills View in Dalhousie"
+      },
+      "position": 9
+    },
+    {
+      "id": "dalhousie-laitkor-peak",
+      "name": "Laitkor Peak",
+      "slug": "laitkor-peak",
+      "description": "Laitkor Peak is a must-see hill station in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "Capture stunning photographs at Laitkor Peak.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Laitkor Peak, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Laitkor Peak in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Laitkor Peak in Dalhousie"
+      },
+      "position": 10
+    },
+    {
+      "id": "dalhousie-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Munsiyari is a must-see nature in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "A visit to Munsiyari is essential for understanding Dalhousie.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Munsiyari, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Dalhousie"
+      },
+      "position": 11
+    },
+    {
+      "id": "dalhousie-lambasingi-view",
+      "name": "Lambasingi View",
+      "slug": "lambasingi-view",
+      "description": "A crown jewel of Dalhousie, Lambasingi View captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Lambasingi View.",
+      "whyVisit": "Capture stunning photographs at Lambasingi View.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Lambasingi View, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lambasingi View in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Lambasingi View in Dalhousie"
+      },
+      "position": 12
+    },
+    {
+      "id": "dalhousie-kynrem-falls",
+      "name": "Kynrem Falls",
+      "slug": "kynrem-falls",
+      "description": "Located in scenic Dalhousie, Kynrem Falls offers an immersive experience into local culture. Exploring Kynrem Falls is one of the top things to do in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Kynrem Falls.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Kynrem Falls, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Kynrem Falls in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Kynrem Falls in Dalhousie"
+      },
+      "position": 13
+    },
+    {
+      "id": "dalhousie-almora",
+      "name": "Almora",
+      "slug": "almora",
+      "description": "Almora is a must-see nature in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "Capture stunning photographs at Almora.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Almora, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Almora in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Almora in Dalhousie"
+      },
+      "position": 14
+    },
+    {
+      "id": "dalhousie-horsley-hills-view",
+      "name": "Horsley Hills View",
+      "slug": "horsley-hills-view",
+      "description": "Nestled in Dalhousie, Horsley Hills View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Horsley Hills View is among the best things to do in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Horsley Hills View.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Horsley Hills View, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Horsley Hills View in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Horsley Hills View in Dalhousie"
+      },
+      "position": 15
+    },
+    {
+      "id": "dalhousie-mawlyngbna",
+      "name": "Mawlyngbna",
+      "slug": "mawlyngbna",
+      "description": "Mawlyngbna is a must-see hill station in Dalhousie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Mawlyngbna.",
+      "bestTime": "Year-round",
+      "duration": "Weekend",
+      "mapsSearch": "Mawlyngbna, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawlyngbna in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Mawlyngbna in Dalhousie"
+      },
+      "position": 16
+    },
+    {
+      "id": "dalhousie-ranikhet",
+      "name": "Ranikhet",
+      "slug": "ranikhet",
+      "description": "Nestled in Dalhousie, Ranikhet stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Ranikhet is among the best things to do in Dalhousie.",
+      "whyVisit": "Ranikhet stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Ranikhet, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Ranikhet in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Ranikhet in Dalhousie"
+      },
+      "position": 17
+    },
+    {
+      "id": "dalhousie-deomali-view",
+      "name": "Deomali View",
+      "slug": "deomali-view",
+      "description": "Located in scenic Dalhousie, Deomali View offers an immersive experience into local culture. Exploring Deomali View is one of the top things to do in Dalhousie.",
+      "whyVisit": "Experience the unmatched beauty of Deomali View.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Deomali View, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Deomali View in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Deomali View in Dalhousie"
+      },
+      "position": 18
+    },
+    {
+      "id": "dalhousie-nongriat",
+      "name": "Nongriat",
+      "slug": "nongriat",
+      "description": "A crown jewel of Dalhousie, Nongriat captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Nongriat.",
+      "whyVisit": "Experience the unmatched beauty of Nongriat.",
+      "bestTime": "Summer",
+      "duration": "2-3 days",
+      "mapsSearch": "Nongriat, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Nongriat in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Nongriat in Dalhousie"
+      },
+      "position": 19
+    },
+    {
+      "id": "dalhousie-champawat",
+      "name": "Champawat",
+      "slug": "champawat",
+      "description": "Located in scenic Dalhousie, Champawat offers an immersive experience into local culture. Exploring Champawat is one of the top things to do in Dalhousie.",
+      "whyVisit": "Champawat offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Champawat, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Champawat in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Champawat in Dalhousie"
+      },
+      "position": 20
+    },
+    {
+      "id": "dalhousie-doddabetta-peak",
+      "name": "Doddabetta Peak",
+      "slug": "doddabetta-peak",
+      "description": "Nestled in Dalhousie, Doddabetta Peak stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Doddabetta Peak is among the best things to do in Dalhousie.",
+      "whyVisit": "Capture stunning photographs at Doddabetta Peak.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Doddabetta Peak, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Doddabetta Peak in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Doddabetta Peak in Dalhousie"
+      },
+      "position": 21
+    },
+    {
+      "id": "dalhousie-mawsmai-cave",
+      "name": "Mawsmai Cave",
+      "slug": "mawsmai-cave",
+      "description": "Located in scenic Dalhousie, Mawsmai Cave offers an immersive experience into local culture. Exploring Mawsmai Cave is one of the top things to do in Dalhousie.",
+      "whyVisit": "Capture stunning photographs at Mawsmai Cave.",
+      "bestTime": "Oct-Dec",
+      "duration": "Weekend",
+      "mapsSearch": "Mawsmai Cave, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawsmai Cave in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Mawsmai Cave in Dalhousie"
+      },
+      "position": 22
+    },
+    {
+      "id": "dalhousie-jageshwar",
+      "name": "Jageshwar",
+      "slug": "jageshwar",
+      "description": "Jageshwar is one of the most iconic landmarks in Dalhousie, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Jageshwar promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Jageshwar.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Jageshwar, Dalhousie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jageshwar in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Jageshwar in Dalhousie"
+      },
+      "position": 23
+    },
+    {
+      "id": "dalhousie-panorama-point",
+      "name": "Panorama Point",
+      "slug": "panorama-point",
+      "description": "Nestled in Dalhousie, Panorama Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Panorama Point is among the best things to do in Dalhousie.",
+      "whyVisit": "Panorama Point offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Panorama Point, Dalhousie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Panorama Point in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Panorama Point in Dalhousie"
+      },
+      "position": 24
+    },
+    {
+      "id": "dalhousie-shillong-peak",
+      "name": "Shillong Peak",
+      "slug": "shillong-peak",
+      "description": "A crown jewel of Dalhousie, Shillong Peak captivates every traveler with enchanting beauty. No trip to Dalhousie is complete without visiting Shillong Peak.",
+      "whyVisit": "Experience the unmatched beauty of Shillong Peak.",
+      "bestTime": "Oct-Dec",
+      "duration": "2-3 days",
+      "mapsSearch": "Shillong Peak, Dalhousie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Shillong Peak in Dalhousie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Shillong Peak in Dalhousie"
+      },
+      "position": 25
+    }
+  ]
+}

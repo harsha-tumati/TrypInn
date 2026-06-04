@@ -1,0 +1,447 @@
+{
+  "id": "chittorgarh",
+  "name": "Chittorgarh",
+  "state": "Rajasthan",
+  "slug": "chittorgarh",
+  "tagline": "Epic fort city of Rajput honor and sacrifice",
+  "categories": [
+    "fort",
+    "palace",
+    "monument"
+  ],
+  "introduction": "Planning a trip to Chittorgarh? This travel guide to Chittorgarh covers the must visit places in Chittorgarh, the best places to visit in Chittorgarh, top tourist attractions in Chittorgarh, and exciting things to do in Chittorgarh.",
+  "metaTitle": "Best Places to Visit in Chittorgarh | Tourist Attractions in Chittorgarh - TrypInn",
+  "metaDescription": "Discover must visit places in Chittorgarh, best places to visit in Chittorgarh, and top tourist attractions in Chittorgarh. Plan your perfect trip with TrypInn travel guide to Chittorgarh.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60",
+    "alt": "Chittorgarh travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "chittorgarh-mehrangarh-fort",
+      "name": "Mehrangarh Fort",
+      "slug": "mehrangarh-fort",
+      "description": "Located in scenic Chittorgarh, Mehrangarh Fort offers an immersive experience into local culture. Exploring Mehrangarh Fort is one of the top things to do in Chittorgarh.",
+      "whyVisit": "Mehrangarh Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Mehrangarh Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Mehrangarh Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Mehrangarh Fort in Chittorgarh"
+      },
+      "position": 1
+    },
+    {
+      "id": "chittorgarh-jai-vilas-palace",
+      "name": "Jai Vilas Palace",
+      "slug": "jai-vilas-palace",
+      "description": "A crown jewel of Chittorgarh, Jai Vilas Palace captivates every traveler with enchanting beauty. No trip to Chittorgarh is complete without visiting Jai Vilas Palace.",
+      "whyVisit": "A visit to Jai Vilas Palace is essential for understanding Chittorgarh.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Jai Vilas Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Jai Vilas Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Jai Vilas Palace in Chittorgarh"
+      },
+      "position": 2
+    },
+    {
+      "id": "chittorgarh-gateway-of-india",
+      "name": "Gateway of India",
+      "slug": "gateway-of-india",
+      "description": "Gateway of India is one of the most iconic landmarks in Chittorgarh, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gateway of India promises an unforgettable experience.",
+      "whyVisit": "Gateway of India offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gateway of India, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Gateway of India in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Gateway of India in Chittorgarh"
+      },
+      "position": 3
+    },
+    {
+      "id": "chittorgarh-st-angelo-fort",
+      "name": "St Angelo Fort",
+      "slug": "st-angelo-fort",
+      "description": "A crown jewel of Chittorgarh, St Angelo Fort captivates every traveler with enchanting beauty. No trip to Chittorgarh is complete without visiting St Angelo Fort.",
+      "whyVisit": "A visit to St Angelo Fort is essential for understanding Chittorgarh.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "St Angelo Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, St Angelo Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "St Angelo Fort in Chittorgarh"
+      },
+      "position": 4
+    },
+    {
+      "id": "chittorgarh-thirumalai-nayakkar-palace",
+      "name": "Thirumalai Nayakkar Palace",
+      "slug": "thirumalai-nayakkar-palace",
+      "description": "Thirumalai Nayakkar Palace is a must-see palace in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Thirumalai Nayakkar Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Thirumalai Nayakkar Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Thirumalai Nayakkar Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Thirumalai Nayakkar Palace in Chittorgarh"
+      },
+      "position": 5
+    },
+    {
+      "id": "chittorgarh-jantar-mantar",
+      "name": "Jantar Mantar",
+      "slug": "jantar-mantar",
+      "description": "Nestled in Chittorgarh, Jantar Mantar stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Jantar Mantar is among the best things to do in Chittorgarh.",
+      "whyVisit": "Experience the unmatched beauty of Jantar Mantar.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Jantar Mantar, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jantar Mantar in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Jantar Mantar in Chittorgarh"
+      },
+      "position": 6
+    },
+    {
+      "id": "chittorgarh-bangalore-fort",
+      "name": "Bangalore Fort",
+      "slug": "bangalore-fort",
+      "description": "Located in scenic Chittorgarh, Bangalore Fort offers an immersive experience into local culture. Exploring Bangalore Fort is one of the top things to do in Chittorgarh.",
+      "whyVisit": "Bangalore Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bangalore Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Bangalore Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Bangalore Fort in Chittorgarh"
+      },
+      "position": 7
+    },
+    {
+      "id": "chittorgarh-mattancherry-palace",
+      "name": "Mattancherry Palace",
+      "slug": "mattancherry-palace",
+      "description": "Nestled in Chittorgarh, Mattancherry Palace stands as a testament to architectural brilliance. This renowned palace attracts tourists who come to admire its stunning design. A visit to Mattancherry Palace is among the best things to do in Chittorgarh.",
+      "whyVisit": "Mattancherry Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mattancherry Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mattancherry Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Mattancherry Palace in Chittorgarh"
+      },
+      "position": 8
+    },
+    {
+      "id": "chittorgarh-victoria-memorial",
+      "name": "Victoria Memorial",
+      "slug": "victoria-memorial",
+      "description": "Located in scenic Chittorgarh, Victoria Memorial offers an immersive experience into local culture. Exploring Victoria Memorial is one of the top things to do in Chittorgarh.",
+      "whyVisit": "A visit to Victoria Memorial is essential for understanding Chittorgarh.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Victoria Memorial, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Victoria Memorial in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Victoria Memorial in Chittorgarh"
+      },
+      "position": 9
+    },
+    {
+      "id": "chittorgarh-kannur-fort",
+      "name": "Kannur Fort",
+      "slug": "kannur-fort",
+      "description": "Kannur Fort is a must-see fort in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Kannur Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kannur Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kannur Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kannur Fort in Chittorgarh"
+      },
+      "position": 10
+    },
+    {
+      "id": "chittorgarh-lake-palace",
+      "name": "Lake Palace",
+      "slug": "lake-palace",
+      "description": "A crown jewel of Chittorgarh, Lake Palace captivates every traveler with enchanting beauty. No trip to Chittorgarh is complete without visiting Lake Palace.",
+      "whyVisit": "Lake Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Lake Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lake Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Lake Palace in Chittorgarh"
+      },
+      "position": 11
+    },
+    {
+      "id": "chittorgarh-india-gate",
+      "name": "India Gate",
+      "slug": "india-gate",
+      "description": "A crown jewel of Chittorgarh, India Gate captivates every traveler with enchanting beauty. No trip to Chittorgarh is complete without visiting India Gate.",
+      "whyVisit": "India Gate offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "India Gate, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, India Gate in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "India Gate in Chittorgarh"
+      },
+      "position": 12
+    },
+    {
+      "id": "chittorgarh-raigad-fort",
+      "name": "Raigad Fort",
+      "slug": "raigad-fort",
+      "description": "Raigad Fort is a must-see fort in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Raigad Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Raigad Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Raigad Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Raigad Fort in Chittorgarh"
+      },
+      "position": 13
+    },
+    {
+      "id": "chittorgarh-cooch-behar-palace",
+      "name": "Cooch Behar Palace",
+      "slug": "cooch-behar-palace",
+      "description": "A crown jewel of Chittorgarh, Cooch Behar Palace captivates every traveler with enchanting beauty. No trip to Chittorgarh is complete without visiting Cooch Behar Palace.",
+      "whyVisit": "Capture stunning photographs at Cooch Behar Palace.",
+      "bestTime": "Afternoon",
+      "duration": "Full day",
+      "mapsSearch": "Cooch Behar Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Cooch Behar Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Cooch Behar Palace in Chittorgarh"
+      },
+      "position": 14
+    },
+    {
+      "id": "chittorgarh-jahangir-mahal",
+      "name": "Jahangir Mahal",
+      "slug": "jahangir-mahal",
+      "description": "Nestled in Chittorgarh, Jahangir Mahal stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Jahangir Mahal is among the best things to do in Chittorgarh.",
+      "whyVisit": "Jahangir Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jahangir Mahal, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jahangir Mahal in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Jahangir Mahal in Chittorgarh"
+      },
+      "position": 15
+    },
+    {
+      "id": "chittorgarh-murud-janjira",
+      "name": "Murud Janjira",
+      "slug": "murud-janjira",
+      "description": "Murud Janjira is a must-see fort in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Capture stunning photographs at Murud Janjira.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Murud Janjira, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Murud Janjira in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Murud Janjira in Chittorgarh"
+      },
+      "position": 16
+    },
+    {
+      "id": "chittorgarh-prag-mahal",
+      "name": "Prag Mahal",
+      "slug": "prag-mahal",
+      "description": "Prag Mahal is one of the most iconic landmarks in Chittorgarh, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Prag Mahal promises an unforgettable experience.",
+      "whyVisit": "Prag Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Prag Mahal, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Prag Mahal in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Prag Mahal in Chittorgarh"
+      },
+      "position": 17
+    },
+    {
+      "id": "chittorgarh-mahabalipuram-shore-temple",
+      "name": "Mahabalipuram Shore Temple",
+      "slug": "mahabalipuram-shore-temple",
+      "description": "Mahabalipuram Shore Temple is a must-see monument in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "A visit to Mahabalipuram Shore Temple is essential for understanding Chittorgarh.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Mahabalipuram Shore Temple, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Mahabalipuram Shore Temple in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Mahabalipuram Shore Temple in Chittorgarh"
+      },
+      "position": 18
+    },
+    {
+      "id": "chittorgarh-kangra-fort",
+      "name": "Kangra Fort",
+      "slug": "kangra-fort",
+      "description": "Kangra Fort is one of the most iconic landmarks in Chittorgarh, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kangra Fort promises an unforgettable experience.",
+      "whyVisit": "Kangra Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kangra Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kangra Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Kangra Fort in Chittorgarh"
+      },
+      "position": 19
+    },
+    {
+      "id": "chittorgarh-wind-palace",
+      "name": "Wind Palace",
+      "slug": "wind-palace",
+      "description": "Wind Palace is one of the most iconic landmarks in Chittorgarh, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Wind Palace promises an unforgettable experience.",
+      "whyVisit": "Wind Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Afternoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wind Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Wind Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Wind Palace in Chittorgarh"
+      },
+      "position": 20
+    },
+    {
+      "id": "chittorgarh-buland-darwaza",
+      "name": "Buland Darwaza",
+      "slug": "buland-darwaza",
+      "description": "Buland Darwaza is a must-see monument in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Experience the unmatched beauty of Buland Darwaza.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Buland Darwaza, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Buland Darwaza in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Buland Darwaza in Chittorgarh"
+      },
+      "position": 21
+    },
+    {
+      "id": "chittorgarh-nahargarh-fort",
+      "name": "Nahargarh Fort",
+      "slug": "nahargarh-fort",
+      "description": "Located in scenic Chittorgarh, Nahargarh Fort offers an immersive experience into local culture. Exploring Nahargarh Fort is one of the top things to do in Chittorgarh.",
+      "whyVisit": "Capture stunning photographs at Nahargarh Fort.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Nahargarh Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Nahargarh Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Nahargarh Fort in Chittorgarh"
+      },
+      "position": 22
+    },
+    {
+      "id": "chittorgarh-bolgatty-palace",
+      "name": "Bolgatty Palace",
+      "slug": "bolgatty-palace",
+      "description": "Bolgatty Palace is a must-see palace in Chittorgarh, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chittorgarh.",
+      "whyVisit": "Capture stunning photographs at Bolgatty Palace.",
+      "bestTime": "Afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bolgatty Palace, Chittorgarh",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Bolgatty Palace in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Bolgatty Palace in Chittorgarh"
+      },
+      "position": 23
+    },
+    {
+      "id": "chittorgarh-fatehpur-sikri",
+      "name": "Fatehpur Sikri",
+      "slug": "fatehpur-sikri",
+      "description": "Fatehpur Sikri is one of the most iconic landmarks in Chittorgarh, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Fatehpur Sikri promises an unforgettable experience.",
+      "whyVisit": "Fatehpur Sikri stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Fatehpur Sikri, Chittorgarh",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Fatehpur Sikri in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Fatehpur Sikri in Chittorgarh"
+      },
+      "position": 24
+    },
+    {
+      "id": "chittorgarh-jaisalmer-fort",
+      "name": "Jaisalmer Fort",
+      "slug": "jaisalmer-fort",
+      "description": "Nestled in Chittorgarh, Jaisalmer Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Jaisalmer Fort is among the best things to do in Chittorgarh.",
+      "whyVisit": "Jaisalmer Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jaisalmer Fort, Chittorgarh",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaisalmer Fort in Chittorgarh, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Jaisalmer Fort in Chittorgarh"
+      },
+      "position": 25
+    }
+  ]
+}

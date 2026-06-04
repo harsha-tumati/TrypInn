@@ -1,0 +1,260 @@
+{
+  "slug": "gokarna",
+  "name": "Gokarna",
+  "state": "Karnataka",
+  "tagline": "Sacred temples, untamed beaches, and cliff-top sunsets",
+  "categories": ["beach", "spiritual", "adventure"],
+  "highlights": ["secluded cove beaches reachable only by trail or boat", "ancient shiva temples amid a relaxed coastal town"],
+  "attractions": [
+    {
+      "name": "Mahabaleshwara Temple",
+      "category": "temple",
+      "description": "One of the holiest Shiva temples on India's western coast, Mahabaleshwara houses the Atmalinga — a self-manifested Shiva lingam that, according to the Ramayana, Ravana himself was tricked into setting down here. The 4th-century Dravidian-style gopuram towers over the narrow lanes of Gokarna town. Non-Hindus may not enter the inner sanctum but the outer complex and car street are open to all.",
+      "whyVisit": "The Atmalinga makes this one of the most theologically significant Shiva shrines in South India.",
+      "bestTime": "October to February; Mahashivaratri for the grand festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahabaleshwara Temple Gokarna Karnataka",
+      "imageQuery": "Mahabaleshwara Temple Gokarna gopuram"
+    },
+    {
+      "name": "Om Beach",
+      "category": "beach",
+      "description": "Gokarna's most famous beach takes its name from the fact that its twin crescent bays trace the shape of the Om symbol when seen from the surrounding cliffs. The beach draws a mix of pilgrims, backpackers, and yoga enthusiasts. Kayaking, banana-boat rides, and fresh seafood shacks line the northern crescent, while the southern crescent remains quieter and more scenic.",
+      "whyVisit": "The unique Om-shaped coastline and lively but not overcrowded beach scene define Gokarna's character.",
+      "bestTime": "October to March for calm seas and sunny skies",
+      "duration": "Half day",
+      "mapsSearch": "Om Beach Gokarna Karnataka",
+      "imageQuery": "Om Beach Gokarna twin crescent bay Karnataka"
+    },
+    {
+      "name": "Kudle Beach",
+      "category": "beach",
+      "description": "A long north-facing crescent of sand backed by a row of palm-shaded budget guesthouses and café-shacks, Kudle is Gokarna's most sociable beach. The shallow, gently shelving shore makes it safe for swimming during the tourist season. The southern end is rockier and cleaner, while the northern end has the most concentrated shack scene with live music on evenings.",
+      "whyVisit": "The best combination of safe swimming, chilled beach cafés, and a reliable sunset view.",
+      "bestTime": "November to February",
+      "duration": "Half to full day",
+      "mapsSearch": "Kudle Beach Gokarna Karnataka",
+      "imageQuery": "Kudle Beach Gokarna palm shacks Karnataka"
+    },
+    {
+      "name": "Gokarna Main Beach (Town Beach)",
+      "category": "beach",
+      "description": "The beach directly below Mahabaleshwara Temple is primarily a ritual bathing ghat used by Hindu pilgrims completing penance (called 'Gokarna Yatra'). Watching sadhus wade into the surf at dawn, Brahmin priests chanting on the sand, and the temple chariot procession during Shivaratri presents an India almost entirely untouched by commercialisation.",
+      "whyVisit": "A living religious beach where pilgrimage rituals play out at the edge of the Arabian Sea daily.",
+      "bestTime": "Dawn for bathing rituals; Mahashivaratri for the chariot festival",
+      "duration": "1 hour",
+      "mapsSearch": "Gokarna Main Beach Town Beach Karnataka",
+      "imageQuery": "Gokarna town beach pilgrims temple Karnataka"
+    },
+    {
+      "name": "Half Moon Beach",
+      "category": "beach",
+      "description": "Tucked between Om Beach and Paradise Beach, Half Moon is a small cove accessible only by a 25-minute coastal trek or by boat. Its tight crescent of golden sand is ringed by forested headlands, and a handful of eco-huts and tented camps operate seasonally. The lack of road access keeps it blissfully free of day-trippers by mid-afternoon.",
+      "whyVisit": "The most intimate and picturesque of Gokarna's secluded cove beaches.",
+      "bestTime": "November to February; arrive early morning before day-boats arrive",
+      "duration": "Half to full day",
+      "mapsSearch": "Half Moon Beach Gokarna Karnataka",
+      "imageQuery": "Half Moon Beach cove Gokarna Karnataka secluded"
+    },
+    {
+      "name": "Paradise Beach",
+      "category": "beach",
+      "description": "The southernmost and most secluded of Gokarna's beaches, Paradise can only be reached by a 45-minute cliff-top trek from Om Beach or by boat. The wide white-sand beach has no permanent structures beyond a few seasonal bamboo huts. Nudist bathing has a long tradition in its southern corner, and camping under a sky unpolluted by light is a signature experience.",
+      "whyVisit": "The most secluded, unspoilt beach on the Gokarna coast — the effort to reach it is part of the appeal.",
+      "bestTime": "October to February; avoid monsoon completely",
+      "duration": "Full day",
+      "mapsSearch": "Paradise Beach Gokarna Karnataka",
+      "imageQuery": "Paradise Beach secluded Gokarna Karnataka sand"
+    },
+    {
+      "name": "Mirjan Fort",
+      "category": "fort",
+      "description": "A largely unrestored 16th-century fort built by the Bijapur Sultanate to control the pepper-export trade from the Aghanashini River, Mirjan sits in atmospheric ruins 10 km north of Gokarna. The laterite walls, gateways, and bastions are draped in jungle creepers, and the surrounding wetlands shelter crocodiles and migratory birds. The fort gained fame for hosting the pepper trade that financed the Keladi kingdom.",
+      "whyVisit": "A genuinely haunting, unmanicured fort ruin surrounded by tropical river jungle with almost no tourists.",
+      "bestTime": "October to February; post-monsoon when the walls are draped in green",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mirjan Fort Gokarna Karnataka",
+      "imageQuery": "Mirjan Fort ruins laterite jungle Karnataka"
+    },
+    {
+      "name": "Bhadrakali Temple",
+      "category": "temple",
+      "description": "A minor but important temple in the Gokarna pilgrimage circuit, the Bhadrakali shrine sits on a promontory overlooking the sea and is dedicated to the fierce form of the Goddess. The temple is part of the Gokarna Kshetra itinerary that pilgrims complete over two or three days. The clifftop location provides excellent views of the Arabian Sea and is quieter than Mahabaleshwara.",
+      "whyVisit": "The dramatic clifftop position and the goddess temple add a complementary dimension to the Shiva pilgrimage.",
+      "bestTime": "October to March; Navaratri festival",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Bhadrakali Temple Gokarna Karnataka",
+      "imageQuery": "Bhadrakali temple cliff sea view Gokarna"
+    },
+    {
+      "name": "Car Street (Cart Street), Gokarna",
+      "category": "heritage",
+      "description": "The main pilgrimage artery of Gokarna town, Car Street is a narrow lane of traditional Konkani Brahmin houses with tiled roofs, carved wooden facades, and small household shrines. During festival season the enormous chariot (rath) of Mahabaleshwara is pulled down this lane by thousands of devotees. The street remains authentically lived-in rather than touristic.",
+      "whyVisit": "A rare surviving example of a living temple-town streetscape unchanged in its essential character for centuries.",
+      "bestTime": "Mahashivaratri chariot festival; otherwise any morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Car Street Gokarna Karnataka",
+      "imageQuery": "Car Street Gokarna traditional Brahmin houses Karnataka"
+    },
+    {
+      "name": "Om Beach Cliff Trek to Half Moon",
+      "category": "adventure",
+      "description": "The coastal trail connecting Om Beach, Half Moon Beach, and Paradise Beach traverses rocky headlands, dense coastal scrub, and dramatic cliff edges. The 5 km one-way route delivers constant Arabian Sea views and is best done north-to-south in the morning. The climb onto the Om Beach headland provides the famous bird's-eye view of the Om-shaped bays below.",
+      "whyVisit": "The only way to see Gokarna's coastline as a complete panoramic picture and access the secluded southern beaches.",
+      "bestTime": "October to February; start before 8 am to avoid heat",
+      "duration": "3-4 hours one way",
+      "mapsSearch": "Om Beach to Paradise Beach Trek Gokarna Karnataka",
+      "imageQuery": "Gokarna coastal trek cliff Om beach panorama"
+    },
+    {
+      "name": "Tamra Gauri Temple",
+      "category": "temple",
+      "description": "One of three principal temples in the Gokarna pilgrimage complex, the Tamra Gauri temple is dedicated to Parvati and is considered essential to complete the Gokarna Kshetra circuit. The temple's inner sanctum contains a copper image of the Goddess and the tank (kund) in front is used for ritual bathing. The structure is in the Kerala-Dravidian hybrid style common to coastal Karnataka.",
+      "whyVisit": "An essential stop on the Gokarna pilgrimage circuit and a fine example of coastal Karnataka temple architecture.",
+      "bestTime": "October to March",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Tamra Gauri Temple Gokarna Karnataka",
+      "imageQuery": "Tamra Gauri temple Gokarna Karnataka pilgrimage"
+    },
+    {
+      "name": "Yana Caves and Bhairaveshwara Rock",
+      "category": "cave",
+      "description": "Located 55 km from Gokarna in the Sahyadri foothills, the Yana rocks are two extraordinary black crystalline limestone outcrops — Bhairaveshwara Shikhara (120 m) and Mohini Shikhara (90 m) — rising vertically from dense forest. The larger rock contains a natural cave with a Shiva lingam. The 2 km forest walk from the parking area passes through genuinely pristine Uttara Kannada forest.",
+      "whyVisit": "The dramatic jet-black limestone spires rising from green forest are unlike anything else in Karnataka.",
+      "bestTime": "October to February; monsoon forest is stunning but slippery",
+      "duration": "Half day",
+      "mapsSearch": "Yana Caves Bhairaveshwara Rock Karnataka",
+      "imageQuery": "Yana caves limestone rock spire Karnataka forest"
+    },
+    {
+      "name": "Vibhuti Falls",
+      "category": "waterfall",
+      "description": "A powerful 100-metre waterfall in the forested Western Ghats, 65 km from Gokarna near Sirsi, Vibhuti Falls plunges from a sheer basalt cliff into a deep gorge. The falls are best viewed from a platform accessible by a 1 km forest trail. During monsoon the volume is extraordinary, and the surrounding Shola forest is rich in endemic bird species.",
+      "whyVisit": "One of Karnataka's highest and most powerful waterfalls, rarely visited because of its remote forest location.",
+      "bestTime": "July to October for full monsoon flow",
+      "duration": "Half day including travel",
+      "mapsSearch": "Vibhuti Falls Sirsi Karnataka",
+      "imageQuery": "Vibhuti waterfall Sirsi Karnataka forest gorge"
+    },
+    {
+      "name": "Gokarna Sunset Point (Om Beach Headland)",
+      "category": "viewpoint",
+      "description": "The rocky headland at the southern end of Om Beach, where the trail to Half Moon Beach begins, is Gokarna's premier sunset viewpoint. From this vantage the complete Om-shaped double bay curves below in one frame, and the sun descends directly into the Arabian Sea to the west. Local fishermen often draw their boats up on the rocks below, adding life to the scene.",
+      "whyVisit": "The only place to photograph the famous Om-shaped beach from above while watching the Arabian Sea sunset.",
+      "bestTime": "5-6 pm from October to February",
+      "duration": "1 hour",
+      "mapsSearch": "Om Beach Headland Sunset Viewpoint Gokarna",
+      "imageQuery": "Om Beach sunset viewpoint headland Gokarna"
+    },
+    {
+      "name": "Gokarna Scuba Diving and Snorkelling",
+      "category": "adventure",
+      "description": "Dive operators on Om Beach run introductory and certified dives to coral formations 5-12 metres deep in the protected waters around Gokarna's rocky headlands. The viz is best from November to February, when the water clears and underwater visibility reaches 10-15 metres. Parrotfish, moray eels, lionfish, and occasional octopus are regular sightings on the reef.",
+      "whyVisit": "Gokarna offers accessible reef diving without the crowds or prices of Kerala or Goa.",
+      "bestTime": "November to February for best underwater visibility",
+      "duration": "2-3 hours",
+      "mapsSearch": "Scuba Diving Om Beach Gokarna Karnataka",
+      "imageQuery": "scuba diving Gokarna coral reef Karnataka"
+    },
+    {
+      "name": "Shiva Cave (Natural Sea Cave at Mahabaleshwara Cliff)",
+      "category": "cave",
+      "description": "At the base of the rocky headland just north of Gokarna's main beach, a natural sea cave in the laterite cliff is locally venerated as a manifestation of Shiva and is accessible only at low tide on foot from the main beach. Pilgrims wade around the headland to make offerings. The cave interior is partially underwater at high tide and the walls are naturally stained in ochre.",
+      "whyVisit": "A tidal cave with active pilgrimage — accessible only at low tide, combining geology and living devotion.",
+      "bestTime": "Low tide mornings, October to February",
+      "duration": "30 minutes",
+      "mapsSearch": "Shiva Cave Gokarna Main Beach Karnataka",
+      "imageQuery": "natural sea cave Gokarna laterite cliff Karnataka"
+    },
+    {
+      "name": "Kotiteertha Tank",
+      "category": "religious",
+      "description": "The largest of Gokarna's sacred tanks, Kotiteertha is a rectangular step-well adjacent to the Mahabaleshwara Temple complex. According to tradition, all of India's sacred rivers are believed to be present in its waters, and pilgrims take a ceremonial bath here before entering the main temple. The evening aarti at the tank, with oil lamps floating on the water, is deeply atmospheric.",
+      "whyVisit": "The floating lamp aarti at dusk is one of the most photogenic ritual moments in Gokarna.",
+      "bestTime": "Dusk for the aarti ceremony",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Kotiteertha Tank Gokarna Karnataka",
+      "imageQuery": "Kotiteertha tank aarti lamps Gokarna Karnataka"
+    },
+    {
+      "name": "Kumta Beach",
+      "category": "beach",
+      "description": "Located 25 km north of Gokarna, Kumta is a quiet fishing-town beach largely untouched by tourism. The wide, clean shore is flanked by casuarina groves and a river estuary to the south, where local fishermen launch their craft at dawn. The beach itself is rarely visited by tourists despite being one of the longest and cleanest stretches of sand on the Karnataka coast.",
+      "whyVisit": "An unspoilt, pristine beach with a genuine fishing-village atmosphere and no tourist infrastructure.",
+      "bestTime": "October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kumta Beach Karnataka",
+      "imageQuery": "Kumta beach fishing boats Karnataka coast"
+    },
+    {
+      "name": "Nirvana Beach",
+      "category": "beach",
+      "description": "The northernmost of Gokarna's secluded beaches, Nirvana Beach lies beyond Kudle Beach and requires a 15-minute rocky scramble along the cliff to reach. It receives very few visitors even in peak season because the access is not clearly marked. The beach is a narrow strip of coarse sand with dramatic rock formations at each end and brilliant snorkelling over the rocks at low tide.",
+      "whyVisit": "Gokarna's least-visited named beach — almost always empty even in the high season.",
+      "bestTime": "October to February",
+      "duration": "Half day",
+      "mapsSearch": "Nirvana Beach Gokarna Karnataka",
+      "imageQuery": "Nirvana beach secluded Gokarna rocks Karnataka"
+    },
+    {
+      "name": "Gokarna Fish Market (Morning Catch)",
+      "category": "market",
+      "description": "The small harbour market below Gokarna town comes alive between 6 and 8 am when fishing boats return with the night's catch. Local wholesalers and restaurant owners bid for kingfish, pomfret, prawns, and mackerel. The scene — boats, ice, haggling, and the smell of the sea — encapsulates coastal Karnataka daily life and provides superb photography opportunities.",
+      "whyVisit": "An authentic, completely uncommercialized glimpse of the fishing economy that has sustained Gokarna for generations.",
+      "bestTime": "6-8 am daily",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Gokarna Fish Market Harbour Karnataka",
+      "imageQuery": "Gokarna fish market morning catch Karnataka harbour"
+    },
+    {
+      "name": "Aghanashini River Estuary",
+      "category": "nature",
+      "description": "The Aghanashini River meets the Arabian Sea 15 km north of Gokarna, forming one of Karnataka's most biologically rich estuaries. A boat trip from Tadri village explores mangrove channels that shelter saltwater crocodiles, otters, and kingfishers. The estuary is also a significant Olive Ridley turtle nesting ground — one of the most northerly on the west coast.",
+      "whyVisit": "A boat journey through mangroves with crocodiles and the chance to see turtle nesting — completely off the tourist radar.",
+      "bestTime": "November to February for turtles; July to October for lush mangroves",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aghanashini River Estuary Tadri Karnataka",
+      "imageQuery": "Aghanashini estuary mangrove boat Karnataka coast"
+    },
+    {
+      "name": "Idagunji Maha Ganapathi Temple",
+      "category": "temple",
+      "description": "One of the most powerful Ganesha temples in coastal Karnataka, the Idagunji temple 40 km north of Gokarna draws pilgrims from across the state. The main idol is a swayambhu (self-manifested) Ganesha carved from black stone. The temple's distinctive tiered wooden tower is built in the Kerala-Tulu style, and the annual Rathotsava chariot festival draws enormous crowds.",
+      "whyVisit": "The premier Ganesha pilgrimage destination of coastal Karnataka with extraordinary traditional wooden architecture.",
+      "bestTime": "December to February; annual chariot festival (January)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Idagunji Mahaganapathi Temple Karnataka",
+      "imageQuery": "Idagunji Ganesha temple wooden tower Karnataka"
+    },
+    {
+      "name": "Shree Venkataramana Temple, Gokarna",
+      "category": "temple",
+      "description": "A beautiful Vishnu temple in the heart of Gokarna town, the Venkataramana shrine is part of the full pilgrimage circuit and is less crowded than Mahabaleshwara. The temple features Hoysala-influenced stonework on the outer mandapa and an annual Brahmotsava festival when the temple elephant leads a procession through the car street.",
+      "whyVisit": "Offers a quieter, more contemplative pilgrimage experience compared to the famous Shiva temple nearby.",
+      "bestTime": "October to March; annual Brahmotsava festival",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Venkataramana Temple Gokarna Karnataka",
+      "imageQuery": "Venkataramana temple Gokarna Vishnu Karnataka"
+    },
+    {
+      "name": "Rocky Point Between Kudle and Om Beach",
+      "category": "viewpoint",
+      "description": "A rugged boulder-strewn headland accessible only at low tide, this unnamed point between Kudle and Om beaches provides a 180-degree sea view and, at low tide, tidal pools teeming with sea anemones, hermit crabs, and small reef fish. Local boys use the rocks for cliff jumping into deep water channels — a spectacle in itself.",
+      "whyVisit": "Untouched tidal pools and a wild cliff-jumping spot that almost no guidebook mentions.",
+      "bestTime": "Low tide mornings, November to February",
+      "duration": "45-60 minutes",
+      "mapsSearch": "Rocky Point between Kudle Om Beach Gokarna Karnataka",
+      "imageQuery": "rocky tidal pools Gokarna Karnataka headland"
+    },
+    {
+      "name": "Sajjeshwar Temple, Sanikatta",
+      "category": "temple",
+      "description": "Located on a river island at the confluence of the Sharavathi River with the sea 20 km from Gokarna, this ancient Shiva temple is accessible by ferry from Sanikatta village. The river-island setting surrounded by mangroves and the lack of tourist facilities preserve a pre-modern pilgrimage atmosphere. The ferry ride across the broad estuary is an experience in itself.",
+      "whyVisit": "A river-island Shiva temple accessible only by ferry — one of coastal Karnataka's most atmospheric hidden pilgrimage sites.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours including ferry",
+      "mapsSearch": "Sajjeshwar Temple Sanikatta Karnataka",
+      "imageQuery": "Sajjeshwar temple river island Sanikatta Karnataka ferry"
+    }
+  ]
+}

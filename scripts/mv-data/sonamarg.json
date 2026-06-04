@@ -1,0 +1,190 @@
+{
+  "slug": "sonamarg",
+  "name": "Sonamarg",
+  "state": "Jammu and Kashmir",
+  "tagline": "Meadow of gold at the gateway to Himalayan glaciers",
+  "categories": ["mountain", "nature", "adventure"],
+  "highlights": ["thajiwas glacier day trek from the meadow", "gateway to the zoji la and ladakh"],
+  "attractions": [
+    {
+      "name": "Thajiwas Glacier",
+      "category": "glacier",
+      "description": "The most visited glacier in Kashmir, Thajiwas lies just 3 km from the Sonamarg meadow and is accessible on foot or by pony through dense birch and fir forest. The glacier tongue descends dramatically from a cirque ringed by jagged peaks, and meltwater streams run turquoise across the moraine. Even in midsummer patches of deep snow remain, drawing tourists for snowball fights and sledging.",
+      "whyVisit": "The closest accessible glacier to a major Kashmir valley town — a genuine Himalayan ice field reachable in a morning.",
+      "bestTime": "May to October",
+      "duration": "4-5 hours (round trip)",
+      "mapsSearch": "Thajiwas Glacier Sonamarg Jammu Kashmir",
+      "imageQuery": "Thajiwas Glacier Sonamarg Kashmir"
+    },
+    {
+      "name": "Sonamarg Meadow",
+      "category": "nature",
+      "description": "The broad, glacially carved valley at 2,740 m that gives Sonamarg its name — 'Meadow of Gold' — for the carpet of wild narcissus and buttercups that blankets it each spring. The flat meadow floor is flanked by hanging glaciers, granite walls, and the Sindh River rushing through its centre. Views include Gangabal Peak and the distant snowfields feeding Thajiwas.",
+      "whyVisit": "One of the most scenic high-altitude meadows in Kashmir, golden with wildflowers from May through June.",
+      "bestTime": "May to June for flowers; July to September for trekking",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sonamarg Meadow Jammu Kashmir",
+      "imageQuery": "Sonamarg meadow wildflowers Sindh River Kashmir"
+    },
+    {
+      "name": "Vishansar Lake",
+      "category": "lake",
+      "description": "A stunning high-altitude lake at 3,710 m on the Sonamarg–Gangabal trekking circuit, Vishansar is fed by snowmelt and reflects the snowfields of Kishansar to the south. The two-day trek from Sonamarg via Nichnai Pass crosses alpine meadows thick with gentians and edelweiss. The lake is sacred to Kashmiri Hindus and receives pilgrims during the Amarnath yatra season.",
+      "whyVisit": "A pristine twin-lake system set in one of Kashmir's finest alpine trekking basins.",
+      "bestTime": "July to September",
+      "duration": "2-3 days (trek)",
+      "mapsSearch": "Vishansar Lake Sonamarg Jammu Kashmir",
+      "imageQuery": "Vishansar Lake alpine trek Kashmir"
+    },
+    {
+      "name": "Kishansar Lake",
+      "category": "lake",
+      "description": "Paired with Vishansar and just 1 km south at 3,801 m, Kishansar is the higher and more dramatic of the twin lakes on the Sonamarg trekking circuit. Its waters shift from steel-grey to cobalt depending on cloud cover, and the surrounding ridge provides a classic camping spot with views of both lakes simultaneously. Brown trout inhabit both lakes and draws fly-fishers.",
+      "whyVisit": "One of Kashmir's most beautiful high-altitude lakes, perfectly framed by snowfields and rocky ridges.",
+      "bestTime": "July to September",
+      "duration": "2-3 days (trek)",
+      "mapsSearch": "Kishansar Lake Sonamarg Jammu Kashmir",
+      "imageQuery": "Kishansar Lake trekking Kashmir alpine"
+    },
+    {
+      "name": "Krishnasar Lake",
+      "category": "lake",
+      "description": "At 3,800 m on the Great Lakes trek from Sonamarg, Krishnasar is a sacred lake considered by Kashmiri Hindus to be the abode of Lord Krishna. The lake sits in a wide alpine bowl flanked by the Krishnasar massif and its reflection in the still water on a clear morning is one of the most photographed sights of the entire trek.",
+      "whyVisit": "Sacred and scenically spectacular — one of the standout alpine lakes on Kashmir's famous Great Lakes trail.",
+      "bestTime": "July to September",
+      "duration": "3-4 days (Great Lakes trek)",
+      "mapsSearch": "Krishnasar Lake Kashmir Great Lakes Trek",
+      "imageQuery": "Krishnasar Lake reflection alpine Kashmir"
+    },
+    {
+      "name": "Zoji La Pass",
+      "category": "adventure",
+      "description": "At 3,528 m, Zoji La is the crucial mountain pass on the Srinagar–Leh Highway connecting Kashmir Valley to Ladakh. The pass typically opens each April or May after heavy snowfall blocks it for winter. The dramatic drive or motorcycle ride through the snow-walled cutting at the top, with the green Kashmir Valley behind and the brown Ladakhi plateau ahead, is a rite of passage for Himalayan travellers.",
+      "whyVisit": "The legendary gateway between lush Kashmir and arid Ladakh — a dramatic mountain pass on the Srinagar–Leh Highway.",
+      "bestTime": "May to October",
+      "duration": "1-2 hours (drive through)",
+      "mapsSearch": "Zoji La Pass Sonamarg Jammu Kashmir",
+      "imageQuery": "Zoji La Pass snow road Kashmir Ladakh"
+    },
+    {
+      "name": "Gangabal Lake Trek",
+      "category": "nature",
+      "description": "The Gangabal twin-lake system, at 3,570 m on the flanks of Haramukh (5,142 m), is the centrepiece of one of Kashmir's most celebrated multi-day treks. The route from Sonamarg covers 50+ km through the Nichnai Pass, alpine meadows, and moraines. The larger Gangabal Lake is sacred to Kashmiri Pandits, who perform rituals here during the annual pilgrimage.",
+      "whyVisit": "The finest multi-day trek in Kashmir, combining sacred lakes, glaciated peaks, and vast high-altitude meadows.",
+      "bestTime": "July to September",
+      "duration": "5-6 days",
+      "mapsSearch": "Gangabal Lake Trek Sonamarg Kashmir",
+      "imageQuery": "Gangabal Lake Haramukh peak Kashmir trek"
+    },
+    {
+      "name": "Sindh River Rafting",
+      "category": "adventure",
+      "description": "The Sindh River rushes down from the Zoji La through the Sonamarg valley with Grade II–III rapids during the snowmelt months of May to July. Short rafting runs are offered by local operators from near the Sonamarg market, passing through rapids, deep pools, and forested gorges with the glacier-capped peaks of the Sindh Valley as a constant backdrop.",
+      "whyVisit": "Raft down the Sindh with glaciers visible overhead — white-water with a spectacular Himalayan setting.",
+      "bestTime": "May to July",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sindh River rafting Sonamarg Jammu Kashmir",
+      "imageQuery": "Sindh River rafting Sonamarg Kashmir"
+    },
+    {
+      "name": "Nichnai Pass Trek",
+      "category": "adventure",
+      "description": "The 4,100 m Nichnai Pass is the first major col on the Sonamarg to Gangabal Lakes trek, reached after a steep 8 km climb from the Sonamarg meadow through birch scrub and boulder fields. The pass itself gives a dramatic first view north across the Nichnai valley toward the Great Himalayan Range. The camping ground just below the pass is sheltered and popular.",
+      "whyVisit": "The first challenging high pass of Kashmir's great lakes circuit with a panoramic payoff at the top.",
+      "bestTime": "July to September",
+      "duration": "Full day (one-way)",
+      "mapsSearch": "Nichnai Pass Trek Sonamarg Jammu Kashmir",
+      "imageQuery": "Nichnai Pass trekking alpine Kashmir"
+    },
+    {
+      "name": "Baltal Valley",
+      "category": "nature",
+      "description": "Just 15 km from Sonamarg along the Srinagar–Leh Highway, Baltal is the staging camp for the shortest route to the Amarnath Cave shrine. The valley floor sits at 2,743 m and is ringed by dramatic moraine ridges deposited by the receding Kolahoi Glacier. Outside of the pilgrimage season, it is a serene camping destination with excellent views of snow peaks.",
+      "whyVisit": "The base camp for the Amarnath pilgrimage, and a beautifully raw glacial valley at other times of year.",
+      "bestTime": "July to August for Amarnath yatra; June and September for general visiting",
+      "duration": "2-3 hours to half day",
+      "mapsSearch": "Baltal Valley Sonamarg Jammu Kashmir",
+      "imageQuery": "Baltal Valley Amarnath Sonamarg Kashmir"
+    },
+    {
+      "name": "Satsar Lakes",
+      "category": "lake",
+      "description": "A cluster of seven small lakes strung along the high ridge above the Sonamarg valley at around 3,600 m, the Satsar group is reached by a demanding off-trail climb from the Sonamarg meadow. Each lake occupies its own small bowl carved by glacial action, and the ridge between them gives views both into the Kashmir Valley and across toward the Ladakhi plateau.",
+      "whyVisit": "Seven glacial lakes on a ridge above Sonamarg — a rewarding off-trail adventure with exceptional views.",
+      "bestTime": "July to September",
+      "duration": "Full day",
+      "mapsSearch": "Satsar Lakes Sonamarg Jammu Kashmir",
+      "imageQuery": "Satsar Lakes high altitude Kashmir Sonamarg"
+    },
+    {
+      "name": "Shekdur Meadow",
+      "category": "nature",
+      "description": "A hidden meadow a short trek above the Thajiwas Glacier moraine, Shekdur is far less visited than the glacier itself. The high-altitude clearing is ringed by silver fir and surrounded by the Thajiwas cirque walls, and its carpet of wild herbs fills the air with fragrance in summer. Shepherd families camp here through July and August with their flocks.",
+      "whyVisit": "A secret meadow above the Thajiwas moraine where shepherd camps and wildflowers create a timeless scene.",
+      "bestTime": "July to August",
+      "duration": "4-5 hours (round trip)",
+      "mapsSearch": "Shekdur Meadow Sonamarg Kashmir",
+      "imageQuery": "alpine meadow shepherd camp Sonamarg Kashmir"
+    },
+    {
+      "name": "Sonamarg Trout Fishing",
+      "category": "nature",
+      "description": "The upper Sindh River and its tributaries around Sonamarg are among the best brown trout streams in the Indian subcontinent. The Fisheries Department issues daily rod permits, and the stretch between Sonamarg and Gagangir is famed for large fish in fast, clear runs. The backdrop of snow peaks and pine forest makes fly-fishing here an aesthetic as much as sporting experience.",
+      "whyVisit": "World-class brown trout fly-fishing in one of the Himalaya's most scenic river valleys.",
+      "bestTime": "April to October",
+      "duration": "Half to full day",
+      "mapsSearch": "Sonamarg trout fishing Sindh River Jammu Kashmir",
+      "imageQuery": "trout fishing Sindh River Sonamarg Kashmir"
+    },
+    {
+      "name": "Sonamarg Pony Trek to Thajiwas",
+      "category": "adventure",
+      "description": "Dozens of trained mountain ponies and their Bakarwal handlers are stationed at the Sonamarg meadow offering rides up to the Thajiwas Glacier moraine. The 3 km track climbs through birch and fir woodland, with the glacier tongue and Thajiwas cirque wall emerging dramatically as you reach the upper clearing. A traditional and accessible way to experience the high terrain.",
+      "whyVisit": "Explore the Thajiwas Glacier the traditional Kashmiri way — on horseback through fragrant Himalayan forest.",
+      "bestTime": "May to October",
+      "duration": "2-3 hours",
+      "mapsSearch": "pony trek Thajiwas Glacier Sonamarg Kashmir",
+      "imageQuery": "pony trek Thajiwas Glacier Sonamarg"
+    },
+    {
+      "name": "Sunset View at Sonamarg Meadow",
+      "category": "viewpoint",
+      "description": "As the sun drops behind the western ridges, the eastern walls of the Sonamarg valley — including the Thajiwas face and the unnamed peaks above the Zoji La — turn from white to deep amber to rose in a prolonged alpenglow display. The open meadow provides an unobstructed foreground of the Sindh River and its willow-lined banks illuminated in the same warm light.",
+      "whyVisit": "The alpenglow on the Thajiwas cirque at sunset is one of the most spectacular light shows in the Kashmir Himalaya.",
+      "bestTime": "June to September (golden hour)",
+      "duration": "1 hour",
+      "mapsSearch": "Sonamarg Meadow sunset viewpoint Jammu Kashmir",
+      "imageQuery": "Sonamarg meadow alpenglow sunset Kashmir"
+    },
+    {
+      "name": "Gagangir Village",
+      "category": "heritage",
+      "description": "The last large Kashmiri village before Sonamarg on the Srinagar–Leh Highway, Gagangir sits at the confluence of the Sindh and the Wangath Nallah. Its timber-framed Kashmiri houses with carved lattice windows and sloping corrugated roofs are a fine example of vernacular mountain architecture. The surrounding walnut and willow groves turn a vivid gold each October.",
+      "whyVisit": "A traditional Kashmiri riverside village with some of the finest vernacular architecture in the Sindh Valley.",
+      "bestTime": "October for autumn colour; May to June for spring green",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gagangir Village Sindh Valley Jammu Kashmir",
+      "imageQuery": "Gagangir village Sindh Valley Kashmir"
+    },
+    {
+      "name": "Mountaineering at Kolahoi Glacier Approach",
+      "category": "adventure",
+      "description": "The approach to Kolahoi (5,425 m), the highest peak entirely within Kashmir Valley, begins from the Aru Valley near Pahalgam but can also be accessed via high trails from the Sonamarg side. The route crosses wild, rarely visited terrain through boulder glaciers and scree fields. The mountain itself is a technical ascent requiring mountaineering skills but the approach is a superb wilderness trek.",
+      "whyVisit": "Trek toward Kashmir's highest independent peak through remote, seldom-visited glaciated terrain.",
+      "bestTime": "August to September",
+      "duration": "4-6 days",
+      "mapsSearch": "Kolahoi Glacier Kashmir mountaineering",
+      "imageQuery": "Kolahoi Glacier peak Kashmir mountaineering"
+    },
+    {
+      "name": "Sonamarg Camping Under Stars",
+      "category": "adventure",
+      "description": "Registered camps along the Sonamarg meadow and above the Thajiwas moraine offer overnight stays in insulated tents with wood-burning stoves. At 2,740 m with minimal light pollution, the night sky above Sonamarg is exceptionally clear, and the silhouettes of the Thajiwas cirque walls under the Milky Way are unforgettable. Dawn brings the sound of the Sindh River and the first light on the glacier.",
+      "whyVisit": "Sleep beneath a brilliant Himalayan star field with glaciers and the Sindh River as your backdrop.",
+      "bestTime": "June to September",
+      "duration": "Overnight",
+      "mapsSearch": "Sonamarg camping meadow Jammu Kashmir",
+      "imageQuery": "Sonamarg camping night sky glacier Kashmir"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "slug": "wayanad",
+  "name": "Wayanad",
+  "state": "Kerala",
+  "tagline": "Misty highlands, ancient caves, and wild elephants",
+  "categories": ["nature", "wildlife", "hill_station"],
+  "highlights": ["dense forests with roaming wildlife", "ancient tribal heritage and rock art"],
+  "attractions": [
+    {
+      "name": "Chembra Peak",
+      "category": "nature",
+      "description": "At 2,100 metres, Chembra is the highest peak in Wayanad and one of Kerala's most rewarding treks. The trail winds through shola forests and grasslands to a heart-shaped lake near the summit that, remarkably, never dries up. On clear mornings the views stretch across the Nilgiri foothills into Tamil Nadu and Karnataka. Permits are issued at Meppadi Forest Station.",
+      "whyVisit": "The iconic heart-shaped lake and panoramic summit views make this the defining Wayanad experience.",
+      "bestTime": "October to March for clear skies and manageable trails",
+      "duration": "6-7 hours",
+      "mapsSearch": "Chembra Peak Wayanad Kerala",
+      "imageQuery": "Chembra Peak heart lake Wayanad"
+    },
+    {
+      "name": "Edakkal Caves",
+      "category": "cave",
+      "description": "These natural fissure caves on Ambukuthi Hill contain Neolithic and Mesolithic pictographs estimated to be over 6,000 years old — among the oldest examples of human habitation evidence in South India. The carvings include human and animal figures along with early script-like symbols. The steep 1 km climb rewards visitors with both history and sweeping valley views.",
+      "whyVisit": "Rare prehistoric rock engravings that place human presence here thousands of years before recorded history.",
+      "bestTime": "October to February for cooler mornings",
+      "duration": "2-3 hours",
+      "mapsSearch": "Edakkal Caves Ambukuthi Hill Wayanad",
+      "imageQuery": "Edakkal Caves rock carvings Wayanad"
+    },
+    {
+      "name": "Wayanad Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Spanning over 340 sq km and contiguous with Nagarhole and Bandipur Tiger Reserves, this sanctuary forms one of the largest protected wildlife corridors in South Asia. Jeep safaris through Muthanga and Tholpetty ranges offer reliable sightings of Asian elephants, gaur, spotted deer, and sloth bears. Tigers and leopards are elusive but present.",
+      "whyVisit": "One of the best places in Kerala to observe wild elephants in their natural forest habitat.",
+      "bestTime": "March to May when animals congregate near water sources",
+      "duration": "3-4 hours per safari",
+      "mapsSearch": "Wayanad Wildlife Sanctuary Muthanga Kerala",
+      "imageQuery": "Wayanad Wildlife Sanctuary elephants forest"
+    },
+    {
+      "name": "Soochipara (Sentinel Rock) Waterfalls",
+      "category": "waterfall",
+      "description": "A three-tiered, 200-metre cascade plunging into a wide natural pool, Soochipara is Wayanad's most dramatic waterfall. The approach is a scenic 2 km forest trek. The lower pool is open for supervised swimming, and the surrounding canopy buzzes with birdlife. The falls roar at their most spectacular from July through September during the monsoon.",
+      "whyVisit": "The large natural swimming pool at the base makes it a rare waterfall where you can actually swim.",
+      "bestTime": "July to September for full flow; October to January for safer swimming",
+      "duration": "2-3 hours",
+      "mapsSearch": "Soochipara Waterfalls Sentinel Rock Wayanad",
+      "imageQuery": "Soochipara waterfall Wayanad jungle pool"
+    },
+    {
+      "name": "Meenmutty Waterfalls",
+      "category": "waterfall",
+      "description": "Kerala's second-tallest waterfall at 300 metres, Meenmutty drops in three stages through dense Nilgiri biosphere forest. The 2 km trek to reach it involves rope crossings and rocky scrambles, making it an adventure in itself. The base pool is accessible only in the dry season, and the surrounding forest shelters rare orchids and hornbills.",
+      "whyVisit": "The challenging forest trek and the sheer scale of a 300-metre three-stage waterfall reward the effort.",
+      "bestTime": "November to February for safest trail conditions",
+      "duration": "4-5 hours",
+      "mapsSearch": "Meenmutty Waterfalls Wayanad Kerala",
+      "imageQuery": "Meenmutty waterfall three stages Wayanad"
+    },
+    {
+      "name": "Banasura Sagar Dam",
+      "category": "lake",
+      "description": "The largest earthen dam in India and the second largest in Asia, Banasura Sagar sits at 790 metres altitude against the backdrop of the Banasura Hills. The vast reservoir is dotted with small islands that emerge dramatically in summer. Boating, kayaking, and bamboo rafting are available, and the surrounding wetlands draw migratory birds in winter.",
+      "whyVisit": "The striking island-studded reservoir framed by misty hills offers an unusually serene boating experience.",
+      "bestTime": "November to February for clear reflections and birdwatching",
+      "duration": "2-3 hours",
+      "mapsSearch": "Banasura Sagar Dam Wayanad Kerala",
+      "imageQuery": "Banasura Sagar Dam reservoir islands Wayanad"
+    },
+    {
+      "name": "Pookode Lake",
+      "category": "lake",
+      "description": "A freshwater lake nestled within a dense evergreen forest at 770 metres, Pookode is one of Kerala's most picturesque high-altitude lakes. Paddleboats allow visitors to drift across its glass-calm surface past flowering water lilies. A small aquarium on the bank showcases indigenous freshwater fish, and deer and langurs frequent the forested fringes.",
+      "whyVisit": "The forested lakeside setting and lily-covered waters create an exceptionally tranquil atmosphere.",
+      "bestTime": "September to March when the air is cool and mist hangs over the water",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pookode Lake Wayanad Kerala",
+      "imageQuery": "Pookode Lake boating evergreen forest Wayanad"
+    },
+    {
+      "name": "Thirunelli Temple",
+      "category": "temple",
+      "description": "Nestled in a valley of the Brahmagiri Hills at the edge of the forest, the Thirunelli Vishnu temple dates to the 13th century and is built entirely of granite in Kerala's traditional Kera style. Known as the 'Kashi of the South', the temple's sacred river Papanasini is believed to wash away the sins of ancestors. The forest setting adds a profound spiritual atmosphere.",
+      "whyVisit": "The combination of ancient architecture, ancestral rites, and unspoilt forest setting is unique in Kerala.",
+      "bestTime": "October to March; Vishu (April) and Vaikunta Ekadasi for festivals",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thirunelli Temple Wayanad Kerala",
+      "imageQuery": "Thirunelli Temple granite forest Wayanad"
+    },
+    {
+      "name": "Karapuzha Dam",
+      "category": "lake",
+      "description": "The largest irrigation dam in Kerala, Karapuzha sits amid undulating farmland and is a favourite spot for birdwatching and sunrise photography. The calm backwaters attract painted storks, kingfishers, and grey herons. Boating is available, and the surrounding paddy fields and spice plantations give a genuine rural Kerala backdrop rarely seen on the tourist trail.",
+      "whyVisit": "An unhurried rural lakeside experience well off the main tourist circuit.",
+      "bestTime": "November to February for migratory birds",
+      "duration": "1-2 hours",
+      "mapsSearch": "Karapuzha Dam Wayanad Kerala",
+      "imageQuery": "Karapuzha Dam reservoir Wayanad sunrise"
+    },
+    {
+      "name": "Muthanga Wildlife Range",
+      "category": "wildlife",
+      "description": "The Muthanga range forms the eastern gateway to Wayanad Wildlife Sanctuary and borders Karnataka's Nagarhole. Government jeep safaris here pass through tall teak and rosewood forest where elephant herds of 20-30 individuals are a regular sight. Gaur, spotted deer, wild boar, and sambar are frequently seen; the morning safari beginning at 6 am offers the best wildlife encounters.",
+      "whyVisit": "Reliable early-morning elephant sightings with knowledgeable forest department guides.",
+      "bestTime": "March to May for concentrated wildlife near waterholes",
+      "duration": "2-3 hours",
+      "mapsSearch": "Muthanga Wildlife Range Wayanad Kerala",
+      "imageQuery": "Muthanga safari elephants Wayanad forest"
+    },
+    {
+      "name": "Tholpetty Wildlife Range",
+      "category": "wildlife",
+      "description": "The northern gateway to Wayanad Wildlife Sanctuary, Tholpetty Range borders Nagarhole and is quieter than Muthanga with smaller safari groups. The landscape shifts between bamboo groves, grasslands, and riparian forest. Leopard sightings, while rare, occur with more frequency here than in other parts of Wayanad. The range is a key elephant corridor.",
+      "whyVisit": "A less-crowded alternative to Muthanga with excellent leopard and bird diversity.",
+      "bestTime": "February to May",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tholpetty Wildlife Sanctuary Wayanad Kerala",
+      "imageQuery": "Tholpetty wildlife range Wayanad leopard"
+    },
+    {
+      "name": "Kanthanpara Waterfalls",
+      "category": "waterfall",
+      "description": "A compact but powerful 30-metre waterfall that plunges directly onto a large flat rock ledge, Kanthanpara is remarkable for allowing visitors to walk behind the curtain of water and stand on the rock beneath the cascade. Set inside a tea estate near Ambalavayal, the access road itself is a lovely drive through manicured tea gardens.",
+      "whyVisit": "The rare ability to stand directly behind the falling water makes this a uniquely immersive waterfall visit.",
+      "bestTime": "July to November for maximum water flow",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kanthanpara Waterfalls Ambalavayal Wayanad",
+      "imageQuery": "Kanthanpara waterfall tea estate Wayanad"
+    },
+    {
+      "name": "Kuruvadweep Island",
+      "category": "nature",
+      "description": "A 950-acre uninhabited river island formed by the Kabani River and its tributaries, Kuruva Island is a protected riverine delta of rare biodiversity. Access is only by bamboo raft, which adds to the adventure. The island shelters rare ferns, wild orchids, giant squirrels, kingfishers, and river otters. No motor vehicles or construction are permitted inside.",
+      "whyVisit": "Drifting to an untouched river island by bamboo raft through a canopy of rare subtropical forest.",
+      "bestTime": "October to May; closed during monsoon (June–September)",
+      "duration": "3-4 hours",
+      "mapsSearch": "Kuruvadweep Island Wayanad Kerala",
+      "imageQuery": "Kuruvadweep island bamboo raft Kabani river"
+    },
+    {
+      "name": "Wayanad Heritage Museum",
+      "category": "museum",
+      "description": "Run by the Archaeological Department of Kerala, this museum in Ambalavayal displays artefacts recovered from Edakkal Caves and tribal settlements including Neolithic tools, iron-age ornaments, and terracotta figurines. Dioramas illustrate the life of the Adivasi communities — Paniyas, Kurichiyas, and Kattunaykas — who have inhabited these forests for millennia.",
+      "whyVisit": "Essential context for understanding Wayanad's deep prehistoric and tribal heritage before visiting Edakkal.",
+      "bestTime": "Any time; particularly useful before trekking to Edakkal",
+      "duration": "1 hour",
+      "mapsSearch": "Wayanad Heritage Museum Ambalavayal Kerala",
+      "imageQuery": "Wayanad Heritage Museum tribal artefacts Ambalavayal"
+    },
+    {
+      "name": "Pakshipathalam Bird Sanctuary",
+      "category": "wildlife",
+      "description": "Perched at over 1,700 metres in the Brahmagiri Hills, Pakshipathalam is a cave system surrounded by some of the most pristine shola forest in Kerala. The trek through Thirunelli Forest takes 5-6 hours and requires a forest guide. The caves shelter rare endemic bat species, and the forest canopy rewards birdwatchers with Malabar trogons, hornbills, and the elusive Ceylon frogmouth.",
+      "whyVisit": "One of Kerala's most remote and biologically rich trekking destinations for serious birdwatchers.",
+      "bestTime": "December to February",
+      "duration": "Full day",
+      "mapsSearch": "Pakshipathalam Bird Sanctuary Wayanad Kerala",
+      "imageQuery": "Pakshipathalam cave trek Brahmagiri Hills Wayanad"
+    },
+    {
+      "name": "Phantomrock Viewpoint",
+      "category": "viewpoint",
+      "description": "A dramatic natural rock formation jutting out over the Wayanad plateau, Phantom Rock near Kalpetta offers a 270-degree panorama over forested valleys and distant peaks at no cost and with almost no crowds. The rock itself is a favourite for photography at golden hour when the mist rolls in from the western ghats below.",
+      "whyVisit": "An off-the-radar sunset viewpoint with extraordinary mountain and valley views.",
+      "bestTime": "October to February for clear sunset visibility",
+      "duration": "30-60 minutes",
+      "mapsSearch": "Phantom Rock Viewpoint Kalpetta Wayanad",
+      "imageQuery": "Phantom Rock viewpoint sunset Wayanad plateau"
+    },
+    {
+      "name": "Lakkidi Gateway",
+      "category": "viewpoint",
+      "description": "Lakkidi marks the highest point on the Thamarassery Ghat road at 700 metres, where the road dramatically emerges from the plains into the Wayanad highlands. The viewpoint here looks back down 8 steep hairpin bends into the Calicut valley below. A large old tree bound by a chain is at the centre of local legend about a spirit said to protect the pass.",
+      "whyVisit": "The hair-raising reverse view down the ghats and the haunted chain-tree folklore make this a must-stop.",
+      "bestTime": "Early morning for mist-wrapped valley views",
+      "duration": "30 minutes",
+      "mapsSearch": "Lakkidi View Point Thamarassery Ghat Wayanad",
+      "imageQuery": "Lakkidi ghat pass viewpoint misty Wayanad"
+    },
+    {
+      "name": "Vythiri Village Tea and Spice Estates",
+      "category": "nature",
+      "description": "The hillsides around Vythiri are carpeted with tea, coffee, cardamom, and pepper plantations. Several estates offer guided walks explaining the difference between Robusta and Arabica, demonstrating hand-picking technique, and showing the sun-drying process. The strong fragrance of cardamom at harvest time in October and November is particularly memorable.",
+      "whyVisit": "A hands-on introduction to the spice and tea economy that defines highland Kerala.",
+      "bestTime": "October to November during cardamom and coffee harvest season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vythiri Spice Estate Tour Wayanad Kerala",
+      "imageQuery": "tea plantation Vythiri Wayanad spice estate"
+    },
+    {
+      "name": "Sulthan Bathery Jain Temple",
+      "category": "heritage",
+      "description": "Locally called 'Ganapathivattom', this 13th-century Jain temple near Sulthan Bathery is one of the most unexpected historic monuments in Kerala. Built by Jain merchants who traded in the region, the structure features finely carved pillars, characteristic Jain iconography, and an unusual square plan. It was later misused as a military granary by Tipu Sultan, from which the town gets its name.",
+      "whyVisit": "A forgotten medieval Jain temple hidden in the highlands — a remarkable piece of Kerala's pluralistic past.",
+      "bestTime": "October to February",
+      "duration": "45 minutes",
+      "mapsSearch": "Jain Temple Sulthan Bathery Wayanad",
+      "imageQuery": "Jain temple Sulthan Bathery carved pillars Wayanad"
+    },
+    {
+      "name": "Pazhassi Raja Museum, Mananthavady",
+      "category": "museum",
+      "description": "This compact museum near Mananthavady commemorates Kerala Varma Pazhassi Raja, the 'Lion of Kerala', who led prolonged guerrilla resistance against British East India Company forces from the Wayanad forests in the early 19th century. Exhibits include weapons, documents, portraits, and a scale model of the forest terrain used in his campaigns.",
+      "whyVisit": "The story of Pazhassi Raja's forest resistance is one of India's least-known anti-colonial epics.",
+      "bestTime": "Any time; closed on Mondays",
+      "duration": "1 hour",
+      "mapsSearch": "Pazhassi Raja Museum Mananthavady Wayanad",
+      "imageQuery": "Pazhassi Raja Museum Mananthavady Wayanad history"
+    },
+    {
+      "name": "Neelimala Viewpoint and Meenmutty Trek",
+      "category": "viewpoint",
+      "description": "The Neelimala ridge sits above the Meenmutty waterfall trail and offers arguably the best unobstructed panoramic view of the western Wayanad plateau. The approach is a 2 km forest walk from the Meenmutty trailhead. Sunrise here — when the valleys fill with white mist and the distant peaks turn orange — is considered one of the finest viewpoint experiences in northern Kerala.",
+      "whyVisit": "Wayanad's finest sunrise panorama, combining a forest walk with a breathtaking misty highland vista.",
+      "bestTime": "November to February at sunrise (arrive by 5:30 am)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Neelimala Viewpoint Meenmutty Wayanad Kerala",
+      "imageQuery": "Neelimala viewpoint sunrise mist Wayanad"
+    },
+    {
+      "name": "Kakolam Waterfalls",
+      "category": "waterfall",
+      "description": "A little-visited forest waterfall near Thirunelli, Kakolam cascades 60 metres through unbroken jungle into a rocky pool. The approach follows a forest department path past stands of giant bamboo and clumps of wild cardamom. Elephant activity in the area is common, making this a genuine wildlife experience as much as a waterfall visit.",
+      "whyVisit": "An authentic deep-forest waterfall with near-zero tourist footfall and real wildlife atmosphere.",
+      "bestTime": "October to January",
+      "duration": "3-4 hours with guide",
+      "mapsSearch": "Kakolam Waterfalls Thirunelli Wayanad",
+      "imageQuery": "Kakolam waterfall jungle Thirunelli Wayanad"
+    },
+    {
+      "name": "Uravu Bamboo Grove",
+      "category": "nature",
+      "description": "A unique eco-enterprise near Thrikkaipetta, Uravu works with tribal communities to cultivate over 60 species of bamboo and develop sustainable bamboo craft products. Guided walks through the 20-acre grove explain the ecological importance of bamboo in the Western Ghats, and the craft workshop demonstrates how artisans transform raw bamboo into furniture, musical instruments, and textiles.",
+      "whyVisit": "A rare combination of ecological education, tribal livelihood support, and living bamboo forest.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Uravu Bamboo Grove Thrikkaipetta Wayanad",
+      "imageQuery": "Uravu bamboo grove craft workshop Wayanad"
+    },
+    {
+      "name": "Seetharkundu Viewpoint",
+      "category": "viewpoint",
+      "description": "An off-the-radar viewpoint above Kalpetta, Seetharkundu is known to local trekkers for a vantage that simultaneously takes in Chembra Peak, the Banasura Hills, and the Wayanad plateau in a single sweep. The rocky outcrop is reached by a short 30-minute hike and has no barriers, facilities, or fees — a purely raw highland experience.",
+      "whyVisit": "A hidden local viewpoint with the most comprehensive panorama of Wayanad's mountain skyline.",
+      "bestTime": "November to February, morning hours",
+      "duration": "1-2 hours",
+      "mapsSearch": "Seetharkundu Viewpoint Kalpetta Wayanad",
+      "imageQuery": "Seetharkundu viewpoint Chembra panorama Wayanad"
+    },
+    {
+      "name": "Nenmeni Valley Viewpoint",
+      "category": "viewpoint",
+      "description": "A completely unmarketed hilltop near Mananthavady, Nenmeni Valley Viewpoint looks across a patchwork of paddy fields, forest patches, and distant blue ridges that mark the Karnataka border. Local farmers follow a trail to their fields that doubles as the access path. No entry fee, no crowds, and a completely authentic highland agricultural landscape.",
+      "whyVisit": "The most honest, uncommercialized highland view in Wayanad — pure rural landscape with zero tourist infrastructure.",
+      "bestTime": "July to August for green paddy fields; November to January for clear vistas",
+      "duration": "45-60 minutes",
+      "mapsSearch": "Nenmeni Valley Viewpoint Mananthavady Wayanad",
+      "imageQuery": "Nenmeni valley paddy fields Wayanad highland view"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "slug": "meghalaya",
+  "name": "Meghalaya",
+  "state": "Meghalaya",
+  "tagline": "Abode of clouds where living roots bridge ancient rivers",
+  "categories": ["nature", "adventure", "hill_station"],
+  "highlights": ["home to the world's wettest place on earth", "unique living root bridges built by the khasi people"],
+  "attractions": [
+    {
+      "name": "Double Decker Living Root Bridge, Nongriat",
+      "category": "nature",
+      "description": "The most celebrated of Meghalaya's remarkable living root bridges, the Double Decker bridge near Nongriat village is engineered from the aerial roots of Ficus elastica trees trained over generations by the Khasi people. Two bridges are stacked vertically above the Umshiang River, a feat requiring 15–20 years of cultivation per bridge. Reaching it requires a 3,500-step descent through rainforest — the journey through waterfalls and root bridges is as extraordinary as the destination.",
+      "whyVisit": "One of the most extraordinary examples of indigenous bioengineering in the world — a living structure that gets stronger with age.",
+      "bestTime": "October to April (post-monsoon greens are lush; avoid monsoon floods)",
+      "duration": "Full day (trek)",
+      "mapsSearch": "Double Decker Living Root Bridge Nongriat Meghalaya",
+      "imageQuery": "Double Decker Living Root Bridge Nongriat Meghalaya rainforest"
+    },
+    {
+      "name": "Cherrapunji (Sohra) and Nohkalikai Falls",
+      "category": "waterfall",
+      "description": "Cherrapunji (Sohra) holds the record for most rainfall in a single month and is home to Nohkalikai Falls — India's tallest plunge waterfall at 340 metres, dropping directly into a stunning turquoise green pool surrounded by sheer cliffs. The falls are fed by the extraordinary monsoon rains that make this plateau the wettest place on earth. Below the plateau, the Bangladeshi plains are visible on clear days, creating a theatrical landscape of plains, mist and thundering water.",
+      "whyVisit": "The tallest plunge waterfall in India, set in a landscape that makes the concept of rainfall feel elemental and overwhelming.",
+      "bestTime": "Monsoon (June-September) for maximum flow; October-November for clear skies",
+      "duration": "Half day",
+      "mapsSearch": "Nohkalikai Falls Cherrapunji Meghalaya",
+      "imageQuery": "Nohkalikai Falls Cherrapunji Meghalaya plunge waterfall"
+    },
+    {
+      "name": "Mawsmai Cave, Cherrapunji",
+      "category": "cave",
+      "description": "The most accessible and well-lit limestone cave in Meghalaya, Mawsmai Cave runs about 150 metres through stalactite-and-stalagmite chambers with dramatic formations at every turn. The passage is narrow in places and partially illuminated, creating the feel of genuine subterranean exploration without requiring specialist equipment. Outside the cave, the surrounding plateau is dotted with other smaller cave openings and the Mawsmai village itself is a pleasant traditional Khasi settlement.",
+      "whyVisit": "Meghalaya's most visitor-friendly cave — a genuinely dramatic limestone system requiring no experience or gear.",
+      "bestTime": "Morning to avoid crowds and for the freshest light at the cave mouth",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mawsmai Cave Cherrapunji Meghalaya",
+      "imageQuery": "Mawsmai Cave stalactites Cherrapunji Meghalaya limestone"
+    },
+    {
+      "name": "Dawki River (Umngot River)",
+      "category": "nature",
+      "description": "The Umngot River at Dawki is so extraordinarily clear that boats appear to float in mid-air above the riverbed. The water, a deep aquamarine over white sand and smooth stones, maintains its glass-like transparency even during peak tourist season. Dawki sits on the India-Bangladesh border and local fishermen use bamboo fishing traps in the shallow reaches. Rowing across the river in a small boat over the transparent water is one of the most surreal travel experiences in India.",
+      "whyVisit": "Arguably the clearest river in Asia — the sensation of floating above the riverbed in a boat defies belief.",
+      "bestTime": "November to April (post-monsoon transparency; during monsoon the river turns muddy)",
+      "duration": "Half day",
+      "mapsSearch": "Dawki Umngot River Meghalaya boat ride",
+      "imageQuery": "Dawki Umngot River crystal clear transparent water Meghalaya"
+    },
+    {
+      "name": "Mawlynnong Village",
+      "category": "nature",
+      "description": "Declared Asia's Cleanest Village, Mawlynnong near Shillong is a Khasi village of immaculate bamboo-fenced paths, swept lanes, hanging orchid pots and sky walks built into trees. Every household participates in communal cleaning. The village is 100% literate and predominantly matrilineal. A bamboo sky walk at the edge of the village provides views over the Bangladesh plains and the surrounding betel nut forest canopy.",
+      "whyVisit": "A showcase of community-led sustainability and Khasi culture — proof that 'eco-village' is not just a concept but a living achievement.",
+      "bestTime": "October to May (monsoon can make the sky walk access muddy)",
+      "duration": "Half day",
+      "mapsSearch": "Mawlynnong Cleanest Village Meghalaya",
+      "imageQuery": "Mawlynnong village clean lanes orchids Meghalaya"
+    },
+    {
+      "name": "Shillong Peak",
+      "category": "viewpoint",
+      "description": "At 1,965 metres, Shillong Peak is the highest point in Meghalaya and offers a panoramic view encompassing the entire Shillong city, the Brahmaputra plains of Assam to the north and the rolling Khasi Hills in every other direction. The Indian Air Force operates a base here, and access requires a simple permit at the gate. On clear winter mornings, the sunrise over the Assam floodplains is extraordinary, with cloud inversions filling the valleys below.",
+      "whyVisit": "The best panoramic viewpoint in Meghalaya — a 360-degree perspective over the state's extraordinary topography.",
+      "bestTime": "Clear winter mornings (November to February) for cloud inversions and sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Shillong Peak viewpoint Meghalaya",
+      "imageQuery": "Shillong Peak viewpoint panorama Meghalaya clouds"
+    },
+    {
+      "name": "Elephant Falls, Shillong",
+      "category": "waterfall",
+      "description": "One of Meghalaya's most visited natural attractions, Elephant Falls near Shillong drops in three spectacular tiers through moss-covered rocks and lush subtropical vegetation. The falls were named by the British after a rock resembling an elephant, destroyed in the 1897 earthquake. Viewing platforms at multiple levels allow observation of all three tiers, and the surrounding greenery is at its most dramatic during and immediately after the monsoon.",
+      "whyVisit": "An easily accessible three-tiered waterfall just 12 km from Shillong — the perfect introduction to Meghalaya's waterfall landscape.",
+      "bestTime": "Post-monsoon (September-October) for maximum volume and lush greenery",
+      "duration": "1-2 hours",
+      "mapsSearch": "Elephant Falls Shillong Meghalaya",
+      "imageQuery": "Elephant Falls three tiers Shillong Meghalaya green"
+    },
+    {
+      "name": "Ward's Lake, Shillong",
+      "category": "lake",
+      "description": "A colonial-era artificial lake at the heart of Shillong, Ward's Lake was created during British rule and retains its Victorian-era pedestrian bridges, weeping willows and a well-maintained promenade. Paddle boats dot the surface and the surrounding gardens are cultivated with rose beds and ornamental trees. The lake is a beloved gathering spot for Shillong families and the best place in the city to observe local life blending colonial heritage with modern Northeast Indian culture.",
+      "whyVisit": "The calm, leafy social heart of Shillong city — an old-world lakeside park perfect for an afternoon stroll.",
+      "bestTime": "Late afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ward's Lake Shillong Meghalaya",
+      "imageQuery": "Ward's Lake Shillong colonial garden paddle boats Meghalaya"
+    },
+    {
+      "name": "Mawphlang Sacred Forest",
+      "category": "nature",
+      "description": "Mawphlang Sacred Forest is a 192-hectare ancient grove maintained for centuries by the Khasi community under customary law called 'nongkynmaw'. Not a single leaf or twig may be removed. The result is a primeval forest of extraordinary biodiversity — rare orchids, ancient trees, medicinal plants, moss-covered rocks — preserved entirely by community sanction. A knowledgeable local guide is mandatory and reveals the ethnobotanical and spiritual dimensions of every plant.",
+      "whyVisit": "One of India's best examples of indigenous conservation — a forest more ancient and biodiverse than most protected reserves.",
+      "bestTime": "October to April; morning for birdlife",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mawphlang Sacred Grove Forest Meghalaya",
+      "imageQuery": "Mawphlang Sacred Forest moss ancient trees Meghalaya"
+    },
+    {
+      "name": "Laitlum Canyons",
+      "category": "viewpoint",
+      "description": "Often called Meghalaya's Grand Canyon, Laitlum Canyons near Shillong presents a series of deeply eroded gorges where rolling green hills plunge suddenly into dramatic valley floors shrouded in cloud. The viewpoint, just 25 km from Shillong, is little-known outside of Northeast India and remains one of the state's most genuinely breathtaking natural vistas. Small Khasi villages dot the plateau rim and the silence, broken only by wind, is absolute.",
+      "whyVisit": "Meghalaya's most spectacular canyon landscape — as dramatic as any famous gorge in the world and nearly entirely crowd-free.",
+      "bestTime": "Early morning when mist fills the valleys, or just after rain",
+      "duration": "2-3 hours",
+      "mapsSearch": "Laitlum Canyons Shillong Meghalaya viewpoint",
+      "imageQuery": "Laitlum Canyons gorge Meghalaya green hills mist"
+    },
+    {
+      "name": "Siju Cave (Bat Cave), South Garo Hills",
+      "category": "cave",
+      "description": "Siju Cave in South Garo Hills is one of the longest known cave systems in India, stretching over 4.7 km along the Simsang River. Inside are magnificent stalactite-and-stalagmite formations, an underground river and chamber halls where millions of bats roost — giving rise to the local name 'Bat Cave'. The caves require exploration with a guide and headlamps. The remoteness and scale make it one of Meghalaya's most adventurous speleological destinations.",
+      "whyVisit": "The largest and most remote cave system in Meghalaya — for serious adventure seekers willing to travel deep into Garo Hills territory.",
+      "bestTime": "October to April",
+      "duration": "Half day",
+      "mapsSearch": "Siju Cave Bat Cave South Garo Hills Meghalaya",
+      "imageQuery": "Siju Cave bats stalactites Garo Hills Meghalaya"
+    },
+    {
+      "name": "Don Bosco Museum of Indigenous Cultures, Shillong",
+      "category": "museum",
+      "description": "Housed in a seven-storey purpose-built structure in Shillong, the Don Bosco Museum is the largest museum of indigenous cultures in Asia. It documents the traditions, costumes, crafts, music and lifestyles of every major ethnic group in Northeast India — Naga, Mizo, Khasi, Garo, Meitei, Adi and many more — through life-size dioramas, artefact collections and interactive galleries. A rooftop sky walk offers city views.",
+      "whyVisit": "The definitive cultural introduction to the extraordinary ethnic diversity of Northeast India — essential context before exploring the region.",
+      "bestTime": "Morning, allow at least 3 hours",
+      "duration": "3-4 hours",
+      "mapsSearch": "Don Bosco Museum of Indigenous Cultures Shillong Meghalaya",
+      "imageQuery": "Don Bosco Museum Shillong Northeast India cultural exhibits"
+    },
+    {
+      "name": "Umiam Lake (Barapani)",
+      "category": "lake",
+      "description": "Formed by the Umiam Dam across the Umiam River, Barapani Lake is a large reservoir surrounded by pine-covered hills that reflects their deep green in the water. Located 15 km from Shillong, it is a popular picnic destination and water sports hub offering kayaking, rowing, speed boating and pedalo rides. The Meghalaya Tourism resort on the lake shore has bungalows on stilts over the water. On misty mornings the lake disappears into low clouds.",
+      "whyVisit": "A beautiful pine-framed lake perfect for water sports and picnics — the most easily accessible scenic escape from Shillong.",
+      "bestTime": "Morning for mist and calm water; October to April for clearest skies",
+      "duration": "Half day",
+      "mapsSearch": "Umiam Lake Barapani Shillong Meghalaya",
+      "imageQuery": "Umiam Lake Barapani pine hills Shillong Meghalaya"
+    },
+    {
+      "name": "Weinia Falls Trek, Mawlynnong",
+      "category": "waterfall",
+      "description": "A short walk from Mawlynnong village, Weinia Falls is a modest but picturesque single-drop waterfall that plunges through dense subtropical jungle. The trail passes traditional Khasi rubber plantations, areca nut trees and bamboo groves. The falls feed a small pool that is safe for swimming in the non-monsoon season. Unlike the famous falls of Cherrapunji, Weinia is almost entirely visitor-free, making it a genuinely private nature experience.",
+      "whyVisit": "A hidden swimming waterfall near Asia's cleanest village — combine it with a Mawlynnong village visit for a perfect half-day itinerary.",
+      "bestTime": "October to April",
+      "duration": "1-2 hours",
+      "mapsSearch": "Weinia Falls Mawlynnong Meghalaya trek",
+      "imageQuery": "Weinia Falls Mawlynnong jungle swimming Meghalaya"
+    },
+    {
+      "name": "Seven Sisters Falls (Nohsngithiang Falls)",
+      "category": "waterfall",
+      "description": "Known both as Seven Sisters Falls and Nohsngithiang Falls, this waterfall near Cherrapunji drops from a height of 315 metres in seven distinct parallel streams that give it its popular name. The falls tumble over the edge of a plateau into a valley deep below, and in full monsoon, the seven streams merge into a single overwhelming cascade. The viewpoint looks across a wide valley and on clear days Bangladesh is visible beyond the plain below.",
+      "whyVisit": "One of the widest and most dramatic waterfall formations in India — the seven-stream spectacle is unique in the subcontinent.",
+      "bestTime": "Monsoon peak (July-August) for maximum drama; post-monsoon (October) for clear views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Seven Sisters Falls Nohsngithiang Cherrapunji Meghalaya",
+      "imageQuery": "Seven Sisters Falls Nohsngithiang Cherrapunji Meghalaya seven streams"
+    },
+    {
+      "name": "Kaziranga-Meghalaya Wildlife Corridor (Balpakram National Park)",
+      "category": "wildlife",
+      "description": "Balpakram National Park in South Garo Hills is a remote plateau sanctuary often called the 'Grand Canyon of Meghalaya' and the 'Land of Spirits' by local Garo tribes. It protects golden langurs, clouded leopards, tigers, Asian elephants and hoolock gibbons. The park borders Nokrek National Park and forms part of the broader Garo Hills elephant corridor. The dramatic Balpakram plateau, with its gorges and cloud forests, is entirely unlike the rest of Meghalaya.",
+      "whyVisit": "Meghalaya's most remote and biodiverse wildlife sanctuary — sacred to the Garo people and home to some of India's rarest mammals.",
+      "bestTime": "November to April",
+      "duration": "Full day to multiple days",
+      "mapsSearch": "Balpakram National Park South Garo Hills Meghalaya",
+      "imageQuery": "Balpakram National Park Garo Hills Meghalaya canyon wildlife"
+    },
+    {
+      "name": "Shillong City Heritage Walk (Police Bazaar to Bara Bazaar)",
+      "category": "heritage",
+      "description": "Shillong's colonial past is written across its urban fabric — from the All Saints' Cathedral (1910) to the Gothic spires of the Cathedral of Mary Help of Christians, from the state assembly building to the iconic Polo Ground. The walk from Police Bazaar through to Bara Bazaar passes wooden storefronts, Presbyterian churches, betel nut vendors and the intoxicating smoky-sweet smell of local cuisine. Shillong's music scene, nurtured in these lanes, produced India's first rock revolution.",
+      "whyVisit": "The best way to absorb Shillong's extraordinary cultural cocktail of Scottish Highland aesthetics, Khasi tradition and Northeast Indian creativity.",
+      "bestTime": "Late morning to afternoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Police Bazaar Shillong heritage walk Meghalaya",
+      "imageQuery": "Shillong Police Bazaar heritage street colonial Meghalaya"
+    },
+    {
+      "name": "Jakrem Hot Springs",
+      "category": "nature",
+      "description": "Located 64 km from Shillong near the Bangladesh border, Jakrem Hot Springs are sulphur-rich thermal springs believed by locals to have medicinal properties for skin conditions. The Meghalaya Tourism Department has developed basic bathing facilities, and the springs flow into small pools at different temperatures. The surrounding landscape of paddy fields and the Myntdu River valley adds natural beauty to the therapeutic experience.",
+      "whyVisit": "The only significant hot springs in Northeast India — an unusual off-the-beaten-path Meghalaya experience.",
+      "bestTime": "November to February (cool weather makes the hot springs most enjoyable)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jakrem Hot Springs Meghalaya sulphur springs",
+      "imageQuery": "Jakrem Hot Springs Meghalaya thermal sulphur bathing"
+    },
+    {
+      "name": "Krang Suri Falls",
+      "category": "waterfall",
+      "description": "Hidden in the Jowai district of Jaintia Hills, Krang Suri is Meghalaya's most swimmable waterfall — a two-tiered cascade that pours into a deep turquoise natural pool framed by dense jungle, requiring a 20-minute forest walk to reach. The water is a brilliant cobalt-green due to the limestone substrates, and the pool is shallow enough to wade safely in the non-monsoon season. Far fewer visitors reach here than the Cherrapunji waterfalls.",
+      "whyVisit": "The most beautiful natural swimming hole in Meghalaya — a turquoise pool in a jungle setting that looks like a film set.",
+      "bestTime": "November to April",
+      "duration": "Half day",
+      "mapsSearch": "Krang Suri Falls Jowai Jaintia Hills Meghalaya",
+      "imageQuery": "Krang Suri Falls turquoise pool jungle Meghalaya swimming"
+    },
+    {
+      "name": "Tyrna Village Root Bridge Trail",
+      "category": "nature",
+      "description": "Tyrna is the starting village for the trek to the Double Decker Root Bridge, but its own village area and the first kilometer of trail contain single-span living root bridges and traditional Khasi farmhouses that most trekkers rush past. The village women cultivate extraordinary kitchen gardens and the chai stalls here serve Meghalayan ginger tea with fire-heated flat irons. Staying overnight in Tyrna changes the entire root bridge experience — early morning in the valley with no crowds is transformative.",
+      "whyVisit": "The gateway village to Meghalaya's root bridge region — often more authentic than the famous bridge itself, and largely undiscovered.",
+      "bestTime": "Overnight stay for pre-dawn root bridge access",
+      "duration": "Overnight",
+      "mapsSearch": "Tyrna Village Cherrapunji Meghalaya root bridge trail",
+      "imageQuery": "Tyrna village living root bridge trail Meghalaya Khasi"
+    },
+    {
+      "name": "Kongthong Whistling Village",
+      "category": "heritage",
+      "description": "In the remote Khasi Hills, Kongthong village practices the extraordinary tradition of 'Jingrwai Lawbei' — giving every child a unique melodic whistle-tune as a second name, used to call them across distances in the forest. No two tunes are alike and each is composed by the child's mother at birth. The village received national and international media attention in 2021. The surrounding hills, terraced agriculture and traditional Khasi architecture are equally beautiful.",
+      "whyVisit": "One of the most unique living cultural traditions anywhere in the world — a village that communicates through personal melody.",
+      "bestTime": "October to April",
+      "duration": "Half day to full day",
+      "mapsSearch": "Kongthong Whistling Village Meghalaya Khasi Hills",
+      "imageQuery": "Kongthong Whistling Village Khasi Hills Meghalaya tradition"
+    },
+    {
+      "name": "Nartiang Monoliths",
+      "category": "heritage",
+      "description": "Located in the Jaintia Hills, Nartiang contains the largest collection of monolithic standing stones (menhirs and dolmens) in the Indian subcontinent — over 90 megaliths, some reaching 8 metres in height. Erected by Jaintia kings and Khasi clans to commemorate ancestors and victories, these stones have been standing for centuries in a field adjacent to a Durga temple. The site is one of India's most important megalithic complexes and almost entirely unknown outside the Northeast.",
+      "whyVisit": "India's largest megalithic stone monument collection — a Stonehenge-scale site that receives almost no mainstream visitors.",
+      "bestTime": "October to April, morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nartiang Monoliths menhirs Jaintia Hills Meghalaya",
+      "imageQuery": "Nartiang monoliths menhirs Jaintia Hills Meghalaya megalithic"
+    },
+    {
+      "name": "Nongriat Natural Pool (Rainbow Falls)",
+      "category": "waterfall",
+      "description": "Beyond the Double Decker Root Bridge, continuing another 45 minutes through the Nongriat valley leads to Rainbow Falls — a thundering cascade that creates permanent rainbows in its mist during the afternoon sun. A natural swimming pool with cold, crystal-clear water sits below the falls. The trail from the root bridge to Rainbow Falls passes additional single-span root bridges, bamboo suspension bridges and swimming holes used by local children.",
+      "whyVisit": "The ultimate reward for trekking past the Double Decker Bridge — a perfect waterfall and natural pool at the end of a pristine jungle trail.",
+      "bestTime": "October to April; afternoon for rainbow effect (2–4 PM)",
+      "duration": "2-3 hours additional from root bridge",
+      "mapsSearch": "Rainbow Falls Nongriat Meghalaya trek",
+      "imageQuery": "Rainbow Falls Nongriat Meghalaya waterfall pool jungle"
+    },
+    {
+      "name": "Mawkdok Dympep Valley Viewpoint",
+      "category": "viewpoint",
+      "description": "On the main Shillong-Cherrapunji road, the Mawkdok Dympep Valley overlook is one of the most dramatic sudden vistas in Meghalaya — the road curves around a bend and the entire Dympep Valley opens below in a vast green bowl ringed by mist-draped cliffs. Adventure operators here offer zip-lining over the valley canopy, one of the longest zip-lines in the Northeast. The view itself, even without the zip-line, stops every traveller cold.",
+      "whyVisit": "The most dramatic roadside viewpoint in Meghalaya — a sudden, staggering valley vista that appears without warning on the Cherrapunji road.",
+      "bestTime": "Morning before mist thickens, or after rain when clouds fill the valley",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mawkdok Dympep Valley viewpoint Shillong Cherrapunji road Meghalaya",
+      "imageQuery": "Mawkdok Dympep Valley viewpoint Meghalaya green valley mist"
+    },
+    {
+      "name": "Thangkharang Park and Bangladesh View",
+      "category": "viewpoint",
+      "description": "Perched at the edge of the Cherrapunji plateau, Thangkharang Park offers the most dramatic view of the Bangladeshi plains from Indian territory — the flat green expanse of the Sylhet delta stretches below the cliffs for as far as the eye can see, a 1,000-metre elevation change in just a few kilometres. Within the park, the Kynrem Falls drops 305 metres in three tiers into the valley below. On clear days the meandering Surma River in Bangladesh is plainly visible.",
+      "whyVisit": "The sharpest cliff-edge view from Meghalaya into Bangladesh — a dizzying perspective on the subcontinent's topographic drama.",
+      "bestTime": "October to December for the clearest views into the plains",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thangkharang Park Cherrapunji Bangladesh view Meghalaya",
+      "imageQuery": "Thangkharang Park Cherrapunji Bangladesh plains view Meghalaya"
+    }
+  ]
+}

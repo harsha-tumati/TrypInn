@@ -1,0 +1,270 @@
+{
+  "slug": "ayodhya",
+  "name": "Ayodhya",
+  "state": "Uttar Pradesh",
+  "tagline": "The eternal city of Ram, reborn on the sacred Sarayu River",
+  "categories": ["pilgrimage", "spiritual", "heritage"],
+  "highlights": ["birthplace of lord ram and the new ram mandir", "84 ghats on the sarayu river with ancient kund baths"],
+  "attractions": [
+    {
+      "name": "Ram Janmabhoomi and Ram Mandir",
+      "category": "temple",
+      "description": "The Ram Janmabhoomi complex is the site where Hindus believe Lord Ram was born, and the location of India's most significant temple project of the 21st century. The newly consecrated Ram Mandir, inaugurated in January 2024, is a Nagara-style temple of pink Rajasthan sandstone rising 161 feet, built on a 70-acre sacred complex. The main sanctum houses the idol of Ram Lalla (infant Ram) in a golden cradle. The complex includes a Ram Katha museum, pilgrimage facilities, and the archaeological excavation museum displaying finds from the site.",
+      "whyVisit": "The most sacred site in Vaishnavite Hinduism, now home to India's most anticipated and historically significant new temple.",
+      "bestTime": "October to March; Ram Navami (April) for the main festival.",
+      "duration": "3-4 hours",
+      "mapsSearch": "Ram Janmabhoomi Ram Mandir Ayodhya, Uttar Pradesh",
+      "imageQuery": "Ram Mandir Ayodhya new temple sandstone 2024"
+    },
+    {
+      "name": "Sarayu Ghat (Guptar Ghat)",
+      "category": "religious",
+      "description": "The Sarayu river flows through Ayodhya in a broad sacred arc, flanked by 84 ghats stretching for several kilometres. Guptar Ghat is the most sacred of all, where Lord Ram is believed to have taken jal samadhi (divine immersion) to return to the heavenly realm at the conclusion of his earthly life. The ghat has a powerful Vishnu temple with an unusually fine set of Vaishnava sculptures, and the deep, still reach of the Sarayu here is considered the most propitious bathing point in the city. Pre-dawn bathers arrive in the hundreds.",
+      "whyVisit": "The holiest bathing ghat on the Sarayu — the exact point where Ram is believed to have concluded his earthly life and returned to Vaikuntha.",
+      "bestTime": "Dawn year-round; Kartik Purnima (November) for the largest bathing festival.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Guptar Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Guptar Ghat Sarayu River Ayodhya sacred bathing Uttar Pradesh"
+    },
+    {
+      "name": "Kanak Bhawan Temple",
+      "category": "temple",
+      "description": "Kanak Bhawan (Golden Palace) is the most celebrated and architecturally lavish temple in Ayodhya after Ram Mandir, believed to be the palace gifted by Queen Kaikeyi to Sita as a wedding gift. The present structure is a 19th-century rebuild with a richly decorated interior of gold-plated images of Ram and Sita, a riot of coloured glass, mirror work, and embroidered canopies. The devotional atmosphere inside the temple is intense, with continuous kirtans and the entire sanctum gilded and garlanded. Devotees queue for hours to enter.",
+      "whyVisit": "The most ornate and devotionally charged temple in Ayodhya — a golden interior experience that epitomises the city's Vaishnava aesthetic.",
+      "bestTime": "Year-round; early morning and evening for aarti.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kanak Bhawan Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Kanak Bhawan Temple Ayodhya gold interior Ram Sita Uttar Pradesh"
+    },
+    {
+      "name": "Hanuman Garhi",
+      "category": "temple",
+      "description": "Hanuman Garhi is a formidable hilltop fortress-temple dedicated to Hanuman, reached by a steep flight of 76 steps from the street below. Built in the 18th century, the temple occupies a commanding position over the town and houses an image of Bal Hanuman (child Hanuman) in the lap of his mother, Anjana. The view from the temple forecourt sweeps over the entire Ayodhya skyline and the silver curve of the Sarayu River beyond. It is customary to visit Hanuman Garhi before proceeding to Ram Janmabhoomi.",
+      "whyVisit": "The guardian temple of Ayodhya atop its highest hill — tradition demands every Ram pilgrim pay respects here before visiting the birthplace.",
+      "bestTime": "Year-round; morning for uncrowded darshan and best city views.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hanuman Garhi Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Hanuman Garhi temple hilltop Ayodhya Uttar Pradesh"
+    },
+    {
+      "name": "Nageshwarnath Temple",
+      "category": "temple",
+      "description": "Nageshwarnath is one of the oldest Shiva temples in Ayodhya, believed to have been established by Kush, Ram's son, after a supernatural encounter with a Nag (serpent deity). The temple is the site of Shivaratri celebrations that draw the Shaiva communities of Ayodhya in large numbers. The lingam inside is of black stone, unusually ancient, and the approach through the warren of lanes in the old city gives the temple a character of layered antiquity. The temple also marks the traditional boundary of the ancient city's sacred core.",
+      "whyVisit": "The oldest Shiva temple in Ayodhya, founded by Ram's own son — a Shaiva island within the city's overwhelmingly Vaishnava landscape.",
+      "bestTime": "Mahashivratri for festivals; year-round for heritage visitors.",
+      "duration": "1 hour",
+      "mapsSearch": "Nageshwarnath Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Nageshwarnath Temple Ayodhya Shiva ancient Uttar Pradesh"
+    },
+    {
+      "name": "Triveni Sangam (Ayodhya)",
+      "category": "religious",
+      "description": "Ayodhya's Triveni Sangam is the confluence point of the Sarayu river with the Tamsa (Tons) river, regarded as a sacred tirthas of great antiquity. The broad, calm confluence is flanked by ghats and small ashrams where sadhus perform tapas (austerities) in the open air. A boat ride across the confluence is a traditional part of the Ayodhya pilgrimage, and the fishermen who maintain these wooden boats are hereditary occupants of the ghat. The confluence site is quieter than the main city ghats and has a meditative quality.",
+      "whyVisit": "A sacred river confluence that is part of the traditional Ayodhya pilgrimage circuit but rarely visited by non-pilgrims — complete spiritual quiet.",
+      "bestTime": "Dawn year-round.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Triveni Sangam Ayodhya Sarayu Tamsa, Uttar Pradesh",
+      "imageQuery": "Triveni Sangam Ayodhya Sarayu confluence river boat"
+    },
+    {
+      "name": "Treta Ke Thakur Temple",
+      "category": "temple",
+      "description": "Treta Ke Thakur (Lord of the Treta Yuga) marks the site where Ram is believed to have performed the Ashwamedha Yagna (horse sacrifice) after his return from Lanka, in the Treta age — one of the four cosmic epochs in Hindu cosmology. The current temple structure, built by the Maratha queen Ahilyabai Holkar in the late 18th century, follows her characteristic style of dark stone precision work. The black stone images of Ram, Lakshman, Sita, Hanuman, Sugriva, and Vibhishana inside are considered 300 years old.",
+      "whyVisit": "The site of Ram's Ashwamedha yagna — one of the Ramayana's pivotal ritual episodes, marked by Ahilyabai Holkar's finest Maratha-style architecture.",
+      "bestTime": "Year-round.",
+      "duration": "1 hour",
+      "mapsSearch": "Treta Ke Thakur Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Treta Ke Thakur Temple Ayodhya Maratha stone Uttar Pradesh"
+    },
+    {
+      "name": "Ram Ki Pairi (Ram Ghat)",
+      "category": "religious",
+      "description": "Ram Ki Pairi is Ayodhya's most elaborately developed riverfront ghat complex, stretching for several hundred metres along the Sarayu with wide marble steps, ornate lamp standards, and a series of small shrines to the Ramayana's principal characters. The ghat is the city's most photogenic at dawn, when mist rises off the Sarayu, pilgrims fill the steps, and priests perform a morning aarti with burning torches. The evening diyas-on-water ceremony here rivals Haridwar's in visual spectacle.",
+      "whyVisit": "The most beautiful and photogenic ghat in Ayodhya — the place to photograph the Sarayu at dawn and the lamp ceremony at dusk.",
+      "bestTime": "Dawn and dusk year-round; Diwali for the Deepotsav lamp festival when 1 million diyas are lit simultaneously.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ram Ki Pairi Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Ram Ki Pairi ghat Sarayu River Ayodhya dawn lamps"
+    },
+    {
+      "name": "Mani Parvat",
+      "category": "heritage",
+      "description": "Mani Parvat is an ancient earthen mound in Ayodhya traditionally identified as the hillock that Hanuman carried from the Himalayas containing the Sanjivani herb to revive Lakshman. Buddhist scholars have identified the mound as a surviving example of an ancient stupa, supporting accounts in Fa Hien's 5th-century CE travelogue that Ayodhya had significant Buddhist monuments. The mound is crowned by a small temple and a viewpoint terrace offering views across the rooftops of the old city to the Sarayu.",
+      "whyVisit": "A hill simultaneously sacred in Hindu and Buddhist cosmography — one of Ayodhya's oldest surviving landscape features with 5th-century foreign documentation.",
+      "bestTime": "Year-round; morning for city views.",
+      "duration": "1 hour",
+      "mapsSearch": "Mani Parvat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Mani Parvat ancient mound stupa Ayodhya Uttar Pradesh"
+    },
+    {
+      "name": "Sita Ki Rasoi",
+      "category": "heritage",
+      "description": "Sita Ki Rasoi (Sita's Kitchen) is a temple complex adjacent to the Ram Janmabhoomi site believed to mark the location of the kitchen of the original Ayodhya royal palace where Sita cooked for the family. The complex contains an unusual assemblage of cooking implements in stone — stone grinding wheels, storage vessels, and hearths — that are worshipped as sacred objects. The temple is administered by a community of widows performing daily rituals, giving it a distinct and quietly moving atmosphere unlike any other in Ayodhya.",
+      "whyVisit": "The most unusual shrine in Ayodhya — stone cooking implements worshipped as sacred relics in a temple administered by widowed devotees.",
+      "bestTime": "Year-round; morning for active ritual.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Sita Ki Rasoi Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Sita Ki Rasoi temple Ayodhya stone kitchen relics Uttar Pradesh"
+    },
+    {
+      "name": "Swarg Dwar Ghat",
+      "category": "religious",
+      "description": "Swarg Dwar (Gateway to Heaven) Ghat on the Sarayu is Ayodhya's primary cremation ghat, used continuously for Hindu last rites since antiquity. The ghats along this stretch retain the character of a 'Manikarnika of the Sarayu', with continuous funeral pyres and the constant sound of chanting. Varanasi-trained pandas here conduct Asthi Visarjan ceremonies for families from across North India. The ghat is also the embarkation point for the traditional Sarayu boat pilgrimage circuit of all 84 ghats.",
+      "whyVisit": "The living cremation ghat of Ayodhya — a profound encounter with the Hindu understanding of moksha at the sacred river.",
+      "bestTime": "Year-round.",
+      "duration": "1 hour",
+      "mapsSearch": "Swarg Dwar Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Swarg Dwar Ghat Ayodhya Sarayu cremation sacred Uttar Pradesh"
+    },
+    {
+      "name": "Chhoti Chhavani (Jain Temples)",
+      "category": "temple",
+      "description": "Ayodhya is among the most sacred cities in Jainism as well as Hinduism — it is the birthplace of five Jain Tirthankaras, including the first, Rishabhanatha. The Chhoti Chhavani precinct in the heart of the old city contains a concentration of white marble Jain temples, the most impressive being the Rishabhadeva temple, whose sanctum is sheathed in carved marble and houses a black stone image believed to date from 800 CE. The Jain quarter has its own distinct architectural identity within the broader Hindu city.",
+      "whyVisit": "The birthplace of five Jain Tirthankaras — an ancient Jain sacred precinct within India's most famous Hindu pilgrimage city.",
+      "bestTime": "Year-round; Mahavir Jayanti for Jain pilgrimage season.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chhoti Chhavani Jain Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Jain temple Ayodhya white marble Tirthankara Uttar Pradesh"
+    },
+    {
+      "name": "Lalita Ghat and Naya Ghat",
+      "category": "religious",
+      "description": "Lalita Ghat and the adjacent Naya Ghat (New Ghat) form the central section of Ayodhya's 84-ghat riverfront, famous for the hundreds of small shrines embedded in the ghat walls — each housing a different deity in a niche barely large enough for a priest to perform puja. The layering of these small shrines, each donated by a different individual or family over centuries, creates a visual record of popular devotion that is dense, colourful, and architecturally unique. The evening lamp-lighting ritual here involves illuminating every shrine simultaneously.",
+      "whyVisit": "A ghat wall encrusted in hundreds of individual devotional shrines — the most texturally complex religious architecture in Ayodhya.",
+      "bestTime": "Evening for simultaneous lamp lighting; dawn for bathing ritual.",
+      "duration": "1 hour",
+      "mapsSearch": "Lalita Ghat Ayodhya Sarayu, Uttar Pradesh",
+      "imageQuery": "Lalita Ghat shrines Ayodhya Sarayu hundreds lamps Uttar Pradesh"
+    },
+    {
+      "name": "Tulsi Smarak Bhawan",
+      "category": "museum",
+      "description": "Tulsi Smarak Bhawan is a memorial museum and cultural centre dedicated to the 16th-century poet-saint Tulsidas, who composed the Ramcharitmanas in Ayodhya — the most widely read text in the Hindi literary tradition and the primary source of Ram devotion for hundreds of millions of Hindus. The museum displays manuscripts of the Ramcharitmanas, reproductions of Tulsidas's manuscripts in the Nagari and Kaithi scripts, and a research library on Ramayana literature. Evening Ramcharitmanas recitations are held in the courtyard.",
+      "whyVisit": "The memorial to the poet who wrote the Ramcharitmanas — the founding document of Ram devotion in North India, composed in this very city.",
+      "bestTime": "Year-round; evening for recitations.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tulsi Smarak Bhawan Ayodhya, Uttar Pradesh",
+      "imageQuery": "Tulsi Smarak Bhawan Ayodhya Tulsidas Ramcharitmanas museum"
+    },
+    {
+      "name": "Badi Devkali Temple",
+      "category": "temple",
+      "description": "Badi Devkali is an ancient goddess temple in the old city of Ayodhya considered the Kul Devi (clan goddess) of the Kaushik and related Brahmin communities of the Sarayu region. The temple predates the documented Muslim medieval period of Ayodhya and the image of the goddess — a fierce, seven-armed form of Durga in black volcanic stone — is considered swayambhu (self-manifested). The temple is surrounded by narrow lanes of the most ancient-feeling part of the old city.",
+      "whyVisit": "Ayodhya's oldest goddess temple, in the deepest lanes of the ancient city, with a pre-medieval black stone image of outstanding antiquity.",
+      "bestTime": "Navratri (April and October) for festivals.",
+      "duration": "1 hour",
+      "mapsSearch": "Badi Devkali Temple Ayodhya, Uttar Pradesh",
+      "imageQuery": "Badi Devkali Temple Ayodhya ancient goddess old city Uttar Pradesh"
+    },
+    {
+      "name": "Dashrath Mahal",
+      "category": "heritage",
+      "description": "Dashrath Mahal is a temple complex believed to occupy the site of the palace of King Dasharatha, Ram's father. The existing structure dates from the 18th century but rests on much older foundations, and the complex contains shrines to each of the four brothers — Ram, Lakshman, Bharat, and Shatrughan — along with their respective consorts. The central courtyard features a well traditionally identified as the palace's original water source. Devotees prostrate on the courtyard stones believing them to be the original palace floor.",
+      "whyVisit": "The palace of Dasharatha and the boyhood home of Ram and his brothers — a complex that embeds the Ramayana narrative into physical architecture.",
+      "bestTime": "Year-round.",
+      "duration": "1 hour",
+      "mapsSearch": "Dashrath Mahal Ayodhya, Uttar Pradesh",
+      "imageQuery": "Dashrath Mahal temple palace Ayodhya Ramayana Uttar Pradesh"
+    },
+    {
+      "name": "Lakshman Ghat",
+      "category": "religious",
+      "description": "Lakshman Ghat is the sacred bathing site associated with Lakshman, Ram's devoted younger brother, who is believed to have taken his own jal samadhi (divine immersion) at this point on the Sarayu after Ram's departure from the earthly realm. The ghat has a small but intensely decorated temple and the most devout local Ayodhya residents prefer to bathe here rather than at the more crowded Ram Ki Pairi. A narrow lane of old temples and dharmashalas leads to the ghat from the main bazaar.",
+      "whyVisit": "Lakshman's divine departure point from the world — a profoundly devout but uncrowded ghat in the heart of the ancient city.",
+      "bestTime": "Dawn year-round.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Lakshman Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Lakshman Ghat Sarayu Ayodhya temple ancient lane Uttar Pradesh"
+    },
+    {
+      "name": "Ram Katha Museum",
+      "category": "museum",
+      "description": "The Ram Katha Museum within the Ram Janmabhoomi complex documents the Ramayana tradition across all of South and Southeast Asia, presenting versions of the Ram story from Cambodia's Reamker, Thailand's Ramakien, Indonesia's Kakawin Ramayana, and Sri Lanka's Lankavatara alongside the Indian traditions. The museum's galleries include Ramayana miniature paintings, shadow puppet figures from multiple Asian traditions, theatrical costumes, and archaeological finds from Ayodhya excavations. The breadth of the collection is extraordinary.",
+      "whyVisit": "The only museum in the world documenting Ram devotion across all of Asia — a revelation of how deep the Ramayana's cultural reach extends.",
+      "bestTime": "Year-round; closed Mondays.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ram Katha Museum Ayodhya, Uttar Pradesh",
+      "imageQuery": "Ram Katha Museum Ayodhya Ramayana Asia collection Uttar Pradesh"
+    },
+    {
+      "name": "Birla Mandir (Naya Ghat Temple)",
+      "category": "temple",
+      "description": "The Birla Mandir on the Sarayu bank at Naya Ghat is Ayodhya's most architecturally refined modern temple, built by the Birla industrial family in white Rajasthani marble with exceptional quality of stone carving. The temple is dedicated to Ram and Sita and houses outstanding contemporary Vaishnava sculpture. The riverside location gives it a poetic quality — the white marble reflects the Sarayu's light on sunny afternoons in a way that makes the complex glow. The garden around the temple is the most beautifully maintained in Ayodhya.",
+      "whyVisit": "The most architecturally refined temple on the Ayodhya riverfront — Birla-quality marble craftsmanship in an outstanding riverside setting.",
+      "bestTime": "Afternoon for the best reflective light on the marble.",
+      "duration": "1 hour",
+      "mapsSearch": "Birla Mandir Naya Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Birla Mandir Ayodhya white marble Sarayu riverside Uttar Pradesh"
+    },
+    {
+      "name": "Ramayana Circuit Boat Tour (84 Ghats)",
+      "category": "heritage",
+      "description": "The traditional Sarayu boat pilgrimage circuits all 84 ghats of Ayodhya in a single extended boat ride, passing each ghat with its specific mythological significance explained by the boatman. The 84 ghats stretch for nearly 10 km along both banks of the Sarayu, each associated with a specific Ramayana character or event. The complete circuit takes 2-3 hours and is best done in the golden light of early morning. The boatmen of Ayodhya are hereditary ghat-keepers with encyclopaedic knowledge of the river's sacred geography.",
+      "whyVisit": "The most comprehensive introduction to Ayodhya's sacred geography — a river view of all 84 ghats with a living oral Ramayana commentary.",
+      "bestTime": "Dawn year-round for the best light and calm water.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sarayu Ghat Boat Tour 84 Ghats Ayodhya, Uttar Pradesh",
+      "imageQuery": "Sarayu River boat tour 84 ghats Ayodhya dawn Uttar Pradesh"
+    },
+    {
+      "name": "Deepotsav at Ram Ki Pairi",
+      "category": "heritage",
+      "description": "Ayodhya's Deepotsav on Diwali eve (Dhanteras) has established itself as one of India's most spectacular public events, when 1 million oil lamps are simultaneously lit along the entire Sarayu riverfront by trained volunteers. The Guinness World Record for the most lamps lit simultaneously has been broken here multiple times since 2017. The entire 10 km of ghats transforms into a river of fire, reflected in the Sarayu below. Accompanied by a Ram Leela performance and aerial drone show, this is Ayodhya at its most extraordinary.",
+      "whyVisit": "India's largest single annual light festival — one million lamps on the Sarayu, a world record, an event with no parallel on earth.",
+      "bestTime": "Diwali eve (Dhanteras, October-November).",
+      "duration": "Full evening",
+      "mapsSearch": "Ram Ki Pairi Deepotsav Ayodhya, Uttar Pradesh",
+      "imageQuery": "Deepotsav Ayodhya million diyas Sarayu Diwali lamps"
+    },
+    {
+      "name": "Chakra Tirtha",
+      "category": "religious",
+      "description": "Chakra Tirtha is one of the 84 ghats of Ayodhya, identified with the sacred Sudarshana Chakra (discus weapon) of Vishnu. The ghat contains a circular stone installation believed to represent the chakra and is a site for specific Vaishnava rituals, including the Chakra Puja performed on Ekadashi (the 11th day of the lunar fortnight). The ghat is one of the least known to non-pilgrims but is regularly visited by orthodox Vaishnava communities performing tithi-based ritual calendars.",
+      "whyVisit": "A Vishnu-chakra ghat that is central to traditional Vaishnava ritual practice — virtually unknown to tourists but deeply significant to pilgrims.",
+      "bestTime": "Ekadashi (twice monthly) for the chakra puja ceremony.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Chakra Tirtha Ghat Ayodhya, Uttar Pradesh",
+      "imageQuery": "Chakra Tirtha ghat Ayodhya Vaishnava ritual Sarayu Uttar Pradesh"
+    },
+    {
+      "name": "Ram Paidi Old City Bazaar",
+      "category": "market",
+      "description": "The bazaars radiating from Hanuman Garhi toward Ram Janmabhoomi are Ayodhya's oldest commercial streets, their character shaped by 2,000 years of pilgrimage traffic. Shops sell Tulsi malas and kanti malas (sacred beads), Ram Naam-printed textiles, conch shells used in Vaishnava worship, prasad of Ram Lalla, and the specific puja items required for each of the 84-ghat rituals. Mithai shops sell the local Ayodhya speciality of Khurchan (a condensed milk sweet) and Balushahi (a fluted honey-dipped pastry) made to ancient recipes.",
+      "whyVisit": "The 2,000-year-old pilgrimage bazaar of Ayodhya — the best place to buy Vaishnava sacred items and taste the city's distinctive sweets.",
+      "bestTime": "Morning for fresh sweets; year-round.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ram Paidi Bazaar Ayodhya, Uttar Pradesh",
+      "imageQuery": "Ayodhya old city bazaar pilgrimage market Ram items Uttar Pradesh"
+    },
+    {
+      "name": "Nagnath Kot (Nag Temple Mound)",
+      "category": "heritage",
+      "description": "Nagnath Kot is a forgotten earthen mound in the eastern quarter of the old city, topped by a modest temple to the Naga (serpent deity), surrounded by dense habitation. Archaeological surveys by the Archaeological Survey of India have identified the mound as a potential site of pre-Gupta occupation, consistent with Chinese pilgrim accounts placing Buddhist monasteries in this quarter of ancient Ayodhya. Local oral tradition associates the serpent cult at this site with the pre-Vedic substrate of the city's sacred geography.",
+      "whyVisit": "Possibly ancient Buddhist and pre-Vedic sacred mound in Ayodhya's eastern quarter — genuine archaeological mystery in a forgotten corner of the city.",
+      "bestTime": "Year-round; best visited with a local historian guide.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Nagnath Kot Ayodhya old city, Uttar Pradesh",
+      "imageQuery": "Nagnath Kot mound ancient site Ayodhya Uttar Pradesh"
+    },
+    {
+      "name": "Guru Brahma Kund",
+      "category": "religious",
+      "description": "Guru Brahma Kund is one of Ayodhya's most ancient sacred tanks, traditionally associated with the sage Vashishtha who was the royal priest and guru of the Ikshvaku dynasty and of Ram himself. The rectangular stone-stepped tank dates in its present form from the medieval period but sits on older foundations. Pilgrims perform Pitru Tarpan (ancestral water offerings) here at specific auspicious times. The kund is surrounded by a complex of dharamshalas and small temples that give it the feel of an undiscovered sacred quarter.",
+      "whyVisit": "The sacred bathing tank of Ram's own guru — a forgotten and atmospheric medieval tank in Ayodhya's most ancient sacred precinct.",
+      "bestTime": "Purnima (full moon) and Amavasya (new moon) for ancestral rites.",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Guru Brahma Kund Ayodhya, Uttar Pradesh",
+      "imageQuery": "Guru Brahma Kund ancient tank Ayodhya Vashishtha Uttar Pradesh"
+    },
+    {
+      "name": "Raj Sadan and Old Residency Buildings",
+      "category": "heritage",
+      "description": "Ayodhya's colonial-era administrative quarter contains a cluster of early 20th-century British Indian government buildings — a tehsil, a court, and the old civil lines residency — built in the distinctive Indo-Saracenic style common across UP's district headquarters. These buildings are largely overlooked by pilgrims but represent a completely different chapter of Ayodhya's 3,000-year history. The original files, land records, and administrative correspondence held here document the complex legal history that culminated in the Ram Janmabhoomi Supreme Court judgment of 2019.",
+      "whyVisit": "The physical archive of Ayodhya's modern legal and administrative history — the colonial buildings that witnessed the case heard by three generations.",
+      "bestTime": "Weekdays when buildings are open.",
+      "duration": "1 hour",
+      "mapsSearch": "Civil Lines Ayodhya old residency, Uttar Pradesh",
+      "imageQuery": "Ayodhya civil lines colonial building Indo-Saracenic Uttar Pradesh"
+    }
+  ]
+}

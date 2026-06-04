@@ -1,0 +1,200 @@
+{
+  "slug": "yumthang-valley",
+  "name": "Yumthang Valley",
+  "state": "Sikkim",
+  "tagline": "Sikkim's valley of flowers blazing with rhododendrons at the roof of India",
+  "categories": ["mountain", "nature", "adventure"],
+  "highlights": ["vast rhododendron sanctuary bursting with colour from april to june", "zero point at 4800 metres with year-round snow on the tibetan border"],
+  "attractions": [
+    {
+      "name": "Yumthang Valley",
+      "category": "nature",
+      "description": "At 3,564 metres in North Sikkim, the Yumthang Valley is Sikkim's celebrated 'Valley of Flowers' — a broad alpine meadow carved by the Teesta River and flanked by rhododendron-clothed ridges. From April to June, over 24 species of rhododendron erupt simultaneously in reds, pinks, whites, and purples, transforming the valley into one of the most colourful botanical spectacles in the Himalaya.",
+      "whyVisit": "The Himalayan rhododendron bloom here is one of the most spectacular seasonal wildflower events in India.",
+      "bestTime": "April to June for flowers; December to February for snow",
+      "duration": "Half day to full day",
+      "mapsSearch": "Yumthang Valley, North Sikkim",
+      "imageQuery": "Yumthang Valley rhododendron flowers Sikkim"
+    },
+    {
+      "name": "Zero Point (Yumesamdong)",
+      "category": "glacier",
+      "description": "At 4,800 metres, Zero Point is the highest civilian-accessible point in North Sikkim, just 2 km from the Tibet border. Snow lies on the ground year-round, and glacial streams descend through a moonscape of ice-scoured rocks. The panoramic view of the Zemu Glacier group and the soaring peaks of the Kanchenjunga massif on a clear day is overwhelming in scale.",
+      "whyVisit": "The most accessible extreme high-altitude experience in Sikkim, with permanent snow and Himalayan giants.",
+      "bestTime": "April to June; October to November for clear skies",
+      "duration": "2-3 hours",
+      "mapsSearch": "Zero Point Yumesamdong, North Sikkim",
+      "imageQuery": "Zero Point Yumesamdong snow Sikkim Tibet border"
+    },
+    {
+      "name": "Gurudongmar Lake",
+      "category": "lake",
+      "description": "One of the highest lakes in the world at 5,183 metres and one of the most sacred in Sikkim, Gurudongmar is named after Guru Rinpoche (Padmasambhava), who is said to have blessed its waters. A portion of the lake never freezes even in the harshest winter — attributed to his blessing. The mirror-still, turquoise-and-grey water surrounded by barren snow-streaked peaks is an almost religious experience.",
+      "whyVisit": "One of the most sacred and visually astonishing high-altitude lakes accessible by road in India.",
+      "bestTime": "May to June; October to November",
+      "duration": "Half day",
+      "mapsSearch": "Gurudongmar Lake, North Sikkim",
+      "imageQuery": "Gurudongmar Lake sacred Sikkim high altitude"
+    },
+    {
+      "name": "Lachung Village",
+      "category": "heritage",
+      "description": "The picturesque village of Lachung at 2,750 metres is the main overnight base for travellers visiting Yumthang Valley and Zero Point. The traditional Lepcha and Bhutia community maintains apple, cardamom, and kiwi orchards on terraced hillsides, and the village is set in a spectacularly narrow valley where the Lachen-Chu and Lachung-Chu rivers merge. A 19th-century monastery with colourful murals overlooks the valley.",
+      "whyVisit": "Charming traditional mountain village with orchards, culture, and the best base for Yumthang exploration.",
+      "bestTime": "March to June; September to November",
+      "duration": "Overnight base",
+      "mapsSearch": "Lachung Village, North Sikkim",
+      "imageQuery": "Lachung village monastery Sikkim mountain"
+    },
+    {
+      "name": "Yumthang Hot Springs",
+      "category": "nature",
+      "description": "A cluster of sulphurous hot springs bubbles up from the valley floor near the entrance to the Yumthang meadow. The springs' mineral-rich water, at over 50°C at source, has been channelled into concrete bathing pools for visitors. Soaking here with snow-peaks and rhododendron slopes all around is one of the most memorable high-altitude spa experiences in India.",
+      "whyVisit": "Natural hot spring soak at over 3,500 metres, surrounded by the Himalayan valley.",
+      "bestTime": "October to March for the most refreshing contrast; accessible year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Yumthang Hot Springs, North Sikkim",
+      "imageQuery": "Yumthang hot springs sulphur Sikkim valley"
+    },
+    {
+      "name": "Lachung Monastery",
+      "category": "monastery",
+      "description": "The Lachung Monastery, perched on a rocky outcrop above the village, is one of North Sikkim's most important Nyingma Buddhist institutions. Founded in the 19th century, it contains a significant collection of Thangkas, ancient texts, and ceremonial masks used in the annual Chaam dance festival. The monastery commands sweeping views of the confluence valley below.",
+      "whyVisit": "One of North Sikkim's most important active monasteries with superb valley views.",
+      "bestTime": "Year-round; Chaam festival is mid-winter",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lachung Monastery, North Sikkim",
+      "imageQuery": "Lachung Monastery Nyingma Sikkim mountain"
+    },
+    {
+      "name": "Lachen Village",
+      "category": "heritage",
+      "description": "The twin base camp to Lachung, Lachen village at 2,750 metres is the staging point for trips to Gurudongmar Lake and the even more remote Thangu Valley. Like Lachung, Lachen is populated by the Lachhenpa and Lepcha communities who maintain a local governance tradition called the Dzumsa that predates Sikkim's merger with India.",
+      "whyVisit": "Unique local governance tradition and the essential base for Gurudongmar Lake trips.",
+      "bestTime": "May to June; October to November",
+      "duration": "Overnight base",
+      "mapsSearch": "Lachen Village, North Sikkim",
+      "imageQuery": "Lachen village North Sikkim mountains"
+    },
+    {
+      "name": "Thangu Valley",
+      "category": "nature",
+      "description": "Beyond Lachen at over 4,000 metres, the Thangu Valley is a high-altitude pasture used by yak herders in summer and blanketed in snow in winter. The landscape is more open and austere than Yumthang — vast moraine-flanked meadows stretching toward the Tibetan plateau. Wild yak, snow leopard, and Tibetan wolf have all been reported in the valley.",
+      "whyVisit": "A wilder, higher, and less-visited alpine valley with exceptional wildlife potential.",
+      "bestTime": "May to October",
+      "duration": "Full day",
+      "mapsSearch": "Thangu Valley, North Sikkim",
+      "imageQuery": "Thangu Valley alpine meadow yak Sikkim"
+    },
+    {
+      "name": "Chungthang",
+      "category": "nature",
+      "description": "The confluence town of Chungthang, where the Lachen Chu and Lachung Chu rivers merge to form the Teesta, is the last major settlement before the road forks toward Lachen and Lachung. The town sits at 1,600 metres at the base of a dramatic gorge and is home to a small Guru Rinpoche shrine believed to mark the spot where the saint rested on his journey through Sikkim.",
+      "whyVisit": "Scenic river confluence and a Guru Rinpoche shrine at the gateway to North Sikkim's highest valleys.",
+      "bestTime": "Year-round",
+      "duration": "30-minute stop",
+      "mapsSearch": "Chungthang, North Sikkim",
+      "imageQuery": "Chungthang river confluence Teesta North Sikkim"
+    },
+    {
+      "name": "Mangan",
+      "category": "heritage",
+      "description": "The administrative headquarters of North Sikkim, Mangan at 1,222 metres is a bustling hill town with the last commercial facilities before entering the restricted zone. The town is surrounded by cardamom and large-leaf tea plantations and has several viewpoints looking toward the Kanchenjunga range. The Mangan market is lively and sells locally grown cardamom, dried yak cheese, and traditional Sikkimese textiles.",
+      "whyVisit": "Last major town before North Sikkim permits zone; excellent cardamom and local produce market.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mangan, North Sikkim",
+      "imageQuery": "Mangan town North Sikkim cardamom hills"
+    },
+    {
+      "name": "Singba Rhododendron Sanctuary",
+      "category": "park",
+      "description": "The lower portion of Yumthang Valley is designated the Singba Rhododendron Sanctuary, protecting 24 rhododendron species across an altitudinal range from subtropical to sub-alpine zones. Walking the sanctuary trails from April to June is an extraordinary experience — the forest transitions from small-leafed alpine species at the valley floor to giant tree rhododendrons with broad scarlet flower clusters.",
+      "whyVisit": "The richest rhododendron forest sanctuary in Sikkim and the botanical heart of Yumthang.",
+      "bestTime": "April to June",
+      "duration": "2-3 hours",
+      "mapsSearch": "Singba Rhododendron Sanctuary, Yumthang, North Sikkim",
+      "imageQuery": "Singba Rhododendron Sanctuary Yumthang Sikkim bloom"
+    },
+    {
+      "name": "Kanchenjunga Viewpoint, Lachung",
+      "category": "viewpoint",
+      "description": "On clear mornings above Lachung, unobstructed views of the Kanchenjunga massif — the world's third-highest mountain at 8,586 metres — are visible from several vantage points on the ridgeline above the village. The combination of rhododendron foreground and snow giant backdrop is a classic Himalayan photography composition rare in its accessibility.",
+      "whyVisit": "One of the most accessible views of the world's third-highest peak from a roadside vantage point.",
+      "bestTime": "October to November and April to May for clear skies",
+      "duration": "1 hour",
+      "mapsSearch": "Kanchenjunga viewpoint Lachung, North Sikkim",
+      "imageQuery": "Kanchenjunga view Lachung Sikkim dawn"
+    },
+    {
+      "name": "Teesta River Rafting, Chungthang",
+      "category": "adventure",
+      "description": "The Teesta River below Chungthang, before it enters the plains of West Bengal, offers some of the best white-water rafting in the Eastern Himalaya. Several operators run half-day and full-day rafting trips through Class III-IV rapids in a gorge of extraordinary beauty, with dense subtropical forest and occasional waterfalls on both banks.",
+      "whyVisit": "Some of the best Himalayan white-water rafting accessible from North Sikkim.",
+      "bestTime": "October to December and March to May",
+      "duration": "Half day",
+      "mapsSearch": "Teesta River Rafting, Chungthang, Sikkim",
+      "imageQuery": "Teesta River rafting gorge Sikkim"
+    },
+    {
+      "name": "Cholamu Lake (Tso Lhamu)",
+      "category": "lake",
+      "description": "At 5,330 metres, Cholamu Lake is one of the highest lakes in India, near the Tibetan border beyond Gurudongmar. The lake is said to be one of the sources of the Teesta River and sits in an absolutely barren, wind-scoured landscape where nothing grows. Access requires special permits and is available to Indian tourists in small convoy groups from October to March.",
+      "whyVisit": "One of the highest lakes in India — the source of the Teesta River in a primeval landscape.",
+      "bestTime": "October to March (permit required)",
+      "duration": "Full day from Lachen",
+      "mapsSearch": "Cholamu Lake Tso Lhamu, North Sikkim",
+      "imageQuery": "Cholamu Lake highest Sikkim Teesta source"
+    },
+    {
+      "name": "Katao",
+      "category": "glacier",
+      "description": "Katao, also called 'India's Switzerland' by local tourism boards, is a snow-covered alpine bowl at 4,000 metres above Lachung. It is accessible only to Indian citizens and offers year-round snow, pristine conifer forests, and a natural glacial cirque that makes it one of North Sikkim's most beautiful day excursions from Lachung.",
+      "whyVisit": "Pristine snow-covered alpine bowl accessible only to Indians, often less crowded than Yumthang.",
+      "bestTime": "Year-round; best April to June for snow + flowers",
+      "duration": "2-3 hours",
+      "mapsSearch": "Katao, North Sikkim",
+      "imageQuery": "Katao snow alpine bowl Sikkim Lachung"
+    },
+    {
+      "name": "Shingba Waterfall, Yumthang",
+      "category": "waterfall",
+      "description": "A cascade tumbling down the mountainside into the Yumthang meadow, the waterfall near the Singba sanctuary entrance is a photogenic foreground element against the broad valley. The meltwater from high snowfields runs strongest from May onwards and the falls are often framed by rhododendron canopy at peak bloom.",
+      "whyVisit": "A classic Yumthang Valley waterfall with rhododendron frame during spring bloom.",
+      "bestTime": "May to June",
+      "duration": "30 minutes",
+      "mapsSearch": "Shingba Waterfall Yumthang Valley North Sikkim",
+      "imageQuery": "Yumthang Valley waterfall rhododendron Sikkim"
+    },
+    {
+      "name": "Phuni Waterfalls, Lachung",
+      "category": "waterfall",
+      "description": "Tumbling down the valley walls into the Lachung-Chu gorge just below the village, the Phuni Waterfalls are best seen in the monsoon when snowmelt and rain combine to send dramatic cascades over the cliffs. The falls are visible from the main road and the spray fills the valley with a fine mist that refracts sunlight into rainbows.",
+      "whyVisit": "A dramatic roadside waterfall spectacle on the approach to Lachung village.",
+      "bestTime": "June to September",
+      "duration": "15-20 minutes",
+      "mapsSearch": "Phuni Waterfalls, Lachung, North Sikkim",
+      "imageQuery": "Phuni Waterfalls Lachung gorge Sikkim"
+    },
+    {
+      "name": "Naga Waterfall, Chungthang Road",
+      "category": "waterfall",
+      "description": "One of the most dramatic waterfalls in North Sikkim, the Naga Waterfall on the Chungthang-Lachung road plunges from a high cliff directly onto the road margin. During peak monsoon, the volume is immense and vehicles often pause to let passengers photograph — and sometimes drive through — the curtain of water.",
+      "whyVisit": "One of North Sikkim's most spectacular monsoon waterfalls, literally crossing the road.",
+      "bestTime": "June to September",
+      "duration": "15 minutes",
+      "mapsSearch": "Naga Waterfall Chungthang Lachung road, North Sikkim",
+      "imageQuery": "Naga Waterfall North Sikkim road monsoon"
+    },
+    {
+      "name": "Gangtok to Lachung Drive",
+      "category": "adventure",
+      "description": "The 120-km journey from Gangtok to Lachung through the Teesta River gorge is one of the great mountain drives of the Eastern Himalaya. The road climbs from subtropical warmth through temperate forest to alpine meadow, passing through multiple micro-climates, dozens of waterfalls, and the gradually narrowing gorge walls of the Teesta and Lachung-Chu rivers.",
+      "whyVisit": "One of the most diverse and scenic mountain drives in India, passing through four ecological zones.",
+      "bestTime": "October to June (pre-monsoon and post-monsoon clearest)",
+      "duration": "5-6 hours drive",
+      "mapsSearch": "Gangtok to Lachung road, North Sikkim",
+      "imageQuery": "Gangtok Lachung road Teesta gorge Sikkim drive"
+    }
+  ]
+}

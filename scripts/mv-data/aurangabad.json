@@ -1,0 +1,180 @@
+{
+  "slug": "aurangabad",
+  "name": "Aurangabad",
+  "state": "Maharashtra",
+  "tagline": "Gateway to UNESCO wonders and the Mughal Deccan",
+  "categories": ["historical", "heritage", "pilgrimage"],
+  "highlights": ["nearest city to ajanta and ellora UNESCO world heritage sites", "bibi ka maqbara the marble masterpiece of the deccan"],
+  "attractions": [
+    {
+      "name": "Bibi Ka Maqbara",
+      "category": "heritage",
+      "description": "Built in 1678 by Mughal prince Azam Shah in memory of his mother Dilras Banu Begum, wife of Aurangzeb, this white marble mausoleum is often called the \"Taj of the Deccan\" for its unmistakable Taj Mahal inspiration. The main dome and four minarets are clad in marble; the lower plinth is in ornate stucco. Its gardens are laid out in the formal Mughal charbagh plan with a central water channel aligned with the tomb's main axis, producing mirror reflections at dusk.",
+      "whyVisit": "The most important Mughal monument in the Deccan, evoking its famous inspiration at a fraction of the crowds.",
+      "bestTime": "Early morning or late afternoon for warm light on the white marble",
+      "duration": "2 hours",
+      "mapsSearch": "Bibi Ka Maqbara Aurangabad Maharashtra",
+      "imageQuery": "Bibi Ka Maqbara Aurangabad marble mausoleum"
+    },
+    {
+      "name": "Ellora Caves",
+      "category": "cave",
+      "description": "A UNESCO World Heritage Site 30 km from Aurangabad, Ellora is a 2 km arc of 34 rock-cut temples representing three faiths — Buddhist (Caves 1–12), Hindu (Caves 13–29), and Jain (Caves 30–34) — created between the 6th and 11th centuries. The centrepiece is the Kailasa Temple (Cave 16), a monolithic Hindu temple carved top-down from a single basalt cliff face, larger than the Parthenon and considered the greatest single rock-cut monument in the world.",
+      "whyVisit": "The world's largest single-rock carving and a unique record of three religions in sculptural dialogue.",
+      "bestTime": "October to March; arrive at opening time (9 AM) to see Kailasa before crowds",
+      "duration": "Full day (6-8 hours)",
+      "mapsSearch": "Ellora Caves Aurangabad Maharashtra",
+      "imageQuery": "Ellora Caves Kailasa Temple rock cut Maharashtra"
+    },
+    {
+      "name": "Daulatabad Fort",
+      "category": "fort",
+      "description": "One of India's most impregnable hill forts, Daulatabad (\"City of Prosperity\") rises on a 200 m isolated conical hill 15 km from Aurangabad. Originally the Yadava capital Devagiri, it was renamed when Muhammad bin Tughluq famously moved his entire Delhi Sultanate capital here in 1327. The spiralling defensive system — a dry moat, a pitch-dark labyrinthine tunnel with trap steps, and concentric walls — makes it the most sophisticated medieval fortification in the Deccan.",
+      "whyVisit": "India's most fiendishly designed medieval fort, with a defence system still awe-inspiring 700 years later.",
+      "bestTime": "October to February; early morning before heat builds",
+      "duration": "3-4 hours",
+      "mapsSearch": "Daulatabad Fort Aurangabad Maharashtra",
+      "imageQuery": "Daulatabad Fort conical hill Maharashtra Devagiri"
+    },
+    {
+      "name": "Aurangabad Caves",
+      "category": "cave",
+      "description": "Twelve rock-cut Buddhist caves on a hillside north of the city, less visited than Ajanta or Ellora but containing some of the most sophisticated Tantric Buddhist sculptures in India. Cave 7's standing Bodhisattva flanked by celestial musicians and Cave 3's elaborate chaitya pillars are artistic masterpieces. The caves date to the 6th–7th centuries and show the transition from Hinayana to Vajrayana Buddhism in exceptional sculptural detail.",
+      "whyVisit": "Tantric Buddhist cave art of the highest quality, visited by almost no one despite being in the city.",
+      "bestTime": "Morning for best light inside the cave chambers",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aurangabad Caves Maharashtra Buddhist",
+      "imageQuery": "Aurangabad Caves Buddhist sculptures Maharashtra"
+    },
+    {
+      "name": "Grishneshwar Jyotirlinga Temple",
+      "category": "temple",
+      "description": "The last (12th) of the 12 Jyotirlingas — the most sacred Shiva shrines in Hinduism — is located at Verul, adjacent to the Ellora Caves. The present red-stone temple was rebuilt by Ahilya Bai Holkar in the 18th century in a distinctive Nagara style with an ornate shikhara decorated with miniature towers. Pilgrims queue from pre-dawn for the abhishek puja, and the combination of Jyotirlinga pilgrimage with Ellora's cave visit makes for one of Maharashtra's richest single-day itineraries.",
+      "whyVisit": "One of Hinduism's 12 holiest Shiva shrines, adjacent to the UNESCO Ellora site.",
+      "bestTime": "Mahashivaratri for major celebrations; early morning for peaceful darshan",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Grishneshwar Jyotirlinga Temple Verul Aurangabad",
+      "imageQuery": "Grishneshwar Temple Jyotirlinga Aurangabad red stone"
+    },
+    {
+      "name": "Panchakki (Water Mill)",
+      "category": "heritage",
+      "description": "A 17th-century Sufi complex built around a remarkable hydraulic water wheel — India's first known functional watermill — that was powered by water channelled through an underground aqueduct from 6 km away. The wheel ground grain for the dargah kitchen. The large ornamental tank fed by the waterfall from the mill is set amid a shaded garden complex around the dargah of Sufi saint Baba Shah Musafir. It remains a centre of Islamic scholarship and peace.",
+      "whyVisit": "A serene Sufi shrine with India's oldest known functional hydraulic engineering still flowing.",
+      "bestTime": "Morning for peaceful garden atmosphere; Urs festival for cultural immersion",
+      "duration": "1.5 hours",
+      "mapsSearch": "Panchakki Aurangabad Maharashtra water mill",
+      "imageQuery": "Panchakki water mill Aurangabad Sufi dargah"
+    },
+    {
+      "name": "Siddharth Garden and Zoo",
+      "category": "garden",
+      "description": "Aurangabad's main public garden features a manicured rose garden, a children's railway, and an adjacent zoo that houses Bengal tigers, white tigers, leopards, crocodiles, and a large collection of Indian birds. The garden was developed around a series of small water features and is particularly beautiful in winter when the rose garden peaks. It is the primary green lung of the city and a favourite evening destination for local families.",
+      "whyVisit": "The best family-friendly outdoor space in Aurangabad with a well-maintained zoo.",
+      "bestTime": "October to February for the rose garden; mornings for the most active zoo animals",
+      "duration": "2-3 hours",
+      "mapsSearch": "Siddharth Garden Zoo Aurangabad Maharashtra",
+      "imageQuery": "Siddharth Garden Aurangabad rose garden zoo"
+    },
+    {
+      "name": "Himayat Bagh",
+      "category": "garden",
+      "description": "A colonial-era botanical garden established in the early 20th century, Himayat Bagh covers 100 acres and contains one of Maharashtra's most extensive fruit tree collections — mulberry, mango, litchi, guava, custard apple, and fig — alongside research plots maintained by the Agricultural University of Aurangabad. The old-growth avenue of trees, classical garden layout, and near-absence of tourist crowds make it one of the most pleasant quiet spaces in the city.",
+      "whyVisit": "The most tranquil and least-visited colonial garden in Aurangabad, ideal for a slow morning walk.",
+      "bestTime": "February to April when fruit trees are blossoming",
+      "duration": "1.5 hours",
+      "mapsSearch": "Himayat Bagh Aurangabad Maharashtra botanical garden",
+      "imageQuery": "Himayat Bagh Aurangabad botanical garden avenues"
+    },
+    {
+      "name": "Aurangabad City Walls and Gates",
+      "category": "heritage",
+      "description": "Aurangzeb built 12 km of fortification walls with 52 bastions and 13 gates around the Mughal city in the 17th century. The Delhi Gate, Paithan Gate, and Jalna Gate are the best preserved, with massive arched entryways and bastions still intact. Walking sections of the surviving wall offers a unique experience of Mughal urban planning — the scale of the walls, the engineering of the bastions, and the street life that has evolved directly against the ancient ramparts.",
+      "whyVisit": "One of the most complete surviving examples of Mughal city fortification in India.",
+      "bestTime": "Early morning for atmospheric walks before traffic builds",
+      "duration": "2-3 hours for a walking tour of major gates",
+      "mapsSearch": "Aurangabad City Wall Delhi Gate Mughal Maharashtra",
+      "imageQuery": "Delhi Gate Aurangabad Mughal city wall Maharashtra"
+    },
+    {
+      "name": "Naukhanda Palace",
+      "category": "palace",
+      "description": "A Mughal-era palace complex within the old city believed to have been built by Malik Amber, the remarkable Abyssinian regent of the Nizamshahi dynasty who founded and fortified Aurangabad in 1610. The palace features nine interconnected courtyards (nau-khanda = nine divisions), ornate jharokha balconies, and a large royal hammam (bathhouse). It later served as Aurangzeb's official residence when he was Viceroy of the Deccan.",
+      "whyVisit": "The original palace of Aurangabad's founder, preserving Mughal-Deccan hybrid architecture.",
+      "bestTime": "Morning for best light on the interior courtyard carvings",
+      "duration": "1.5 hours",
+      "mapsSearch": "Naukhanda Palace Aurangabad Maharashtra",
+      "imageQuery": "Naukhanda Palace Aurangabad Mughal courtyard"
+    },
+    {
+      "name": "Himroo Weaving Centre",
+      "category": "market",
+      "description": "Aurangabad's most distinctive craft tradition is the Himroo textile — a hand-woven fabric of silk and cotton with intricate Persian-inspired geometric and floral patterns, developed in the Mughal court. Several weaving centres in the Shahgunj and Burhani Chowk areas still operate traditional handlooms. Watching the complex double-sided weaving process and shopping for Himroo shawls, sarees, and furnishing fabric directly from the weavers is a rare craft-tourism experience.",
+      "whyVisit": "A living Mughal-era craft tradition of extraordinary complexity, still practised on handlooms.",
+      "bestTime": "Year-round; mornings when weavers are most active",
+      "duration": "1-2 hours",
+      "mapsSearch": "Himroo weaving centre Aurangabad Maharashtra",
+      "imageQuery": "Himroo weaving Aurangabad handloom textile"
+    },
+    {
+      "name": "Jama Masjid Aurangabad",
+      "category": "religious",
+      "description": "The city's principal Friday mosque, built in the 17th century on the model of the Jama Masjid of Delhi, stands in the heart of the old walled city near the Kali Masjid. The prayer hall accommodates thousands and features a serene open courtyard flanked by arched corridors. The Friday afternoon prayers draw worshippers from across the city, and the surrounding old-city streets — lined with Mughal-period havelis and craft shops — are as much an attraction as the mosque itself.",
+      "whyVisit": "The heart of Aurangabad's living Mughal urban heritage, best experienced on Friday afternoon.",
+      "bestTime": "Friday afternoon for the congregational prayer and surrounding old-city atmosphere",
+      "duration": "1 hour",
+      "mapsSearch": "Jama Masjid Aurangabad old city Maharashtra",
+      "imageQuery": "Jama Masjid Aurangabad old city mosque"
+    },
+    {
+      "name": "Salim Ali Lake and Bird Sanctuary",
+      "category": "wildlife",
+      "description": "A shallow seasonal lake on the western outskirts of Aurangabad, designated a protected area and named after India's legendary ornithologist Salim Ali. The lake attracts over 200 species of migratory and resident birds including painted storks, open-billed storks, spoonbills, various kingfishers, and large numbers of waterfowl in winter. The Maharashtra Forest Department maintains walking paths along the bank, and early-morning birding walks here with a local guide are excellent.",
+      "whyVisit": "The best urban birdwatching destination in Maharashtra, named for India's most celebrated ornithologist.",
+      "bestTime": "November to February for peak migratory bird concentrations",
+      "duration": "2-3 hours",
+      "mapsSearch": "Salim Ali Lake Bird Sanctuary Aurangabad Maharashtra",
+      "imageQuery": "Salim Ali Lake Aurangabad birds Maharashtra"
+    },
+    {
+      "name": "Soneri Mahal (Golden Palace)",
+      "category": "palace",
+      "description": "A compact but ornately decorated 17th-century pleasure palace in the grounds of the Aurangabad Municipal Museum, once gilded throughout — hence the name. The original gold-leaf murals and frescoes are largely faded but traces remain in the upper rooms. The Municipal Museum housed within it displays Ajanta-replica paintings, Mughal weapons, coins, manuscripts, and medieval bronze sculptures in a genuinely informative regional collection that deserves more visitors than it receives.",
+      "whyVisit": "A tiny gilded Mughal palace now housing the city's best museum — entirely overlooked by most visitors.",
+      "bestTime": "Morning when the museum is uncrowded and light enters the painted chambers",
+      "duration": "1.5 hours",
+      "mapsSearch": "Soneri Mahal Aurangabad Municipal Museum Maharashtra",
+      "imageQuery": "Soneri Mahal Aurangabad golden palace museum"
+    },
+    {
+      "name": "Ajmer Darwaza (Aurangabad Fort)",
+      "category": "fort",
+      "description": "A surviving gateway of the Aurangabad Fort complex, the Ajmer Darwaza is a monumental Mughal archway with flanking bastions that once formed the western entrance to the walled city. The gateway's sandstone work, arched recesses, and inscribed panels show the high standard of 17th-century Mughal military architecture. The area around the gate preserves several period mosques, dargahs, and traders' havelis that together form the most intact section of the old Mughal city.",
+      "whyVisit": "The best-preserved section of Aurangabad's original Mughal fortification and old urban fabric.",
+      "bestTime": "Early morning for the quietest exploration of the surrounding old-city lanes",
+      "duration": "1 hour",
+      "mapsSearch": "Ajmer Darwaza Aurangabad Fort gate Maharashtra",
+      "imageQuery": "Ajmer Darwaza Aurangabad Mughal gate old city"
+    },
+    {
+      "name": "Kailasa Restaurant Food Walk",
+      "category": "market",
+      "description": "The dense cluster of restaurants and street stalls in Aurangabad's Gulmandi and Shahgunj areas serves the most distinctive Mughal-Deccani fusion cuisine in Maharashtra. Must-try dishes include naan khaliya (mutton in a rich bone marrow sauce), sheer khurma (vermicelli milk pudding), tikka heavily spiced in Deccan-specific masalas, and the unique misal variant found only here. An evening food walk covering six to eight stalls gives the fullest picture of the city's culinary identity.",
+      "whyVisit": "The most distinctive Mughal-Deccani food culture in Maharashtra, impossible to replicate elsewhere.",
+      "bestTime": "Evening (7–10 PM) when all stalls and restaurants are fully operational",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gulmandi food street Aurangabad Maharashtra",
+      "imageQuery": "Aurangabad Mughal Deccan street food naan"
+    },
+    {
+      "name": "Kannad Rock Paintings",
+      "category": "heritage",
+      "description": "A cluster of prehistoric rock art sites in the Kannad taluka near Aurangabad, featuring ochre and white petroglyphs and pictographs dating to the Mesolithic and Chalcolithic periods. Animal figures — bison, deer, and horses — dominate alongside geometric patterns and hunting scenes. The sites are largely unknown outside academic circles, but a local archaeology guide can escort visitors to the accessible rock faces, providing a genuinely off-the-beaten-path prehistory experience near a famous historical city.",
+      "whyVisit": "Maharashtra's most accessible prehistoric rock art, almost unknown to general visitors.",
+      "bestTime": "October to March; best with an archaeology guide for site identification",
+      "duration": "3-4 hours including travel from Aurangabad",
+      "mapsSearch": "Kannad rock art prehistoric paintings Aurangabad Maharashtra",
+      "imageQuery": "rock paintings prehistoric Maharashtra Deccan"
+    }
+  ]
+}

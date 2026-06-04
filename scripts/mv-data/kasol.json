@@ -1,0 +1,260 @@
+{
+  "slug": "kasol",
+  "name": "Kasol",
+  "state": "Himachal Pradesh",
+  "tagline": "The mini-Israel of the Parvati Valley, wild and wonderful",
+  "categories": ["mountain", "adventure", "nature"],
+  "highlights": ["gateway to parvati valley treks", "riverside cafes and israel-meets-himalayas culture"],
+  "attractions": [
+    {
+      "name": "Kheerganga Trek",
+      "category": "adventure",
+      "description": "The most famous trek in the Parvati Valley, Kheerganga is a 12-14 km trail from Barshaini through forests of deodar, oak, and pine to a high-altitude meadow at 9,711 feet. The reward is a naturally heated sulphur hot spring pool at the top, a Shiva temple, and panoramic views of the Parvati Valley ridgeline. The trail passes through Nakthan and Rudra Nag villages and crosses the Parvati river on a wooden suspension bridge. Camping at the summit under a star-filled sky is the quintessential Kasol experience.",
+      "whyVisit": "The iconic Parvati Valley overnight trek — forest trail, sacred hot spring, and sublime mountain camping combined.",
+      "bestTime": "May to June and September to November; avoid monsoon (July-August) for safety.",
+      "duration": "2 days (overnight trek)",
+      "mapsSearch": "Kheerganga Trek, Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Kheerganga hot spring meadow Parvati Valley Himachal"
+    },
+    {
+      "name": "Parvati River Walk",
+      "category": "nature",
+      "description": "The Parvati River that flows beside Kasol village is the valley's lifeblood — a glacially blue torrent that rushes over polished boulders and through narrow gorges of smooth granite. The riverside walking path from the main bridge through old Kasol village to the forest begins offers some of the most serene walking in Himachal Pradesh. In the evenings, travellers gather on large riverside boulders to watch the water glow amber in the setting sun. The river also marks the start of several important treks.",
+      "whyVisit": "The soul of Kasol — a meditative riverside walk through pine forest beside one of Himachal's most beautiful mountain rivers.",
+      "bestTime": "April to June and September to November.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Parvati River Kasol, Kullu, Himachal Pradesh",
+      "imageQuery": "Parvati River Kasol blue glacial stream boulders"
+    },
+    {
+      "name": "Chalal Village Walk",
+      "category": "nature",
+      "description": "Just 20 minutes on foot across a suspension bridge from Kasol, Chalal is an authentic Himachali village that retains the character of the old Parvati Valley before tourism. Narrow slate-paved lanes wind between traditional stone-and-timber houses with carved wooden balconies. Apple and apricot trees overhang the path, and a few small guesthouses and cafes serve the backpacker circuit. The forested trail continues from Chalal toward Grahan village for those who want a longer day walk.",
+      "whyVisit": "A glimpse of authentic pre-tourism Parvati Valley village life, reachable in minutes from Kasol's guesthouses.",
+      "bestTime": "April to June and September to October.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chalal Village Kasol, Himachal Pradesh",
+      "imageQuery": "Chalal village walk Parvati Valley Himachal Pradesh"
+    },
+    {
+      "name": "Manikaran Sahib Gurudwara",
+      "category": "religious",
+      "description": "One of the most sacred Sikh shrines in the world, Manikaran Sahib sits beside a geothermal hot spring where natural boiling water channels are used to cook langar (community meals) served to thousands of pilgrims daily. The langar includes rice cooked in submerged pots with no external heat. Both Sikhs and Hindus consider the site sacred: a Shiva temple and Ram temple also occupy the complex. The gurudwara's golden and white architecture rises dramatically above the roaring Parvati river.",
+      "whyVisit": "A living miracle of geography and faith — boiling natural springs cook the community meal, watched by pilgrims from across India.",
+      "bestTime": "Year-round; Baisakhi (April) draws the largest Sikh pilgrimage crowds.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Manikaran Sahib Gurudwara, Manikaran, Himachal Pradesh",
+      "imageQuery": "Manikaran Sahib Gurudwara hot spring Parvati Valley"
+    },
+    {
+      "name": "Pin Parvati Pass Trek",
+      "category": "adventure",
+      "description": "One of the Himalayas' most demanding and rewarding high-altitude crossings, the Pin Parvati Pass at 17,457 feet connects the lush green Parvati Valley with the cold desert of the Spiti Valley. The 10-day trek from Barsheni crosses permanent snowfields, glacial moraines, and high-altitude meadows carpeted with Himalayan flowers. The pass itself offers a dramatic visual contrast: forest and waterfalls on one side, barren moonscape on the other. Only experienced trekkers with guides should attempt this route.",
+      "whyVisit": "A legendary Himalayan crossing that traverses two completely different worlds — lush Kullu and barren Spiti.",
+      "bestTime": "July to September only, when snow conditions allow passage.",
+      "duration": "9-12 days",
+      "mapsSearch": "Pin Parvati Pass Trek, Kullu, Himachal Pradesh",
+      "imageQuery": "Pin Parvati Pass glacier trek Himachal Pradesh"
+    },
+    {
+      "name": "Tosh Village and Tosh Glacier",
+      "category": "nature",
+      "description": "Perched at 7,874 feet above sea level at the head of the Tosh side-valley, Tosh is a tiny Himachali village with dramatic views of the Tosh Glacier above and the Parvati Valley below. The village is accessible by a 4 km walk from the road end at Barshaini. Above the village, a trail continues through rhododendron forest to Tosh Glacier, a day hike offering sweeping views of peaks including Parvati, Chanderkheni, and Kullu Eiger. The village is far quieter than Kasol and feels genuinely remote.",
+      "whyVisit": "The best viewpoint in the Parvati Valley area — a high village with a dramatic glacier backdrop and genuine mountain solitude.",
+      "bestTime": "May to October for the glacier trail; winter (December-February) for snow but road access may be cut.",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Tosh Village Kullu, Himachal Pradesh",
+      "imageQuery": "Tosh village glacier Parvati Valley Himachal"
+    },
+    {
+      "name": "Grahan Village Trek",
+      "category": "adventure",
+      "description": "Grahan is a traditional Himachali hamlet of about 60 households at 7,874 feet, reached by a beautiful 6 km forest trail from Kasol. The trail climbs steeply through silver fir and oak before levelling into apple orchards above the village. Grahan is far less visited than Kheerganga and offers a genuine village homestay experience with local families. The village sits on the route to the Chanderkheni Pass, one of the valley's lesser-known treks. The silence here is extraordinary.",
+      "whyVisit": "A far quieter, more authentic alternative to the Kheerganga crowds — genuine village trekking with exceptional forest.",
+      "bestTime": "May to June and September to November.",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Grahan Village Trek Kasol, Himachal Pradesh",
+      "imageQuery": "Grahan village forest trek Parvati Valley Kasol"
+    },
+    {
+      "name": "Kasol Main Market and Cafes",
+      "category": "market",
+      "description": "Kasol's half-kilometre main street is unlike any other mountain market in India, lined with Israeli bakeries serving shakshuka and challah, reggae cafes with Bob Marley murals, falafel stalls, and tiny shops selling Tibetan jewellery and trekking gear. Hebrew menus hang in almost every cafe. The informal, laid-back culture draws a constant stream of young Israeli travellers, Delhiites on weekends, and international backpackers. The result is a genuinely eclectic mountain village that's as much Tel Aviv as Himachal Pradesh.",
+      "whyVisit": "India's most cosmopolitan hill-village market — the place to recover from a trek over shakshuka and strong filter coffee.",
+      "bestTime": "Evening for the full social atmosphere; morning for fresh Israeli baking.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kasol Main Market, Kasol, Himachal Pradesh",
+      "imageQuery": "Kasol market cafes Israeli food Himachal Pradesh"
+    },
+    {
+      "name": "Barsheni and Pulga Hamlet",
+      "category": "nature",
+      "description": "Barsheni is the road-end village at the head of the Parvati Valley, from which treks to Kheerganga, Tosh, and Pin Parvati Pass all begin. A 2 km walk above Barsheni leads to Pulga, a tiny stone hamlet perched above the gorge with extraordinary views down the valley and across to ice-capped ridges. Pulga has a handful of guesthouses and a legendary informal music scene in evenings. The atmosphere is raw, high-altitude, and emphatically off the grid.",
+      "whyVisit": "The authentic 'end of the road' experience — a remote hamlet with valley views and the feel of the real Himalayas.",
+      "bestTime": "May to November; road to Barsheni may close in heavy snowfall.",
+      "duration": "Half day or overnight",
+      "mapsSearch": "Pulga Village Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Pulga village Parvati Valley gorge Himachal Pradesh"
+    },
+    {
+      "name": "Rasol Village Trek",
+      "category": "adventure",
+      "description": "Rasol is an even more remote village above the Chalal ridge, accessible by a steep 5 km trail that climbs through conifer and oak forest to a clearing at 8,800 feet. Only around 40 Himachali families live here permanently, maintaining traditional terraced fields and a small temple. The views from Rasol across the snow peaks of the upper Parvati watershed are outstanding, and the village is virtually unknown to mainstream tourists despite being only a few kilometres from busy Kasol.",
+      "whyVisit": "Kasol's best-kept secret — a totally isolated mountain village with top-of-valley views and zero crowds.",
+      "bestTime": "May to October.",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Rasol Village Kasol, Himachal Pradesh",
+      "imageQuery": "Rasol village trek Parvati Valley Himachal hidden gem"
+    },
+    {
+      "name": "Nakthan Village",
+      "category": "nature",
+      "description": "Nakthan is a traditional waypoint on the Kheerganga trail, a small Himachali village of stone houses and wooden temples at around 7,200 feet. The village Nag devata (serpent deity) temple is an important local shrine and an excellent example of the pagoda-style timber architecture unique to Kullu Valley settlements. Villagers grow beans, potatoes, and hemp in narrow terraced fields. A chai stop at one of the village's two tea stalls is a compulsory part of the Kheerganga trail experience.",
+      "whyVisit": "A living example of traditional Kullu Valley mountain-village architecture, photographed beautifully mid-way on the Kheerganga trek.",
+      "bestTime": "May to June and September to November.",
+      "duration": "30-45 minutes (trail stop)",
+      "mapsSearch": "Nakthan Village Parvati Valley Kheerganga Trail, Himachal Pradesh",
+      "imageQuery": "Nakthan village temple Kheerganga trail Himachal Pradesh"
+    },
+    {
+      "name": "Sar Pass Trek",
+      "category": "adventure",
+      "description": "The Sar Pass trek at 13,800 feet is one of the best organised beginner-friendly high-altitude treks in India, run from Kasol through Grahan, Padri, and Biskeri Thatch over five days. The trail passes through dense deodar forests, high-altitude meadows ablaze with alpine flowers, and permanent snowfields before topping out at a pass with views of the Kullu and Parvati valleys simultaneously. The Youthful Adventure Institute (YAI) based in Kasol conducts regular scheduled group departures.",
+      "whyVisit": "The ideal first serious Himalayan pass trek — well-marked, well-organised, and scenically outstanding.",
+      "bestTime": "April to June (best for snow crossings); September to October for dry trail.",
+      "duration": "5 days",
+      "mapsSearch": "Sar Pass Trek Kasol, Kullu, Himachal Pradesh",
+      "imageQuery": "Sar Pass trek snow meadow Kullu Himachal Pradesh"
+    },
+    {
+      "name": "Manikaran Hot Springs",
+      "category": "nature",
+      "description": "The geothermal springs at Manikaran, just 4 km from Kasol, emerge at near-boiling temperatures from the earth beside the Parvati River. Public bathing ghats separated by gender allow visitors to soak in diluted hot-spring pools, believed by Hindus and Sikhs alike to cure skin diseases and rheumatism. The springs feed the gurudwara's langar kitchens and several small bathhouses along the main street. The contrast of the icy Parvati River roaring just metres away and the steaming sulphur pools is remarkable.",
+      "whyVisit": "Natural geothermal hot springs with documented curative properties, set against the dramatic Parvati gorge.",
+      "bestTime": "October to March when the heat of the springs is most welcome.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Manikaran Hot Springs, Manikaran, Himachal Pradesh",
+      "imageQuery": "Manikaran hot springs bathing ghat Parvati Valley"
+    },
+    {
+      "name": "Khir Ganga Meadow",
+      "category": "nature",
+      "description": "The broad high-altitude meadow at the top of the Kheerganga trek, at 9,711 feet, is a rare Himalayan landscape where a grassy plateau opens up amid the ridgeline forest. In summer the meadow is carpeted in gentians, saxifrages, and wild strawberries. The natural hot spring pool sits at the far end, and a small Shiva temple occupies a rocky promontory. Tent camps are scattered across the meadow and cooking fires burn at dusk. The sky above is consistently the clearest in the valley.",
+      "whyVisit": "One of the most enchanting overnight camp destinations in Himachal Pradesh — open sky, hot spring, and Himalayan meadow.",
+      "bestTime": "June and September to October; snowfields close the trail from December to April.",
+      "duration": "Overnight",
+      "mapsSearch": "Kheerganga Meadow Hot Spring, Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Kheerganga meadow camp high altitude Himachal Pradesh"
+    },
+    {
+      "name": "Kalga Village",
+      "category": "nature",
+      "description": "Kalga is a small cluster of stone houses on a forested ridge just above Barsheni, accessible by a short uphill walk. The village has sweeping views of the valley and has developed a quiet reputation for the quality of its guesthouses and the calibre of its mountain sunsets. Unlike busy Kasol, Kalga has no main market, no constant traffic, and very few day-trippers — only travellers specifically seeking it out. Evenings here are defined by silence, pine smoke, and star-filled skies.",
+      "whyVisit": "The perfect quiet base camp for Parvati Valley treks — better views and far less noise than Kasol itself.",
+      "bestTime": "May to June and September to October.",
+      "duration": "Overnight to 2 nights",
+      "mapsSearch": "Kalga Village Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Kalga village sunset Parvati Valley guesthouse Himachal"
+    },
+    {
+      "name": "Rudra Nag Waterfall",
+      "category": "waterfall",
+      "description": "Rudra Nag is a series of cascades on the Kheerganga trail where the Parvati's tributary drops over a rocky ledge into a deep pool. A sacred Nag (serpent deity) shrine sits in a rocky cleft beside the falls, draped in red thread offerings. The waterfall is a mandatory rest stop on the trek and the pool below is used for ritual bathing by Shaivite pilgrims. The spray from the falls keeps the surrounding rocks draped in emerald moss year-round.",
+      "whyVisit": "A sacred waterfall and serpent shrine on the Kheerganga trail — beautiful, mystical, and often photographed.",
+      "bestTime": "September to November for best flow post-monsoon.",
+      "duration": "30-45 minutes (trail stop)",
+      "mapsSearch": "Rudra Nag Waterfall Kheerganga Trail, Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Rudra Nag waterfall shrine Kheerganga trail Himachal"
+    },
+    {
+      "name": "Chanderkheni Pass Trek",
+      "category": "adventure",
+      "description": "The Chanderkheni Pass at 11,985 feet above Grahan village is a far less crowded alternative to Sar Pass, offering equally commanding views of the Parvati, Sainj, and Kullu valleys from a single vantage point. The 2-day trail from Kasol via Grahan passes through one of the finest stretches of silver fir forest in Himachal Pradesh. The route is unmaintained and requires a guide, making it genuinely exploratory. Dense wildflower meadows below the pass bloom from late May to mid-July.",
+      "whyVisit": "A guide-only pass trek through exceptional forest and meadow, with views to match Sar Pass but a fraction of the footfall.",
+      "bestTime": "May to July for wildflowers; September to October for clear skies.",
+      "duration": "2-3 days",
+      "mapsSearch": "Chanderkheni Pass Trek Kasol, Himachal Pradesh",
+      "imageQuery": "Chanderkheni Pass trek wildflower meadow Kullu Himachal"
+    },
+    {
+      "name": "Jim Morrison Cafe, Kasol",
+      "category": "nightlife",
+      "description": "A legendary institution in the Kasol backpacker world, Jim Morrison Cafe on the main street has been serving travellers since the early 2000s with a playlist of classic rock, walls covered in hand-painted portraits of rock icons, and a menu mixing Israeli staples with Himachali local dishes. The rooftop terrace overlooking the Parvati River is the best social hub in the valley after dark. The cafe is more cultural institution than dining destination — a place where people stay for hours.",
+      "whyVisit": "The original and most famous of Kasol's counterculture cafes — the beating social heart of the Parvati Valley backpacker scene.",
+      "bestTime": "Evening year-round.",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jim Morrison Cafe Kasol, Himachal Pradesh",
+      "imageQuery": "Jim Morrison Cafe Kasol Parvati River terrace Himachal"
+    },
+    {
+      "name": "Biskeri Thatch (Sar Pass Meadow)",
+      "category": "nature",
+      "description": "Biskeri Thatch is a high-altitude grazing meadow at around 11,000 feet on the Sar Pass route, one day's walk above Grahan. The meadow is a vast, flower-covered plateau ringed by snowfields and crags, used by Gaddi shepherd communities for summer grazing. The silence and scale of the landscape feel genuinely Himalayan and remote. In June, the ground is covered in primulas, anemones, and Himalayan blue poppies — one of the finest wildflower displays in Kullu district.",
+      "whyVisit": "The finest wildflower meadow on the Kasol-area trail network — a secret that regular Sar Pass trekkers quietly treasure.",
+      "bestTime": "Late May to late June for peak wildflower bloom.",
+      "duration": "Overnight on Sar Pass trek",
+      "mapsSearch": "Biskeri Thatch Sar Pass Trek, Kullu, Himachal Pradesh",
+      "imageQuery": "Biskeri Thatch meadow wildflowers Sar Pass Himachal"
+    },
+    {
+      "name": "Jawhar Nala Waterfall",
+      "category": "waterfall",
+      "description": "Jawhar Nala is a small but photogenic waterfall just 2 km from Kasol village, accessible via an easy forest path along the Parvati's north bank. The fall drops into a clear plunge pool that locals use as a swimming hole in summer. The surrounding forest is dense enough that the sound of Kasol's main road disappears entirely within minutes of leaving. Few short walks from Kasol feel as naturally wild as this one, making it ideal for a morning of quiet exploration.",
+      "whyVisit": "The best short walk from Kasol for those who want forest, a waterfall, and complete quiet without a full-day trek.",
+      "bestTime": "May to June and September to October.",
+      "duration": "2-3 hours round trip",
+      "mapsSearch": "Jawhar Nala Waterfall Kasol, Himachal Pradesh",
+      "imageQuery": "Jawhar Nala waterfall forest path Kasol Parvati"
+    },
+    {
+      "name": "Old Kasol Village",
+      "category": "heritage",
+      "description": "Before Kasol became a backpacker hub, the original settlement was a cluster of traditional Himachali stone houses on the far bank of the Parvati from the main market. Crossing the wooden bridge into old Kasol reveals a completely different world: carved wooden doorways, a small temple, elderly villagers tending kitchen gardens, and apple trees heavy with fruit in autumn. The contrast with the tourist strip behind is startling and the genuine Himachali village character is intact.",
+      "whyVisit": "The real Kasol — a traditional Himachali village hidden in plain sight across the bridge from the tourist market.",
+      "bestTime": "April to November.",
+      "duration": "1-2 hours",
+      "mapsSearch": "Old Kasol Village, Kasol, Himachal Pradesh",
+      "imageQuery": "Old Kasol village stone houses Himachali traditional Parvati"
+    },
+    {
+      "name": "Waichin Valley",
+      "category": "adventure",
+      "description": "The Waichin Valley is a remote side valley north of the main Parvati Valley accessible from Pulga, known only to serious trekkers and mountaineers targeting the technical peaks above. The valley narrows into a dramatic gorge of vertical granite walls, traversed by a rough trail that crosses several glacial streams. Wild brown bears have been reliably reported in this valley by forest department surveys. The complete absence of facilities makes it an expedition rather than a trek.",
+      "whyVisit": "The least explored valley branching off the Parvati circuit — pristine wilderness with genuine brown bear habitat.",
+      "bestTime": "June to September with a registered guide.",
+      "duration": "2-4 days",
+      "mapsSearch": "Waichin Valley Parvati, Himachal Pradesh",
+      "imageQuery": "Waichin Valley gorge Parvati Valley Himachal remote"
+    },
+    {
+      "name": "Yanker Pass Trail",
+      "category": "adventure",
+      "description": "The Yanker Pass at roughly 14,500 feet above Tosh village is one of the Parvati Valley's best-kept trekking secrets, a rarely attempted crossing that connects the upper Tosh Nala with a remote Sainj Valley watershed. The route is unmarked, crosses permanent ice, and requires crampons in early season. The reward is an entirely solitary high-Himalayan crossing with views of Parvati and Deo Tibba peaks unseen from any popular trail. Very few trekkers complete this route each season.",
+      "whyVisit": "An ultra-remote, guide-only pass for experienced trekkers seeking a true first-ascent atmosphere in the Parvati Himalaya.",
+      "bestTime": "July to September only.",
+      "duration": "4-5 days from Tosh",
+      "mapsSearch": "Yanker Pass Tosh Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Yanker Pass Tosh glacier Parvati Valley remote trek"
+    },
+    {
+      "name": "Parvati Valley Camping (Choj Ground)",
+      "category": "adventure",
+      "description": "Choj, a flat gravel beach where a tributary joins the Parvati between Kasol and Manikaran, is the Parvati Valley's most popular camping ground — a broad open space with the river on one side and a pine-clad hillside on the other. Weekend tent-camping groups from Delhi and Chandigarh set up here, and several operators provide ready-pitched tent packages. The river proximity means a constant background of rushing water, and on clear nights the Milky Way is plainly visible above the dark valley.",
+      "whyVisit": "The best stargazing and car-camping spot in the Kasol area — all the magic of the Parvati Valley without a full-day trek.",
+      "bestTime": "May to June and September to November.",
+      "duration": "Overnight",
+      "mapsSearch": "Choj Camping Ground Kasol Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Parvati Valley riverside camping Kasol stars Himachal"
+    },
+    {
+      "name": "Kutla Village",
+      "category": "nature",
+      "description": "Kutla is a tiny Himachali hamlet at around 9,500 feet above Tosh, accessible from Tosh village by a further 2-hour walk through forest and boulder fields. The settlement is so small that many maps do not name it, yet it has acquired a devoted following among travellers who seek absolute isolation. The views from Kutla across the Parvati watershed to the high snowfields of Pin Parvati are among the finest in the valley. A single guesthouse run by a local shepherd family is the only accommodation.",
+      "whyVisit": "The ultimate off-grid hideout above Tosh — a one-guesthouse hamlet at the treeline with unobstructed Himalayan panoramas.",
+      "bestTime": "May to October; accessible only on foot year-round.",
+      "duration": "Overnight to 2 nights",
+      "mapsSearch": "Kutla Village Tosh Parvati Valley, Himachal Pradesh",
+      "imageQuery": "Kutla village alpine Parvati Valley remote Himachal"
+    }
+  ]
+}

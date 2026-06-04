@@ -1,0 +1,267 @@
+{
+  "slug": "tirupati",
+  "name": "Tirupati",
+  "state": "Andhra Pradesh",
+  "tagline": "Sacred Hills of Venkateswara, Wealthiest Temple on Earth",
+  "categories": [
+    "pilgrimage",
+    "spiritual",
+    "heritage"
+  ],
+  "highlights": [
+    "tirumala venkateswara temple darshan",
+    "seven hills of tirumala trekking"
+  ],
+  "attractions": [
+    {
+      "name": "Sri Venkateswara Temple, Tirumala",
+      "category": "temple",
+      "description": "The richest and most visited religious site on earth, perched at 853 metres on the Tirumala Hills. The presiding deity Lord Venkateswara (Balaji) draws an average of 50,000–100,000 pilgrims daily. The main shrine dates to the 11th century with Dravidian architecture featuring gold-plated Ananda Nilayam gopuram. The inner sanctum's idol is considered svayambhu (self-manifested). Donations of gold, jewels, and hair make this the wealthiest temple in human history.",
+      "whyVisit": "The holiest Vaishnavite shrine on Earth and an unparalleled spiritual experience.",
+      "bestTime": "Brahmotsavam festival (September–October); weekday pre-dawn darshan",
+      "duration": "4-8 hours for darshan",
+      "mapsSearch": "Sri Venkateswara Temple Tirumala Tirupati",
+      "imageQuery": "Tirumala Venkateswara Temple gopuram gold"
+    },
+    {
+      "name": "Tirumala Hills (Saptagiri)",
+      "category": "nature",
+      "description": "The seven sacred peaks of the Eastern Ghats collectively called Saptagiri, rising to 853 metres and blanketed in thick tropical deciduous forest. The sacred Seshachalam biosphere reserve surrounding the hills shelters leopards, sloth bears, Indian star tortoises, and the critically endangered red sanders tree. The ghat road winds through 19 hairpin bends. A traditional pilgrim foot-trail (Alipiri–Tirumala) of 9.5 km passes through pristine forest.",
+      "whyVisit": "Sacred hills combining profound pilgrimage significance with rich biodiversity.",
+      "bestTime": "October to March for pleasant weather",
+      "duration": "Half to full day",
+      "mapsSearch": "Tirumala Hills Saptagiri Tirupati Andhra Pradesh",
+      "imageQuery": "Tirumala hills forest Andhra Pradesh"
+    },
+    {
+      "name": "Sri Padmavathi Ammavari Temple, Tiruchanur",
+      "category": "temple",
+      "description": "A grand Shakti temple 5 km from Tirupati town dedicated to Goddess Padmavathi, the divine consort of Lord Venkateswara. The presiding idol is elaborately adorned with gold jewellery and silk sarees, and the temple's golden gopuram gleams against the Andhra sky. Pilgrims traditionally visit Tiruchanur before ascending to Tirumala, making this the starting point of the Tirupati–Tirumala pilgrimage circuit.",
+      "whyVisit": "A magnificent Shakti temple that forms the first stop in the Tirupati sacred pilgrimage circuit.",
+      "bestTime": "Padmavathi Brahmotsavam (October–November)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Padmavathi Ammavari Temple Tiruchanur Tirupati",
+      "imageQuery": "Padmavathi Temple Tiruchanur gopuram gold"
+    },
+    {
+      "name": "Sri Govindarajaswami Temple",
+      "category": "temple",
+      "description": "One of the oldest and largest temples in Tirupati town, dedicated to Lord Vishnu in his reclining Anantasayana form. Built in Dravidian style with five ornate gopurams and vast pillared corridors, the temple was expanded significantly by the Vijayanagara Empire. The reclining Vishnu idol is 5.5 metres long, sculpted from a single granite block. The temple is directly administered by the Tirumala Tirupati Devasthanams (TTD).",
+      "whyVisit": "Tirupati town's most majestic Vishnu temple with a rare 5.5-metre reclining deity.",
+      "bestTime": "Early morning puja (6 am)",
+      "duration": "2 hours",
+      "mapsSearch": "Sri Govindarajaswami Temple Tirupati",
+      "imageQuery": "Govindarajaswami Temple Tirupati gopuram"
+    },
+    {
+      "name": "Alipiri Mettu (Foot Trekking Path to Tirumala)",
+      "category": "adventure",
+      "description": "The traditional 9.5-km pilgrim footpath from Alipiri at the base of the hills to Tirumala, ascending through 3,550 stone steps and dense forest. Pilgrims have walked this sacred path barefoot for over a thousand years, chanting 'Govinda'. The path passes rest shelters, drinking water points, and the Chakratirtham stream. Completing the climb is considered an act of devotion equal to conducting a major yajna.",
+      "whyVisit": "The most spiritually potent way to reach Tirumala — a living pilgrimage tradition over 1,000 years old.",
+      "bestTime": "October to March, start before 5 am to avoid heat",
+      "duration": "3-5 hours climbing",
+      "mapsSearch": "Alipiri foot path Tirupati Tirumala trek",
+      "imageQuery": "Alipiri stairs pilgrims Tirupati trek"
+    },
+    {
+      "name": "Sri Kalahasti Temple",
+      "category": "temple",
+      "description": "A magnificent Shaivite temple 36 km from Tirupati dedicated to Lord Shiva as Kalahastiswara, where the deity is enshrined as Vayu Lingam (wind lingam). The towering 120-foot Dravidian gopuram built by Vijayanagara Emperor Krishnadevaraya dominates the Swarnamukhi riverbank. The temple is renowned for Rahu-Ketu dosha nivarana (remedial) puja and draws thousands seeking astrological relief. The inner lingam is said to sway even when all doors are closed.",
+      "whyVisit": "One of the Panchabhoota Stalas — Shiva shrines consecrated to the five elements — deeply sacred to Shaivites.",
+      "bestTime": "Mahashivaratri (February–March)",
+      "duration": "3-4 hours",
+      "mapsSearch": "Sri Kalahasti Temple Srikalahasti Andhra Pradesh",
+      "imageQuery": "Sri Kalahasti Temple Shiva gopuram Swarnamukhi"
+    },
+    {
+      "name": "Sri Vari Museum (TTD Devasthanam Museum)",
+      "category": "museum",
+      "description": "A TTD-managed museum inside the Tirumala temple complex displaying antique jewellery, processional vehicles (vahanas), ancient copper-plate inscriptions, coins donated by kings, and replicas of the temple's historical construction phases. Rare manuscripts in Telugu, Sanskrit, and Grantha script are preserved here. The collection illuminates 2,000 years of royal patronage from Pallava, Chola, Vijayanagara, and Maratha dynasties.",
+      "whyVisit": "Fascinating behind-the-scenes view of the Tirumala temple's 2,000-year royal patronage history.",
+      "bestTime": "Afternoon after darshan",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sri Vari Museum Tirumala Tirupati",
+      "imageQuery": "Tirumala TTD Museum jewellery vahana"
+    },
+    {
+      "name": "Chandragiri Fort",
+      "category": "fort",
+      "description": "A 16th-century Vijayanagara fort on a 180-metre hillock, 11 km from Tirupati, where the last Vijayanagara kings held court after the fall of Hampi. The imposing Raja Mahal (palace) features Indo-Saracenic architecture with arched galleries, ornate plasterwork, and a rooftop panorama of the surrounding Andhra plains. The fort also includes Rani Mahal and a sound-and-light show narrating the Vijayanagara Empire's twilight years.",
+      "whyVisit": "A forgotten Vijayanagara capital telling the dramatic story of the empire's last dynasty.",
+      "bestTime": "Evening for the sound-and-light show",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chandragiri Fort Tirupati Andhra Pradesh",
+      "imageQuery": "Chandragiri Fort palace Vijayanagara Tirupati"
+    },
+    {
+      "name": "Talakona Waterfall",
+      "category": "waterfall",
+      "description": "Andhra Pradesh's highest waterfall at 270 feet, located 45 km from Tirupati inside the Sri Venkateswara National Park. The falls cascade through pristine forest sheltering leopard, sloth bear, giant squirrel, and over 178 bird species. A Sri Siddheswara Swamy temple stands at the base of the falls, and the water is considered medicinal due to herbs dissolved during its forest run. A forest-department trek (4 km) leads to the plunge pool.",
+      "whyVisit": "Andhra Pradesh's tallest waterfall set inside a biodiverse national park with excellent wildlife.",
+      "bestTime": "Post-monsoon, October to December",
+      "duration": "Half day with trek",
+      "mapsSearch": "Talakona Waterfall Tirupati Andhra Pradesh",
+      "imageQuery": "Talakona Waterfall Andhra Pradesh forest"
+    },
+    {
+      "name": "Kapila Theertham",
+      "category": "temple",
+      "description": "A sacred waterfall-temple complex at the base of Tirumala hills, 2 km from Tirupati, where a natural cascade tumbles into a holy tank. The presiding deity is Lord Shiva as Kapileswara, and the site is considered a Saptateertham (seven holy waters). Pilgrims take a ritual bath in the tank before beginning the climb to Tirumala. The waterfall becomes a thundering torrent after the monsoon, making the setting doubly dramatic.",
+      "whyVisit": "A sacred waterfall-and-Shiva-temple where the Tirumala pilgrimage traditionally begins.",
+      "bestTime": "Early morning puja; monsoon for dramatic falls",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kapila Theertham Tirupati Andhra Pradesh",
+      "imageQuery": "Kapila Theertham waterfall temple Tirupati"
+    },
+    {
+      "name": "Papanasam Beach, Sriharikota vicinity (Pulicat Lake)",
+      "category": "wildlife",
+      "description": "Pulicat Lake, 60 km from Tirupati, is India's second-largest brackish water lagoon and one of the country's premier flamingo habitats. From October to March, tens of thousands of lesser flamingos, painted storks, spot-billed pelicans, and Eurasian spoonbills converge on the shallow lake. Boat rides from Pulicat village offer close approach to flamingo flocks. The lake also supports Olive Ridley turtle nesting on the adjacent barrier island.",
+      "whyVisit": "India's second-largest lagoon hosting spectacular winter flamingo and pelican congregations.",
+      "bestTime": "November to February for migratory birds",
+      "duration": "Half day",
+      "mapsSearch": "Pulicat Lake flamingo Andhra Pradesh",
+      "imageQuery": "Pulicat Lake flamingo flock Andhra Pradesh"
+    },
+    {
+      "name": "Sri Venkateswara National Park",
+      "category": "wildlife",
+      "description": "A 353-sq-km protected area surrounding Tirumala Hills, part of the larger Seshachalam Biosphere Reserve. The park shelters leopard, sloth bear, pangolin, chevrotain, and over 178 bird species in a mosaic of dry deciduous and moist forest. The red sanders (Pterocarpus santalinus) tree, endemic to this region and internationally endangered due to smuggling, grows in patches accessible on designated trails. Nature trails start from Talakona and Kalyani Dam.",
+      "whyVisit": "The only place on Earth to see wild red sanders trees in their natural habitat.",
+      "bestTime": "October to March",
+      "duration": "Half to full day",
+      "mapsSearch": "Sri Venkateswara National Park Tirupati",
+      "imageQuery": "Sri Venkateswara National Park forest Andhra"
+    },
+    {
+      "name": "ISKCON Sri Radha Madanamohana Temple, Tirupati",
+      "category": "temple",
+      "description": "A grand ISKCON temple complex on the outskirts of Tirupati, featuring ornately decorated shrines to Radha–Madanamohana, Nitai-Gauranga, and Sita–Ram–Lakshman. The marble interior, hand-painted ceilings, and detailed deity dressing rival any temple in the region. Evening arati with traditional bhajan kirtan draws large crowds. The adjacent heritage guesthouse serves Vedic meals prepared according to Ayurvedic principles.",
+      "whyVisit": "A beautifully crafted Vaishnava temple with vibrant evening kirtan in the holy city of Tirupati.",
+      "bestTime": "Evening arati at 6:30 pm",
+      "duration": "1-2 hours",
+      "mapsSearch": "ISKCON Temple Tirupati Andhra Pradesh",
+      "imageQuery": "ISKCON Temple Tirupati marble shrine"
+    },
+    {
+      "name": "Sri Govindaraja Swami Aqua Garden",
+      "category": "park",
+      "description": "A landscaped water-theme garden and park developed by TTD adjacent to the Govindarajaswami Temple in Tirupati town. The garden features illuminated fountains, musical water shows, children's rides, and manicured flower beds. The evening fountain show synchronised to classical Carnatic music is a popular family attraction. The park is immaculately maintained and serves as a rare green recreational space in the otherwise dense temple town.",
+      "whyVisit": "A relaxing evening attraction with musical fountains after an intense day of temple darshan.",
+      "bestTime": "Evening after 6 pm",
+      "duration": "1-2 hours",
+      "mapsSearch": "TTD Aqua Garden Tirupati Andhra Pradesh",
+      "imageQuery": "Tirupati TTD garden fountains evening"
+    },
+    {
+      "name": "Silathoranam (Natural Stone Arch)",
+      "category": "nature",
+      "description": "A rare natural rock arch formed on the Tirumala Hills by centuries of wind and water erosion, composed of yellow quartzite with a natural bas-relief resembling a serpent and conch shell. Hindu tradition holds the arch to be a sacred manifestation of Adi Sesha and Sankha, the emblems of Lord Vishnu. The arch is 8 metres wide and 3 metres high, and geologists consider it one of very few natural arches in peninsular India.",
+      "whyVisit": "A geologically unique natural arch with deep Vaishnavite symbolism, near Tirumala.",
+      "bestTime": "Any time; morning light is best for photography",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Silathoranam natural arch Tirumala Tirupati",
+      "imageQuery": "Silathoranam rock arch Tirumala Tirupati"
+    },
+    {
+      "name": "Akasaganga Theertham",
+      "category": "religious",
+      "description": "A sacred spring on the Tirumala Hills believed to emerge from the matted hair of Lord Venkateswara himself. The small waterfall and tank are one of the Saptateertham (seven holy water bodies) of Tirumala and a mandatory ritual bathing spot for pilgrims. The setting — a granite cliff draped with ferns and the sound of cascading water — creates a meditative atmosphere unlike the busy main temple precincts.",
+      "whyVisit": "A serene sacred spring on Tirumala where pilgrims bathe before temple darshan.",
+      "bestTime": "Early morning before crowds arrive",
+      "duration": "45 minutes",
+      "mapsSearch": "Akasaganga Theertham Tirumala Tirupati",
+      "imageQuery": "Akasaganga Theertham spring Tirumala"
+    },
+    {
+      "name": "Srivari Mettu (Second Foot Path)",
+      "category": "adventure",
+      "description": "An alternative 3.5-km pilgrim ascent path beginning at Srivari Mettu near Tiruchanur, shorter but steeper than Alipiri, ascending through forested hillside with continuous views over the plains. The path has 1,200 steps and is said to be the route taken by the great Vaishnavite saint Annamacharya in the 15th century. The ascent is less crowded than Alipiri and offers a more contemplative pilgrimage experience.",
+      "whyVisit": "A shorter, steeper, and quieter alternative pilgrimage climb with Annamacharya's sacred association.",
+      "bestTime": "Early morning, cool season November to February",
+      "duration": "1.5-2 hours climbing",
+      "mapsSearch": "Srivari Mettu foot path Tiruchanur Tirupati",
+      "imageQuery": "Srivari Mettu steps pilgrims Tirupati forest"
+    },
+    {
+      "name": "Papavinasanam Dam and Waterfall",
+      "category": "nature",
+      "description": "A picturesque reservoir on the Tirumala Hills fed by the Swarnamukhi River tributary, surrounded by forested hills. The name means 'destroyer of sins' and the water here is considered as sacred as the Ganges. A gentle forest walk along the reservoir banks offers good birding for Malabar trogon, Oriental honey-buzzard, and Crested serpent eagle in the surrounding forest. The overflow waterfall in monsoon is spectacular.",
+      "whyVisit": "A sacred forest reservoir atop Tirumala with excellent birding and monsoon waterfall.",
+      "bestTime": "Post-monsoon September–November",
+      "duration": "1-2 hours",
+      "mapsSearch": "Papavinasanam Dam Tirumala Tirupati",
+      "imageQuery": "Papavinasanam Dam Tirumala forest reservoir"
+    },
+    {
+      "name": "Srinivasamangapuram Temple",
+      "category": "temple",
+      "description": "An ancient Vaishnava temple 8 km from Tirupati dedicated to Lord Vishnu as Srinivasa, believed to be the spot where the deity rested before ascending permanently to Tirumala. The iconography closely mirrors the Tirumala main idol and the temple has intricate Vijayanagara-era stone carvings. The sanctum's idol is draped in the same style as Tirumala Balaji. Very few tourists visit, making it an atmospheric, crowd-free alternative.",
+      "whyVisit": "An ancient Vishnu temple with Vijayanagara sculptures and intimate atmosphere rarely visited by tourists.",
+      "bestTime": "Morning puja between 7–9 am",
+      "duration": "1 hour",
+      "mapsSearch": "Srinivasamangapuram Temple Tirupati Andhra Pradesh",
+      "imageQuery": "Srinivasamangapuram Vishnu temple Tirupati stone carvings"
+    },
+    {
+      "name": "Kanipakam Vinayaka Temple",
+      "category": "temple",
+      "description": "A celebrated Ganesha temple 75 km from Tirupati, near Chittoor, housing a self-manifested (svayambhu) idol of Lord Vinayaka that Hindus believe is slowly growing larger over centuries. The idol stands in a natural water spring and is partially submerged — devotees can see only the head, chest, and one arm. The temple's golden gopuram and massive chariot festival attract over 2 million visitors during Vinayaka Chavithi.",
+      "whyVisit": "A miraculous svayambhu Ganesha idol believed to be growing in size — one of Andhra's most unusual temples.",
+      "bestTime": "Vinayaka Chavithi festival (August–September)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kanipakam Vinayaka Temple Chittoor Andhra Pradesh",
+      "imageQuery": "Kanipakam Vinayaka Temple Ganesha Chittoor"
+    },
+    {
+      "name": "Horsley Hills (Yenugulla Mallamma)",
+      "category": "viewpoint",
+      "description": "A verdant hill station 130 km from Tirupati at 1,265 metres altitude in the Eastern Ghats, developed as a British summer retreat by W.D. Horsley in 1870. The plateau is covered in Eucalyptus and Acacia forests and cooler than the surrounding plains by 10°C. The Mallamma Amman temple on the hilltop is the main religious draw. A 150-year-old gum tree (Eucalyptus globulus) planted by Horsley himself still stands in the Andhra Pradesh Tourism garden.",
+      "whyVisit": "A cool Eastern Ghats retreat with a colonial history and a 150-year-old tree planted by its founder.",
+      "bestTime": "October to March",
+      "duration": "Day trip or overnight",
+      "mapsSearch": "Horsley Hills Andhra Pradesh Eastern Ghats",
+      "imageQuery": "Horsley Hills Andhra Pradesh eucalyptus valley"
+    },
+    {
+      "name": "Narayanavanam Temple",
+      "category": "temple",
+      "description": "A significant Vaishnavite temple 32 km from Tirupati dedicated to Lord Kalyana Venkateswara in a forest grove. The deity here is shown in wedding pose (kalyana kolam), making it the auspicious site for newly-married couples who begin their married life by seeking blessings here before visiting Tirumala. The temple has elaborate Dravidian architecture with well-preserved Vijayanagara-period stone mandapams and is administered by TTD.",
+      "whyVisit": "A sacred wedding-blessings Vishnu temple traditionally visited by newlyweds in the Tirupati circuit.",
+      "bestTime": "Thursday and Sunday for Kalyanam ceremony",
+      "duration": "2 hours",
+      "mapsSearch": "Narayanavanam Kalyana Venkateswara Temple Tirupati",
+      "imageQuery": "Narayanavanam Temple Kalyana Venkateswara Andhra"
+    },
+    {
+      "name": "Thondavada Kalyani (Hidden Sacred Tank)",
+      "category": "religious",
+      "description": "A seldom-visited ancient sacred tank and small Vishnu shrine 18 km from Tirupati in the hamlet of Thondavada, surrounded by fields and mango orchards. The tank has crystal-clear spring-fed water and its granite ghats bear worn carvings from the Pallava period (7th century CE). Local farmers still conduct traditional seasonal rituals at this tank that has been in continuous religious use for over 1,300 years.",
+      "whyVisit": "A 1,300-year-old Pallava-era sacred tank in a village setting — unchanged and unknown to tourists.",
+      "bestTime": "Early morning when farmers perform puja",
+      "duration": "1 hour",
+      "mapsSearch": "Thondavada village tank Tirupati Andhra Pradesh",
+      "imageQuery": "ancient sacred tank Pallava carvings Andhra Pradesh"
+    },
+    {
+      "name": "Kailasakona Waterfalls",
+      "category": "waterfall",
+      "description": "A hidden three-tiered waterfall in a narrow gorge 38 km from Tirupati, accessible via a forest path through the Seshachalam hills. The falls descend 30 metres through moss-covered black rock into a deep emerald pool. A small Shiva temple at the base adds religious significance. The gorge is rich in medicinal herbs and the water is said to have healing properties — local Yanadi tribal healers have used this forest for generations.",
+      "whyVisit": "A secret three-tiered falls in Seshachalam forest with Yanadi tribal heritage and healing waters.",
+      "bestTime": "October to January post-monsoon",
+      "duration": "3-4 hours including trail",
+      "mapsSearch": "Kailasakona Waterfalls Tirupati Andhra Pradesh",
+      "imageQuery": "Kailasakona Falls Seshachalam forest Andhra"
+    },
+    {
+      "name": "Deer Park (Tirumala)",
+      "category": "wildlife",
+      "description": "A small deer sanctuary maintained by TTD inside the Tirumala complex near the Papavinasanam reservoir, where spotted deer (chital), sambar, and blackbuck roam freely in a semi-wild enclosure of 12 hectares. The park is a gentle, meditative contrast to the intense religious activity of the main temple. Peacocks display openly on the lawns. Children and elderly pilgrims particularly enjoy the accessible wildlife experience.",
+      "whyVisit": "A peaceful deer sanctuary inside Tirumala offering easy wildlife viewing for pilgrims of all ages.",
+      "bestTime": "Morning between 7–9 am when deer are most active",
+      "duration": "1 hour",
+      "mapsSearch": "Tirumala Deer Park Tirupati TTD",
+      "imageQuery": "Tirumala Deer Park spotted deer Tirupati"
+    }
+  ]
+}

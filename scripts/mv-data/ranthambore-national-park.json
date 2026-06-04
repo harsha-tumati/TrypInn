@@ -1,0 +1,190 @@
+{
+  "slug": "ranthambore-national-park",
+  "name": "Ranthambore National Park",
+  "state": "Rajasthan",
+  "tagline": "Bengal tigers prowling the ruins of a medieval Rajput fort",
+  "categories": ["wildlife", "heritage", "nature"],
+  "highlights": ["bengal tiger sightings around ancient fort ruins", "boat safari on padam lake at dawn"],
+  "attractions": [
+    {
+      "name": "Zone 3 & 4 Tiger Safari (Padam Lake)",
+      "category": "wildlife",
+      "description": "Zones 3 and 4 around Padam Talao are Ranthambore's most famous safari circuits and the source of the park's most iconic tiger photographs. The tigers of these zones are exceptionally habituated to vehicles, allowing close and prolonged sightings. The backdrop of Ranthambore Fort on the ridge combined with tigers resting near the lotus-filled lake creates imagery unique to any national park in India.",
+      "whyVisit": "The world's most photogenic tiger-viewing setting with fort ruins as a natural backdrop.",
+      "bestTime": "October to April, dawn safaris",
+      "duration": "3-4 hours",
+      "mapsSearch": "Padam Talao Zone 3 Ranthambore National Park",
+      "imageQuery": "Bengal tiger Ranthambore lake fort ruins"
+    },
+    {
+      "name": "Ranthambore Fort",
+      "category": "fort",
+      "description": "A UNESCO World Heritage Site crowning a 700-metre rocky ridge inside the park, Ranthambore Fort was built in the 10th century by the Chahamana dynasty. Its massive stone gates, crumbling palaces, ancient Ganesh and Shiva temples, and panoramic views over three lakes make it extraordinary. Tigers, leopards, and sloth bears freely roam the fort precincts — visitors regularly photograph big cats against its medieval ramparts.",
+      "whyVisit": "One of India's few fortresses where you may encounter a wild tiger within the ancient walls.",
+      "bestTime": "October to March, morning visits",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ranthambore Fort UNESCO World Heritage Rajasthan",
+      "imageQuery": "Ranthambore Fort ancient walls Rajasthan panoramic"
+    },
+    {
+      "name": "Zone 1 & 2 Safari (Lakarda–Anantpura)",
+      "category": "wildlife",
+      "description": "The western zones of Ranthambore cover the Lakarda and Anantpura ranges — drier terrain with rocky ridgelines, ravines, and scattered water holes. Leopards are more frequently spotted here than in the eastern zones, and nilgai, chinkara, and jackal populations are dense. These zones also offer the best chance of locating sloth bears foraging on mahua flowers in the late afternoon.",
+      "whyVisit": "Better leopard and sloth bear probability than the famous tiger zones with far fewer vehicles.",
+      "bestTime": "March to June for water hole concentration",
+      "duration": "3-4 hours",
+      "mapsSearch": "Zone 1 2 Lakarda Ranthambore Safari Rajasthan",
+      "imageQuery": "leopard Ranthambore rocky terrain safari"
+    },
+    {
+      "name": "Ganesh Temple (Trinetra Ganesh)",
+      "category": "temple",
+      "description": "The Trinetra Ganesh temple inside Ranthambore Fort is believed to be one of India's oldest Ganesh temples, with a self-manifested three-eyed Ganesh idol. Thousands of devotees trek up to the fort precincts for the Ganesh Chaturthi festival, making it one of Rajasthan's most atmospheric pilgrimage events. Wedding invitation cards from across Rajasthan are traditionally posted to this temple seeking the deity's blessing.",
+      "whyVisit": "A deeply venerated ancient shrine inside a wildlife reserve — a rare fusion of wilderness and faith.",
+      "bestTime": "Ganesh Chaturthi (August/September); October to March otherwise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Trinetra Ganesh Temple Ranthambore Fort",
+      "imageQuery": "Trinetra Ganesh temple Ranthambore Fort ancient"
+    },
+    {
+      "name": "Padam Talao (Lotus Lake)",
+      "category": "lake",
+      "description": "Padam Talao is the largest of Ranthambore's three main lakes and the most photographed water body in any Indian national park. In winter months the lake is blanketed with pink lotus flowers, and sambar deer wade chest-deep at dawn while tigers drink from the shallows. The Jogi Mahal rest house on its bank — the former hunting lodge of Jaipur maharajas — overlooks the entire scene.",
+      "whyVisit": "The most iconic wildlife lake in India where tigers, deer, and lotus flowers share the same frame.",
+      "bestTime": "November to February for lotus bloom and tiger activity",
+      "duration": "1-2 hours as part of safari",
+      "mapsSearch": "Padam Talao Ranthambore National Park",
+      "imageQuery": "Padam Talao lotus lake tiger Ranthambore"
+    },
+    {
+      "name": "Zone 5 & 6 Safari (Kachida–Bakas)",
+      "category": "wildlife",
+      "description": "Zones 5 and 6 in Ranthambore's southern reaches are among the most productive for bird diversity and alternate prey species. The Kachida Valley is known for leopard sightings on rocky outcrops, and the Bakas area has reliable tiger activity. These zones were added when the park expanded and experience lighter tourist pressure than zones 1–4, often rewarding patient visitors.",
+      "whyVisit": "Lighter competition for safari vehicles with consistent leopard and tiger activity.",
+      "bestTime": "October to May",
+      "duration": "3-4 hours",
+      "mapsSearch": "Zone 5 6 Kachida Ranthambore Safari",
+      "imageQuery": "leopard rocky outcrop Kachida valley Ranthambore"
+    },
+    {
+      "name": "Raj Bagh Ruins",
+      "category": "heritage",
+      "description": "The moss-covered ruins of Raj Bagh, a former royal palace on the shore of Raj Bagh Talao, are one of Ranthambore's most evocative landmarks. The crumbling stone walls and arched chambers are frequently used as resting sites by tigers who drape themselves across the ancient stonework. The juxtaposition of Mughal-era architecture and wild Bengal tigers is utterly unique to Ranthambore.",
+      "whyVisit": "Photograph tigers resting inside 17th-century palace ruins — an image found nowhere else on Earth.",
+      "bestTime": "November to March, morning safari",
+      "duration": "30 minutes as part of safari",
+      "mapsSearch": "Raj Bagh Ruins Ranthambore National Park",
+      "imageQuery": "Raj Bagh ruins tiger Ranthambore palace"
+    },
+    {
+      "name": "Malik Talao",
+      "category": "lake",
+      "description": "Malik Talao is the smallest of Ranthambore's three main lakes and a superb location for mugger crocodile and bird watching. In winter the lake hosts painted storks, wooly-necked storks, and large flocks of migratory waterfowl. Marsh crocodiles are extremely numerous here, and the shoreline reed beds shelter skulking birds like the ruddy-breasted crake and various bitterns.",
+      "whyVisit": "Best lake in the park for crocodile watching and winter migratory waterfowl.",
+      "bestTime": "November to February",
+      "duration": "30-45 minutes as part of safari",
+      "mapsSearch": "Malik Talao Lake Ranthambore National Park",
+      "imageQuery": "painted stork Malik Talao Ranthambore lake"
+    },
+    {
+      "name": "Sawai Madhopur Town",
+      "category": "market",
+      "description": "The gateway town to Ranthambore, Sawai Madhopur is a lively Rajasthani market town where visitors stock up on provisions, book extra safaris, and explore the local bazaar. The town's main market sells blue pottery, block-print textiles, and tiger-motif handicrafts unique to the region. Local dhabas serve authentic Rajasthani dal-baati-churma, and several rooftop restaurants offer views toward the fort ridge.",
+      "whyVisit": "Essential base for safari logistics with Rajasthani street food and handicrafts to explore.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sawai Madhopur Market Town Rajasthan",
+      "imageQuery": "Sawai Madhopur market Rajasthan bazaar"
+    },
+    {
+      "name": "Jogi Mahal",
+      "category": "heritage",
+      "description": "Jogi Mahal is a historic forest rest house on the shore of Padam Talao, originally the hunting lodge of the Jaipur royal family. Reputed to have the second oldest banyan tree in India in its courtyard, Jogi Mahal is one of the most atmospheric places to spend a dawn hour inside any Indian national park. Bookings are managed by the forest department and are extremely sought-after.",
+      "whyVisit": "The most storied heritage accommodation inside a national park, with tigers at the doorstep.",
+      "bestTime": "November to March",
+      "duration": "Overnight stay",
+      "mapsSearch": "Jogi Mahal Rest House Ranthambore",
+      "imageQuery": "Jogi Mahal Ranthambore heritage lodge Padam Talao"
+    },
+    {
+      "name": "Khandar Fort",
+      "category": "fort",
+      "description": "Located 45 km from Sawai Madhopur, Khandar Fort is an enormous and almost entirely unvisited Rajput fortress perched atop a high hill in the Sawai Madhopur district. Its multiple defensive walls and bastions stretch for kilometres, and the surrounding scrub forest harbours wolves, chinkaras, and nilgai. The fort offers sweeping views of the Chambal ravine landscape without a single tourist stall.",
+      "whyVisit": "A magnificent hidden fort rivalling Ranthambore in scale but seen by almost no tourists.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khandar Fort Sawai Madhopur Rajasthan",
+      "imageQuery": "Khandar Fort Rajasthan ruins hilltop"
+    },
+    {
+      "name": "Chambal River Safari",
+      "category": "wildlife",
+      "description": "The National Chambal Sanctuary, about 90 km from Ranthambore, offers boat safaris on one of India's last undisturbed river ecosystems. The Chambal is the final stronghold of the critically endangered gharial crocodile, and its sand banks are nesting grounds for red-crowned roof turtles. Ganges river dolphins surface regularly, and the riparian cliffs host nesting colonies of Indian skimmers and sand martins.",
+      "whyVisit": "See gharials, river dolphins, and nesting birds on India's cleanest major river — a conservation triumph.",
+      "bestTime": "October to March",
+      "duration": "3-4 hours boat safari",
+      "mapsSearch": "National Chambal Sanctuary Boat Safari Rajasthan",
+      "imageQuery": "gharial Chambal river boat safari Rajasthan"
+    },
+    {
+      "name": "Zone 7, 8, 9, 10 Buffer Safaris",
+      "category": "wildlife",
+      "description": "The expanded buffer zones in Ranthambore's eastern and northern sectors were notified in 2013 when tiger numbers grew beyond core zone capacity. These zones see significantly fewer safari vehicles while recording tiger, leopard, striped hyena, and wolf sightings. Village-edge zones such as Sultanpur and Kherda also offer the rare spectacle of wolves patrolling agricultural boundaries at dusk.",
+      "whyVisit": "Experience tigers and rare wolves with minimal tourist competition in the expanded buffer forests.",
+      "bestTime": "November to May",
+      "duration": "3-4 hours",
+      "mapsSearch": "Zone 7 8 9 10 Buffer Safari Ranthambore",
+      "imageQuery": "Indian wolf Ranthambore buffer zone scrub"
+    },
+    {
+      "name": "Surwal Lake Bird Sanctuary",
+      "category": "wildlife",
+      "description": "Surwal Lake, 12 km from Sawai Madhopur, is a seasonal wetland that transforms into a waterbird spectacle from November to February. Flamingos, demoiselle cranes, bar-headed geese, and painted storks congregate in their thousands on its shallow shores. The lake is a Important Bird Area and completely free of entry fees, yet hardly known to safari-focused tourists staying in the Ranthambore resort corridor.",
+      "whyVisit": "A free, crowd-free flamingo and crane spectacle just 20 minutes from the park gates.",
+      "bestTime": "November to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Surwal Lake Bird Sanctuary Sawai Madhopur",
+      "imageQuery": "flamingo Surwal lake Sawai Madhopur winter"
+    },
+    {
+      "name": "Amreshwar Mahadev Temple",
+      "category": "temple",
+      "description": "Nestled in a forested gorge 7 km from Ranthambore gate, Amreshwar Mahadev is an ancient Shiva cave temple accessible via a boulder-strewn stream path. Local belief holds that the temple has existed since Ramayana times. The surrounding forest is buffer zone habitat, and langurs, peacocks, and sambar are encountered on the trail. The cave shrine itself is simple and deeply atmospheric.",
+      "whyVisit": "A jungle Shiva temple reachable only on foot through genuine wilderness — an authentic local experience.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours including trail",
+      "mapsSearch": "Amreshwar Mahadev Temple Ranthambore Sawai Madhopur",
+      "imageQuery": "Amreshwar Mahadev cave temple forest Ranthambore"
+    },
+    {
+      "name": "Ranthambore School of Art",
+      "category": "heritage",
+      "description": "Founded by local artist Dharmendra Kanota, the Ranthambore School of Art trains tribal and village youth in miniature painting that blends traditional Rajput style with wildlife motifs. The studio near Sawai Madhopur bazaar sells original paintings of tigers, elephants, and birds rendered in natural pigments. Each piece is a handmade souvenir connecting conservation with living craft traditions of the region.",
+      "whyVisit": "Buy an original tiger miniature painting made by local artists — a meaningful keepsake supporting conservation.",
+      "bestTime": "Year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Ranthambore School of Art Sawai Madhopur",
+      "imageQuery": "Ranthambore miniature painting art studio tiger"
+    },
+    {
+      "name": "Kela Devi Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Kela Devi is a contiguous wildlife sanctuary to Ranthambore's north, part of the same Tiger Reserve. Its dry deciduous and dhok forests shelter a growing tiger population that disperses from the core park. The sanctuary also includes the Kela Devi temple on the Chambal banks, attracting pilgrims during the Navratri fair. The forested hills here are virtually tourist-free and offer genuine off-the-beaten-path wildlife encounters.",
+      "whyVisit": "Dispersal zone for Ranthambore tigers with zero tourist crowds and an active pilgrimage fair.",
+      "bestTime": "October to April; Navratri for the fair",
+      "duration": "Half day",
+      "mapsSearch": "Kela Devi Wildlife Sanctuary Karauli Rajasthan",
+      "imageQuery": "Kela Devi sanctuary tiger forest Rajasthan"
+    },
+    {
+      "name": "Jaipur City Day Trip",
+      "category": "heritage",
+      "description": "Jaipur, the Pink City and Rajasthan's capital, is 160 km from Ranthambore and a natural extension of any visit. The amber-stone Amber Fort, the Hawa Mahal facade, the City Palace museum, and Jantar Mantar observatory cover multiple UNESCO listings. Jaipur's jewellery bazaars and block-print textile workshops are among India's finest craft markets, and the food scene rivals any major Indian city.",
+      "whyVisit": "Combine India's finest tiger park with its most spectacular royal city — both in a single Rajasthan trip.",
+      "bestTime": "October to March",
+      "duration": "Full day",
+      "mapsSearch": "Jaipur City Amber Fort Rajasthan",
+      "imageQuery": "Amber Fort Jaipur Rajasthan pink city palace"
+    }
+  ]
+}

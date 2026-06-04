@@ -1,0 +1,270 @@
+{
+  "slug": "sanchi",
+  "name": "Sanchi",
+  "state": "Madhya Pradesh",
+  "tagline": "Where Ashoka planted the seed of world Buddhism",
+  "categories": ["heritage", "spiritual", "historical"],
+  "highlights": ["UNESCO great stupa with ashokan toranas", "finest early buddhist art in the world"],
+  "attractions": [
+    {
+      "name": "The Great Stupa (Stupa 1)",
+      "category": "heritage",
+      "description": "Emperor Ashoka's Great Stupa, built in the 3rd century BCE and enlarged in the 2nd century BCE, is the oldest surviving stone structure in India and the finest Buddhist monument on earth. Its massive hemispherical dome, 54 metres in diameter, is circumambulated by a processional path enclosed within elaborately carved stone railings (vedika) and four majestic gateways (toranas).",
+      "whyVisit": "One of the world's great religious monuments — the fountainhead of Buddhist art and architecture.",
+      "bestTime": "Early morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Great Stupa Sanchi Madhya Pradesh",
+      "imageQuery": "Great Stupa Sanchi UNESCO Ashoka"
+    },
+    {
+      "name": "Northern Gateway (Torana), Great Stupa",
+      "category": "heritage",
+      "description": "The most celebrated of the four gateways (toranas) of the Great Stupa, the northern gateway is carved with an almost impossibly dense programme of narrative Buddhist scenes across its three horizontal architraves and vertical posts. Scenes include the dream of Maya, the Great Departure of Siddhartha, and the miracles at Shravasti — all told in lively relief without depicting the Buddha in human form.",
+      "whyVisit": "The single richest surface of early Buddhist narrative sculpture in existence.",
+      "bestTime": "Morning, low sun illuminates the carvings",
+      "duration": "1 hour",
+      "mapsSearch": "Northern Gateway Torana Great Stupa Sanchi",
+      "imageQuery": "Northern torana gateway Great Stupa Sanchi carvings"
+    },
+    {
+      "name": "Southern Gateway (Torana), Great Stupa",
+      "category": "heritage",
+      "description": "The oldest of the four toranas (c. 1st century BCE), the southern gateway begins the sequence of the Jataka tales — stories of the Buddha's previous lives — with the famous Chhadanta Jataka of a six-tusked white elephant. The gateway posts bear paired yakshas (nature spirits) and the crowning elephants that symbolise the cosmic world mountain. The dedicatory inscriptions name the craftsmen who carved it.",
+      "whyVisit": "The oldest surviving sculpted Buddhist gateway in India, with the names of its makers inscribed in stone.",
+      "bestTime": "Morning or late afternoon",
+      "duration": "45 minutes",
+      "mapsSearch": "Southern Gateway Torana Great Stupa Sanchi",
+      "imageQuery": "Southern torana Sanchi stupa carvings Jataka"
+    },
+    {
+      "name": "Eastern Gateway (Torana) — Maya Dream Panel",
+      "category": "heritage",
+      "description": "The eastern gateway is renowned for its exquisitely carved bracket figures of yakshi women in sensuous tribhanga (triple bend) poses, considered the apex of early Indian female sculptural form. One yakshi, carved in the round as she reaches for a mango branch while seated on a lotus, has become one of the most reproduced images of ancient Indian art worldwide.",
+      "whyVisit": "The yakshi bracket figure here is one of the most celebrated sculptures of the ancient world.",
+      "bestTime": "Morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Eastern Gateway Torana Great Stupa Sanchi yakshi",
+      "imageQuery": "Eastern torana Sanchi yakshi bracket sculpture"
+    },
+    {
+      "name": "Stupa 2",
+      "category": "heritage",
+      "description": "Dating to the 2nd century BCE and positioned on a lower terrace of Sanchi Hill, Stupa 2 is unusual for its circular plan without axial gateways. Its stone railing is decorated with the earliest narrative Buddhist reliefs in India — simple, energetic medallion carvings of Jataka scenes, animals, and lotuses that predate the more sophisticated Great Stupa carvings. Relics of ten Dhamma teachers are enshrined within.",
+      "whyVisit": "The earliest example of Buddhist narrative stone sculpture in India — cruder than Stupa 1 but historically priceless.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Stupa 2 Sanchi Buddhist monument",
+      "imageQuery": "Stupa 2 Sanchi stone railing medallions"
+    },
+    {
+      "name": "Stupa 3",
+      "category": "heritage",
+      "description": "Stupa 3 at Sanchi once contained one of Buddhism's most precious relics — the physical remains of Sariputra and Maudgalyayana, two of the Buddha's closest disciples, discovered here in 1851. The relics are now partly in the Vihara Museum and partly at the Maha Bodhi Society temple in Colombo, Sri Lanka. The single-gateway stupa retains beautiful carvings and an intact harmika and parasol.",
+      "whyVisit": "One of the most relic-rich stupas in the world — the original resting place of the Buddha's two chief disciples.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Stupa 3 Sanchi Sariputra Maudgalyayana",
+      "imageQuery": "Stupa 3 Sanchi disciples relic monument"
+    },
+    {
+      "name": "Sanchi Archaeological Museum",
+      "category": "museum",
+      "description": "The ASI museum at the base of Sanchi Hill was the first site museum in India, established in 1919. It houses original sculptural fragments from the Sanchi complex including extraordinary Ashokan lion capitals, the remains of Temple 18 columns, yaksha figures, medallion carvings from the toranas, and the caskets that once held the relics of Sariputra and Maudgalyayana.",
+      "whyVisit": "Contains the original sculpture pieces too fragile for outdoor display — essential for a complete Sanchi experience.",
+      "bestTime": "Morning, before the hill sites",
+      "duration": "1 hour",
+      "mapsSearch": "Sanchi Archaeological Museum Madhya Pradesh",
+      "imageQuery": "Sanchi museum Ashoka sculpture lion capital"
+    },
+    {
+      "name": "Ashokan Pillar (Pillar 10)",
+      "category": "heritage",
+      "description": "The fragments of one of Ashoka's polished sandstone pillars stand near the southern gateway, their shaft still bearing the original vitreous polish that has survived 2,200 years. The pillar's lion capital fell in antiquity — its four back-to-back lions, now in the Sanchi Museum, are structurally similar to the Sarnath capital that became India's national emblem.",
+      "whyVisit": "Stand beside a 2,200-year-old Ashokan pillar still bearing its original high polish — a direct link to India's first empire.",
+      "bestTime": "Morning",
+      "duration": "15-20 minutes",
+      "mapsSearch": "Ashokan Pillar Sanchi Pillar 10",
+      "imageQuery": "Ashoka pillar Sanchi Madhya Pradesh ancient"
+    },
+    {
+      "name": "Temple 17 and Temple 18",
+      "category": "heritage",
+      "description": "Temple 17 at Sanchi is one of the earliest flat-roofed stone temples in India (5th century CE, Gupta period), its simple pillared porch prefiguring all later Indian temple forms. Temple 18 (7th century CE) is a larger apsidal-ended structure whose tall Gupta-period columns once supported a high roof; their decorated capitals remain one of the finest examples of Gupta stone carving on the hill.",
+      "whyVisit": "The earliest evolutionary steps in Hindu and Buddhist temple architecture, visible in a single walk.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Temple 17 Temple 18 Sanchi Gupta period",
+      "imageQuery": "Temple 17 Sanchi Gupta period flat-roofed columns"
+    },
+    {
+      "name": "Chaitya Hall (Temple 40)",
+      "category": "heritage",
+      "description": "Temple 40 at Sanchi is a massive apsidal-ended chaitya hall whose three-period construction history spans from Ashoka's time to the Satavahana and Gupta periods. The enormous foundation platform alone speaks to the scale of early Buddhist community construction, and the carved remains of its doorways show the transition from Mauryan to early Gupta artistic styles over five centuries.",
+      "whyVisit": "A five-century layered architectural site that reveals Sanchi's continuous use and rebuilding across dynasties.",
+      "bestTime": "Morning",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Temple 40 chaitya hall Sanchi",
+      "imageQuery": "Temple 40 chaitya hall Sanchi apsidal"
+    },
+    {
+      "name": "Sanchi Hill Sunrise Walk",
+      "category": "viewpoint",
+      "description": "Sanchi Hill rises 91 metres above the surrounding Vindhya plain, and the path from the southern gate to the summit passes through the entire archaeological zone. At dawn before tourist coaches arrive, the Great Stupa is bathed in amber light and entirely empty. The hilltop view across the dark plain to the Betwa valley and distant Raisen plateau is deeply atmospheric.",
+      "whyVisit": "The Great Stupa at dawn with zero crowds — the most serene way to experience a UNESCO World Heritage Site.",
+      "bestTime": "Sunrise, year-round",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Sanchi Hill sunrise walk stupa view",
+      "imageQuery": "Sanchi stupa sunrise morning light Madhya Pradesh"
+    },
+    {
+      "name": "Satdhara Buddhist Site",
+      "category": "heritage",
+      "description": "The Satdhara Buddhist complex, 9 km from Sanchi on the Betwa River cliff, contains over 40 stupas and monastery remains spanning the 2nd century BCE to 10th century CE. In 1851 Major Alexander Cunningham excavated Satdhara and discovered relic caskets here — including the relics later attributed to Sariputra — in two large stupas near the riverbank. The site remains largely unexcavated.",
+      "whyVisit": "A sprawling, excavation-era site with dozens of stupas and an atmospheric cliff-edge location almost unknown to tourists.",
+      "bestTime": "October to March, morning",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Satdhara Buddhist site Betwa River Sanchi",
+      "imageQuery": "Satdhara stupas Betwa river Buddhist site"
+    },
+    {
+      "name": "Sonari Buddhist Monument Group",
+      "category": "heritage",
+      "description": "Fourteen kilometres from Sanchi across the Betwa River, the Sonari site has eight stupas on a rocky hilltop surrounded by forest, including a large stupa that contained Ashokan-era relic caskets when excavated by Cunningham. The remote site is visited by almost no tourists, and walking among its weathered stupas in total silence conveys the monastic isolation that Buddhist monks sought.",
+      "whyVisit": "Ashokan-era stupas in total silence in the forest — the rarest possible Buddhist heritage experience.",
+      "bestTime": "October to March, morning",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Sonari Buddhist stupas site Sanchi",
+      "imageQuery": "Sonari stupas hilltop forest Madhya Pradesh"
+    },
+    {
+      "name": "Andher Buddhist Site",
+      "category": "heritage",
+      "description": "The Andher site, 16 km from Sanchi, contains three brick and stone stupas of Ashokan period, set in dense agricultural land and scrub forest. Cunningham found silver and copper relic caskets containing burnt bones, crystals, and small gold ornaments — now in the British Museum — when he excavated here in 1851. The site's utter rural obscurity makes it moving for those who seek it out.",
+      "whyVisit": "One of the original sites of Ashoka's relic distribution network — priceless archaeology in a forgotten field.",
+      "bestTime": "October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Andher Buddhist stupas Sanchi Madhya Pradesh",
+      "imageQuery": "Andher Buddhist stupa Madhya Pradesh Ashokan"
+    },
+    {
+      "name": "New Buddhist Vihara (International Buddhism)",
+      "category": "religious",
+      "description": "The modern Sri Lankan-style vihara below Sanchi Hill was built in 1952 to receive the returned relics of Sariputra and Maudgalyayana from the Victoria and Albert Museum in London — a moment of global Buddhist significance. The cream-painted stupa-form vihara is an active monastery and pilgrimage point for Buddhists from Sri Lanka, Japan, and Southeast Asia.",
+      "whyVisit": "The living Buddhist heart of Sanchi — where returned relics are venerated by pilgrims from across Asia.",
+      "bestTime": "Morning puja",
+      "duration": "30-45 minutes",
+      "mapsSearch": "New Buddhist Vihara Sanchi Madhya Pradesh",
+      "imageQuery": "New Buddhist vihara Sanchi Sri Lanka style"
+    },
+    {
+      "name": "Udayagiri Cave Temples (Day Trip)",
+      "category": "cave",
+      "description": "Twenty kilometres from Sanchi, the Udayagiri Caves (5th century CE, Gupta period) contain twenty rock-cut chambers with India's finest Gupta-period sculptural programme. The centrepiece is a colossal 7-metre Varaha (boar-headed Vishnu) relief rescuing the earth goddess Bhudevi from the cosmic ocean — one of the most powerful images in all Indian art.",
+      "whyVisit": "India's definitive Gupta sculpture site with the most magnificent Varaha image on earth, just 20 minutes away.",
+      "bestTime": "Morning, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Udayagiri Caves Gupta period Madhya Pradesh",
+      "imageQuery": "Udayagiri cave Varaha Vishnu Gupta sculpture"
+    },
+    {
+      "name": "Vidisha (Besnagar) Heliodorus Pillar",
+      "category": "heritage",
+      "description": "In the town of Vidisha, 10 km from Sanchi, stands the Heliodorus Pillar — erected c. 113 BCE by the Greek ambassador Heliodorus of Taxila, who converted to Vaishnavism and dedicated the column to Vasudeva (Vishnu). The Greek Bactrian inscription makes it the world's earliest known inscription dedicated to Vishnu by a foreigner, and one of the most extraordinary cross-cultural documents of the ancient world.",
+      "whyVisit": "A 2nd century BCE stone pillar proving a Greek ambassador converted to Hinduism — one of history's most astonishing artefacts.",
+      "bestTime": "Morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Heliodorus Pillar Besnagar Vidisha Madhya Pradesh",
+      "imageQuery": "Heliodorus pillar Besnagar Vidisha Greek Vaishnavism"
+    },
+    {
+      "name": "Raisen Fort (Day Trip)",
+      "category": "fort",
+      "description": "The dramatic 13th-century Raisen Fort crowns a 300-metre sandstone mesa 23 km from Sanchi, its battlements enclosing temples, palaces, step-wells, and a massive 300-step staircase. The fort was the scene of a famous mass jauhar (self-immolation) by Rajput women in 1543 to avoid Sher Shah Suri's conquest. The panoramic view from the summit over the Vindhya plateau is magnificent.",
+      "whyVisit": "A largely unexplored hilltop fort with a tragic, dramatic history and an extraordinary Vindhya plateau panorama.",
+      "bestTime": "October to March, morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Raisen Fort Madhya Pradesh day trip Sanchi",
+      "imageQuery": "Raisen fort hilltop Madhya Pradesh Vindhya"
+    },
+    {
+      "name": "Buddhist Monastery Ruins (Monasteries 45, 46, 47)",
+      "category": "heritage",
+      "description": "The upper terraces of Sanchi Hill contain the well-preserved foundations of several Gupta and post-Gupta period Buddhist monasteries. The square courtyard plan — cells around a central open court — reflects the classic South Asian vihara layout used from Sanchi to Nalanda. Carved door jambs and in-situ deity niches give the monasteries a tangible intimacy with the monks who once lived here.",
+      "whyVisit": "Walk the actual courtyard cells where Buddhist monks studied and slept 1,500 years ago.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Buddhist monastery ruins Sanchi Hill",
+      "imageQuery": "Buddhist monastery ruins Sanchi hill Gupta"
+    },
+    {
+      "name": "Sanchi Village and Weekly Bazaar",
+      "category": "market",
+      "description": "The small village of Sanchi at the hill's base is a quiet Malwa-region settlement with a weekly market drawing farmers from surrounding tribal villages. Vendors sell local produce including chironji seeds, tendu-leaf products, lac bangles, tribal ironwork, and seasonal vegetables. It is an authentic and unhurried slice of rural Madhya Pradesh commerce entirely separate from the monument zone.",
+      "whyVisit": "Real rural Madhya Pradesh beside a UNESCO site — unpretentious, colourful, and rarely explored by visitors.",
+      "bestTime": "Weekly market day (check locally); morning",
+      "duration": "1 hour",
+      "mapsSearch": "Sanchi village weekly bazaar Madhya Pradesh",
+      "imageQuery": "Sanchi village market rural Madhya Pradesh"
+    },
+    {
+      "name": "Gulgaon Buddhist Site",
+      "category": "heritage",
+      "description": "A very little-known Buddhist site 6 km from Sanchi comprising a cluster of small brick stupas and monastery wall stubs in a field beside a seasonal stream. Pot sherds and brick debris litter the area from what appears to have been a small monastic community dependent on the Sanchi hill complex. The site is in no guidebook and visited almost exclusively by archaeologists.",
+      "whyVisit": "Sanchi's shadow settlement — a humbling field of ruins that completes the picture of a vast ancient Buddhist community.",
+      "bestTime": "October to March, morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Gulgaon Buddhist site near Sanchi Madhya Pradesh",
+      "imageQuery": "Gulgaon Buddhist site Sanchi brick stupas field"
+    },
+    {
+      "name": "Sanchi Sunset from the Eastern Perimeter",
+      "category": "viewpoint",
+      "description": "The eastern perimeter wall of the Great Stupa complex faces open agricultural land, and from this angle at sunset the stupa's dome turns a deep terracotta-orange against the darkening sky while the plain below fills with golden-hour haze. This is the view recorded in countless monochrome photographs during the 19th-century British survey and remains the archetypal Sanchi image.",
+      "whyVisit": "The iconic, timeless postcard view of Sanchi — the Great Stupa's dome at sunset from the east.",
+      "bestTime": "One hour before sunset, October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Great Stupa Sanchi eastern view sunset",
+      "imageQuery": "Great Stupa Sanchi dome sunset orange"
+    },
+    {
+      "name": "Bhimbetka Rock Shelters (Day Trip)",
+      "category": "cave",
+      "description": "A UNESCO World Heritage Site 90 km from Sanchi, Bhimbetka contains over 700 rock shelters with prehistoric paintings spanning 30,000 years of continuous human occupation. The paintings — deer hunts, dancing figures, elephants, and abstract symbols in ochre, white, and crimson — are the world's longest continuously inhabited artistic site and a profound meditation on human creativity.",
+      "whyVisit": "Pair 30,000-year-old cave paintings with 2,300-year-old Buddhist stupas — the world's longest human story in a single day.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhimbetka Rock Shelters UNESCO Madhya Pradesh",
+      "imageQuery": "Bhimbetka rock shelter cave painting prehistoric"
+    },
+    {
+      "name": "Western Torana Carvings Detail Walk",
+      "category": "heritage",
+      "description": "The western gateway of the Great Stupa bears a distinctive programme of seven Jataka tales distributed across its architraves and posts, including the Sama Jataka, the Mahakapi Jataka of the monkey king, and a dramatic war scene. A one-hour guided focus on just this gateway, reading the carvings panel by panel, reveals a complete compendium of early Buddhist storytelling in stone.",
+      "whyVisit": "A single gateway that tells seven complete moral tales — one of the world's densest narrative sculptural programmes.",
+      "bestTime": "Morning light from the west; October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Western Gateway Torana Great Stupa Sanchi carvings",
+      "imageQuery": "Western torana Sanchi Jataka carvings panels"
+    },
+    {
+      "name": "Stupa 1 Inner Railing (Vedika) Circuit",
+      "category": "heritage",
+      "description": "The stone railing (vedika) around the Great Stupa's pradakshina path is one of the most meditative spaces in Buddhist art — a series of stone uprights, crossbars, and coping decorated with medallions of lotuses, yaksha figures, and symbolic imagery. Walking the full circumambulatory path in the traditional clockwise direction, reading the railing's imagery, is the authentic ancient pilgrim experience.",
+      "whyVisit": "Walk the same pradakshina path that Ashoka's subjects walked 2,200 years ago — living heritage at its most immediate.",
+      "bestTime": "Early morning, before crowds",
+      "duration": "45 minutes",
+      "mapsSearch": "Stupa 1 vedika railing pradakshina Sanchi",
+      "imageQuery": "Stupa 1 Sanchi vedika railing stone circumambulation"
+    },
+    {
+      "name": "Bhopal Day Trip and State Museum",
+      "category": "museum",
+      "description": "The Madhya Pradesh Tribal Museum and the Bhopal State Museum, 46 km from Sanchi, together house one of India's finest collections of pre-historic rock art reproductions, Gondwana tribal art, Chandela sculptures, and natural history. Combining a Sanchi morning with an afternoon in Bhopal gives a complete picture of Madhya Pradesh's cultural and natural heritage spanning 30,000 years.",
+      "whyVisit": "The state capital's museums put Sanchi in regional context — essential for travellers going deep into Madhya Pradesh.",
+      "bestTime": "Afternoon after Sanchi, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Madhya Pradesh Tribal Museum Bhopal state museum",
+      "imageQuery": "Bhopal state museum Madhya Pradesh tribal art"
+    }
+  ]
+}

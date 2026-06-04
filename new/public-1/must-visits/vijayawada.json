@@ -1,0 +1,447 @@
+{
+  "id": "vijayawada",
+  "name": "Vijayawada",
+  "state": "Andhra Pradesh",
+  "slug": "vijayawada",
+  "tagline": "Andhra cultural hub on the Krishna",
+  "categories": [
+    "temple",
+    "monument",
+    "cave"
+  ],
+  "introduction": "Planning a trip to Vijayawada? This travel guide to Vijayawada covers the must visit places in Vijayawada, the best places to visit in Vijayawada, top tourist attractions in Vijayawada, and exciting things to do in Vijayawada.",
+  "metaTitle": "Must Visit Places in Vijayawada | Best Places to Visit in Vijayawada - TrypInn",
+  "metaDescription": "Discover must visit places in Vijayawada, best places to visit in Vijayawada, and top tourist attractions in Vijayawada. Plan your perfect trip with TrypInn travel guide to Vijayawada.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=1200&q=60",
+    "alt": "Vijayawada travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "vijayawada-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Nestled in Vijayawada, Kashi Vishwanath Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Kashi Vishwanath Temple is among the best things to do in Vijayawada.",
+      "whyVisit": "Kashi Vishwanath Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Kashi Vishwanath Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Vijayawada"
+      },
+      "position": 1
+    },
+    {
+      "id": "vijayawada-humayun-tomb",
+      "name": "Humayun Tomb",
+      "slug": "humayun-tomb",
+      "description": "Humayun Tomb is a must-see monument in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Experience the unmatched beauty of Humayun Tomb.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Humayun Tomb, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Humayun Tomb in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Humayun Tomb in Vijayawada"
+      },
+      "position": 2
+    },
+    {
+      "id": "vijayawada-yaganti-caves",
+      "name": "Yaganti Caves",
+      "slug": "yaganti-caves",
+      "description": "Yaganti Caves is one of the most iconic landmarks in Vijayawada, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Yaganti Caves promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Yaganti Caves.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Yaganti Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Yaganti Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Yaganti Caves in Vijayawada"
+      },
+      "position": 3
+    },
+    {
+      "id": "vijayawada-akshardham-temple",
+      "name": "Akshardham Temple",
+      "slug": "akshardham-temple",
+      "description": "Nestled in Vijayawada, Akshardham Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Akshardham Temple is among the best things to do in Vijayawada.",
+      "whyVisit": "Capture stunning photographs at Akshardham Temple.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Akshardham Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Akshardham Temple in Vijayawada"
+      },
+      "position": 4
+    },
+    {
+      "id": "vijayawada-diwan-i-khas",
+      "name": "Diwan-i-Khas",
+      "slug": "diwan-i-khas",
+      "description": "Nestled in Vijayawada, Diwan-i-Khas stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Diwan-i-Khas is among the best things to do in Vijayawada.",
+      "whyVisit": "Diwan-i-Khas offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Diwan-i-Khas, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Khas in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Khas in Vijayawada"
+      },
+      "position": 5
+    },
+    {
+      "id": "vijayawada-bhaja-caves",
+      "name": "Bhaja Caves",
+      "slug": "bhaja-caves",
+      "description": "Bhaja Caves is a must-see cave in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Bhaja Caves offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Bhaja Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Bhaja Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Bhaja Caves in Vijayawada"
+      },
+      "position": 6
+    },
+    {
+      "id": "vijayawada-ramanathaswamy-temple",
+      "name": "Ramanathaswamy Temple",
+      "slug": "ramanathaswamy-temple",
+      "description": "A crown jewel of Vijayawada, Ramanathaswamy Temple captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Ramanathaswamy Temple.",
+      "whyVisit": "Capture stunning photographs at Ramanathaswamy Temple.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ramanathaswamy Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ramanathaswamy Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Ramanathaswamy Temple in Vijayawada"
+      },
+      "position": 7
+    },
+    {
+      "id": "vijayawada-charminar",
+      "name": "Charminar",
+      "slug": "charminar",
+      "description": "Charminar is a must-see monument in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Experience the unmatched beauty of Charminar.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Charminar, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Charminar in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Charminar in Vijayawada"
+      },
+      "position": 8
+    },
+    {
+      "id": "vijayawada-akka-mahadevi-caves",
+      "name": "Akka Mahadevi Caves",
+      "slug": "akka-mahadevi-caves",
+      "description": "A crown jewel of Vijayawada, Akka Mahadevi Caves captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Akka Mahadevi Caves.",
+      "whyVisit": "Capture stunning photographs at Akka Mahadevi Caves.",
+      "bestTime": "Avoid monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Akka Mahadevi Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Akka Mahadevi Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Akka Mahadevi Caves in Vijayawada"
+      },
+      "position": 9
+    },
+    {
+      "id": "vijayawada-tirupati-balaji-temple",
+      "name": "Tirupati Balaji Temple",
+      "slug": "tirupati-balaji-temple",
+      "description": "Tirupati Balaji Temple is a must-see temple in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Tirupati Balaji Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Tirupati Balaji Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Tirupati Balaji Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Tirupati Balaji Temple in Vijayawada"
+      },
+      "position": 10
+    },
+    {
+      "id": "vijayawada-itmad-ud-daulah",
+      "name": "Itmad-ud-Daulah",
+      "slug": "itmad-ud-daulah",
+      "description": "A crown jewel of Vijayawada, Itmad-ud-Daulah captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Itmad-ud-Daulah.",
+      "whyVisit": "A visit to Itmad-ud-Daulah is essential for understanding Vijayawada.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Itmad-ud-Daulah, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Itmad-ud-Daulah in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Itmad-ud-Daulah in Vijayawada"
+      },
+      "position": 11
+    },
+    {
+      "id": "vijayawada-aurangabad-caves",
+      "name": "Aurangabad Caves",
+      "slug": "aurangabad-caves",
+      "description": "A crown jewel of Vijayawada, Aurangabad Caves captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Aurangabad Caves.",
+      "whyVisit": "Experience the unmatched beauty of Aurangabad Caves.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Aurangabad Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Aurangabad Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Aurangabad Caves in Vijayawada"
+      },
+      "position": 12
+    },
+    {
+      "id": "vijayawada-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "A crown jewel of Vijayawada, Siddhivinayak Temple captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Siddhivinayak Temple.",
+      "whyVisit": "Siddhivinayak Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Siddhivinayak Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Vijayawada"
+      },
+      "position": 13
+    },
+    {
+      "id": "vijayawada-sun-temple-konark",
+      "name": "Sun Temple Konark",
+      "slug": "sun-temple-konark",
+      "description": "Located in scenic Vijayawada, Sun Temple Konark offers an immersive experience into local culture. Exploring Sun Temple Konark is one of the top things to do in Vijayawada.",
+      "whyVisit": "Sun Temple Konark stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sun Temple Konark, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple Konark in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Sun Temple Konark in Vijayawada"
+      },
+      "position": 14
+    },
+    {
+      "id": "vijayawada-kondivite-caves",
+      "name": "Kondivite Caves",
+      "slug": "kondivite-caves",
+      "description": "A crown jewel of Vijayawada, Kondivite Caves captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Kondivite Caves.",
+      "whyVisit": "Capture stunning photographs at Kondivite Caves.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Kondivite Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Kondivite Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Kondivite Caves in Vijayawada"
+      },
+      "position": 15
+    },
+    {
+      "id": "vijayawada-padmanabhaswamy-temple",
+      "name": "Padmanabhaswamy Temple",
+      "slug": "padmanabhaswamy-temple",
+      "description": "Padmanabhaswamy Temple is a must-see temple in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Padmanabhaswamy Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Padmanabhaswamy Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Padmanabhaswamy Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Padmanabhaswamy Temple in Vijayawada"
+      },
+      "position": 16
+    },
+    {
+      "id": "vijayawada-jantar-mantar",
+      "name": "Jantar Mantar",
+      "slug": "jantar-mantar",
+      "description": "Nestled in Vijayawada, Jantar Mantar stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Jantar Mantar is among the best things to do in Vijayawada.",
+      "whyVisit": "Jantar Mantar stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jantar Mantar, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jantar Mantar in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Jantar Mantar in Vijayawada"
+      },
+      "position": 17
+    },
+    {
+      "id": "vijayawada-mahakali-caves",
+      "name": "Mahakali Caves",
+      "slug": "mahakali-caves",
+      "description": "Located in scenic Vijayawada, Mahakali Caves offers an immersive experience into local culture. Exploring Mahakali Caves is one of the top things to do in Vijayawada.",
+      "whyVisit": "Experience the unmatched beauty of Mahakali Caves.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahakali Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Mahakali Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Mahakali Caves in Vijayawada"
+      },
+      "position": 18
+    },
+    {
+      "id": "vijayawada-vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "slug": "vaishno-devi-temple",
+      "description": "Located in scenic Vijayawada, Vaishno Devi Temple offers an immersive experience into local culture. Exploring Vaishno Devi Temple is one of the top things to do in Vijayawada.",
+      "whyVisit": "Experience the unmatched beauty of Vaishno Devi Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Vaishno Devi Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vaishno Devi Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Vaishno Devi Temple in Vijayawada"
+      },
+      "position": 19
+    },
+    {
+      "id": "vijayawada-qutub-minar",
+      "name": "Qutub Minar",
+      "slug": "qutub-minar",
+      "description": "Qutub Minar is one of the most iconic landmarks in Vijayawada, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Qutub Minar promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Qutub Minar.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Qutub Minar, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Qutub Minar in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Qutub Minar in Vijayawada"
+      },
+      "position": 20
+    },
+    {
+      "id": "vijayawada-sita-gufa",
+      "name": "Sita Gufa",
+      "slug": "sita-gufa",
+      "description": "Sita Gufa is a must-see cave in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "Sita Gufa stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sita Gufa, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Sita Gufa in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Sita Gufa in Vijayawada"
+      },
+      "position": 21
+    },
+    {
+      "id": "vijayawada-konark-sun-temple",
+      "name": "Konark Sun Temple",
+      "slug": "konark-sun-temple",
+      "description": "Konark Sun Temple is one of the most iconic landmarks in Vijayawada, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Konark Sun Temple promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Konark Sun Temple.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Konark Sun Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Konark Sun Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Konark Sun Temple in Vijayawada"
+      },
+      "position": 22
+    },
+    {
+      "id": "vijayawada-safdarjung-tomb",
+      "name": "Safdarjung Tomb",
+      "slug": "safdarjung-tomb",
+      "description": "A crown jewel of Vijayawada, Safdarjung Tomb captivates every traveler with enchanting beauty. No trip to Vijayawada is complete without visiting Safdarjung Tomb.",
+      "whyVisit": "Experience the unmatched beauty of Safdarjung Tomb.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Safdarjung Tomb, Vijayawada",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Safdarjung Tomb in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Safdarjung Tomb in Vijayawada"
+      },
+      "position": 23
+    },
+    {
+      "id": "vijayawada-tirumala-caves",
+      "name": "Tirumala Caves",
+      "slug": "tirumala-caves",
+      "description": "Tirumala Caves is a must-see cave in Vijayawada, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Vijayawada.",
+      "whyVisit": "A visit to Tirumala Caves is essential for understanding Vijayawada.",
+      "bestTime": "Avoid monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Tirumala Caves, Vijayawada",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Tirumala Caves in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Tirumala Caves in Vijayawada"
+      },
+      "position": 24
+    },
+    {
+      "id": "vijayawada-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Located in scenic Vijayawada, Brihadeeswarar Temple offers an immersive experience into local culture. Exploring Brihadeeswarar Temple is one of the top things to do in Vijayawada.",
+      "whyVisit": "A visit to Brihadeeswarar Temple is essential for understanding Vijayawada.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Brihadeeswarar Temple, Vijayawada",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Vijayawada, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Vijayawada"
+      },
+      "position": 25
+    }
+  ]
+}

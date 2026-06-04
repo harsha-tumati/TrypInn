@@ -1,0 +1,447 @@
+{
+  "id": "aurangabad",
+  "name": "Aurangabad",
+  "state": "Maharashtra",
+  "slug": "aurangabad",
+  "tagline": "Gateway to Ajanta-Ellora caves",
+  "categories": [
+    "cave",
+    "monument",
+    "heritage"
+  ],
+  "introduction": "Aurangabad is a treasure trove of experiences. In this travel guide to Aurangabad, we reveal the must visit places in Aurangabad, the best places to visit in Aurangabad, iconic tourist attractions in Aurangabad, and amazing things to do in Aurangabad.",
+  "metaTitle": "Top Things to Do in Aurangabad | Travel Guide to Aurangabad - TrypInn",
+  "metaDescription": "Discover must visit places in Aurangabad, best places to visit in Aurangabad, and top tourist attractions in Aurangabad. Plan your perfect trip with TrypInn travel guide to Aurangabad.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+    "alt": "Aurangabad travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "aurangabad-belum-caves",
+      "name": "Belum Caves",
+      "slug": "belum-caves",
+      "description": "Belum Caves is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Belum Caves promises an unforgettable experience.",
+      "whyVisit": "A visit to Belum Caves is essential for understanding Aurangabad.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Belum Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Belum Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Belum Caves in Aurangabad"
+      },
+      "position": 1
+    },
+    {
+      "id": "aurangabad-hawa-mahal",
+      "name": "Hawa Mahal",
+      "slug": "hawa-mahal",
+      "description": "Hawa Mahal is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hawa Mahal promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Hawa Mahal.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hawa Mahal, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Hawa Mahal in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Hawa Mahal in Aurangabad"
+      },
+      "position": 2
+    },
+    {
+      "id": "aurangabad-lotus-mahal",
+      "name": "Lotus Mahal",
+      "slug": "lotus-mahal",
+      "description": "Located in scenic Aurangabad, Lotus Mahal offers an immersive experience into local culture. Exploring Lotus Mahal is one of the top things to do in Aurangabad.",
+      "whyVisit": "Capture stunning photographs at Lotus Mahal.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lotus Mahal, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Lotus Mahal in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Lotus Mahal in Aurangabad"
+      },
+      "position": 3
+    },
+    {
+      "id": "aurangabad-kotappakonda-caves",
+      "name": "Kotappakonda Caves",
+      "slug": "kotappakonda-caves",
+      "description": "Kotappakonda Caves is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kotappakonda Caves promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Kotappakonda Caves.",
+      "bestTime": "Year-round",
+      "duration": "Quick",
+      "mapsSearch": "Kotappakonda Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Kotappakonda Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Kotappakonda Caves in Aurangabad"
+      },
+      "position": 4
+    },
+    {
+      "id": "aurangabad-rani-ki-vav",
+      "name": "Rani ki Vav",
+      "slug": "rani-ki-vav",
+      "description": "Rani ki Vav is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rani ki Vav promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Rani ki Vav.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rani ki Vav, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Rani ki Vav in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Rani ki Vav in Aurangabad"
+      },
+      "position": 5
+    },
+    {
+      "id": "aurangabad-virupaksha-temple",
+      "name": "Virupaksha Temple",
+      "slug": "virupaksha-temple",
+      "description": "Nestled in Aurangabad, Virupaksha Temple stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Virupaksha Temple is among the best things to do in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Virupaksha Temple.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Virupaksha Temple, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Virupaksha Temple in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Virupaksha Temple in Aurangabad"
+      },
+      "position": 6
+    },
+    {
+      "id": "aurangabad-aurangabad-caves",
+      "name": "Aurangabad Caves",
+      "slug": "aurangabad-caves",
+      "description": "Aurangabad Caves is a must-see cave in Aurangabad, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Aurangabad Caves.",
+      "bestTime": "Avoid monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aurangabad Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Aurangabad Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Aurangabad Caves in Aurangabad"
+      },
+      "position": 7
+    },
+    {
+      "id": "aurangabad-diwan-i-khas",
+      "name": "Diwan-i-Khas",
+      "slug": "diwan-i-khas",
+      "description": "Located in scenic Aurangabad, Diwan-i-Khas offers an immersive experience into local culture. Exploring Diwan-i-Khas is one of the top things to do in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Diwan-i-Khas.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Diwan-i-Khas, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Khas in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Khas in Aurangabad"
+      },
+      "position": 8
+    },
+    {
+      "id": "aurangabad-tungabhadra-river",
+      "name": "Tungabhadra River",
+      "slug": "tungabhadra-river",
+      "description": "A crown jewel of Aurangabad, Tungabhadra River captivates every traveler with enchanting beauty. No trip to Aurangabad is complete without visiting Tungabhadra River.",
+      "whyVisit": "Tungabhadra River stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tungabhadra River, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Tungabhadra River in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Tungabhadra River in Aurangabad"
+      },
+      "position": 9
+    },
+    {
+      "id": "aurangabad-kanheri-caves",
+      "name": "Kanheri Caves",
+      "slug": "kanheri-caves",
+      "description": "Nestled in Aurangabad, Kanheri Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Kanheri Caves is among the best things to do in Aurangabad.",
+      "whyVisit": "Capture stunning photographs at Kanheri Caves.",
+      "bestTime": "Morning",
+      "duration": "Quick",
+      "mapsSearch": "Kanheri Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Kanheri Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kanheri Caves in Aurangabad"
+      },
+      "position": 10
+    },
+    {
+      "id": "aurangabad-humayun-tomb",
+      "name": "Humayun Tomb",
+      "slug": "humayun-tomb",
+      "description": "Humayun Tomb is a must-see monument in Aurangabad, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Humayun Tomb.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Humayun Tomb, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Humayun Tomb in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Humayun Tomb in Aurangabad"
+      },
+      "position": 11
+    },
+    {
+      "id": "aurangabad-achyutaraya-temple",
+      "name": "Achyutaraya Temple",
+      "slug": "achyutaraya-temple",
+      "description": "Nestled in Aurangabad, Achyutaraya Temple stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Achyutaraya Temple is among the best things to do in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Achyutaraya Temple.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Achyutaraya Temple, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Achyutaraya Temple in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Achyutaraya Temple in Aurangabad"
+      },
+      "position": 12
+    },
+    {
+      "id": "aurangabad-borivali-caves",
+      "name": "Borivali Caves",
+      "slug": "borivali-caves",
+      "description": "Borivali Caves is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Borivali Caves promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Borivali Caves.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Borivali Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Borivali Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Borivali Caves in Aurangabad"
+      },
+      "position": 13
+    },
+    {
+      "id": "aurangabad-itmad-ud-daulah",
+      "name": "Itmad-ud-Daulah",
+      "slug": "itmad-ud-daulah",
+      "description": "A crown jewel of Aurangabad, Itmad-ud-Daulah captivates every traveler with enchanting beauty. No trip to Aurangabad is complete without visiting Itmad-ud-Daulah.",
+      "whyVisit": "Itmad-ud-Daulah offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Itmad-ud-Daulah, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Itmad-ud-Daulah in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Itmad-ud-Daulah in Aurangabad"
+      },
+      "position": 14
+    },
+    {
+      "id": "aurangabad-matanga-hill",
+      "name": "Matanga Hill",
+      "slug": "matanga-hill",
+      "description": "A crown jewel of Aurangabad, Matanga Hill captivates every traveler with enchanting beauty. No trip to Aurangabad is complete without visiting Matanga Hill.",
+      "whyVisit": "Matanga Hill offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Matanga Hill, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Matanga Hill in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Matanga Hill in Aurangabad"
+      },
+      "position": 15
+    },
+    {
+      "id": "aurangabad-bedse-caves",
+      "name": "Bedse Caves",
+      "slug": "bedse-caves",
+      "description": "Bedse Caves is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This cave offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bedse Caves promises an unforgettable experience.",
+      "whyVisit": "Bedse Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Avoid monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bedse Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Bedse Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Bedse Caves in Aurangabad"
+      },
+      "position": 16
+    },
+    {
+      "id": "aurangabad-chini-ka-rauza",
+      "name": "Chini Ka Rauza",
+      "slug": "chini-ka-rauza",
+      "description": "Chini Ka Rauza is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chini Ka Rauza promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Chini Ka Rauza.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Chini Ka Rauza, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Chini Ka Rauza in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Chini Ka Rauza in Aurangabad"
+      },
+      "position": 17
+    },
+    {
+      "id": "aurangabad-hazararama-temple",
+      "name": "Hazararama Temple",
+      "slug": "hazararama-temple",
+      "description": "Hazararama Temple is one of the most iconic landmarks in Aurangabad, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hazararama Temple promises an unforgettable experience.",
+      "whyVisit": "Hazararama Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Hazararama Temple, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hazararama Temple in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Hazararama Temple in Aurangabad"
+      },
+      "position": 18
+    },
+    {
+      "id": "aurangabad-elephanta-caves",
+      "name": "Elephanta Caves",
+      "slug": "elephanta-caves",
+      "description": "A crown jewel of Aurangabad, Elephanta Caves captivates every traveler with enchanting beauty. No trip to Aurangabad is complete without visiting Elephanta Caves.",
+      "whyVisit": "Capture stunning photographs at Elephanta Caves.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Elephanta Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Elephanta Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Elephanta Caves in Aurangabad"
+      },
+      "position": 19
+    },
+    {
+      "id": "aurangabad-diwan-i-aam",
+      "name": "Diwan-i-Aam",
+      "slug": "diwan-i-aam",
+      "description": "Nestled in Aurangabad, Diwan-i-Aam stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Diwan-i-Aam is among the best things to do in Aurangabad.",
+      "whyVisit": "A visit to Diwan-i-Aam is essential for understanding Aurangabad.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Diwan-i-Aam, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Aam in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Aam in Aurangabad"
+      },
+      "position": 20
+    },
+    {
+      "id": "aurangabad-badami-caves",
+      "name": "Badami Caves",
+      "slug": "badami-caves",
+      "description": "Nestled in Aurangabad, Badami Caves stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Badami Caves is among the best things to do in Aurangabad.",
+      "whyVisit": "Badami Caves offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Badami Caves, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Badami Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Badami Caves in Aurangabad"
+      },
+      "position": 21
+    },
+    {
+      "id": "aurangabad-tirumala-caves",
+      "name": "Tirumala Caves",
+      "slug": "tirumala-caves",
+      "description": "A crown jewel of Aurangabad, Tirumala Caves captivates every traveler with enchanting beauty. No trip to Aurangabad is complete without visiting Tirumala Caves.",
+      "whyVisit": "Tirumala Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Tirumala Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Tirumala Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Tirumala Caves in Aurangabad"
+      },
+      "position": 22
+    },
+    {
+      "id": "aurangabad-qutub-minar",
+      "name": "Qutub Minar",
+      "slug": "qutub-minar",
+      "description": "Qutub Minar is a must-see monument in Aurangabad, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Aurangabad.",
+      "whyVisit": "Capture stunning photographs at Qutub Minar.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Qutub Minar, Aurangabad",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Qutub Minar in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Qutub Minar in Aurangabad"
+      },
+      "position": 23
+    },
+    {
+      "id": "aurangabad-hemakuta-hill",
+      "name": "Hemakuta Hill",
+      "slug": "hemakuta-hill",
+      "description": "Nestled in Aurangabad, Hemakuta Hill stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Hemakuta Hill is among the best things to do in Aurangabad.",
+      "whyVisit": "Experience the unmatched beauty of Hemakuta Hill.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Hemakuta Hill, Aurangabad",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hemakuta Hill in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Hemakuta Hill in Aurangabad"
+      },
+      "position": 24
+    },
+    {
+      "id": "aurangabad-undavalli-caves",
+      "name": "Undavalli Caves",
+      "slug": "undavalli-caves",
+      "description": "Located in scenic Aurangabad, Undavalli Caves offers an immersive experience into local culture. Exploring Undavalli Caves is one of the top things to do in Aurangabad.",
+      "whyVisit": "Undavalli Caves stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Quick",
+      "mapsSearch": "Undavalli Caves, Aurangabad",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Undavalli Caves in Aurangabad, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Undavalli Caves in Aurangabad"
+      },
+      "position": 25
+    }
+  ]
+}

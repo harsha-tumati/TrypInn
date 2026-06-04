@@ -1,0 +1,447 @@
+{
+  "id": "bhopal",
+  "name": "Bhopal",
+  "state": "Madhya Pradesh",
+  "slug": "bhopal",
+  "tagline": "City of Lakes and tribal art heritage",
+  "categories": [
+    "lake",
+    "museum",
+    "park"
+  ],
+  "introduction": "Bhopal is a treasure trove of experiences. In this travel guide to Bhopal, we reveal the must visit places in Bhopal, the best places to visit in Bhopal, iconic tourist attractions in Bhopal, and amazing things to do in Bhopal.",
+  "metaTitle": "Must Visit Places in Bhopal | Best Places to Visit in Bhopal - TrypInn",
+  "metaDescription": "Find the best places to visit in Bhopal, must visit places in Bhopal, and tourist attractions in Bhopal. Plan your Bhopal trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=1200&q=60",
+    "alt": "Bhopal travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "bhopal-pushkar-lake",
+      "name": "Pushkar Lake",
+      "slug": "pushkar-lake",
+      "description": "Nestled in Bhopal, Pushkar Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Pushkar Lake is among the best things to do in Bhopal.",
+      "whyVisit": "Capture stunning photographs at Pushkar Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Pushkar Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Pushkar Lake in Bhopal"
+      },
+      "position": 1
+    },
+    {
+      "id": "bhopal-tagore-museum",
+      "name": "Tagore Museum",
+      "slug": "tagore-museum",
+      "description": "Tagore Museum is a must-see museum in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "Tagore Museum offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tagore Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Tagore Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Tagore Museum in Bhopal"
+      },
+      "position": 2
+    },
+    {
+      "id": "bhopal-mangrove-park",
+      "name": "Mangrove Park",
+      "slug": "mangrove-park",
+      "description": "Mangrove Park is one of the most iconic landmarks in Bhopal, drawing visitors with its timeless charm. This park offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mangrove Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Mangrove Park.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mangrove Park, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Mangrove Park in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Mangrove Park in Bhopal"
+      },
+      "position": 3
+    },
+    {
+      "id": "bhopal-pichola-lake",
+      "name": "Pichola Lake",
+      "slug": "pichola-lake",
+      "description": "Located in scenic Bhopal, Pichola Lake offers an immersive experience into local culture. Exploring Pichola Lake is one of the top things to do in Bhopal.",
+      "whyVisit": "Capture stunning photographs at Pichola Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Pichola Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pichola Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Pichola Lake in Bhopal"
+      },
+      "position": 4
+    },
+    {
+      "id": "bhopal-albert-hall-museum",
+      "name": "Albert Hall Museum",
+      "slug": "albert-hall-museum",
+      "description": "Located in scenic Bhopal, Albert Hall Museum offers an immersive experience into local culture. Exploring Albert Hall Museum is one of the top things to do in Bhopal.",
+      "whyVisit": "Capture stunning photographs at Albert Hall Museum.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Albert Hall Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Albert Hall Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Albert Hall Museum in Bhopal"
+      },
+      "position": 5
+    },
+    {
+      "id": "bhopal-japanese-garden",
+      "name": "Japanese Garden",
+      "slug": "japanese-garden",
+      "description": "Japanese Garden is a must-see park in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "Japanese Garden stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Japanese Garden, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Japanese Garden in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Japanese Garden in Bhopal"
+      },
+      "position": 6
+    },
+    {
+      "id": "bhopal-akshardham-lake",
+      "name": "Akshardham Lake",
+      "slug": "akshardham-lake",
+      "description": "Nestled in Bhopal, Akshardham Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Akshardham Lake is among the best things to do in Bhopal.",
+      "whyVisit": "Akshardham Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Akshardham Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Akshardham Lake in Bhopal"
+      },
+      "position": 7
+    },
+    {
+      "id": "bhopal-wax-museum",
+      "name": "Wax Museum",
+      "slug": "wax-museum",
+      "description": "Wax Museum is a must-see museum in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "A visit to Wax Museum is essential for understanding Bhopal.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Wax Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Wax Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Wax Museum in Bhopal"
+      },
+      "position": 8
+    },
+    {
+      "id": "bhopal-bird-sanctuary",
+      "name": "Bird Sanctuary",
+      "slug": "bird-sanctuary",
+      "description": "Nestled in Bhopal, Bird Sanctuary stands as a testament to architectural brilliance. This renowned park attracts tourists who come to admire its stunning design. A visit to Bird Sanctuary is among the best things to do in Bhopal.",
+      "whyVisit": "Experience the unmatched beauty of Bird Sanctuary.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bird Sanctuary, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Bird Sanctuary in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Bird Sanctuary in Bhopal"
+      },
+      "position": 9
+    },
+    {
+      "id": "bhopal-sasthamkotta-lake",
+      "name": "Sasthamkotta Lake",
+      "slug": "sasthamkotta-lake",
+      "description": "Sasthamkotta Lake is one of the most iconic landmarks in Bhopal, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sasthamkotta Lake promises an unforgettable experience.",
+      "whyVisit": "Sasthamkotta Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sasthamkotta Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sasthamkotta Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Sasthamkotta Lake in Bhopal"
+      },
+      "position": 10
+    },
+    {
+      "id": "bhopal-naval-museum",
+      "name": "Naval Museum",
+      "slug": "naval-museum",
+      "description": "A crown jewel of Bhopal, Naval Museum captivates every traveler with enchanting beauty. No trip to Bhopal is complete without visiting Naval Museum.",
+      "whyVisit": "Capture stunning photographs at Naval Museum.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Naval Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Naval Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Naval Museum in Bhopal"
+      },
+      "position": 11
+    },
+    {
+      "id": "bhopal-bamboo-park",
+      "name": "Bamboo Park",
+      "slug": "bamboo-park",
+      "description": "Located in scenic Bhopal, Bamboo Park offers an immersive experience into local culture. Exploring Bamboo Park is one of the top things to do in Bhopal.",
+      "whyVisit": "Capture stunning photographs at Bamboo Park.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bamboo Park, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Bamboo Park in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Bamboo Park in Bhopal"
+      },
+      "position": 12
+    },
+    {
+      "id": "bhopal-paravur-lake",
+      "name": "Paravur Lake",
+      "slug": "paravur-lake",
+      "description": "Located in scenic Bhopal, Paravur Lake offers an immersive experience into local culture. Exploring Paravur Lake is one of the top things to do in Bhopal.",
+      "whyVisit": "Capture stunning photographs at Paravur Lake.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Paravur Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Paravur Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Paravur Lake in Bhopal"
+      },
+      "position": 13
+    },
+    {
+      "id": "bhopal-coin-museum",
+      "name": "Coin Museum",
+      "slug": "coin-museum",
+      "description": "A crown jewel of Bhopal, Coin Museum captivates every traveler with enchanting beauty. No trip to Bhopal is complete without visiting Coin Museum.",
+      "whyVisit": "Experience the unmatched beauty of Coin Museum.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Coin Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Coin Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Coin Museum in Bhopal"
+      },
+      "position": 14
+    },
+    {
+      "id": "bhopal-national-park",
+      "name": "National Park",
+      "slug": "national-park",
+      "description": "Located in scenic Bhopal, National Park offers an immersive experience into local culture. Exploring National Park is one of the top things to do in Bhopal.",
+      "whyVisit": "A visit to National Park is essential for understanding Bhopal.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "National Park, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, National Park in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "National Park in Bhopal"
+      },
+      "position": 15
+    },
+    {
+      "id": "bhopal-sankey-tank",
+      "name": "Sankey Tank",
+      "slug": "sankey-tank",
+      "description": "Nestled in Bhopal, Sankey Tank stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Sankey Tank is among the best things to do in Bhopal.",
+      "whyVisit": "Sankey Tank offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Sankey Tank, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sankey Tank in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Sankey Tank in Bhopal"
+      },
+      "position": 16
+    },
+    {
+      "id": "bhopal-textile-museum",
+      "name": "Textile Museum",
+      "slug": "textile-museum",
+      "description": "Textile Museum is one of the most iconic landmarks in Bhopal, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Textile Museum promises an unforgettable experience.",
+      "whyVisit": "Textile Museum offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Textile Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Textile Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Textile Museum in Bhopal"
+      },
+      "position": 17
+    },
+    {
+      "id": "bhopal-wildlife-sanctuary",
+      "name": "Wildlife Sanctuary",
+      "slug": "wildlife-sanctuary",
+      "description": "Wildlife Sanctuary is a must-see park in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "Experience the unmatched beauty of Wildlife Sanctuary.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Wildlife Sanctuary, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Wildlife Sanctuary in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Wildlife Sanctuary in Bhopal"
+      },
+      "position": 18
+    },
+    {
+      "id": "bhopal-vembanad-lake",
+      "name": "Vembanad Lake",
+      "slug": "vembanad-lake",
+      "description": "A crown jewel of Bhopal, Vembanad Lake captivates every traveler with enchanting beauty. No trip to Bhopal is complete without visiting Vembanad Lake.",
+      "whyVisit": "Vembanad Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Sep-Nov",
+      "duration": "Half day",
+      "mapsSearch": "Vembanad Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Vembanad Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Vembanad Lake in Bhopal"
+      },
+      "position": 19
+    },
+    {
+      "id": "bhopal-science-city",
+      "name": "Science City",
+      "slug": "science-city",
+      "description": "Located in scenic Bhopal, Science City offers an immersive experience into local culture. Exploring Science City is one of the top things to do in Bhopal.",
+      "whyVisit": "Science City stands out as one of the most rewarding experiences.",
+      "bestTime": "Weekdays",
+      "duration": "Quick",
+      "mapsSearch": "Science City, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Science City in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Science City in Bhopal"
+      },
+      "position": 20
+    },
+    {
+      "id": "bhopal-nehru-park",
+      "name": "Nehru Park",
+      "slug": "nehru-park",
+      "description": "Located in scenic Bhopal, Nehru Park offers an immersive experience into local culture. Exploring Nehru Park is one of the top things to do in Bhopal.",
+      "whyVisit": "A visit to Nehru Park is essential for understanding Bhopal.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nehru Park, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Nehru Park in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Nehru Park in Bhopal"
+      },
+      "position": 21
+    },
+    {
+      "id": "bhopal-sattal-lake",
+      "name": "Sattal Lake",
+      "slug": "sattal-lake",
+      "description": "Sattal Lake is a must-see lake in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "A visit to Sattal Lake is essential for understanding Bhopal.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Sattal Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sattal Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Sattal Lake in Bhopal"
+      },
+      "position": 22
+    },
+    {
+      "id": "bhopal-indian-museum",
+      "name": "Indian Museum",
+      "slug": "indian-museum",
+      "description": "Indian Museum is one of the most iconic landmarks in Bhopal, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Indian Museum promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Indian Museum.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Indian Museum, Bhopal",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Indian Museum in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Indian Museum in Bhopal"
+      },
+      "position": 23
+    },
+    {
+      "id": "bhopal-botanical-garden",
+      "name": "Botanical Garden",
+      "slug": "botanical-garden",
+      "description": "A crown jewel of Bhopal, Botanical Garden captivates every traveler with enchanting beauty. No trip to Bhopal is complete without visiting Botanical Garden.",
+      "whyVisit": "Botanical Garden offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Botanical Garden, Bhopal",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Botanical Garden in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Botanical Garden in Bhopal"
+      },
+      "position": 24
+    },
+    {
+      "id": "bhopal-naini-lake",
+      "name": "Naini Lake",
+      "slug": "naini-lake",
+      "description": "Naini Lake is a must-see lake in Bhopal, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bhopal.",
+      "whyVisit": "Naini Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Naini Lake, Bhopal",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Naini Lake in Bhopal, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Naini Lake in Bhopal"
+      },
+      "position": 25
+    }
+  ]
+}

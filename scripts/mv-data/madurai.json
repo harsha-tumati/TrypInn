@@ -1,0 +1,250 @@
+{
+  "slug": "madurai",
+  "name": "Madurai",
+  "state": "Tamil Nadu",
+  "tagline": "City That Never Sleeps, Home of the Divine Meenakshi",
+  "categories": ["pilgrimage", "heritage", "spiritual"],
+  "highlights": ["meenakshi amman temple stunning gopurams", "ancient pandya dynasty temple city"],
+  "attractions": [
+    {
+      "name": "Meenakshi Amman Temple",
+      "category": "temple",
+      "description": "The supreme jewel of Dravidian architecture, a 2,500-year-old living temple complex covering 14 acres in the heart of Madurai. Fourteen spectacular gopurams rise up to 52 metres, encrusted with 33,000 hand-carved and painted stucco figures of deities, demons, and mythological beings. The Hall of a Thousand Pillars, the golden lotus tank, and the separate Sundareswarar (Shiva) shrine constitute a sacred city within a city. Over 15,000 visitors worship here daily.",
+      "whyVisit": "The greatest living Dravidian temple complex on Earth — a 2,500-year continuum of worship and artistry.",
+      "bestTime": "Evening puja (6–8 pm) for abhishekam rituals; early morning for uncrowded darshan",
+      "duration": "3-4 hours",
+      "mapsSearch": "Meenakshi Amman Temple Madurai Tamil Nadu",
+      "imageQuery": "Meenakshi Amman Temple gopuram Madurai"
+    },
+    {
+      "name": "Hall of a Thousand Pillars (Ayiramkal Mandapam)",
+      "category": "heritage",
+      "description": "A 16th-century Vijayanagara-era mandapam inside the Meenakshi Temple precinct featuring 985 unique sculptural pillars — no two identical. Each granite column is a symphony of Puranic narrative in three dimensions, with musical pillars (Sapta Swara Sthambam) that emit seven distinct musical notes when tapped. The mandapam now houses an excellent archaeological museum displaying bronzes, stone panels, and ivory carvings from across the Pandya kingdom.",
+      "whyVisit": "Possibly India's finest architectural mandapam — 985 sculpted columns, each unique, with musical resonance.",
+      "bestTime": "Morning for museum hours; weekday for fewer visitors",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hall of Thousand Pillars Meenakshi Temple Madurai",
+      "imageQuery": "Thousand Pillars Hall Meenakshi Temple Madurai"
+    },
+    {
+      "name": "Tirumalai Nayak Palace",
+      "category": "palace",
+      "description": "A magnificent 17th-century palace built by King Tirumalai Nayak in 1636, blending Dravidian and Italian Baroque architecture. The heavenly mandapam's soaring arches (12 metres high) with stucco pilasters and the octagonal throne hall attest to the Nayak dynasty's grandeur. The original palace was four times the current size — what survives is the audience hall and dance pavilion. An evening sound-and-light show in Tamil and English narrates the Nayak saga.",
+      "whyVisit": "A spectacular fusion of Italian Baroque and Dravidian architecture — the grandest royal hall in Tamil Nadu.",
+      "bestTime": "Evening for sound-and-light show",
+      "duration": "2 hours",
+      "mapsSearch": "Tirumalai Nayak Palace Madurai Tamil Nadu",
+      "imageQuery": "Tirumalai Nayak Palace Madurai arch hall"
+    },
+    {
+      "name": "Vandiyur Mariamman Teppakulam",
+      "category": "lake",
+      "description": "A vast 16th-century temple tank covering 5 acres — one of the largest in India — with a central island shrine to Goddess Mariamman accessible by boat. The tank was excavated by Tirumalai Nayak and connected to the Vaigai River by underground channels. The annual Teppam (float) festival on Thai full moon (January–February) sees the deities of Meenakshi and Sundareswarar borne on a flower-decked raft around the illuminated tank, attracting 200,000 devotees.",
+      "whyVisit": "The stage of Madurai's breathtaking float festival — one of Tamil Nadu's most spectacular religious spectacles.",
+      "bestTime": "Thai Pournami (January–February) float festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vandiyur Mariamman Teppakulam Madurai",
+      "imageQuery": "Vandiyur Teppakulam Madurai float festival tank"
+    },
+    {
+      "name": "Gandhi Memorial Museum",
+      "category": "museum",
+      "description": "Located in the historic Tamukkam Palace (17th century), this museum houses the blood-soaked dhoti Mahatma Gandhi wore when he was assassinated on 30 January 1948 — the most viscerally powerful artifact of Independence history. The palace itself is a fine example of Nayak architecture. The museum chronicles Gandhi's Madurai connection (he first adopted the dhoti here in 1921) and the independence movement through photographs, manuscripts, and dioramas.",
+      "whyVisit": "Houses the blood-soaked dhoti Gandhi wore at his assassination — the most moving Independence-era relic in India.",
+      "bestTime": "Year-round; closed Fridays",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gandhi Memorial Museum Madurai Tamil Nadu",
+      "imageQuery": "Gandhi Memorial Museum Madurai Tamukkam Palace"
+    },
+    {
+      "name": "Alagar Kovil (Kallazhagar Temple)",
+      "category": "temple",
+      "description": "A magnificent Vaishnavite temple 21 km from Madurai on a forested hill, dedicated to Lord Vishnu as Kallazhagar (Beautiful Lord), an avatar of Sundareswarar for the Chithirai festival. The temple has three prakarams (enclosures) and a striking golden vimanam. Every year for Chithirai festival (April–May), the idol of Alagar is brought in a grand procession to the Vaigai River to bless Meenakshi's wedding, attracting a million pilgrims.",
+      "whyVisit": "The Vishnu temple whose annual procession to Meenakshi's wedding is among Tamil Nadu's greatest festivals.",
+      "bestTime": "Chithirai festival (April–May)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Alagar Kovil Kallazhagar Temple Madurai",
+      "imageQuery": "Alagar Kovil Kallazhagar Temple Madurai hill"
+    },
+    {
+      "name": "Vaigai River Ghats",
+      "category": "heritage",
+      "description": "The ancient river that flows through Madurai has been central to the city's sacred geography for 2,500 years. The riverbank ghats are bathing spots where Madurai residents perform daily rituals. The Porthamari Ghat and Vandiyur areas preserve whitewashed mandapams from the Nayak period. At dusk, local fishermen cast nets in the shallows while women decorate the ghats with kolam. The Vaigai's annual flood season (August–September) transforms the normally gentle river into a raging torrent.",
+      "whyVisit": "The sacred river of the Pandya kingdom — Madurai's living heritage corridor outside the main temple.",
+      "bestTime": "Early morning for rituals; monsoon for dramatic river",
+      "duration": "1 hour",
+      "mapsSearch": "Vaigai River ghats Madurai Tamil Nadu",
+      "imageQuery": "Vaigai River ghats Madurai temples"
+    },
+    {
+      "name": "Koodal Azhagar Temple",
+      "category": "temple",
+      "description": "One of Madurai's oldest temples, dedicated to Lord Vishnu as Koodal Azhagar, with the unique distinction of having the deity enshrined in three forms on three floors: seated on the ground floor, standing on the first, and reclining on the second. This triple-form iconographic programme is extremely rare in South Indian temple architecture. The temple is mentioned in Sangam literature (1st–3rd century CE) and has continuous worship records for 2,000 years.",
+      "whyVisit": "A 2,000-year-old temple with unique three-floor Vishnu iconography — Madurai's most ancient Vaishnavite site.",
+      "bestTime": "Early morning puja",
+      "duration": "1-2 hours",
+      "mapsSearch": "Koodal Azhagar Temple Madurai Tamil Nadu",
+      "imageQuery": "Koodal Azhagar Temple Madurai Vishnu"
+    },
+    {
+      "name": "Pazhamudhir Cholai (Thiruparankundram Murugan Temple)",
+      "category": "temple",
+      "description": "One of the six sacred abodes of Lord Murugan (Arupadai Veedu), 8 km from Madurai on a granite hill, entirely rock-cut into a natural cave. The main shrine is carved directly into the hillside, with the mandapam columns hewn from living rock. The iconography shows Murugan receiving the worship of the celestial gods after his victory over Soorapadman. The cave temple complex includes shrines to Shiva, Vishnu, and Durga in adjacent rock faces, representing a rare tri-faith rock-cut complex.",
+      "whyVisit": "A unique entirely rock-cut cave temple — one of the six sacred Murugan abodes, carved into living granite.",
+      "bestTime": "Skanda Sashti (October–November)",
+      "duration": "2 hours",
+      "mapsSearch": "Thiruparankundram Murugan Temple Madurai",
+      "imageQuery": "Thiruparankundram Murugan Temple cave rock-cut Madurai"
+    },
+    {
+      "name": "Samanar Hills (Keelakuyilkudi Jain Caves)",
+      "category": "heritage",
+      "description": "A dramatic cluster of granite boulders 6 km from Madurai harbouring 10 Jain rock-cut caves dating from the 1st century BCE to the 9th century CE. The caves shelter life-size Tirthankara images carved in bas-relief, some retaining traces of original paint. Jain monks meditated in these natural shelters during the Sangam period, and inscriptions in Tamil Brahmi script — among the oldest in the region — record their activities. The boulder landscape is magnificent at sunrise.",
+      "whyVisit": "Madurai's oldest sacred site — 2,000-year-old Jain cave paintings with Tamil Brahmi inscriptions in a boulder landscape.",
+      "bestTime": "Early morning for sunrise over boulders",
+      "duration": "2-3 hours",
+      "mapsSearch": "Samanar Hills Jain Caves Madurai Tamil Nadu",
+      "imageQuery": "Samanar Hills Jain caves Madurai granite boulders"
+    },
+    {
+      "name": "Madurai Meenakshi Market (Puthu Mandapam)",
+      "category": "market",
+      "description": "A 16th-century royal outdoor bazaar mandapam directly opposite the eastern gopuram of Meenakshi Temple, originally built by Tirumalai Nayak as a supplementary temple hall and now converted into a bustling textile and flower market. Local weavers sell Madurai cotton sungudi sarees with their distinctive dots and checks. The flower vendors' section — mountains of jasmine, marigold, and rose — is the sensory heart of Madurai and a photographer's paradise.",
+      "whyVisit": "A 16th-century royal mandapam turned fragrant flower and textile market — the living soul of Madurai's bazaar culture.",
+      "bestTime": "Early morning when jasmine sellers set up (5–8 am)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Puthu Mandapam Market Madurai Tamil Nadu",
+      "imageQuery": "Madurai Puthu Mandapam flower market jasmine"
+    },
+    {
+      "name": "Alagarkoil Forest Reserve",
+      "category": "wildlife",
+      "description": "The 75-sq-km forest surrounding Alagar Kovil temple constitutes one of the finest dry deciduous forests in Tamil Nadu, classified as an eco-sensitive zone. The forest harbours leopard, jungle cat, sloth bear, Indian rock python, and over 230 bird species. The Alagar Hills Trek (8 km loop) passes through bamboo groves, rocky ridgelines, and ancient Hindu and Jain rock art shelters. The bear sightings near the temple are regular enough that notices are posted.",
+      "whyVisit": "A forest reserve adjacent to a great temple, with leopards, sloth bears, and ancient rock art shelters.",
+      "bestTime": "November to February",
+      "duration": "Half day for trekking",
+      "mapsSearch": "Alagarkoil Forest Reserve Madurai Tamil Nadu",
+      "imageQuery": "Alagarkoil forest Madurai dry deciduous wildlife"
+    },
+    {
+      "name": "Chithirai Festival (Meenakshi Tirukalyanam)",
+      "category": "religious",
+      "description": "The world's oldest continuously celebrated wedding festival, held annually in April–May in Madurai, commemorating the divine marriage of Goddess Meenakshi and Lord Sundareswarar (Shiva). Over 2 million devotees attend the procession over 12 days, culminating in the celestial wedding re-enacted in the temple. The parallel procession of Lord Alagar descending from his hill to attend the wedding is a separate 2-million-strong event on the Vaigai riverbank.",
+      "whyVisit": "The world's oldest continuously celebrated divine wedding festival — a 2,000-year-old living tradition.",
+      "bestTime": "April–May (Tamil month of Chithirai)",
+      "duration": "Full day minimum",
+      "mapsSearch": "Chithirai Festival Madurai Meenakshi",
+      "imageQuery": "Chithirai festival Madurai Meenakshi procession"
+    },
+    {
+      "name": "Thiruvedagam Shiva Temple",
+      "category": "temple",
+      "description": "An obscure but architecturally superb Shiva temple 12 km from Madurai, dating to the Pandya period (8th–10th century CE), with beautifully carved granite koshtas (niche sculptures) depicting the Ashta Dikpalas (guardians of eight directions). The temple is mentioned in the Devaram hymns of Thirugnana Sambandar and Appar. The surrounding village has preserved the original temple tank and mandapam intact, creating an atmosphere of timeless antiquity.",
+      "whyVisit": "An intact 8th-century Pandya Shiva temple mentioned by Nayanmars — pristine and almost unknown to visitors.",
+      "bestTime": "Shivaratri and early mornings",
+      "duration": "1 hour",
+      "mapsSearch": "Thiruvedagam Shiva Temple Madurai Tamil Nadu",
+      "imageQuery": "Pandya Shiva temple Madurai ancient Tamil Nadu"
+    },
+    {
+      "name": "Government Museum Madurai",
+      "category": "museum",
+      "description": "A well-curated museum in the Tamukkam Palace grounds displaying Pandya, Vijayanagara, and Nayak period bronzes, stone sculptures, coins, palm-leaf manuscripts, and folk art. The bronze gallery contains magnificent Chola Nataraja and Parvati panels. A natural history wing preserves specimens from the Western and Eastern Ghats. The numismatics section documents coinage from the Sangam period through British India.",
+      "whyVisit": "Madurai's finest collection of Pandya bronzes and Sangam-period artefacts in a Nayak palace setting.",
+      "bestTime": "Year-round; closed Fridays",
+      "duration": "1-2 hours",
+      "mapsSearch": "Government Museum Madurai Tamil Nadu",
+      "imageQuery": "Government Museum Madurai Chola bronze"
+    },
+    {
+      "name": "Madurai Junction Area Night Bazaar",
+      "category": "market",
+      "description": "The streets radiating from Madurai Railway Station transform into one of South India's most vibrant night markets after 8 pm, selling Madurai-specific street food (kari dosa, jigarthanda, parottas with salna), cotton lungi and saree fabric, betel nut preparations, and handmade brass temple items. The city's reputation as the 'city that never sleeps' originates here — shops run past midnight and the flower market for next-day temple offerings operates from 2 am.",
+      "whyVisit": "The heart of Madurai's legendary all-night street food and trading culture — perfectly paired with temple darshan.",
+      "bestTime": "9 pm to midnight",
+      "duration": "2-3 hours",
+      "mapsSearch": "Madurai Junction night market Tamil Nadu",
+      "imageQuery": "Madurai night market street food kari dosa"
+    },
+    {
+      "name": "Pazhamudhircholai Hill Temple",
+      "category": "temple",
+      "description": "The sixth of Lord Murugan's six Arupadai Veedu abodes, situated 25 km from Madurai on a hillock within the Alagarkoil forest. This temple is unique among the six Murugan abodes as the deity is surrounded by a garden (cholai) of sacred plants described in Sangam literature. The small, intimate temple has a 2,000-year continuous worship tradition. The forest walk from Alagar Kovil to this temple through the reserve is spectacular for birdwatching.",
+      "whyVisit": "The sixth Murugan abode, hidden in a forest garden — completing the Arupadai Veedu pilgrimage circuit.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours including forest walk",
+      "mapsSearch": "Pazhamudhircholai Murugan Temple Madurai forest",
+      "imageQuery": "Pazhamudhircholai Murugan Temple Madurai forest shrine"
+    },
+    {
+      "name": "Meenakshi Temple Golden Lotus Tank (Porthamarai Kulam)",
+      "category": "religious",
+      "description": "The luminous golden lotus tank inside the Meenakshi Temple complex, its 165x120-foot water body flanked by colonnaded corridors reflected in the still surface. Pilgrims circumambulate the tank chanting Meenakshi's thousand names. According to legend, the tank's waters test the literary merit of manuscripts — only worthy texts float. A golden lotus in the centre symbolises Tillai Nataraja. The tank is illuminated by oil lamps every evening, creating a hypnotic glow.",
+      "whyVisit": "A sacred tank of profound beauty where oil-lit colonnades reflect in still water during evening puja.",
+      "bestTime": "Evening puja between 6–8 pm",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Porthamarai Kulam Golden Lotus Tank Meenakshi Temple Madurai",
+      "imageQuery": "Golden Lotus Tank Meenakshi Temple Madurai reflection"
+    },
+    {
+      "name": "Srivilliputhur Andal Temple",
+      "category": "temple",
+      "description": "A magnificent 11-tier, 192-foot gopuram temple 65 km from Madurai dedicated to Goddess Andal and Lord Vatapatrasayee (Vishnu), so iconic that its tower image is the official emblem of the Tamil Nadu government. This is the birthplace of Andal, the only female among the 12 Alvar Vaishnava saint-poets. The temple's 11-tier gopuram is one of the tallest in Tamil Nadu. The surrounding town is famed for its white butter and ghee poli sweets.",
+      "whyVisit": "The birthplace of Saint Andal, with Tamil Nadu's official-emblem tower — a Vaishnavite site of supreme importance.",
+      "bestTime": "Aadi Pooram (July–August) celebrating Andal's birth",
+      "duration": "2-3 hours",
+      "mapsSearch": "Srivilliputhur Andal Temple Tamil Nadu",
+      "imageQuery": "Srivilliputhur Andal Temple gopuram Tamil Nadu"
+    },
+    {
+      "name": "Kochadai Karumariyamman Temple",
+      "category": "temple",
+      "description": "A powerful and popular Mariamman (village goddess) temple in the Kochadai area of Madurai, where the goddess is worshipped in her fierce, unsanctified village form. The Panguni Uthiram festival here involves elaborate kavadi processions, firewalking, and hook-swinging rituals that represent Madurai's deeply rooted folk religious tradition alongside the Brahminic Meenakshi cult. The festival draws tens of thousands from surrounding villages.",
+      "whyVisit": "The rawest expression of Tamil folk religion — firewalking and kavadi rituals at Madurai's premier village goddess shrine.",
+      "bestTime": "Panguni Uthiram festival (March–April)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kochadai Karumariyamman Temple Madurai Tamil Nadu",
+      "imageQuery": "Mariamman temple festival firewalking Madurai"
+    },
+    {
+      "name": "Azhagar Hills Forest Walk",
+      "category": "adventure",
+      "description": "A 6-km morning forest trail winding through the Alagarkoil Reserve Forest above Alagar Kovil, passing enormous boulders, ancient rock-cut Jain meditation cells, viewpoints over the Madurai plains, and stands of red-flowered flame-of-the-forest trees. The trail is used by local Irula tribal honey hunters who know the forest intimately. An experienced local guide is essential and can be arranged through Madurai-based eco-tourism operators.",
+      "whyVisit": "Madurai's best nature walk — ancient boulders, Jain caves, tribal knowledge, and sweeping city views.",
+      "bestTime": "6–9 am November to February",
+      "duration": "3-4 hours",
+      "mapsSearch": "Alagarkoil Forest Walk Madurai trekking",
+      "imageQuery": "Alagarkoil hills trek Madurai boulders sunrise"
+    },
+    {
+      "name": "Silappathikaram Memorial, Madurai Museum Garden",
+      "category": "heritage",
+      "description": "A striking open-air memorial garden and exhibit in the Government Museum grounds commemorating the Tamil epic Silappathikaram (The Tale of an Anklet), set largely in Madurai's Pandya royal court. The epic, composed around the 2nd century CE, is one of the five great classical Tamil literary works. Life-size sculpture panels depict scenes of the heroine Kannagi, the merchant Kovalan, and the Pandya king. Interpretive boards in Tamil and English explain the epic's significance.",
+      "whyVisit": "A moving tribute to the world's oldest surviving Tamil epic, set in the very city where its climax occurred.",
+      "bestTime": "Year-round; early morning for quiet reflection",
+      "duration": "1 hour",
+      "mapsSearch": "Government Museum Madurai garden Tamil Nadu",
+      "imageQuery": "Silappathikaram memorial Madurai Tamil epic sculpture"
+    },
+    {
+      "name": "Kazimar Big Mosque (Kazi Peer Mosque)",
+      "category": "religious",
+      "description": "One of the oldest mosques in Tamil Nadu, founded in 1284 CE during the brief Madurai Sultanate period, with a towering white façade and a blue dome visible from the Meenakshi Temple gopurams. The mosque complex includes the dargah of the saint Syed Kasim Shah, who arrived from Arabia in the 13th century. The annual Urs festival is marked by qawwali nights and a procession through the old city. The mosque is open to all visitors outside prayer times.",
+      "whyVisit": "A 13th-century mosque from Madurai's Sultanate period — testament to the city's millennia of religious diversity.",
+      "bestTime": "Morning before Friday prayers; Urs festival",
+      "duration": "45 minutes",
+      "mapsSearch": "Kazimar Big Mosque Madurai Tamil Nadu",
+      "imageQuery": "Kazimar Mosque Madurai white dome minaret"
+    },
+    {
+      "name": "Thiruppuvanam Brahadeeswarar Temple",
+      "category": "temple",
+      "description": "An obscure 9th-century Pandya-built Shiva temple 40 km from Madurai in Thiruppuvanam village, with a graceful multi-tiered vimana and sculptural panels of remarkable quality depicting Shiva's 64 Leelas (divine sports). The temple is rarely visited by outsiders, preserving an atmosphere of genuine village worship. The priests still follow unbroken Agamic ritual traditions. The river Vaigai runs 500 metres from the temple, and its banks host seasonal migratory waders.",
+      "whyVisit": "A pristine 9th-century Pandya temple with exquisite Shiva Leela sculptures and zero tourist footprint.",
+      "bestTime": "Morning puja at 8 am",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thiruppuvanam Shiva Temple Madurai Tamil Nadu",
+      "imageQuery": "Pandya Shiva temple Thiruppuvanam ancient Madurai"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "slug": "yercaud",
+  "name": "Yercaud",
+  "state": "Tamil Nadu",
+  "tagline": "The poor man's Ooty — a jewel hill station above Salem",
+  "categories": ["hill_station", "nature", "adventure"],
+  "highlights": ["fragrant coffee and orange plantations at 1,500 metres", "serene yercaud lake ringed by eucalyptus groves"],
+  "attractions": [
+    {
+      "name": "Yercaud Lake",
+      "category": "lake",
+      "description": "The 1.2-sq-km natural lake at the centre of Yercaud town is the hill station's social and recreational heart. Ringed by eucalyptus and pine, the lake is well-maintained with boating (pedal boats, row boats, and motorboats) and a lakeside promenade that is particularly pleasant in the early morning mist. Cormorants and kingfishers work the shallows, and the surrounding park hosts the Yercaud flower show during summer.",
+      "whyVisit": "Yercaud's tranquil centrepiece — the lake at dawn, wrapped in mist and the sound of water birds, is the hill station at its finest.",
+      "bestTime": "October to March for clearest water and cool mornings",
+      "duration": "2-3 hours",
+      "mapsSearch": "Yercaud Lake Tamil Nadu hill station",
+      "imageQuery": "Yercaud Lake Tamil Nadu hill station mist morning"
+    },
+    {
+      "name": "Pagoda Point (Four Point)",
+      "category": "viewpoint",
+      "description": "Reached by a pleasant 5-km drive or walk through coffee plantation roads, Pagoda Point is Yercaud's most scenic viewpoint. The name comes from three small pagoda-like boulder formations at the cliff edge. The view extends across the Shevaroy Hills and the Salem plains 1,500 metres below, with the Mettur Dam and Cauvery River visible on very clear days. The point faces west-southwest and is best for late afternoon and sunset views.",
+      "whyVisit": "Yercaud's classic sunset viewpoint with characteristic granite boulder formations and views to the Cauvery plains.",
+      "bestTime": "Late afternoon for sunset; October to January for clearest views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pagoda Point Yercaud Tamil Nadu viewpoint",
+      "imageQuery": "Pagoda Point Yercaud Tamil Nadu viewpoint sunset boulder"
+    },
+    {
+      "name": "Lady's Seat and Gent's Seat Viewpoints",
+      "category": "viewpoint",
+      "description": "The two sister viewpoints — Lady's Seat and Gent's Seat — sit at the escarpment edge on the eastern side of Yercaud, offering sheer drops of over 1,000 metres to the plains of Salem district below. Lady's Seat has a stone platform with a telescope and a giddying view straight down the cliff face. Gent's Seat, a short walk further, is quieter and more exposed. Dawn visits produce dramatic mist inversions in the valley below.",
+      "whyVisit": "Yercaud's most vertiginous viewpoints — peer straight down a 1,000-metre cliff to the Salem plains at your feet.",
+      "bestTime": "Early morning for mist inversions; October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lady's Seat Gent's Seat Viewpoint Yercaud",
+      "imageQuery": "Lady's Seat viewpoint Yercaud cliff mist Salem plains"
+    },
+    {
+      "name": "Yercaud Coffee Plantations",
+      "category": "nature",
+      "description": "The Shevaroy Hills receive 1,300 mm of annual rainfall and have been planted in coffee since the 1820s when British planters first developed the district. Today, small holdings and larger estates produce both Arabica and Robusta at altitudes between 900 and 1,600 metres. The narrow estate roads through the coffee plantations are ideal for walking — the coffee bushes flower in February and March filling the air with jasmine-scented blossoms, and berries redden from October onwards.",
+      "whyVisit": "Walk through the coffee plantations that have defined the Shevaroy Hills economy for 200 years — beautiful in any season.",
+      "bestTime": "February to March for white coffee flowers; October to December for red berries",
+      "duration": "2-3 hours",
+      "mapsSearch": "Yercaud Coffee Plantation Shevaroy Hills Tamil Nadu",
+      "imageQuery": "Yercaud coffee plantation Shevaroy Hills Tamil Nadu arabica"
+    },
+    {
+      "name": "Botanical Garden and Orchidarium",
+      "category": "garden",
+      "description": "The government botanical garden on the lower slope of Shevaroy peak contains over 2,000 plant species including a dedicated orchidarium with 100+ orchid varieties native to the Shevaroy Hills. The garden was established in the 1940s and its old-growth section has mature trees draped in epiphytes. A separate section maintains the traditional flower varieties — petunias, dahlias, salvias — that gave Yercaud's summer flower shows their reputation.",
+      "whyVisit": "A well-maintained hill station garden with the best orchid collection in Tamil Nadu's Shevaroy Hills.",
+      "bestTime": "April to June for flower show season; January to March for orchids",
+      "duration": "1-2 hours",
+      "mapsSearch": "Yercaud Botanical Garden Orchidarium Tamil Nadu",
+      "imageQuery": "Yercaud Botanical Garden orchid Shevaroy Hills Tamil Nadu"
+    },
+    {
+      "name": "Shevaroyan Temple (Servarayan Temple)",
+      "category": "temple",
+      "description": "Perched at 1,623 metres — the highest point of the Shevaroy Hills — the Servarayan Temple dedicated to the tribal deity Shevaroyan (Lord Servarayan) is the spiritual guardian of the hill. The path to the summit through wild scrub and giant granite boulders is a 2-km trek from the road end. Thousands of tribal Malaiyali and Malayali communities make an annual pilgrimage here during the May fair. The summit view is the highest panorama in the Eastern Ghats south of Kolli Hills.",
+      "whyVisit": "Trek to Tamil Nadu's highest Eastern Ghats temple — the highest panorama in the region and the tribal heart of Yercaud.",
+      "bestTime": "October to March; May during annual tribal fair",
+      "duration": "3-4 hours (including trek)",
+      "mapsSearch": "Servarayan Temple Shevaroyan Peak Yercaud Tamil Nadu",
+      "imageQuery": "Servarayan Temple peak Shevaroy Hills Yercaud Tamil Nadu"
+    },
+    {
+      "name": "Rose Garden (Government Horticultural Station)",
+      "category": "garden",
+      "description": "The Tamil Nadu Horticulture Department's station at Yercaud maintains one of the most extensive rose gardens in South India, with over 500 rose varieties thriving in the hill station's mild climate. The garden dates to the 1940s and the old heritage varieties — including climbing roses trained over 50-year-old brick arches — are particularly impressive. Adjacent beds have dahlias, carnations, and chrysanthemums that form the core of Yercaud's annual flower show exhibits.",
+      "whyVisit": "South India's most diverse rose collection maintained at altitude, with heritage climbing varieties trained on century-old arches.",
+      "bestTime": "April to June for roses at peak bloom; October for dahlias",
+      "duration": "1 hour",
+      "mapsSearch": "Yercaud Rose Garden Horticultural Station Tamil Nadu",
+      "imageQuery": "Yercaud Rose Garden Tamil Nadu 500 varieties hill station"
+    },
+    {
+      "name": "Bear's Cave",
+      "category": "cave",
+      "description": "A rocky cave formation approximately 3 km from Yercaud town, accessed by a short trail through a coffee estate. The cave is formed by massive granite boulders resting on each other, creating a cool dark interior chamber that historically sheltered sloth bears. Today bears no longer inhabit the cave but the rock overhang and surrounding jungle are pleasant, and the trail passes through shaded mixed forest with good birding opportunities.",
+      "whyVisit": "A natural granite cave shelter through a jungle trail — the best short forest walk near Yercaud town.",
+      "bestTime": "October to March",
+      "duration": "2 hours (including walk)",
+      "mapsSearch": "Bear's Cave Yercaud Tamil Nadu granite",
+      "imageQuery": "Bear's Cave Yercaud granite rocks trail Tamil Nadu"
+    },
+    {
+      "name": "Montfort School and Church",
+      "category": "heritage",
+      "description": "The De La Salle Brothers' Montfort School at Yercaud, established in 1888, is one of the oldest missionary schools in Tamil Nadu and its Gothic chapel built in 1893 features original stained glass windows. The school's location on a wooded hillside and the ornate sandstone chapel are among the most atmospheric colonial-era buildings in the Eastern Ghats. The school gardens are kept meticulously in the original Victorian style.",
+      "whyVisit": "A 19th-century colonial missionary school with a Gothic chapel and stained glass hidden in Yercaud's coffee hills.",
+      "bestTime": "Year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Montfort School Church Yercaud Tamil Nadu heritage",
+      "imageQuery": "Montfort School Church Yercaud Gothic chapel colonial Tamil Nadu"
+    },
+    {
+      "name": "Yercaud Fruit Orchards (Orange and Jackfruit)",
+      "category": "nature",
+      "description": "The Shevaroy Hills are famous for Yercaud oranges — a thin-skinned, intensely sweet variety grown on hillside orchards between 900 and 1,200 metres. The orange season from November to February is when the roadsides are lined with farmers selling fresh-picked citrus alongside jackfruit, guava, and hill bananas. Visiting a working orchard involves walking through rows of fragrant orange trees where the fruit hangs just within reach.",
+      "whyVisit": "Pick and taste the famous thin-skinned Yercaud orange directly from the hill orchards during the November-February season.",
+      "bestTime": "November to February for orange harvest season",
+      "duration": "1-2 hours",
+      "mapsSearch": "Yercaud Orange Orchard Shevaroy Hills Tamil Nadu",
+      "imageQuery": "Yercaud orange orchard Tamil Nadu Shevaroy Hills harvest"
+    },
+    {
+      "name": "Killiyur Falls",
+      "category": "waterfall",
+      "description": "Located 3 km from Yercaud town, the Killiyur Falls cascade down a 60-metre granite cliff face through a dense forest gorge. The approach trail winds through shola-type forest and the viewing platform at the base offers a full frontal view of the fall. The stream is fed by monsoon runoff from the Shevaroy plateau and the falls are most dramatic during and immediately after the northeast monsoon from October to December.",
+      "whyVisit": "Yercaud's most dramatic waterfall — a 60-metre cascade through granite forest just 3 km from the lake.",
+      "bestTime": "October to December for maximum flow",
+      "duration": "2 hours",
+      "mapsSearch": "Killiyur Falls Yercaud Tamil Nadu waterfall",
+      "imageQuery": "Killiyur Falls Yercaud Tamil Nadu 60 metre granite cascade"
+    },
+    {
+      "name": "Anna Park (Government Park)",
+      "category": "park",
+      "description": "The central public park of Yercaud town, Anna Park occupies a hillside adjacent to the lake and was established in the 1920s as an ornamental garden for the hill station's colonial residents. Its heritage trees — large cryptomerias, eucalyptus, and jacarandas — now form a mature forest canopy over the formal garden beneath. Morning walks here among the old trees with views to the lake are what repeat Yercaud visitors remember most fondly.",
+      "whyVisit": "A 100-year-old colonial hill station park with mature heritage trees and lake views — the quietest corner of Yercaud.",
+      "bestTime": "Early morning year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Anna Park Yercaud Government Park Tamil Nadu",
+      "imageQuery": "Anna Park Yercaud lake view heritage trees colonial Tamil Nadu"
+    },
+    {
+      "name": "Yercaud Summer Festival",
+      "category": "heritage",
+      "description": "The Yercaud Summer Festival held in May is the Shevaroy Hills' most celebrated annual event, featuring flower and fruit exhibitions, tribal cultural performances, boat races on the lake, and the crowning of 'Summer Queen'. Established in 1967 to boost hill station tourism, the festival showcases the agriculture and crafts of the Malaiyali tribal community alongside Tamil Nadu's horticultural industry. Thousands of visitors from Salem and Coimbatore fill the hill during the festival week.",
+      "whyVisit": "Yercaud's biggest annual event — flower shows, boat races, and tribal performances celebrate the Shevaroy Hills community.",
+      "bestTime": "May annually (exact dates vary)",
+      "duration": "Full day",
+      "mapsSearch": "Yercaud Summer Festival Tamil Nadu Shevaroy",
+      "imageQuery": "Yercaud Summer Festival flower show lake boat Tamil Nadu"
+    },
+    {
+      "name": "Cauvery River Valley Viewpoint (Salem Side)",
+      "category": "viewpoint",
+      "description": "From several points on Yercaud's western escarpment, the broad Cauvery River valley is visible 1,000 metres below, with the Mettur Dam reservoir shimmering in the distance. This view is most dramatic in the evening when industrial Salem smog catches the light and the Cauvery's silver line punctuates the dark plain. The viewpoints are accessible by car along the Yercaud-Salem road where several unmarked pull-offs offer the best panoramas.",
+      "whyVisit": "See the Cauvery River and Mettur Dam spread out 1,000 metres below from Yercaud's western escarpment at dusk.",
+      "bestTime": "Evening, October to March for clearest views",
+      "duration": "1 hour",
+      "mapsSearch": "Cauvery Valley Viewpoint Yercaud Salem Tamil Nadu",
+      "imageQuery": "Cauvery Valley viewpoint Yercaud Salem dam Tamil Nadu"
+    },
+    {
+      "name": "Yercaud Heritage Bungalows (Collector's Bungalow Area)",
+      "category": "heritage",
+      "description": "The collector's quarter of Yercaud has several early 20th-century colonial bungalows set in large garden compounds — stone structures with slate roofs, arched verandas, and ornamental gardens that are quintessential British hill station architecture. Some are now government guesthouses and permit day visitors. The collector's own bungalow, set above the lake with panoramic views, was built in 1906 and remains the finest colonial building in the Shevaroy Hills.",
+      "whyVisit": "Walk through Yercaud's intact colonial quarter — the best preserved British hill station architecture in Tamil Nadu.",
+      "bestTime": "Year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Yercaud Collector's Bungalow Heritage Colonial Tamil Nadu",
+      "imageQuery": "Yercaud colonial bungalow collector heritage Tamil Nadu stone"
+    },
+    {
+      "name": "Shevaroy Hills Tribal Market (Yercaud Wednesday Market)",
+      "category": "market",
+      "description": "Every Wednesday, the Malaiyali tribal community of the Shevaroy Hills descends to Yercaud's market with forest produce — wild honey, medicinal bark, dried herbs, mountain turmeric, and home-grown coffee. This is the only place to buy genuine wild hill honey from the Shevaroy region, collected from rock crevice hives by Malaiyali honey hunters. The market also sells handmade bamboo baskets, tribal jewellery, and seasonal mountain fruit.",
+      "whyVisit": "Buy wild Shevaroy Hills honey and tribal forest products directly from Malaiyali producers every Wednesday.",
+      "bestTime": "Every Wednesday morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Yercaud Wednesday Tribal Market Shevaroy Hills Tamil Nadu",
+      "imageQuery": "Yercaud market tribal Malaiyali honey Shevaroy Hills Tamil Nadu"
+    },
+    {
+      "name": "Jawahar Farm (Coffee Estate Tour)",
+      "category": "nature",
+      "description": "One of Yercaud's original large coffee estates, Jawahar Farm was established in the 1850s by a British planter and has been growing Arabica coffee continuously for over 170 years. Guided tours of the estate show the full annual cycle and the estate's own wet-processing unit, where parchment coffee is washed, fermented, and sun-dried on raised beds. Small quantities of single-estate Yercaud coffee are available for direct purchase at significantly below market price.",
+      "whyVisit": "Walk a continuously farmed 170-year-old coffee estate and buy single-estate Yercaud Arabica at the farm gate.",
+      "bestTime": "October to January for harvesting and processing activity",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jawahar Farm Coffee Estate Yercaud Tamil Nadu",
+      "imageQuery": "Yercaud coffee estate processing Arabica Tamil Nadu harvest"
+    },
+    {
+      "name": "Avalanche Point (Mango Falls Area)",
+      "category": "nature",
+      "description": "A series of small cascades and rock pools 6 km from Yercaud town on a forest track, known locally as Mango Falls for the wild mango trees that overhang the stream. The area is ideal for a gentle scramble through boulders and pools and the surrounding mixed forest has fruiting trees that attract hornbills, racket-tailed drongos, and langur monkeys. The site is unmarked on standard tourist maps and remains genuinely quiet.",
+      "whyVisit": "A forest boulder-and-pool walk near wild mango trees with birding and monkey activity — unknown to most Yercaud visitors.",
+      "bestTime": "October to February; avoid hot months",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mango Falls Yercaud Tamil Nadu forest stream",
+      "imageQuery": "Mango Falls Yercaud forest stream boulders Tamil Nadu"
+    },
+    {
+      "name": "Kolli Hills Day Trip (Solakkadu Falls)",
+      "category": "adventure",
+      "description": "The Kolli Hills, 80 km south of Yercaud, are one of Tamil Nadu's most dramatic and least-visited hill ranges. The ascent from the plains via 70 hairpin bends rises 1,300 metres in 17 km and the summit plateau has coffee, pepper, and wild forest. The Arapaleeswarar Temple and the Solakkadu Falls are the primary attractions. Unlike Yercaud, Kolli Hills has virtually no tourist infrastructure, making the day trip a genuine off-road adventure.",
+      "whyVisit": "Combine Yercaud with a day in Kolli Hills — 70 hairpin bends to a completely undeveloped mountain plateau.",
+      "bestTime": "November to February",
+      "duration": "Full day from Yercaud",
+      "mapsSearch": "Kolli Hills Solakkadu Falls Tamil Nadu Yercaud day trip",
+      "imageQuery": "Kolli Hills hairpin bends Tamil Nadu plateau waterfalls"
+    },
+    {
+      "name": "Malaiyali Tribal Village Homestay (Shevaroy Interior)",
+      "category": "heritage",
+      "description": "The Malaiyali community — the original inhabitants of the Shevaroy Hills — still occupy several villages in the interior forest above Yercaud. A handful of community-run homestays allow overnight visits with meals of traditional hill food: jowar rotis, wild mushroom curries, and honey from rock hives. The village setting at over 1,500 metres with no road access beyond a short walk makes for a completely authentic experience.",
+      "whyVisit": "Sleep in a Malaiyali tribal village at 1,500 metres — the most authentic cultural experience in any Tamil Nadu hill station.",
+      "bestTime": "October to March",
+      "duration": "Overnight",
+      "mapsSearch": "Malaiyali Tribal Village Homestay Shevaroy Hills Yercaud",
+      "imageQuery": "Malaiyali tribal village Shevaroy Hills Yercaud Tamil Nadu forest"
+    }
+  ]
+}

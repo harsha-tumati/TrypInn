@@ -1,0 +1,447 @@
+{
+  "id": "gangtok",
+  "name": "Gangtok",
+  "state": "Sikkim",
+  "slug": "gangtok",
+  "tagline": "A vibrant Himalayan city of monasteries, lakes, and mountain views",
+  "categories": [
+    "hill_station",
+    "spiritual",
+    "nature"
+  ],
+  "introduction": "Welcome to Gangtok, where history meets beauty. This travel guide to Gangtok highlights the must visit places in Gangtok, best places to visit in Gangtok, tourist attractions in Gangtok, and things to do in Gangtok.",
+  "metaTitle": "Best Places to Visit in Gangtok | Tourist Attractions in Gangtok - TrypInn",
+  "metaDescription": "Find the best places to visit in Gangtok, must visit places in Gangtok, and tourist attractions in Gangtok. Plan your Gangtok trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=1200&q=60",
+    "alt": "Gangtok travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "gangtok-nathula-pass",
+      "name": "Nathula Pass",
+      "slug": "nathula-pass",
+      "description": "Nathula Pass is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nathula Pass promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Nathula Pass.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Nathula Pass, Gangtok",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Nathula Pass in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Nathula Pass in Gangtok"
+      },
+      "position": 1
+    },
+    {
+      "id": "gangtok-tsomgo-lake",
+      "name": "Tsomgo Lake",
+      "slug": "tsomgo-lake",
+      "description": "A crown jewel of Gangtok, Tsomgo Lake captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Tsomgo Lake.",
+      "whyVisit": "Tsomgo Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Tsomgo Lake, Gangtok",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Tsomgo Lake in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Tsomgo Lake in Gangtok"
+      },
+      "position": 2
+    },
+    {
+      "id": "gangtok-rumtek-monastery",
+      "name": "Rumtek Monastery",
+      "slug": "rumtek-monastery",
+      "description": "Rumtek Monastery is a must-see monastery in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "Experience the unmatched beauty of Rumtek Monastery.",
+      "bestTime": "May-Sep",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rumtek Monastery, Gangtok",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Rumtek Monastery in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Rumtek Monastery in Gangtok"
+      },
+      "position": 3
+    },
+    {
+      "id": "gangtok-mg-marg",
+      "name": "MG Marg",
+      "slug": "mg-marg",
+      "description": "MG Marg is a must-see market in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "Capture stunning photographs at MG Marg.",
+      "bestTime": "Oct-Mar",
+      "duration": "Evening",
+      "mapsSearch": "MG Marg, Gangtok",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, MG Marg in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "MG Marg in Gangtok"
+      },
+      "position": 4
+    },
+    {
+      "id": "gangtok-baba-harbhajan-singh-temple",
+      "name": "Baba Harbhajan Singh Temple",
+      "slug": "baba-harbhajan-singh-temple",
+      "description": "Baba Harbhajan Singh Temple is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Baba Harbhajan Singh Temple promises an unforgettable experience.",
+      "whyVisit": "Baba Harbhajan Singh Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Baba Harbhajan Singh Temple, Gangtok",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Baba Harbhajan Singh Temple in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Baba Harbhajan Singh Temple in Gangtok"
+      },
+      "position": 5
+    },
+    {
+      "id": "gangtok-enchey-monastery",
+      "name": "Enchey Monastery",
+      "slug": "enchey-monastery",
+      "description": "A crown jewel of Gangtok, Enchey Monastery captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Enchey Monastery.",
+      "whyVisit": "Capture stunning photographs at Enchey Monastery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Enchey Monastery, Gangtok",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Enchey Monastery in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Enchey Monastery in Gangtok"
+      },
+      "position": 6
+    },
+    {
+      "id": "gangtok-tashi-viewpoint",
+      "name": "Tashi Viewpoint",
+      "slug": "tashi-viewpoint",
+      "description": "Tashi Viewpoint is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Tashi Viewpoint promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Tashi Viewpoint.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Tashi Viewpoint, Gangtok",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Tashi Viewpoint in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Tashi Viewpoint in Gangtok"
+      },
+      "position": 7
+    },
+    {
+      "id": "gangtok-ganesh-tok",
+      "name": "Ganesh Tok",
+      "slug": "ganesh-tok",
+      "description": "Located in scenic Gangtok, Ganesh Tok offers an immersive experience into local culture. Exploring Ganesh Tok is one of the top things to do in Gangtok.",
+      "whyVisit": "Ganesh Tok stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Ganesh Tok, Gangtok",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ganesh Tok in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Ganesh Tok in Gangtok"
+      },
+      "position": 8
+    },
+    {
+      "id": "gangtok-hanuman-tok",
+      "name": "Hanuman Tok",
+      "slug": "hanuman-tok",
+      "description": "Hanuman Tok is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hanuman Tok promises an unforgettable experience.",
+      "whyVisit": "A visit to Hanuman Tok is essential for understanding Gangtok.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Hanuman Tok, Gangtok",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Hanuman Tok in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Hanuman Tok in Gangtok"
+      },
+      "position": 9
+    },
+    {
+      "id": "gangtok-namgyal-institute-of-tibetology",
+      "name": "Namgyal Institute of Tibetology",
+      "slug": "namgyal-institute-of-tibetology",
+      "description": "Namgyal Institute of Tibetology is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Namgyal Institute of Tibetology promises an unforgettable experience.",
+      "whyVisit": "Namgyal Institute of Tibetology stands out as one of the most rewarding experiences.",
+      "bestTime": "Weekdays",
+      "duration": "2-3 hours",
+      "mapsSearch": "Namgyal Institute of Tibetology, Gangtok",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Namgyal Institute of Tibetology in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Namgyal Institute of Tibetology in Gangtok"
+      },
+      "position": 10
+    },
+    {
+      "id": "gangtok-do-drul-chorten",
+      "name": "Do Drul Chorten",
+      "slug": "do-drul-chorten",
+      "description": "A crown jewel of Gangtok, Do Drul Chorten captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Do Drul Chorten.",
+      "whyVisit": "Do Drul Chorten offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Do Drul Chorten, Gangtok",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Do Drul Chorten in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Do Drul Chorten in Gangtok"
+      },
+      "position": 11
+    },
+    {
+      "id": "gangtok-ban-jhakri-falls",
+      "name": "Ban Jhakri Falls",
+      "slug": "ban-jhakri-falls",
+      "description": "Ban Jhakri Falls is a must-see waterfall in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "A visit to Ban Jhakri Falls is essential for understanding Gangtok.",
+      "bestTime": "Post-monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ban Jhakri Falls, Gangtok",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Ban Jhakri Falls in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Ban Jhakri Falls in Gangtok"
+      },
+      "position": 12
+    },
+    {
+      "id": "gangtok-himalayan-zoological-park",
+      "name": "Himalayan Zoological Park",
+      "slug": "himalayan-zoological-park",
+      "description": "Himalayan Zoological Park is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Himalayan Zoological Park promises an unforgettable experience.",
+      "whyVisit": "Himalayan Zoological Park offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Himalayan Zoological Park, Gangtok",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Himalayan Zoological Park in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Himalayan Zoological Park in Gangtok"
+      },
+      "position": 13
+    },
+    {
+      "id": "gangtok-fambong-lho-wildlife-sanctuary",
+      "name": "Fambong Lho Wildlife Sanctuary",
+      "slug": "fambong-lho-wildlife-sanctuary",
+      "description": "A crown jewel of Gangtok, Fambong Lho Wildlife Sanctuary captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Fambong Lho Wildlife Sanctuary.",
+      "whyVisit": "A visit to Fambong Lho Wildlife Sanctuary is essential for understanding Gangtok.",
+      "bestTime": "Dry season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Fambong Lho Wildlife Sanctuary, Gangtok",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Fambong Lho Wildlife Sanctuary in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Fambong Lho Wildlife Sanctuary in Gangtok"
+      },
+      "position": 14
+    },
+    {
+      "id": "gangtok-tinkitam",
+      "name": "Tinkitam",
+      "slug": "tinkitam",
+      "description": "Tinkitam is a must-see nature in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "A visit to Tinkitam is essential for understanding Gangtok.",
+      "bestTime": "Mar-Jun",
+      "duration": "Multi-day",
+      "mapsSearch": "Tinkitam, Gangtok",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Tinkitam in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Tinkitam in Gangtok"
+      },
+      "position": 15
+    },
+    {
+      "id": "gangtok-kanchenjunga-viewpoint",
+      "name": "Kanchenjunga Viewpoint",
+      "slug": "kanchenjunga-viewpoint",
+      "description": "Located in scenic Gangtok, Kanchenjunga Viewpoint offers an immersive experience into local culture. Exploring Kanchenjunga Viewpoint is one of the top things to do in Gangtok.",
+      "whyVisit": "Kanchenjunga Viewpoint stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Quick",
+      "mapsSearch": "Kanchenjunga Viewpoint, Gangtok",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kanchenjunga Viewpoint in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Kanchenjunga Viewpoint in Gangtok"
+      },
+      "position": 16
+    },
+    {
+      "id": "gangtok-pelling-day-trip",
+      "name": "Pelling Day Trip",
+      "slug": "pelling-day-trip",
+      "description": "Pelling Day Trip is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pelling Day Trip promises an unforgettable experience.",
+      "whyVisit": "Pelling Day Trip offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pelling Day Trip, Gangtok",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pelling Day Trip in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Pelling Day Trip in Gangtok"
+      },
+      "position": 17
+    },
+    {
+      "id": "gangtok-lachen-day-trip",
+      "name": "Lachen Day Trip",
+      "slug": "lachen-day-trip",
+      "description": "A crown jewel of Gangtok, Lachen Day Trip captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Lachen Day Trip.",
+      "whyVisit": "A visit to Lachen Day Trip is essential for understanding Gangtok.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Lachen Day Trip, Gangtok",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Lachen Day Trip in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Lachen Day Trip in Gangtok"
+      },
+      "position": 18
+    },
+    {
+      "id": "gangtok-yumthang-valley-day-trip",
+      "name": "Yumthang Valley Day Trip",
+      "slug": "yumthang-valley-day-trip",
+      "description": "A crown jewel of Gangtok, Yumthang Valley Day Trip captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Yumthang Valley Day Trip.",
+      "whyVisit": "A visit to Yumthang Valley Day Trip is essential for understanding Gangtok.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Yumthang Valley Day Trip, Gangtok",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Yumthang Valley Day Trip in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Yumthang Valley Day Trip in Gangtok"
+      },
+      "position": 19
+    },
+    {
+      "id": "gangtok-saramsa-garden",
+      "name": "Saramsa Garden",
+      "slug": "saramsa-garden",
+      "description": "Saramsa Garden is a must-see garden in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "A visit to Saramsa Garden is essential for understanding Gangtok.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Saramsa Garden, Gangtok",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Saramsa Garden in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Saramsa Garden in Gangtok"
+      },
+      "position": 20
+    },
+    {
+      "id": "gangtok-kyongnosla-alpine-sanctuary",
+      "name": "Kyongnosla Alpine Sanctuary",
+      "slug": "kyongnosla-alpine-sanctuary",
+      "description": "Kyongnosla Alpine Sanctuary is a must-see wildlife in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "Kyongnosla Alpine Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Kyongnosla Alpine Sanctuary, Gangtok",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Kyongnosla Alpine Sanctuary in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Kyongnosla Alpine Sanctuary in Gangtok"
+      },
+      "position": 21
+    },
+    {
+      "id": "gangtok-seven-sisters-waterfalls",
+      "name": "Seven Sisters Waterfalls",
+      "slug": "seven-sisters-waterfalls",
+      "description": "Seven Sisters Waterfalls is a must-see waterfall in Gangtok, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gangtok.",
+      "whyVisit": "Capture stunning photographs at Seven Sisters Waterfalls.",
+      "bestTime": "Aug-Sep",
+      "duration": "Half day",
+      "mapsSearch": "Seven Sisters Waterfalls, Gangtok",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Seven Sisters Waterfalls in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Seven Sisters Waterfalls in Gangtok"
+      },
+      "position": 22
+    },
+    {
+      "id": "gangtok-ranka-monastery",
+      "name": "Ranka Monastery",
+      "slug": "ranka-monastery",
+      "description": "A crown jewel of Gangtok, Ranka Monastery captivates every traveler with enchanting beauty. No trip to Gangtok is complete without visiting Ranka Monastery.",
+      "whyVisit": "A visit to Ranka Monastery is essential for understanding Gangtok.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Ranka Monastery, Gangtok",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Ranka Monastery in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Ranka Monastery in Gangtok"
+      },
+      "position": 23
+    },
+    {
+      "id": "gangtok-institute-of-tibetology",
+      "name": "Institute of Tibetology",
+      "slug": "institute-of-tibetology",
+      "description": "Institute of Tibetology is one of the most iconic landmarks in Gangtok, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Institute of Tibetology promises an unforgettable experience.",
+      "whyVisit": "Institute of Tibetology stands out as one of the most rewarding experiences.",
+      "bestTime": "Weekdays",
+      "duration": "2-3 hours",
+      "mapsSearch": "Institute of Tibetology, Gangtok",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Institute of Tibetology in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Institute of Tibetology in Gangtok"
+      },
+      "position": 24
+    },
+    {
+      "id": "gangtok-gonjang-monastery",
+      "name": "Gonjang Monastery",
+      "slug": "gonjang-monastery",
+      "description": "Located in scenic Gangtok, Gonjang Monastery offers an immersive experience into local culture. Exploring Gonjang Monastery is one of the top things to do in Gangtok.",
+      "whyVisit": "Experience the unmatched beauty of Gonjang Monastery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gonjang Monastery, Gangtok",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Gonjang Monastery in Gangtok, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Gonjang Monastery in Gangtok"
+      },
+      "position": 25
+    }
+  ]
+}

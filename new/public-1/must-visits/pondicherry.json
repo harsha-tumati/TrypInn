@@ -1,0 +1,447 @@
+{
+  "id": "pondicherry",
+  "name": "Pondicherry",
+  "state": "Puducherry",
+  "slug": "pondicherry",
+  "tagline": "French colonial charm meets Indian coastal culture",
+  "categories": [
+    "beach",
+    "heritage",
+    "city"
+  ],
+  "introduction": "Planning a trip to Pondicherry? This travel guide to Pondicherry covers the must visit places in Pondicherry, the best places to visit in Pondicherry, top tourist attractions in Pondicherry, and exciting things to do in Pondicherry.",
+  "metaTitle": "Best Places to Visit in Pondicherry | Tourist Attractions in Pondicherry - TrypInn",
+  "metaDescription": "Find the best places to visit in Pondicherry, must visit places in Pondicherry, and tourist attractions in Pondicherry. Plan your Pondicherry trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=1200&q=60",
+    "alt": "Pondicherry travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "pondicherry-promenade-beach",
+      "name": "Promenade Beach",
+      "slug": "promenade-beach",
+      "description": "Promenade Beach is one of the most iconic landmarks in Pondicherry, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Promenade Beach promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Promenade Beach.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Promenade Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Promenade Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Promenade Beach in Pondicherry"
+      },
+      "position": 1
+    },
+    {
+      "id": "pondicherry-auroville",
+      "name": "Auroville",
+      "slug": "auroville",
+      "description": "Auroville is a must-see heritage in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Auroville offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Auroville, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Auroville in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Auroville in Pondicherry"
+      },
+      "position": 2
+    },
+    {
+      "id": "pondicherry-matrimandir",
+      "name": "Matrimandir",
+      "slug": "matrimandir",
+      "description": "A crown jewel of Pondicherry, Matrimandir captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Matrimandir.",
+      "whyVisit": "Capture stunning photographs at Matrimandir.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Matrimandir, Pondicherry",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Matrimandir in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Matrimandir in Pondicherry"
+      },
+      "position": 3
+    },
+    {
+      "id": "pondicherry-french-quarter",
+      "name": "French Quarter",
+      "slug": "french-quarter",
+      "description": "Located in scenic Pondicherry, French Quarter offers an immersive experience into local culture. Exploring French Quarter is one of the top things to do in Pondicherry.",
+      "whyVisit": "Capture stunning photographs at French Quarter.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "French Quarter, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, French Quarter in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "French Quarter in Pondicherry"
+      },
+      "position": 4
+    },
+    {
+      "id": "pondicherry-paradise-beach",
+      "name": "Paradise Beach",
+      "slug": "paradise-beach",
+      "description": "Located in scenic Pondicherry, Paradise Beach offers an immersive experience into local culture. Exploring Paradise Beach is one of the top things to do in Pondicherry.",
+      "whyVisit": "Experience the unmatched beauty of Paradise Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Paradise Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Paradise Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Paradise Beach in Pondicherry"
+      },
+      "position": 5
+    },
+    {
+      "id": "pondicherry-aurobindo-ashram",
+      "name": "Aurobindo Ashram",
+      "slug": "aurobindo-ashram",
+      "description": "Aurobindo Ashram is one of the most iconic landmarks in Pondicherry, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Aurobindo Ashram promises an unforgettable experience.",
+      "whyVisit": "Aurobindo Ashram offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Aurobindo Ashram, Pondicherry",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Aurobindo Ashram in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Aurobindo Ashram in Pondicherry"
+      },
+      "position": 6
+    },
+    {
+      "id": "pondicherry-basilica-of-the-sacred-heart",
+      "name": "Basilica of the Sacred Heart",
+      "slug": "basilica-of-the-sacred-heart",
+      "description": "Located in scenic Pondicherry, Basilica of the Sacred Heart offers an immersive experience into local culture. Exploring Basilica of the Sacred Heart is one of the top things to do in Pondicherry.",
+      "whyVisit": "Experience the unmatched beauty of Basilica of the Sacred Heart.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Basilica of the Sacred Heart, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Basilica of the Sacred Heart in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Basilica of the Sacred Heart in Pondicherry"
+      },
+      "position": 7
+    },
+    {
+      "id": "pondicherry-chunnambar-boat-house",
+      "name": "Chunnambar Boat House",
+      "slug": "chunnambar-boat-house",
+      "description": "A crown jewel of Pondicherry, Chunnambar Boat House captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Chunnambar Boat House.",
+      "whyVisit": "Experience the unmatched beauty of Chunnambar Boat House.",
+      "bestTime": "Mar-Jun",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chunnambar Boat House, Pondicherry",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Chunnambar Boat House in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Chunnambar Boat House in Pondicherry"
+      },
+      "position": 8
+    },
+    {
+      "id": "pondicherry-serenity-beach",
+      "name": "Serenity Beach",
+      "slug": "serenity-beach",
+      "description": "Serenity Beach is a must-see beach in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Serenity Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Sunset",
+      "mapsSearch": "Serenity Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Serenity Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Serenity Beach in Pondicherry"
+      },
+      "position": 9
+    },
+    {
+      "id": "pondicherry-botanical-garden-pondicherry",
+      "name": "Botanical Garden Pondicherry",
+      "slug": "botanical-garden-pondicherry",
+      "description": "Botanical Garden Pondicherry is a must-see garden in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Capture stunning photographs at Botanical Garden Pondicherry.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Botanical Garden Pondicherry, Pondicherry",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Botanical Garden Pondicherry in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Botanical Garden Pondicherry in Pondicherry"
+      },
+      "position": 10
+    },
+    {
+      "id": "pondicherry-pondicherry-museum",
+      "name": "Pondicherry Museum",
+      "slug": "pondicherry-museum",
+      "description": "Pondicherry Museum is a must-see museum in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Experience the unmatched beauty of Pondicherry Museum.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pondicherry Museum, Pondicherry",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Pondicherry Museum in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Pondicherry Museum in Pondicherry"
+      },
+      "position": 11
+    },
+    {
+      "id": "pondicherry-goubert-avenue",
+      "name": "Goubert Avenue",
+      "slug": "goubert-avenue",
+      "description": "Goubert Avenue is a must-see heritage in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Capture stunning photographs at Goubert Avenue.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Goubert Avenue, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Goubert Avenue in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Goubert Avenue in Pondicherry"
+      },
+      "position": 12
+    },
+    {
+      "id": "pondicherry-manakula-vinayagar-temple",
+      "name": "Manakula Vinayagar Temple",
+      "slug": "manakula-vinayagar-temple",
+      "description": "Nestled in Pondicherry, Manakula Vinayagar Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Manakula Vinayagar Temple is among the best things to do in Pondicherry.",
+      "whyVisit": "A visit to Manakula Vinayagar Temple is essential for understanding Pondicherry.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Manakula Vinayagar Temple, Pondicherry",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Manakula Vinayagar Temple in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Manakula Vinayagar Temple in Pondicherry"
+      },
+      "position": 13
+    },
+    {
+      "id": "pondicherry-ousteri-lake",
+      "name": "Ousteri Lake",
+      "slug": "ousteri-lake",
+      "description": "A crown jewel of Pondicherry, Ousteri Lake captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Ousteri Lake.",
+      "whyVisit": "Ousteri Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Ousteri Lake, Pondicherry",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Ousteri Lake in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Ousteri Lake in Pondicherry"
+      },
+      "position": 14
+    },
+    {
+      "id": "pondicherry-arikamedu",
+      "name": "Arikamedu",
+      "slug": "arikamedu",
+      "description": "A crown jewel of Pondicherry, Arikamedu captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Arikamedu.",
+      "whyVisit": "Experience the unmatched beauty of Arikamedu.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Arikamedu, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Arikamedu in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Arikamedu in Pondicherry"
+      },
+      "position": 15
+    },
+    {
+      "id": "pondicherry-rock-beach",
+      "name": "Rock Beach",
+      "slug": "rock-beach",
+      "description": "Rock Beach is a must-see beach in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Experience the unmatched beauty of Rock Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Rock Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Rock Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Rock Beach in Pondicherry"
+      },
+      "position": 16
+    },
+    {
+      "id": "pondicherry-veerampattinam-beach",
+      "name": "Veerampattinam Beach",
+      "slug": "veerampattinam-beach",
+      "description": "Veerampattinam Beach is one of the most iconic landmarks in Pondicherry, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Veerampattinam Beach promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Veerampattinam Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Veerampattinam Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Veerampattinam Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Veerampattinam Beach in Pondicherry"
+      },
+      "position": 17
+    },
+    {
+      "id": "pondicherry-raj-nivas",
+      "name": "Raj Nivas",
+      "slug": "raj-nivas",
+      "description": "Nestled in Pondicherry, Raj Nivas stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Raj Nivas is among the best things to do in Pondicherry.",
+      "whyVisit": "Raj Nivas offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Raj Nivas, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Raj Nivas in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Raj Nivas in Pondicherry"
+      },
+      "position": 18
+    },
+    {
+      "id": "pondicherry-eglise-de-notre-dame",
+      "name": "Eglise de Notre Dame",
+      "slug": "eglise-de-notre-dame",
+      "description": "Eglise de Notre Dame is a must-see heritage in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "Eglise de Notre Dame stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Eglise de Notre Dame, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Eglise de Notre Dame in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Eglise de Notre Dame in Pondicherry"
+      },
+      "position": 19
+    },
+    {
+      "id": "pondicherry-church-of-our-lady-of-angels",
+      "name": "Church of Our Lady of Angels",
+      "slug": "church-of-our-lady-of-angels",
+      "description": "Nestled in Pondicherry, Church of Our Lady of Angels stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Church of Our Lady of Angels is among the best things to do in Pondicherry.",
+      "whyVisit": "Capture stunning photographs at Church of Our Lady of Angels.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Church of Our Lady of Angels, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Church of Our Lady of Angels in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Church of Our Lady of Angels in Pondicherry"
+      },
+      "position": 20
+    },
+    {
+      "id": "pondicherry-bharathi-park",
+      "name": "Bharathi Park",
+      "slug": "bharathi-park",
+      "description": "A crown jewel of Pondicherry, Bharathi Park captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Bharathi Park.",
+      "whyVisit": "Capture stunning photographs at Bharathi Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bharathi Park, Pondicherry",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Bharathi Park in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Bharathi Park in Pondicherry"
+      },
+      "position": 21
+    },
+    {
+      "id": "pondicherry-karaikal-beach",
+      "name": "Karaikal Beach",
+      "slug": "karaikal-beach",
+      "description": "A crown jewel of Pondicherry, Karaikal Beach captivates every traveler with enchanting beauty. No trip to Pondicherry is complete without visiting Karaikal Beach.",
+      "whyVisit": "Karaikal Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Sunset",
+      "mapsSearch": "Karaikal Beach, Pondicherry",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Karaikal Beach in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Karaikal Beach in Pondicherry"
+      },
+      "position": 22
+    },
+    {
+      "id": "pondicherry-pichavaram-mangroves",
+      "name": "Pichavaram Mangroves",
+      "slug": "pichavaram-mangroves",
+      "description": "Pichavaram Mangroves is one of the most iconic landmarks in Pondicherry, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pichavaram Mangroves promises an unforgettable experience.",
+      "whyVisit": "Pichavaram Mangroves offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Pichavaram Mangroves, Pondicherry",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pichavaram Mangroves in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Pichavaram Mangroves in Pondicherry"
+      },
+      "position": 23
+    },
+    {
+      "id": "pondicherry-kallialay-temple",
+      "name": "Kallialay Temple",
+      "slug": "kallialay-temple",
+      "description": "Kallialay Temple is one of the most iconic landmarks in Pondicherry, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kallialay Temple promises an unforgettable experience.",
+      "whyVisit": "Kallialay Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kallialay Temple, Pondicherry",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kallialay Temple in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Kallialay Temple in Pondicherry"
+      },
+      "position": 24
+    },
+    {
+      "id": "pondicherry-heritage-walk-white-town",
+      "name": "Heritage Walk White Town",
+      "slug": "heritage-walk-white-town",
+      "description": "Heritage Walk White Town is a must-see heritage in Pondicherry, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pondicherry.",
+      "whyVisit": "A visit to Heritage Walk White Town is essential for understanding Pondicherry.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Heritage Walk White Town, Pondicherry",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Heritage Walk White Town in Pondicherry, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Heritage Walk White Town in Pondicherry"
+      },
+      "position": 25
+    }
+  ]
+}

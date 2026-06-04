@@ -1,0 +1,447 @@
+{
+  "id": "mandawa",
+  "name": "Mandawa",
+  "state": "Rajasthan",
+  "slug": "mandawa",
+  "tagline": "Open-air art gallery of painted havelis",
+  "categories": [
+    "heritage",
+    "palace",
+    "monument"
+  ],
+  "introduction": "Mandawa is a treasure trove of experiences. In this travel guide to Mandawa, we reveal the must visit places in Mandawa, the best places to visit in Mandawa, iconic tourist attractions in Mandawa, and amazing things to do in Mandawa.",
+  "metaTitle": "Top Things to Do in Mandawa | Travel Guide to Mandawa - TrypInn",
+  "metaDescription": "Discover must visit places in Mandawa, best places to visit in Mandawa, and top tourist attractions in Mandawa. Plan your perfect trip with TrypInn travel guide to Mandawa.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60",
+    "alt": "Mandawa travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "mandawa-achyutaraya-temple",
+      "name": "Achyutaraya Temple",
+      "slug": "achyutaraya-temple",
+      "description": "Achyutaraya Temple is a must-see heritage in Mandawa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mandawa.",
+      "whyVisit": "A visit to Achyutaraya Temple is essential for understanding Mandawa.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Achyutaraya Temple, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Achyutaraya Temple in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Achyutaraya Temple in Mandawa"
+      },
+      "position": 1
+    },
+    {
+      "id": "mandawa-lalitha-mahal",
+      "name": "Lalitha Mahal",
+      "slug": "lalitha-mahal",
+      "description": "A crown jewel of Mandawa, Lalitha Mahal captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Lalitha Mahal.",
+      "whyVisit": "Capture stunning photographs at Lalitha Mahal.",
+      "bestTime": "Afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lalitha Mahal, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lalitha Mahal in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Lalitha Mahal in Mandawa"
+      },
+      "position": 2
+    },
+    {
+      "id": "mandawa-diwan-i-aam",
+      "name": "Diwan-i-Aam",
+      "slug": "diwan-i-aam",
+      "description": "A crown jewel of Mandawa, Diwan-i-Aam captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Diwan-i-Aam.",
+      "whyVisit": "A visit to Diwan-i-Aam is essential for understanding Mandawa.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Diwan-i-Aam, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Diwan-i-Aam in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Diwan-i-Aam in Mandawa"
+      },
+      "position": 3
+    },
+    {
+      "id": "mandawa-vittala-temple",
+      "name": "Vittala Temple",
+      "slug": "vittala-temple",
+      "description": "Located in scenic Mandawa, Vittala Temple offers an immersive experience into local culture. Exploring Vittala Temple is one of the top things to do in Mandawa.",
+      "whyVisit": "A visit to Vittala Temple is essential for understanding Mandawa.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Vittala Temple, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Vittala Temple in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Vittala Temple in Mandawa"
+      },
+      "position": 4
+    },
+    {
+      "id": "mandawa-aina-mahal",
+      "name": "Aina Mahal",
+      "slug": "aina-mahal",
+      "description": "Located in scenic Mandawa, Aina Mahal offers an immersive experience into local culture. Exploring Aina Mahal is one of the top things to do in Mandawa.",
+      "whyVisit": "Capture stunning photographs at Aina Mahal.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aina Mahal, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Aina Mahal in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Aina Mahal in Mandawa"
+      },
+      "position": 5
+    },
+    {
+      "id": "mandawa-taj-mahal",
+      "name": "Taj Mahal",
+      "slug": "taj-mahal",
+      "description": "Nestled in Mandawa, Taj Mahal stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Taj Mahal is among the best things to do in Mandawa.",
+      "whyVisit": "Capture stunning photographs at Taj Mahal.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Taj Mahal, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Taj Mahal in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Taj Mahal in Mandawa"
+      },
+      "position": 6
+    },
+    {
+      "id": "mandawa-hampi-ruins",
+      "name": "Hampi Ruins",
+      "slug": "hampi-ruins",
+      "description": "Hampi Ruins is a must-see heritage in Mandawa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mandawa.",
+      "whyVisit": "Experience the unmatched beauty of Hampi Ruins.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hampi Ruins, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hampi Ruins in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Hampi Ruins in Mandawa"
+      },
+      "position": 7
+    },
+    {
+      "id": "mandawa-wind-palace",
+      "name": "Wind Palace",
+      "slug": "wind-palace",
+      "description": "Located in scenic Mandawa, Wind Palace offers an immersive experience into local culture. Exploring Wind Palace is one of the top things to do in Mandawa.",
+      "whyVisit": "Wind Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Wind Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Wind Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Wind Palace in Mandawa"
+      },
+      "position": 8
+    },
+    {
+      "id": "mandawa-india-gate",
+      "name": "India Gate",
+      "slug": "india-gate",
+      "description": "Located in scenic Mandawa, India Gate offers an immersive experience into local culture. Exploring India Gate is one of the top things to do in Mandawa.",
+      "whyVisit": "A visit to India Gate is essential for understanding Mandawa.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "India Gate, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, India Gate in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "India Gate in Mandawa"
+      },
+      "position": 9
+    },
+    {
+      "id": "mandawa-hazararama-temple",
+      "name": "Hazararama Temple",
+      "slug": "hazararama-temple",
+      "description": "Hazararama Temple is one of the most iconic landmarks in Mandawa, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hazararama Temple promises an unforgettable experience.",
+      "whyVisit": "Hazararama Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Hazararama Temple, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hazararama Temple in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Hazararama Temple in Mandawa"
+      },
+      "position": 10
+    },
+    {
+      "id": "mandawa-monsoon-palace",
+      "name": "Monsoon Palace",
+      "slug": "monsoon-palace",
+      "description": "Monsoon Palace is one of the most iconic landmarks in Mandawa, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Monsoon Palace promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Monsoon Palace.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Monsoon Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Monsoon Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Monsoon Palace in Mandawa"
+      },
+      "position": 11
+    },
+    {
+      "id": "mandawa-humayun-tomb",
+      "name": "Humayun Tomb",
+      "slug": "humayun-tomb",
+      "description": "Located in scenic Mandawa, Humayun Tomb offers an immersive experience into local culture. Exploring Humayun Tomb is one of the top things to do in Mandawa.",
+      "whyVisit": "Capture stunning photographs at Humayun Tomb.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Humayun Tomb, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Humayun Tomb in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Humayun Tomb in Mandawa"
+      },
+      "position": 12
+    },
+    {
+      "id": "mandawa-uppali-buruj",
+      "name": "Uppali Buruj",
+      "slug": "uppali-buruj",
+      "description": "Uppali Buruj is one of the most iconic landmarks in Mandawa, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Uppali Buruj promises an unforgettable experience.",
+      "whyVisit": "Uppali Buruj offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Uppali Buruj, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Uppali Buruj in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Uppali Buruj in Mandawa"
+      },
+      "position": 13
+    },
+    {
+      "id": "mandawa-cooch-behar-palace",
+      "name": "Cooch Behar Palace",
+      "slug": "cooch-behar-palace",
+      "description": "Nestled in Mandawa, Cooch Behar Palace stands as a testament to architectural brilliance. This renowned palace attracts tourists who come to admire its stunning design. A visit to Cooch Behar Palace is among the best things to do in Mandawa.",
+      "whyVisit": "Experience the unmatched beauty of Cooch Behar Palace.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Cooch Behar Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Cooch Behar Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Cooch Behar Palace in Mandawa"
+      },
+      "position": 14
+    },
+    {
+      "id": "mandawa-gateway-of-india",
+      "name": "Gateway of India",
+      "slug": "gateway-of-india",
+      "description": "Nestled in Mandawa, Gateway of India stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Gateway of India is among the best things to do in Mandawa.",
+      "whyVisit": "Capture stunning photographs at Gateway of India.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gateway of India, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Gateway of India in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Gateway of India in Mandawa"
+      },
+      "position": 15
+    },
+    {
+      "id": "mandawa-gol-gumbaz",
+      "name": "Gol Gumbaz",
+      "slug": "gol-gumbaz",
+      "description": "Gol Gumbaz is one of the most iconic landmarks in Mandawa, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gol Gumbaz promises an unforgettable experience.",
+      "whyVisit": "Gol Gumbaz offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Gol Gumbaz, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Gol Gumbaz in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Gol Gumbaz in Mandawa"
+      },
+      "position": 16
+    },
+    {
+      "id": "mandawa-mysore-palace",
+      "name": "Mysore Palace",
+      "slug": "mysore-palace",
+      "description": "Nestled in Mandawa, Mysore Palace stands as a testament to architectural brilliance. This renowned palace attracts tourists who come to admire its stunning design. A visit to Mysore Palace is among the best things to do in Mandawa.",
+      "whyVisit": "A visit to Mysore Palace is essential for understanding Mandawa.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Mysore Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mysore Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Mysore Palace in Mandawa"
+      },
+      "position": 17
+    },
+    {
+      "id": "mandawa-safdarjung-tomb",
+      "name": "Safdarjung Tomb",
+      "slug": "safdarjung-tomb",
+      "description": "A crown jewel of Mandawa, Safdarjung Tomb captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Safdarjung Tomb.",
+      "whyVisit": "A visit to Safdarjung Tomb is essential for understanding Mandawa.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Safdarjung Tomb, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Safdarjung Tomb in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Safdarjung Tomb in Mandawa"
+      },
+      "position": 18
+    },
+    {
+      "id": "mandawa-queen-bath",
+      "name": "Queen Bath",
+      "slug": "queen-bath",
+      "description": "Queen Bath is a must-see heritage in Mandawa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mandawa.",
+      "whyVisit": "Experience the unmatched beauty of Queen Bath.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Queen Bath, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Queen Bath in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Queen Bath in Mandawa"
+      },
+      "position": 19
+    },
+    {
+      "id": "mandawa-laxmi-vilas-palace",
+      "name": "Laxmi Vilas Palace",
+      "slug": "laxmi-vilas-palace",
+      "description": "Laxmi Vilas Palace is a must-see palace in Mandawa, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mandawa.",
+      "whyVisit": "Capture stunning photographs at Laxmi Vilas Palace.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Laxmi Vilas Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Laxmi Vilas Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Laxmi Vilas Palace in Mandawa"
+      },
+      "position": 20
+    },
+    {
+      "id": "mandawa-thanjavur-maratha-palace",
+      "name": "Thanjavur Maratha Palace",
+      "slug": "thanjavur-maratha-palace",
+      "description": "Nestled in Mandawa, Thanjavur Maratha Palace stands as a testament to architectural brilliance. This renowned monument attracts tourists who come to admire its stunning design. A visit to Thanjavur Maratha Palace is among the best things to do in Mandawa.",
+      "whyVisit": "Thanjavur Maratha Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Thanjavur Maratha Palace, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Thanjavur Maratha Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Thanjavur Maratha Palace in Mandawa"
+      },
+      "position": 21
+    },
+    {
+      "id": "mandawa-malik-e-maidan",
+      "name": "Malik-e-Maidan",
+      "slug": "malik-e-maidan",
+      "description": "Malik-e-Maidan is one of the most iconic landmarks in Mandawa, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Malik-e-Maidan promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Malik-e-Maidan.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Malik-e-Maidan, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Malik-e-Maidan in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Malik-e-Maidan in Mandawa"
+      },
+      "position": 22
+    },
+    {
+      "id": "mandawa-banganapalle-palace",
+      "name": "Banganapalle Palace",
+      "slug": "banganapalle-palace",
+      "description": "A crown jewel of Mandawa, Banganapalle Palace captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Banganapalle Palace.",
+      "whyVisit": "Banganapalle Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Banganapalle Palace, Mandawa",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Banganapalle Palace in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Banganapalle Palace in Mandawa"
+      },
+      "position": 23
+    },
+    {
+      "id": "mandawa-panch-mahal",
+      "name": "Panch Mahal",
+      "slug": "panch-mahal",
+      "description": "A crown jewel of Mandawa, Panch Mahal captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Panch Mahal.",
+      "whyVisit": "Experience the unmatched beauty of Panch Mahal.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Panch Mahal, Mandawa",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Panch Mahal in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Panch Mahal in Mandawa"
+      },
+      "position": 24
+    },
+    {
+      "id": "mandawa-virupaksha-temple",
+      "name": "Virupaksha Temple",
+      "slug": "virupaksha-temple",
+      "description": "A crown jewel of Mandawa, Virupaksha Temple captivates every traveler with enchanting beauty. No trip to Mandawa is complete without visiting Virupaksha Temple.",
+      "whyVisit": "A visit to Virupaksha Temple is essential for understanding Mandawa.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Virupaksha Temple, Mandawa",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Virupaksha Temple in Mandawa, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Virupaksha Temple in Mandawa"
+      },
+      "position": 25
+    }
+  ]
+}

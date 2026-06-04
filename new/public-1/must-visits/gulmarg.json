@@ -1,0 +1,447 @@
+{
+  "id": "gulmarg",
+  "name": "Gulmarg",
+  "state": "Jammu and Kashmir",
+  "slug": "gulmarg",
+  "tagline": "Meadow of flowers and skiing paradise",
+  "categories": [
+    "adventure",
+    "nature",
+    "viewpoint"
+  ],
+  "introduction": "Planning a trip to Gulmarg? This travel guide to Gulmarg covers the must visit places in Gulmarg, the best places to visit in Gulmarg, top tourist attractions in Gulmarg, and exciting things to do in Gulmarg.",
+  "metaTitle": "Must Visit Places in Gulmarg | Best Places to Visit in Gulmarg - TrypInn",
+  "metaDescription": "Discover must visit places in Gulmarg, best places to visit in Gulmarg, and top tourist attractions in Gulmarg. Plan your perfect trip with TrypInn travel guide to Gulmarg.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=1200&q=60",
+    "alt": "Gulmarg travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "gulmarg-zip-lining",
+      "name": "Zip Lining",
+      "slug": "zip-lining",
+      "description": "A crown jewel of Gulmarg, Zip Lining captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Zip Lining.",
+      "whyVisit": "Zip Lining stands out as one of the most rewarding experiences.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Zip Lining, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Zip Lining in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Zip Lining in Gulmarg"
+      },
+      "position": 1
+    },
+    {
+      "id": "gulmarg-rajaji-national-park",
+      "name": "Rajaji National Park",
+      "slug": "rajaji-national-park",
+      "description": "Located in scenic Gulmarg, Rajaji National Park offers an immersive experience into local culture. Exploring Rajaji National Park is one of the top things to do in Gulmarg.",
+      "whyVisit": "Rajaji National Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Rajaji National Park, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rajaji National Park in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Rajaji National Park in Gulmarg"
+      },
+      "position": 2
+    },
+    {
+      "id": "gulmarg-top-station-view",
+      "name": "Top Station View",
+      "slug": "top-station-view",
+      "description": "A crown jewel of Gulmarg, Top Station View captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Top Station View.",
+      "whyVisit": "A visit to Top Station View is essential for understanding Gulmarg.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Top Station View, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Top Station View in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Top Station View in Gulmarg"
+      },
+      "position": 3
+    },
+    {
+      "id": "gulmarg-horse-riding",
+      "name": "Horse Riding",
+      "slug": "horse-riding",
+      "description": "Horse Riding is a must-see adventure in Gulmarg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gulmarg.",
+      "whyVisit": "Experience the unmatched beauty of Horse Riding.",
+      "bestTime": "Mar-May",
+      "duration": "2-4 hours",
+      "mapsSearch": "Horse Riding, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Horse Riding in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Horse Riding in Gulmarg"
+      },
+      "position": 4
+    },
+    {
+      "id": "gulmarg-sattal",
+      "name": "Sattal",
+      "slug": "sattal",
+      "description": "Nestled in Gulmarg, Sattal stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Sattal is among the best things to do in Gulmarg.",
+      "whyVisit": "Sattal stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Sattal, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Sattal in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Sattal in Gulmarg"
+      },
+      "position": 5
+    },
+    {
+      "id": "gulmarg-lovers-point",
+      "name": "Lovers Point",
+      "slug": "lovers-point",
+      "description": "Lovers Point is a must-see viewpoint in Gulmarg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gulmarg.",
+      "whyVisit": "Lovers Point offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lovers Point, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lovers Point in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Lovers Point in Gulmarg"
+      },
+      "position": 6
+    },
+    {
+      "id": "gulmarg-rappelling",
+      "name": "Rappelling",
+      "slug": "rappelling",
+      "description": "Rappelling is one of the most iconic landmarks in Gulmarg, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rappelling promises an unforgettable experience.",
+      "whyVisit": "A visit to Rappelling is essential for understanding Gulmarg.",
+      "bestTime": "Mar-May",
+      "duration": "Multi-day",
+      "mapsSearch": "Rappelling, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Rappelling in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Rappelling in Gulmarg"
+      },
+      "position": 7
+    },
+    {
+      "id": "gulmarg-jageshwar",
+      "name": "Jageshwar",
+      "slug": "jageshwar",
+      "description": "A crown jewel of Gulmarg, Jageshwar captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Jageshwar.",
+      "whyVisit": "Jageshwar stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Jageshwar, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jageshwar in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Jageshwar in Gulmarg"
+      },
+      "position": 8
+    },
+    {
+      "id": "gulmarg-sunrise-point",
+      "name": "Sunrise Point",
+      "slug": "sunrise-point",
+      "description": "Located in scenic Gulmarg, Sunrise Point offers an immersive experience into local culture. Exploring Sunrise Point is one of the top things to do in Gulmarg.",
+      "whyVisit": "A visit to Sunrise Point is essential for understanding Gulmarg.",
+      "bestTime": "Clear days",
+      "duration": "Sunset",
+      "mapsSearch": "Sunrise Point, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Sunrise Point in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Sunrise Point in Gulmarg"
+      },
+      "position": 9
+    },
+    {
+      "id": "gulmarg-elephant-safari",
+      "name": "Elephant Safari",
+      "slug": "elephant-safari",
+      "description": "Nestled in Gulmarg, Elephant Safari stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Elephant Safari is among the best things to do in Gulmarg.",
+      "whyVisit": "Experience the unmatched beauty of Elephant Safari.",
+      "bestTime": "Pre-monsoon",
+      "duration": "2-4 hours",
+      "mapsSearch": "Elephant Safari, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Safari in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Elephant Safari in Gulmarg"
+      },
+      "position": 10
+    },
+    {
+      "id": "gulmarg-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "A crown jewel of Gulmarg, Jim Corbett National Park captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Jim Corbett National Park.",
+      "whyVisit": "Jim Corbett National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Jim Corbett National Park, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Gulmarg"
+      },
+      "position": 11
+    },
+    {
+      "id": "gulmarg-ananthagiri-view",
+      "name": "Ananthagiri View",
+      "slug": "ananthagiri-view",
+      "description": "Nestled in Gulmarg, Ananthagiri View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Ananthagiri View is among the best things to do in Gulmarg.",
+      "whyVisit": "Capture stunning photographs at Ananthagiri View.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ananthagiri View, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Ananthagiri View in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Ananthagiri View in Gulmarg"
+      },
+      "position": 12
+    },
+    {
+      "id": "gulmarg-snorkeling",
+      "name": "Snorkeling",
+      "slug": "snorkeling",
+      "description": "A crown jewel of Gulmarg, Snorkeling captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Snorkeling.",
+      "whyVisit": "A visit to Snorkeling is essential for understanding Gulmarg.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Snorkeling, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Snorkeling in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Snorkeling in Gulmarg"
+      },
+      "position": 13
+    },
+    {
+      "id": "gulmarg-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "A crown jewel of Gulmarg, Mukteshwar captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Mukteshwar.",
+      "whyVisit": "Mukteshwar offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Mukteshwar, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in Gulmarg"
+      },
+      "position": 14
+    },
+    {
+      "id": "gulmarg-deomali-view",
+      "name": "Deomali View",
+      "slug": "deomali-view",
+      "description": "Deomali View is one of the most iconic landmarks in Gulmarg, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Deomali View promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Deomali View.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Deomali View, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Deomali View in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Deomali View in Gulmarg"
+      },
+      "position": 15
+    },
+    {
+      "id": "gulmarg-atv-riding",
+      "name": "ATV Riding",
+      "slug": "atv-riding",
+      "description": "Located in scenic Gulmarg, ATV Riding offers an immersive experience into local culture. Exploring ATV Riding is one of the top things to do in Gulmarg.",
+      "whyVisit": "Experience the unmatched beauty of ATV Riding.",
+      "bestTime": "Mar-May",
+      "duration": "Full day",
+      "mapsSearch": "ATV Riding, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, ATV Riding in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "ATV Riding in Gulmarg"
+      },
+      "position": 16
+    },
+    {
+      "id": "gulmarg-bageshwar",
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "A crown jewel of Gulmarg, Bageshwar captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Bageshwar.",
+      "whyVisit": "Bageshwar offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bageshwar, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bageshwar in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Bageshwar in Gulmarg"
+      },
+      "position": 17
+    },
+    {
+      "id": "gulmarg-kodaikanal-view",
+      "name": "Kodaikanal View",
+      "slug": "kodaikanal-view",
+      "description": "Kodaikanal View is one of the most iconic landmarks in Gulmarg, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kodaikanal View promises an unforgettable experience.",
+      "whyVisit": "Kodaikanal View offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Kodaikanal View, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kodaikanal View in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Kodaikanal View in Gulmarg"
+      },
+      "position": 18
+    },
+    {
+      "id": "gulmarg-hot-air-ballooning",
+      "name": "Hot Air Ballooning",
+      "slug": "hot-air-ballooning",
+      "description": "Nestled in Gulmarg, Hot Air Ballooning stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Hot Air Ballooning is among the best things to do in Gulmarg.",
+      "whyVisit": "Hot Air Ballooning offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Hot Air Ballooning, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Hot Air Ballooning in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Hot Air Ballooning in Gulmarg"
+      },
+      "position": 19
+    },
+    {
+      "id": "gulmarg-valley-of-flowers",
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "Valley of Flowers is a must-see nature in Gulmarg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Gulmarg.",
+      "whyVisit": "Valley of Flowers stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Valley of Flowers, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers in Gulmarg"
+      },
+      "position": 20
+    },
+    {
+      "id": "gulmarg-suicide-point",
+      "name": "Suicide Point",
+      "slug": "suicide-point",
+      "description": "Nestled in Gulmarg, Suicide Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Suicide Point is among the best things to do in Gulmarg.",
+      "whyVisit": "Experience the unmatched beauty of Suicide Point.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Suicide Point, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Suicide Point in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Suicide Point in Gulmarg"
+      },
+      "position": 21
+    },
+    {
+      "id": "gulmarg-bungee-jumping",
+      "name": "Bungee Jumping",
+      "slug": "bungee-jumping",
+      "description": "Bungee Jumping is one of the most iconic landmarks in Gulmarg, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bungee Jumping promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Bungee Jumping.",
+      "bestTime": "Mar-May",
+      "duration": "Multi-day",
+      "mapsSearch": "Bungee Jumping, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Bungee Jumping in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Bungee Jumping in Gulmarg"
+      },
+      "position": 22
+    },
+    {
+      "id": "gulmarg-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Munsiyari is one of the most iconic landmarks in Gulmarg, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Munsiyari promises an unforgettable experience.",
+      "whyVisit": "A visit to Munsiyari is essential for understanding Gulmarg.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Munsiyari, Gulmarg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Gulmarg"
+      },
+      "position": 23
+    },
+    {
+      "id": "gulmarg-tiger-hill-view",
+      "name": "Tiger Hill View",
+      "slug": "tiger-hill-view",
+      "description": "A crown jewel of Gulmarg, Tiger Hill View captivates every traveler with enchanting beauty. No trip to Gulmarg is complete without visiting Tiger Hill View.",
+      "whyVisit": "Tiger Hill View offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Tiger Hill View, Gulmarg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Tiger Hill View in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Tiger Hill View in Gulmarg"
+      },
+      "position": 24
+    },
+    {
+      "id": "gulmarg-kayaking",
+      "name": "Kayaking",
+      "slug": "kayaking",
+      "description": "Nestled in Gulmarg, Kayaking stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Kayaking is among the best things to do in Gulmarg.",
+      "whyVisit": "Kayaking stands out as one of the most rewarding experiences.",
+      "bestTime": "Pre-monsoon",
+      "duration": "2-4 hours",
+      "mapsSearch": "Kayaking, Gulmarg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Kayaking in Gulmarg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kayaking in Gulmarg"
+      },
+      "position": 25
+    }
+  ]
+}

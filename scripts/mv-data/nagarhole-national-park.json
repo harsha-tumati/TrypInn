@@ -1,0 +1,190 @@
+{
+  "slug": "nagarhole-national-park",
+  "name": "Nagarhole National Park",
+  "state": "Karnataka",
+  "tagline": "Kabini's golden light where tigers, leopards and elephants converge",
+  "categories": ["wildlife", "nature", "lake"],
+  "highlights": ["kabini reservoir legendary big cat sightings", "largest asian elephant herds in southern india"],
+  "attractions": [
+    {
+      "name": "Kabini Reservoir Boat Safari",
+      "category": "wildlife",
+      "description": "The Kabini backwater is the single most celebrated wildlife-watching venue in southern India. As the dry season advances, hundreds of elephants, gaur, deer and wild dogs converge on this narrow stretch of water, watched from coracle boats that glide silently along the shore. May's water levels reveal vast sand islands where predators — including leopards and tigers — come to drink in plain view. Karnataka Forest Department and licensed jungle lodges operate morning and evening boats.",
+      "whyVisit": "The most reliable place in India to photograph tigers, leopards and elephants together.",
+      "bestTime": "March to June, morning and evening boat",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Kabini Reservoir boat safari Nagarhole Karnataka",
+      "imageQuery": "Kabini reservoir elephant herd boat safari Karnataka"
+    },
+    {
+      "name": "Kabini Jungle Jeep Safari",
+      "category": "wildlife",
+      "description": "Karnataka Forest Department jeep safaris enter the Nagarhole core zone from Kabini and Veerahosahalli gates, threading through teak and rosewood forest on tracks where tigers patrol territorial boundaries. The legendary Black Panther of Kabini — a melanistic leopard documented by multiple photographers — became one of India's most photographed wild cats, and black leopard sightings remain possible in these forests. Gaur herds of 100+ are routine.",
+      "whyVisit": "The home range of India's most famous black leopard — every Kabini jeep safari is charged with possibility.",
+      "bestTime": "October to June, 6 am and 3 pm",
+      "duration": "3 hours",
+      "mapsSearch": "Kabini jeep safari Nagarhole National Park Karnataka",
+      "imageQuery": "Kabini jeep safari tiger leopard Nagarhole Karnataka"
+    },
+    {
+      "name": "Nagarhole Core Zone — Veerahosahalli Gate",
+      "category": "wildlife",
+      "description": "Veerahosahalli on Nagarhole's western edge provides access to the dense evergreen and semi-evergreen patches where the forest transitions from Karnataka to Kerala. This sector holds the densest leopard population in Nagarhole, and dholes — Indian wild dogs — are seen hunting sambar in packs more reliably here than anywhere else in the park. The forest canopy is taller and more closed than the Kabini side, giving the drives a primeval quality.",
+      "whyVisit": "Best sector in Nagarhole for dhole packs and the densest leopard territory.",
+      "bestTime": "November to April",
+      "duration": "3 hours",
+      "mapsSearch": "Veerahosahalli Gate Nagarhole National Park Karnataka",
+      "imageQuery": "dhole pack Nagarhole evergreen forest Karnataka"
+    },
+    {
+      "name": "Coracle Ride on Kabini River",
+      "category": "adventure",
+      "description": "The traditional circular basket-weave coracles of the Jenu Kuruba tribe have been used on the Kabini River for centuries and are now operated as wildlife-watching vessels by local boatmen. Paddled with a single oar, they spin gently on the current and allow a near-silent approach to the bank where elephants bathe and marsh crocodiles sun themselves on exposed roots. Coracles hold just two people, creating an intimate wildlife experience unavailable on the motor boats.",
+      "whyVisit": "Drift silently to within metres of bathing elephants in a traditional tribal coracle.",
+      "bestTime": "October to May, early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kabini River coracle ride wildlife Mysuru Karnataka",
+      "imageQuery": "coracle ride Kabini River elephant Karnataka"
+    },
+    {
+      "name": "Asian Elephant Aggregation (Dry Season)",
+      "category": "wildlife",
+      "description": "Between March and June, Nagarhole and adjoining Bandipur host what wildlife biologists describe as the world's largest congregation of wild Asian elephants outside Myanmar and Borneo. Herds of 150–200 animals gather at the Kabini reservoir shoreline as surrounding water sources dry out, forming multigenerational super-herds dominated by the oldest matriarchs. The sight of pachyderms stretching bank to bank in the late-afternoon light has become iconic in Indian wildlife photography.",
+      "whyVisit": "Witness the largest wild Asian elephant congregation on the subcontinent.",
+      "bestTime": "April to June, afternoon",
+      "duration": "Included in boat or jeep safari",
+      "mapsSearch": "Kabini elephant aggregation dry season Nagarhole Karnataka",
+      "imageQuery": "Asian elephant herd aggregation Kabini dry season"
+    },
+    {
+      "name": "Bandipur–Nagarhole Contiguous Forest Drive",
+      "category": "nature",
+      "description": "The Mysore–Ooty highway bisects the combined Nagarhole–Bandipur reserve, and though traffic is regulated at night to protect wildlife crossings, a daytime drive along this road is an experience in itself. Herds of spotted deer, gaur and occasionally wild elephants are visible from the road within the forest departments' jurisdiction. This corridor is one of the last continuous stretches of jungle connecting the Western and Eastern Ghats.",
+      "whyVisit": "Drive through the critical wildlife corridor linking Western and Eastern Ghats jungles.",
+      "bestTime": "October to May, daytime only",
+      "duration": "2-3 hours transit",
+      "mapsSearch": "Mysore Ooty highway Bandipur Nagarhole forest corridor Karnataka",
+      "imageQuery": "Mysore Ooty highway forest corridor Bandipur gaur"
+    },
+    {
+      "name": "Tibetan Settlement of Bylakuppe",
+      "category": "monastery",
+      "description": "Twenty kilometres from Nagarhole's Kutta gate, Bylakuppe is India's largest Tibetan refugee settlement and home to the spectacular Namdroling Monastery — the Golden Temple — whose main hall is adorned with 20-metre gold-gilded statues of the Buddha, Guru Rinpoche and Amitayus. Established in 1963, the settlement of 15,000 Tibetans has recreated monasteries, schools and institutions from scratch, making it the most complete Tibetan cultural landscape outside Tibet.",
+      "whyVisit": "Experience Tibet's monastic culture in exile just 20 km from tiger country.",
+      "bestTime": "October to March",
+      "duration": "Half-day",
+      "mapsSearch": "Namdroling Monastery Golden Temple Bylakuppe Karnataka",
+      "imageQuery": "Namdroling Golden Temple Bylakuppe Tibetan monastery"
+    },
+    {
+      "name": "Dubare Elephant Camp on Cauvery",
+      "category": "wildlife",
+      "description": "On the Cauvery River at the edge of Nagarhole's buffer, the Karnataka Forest Department's Dubare camp is where working forest elephants are bathed, fed and given veterinary care every morning. Visitors wade into the shallow river to scrub an elephant's hide under the guidance of mahouts, followed by an informative session on captive elephant husbandry and the history of Mysore's royal elephant corps. The forest backdrop and river setting make this among Karnataka's most scenic wildlife experiences.",
+      "whyVisit": "Bathe a working elephant in the Cauvery with mahouts who have known these animals for decades.",
+      "bestTime": "September to February, 8–10 am",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dubare Elephant Camp Cauvery Kodagu Karnataka",
+      "imageQuery": "Dubare elephant camp Cauvery River bath Karnataka"
+    },
+    {
+      "name": "Coorg–Kodagu Coffee Estates",
+      "category": "nature",
+      "description": "Nagarhole's northern buffer fades into the coffee-growing highlands of Kodagu district, where Arabica and Robusta estates under vast pepper-laced silver oak trees produce some of India's finest estate-sourced beans. Plantation stays allow guests to participate in cherry harvest between October and January, roasting green beans over wood fire and cupping the resulting brew. The estates also shelter civets, porcupines and hornbills moving between the coffee canopy and Nagarhole's forest edge.",
+      "whyVisit": "Harvest and roast estate coffee in the very forest-buffer that harbours Nagarhole's tigers.",
+      "bestTime": "October to January (harvest season)",
+      "duration": "Half-day or overnight",
+      "mapsSearch": "Kodagu coffee estate stay Nagarhole buffer Karnataka",
+      "imageQuery": "Coorg coffee estate harvest Karnataka plantation"
+    },
+    {
+      "name": "Iruppu Falls",
+      "category": "waterfall",
+      "description": "The Lakshmana Tirtha River tumbles 55 metres over granite boulders at Iruppu Falls inside the Brahmagiri Wildlife Sanctuary adjacent to Nagarhole. The falls are reached via a 2-km forest path from the temple of Rameshwara, a pilgrimage point for south Karnataka Hindus on Shivaratri. The pool below the main fall is perfect for a cool dip, and the surrounding forest is prime habitat for Malabar trogon, great hornbill and lion-tailed macaque.",
+      "whyVisit": "A pilgrimage waterfall inside protected forest — spiritual, scenic and wildlife-rich together.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Iruppu Falls Brahmagiri Wildlife Sanctuary Karnataka",
+      "imageQuery": "Iruppu Falls waterfall forest Karnataka"
+    },
+    {
+      "name": "Kabini River Lodge Heritage Bungalow",
+      "category": "heritage",
+      "description": "The original Kabini River Lodge was built as a Maharaja of Mysore's hunting lodge in 1899 and retains the teak-and-tile architecture of the colonial shikaar era. Today operated by Jungle Lodges and Resorts, the heritage bungalow rooms have original wooden furniture, verandas overlooking the reservoir, and signed photographs of Corbett-era hunters on the walls. The property itself sits on the boundary where forest meets water, putting elephants within lawn-distance at dusk.",
+      "whyVisit": "Sleep in a Maharaja's 1899 hunting lodge with elephants grazing on the adjacent shore.",
+      "bestTime": "October to May",
+      "duration": "Overnight stay",
+      "mapsSearch": "Kabini River Lodge Jungle Lodges Resorts Karnataka",
+      "imageQuery": "Kabini River Lodge heritage bungalow Maharaja Karnataka"
+    },
+    {
+      "name": "King Vulture and Raptor Watch, Karapura",
+      "category": "wildlife",
+      "description": "The open parkland around Karapura inside Nagarhole holds one of Karnataka's most reliable winter roosts for the red-headed vulture and the crested serpent eagle. Between November and February, large kettle formations of vultures spiral on morning thermals above the forest edge, while the grassland clearings harbour Booted eagles, greater spotted eagles and occasional Imperial eagles migrating through. This micro-location is known to Bangalore birders but rarely appears in mainstream travel guides.",
+      "whyVisit": "One of Karnataka's best raptor watch sites, virtually unknown to non-birding visitors.",
+      "bestTime": "November to February, mid-morning",
+      "duration": "2 hours",
+      "mapsSearch": "Karapura Nagarhole National Park raptor watch Karnataka",
+      "imageQuery": "vulture raptor watch Nagarhole Karapura Karnataka"
+    },
+    {
+      "name": "Jenu Kuruba Tribal Village, Nagarhole Buffer",
+      "category": "heritage",
+      "description": "The Jenu Kuruba — 'honey gatherers' — are the original forest dwellers of Nagarhole, collecting wild honey from cliff-face combs using bamboo ladders with skills unchanged for millennia. Community-led forest walks around buffer-zone villages show visitors the traditional smoking technique used to calm bees, the medicinal uses of over 40 forest plants, and the intricate bamboo craft that produces the coracles used on the Kabini. Proceeds fund community schools.",
+      "whyVisit": "Learn honey-gathering skills from India's original Nagarhole forest people.",
+      "bestTime": "October to March",
+      "duration": "Half-day",
+      "mapsSearch": "Jenu Kuruba tribal village Nagarhole Karnataka",
+      "imageQuery": "Jenu Kuruba tribal honey gathering Nagarhole Karnataka"
+    },
+    {
+      "name": "Mysore Palace and City (Base)",
+      "category": "palace",
+      "description": "The City of Mysore, 80 km from Kabini, is the inevitable cultural complement to a Nagarhole wildlife trip. The Indo-Saracenic Mysore Palace illuminated by 97,000 bulbs on Sunday evenings is Karnataka's most spectacular architectural sight. The palace museum holds a stunning collection of royal artefacts including the gold Howdah carried by Dasara elephants — some of whom were trained in Nagarhole's forests — creating a direct link between the city's ceremony and the park's wildlife.",
+      "whyVisit": "Combine tiger country with the most opulent illuminated royal palace in India.",
+      "bestTime": "Year-round; Sunday evenings for illumination",
+      "duration": "Half-day",
+      "mapsSearch": "Mysore Palace illumination Karnataka",
+      "imageQuery": "Mysore Palace illuminated Sunday evening Karnataka"
+    },
+    {
+      "name": "Peacock Viewing at Nagarhole Grasslands",
+      "category": "wildlife",
+      "description": "Nagarhole's forest clearings — locally called hadlu — support India's densest populations of Indian peafowl outside a sanctuary. At dawn in the dry season 40–60 peacocks gather on the maidans, tails fanned and metallic blue necks catching the first light, while hens feed in the adjacent shrub. Naturalists from Kabini lodges time specific short drives around these clearings to observe display behaviour at a level that rivals dedicated bird sanctuaries.",
+      "whyVisit": "Watch dozens of peacocks displaying at sunrise in a forest clearing — a spectacular free show.",
+      "bestTime": "February to May, dawn",
+      "duration": "Included in morning safari",
+      "mapsSearch": "Nagarhole grassland peacock display Karnataka",
+      "imageQuery": "peacock display grassland Nagarhole Karnataka dawn"
+    },
+    {
+      "name": "Kabini Backwater Sunset Cruise",
+      "category": "lake",
+      "description": "A short evening cruise on the Kabini reservoir offers one of Karnataka's most photographed sunsets: the sky turns gold and crimson while silhouettes of elephants and cormorants reflect perfectly in the still water. Resident fish eagles and Brahminy kites are active in the last light, and the distant forest ridges of Nagarhole turn indigo against the fading sky. The cruise runs independently of the wildlife safaris and is an ideal quiet close to an active day.",
+      "whyVisit": "The iconic Kabini sunset is one of southern India's finest wildlife photography moments.",
+      "bestTime": "October to May, 5–7 pm",
+      "duration": "1.5 hours",
+      "mapsSearch": "Kabini backwater sunset cruise Karnataka",
+      "imageQuery": "Kabini reservoir sunset elephant silhouette Karnataka"
+    },
+    {
+      "name": "Nagarhole Forest Rest House — Murkal",
+      "category": "nature",
+      "description": "Karnataka Forest Department's Murkal rest house sits deep inside Nagarhole's core zone, reachable only by a 15-km forest track, and accepts a small number of permit-holding visitors for overnight stays. The bungalow verandah overlooks a salt lick that attracts gaur, sambar and occasionally tigers throughout the night. Night sounds from inside the actual core zone — distant tiger rumbles, barking deer alarm calls — are available nowhere else in the park.",
+      "whyVisit": "The only overnight option inside Nagarhole's core zone — truly falling asleep inside tiger country.",
+      "bestTime": "October to April, requires advance forest department permit",
+      "duration": "Overnight",
+      "mapsSearch": "Murkal Forest Rest House Nagarhole Karnataka",
+      "imageQuery": "Nagarhole forest rest house core zone Karnataka"
+    },
+    {
+      "name": "Chelavara Falls Day Trip",
+      "category": "waterfall",
+      "description": "Forty kilometres from Nagarhole's northern boundary in Kodagu district, Chelavara Falls is a seldom-visited cascade where the Karike River drops 28 metres through a narrow granite gorge fringed by old-growth coffee estate. A short but steep jungle path leads to the base, where mist keeps the gorge perpetually cool. Unlike the crowded falls near Coorg's main towns, Chelavara sees almost no domestic tourists outside of weekends, making it a perfect half-day addition to a Nagarhole itinerary.",
+      "whyVisit": "A serene, uncrowded waterfall in a granite gorge hidden inside Kodagu's coffee country.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chelavara Falls Kodagu Karnataka",
+      "imageQuery": "Chelavara Falls granite gorge Kodagu Karnataka"
+    }
+  ]
+}

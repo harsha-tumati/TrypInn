@@ -1,0 +1,190 @@
+{
+  "slug": "kanha-national-park",
+  "name": "Kanha National Park",
+  "state": "Madhya Pradesh",
+  "tagline": "Jewel of India's sal forests, where tigers rule the meadow",
+  "categories": ["wildlife", "nature", "adventure"],
+  "highlights": ["bengal tiger sightings in open kanha meadows", "only habitat of hard ground barasingha deer"],
+  "attractions": [
+    {
+      "name": "Kanha Meadow (Kanha Maidan) Safari",
+      "category": "wildlife",
+      "description": "The Kanha Maidan is a vast open grassland at the park's heart — among the most scenic wildlife landscapes in Asia. Tigers hunt hard ground barasingha and chital in these meadows with open sightlines that make vehicle-based observation exceptional. Dawn mists rolling across the grass while a tiger stalks through the golden light inspired Rudyard Kipling's Jungle Book. The meadow also supports huge herds of gaur and sambar.",
+      "whyVisit": "The most beautiful tiger-watching terrain in India with sweeping open meadows and near-daily sightings.",
+      "bestTime": "February to June, dawn safaris",
+      "duration": "3-4 hours",
+      "mapsSearch": "Kanha Meadow Safari Kanha National Park Madhya Pradesh",
+      "imageQuery": "Bengal tiger Kanha meadow grassland dawn safari"
+    },
+    {
+      "name": "Kanha Zone Jeep Safari (Khatia Gate)",
+      "category": "wildlife",
+      "description": "The Kanha zone entered through Khatia gate is the core circuit covering the park's most productive tiger territory. Routes pass through sal and mixed forest, bamboo groves, and the iconic meadows where multiple tiger territories overlap. Kanha has one of India's best-documented tiger populations, with named individuals tracked for decades, giving guides exceptional knowledge of each animal's movements and habits.",
+      "whyVisit": "World-class tiger tracking through iconic Jungle Book landscapes with superbly knowledgeable guides.",
+      "bestTime": "October to June",
+      "duration": "3-4 hours per session",
+      "mapsSearch": "Khatia Gate Kanha Zone Safari Madhya Pradesh",
+      "imageQuery": "jeep safari tiger Kanha zone sal forest India"
+    },
+    {
+      "name": "Hard Ground Barasingha (Swamp Deer) Herds",
+      "category": "wildlife",
+      "description": "Kanha is the exclusive last habitat of the hard ground barasingha (Rucervus duvaucelii branderi), a subspecies of swamp deer uniquely adapted to dry ground. Once reduced to just 66 individuals in the 1960s, dedicated conservation work restored the population to over 900. The Kanha meadows host spectacular aggregations — herds of 50 to 200 deer grazing together at dawn are the park's most breathtaking wildlife spectacle after tigers.",
+      "whyVisit": "See the only wild population of hard ground barasingha on Earth — a conservation triumph found nowhere else.",
+      "bestTime": "November to March during rut and congregation",
+      "duration": "Part of meadow safari",
+      "mapsSearch": "Barasingha Swamp Deer Kanha National Park",
+      "imageQuery": "barasingha swamp deer herd Kanha meadow antlers"
+    },
+    {
+      "name": "Kisli Zone Safari",
+      "category": "wildlife",
+      "description": "Kisli zone is the eastern entry into the Kanha core area and shares the meadow circuit with the Kanha zone. It offers slightly different forest composition with denser bamboo stands and a network of seasonal nalas that concentrate wildlife in the dry season. The Kisli-Kanha loop safari is the most popular full itinerary combining meadow views with forest drives, and provides the best chance of seeing tigers, leopards, and wild dogs in a single session.",
+      "whyVisit": "The classic full-day loop combining every habitat type in Kanha with the highest species variety.",
+      "bestTime": "March to June",
+      "duration": "Full day",
+      "mapsSearch": "Kisli Zone Gate Safari Kanha National Park",
+      "imageQuery": "Kisli zone tiger bamboo forest Kanha safari"
+    },
+    {
+      "name": "Mukki Zone Safari",
+      "category": "wildlife",
+      "description": "Mukki on Kanha's southern boundary is a quieter, less-visited zone with an entirely different character from the famous northern meadows. Sal forest here transitions to mixed deciduous woodland with higher bamboo density and more pronounced riverine habitat along the Banjaar River. Mukki records consistent tiger sightings and is especially productive for leopard, dhole (Indian wild dog), and gaur. Fewer vehicles give a more intimate experience.",
+      "whyVisit": "Southern zone with fewer tourists but equally impressive wildlife including regular dhole pack sightings.",
+      "bestTime": "November to May",
+      "duration": "3-4 hours",
+      "mapsSearch": "Mukki Zone Gate Safari Kanha National Park",
+      "imageQuery": "dhole wild dog pack Mukki zone Kanha forest"
+    },
+    {
+      "name": "Indian Wild Dog (Dhole) Sightings",
+      "category": "wildlife",
+      "description": "Kanha holds one of India's healthiest populations of the endangered dhole (Cuon alpinus), Asia's most social canid. Packs of 8 to 20 dholes hunt cooperatively and are audacious enough to confront and kill tigers on rare occasions. Their plaintive whoo-whoo whistles carry far through the sal forest. Kanha's guides are adept at locating dhole packs at den sites during the December-March pup-rearing season, when the entire pack is localized.",
+      "whyVisit": "See India's most charismatic pack hunter in the world's best habitat for observing dholes.",
+      "bestTime": "December to March for denning season",
+      "duration": "Part of zone safari",
+      "mapsSearch": "Indian Wild Dog Dhole Kanha National Park",
+      "imageQuery": "dhole Indian wild dog pack Kanha forest hunt"
+    },
+    {
+      "name": "Supkhar Zone (Buffer) Safari",
+      "category": "wildlife",
+      "description": "Supkhar zone lies in Kanha's buffer forest on the eastern side and is one of the most underutilised yet rewarding areas in the reserve. Sloth bears, wolves, striped hyenas, and smaller predators are more frequently encountered in the buffer zone's dry terrain than in the core area. The zone also provides a corridor for tiger dispersal and records periodic big-cat sightings with far fewer vehicles than core zones.",
+      "whyVisit": "Buffer zone gems — wolves, striped hyenas, and sloth bears with near-zero tourist competition.",
+      "bestTime": "October to May",
+      "duration": "3-4 hours",
+      "mapsSearch": "Supkhar Zone Buffer Safari Kanha National Park",
+      "imageQuery": "sloth bear Kanha buffer zone forest India"
+    },
+    {
+      "name": "Gaur (Indian Bison) Herds",
+      "category": "wildlife",
+      "description": "Kanha's gaur population is one of India's largest — herds of 20 to 60 of these massive bovines, the world's largest wild cattle species, graze the meadows and forest edges. Adult gaur bulls stand nearly two metres at the shoulder and weigh over a tonne. Tigers occasionally target young gaur, and the sight of a tigress attempting to separate a calf from its herd is among the most dramatic predator-prey interactions witnessed in Kanha.",
+      "whyVisit": "See Earth's largest wild cattle species in herds that dwarf anything in Africa or Southeast Asia.",
+      "bestTime": "November to May",
+      "duration": "Part of any safari",
+      "mapsSearch": "Gaur Indian Bison Kanha National Park",
+      "imageQuery": "gaur Indian bison herd Kanha meadow giant"
+    },
+    {
+      "name": "Jungle Book Country Walk (Bamboo Forest)",
+      "category": "adventure",
+      "description": "Guided nature walks in Kanha's buffer zone are available from several resorts, leading through the dense bamboo forest and mixed woodland that is unmistakably the landscape of Kipling's 'The Jungle Book'. The walk traces seasonal stream courses lined with bamboo thickets where langurs, peacocks, and grey jungle fowl are constantly active. Naturalists identify animal signs — claw marks, rubbing trees, dung — that jeep safaris rush past.",
+      "whyVisit": "Walk through Mowgli's jungle with a naturalist, reading animal signs invisible from a moving jeep.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kanha Buffer Zone Nature Walk Jungle Book Forest",
+      "imageQuery": "bamboo forest walk Kanha buffer zone Jungle Book"
+    },
+    {
+      "name": "Banjaar River Valley",
+      "category": "nature",
+      "description": "The Banjaar River bisects Kanha's southern landscape, flowing through Mukki zone to the Narmada tributary system. The riparian forest along its banks supports different species from the open meadows — Indian giant squirrel, brown fish owl, crested kingfisher, and smooth-coated otter are all river specialists. Several safari routes cross the Banjaar, and the water's reflection of overhanging sal trees at sunrise is among the park's most beautiful scenes.",
+      "whyVisit": "A river ecosystem within the park with giant squirrels, owls, and otters rarely seen on meadow safaris.",
+      "bestTime": "November to April",
+      "duration": "Part of Mukki safari",
+      "mapsSearch": "Banjaar River Valley Kanha National Park",
+      "imageQuery": "Banjaar river valley Kanha sal forest reflection"
+    },
+    {
+      "name": "Van Vihar National Park, Bhopal",
+      "category": "wildlife",
+      "description": "Van Vihar in Bhopal, 200 km from Kanha, is a national park and open zoo where tigers, lions, and leopards roam large semi-wild enclosures visible from a safari road. It sits on the bank of the Upper Lake, one of Asia's largest man-made lakes, creating a unique urban wildlife experience. Van Vihar provides an accessible introduction to India's big cats for travellers combining Kanha with Bhopal's excellent archaeological museum and Islamic heritage.",
+      "whyVisit": "See tigers and leopards up close in a lakeside setting while pairing with Bhopal's remarkable city sights.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Van Vihar National Park Bhopal Madhya Pradesh",
+      "imageQuery": "Van Vihar National Park Bhopal lake tiger"
+    },
+    {
+      "name": "Kanha Tribal Museum (Baiga Chulha)",
+      "category": "museum",
+      "description": "The Baiga Chulha museum near Khatia gate documents the culture, ecology, and displacement history of the Baiga and Gond tribal communities who lived inside the Kanha forest before the park's establishment. Exhibits include traditional tattoo patterns, herbalist knowledge systems, forest tools, and recordings of oral histories. The museum is the most substantive documentation of central India's forest tribes in any national park visitor centre.",
+      "whyVisit": "Understand the indigenous people whose forest knowledge shaped conservation in central India.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Baiga Chulha Museum Khatia Kanha National Park",
+      "imageQuery": "Baiga tribal museum Kanha cultural display forest"
+    },
+    {
+      "name": "Bandhavgarh National Park Day Trip",
+      "category": "wildlife",
+      "description": "Bandhavgarh, 250 km northeast of Kanha, claims the highest tiger density of any national park in India. The ancient 2,000-year-old fort on a cliff hosts the famous reclining Vishnu sculpture, and the park's steep rocky terrain is dramatically different from Kanha's meadows. A two-park itinerary combining Kanha and Bandhavgarh provides an extraordinary cross-section of central Indian tiger habitats.",
+      "whyVisit": "Pair Kanha's open meadows with Bandhavgarh's cliff-face fort and India's most densely tigered forest.",
+      "bestTime": "October to June",
+      "duration": "2-3 days additional travel",
+      "mapsSearch": "Bandhavgarh National Park Tiger Reserve Madhya Pradesh",
+      "imageQuery": "Bengal tiger Bandhavgarh fort cliff forest India"
+    },
+    {
+      "name": "Jabalpur & Marble Rocks (Bhedaghat)",
+      "category": "nature",
+      "description": "Bhedaghat, 25 km from Jabalpur (170 km from Kanha), is a dramatic gorge where the Narmada river cuts through towering marble cliffs 25 metres high. Moonlight boat rides through the white and pink marble canyon are ethereally beautiful, and the Dhuandhar (Smoke Cascade) waterfall at the gorge head falls 30 metres in a roaring white curtain. The area has been a natural wonder known since the time of Akbar's reign.",
+      "whyVisit": "Cruise through a marble canyon by moonlight — one of central India's most magical natural experiences.",
+      "bestTime": "October to March; full moon nights for moonlit rides",
+      "duration": "Half day",
+      "mapsSearch": "Bhedaghat Marble Rocks Narmada Boat Jabalpur",
+      "imageQuery": "Bhedaghat marble rocks Narmada gorge boat Jabalpur"
+    },
+    {
+      "name": "Phen Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Phen sanctuary, 35 km from Kanha, is a small but important satellite protected area in the Kanha-Pench corridor. Tiger and leopard from Kanha regularly traverse Phen during dispersal, and the sanctuary provides critical connectivity for gene flow. Phen's open grasslands are excellent for chinkara, wolf, and Indian fox sightings rarely available inside the heavily forested main park areas.",
+      "whyVisit": "A dispersal corridor sanctuary where wolves and chinkaras roam open terrain just outside the main park.",
+      "bestTime": "November to April",
+      "duration": "Half day",
+      "mapsSearch": "Phen Wildlife Sanctuary Mandla Kanha Madhya Pradesh",
+      "imageQuery": "Indian wolf grassland Phen sanctuary Madhya Pradesh"
+    },
+    {
+      "name": "Chilpi Village & Gond Tribal Craft",
+      "category": "heritage",
+      "description": "Chilpi and surrounding villages on Kanha's periphery are home to Gond tribal communities who maintain vibrant traditions of Gond art — a form of intricate dot-and-line painting using natural and synthetic pigments. Artists like those in the Jangarh Singh Shyam tradition have won national recognition. Village visits include art-making demonstrations and the opportunity to purchase original Gond paintings directly from the artists.",
+      "whyVisit": "Buy original award-winning Gond tribal art directly from the forest-edge communities who create it.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chilpi Gond Village Tribal Art Kanha Madhya Pradesh",
+      "imageQuery": "Gond tribal art painting village Kanha Madhya Pradesh"
+    },
+    {
+      "name": "Sal Forest Night Drive (Buffer Zone)",
+      "category": "adventure",
+      "description": "Night drives in Kanha's buffer zone operated by select resorts reveal the nocturnal side of the park invisible during day safaris. Spotlight drives along forest tracks find Indian civets, sambar with reflective eyes, spotted owlets, and occasionally porcupines and pangolins. Sloth bears foraging on mango trees are a regular buffer-zone night encounter. The calls of nightjars and owls provide the soundtrack for these magical drives.",
+      "whyVisit": "Discover Kanha's secret nocturnal world of owls, civets, and pangolins unseen by day visitors.",
+      "bestTime": "October to May",
+      "duration": "2-3 hours after dark",
+      "mapsSearch": "Night Drive Buffer Zone Kanha National Park",
+      "imageQuery": "night safari spotlight Kanha buffer forest owl"
+    },
+    {
+      "name": "Shravan Tal Lake",
+      "category": "lake",
+      "description": "Shravan Tal is a small sacred lake near Khatia village at the park's edge, surrounded by ancient trees and a modest Shiva temple. Local communities gather here during monsoon festivals, and the lake is home to marsh crocodiles that drift between the park and this peripheral water body. The atmosphere of a forest-edge shrine with wildlife nearby captures the human-nature relationship that defines the Kanha landscape.",
+      "whyVisit": "A tranquil forest lake with crocodiles and a village temple — the authentic Kanha heartland beyond the safaris.",
+      "bestTime": "October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Shravan Tal Lake Khatia Kanha National Park",
+      "imageQuery": "Shravan Tal lake Khatia temple Kanha forest"
+    }
+  ]
+}

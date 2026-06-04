@@ -1,0 +1,260 @@
+{
+  "slug": "orchha",
+  "name": "Orchha",
+  "state": "Madhya Pradesh",
+  "tagline": "Bundela glory frozen in stone beside the Betwa",
+  "categories": ["heritage", "historical", "spiritual"],
+  "highlights": ["magnificent bundela palaces and cenotaphs", "ram raja temple where god is worshipped as a king"],
+  "attractions": [
+    {
+      "name": "Orchha Fort Complex",
+      "category": "fort",
+      "description": "The majestic 16th-century Orchha Fort stands on a fortified island ringed by the Betwa River, housing three great palaces within its ramparts. Built by the Bundela Rajput king Rudra Pratap Singh and expanded by his successors, the complex of interlinking courtyards, arched gateways, and towering chattris represents the apex of Bundela architecture.",
+      "whyVisit": "The architectural crown of Bundelkhand — a single enclosed complex containing three palace masterpieces.",
+      "bestTime": "October to March, morning or late afternoon",
+      "duration": "3-4 hours",
+      "mapsSearch": "Orchha Fort Complex Madhya Pradesh",
+      "imageQuery": "Orchha fort complex Betwa river Madhya Pradesh"
+    },
+    {
+      "name": "Jehangir Mahal",
+      "category": "palace",
+      "description": "Built by Raja Bir Singh Deo in honour of Mughal Emperor Jehangir's visit in 1606, this palace is a masterly fusion of Mughal and Rajput styles. Its three-storey sandstone-and-granite facade is ornamented with blue tile-work, hanging balconies, intricate jali screens, and eighty-four identically decorated apartments — one for each day of the royal visit.",
+      "whyVisit": "The finest Mughal-Rajput fusion palace in Madhya Pradesh, in near-perfect condition.",
+      "bestTime": "Morning, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jehangir Mahal Orchha Madhya Pradesh",
+      "imageQuery": "Jehangir Mahal Orchha palace blue tiles"
+    },
+    {
+      "name": "Raja Mahal",
+      "category": "palace",
+      "description": "The oldest palace in the Orchha complex, built by Madhukar Shah in the late 16th century, is notable for its exceptional interior murals depicting scenes from the Ramayana and Vishnu Purana in vivid natural pigments. The ceilings and walls of the upper chambers are among the finest surviving examples of Bundela painting, glowing with ochres, blues, and blacks.",
+      "whyVisit": "Orchha's finest painted interiors — an extraordinary and largely intact Bundela fresco gallery.",
+      "bestTime": "Morning light for best fresco illumination; October to March",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Raja Mahal Orchha paintings Madhya Pradesh",
+      "imageQuery": "Raja Mahal Orchha interior murals frescoes"
+    },
+    {
+      "name": "Ram Raja Temple",
+      "category": "temple",
+      "description": "The Ram Raja Temple is the only temple in India where Lord Ram is worshipped as a king rather than a deity, and armed police guard him like royalty. The story goes that Queen Ganesh Kunwari brought the idol from Ayodhya and temporarily placed it in her palace; as it refused to move, the palace became a temple. Bugles sound and a police guard presents arms at aarti.",
+      "whyVisit": "Utterly unique — a temple where Ram holds state and a police guard performs daily military honours.",
+      "bestTime": "Morning or evening aarti (6:30 AM and 8 PM)",
+      "duration": "1 hour",
+      "mapsSearch": "Ram Raja Temple Orchha Madhya Pradesh",
+      "imageQuery": "Ram Raja temple Orchha Madhya Pradesh"
+    },
+    {
+      "name": "Chaturbhuj Temple",
+      "category": "temple",
+      "description": "A soaring 16th-century temple with a towering shikhara rising 107 feet above the Orchha skyline, built to house the Ram idol now in the Ram Raja Temple. The temple's cruciform plan with large mandapa, four-armed hall, and dramatic vertical profile blends North Indian Nagara style with Bundela sensibility. The interior's vast scale and emptiness is haunting.",
+      "whyVisit": "Orchha's most striking skyline spike and an architectural marvel of the Bundela golden age.",
+      "bestTime": "Sunrise or late afternoon, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Chaturbhuj Temple Orchha Madhya Pradesh",
+      "imageQuery": "Chaturbhuj temple Orchha shikhara skyline"
+    },
+    {
+      "name": "Orchha Chhatris (Royal Cenotaphs)",
+      "category": "heritage",
+      "description": "Fourteen Bundela royal cenotaphs line the eastern bank of the Betwa River in a stunning ensemble, each rising as a multi-tiered chattri above a submerged stone platform. Built between the 17th and 19th centuries, each memorial reflects the ruler buried there via subtle architectural variations. At dawn the chattris reflect perfectly in the still Betwa, creating one of India's most photographed riverscapes.",
+      "whyVisit": "The most photogenic sunset-and-sunrise monument complex in Madhya Pradesh.",
+      "bestTime": "Sunrise and sunset for reflections; October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Orchha Chhatris cenotaphs Betwa River",
+      "imageQuery": "Orchha chhatris cenotaphs Betwa river reflection"
+    },
+    {
+      "name": "Laxminarayan Temple",
+      "category": "temple",
+      "description": "Built in 1622 by Bir Singh Deo and renovated in 1793, the Laxminarayan Temple merges the styles of a fort and a temple with its unusual plan: a fortified perimeter wall with bastions surrounds a sanctum with an ornate shikhara. Inside, the walls retain vibrant Bundela-era murals of battle scenes, court life, religious episodes, and colonial-era imagery.",
+      "whyVisit": "Orchha's most surprising murals — battle panoramas and colonial vignettes painted on temple walls.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Laxminarayan Temple Orchha Madhya Pradesh",
+      "imageQuery": "Laxminarayan temple Orchha murals"
+    },
+    {
+      "name": "Betwa River and Betwa Retreat",
+      "category": "nature",
+      "description": "The Betwa River flows around Orchha's fortified island and is the town's living heart. Kayaking, coracle rides, and nature walks along its sandy banks are central leisure activities. The ghats below the cenotaphs are used for daily bathing and clothes washing, providing an authentic slice of riverside Bundelkhand life framed by the medieval skyline.",
+      "whyVisit": "A peaceful river escape with kayaking and the extraordinary Orchha skyline as a backdrop.",
+      "bestTime": "Early morning for bird life; sunset for colours",
+      "duration": "2-3 hours",
+      "mapsSearch": "Betwa River Orchha kayaking",
+      "imageQuery": "Betwa river Orchha boats skyline"
+    },
+    {
+      "name": "Phool Bagh Garden",
+      "category": "garden",
+      "description": "A formal 17th-century Bundela pleasure garden laid out by Raja Pahar Singh, featuring geometric stone water channels, fountains, a stepped baoli (stepwell), and a subterranean palace chamber designed to stay cool in the fierce Bundelkhand summer. The underground hall — Palki Mahal — has carved stone pillars and once held a large elevated swing.",
+      "whyVisit": "An undervisited Bundela garden with a fascinating underground summer palace chamber.",
+      "bestTime": "October to March, morning",
+      "duration": "1 hour",
+      "mapsSearch": "Phool Bagh Orchha Madhya Pradesh",
+      "imageQuery": "Phool Bagh garden Orchha stepwell"
+    },
+    {
+      "name": "Rai Praveen Mahal",
+      "category": "palace",
+      "description": "A small two-storey palace built for Rai Praveen, the celebrated poet-courtesan of Raja Indramani's court, surrounded by sunken gardens and a baoli. The intimate, human-scaled structure is ornamented with painted niches and stone-carved arabesque panels. The surrounding garden (Anand Mahal Bagh) is one of Orchha's most pleasant spots for a quiet walk.",
+      "whyVisit": "A touching monument to Orchha's most celebrated poetess — romantic, small-scale, and often uncrowded.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Rai Praveen Mahal Orchha Madhya Pradesh",
+      "imageQuery": "Rai Praveen Mahal Orchha palace garden"
+    },
+    {
+      "name": "Orchha Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "The Orchha Wildlife Sanctuary covers 45 sq km of dry deciduous forest, ravines, and Betwa River floodplain encircling the town. It is one of the most accessible places in India to see the endangered gharial crocodilian, alongside mugger crocodiles, spotted deer, nilgai, jackals, and over 200 bird species including the Indian skimmer on the river sandbars.",
+      "whyVisit": "Gharials in the Betwa — a rare and accessible sighting of one of India's most endangered reptiles.",
+      "bestTime": "November to March (winter for gharial basking)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Orchha Wildlife Sanctuary Madhya Pradesh",
+      "imageQuery": "Orchha wildlife sanctuary gharial Betwa river"
+    },
+    {
+      "name": "Veer Singh Palace (Sheesh Mahal)",
+      "category": "palace",
+      "description": "The Sheesh Mahal, meaning 'palace of mirrors', was originally part of the Bir Singh Deo complex and is now a heritage hotel run by MPTDC. Its rooms retain original Bundela architecture including high vaulted ceilings, mirror inlay, and arched corridors, offering visitors a chance to sleep inside a real medieval palace overlooking the Chaturbhuj temple.",
+      "whyVisit": "One of India's most atmospheric and affordable heritage hotel stays inside a real Bundela palace.",
+      "bestTime": "October to March",
+      "duration": "Overnight stay",
+      "mapsSearch": "Sheesh Mahal Hotel Orchha MPTDC",
+      "imageQuery": "Sheesh Mahal Orchha heritage hotel palace"
+    },
+    {
+      "name": "Orchha Bazaar",
+      "category": "market",
+      "description": "The small but lively bazaar along the main street between the Ram Raja Temple and the fort entrance sells Bundelkhand brass artefacts, Chanderi silk stoles, stone carvings, tribal jewellery, and wooden toys. It also concentrates the town's best dhabas and sweet shops serving local treats like malpua, jalebi, and Bundelkhand-style poha.",
+      "whyVisit": "The best place to buy authentic Bundelkhand crafts and taste regional street food.",
+      "bestTime": "Morning, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Orchha Bazaar market Madhya Pradesh",
+      "imageQuery": "Orchha bazaar market handicrafts Madhya Pradesh"
+    },
+    {
+      "name": "Siddha Baba Temple",
+      "category": "temple",
+      "description": "A small, highly venerated Shaivite shrine inside the Orchha Fort complex, dedicated to a yogi said to have attained samadhi here. Pilgrims from surrounding villages come to seek blessings, and the temple sees intense local devotional activity — burning incense, ringing bells, and loud bhajan singing — especially on Shivaratri and Monday mornings.",
+      "whyVisit": "An intimate, locally alive religious space inside the fort — a genuine pilgrimage scene amid tourist heritage.",
+      "bestTime": "Morning puja, year-round",
+      "duration": "30 minutes",
+      "mapsSearch": "Siddha Baba Temple Orchha Fort",
+      "imageQuery": "Siddha Baba temple Orchha shrine"
+    },
+    {
+      "name": "Lakshmi Narayan Trek (Sunset Walk)",
+      "category": "nature",
+      "description": "A 45-minute walk from the Ram Raja Temple through Orchha's quiet residential lanes and forested paths leads to the elevated Laxminarayan Temple, offering a superb sunset viewpoint over the entire townscape — cenotaphs, fort towers, and shikharas silhouetted against an amber sky. Local guides lead the walk pointing out migratory birds along the route.",
+      "whyVisit": "Orchha's best sunset panorama, best reached on foot through the living town.",
+      "bestTime": "One hour before sunset, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Orchha sunset viewpoint Laxminarayan walk",
+      "imageQuery": "Orchha sunset skyline temples cenotaphs"
+    },
+    {
+      "name": "Kanchanghat Ghat",
+      "category": "heritage",
+      "description": "A serene, stepped river ghat on the Betwa's bank below the cenotaphs where locals perform morning puja, fishermen cast nets, and dhobis wash clothes on smooth stone steps. At dawn, the ghat fills with mist off the river and the chanting of Brahmin priests echoes between the cenotaph towers — one of Orchha's most atmospheric experiences.",
+      "whyVisit": "A living ritual ghat that reveals the authentic spiritual pulse of Orchha beyond its tourist monuments.",
+      "bestTime": "Dawn",
+      "duration": "1 hour",
+      "mapsSearch": "Kanchanghat Ghat Orchha Betwa River",
+      "imageQuery": "Orchha ghat Betwa river morning puja"
+    },
+    {
+      "name": "Camel Back Rocks",
+      "category": "nature",
+      "description": "A cluster of rounded granite boulders shaped by millennia of wind erosion into the profile of a camel's back, located in the Orchha Wildlife Sanctuary forest a few kilometres from town. The rocks form a popular short forest hike through dry teak and mahua woodland, and the boulder tops offer a pleasant view over the sanctuary's ravined landscape.",
+      "whyVisit": "A short nature walk to unusual rock formations inside the rarely explored sanctuary forest.",
+      "bestTime": "Morning, November to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Camel Back Rocks Orchha Wildlife Sanctuary",
+      "imageQuery": "Orchha camel back rocks forest sanctuary"
+    },
+    {
+      "name": "Orchha Sound and Light Show",
+      "category": "heritage",
+      "description": "A nightly sound and light show at the Orchha Fort complex narrates the rise and fall of the Bundela dynasty through dramatic lighting of the palaces and a bilingual (Hindi/English) voiceover. The show animates the facades of Jehangir Mahal and Raja Mahal with vivid colours, telling stories of war, romance, and betrayal on the palace walls.",
+      "whyVisit": "The best way to absorb Orchha's full dramatic history in a single evening.",
+      "bestTime": "Every evening (check current schedule); October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Orchha Fort Sound Light Show Madhya Pradesh",
+      "imageQuery": "Orchha fort sound light show night"
+    },
+    {
+      "name": "Narasingh Temple",
+      "category": "temple",
+      "description": "A beautifully carved and relatively undisturbed 17th-century Vaishnava temple near the main fort complex, dedicated to Lord Narasingh (the man-lion avatar of Vishnu). Its exterior stonework features fine decorative bands of scrolling foliage, celestial musicians, and erotic panels similar in style (though far humbler in scale) to Khajuraho. Rarely mentioned in guidebooks.",
+      "whyVisit": "Orchha's most underrated temple — exquisite stonework without the tourist crowds.",
+      "bestTime": "Morning, October to March",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Narasingh Temple Orchha Madhya Pradesh",
+      "imageQuery": "Narasingh temple Orchha carved stonework"
+    },
+    {
+      "name": "Hardaul's Samadhi and Palace",
+      "category": "heritage",
+      "description": "Hardaul, the beloved younger brother of Raja Jujhar Singh, was unjustly accused and poisoned in the 17th century and subsequently became a folk deity across Bundelkhand. His small memorial palace and samadhi near Orchha is a centre of intense local devotion, especially for women who invoke him before weddings. The Hardaul cult is one of Bundelkhand's most vibrant folk traditions.",
+      "whyVisit": "An intimate folk-religion site revealing a layer of Orchha's culture entirely missed by mainstream visitors.",
+      "bestTime": "Year-round; especially before local wedding seasons",
+      "duration": "45 minutes",
+      "mapsSearch": "Hardaul Samadhi Orchha Madhya Pradesh",
+      "imageQuery": "Hardaul samadhi Orchha folk deity Bundelkhand"
+    },
+    {
+      "name": "Kanchan Ghat Rock Climbing Boulders",
+      "category": "adventure",
+      "description": "The Betwa's banks around Orchha are littered with smooth, water-carved granite boulders and riverside rock faces that have attracted a small bouldering community. Local adventure operators offer beginner to intermediate bouldering sessions on the riverside rocks as well as rappelling from a low river cliff, providing an adventure option for those wanting to supplement heritage sightseeing.",
+      "whyVisit": "Riverside bouldering beside Bundela cenotaphs — a fun adventure add-on for active travellers.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Orchha rock climbing bouldering Betwa",
+      "imageQuery": "Orchha Betwa river bouldering rocks"
+    },
+    {
+      "name": "Shri Ramraja Sarkar Aarti Procession",
+      "category": "religious",
+      "description": "Twice daily — at dawn and dusk — the streets of Orchha fill with processions of devotees carrying flowers, incense, and lamps to the Ram Raja Temple. The evening aarti (around 8 PM) is preceded by a police guard mounting ceremony, conch blowing, and massed chanting. The entire town centre pivots around this ritual, which has continued uninterrupted for centuries.",
+      "whyVisit": "Witnessing Ram honoured with full state ceremony by uniformed police is one of India's most extraordinary religious spectacles.",
+      "bestTime": "Evening aarti, 7:30–8:30 PM",
+      "duration": "1 hour",
+      "mapsSearch": "Ram Raja Temple aarti Orchha",
+      "imageQuery": "Ram Raja temple aarti evening Orchha"
+    },
+    {
+      "name": "Orchha Nature Camp (Betwa Forest)",
+      "category": "nature",
+      "description": "A forest camp on the Betwa's far bank inside the wildlife sanctuary, reached by a short coracle crossing. The camp is surrounded by dry teak forest and offers guided nature walks at dawn and dusk when spotted deer, nilgai, jackals, and crocodiles are most active. Star-gazing from the riverside campfire under near-zero light pollution is exceptional.",
+      "whyVisit": "Camping beside the Betwa — a deeply immersive way to experience the wild side of Orchha.",
+      "bestTime": "November to February",
+      "duration": "Overnight",
+      "mapsSearch": "Orchha nature camp Betwa forest",
+      "imageQuery": "Orchha nature camp Betwa river tents"
+    },
+    {
+      "name": "Lakshmi Narayan Temple Sunset Terrace",
+      "category": "viewpoint",
+      "description": "The roof terrace of the Laxminarayan Temple complex, accessible via interior staircases, provides an elevated 360-degree view over Orchha's entire historical landscape — cenotaphs, fort towers, the Betwa river loop, and the surrounding sanctuary forest. This is the ideal vantage for the magic-hour light that turns the sandstone monuments golden.",
+      "whyVisit": "The single best photograph point for Orchha's full skyline in golden-hour light.",
+      "bestTime": "One hour before sunset, October to March",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Laxminarayan Temple terrace view Orchha",
+      "imageQuery": "Orchha aerial panorama fort temples cenotaphs"
+    },
+    {
+      "name": "Jhansi Fort (Day Trip)",
+      "category": "fort",
+      "description": "The formidable 17th-century Jhansi Fort, 18 km from Orchha, is the citadel from which Rani Laxmibai led the 1857 uprising against the British East India Company. Built by Orchha's Bir Singh Deo, it commands the entire city from a granite hilltop. The fort museum houses Rani Laxmibai's statue, weapons, and artefacts from the revolt.",
+      "whyVisit": "The fort of India's most legendary freedom fighter, just 20 minutes from Orchha — a must-combine day trip.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jhansi Fort Madhya Pradesh",
+      "imageQuery": "Jhansi fort Rani Laxmibai Madhya Pradesh"
+    }
+  ]
+}

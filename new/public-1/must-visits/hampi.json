@@ -1,0 +1,447 @@
+{
+  "id": "hampi",
+  "name": "Hampi",
+  "state": "Karnataka",
+  "slug": "hampi",
+  "tagline": "The hauntingly beautiful ruins of the Vijayanagara Empire",
+  "categories": [
+    "heritage",
+    "nature",
+    "adventure"
+  ],
+  "introduction": "Planning a trip to Hampi? This travel guide to Hampi covers the must visit places in Hampi, the best places to visit in Hampi, top tourist attractions in Hampi, and exciting things to do in Hampi.",
+  "metaTitle": "Best Places to Visit in Hampi | Tourist Attractions in Hampi - TrypInn",
+  "metaDescription": "Explore the best places to visit in Hampi, top things to do in Hampi, and must visit places in Hampi. Your complete travel guide to Hampi by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+    "alt": "Hampi travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "hampi-virupaksha-temple",
+      "name": "Virupaksha Temple",
+      "slug": "virupaksha-temple",
+      "description": "Virupaksha Temple is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Virupaksha Temple promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Virupaksha Temple.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Virupaksha Temple, Hampi",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Virupaksha Temple in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Virupaksha Temple in Hampi"
+      },
+      "position": 1
+    },
+    {
+      "id": "hampi-vittala-temple-complex",
+      "name": "Vittala Temple Complex",
+      "slug": "vittala-temple-complex",
+      "description": "Located in scenic Hampi, Vittala Temple Complex offers an immersive experience into local culture. Exploring Vittala Temple Complex is one of the top things to do in Hampi.",
+      "whyVisit": "Vittala Temple Complex offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Vittala Temple Complex, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Vittala Temple Complex in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Vittala Temple Complex in Hampi"
+      },
+      "position": 2
+    },
+    {
+      "id": "hampi-stone-chariot",
+      "name": "Stone Chariot",
+      "slug": "stone-chariot",
+      "description": "Stone Chariot is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Stone Chariot promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Stone Chariot.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Stone Chariot, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Stone Chariot in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Stone Chariot in Hampi"
+      },
+      "position": 3
+    },
+    {
+      "id": "hampi-hemakuta-hill-temples",
+      "name": "Hemakuta Hill Temples",
+      "slug": "hemakuta-hill-temples",
+      "description": "Hemakuta Hill Temples is a must-see temple in Hampi, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Hampi.",
+      "whyVisit": "Capture stunning photographs at Hemakuta Hill Temples.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hemakuta Hill Temples, Hampi",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Hemakuta Hill Temples in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Hemakuta Hill Temples in Hampi"
+      },
+      "position": 4
+    },
+    {
+      "id": "hampi-elephant-stables",
+      "name": "Elephant Stables",
+      "slug": "elephant-stables",
+      "description": "A crown jewel of Hampi, Elephant Stables captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Elephant Stables.",
+      "whyVisit": "A visit to Elephant Stables is essential for understanding Hampi.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Elephant Stables, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Stables in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Elephant Stables in Hampi"
+      },
+      "position": 5
+    },
+    {
+      "id": "hampi-queen-s-bath",
+      "name": "Queen's Bath",
+      "slug": "queen-s-bath",
+      "description": "Queen's Bath is a must-see heritage in Hampi, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Hampi.",
+      "whyVisit": "Queen's Bath stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Queen's Bath, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Queen's Bath in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Queen's Bath in Hampi"
+      },
+      "position": 6
+    },
+    {
+      "id": "hampi-hazara-rama-temple",
+      "name": "Hazara Rama Temple",
+      "slug": "hazara-rama-temple",
+      "description": "Hazara Rama Temple is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hazara Rama Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Hazara Rama Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Hazara Rama Temple, Hampi",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Hazara Rama Temple in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Hazara Rama Temple in Hampi"
+      },
+      "position": 7
+    },
+    {
+      "id": "hampi-lakshmi-narasimha-statue",
+      "name": "Lakshmi Narasimha Statue",
+      "slug": "lakshmi-narasimha-statue",
+      "description": "Located in scenic Hampi, Lakshmi Narasimha Statue offers an immersive experience into local culture. Exploring Lakshmi Narasimha Statue is one of the top things to do in Hampi.",
+      "whyVisit": "Lakshmi Narasimha Statue offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lakshmi Narasimha Statue, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Lakshmi Narasimha Statue in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Lakshmi Narasimha Statue in Hampi"
+      },
+      "position": 8
+    },
+    {
+      "id": "hampi-tungabhadra-river",
+      "name": "Tungabhadra River",
+      "slug": "tungabhadra-river",
+      "description": "Located in scenic Hampi, Tungabhadra River offers an immersive experience into local culture. Exploring Tungabhadra River is one of the top things to do in Hampi.",
+      "whyVisit": "Capture stunning photographs at Tungabhadra River.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Tungabhadra River, Hampi",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Tungabhadra River in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Tungabhadra River in Hampi"
+      },
+      "position": 9
+    },
+    {
+      "id": "hampi-matanga-hill",
+      "name": "Matanga Hill",
+      "slug": "matanga-hill",
+      "description": "Matanga Hill is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Matanga Hill promises an unforgettable experience.",
+      "whyVisit": "Matanga Hill offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Matanga Hill, Hampi",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Matanga Hill in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Matanga Hill in Hampi"
+      },
+      "position": 10
+    },
+    {
+      "id": "hampi-anegundi-village",
+      "name": "Anegundi Village",
+      "slug": "anegundi-village",
+      "description": "A crown jewel of Hampi, Anegundi Village captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Anegundi Village.",
+      "whyVisit": "Anegundi Village stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Anegundi Village, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Anegundi Village in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Anegundi Village in Hampi"
+      },
+      "position": 11
+    },
+    {
+      "id": "hampi-sanapur-lake",
+      "name": "Sanapur Lake",
+      "slug": "sanapur-lake",
+      "description": "A crown jewel of Hampi, Sanapur Lake captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Sanapur Lake.",
+      "whyVisit": "A visit to Sanapur Lake is essential for understanding Hampi.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Sanapur Lake, Hampi",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sanapur Lake in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Sanapur Lake in Hampi"
+      },
+      "position": 12
+    },
+    {
+      "id": "hampi-coracle-ride",
+      "name": "Coracle Ride",
+      "slug": "coracle-ride",
+      "description": "Coracle Ride is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Coracle Ride promises an unforgettable experience.",
+      "whyVisit": "Coracle Ride stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-May",
+      "duration": "Full day",
+      "mapsSearch": "Coracle Ride, Hampi",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Coracle Ride in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Coracle Ride in Hampi"
+      },
+      "position": 13
+    },
+    {
+      "id": "hampi-underground-temple",
+      "name": "Underground Temple",
+      "slug": "underground-temple",
+      "description": "A crown jewel of Hampi, Underground Temple captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Underground Temple.",
+      "whyVisit": "A visit to Underground Temple is essential for understanding Hampi.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Underground Temple, Hampi",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Underground Temple in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Underground Temple in Hampi"
+      },
+      "position": 14
+    },
+    {
+      "id": "hampi-sasivekalu-ganesha",
+      "name": "Sasivekalu Ganesha",
+      "slug": "sasivekalu-ganesha",
+      "description": "Sasivekalu Ganesha is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sasivekalu Ganesha promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Sasivekalu Ganesha.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Sasivekalu Ganesha, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Sasivekalu Ganesha in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Sasivekalu Ganesha in Hampi"
+      },
+      "position": 15
+    },
+    {
+      "id": "hampi-kadalekalu-ganesha",
+      "name": "Kadalekalu Ganesha",
+      "slug": "kadalekalu-ganesha",
+      "description": "Located in scenic Hampi, Kadalekalu Ganesha offers an immersive experience into local culture. Exploring Kadalekalu Ganesha is one of the top things to do in Hampi.",
+      "whyVisit": "Capture stunning photographs at Kadalekalu Ganesha.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Kadalekalu Ganesha, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Kadalekalu Ganesha in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Kadalekalu Ganesha in Hampi"
+      },
+      "position": 16
+    },
+    {
+      "id": "hampi-badavi-linga",
+      "name": "Badavi Linga",
+      "slug": "badavi-linga",
+      "description": "Badavi Linga is a must-see temple in Hampi, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Hampi.",
+      "whyVisit": "Capture stunning photographs at Badavi Linga.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Badavi Linga, Hampi",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Badavi Linga in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Badavi Linga in Hampi"
+      },
+      "position": 17
+    },
+    {
+      "id": "hampi-zenana-enclosure",
+      "name": "Zenana Enclosure",
+      "slug": "zenana-enclosure",
+      "description": "A crown jewel of Hampi, Zenana Enclosure captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Zenana Enclosure.",
+      "whyVisit": "Zenana Enclosure offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Zenana Enclosure, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Zenana Enclosure in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Zenana Enclosure in Hampi"
+      },
+      "position": 18
+    },
+    {
+      "id": "hampi-lotus-mahal",
+      "name": "Lotus Mahal",
+      "slug": "lotus-mahal",
+      "description": "Lotus Mahal is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Lotus Mahal promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Lotus Mahal.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Lotus Mahal, Hampi",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lotus Mahal in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Lotus Mahal in Hampi"
+      },
+      "position": 19
+    },
+    {
+      "id": "hampi-hampi-bazaar",
+      "name": "Hampi Bazaar",
+      "slug": "hampi-bazaar",
+      "description": "Hampi Bazaar is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hampi Bazaar promises an unforgettable experience.",
+      "whyVisit": "A visit to Hampi Bazaar is essential for understanding Hampi.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hampi Bazaar, Hampi",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Hampi Bazaar in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Hampi Bazaar in Hampi"
+      },
+      "position": 20
+    },
+    {
+      "id": "hampi-monolithic-bull",
+      "name": "Monolithic Bull",
+      "slug": "monolithic-bull",
+      "description": "Located in scenic Hampi, Monolithic Bull offers an immersive experience into local culture. Exploring Monolithic Bull is one of the top things to do in Hampi.",
+      "whyVisit": "Monolithic Bull stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Monolithic Bull, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Monolithic Bull in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Monolithic Bull in Hampi"
+      },
+      "position": 21
+    },
+    {
+      "id": "hampi-talarigatta-gate",
+      "name": "Talarigatta Gate",
+      "slug": "talarigatta-gate",
+      "description": "Nestled in Hampi, Talarigatta Gate stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Talarigatta Gate is among the best things to do in Hampi.",
+      "whyVisit": "Talarigatta Gate offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Talarigatta Gate, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Talarigatta Gate in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Talarigatta Gate in Hampi"
+      },
+      "position": 22
+    },
+    {
+      "id": "hampi-riverside-ruins",
+      "name": "Riverside Ruins",
+      "slug": "riverside-ruins",
+      "description": "Riverside Ruins is one of the most iconic landmarks in Hampi, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Riverside Ruins promises an unforgettable experience.",
+      "whyVisit": "Riverside Ruins offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Riverside Ruins, Hampi",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Riverside Ruins in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Riverside Ruins in Hampi"
+      },
+      "position": 23
+    },
+    {
+      "id": "hampi-daroji-bear-sanctuary",
+      "name": "Daroji Bear Sanctuary",
+      "slug": "daroji-bear-sanctuary",
+      "description": "A crown jewel of Hampi, Daroji Bear Sanctuary captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Daroji Bear Sanctuary.",
+      "whyVisit": "Experience the unmatched beauty of Daroji Bear Sanctuary.",
+      "bestTime": "Safari",
+      "duration": "Half day",
+      "mapsSearch": "Daroji Bear Sanctuary, Hampi",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Daroji Bear Sanctuary in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Daroji Bear Sanctuary in Hampi"
+      },
+      "position": 24
+    },
+    {
+      "id": "hampi-anjanadri-hill",
+      "name": "Anjanadri Hill",
+      "slug": "anjanadri-hill",
+      "description": "A crown jewel of Hampi, Anjanadri Hill captivates every traveler with enchanting beauty. No trip to Hampi is complete without visiting Anjanadri Hill.",
+      "whyVisit": "Anjanadri Hill stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-May",
+      "duration": "2-4 hours",
+      "mapsSearch": "Anjanadri Hill, Hampi",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Anjanadri Hill in Hampi, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Anjanadri Hill in Hampi"
+      },
+      "position": 25
+    }
+  ]
+}

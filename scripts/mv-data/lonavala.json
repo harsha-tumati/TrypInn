@@ -1,0 +1,200 @@
+{
+  "slug": "lonavala",
+  "name": "Lonavala",
+  "state": "Maharashtra",
+  "tagline": "Western Ghats escape that refreshes Mumbai and Pune",
+  "categories": ["hill_station", "adventure", "nature"],
+  "highlights": ["mist-laden monsoon forts and waterfalls", "starting point for iconic tiger's leap and pawna treks"],
+  "attractions": [
+    {
+      "name": "Tiger's Leap (Tigai Point)",
+      "category": "viewpoint",
+      "description": "Lonavala's most iconic viewpoint sits at the edge of a sheer cliff where the plateau abruptly drops into the Sahyadri valley 650 m below. The ledge's shape resembles a leaping tiger's paw, and on monsoon mornings clouds billow upward from the valley, creating the illusion of standing above a sea of white. The sight at dawn, with the Western Ghats stretching to the horizon, ranks among Maharashtra's finest natural vistas.",
+      "whyVisit": "Maharashtra's most dramatic valley viewpoint, at its most spectacular during monsoon.",
+      "bestTime": "June to September for cloud-filled valleys; early morning for clearest air",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tiger's Leap viewpoint Lonavala Maharashtra",
+      "imageQuery": "Tiger's Leap viewpoint Lonavala monsoon clouds"
+    },
+    {
+      "name": "Bhushi Dam",
+      "category": "nature",
+      "description": "Built on the Indrayani River by the British in 1860 to supply water to the Bombay-Pune railway, Bhushi Dam transforms into Lonavala's most festive spot during monsoon when water cascades over its stepped stone spillway in multiple silver sheets. Families wade in the overflow streams on the downstream terraced steps — a quintessential Maharashtra monsoon ritual — while the surrounding hills turn an electric green.",
+      "whyVisit": "The most joyful monsoon waterplay spot in the Mumbai-Pune hill belt.",
+      "bestTime": "July to September when the spillway overflows dramatically",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhushi Dam Lonavala Maharashtra",
+      "imageQuery": "Bhushi Dam Lonavala waterfall monsoon"
+    },
+    {
+      "name": "Lohagad Fort",
+      "category": "fort",
+      "description": "One of Maharashtra's best-preserved hill forts, Lohagad (\"Iron Fort\") stands at 1,033 m and controlled the Bor Ghat pass trade route for centuries. Built by various dynasties from the Satavahanas onward, it reached its peak under Shivaji Maharaj, who used it as a treasury. The four massive gates, the Vinchugad bastion, and a large freshwater cistern are all intact. The 7 km trek from Malavli station is among the most popular weekend hikes from Mumbai.",
+      "whyVisit": "A full-fledged hill-fort experience within two hours of Mumbai or Pune.",
+      "bestTime": "October to February for clear views; monsoon for dramatic mist and greenery",
+      "duration": "4-5 hours including trek",
+      "mapsSearch": "Lohagad Fort Lonavala Maharashtra",
+      "imageQuery": "Lohagad Fort Maharashtra Sahyadri trek"
+    },
+    {
+      "name": "Karla Caves",
+      "category": "cave",
+      "description": "Dating to the 1st century BCE–2nd century CE, the Karla rock-cut Buddhist complex is home to Maharashtra's largest and best-preserved Hinayana chaitya hall. The main prayer hall is 38 m long with intricately carved pillars, a wooden umbrella atop the stupa that has survived 2,000 years, and a sunlit facade with a huge horseshoe-arch window. The site blends Buddhist cave art with a later Ekveera Devi Hindu temple on the hill above, drawing both pilgrims and heritage travellers.",
+      "whyVisit": "The finest early Buddhist chaitya hall in India, largely intact after two millennia.",
+      "bestTime": "October to March; morning visit before crowds arrive",
+      "duration": "2-3 hours",
+      "mapsSearch": "Karla Caves Lonavala Maharashtra",
+      "imageQuery": "Karla Caves Buddhist chaitya hall Maharashtra"
+    },
+    {
+      "name": "Bhaja Caves",
+      "category": "cave",
+      "description": "Slightly older than Karla and far less crowded, the 22 rock-cut Buddhist cells and chaitya at Bhaja (2nd century BCE) offer a more intimate encounter with early Indian monastic life. Remarkable relief sculptures of Indra on an elephant and Surya driving a chariot adorn the walls. A group of 14 funerary stupas outside the cells, and a seasonal waterfall behind the complex during monsoon, make this a deeply atmospheric heritage site.",
+      "whyVisit": "Quieter and arguably more atmospheric than Karla, with remarkable early relief sculptures.",
+      "bestTime": "July to September for the waterfall; October to February for crowd-free exploration",
+      "duration": "2 hours",
+      "mapsSearch": "Bhaja Caves Lonavala Maharashtra",
+      "imageQuery": "Bhaja Caves rock cut Buddhist Maharashtra"
+    },
+    {
+      "name": "Pawna Lake",
+      "category": "lake",
+      "description": "Created by Pavana Dam on the Pavana River, this wide blue reservoir is backed by five major forts — Lohagad, Visapur, Tung, Tikona, and Korigad — that frame the skyline from the water's edge. Camping overnight on the lake's grassy banks under the fort-studded horizon has become one of Maharashtra's most popular weekend escapes. Kayaking, fishing, and bonfire camps are available through various operators on the lakefront.",
+      "whyVisit": "The most scenic camping spot in the Pune-Mumbai region with a fort-ringed horizon.",
+      "bestTime": "October to February for clear skies; post-monsoon (September–October) for full lake and green hills",
+      "duration": "Overnight recommended; 3-4 hours for a day visit",
+      "mapsSearch": "Pawna Lake camping Lonavala Maharashtra",
+      "imageQuery": "Pawna Lake camping Maharashtra forts"
+    },
+    {
+      "name": "Visapur Fort",
+      "category": "fort",
+      "description": "Lonavala's largest fort sprawls across a 3 km plateau at 1,084 m, connected to Lohagad below by a shared ridge. Built during the Peshwa era in the 18th century, it features large rock-cut cisterns, a grain storage complex, and the ruins of a massive residential palace. The wide open summit feels wild and exploratory — far fewer visitors than Lohagad despite its size — and offers 360-degree views of the entire Maval region.",
+      "whyVisit": "A vast, wild fort plateau rarely crowded despite being Maharashtra's most extensive hilltop ruin.",
+      "bestTime": "October to January for clear panoramic views",
+      "duration": "4-5 hours including 2 km ascent",
+      "mapsSearch": "Visapur Fort Lonavala Maharashtra trek",
+      "imageQuery": "Visapur Fort Maharashtra plateau ruins"
+    },
+    {
+      "name": "Lonavala Lake",
+      "category": "lake",
+      "description": "The town's oldest reservoir, built in 1876, sits just 3 km from the main market and reflects the surrounding forested hills in its calm waters. In monsoon, the lake fills to the brim and a waterfall spills from its spillway into the gorge below. Mornings here are misty and peaceful — a contrast to the town bustle — and the lakeside road is a favourite cycling and jogging route for weekend visitors.",
+      "whyVisit": "A quiet, reflective morning escape just minutes from the busy Lonavala market.",
+      "bestTime": "July to October when the lake is full and mist hangs over the water",
+      "duration": "1 hour",
+      "mapsSearch": "Lonavala Lake Maharashtra",
+      "imageQuery": "Lonavala Lake reservoir misty morning"
+    },
+    {
+      "name": "Rajmachi Fort",
+      "category": "fort",
+      "description": "A twin-fort complex — Shrivardhan and Manaranjan — perched on a mountain spur overlooking the Ulhas valley and the historic Bor Ghat, Rajmachi requires an overnight trek through dense forest from Lonavala or Karjat. The remote village of Udhewadi at the fort base offers basic homestays. The trek passes two waterfalls and a seasonal stream, and the fort's strategic position commanding both the coastal and Deccan approaches is immediately apparent from its ramparts.",
+      "whyVisit": "One of Maharashtra's most rewarding overnight trekking destinations with wild, unspoiled surroundings.",
+      "bestTime": "October to February for the clearest trail conditions and views",
+      "duration": "Overnight trek; 8-10 hours round trip from Lonavala",
+      "mapsSearch": "Rajmachi Fort trek Lonavala Maharashtra",
+      "imageQuery": "Rajmachi Fort Sahyadri Maharashtra overnight trek"
+    },
+    {
+      "name": "Tikona Fort (Vitandgad)",
+      "category": "fort",
+      "description": "Tikona's perfectly triangular peak (tikona means \"triangle\") rises sharply from the Pawna Lake shoreline to 1,033 m, creating one of the most photogenic fort silhouettes in the Western Ghats. The ascent involves a steep final rocky section with iron ladders fixed in the basalt. The summit has a Trimbakeshwar Shiva temple, two cisterns, and a 360-degree view that sweeps from Pawna Lake to Tung Fort and the distant Sahyadri ridgeline.",
+      "whyVisit": "The most dramatically shaped peak near Lonavala, with Pawna Lake glittering below.",
+      "bestTime": "October to February for clear skies; July–September for a green, misty ascent",
+      "duration": "3-4 hours return trek",
+      "mapsSearch": "Tikona Fort Pawna Lake Maharashtra",
+      "imageQuery": "Tikona Fort triangular peak Maharashtra"
+    },
+    {
+      "name": "Kune Waterfalls",
+      "category": "waterfall",
+      "description": "Maharashtra's third-highest waterfall at around 200 m, Kune plunges in three distinct tiers through dense forest near Khandala. The falls are best viewed from the road above — a vertical curtain of white against dark basalt — but a forest trail descends to the base of the lower tier, a cool mist-filled pool. The surrounding forest is part of the Khandala ecological zone and attracts birders during the post-monsoon season.",
+      "whyVisit": "Maharashtra's most accessible major waterfall visible from the road and walkable to the base.",
+      "bestTime": "July to October at peak flow",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kune Waterfalls Khandala Maharashtra",
+      "imageQuery": "Kune Waterfalls Khandala Maharashtra monsoon"
+    },
+    {
+      "name": "Duke's Nose (Nagphani)",
+      "category": "viewpoint",
+      "description": "A rocky promontory jutting out from the Sahyadri escarpment near Khandala, Duke's Nose (or Nagphani — cobra's hood) is one of the most popular rock-climbing and rappelling venues near Mumbai. Non-climbers walk the 4 km trail to the cliff edge for vertiginous views down the Bor Ghat pass and across to the MTDC viewpoint at Khandala. On clear winter days the Arabian Sea coast is visible on the horizon.",
+      "whyVisit": "Lonavala's best location for rock climbing, rappelling, and canyon views.",
+      "bestTime": "October to February for clear views; monsoon for dramatic cloud effects but slippery trails",
+      "duration": "3-4 hours return trek",
+      "mapsSearch": "Duke's Nose Khandala Maharashtra",
+      "imageQuery": "Duke's Nose Nagphani Khandala cliff view"
+    },
+    {
+      "name": "Tungi Fort (Tung Fort)",
+      "category": "fort",
+      "description": "Rising steeply from the Pawna Lake shoreline at 1,075 m, Tung Fort is the most challenging of the five Pawna-region forts. The climb involves traversing a near-vertical basalt face on the upper section, but the summit rewards with panoramic views of the full Pawna reservoir and five forts simultaneously on a clear day. The fort has a small Ganesh temple and several water cisterns carved into the rock by the Adilshahi and later Maratha administrators.",
+      "whyVisit": "The most thrilling ascent among Lonavala's Pawna forts for adventure seekers.",
+      "bestTime": "November to February for safe climbing conditions",
+      "duration": "4-5 hours return trek",
+      "mapsSearch": "Tung Fort Pawna Lake Maharashtra",
+      "imageQuery": "Tung Fort Pawna Lake Maharashtra trek"
+    },
+    {
+      "name": "Lonavala Chikki Market",
+      "category": "market",
+      "description": "The main market street of Lonavala is legendary for chikki — brittle candy made from jaggery and groundnuts or cashews — a snack synonymous with the hill station since the early 20th century. Dozens of shops line Shivaji Road, each with sacks of different varieties: mixed dry fruit, coconut, til (sesame), walnut, and chocolate-coated chikki. Fudge, walnut cake, and the local specialty \"maggi chikki\" (a softer caramel variant) are also must-tries.",
+      "whyVisit": "No visit to Lonavala is complete without stocking up on the original Lonavala chikki.",
+      "bestTime": "Year-round; afternoon when new batches are freshly made",
+      "duration": "1 hour",
+      "mapsSearch": "Lonavala Chikki market Shivaji Road Maharashtra",
+      "imageQuery": "Lonavala chikki market Maharashtra sweets"
+    },
+    {
+      "name": "Amby Valley Skydiving",
+      "category": "adventure",
+      "description": "The Aamby Valley City airstrip near Lonavala hosts one of India's premier tandem skydiving operations, offering jumps from 10,000 ft over the Western Ghats. Participants freefall for approximately 30 seconds before the parachute deploys, drifting over the forested Sahyadri plateau. The facility is fully certified and operates with experienced AFF-qualified instructors, making it the most accessible high-altitude jump zone for Mumbai and Pune residents.",
+      "whyVisit": "India's most accessible certified skydiving experience within three hours of two major metros.",
+      "bestTime": "October to May; avoid monsoon for clear jump conditions",
+      "duration": "Half day including ground training",
+      "mapsSearch": "Aamby Valley skydiving Lonavala Maharashtra",
+      "imageQuery": "skydiving Aamby Valley Lonavala Western Ghats"
+    },
+    {
+      "name": "INS Shivaji Naval Station Heritage Walk",
+      "category": "heritage",
+      "description": "The Indian Navy's premier technical training establishment at Lonavala occupies a sprawling colonial-era campus with original British-built engine sheds, heritage locomotives, and a well-maintained marine engineering museum. On select open days or with prior permission, civilians can tour the campus and museum, which preserves early steam turbines, marine diesel engines, and an extensive collection of naval engineering instruments dating to the 19th century.",
+      "whyVisit": "A rare glimpse into India's colonial-era naval engineering heritage in a beautifully maintained campus.",
+      "bestTime": "Check scheduled open days; typically cooler months October–February",
+      "duration": "2-3 hours",
+      "mapsSearch": "INS Shivaji Naval Station Lonavala museum",
+      "imageQuery": "INS Shivaji Lonavala naval heritage museum"
+    },
+    {
+      "name": "Della Adventure Park",
+      "category": "adventure",
+      "description": "India's largest adventure park sprawls across 50 acres in the Sahyadri foothills near Lonavala, offering over 75 activities including India's highest bungee swing (1,000 ft), ATV biking, paintball, archery, the Xtreme Zipline, and a dedicated kids' adventure zone. A luxury resort on site means visitors can combine a night's stay with a full day of adrenalin activities, making Della the most comprehensive adventure destination in the Mumbai-Pune corridor.",
+      "whyVisit": "The most diverse adventure activity roster in the Mumbai-Pune corridor, all on one campus.",
+      "bestTime": "October to May; weekdays to avoid queues",
+      "duration": "Full day",
+      "mapsSearch": "Della Adventure Park Lonavala Maharashtra",
+      "imageQuery": "Della Adventure Park Lonavala zipline"
+    },
+    {
+      "name": "Kurvande Waterfall",
+      "category": "waterfall",
+      "description": "A lesser-known seasonal waterfall deep in the forest between Lonavala and Rajmachi, Kurvande is accessible only on foot via a 3 km jungle trail from the Rajmachi base village. The falls plunge into a wide basalt pool perfect for swimming during the monsoon peak. The trail passes through thick deciduous forest with excellent birdwatching opportunities and provides a genuinely wild experience very different from the more-visited Bhushi Dam area.",
+      "whyVisit": "A hidden swimming hole waterfall far from the weekend crowds.",
+      "bestTime": "August to October when flow is strong and the pool is swimmable",
+      "duration": "3-4 hours round trip trek",
+      "mapsSearch": "Kurvande Waterfall Lonavala Maharashtra trail",
+      "imageQuery": "Kurvande waterfall Lonavala hidden Maharashtra"
+    },
+    {
+      "name": "Bushi Island Camping",
+      "category": "nature",
+      "description": "A grassy island that emerges in the middle of the Indrayani River gorge below Bhushi Dam during the months before and after peak monsoon, accessible by wading across a shallow channel. Adventurous campers pitch tents on the flat riverine meadow surrounded by forested gorge walls. The night sky is unobscured by light pollution, and the sound of the river flowing on both sides creates an immersive wilderness experience just 3 km from the Lonavala market.",
+      "whyVisit": "Sleep on a river island inside a gorge just kilometres from a busy hill station.",
+      "bestTime": "October to December before river levels drop too low",
+      "duration": "Overnight",
+      "mapsSearch": "Bhushi Dam gorge camping Lonavala river island",
+      "imageQuery": "river island camping Lonavala gorge Maharashtra"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "alleppey",
+  "name": "Alleppey",
+  "state": "Kerala",
+  "slug": "alleppey",
+  "tagline": "Venice of the East with backwater canals",
+  "categories": [
+    "backwaters",
+    "lake",
+    "beach"
+  ],
+  "introduction": "Alleppey is a treasure trove of experiences. In this travel guide to Alleppey, we reveal the must visit places in Alleppey, the best places to visit in Alleppey, iconic tourist attractions in Alleppey, and amazing things to do in Alleppey.",
+  "metaTitle": "Best Places to Visit in Alleppey | Tourist Attractions in Alleppey - TrypInn",
+  "metaDescription": "Find the best places to visit in Alleppey, must visit places in Alleppey, and tourist attractions in Alleppey. Plan your Alleppey trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+    "alt": "Alleppey travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "alleppey-munroe-island",
+      "name": "Munroe Island",
+      "slug": "munroe-island",
+      "description": "A crown jewel of Alleppey, Munroe Island captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Munroe Island.",
+      "whyVisit": "Munroe Island offers a perfect blend of history and scenery.",
+      "bestTime": "Houseboat",
+      "duration": "2-3 hours",
+      "mapsSearch": "Munroe Island, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Munroe Island in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Munroe Island in Alleppey"
+      },
+      "position": 1
+    },
+    {
+      "id": "alleppey-sattal-lake",
+      "name": "Sattal Lake",
+      "slug": "sattal-lake",
+      "description": "A crown jewel of Alleppey, Sattal Lake captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Sattal Lake.",
+      "whyVisit": "Experience the unmatched beauty of Sattal Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sattal Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sattal Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Sattal Lake in Alleppey"
+      },
+      "position": 2
+    },
+    {
+      "id": "alleppey-yarada-beach",
+      "name": "Yarada Beach",
+      "slug": "yarada-beach",
+      "description": "Located in scenic Alleppey, Yarada Beach offers an immersive experience into local culture. Exploring Yarada Beach is one of the top things to do in Alleppey.",
+      "whyVisit": "A visit to Yarada Beach is essential for understanding Alleppey.",
+      "bestTime": "Year-round",
+      "duration": "Sunset",
+      "mapsSearch": "Yarada Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Yarada Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Yarada Beach in Alleppey"
+      },
+      "position": 3
+    },
+    {
+      "id": "alleppey-village-tour",
+      "name": "Village Tour",
+      "slug": "village-tour",
+      "description": "Located in scenic Alleppey, Village Tour offers an immersive experience into local culture. Exploring Village Tour is one of the top things to do in Alleppey.",
+      "whyVisit": "A visit to Village Tour is essential for understanding Alleppey.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Village Tour, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Village Tour in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Village Tour in Alleppey"
+      },
+      "position": 4
+    },
+    {
+      "id": "alleppey-sankey-tank",
+      "name": "Sankey Tank",
+      "slug": "sankey-tank",
+      "description": "Sankey Tank is one of the most iconic landmarks in Alleppey, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sankey Tank promises an unforgettable experience.",
+      "whyVisit": "A visit to Sankey Tank is essential for understanding Alleppey.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Sankey Tank, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sankey Tank in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Sankey Tank in Alleppey"
+      },
+      "position": 5
+    },
+    {
+      "id": "alleppey-cherai-beach",
+      "name": "Cherai Beach",
+      "slug": "cherai-beach",
+      "description": "A crown jewel of Alleppey, Cherai Beach captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Cherai Beach.",
+      "whyVisit": "Cherai Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Cherai Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Cherai Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Cherai Beach in Alleppey"
+      },
+      "position": 6
+    },
+    {
+      "id": "alleppey-shikara-ride",
+      "name": "Shikara Ride",
+      "slug": "shikara-ride",
+      "description": "A crown jewel of Alleppey, Shikara Ride captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Shikara Ride.",
+      "whyVisit": "Shikara Ride offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Shikara Ride, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Shikara Ride in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Shikara Ride in Alleppey"
+      },
+      "position": 7
+    },
+    {
+      "id": "alleppey-kankaria-lake",
+      "name": "Kankaria Lake",
+      "slug": "kankaria-lake",
+      "description": "Kankaria Lake is one of the most iconic landmarks in Alleppey, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kankaria Lake promises an unforgettable experience.",
+      "whyVisit": "Kankaria Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Kankaria Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kankaria Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Kankaria Lake in Alleppey"
+      },
+      "position": 8
+    },
+    {
+      "id": "alleppey-digha-beach",
+      "name": "Digha Beach",
+      "slug": "digha-beach",
+      "description": "Nestled in Alleppey, Digha Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Digha Beach is among the best things to do in Alleppey.",
+      "whyVisit": "Digha Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Digha Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Digha Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Digha Beach in Alleppey"
+      },
+      "position": 9
+    },
+    {
+      "id": "alleppey-kollam-backwaters",
+      "name": "Kollam Backwaters",
+      "slug": "kollam-backwaters",
+      "description": "Kollam Backwaters is one of the most iconic landmarks in Alleppey, drawing visitors with its timeless charm. This backwaters offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kollam Backwaters promises an unforgettable experience.",
+      "whyVisit": "Kollam Backwaters stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Kollam Backwaters, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Kollam Backwaters in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kollam Backwaters in Alleppey"
+      },
+      "position": 10
+    },
+    {
+      "id": "alleppey-vellayani-lake",
+      "name": "Vellayani Lake",
+      "slug": "vellayani-lake",
+      "description": "Nestled in Alleppey, Vellayani Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Vellayani Lake is among the best things to do in Alleppey.",
+      "whyVisit": "Experience the unmatched beauty of Vellayani Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Vellayani Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Vellayani Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Vellayani Lake in Alleppey"
+      },
+      "position": 11
+    },
+    {
+      "id": "alleppey-mahabalipuram-beach",
+      "name": "Mahabalipuram Beach",
+      "slug": "mahabalipuram-beach",
+      "description": "Nestled in Alleppey, Mahabalipuram Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Mahabalipuram Beach is among the best things to do in Alleppey.",
+      "whyVisit": "A visit to Mahabalipuram Beach is essential for understanding Alleppey.",
+      "bestTime": "Year-round",
+      "duration": "2-4 hours",
+      "mapsSearch": "Mahabalipuram Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Mahabalipuram Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Mahabalipuram Beach in Alleppey"
+      },
+      "position": 12
+    },
+    {
+      "id": "alleppey-bird-watching",
+      "name": "Bird Watching",
+      "slug": "bird-watching",
+      "description": "Bird Watching is one of the most iconic landmarks in Alleppey, drawing visitors with its timeless charm. This backwaters offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bird Watching promises an unforgettable experience.",
+      "whyVisit": "A visit to Bird Watching is essential for understanding Alleppey.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Bird Watching, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Bird Watching in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Bird Watching in Alleppey"
+      },
+      "position": 13
+    },
+    {
+      "id": "alleppey-paravur-lake",
+      "name": "Paravur Lake",
+      "slug": "paravur-lake",
+      "description": "Paravur Lake is one of the most iconic landmarks in Alleppey, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Paravur Lake promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Paravur Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Paravur Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Paravur Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Paravur Lake in Alleppey"
+      },
+      "position": 14
+    },
+    {
+      "id": "alleppey-muzhappilangad-beach",
+      "name": "Muzhappilangad Beach",
+      "slug": "muzhappilangad-beach",
+      "description": "Muzhappilangad Beach is a must-see beach in Alleppey, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Alleppey.",
+      "whyVisit": "Muzhappilangad Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Muzhappilangad Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Muzhappilangad Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Muzhappilangad Beach in Alleppey"
+      },
+      "position": 15
+    },
+    {
+      "id": "alleppey-kuttanad-backwaters",
+      "name": "Kuttanad Backwaters",
+      "slug": "kuttanad-backwaters",
+      "description": "Kuttanad Backwaters is a must-see backwaters in Alleppey, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Alleppey.",
+      "whyVisit": "Kuttanad Backwaters offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Kuttanad Backwaters, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Kuttanad Backwaters in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Kuttanad Backwaters in Alleppey"
+      },
+      "position": 16
+    },
+    {
+      "id": "alleppey-dal-lake",
+      "name": "Dal Lake",
+      "slug": "dal-lake",
+      "description": "Dal Lake is a must-see lake in Alleppey, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Alleppey.",
+      "whyVisit": "A visit to Dal Lake is essential for understanding Alleppey.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Dal Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Dal Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Dal Lake in Alleppey"
+      },
+      "position": 17
+    },
+    {
+      "id": "alleppey-om-beach",
+      "name": "Om Beach",
+      "slug": "om-beach",
+      "description": "Located in scenic Alleppey, Om Beach offers an immersive experience into local culture. Exploring Om Beach is one of the top things to do in Alleppey.",
+      "whyVisit": "Om Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Om Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Om Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Om Beach in Alleppey"
+      },
+      "position": 18
+    },
+    {
+      "id": "alleppey-canoe-ride",
+      "name": "Canoe Ride",
+      "slug": "canoe-ride",
+      "description": "Located in scenic Alleppey, Canoe Ride offers an immersive experience into local culture. Exploring Canoe Ride is one of the top things to do in Alleppey.",
+      "whyVisit": "Canoe Ride stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Canoe Ride, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Canoe Ride in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Canoe Ride in Alleppey"
+      },
+      "position": 19
+    },
+    {
+      "id": "alleppey-agara-lake",
+      "name": "Agara Lake",
+      "slug": "agara-lake",
+      "description": "A crown jewel of Alleppey, Agara Lake captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Agara Lake.",
+      "whyVisit": "Experience the unmatched beauty of Agara Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Agara Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Agara Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Agara Lake in Alleppey"
+      },
+      "position": 20
+    },
+    {
+      "id": "alleppey-radhanagar-beach",
+      "name": "Radhanagar Beach",
+      "slug": "radhanagar-beach",
+      "description": "A crown jewel of Alleppey, Radhanagar Beach captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Radhanagar Beach.",
+      "whyVisit": "Experience the unmatched beauty of Radhanagar Beach.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-4 hours",
+      "mapsSearch": "Radhanagar Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Radhanagar Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Radhanagar Beach in Alleppey"
+      },
+      "position": 21
+    },
+    {
+      "id": "alleppey-ashtamudi-lake-cruise",
+      "name": "Ashtamudi Lake Cruise",
+      "slug": "ashtamudi-lake-cruise",
+      "description": "A crown jewel of Alleppey, Ashtamudi Lake Cruise captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Ashtamudi Lake Cruise.",
+      "whyVisit": "Ashtamudi Lake Cruise offers a perfect blend of history and scenery.",
+      "bestTime": "Houseboat",
+      "duration": "Half day",
+      "mapsSearch": "Ashtamudi Lake Cruise, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Ashtamudi Lake Cruise in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Ashtamudi Lake Cruise in Alleppey"
+      },
+      "position": 22
+    },
+    {
+      "id": "alleppey-akshardham-lake",
+      "name": "Akshardham Lake",
+      "slug": "akshardham-lake",
+      "description": "A crown jewel of Alleppey, Akshardham Lake captivates every traveler with enchanting beauty. No trip to Alleppey is complete without visiting Akshardham Lake.",
+      "whyVisit": "Experience the unmatched beauty of Akshardham Lake.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Akshardham Lake, Alleppey",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Lake in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Akshardham Lake in Alleppey"
+      },
+      "position": 23
+    },
+    {
+      "id": "alleppey-marina-beach",
+      "name": "Marina Beach",
+      "slug": "marina-beach",
+      "description": "Located in scenic Alleppey, Marina Beach offers an immersive experience into local culture. Exploring Marina Beach is one of the top things to do in Alleppey.",
+      "whyVisit": "Marina Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Marina Beach, Alleppey",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Marina Beach in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Marina Beach in Alleppey"
+      },
+      "position": 24
+    },
+    {
+      "id": "alleppey-sunset-cruise",
+      "name": "Sunset Cruise",
+      "slug": "sunset-cruise",
+      "description": "Located in scenic Alleppey, Sunset Cruise offers an immersive experience into local culture. Exploring Sunset Cruise is one of the top things to do in Alleppey.",
+      "whyVisit": "Capture stunning photographs at Sunset Cruise.",
+      "bestTime": "Houseboat",
+      "duration": "Overnight",
+      "mapsSearch": "Sunset Cruise, Alleppey",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Sunset Cruise in Alleppey, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Sunset Cruise in Alleppey"
+      },
+      "position": 25
+    }
+  ]
+}

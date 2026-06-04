@@ -1,0 +1,170 @@
+{
+  "slug": "lonar",
+  "name": "Lonar",
+  "state": "Maharashtra",
+  "tagline": "Ancient meteor crater lake lost in geological time",
+  "categories": ["nature", "heritage", "wildlife"],
+  "highlights": ["only hypervelocity impact crater in basaltic rock", "ancient temples line the crater rim"],
+  "attractions": [
+    {
+      "name": "Lonar Crater Lake",
+      "category": "lake",
+      "description": "One of the world's four hypervelocity impact craters formed in basaltic rock, approximately 50,000 years old and 1.8 km in diameter. The saline-alkaline lake supports rare algae that tint the water green and pink. A trail descends 150 m to the lake shore, revealing a lush microclimate of dense forest and ancient temple ruins incongruously nestled inside a geological wonder.",
+      "whyVisit": "A once-in-a-lifetime geological spectacle found nowhere else in India.",
+      "bestTime": "October to February for cool weather and clear skies",
+      "duration": "3-4 hours",
+      "mapsSearch": "Lonar Crater Lake Lonar Maharashtra",
+      "imageQuery": "Lonar crater lake Maharashtra aerial"
+    },
+    {
+      "name": "Daitya Sudan Temple",
+      "category": "temple",
+      "description": "A beautifully preserved 12th-century Hemadpanthi-style temple dedicated to Lord Vishnu, positioned directly on the crater rim with a dramatic drop behind it. Intricate carvings of celestial beings, apsaras, and mythological narratives cover every surface. The Hemadpanthi architecture, using interlocking stone without mortar, has kept the structure remarkably intact despite centuries of weathering.",
+      "whyVisit": "The finest example of Hemadpanthi temple architecture in the Vidarbha region.",
+      "bestTime": "Morning for soft light on the carved stone facades",
+      "duration": "1 hour",
+      "mapsSearch": "Daitya Sudan Temple Lonar Maharashtra",
+      "imageQuery": "Daitya Sudan Temple Lonar stone carvings"
+    },
+    {
+      "name": "Lonar Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "The 3.66 sq km sanctuary encompassing the crater basin harbours peacocks, grey langurs, spotted deer, mongoose, and over 160 bird species including flamingos that occasionally visit the alkaline lake. The dense teak and mixed deciduous forest inside the crater forms an isolated ecosystem shaped by the impact geology, making every trail walk a blend of birdwatching and geological discovery.",
+      "whyVisit": "A unique wildlife micro-habitat inside a meteor crater found nowhere else on Earth.",
+      "bestTime": "November to February for birdwatching and pleasant forest walks",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lonar Wildlife Sanctuary Maharashtra",
+      "imageQuery": "Lonar crater forest wildlife Maharashtra"
+    },
+    {
+      "name": "Kamalja Devi Temple",
+      "category": "temple",
+      "description": "Perched on the crater rim, this ancient temple dedicated to Goddess Kamalja is among the most venerated shrines in the Lonar complex. The deity is considered the presiding goddess of Lonar town. The temple draws pilgrims year-round, and its location on the crater edge offers sweeping views of the lake below, particularly striking at sunrise when mist rises from the water.",
+      "whyVisit": "The most spiritually significant temple at Lonar with panoramic crater views.",
+      "bestTime": "Sunrise for atmospheric mist over the crater lake",
+      "duration": "45 minutes",
+      "mapsSearch": "Kamalja Devi Temple Lonar Maharashtra",
+      "imageQuery": "Kamalja Devi Temple Lonar crater view"
+    },
+    {
+      "name": "Ram Gaya Tirtha",
+      "category": "temple",
+      "description": "Situated at the crater floor near the lakeshore, this ancient pilgrimage site is associated with Lord Rama's legendary visit. The complex includes a small temple and a sacred bathing ghat at the lake's edge. The walk down through the forest to reach it passes several other minor shrines and geological formations, making the descent itself a rich cultural and natural experience.",
+      "whyVisit": "A lakeside pilgrimage point that combines spirituality with the crater's surreal landscape.",
+      "bestTime": "October to March when the descent trail is dry and manageable",
+      "duration": "1.5 hours including crater descent",
+      "mapsSearch": "Ram Gaya Tirtha Lonar crater Maharashtra",
+      "imageQuery": "Lonar crater lake shore temple"
+    },
+    {
+      "name": "Shiva Temple Complex on Crater Floor",
+      "category": "temple",
+      "description": "A cluster of ancient Shiva temples at the foot of the crater, partially submerged when the lake level rises seasonally. The temples date to the 6th–12th centuries and reveal successive layers of dynastic patronage from the Chalukyas to the Yadavas. Several are now covered in moss and partially reclaimed by the forest, lending them a romantic, lost-world atmosphere rarely found at more-visited heritage sites.",
+      "whyVisit": "Moss-covered ancient temples inside a meteor crater create an unforgettable atmosphere.",
+      "bestTime": "Post-monsoon (October–November) when vegetation is lush and water levels are manageable",
+      "duration": "1 hour",
+      "mapsSearch": "Shiva temples Lonar crater floor Maharashtra",
+      "imageQuery": "ancient Shiva temple Lonar crater floor"
+    },
+    {
+      "name": "Gomukh Temple and Spring",
+      "category": "temple",
+      "description": "A freshwater spring flows from a stone bull's-mouth (gomukh) spout beside this crater-rim temple, considered sacred since antiquity. The spring never dries, a geological curiosity given the surrounding alkaline environment. The temple is a small but architecturally refined structure with a carved mandapa that frames perfect views across the crater to the far rim, especially stunning in the golden hour.",
+      "whyVisit": "A perennial freshwater spring beside a temple on the rim of a salt lake is a compelling paradox.",
+      "bestTime": "Late afternoon for golden-hour views across the crater",
+      "duration": "30 minutes",
+      "mapsSearch": "Gomukh Temple Lonar Maharashtra",
+      "imageQuery": "Gomukh Temple Lonar crater spring"
+    },
+    {
+      "name": "Archaeological Museum Lonar",
+      "category": "museum",
+      "description": "A modest state museum housing sculptures, inscriptions, and artifacts recovered from the crater complex and surrounding Lonar town excavations. Exhibits include Chalukya and Yadava period stone panels, coin collections, and geological samples explaining the crater's formation. Though small, it provides essential context for understanding the historical depth of what visitors see at the crater itself.",
+      "whyVisit": "Essential pre-visit context on the crater's history, geology, and dynastic heritage.",
+      "bestTime": "Any time; useful to visit before descending into the crater",
+      "duration": "45 minutes",
+      "mapsSearch": "Archaeological Museum Lonar Maharashtra",
+      "imageQuery": "Lonar museum archaeological artifacts Maharashtra"
+    },
+    {
+      "name": "Wakat Umari Village",
+      "category": "nature",
+      "description": "A quiet agricultural village a few kilometres from the crater that offers an authentic glimpse into Vidarbha rural life. Bullock carts, orange orchards, and traditional Gondi-influenced architecture characterise the settlement. Local farmers grow sorghum, cotton, and citrus on the volcanic basaltic soil enriched by the meteor impact over millennia, and guided agro-walks can be arranged through Lonar's community tourism initiatives.",
+      "whyVisit": "A genuine off-the-beaten-path rural experience away from the tourist trail.",
+      "bestTime": "October to January when fields are golden with harvested crops",
+      "duration": "1-2 hours",
+      "mapsSearch": "Wakat Umari village near Lonar Maharashtra",
+      "imageQuery": "rural Vidarbha village orange orchard Maharashtra"
+    },
+    {
+      "name": "Lonar Crater Rim Sunset Walk",
+      "category": "nature",
+      "description": "The 6 km circular trail around the full crater rim is the best way to appreciate the scale of the impact. The path passes all the major rim temples, offers changing lake-colour perspectives as sunlight shifts, and ends at the official Maharashtra Tourism viewpoint where the setting sun turns the alkaline water vivid shades of orange and pink — a colour show produced by the halophilic bacteria that thrive in the water.",
+      "whyVisit": "The only walk in India where you circumnavigate a 50,000-year-old meteorite impact.",
+      "bestTime": "Late afternoon to catch sunset over the crater lake",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lonar Crater rim walk viewpoint Maharashtra",
+      "imageQuery": "Lonar crater rim sunset orange lake"
+    },
+    {
+      "name": "Mukteswar Temple",
+      "category": "temple",
+      "description": "An elegant 11th-century Hemadpanthi temple dedicated to Shiva, located in Lonar town about 1 km from the crater. Less visited than the rim temples, it preserves exceptionally fine carvings of the Shaiva iconographic programme — including a large Nataraja, Ardhanarishvara, and Mahishasuramardini — in better condition than many more famous counterparts. Quiet surroundings allow close inspection of the sculptural details.",
+      "whyVisit": "Superbly preserved Hemadpanthi carvings with almost no crowds.",
+      "bestTime": "Morning when light enters the temple sanctum directly",
+      "duration": "45 minutes",
+      "mapsSearch": "Mukteswar Temple Lonar Maharashtra",
+      "imageQuery": "Mukteswar Temple Lonar Hemadpanthi carvings"
+    },
+    {
+      "name": "Shri Vitthal Rukmini Temple",
+      "category": "temple",
+      "description": "A vibrant functioning temple in Lonar town dedicated to Lord Vitthal and Rukmini, modelled after the famous Pandharpur shrine. The annual Vitthal Ekadashi fair draws thousands of pilgrims from across Vidarbha, transforming the usually quiet town into a festive gathering with kirtan, bhajan, and traditional Maharashtrian street food. The temple architecture blends Maratha and Hemadpanthi styles.",
+      "whyVisit": "The most lively cultural and religious event in the Lonar region.",
+      "bestTime": "Ashadhi and Kartiki Ekadashi for the major fairs",
+      "duration": "1 hour",
+      "mapsSearch": "Vitthal Rukmini Temple Lonar Maharashtra",
+      "imageQuery": "Vitthal temple Lonar Maharashtra pilgrims"
+    },
+    {
+      "name": "Lonar Flamingo Watching",
+      "category": "wildlife",
+      "description": "During winter months, flocks of lesser flamingos occasionally visit the alkaline lake, attracted by the rich algae and crustacean food supply similar to their preferred soda-lake habitats. The phenomenon is rare and unpredictable, but when it occurs, hundreds of pink birds dotting the green-hued lake against the crater walls create one of Maharashtra's most extraordinary wildlife spectacles.",
+      "whyVisit": "One of Maharashtra's rarest wildlife events — flamingos in a meteor crater.",
+      "bestTime": "November to January for occasional flamingo sightings",
+      "duration": "1-2 hours at lakeshore",
+      "mapsSearch": "Lonar crater lake flamingo Maharashtra",
+      "imageQuery": "flamingos Lonar crater lake Maharashtra"
+    },
+    {
+      "name": "Ambadevi Temple",
+      "category": "temple",
+      "description": "A small but historically significant temple on the outskirts of Lonar dedicated to Goddess Amba, believed to predate the major crater-rim shrines. Local oral tradition holds that the goddess arrived with the meteor or was awakened by its impact. The temple is a centre for local Navratri celebrations with traditional Gondhali performances and folk rituals unique to the eastern Maharashtra region.",
+      "whyVisit": "Experience Navratri folk traditions that are entirely distinct from western Maharashtra.",
+      "bestTime": "Navratri (September–October) for traditional Gondhali performances",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Ambadevi Temple Lonar Maharashtra",
+      "imageQuery": "Ambadevi temple Lonar Maharashtra Navratri"
+    },
+    {
+      "name": "MTDC Lonar Resort Viewpoint",
+      "category": "viewpoint",
+      "description": "The official Maharashtra Tourism Development Corporation viewpoint adjacent to the MTDC resort on the crater rim offers the most photographed panoramic view of the Lonar crater. An observation platform lets visitors take in the full sweep of the lake, the forested crater walls, and on clear days the full circle of the rim. Information boards explain the geology and history of the impact event in detail.",
+      "whyVisit": "The best single viewpoint for photographing the full crater and colour-shifting lake.",
+      "bestTime": "Sunrise and sunset for dramatic lighting and colour contrast",
+      "duration": "30 minutes",
+      "mapsSearch": "MTDC Lonar resort viewpoint Maharashtra",
+      "imageQuery": "Lonar crater panorama viewpoint MTDC"
+    },
+    {
+      "name": "Sita Nhani Tirtha",
+      "category": "religious",
+      "description": "A quiet bathing ghat tucked inside the crater on the lake's southern bank, associated with Sita's mythological bath during the Ramayana. A tiny shrine marks the spot and sadhus occasionally camp here. The surrounding microclimate inside the crater is noticeably warmer and more humid than the rim, supporting tall bamboo groves and dense undergrowth that add to the atmosphere of a forgotten sacred grove.",
+      "whyVisit": "A truly off-grid pilgrimage ghat inside a meteor crater, visited by almost no outsiders.",
+      "bestTime": "December to February for the most pleasant descent conditions",
+      "duration": "1 hour including the descent",
+      "mapsSearch": "Sita Nhani Tirtha Lonar crater lake",
+      "imageQuery": "Lonar crater lake shore hidden ghat"
+    }
+  ]
+}

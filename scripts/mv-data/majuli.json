@@ -1,0 +1,180 @@
+{
+  "slug": "majuli",
+  "name": "Majuli",
+  "state": "Assam",
+  "tagline": "The world's largest river island where time flows at Brahmaputra's pace",
+  "categories": ["island", "heritage", "spiritual"],
+  "highlights": ["world's largest inhabited river island on the brahmaputra", "living tradition of neo-vaishnavite satras and mask-making craft"],
+  "attractions": [
+    {
+      "name": "Kamalabari Satra",
+      "category": "monastery",
+      "description": "Founded in the 17th century by a direct disciple of the saint-reformer Srimanta Sankardeva, Kamalabari is Majuli's most visited satra — a neo-Vaishnavite monastery that is simultaneously a centre of theatre, dance, philosophy and visual art. The vaishnava namghar prayer hall hosts daily bhona devotional performances where monks in striking costumes enact episodes from the Ramayana and Mahabharata through stylised dance. The resident monks also maintain a revered tradition of manuscript preservation on sanchipat bark.",
+      "whyVisit": "Watch classical Ankia Bhaona performance in the monastery where it has been preserved for 400 years.",
+      "bestTime": "October to March; Raas festival in November",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kamalabari Satra Majuli Assam",
+      "imageQuery": "Kamalabari Satra monks prayer hall Majuli Assam"
+    },
+    {
+      "name": "Auniati Satra",
+      "category": "monastery",
+      "description": "The largest and wealthiest satra on Majuli, Auniati holds the island's finest collection of antique artefacts: jewelled crowns worn by Ahom kings during Vaishnavite ceremonies, silver utensils of the 17th century, palanquins, and the musical instruments of Sankardeva's disciples. The monastery's museum is open to respectful visitors and the resident monks demonstrate the distinctive Majuli form of borgeet classical music during morning and evening prayers.",
+      "whyVisit": "See 400-year-old Ahom royal treasures preserved inside a living monastery.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Auniati Satra Majuli Assam",
+      "imageQuery": "Auniati Satra antique museum Majuli Assam"
+    },
+    {
+      "name": "Raas Mahotsav Festival",
+      "category": "religious",
+      "description": "Held over three days on the full moon of Kartik Purnima — typically November — the Raas Mahotsav is Majuli's greatest annual celebration, drawing thousands of devotees and travellers to satras across the island for all-night Ankia Bhaona theatre, bhona dance performances and the illumination of every monastery with earthen lamps. Monks in enormous papier-mache masks portray Vishnu's incarnations in performances that begin at dusk and continue until dawn, unbroken for over 400 years.",
+      "whyVisit": "Experience India's most unique all-night classical theatre tradition preserved on a river island.",
+      "bestTime": "Kartik Purnima, November (exact dates vary annually)",
+      "duration": "3 days",
+      "mapsSearch": "Raas Mahotsav Majuli Assam November",
+      "imageQuery": "Raas Mahotsav festival monks masks Majuli Assam"
+    },
+    {
+      "name": "Brahmaputra Sunset Ferryboat View",
+      "category": "viewpoint",
+      "description": "The only way to reach Majuli is by ferry from Nimati Ghat near Jorhat — a 45-minute crossing through the braided channels of the Brahmaputra, one of the world's widest rivers. At sunset the river turns deep copper while the silhouettes of fishing boats and dolphins appear in the shallows, and Majuli's low green horizon rises ahead. The crossing itself — especially on the ancient wooden ferry with motorcycles, livestock and monks sharing the deck — is one of Assam's most memorable experiences.",
+      "whyVisit": "The Brahmaputra sunset ferry crossing is as spectacular as anything you find on the island.",
+      "bestTime": "October to March, late afternoon crossing",
+      "duration": "45-60 minutes",
+      "mapsSearch": "Nimati Ghat ferry Jorhat Majuli Assam",
+      "imageQuery": "Brahmaputra ferry sunset Majuli Jorhat Assam"
+    },
+    {
+      "name": "Natun Samaguri Satra Mask Workshop",
+      "category": "heritage",
+      "description": "The Samaguri Satra near Salmara is custodian of the living craft of papier-mache mask-making developed by Sankardeva's monks specifically for Ankia Bhaona theatrical performances. Master craftsmen sculpt masks of demons, gods, animals and mythological creatures over split-bamboo armatures using layers of cloth paste and natural pigments, a process unchanged since the 16th century. Visitors can observe or participate in painting sessions and purchase authentic certified masks directly from the artisans.",
+      "whyVisit": "Buy a 16th-century theatrical art form directly from the monks who invented it.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Samaguri Satra mask workshop Majuli Assam",
+      "imageQuery": "Samaguri Satra mask making workshop Majuli Assam"
+    },
+    {
+      "name": "Garamur Satra",
+      "category": "monastery",
+      "description": "Garamur is one of Majuli's oldest satras, distinguished by its tradition of training young boys in classical Sattriya dance — India's eighth classical dance form, given official recognition in 2000. Visitors are welcome to observe rehearsal sessions in the prayer courtyard where barefoot monks practice intricate footwork against the sound of khol drums and cymbals. The satra's head monk maintains a small library of sanchipat manuscripts including a rare 17th-century illuminated Bhagavata Purana.",
+      "whyVisit": "Watch Sattriya — India's most recent classical dance — in its original monastery courtyard.",
+      "bestTime": "October to March, morning rehearsals",
+      "duration": "2 hours",
+      "mapsSearch": "Garamur Satra Majuli Assam",
+      "imageQuery": "Garamur Satra Sattriya dance rehearsal Majuli"
+    },
+    {
+      "name": "Mising Tribal Village — Ali Aye Ligang Festival",
+      "category": "heritage",
+      "description": "The Mising people are the largest indigenous community on Majuli, living in stilt-house villages along the river's changing banks and maintaining a distinct language, textile tradition and animist-Vaishnavite spiritual practice. Their Ali Aye Ligang spring festival in February celebrates the sowing season with community rice-beer, bamboo music and the Dobur Uie river offering. Mising women weave distinctive red and yellow silk textiles on back-strap looms that can be watched and purchased in village homes.",
+      "whyVisit": "Enter a living stilt-house village whose culture bridges Vaishnavism and river animism.",
+      "bestTime": "February (Ali Aye Ligang); October to March generally",
+      "duration": "Half-day",
+      "mapsSearch": "Mising tribal village Majuli Assam",
+      "imageQuery": "Mising tribal stilt house village Majuli Assam"
+    },
+    {
+      "name": "Majuli Pottery Village — Salmara",
+      "category": "heritage",
+      "description": "The potters of Salmara — descendants of the Hira and Kumar communities settled by Ahom kings — fire distinctively thin-walled black pottery using ancient underground kiln techniques. Unlike wheel-thrown pottery, Majuli pots are hand-coiled then burnished with smooth river stones to create a metallic sheen before firing at low temperatures in wood ash. The resulting vessels — used for storing fermented rice beer and as ritual offering bowls — are among Assam's most distinctive craft objects.",
+      "whyVisit": "Watch a rare underground-kiln black pottery tradition that predates Assam's Ahom kingdom.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Salmara pottery village Majuli Assam",
+      "imageQuery": "Salmara black pottery village Majuli Assam"
+    },
+    {
+      "name": "River Island Cycling",
+      "category": "adventure",
+      "description": "Majuli's flat landscape and almost complete absence of motorised traffic make it perfect for cycling between satras on the network of raised earthen bunds that serve as roads. A standard circuit of the island's main monasteries covers around 50 km on paths that pass mustard fields, bamboo groves, Mising stilt villages and sudden views of the Brahmaputra through the trees. Bicycles and basic e-bikes are available for hire at Garamur and the Kamalabari ferry ghat.",
+      "whyVisit": "Cycle between 400-year-old monasteries on traffic-free bunds above the Brahmaputra floodplain.",
+      "bestTime": "November to February",
+      "duration": "Full day",
+      "mapsSearch": "Majuli cycling Garamur Kamalabari Assam",
+      "imageQuery": "cycling between satras Majuli island Assam"
+    },
+    {
+      "name": "Migratory Bird Wetlands of Majuli",
+      "category": "wildlife",
+      "description": "The flooded ox-bow lakes and seasonally inundated grasslands in Majuli's interior hold extraordinary concentrations of migratory waterfowl between November and March. Bar-headed geese, ferruginous ducks, lesser adjutant storks and the rare Baer's pochard have all been recorded here. The island's lack of hunting and the sacred pond status of satra water bodies have created incidental wildlife sanctuaries that birders visiting from Kaziranga often extend their itinerary to include.",
+      "whyVisit": "Spot rare migratory ducks in ox-bow lakes accidentally protected by monastery sacred ponds.",
+      "bestTime": "November to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Majuli migratory birds wetlands Assam",
+      "imageQuery": "migratory birds wetlands Majuli Brahmaputra Assam"
+    },
+    {
+      "name": "Auniati Satra Boat Race",
+      "category": "adventure",
+      "description": "During Bihu and major festival seasons, traditional Mising and Deori boat races are organised on the water bodies adjacent to Auniati Satra, with long narrow dugout canoes paddled by teams of twenty oarsmen. The races maintain an ancient Brahmaputra river culture of competitive rowing that has been part of island life for centuries. Spectators line the grassy bunds in traditional attire and the atmosphere — with drumming, singing and coloured flags — is distinctly Assamese.",
+      "whyVisit": "Watch traditional Brahmaputra dugout canoe races on festival days — pure river culture.",
+      "bestTime": "Bihu (April), major festival dates",
+      "duration": "2-3 hours",
+      "mapsSearch": "Auniati Satra boat race Majuli Assam",
+      "imageQuery": "traditional boat race Majuli Brahmaputra Assam"
+    },
+    {
+      "name": "Bhakat Para Weaving Village",
+      "category": "heritage",
+      "description": "In the Bhakat Para neighbourhood behind Kamalabari, households belonging to weaving families run backstrap-loom operations in their front rooms, producing the distinctive muga silk and pat silk textiles of Assam. The golden sheen of muga — unique to Assam and produced by semi-wild silkworms feeding on Som and Sualu trees — is more brilliant in person than in any photograph. Weavers sell directly from their looms at prices far below Guwahati market rates.",
+      "whyVisit": "Buy Assam's golden muga silk direct from the loom in the weaver's front room.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhakat Para weaving village Kamalabari Majuli Assam",
+      "imageQuery": "muga silk weaving Majuli Assam backstrap loom"
+    },
+    {
+      "name": "Majuli Sunrise from Brahmaputra Bank",
+      "category": "viewpoint",
+      "description": "The north bank of Majuli faces the main channel of the Brahmaputra — in places 15 km wide — and at sunrise the combination of river mist, low-angled orange light and the calls of river terns creates one of northeast India's most atmospheric scenes. Fishermen in traditional conical bamboo hats pole their narrow boats through the shallows while Gangetic dolphins occasionally surface in the main current. This sunrise view is the photograph most associated with Majuli but still surprisingly uncrowded.",
+      "whyVisit": "One of northeast India's iconic sunrise views — mist, dolphins and river fishermen.",
+      "bestTime": "November to February, 5:30–7 am",
+      "duration": "1-2 hours",
+      "mapsSearch": "Majuli Brahmaputra north bank sunrise Assam",
+      "imageQuery": "Brahmaputra bank sunrise mist fishermen Majuli Assam"
+    },
+    {
+      "name": "Deori Tribal Village and Bon Bihu",
+      "category": "heritage",
+      "description": "The Deori people of Majuli are a small scheduled-tribe community maintaining one of Assam's oldest animist traditions alongside neo-Vaishnavism. Their Bon Bihu harvest festival in Baisakh fills village clearings with young men and women in handwoven red textiles performing the bihu dance — the form that evolved into Assam's defining folk art. Deori villages on the island's eastern edge receive almost no foreign visitors, making the experience entirely community-authentic.",
+      "whyVisit": "Experience Bihu dance in a Deori tribal village with no tourist infrastructure — just community celebration.",
+      "bestTime": "April (Bihu season)",
+      "duration": "Half-day",
+      "mapsSearch": "Deori tribal village Majuli Assam",
+      "imageQuery": "Deori tribal Bihu dance village Majuli Assam"
+    },
+    {
+      "name": "Majuli Heritage Homestays",
+      "category": "heritage",
+      "description": "A handful of island families — some with direct satra connections — have converted their traditional Assamese houses into homestays that place guests inside village life. Meals feature banana-leaf servings of khar prepared with dried banana skin ash, Brahmaputra river fish curry, and fermented bamboo shoot side dishes — a cuisine almost impossible to find in restaurants. Guests sleep in traditional thatched bungalows raised on bamboo stilts above the paddy-field level.",
+      "whyVisit": "Sleep in a thatched stilt house and eat authentic Assamese riverside cuisine from a satra family.",
+      "bestTime": "October to March",
+      "duration": "Overnight to multi-day stay",
+      "mapsSearch": "Majuli heritage homestay Assam",
+      "imageQuery": "Majuli traditional homestay thatched stilt house Assam"
+    },
+    {
+      "name": "Dakhinpat Satra",
+      "category": "monastery",
+      "description": "Dakhinpat is the satra on Majuli with the greatest royal association — Ahom kings visited to receive blessings before major military campaigns, and the satra's treasures include several royal gifts from the 17th and 18th centuries. The resident Gossain (head monk) can trace his lineage directly to Sankardeva's disciple circle, and the prayer hall's carved wooden interior with its beaten-brass offering lamps represents the finest traditional Vaishnavite decorative arts on the island.",
+      "whyVisit": "The satra with the deepest Ahom royal connection and the finest traditional interior decoration.",
+      "bestTime": "October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Dakhinpat Satra Majuli Assam",
+      "imageQuery": "Dakhinpat Satra carved wood prayer hall Majuli Assam"
+    },
+    {
+      "name": "Erosion Edge Walk — Vanishing Island Documentary",
+      "category": "nature",
+      "description": "Majuli has lost 30% of its area to Brahmaputra erosion since 1950 and the island's exposed north-western edge dramatically illustrates this process: entire toppled bamboo groves, broken road sections and abandoned homestead foundations protrude from eroded clay cliffs above the current waterline. Local guides who have watched their family land disappear into the river can contextualise the erosion, climate change and displacement story that has made Majuli a globally cited case study in river island loss.",
+      "whyVisit": "Witness the frontline of climate-driven erosion that is slowly claiming the world's largest river island.",
+      "bestTime": "October to March (post-monsoon erosion most visible)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Majuli erosion edge north bank Assam",
+      "imageQuery": "Majuli island erosion riverbank Brahmaputra disappearing"
+    }
+  ]
+}

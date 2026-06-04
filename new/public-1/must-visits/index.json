@@ -1,0 +1,1704 @@
+{
+  "destinations": [
+    {
+      "id": "goa",
+      "name": "Goa",
+      "state": "Goa",
+      "slug": "goa",
+      "tagline": "Sun, sand, and Portuguese heritage on India's western coast",
+      "categories": [
+        "beach",
+        "heritage",
+        "nightlife"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+        "alt": "Goa travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "leh-ladakh",
+      "name": "Leh-Ladakh",
+      "state": "Ladakh",
+      "slug": "leh-ladakh",
+      "tagline": "High-altitude passes, turquoise lakes, and ancient Buddhist monasteries",
+      "categories": [
+        "mountain",
+        "adventure",
+        "spiritual"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=1200&q=60",
+        "alt": "Leh-Ladakh travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "manali",
+      "name": "Manali",
+      "state": "Himachal Pradesh",
+      "slug": "manali",
+      "tagline": "A Himalayan paradise of snow-capped peaks and alpine meadows",
+      "categories": [
+        "mountain",
+        "adventure",
+        "hill_station"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60",
+        "alt": "Manali travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kashmir",
+      "name": "Kashmir",
+      "state": "Jammu and Kashmir",
+      "slug": "kashmir",
+      "tagline": "Heaven on Earth with valleys, lakes, and Himalayan grandeur",
+      "categories": [
+        "mountain",
+        "lake",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+        "alt": "Kashmir travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "jaipur",
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "slug": "jaipur",
+      "tagline": "The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur",
+      "categories": [
+        "heritage",
+        "city",
+        "desert"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60",
+        "alt": "Jaipur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "udaipur",
+      "name": "Udaipur",
+      "state": "Rajasthan",
+      "slug": "udaipur",
+      "tagline": "The City of Lakes — romance, palaces, and royal elegance",
+      "categories": [
+        "heritage",
+        "lake",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+        "alt": "Udaipur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "state": "Uttar Pradesh",
+      "slug": "taj-mahal",
+      "tagline": "The timeless marble masterpiece and symbol of eternal love",
+      "categories": [
+        "heritage",
+        "city",
+        "historical"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+        "alt": "Taj Mahal travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "rishikesh",
+      "name": "Rishikesh",
+      "state": "Uttarakhand",
+      "slug": "rishikesh",
+      "tagline": "The Yoga Capital of the World on the banks of the holy Ganges",
+      "categories": [
+        "spiritual",
+        "adventure",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+        "alt": "Rishikesh travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "varanasi",
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "slug": "varanasi",
+      "tagline": "India's spiritual capital on the sacred Ganges",
+      "categories": [
+        "spiritual",
+        "heritage",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+        "alt": "Varanasi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kerala-backwaters",
+      "name": "Kerala Backwaters",
+      "state": "Kerala",
+      "slug": "kerala-backwaters",
+      "tagline": "Serene waterways, houseboats, and coconut-fringed village life",
+      "categories": [
+        "backwater",
+        "nature",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=1200&q=60",
+        "alt": "Kerala Backwaters travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "andaman-islands",
+      "name": "Andaman Islands",
+      "state": "Andaman and Nicobar",
+      "slug": "andaman-islands",
+      "tagline": "Pristine beaches, coral reefs, and tropical island paradise",
+      "categories": [
+        "island",
+        "beach",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=1200&q=60",
+        "alt": "Andaman Islands travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "darjeeling",
+      "name": "Darjeeling",
+      "state": "West Bengal",
+      "slug": "darjeeling",
+      "tagline": "Tea gardens, toy trains, and Himalayan panoramas",
+      "categories": [
+        "hill_station",
+        "nature",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=1200&q=60",
+        "alt": "Darjeeling travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "munnar",
+      "name": "Munnar",
+      "state": "Kerala",
+      "slug": "munnar",
+      "tagline": "Rolling tea plantations, misty hills, and aromatic spice gardens",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=1200&q=60",
+        "alt": "Munnar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "coorg",
+      "name": "Coorg",
+      "state": "Karnataka",
+      "slug": "coorg",
+      "tagline": "Scotland of India with coffee estates and misty Western Ghats",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=1200&q=60",
+        "alt": "Coorg travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "jaisalmer",
+      "name": "Jaisalmer",
+      "state": "Rajasthan",
+      "slug": "jaisalmer",
+      "tagline": "The Golden City of desert forts and havelis in the Thar",
+      "categories": [
+        "desert",
+        "heritage",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+        "alt": "Jaisalmer travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "amritsar",
+      "name": "Amritsar",
+      "state": "Punjab",
+      "slug": "amritsar",
+      "tagline": "The spiritual and cultural heart of Sikhism",
+      "categories": [
+        "spiritual",
+        "heritage",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+        "alt": "Amritsar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "hampi",
+      "name": "Hampi",
+      "state": "Karnataka",
+      "slug": "hampi",
+      "tagline": "The hauntingly beautiful ruins of the Vijayanagara Empire",
+      "categories": [
+        "heritage",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+        "alt": "Hampi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "meghalaya",
+      "name": "Meghalaya",
+      "state": "Meghalaya",
+      "slug": "meghalaya",
+      "tagline": "Living root bridges, misty hills, and the wettest place on Earth",
+      "categories": [
+        "nature",
+        "adventure",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60",
+        "alt": "Meghalaya travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "spiti-valley",
+      "name": "Spiti Valley",
+      "state": "Himachal Pradesh",
+      "slug": "spiti-valley",
+      "tagline": "Cold desert mountains, ancient monasteries, and stark Himalayan beauty",
+      "categories": [
+        "mountain",
+        "adventure",
+        "spiritual"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60",
+        "alt": "Spiti Valley travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "rann-of-kutch",
+      "name": "Rann of Kutch",
+      "state": "Gujarat",
+      "slug": "rann-of-kutch",
+      "tagline": "The endless white salt desert under starlit skies",
+      "categories": [
+        "desert",
+        "heritage",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=1200&q=60",
+        "alt": "Rann of Kutch travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "shimla",
+      "name": "Shimla",
+      "state": "Himachal Pradesh",
+      "slug": "shimla",
+      "tagline": "The Queen of Hills with colonial charm and mountain vistas",
+      "categories": [
+        "hill_station",
+        "heritage",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=1200&q=60",
+        "alt": "Shimla travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "ooty",
+      "name": "Ooty",
+      "state": "Tamil Nadu",
+      "slug": "ooty",
+      "tagline": "Queen of the Nilgiris with toy trains and tea gardens",
+      "categories": [
+        "hill_station",
+        "nature",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=1200&q=60",
+        "alt": "Ooty travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "nainital",
+      "name": "Nainital",
+      "state": "Uttarakhand",
+      "slug": "nainital",
+      "tagline": "The Lake District of India nestled in the Kumaon Hills",
+      "categories": [
+        "hill_station",
+        "lake",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=1200&q=60",
+        "alt": "Nainital travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mussoorie",
+      "name": "Mussoorie",
+      "state": "Uttarakhand",
+      "slug": "mussoorie",
+      "tagline": "The Queen of Hills with waterfalls and colonial architecture",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=1200&q=60",
+        "alt": "Mussoorie travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "gangtok",
+      "name": "Gangtok",
+      "state": "Sikkim",
+      "slug": "gangtok",
+      "tagline": "A vibrant Himalayan city of monasteries, lakes, and mountain views",
+      "categories": [
+        "hill_station",
+        "spiritual",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=1200&q=60",
+        "alt": "Gangtok travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "pondicherry",
+      "name": "Pondicherry",
+      "state": "Puducherry",
+      "slug": "pondicherry",
+      "tagline": "French colonial charm meets Indian coastal culture",
+      "categories": [
+        "beach",
+        "heritage",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=1200&q=60",
+        "alt": "Pondicherry travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "hyderabad",
+      "name": "Hyderabad",
+      "state": "Telangana",
+      "slug": "hyderabad",
+      "tagline": "The City of Pearls where Nizami heritage meets modern tech",
+      "categories": [
+        "city",
+        "heritage",
+        "market"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1555993539-173e54f2821f?fm=webp&w=1200&q=60",
+        "alt": "Hyderabad travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mysuru",
+      "name": "Mysuru",
+      "state": "Karnataka",
+      "slug": "mysuru",
+      "tagline": "The cultural capital with royal palaces and sandalwood heritage",
+      "categories": [
+        "heritage",
+        "city",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+        "alt": "Mysuru travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "chikmagalur",
+      "name": "Chikmagalur",
+      "state": "Karnataka",
+      "slug": "chikmagalur",
+      "tagline": "Coffee land of Karnataka with misty hills and waterfalls",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1528127260108-a3aef7f22f7a?fm=webp&w=1200&q=60",
+        "alt": "Chikmagalur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kodaikanal",
+      "name": "Kodaikanal",
+      "state": "Tamil Nadu",
+      "slug": "kodaikanal",
+      "tagline": "Princess of Hill Stations",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1564507592033-7e4f13a7e7b6?fm=webp&w=1200&q=60",
+        "alt": "Kodaikanal travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "tirupati",
+      "name": "Tirupati",
+      "state": "Andhra Pradesh",
+      "slug": "tirupati",
+      "tagline": "The spiritual powerhouse",
+      "categories": [
+        "spiritual",
+        "heritage",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+        "alt": "Tirupati travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "puri",
+      "name": "Puri",
+      "state": "Odisha",
+      "slug": "puri",
+      "tagline": "Sacred shores and the abode of Lord Jagannath",
+      "categories": [
+        "spiritual",
+        "beach",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=1200&q=60",
+        "alt": "Puri travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "madurai",
+      "name": "Madurai",
+      "state": "Tamil Nadu",
+      "slug": "madurai",
+      "tagline": "The Athens of the East",
+      "categories": [
+        "heritage",
+        "spiritual",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60",
+        "alt": "Madurai travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "agra",
+      "name": "Agra",
+      "state": "Uttar Pradesh",
+      "slug": "agra",
+      "tagline": "Mughal grandeur and timeless architectural masterpieces",
+      "categories": [
+        "heritage",
+        "city",
+        "historical"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+        "alt": "Agra travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "state": "Delhi",
+      "slug": "delhi",
+      "tagline": "India's historic capital where ancient monuments meet modern culture",
+      "categories": [
+        "city",
+        "heritage",
+        "market"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60",
+        "alt": "Delhi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "jodhpur",
+      "name": "Jodhpur",
+      "state": "Rajasthan",
+      "slug": "jodhpur",
+      "tagline": "The Blue City dominated by the mighty Mehrangarh Fort",
+      "categories": [
+        "heritage",
+        "desert",
+        "city"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+        "alt": "Jodhpur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "pushkar",
+      "name": "Pushkar",
+      "state": "Rajasthan",
+      "slug": "pushkar",
+      "tagline": "A sacred lake town surrounded by desert hills and camel fairs",
+      "categories": [
+        "spiritual",
+        "desert",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+        "alt": "Pushkar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "auli",
+      "name": "Auli",
+      "state": "Uttarakhand",
+      "slug": "auli",
+      "tagline": "India's premier ski resort with panoramic Himalayan views",
+      "categories": [
+        "mountain",
+        "adventure",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+        "alt": "Auli travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kovalam",
+      "name": "Kovalam",
+      "state": "Kerala",
+      "slug": "kovalam",
+      "tagline": "Crescent-shaped beaches and Ayurvedic retreats on the Arabian Sea",
+      "categories": [
+        "beach",
+        "nature",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+        "alt": "Kovalam travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "wayanad",
+      "name": "Wayanad",
+      "state": "Kerala",
+      "slug": "wayanad",
+      "tagline": "Lush green hills, spice plantations, and ancient caves in the Western Ghats",
+      "categories": [
+        "nature",
+        "adventure",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=1200&q=60",
+        "alt": "Wayanad travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "gokarna",
+      "name": "Gokarna",
+      "state": "Karnataka",
+      "slug": "gokarna",
+      "tagline": "Serene beaches and ancient temples on Karnataka's sacred coast",
+      "categories": [
+        "beach",
+        "spiritual",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=1200&q=60",
+        "alt": "Gokarna travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "varkala",
+      "name": "Varkala",
+      "state": "Kerala",
+      "slug": "varkala",
+      "tagline": "Cliffside beaches and Ayurvedic wellness on the Arabian Sea",
+      "categories": [
+        "beach",
+        "spiritual",
+        "nature"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=1200&q=60",
+        "alt": "Varkala travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "shillong",
+      "name": "Shillong",
+      "state": "Meghalaya",
+      "slug": "shillong",
+      "tagline": "The Scotland of the East with rolling hills and vibrant music",
+      "categories": [
+        "hill_station",
+        "nature",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=1200&q=60",
+        "alt": "Shillong travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "cherrapunji",
+      "name": "Cherrapunji",
+      "state": "Meghalaya",
+      "slug": "cherrapunji",
+      "tagline": "The wettest place on Earth with living root bridges and waterfalls",
+      "categories": [
+        "nature",
+        "adventure",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=1200&q=60",
+        "alt": "Cherrapunji travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "haridwar",
+      "name": "Haridwar",
+      "state": "Uttarakhand",
+      "slug": "haridwar",
+      "tagline": "Ancient holy city at the Ganges foothills",
+      "categories": [
+        "temple",
+        "religious",
+        "river"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+        "alt": "Haridwar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "bikaner",
+      "name": "Bikaner",
+      "state": "Rajasthan",
+      "slug": "bikaner",
+      "tagline": "Desert outpost of camel breeding and forts",
+      "categories": [
+        "desert",
+        "fort",
+        "palace"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+        "alt": "Bikaner travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "ajmer",
+      "name": "Ajmer",
+      "state": "Rajasthan",
+      "slug": "ajmer",
+      "tagline": "Holy shrine city ringed by Aravalli hills",
+      "categories": [
+        "religious",
+        "lake",
+        "fort"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+        "alt": "Ajmer travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mandawa",
+      "name": "Mandawa",
+      "state": "Rajasthan",
+      "slug": "mandawa",
+      "tagline": "Open-air art gallery of painted havelis",
+      "categories": [
+        "heritage",
+        "palace",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60",
+        "alt": "Mandawa travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "chittorgarh",
+      "name": "Chittorgarh",
+      "state": "Rajasthan",
+      "slug": "chittorgarh",
+      "tagline": "Epic fort city of Rajput honor and sacrifice",
+      "categories": [
+        "fort",
+        "palace",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60",
+        "alt": "Chittorgarh travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kumbhalgarh",
+      "name": "Kumbhalgarh",
+      "state": "Rajasthan",
+      "slug": "kumbhalgarh",
+      "tagline": "Great Wall of India and wild surroundings",
+      "categories": [
+        "fort",
+        "wildlife",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=1200&q=60",
+        "alt": "Kumbhalgarh travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "bundi",
+      "name": "Bundi",
+      "state": "Rajasthan",
+      "slug": "bundi",
+      "tagline": "Hidden gem of stepwells and blue houses",
+      "categories": [
+        "fort",
+        "palace",
+        "lake"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=1200&q=60",
+        "alt": "Bundi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "orchha",
+      "name": "Orchha",
+      "state": "Madhya Pradesh",
+      "slug": "orchha",
+      "tagline": "Frozen-in-time temple town on the Betwa",
+      "categories": [
+        "temple",
+        "palace",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=1200&q=60",
+        "alt": "Orchha travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "khajuraho",
+      "name": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "slug": "khajuraho",
+      "tagline": "UNESCO temples of love and architecture",
+      "categories": [
+        "temple",
+        "monument",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=1200&q=60",
+        "alt": "Khajuraho travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "bhopal",
+      "name": "Bhopal",
+      "state": "Madhya Pradesh",
+      "slug": "bhopal",
+      "tagline": "City of Lakes and tribal art heritage",
+      "categories": [
+        "lake",
+        "museum",
+        "park"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=1200&q=60",
+        "alt": "Bhopal travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "gwalior",
+      "name": "Gwalior",
+      "state": "Madhya Pradesh",
+      "slug": "gwalior",
+      "tagline": "Fortress city of music and royal history",
+      "categories": [
+        "fort",
+        "palace",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=1200&q=60",
+        "alt": "Gwalior travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "indore",
+      "name": "Indore",
+      "state": "Madhya Pradesh",
+      "slug": "indore",
+      "tagline": "Cleanest city with culinary delights",
+      "categories": [
+        "temple",
+        "market",
+        "palace"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=1200&q=60",
+        "alt": "Indore travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "pachmarhi",
+      "name": "Pachmarhi",
+      "state": "Madhya Pradesh",
+      "slug": "pachmarhi",
+      "tagline": "Queen of Satpura hill station retreats",
+      "categories": [
+        "hill_station",
+        "cave",
+        "waterfall"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1555993539-173e54f2821f?fm=webp&w=1200&q=60",
+        "alt": "Pachmarhi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "state": "Maharashtra",
+      "slug": "mumbai",
+      "tagline": "Maximum City of dreams and the sea",
+      "categories": [
+        "monument",
+        "beach",
+        "market"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+        "alt": "Mumbai travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "pune",
+      "name": "Pune",
+      "state": "Maharashtra",
+      "slug": "pune",
+      "tagline": "Oxford of the East with Maratha pride",
+      "categories": [
+        "fort",
+        "palace",
+        "temple"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1528127260108-a3aef7f22f7a?fm=webp&w=1200&q=60",
+        "alt": "Pune travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "nashik",
+      "name": "Nashik",
+      "state": "Maharashtra",
+      "slug": "nashik",
+      "tagline": "Wine country and sacred Godavari ghats",
+      "categories": [
+        "temple",
+        "river",
+        "village"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1564507592033-7e4f13a7e7b6?fm=webp&w=1200&q=60",
+        "alt": "Nashik travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "aurangabad",
+      "name": "Aurangabad",
+      "state": "Maharashtra",
+      "slug": "aurangabad",
+      "tagline": "Gateway to Ajanta-Ellora caves",
+      "categories": [
+        "cave",
+        "monument",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+        "alt": "Aurangabad travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mahabaleshwar",
+      "name": "Mahabaleshwar",
+      "state": "Maharashtra",
+      "slug": "mahabaleshwar",
+      "tagline": "Strawberry hills and misty viewpoints",
+      "categories": [
+        "hill_station",
+        "viewpoint",
+        "lake"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=1200&q=60",
+        "alt": "Mahabaleshwar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "lonavala",
+      "name": "Lonavala",
+      "state": "Maharashtra",
+      "slug": "lonavala",
+      "tagline": "Monsoon retreat of waterfalls and forts",
+      "categories": [
+        "hill_station",
+        "fort",
+        "cave"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60",
+        "alt": "Lonavala travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "matheran",
+      "name": "Matheran",
+      "state": "Maharashtra",
+      "slug": "matheran",
+      "tagline": "Asia only automobile-free hill station",
+      "categories": [
+        "hill_station",
+        "viewpoint",
+        "park"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+        "alt": "Matheran travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "warangal",
+      "name": "Warangal",
+      "state": "Telangana",
+      "slug": "warangal",
+      "tagline": "Kakatiya dynasty legacy and lake gardens",
+      "categories": [
+        "fort",
+        "temple",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60",
+        "alt": "Warangal travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "bangalore",
+      "name": "Bangalore",
+      "state": "Karnataka",
+      "slug": "bangalore",
+      "tagline": "Garden City and India Silicon Valley",
+      "categories": [
+        "garden",
+        "palace",
+        "park"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+        "alt": "Bangalore travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "badami",
+      "name": "Badami",
+      "state": "Karnataka",
+      "slug": "badami",
+      "tagline": "Red sandstone cave temples and fort vistas",
+      "categories": [
+        "cave",
+        "temple",
+        "fort"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+        "alt": "Badami travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "chennai",
+      "name": "Chennai",
+      "state": "Tamil Nadu",
+      "slug": "chennai",
+      "tagline": "Coastal gateway to Dravidian culture",
+      "categories": [
+        "beach",
+        "temple",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+        "alt": "Chennai travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "thanjavur",
+      "name": "Thanjavur",
+      "state": "Tamil Nadu",
+      "slug": "thanjavur",
+      "tagline": "Chola dynasty art and Brihadeeswarar glory",
+      "categories": [
+        "temple",
+        "monument",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+        "alt": "Thanjavur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "rameswaram",
+      "name": "Rameswaram",
+      "state": "Tamil Nadu",
+      "slug": "rameswaram",
+      "tagline": "Sacred island of Ram Setu legends",
+      "categories": [
+        "temple",
+        "beach",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=1200&q=60",
+        "alt": "Rameswaram travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kanyakumari",
+      "name": "Kanyakumari",
+      "state": "Tamil Nadu",
+      "slug": "kanyakumari",
+      "tagline": "Land end where three oceans meet",
+      "categories": [
+        "beach",
+        "monument",
+        "temple"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=1200&q=60",
+        "alt": "Kanyakumari travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "visakhapatnam",
+      "name": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "slug": "visakhapatnam",
+      "tagline": "Port city of beaches and submarine museums",
+      "categories": [
+        "beach",
+        "museum",
+        "hill_station"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=1200&q=60",
+        "alt": "Visakhapatnam travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "vijayawada",
+      "name": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "slug": "vijayawada",
+      "tagline": "Andhra cultural hub on the Krishna",
+      "categories": [
+        "temple",
+        "monument",
+        "cave"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=1200&q=60",
+        "alt": "Vijayawada travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kolkata",
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "slug": "kolkata",
+      "tagline": "City of Joy and colonial grandeur",
+      "categories": [
+        "monument",
+        "bridge",
+        "museum"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=1200&q=60",
+        "alt": "Kolkata travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "sundarbans",
+      "name": "Sundarbans",
+      "state": "West Bengal",
+      "slug": "sundarbans",
+      "tagline": "Mangrove kingdom of the Royal Bengal Tiger",
+      "categories": [
+        "wildlife",
+        "nature",
+        "river"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+        "alt": "Sundarbans travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "alleppey",
+      "name": "Alleppey",
+      "state": "Kerala",
+      "slug": "alleppey",
+      "tagline": "Venice of the East with backwater canals",
+      "categories": [
+        "backwaters",
+        "lake",
+        "beach"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+        "alt": "Alleppey travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kumarakom",
+      "name": "Kumarakom",
+      "state": "Kerala",
+      "slug": "kumarakom",
+      "tagline": "Serene backwater village on Vembanad Lake",
+      "categories": [
+        "backwaters",
+        "bird",
+        "lake"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+        "alt": "Kumarakom travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kochi",
+      "name": "Kochi",
+      "state": "Kerala",
+      "slug": "kochi",
+      "tagline": "Historic port city with Chinese fishing nets",
+      "categories": [
+        "beach",
+        "monument",
+        "market"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60",
+        "alt": "Kochi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kovalam-beach",
+      "name": "Kovalam Beach",
+      "state": "Kerala",
+      "slug": "kovalam-beach",
+      "tagline": "Crescent-shaped beach with lighthouse views",
+      "categories": [
+        "beach",
+        "viewpoint",
+        "nightlife"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60",
+        "alt": "Kovalam Beach travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "trivandrum",
+      "name": "Trivandrum",
+      "state": "Kerala",
+      "slug": "trivandrum",
+      "tagline": "Capital city of Kerala with Padmanabhaswamy",
+      "categories": [
+        "temple",
+        "palace",
+        "beach"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=1200&q=60",
+        "alt": "Trivandrum travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "gulmarg",
+      "name": "Gulmarg",
+      "state": "Jammu and Kashmir",
+      "slug": "gulmarg",
+      "tagline": "Meadow of flowers and skiing paradise",
+      "categories": [
+        "adventure",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=1200&q=60",
+        "alt": "Gulmarg travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "pahalgam",
+      "name": "Pahalgam",
+      "state": "Jammu and Kashmir",
+      "slug": "pahalgam",
+      "tagline": "Valley of shepherds and Lidder River",
+      "categories": [
+        "nature",
+        "adventure",
+        "river"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=1200&q=60",
+        "alt": "Pahalgam travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "srinagar",
+      "name": "Srinagar",
+      "state": "Jammu and Kashmir",
+      "slug": "srinagar",
+      "tagline": "Summer capital on Dal Lake",
+      "categories": [
+        "lake",
+        "garden",
+        "monument"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=1200&q=60",
+        "alt": "Srinagar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "sonamarg",
+      "name": "Sonamarg",
+      "state": "Jammu and Kashmir",
+      "slug": "sonamarg",
+      "tagline": "Meadow of gold en route to Ladakh",
+      "categories": [
+        "nature",
+        "adventure",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=1200&q=60",
+        "alt": "Sonamarg travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "patnitop",
+      "name": "Patnitop",
+      "state": "Jammu and Kashmir",
+      "slug": "patnitop",
+      "tagline": "Hilltop retreat with pine forests",
+      "categories": [
+        "hill_station",
+        "nature",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=1200&q=60",
+        "alt": "Patnitop travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kullu",
+      "name": "Kullu",
+      "state": "Himachal Pradesh",
+      "slug": "kullu",
+      "tagline": "Valley of gods with riverside camping",
+      "categories": [
+        "nature",
+        "adventure",
+        "river"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=1200&q=60",
+        "alt": "Kullu travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kasol",
+      "name": "Kasol",
+      "state": "Himachal Pradesh",
+      "slug": "kasol",
+      "tagline": "Backpacker hamlet in Parvati Valley",
+      "categories": [
+        "nature",
+        "adventure",
+        "village"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1555993539-173e54f2821f?fm=webp&w=1200&q=60",
+        "alt": "Kasol travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "dalhousie",
+      "name": "Dalhousie",
+      "state": "Himachal Pradesh",
+      "slug": "dalhousie",
+      "tagline": "Colonial hill station with pine hills",
+      "categories": [
+        "hill_station",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?fm=webp&w=1200&q=60",
+        "alt": "Dalhousie travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "khajjiar",
+      "name": "Khajjiar",
+      "state": "Himachal Pradesh",
+      "slug": "khajjiar",
+      "tagline": "Mini Switzerland of India",
+      "categories": [
+        "hill_station",
+        "nature",
+        "lake"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1528127260108-a3aef7f22f7a?fm=webp&w=1200&q=60",
+        "alt": "Khajjiar travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mcleod-ganj",
+      "name": "McLeod Ganj",
+      "state": "Himachal Pradesh",
+      "slug": "mcleod-ganj",
+      "tagline": "Little Lhasa of India",
+      "categories": [
+        "monastery",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1564507592033-7e4f13a7e7b6?fm=webp&w=1200&q=60",
+        "alt": "McLeod Ganj travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "bir-billing",
+      "name": "Bir Billing",
+      "state": "Himachal Pradesh",
+      "slug": "bir-billing",
+      "tagline": "Paragliding capital of India",
+      "categories": [
+        "adventure",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+        "alt": "Bir Billing travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "tirthan-valley",
+      "name": "Tirthan Valley",
+      "state": "Himachal Pradesh",
+      "slug": "tirthan-valley",
+      "tagline": "Hidden trout fishing paradise",
+      "categories": [
+        "nature",
+        "river",
+        "adventure"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=1200&q=60",
+        "alt": "Tirthan Valley travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kinnaur",
+      "name": "Kinnaur",
+      "state": "Himachal Pradesh",
+      "slug": "kinnaur",
+      "tagline": "Apple orchards and Himalayan vistas",
+      "categories": [
+        "nature",
+        "village",
+        "monastery"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60",
+        "alt": "Kinnaur travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "chamba",
+      "name": "Chamba",
+      "state": "Himachal Pradesh",
+      "slug": "chamba",
+      "tagline": "Ancient temple town by the Ravi",
+      "categories": [
+        "temple",
+        "lake",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+        "alt": "Chamba travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "mandi",
+      "name": "Mandi",
+      "state": "Himachal Pradesh",
+      "slug": "mandi",
+      "tagline": "Varanasi of the Hills with 81 temples",
+      "categories": [
+        "temple",
+        "lake",
+        "heritage"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60",
+        "alt": "Mandi travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "manikaran",
+      "name": "Manikaran",
+      "state": "Himachal Pradesh",
+      "slug": "manikaran",
+      "tagline": "Hot springs and Sikh pilgrimage",
+      "categories": [
+        "temple",
+        "religious",
+        "river"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+        "alt": "Manikaran travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "kufri",
+      "name": "Kufri",
+      "state": "Himachal Pradesh",
+      "slug": "kufri",
+      "tagline": "Snow playground near Shimla",
+      "categories": [
+        "adventure",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+        "alt": "Kufri travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "narkanda",
+      "name": "Narkanda",
+      "state": "Himachal Pradesh",
+      "slug": "narkanda",
+      "tagline": "Apple country with Hatu Peak views",
+      "categories": [
+        "hill_station",
+        "nature",
+        "viewpoint"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+        "alt": "Narkanda travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "sasan-gir",
+      "name": "Sasan Gir",
+      "state": "Gujarat",
+      "slug": "sasan-gir",
+      "tagline": "Last abode of the Asiatic lion",
+      "categories": [
+        "wildlife",
+        "nature",
+        "sanctuary"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+        "alt": "Sasan Gir travel guide"
+      },
+      "totalAttractions": 25
+    },
+    {
+      "id": "dwarka",
+      "name": "Dwarka",
+      "state": "Gujarat",
+      "slug": "dwarka",
+      "tagline": "Sacred city of Lord Krishna",
+      "categories": [
+        "temple",
+        "religious",
+        "beach"
+      ],
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=1200&q=60",
+        "alt": "Dwarka travel guide"
+      },
+      "totalAttractions": 25
+    }
+  ]
+}

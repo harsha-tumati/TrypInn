@@ -1,0 +1,447 @@
+{
+  "id": "jaipur",
+  "name": "Jaipur",
+  "state": "Rajasthan",
+  "slug": "jaipur",
+  "tagline": "The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur",
+  "categories": [
+    "heritage",
+    "city",
+    "desert"
+  ],
+  "introduction": "Planning a trip to Jaipur? This travel guide to Jaipur covers the must visit places in Jaipur, the best places to visit in Jaipur, top tourist attractions in Jaipur, and exciting things to do in Jaipur.",
+  "metaTitle": "Best Places to Visit in Jaipur | Tourist Attractions in Jaipur - TrypInn",
+  "metaDescription": "Explore the best places to visit in Jaipur, top things to do in Jaipur, and must visit places in Jaipur. Your complete travel guide to Jaipur by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=1200&q=60",
+    "alt": "Jaipur travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "jaipur-amber-fort",
+      "name": "Amber Fort",
+      "slug": "amber-fort",
+      "description": "Amber Fort is one of the most iconic landmarks in Jaipur, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Amber Fort promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Amber Fort.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Amber Fort, Jaipur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Amber Fort in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Amber Fort in Jaipur"
+      },
+      "position": 1
+    },
+    {
+      "id": "jaipur-hawa-mahal",
+      "name": "Hawa Mahal",
+      "slug": "hawa-mahal",
+      "description": "Hawa Mahal is one of the most iconic landmarks in Jaipur, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hawa Mahal promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Hawa Mahal.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hawa Mahal, Jaipur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Hawa Mahal in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Hawa Mahal in Jaipur"
+      },
+      "position": 2
+    },
+    {
+      "id": "jaipur-city-palace",
+      "name": "City Palace",
+      "slug": "city-palace",
+      "description": "City Palace is a must-see palace in Jaipur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaipur.",
+      "whyVisit": "Capture stunning photographs at City Palace.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "City Palace, Jaipur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, City Palace in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "City Palace in Jaipur"
+      },
+      "position": 3
+    },
+    {
+      "id": "jaipur-jantar-mantar",
+      "name": "Jantar Mantar",
+      "slug": "jantar-mantar",
+      "description": "Located in scenic Jaipur, Jantar Mantar offers an immersive experience into local culture. Exploring Jantar Mantar is one of the top things to do in Jaipur.",
+      "whyVisit": "A visit to Jantar Mantar is essential for understanding Jaipur.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Jantar Mantar, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Jantar Mantar in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Jantar Mantar in Jaipur"
+      },
+      "position": 4
+    },
+    {
+      "id": "jaipur-jal-mahal",
+      "name": "Jal Mahal",
+      "slug": "jal-mahal",
+      "description": "Located in scenic Jaipur, Jal Mahal offers an immersive experience into local culture. Exploring Jal Mahal is one of the top things to do in Jaipur.",
+      "whyVisit": "A visit to Jal Mahal is essential for understanding Jaipur.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Jal Mahal, Jaipur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Jal Mahal in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Jal Mahal in Jaipur"
+      },
+      "position": 5
+    },
+    {
+      "id": "jaipur-nahargarh-fort",
+      "name": "Nahargarh Fort",
+      "slug": "nahargarh-fort",
+      "description": "A crown jewel of Jaipur, Nahargarh Fort captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Nahargarh Fort.",
+      "whyVisit": "A visit to Nahargarh Fort is essential for understanding Jaipur.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nahargarh Fort, Jaipur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Nahargarh Fort in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Nahargarh Fort in Jaipur"
+      },
+      "position": 6
+    },
+    {
+      "id": "jaipur-jaigarh-fort",
+      "name": "Jaigarh Fort",
+      "slug": "jaigarh-fort",
+      "description": "A crown jewel of Jaipur, Jaigarh Fort captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Jaigarh Fort.",
+      "whyVisit": "Capture stunning photographs at Jaigarh Fort.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Jaigarh Fort, Jaipur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaigarh Fort in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Jaigarh Fort in Jaipur"
+      },
+      "position": 7
+    },
+    {
+      "id": "jaipur-albert-hall-museum",
+      "name": "Albert Hall Museum",
+      "slug": "albert-hall-museum",
+      "description": "A crown jewel of Jaipur, Albert Hall Museum captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Albert Hall Museum.",
+      "whyVisit": "Albert Hall Museum stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Albert Hall Museum, Jaipur",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Albert Hall Museum in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Albert Hall Museum in Jaipur"
+      },
+      "position": 8
+    },
+    {
+      "id": "jaipur-birla-mandir",
+      "name": "Birla Mandir",
+      "slug": "birla-mandir",
+      "description": "Birla Mandir is a must-see temple in Jaipur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaipur.",
+      "whyVisit": "Birla Mandir offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Birla Mandir, Jaipur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Birla Mandir in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Birla Mandir in Jaipur"
+      },
+      "position": 9
+    },
+    {
+      "id": "jaipur-johari-bazaar",
+      "name": "Johari Bazaar",
+      "slug": "johari-bazaar",
+      "description": "A crown jewel of Jaipur, Johari Bazaar captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Johari Bazaar.",
+      "whyVisit": "Capture stunning photographs at Johari Bazaar.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Johari Bazaar, Jaipur",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Johari Bazaar in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Johari Bazaar in Jaipur"
+      },
+      "position": 10
+    },
+    {
+      "id": "jaipur-rambagh-palace",
+      "name": "Rambagh Palace",
+      "slug": "rambagh-palace",
+      "description": "Located in scenic Jaipur, Rambagh Palace offers an immersive experience into local culture. Exploring Rambagh Palace is one of the top things to do in Jaipur.",
+      "whyVisit": "Capture stunning photographs at Rambagh Palace.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rambagh Palace, Jaipur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Rambagh Palace in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Rambagh Palace in Jaipur"
+      },
+      "position": 11
+    },
+    {
+      "id": "jaipur-chokhi-dhani",
+      "name": "Chokhi Dhani",
+      "slug": "chokhi-dhani",
+      "description": "Chokhi Dhani is a must-see heritage in Jaipur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaipur.",
+      "whyVisit": "Chokhi Dhani stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chokhi Dhani, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Chokhi Dhani in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Chokhi Dhani in Jaipur"
+      },
+      "position": 12
+    },
+    {
+      "id": "jaipur-galta-ji-temple",
+      "name": "Galta Ji Temple",
+      "slug": "galta-ji-temple",
+      "description": "Nestled in Jaipur, Galta Ji Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Galta Ji Temple is among the best things to do in Jaipur.",
+      "whyVisit": "A visit to Galta Ji Temple is essential for understanding Jaipur.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Galta Ji Temple, Jaipur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Galta Ji Temple in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Galta Ji Temple in Jaipur"
+      },
+      "position": 13
+    },
+    {
+      "id": "jaipur-sisodia-rani-garden",
+      "name": "Sisodia Rani Garden",
+      "slug": "sisodia-rani-garden",
+      "description": "Nestled in Jaipur, Sisodia Rani Garden stands as a testament to architectural brilliance. This renowned garden attracts tourists who come to admire its stunning design. A visit to Sisodia Rani Garden is among the best things to do in Jaipur.",
+      "whyVisit": "Experience the unmatched beauty of Sisodia Rani Garden.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sisodia Rani Garden, Jaipur",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Sisodia Rani Garden in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Sisodia Rani Garden in Jaipur"
+      },
+      "position": 14
+    },
+    {
+      "id": "jaipur-central-park",
+      "name": "Central Park",
+      "slug": "central-park",
+      "description": "A crown jewel of Jaipur, Central Park captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Central Park.",
+      "whyVisit": "Central Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Central Park, Jaipur",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Central Park in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Central Park in Jaipur"
+      },
+      "position": 15
+    },
+    {
+      "id": "jaipur-anokhi-museum",
+      "name": "Anokhi Museum",
+      "slug": "anokhi-museum",
+      "description": "A crown jewel of Jaipur, Anokhi Museum captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Anokhi Museum.",
+      "whyVisit": "Anokhi Museum stands out as one of the most rewarding experiences.",
+      "bestTime": "Weekdays",
+      "duration": "Quick",
+      "mapsSearch": "Anokhi Museum, Jaipur",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Anokhi Museum in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Anokhi Museum in Jaipur"
+      },
+      "position": 16
+    },
+    {
+      "id": "jaipur-raj-mandir-cinema",
+      "name": "Raj Mandir Cinema",
+      "slug": "raj-mandir-cinema",
+      "description": "A crown jewel of Jaipur, Raj Mandir Cinema captivates every traveler with enchanting beauty. No trip to Jaipur is complete without visiting Raj Mandir Cinema.",
+      "whyVisit": "Capture stunning photographs at Raj Mandir Cinema.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Raj Mandir Cinema, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Raj Mandir Cinema in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Raj Mandir Cinema in Jaipur"
+      },
+      "position": 17
+    },
+    {
+      "id": "jaipur-bapu-bazaar",
+      "name": "Bapu Bazaar",
+      "slug": "bapu-bazaar",
+      "description": "Bapu Bazaar is one of the most iconic landmarks in Jaipur, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bapu Bazaar promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Bapu Bazaar.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bapu Bazaar, Jaipur",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Bapu Bazaar in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Bapu Bazaar in Jaipur"
+      },
+      "position": 18
+    },
+    {
+      "id": "jaipur-panna-meena-ka-kund",
+      "name": "Panna Meena Ka Kund",
+      "slug": "panna-meena-ka-kund",
+      "description": "Nestled in Jaipur, Panna Meena Ka Kund stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Panna Meena Ka Kund is among the best things to do in Jaipur.",
+      "whyVisit": "Panna Meena Ka Kund stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Panna Meena Ka Kund, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Panna Meena Ka Kund in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Panna Meena Ka Kund in Jaipur"
+      },
+      "position": 19
+    },
+    {
+      "id": "jaipur-sargasuli-tower",
+      "name": "Sargasuli Tower",
+      "slug": "sargasuli-tower",
+      "description": "Located in scenic Jaipur, Sargasuli Tower offers an immersive experience into local culture. Exploring Sargasuli Tower is one of the top things to do in Jaipur.",
+      "whyVisit": "Sargasuli Tower offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Sargasuli Tower, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Sargasuli Tower in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Sargasuli Tower in Jaipur"
+      },
+      "position": 20
+    },
+    {
+      "id": "jaipur-museum-of-legacies",
+      "name": "Museum of Legacies",
+      "slug": "museum-of-legacies",
+      "description": "Nestled in Jaipur, Museum of Legacies stands as a testament to architectural brilliance. This renowned museum attracts tourists who come to admire its stunning design. A visit to Museum of Legacies is among the best things to do in Jaipur.",
+      "whyVisit": "Capture stunning photographs at Museum of Legacies.",
+      "bestTime": "Morning",
+      "duration": "Quick",
+      "mapsSearch": "Museum of Legacies, Jaipur",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Museum of Legacies in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Museum of Legacies in Jaipur"
+      },
+      "position": 21
+    },
+    {
+      "id": "jaipur-jawahar-kala-kendra",
+      "name": "Jawahar Kala Kendra",
+      "slug": "jawahar-kala-kendra",
+      "description": "Located in scenic Jaipur, Jawahar Kala Kendra offers an immersive experience into local culture. Exploring Jawahar Kala Kendra is one of the top things to do in Jaipur.",
+      "whyVisit": "Jawahar Kala Kendra stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Jawahar Kala Kendra, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Jawahar Kala Kendra in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Jawahar Kala Kendra in Jaipur"
+      },
+      "position": 22
+    },
+    {
+      "id": "jaipur-ram-niwas-garden",
+      "name": "Ram Niwas Garden",
+      "slug": "ram-niwas-garden",
+      "description": "Nestled in Jaipur, Ram Niwas Garden stands as a testament to architectural brilliance. This renowned garden attracts tourists who come to admire its stunning design. A visit to Ram Niwas Garden is among the best things to do in Jaipur.",
+      "whyVisit": "Capture stunning photographs at Ram Niwas Garden.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Ram Niwas Garden, Jaipur",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Ram Niwas Garden in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Ram Niwas Garden in Jaipur"
+      },
+      "position": 23
+    },
+    {
+      "id": "jaipur-abhaneri-stepwell-day-trip",
+      "name": "Abhaneri Stepwell Day Trip",
+      "slug": "abhaneri-stepwell-day-trip",
+      "description": "Nestled in Jaipur, Abhaneri Stepwell Day Trip stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Abhaneri Stepwell Day Trip is among the best things to do in Jaipur.",
+      "whyVisit": "A visit to Abhaneri Stepwell Day Trip is essential for understanding Jaipur.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Abhaneri Stepwell Day Trip, Jaipur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Abhaneri Stepwell Day Trip in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Abhaneri Stepwell Day Trip in Jaipur"
+      },
+      "position": 24
+    },
+    {
+      "id": "jaipur-elefantastic-sanctuary",
+      "name": "Elefantastic Sanctuary",
+      "slug": "elefantastic-sanctuary",
+      "description": "Elefantastic Sanctuary is a must-see wildlife in Jaipur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jaipur.",
+      "whyVisit": "Capture stunning photographs at Elefantastic Sanctuary.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Elefantastic Sanctuary, Jaipur",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Elefantastic Sanctuary in Jaipur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Elefantastic Sanctuary in Jaipur"
+      },
+      "position": 25
+    }
+  ]
+}

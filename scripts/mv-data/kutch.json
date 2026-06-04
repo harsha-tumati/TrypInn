@@ -1,0 +1,200 @@
+{
+  "slug": "kutch",
+  "name": "Kutch",
+  "state": "Gujarat",
+  "tagline": "Salt flats, starlit skies, and India's richest craft traditions",
+  "categories": ["desert", "heritage", "nature"],
+  "highlights": ["white rann salt desert at full moon", "vibrant kutchi handicraft villages"],
+  "attractions": [
+    {
+      "name": "White Rann of Kutch",
+      "category": "desert",
+      "description": "The Great Rann is the world's largest seasonal salt marsh — 7,500 sq km of blinding white salt crystals that flood during monsoon and dry into a cracked white plain by winter. Under the full moon, the salt reflects light with such intensity it appears to glow. The horizon-less expanse, sky-blue during day and silver by night, is among India's most otherworldly landscapes.",
+      "whyVisit": "One of Earth's most surreal landscapes — especially magical under a full moon.",
+      "bestTime": "November to February (Rann Utsav season)",
+      "duration": "Half day to full day",
+      "mapsSearch": "White Rann of Kutch Dhordo Gujarat",
+      "imageQuery": "White Rann Kutch salt desert full moon"
+    },
+    {
+      "name": "Rann Utsav Festival",
+      "category": "heritage",
+      "description": "Gujarat Tourism's flagship winter festival transforms the tiny village of Dhordo into a tented city of 400+ luxury and standard tents from November to February. Cultural evenings feature Kutchi folk music — Garba, Bhavai, Langa, and Manganiyar performers — alongside artisan markets showcasing rogan art, ajrakh block prints, and mirror-work embroidery. Hot-air balloon rides and camel safaris complement the revelry.",
+      "whyVisit": "The best single event to experience Kutch's arts, crafts, and landscape together.",
+      "bestTime": "Full moon nights, November to February",
+      "duration": "2-3 days",
+      "mapsSearch": "Rann Utsav Dhordo Kutch Gujarat",
+      "imageQuery": "Rann Utsav festival tents Dhordo Gujarat"
+    },
+    {
+      "name": "Kalo Dungar (Black Hill)",
+      "category": "viewpoint",
+      "description": "Gujarat's highest point at 462 metres, Black Hill rises dramatically from the flat Rann and offers 360-degree panoramas stretching across the White Rann to Pakistan on clear days. The Dattatreya temple at the summit serves devotees and vultures simultaneously — priests feed these sacred birds rice prasad at sunset. The magnetic hill illusion nearby appears to make vehicles roll uphill.",
+      "whyVisit": "The highest vantage point over the Rann, with a mystical temple and sunset views.",
+      "bestTime": "Sunset, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kalo Dungar Black Hill Kutch Gujarat",
+      "imageQuery": "Kalo Dungar Black Hill Kutch panorama"
+    },
+    {
+      "name": "Bhuj Old City and Aina Mahal",
+      "category": "palace",
+      "description": "The historic capital of Kutch, Bhuj retains its walled old city with narrow lanes, traditional Kutchi wooden havelis, and the magnificent Aina Mahal — an 18th-century hall of mirrors built by Lakhpatji using European craftsman Ram Singh Malam. The palace's Dutch-glass-lined walls, ivory furniture, and mechanical fountains create an extraordinary hybrid Indo-European interior. Nearby Prag Mahal has Gothic tower views over the city.",
+      "whyVisit": "Aina Mahal is one of India's most unique royal interiors — glass, ivory, and ingenuity.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aina Mahal Bhuj Kutch Gujarat",
+      "imageQuery": "Aina Mahal Bhuj palace mirrors Kutch"
+    },
+    {
+      "name": "Bhujodi Village (Weaving Village)",
+      "category": "heritage",
+      "description": "Just 8 km from Bhuj, Bhujodi is Kutch's premier weaving village where virtually every household operates handlooms producing the distinctive Kutchi shawls with geometric patterns in natural wool and cotton. The Vankar (weaver caste) artisans welcome visitors into their workshops; the village also hosts several NGO-supported craft cooperatives selling directly to visitors at fair prices.",
+      "whyVisit": "Watch master weavers create Kutch's iconic textiles on traditional pit looms.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhujodi weaving village Kutch Gujarat",
+      "imageQuery": "Bhujodi weaving village Kutch handloom"
+    },
+    {
+      "name": "Nirona Village (Bell Metal and Lacquerware)",
+      "category": "heritage",
+      "description": "A remote village 60 km north of Bhuj where only two families preserve the dying Lohar craft of Rogan painting — a 400-year-old technique using castor oil-based paint worked with a stylus never touching paper, creating mirror-imprint designs of extraordinary intricacy. The same village produces bell-metal (Kansara) craft and distinctive lacquered woodwork with bold Kutchi motifs.",
+      "whyVisit": "One of only two families in the world who still practice the ancient Rogan art form.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nirona Village Rogan art Kutch Gujarat",
+      "imageQuery": "Nirona village Rogan painting Kutch craft"
+    },
+    {
+      "name": "Hodka Village and Bhunga Architecture",
+      "category": "heritage",
+      "description": "A Harijan Meghwal community village near the Pakistan border where traditional circular bhunga mud huts — white-plastered with intricate mirror-mosaic and relief decoration — still serve as homes. Several families run homestays allowing overnight guests to experience desert life, camel cart village tours, and participate in mirror embroidery sessions. SHRUJAN craft cooperative was born in this region.",
+      "whyVisit": "Authentic bhunga village life — spend a night in a mirror-decorated mud hut.",
+      "bestTime": "November to February",
+      "duration": "Overnight stay or half day",
+      "mapsSearch": "Hodka Village bhunga Kutch Gujarat",
+      "imageQuery": "Hodka village bhunga mud hut Kutch mirror"
+    },
+    {
+      "name": "Indian Wild Ass Sanctuary",
+      "category": "wildlife",
+      "description": "The Little Rann of Kutch (3,000 sq km) protects the world's last population of the endangered Indian wild ass (Ghudkhur) — over 6,000 animals. The sanctuary also shelters wolves, striped hyenas, desert fox, and the seasonal flamingo colony at Zinzuwada. Jeep safaris traverse the flat grassland-salt ecosystem where wild ass herds can be spotted at close range year-round.",
+      "whyVisit": "The only place on Earth to see the Indian wild ass in its natural habitat.",
+      "bestTime": "October to March",
+      "duration": "Half day jeep safari",
+      "mapsSearch": "Indian Wild Ass Sanctuary Little Rann Kutch",
+      "imageQuery": "Indian Wild Ass Little Rann Kutch Gujarat"
+    },
+    {
+      "name": "Flamingo City (Flamingo Breeding Site)",
+      "category": "wildlife",
+      "description": "The vast salt flats of the Rann host one of Asia's largest flamingo breeding colonies from November to May, when tens of thousands of lesser and greater flamingos nest on the salt islands. The concentration of pink birds against white salt creates spectacular aerial photography. Dedicated boat and jeep eco-tours from Kharaghoda village take visitors to the designated viewing zones without disturbing nesting birds.",
+      "whyVisit": "One of Asia's most spectacular bird events — thousands of flamingos in a salt landscape.",
+      "bestTime": "December to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Flamingo City Little Rann Kutch Gujarat flamingos",
+      "imageQuery": "flamingo colony Rann Kutch salt flat Gujarat"
+    },
+    {
+      "name": "Lakhpat Fort and Ghost Town",
+      "category": "fort",
+      "description": "A remarkably intact 7 km-long fort wall encircling a ghost town near the Pakistan border, Lakhpat was once a major Arabian Sea port handling spice and textile trade. The 1819 earthquake and river diversion silenced the port forever. Inside the walls stand Guru Nanak's gurudwara (the saint visited twice), a mosque, a church, and hundreds of roofless abandoned houses — an evocative melancholy ruin.",
+      "whyVisit": "An entire ghost town within intact fort walls — hauntingly beautiful and almost unknown.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lakhpat Fort ghost town Kutch Gujarat",
+      "imageQuery": "Lakhpat Fort ghost town Kutch walls"
+    },
+    {
+      "name": "Dholavira (Harappan City)",
+      "category": "heritage",
+      "description": "One of the largest and best-preserved cities of the Indus Valley Civilization, Dholavira on the island of Khadir Bet was excavated from 1990. Its sophisticated water management system — 16 reservoirs, dams, and drains — still visible after 4,500 years, astonishes engineers. The unique Harappan signboard (the world's first public display of large-scale script) was found here. Designated UNESCO World Heritage Site in 2021.",
+      "whyVisit": "A 4,500-year-old UNESCO city with the world's most advanced ancient water engineering.",
+      "bestTime": "October to February",
+      "duration": "3-4 hours",
+      "mapsSearch": "Dholavira Harappan site Kutch Gujarat UNESCO",
+      "imageQuery": "Dholavira Harappan ruins Kutch Gujarat"
+    },
+    {
+      "name": "Mandvi Beach and Vijay Vilas Palace",
+      "category": "beach",
+      "description": "Mandvi is Kutch's only major beach town with a continuous stretch of golden sand backed by casuarina groves. The Maharao of Kutch's Vijay Vilas Palace — an early 20th-century sandstone heritage hotel with Rajput architecture — overlooks its private beach section. The town itself retains a working wooden dhow shipbuilding yard where craftsmen still build traditional Kutchi vessels by hand.",
+      "whyVisit": "Uncrowded beach, heritage palace, and a living dhow shipyard in one coastal town.",
+      "bestTime": "October to March",
+      "duration": "1 day",
+      "mapsSearch": "Mandvi Beach Vijay Vilas Palace Kutch Gujarat",
+      "imageQuery": "Mandvi Beach Vijay Vilas Palace Kutch"
+    },
+    {
+      "name": "Kutch Museum Bhuj",
+      "category": "museum",
+      "description": "Gujarat's oldest museum (est. 1877) displays the most comprehensive collection of Kutchi textile embroidery, metal craft, Harappan artefacts from Dholavira, and royal regalia. The textile galleries alone — showcasing Rabari, Ahir, Jat, and Mutva embroidery traditions — justify the visit. Dedicated galleries cover the 2001 earthquake's impact and Kutch's extraordinary post-earthquake cultural revival.",
+      "whyVisit": "The definitive repository of Kutch's textile and archaeological heritage under one roof.",
+      "bestTime": "Morning, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Kutch Museum Bhuj Gujarat",
+      "imageQuery": "Kutch Museum Bhuj embroidery collection"
+    },
+    {
+      "name": "Shyamji Krishna Varma Memorial",
+      "category": "heritage",
+      "description": "A striking modern memorial in Mandvi honouring Kutch-born freedom fighter and revolutionary Shyamji Krishna Varma, who established India House in London in 1905 and inspired V.D. Savarkar. The memorial brings home the ashes of Shyamji and his wife after 102 years in Geneva, displayed under a glass dome. The architectural complex blends Kutchi and national iconography.",
+      "whyVisit": "Moving tribute to a forgotten revolutionary — and architecturally distinctive memorial.",
+      "bestTime": "October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Shyamji Krishna Varma Memorial Mandvi Kutch",
+      "imageQuery": "Shyamji Krishna Varma Memorial Mandvi Gujarat"
+    },
+    {
+      "name": "Khavda Village (Craft Village near Rann)",
+      "category": "heritage",
+      "description": "A Kutchi artisan village 60 km north of Bhuj at the Rann's edge, Khavda is known for its distinct pottery — coil-built, hand-burnished black clay pots with white geometric decoration unique to the Luhana community. The village also produces vivid hand-painted terracotta horses and elephants. Several families operate workshops open to visitors, and the surrounding landscape merges into the white salt plain.",
+      "whyVisit": "Unique black pottery tradition found nowhere else — right at the Rann's doorstep.",
+      "bestTime": "October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Khavda pottery village Kutch Gujarat Rann",
+      "imageQuery": "Khavda village pottery Kutch black clay"
+    },
+    {
+      "name": "Koteshwar Temple (Land's End)",
+      "category": "temple",
+      "description": "Standing at the extreme western tip of India where the Creek runs into the Arabian Sea, the Koteshwar Shiva temple sits at India's true 'Land's End' — beyond is Pakistan. The 18th-century shrine was rebuilt after the 2001 earthquake. The drive through the BSF security zone, cranes and migratory birds overhead, and the wind-scoured headland make the journey as memorable as the destination.",
+      "whyVisit": "Shiva temple at India's westernmost accessible point — a pilgrimage and geographical marvel.",
+      "bestTime": "October to February (permit required)",
+      "duration": "2-3 hours including drive",
+      "mapsSearch": "Koteshwar Temple Kutch Gujarat westernmost India",
+      "imageQuery": "Koteshwar Temple Kutch land's end Arabia Sea"
+    },
+    {
+      "name": "Sumrasar Sheikh Village (Embroidery)",
+      "category": "heritage",
+      "description": "A Muslim Halepotra community village near Bhuj celebrated for its exceptionally fine geometric threadwork embroidery — some of the most intricate needlework in Kutch. QASAB, the artisan cooperative based here, has helped women sustain livelihoods after the 2001 earthquake. Visitors can watch artisans work on densely stitched fabric panels requiring months to complete, with pieces available for purchase.",
+      "whyVisit": "Watch the most technically refined geometric embroidery in Kutch in its home village.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sumrasar Sheikh Village embroidery Kutch Gujarat",
+      "imageQuery": "Kutch embroidery artisan village geometric threadwork"
+    },
+    {
+      "name": "Vande Mataram Memorial",
+      "category": "heritage",
+      "description": "A modern architectural complex near Bhuj built to honour India's freedom movement, featuring a striking conical memorial tower inspired by Kutchi bhunga architecture, set against a large formal garden. Inaugurated in 2013, it contains relief panels depicting key independence events and an eternal flame. The quiet landscaped grounds provide a reflective contrast to the buzzing craft villages nearby.",
+      "whyVisit": "Architecturally interesting memorial in a tranquil setting — rarely visited by tourists.",
+      "bestTime": "October to February",
+      "duration": "1 hour",
+      "mapsSearch": "Vande Mataram Memorial Bhuj Kutch Gujarat",
+      "imageQuery": "Vande Mataram Memorial Bhuj Kutch"
+    },
+    {
+      "name": "Khengarji Choultry (Bhuj Old Bazaar)",
+      "category": "market",
+      "description": "The covered old bazaar lanes of Bhuj — particularly around the Swaminarayan Temple precinct and Sheth Bazaar — form one of Gujarat's most atmospheric traditional markets. Copper and brass utensils, ajrakh block-print fabrics, silver jewellery with traditional Kutchi motifs, and embroidered mirror-work blouses fill tiny shops. The 19th-century carved wooden havelis overhead create a layered visual spectacle.",
+      "whyVisit": "The most authentic place to buy genuine Kutchi crafts directly from local traders.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhuj old bazaar market Kutch Gujarat",
+      "imageQuery": "Bhuj old bazaar Kutch craft market Gujarat"
+    }
+  ]
+}

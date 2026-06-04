@@ -1,0 +1,447 @@
+{
+  "id": "tirthan-valley",
+  "name": "Tirthan Valley",
+  "state": "Himachal Pradesh",
+  "slug": "tirthan-valley",
+  "tagline": "Hidden trout fishing paradise",
+  "categories": [
+    "nature",
+    "river",
+    "adventure"
+  ],
+  "introduction": "Welcome to Tirthan Valley, where history meets beauty. This travel guide to Tirthan Valley highlights the must visit places in Tirthan Valley, best places to visit in Tirthan Valley, tourist attractions in Tirthan Valley, and things to do in Tirthan Valley.",
+  "metaTitle": "Best Places to Visit in Tirthan Valley | Tourist Attractions in Tirthan Valley - TrypInn",
+  "metaDescription": "Discover must visit places in Tirthan Valley, best places to visit in Tirthan Valley, and top tourist attractions in Tirthan Valley. Plan your perfect trip with TrypInn travel guide to Tirthan Valley.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=1200&q=60",
+    "alt": "Tirthan Valley travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "tirthan-valley-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nestled in Tirthan Valley, Nanda Devi National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Nanda Devi National Park is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Nanda Devi National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Multi-day",
+      "mapsSearch": "Nanda Devi National Park, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Tirthan Valley"
+      },
+      "position": 1
+    },
+    {
+      "id": "tirthan-valley-sheetla-ghat",
+      "name": "Sheetla Ghat",
+      "slug": "sheetla-ghat",
+      "description": "Located in scenic Tirthan Valley, Sheetla Ghat offers an immersive experience into local culture. Exploring Sheetla Ghat is one of the top things to do in Tirthan Valley.",
+      "whyVisit": "A visit to Sheetla Ghat is essential for understanding Tirthan Valley.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Sheetla Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Sheetla Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Sheetla Ghat in Tirthan Valley"
+      },
+      "position": 2
+    },
+    {
+      "id": "tirthan-valley-jeep-safari",
+      "name": "Jeep Safari",
+      "slug": "jeep-safari",
+      "description": "Nestled in Tirthan Valley, Jeep Safari stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Jeep Safari is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Jeep Safari stands out as one of the most rewarding experiences.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Multi-day",
+      "mapsSearch": "Jeep Safari, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Jeep Safari in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Jeep Safari in Tirthan Valley"
+      },
+      "position": 3
+    },
+    {
+      "id": "tirthan-valley-bhimtal",
+      "name": "Bhimtal",
+      "slug": "bhimtal",
+      "description": "Nestled in Tirthan Valley, Bhimtal stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Bhimtal is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Capture stunning photographs at Bhimtal.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Bhimtal, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bhimtal in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Bhimtal in Tirthan Valley"
+      },
+      "position": 4
+    },
+    {
+      "id": "tirthan-valley-rana-mahal-ghat",
+      "name": "Rana Mahal Ghat",
+      "slug": "rana-mahal-ghat",
+      "description": "Located in scenic Tirthan Valley, Rana Mahal Ghat offers an immersive experience into local culture. Exploring Rana Mahal Ghat is one of the top things to do in Tirthan Valley.",
+      "whyVisit": "A visit to Rana Mahal Ghat is essential for understanding Tirthan Valley.",
+      "bestTime": "Evening",
+      "duration": "Sunset",
+      "mapsSearch": "Rana Mahal Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Rana Mahal Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Rana Mahal Ghat in Tirthan Valley"
+      },
+      "position": 5
+    },
+    {
+      "id": "tirthan-valley-rock-climbing",
+      "name": "Rock Climbing",
+      "slug": "rock-climbing",
+      "description": "Located in scenic Tirthan Valley, Rock Climbing offers an immersive experience into local culture. Exploring Rock Climbing is one of the top things to do in Tirthan Valley.",
+      "whyVisit": "Rock Climbing offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "2-4 hours",
+      "mapsSearch": "Rock Climbing, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Rock Climbing in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Rock Climbing in Tirthan Valley"
+      },
+      "position": 6
+    },
+    {
+      "id": "tirthan-valley-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Munsiyari is a must-see nature in Tirthan Valley, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirthan Valley.",
+      "whyVisit": "Capture stunning photographs at Munsiyari.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Munsiyari, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Tirthan Valley"
+      },
+      "position": 7
+    },
+    {
+      "id": "tirthan-valley-assi-ghat",
+      "name": "Assi Ghat",
+      "slug": "assi-ghat",
+      "description": "Assi Ghat is one of the most iconic landmarks in Tirthan Valley, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Assi Ghat promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Assi Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Assi Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Assi Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Assi Ghat in Tirthan Valley"
+      },
+      "position": 8
+    },
+    {
+      "id": "tirthan-valley-surfing",
+      "name": "Surfing",
+      "slug": "surfing",
+      "description": "Nestled in Tirthan Valley, Surfing stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Surfing is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Surfing stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Jun",
+      "duration": "2-4 hours",
+      "mapsSearch": "Surfing, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Surfing in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Surfing in Tirthan Valley"
+      },
+      "position": 9
+    },
+    {
+      "id": "tirthan-valley-pithoragarh",
+      "name": "Pithoragarh",
+      "slug": "pithoragarh",
+      "description": "Pithoragarh is a must-see nature in Tirthan Valley, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirthan Valley.",
+      "whyVisit": "Pithoragarh stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pithoragarh, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pithoragarh in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Pithoragarh in Tirthan Valley"
+      },
+      "position": 10
+    },
+    {
+      "id": "tirthan-valley-tulsi-ghat",
+      "name": "Tulsi Ghat",
+      "slug": "tulsi-ghat",
+      "description": "A crown jewel of Tirthan Valley, Tulsi Ghat captivates every traveler with enchanting beauty. No trip to Tirthan Valley is complete without visiting Tulsi Ghat.",
+      "whyVisit": "Tulsi Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Tulsi Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Tulsi Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Tulsi Ghat in Tirthan Valley"
+      },
+      "position": 11
+    },
+    {
+      "id": "tirthan-valley-snowboarding",
+      "name": "Snowboarding",
+      "slug": "snowboarding",
+      "description": "A crown jewel of Tirthan Valley, Snowboarding captivates every traveler with enchanting beauty. No trip to Tirthan Valley is complete without visiting Snowboarding.",
+      "whyVisit": "Snowboarding stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Jun",
+      "duration": "Multi-day",
+      "mapsSearch": "Snowboarding, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Snowboarding in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Snowboarding in Tirthan Valley"
+      },
+      "position": 12
+    },
+    {
+      "id": "tirthan-valley-nainital",
+      "name": "Nainital",
+      "slug": "nainital",
+      "description": "Nainital is one of the most iconic landmarks in Tirthan Valley, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nainital promises an unforgettable experience.",
+      "whyVisit": "Nainital stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nainital, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nainital in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Nainital in Tirthan Valley"
+      },
+      "position": 13
+    },
+    {
+      "id": "tirthan-valley-ahilyabai-ghat",
+      "name": "Ahilyabai Ghat",
+      "slug": "ahilyabai-ghat",
+      "description": "A crown jewel of Tirthan Valley, Ahilyabai Ghat captivates every traveler with enchanting beauty. No trip to Tirthan Valley is complete without visiting Ahilyabai Ghat.",
+      "whyVisit": "Ahilyabai Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ahilyabai Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ahilyabai Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Ahilyabai Ghat in Tirthan Valley"
+      },
+      "position": 14
+    },
+    {
+      "id": "tirthan-valley-trekking",
+      "name": "Trekking",
+      "slug": "trekking",
+      "description": "Located in scenic Tirthan Valley, Trekking offers an immersive experience into local culture. Exploring Trekking is one of the top things to do in Tirthan Valley.",
+      "whyVisit": "Trekking stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Jun",
+      "duration": "Multi-day",
+      "mapsSearch": "Trekking, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Trekking in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Trekking in Tirthan Valley"
+      },
+      "position": 15
+    },
+    {
+      "id": "tirthan-valley-lohaghat",
+      "name": "Lohaghat",
+      "slug": "lohaghat",
+      "description": "Nestled in Tirthan Valley, Lohaghat stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Lohaghat is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Lohaghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Lohaghat, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Lohaghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Lohaghat in Tirthan Valley"
+      },
+      "position": 16
+    },
+    {
+      "id": "tirthan-valley-panchganga-ghat",
+      "name": "Panchganga Ghat",
+      "slug": "panchganga-ghat",
+      "description": "Panchganga Ghat is one of the most iconic landmarks in Tirthan Valley, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Panchganga Ghat promises an unforgettable experience.",
+      "whyVisit": "A visit to Panchganga Ghat is essential for understanding Tirthan Valley.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Panchganga Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Panchganga Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Panchganga Ghat in Tirthan Valley"
+      },
+      "position": 17
+    },
+    {
+      "id": "tirthan-valley-caving",
+      "name": "Caving",
+      "slug": "caving",
+      "description": "Caving is one of the most iconic landmarks in Tirthan Valley, drawing visitors with its timeless charm. This adventure offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Caving promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Caving.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Multi-day",
+      "mapsSearch": "Caving, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Caving in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Caving in Tirthan Valley"
+      },
+      "position": 18
+    },
+    {
+      "id": "tirthan-valley-champawat",
+      "name": "Champawat",
+      "slug": "champawat",
+      "description": "Nestled in Tirthan Valley, Champawat stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Champawat is among the best things to do in Tirthan Valley.",
+      "whyVisit": "A visit to Champawat is essential for understanding Tirthan Valley.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Champawat, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Champawat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Champawat in Tirthan Valley"
+      },
+      "position": 19
+    },
+    {
+      "id": "tirthan-valley-ganga-aarti-ghat",
+      "name": "Ganga Aarti Ghat",
+      "slug": "ganga-aarti-ghat",
+      "description": "Nestled in Tirthan Valley, Ganga Aarti Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Ganga Aarti Ghat is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Ganga Aarti Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Ganga Aarti Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ganga Aarti Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Ganga Aarti Ghat in Tirthan Valley"
+      },
+      "position": 20
+    },
+    {
+      "id": "tirthan-valley-mountain-biking",
+      "name": "Mountain Biking",
+      "slug": "mountain-biking",
+      "description": "Mountain Biking is a must-see adventure in Tirthan Valley, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirthan Valley.",
+      "whyVisit": "Capture stunning photographs at Mountain Biking.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Mountain Biking, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Mountain Biking in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Mountain Biking in Tirthan Valley"
+      },
+      "position": 21
+    },
+    {
+      "id": "tirthan-valley-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "Nestled in Tirthan Valley, Jim Corbett National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Jim Corbett National Park is among the best things to do in Tirthan Valley.",
+      "whyVisit": "Experience the unmatched beauty of Jim Corbett National Park.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Jim Corbett National Park, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Tirthan Valley"
+      },
+      "position": 22
+    },
+    {
+      "id": "tirthan-valley-lalita-ghat",
+      "name": "Lalita Ghat",
+      "slug": "lalita-ghat",
+      "description": "Lalita Ghat is a must-see river in Tirthan Valley, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirthan Valley.",
+      "whyVisit": "Lalita Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Lalita Ghat, Tirthan Valley",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Lalita Ghat in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Lalita Ghat in Tirthan Valley"
+      },
+      "position": 23
+    },
+    {
+      "id": "tirthan-valley-paragliding",
+      "name": "Paragliding",
+      "slug": "paragliding",
+      "description": "Located in scenic Tirthan Valley, Paragliding offers an immersive experience into local culture. Exploring Paragliding is one of the top things to do in Tirthan Valley.",
+      "whyVisit": "Capture stunning photographs at Paragliding.",
+      "bestTime": "Oct-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Paragliding, Tirthan Valley",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Paragliding in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Paragliding in Tirthan Valley"
+      },
+      "position": 24
+    },
+    {
+      "id": "tirthan-valley-berinag",
+      "name": "Berinag",
+      "slug": "berinag",
+      "description": "Berinag is one of the most iconic landmarks in Tirthan Valley, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Berinag promises an unforgettable experience.",
+      "whyVisit": "Berinag stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Berinag, Tirthan Valley",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Berinag in Tirthan Valley, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Berinag in Tirthan Valley"
+      },
+      "position": 25
+    }
+  ]
+}

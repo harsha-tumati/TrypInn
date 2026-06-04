@@ -1,0 +1,447 @@
+{
+  "id": "sasan-gir",
+  "name": "Sasan Gir",
+  "state": "Gujarat",
+  "slug": "sasan-gir",
+  "tagline": "Last abode of the Asiatic lion",
+  "categories": [
+    "wildlife",
+    "nature",
+    "sanctuary"
+  ],
+  "introduction": "Welcome to Sasan Gir, where history meets beauty. This travel guide to Sasan Gir highlights the must visit places in Sasan Gir, best places to visit in Sasan Gir, tourist attractions in Sasan Gir, and things to do in Sasan Gir.",
+  "metaTitle": "Top Things to Do in Sasan Gir | Travel Guide to Sasan Gir - TrypInn",
+  "metaDescription": "Discover must visit places in Sasan Gir, best places to visit in Sasan Gir, and top tourist attractions in Sasan Gir. Plan your perfect trip with TrypInn travel guide to Sasan Gir.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=1200&q=60",
+    "alt": "Sasan Gir travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "sasan-gir-sonai-rup-wildlife-sanctuary",
+      "name": "Sonai Rup Wildlife Sanctuary",
+      "slug": "sonai-rup-wildlife-sanctuary",
+      "description": "Sonai Rup Wildlife Sanctuary is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sonai Rup Wildlife Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Sonai Rup Wildlife Sanctuary.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Sonai Rup Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Sonai Rup Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Sonai Rup Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 1
+    },
+    {
+      "id": "sasan-gir-pithoragarh",
+      "name": "Pithoragarh",
+      "slug": "pithoragarh",
+      "description": "Pithoragarh is a must-see nature in Sasan Gir, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sasan Gir.",
+      "whyVisit": "Pithoragarh offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Pithoragarh, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pithoragarh in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Pithoragarh in Sasan Gir"
+      },
+      "position": 2
+    },
+    {
+      "id": "sasan-gir-bannerghatta-national-park",
+      "name": "Bannerghatta National Park",
+      "slug": "bannerghatta-national-park",
+      "description": "Bannerghatta National Park is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This sanctuary offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bannerghatta National Park promises an unforgettable experience.",
+      "whyVisit": "A visit to Bannerghatta National Park is essential for understanding Sasan Gir.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Bannerghatta National Park, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Bannerghatta National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Bannerghatta National Park in Sasan Gir"
+      },
+      "position": 3
+    },
+    {
+      "id": "sasan-gir-chakrashila-wildlife-sanctuary",
+      "name": "Chakrashila Wildlife Sanctuary",
+      "slug": "chakrashila-wildlife-sanctuary",
+      "description": "Chakrashila Wildlife Sanctuary is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chakrashila Wildlife Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Chakrashila Wildlife Sanctuary.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Chakrashila Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Chakrashila Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Chakrashila Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 4
+    },
+    {
+      "id": "sasan-gir-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "Mukteshwar is a must-see nature in Sasan Gir, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sasan Gir.",
+      "whyVisit": "Capture stunning photographs at Mukteshwar.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Mukteshwar, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in Sasan Gir"
+      },
+      "position": 5
+    },
+    {
+      "id": "sasan-gir-parambikulam-tiger-reserve",
+      "name": "Parambikulam Tiger Reserve",
+      "slug": "parambikulam-tiger-reserve",
+      "description": "Nestled in Sasan Gir, Parambikulam Tiger Reserve stands as a testament to architectural brilliance. This renowned sanctuary attracts tourists who come to admire its stunning design. A visit to Parambikulam Tiger Reserve is among the best things to do in Sasan Gir.",
+      "whyVisit": "Experience the unmatched beauty of Parambikulam Tiger Reserve.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Parambikulam Tiger Reserve, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Parambikulam Tiger Reserve in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Parambikulam Tiger Reserve in Sasan Gir"
+      },
+      "position": 6
+    },
+    {
+      "id": "sasan-gir-laokhowa-wildlife-sanctuary",
+      "name": "Laokhowa Wildlife Sanctuary",
+      "slug": "laokhowa-wildlife-sanctuary",
+      "description": "Laokhowa Wildlife Sanctuary is a must-see wildlife in Sasan Gir, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sasan Gir.",
+      "whyVisit": "A visit to Laokhowa Wildlife Sanctuary is essential for understanding Sasan Gir.",
+      "bestTime": "Dry season",
+      "duration": "Full day",
+      "mapsSearch": "Laokhowa Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Laokhowa Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Laokhowa Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 7
+    },
+    {
+      "id": "sasan-gir-hemkund-sahib",
+      "name": "Hemkund Sahib",
+      "slug": "hemkund-sahib",
+      "description": "Located in scenic Sasan Gir, Hemkund Sahib offers an immersive experience into local culture. Exploring Hemkund Sahib is one of the top things to do in Sasan Gir.",
+      "whyVisit": "Hemkund Sahib offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Hemkund Sahib, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Hemkund Sahib in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Hemkund Sahib in Sasan Gir"
+      },
+      "position": 8
+    },
+    {
+      "id": "sasan-gir-bandipur-national-park",
+      "name": "Bandipur National Park",
+      "slug": "bandipur-national-park",
+      "description": "Located in scenic Sasan Gir, Bandipur National Park offers an immersive experience into local culture. Exploring Bandipur National Park is one of the top things to do in Sasan Gir.",
+      "whyVisit": "Bandipur National Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Bandipur National Park, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Bandipur National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Bandipur National Park in Sasan Gir"
+      },
+      "position": 9
+    },
+    {
+      "id": "sasan-gir-kaziranga-national-park",
+      "name": "Kaziranga National Park",
+      "slug": "kaziranga-national-park",
+      "description": "Kaziranga National Park is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kaziranga National Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Kaziranga National Park.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Kaziranga National Park, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Kaziranga National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kaziranga National Park in Sasan Gir"
+      },
+      "position": 10
+    },
+    {
+      "id": "sasan-gir-binsar-wildlife-sanctuary",
+      "name": "Binsar Wildlife Sanctuary",
+      "slug": "binsar-wildlife-sanctuary",
+      "description": "Binsar Wildlife Sanctuary is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Binsar Wildlife Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Binsar Wildlife Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Binsar Wildlife Sanctuary, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Binsar Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Binsar Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 11
+    },
+    {
+      "id": "sasan-gir-wayanad-wildlife-sanctuary",
+      "name": "Wayanad Wildlife Sanctuary",
+      "slug": "wayanad-wildlife-sanctuary",
+      "description": "Located in scenic Sasan Gir, Wayanad Wildlife Sanctuary offers an immersive experience into local culture. Exploring Wayanad Wildlife Sanctuary is one of the top things to do in Sasan Gir.",
+      "whyVisit": "Experience the unmatched beauty of Wayanad Wildlife Sanctuary.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wayanad Wildlife Sanctuary, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Wayanad Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Wayanad Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 12
+    },
+    {
+      "id": "sasan-gir-hoollongapar-gibbon-sanctuary",
+      "name": "Hoollongapar Gibbon Sanctuary",
+      "slug": "hoollongapar-gibbon-sanctuary",
+      "description": "Hoollongapar Gibbon Sanctuary is a must-see wildlife in Sasan Gir, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sasan Gir.",
+      "whyVisit": "Capture stunning photographs at Hoollongapar Gibbon Sanctuary.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Hoollongapar Gibbon Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Hoollongapar Gibbon Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Hoollongapar Gibbon Sanctuary in Sasan Gir"
+      },
+      "position": 13
+    },
+    {
+      "id": "sasan-gir-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nanda Devi National Park is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nanda Devi National Park promises an unforgettable experience.",
+      "whyVisit": "Nanda Devi National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Nanda Devi National Park, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Sasan Gir"
+      },
+      "position": 14
+    },
+    {
+      "id": "sasan-gir-agasthyamala-biosphere-reserve",
+      "name": "Agasthyamala Biosphere Reserve",
+      "slug": "agasthyamala-biosphere-reserve",
+      "description": "Agasthyamala Biosphere Reserve is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This sanctuary offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Agasthyamala Biosphere Reserve promises an unforgettable experience.",
+      "whyVisit": "A visit to Agasthyamala Biosphere Reserve is essential for understanding Sasan Gir.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Agasthyamala Biosphere Reserve, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Agasthyamala Biosphere Reserve in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Agasthyamala Biosphere Reserve in Sasan Gir"
+      },
+      "position": 15
+    },
+    {
+      "id": "sasan-gir-dihing-patkai-wildlife-sanctuary",
+      "name": "Dihing Patkai Wildlife Sanctuary",
+      "slug": "dihing-patkai-wildlife-sanctuary",
+      "description": "Located in scenic Sasan Gir, Dihing Patkai Wildlife Sanctuary offers an immersive experience into local culture. Exploring Dihing Patkai Wildlife Sanctuary is one of the top things to do in Sasan Gir.",
+      "whyVisit": "Capture stunning photographs at Dihing Patkai Wildlife Sanctuary.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dihing Patkai Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Dihing Patkai Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Dihing Patkai Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 16
+    },
+    {
+      "id": "sasan-gir-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "Nestled in Sasan Gir, Jim Corbett National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Jim Corbett National Park is among the best things to do in Sasan Gir.",
+      "whyVisit": "Experience the unmatched beauty of Jim Corbett National Park.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Jim Corbett National Park, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Sasan Gir"
+      },
+      "position": 17
+    },
+    {
+      "id": "sasan-gir-begur-wildlife-sanctuary",
+      "name": "Begur Wildlife Sanctuary",
+      "slug": "begur-wildlife-sanctuary",
+      "description": "Nestled in Sasan Gir, Begur Wildlife Sanctuary stands as a testament to architectural brilliance. This renowned sanctuary attracts tourists who come to admire its stunning design. A visit to Begur Wildlife Sanctuary is among the best things to do in Sasan Gir.",
+      "whyVisit": "Capture stunning photographs at Begur Wildlife Sanctuary.",
+      "bestTime": "Dry season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Begur Wildlife Sanctuary, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Begur Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Begur Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 18
+    },
+    {
+      "id": "sasan-gir-amchang-wildlife-sanctuary",
+      "name": "Amchang Wildlife Sanctuary",
+      "slug": "amchang-wildlife-sanctuary",
+      "description": "Amchang Wildlife Sanctuary is a must-see wildlife in Sasan Gir, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sasan Gir.",
+      "whyVisit": "A visit to Amchang Wildlife Sanctuary is essential for understanding Sasan Gir.",
+      "bestTime": "Dry season",
+      "duration": "3-4 hours",
+      "mapsSearch": "Amchang Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Amchang Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Amchang Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 19
+    },
+    {
+      "id": "sasan-gir-bageshwar",
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "A crown jewel of Sasan Gir, Bageshwar captivates every traveler with enchanting beauty. No trip to Sasan Gir is complete without visiting Bageshwar.",
+      "whyVisit": "Experience the unmatched beauty of Bageshwar.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Bageshwar, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bageshwar in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Bageshwar in Sasan Gir"
+      },
+      "position": 20
+    },
+    {
+      "id": "sasan-gir-brahmagiri-wildlife-sanctuary",
+      "name": "Brahmagiri Wildlife Sanctuary",
+      "slug": "brahmagiri-wildlife-sanctuary",
+      "description": "Brahmagiri Wildlife Sanctuary is one of the most iconic landmarks in Sasan Gir, drawing visitors with its timeless charm. This sanctuary offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Brahmagiri Wildlife Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Brahmagiri Wildlife Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Morning",
+      "duration": "Full day",
+      "mapsSearch": "Brahmagiri Wildlife Sanctuary, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Brahmagiri Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Brahmagiri Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 21
+    },
+    {
+      "id": "sasan-gir-gibbon-wildlife-sanctuary",
+      "name": "Gibbon Wildlife Sanctuary",
+      "slug": "gibbon-wildlife-sanctuary",
+      "description": "Nestled in Sasan Gir, Gibbon Wildlife Sanctuary stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Gibbon Wildlife Sanctuary is among the best things to do in Sasan Gir.",
+      "whyVisit": "Gibbon Wildlife Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Safari",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gibbon Wildlife Sanctuary, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Gibbon Wildlife Sanctuary in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Gibbon Wildlife Sanctuary in Sasan Gir"
+      },
+      "position": 22
+    },
+    {
+      "id": "sasan-gir-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "Located in scenic Sasan Gir, Gangolihat offers an immersive experience into local culture. Exploring Gangolihat is one of the top things to do in Sasan Gir.",
+      "whyVisit": "Capture stunning photographs at Gangolihat.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Gangolihat, Sasan Gir",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Sasan Gir"
+      },
+      "position": 23
+    },
+    {
+      "id": "sasan-gir-mathikettan-shola-national-park",
+      "name": "Mathikettan Shola National Park",
+      "slug": "mathikettan-shola-national-park",
+      "description": "A crown jewel of Sasan Gir, Mathikettan Shola National Park captivates every traveler with enchanting beauty. No trip to Sasan Gir is complete without visiting Mathikettan Shola National Park.",
+      "whyVisit": "Capture stunning photographs at Mathikettan Shola National Park.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mathikettan Shola National Park, Sasan Gir",
+      "category": "sanctuary",
+      "imagePrompt": "Ultra realistic travel photography, Mathikettan Shola National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Mathikettan Shola National Park in Sasan Gir"
+      },
+      "position": 24
+    },
+    {
+      "id": "sasan-gir-raimona-national-park",
+      "name": "Raimona National Park",
+      "slug": "raimona-national-park",
+      "description": "Nestled in Sasan Gir, Raimona National Park stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Raimona National Park is among the best things to do in Sasan Gir.",
+      "whyVisit": "Experience the unmatched beauty of Raimona National Park.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Raimona National Park, Sasan Gir",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Raimona National Park in Sasan Gir, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Raimona National Park in Sasan Gir"
+      },
+      "position": 25
+    }
+  ]
+}

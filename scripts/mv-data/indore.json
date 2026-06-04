@@ -1,0 +1,260 @@
+{
+  "slug": "indore",
+  "name": "Indore",
+  "state": "Madhya Pradesh",
+  "tagline": "India's cleanest city and the street-food capital of Central India",
+  "categories": ["heritage", "city", "historical"],
+  "highlights": ["56 dukan food street serving legendary dal bafla and bhutte ki kees", "maratha rajwada palace at the heart of the old city"],
+  "attractions": [
+    {
+      "name": "Rajwada Palace",
+      "category": "palace",
+      "description": "A seven-storey masterpiece in the heart of Indore's old bazaar, Rajwada was built by the Holkar rulers in the late 18th century and combines Maratha, Mughal and French architectural styles in a single imposing facade. Its teak-and-stone lower floors, ornate wooden balconies and gateway guarded by stone elephants define the city's historic identity. The inner courtyard now holds a well-tended garden.",
+      "whyVisit": "Stand before the defining symbol of Indore's Holkar heritage in the city's most energetic old-bazaar setting.",
+      "bestTime": "Morning or evening, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rajwada Palace Indore Holkar",
+      "imageQuery": "Rajwada Palace Indore Holkar heritage"
+    },
+    {
+      "name": "56 Dukan (Sarafa Bazaar Night Food Street)",
+      "category": "market",
+      "description": "Indore's most famous street-food corridor runs through the Sarafa jewellery market, which transforms after dark into an open-air food carnival. Dozens of stalls serve local specialities — garadu (spiced yam), bhutte ki kees (grated corn with coconut), joshi dahi bada, malpua and the legendary poha-jalebi — drawing Indoreis from every neighbourhood. The scene between 9 pm and midnight is electric.",
+      "whyVisit": "Eat your way through the legendary food stalls of India's most celebrated night-market street.",
+      "bestTime": "9 pm–midnight, year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "56 Dukan Sarafa Bazaar Indore night market",
+      "imageQuery": "56 Dukan Sarafa night food street Indore"
+    },
+    {
+      "name": "Lal Bagh Palace",
+      "category": "palace",
+      "description": "Built between 1886 and 1921 by Maharaja Shivaji Rao and Tukoji Rao Holkar II, Lal Bagh is a sumptuous Italian Renaissance palace set within 28 acres of formal gardens. Its interiors rival European country houses: gilt-framed mirrors, Belgian crystal chandeliers, Venetian mosaic floors, and a ballroom with a sprung teak floor. The London-crafted iron gates are exact replicas of the gates at Buckingham Palace.",
+      "whyVisit": "Tour a palace whose Buckingham-Palace-replica gates open onto interiors as lavish as any in Europe.",
+      "bestTime": "Morning, Tuesday to Sunday, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Lal Bagh Palace Indore Holkar",
+      "imageQuery": "Lal Bagh Palace Indore Italian Renaissance"
+    },
+    {
+      "name": "Mandu (Mandavgadh)",
+      "category": "fort",
+      "description": "A vast ruined medieval city on a plateau 100 km from Indore, Mandu encompasses palaces, mosques, pavilions and stepwells spread over 20 square kilometres of windswept basalt. The Jahaz Mahal (Ship Palace) — a long two-storey structure that appears to float between two lakes — and Rani Roopmati's Pavilion, from which the tragic queen gazed at the Narmada, are its most iconic structures.",
+      "whyVisit": "Wander one of the subcontinent's largest and most romantically situated ruined cities.",
+      "bestTime": "July to September (monsoon turns the plateau lush green); October to February for sightseeing",
+      "duration": "Full day",
+      "mapsSearch": "Mandu Mandavgadh fort ruins Madhya Pradesh",
+      "imageQuery": "Mandu Jahaz Mahal Ship Palace monsoon"
+    },
+    {
+      "name": "Central Museum (Indore Museum)",
+      "category": "museum",
+      "description": "Housed in the Edward Hall building near Agra-Bombay Road, Indore's Central Museum holds the finest collection of Paramara dynasty sculpture in any Indian museum. Key pieces include a 9th-century Saptamatrika panel from Hinglajgarh, a magnificent Nataraja, and a gallery of ancient coins and copper-plate inscriptions tracing trade routes through medieval Malwa.",
+      "whyVisit": "See the greatest Paramara sculpture collection in existence without a single queue.",
+      "bestTime": "Tuesday to Sunday, morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Central Museum Indore Edward Hall",
+      "imageQuery": "Central Museum Indore Paramara sculpture"
+    },
+    {
+      "name": "Kanch Mandir (Glass Temple)",
+      "category": "temple",
+      "description": "A Digambara Jain temple built in the early 20th century whose entire interior — walls, ceilings, pillars and floors — is encrusted with coloured Belgian glass mosaic. The effect is dizzying and extraordinary: figures of Jain tirthankaras, angels and elephants shimmer from every surface in green, red and gold glass, creating an otherworldly kaleidoscope of devotion.",
+      "whyVisit": "Step inside a temple that is entirely encrusted with coloured glass — one of India's most extraordinary interiors.",
+      "bestTime": "Morning when light maximises the reflections",
+      "duration": "45 minutes",
+      "mapsSearch": "Kanch Mandir Glass Temple Indore Jain",
+      "imageQuery": "Kanch Mandir Glass Temple Indore interior"
+    },
+    {
+      "name": "Patalpani Waterfall",
+      "category": "waterfall",
+      "description": "Located 35 km south of Indore near Mhow, Patalpani falls roughly 300 feet into a gorge in the Vindhya Hills. The falls are seasonal, at their most spectacular from July to September when monsoon rains swell the streams. The surrounding hills are blanketed in teak forest, and the area is popular for trekking and picnicking. A narrow-gauge heritage train from Patalpani station runs through the ravine.",
+      "whyVisit": "Chase one of Central India's highest waterfalls by boarding a heritage toy-train through the gorge.",
+      "bestTime": "July to September for maximum flow",
+      "duration": "3-4 hours",
+      "mapsSearch": "Patalpani Waterfall Indore Mhow",
+      "imageQuery": "Patalpani Waterfall Indore monsoon gorge"
+    },
+    {
+      "name": "Chappan Dukan (56 Shops) Food Street",
+      "category": "market",
+      "description": "The daytime counterpart to Sarafa, Chappan Dukan in the New Palasia neighbourhood is a compact row of 56 food stalls that operates from morning to midnight. Its specialities lean lighter than Sarafa — fresh fruit cream, kachori, namkeen chiwda and Indori chai (a strong milk tea) — and the vibe is young and lively. The street gave rise to several national snack brands that began as single stalls here.",
+      "whyVisit": "Try the daytime street-food institutions — chai, kachori and fruit cream — that made Indore India's snack capital.",
+      "bestTime": "Morning for breakfast snacks, evening for full experience",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chappan Dukan food street Indore New Palasia",
+      "imageQuery": "Chappan Dukan food stalls Indore street"
+    },
+    {
+      "name": "Bada Ganpati Temple",
+      "category": "temple",
+      "description": "Home to what is claimed to be the world's largest Ganesha idol, this brightly painted temple near the railway station houses a seated Ganesha whose face alone is over 25 feet high. The temple draws enormous crowds on Ganesh Chaturthi, when the idol is festooned with 100-kilogram garlands of flowers, but is visited daily by thousands of Indoris who consider the Bada Ganpati their city's presiding deity.",
+      "whyVisit": "Seek blessings at the world's largest Ganesha idol — a towering and genuinely awe-inspiring presence.",
+      "bestTime": "Early morning, especially on Ganesh Chaturthi",
+      "duration": "45 minutes",
+      "mapsSearch": "Bada Ganpati Temple Indore",
+      "imageQuery": "Bada Ganpati Temple Indore giant idol"
+    },
+    {
+      "name": "Khajrana Ganesh Temple",
+      "category": "temple",
+      "description": "One of Indore's most visited temples, Khajrana Ganesh was established by Ahilya Bai Holkar in the 18th century. The original idol is believed to have been buried here to protect it during Aurangzeb's temple-destruction campaigns. Wednesday evenings attract enormous crowds for the weekly aarti; the temple complex has been massively expanded and is surrounded by food stalls and flower markets.",
+      "whyVisit": "Visit the living temple that anchors the devotional life of modern Indore.",
+      "bestTime": "Wednesday evening for main aarti",
+      "duration": "1-2 hours",
+      "mapsSearch": "Khajrana Ganesh Temple Indore",
+      "imageQuery": "Khajrana Ganesh Temple Indore evening aarti"
+    },
+    {
+      "name": "ISKCON Temple Indore",
+      "category": "temple",
+      "description": "One of India's most architecturally striking ISKCON temples, Indore's Radha Madhav Dham features soaring white spires modelled on the Vrindavan style. The evening Mangala aarti is a multi-sensory event with cymbal-drumming kirtan, the scent of sandalwood incense and beautifully dressed deity images. The adjacent prasadam hall serves a legendary thali.",
+      "whyVisit": "Experience an immaculate Vaishnava kirtan tradition in one of India's finest ISKCON temples.",
+      "bestTime": "Evening aarti (7–8 pm)",
+      "duration": "2 hours",
+      "mapsSearch": "ISKCON Temple Indore Radha Madhav Dham",
+      "imageQuery": "ISKCON Temple Indore Radha Madhav"
+    },
+    {
+      "name": "Tincha Falls",
+      "category": "waterfall",
+      "description": "A two-tiered waterfall 25 km northeast of Indore, Tincha cascades over a sandstone ledge into a clear pool ringed by dense bamboo forest. Less visited than Patalpani, the falls are accessible via a short forest trail and the surrounding scrub is alive with peacocks, langurs and migratory birds. The pool is safe for swimming in the post-monsoon months.",
+      "whyVisit": "Swim in a clear jungle pool beneath a beautiful, crowd-free double waterfall near the city.",
+      "bestTime": "August to October",
+      "duration": "3 hours",
+      "mapsSearch": "Tincha Falls Indore waterfall",
+      "imageQuery": "Tincha Falls Indore waterfall pool"
+    },
+    {
+      "name": "Mahatma Gandhi Hall (King Edward Hall)",
+      "category": "heritage",
+      "description": "Built in 1904 as the town hall for the Imperial city, this Indo-Gothic building with its clocktower and red sandstone facade is one of Indore's most photographed landmarks. It hosts the annual Ahilya Utsav cultural festival and serves as the venue for the Pushya Nakshatra Market — Indore's largest annual antique and craft fair held on auspicious January days.",
+      "whyVisit": "Photograph the most elegant colonial building in Central India and browse its annual antique market.",
+      "bestTime": "Morning for architecture; January for Pushya Nakshatra Market",
+      "duration": "1 hour",
+      "mapsSearch": "Mahatma Gandhi Hall Indore King Edward",
+      "imageQuery": "Mahatma Gandhi Hall Indore colonial clocktower"
+    },
+    {
+      "name": "Nehru Park and Indore Patalpani Trek Trail",
+      "category": "nature",
+      "description": "The Indore–Mhow valley network of trails running south of the city follows seasonal streams through dry deciduous forest to link Nehru Park's reservoir with the Patalpani ravine. The 8-km route passes three minor waterfalls, a ruined British-era bridge and boulders used by rock climbers. Birding is excellent: crested serpent eagles, bee-eaters and white-rumped vultures are regularly sighted.",
+      "whyVisit": "Hike a full-day forest trail linking two waterfalls through largely untouched dry-deciduous woodland.",
+      "bestTime": "October to February",
+      "duration": "4-5 hours",
+      "mapsSearch": "Nehru Park Indore trekking trail",
+      "imageQuery": "trekking trail Indore Mhow forest valley"
+    },
+    {
+      "name": "Bijasen Tekri (Mata Tekri)",
+      "category": "temple",
+      "description": "Perched atop the highest hill in Indore city at 2,200 feet, Bijasen Tekri is a Devi temple sacred to Bijasen Mata, the city's protective goddess. A ropeway and a steep staircase of 400 steps both reach the summit, which commands a 360-degree panorama of Indore spreading across the Malwa plateau. The temple draws massive crowds during Navratri, when an all-night fair fills the hillside.",
+      "whyVisit": "Take the ropeway to a hilltop goddess shrine for Indore's finest 360-degree panorama.",
+      "bestTime": "Evening for city views; Navratri for festival atmosphere",
+      "duration": "2 hours",
+      "mapsSearch": "Bijasen Tekri Mata Tekri Indore ropeway",
+      "imageQuery": "Bijasen Tekri ropeway Indore hilltop temple"
+    },
+    {
+      "name": "Ahilya Bai Holkar Statue, Rajwada",
+      "category": "heritage",
+      "description": "A magnificent bronze equestrian statue of Maharani Ahilya Bai Holkar — the 18th-century warrior-queen and administrator who restored Hindu temples across India — stands in the plaza facing Rajwada. Around her anniversary in May, the city conducts a week-long cultural festival. The statue square is the civic heart of Indore and a gathering point for locals at every hour.",
+      "whyVisit": "Pay homage to India's greatest female ruler at the city she shaped into a centre of culture and administration.",
+      "bestTime": "Evening, year-round",
+      "duration": "30 minutes",
+      "mapsSearch": "Ahilya Bai Holkar Statue Rajwada Indore",
+      "imageQuery": "Ahilya Bai Holkar statue Rajwada Indore"
+    },
+    {
+      "name": "Omkareshwar Temple and Island",
+      "category": "temple",
+      "description": "One of the twelve Jyotirlingas, Omkareshwar sits on Mandhata Island in the Narmada River, 77 km from Indore. The island is shaped like the Sanskrit syllable Om, and a 5-km parikrama (circumambulation) around it passes 68 sacred shrines. The main temple's 10th-century shikhara, ghats, pilgrims' ashrams and the sound of the Narmada create an atmosphere of timeless sanctity.",
+      "whyVisit": "Complete a pilgrimage to a Jyotirlinga on a sacred island shaped like the Om symbol.",
+      "bestTime": "October to March",
+      "duration": "Half day",
+      "mapsSearch": "Omkareshwar Jyotirlinga Temple Madhya Pradesh",
+      "imageQuery": "Omkareshwar Jyotirlinga island Narmada river"
+    },
+    {
+      "name": "Pipliyahana Regional Park",
+      "category": "park",
+      "description": "A large wetland park on the eastern edge of the city centred on Pipliyahana Lake, this urban green space hosts a substantial winter congregation of migratory waterfowl — spot-billed ducks, painted storks and purple moorhen among over 90 species. Paddle boats, an amphitheatre and landscaped gardens make it Indore's most popular family recreation area.",
+      "whyVisit": "Birdwatch among painted storks and spot-billed ducks on an accessible urban wetland.",
+      "bestTime": "October to February for migratory birds",
+      "duration": "2 hours",
+      "mapsSearch": "Pipliyahana Regional Park Lake Indore",
+      "imageQuery": "Pipliyahana Lake park Indore wetland birds"
+    },
+    {
+      "name": "Choithram Mandi (Vegetable Market)",
+      "category": "market",
+      "description": "Asia's largest wholesale vegetable and fruit market operates pre-dawn at Choithram Mandi, where mountains of produce from Maharashtra, Gujarat and Madhya Pradesh are traded in a cacophony of tractors, handcarts and loudspeakers. Arriving at 3–4 am to see tonnes of tomatoes, pomegranates and winter vegetables being auctioned is one of Indore's most visceral and memorable experiences.",
+      "whyVisit": "Witness Asia's largest vegetable market in pre-dawn full swing — a mesmerising sensory spectacle.",
+      "bestTime": "3–5 am daily",
+      "duration": "1-2 hours",
+      "mapsSearch": "Choithram Mandi vegetable market Indore",
+      "imageQuery": "Choithram Mandi wholesale vegetable market Indore"
+    },
+    {
+      "name": "Annapurna Temple, Annapurna Road",
+      "category": "temple",
+      "description": "A large temple complex dedicated to Annapurna, goddess of food and nourishment, whose multi-spired silhouette is one of Indore's most recognisable landmarks. The complex also contains shrines to Kashi Vishwanath, the Kashi Ghats and a replica of Rameshwaram's corridor — making it a symbolic pilgrimage-in-miniature that allows devotees to visit all of India's holy sites in one visit.",
+      "whyVisit": "Complete a symbolic pilgrimage to India's four dhams in a single afternoon within one spectacular temple complex.",
+      "bestTime": "Morning, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Annapurna Temple Indore",
+      "imageQuery": "Annapurna Temple Indore spires"
+    },
+    {
+      "name": "Regional Science Centre Indore",
+      "category": "museum",
+      "description": "One of the best science museums in Central India, the Regional Science Centre has over 200 interactive exhibits covering astronomy, physics and technology. The highlight is its Sky Theatre — a 56-seat full-dome digital planetarium with shows on the solar system, black holes and the night sky above Madhya Pradesh. Well suited for curious adults and essential for families travelling with children.",
+      "whyVisit": "Experience a full-dome planetarium show and 200 hands-on science exhibits.",
+      "bestTime": "Morning, Tuesday to Sunday",
+      "duration": "2-3 hours",
+      "mapsSearch": "Regional Science Centre Indore planetarium",
+      "imageQuery": "Regional Science Centre Indore planetarium"
+    },
+    {
+      "name": "Kanha Panchvati Forest Trail",
+      "category": "nature",
+      "description": "A little-publicised forest reserve and pilgrimage trail on the northwestern edge of Indore, Kanha Panchvati winds for 4 km through teak woodland past five temple shrines, a seasonal stream and a hilltop viewpoint. The trail is walked daily by early-rising Indoreis as a combined fitness and spiritual circuit, yet sees almost no tourists despite its proximity to the city.",
+      "whyVisit": "Walk a forest-temple trail that Indore's residents have quietly loved for generations — entirely off the tourist map.",
+      "bestTime": "Early morning, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kanha Panchvati Indore forest trail",
+      "imageQuery": "Kanha Panchvati forest trail Indore teak"
+    },
+    {
+      "name": "Ganesh Peth Sharad Utsav",
+      "category": "heritage",
+      "description": "Every October, Ganesh Peth neighbourhood hosts Indore's most spectacular Navratri celebration, with nine days of all-night garba dancing in the streets, enormous illuminated tableaux of goddesses, and traditional Malwa folk music ensembles competing to outdo one another. The lanes between Rajwada and Ganesh Peth become one continuous open-air dance hall from 9 pm until 4 am.",
+      "whyVisit": "Dance all night in Indore's most authentic Navratri garba — a tradition uninterrupted for over a century.",
+      "bestTime": "Navratri (September–October), 9 pm–4 am",
+      "duration": "3-4 hours",
+      "mapsSearch": "Ganesh Peth Navratri garba Indore",
+      "imageQuery": "Navratri garba Indore Ganesh Peth night"
+    },
+    {
+      "name": "Janapav Kuti (Parshuram Kund)",
+      "category": "nature",
+      "description": "The highest point of the Malwa plateau at 881 metres, Janapav Hill 45 km from Indore is held to be the birthplace of Parshuram, sixth avatar of Vishnu. A forested reserve surrounds the hilltop kund (sacred tank) and temple. The climb through dense bamboo and teak offers excellent views of the plateau, and on clear winter mornings, the distant outline of the Vindhya ranges is visible to the south.",
+      "whyVisit": "Climb to the Malwa plateau's highest peak for sweeping views and a mythologically charged summit.",
+      "bestTime": "October to February",
+      "duration": "4 hours",
+      "mapsSearch": "Janapav Kuti Parshuram birthplace Indore",
+      "imageQuery": "Janapav Kuti hilltop Indore Malwa plateau"
+    },
+    {
+      "name": "Nandlalpura Haveli Lane",
+      "category": "heritage",
+      "description": "A forgotten lane in the Nandlalpura neighbourhood near Rajwada preserves a sequence of late Maratha-period merchant havelis with elaborately carved lime-plaster facades, jharokha windows and painted wooden doors. Most are still occupied by old Indori families, and walking the 400-metre lane at dawn, when the residents sit on the threshold for morning chai, reveals a domestic urban world unchanged since the 1880s.",
+      "whyVisit": "Photograph a perfectly preserved row of 19th-century Maratha merchant havelis that almost no visitor has discovered.",
+      "bestTime": "Dawn, year-round",
+      "duration": "45 minutes",
+      "mapsSearch": "Nandlalpura haveli lane Indore old city",
+      "imageQuery": "Maratha haveli carved facade Indore old city"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "slug": "rishikesh",
+  "name": "Rishikesh",
+  "state": "Uttarakhand",
+  "tagline": "The Yoga Capital of the World on the Ganges' banks",
+  "categories": [
+    "spiritual",
+    "adventure",
+    "nature"
+  ],
+  "highlights": [
+    "white-water rafting on the sacred ganges rapids",
+    "sunrise yoga on the banks of the himalayas"
+  ],
+  "attractions": [
+    {
+      "name": "Laxman Jhula Suspension Bridge",
+      "category": "heritage",
+      "description": "The iconic 450-foot iron suspension bridge spanning the Ganges at Tapovan has been Rishikesh's defining landmark since 1930. The bridge sways gently above the swift green Ganges as sadhus, pilgrims, cows, and trekkers cross simultaneously — one of India's most chaotic and charming scenes. The riverbanks on both sides are lined with temples, ashrams, and tea stalls. The bridge takes its name from the mythological spot where Lord Lakshmana crossed the Ganges on a jute rope.",
+      "whyVisit": "Crossing the Laxman Jhula at dawn with the Ganges roaring below and Himalayan peaks in the background is quintessential Rishikesh.",
+      "bestTime": "Early morning or late afternoon",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Laxman Jhula Rishikesh Uttarakhand",
+      "imageQuery": "Laxman Jhula bridge Rishikesh Ganges"
+    },
+    {
+      "name": "Ram Jhula Suspension Bridge",
+      "category": "heritage",
+      "description": "Built in 1986 and slightly wider than Laxman Jhula, Ram Jhula is the other great suspension bridge crossing the Ganges in Rishikesh. It connects the Shivananda Ashram on the west bank to the Swarg Ashram neighbourhood on the east. The surrounding area is packed with yoga centres, Ayurvedic clinics, and cafes popular with international visitors. The bridge itself, with its backdrop of forested hills and the milky-green Ganges below, is an iconic Rishikesh photograph.",
+      "whyVisit": "The Ram Jhula area on the east bank is the heart of Rishikesh's international yoga and wellness scene.",
+      "bestTime": "Early morning for peaceful crossing",
+      "duration": "1 hour",
+      "mapsSearch": "Ram Jhula Rishikesh",
+      "imageQuery": "Ram Jhula suspension bridge Rishikesh"
+    },
+    {
+      "name": "Triveni Ghat",
+      "category": "religious",
+      "description": "The most sacred ghat in Rishikesh, Triveni Ghat marks the confluence of the Ganges, Yamuna, and the mythical Saraswati rivers. Every evening at dusk, the Maha Aarti ceremony draws hundreds of devotees and visitors. Priests in saffron robes swing enormous fire lamps in sweeping arcs to the sound of conches, bells, and chanting, illuminating the river in flickering orange light. The ceremony rivals Varanasi's Ganga Aarti in spectacle and spiritual intensity.",
+      "whyVisit": "The evening Maha Aarti here, with fire reflected on the Ganges and Himalayan air, is profoundly moving.",
+      "bestTime": "Evening aarti, 6–7 PM",
+      "duration": "1.5 hours",
+      "mapsSearch": "Triveni Ghat Rishikesh",
+      "imageQuery": "Triveni Ghat Rishikesh aarti fire Ganges"
+    },
+    {
+      "name": "White-Water Rafting on the Ganges",
+      "category": "adventure",
+      "description": "The stretch of the Ganges from Shivpuri to Rishikesh is India's premier white-water rafting destination, offering Class III and IV rapids with names like Roller Coaster, Golf Course, and the formidable Double Trouble. Rafting operators run half-day trips from multiple launch points. The river alternates between adrenaline-pumping rapids and serene stretches where otters swim and the Shivalik hills rise above you. The season runs September to June.",
+      "whyVisit": "Rafting the sacred Ganges through Himalayan foothills is the definitive Rishikesh adventure.",
+      "bestTime": "October to November and February to May",
+      "duration": "3-6 hours",
+      "mapsSearch": "White water rafting Rishikesh Shivpuri Ganges",
+      "imageQuery": "white water rafting Rishikesh Ganges rapids"
+    },
+    {
+      "name": "Beatles Ashram (Chaurasi Kutia)",
+      "category": "heritage",
+      "description": "The abandoned ashram of Maharishi Mahesh Yogi at Swarg Ashram, where The Beatles famously stayed in 1968 to study Transcendental Meditation, has become an extraordinary heritage site. The jungle has partially reclaimed the meditation domes, lecture halls, and living quarters, creating a surreal blend of spirituality, pop history, and nature. The interiors are now covered in vivid murals painted by visiting artists. A walk through the overgrown complex is atmospheric and unlike anywhere else in India.",
+      "whyVisit": "The jungle-reclaimed meditation domes where The Beatles composed much of the White Album are utterly unique.",
+      "bestTime": "Morning, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Beatles Ashram Chaurasi Kutia Rishikesh",
+      "imageQuery": "Beatles Ashram Rishikesh meditation domes murals"
+    },
+    {
+      "name": "Parmarth Niketan Ashram",
+      "category": "religious",
+      "description": "The largest ashram in Rishikesh, Parmarth Niketan sits on the east bank of the Ganges at Swarg Ashram and accommodates thousands of visitors and spiritual seekers. Its terraced ghats are studded with statues of deities, and the evening Ganga Aarti here is one of the largest in Rishikesh, with a resident Swami presiding over the ceremony. The ashram offers yoga classes, meditation retreats, and Ayurvedic treatments open to non-residents.",
+      "whyVisit": "The ashram's sunset aarti, with its statue-lined ghats and the Ganges glowing below, is genuinely spectacular.",
+      "bestTime": "Evening aarti, 5:30–6:30 PM",
+      "duration": "2-3 hours",
+      "mapsSearch": "Parmarth Niketan Ashram Rishikesh",
+      "imageQuery": "Parmarth Niketan Rishikesh aarti Ganges evening"
+    },
+    {
+      "name": "Neelkanth Mahadev Temple",
+      "category": "temple",
+      "description": "Perched at 1,330 metres above sea level in the forests above Rishikesh, Neelkanth Mahadev Temple marks the spot where Lord Shiva is said to have consumed the deadly poison Halahala that emerged from the churning of the cosmic ocean — turning his throat blue (Neelkanth). The temple is reached by a winding mountain road through dense forest. Hundreds of pilgrims climb here daily, particularly on Mondays and during Sawan, and the mountainside setting is spectacular.",
+      "whyVisit": "The mythological significance, mountain setting, and atmosphere of genuine pilgrimage make this essential Rishikesh.",
+      "bestTime": "Early morning, October to March",
+      "duration": "3-4 hours including travel",
+      "mapsSearch": "Neelkanth Mahadev Temple Rishikesh",
+      "imageQuery": "Neelkanth Mahadev Temple Rishikesh mountain forest"
+    },
+    {
+      "name": "Bungee Jumping at Mohan Chatti",
+      "category": "adventure",
+      "description": "Rishikesh is home to India's highest fixed bungee jumping platform — a 83-metre jump operated by Jumpin Heights at Mohan Chatti, 16 km from the city. The platform is a cantilever structure overhanging a rocky gorge, giving an unobstructed free fall above the forest canopy. The same operator offers a giant swing (165 metres) and flying fox. All equipment meets international safety standards and jumpmasters are internationally trained.",
+      "whyVisit": "The highest bungee in India — 83 metres of pure free fall over a Himalayan gorge.",
+      "bestTime": "Morning slots, September to June",
+      "duration": "2-3 hours with travel",
+      "mapsSearch": "Jumpin Heights bungee jumping Rishikesh",
+      "imageQuery": "bungee jumping Rishikesh Mohan Chatti India"
+    },
+    {
+      "name": "Rajaji National Park",
+      "category": "wildlife",
+      "description": "Spreading across 820 sq km of Shivalik foothills starting 10 km from Rishikesh, Rajaji National Park is named after independence leader C. Rajagopalachari and protects over 400 Asian elephants — one of the highest concentrations in India. Tigers, leopards, sloth bears, king cobras, and over 315 bird species inhabit the park. Jeep safaris enter through the Chilla, Rishikesh, and Motichur gates. The park's forests line the Ganges corridor in one of the subcontinent's most critical wildlife corridors.",
+      "whyVisit": "Wild elephant herds within 10 km of a major town — Rajaji's accessibility makes it one of India's most underrated parks.",
+      "bestTime": "November to June; elephant sightings best in summer",
+      "duration": "Half day safari",
+      "mapsSearch": "Rajaji National Park Rishikesh",
+      "imageQuery": "Rajaji National Park elephant Rishikesh forest"
+    },
+    {
+      "name": "Neer Garh Waterfall",
+      "category": "waterfall",
+      "description": "A triple-tiered waterfall in the forest above the east bank of Rishikesh, Neer Garh is reached via a 2-km trail through dense jungle starting near Laxman Jhula. The falls descend through a narrow gorge, with natural pools at each tier suitable for swimming. The trail passes through boulders and forest, crossing streams several times. At the main fall, a curtain of water falls into a clear pool framed by orange lichen-covered rocks and tree ferns.",
+      "whyVisit": "A refreshing forest waterfall hike accessible on foot from Rishikesh's main bridge area.",
+      "bestTime": "Morning, October to March (reduced post-monsoon water by January)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Neer Garh Waterfall Rishikesh",
+      "imageQuery": "Neer Garh waterfall Rishikesh forest trail"
+    },
+    {
+      "name": "Swarg Ashram Neighbourhood",
+      "category": "religious",
+      "description": "On the east bank of the Ganges, the Swarg Ashram neighbourhood is a car-free zone of ashrams, yoga centres, temples, and health cafes centred around a riverside promenade. Named after Swami Vishudhanand who established an ashram here, the area retains a genuine spiritual atmosphere alongside its international visitor population. The riverside ghats here at sunrise — with mist on the water, priests performing rituals, and sadhus meditating — represent the Rishikesh ideal.",
+      "whyVisit": "The car-free riverfront ashram strip at sunrise captures the timeless spiritual essence of Rishikesh.",
+      "bestTime": "Dawn and early morning",
+      "duration": "2-3 hours wandering",
+      "mapsSearch": "Swarg Ashram Rishikesh east bank",
+      "imageQuery": "Swarg Ashram Rishikesh Ganges ashram promenade"
+    },
+    {
+      "name": "Camping at Shivpuri",
+      "category": "adventure",
+      "description": "The riverbank at Shivpuri, 16 km upstream from Rishikesh, is the most popular rafting base camp in northern India. Dozens of well-equipped camps are set among boulders and beach on the Ganges bank, offering multi-day packages that include rafting, cliff jumping, kayaking, and bonfire evenings under Himalayan stars. The water at Shivpuri is clear and cold, ideal for swimming in calm stretches. Night skies here, away from town lights, are extraordinary.",
+      "whyVisit": "Sleeping on the Ganges bank under Himalayan stars with rafting all day is the ultimate Rishikesh outdoor experience.",
+      "bestTime": "October to November and February to April",
+      "duration": "1-2 nights",
+      "mapsSearch": "Shivpuri camping Rishikesh Ganges",
+      "imageQuery": "river camping Shivpuri Rishikesh Ganges night"
+    },
+    {
+      "name": "Tera Manzil Temple (Trimbakeshwar Temple)",
+      "category": "temple",
+      "description": "A thirteen-storey temple tower rising dramatically above the Ganges riverbank near Laxman Jhula, the Tera Manzil (Trimbakeshwar) temple is dedicated to 13 different deities — one enshrined on each floor. The colourful exterior, adorned with deity sculptures, is one of the most recognisable structures in Rishikesh. Each floor can be visited, and the rooftop terrace offers one of the best aerial views of the Ganges valley, the bridges, and the forested Shivalik hills.",
+      "whyVisit": "The rooftop view of both suspension bridges and the Ganges curving through forested hills is the best in Rishikesh.",
+      "bestTime": "Sunset from the rooftop",
+      "duration": "45 minutes",
+      "mapsSearch": "Tera Manzil Temple Trimbakeshwar Rishikesh",
+      "imageQuery": "Tera Manzil Temple Rishikesh 13 storey Ganges"
+    },
+    {
+      "name": "Yoga Ashram Retreat (Sivananda, Yoga Niketan)",
+      "category": "religious",
+      "description": "Rishikesh's identity as the world yoga capital rests on its dense cluster of genuine ashrams offering multi-day residential yoga and meditation programmes. The Sivananda Ashram on the Ganges bank and Yoga Niketan are among the most respected institutions, running classical Hatha and Raja yoga courses that attract practitioners from over 100 countries. Morning sadhana beginning before sunrise on open river-view platforms gives the most authentic immersive experience in India.",
+      "whyVisit": "Studying yoga for even three days in an authentic riverside ashram transforms the understanding of practice.",
+      "bestTime": "October to March for most residential programmes",
+      "duration": "3-28 days",
+      "mapsSearch": "Sivananda Ashram Rishikesh yoga",
+      "imageQuery": "yoga ashram Rishikesh Ganges morning practice"
+    },
+    {
+      "name": "Kunjapuri Devi Temple",
+      "category": "temple",
+      "description": "Set at 1,645 metres on a ridge 25 km from Rishikesh, Kunjapuri Devi Temple is one of the Shakti Peethas (sacred goddess shrines) of Uttarakhand. The pre-dawn drive up the mountain, arriving before sunrise, rewards visitors with a panoramic view of the Himalayas including Bandarpunch, Srikantha, and Gangotri peaks glowing in dawn light above a sea of clouds. The goddess temple itself is simple and active with devotional energy throughout the morning.",
+      "whyVisit": "The sunrise Himalayan panorama from this ridge — snow peaks above a cloud sea — is one of northern India's finest.",
+      "bestTime": "Pre-dawn drive for sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Kunjapuri Devi Temple Rishikesh sunrise",
+      "imageQuery": "Kunjapuri Temple sunrise Himalaya panorama Rishikesh"
+    },
+    {
+      "name": "Phool Chatti Ashram and Waterfall",
+      "category": "religious",
+      "description": "A quieter ashram 9 km upstream from Rishikesh on the Ganges bank, Phool Chatti ('flower bank') sits at a point where the river narrows between boulders and runs clear and fast. The ashram offers basic accommodation and yoga in a garden setting beside the rushing river. A short walk above the ashram leads to a small but beautiful waterfall in a rocky gorge, little-known even to most Rishikesh visitors. Swimming in the cold, clean river below the rocks is exhilarating.",
+      "whyVisit": "A peaceful upstream retreat from Rishikesh's crowds, with a secret waterfall and pristine river swimming.",
+      "bestTime": "October to March",
+      "duration": "Half day or overnight stay",
+      "mapsSearch": "Phool Chatti Ashram Rishikesh",
+      "imageQuery": "Phool Chatti Ashram Rishikesh Ganges waterfall"
+    },
+    {
+      "name": "Vashishtha Cave",
+      "category": "cave",
+      "description": "Set on the western bank of the Ganges about 5 km north of Rishikesh, Vashishtha Cave is a natural meditation cave where the sage Vashishtha, guru of Lord Rama, is said to have meditated. The cave and its surrounding forest still host sadhus and meditators seeking solitude. Steps descend to the river bank where morning bathing rituals occur. The cave's simple interior, cool and dark, houses a small shrine and visiting it requires a respectful, quiet attitude.",
+      "whyVisit": "A genuine cave-dwelling meditation site associated with the Ramayana, still used by sadhus today.",
+      "bestTime": "Early morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Vashishtha Cave Rishikesh Ganges",
+      "imageQuery": "Vashishtha Cave Rishikesh sadhu meditation"
+    },
+    {
+      "name": "Waterfall Trekking, Badrinath Highway Viewpoints",
+      "category": "nature",
+      "description": "The National Highway 58 north from Rishikesh toward Devprayag and Badrinath runs along the Ganges through spectacular gorges, passing Devprayag — the confluence of the Bhagirathi and Alaknanda rivers where the Ganges is officially formed — 70 km from Rishikesh. The turquoise-green meeting of the two rivers at the foot of a steep gorge, with the ancient Raghunath Temple above, is one of northern India's most dramatic natural and sacred landscapes.",
+      "whyVisit": "The sight of two differently coloured rivers merging at Devprayag, forming the official start of the Ganges, is extraordinary.",
+      "bestTime": "Morning, October to April",
+      "duration": "Half day trip from Rishikesh",
+      "mapsSearch": "Devprayag confluence Ganges Rishikesh",
+      "imageQuery": "Devprayag confluence Bhagirathi Alaknanda rivers"
+    },
+    {
+      "name": "Neer Waterfall and Jhilmil Jheel Conservation Reserve",
+      "category": "wildlife",
+      "description": "Jhilmil Jheel, 15 km from Haridwar and 60 km from Rishikesh, is a rare terai wetland and conservation reserve protecting the critically endangered Ganges river dolphin. The wetland, formed by a meander of the Ganges, supports over 200 bird species, mugger crocodiles, and the elusive fishing cat. The reserve is one of the very few places in northern India where freshwater dolphins can be reliably spotted from the bank.",
+      "whyVisit": "Watching Gangetic dolphins surfacing in a jungle wetland feels like discovering a completely forgotten India.",
+      "bestTime": "Early morning, November to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Jhilmil Jheel Conservation Reserve Haridwar",
+      "imageQuery": "Jhilmil Jheel Gangetic dolphin wetland India"
+    },
+    {
+      "name": "Haridwar (Har Ki Pauri Ghat)",
+      "category": "religious",
+      "description": "Just 24 km from Rishikesh, Haridwar is one of Hinduism's seven sacred cities (Sapta Puri). The Har Ki Pauri ghat marks the spot where the Ganges leaves the mountains and enters the plains — considered the holiest bathing ghat in the world. Every evening the Ganga Aarti here, conducted simultaneously by priests at a broad stone ghat with thousands of devotees releasing lit leaf cups on the river, is the most powerful river ceremony in India.",
+      "whyVisit": "The Har Ki Pauri evening aarti, with thousands of lit lamps on the Ganges, is one of India's greatest spectacles.",
+      "bestTime": "Evening aarti at sunset",
+      "duration": "Half day from Rishikesh",
+      "mapsSearch": "Har Ki Pauri Ghat Haridwar",
+      "imageQuery": "Har Ki Pauri Haridwar aarti Ganges evening lamps"
+    },
+    {
+      "name": "Lakshman Temple, Laxman Jhula area",
+      "category": "temple",
+      "description": "A small but architecturally fine Lakshman temple stands near the eastern end of the Laxman Jhula bridge, built to commemorate the mythological crossing. The temple's location directly above the rapids, with the green Ganges visible through carved stone screens, makes it one of the most atmospherically situated shrines in Rishikesh. Inside, the idol of Lord Lakshman is flanked by scenes from the Ramayana in carved relief. Barefoot pilgrims cross the swaying bridge to pay homage.",
+      "whyVisit": "The view from the temple's small terrace — directly down to the Ganges rushing through the gorge — is vertiginous and beautiful.",
+      "bestTime": "Sunrise",
+      "duration": "30 minutes",
+      "mapsSearch": "Lakshman Temple Laxman Jhula Rishikesh",
+      "imageQuery": "Lakshman Temple Rishikesh bridge Ganges"
+    },
+    {
+      "name": "Ganga Beach, Rishikesh (Rishikund)",
+      "category": "nature",
+      "description": "A broad sandy beach on the Ganges at the Rishikund neighbourhood, where the river widens and slows before the town, forms a popular gathering place for sadhus, domestic tourists, and travellers. In the evening, the beach fills with people flying kites, performing yoga, and lighting evening lamps. The sand is clean here, the current gentle enough for supervised wading, and the backdrop of the Shivalik hills catching the setting sun creates an informal but lovely riverside scene.",
+      "whyVisit": "The informal beach and sandbank atmosphere here, away from formal ghats, shows Rishikesh's relaxed local side.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Ganga beach Rishikund Rishikesh",
+      "imageQuery": "Ganga beach Rishikesh sand sunset sadhus"
+    },
+    {
+      "name": "Himalayan Yoga Café Row (Laxman Jhula Road)",
+      "category": "market",
+      "description": "The lane running from Ram Jhula to Laxman Jhula on the eastern bank is lined with rooftop cafes serving fresh juices, momos, banana pancakes, and Ayurvedic herbal teas to an international crowd of yoga practitioners and trekkers. Stalls sell singing bowls, rudraksha beads, secondhand spiritual books, and handmade block-print clothing. In the evening, several rooftop spots offer live Indian classical music sessions above the river — a genuinely enchanting scene.",
+      "whyVisit": "The rooftop café music sessions above the Ganges at night are one of Rishikesh's most magical informal experiences.",
+      "bestTime": "Evening",
+      "duration": "2 hours",
+      "mapsSearch": "Laxman Jhula Road cafes Rishikesh",
+      "imageQuery": "rooftop cafe Rishikesh Ganges view evening"
+    },
+    {
+      "name": "Nili Dhara Waterfall and Bamboo Bridge",
+      "category": "waterfall",
+      "description": "A seasonal waterfall and swimming hole near Tapovan on the east bank, Nili Dhara is reached by a short riverside walk past the Beatles Ashram trailhead. A bamboo bridge — rebuilt after each monsoon — crosses a stream to reach the pool below the fall. The combination of bamboo bridge, forest, rushing water, and near-absence of other tourists makes this the most enchanting hidden spot within walking distance of Rishikesh's main attractions.",
+      "whyVisit": "A secret bamboo-bridged forest pool within 20 minutes' walk of the main town — Rishikesh's best hidden gem.",
+      "bestTime": "Morning, October to January when water flow is good",
+      "duration": "1.5 hours",
+      "mapsSearch": "Nili Dhara waterfall Rishikesh Tapovan",
+      "imageQuery": "Nili Dhara waterfall bamboo bridge Rishikesh"
+    }
+  ]
+}

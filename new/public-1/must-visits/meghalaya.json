@@ -1,0 +1,447 @@
+{
+  "id": "meghalaya",
+  "name": "Meghalaya",
+  "state": "Meghalaya",
+  "slug": "meghalaya",
+  "tagline": "Living root bridges, misty hills, and the wettest place on Earth",
+  "categories": [
+    "nature",
+    "adventure",
+    "heritage"
+  ],
+  "introduction": "Planning a trip to Meghalaya? This travel guide to Meghalaya covers the must visit places in Meghalaya, the best places to visit in Meghalaya, top tourist attractions in Meghalaya, and exciting things to do in Meghalaya.",
+  "metaTitle": "Must Visit Places in Meghalaya | Best Places to Visit in Meghalaya - TrypInn",
+  "metaDescription": "Explore the best places to visit in Meghalaya, top things to do in Meghalaya, and must visit places in Meghalaya. Your complete travel guide to Meghalaya by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=1200&q=60",
+    "alt": "Meghalaya travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "meghalaya-cherrapunji",
+      "name": "Cherrapunji",
+      "slug": "cherrapunji",
+      "description": "A crown jewel of Meghalaya, Cherrapunji captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Cherrapunji.",
+      "whyVisit": "Cherrapunji stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Cherrapunji, Meghalaya",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Cherrapunji in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Cherrapunji in Meghalaya"
+      },
+      "position": 1
+    },
+    {
+      "id": "meghalaya-living-root-bridges",
+      "name": "Living Root Bridges",
+      "slug": "living-root-bridges",
+      "description": "Located in scenic Meghalaya, Living Root Bridges offers an immersive experience into local culture. Exploring Living Root Bridges is one of the top things to do in Meghalaya.",
+      "whyVisit": "Experience the unmatched beauty of Living Root Bridges.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Living Root Bridges, Meghalaya",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Living Root Bridges in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Living Root Bridges in Meghalaya"
+      },
+      "position": 2
+    },
+    {
+      "id": "meghalaya-mawlynnong-village",
+      "name": "Mawlynnong Village",
+      "slug": "mawlynnong-village",
+      "description": "Mawlynnong Village is one of the most iconic landmarks in Meghalaya, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mawlynnong Village promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Mawlynnong Village.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Mawlynnong Village, Meghalaya",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Mawlynnong Village in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Mawlynnong Village in Meghalaya"
+      },
+      "position": 3
+    },
+    {
+      "id": "meghalaya-dawki-river",
+      "name": "Dawki River",
+      "slug": "dawki-river",
+      "description": "Nestled in Meghalaya, Dawki River stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Dawki River is among the best things to do in Meghalaya.",
+      "whyVisit": "Dawki River stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Dawki River, Meghalaya",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Dawki River in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Dawki River in Meghalaya"
+      },
+      "position": 4
+    },
+    {
+      "id": "meghalaya-nohkalikai-falls",
+      "name": "Nohkalikai Falls",
+      "slug": "nohkalikai-falls",
+      "description": "A crown jewel of Meghalaya, Nohkalikai Falls captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Nohkalikai Falls.",
+      "whyVisit": "Nohkalikai Falls stands out as one of the most rewarding experiences.",
+      "bestTime": "Jul-Oct",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nohkalikai Falls, Meghalaya",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Nohkalikai Falls in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Nohkalikai Falls in Meghalaya"
+      },
+      "position": 5
+    },
+    {
+      "id": "meghalaya-mawsynram",
+      "name": "Mawsynram",
+      "slug": "mawsynram",
+      "description": "Located in scenic Meghalaya, Mawsynram offers an immersive experience into local culture. Exploring Mawsynram is one of the top things to do in Meghalaya.",
+      "whyVisit": "Mawsynram offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Mawsynram, Meghalaya",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mawsynram in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Mawsynram in Meghalaya"
+      },
+      "position": 6
+    },
+    {
+      "id": "meghalaya-umiam-lake",
+      "name": "Umiam Lake",
+      "slug": "umiam-lake",
+      "description": "Nestled in Meghalaya, Umiam Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Umiam Lake is among the best things to do in Meghalaya.",
+      "whyVisit": "A visit to Umiam Lake is essential for understanding Meghalaya.",
+      "bestTime": "Sep-Nov",
+      "duration": "Half day",
+      "mapsSearch": "Umiam Lake, Meghalaya",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Umiam Lake in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Umiam Lake in Meghalaya"
+      },
+      "position": 7
+    },
+    {
+      "id": "meghalaya-elephant-falls",
+      "name": "Elephant Falls",
+      "slug": "elephant-falls",
+      "description": "Located in scenic Meghalaya, Elephant Falls offers an immersive experience into local culture. Exploring Elephant Falls is one of the top things to do in Meghalaya.",
+      "whyVisit": "A visit to Elephant Falls is essential for understanding Meghalaya.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Elephant Falls, Meghalaya",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Falls in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Elephant Falls in Meghalaya"
+      },
+      "position": 8
+    },
+    {
+      "id": "meghalaya-shillong-peak",
+      "name": "Shillong Peak",
+      "slug": "shillong-peak",
+      "description": "Nestled in Meghalaya, Shillong Peak stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Shillong Peak is among the best things to do in Meghalaya.",
+      "whyVisit": "Shillong Peak stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Shillong Peak, Meghalaya",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Shillong Peak in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Shillong Peak in Meghalaya"
+      },
+      "position": 9
+    },
+    {
+      "id": "meghalaya-laitlum-canyons",
+      "name": "Laitlum Canyons",
+      "slug": "laitlum-canyons",
+      "description": "Laitlum Canyons is a must-see viewpoint in Meghalaya, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Meghalaya.",
+      "whyVisit": "Laitlum Canyons stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Laitlum Canyons, Meghalaya",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Laitlum Canyons in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Laitlum Canyons in Meghalaya"
+      },
+      "position": 10
+    },
+    {
+      "id": "meghalaya-mawphlang-sacred-forest",
+      "name": "Mawphlang Sacred Forest",
+      "slug": "mawphlang-sacred-forest",
+      "description": "Located in scenic Meghalaya, Mawphlang Sacred Forest offers an immersive experience into local culture. Exploring Mawphlang Sacred Forest is one of the top things to do in Meghalaya.",
+      "whyVisit": "Mawphlang Sacred Forest stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Mawphlang Sacred Forest, Meghalaya",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mawphlang Sacred Forest in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Mawphlang Sacred Forest in Meghalaya"
+      },
+      "position": 11
+    },
+    {
+      "id": "meghalaya-nohsngithiang-falls",
+      "name": "Nohsngithiang Falls",
+      "slug": "nohsngithiang-falls",
+      "description": "Located in scenic Meghalaya, Nohsngithiang Falls offers an immersive experience into local culture. Exploring Nohsngithiang Falls is one of the top things to do in Meghalaya.",
+      "whyVisit": "Nohsngithiang Falls stands out as one of the most rewarding experiences.",
+      "bestTime": "Monsoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nohsngithiang Falls, Meghalaya",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Nohsngithiang Falls in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Nohsngithiang Falls in Meghalaya"
+      },
+      "position": 12
+    },
+    {
+      "id": "meghalaya-wei-sawdong-falls",
+      "name": "Wei Sawdong Falls",
+      "slug": "wei-sawdong-falls",
+      "description": "Wei Sawdong Falls is one of the most iconic landmarks in Meghalaya, drawing visitors with its timeless charm. This waterfall offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Wei Sawdong Falls promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Wei Sawdong Falls.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Wei Sawdong Falls, Meghalaya",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Wei Sawdong Falls in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Wei Sawdong Falls in Meghalaya"
+      },
+      "position": 13
+    },
+    {
+      "id": "meghalaya-double-decker-living-root-bridge",
+      "name": "Double Decker Living Root Bridge",
+      "slug": "double-decker-living-root-bridge",
+      "description": "Nestled in Meghalaya, Double Decker Living Root Bridge stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Double Decker Living Root Bridge is among the best things to do in Meghalaya.",
+      "whyVisit": "Double Decker Living Root Bridge stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Double Decker Living Root Bridge, Meghalaya",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Double Decker Living Root Bridge in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Double Decker Living Root Bridge in Meghalaya"
+      },
+      "position": 14
+    },
+    {
+      "id": "meghalaya-krang-suri-falls",
+      "name": "Krang Suri Falls",
+      "slug": "krang-suri-falls",
+      "description": "A crown jewel of Meghalaya, Krang Suri Falls captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Krang Suri Falls.",
+      "whyVisit": "Krang Suri Falls stands out as one of the most rewarding experiences.",
+      "bestTime": "Monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Krang Suri Falls, Meghalaya",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Krang Suri Falls in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Krang Suri Falls in Meghalaya"
+      },
+      "position": 15
+    },
+    {
+      "id": "meghalaya-balpakram-national-park",
+      "name": "Balpakram National Park",
+      "slug": "balpakram-national-park",
+      "description": "A crown jewel of Meghalaya, Balpakram National Park captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Balpakram National Park.",
+      "whyVisit": "Balpakram National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Balpakram National Park, Meghalaya",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Balpakram National Park in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Balpakram National Park in Meghalaya"
+      },
+      "position": 16
+    },
+    {
+      "id": "meghalaya-nongkhnum-island",
+      "name": "Nongkhnum Island",
+      "slug": "nongkhnum-island",
+      "description": "A crown jewel of Meghalaya, Nongkhnum Island captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Nongkhnum Island.",
+      "whyVisit": "Experience the unmatched beauty of Nongkhnum Island.",
+      "bestTime": "Oct-May",
+      "duration": "Full day",
+      "mapsSearch": "Nongkhnum Island, Meghalaya",
+      "category": "island",
+      "imagePrompt": "Ultra realistic travel photography, Nongkhnum Island in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Nongkhnum Island in Meghalaya"
+      },
+      "position": 17
+    },
+    {
+      "id": "meghalaya-mawkdok-dympep-valley",
+      "name": "Mawkdok Dympep Valley",
+      "slug": "mawkdok-dympep-valley",
+      "description": "A crown jewel of Meghalaya, Mawkdok Dympep Valley captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Mawkdok Dympep Valley.",
+      "whyVisit": "Capture stunning photographs at Mawkdok Dympep Valley.",
+      "bestTime": "Clear days",
+      "duration": "Quick",
+      "mapsSearch": "Mawkdok Dympep Valley, Meghalaya",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Mawkdok Dympep Valley in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Mawkdok Dympep Valley in Meghalaya"
+      },
+      "position": 18
+    },
+    {
+      "id": "meghalaya-siju-caves",
+      "name": "Siju Caves",
+      "slug": "siju-caves",
+      "description": "Nestled in Meghalaya, Siju Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Siju Caves is among the best things to do in Meghalaya.",
+      "whyVisit": "A visit to Siju Caves is essential for understanding Meghalaya.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Siju Caves, Meghalaya",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Siju Caves in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Siju Caves in Meghalaya"
+      },
+      "position": 19
+    },
+    {
+      "id": "meghalaya-jakrem-hot-springs",
+      "name": "Jakrem Hot Springs",
+      "slug": "jakrem-hot-springs",
+      "description": "Jakrem Hot Springs is a must-see nature in Meghalaya, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Meghalaya.",
+      "whyVisit": "A visit to Jakrem Hot Springs is essential for understanding Meghalaya.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Jakrem Hot Springs, Meghalaya",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jakrem Hot Springs in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Jakrem Hot Springs in Meghalaya"
+      },
+      "position": 20
+    },
+    {
+      "id": "meghalaya-don-bosco-museum",
+      "name": "Don Bosco Museum",
+      "slug": "don-bosco-museum",
+      "description": "Don Bosco Museum is a must-see museum in Meghalaya, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Meghalaya.",
+      "whyVisit": "Don Bosco Museum stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Don Bosco Museum, Meghalaya",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Don Bosco Museum in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Don Bosco Museum in Meghalaya"
+      },
+      "position": 21
+    },
+    {
+      "id": "meghalaya-ward-s-lake",
+      "name": "Ward's Lake",
+      "slug": "ward-s-lake",
+      "description": "Nestled in Meghalaya, Ward's Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Ward's Lake is among the best things to do in Meghalaya.",
+      "whyVisit": "Capture stunning photographs at Ward's Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Ward's Lake, Meghalaya",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Ward's Lake in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Ward's Lake in Meghalaya"
+      },
+      "position": 22
+    },
+    {
+      "id": "meghalaya-lady-hydari-park",
+      "name": "Lady Hydari Park",
+      "slug": "lady-hydari-park",
+      "description": "A crown jewel of Meghalaya, Lady Hydari Park captivates every traveler with enchanting beauty. No trip to Meghalaya is complete without visiting Lady Hydari Park.",
+      "whyVisit": "Lady Hydari Park offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lady Hydari Park, Meghalaya",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Lady Hydari Park in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Lady Hydari Park in Meghalaya"
+      },
+      "position": 23
+    },
+    {
+      "id": "meghalaya-cathedral-of-mary-help",
+      "name": "Cathedral of Mary Help",
+      "slug": "cathedral-of-mary-help",
+      "description": "Cathedral of Mary Help is one of the most iconic landmarks in Meghalaya, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Cathedral of Mary Help promises an unforgettable experience.",
+      "whyVisit": "A visit to Cathedral of Mary Help is essential for understanding Meghalaya.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Cathedral of Mary Help, Meghalaya",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Cathedral of Mary Help in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Cathedral of Mary Help in Meghalaya"
+      },
+      "position": 24
+    },
+    {
+      "id": "meghalaya-david-scott-trail",
+      "name": "David Scott Trail",
+      "slug": "david-scott-trail",
+      "description": "Nestled in Meghalaya, David Scott Trail stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to David Scott Trail is among the best things to do in Meghalaya.",
+      "whyVisit": "David Scott Trail offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "David Scott Trail, Meghalaya",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, David Scott Trail in Meghalaya, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "David Scott Trail in Meghalaya"
+      },
+      "position": 25
+    }
+  ]
+}

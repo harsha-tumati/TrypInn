@@ -1,0 +1,260 @@
+{
+  "slug": "bikaner",
+  "name": "Bikaner",
+  "state": "Rajasthan",
+  "tagline": "The camel country fortress city of the great Thar Desert",
+  "categories": ["heritage", "desert", "historical"],
+  "highlights": ["junagarh fort with 30 undefeated centuries of history", "world's only rat temple at deshnoke"],
+  "attractions": [
+    {
+      "name": "Junagarh Fort",
+      "category": "fort",
+      "description": "Built between 1588 and 1593 by Raja Rai Singh, a general of Emperor Akbar, Junagarh is unique among Rajasthan's great forts in never having been conquered. Unlike hilltop forts, it stands on flat desert ground, protected by a wide moat and formidable sandstone walls. Inside, 37 palaces spanning five centuries of Rathore-Bikaner rule display a dazzling progression from Mughal to Victorian tastes — Karan Mahal, Phool Mahal, and the Art Deco Anup Mahal among the highlights.",
+      "whyVisit": "The finest example of a plains desert fort in Rajasthan, with 30 palaces inside and an unbroken record of invincibility.",
+      "bestTime": "October to March; morning to avoid afternoon heat",
+      "duration": "3-4 hours",
+      "mapsSearch": "Junagarh Fort Bikaner Rajasthan",
+      "imageQuery": "Junagarh Fort Bikaner Rajasthan courtyard"
+    },
+    {
+      "name": "Karni Mata Temple, Deshnoke",
+      "category": "temple",
+      "description": "Located 30 km south of Bikaner, the Karni Mata Temple is the world's only temple where rats — called kabas — are considered sacred manifestations of Karni Mata's devotees reincarnated. Over 20,000 rats live in and around the marble temple, fed by priests and devotees. Spotting a rare white rat amid the brown ones is considered extraordinarily auspicious. The ornately carved silver and gold gates were gifted by Maharaja Ganga Singh.",
+      "whyVisit": "One of India's most extraordinary religious experiences — nothing prepares you for a temple floor alive with sacred rats.",
+      "bestTime": "Early morning or evening puja; October to March",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Karni Mata Temple Deshnoke Bikaner Rajasthan",
+      "imageQuery": "Karni Mata Temple Deshnoke sacred rats Bikaner"
+    },
+    {
+      "name": "Lallgarh Palace",
+      "category": "palace",
+      "description": "A magnificent Indo-Saracenic palace built for Maharaja Ganga Singh between 1898 and 1926 by British architect Sir Samuel Swinton Jacob, Lallgarh Palace blends Rajput, Mughal, and European architectural motifs in red sandstone. Part of the palace is a heritage hotel (the Lallgarh Palace Hotel), while another section houses the Shri Sadul Museum with the Maharaja's personal artefacts, big-game trophies, European porcelain, and archival photographs.",
+      "whyVisit": "The grandest Indo-Saracenic palace in Rajasthan's desert cities, still largely intact and open to visitors.",
+      "bestTime": "Morning; October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Lallgarh Palace Bikaner Rajasthan",
+      "imageQuery": "Lallgarh Palace Bikaner Indo-Saracenic sandstone"
+    },
+    {
+      "name": "Bikaner Camel Festival",
+      "category": "heritage",
+      "description": "Held every January, this government-organised festival at the Dr. Karni Singh Stadium celebrates Bikaner's centuries-old camel breeding tradition. Events include camel races, camel dancing, tug-of-war with camels, camel milk competitions, and a spectacular camel procession with decorated animals. The Bikaner breed is considered the finest riding camel in the world and has served in Indian army camel corps for generations.",
+      "whyVisit": "The most spectacular camel festival in India, in the city with the world's best camel-breeding tradition.",
+      "bestTime": "January (festival dates vary yearly)",
+      "duration": "Full day",
+      "mapsSearch": "Bikaner Camel Festival Rajasthan January",
+      "imageQuery": "Bikaner Camel Festival decorated camel race Rajasthan"
+    },
+    {
+      "name": "National Research Centre on Camel",
+      "category": "wildlife",
+      "description": "India's only camel research centre, 8 km from Bikaner, runs India's largest camel herd of over 400 animals and conducts research on camel genetics, milk production, and desert ecology. Visitors can tour the facility, pet camels, taste camel milk ice cream and camel milk chocolate (produced here commercially), and observe research operations. The facility's guided tours explain how the Bikaner camel became a military asset and agricultural necessity.",
+      "whyVisit": "The best place in India to understand the camel as a living culture and scientific subject — and to taste camel milk products.",
+      "bestTime": "Morning; October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "National Research Centre on Camel Bikaner Rajasthan",
+      "imageQuery": "National Camel Research Centre Bikaner herd Rajasthan"
+    },
+    {
+      "name": "Prachina Museum",
+      "category": "museum",
+      "description": "Housed within the Junagarh Fort complex, the Prachina Museum is a beautifully curated private museum displaying the decorative arts and everyday objects of the Bikaner royal household: European porcelain, Wedgwood china, enamelled hookah bases, silver utensils, inlaid ivory boxes, and a particularly fine collection of Bikaner-school paintings. It is more personal and less visited than the fort's own displays.",
+      "whyVisit": "The most intimate and refined museum in Bikaner — royal decorative arts that reveal the sophistication of desert court culture.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Prachina Museum Bikaner Junagarh Fort Rajasthan",
+      "imageQuery": "Prachina Museum Bikaner royal artefacts Rajasthan"
+    },
+    {
+      "name": "Bikaner Old City Havelis",
+      "category": "heritage",
+      "description": "Bikaner's old walled city contains dozens of ornately carved red sandstone havelis built by wealthy Marwari merchants between the 16th and 19th centuries. The Rampuriya Havelis on Rampuriya Street are the finest — five adjacent mansions with jharokha balconies, perforated sandstone screens (jali), and doorways carved with improbable intricacy. Walking the lanes at dawn, when light rakes across carved facades, is one of Rajasthan's great architectural pleasures.",
+      "whyVisit": "Some of the finest sandstone haveli carving in Rajasthan, concentrated in an atmospheric medieval street grid.",
+      "bestTime": "Early morning for raking light on facades",
+      "duration": "2 hours",
+      "mapsSearch": "Rampuriya Havelis Bikaner Rajasthan Old City",
+      "imageQuery": "Rampuriya Havelis Bikaner sandstone carved facade"
+    },
+    {
+      "name": "Ganga Golden Jubilee Museum",
+      "category": "museum",
+      "description": "Built in 1937 by Maharaja Ganga Singh to mark his golden jubilee, this museum holds an excellent collection of Bikaner-school miniature paintings — a distinctive sub-school notable for its Mughal-Rajput synthesis, fine brushwork, and preference for night scenes. Other galleries contain Gupta-period terracottas, Indus Valley artefacts excavated near Bikaner, pre-Harappan pottery, and royal weaponry.",
+      "whyVisit": "The best survey collection of Bikaner-school miniature painting, which developed its own distinct style from Mughal court influence.",
+      "bestTime": "Morning; closed Fridays",
+      "duration": "1.5 hours",
+      "mapsSearch": "Ganga Golden Jubilee Museum Bikaner Rajasthan",
+      "imageQuery": "Ganga Golden Jubilee Museum Bikaner miniature painting"
+    },
+    {
+      "name": "Sand Dunes at Bikaner",
+      "category": "desert",
+      "description": "Unlike the far more touristed dunes of Jaisalmer, the sand dunes near Bikaner (particularly at Phalodi and around the National Research Centre) are visited by only a handful of travellers. Sunrise camel rides across these dunes with the fort silhouetted on the horizon offer the classic Thar Desert experience without the crowds. The area also has significant bird life, including demoiselle cranes in winter.",
+      "whyVisit": "Authentic Thar Desert dune experience with a fraction of the tourists who descend on Jaisalmer.",
+      "bestTime": "Sunrise or sunset; October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sand Dunes Bikaner Rajasthan Thar Desert",
+      "imageQuery": "sand dunes Bikaner Thar Desert camel ride"
+    },
+    {
+      "name": "Kodamdesar Temple",
+      "category": "temple",
+      "description": "A temple dedicated to the deity Bhairav (a fierce manifestation of Shiva) in the village of Kodamdesar, 30 km north of Bikaner, said to be the tutelary deity of the Bikaner royal family. The temple complex contains a large sacred pond, massive sand dunes directly behind the shrine, and a dramatic desert landscape. Thursday evenings see a particularly atmospheric gathering of devotees.",
+      "whyVisit": "The royal family's own tutelary temple, dramatically positioned at the desert's edge with sacred dunes rising behind it.",
+      "bestTime": "Thursday evening; October to March",
+      "duration": "1.5 hours",
+      "mapsSearch": "Kodamdesar Temple Bikaner Rajasthan",
+      "imageQuery": "Kodamdesar Bhairav Temple Bikaner desert dunes"
+    },
+    {
+      "name": "Bikaner Bujia Fort (Junagarh Outer Walls)",
+      "category": "fort",
+      "description": "The massive outer wall complex surrounding Junagarh Fort includes the rarely explored Bujia Burj bastions, which give the best external view of the fort's engineering. The moat, now dry but originally water-filled, the rounded bastions equipped for cannon, and the original city gate of Karan Pol with its carved elephant guardians are best appreciated by circling the outside of the fort before entering.",
+      "whyVisit": "Understanding Junagarh's military design from the exterior reveals the engineering genius that kept it unconquered.",
+      "bestTime": "Early morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Junagarh Fort outer wall Karan Pol Bikaner",
+      "imageQuery": "Junagarh Fort outer moat wall bastions Bikaner"
+    },
+    {
+      "name": "Bikaner Heritage Walk (Old City Bazaars)",
+      "category": "market",
+      "description": "The Kote Gate bazaar and surrounding lanes of Bikaner's walled city are as commercially vibrant as they were 300 years ago, selling silver jewellery in Rajasthani styles, embroidered shoes (jootis), hand-printed fabrics, and the famous Bikaner bhujia (a spiced gram-flour snack the city has exported across India for over a century). The Haldiram's Bikaner stall on the main street is the original outlet of a now-global brand.",
+      "whyVisit": "Walk the bazaars where the bhujia and Marwari trading empires that spread across India originated.",
+      "bestTime": "Morning and early evening when shops are most active",
+      "duration": "2 hours",
+      "mapsSearch": "Kote Gate Bazaar Bikaner Rajasthan Old City",
+      "imageQuery": "Bikaner old city bazaar market Kote Gate Rajasthan"
+    },
+    {
+      "name": "Bhandasar Jain Temple",
+      "category": "temple",
+      "description": "A 15th-century Jain temple dedicated to Sumatinatha (the fifth Tirthankara), the Bhandasar Temple is famous for the legend that its foundation was laid with clarified butter (ghee) instead of water. Its brilliant interior frescoes in yellow, red, and gold covering every surface of the walls and pillars are among the most exuberantly painted interiors in Rajasthan, continuing to be added to by wealthy devotees.",
+      "whyVisit": "Bikaner's most spectacularly painted interior — a riot of colour that makes most painted temples elsewhere look restrained.",
+      "bestTime": "Morning; October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Bhandasar Jain Temple Bikaner Rajasthan",
+      "imageQuery": "Bhandasar Jain Temple Bikaner interior frescoes painted"
+    },
+    {
+      "name": "Shiv Bari Temple",
+      "category": "temple",
+      "description": "Located 7 km from Bikaner, the Shiv Bari Temple is a beautiful Shaiva shrine built by Maharaja Dungar Singh surrounded by peaceful walled gardens in the desert. A large Nandi bull stands in the courtyard and the shikhara rises elegantly against the sky. The drive through the desert scrub to reach it, and the tranquillity of the garden setting, contrast vividly with the urban temples.",
+      "whyVisit": "A serene desert garden temple with excellent architecture and almost no visitors after the morning puja.",
+      "bestTime": "Morning puja; any season",
+      "duration": "45 minutes",
+      "mapsSearch": "Shiv Bari Temple Bikaner Rajasthan",
+      "imageQuery": "Shiv Bari Temple Bikaner garden desert Rajasthan"
+    },
+    {
+      "name": "Gajner Palace and Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Built by Maharaja Ganga Singh as a hunting lodge on the banks of Gajner Lake, 32 km from Bikaner, this palatial sandstone building is now a heritage hotel. The surrounding sanctuary of 6,000 acres protects nilgai, chinkara, desert fox, and vast flocks of winter migratory birds including demoiselle cranes and bar-headed geese. The lake itself mirrors the palace's reflection in extraordinary morning light.",
+      "whyVisit": "A princely hunting lodge on a winter bird lake — wildlife and heritage combined in one of Rajasthan's most photogenic settings.",
+      "bestTime": "October to March for migratory birds",
+      "duration": "Half day",
+      "mapsSearch": "Gajner Palace Wildlife Sanctuary Bikaner Rajasthan",
+      "imageQuery": "Gajner Palace Lake Bikaner wildlife birds Rajasthan"
+    },
+    {
+      "name": "Bikaner Camel Milk Products",
+      "category": "market",
+      "description": "Bikaner is India's primary centre for camel milk, which has a lower fat content and higher vitamin C and iron levels than cow's milk. The National Research Centre's commercial outlet and several local dairies sell camel milk fresh, as well as camel milk kulfi, chocolate, and soap. Trying these products is a distinctive Bikaner experience found nowhere else in India at this scale.",
+      "whyVisit": "Taste products from India's most developed camel milk industry in the city that has herded camels for centuries.",
+      "bestTime": "Morning at the research centre outlet",
+      "duration": "30 minutes",
+      "mapsSearch": "Camel Milk Products Bikaner National Research Centre",
+      "imageQuery": "camel milk ice cream Bikaner Rajasthan products"
+    },
+    {
+      "name": "Rani Bhatiyani Temple",
+      "category": "temple",
+      "description": "A folk-hero goddess temple in the old city of Bikaner dedicated to Rani Bhatiyani, a 17th-century noblewomen who became a sati and was deified. The temple is more architecturally modest than the great forts and palaces but provides direct access to the living Rajasthani folk-religious tradition, with vivid red and gold decor and a constant stream of neighbourhood devotees.",
+      "whyVisit": "An authentic neighbourhood goddess temple that reveals the folk religious world beneath Bikaner's palatial surface.",
+      "bestTime": "Evening puja",
+      "duration": "30 minutes",
+      "mapsSearch": "Rani Bhatiyani Temple Bikaner Rajasthan",
+      "imageQuery": "Rani Bhatiyani Temple Bikaner folk goddess Rajasthan"
+    },
+    {
+      "name": "Kolayat Lake and Fair",
+      "category": "lake",
+      "description": "Kolayat, 50 km south-west of Bikaner, is a sacred lake surrounded by 52 ghats and ancient temples, considered one of the holiest sites in Rajasthan. The annual Kolayat Fair held on Kartik Purnima (November) attracts hundreds of thousands of pilgrims for ritual bathing, cattle trading, and cultural performances. The setting — a desert lake ringed by temples — is as atmospheric as any in Rajasthan.",
+      "whyVisit": "One of Rajasthan's most important pilgrimage lakes and the site of a spectacular full-moon fair.",
+      "bestTime": "Kartik Purnima (October-November) or early morning any season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kolayat Lake Fair Bikaner Rajasthan",
+      "imageQuery": "Kolayat Lake ghats temples Bikaner Rajasthan"
+    },
+    {
+      "name": "Bikaner Kite Festival (Makar Sankranti)",
+      "category": "heritage",
+      "description": "On January 14 (Makar Sankranti), Bikaner's rooftops and streets explode with kite flying. Thousands of locally made paper kites fill the sky in a fiercely competitive tradition where kite strings coated in abrasive manja (glass-powder paste) are used to cut rival kites free. The city's heritage havelis provide extraordinary foreground for photographing kite-filled skies from rooftop terraces.",
+      "whyVisit": "Bikaner's kite-fighting tradition is older and less commercialised than Jaipur's — authentic Rajasthani Sankranti culture.",
+      "bestTime": "January 14 (Makar Sankranti)",
+      "duration": "Full day",
+      "mapsSearch": "Bikaner Kite Festival Makar Sankranti Rajasthan",
+      "imageQuery": "Bikaner kite festival Makar Sankranti rooftops Rajasthan"
+    },
+    {
+      "name": "Dr. Karni Singh Shooting Range",
+      "category": "heritage",
+      "description": "Named for the Maharaja Bikaner's grandson who won multiple Olympic shooting medals for India, this world-class shooting range hosted Commonwealth Games events and international skeet competitions. It is open to licensed sport shooters and offers a connection to the Bikaner royal family's long tradition of marksmanship and international sporting representation that brought the desert city to Olympic attention.",
+      "whyVisit": "A niche but fascinating heritage of Olympic-level sporting excellence rooted in Rajput marksmanship tradition.",
+      "bestTime": "Morning; October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dr Karni Singh Shooting Range Bikaner Rajasthan",
+      "imageQuery": "Karni Singh Shooting Range Bikaner Rajasthan Olympics"
+    },
+    {
+      "name": "Bikaner Heritage Havelis: Sethon ki Haveli",
+      "category": "heritage",
+      "description": "Beyond the famous Rampuriya group, the Sethon ki Haveli and nearby Daga Haveli in the old city represent an earlier, slightly less ornate tradition of Bikaner merchant architecture. These havelis' carved sandstone brackets, recessed balconies, and deep-shaded courtyards retain much of their original plasterwork colour — ochre, red, and white — and are still partially occupied by descendants of the original merchant families.",
+      "whyVisit": "Living havelis still occupied by the families who built them — a more intimate architectural experience than the fully touristified Mandawa havelis.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Sethon ki Haveli Bikaner Old City Rajasthan",
+      "imageQuery": "Bikaner merchant haveli sandstone carved courtyard Rajasthan"
+    },
+    {
+      "name": "Devi Kund Sagar Royal Cenotaphs",
+      "category": "heritage",
+      "description": "The chhatri (domed cenotaph) complex of the Bikaner royal family, 8 km from the city, contains white marble and sandstone cenotaphs to over 20 Bikaner rulers spanning four centuries. The finest are the red sandstone chhatris of Maharaja Surat Singh and the white marble memorial to Maharaja Ganga Singh. The complex stands peacefully in desert scrub and is entirely free of tourist development.",
+      "whyVisit": "A contemplative royal memorial garden with genuinely fine chhatri architecture, visited by almost no tourists.",
+      "bestTime": "Early morning or late afternoon",
+      "duration": "1 hour",
+      "mapsSearch": "Devi Kund Sagar Cenotaphs Bikaner Rajasthan",
+      "imageQuery": "Devi Kund Sagar royal cenotaphs chhatri Bikaner"
+    },
+    {
+      "name": "Bikaner Gharana Dhrupad Recital",
+      "category": "heritage",
+      "description": "Bikaner has its own court music tradition — the Bikaner Gharana of dhrupad and dhamar — nurtured by generations of Rathore rulers who maintained hereditary court musicians (dhrupadiyas). Unlike Jaipur's more commercialised classical music scene, Bikaner's remaining hereditary musicians occasionally perform informally at the local Sangeet Natak Akademi. Finding a performance requires local contacts but rewards with one of India's rarest classical music experiences.",
+      "whyVisit": "One of India's last surviving court dhrupad traditions — older, more austere, and more powerful than any popular classical form.",
+      "bestTime": "Winter season; requires advance local enquiry",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bikaner Gharana Classical Music Sangeet Rajasthan",
+      "imageQuery": "Dhrupad classical music performance Rajasthan court tradition"
+    },
+    {
+      "name": "Purana Bazaar (Spice Market)",
+      "category": "market",
+      "description": "Bikaner's wholesale spice market in the old city distributes coriander, cumin, dry red chillies, and the distinctive spice blends used in Rajasthani cooking across northern India. The market opens at dawn with bullock carts and tempo trucks loading sacks. Walking through stalls heaped with scarlet chilli powder, golden turmeric, and dried fenugreek offers an olfactory education impossible to replicate in a supermarket.",
+      "whyVisit": "One of Rajasthan's finest wholesale spice markets, operating since the city's Mughal-era trade heyday.",
+      "bestTime": "Dawn to 9 AM",
+      "duration": "45 minutes",
+      "mapsSearch": "Purana Bazaar Spice Market Bikaner Rajasthan",
+      "imageQuery": "Bikaner spice market Purana Bazaar Rajasthan"
+    },
+    {
+      "name": "Jorbeer Vulture Conservation Reserve",
+      "category": "wildlife",
+      "description": "A cattle carcass disposal site 6 km from Bikaner that has become the most reliable vulture-watching location in South Asia. Seven species of vulture congregate here in winter — Griffon, Himalayan Griffon, White-backed, Red-headed, Egyptian, King, and Cinereous — in numbers sometimes exceeding 2,000 individuals. The site is a key refugium for critically endangered Indian vulture species decimated by the veterinary drug diclofenac.",
+      "whyVisit": "The best vulture-watching site in Asia — seven species, thousands of birds, and direct conservation significance.",
+      "bestTime": "November to February; early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jorbeer Vulture Reserve Bikaner Rajasthan",
+      "imageQuery": "Jorbeer vulture conservation Bikaner Griffon vulture Rajasthan"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "manikaran",
+  "name": "Manikaran",
+  "state": "Himachal Pradesh",
+  "slug": "manikaran",
+  "tagline": "Hot springs and Sikh pilgrimage",
+  "categories": [
+    "temple",
+    "religious",
+    "river"
+  ],
+  "introduction": "Manikaran is a treasure trove of experiences. In this travel guide to Manikaran, we reveal the must visit places in Manikaran, the best places to visit in Manikaran, iconic tourist attractions in Manikaran, and amazing things to do in Manikaran.",
+  "metaTitle": "Best Places to Visit in Manikaran | Tourist Attractions in Manikaran - TrypInn",
+  "metaDescription": "Find the best places to visit in Manikaran, must visit places in Manikaran, and tourist attractions in Manikaran. Plan your Manikaran trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+    "alt": "Manikaran travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "manikaran-iskcon-temple",
+      "name": "ISKCON Temple",
+      "slug": "iskcon-temple",
+      "description": "Nestled in Manikaran, ISKCON Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to ISKCON Temple is among the best things to do in Manikaran.",
+      "whyVisit": "Capture stunning photographs at ISKCON Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "ISKCON Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, ISKCON Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "ISKCON Temple in Manikaran"
+      },
+      "position": 1
+    },
+    {
+      "id": "manikaran-ziarat-peer-dastgeer-sahib",
+      "name": "Ziarat Peer Dastgeer Sahib",
+      "slug": "ziarat-peer-dastgeer-sahib",
+      "description": "Located in scenic Manikaran, Ziarat Peer Dastgeer Sahib offers an immersive experience into local culture. Exploring Ziarat Peer Dastgeer Sahib is one of the top things to do in Manikaran.",
+      "whyVisit": "Ziarat Peer Dastgeer Sahib offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Ziarat Peer Dastgeer Sahib, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Peer Dastgeer Sahib in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Ziarat Peer Dastgeer Sahib in Manikaran"
+      },
+      "position": 2
+    },
+    {
+      "id": "manikaran-namo-ghat",
+      "name": "Namo Ghat",
+      "slug": "namo-ghat",
+      "description": "A crown jewel of Manikaran, Namo Ghat captivates every traveler with enchanting beauty. No trip to Manikaran is complete without visiting Namo Ghat.",
+      "whyVisit": "Capture stunning photographs at Namo Ghat.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Namo Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Namo Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Namo Ghat in Manikaran"
+      },
+      "position": 3
+    },
+    {
+      "id": "manikaran-vitthal-temple",
+      "name": "Vitthal Temple",
+      "slug": "vitthal-temple",
+      "description": "Vitthal Temple is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Vitthal Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Vitthal Temple.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vitthal Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vitthal Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Vitthal Temple in Manikaran"
+      },
+      "position": 4
+    },
+    {
+      "id": "manikaran-moinuddin-chishti-dargah",
+      "name": "Moinuddin Chishti Dargah",
+      "slug": "moinuddin-chishti-dargah",
+      "description": "Moinuddin Chishti Dargah is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Moinuddin Chishti Dargah promises an unforgettable experience.",
+      "whyVisit": "A visit to Moinuddin Chishti Dargah is essential for understanding Manikaran.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Moinuddin Chishti Dargah, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Moinuddin Chishti Dargah in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Moinuddin Chishti Dargah in Manikaran"
+      },
+      "position": 5
+    },
+    {
+      "id": "manikaran-assi-ghat",
+      "name": "Assi Ghat",
+      "slug": "assi-ghat",
+      "description": "Assi Ghat is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Assi Ghat promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Assi Ghat.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Assi Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Assi Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Assi Ghat in Manikaran"
+      },
+      "position": 6
+    },
+    {
+      "id": "manikaran-jagannath-temple",
+      "name": "Jagannath Temple",
+      "slug": "jagannath-temple",
+      "description": "Nestled in Manikaran, Jagannath Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Jagannath Temple is among the best things to do in Manikaran.",
+      "whyVisit": "Jagannath Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Jagannath Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Jagannath Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Jagannath Temple in Manikaran"
+      },
+      "position": 7
+    },
+    {
+      "id": "manikaran-sheikh-chilli-tomb",
+      "name": "Sheikh Chilli Tomb",
+      "slug": "sheikh-chilli-tomb",
+      "description": "Nestled in Manikaran, Sheikh Chilli Tomb stands as a testament to architectural brilliance. This renowned religious attracts tourists who come to admire its stunning design. A visit to Sheikh Chilli Tomb is among the best things to do in Manikaran.",
+      "whyVisit": "A visit to Sheikh Chilli Tomb is essential for understanding Manikaran.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Sheikh Chilli Tomb, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Sheikh Chilli Tomb in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Sheikh Chilli Tomb in Manikaran"
+      },
+      "position": 8
+    },
+    {
+      "id": "manikaran-munshi-ghat",
+      "name": "Munshi Ghat",
+      "slug": "munshi-ghat",
+      "description": "Nestled in Manikaran, Munshi Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Munshi Ghat is among the best things to do in Manikaran.",
+      "whyVisit": "Munshi Ghat offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Munshi Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Munshi Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Munshi Ghat in Manikaran"
+      },
+      "position": 9
+    },
+    {
+      "id": "manikaran-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Located in scenic Manikaran, Kashi Vishwanath Temple offers an immersive experience into local culture. Exploring Kashi Vishwanath Temple is one of the top things to do in Manikaran.",
+      "whyVisit": "Experience the unmatched beauty of Kashi Vishwanath Temple.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Kashi Vishwanath Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Manikaran"
+      },
+      "position": 10
+    },
+    {
+      "id": "manikaran-haji-ali-dargah",
+      "name": "Haji Ali Dargah",
+      "slug": "haji-ali-dargah",
+      "description": "Haji Ali Dargah is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Haji Ali Dargah promises an unforgettable experience.",
+      "whyVisit": "Haji Ali Dargah stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Haji Ali Dargah, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Haji Ali Dargah in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Haji Ali Dargah in Manikaran"
+      },
+      "position": 11
+    },
+    {
+      "id": "manikaran-jalasen-ghat",
+      "name": "Jalasen Ghat",
+      "slug": "jalasen-ghat",
+      "description": "Located in scenic Manikaran, Jalasen Ghat offers an immersive experience into local culture. Exploring Jalasen Ghat is one of the top things to do in Manikaran.",
+      "whyVisit": "Capture stunning photographs at Jalasen Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jalasen Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Jalasen Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Jalasen Ghat in Manikaran"
+      },
+      "position": 12
+    },
+    {
+      "id": "manikaran-chamundi-temple",
+      "name": "Chamundi Temple",
+      "slug": "chamundi-temple",
+      "description": "Nestled in Manikaran, Chamundi Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Chamundi Temple is among the best things to do in Manikaran.",
+      "whyVisit": "Experience the unmatched beauty of Chamundi Temple.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Chamundi Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamundi Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Chamundi Temple in Manikaran"
+      },
+      "position": 13
+    },
+    {
+      "id": "manikaran-ziarat-habba-khatoon",
+      "name": "Ziarat Habba Khatoon",
+      "slug": "ziarat-habba-khatoon",
+      "description": "A crown jewel of Manikaran, Ziarat Habba Khatoon captivates every traveler with enchanting beauty. No trip to Manikaran is complete without visiting Ziarat Habba Khatoon.",
+      "whyVisit": "Ziarat Habba Khatoon offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Ziarat Habba Khatoon, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Habba Khatoon in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Ziarat Habba Khatoon in Manikaran"
+      },
+      "position": 14
+    },
+    {
+      "id": "manikaran-kedar-ghat",
+      "name": "Kedar Ghat",
+      "slug": "kedar-ghat",
+      "description": "Nestled in Manikaran, Kedar Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Kedar Ghat is among the best things to do in Manikaran.",
+      "whyVisit": "Capture stunning photographs at Kedar Ghat.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Kedar Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Kedar Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Kedar Ghat in Manikaran"
+      },
+      "position": 15
+    },
+    {
+      "id": "manikaran-padmanabhaswamy-temple",
+      "name": "Padmanabhaswamy Temple",
+      "slug": "padmanabhaswamy-temple",
+      "description": "Nestled in Manikaran, Padmanabhaswamy Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Padmanabhaswamy Temple is among the best things to do in Manikaran.",
+      "whyVisit": "Experience the unmatched beauty of Padmanabhaswamy Temple.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Padmanabhaswamy Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Padmanabhaswamy Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Padmanabhaswamy Temple in Manikaran"
+      },
+      "position": 16
+    },
+    {
+      "id": "manikaran-ziarat-lal-ded",
+      "name": "Ziarat Lal Ded",
+      "slug": "ziarat-lal-ded",
+      "description": "Ziarat Lal Ded is a must-see religious in Manikaran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Manikaran.",
+      "whyVisit": "A visit to Ziarat Lal Ded is essential for understanding Manikaran.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Ziarat Lal Ded, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Lal Ded in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Ziarat Lal Ded in Manikaran"
+      },
+      "position": 17
+    },
+    {
+      "id": "manikaran-sheetla-ghat",
+      "name": "Sheetla Ghat",
+      "slug": "sheetla-ghat",
+      "description": "Sheetla Ghat is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sheetla Ghat promises an unforgettable experience.",
+      "whyVisit": "A visit to Sheetla Ghat is essential for understanding Manikaran.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sheetla Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Sheetla Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Sheetla Ghat in Manikaran"
+      },
+      "position": 18
+    },
+    {
+      "id": "manikaran-vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "slug": "vaishno-devi-temple",
+      "description": "Located in scenic Manikaran, Vaishno Devi Temple offers an immersive experience into local culture. Exploring Vaishno Devi Temple is one of the top things to do in Manikaran.",
+      "whyVisit": "Vaishno Devi Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Vaishno Devi Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vaishno Devi Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Vaishno Devi Temple in Manikaran"
+      },
+      "position": 19
+    },
+    {
+      "id": "manikaran-baba-budan-giri",
+      "name": "Baba Budan Giri",
+      "slug": "baba-budan-giri",
+      "description": "Located in scenic Manikaran, Baba Budan Giri offers an immersive experience into local culture. Exploring Baba Budan Giri is one of the top things to do in Manikaran.",
+      "whyVisit": "A visit to Baba Budan Giri is essential for understanding Manikaran.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Baba Budan Giri, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Baba Budan Giri in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Baba Budan Giri in Manikaran"
+      },
+      "position": 20
+    },
+    {
+      "id": "manikaran-scindia-ghat",
+      "name": "Scindia Ghat",
+      "slug": "scindia-ghat",
+      "description": "Nestled in Manikaran, Scindia Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Scindia Ghat is among the best things to do in Manikaran.",
+      "whyVisit": "A visit to Scindia Ghat is essential for understanding Manikaran.",
+      "bestTime": "Evening",
+      "duration": "Half day",
+      "mapsSearch": "Scindia Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Scindia Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Scindia Ghat in Manikaran"
+      },
+      "position": 21
+    },
+    {
+      "id": "manikaran-somnath-temple",
+      "name": "Somnath Temple",
+      "slug": "somnath-temple",
+      "description": "Somnath Temple is one of the most iconic landmarks in Manikaran, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Somnath Temple promises an unforgettable experience.",
+      "whyVisit": "A visit to Somnath Temple is essential for understanding Manikaran.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Somnath Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Somnath Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Somnath Temple in Manikaran"
+      },
+      "position": 22
+    },
+    {
+      "id": "manikaran-charar-e-sharief",
+      "name": "Charar-e-Sharief",
+      "slug": "charar-e-sharief",
+      "description": "Charar-e-Sharief is a must-see religious in Manikaran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Manikaran.",
+      "whyVisit": "Experience the unmatched beauty of Charar-e-Sharief.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Charar-e-Sharief, Manikaran",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Charar-e-Sharief in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Charar-e-Sharief in Manikaran"
+      },
+      "position": 23
+    },
+    {
+      "id": "manikaran-darabhanga-ghat",
+      "name": "Darabhanga Ghat",
+      "slug": "darabhanga-ghat",
+      "description": "Nestled in Manikaran, Darabhanga Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Darabhanga Ghat is among the best things to do in Manikaran.",
+      "whyVisit": "A visit to Darabhanga Ghat is essential for understanding Manikaran.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Darabhanga Ghat, Manikaran",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Darabhanga Ghat in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Darabhanga Ghat in Manikaran"
+      },
+      "position": 24
+    },
+    {
+      "id": "manikaran-ramanathaswamy-temple",
+      "name": "Ramanathaswamy Temple",
+      "slug": "ramanathaswamy-temple",
+      "description": "A crown jewel of Manikaran, Ramanathaswamy Temple captivates every traveler with enchanting beauty. No trip to Manikaran is complete without visiting Ramanathaswamy Temple.",
+      "whyVisit": "Capture stunning photographs at Ramanathaswamy Temple.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Ramanathaswamy Temple, Manikaran",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ramanathaswamy Temple in Manikaran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Ramanathaswamy Temple in Manikaran"
+      },
+      "position": 25
+    }
+  ]
+}

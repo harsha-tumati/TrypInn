@@ -1,0 +1,160 @@
+{
+  "slug": "daman",
+  "name": "Daman",
+  "state": "Daman and Diu",
+  "tagline": "Portuguese forts, silent churches, and golden Gujarati beaches",
+  "categories": ["heritage", "beach", "historical"],
+  "highlights": ["best-preserved portuguese colonial forts in india", "uncrowded arabian sea beaches with long sands"],
+  "attractions": [
+    {
+      "name": "Daman Fort (Moti Daman Fort)",
+      "category": "fort",
+      "description": "The massive Portuguese fort on the southern bank of the Damanganga River is one of India's best-preserved colonial military fortifications. Built by the Portuguese in 1603 after capturing Daman from the Mughal governor, its 3 km circumference bastions enclose an entire township — St. Catherine's Cathedral, the Governor's Palace, the Chapel of Our Lady of the Sea, a lighthouse, and colonial-era bungalows still in residential use.",
+      "whyVisit": "India's most intact Portuguese colonial fort — a living walled city rather than a ruin.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Moti Daman Fort Portuguese Gujarat UT",
+      "imageQuery": "Moti Daman Fort Portuguese colonial walls"
+    },
+    {
+      "name": "Nani Daman Fort",
+      "category": "fort",
+      "description": "The smaller northern fort protecting the opposite bank of the Damanganga River, Nani Daman Fort was built in 1614 and retains its complete sea-facing bastions, cannon emplacements pointing toward the Arabian Sea, and the Church of Our Lady of the Rosary inside its walls. The fort's compact scale makes it easier to explore fully than Moti Daman, and the river views from the bastions are superb.",
+      "whyVisit": "Complete river-and-sea facing bastions with original cannons still in position.",
+      "bestTime": "Sunset from the bastions, October to March",
+      "duration": "1.5 hours",
+      "mapsSearch": "Nani Daman Fort Portuguese UT Daman",
+      "imageQuery": "Nani Daman Fort bastions cannons Portuguese"
+    },
+    {
+      "name": "Bom Jesus Cathedral (Se Cathedral)",
+      "category": "religious",
+      "description": "One of India's finest Portuguese Baroque churches, the Cathedral of Bom Jesus inside Moti Daman Fort was built in 1603 and features an elaborate white-and-ochre facade, gilded retablos, intricate painted ceilings, and a remarkable altar with Indo-Portuguese carved woodwork. It remains an active parish church serving Daman's Catholic community — Mass continues as it has for four centuries.",
+      "whyVisit": "The finest Portuguese Baroque church interior in India outside Goa.",
+      "bestTime": "Morning Mass or afternoon light, October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Bom Jesus Cathedral Moti Daman Fort Gujarat",
+      "imageQuery": "Bom Jesus Cathedral Daman Portuguese Baroque church"
+    },
+    {
+      "name": "Jampore Beach",
+      "category": "beach",
+      "description": "Daman's most popular and scenic beach stretches 3 km of wide golden sand along the southern coast, backed by rows of swaying casuarina trees. The surf here is moderate and the beach is well-maintained and clean by Indian standards. Sunrise illuminates the entire arc of the bay, and local fishermen still launch their small boats at dawn through the gentle shore break. Beach shacks serve fresh seafood.",
+      "whyVisit": "The best sunrise beach in the region — wide, clean, and lined with casuarinas.",
+      "bestTime": "Sunrise, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jampore Beach Daman Gujarat UT",
+      "imageQuery": "Jampore Beach Daman golden sand sunrise"
+    },
+    {
+      "name": "Devka Beach",
+      "category": "beach",
+      "description": "Devka Beach on Daman's northern coast is renowned for its remarkably vivid black and grey basalt rock formations that emerge at low tide, creating dramatic patterns of volcanic stone against the white foam. The beach is less suited to swimming due to the rocky character but exceptional for photography. A small amusement park and beachside eateries make it the most family-frequented beach in Daman.",
+      "whyVisit": "Dramatic volcanic basalt rock formations — the most photogenic beach landscape in Daman.",
+      "bestTime": "Low tide, morning or evening",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Devka Beach Daman Gujarat basalt rocks",
+      "imageQuery": "Devka Beach Daman basalt rock formations"
+    },
+    {
+      "name": "Church of Our Lady of the Rosary",
+      "category": "religious",
+      "description": "Built inside Nani Daman Fort in 1515, the Church of Our Lady of the Rosary is Daman's oldest church and one of the oldest standing Portuguese churches in India. The whitewashed exterior with a single bell tower and the intimate interior with original azulejo (blue tile) panels, 16th-century stone carvings, and a carved wooden altar represent early Indo-Portuguese ecclesiastical architecture at its purest.",
+      "whyVisit": "One of India's oldest Portuguese churches — 16th-century azulejo tiles still intact.",
+      "bestTime": "Morning, October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Church Our Lady Rosary Nani Daman Fort",
+      "imageQuery": "Church Our Lady Rosary Daman Portuguese colonial"
+    },
+    {
+      "name": "Damanganga River Walk",
+      "category": "nature",
+      "description": "The broad Damanganga estuary separating Nani and Moti Daman is crossed by a 400-metre pedestrian-and-vehicle bridge that offers excellent views of both Portuguese forts simultaneously — a unique double-fort panorama. The riverbanks retain traditional wooden fishing boats, nets drying in the sun, and small boat repair workshops. Evening walks see local families promenading with views of both illuminated fort silhouettes.",
+      "whyVisit": "The only spot in India to photograph two Portuguese forts facing each other across a river.",
+      "bestTime": "Sunset, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Damanganga River bridge Daman both forts",
+      "imageQuery": "Damanganga River bridge Daman forts sunset"
+    },
+    {
+      "name": "Chapel of Our Lady of the Sea (Moti Daman)",
+      "category": "religious",
+      "description": "A small, beautiful chapel inside Moti Daman Fort dedicated to Our Lady of the Sea — the patron of Portuguese sailors who prayed here before departing on voyages to India, Africa, and Brazil. The chapel's modest exterior conceals an exquisite interior with gilded altarpiece, painted ceiling, and walls covered in 17th-century azulejo panels depicting naval and biblical scenes in cobalt blue.",
+      "whyVisit": "Most intimate Indo-Portuguese chapel — 17th-century azulejo tiles in near-perfect condition.",
+      "bestTime": "Morning light, October to March",
+      "duration": "30 minutes",
+      "mapsSearch": "Chapel Our Lady Sea Moti Daman Fort",
+      "imageQuery": "Chapel Our Lady Sea Daman Portuguese azulejo"
+    },
+    {
+      "name": "Luz Church (Church of Our Lady of Light)",
+      "category": "religious",
+      "description": "A 17th-century Portuguese chapel in the Nani Daman township outside the fort walls, the Church of Our Lady of Light (Luz) retains its original whitewashed barrel-vaulted nave and carved stone reredos behind the altar. The surrounding garden cemetery contains Portuguese-inscribed grave slabs from the 1600s-1700s — some of the oldest European tombstone inscriptions on the Indian subcontinent outside Goa.",
+      "whyVisit": "17th-century Portuguese grave inscriptions in a peaceful garden cemetery — historically unique.",
+      "bestTime": "Morning, October to February",
+      "duration": "30 minutes",
+      "mapsSearch": "Luz Church Our Lady Light Nani Daman",
+      "imageQuery": "Luz Church Daman Portuguese whitewashed chapel"
+    },
+    {
+      "name": "Daman Seafood Market",
+      "category": "market",
+      "description": "The fresh fish market near Nani Daman harbour operates most vigorously in the early morning (5-8 AM) when the night fleet returns. Pomfret, surmai (king mackerel), tiger prawns, crabs, and squid are auctioned within hours of landing. The adjacent permanent market sells dried fish specialities unique to Daman. Many restaurants around the market will cook fresh purchases immediately — an authentic coastal Gujarat experience.",
+      "whyVisit": "Best fresh seafood market between Mumbai and Surat — buy and eat within minutes.",
+      "bestTime": "5-8 AM for auction; 8-10 AM for retail",
+      "duration": "1-2 hours",
+      "mapsSearch": "Daman fish market harbour seafood Gujarat",
+      "imageQuery": "Daman fish market harbour fresh seafood Gujarat"
+    },
+    {
+      "name": "Mirasol Lake Garden",
+      "category": "garden",
+      "description": "A well-maintained public garden complex on the southern outskirts of Moti Daman built around a small lake, with boating facilities, a children's park, restaurant, and an open-air theatre. In the evenings it fills with local families and couples. The garden's main draw is its position near the mouth of the Damanganga, providing peaceful water views that contrast with the fort's busy interior.",
+      "whyVisit": "Best evening relaxation spot in Daman — lakeviews, boating, and local family atmosphere.",
+      "bestTime": "Evening, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Mirasol Lake Garden Daman Gujarat",
+      "imageQuery": "Mirasol Lake Garden Daman boats evening"
+    },
+    {
+      "name": "Bindrabin Garden and Lighthouse Viewpoint",
+      "category": "viewpoint",
+      "description": "The working lighthouse at the southern tip of Moti Daman Fort stands within the fort's bastions and offers, when accessible, views across the mouth of the Damanganga and the open Arabian Sea. The surrounding Bindrabin Garden between the sea wall and the lighthouse provides a quiet spot away from the fort township's activity, with benches facing the sea and the sound of waves against the Portuguese battlements.",
+      "whyVisit": "Quiet sea-facing corner of the fort where Portuguese walls meet the Arabian Sea directly.",
+      "bestTime": "Sunset, October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Daman Lighthouse Moti Daman Fort sea view",
+      "imageQuery": "Daman Lighthouse Fort sea bastion Portuguese"
+    },
+    {
+      "name": "St. Jerome Fort (Daman)",
+      "category": "fort",
+      "description": "A small outlying Portuguese bastion in the Nani Daman township area, distinct from the main forts, marking an advance defensive position. The structure is largely intact with its original cannon ramp, loopholes, and semi-circular bastion platform. Unlike the main forts, this site receives almost no visitors and is often completely empty — an entirely authentic encounter with 17th-century Portuguese military architecture.",
+      "whyVisit": "Completely unvisited Portuguese bastion — authentic encounter with colonial military architecture.",
+      "bestTime": "Morning, October to February",
+      "duration": "30 minutes",
+      "mapsSearch": "St. Jerome Fort Daman Portuguese bastion",
+      "imageQuery": "St Jerome Fort Daman Portuguese bastion cannon"
+    },
+    {
+      "name": "Vapi-Daman Eco-Mangroves",
+      "category": "nature",
+      "description": "The creek system north of Nani Daman towards Vapi retains extensive mangrove forests — among the healthiest in the south Gujarat-UT coastal zone. Canoe tours through the mangrove channels (arranged via local fishing community operators) reveal mudskippers, fiddler crabs, egrets, kingfishers, and occasionally smooth-coated otters. The mangrove buffer also protects Daman's coast from erosion and storm surge.",
+      "whyVisit": "Canoe through mangrove creeks with otters, crabs, and kingfishers near the beach town.",
+      "bestTime": "Early morning, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Daman mangroves creek Vapi Gujarat UT",
+      "imageQuery": "Daman mangrove creek Gujarat canoe boat"
+    },
+    {
+      "name": "Daman Heritage Walk (Fort to Fort)",
+      "category": "heritage",
+      "description": "A 4 km self-guided heritage walk from Nani Daman Fort across the bridge to Moti Daman Fort passes churches, a seminary building, colonial bungalows, the seafood market, river ghats, and the administrative secretariat — all within the Portuguese urban layout that has survived nearly unchanged since the 18th century. The walk reveals how seamlessly Portuguese colonial and Gujarati fishing village life co-exist in Daman.",
+      "whyVisit": "The complete Daman colonial heritage experience on foot — unique Indo-Portuguese townscape.",
+      "bestTime": "Morning, October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Daman heritage walk fort to fort colonial",
+      "imageQuery": "Daman heritage walk colonial architecture Portuguese"
+    }
+  ]
+}

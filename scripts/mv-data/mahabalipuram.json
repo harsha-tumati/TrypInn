@@ -1,0 +1,260 @@
+{
+  "slug": "mahabalipuram",
+  "name": "Mahabalipuram",
+  "state": "Tamil Nadu",
+  "tagline": "Where Pallava sculptors carved eternity into living rock",
+  "categories": ["heritage", "historical", "beach"],
+  "highlights": ["unesco world heritage shore temple complex", "7th century pallava rock-cut architecture"],
+  "attractions": [
+    {
+      "name": "Shore Temple",
+      "category": "temple",
+      "description": "Rising from the Bay of Bengal shoreline like a stone sail, the Shore Temple is one of South India's oldest structural temples, built by Pallava king Rajasimha in the early 8th century. Two shikhara towers of different heights house shrines to Shiva and Vishnu, their granite surfaces worn smooth by 13 centuries of sea spray. A UNESCO World Heritage Site and the defining image of Mahabalipuram.",
+      "whyVisit": "One of India's oldest and most dramatically sited temples — the archetype of Dravidian architecture.",
+      "bestTime": "Sunrise or sunset; October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Shore Temple Mahabalipuram Tamil Nadu",
+      "imageQuery": "Shore Temple Mahabalipuram Bay of Bengal sunrise"
+    },
+    {
+      "name": "Arjuna's Penance (Descent of the Ganges)",
+      "category": "heritage",
+      "description": "The world's largest open-air bas-relief — 27 metres wide and 9 metres high — carved from two enormous boulders. The composition depicts either Arjuna's penance or the descent of the Ganga to earth, and contains over 100 figures of gods, celestials, animals, and humans radiating from a central natural fissure that represents the sacred river. The sculptural vitality of each figure remains astonishing after 1,400 years.",
+      "whyVisit": "The largest and most complex bas-relief in the world, a masterpiece of Indian narrative sculpture.",
+      "bestTime": "Morning for soft light on the relief",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Arjuna's Penance Mahabalipuram Tamil Nadu",
+      "imageQuery": "Arjuna's Penance bas-relief Mahabalipuram"
+    },
+    {
+      "name": "Pancha Rathas (Five Rathas)",
+      "category": "heritage",
+      "description": "Five monolithic temples carved from single granite outcrops in the 7th century, each named after the Pandava brothers and Draupadi. No two rathas are alike — the Dharmaraja Ratha is pyramidal, the Bhima Ratha barrel-vaulted, the Draupadi Ratha square and hut-shaped. Life-size sculptures of elephants, lions, and Nandi guard each ratha. These were prototypes, never used as functioning temples.",
+      "whyVisit": "Five entirely different architectural forms carved from one rock — a living textbook of early Dravidian design.",
+      "bestTime": "Early morning before crowds; October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Pancha Rathas Five Rathas Mahabalipuram",
+      "imageQuery": "Pancha Rathas five rathas Mahabalipuram Pallava"
+    },
+    {
+      "name": "Krishna's Butter Ball",
+      "category": "heritage",
+      "description": "A perfectly spherical granite boulder five metres in diameter perched on a smooth incline at a seemingly impossible angle, as if about to roll at any moment. The boulder has sat here for over 1,200 years, defying gravity and repeated attempts by Pallava kings and later colonial administrators to move it. It has become Mahabalipuram's most photographed curiosity.",
+      "whyVisit": "The world's most improbable rock — a giant sphere balanced on a slope that generations of engineers have failed to shift.",
+      "bestTime": "Morning or afternoon; any season",
+      "duration": "30 minutes",
+      "mapsSearch": "Krishna's Butter Ball Mahabalipuram Tamil Nadu",
+      "imageQuery": "Krishna Butter Ball boulder Mahabalipuram"
+    },
+    {
+      "name": "Mahishasuramardini Cave",
+      "category": "cave",
+      "description": "A rock-cut mandapam containing two of Pallava art's most celebrated panels: Mahishasuramardini (Durga slaying the buffalo demon), sculpted with electrifying kinetic energy, and the Seshasayana panel showing Vishnu reclining on Adi Sesha in serene equipoise. The contrast between the two panels — fierce action versus cosmic calm — is a masterclass in Hindu sculptural philosophy.",
+      "whyVisit": "Two panels that represent the absolute peak of Pallava sculptural genius in a single intimate cave.",
+      "bestTime": "Morning light enters the cave beautifully",
+      "duration": "45 minutes",
+      "mapsSearch": "Mahishasuramardini Cave Mahabalipuram",
+      "imageQuery": "Mahishasuramardini cave sculpture Mahabalipuram Pallava"
+    },
+    {
+      "name": "Krishna Mandapam",
+      "category": "cave",
+      "description": "A shallow rock-cut pavilion featuring a large mural-like relief of Krishna lifting Mount Govardhana to shelter cowherds and cattle from Indra's storm. The pastoral scene includes cows, calves, a calf being milked, and villagers in relaxed natural postures — a departure from formal temple iconography that reveals the Pallavas' gift for narrative warmth.",
+      "whyVisit": "The most charming and human of Mahabalipuram's rock carvings, with pastoral figures full of natural life.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Krishna Mandapam Mahabalipuram Tamil Nadu",
+      "imageQuery": "Krishna Mandapam Govardhana relief Mahabalipuram"
+    },
+    {
+      "name": "Varaha Cave Temple",
+      "category": "cave",
+      "description": "One of the finest single-chamber rock-cut temples at Mahabalipuram, the Varaha Cave enshrines four large relief panels: Trivikrama (Vishnu striding across the universe), Varaha (the boar avatar lifting the earth goddess Bhudevi), Gajalakshmi (Lakshmi flanked by elephants), and Durga. Each panel is a self-contained sculptural world of extraordinary refinement.",
+      "whyVisit": "Four iconic Pallava relief panels in one compact cave — essential for understanding early South Indian Vaishnavism.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Varaha Cave Temple Mahabalipuram Tamil Nadu",
+      "imageQuery": "Varaha Cave Temple Pallava sculpture Mahabalipuram"
+    },
+    {
+      "name": "Mahabalipuram Beach",
+      "category": "beach",
+      "description": "A long, broad beach running parallel to the town's heritage monuments, flanked at its northern end by the Shore Temple and at its south by fishing village activity. The beach is clean and rarely overcrowded, and walking its length at sunrise — with the Shore Temple silhouetted against a red sky and fishermen launching catamaran-style catamarans — is a memorable experience.",
+      "whyVisit": "A rare beach where you can walk from a UNESCO heritage temple to a working fishing community in 20 minutes.",
+      "bestTime": "Sunrise and late afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahabalipuram Beach Tamil Nadu",
+      "imageQuery": "Mahabalipuram beach Shore Temple sunrise"
+    },
+    {
+      "name": "Lighthouse and Olakkanatha Temple",
+      "category": "viewpoint",
+      "description": "Mahabalipuram's lighthouse sits beside the old Olakkanatha (Old Lighthouse) Temple, a 8th-century Pallava temple that itself served as a navigation beacon for mariners. Climbing the active lighthouse (when open) gives the best panoramic view of the entire heritage complex: Pancha Rathas to the south, the Shore Temple on the shore, and Arjuna's Penance below. The Olakkanatha shrine is simple but historically resonant.",
+      "whyVisit": "The best elevated vantage point for grasping the spatial arrangement of Mahabalipuram's entire heritage zone.",
+      "bestTime": "Late afternoon for panoramic light; lighthouse open select mornings",
+      "duration": "1 hour",
+      "mapsSearch": "Mahabalipuram Lighthouse Olakkanatha Temple",
+      "imageQuery": "Mahabalipuram lighthouse panoramic view heritage"
+    },
+    {
+      "name": "Trimurthi Cave",
+      "category": "cave",
+      "description": "A rock-cut shrine with three sanctuaries side by side, each dedicated to Brahma, Vishnu, and Shiva. The triple-celled arrangement — rare in early Dravidian architecture — reflects the Pallava king's attempt to represent the Hindu trinity in stone. The guardians (dvarapalas) flanking each cell are among the most powerfully carved figures at Mahabalipuram.",
+      "whyVisit": "One of the rare early temples depicting all three members of the Hindu Trimurti in equal standing.",
+      "bestTime": "Morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Trimurthi Cave Mahabalipuram Tamil Nadu",
+      "imageQuery": "Trimurthi Cave temple Mahabalipuram Pallava trinity"
+    },
+    {
+      "name": "Sculpture Museum (Archaeological Survey of India)",
+      "category": "museum",
+      "description": "The ASI museum near the Pancha Rathas houses original sculptures and fragments recovered from across the Mahabalipuram site — including pieces displaced by the 2004 tsunami, which famously uncovered additional submerged structures. Well-curated labels and scale models of the monuments help visitors contextualise what they see across the sprawling open-air site.",
+      "whyVisit": "Essential context for the open-air monuments, with tsunami-revealed artefacts and high-quality sculptural detail.",
+      "bestTime": "Before or after the monument tour; morning",
+      "duration": "1 hour",
+      "mapsSearch": "Archaeological Museum Mahabalipuram Tamil Nadu ASI",
+      "imageQuery": "Mahabalipuram archaeological museum Pallava sculpture"
+    },
+    {
+      "name": "Tiger Cave",
+      "category": "cave",
+      "description": "A rock-cut open-air theatre or mandapam 4 km north of the main complex at Saluvankuppam, Tiger Cave features a large central niche surrounded by remarkable carved tiger heads (vyalas) — hence the name. A shrine to Durga occupies the central niche. The site also contains the recently excavated Adi Varaha Temple ruins, revealing Mahabalipuram's artistic zone was much wider than previously known.",
+      "whyVisit": "Less visited than the main complex but architecturally unique, with dramatic vyala carvings and recent archaeological finds.",
+      "bestTime": "Morning; October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Tiger Cave Mahabalipuram Saluvankuppam Tamil Nadu",
+      "imageQuery": "Tiger Cave rock cut Mahabalipuram vyala carvings"
+    },
+    {
+      "name": "Ganesha Ratha",
+      "category": "heritage",
+      "description": "A monolithic rock-cut shrine near Arjuna's Penance that once housed a Shiva linga but was converted to a Ganesha shrine — which saved it from demolition when a British colonial collector ordered it moved in the 18th century. The ratha has a multi-tiered roof with sculptured figures and closely resembles the Draupadi Ratha, though it stands in isolation from the main ratha group.",
+      "whyVisit": "A quietly beautiful monolithic shrine with an unusual history of religious repurposing and colonial-era survival.",
+      "bestTime": "Any time of day",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Ganesha Ratha Mahabalipuram Tamil Nadu",
+      "imageQuery": "Ganesha Ratha monolithic temple Mahabalipuram"
+    },
+    {
+      "name": "Crocodile Bank (Madras Crocodile Bank Trust)",
+      "category": "wildlife",
+      "description": "Founded in 1976 by herpetologist Romulus Whitaker, the Crocodile Bank 14 km north of Mahabalipuram is Asia's leading crocodile conservation centre. Over 2,000 individuals of 14 species are housed here, including the critically endangered mugger crocodile and the gharial. A vivarium section covers king cobras and other reptiles. The Bank has reintroduced hundreds of gharials into Indian rivers.",
+      "whyVisit": "The world's most important crocodile conservation facility — an eye-opening, educational wildlife experience.",
+      "bestTime": "Morning; October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Madras Crocodile Bank Trust Mahabalipuram Chennai",
+      "imageQuery": "Madras Crocodile Bank gharial conservation Tamil Nadu"
+    },
+    {
+      "name": "Sadhu's Bath (Dharmaraja Mandapam)",
+      "category": "cave",
+      "description": "A rock-cut mandapam at the base of the main hill, near a natural pool once used for ritual bathing. The cave features portrait sculptures believed to be of Pallava king Mahendravarman I and members of the royal family — among the earliest royal portrait carvings in Indian art. The intimate scale and personal subject matter make it compelling.",
+      "whyVisit": "Rare early royal portrait sculpture in stone, offering a glimpse of the Pallava king who began Mahabalipuram's artistic tradition.",
+      "bestTime": "Morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Dharmaraja Mandapam Mahabalipuram Tamil Nadu",
+      "imageQuery": "Dharmaraja Mandapam royal portraits Mahabalipuram Pallava"
+    },
+    {
+      "name": "Sculpture Workshops (Mamallapuram Craft Village)",
+      "category": "market",
+      "description": "The town's main street and craft village lanes are lined with hereditary stone sculptors — sthapatis — whose families have worked granite and sandstone for generations. Visitors can watch craftsmen using traditional iron chisels to carve deities, Nataraja figures, and architectural elements. Purchasing directly from artisans at workshops is far better value than tourist shops.",
+      "whyVisit": "Watch living masters practise a 1,400-year-old craft tradition and buy a directly commissioned sculpture.",
+      "bestTime": "Morning when studios are active",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahabalipuram Sculpture Workshop Tamil Nadu",
+      "imageQuery": "Mahabalipuram stone sculptors workshop craft"
+    },
+    {
+      "name": "Kovalam Beach (near Mahabalipuram)",
+      "category": "beach",
+      "description": "Not to be confused with Kerala's famous beach, this quiet village beach 5 km south of Mahabalipuram is known locally for its fresh seafood restaurants and calm shallow water. Thatched shacks serve grilled lobster, crab, and prawn overlooking the sea. The beach is used mainly by locals and a trickle of travellers who have ventured beyond the heritage zone.",
+      "whyVisit": "Excellent fresh-catch seafood in a relaxed setting without the tourist infrastructure of the main town.",
+      "bestTime": "Lunch or sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kovalam Beach Mahabalipuram Tamil Nadu",
+      "imageQuery": "Kovalam Beach Chennai Tamil Nadu seafood shack"
+    },
+    {
+      "name": "Submerged Temple Ruins (Post-tsunami site)",
+      "category": "heritage",
+      "description": "The 2004 Indian Ocean tsunami temporarily receded the sea and revealed granite walls, carved stones, and the outline of large structures up to 500 metres offshore. Subsequent marine archaeological surveys have confirmed structural remains consistent with ancient harbour and temple complexes matching descriptions of the seven pagodas of ancient Mamallapuram. Snorkelling at low tide can reveal stone blocks in 3-5 metres of water.",
+      "whyVisit": "Snorkel over or view from the shore an actual lost city — Mahabalipuram's own underwater heritage zone.",
+      "bestTime": "October to March; calm sea conditions",
+      "duration": "1-2 hours",
+      "mapsSearch": "Submerged ruins Mahabalipuram underwater Tamil Nadu",
+      "imageQuery": "Mahabalipuram underwater ruins tsunami revealed Tamil Nadu"
+    },
+    {
+      "name": "Saluvankuppam Fish Village",
+      "category": "nature",
+      "description": "The working fishing hamlet adjacent to Tiger Cave, where catamaran-style log rafts (kattumaram — the Tamil word that became 'catamaran') are still built and launched as they have been for millennia. Watching the pre-dawn launch of hand-built wooden craft into the surf using inherited techniques is an extraordinary window into coastal Tamil Nadu's living maritime heritage.",
+      "whyVisit": "See the original kattumaram fishing craft — the vessel that gave the world the word catamaran — still in active use.",
+      "bestTime": "Pre-dawn launch around 5-6 AM",
+      "duration": "1 hour",
+      "mapsSearch": "Saluvankuppam Village Mahabalipuram Tamil Nadu",
+      "imageQuery": "catamaran fishing boat launch Tamil Nadu coast"
+    },
+    {
+      "name": "Irukkam Cave (Unfinished Ratha)",
+      "category": "cave",
+      "description": "An unfinished cave temple on the main hill, left in mid-carve when the Pallava dynasty's power waned in the 8th century. The half-completed columns, rough pilaster outlines, and tools marks still visible in the granite surface make it uniquely valuable — it reveals exactly how the Pallava sculptors worked, transforming solid rock into finished architecture from top to bottom.",
+      "whyVisit": "The best place in Mahabalipuram to understand the sculpting process — incompletion here is more instructive than completion.",
+      "bestTime": "Morning",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Irukkam Cave Mahabalipuram unfinished Tamil Nadu",
+      "imageQuery": "unfinished Pallava cave Mahabalipuram rock carving process"
+    },
+    {
+      "name": "Mahabalipuram Dance Festival",
+      "category": "heritage",
+      "description": "Held every January and February against the floodlit backdrop of Arjuna's Penance and the Shore Temple, this month-long classical dance festival presents Bharatanatyam, Kuchipudi, Odissi, Kathak, and Carnatic music performances. The Tamil Nadu government organises the festival as part of its heritage promotion, and tickets are affordable. The setting transforms classical performance into something truly archaeological.",
+      "whyVisit": "Classical dance performed in front of 1,400-year-old rock carvings under a full moon — one of India's great cultural experiences.",
+      "bestTime": "January-February; evenings",
+      "duration": "2-3 hours per performance",
+      "mapsSearch": "Mahabalipuram Dance Festival Tamil Nadu",
+      "imageQuery": "Mahabalipuram dance festival Bharatanatyam Shore Temple"
+    },
+    {
+      "name": "Sthalasayana Perumal Temple",
+      "category": "temple",
+      "description": "An early structural temple within the town predating even the Shore Temple, the Sthalasayana Perumal shrine is a Divya Desam — one of the 108 Vaishnava shrines celebrated by the Alvars. The presiding deity, Vishnu reclining on the primordial ocean, gives the temple its name ('one who reclines on the sacred ground'). The small temple is often overlooked amid the rock-cut sites.",
+      "whyVisit": "A functioning Divya Desam that predates the Shore Temple and is entirely overlooked by most visitors.",
+      "bestTime": "Morning puja",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Sthalasayana Perumal Temple Mahabalipuram Tamil Nadu",
+      "imageQuery": "Sthalasayana Perumal Temple Mahabalipuram Divya Desam"
+    },
+    {
+      "name": "Sunrise at the Shore Temple Beach",
+      "category": "viewpoint",
+      "description": "The 800-metre stretch of sand directly south of the Shore Temple is at its most magical in the hour around sunrise, when the temple's dual towers are silhouetted against a sky shifting from mauve to orange and fishing boats move through the frame. The Archaeological Survey of India recently cleared debris from this beach and improved access, making it the finest dawn viewpoint in the town.",
+      "whyVisit": "Arguably the single most photogenic sunrise location in Tamil Nadu — a centuries-old temple against a living sea.",
+      "bestTime": "30 minutes before sunrise",
+      "duration": "1 hour",
+      "mapsSearch": "Shore Temple Beach sunrise Mahabalipuram Tamil Nadu",
+      "imageQuery": "Shore Temple sunrise silhouette beach Mahabalipuram"
+    },
+    {
+      "name": "Arjuna's Penance Detail Walk",
+      "category": "heritage",
+      "description": "Going beyond the broad view of the Descent of the Ganges relief to spend time examining individual vignettes — the elephant family, the yogis and ascetics, the cat posing as a meditating sage while mice gather, the celestial beings descending — reveals an extraordinary humour, naturalism, and narrative skill. The 'cat saint' panel is a well-known satirical element that most casual visitors miss entirely.",
+      "whyVisit": "The famous cat-meditating-to-fool-mice satirical panel alone justifies a slow, guided second look at this masterwork.",
+      "bestTime": "Morning, before tour buses arrive",
+      "duration": "45 minutes",
+      "mapsSearch": "Arjuna's Penance detail Mahabalipuram Tamil Nadu",
+      "imageQuery": "Arjuna Penance cat meditating mice detail Mahabalipuram"
+    },
+    {
+      "name": "Moonrise Point (Thirukadalmallai cliff top)",
+      "category": "viewpoint",
+      "description": "A flat granite promontory atop the main hill above the Mahishasuramardini Cave, known locally as the best spot to watch the moon rise over the Bay of Bengal on full-moon nights. The rock shelf is unenclosed, free to access, and offers a 180-degree sea view. On ordinary evenings the sunset colours the sea and the Shore Temple below in shades that no camera fully captures.",
+      "whyVisit": "Mahabalipuram's secret viewpoint — unmarked, uncrowded, and extraordinarily beautiful at dusk or full moon.",
+      "bestTime": "Sunset or full moon nights",
+      "duration": "1 hour",
+      "mapsSearch": "Mahabalipuram hilltop viewpoint Thirukadalmallai",
+      "imageQuery": "Mahabalipuram hilltop sea view sunset Tamil Nadu"
+    }
+  ]
+}

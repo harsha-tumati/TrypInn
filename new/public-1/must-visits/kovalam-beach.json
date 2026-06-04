@@ -1,0 +1,447 @@
+{
+  "id": "kovalam-beach",
+  "name": "Kovalam Beach",
+  "state": "Kerala",
+  "slug": "kovalam-beach",
+  "tagline": "Crescent-shaped beach with lighthouse views",
+  "categories": [
+    "beach",
+    "viewpoint",
+    "nightlife"
+  ],
+  "introduction": "Kovalam Beach is a treasure trove of experiences. In this travel guide to Kovalam Beach, we reveal the must visit places in Kovalam Beach, the best places to visit in Kovalam Beach, iconic tourist attractions in Kovalam Beach, and amazing things to do in Kovalam Beach.",
+  "metaTitle": "Top Things to Do in Kovalam Beach | Travel Guide to Kovalam Beach - TrypInn",
+  "metaDescription": "Explore the best places to visit in Kovalam Beach, top things to do in Kovalam Beach, and must visit places in Kovalam Beach. Your complete travel guide to Kovalam Beach by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=1200&q=60",
+    "alt": "Kovalam Beach travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "kovalam-beach-auroville-beach",
+      "name": "Auroville Beach",
+      "slug": "auroville-beach",
+      "description": "Located in scenic Kovalam Beach, Auroville Beach offers an immersive experience into local culture. Exploring Auroville Beach is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Auroville Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Auroville Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Auroville Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Auroville Beach in Kovalam Beach"
+      },
+      "position": 1
+    },
+    {
+      "id": "kovalam-beach-doddabetta-peak",
+      "name": "Doddabetta Peak",
+      "slug": "doddabetta-peak",
+      "description": "A crown jewel of Kovalam Beach, Doddabetta Peak captivates every traveler with enchanting beauty. No trip to Kovalam Beach is complete without visiting Doddabetta Peak.",
+      "whyVisit": "Experience the unmatched beauty of Doddabetta Peak.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Doddabetta Peak, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Doddabetta Peak in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Doddabetta Peak in Kovalam Beach"
+      },
+      "position": 2
+    },
+    {
+      "id": "kovalam-beach-jazz-clubs",
+      "name": "Jazz Clubs",
+      "slug": "jazz-clubs",
+      "description": "A crown jewel of Kovalam Beach, Jazz Clubs captivates every traveler with enchanting beauty. No trip to Kovalam Beach is complete without visiting Jazz Clubs.",
+      "whyVisit": "Jazz Clubs offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half night",
+      "mapsSearch": "Jazz Clubs, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Jazz Clubs in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Jazz Clubs in Kovalam Beach"
+      },
+      "position": 3
+    },
+    {
+      "id": "kovalam-beach-muzhappilangad-beach",
+      "name": "Muzhappilangad Beach",
+      "slug": "muzhappilangad-beach",
+      "description": "Muzhappilangad Beach is a must-see beach in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "Capture stunning photographs at Muzhappilangad Beach.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Muzhappilangad Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Muzhappilangad Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Muzhappilangad Beach in Kovalam Beach"
+      },
+      "position": 4
+    },
+    {
+      "id": "kovalam-beach-top-station-view",
+      "name": "Top Station View",
+      "slug": "top-station-view",
+      "description": "Top Station View is a must-see viewpoint in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "A visit to Top Station View is essential for understanding Kovalam Beach.",
+      "bestTime": "Sunset",
+      "duration": "Quick",
+      "mapsSearch": "Top Station View, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Top Station View in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Top Station View in Kovalam Beach"
+      },
+      "position": 5
+    },
+    {
+      "id": "kovalam-beach-club-road",
+      "name": "Club Road",
+      "slug": "club-road",
+      "description": "Located in scenic Kovalam Beach, Club Road offers an immersive experience into local culture. Exploring Club Road is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "A visit to Club Road is essential for understanding Kovalam Beach.",
+      "bestTime": "Evening",
+      "duration": "Evening",
+      "mapsSearch": "Club Road, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Club Road in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Club Road in Kovalam Beach"
+      },
+      "position": 6
+    },
+    {
+      "id": "kovalam-beach-marina-beach",
+      "name": "Marina Beach",
+      "slug": "marina-beach",
+      "description": "Marina Beach is one of the most iconic landmarks in Kovalam Beach, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Marina Beach promises an unforgettable experience.",
+      "whyVisit": "Marina Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-4 hours",
+      "mapsSearch": "Marina Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Marina Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Marina Beach in Kovalam Beach"
+      },
+      "position": 7
+    },
+    {
+      "id": "kovalam-beach-suicide-point",
+      "name": "Suicide Point",
+      "slug": "suicide-point",
+      "description": "Suicide Point is one of the most iconic landmarks in Kovalam Beach, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Suicide Point promises an unforgettable experience.",
+      "whyVisit": "Suicide Point offers a perfect blend of history and scenery.",
+      "bestTime": "Clear days",
+      "duration": "Quick",
+      "mapsSearch": "Suicide Point, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Suicide Point in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Suicide Point in Kovalam Beach"
+      },
+      "position": 8
+    },
+    {
+      "id": "kovalam-beach-microbreweries",
+      "name": "Microbreweries",
+      "slug": "microbreweries",
+      "description": "A crown jewel of Kovalam Beach, Microbreweries captivates every traveler with enchanting beauty. No trip to Kovalam Beach is complete without visiting Microbreweries.",
+      "whyVisit": "Microbreweries stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "2-4 hours",
+      "mapsSearch": "Microbreweries, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Microbreweries in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Microbreweries in Kovalam Beach"
+      },
+      "position": 9
+    },
+    {
+      "id": "kovalam-beach-kudle-beach",
+      "name": "Kudle Beach",
+      "slug": "kudle-beach",
+      "description": "Located in scenic Kovalam Beach, Kudle Beach offers an immersive experience into local culture. Exploring Kudle Beach is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Kudle Beach.",
+      "bestTime": "Year-round",
+      "duration": "2-4 hours",
+      "mapsSearch": "Kudle Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Kudle Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kudle Beach in Kovalam Beach"
+      },
+      "position": 10
+    },
+    {
+      "id": "kovalam-beach-kolli-hills-view",
+      "name": "Kolli Hills View",
+      "slug": "kolli-hills-view",
+      "description": "Kolli Hills View is a must-see viewpoint in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "Capture stunning photographs at Kolli Hills View.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Kolli Hills View, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kolli Hills View in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Kolli Hills View in Kovalam Beach"
+      },
+      "position": 11
+    },
+    {
+      "id": "kovalam-beach-casino",
+      "name": "Casino",
+      "slug": "casino",
+      "description": "Nestled in Kovalam Beach, Casino stands as a testament to architectural brilliance. This renowned nightlife attracts tourists who come to admire its stunning design. A visit to Casino is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Casino.",
+      "bestTime": "Evening",
+      "duration": "Full night",
+      "mapsSearch": "Casino, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Casino in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Casino in Kovalam Beach"
+      },
+      "position": 12
+    },
+    {
+      "id": "kovalam-beach-ramakrishna-beach",
+      "name": "Ramakrishna Beach",
+      "slug": "ramakrishna-beach",
+      "description": "Ramakrishna Beach is a must-see beach in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "Ramakrishna Beach offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-4 hours",
+      "mapsSearch": "Ramakrishna Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Ramakrishna Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Ramakrishna Beach in Kovalam Beach"
+      },
+      "position": 13
+    },
+    {
+      "id": "kovalam-beach-valley-view-point",
+      "name": "Valley View Point",
+      "slug": "valley-view-point",
+      "description": "Nestled in Kovalam Beach, Valley View Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Valley View Point is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Valley View Point.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Valley View Point, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Valley View Point in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Valley View Point in Kovalam Beach"
+      },
+      "position": 14
+    },
+    {
+      "id": "kovalam-beach-wine-bars",
+      "name": "Wine Bars",
+      "slug": "wine-bars",
+      "description": "Nestled in Kovalam Beach, Wine Bars stands as a testament to architectural brilliance. This renowned nightlife attracts tourists who come to admire its stunning design. A visit to Wine Bars is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Wine Bars.",
+      "bestTime": "Year-round",
+      "duration": "Evening",
+      "mapsSearch": "Wine Bars, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Wine Bars in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Wine Bars in Kovalam Beach"
+      },
+      "position": 15
+    },
+    {
+      "id": "kovalam-beach-gokarna-beach",
+      "name": "Gokarna Beach",
+      "slug": "gokarna-beach",
+      "description": "Nestled in Kovalam Beach, Gokarna Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Gokarna Beach is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Capture stunning photographs at Gokarna Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Gokarna Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Gokarna Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Gokarna Beach in Kovalam Beach"
+      },
+      "position": 16
+    },
+    {
+      "id": "kovalam-beach-echo-point",
+      "name": "Echo Point",
+      "slug": "echo-point",
+      "description": "Echo Point is a must-see viewpoint in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "Capture stunning photographs at Echo Point.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Echo Point, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Echo Point in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Echo Point in Kovalam Beach"
+      },
+      "position": 17
+    },
+    {
+      "id": "kovalam-beach-late-night-cafes",
+      "name": "Late Night Cafes",
+      "slug": "late-night-cafes",
+      "description": "Nestled in Kovalam Beach, Late Night Cafes stands as a testament to architectural brilliance. This renowned nightlife attracts tourists who come to admire its stunning design. A visit to Late Night Cafes is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Capture stunning photographs at Late Night Cafes.",
+      "bestTime": "Evening",
+      "duration": "Half night",
+      "mapsSearch": "Late Night Cafes, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Late Night Cafes in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Late Night Cafes in Kovalam Beach"
+      },
+      "position": 18
+    },
+    {
+      "id": "kovalam-beach-elephant-beach",
+      "name": "Elephant Beach",
+      "slug": "elephant-beach",
+      "description": "Located in scenic Kovalam Beach, Elephant Beach offers an immersive experience into local culture. Exploring Elephant Beach is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "Elephant Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Elephant Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Elephant Beach in Kovalam Beach"
+      },
+      "position": 19
+    },
+    {
+      "id": "kovalam-beach-sunset-point",
+      "name": "Sunset Point",
+      "slug": "sunset-point",
+      "description": "Located in scenic Kovalam Beach, Sunset Point offers an immersive experience into local culture. Exploring Sunset Point is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "Sunset Point offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Sunset Point, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Sunset Point in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Sunset Point in Kovalam Beach"
+      },
+      "position": 20
+    },
+    {
+      "id": "kovalam-beach-bollywood-nights",
+      "name": "Bollywood Nights",
+      "slug": "bollywood-nights",
+      "description": "Located in scenic Kovalam Beach, Bollywood Nights offers an immersive experience into local culture. Exploring Bollywood Nights is one of the top things to do in Kovalam Beach.",
+      "whyVisit": "Bollywood Nights offers a perfect blend of history and scenery.",
+      "bestTime": "Evening",
+      "duration": "Evening",
+      "mapsSearch": "Bollywood Nights, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Bollywood Nights in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Bollywood Nights in Kovalam Beach"
+      },
+      "position": 21
+    },
+    {
+      "id": "kovalam-beach-digha-beach",
+      "name": "Digha Beach",
+      "slug": "digha-beach",
+      "description": "Digha Beach is a must-see beach in Kovalam Beach, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kovalam Beach.",
+      "whyVisit": "Digha Beach stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Digha Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Digha Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Digha Beach in Kovalam Beach"
+      },
+      "position": 22
+    },
+    {
+      "id": "kovalam-beach-araku-valley-view",
+      "name": "Araku Valley View",
+      "slug": "araku-valley-view",
+      "description": "Nestled in Kovalam Beach, Araku Valley View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Araku Valley View is among the best things to do in Kovalam Beach.",
+      "whyVisit": "Experience the unmatched beauty of Araku Valley View.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Araku Valley View, Kovalam Beach",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Araku Valley View in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Araku Valley View in Kovalam Beach"
+      },
+      "position": 23
+    },
+    {
+      "id": "kovalam-beach-salsa-nights",
+      "name": "Salsa Nights",
+      "slug": "salsa-nights",
+      "description": "Salsa Nights is one of the most iconic landmarks in Kovalam Beach, drawing visitors with its timeless charm. This nightlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Salsa Nights promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Salsa Nights.",
+      "bestTime": "Evening",
+      "duration": "Half night",
+      "mapsSearch": "Salsa Nights, Kovalam Beach",
+      "category": "nightlife",
+      "imagePrompt": "Ultra realistic travel photography, Salsa Nights in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Salsa Nights in Kovalam Beach"
+      },
+      "position": 24
+    },
+    {
+      "id": "kovalam-beach-paradise-beach",
+      "name": "Paradise Beach",
+      "slug": "paradise-beach",
+      "description": "A crown jewel of Kovalam Beach, Paradise Beach captivates every traveler with enchanting beauty. No trip to Kovalam Beach is complete without visiting Paradise Beach.",
+      "whyVisit": "Capture stunning photographs at Paradise Beach.",
+      "bestTime": "Sunrise",
+      "duration": "2-4 hours",
+      "mapsSearch": "Paradise Beach, Kovalam Beach",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Paradise Beach in Kovalam Beach, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Paradise Beach in Kovalam Beach"
+      },
+      "position": 25
+    }
+  ]
+}

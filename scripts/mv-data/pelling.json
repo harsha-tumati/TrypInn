@@ -1,0 +1,260 @@
+{
+  "slug": "pelling",
+  "name": "Pelling",
+  "state": "Sikkim",
+  "tagline": "Kanchenjunga at your doorstep, serenity all around",
+  "categories": ["mountain", "spiritual", "nature"],
+  "highlights": ["panoramic kanchenjunga views", "ancient monasteries and skywalk"],
+  "attractions": [
+    {
+      "name": "Pemayangtse Monastery",
+      "category": "monastery",
+      "description": "One of the oldest and most revered Nyingmapa monasteries in Sikkim, founded in 1705 at an altitude of 2,085 metres. The three-storey structure houses centuries-old murals, sacred thangkas, and a magnificent seven-tiered wooden sculpture of Guru Rinpoche's celestial palace called Zangdog Palri, crafted by a monk over five years.",
+      "whyVisit": "The spiritual centrepiece of West Sikkim and a masterpiece of Sikkimese Buddhist art.",
+      "bestTime": "Morning, October to April",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pemayangtse Monastery Pelling Sikkim",
+      "imageQuery": "Pemayangtse monastery Pelling Sikkim"
+    },
+    {
+      "name": "Kanchenjunga View Point",
+      "category": "viewpoint",
+      "description": "From Pelling's ridge, the third-highest peak on Earth — Kanchenjunga at 8,586 metres — fills the northern horizon in dramatic, snow-draped glory. On clear mornings the massif turns golden at sunrise, flanked by Kabru and Talung peaks. The view is best from the open ground near Sikkim Himalayan Resort or the town's western ridge.",
+      "whyVisit": "Arguably the most accessible front-row seat to Kanchenjunga in all of India.",
+      "bestTime": "Dawn, October to early December and March to May",
+      "duration": "1 hour",
+      "mapsSearch": "Kanchenjunga View Point Pelling Sikkim",
+      "imageQuery": "Kanchenjunga sunrise view Pelling"
+    },
+    {
+      "name": "Pelling Skywalk",
+      "category": "adventure",
+      "description": "A glass-floored skywalk cantilevered over a steep Himalayan cliff at 7,200 feet, opened in 2019 as part of the Chenrezig statue complex. Visitors walk out over a sheer drop with unobstructed views of Kanchenjunga, the Rangit valley, and surrounding ridges. The adjacent 137-foot white Chenrezig statue dominates the skyline.",
+      "whyVisit": "A thrilling glass-bridge experience paired with one of Sikkim's most dramatic panoramas.",
+      "bestTime": "Morning, October to May",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pelling Skywalk Glass Bridge Sikkim",
+      "imageQuery": "Pelling skywalk glass bridge Sikkim"
+    },
+    {
+      "name": "Chenrezig Statue",
+      "category": "religious",
+      "description": "A towering 137-foot statue of Avalokitesvara (Chenrezig), the Bodhisattva of Compassion, built on a hilltop above Pelling. The gleaming white structure is visible from much of West Sikkim and houses prayer halls inside. The hilltop complex connects to the skywalk and commands sweeping Himalayan and valley views.",
+      "whyVisit": "West Sikkim's most visible landmark and a powerful symbol of Buddhist devotion.",
+      "bestTime": "Morning, year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Chenrezig Statue Pelling Sikkim",
+      "imageQuery": "Chenrezig statue Pelling Sikkim Himalaya"
+    },
+    {
+      "name": "Rabdentse Ruins",
+      "category": "heritage",
+      "description": "The evocative ruins of Rabdentse, the second capital of the Kingdom of Sikkim (17th–18th century), perch on a forested ridge with Kanchenjunga looming behind. Three chortens and the remnants of the royal palace remain amid dense jungle, reached via a pleasant 20-minute trail through dense rhododendron forest from Pemayangtse.",
+      "whyVisit": "A hauntingly beautiful slice of Sikkimese royal history framed by the world's third-highest peak.",
+      "bestTime": "October to May, mid-morning",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Rabdentse Ruins Pelling Sikkim",
+      "imageQuery": "Rabdentse ruins Sikkim Kanchenjunga"
+    },
+    {
+      "name": "Khecheopalri Lake",
+      "category": "lake",
+      "description": "Considered the most sacred lake in Sikkim, Khecheopalri sits in a forested bowl at 1,700 metres surrounded by prayer flags and ancient trees. Locals believe birds remove every leaf that falls on the surface, keeping it miraculously clean. A short forest trail leads to a hilltop viewpoint. The lake is sacred to both Buddhists and Hindus.",
+      "whyVisit": "One of India's most spiritually charged natural lakes, pristine and deeply atmospheric.",
+      "bestTime": "October to May",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khecheopalri Lake West Sikkim",
+      "imageQuery": "Khecheopalri lake Sikkim sacred"
+    },
+    {
+      "name": "Singshore Bridge",
+      "category": "adventure",
+      "description": "At 198 metres above the Rimbi River gorge, Singshore is the highest suspension bridge in Asia and among the highest in India. The 198-metre-long steel span sways gently as you walk across, offering a vertiginous view straight down into a deep green ravine carpeted with cardamom plantations. A short detour from the Pelling–Yoksum road.",
+      "whyVisit": "A bucket-list crossing — the highest suspension bridge in Asia over a spectacular gorge.",
+      "bestTime": "Morning, October to May",
+      "duration": "1 hour",
+      "mapsSearch": "Singshore Bridge Pelling West Sikkim",
+      "imageQuery": "Singshore bridge suspension gorge Sikkim"
+    },
+    {
+      "name": "Rimbi Rock Garden and Waterfall",
+      "category": "nature",
+      "description": "A terraced garden carved around natural boulders beside the fast-flowing Rimbi River, with a picturesque waterfall as its centrepiece. Orchids, ferns, and colourful Himalayan flowers line the stone pathways. The roar of the river and the cool spray from the falls make it a refreshing stop on the Pelling–Gyalshing road.",
+      "whyVisit": "A beautiful and easy nature stop combining a river, waterfall, and well-maintained garden.",
+      "bestTime": "Morning, March to June and September to November",
+      "duration": "1 hour",
+      "mapsSearch": "Rimbi Rock Garden Pelling Sikkim",
+      "imageQuery": "Rimbi waterfall rock garden Sikkim"
+    },
+    {
+      "name": "Kanchenjunga Falls",
+      "category": "waterfall",
+      "description": "A dramatic multi-tiered cascade fed by glacial meltwater from the Kanchenjunga massif, dropping over 100 metres through a rocky forested gorge along the Pelling–Yoksum road. The spray creates perpetual rainbows on sunny afternoons, and the surrounding subtropical jungle echoes with birdcall. A roadside viewpoint makes it easily accessible.",
+      "whyVisit": "One of Sikkim's most scenic and accessible waterfalls with a glacial Himalayan source.",
+      "bestTime": "June to September (peak flow) and October to November",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Kanchenjunga Falls Pelling Sikkim",
+      "imageQuery": "Kanchenjunga falls waterfall Sikkim"
+    },
+    {
+      "name": "Yoksum",
+      "category": "heritage",
+      "description": "The first capital of Sikkim, where the kingdom was founded in 1642 when three Tibetan lamas consecrated the first Chogyal at Norbugang. The small village contains the historic Norbugang throne, the Dubdi Monastery (Sikkim's oldest), and the Kathok Lake. It is also the trailhead for the iconic Goechala trek to Kanchenjunga base camp.",
+      "whyVisit": "The birthplace of the Sikkimese kingdom and the gateway to the Kanchenjunga wilderness.",
+      "bestTime": "October to May",
+      "duration": "Half day",
+      "mapsSearch": "Yoksum Sikkim historic capital",
+      "imageQuery": "Yoksum village Sikkim Kanchenjunga trek"
+    },
+    {
+      "name": "Dubdi Monastery",
+      "category": "monastery",
+      "description": "Perched on a forested hilltop above Yoksum, Dubdi is the oldest monastery in Sikkim, built in 1701. The 45-minute uphill forest trail rewards with a beautifully carved whitewashed gompa containing ancient murals and statues, and exceptional views of Yoksum valley and the mountains beyond. Very few tourists make the climb, lending it rare tranquillity.",
+      "whyVisit": "Sikkim's oldest monastery, hidden in the forest with an atmosphere of unspoilt antiquity.",
+      "bestTime": "Morning, October to April",
+      "duration": "2-3 hours including trail",
+      "mapsSearch": "Dubdi Monastery Yoksum Sikkim",
+      "imageQuery": "Dubdi monastery Yoksum Sikkim oldest"
+    },
+    {
+      "name": "Norbugang Coronation Throne",
+      "category": "heritage",
+      "description": "A modest stone structure beneath a sacred stone pine in Yoksum marks the spot where Sikkim's first king, Phuntsog Namgyal, was anointed in 1642. A cluster of chortens, prayer flags, and the ancient Norbugang Chorten surround it. The site is of immense historical significance as the founding moment of the Kingdom of Sikkim.",
+      "whyVisit": "Ground zero of Sikkimese statehood — a profoundly historic spot often overlooked by tourists.",
+      "bestTime": "Year-round",
+      "duration": "30 minutes",
+      "mapsSearch": "Norbugang Coronation Throne Yoksum Sikkim",
+      "imageQuery": "Norbugang throne Yoksum Sikkim"
+    },
+    {
+      "name": "Darap Village",
+      "category": "nature",
+      "description": "A quiet Limboo village on a terraced hillside below Pelling, famed for its cardamom and kiwi orchards. The pristine traditional houses, organic farms, and community homestays offer an authentic West Sikkim rural experience. A heritage walk through Darap passes through bamboo groves and offers brilliant mountain vistas on clear days.",
+      "whyVisit": "An off-the-beaten-path taste of traditional Limboo village life and organic Sikkim farming.",
+      "bestTime": "October to May",
+      "duration": "2-3 hours",
+      "mapsSearch": "Darap Village Pelling West Sikkim",
+      "imageQuery": "Darap village cardamom Sikkim terraced"
+    },
+    {
+      "name": "Dentam Valley",
+      "category": "nature",
+      "description": "A broad, emerald-green valley west of Pelling carpeted with large cardamom plantations, terraced fields, and dotted with Lepcha and Limboo settlements. The valley floor feels otherworldly peaceful, backed by forested ridges. It is the starting point for treks toward Uttarey and the Singalila range, and offers excellent bird watching.",
+      "whyVisit": "A serene, uncrowded valley with exceptional cardamom scenery and trekking potential.",
+      "bestTime": "March to May and September to November",
+      "duration": "Half day",
+      "mapsSearch": "Dentam Valley West Sikkim",
+      "imageQuery": "Dentam valley cardamom Sikkim green"
+    },
+    {
+      "name": "Uttarey and Chewabhanjyang",
+      "category": "adventure",
+      "description": "The remote village of Uttarey, deep in West Sikkim, is the base camp for the Singalila trek and Barsey Rhododendron Sanctuary. The meadow at Chewabhanjyang on the Nepal border blazes crimson and pink from late March to mid-April when dozens of rhododendron species bloom simultaneously at 3,300 metres.",
+      "whyVisit": "Sikkim's finest rhododendron bloom spectacle, virtually unknown to mainstream tourists.",
+      "bestTime": "Late March to mid-April",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Uttarey Chewabhanjyang Barsey Rhododendron Sikkim",
+      "imageQuery": "Barsey rhododendron sanctuary Sikkim bloom"
+    },
+    {
+      "name": "Sanga Choeling Monastery",
+      "category": "monastery",
+      "description": "One of the oldest monasteries in Sikkim, Sanga Choeling sits on a forested hilltop above Pelling reached by a well-marked 30-minute uphill trail through dense oak and rhododendron forest thick with prayer flags. The gompa contains intricate clay statues and ancient murals. The hilltop view over the Rangit valley is outstanding.",
+      "whyVisit": "A peaceful, forest-shrouded monastery reached by a lovely hike — fewer crowds than Pemayangtse.",
+      "bestTime": "Morning, October to May",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Sanga Choeling Monastery Pelling Sikkim",
+      "imageQuery": "Sanga Choeling monastery Pelling prayer flags"
+    },
+    {
+      "name": "Hee Waterfall",
+      "category": "waterfall",
+      "description": "A lesser-visited but striking waterfall near Hee village on the road between Pelling and Legship. The torrent plunges from a high rock face into a pool fringed with tree ferns and moss-covered boulders. The access trail passes through small cardamom farms, and local children often swim in the pool below during summer.",
+      "whyVisit": "A refreshingly uncrowded waterfall gem with an authentic local atmosphere.",
+      "bestTime": "June to October",
+      "duration": "1 hour",
+      "mapsSearch": "Hee Waterfall West Sikkim",
+      "imageQuery": "Hee waterfall Sikkim jungle"
+    },
+    {
+      "name": "Rinchenpong Monastery and Village",
+      "category": "monastery",
+      "description": "A beautifully preserved Nyingmapa monastery in the quiet village of Rinchenpong, about 25 km from Pelling at 1,800 metres. The gompa sits in an apple-orchard-dotted village with tremendous Kanchenjunga views and very few tourists. A homestay culture thrives here, and the sunrise over the Himalaya from the village centre is extraordinary.",
+      "whyVisit": "The ideal slow-travel alternative to Pelling — spectacular views without the tourist crowds.",
+      "bestTime": "Dawn, October to April",
+      "duration": "Half day or overnight",
+      "mapsSearch": "Rinchenpong Monastery West Sikkim",
+      "imageQuery": "Rinchenpong monastery village Sikkim Kanchenjunga"
+    },
+    {
+      "name": "Tashiding Monastery",
+      "category": "monastery",
+      "description": "Considered the most sacred monastery in Sikkim, Tashiding crowns a hilltop at the confluence of the Rathong and Rangit rivers, about 36 km from Pelling. Founded in 1716, it houses the Thongwa Rangdol chorten whose sight is said to cleanse sins, and hosts the Bumchu festival where water levels predict the year's fortunes.",
+      "whyVisit": "Sikkim's holiest monastery, on a spectacular promontory — a pilgrimage for Buddhists worldwide.",
+      "bestTime": "February for Bumchu festival, or October to April",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tashiding Monastery Sikkim",
+      "imageQuery": "Tashiding monastery Sikkim holy river confluence"
+    },
+    {
+      "name": "Sewaro Rock Garden",
+      "category": "nature",
+      "description": "A government-developed rock garden set along the banks of the Rimbi River, featuring sculpted boulders, trimmed lawns, and a children's area with swings. Families from Gyalshing and Pelling use it as a weekend picnic spot. Though modest by national standards, the river setting backed by forested hills gives it genuine charm.",
+      "whyVisit": "A pleasant riverside picnic garden — great for families after the Pemayangtse and Rabdentse circuit.",
+      "bestTime": "Morning, year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Sewaro Rock Garden Pelling Sikkim",
+      "imageQuery": "Sewaro rock garden Rimbi river Sikkim"
+    },
+    {
+      "name": "Gyalshing (Geyzing) Town",
+      "category": "heritage",
+      "description": "The administrative headquarters of West Sikkim, Gyalshing is a compact bazaar town 10 km from Pelling with a lively local market, old Tibetan-style shop fronts, and a serene central chorten. The town hosts the colourful Pang Lhabsol festival celebrating Kanchenjunga as the guardian deity of Sikkim.",
+      "whyVisit": "An authentic West Sikkim market town — real local life, great momos, and a vivid annual festival.",
+      "bestTime": "August to September for Pang Lhabsol; year-round for the market",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gyalshing Geyzing West Sikkim",
+      "imageQuery": "Gyalshing market town West Sikkim"
+    },
+    {
+      "name": "Kangchenjunga Conservation Area (Buffer Zone Trek)",
+      "category": "adventure",
+      "description": "The southern edge of the Kangchenjunga Conservation Area, accessible from Yoksum, offers multi-day treks through pristine temperate and subalpine forest past yak pastures, glacial rivers, and high-altitude meadows. The Goechala trek (5 nights, 96 km) reaches a high pass with a jaw-dropping close-up view of Kanchenjunga's south face.",
+      "whyVisit": "India's finest Himalayan wilderness trek, rewarding those who earn it with Kanchenjunga up close.",
+      "bestTime": "October to November and April to May",
+      "duration": "5-10 days",
+      "mapsSearch": "Goechala Trek Yoksum Sikkim Kanchenjunga",
+      "imageQuery": "Goechala trek Kanchenjunga base camp Sikkim"
+    },
+    {
+      "name": "Borong and Maenam Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Maenam Wildlife Sanctuary spreads across 35 sq km of subtropical and temperate forest in South Sikkim, accessible via a trek from Borong. The forests harbour red panda, Himalayan black bear, clouded leopard, and an extraordinary diversity of orchids and rhododendrons. The summit of Maenam (3,240 m) offers a vast 360-degree Himalayan panorama.",
+      "whyVisit": "Sikkim's best chance to spot red panda in the wild in pristine old-growth forest.",
+      "bestTime": "October to November and March to May",
+      "duration": "Full day trek",
+      "mapsSearch": "Maenam Wildlife Sanctuary Borong Sikkim",
+      "imageQuery": "Maenam hill Sikkim rhododendron forest"
+    },
+    {
+      "name": "Legship Hot Springs",
+      "category": "nature",
+      "description": "Natural geothermal springs along the Rangit River at Legship, about 30 km from Pelling. The sulphurous waters, believed to have therapeutic properties, are channelled into basic soaking pools beside the river. After a day of trekking or sightseeing, a dip here soothes tired muscles amid the sounds of the fast-flowing Rangit.",
+      "whyVisit": "A relaxing geothermal soak beside a scenic mountain river — a lesser-known Sikkim pleasure.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Legship Hot Springs Rangit River Sikkim",
+      "imageQuery": "Legship hot springs Rangit river Sikkim"
+    },
+    {
+      "name": "Kewzing Village and Kewzing View Point",
+      "category": "viewpoint",
+      "description": "A tiny Bhutia village above Ravangla in South Sikkim, known for its apple orchards, millet fields, and an extraordinary viewpoint that takes in Kanchenjunga, Kabru, Rathong, and the entire western Sikkim ridgeline. A handful of community homestays offer farm-to-table Sikkimese meals. Almost no foreign tourists visit, yet the scenery rivals anything in the state.",
+      "whyVisit": "Sikkim's best-kept secret viewpoint — world-class Himalayan panorama, zero tourist infrastructure.",
+      "bestTime": "Dawn, October to December and March to May",
+      "duration": "Half day or overnight",
+      "mapsSearch": "Kewzing Village Viewpoint South Sikkim",
+      "imageQuery": "Kewzing village Sikkim Himalaya panorama"
+    }
+  ]
+}

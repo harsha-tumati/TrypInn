@@ -1,0 +1,447 @@
+{
+  "id": "mussoorie",
+  "name": "Mussoorie",
+  "state": "Uttarakhand",
+  "slug": "mussoorie",
+  "tagline": "The Queen of Hills with waterfalls and colonial architecture",
+  "categories": [
+    "hill_station",
+    "nature",
+    "adventure"
+  ],
+  "introduction": "Mussoorie is a treasure trove of experiences. In this travel guide to Mussoorie, we reveal the must visit places in Mussoorie, the best places to visit in Mussoorie, iconic tourist attractions in Mussoorie, and amazing things to do in Mussoorie.",
+  "metaTitle": "Best Places to Visit in Mussoorie | Tourist Attractions in Mussoorie - TrypInn",
+  "metaDescription": "Discover must visit places in Mussoorie, best places to visit in Mussoorie, and top tourist attractions in Mussoorie. Plan your perfect trip with TrypInn travel guide to Mussoorie.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=1200&q=60",
+    "alt": "Mussoorie travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "mussoorie-kempty-falls",
+      "name": "Kempty Falls",
+      "slug": "kempty-falls",
+      "description": "Nestled in Mussoorie, Kempty Falls stands as a testament to architectural brilliance. This renowned waterfall attracts tourists who come to admire its stunning design. A visit to Kempty Falls is among the best things to do in Mussoorie.",
+      "whyVisit": "Experience the unmatched beauty of Kempty Falls.",
+      "bestTime": "Aug-Sep",
+      "duration": "Quick",
+      "mapsSearch": "Kempty Falls, Mussoorie",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Kempty Falls in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Kempty Falls in Mussoorie"
+      },
+      "position": 1
+    },
+    {
+      "id": "mussoorie-gun-hill",
+      "name": "Gun Hill",
+      "slug": "gun-hill",
+      "description": "Gun Hill is a must-see viewpoint in Mussoorie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mussoorie.",
+      "whyVisit": "Experience the unmatched beauty of Gun Hill.",
+      "bestTime": "Clear days",
+      "duration": "Quick",
+      "mapsSearch": "Gun Hill, Mussoorie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Gun Hill in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Gun Hill in Mussoorie"
+      },
+      "position": 2
+    },
+    {
+      "id": "mussoorie-mall-road-mussoorie",
+      "name": "Mall Road Mussoorie",
+      "slug": "mall-road-mussoorie",
+      "description": "Mall Road Mussoorie is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mall Road Mussoorie promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Mall Road Mussoorie.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mall Road Mussoorie, Mussoorie",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Mall Road Mussoorie in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Mall Road Mussoorie in Mussoorie"
+      },
+      "position": 3
+    },
+    {
+      "id": "mussoorie-lal-tibba",
+      "name": "Lal Tibba",
+      "slug": "lal-tibba",
+      "description": "Lal Tibba is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Lal Tibba promises an unforgettable experience.",
+      "whyVisit": "Lal Tibba stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Lal Tibba, Mussoorie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lal Tibba in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Lal Tibba in Mussoorie"
+      },
+      "position": 4
+    },
+    {
+      "id": "mussoorie-company-garden",
+      "name": "Company Garden",
+      "slug": "company-garden",
+      "description": "Company Garden is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This garden offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Company Garden promises an unforgettable experience.",
+      "whyVisit": "Company Garden stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Company Garden, Mussoorie",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Company Garden in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Company Garden in Mussoorie"
+      },
+      "position": 5
+    },
+    {
+      "id": "mussoorie-camel-s-back-road",
+      "name": "Camel's Back Road",
+      "slug": "camel-s-back-road",
+      "description": "Camel's Back Road is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Camel's Back Road promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Camel's Back Road.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Camel's Back Road, Mussoorie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Camel's Back Road in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Camel's Back Road in Mussoorie"
+      },
+      "position": 6
+    },
+    {
+      "id": "mussoorie-mussoorie-lake",
+      "name": "Mussoorie Lake",
+      "slug": "mussoorie-lake",
+      "description": "Nestled in Mussoorie, Mussoorie Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Mussoorie Lake is among the best things to do in Mussoorie.",
+      "whyVisit": "Mussoorie Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Mussoorie Lake, Mussoorie",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Mussoorie Lake in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Mussoorie Lake in Mussoorie"
+      },
+      "position": 7
+    },
+    {
+      "id": "mussoorie-jharipani-falls",
+      "name": "Jharipani Falls",
+      "slug": "jharipani-falls",
+      "description": "Jharipani Falls is a must-see waterfall in Mussoorie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mussoorie.",
+      "whyVisit": "Capture stunning photographs at Jharipani Falls.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Jharipani Falls, Mussoorie",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Jharipani Falls in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Jharipani Falls in Mussoorie"
+      },
+      "position": 8
+    },
+    {
+      "id": "mussoorie-bhatta-falls",
+      "name": "Bhatta Falls",
+      "slug": "bhatta-falls",
+      "description": "A crown jewel of Mussoorie, Bhatta Falls captivates every traveler with enchanting beauty. No trip to Mussoorie is complete without visiting Bhatta Falls.",
+      "whyVisit": "Capture stunning photographs at Bhatta Falls.",
+      "bestTime": "Aug-Sep",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhatta Falls, Mussoorie",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Bhatta Falls in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Bhatta Falls in Mussoorie"
+      },
+      "position": 9
+    },
+    {
+      "id": "mussoorie-nag-devta-temple",
+      "name": "Nag Devta Temple",
+      "slug": "nag-devta-temple",
+      "description": "Nag Devta Temple is a must-see temple in Mussoorie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mussoorie.",
+      "whyVisit": "Experience the unmatched beauty of Nag Devta Temple.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Nag Devta Temple, Mussoorie",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Nag Devta Temple in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Nag Devta Temple in Mussoorie"
+      },
+      "position": 10
+    },
+    {
+      "id": "mussoorie-benog-wildlife-sanctuary",
+      "name": "Benog Wildlife Sanctuary",
+      "slug": "benog-wildlife-sanctuary",
+      "description": "A crown jewel of Mussoorie, Benog Wildlife Sanctuary captivates every traveler with enchanting beauty. No trip to Mussoorie is complete without visiting Benog Wildlife Sanctuary.",
+      "whyVisit": "Capture stunning photographs at Benog Wildlife Sanctuary.",
+      "bestTime": "Dry season",
+      "duration": "Full day",
+      "mapsSearch": "Benog Wildlife Sanctuary, Mussoorie",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Benog Wildlife Sanctuary in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Benog Wildlife Sanctuary in Mussoorie"
+      },
+      "position": 11
+    },
+    {
+      "id": "mussoorie-cloud-s-end",
+      "name": "Cloud's End",
+      "slug": "cloud-s-end",
+      "description": "Cloud's End is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Cloud's End promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Cloud's End.",
+      "bestTime": "Sunset",
+      "duration": "30-60 min",
+      "mapsSearch": "Cloud's End, Mussoorie",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Cloud's End in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Cloud's End in Mussoorie"
+      },
+      "position": 12
+    },
+    {
+      "id": "mussoorie-happy-valley",
+      "name": "Happy Valley",
+      "slug": "happy-valley",
+      "description": "A crown jewel of Mussoorie, Happy Valley captivates every traveler with enchanting beauty. No trip to Mussoorie is complete without visiting Happy Valley.",
+      "whyVisit": "Capture stunning photographs at Happy Valley.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Happy Valley, Mussoorie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Happy Valley in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Happy Valley in Mussoorie"
+      },
+      "position": 13
+    },
+    {
+      "id": "mussoorie-jwalaji-temple",
+      "name": "Jwalaji Temple",
+      "slug": "jwalaji-temple",
+      "description": "Located in scenic Mussoorie, Jwalaji Temple offers an immersive experience into local culture. Exploring Jwalaji Temple is one of the top things to do in Mussoorie.",
+      "whyVisit": "Experience the unmatched beauty of Jwalaji Temple.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jwalaji Temple, Mussoorie",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Jwalaji Temple in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Jwalaji Temple in Mussoorie"
+      },
+      "position": 14
+    },
+    {
+      "id": "mussoorie-christ-church-mussoorie",
+      "name": "Christ Church Mussoorie",
+      "slug": "christ-church-mussoorie",
+      "description": "Located in scenic Mussoorie, Christ Church Mussoorie offers an immersive experience into local culture. Exploring Christ Church Mussoorie is one of the top things to do in Mussoorie.",
+      "whyVisit": "Capture stunning photographs at Christ Church Mussoorie.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Christ Church Mussoorie, Mussoorie",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Christ Church Mussoorie in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Christ Church Mussoorie in Mussoorie"
+      },
+      "position": 15
+    },
+    {
+      "id": "mussoorie-shedup-choepelling-temple",
+      "name": "Shedup Choepelling Temple",
+      "slug": "shedup-choepelling-temple",
+      "description": "Shedup Choepelling Temple is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This monastery offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Shedup Choepelling Temple promises an unforgettable experience.",
+      "whyVisit": "A visit to Shedup Choepelling Temple is essential for understanding Mussoorie.",
+      "bestTime": "May-Sep",
+      "duration": "2-3 hours",
+      "mapsSearch": "Shedup Choepelling Temple, Mussoorie",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Shedup Choepelling Temple in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Shedup Choepelling Temple in Mussoorie"
+      },
+      "position": 16
+    },
+    {
+      "id": "mussoorie-sir-george-everest-house",
+      "name": "Sir George Everest House",
+      "slug": "sir-george-everest-house",
+      "description": "Sir George Everest House is a must-see heritage in Mussoorie, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Mussoorie.",
+      "whyVisit": "Experience the unmatched beauty of Sir George Everest House.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sir George Everest House, Mussoorie",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Sir George Everest House in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Sir George Everest House in Mussoorie"
+      },
+      "position": 17
+    },
+    {
+      "id": "mussoorie-dhanaulti",
+      "name": "Dhanaulti",
+      "slug": "dhanaulti",
+      "description": "A crown jewel of Mussoorie, Dhanaulti captivates every traveler with enchanting beauty. No trip to Mussoorie is complete without visiting Dhanaulti.",
+      "whyVisit": "Experience the unmatched beauty of Dhanaulti.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Dhanaulti, Mussoorie",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Dhanaulti in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Dhanaulti in Mussoorie"
+      },
+      "position": 18
+    },
+    {
+      "id": "mussoorie-landour",
+      "name": "Landour",
+      "slug": "landour",
+      "description": "Located in scenic Mussoorie, Landour offers an immersive experience into local culture. Exploring Landour is one of the top things to do in Mussoorie.",
+      "whyVisit": "Landour offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "2-3 days",
+      "mapsSearch": "Landour, Mussoorie",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Landour in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Landour in Mussoorie"
+      },
+      "position": 19
+    },
+    {
+      "id": "mussoorie-mossy-falls",
+      "name": "Mossy Falls",
+      "slug": "mossy-falls",
+      "description": "A crown jewel of Mussoorie, Mossy Falls captivates every traveler with enchanting beauty. No trip to Mussoorie is complete without visiting Mossy Falls.",
+      "whyVisit": "Mossy Falls offers a perfect blend of history and scenery.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Mossy Falls, Mussoorie",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Mossy Falls in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Mossy Falls in Mussoorie"
+      },
+      "position": 20
+    },
+    {
+      "id": "mussoorie-soham-heritage-centre",
+      "name": "Soham Heritage Centre",
+      "slug": "soham-heritage-centre",
+      "description": "Soham Heritage Centre is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Soham Heritage Centre promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Soham Heritage Centre.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Soham Heritage Centre, Mussoorie",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Soham Heritage Centre in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Soham Heritage Centre in Mussoorie"
+      },
+      "position": 21
+    },
+    {
+      "id": "mussoorie-jwala-devi-temple",
+      "name": "Jwala Devi Temple",
+      "slug": "jwala-devi-temple",
+      "description": "Jwala Devi Temple is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Jwala Devi Temple promises an unforgettable experience.",
+      "whyVisit": "A visit to Jwala Devi Temple is essential for understanding Mussoorie.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Jwala Devi Temple, Mussoorie",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Jwala Devi Temple in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Jwala Devi Temple in Mussoorie"
+      },
+      "position": 22
+    },
+    {
+      "id": "mussoorie-k-dev-bhoomi-wax-museum",
+      "name": "K Dev Bhoomi Wax Museum",
+      "slug": "k-dev-bhoomi-wax-museum",
+      "description": "K Dev Bhoomi Wax Museum is one of the most iconic landmarks in Mussoorie, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, K Dev Bhoomi Wax Museum promises an unforgettable experience.",
+      "whyVisit": "A visit to K Dev Bhoomi Wax Museum is essential for understanding Mussoorie.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "K Dev Bhoomi Wax Museum, Mussoorie",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, K Dev Bhoomi Wax Museum in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "K Dev Bhoomi Wax Museum in Mussoorie"
+      },
+      "position": 23
+    },
+    {
+      "id": "mussoorie-lake-mist",
+      "name": "Lake Mist",
+      "slug": "lake-mist",
+      "description": "Nestled in Mussoorie, Lake Mist stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Lake Mist is among the best things to do in Mussoorie.",
+      "whyVisit": "A visit to Lake Mist is essential for understanding Mussoorie.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Lake Mist, Mussoorie",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Lake Mist in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Lake Mist in Mussoorie"
+      },
+      "position": 24
+    },
+    {
+      "id": "mussoorie-drikshala-devi-temple",
+      "name": "Drikshala Devi Temple",
+      "slug": "drikshala-devi-temple",
+      "description": "Nestled in Mussoorie, Drikshala Devi Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Drikshala Devi Temple is among the best things to do in Mussoorie.",
+      "whyVisit": "Drikshala Devi Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Drikshala Devi Temple, Mussoorie",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Drikshala Devi Temple in Mussoorie, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Drikshala Devi Temple in Mussoorie"
+      },
+      "position": 25
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "bikaner",
+  "name": "Bikaner",
+  "state": "Rajasthan",
+  "slug": "bikaner",
+  "tagline": "Desert outpost of camel breeding and forts",
+  "categories": [
+    "desert",
+    "fort",
+    "palace"
+  ],
+  "introduction": "Planning a trip to Bikaner? This travel guide to Bikaner covers the must visit places in Bikaner, the best places to visit in Bikaner, top tourist attractions in Bikaner, and exciting things to do in Bikaner.",
+  "metaTitle": "Best Places to Visit in Bikaner | Tourist Attractions in Bikaner - TrypInn",
+  "metaDescription": "Discover must visit places in Bikaner, best places to visit in Bikaner, and top tourist attractions in Bikaner. Plan your perfect trip with TrypInn travel guide to Bikaner.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+    "alt": "Bikaner travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "bikaner-khuri-sand-dunes",
+      "name": "Khuri Sand Dunes",
+      "slug": "khuri-sand-dunes",
+      "description": "Khuri Sand Dunes is one of the most iconic landmarks in Bikaner, drawing visitors with its timeless charm. This desert offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Khuri Sand Dunes promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Khuri Sand Dunes.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khuri Sand Dunes, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Khuri Sand Dunes in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Khuri Sand Dunes in Bikaner"
+      },
+      "position": 1
+    },
+    {
+      "id": "bikaner-murud-janjira",
+      "name": "Murud Janjira",
+      "slug": "murud-janjira",
+      "description": "A crown jewel of Bikaner, Murud Janjira captivates every traveler with enchanting beauty. No trip to Bikaner is complete without visiting Murud Janjira.",
+      "whyVisit": "A visit to Murud Janjira is essential for understanding Bikaner.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Murud Janjira, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Murud Janjira in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Murud Janjira in Bikaner"
+      },
+      "position": 2
+    },
+    {
+      "id": "bikaner-marble-palace",
+      "name": "Marble Palace",
+      "slug": "marble-palace",
+      "description": "Located in scenic Bikaner, Marble Palace offers an immersive experience into local culture. Exploring Marble Palace is one of the top things to do in Bikaner.",
+      "whyVisit": "A visit to Marble Palace is essential for understanding Bikaner.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Marble Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Marble Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Marble Palace in Bikaner"
+      },
+      "position": 3
+    },
+    {
+      "id": "bikaner-dholavira",
+      "name": "Dholavira",
+      "slug": "dholavira",
+      "description": "Located in scenic Bikaner, Dholavira offers an immersive experience into local culture. Exploring Dholavira is one of the top things to do in Bikaner.",
+      "whyVisit": "A visit to Dholavira is essential for understanding Bikaner.",
+      "bestTime": "Winter",
+      "duration": "Sunset",
+      "mapsSearch": "Dholavira, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Dholavira in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Dholavira in Bikaner"
+      },
+      "position": 4
+    },
+    {
+      "id": "bikaner-jaisalmer-fort",
+      "name": "Jaisalmer Fort",
+      "slug": "jaisalmer-fort",
+      "description": "Located in scenic Bikaner, Jaisalmer Fort offers an immersive experience into local culture. Exploring Jaisalmer Fort is one of the top things to do in Bikaner.",
+      "whyVisit": "Jaisalmer Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Jaisalmer Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaisalmer Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Jaisalmer Fort in Bikaner"
+      },
+      "position": 5
+    },
+    {
+      "id": "bikaner-fernhills-palace",
+      "name": "Fernhills Palace",
+      "slug": "fernhills-palace",
+      "description": "A crown jewel of Bikaner, Fernhills Palace captivates every traveler with enchanting beauty. No trip to Bikaner is complete without visiting Fernhills Palace.",
+      "whyVisit": "Fernhills Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Fernhills Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Fernhills Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Fernhills Palace in Bikaner"
+      },
+      "position": 6
+    },
+    {
+      "id": "bikaner-gadisar-lake",
+      "name": "Gadisar Lake",
+      "slug": "gadisar-lake",
+      "description": "A crown jewel of Bikaner, Gadisar Lake captivates every traveler with enchanting beauty. No trip to Bikaner is complete without visiting Gadisar Lake.",
+      "whyVisit": "Gadisar Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Winter",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gadisar Lake, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Gadisar Lake in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Gadisar Lake in Bikaner"
+      },
+      "position": 7
+    },
+    {
+      "id": "bikaner-jaigarh-fort",
+      "name": "Jaigarh Fort",
+      "slug": "jaigarh-fort",
+      "description": "Located in scenic Bikaner, Jaigarh Fort offers an immersive experience into local culture. Exploring Jaigarh Fort is one of the top things to do in Bikaner.",
+      "whyVisit": "Capture stunning photographs at Jaigarh Fort.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jaigarh Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Jaigarh Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Jaigarh Fort in Bikaner"
+      },
+      "position": 8
+    },
+    {
+      "id": "bikaner-monsoon-palace",
+      "name": "Monsoon Palace",
+      "slug": "monsoon-palace",
+      "description": "Monsoon Palace is one of the most iconic landmarks in Bikaner, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Monsoon Palace promises an unforgettable experience.",
+      "whyVisit": "Monsoon Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Monsoon Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Monsoon Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Monsoon Palace in Bikaner"
+      },
+      "position": 9
+    },
+    {
+      "id": "bikaner-camel-ride",
+      "name": "Camel Ride",
+      "slug": "camel-ride",
+      "description": "Camel Ride is a must-see desert in Bikaner, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bikaner.",
+      "whyVisit": "A visit to Camel Ride is essential for understanding Bikaner.",
+      "bestTime": "Night",
+      "duration": "Sunset",
+      "mapsSearch": "Camel Ride, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Camel Ride in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Camel Ride in Bikaner"
+      },
+      "position": 10
+    },
+    {
+      "id": "bikaner-tippu-summer-palace",
+      "name": "Tippu Summer Palace",
+      "slug": "tippu-summer-palace",
+      "description": "Located in scenic Bikaner, Tippu Summer Palace offers an immersive experience into local culture. Exploring Tippu Summer Palace is one of the top things to do in Bikaner.",
+      "whyVisit": "A visit to Tippu Summer Palace is essential for understanding Bikaner.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Tippu Summer Palace, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Tippu Summer Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Tippu Summer Palace in Bikaner"
+      },
+      "position": 11
+    },
+    {
+      "id": "bikaner-bolgatty-palace",
+      "name": "Bolgatty Palace",
+      "slug": "bolgatty-palace",
+      "description": "A crown jewel of Bikaner, Bolgatty Palace captivates every traveler with enchanting beauty. No trip to Bikaner is complete without visiting Bolgatty Palace.",
+      "whyVisit": "Bolgatty Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Bolgatty Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Bolgatty Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Bolgatty Palace in Bikaner"
+      },
+      "position": 12
+    },
+    {
+      "id": "bikaner-desert-wildlife",
+      "name": "Desert Wildlife",
+      "slug": "desert-wildlife",
+      "description": "Nestled in Bikaner, Desert Wildlife stands as a testament to architectural brilliance. This renowned desert attracts tourists who come to admire its stunning design. A visit to Desert Wildlife is among the best things to do in Bikaner.",
+      "whyVisit": "Capture stunning photographs at Desert Wildlife.",
+      "bestTime": "Winter",
+      "duration": "Sunset",
+      "mapsSearch": "Desert Wildlife, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Desert Wildlife in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Desert Wildlife in Bikaner"
+      },
+      "position": 13
+    },
+    {
+      "id": "bikaner-red-fort",
+      "name": "Red Fort",
+      "slug": "red-fort",
+      "description": "A crown jewel of Bikaner, Red Fort captivates every traveler with enchanting beauty. No trip to Bikaner is complete without visiting Red Fort.",
+      "whyVisit": "A visit to Red Fort is essential for understanding Bikaner.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Red Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Red Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Red Fort in Bikaner"
+      },
+      "position": 14
+    },
+    {
+      "id": "bikaner-mattancherry-palace",
+      "name": "Mattancherry Palace",
+      "slug": "mattancherry-palace",
+      "description": "Mattancherry Palace is a must-see palace in Bikaner, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bikaner.",
+      "whyVisit": "Capture stunning photographs at Mattancherry Palace.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mattancherry Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Mattancherry Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Mattancherry Palace in Bikaner"
+      },
+      "position": 15
+    },
+    {
+      "id": "bikaner-desert-safari",
+      "name": "Desert Safari",
+      "slug": "desert-safari",
+      "description": "Located in scenic Bikaner, Desert Safari offers an immersive experience into local culture. Exploring Desert Safari is one of the top things to do in Bikaner.",
+      "whyVisit": "Desert Safari offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Overnight",
+      "mapsSearch": "Desert Safari, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Desert Safari in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Desert Safari in Bikaner"
+      },
+      "position": 16
+    },
+    {
+      "id": "bikaner-st-angelo-fort",
+      "name": "St Angelo Fort",
+      "slug": "st-angelo-fort",
+      "description": "Nestled in Bikaner, St Angelo Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to St Angelo Fort is among the best things to do in Bikaner.",
+      "whyVisit": "St Angelo Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "St Angelo Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, St Angelo Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "St Angelo Fort in Bikaner"
+      },
+      "position": 17
+    },
+    {
+      "id": "bikaner-shiv-vilas-palace",
+      "name": "Shiv Vilas Palace",
+      "slug": "shiv-vilas-palace",
+      "description": "Nestled in Bikaner, Shiv Vilas Palace stands as a testament to architectural brilliance. This renowned palace attracts tourists who come to admire its stunning design. A visit to Shiv Vilas Palace is among the best things to do in Bikaner.",
+      "whyVisit": "Shiv Vilas Palace offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Shiv Vilas Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Shiv Vilas Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Shiv Vilas Palace in Bikaner"
+      },
+      "position": 18
+    },
+    {
+      "id": "bikaner-sunset-view-point",
+      "name": "Sunset View Point",
+      "slug": "sunset-view-point",
+      "description": "Sunset View Point is one of the most iconic landmarks in Bikaner, drawing visitors with its timeless charm. This desert offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sunset View Point promises an unforgettable experience.",
+      "whyVisit": "Sunset View Point offers a perfect blend of history and scenery.",
+      "bestTime": "Winter",
+      "duration": "Full day",
+      "mapsSearch": "Sunset View Point, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Sunset View Point in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Sunset View Point in Bikaner"
+      },
+      "position": 19
+    },
+    {
+      "id": "bikaner-kangra-fort",
+      "name": "Kangra Fort",
+      "slug": "kangra-fort",
+      "description": "Nestled in Bikaner, Kangra Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Kangra Fort is among the best things to do in Bikaner.",
+      "whyVisit": "Kangra Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Kangra Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kangra Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Kangra Fort in Bikaner"
+      },
+      "position": 20
+    },
+    {
+      "id": "bikaner-lalitha-mahal",
+      "name": "Lalitha Mahal",
+      "slug": "lalitha-mahal",
+      "description": "Lalitha Mahal is a must-see palace in Bikaner, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bikaner.",
+      "whyVisit": "A visit to Lalitha Mahal is essential for understanding Bikaner.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Lalitha Mahal, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lalitha Mahal in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Lalitha Mahal in Bikaner"
+      },
+      "position": 21
+    },
+    {
+      "id": "bikaner-jain-temples",
+      "name": "Jain Temples",
+      "slug": "jain-temples",
+      "description": "Jain Temples is one of the most iconic landmarks in Bikaner, drawing visitors with its timeless charm. This desert offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Jain Temples promises an unforgettable experience.",
+      "whyVisit": "Jain Temples offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Jain Temples, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Jain Temples in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Jain Temples in Bikaner"
+      },
+      "position": 22
+    },
+    {
+      "id": "bikaner-kumbhalgarh-fort",
+      "name": "Kumbhalgarh Fort",
+      "slug": "kumbhalgarh-fort",
+      "description": "Kumbhalgarh Fort is a must-see fort in Bikaner, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bikaner.",
+      "whyVisit": "Capture stunning photographs at Kumbhalgarh Fort.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Kumbhalgarh Fort, Bikaner",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kumbhalgarh Fort in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Kumbhalgarh Fort in Bikaner"
+      },
+      "position": 23
+    },
+    {
+      "id": "bikaner-lake-palace",
+      "name": "Lake Palace",
+      "slug": "lake-palace",
+      "description": "Lake Palace is a must-see palace in Bikaner, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Bikaner.",
+      "whyVisit": "A visit to Lake Palace is essential for understanding Bikaner.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Lake Palace, Bikaner",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Lake Palace in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Lake Palace in Bikaner"
+      },
+      "position": 24
+    },
+    {
+      "id": "bikaner-kuldhara-village",
+      "name": "Kuldhara Village",
+      "slug": "kuldhara-village",
+      "description": "Located in scenic Bikaner, Kuldhara Village offers an immersive experience into local culture. Exploring Kuldhara Village is one of the top things to do in Bikaner.",
+      "whyVisit": "Kuldhara Village stands out as one of the most rewarding experiences.",
+      "bestTime": "Night",
+      "duration": "Overnight",
+      "mapsSearch": "Kuldhara Village, Bikaner",
+      "category": "desert",
+      "imagePrompt": "Ultra realistic travel photography, Kuldhara Village in Bikaner, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kuldhara Village in Bikaner"
+      },
+      "position": 25
+    }
+  ]
+}

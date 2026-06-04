@@ -1,0 +1,447 @@
+{
+  "id": "coorg",
+  "name": "Coorg",
+  "state": "Karnataka",
+  "slug": "coorg",
+  "tagline": "Scotland of India with coffee estates and misty Western Ghats",
+  "categories": [
+    "hill_station",
+    "nature",
+    "adventure"
+  ],
+  "introduction": "Welcome to Coorg, where history meets beauty. This travel guide to Coorg highlights the must visit places in Coorg, best places to visit in Coorg, tourist attractions in Coorg, and things to do in Coorg.",
+  "metaTitle": "Best Places to Visit in Coorg | Tourist Attractions in Coorg - TrypInn",
+  "metaDescription": "Find the best places to visit in Coorg, must visit places in Coorg, and tourist attractions in Coorg. Plan your Coorg trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=1200&q=60",
+    "alt": "Coorg travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "coorg-abbey-falls",
+      "name": "Abbey Falls",
+      "slug": "abbey-falls",
+      "description": "Abbey Falls is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This waterfall offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Abbey Falls promises an unforgettable experience.",
+      "whyVisit": "A visit to Abbey Falls is essential for understanding Coorg.",
+      "bestTime": "Aug-Sep",
+      "duration": "Quick",
+      "mapsSearch": "Abbey Falls, Coorg",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Abbey Falls in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Abbey Falls in Coorg"
+      },
+      "position": 1
+    },
+    {
+      "id": "coorg-raja-s-seat",
+      "name": "Raja's Seat",
+      "slug": "raja-s-seat",
+      "description": "Raja's Seat is a must-see viewpoint in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Experience the unmatched beauty of Raja's Seat.",
+      "bestTime": "Clear days",
+      "duration": "30-60 min",
+      "mapsSearch": "Raja's Seat, Coorg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Raja's Seat in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Raja's Seat in Coorg"
+      },
+      "position": 2
+    },
+    {
+      "id": "coorg-dubare-elephant-camp",
+      "name": "Dubare Elephant Camp",
+      "slug": "dubare-elephant-camp",
+      "description": "Nestled in Coorg, Dubare Elephant Camp stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Dubare Elephant Camp is among the best things to do in Coorg.",
+      "whyVisit": "Capture stunning photographs at Dubare Elephant Camp.",
+      "bestTime": "Dry season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dubare Elephant Camp, Coorg",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Dubare Elephant Camp in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Dubare Elephant Camp in Coorg"
+      },
+      "position": 3
+    },
+    {
+      "id": "coorg-talakaveri",
+      "name": "Talakaveri",
+      "slug": "talakaveri",
+      "description": "A crown jewel of Coorg, Talakaveri captivates every traveler with enchanting beauty. No trip to Coorg is complete without visiting Talakaveri.",
+      "whyVisit": "A visit to Talakaveri is essential for understanding Coorg.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Talakaveri, Coorg",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Talakaveri in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Talakaveri in Coorg"
+      },
+      "position": 4
+    },
+    {
+      "id": "coorg-namdroling-monastery",
+      "name": "Namdroling Monastery",
+      "slug": "namdroling-monastery",
+      "description": "Namdroling Monastery is a must-see monastery in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Namdroling Monastery offers a perfect blend of history and scenery.",
+      "bestTime": "May-Sep",
+      "duration": "1-2 hours",
+      "mapsSearch": "Namdroling Monastery, Coorg",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Namdroling Monastery in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Namdroling Monastery in Coorg"
+      },
+      "position": 5
+    },
+    {
+      "id": "coorg-madikeri-fort",
+      "name": "Madikeri Fort",
+      "slug": "madikeri-fort",
+      "description": "Located in scenic Coorg, Madikeri Fort offers an immersive experience into local culture. Exploring Madikeri Fort is one of the top things to do in Coorg.",
+      "whyVisit": "Madikeri Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Madikeri Fort, Coorg",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Madikeri Fort in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Madikeri Fort in Coorg"
+      },
+      "position": 6
+    },
+    {
+      "id": "coorg-chelavara-falls",
+      "name": "Chelavara Falls",
+      "slug": "chelavara-falls",
+      "description": "Chelavara Falls is a must-see waterfall in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Chelavara Falls offers a perfect blend of history and scenery.",
+      "bestTime": "Aug-Sep",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chelavara Falls, Coorg",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Chelavara Falls in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Chelavara Falls in Coorg"
+      },
+      "position": 7
+    },
+    {
+      "id": "coorg-iruppu-falls",
+      "name": "Iruppu Falls",
+      "slug": "iruppu-falls",
+      "description": "Nestled in Coorg, Iruppu Falls stands as a testament to architectural brilliance. This renowned waterfall attracts tourists who come to admire its stunning design. A visit to Iruppu Falls is among the best things to do in Coorg.",
+      "whyVisit": "A visit to Iruppu Falls is essential for understanding Coorg.",
+      "bestTime": "Aug-Sep",
+      "duration": "2-3 hours",
+      "mapsSearch": "Iruppu Falls, Coorg",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Iruppu Falls in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Iruppu Falls in Coorg"
+      },
+      "position": 8
+    },
+    {
+      "id": "coorg-brahmagiri-peak",
+      "name": "Brahmagiri Peak",
+      "slug": "brahmagiri-peak",
+      "description": "Located in scenic Coorg, Brahmagiri Peak offers an immersive experience into local culture. Exploring Brahmagiri Peak is one of the top things to do in Coorg.",
+      "whyVisit": "Brahmagiri Peak offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Brahmagiri Peak, Coorg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Brahmagiri Peak in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Brahmagiri Peak in Coorg"
+      },
+      "position": 9
+    },
+    {
+      "id": "coorg-pushpagiri-wildlife-sanctuary",
+      "name": "Pushpagiri Wildlife Sanctuary",
+      "slug": "pushpagiri-wildlife-sanctuary",
+      "description": "A crown jewel of Coorg, Pushpagiri Wildlife Sanctuary captivates every traveler with enchanting beauty. No trip to Coorg is complete without visiting Pushpagiri Wildlife Sanctuary.",
+      "whyVisit": "Capture stunning photographs at Pushpagiri Wildlife Sanctuary.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Pushpagiri Wildlife Sanctuary, Coorg",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Pushpagiri Wildlife Sanctuary in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Pushpagiri Wildlife Sanctuary in Coorg"
+      },
+      "position": 10
+    },
+    {
+      "id": "coorg-cauvery-nisargadhama",
+      "name": "Cauvery Nisargadhama",
+      "slug": "cauvery-nisargadhama",
+      "description": "Cauvery Nisargadhama is a must-see nature in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Cauvery Nisargadhama offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Cauvery Nisargadhama, Coorg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Cauvery Nisargadhama in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Cauvery Nisargadhama in Coorg"
+      },
+      "position": 11
+    },
+    {
+      "id": "coorg-omkareshwara-temple",
+      "name": "Omkareshwara Temple",
+      "slug": "omkareshwara-temple",
+      "description": "A crown jewel of Coorg, Omkareshwara Temple captivates every traveler with enchanting beauty. No trip to Coorg is complete without visiting Omkareshwara Temple.",
+      "whyVisit": "Capture stunning photographs at Omkareshwara Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Omkareshwara Temple, Coorg",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Omkareshwara Temple in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Omkareshwara Temple in Coorg"
+      },
+      "position": 12
+    },
+    {
+      "id": "coorg-mandalpatti",
+      "name": "Mandalpatti",
+      "slug": "mandalpatti",
+      "description": "Located in scenic Coorg, Mandalpatti offers an immersive experience into local culture. Exploring Mandalpatti is one of the top things to do in Coorg.",
+      "whyVisit": "Experience the unmatched beauty of Mandalpatti.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Mandalpatti, Coorg",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Mandalpatti in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Mandalpatti in Coorg"
+      },
+      "position": 13
+    },
+    {
+      "id": "coorg-tadiandamol-peak",
+      "name": "Tadiandamol Peak",
+      "slug": "tadiandamol-peak",
+      "description": "Tadiandamol Peak is a must-see adventure in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Capture stunning photographs at Tadiandamol Peak.",
+      "bestTime": "Pre-monsoon",
+      "duration": "2-4 hours",
+      "mapsSearch": "Tadiandamol Peak, Coorg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Tadiandamol Peak in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Tadiandamol Peak in Coorg"
+      },
+      "position": 14
+    },
+    {
+      "id": "coorg-harangi-dam",
+      "name": "Harangi Dam",
+      "slug": "harangi-dam",
+      "description": "Harangi Dam is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Harangi Dam promises an unforgettable experience.",
+      "whyVisit": "A visit to Harangi Dam is essential for understanding Coorg.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Harangi Dam, Coorg",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Harangi Dam in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Harangi Dam in Coorg"
+      },
+      "position": 15
+    },
+    {
+      "id": "coorg-golden-temple-bylakuppe",
+      "name": "Golden Temple Bylakuppe",
+      "slug": "golden-temple-bylakuppe",
+      "description": "Golden Temple Bylakuppe is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This monastery offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Golden Temple Bylakuppe promises an unforgettable experience.",
+      "whyVisit": "Golden Temple Bylakuppe stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Golden Temple Bylakuppe, Coorg",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Golden Temple Bylakuppe in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Golden Temple Bylakuppe in Coorg"
+      },
+      "position": 16
+    },
+    {
+      "id": "coorg-coffee-plantations-tour",
+      "name": "Coffee Plantations Tour",
+      "slug": "coffee-plantations-tour",
+      "description": "Located in scenic Coorg, Coffee Plantations Tour offers an immersive experience into local culture. Exploring Coffee Plantations Tour is one of the top things to do in Coorg.",
+      "whyVisit": "Coffee Plantations Tour stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Coffee Plantations Tour, Coorg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Coffee Plantations Tour in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Coffee Plantations Tour in Coorg"
+      },
+      "position": 17
+    },
+    {
+      "id": "coorg-kotebetta",
+      "name": "Kotebetta",
+      "slug": "kotebetta",
+      "description": "Located in scenic Coorg, Kotebetta offers an immersive experience into local culture. Exploring Kotebetta is one of the top things to do in Coorg.",
+      "whyVisit": "Kotebetta offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Multi-day",
+      "mapsSearch": "Kotebetta, Coorg",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Kotebetta in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Kotebetta in Coorg"
+      },
+      "position": 18
+    },
+    {
+      "id": "coorg-nisargadhama-forest",
+      "name": "Nisargadhama Forest",
+      "slug": "nisargadhama-forest",
+      "description": "Located in scenic Coorg, Nisargadhama Forest offers an immersive experience into local culture. Exploring Nisargadhama Forest is one of the top things to do in Coorg.",
+      "whyVisit": "Nisargadhama Forest offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Nisargadhama Forest, Coorg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nisargadhama Forest in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Nisargadhama Forest in Coorg"
+      },
+      "position": 19
+    },
+    {
+      "id": "coorg-gaddige-tombs",
+      "name": "Gaddige Tombs",
+      "slug": "gaddige-tombs",
+      "description": "Gaddige Tombs is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gaddige Tombs promises an unforgettable experience.",
+      "whyVisit": "A visit to Gaddige Tombs is essential for understanding Coorg.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gaddige Tombs, Coorg",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Gaddige Tombs in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Gaddige Tombs in Coorg"
+      },
+      "position": 20
+    },
+    {
+      "id": "coorg-mallalli-falls",
+      "name": "Mallalli Falls",
+      "slug": "mallalli-falls",
+      "description": "Mallalli Falls is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This waterfall offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mallalli Falls promises an unforgettable experience.",
+      "whyVisit": "Mallalli Falls offers a perfect blend of history and scenery.",
+      "bestTime": "Post-monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Mallalli Falls, Coorg",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Mallalli Falls in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Mallalli Falls in Coorg"
+      },
+      "position": 21
+    },
+    {
+      "id": "coorg-nalknad-palace",
+      "name": "Nalknad Palace",
+      "slug": "nalknad-palace",
+      "description": "Located in scenic Coorg, Nalknad Palace offers an immersive experience into local culture. Exploring Nalknad Palace is one of the top things to do in Coorg.",
+      "whyVisit": "Nalknad Palace stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Nalknad Palace, Coorg",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Nalknad Palace in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Nalknad Palace in Coorg"
+      },
+      "position": 22
+    },
+    {
+      "id": "coorg-chelavara-elephant-camp",
+      "name": "Chelavara Elephant Camp",
+      "slug": "chelavara-elephant-camp",
+      "description": "Chelavara Elephant Camp is a must-see wildlife in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "A visit to Chelavara Elephant Camp is essential for understanding Coorg.",
+      "bestTime": "Dry season",
+      "duration": "Full day",
+      "mapsSearch": "Chelavara Elephant Camp, Coorg",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Chelavara Elephant Camp in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Chelavara Elephant Camp in Coorg"
+      },
+      "position": 23
+    },
+    {
+      "id": "coorg-honey-valley",
+      "name": "Honey Valley",
+      "slug": "honey-valley",
+      "description": "Honey Valley is a must-see nature in Coorg, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Coorg.",
+      "whyVisit": "Honey Valley stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Honey Valley, Coorg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Honey Valley in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Honey Valley in Coorg"
+      },
+      "position": 24
+    },
+    {
+      "id": "coorg-kakkabe",
+      "name": "Kakkabe",
+      "slug": "kakkabe",
+      "description": "Kakkabe is one of the most iconic landmarks in Coorg, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kakkabe promises an unforgettable experience.",
+      "whyVisit": "A visit to Kakkabe is essential for understanding Coorg.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Kakkabe, Coorg",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Kakkabe in Coorg, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kakkabe in Coorg"
+      },
+      "position": 25
+    }
+  ]
+}

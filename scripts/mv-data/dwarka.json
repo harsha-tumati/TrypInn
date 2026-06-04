@@ -1,0 +1,160 @@
+{
+  "slug": "dwarka",
+  "name": "Dwarka",
+  "state": "Gujarat",
+  "tagline": "Sacred city of Krishna where sea meets eternal devotion",
+  "categories": ["pilgrimage", "spiritual", "heritage"],
+  "highlights": ["dwarkadhish temple one of four sacred dhams", "submerged ancient city beneath arabian sea"],
+  "attractions": [
+    {
+      "name": "Dwarkadhish Temple (Jagat Mandir)",
+      "category": "temple",
+      "description": "The supreme Vaishnava pilgrimage site and one of the four Char Dham, the Dwarkadhish Temple rises 78 metres above the Gomati Creek on 72 pillars carved from limestone. The five-storey shikhara topped by a 84-foot flag visible from the sea has greeted pilgrims for over 2,500 years in its current form (rebuilt 16th century). Morning and evening mangala aarti with conch shells and cymbals is a transcendent experience.",
+      "whyVisit": "One of Hinduism's four holiest sites — the divine city of Lord Krishna himself.",
+      "bestTime": "Dawn aarti (5-6 AM), October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dwarkadhish Temple Dwarka Gujarat",
+      "imageQuery": "Dwarkadhish Temple Dwarka Gujarat shikhara"
+    },
+    {
+      "name": "Bet Dwarka (Shankhodhar Island)",
+      "category": "island",
+      "description": "A small island 3 km offshore accessible by ferry from Okha, Bet Dwarka is believed to be the actual residential palace of Krishna as distinct from the administrative Dwarka. The Dwarkadhish shrine here contains an ancient image considered Krishna's personal deity. The ferry crossing past fishing boats, and the island's quieter tempo compared to mainland Dwarka, gives it a distinct character.",
+      "whyVisit": "Krishna's mythological home island — a separate, serene pilgrimage across the water.",
+      "bestTime": "Early morning, October to March",
+      "duration": "3-4 hours including ferry",
+      "mapsSearch": "Bet Dwarka island Okha Gujarat ferry",
+      "imageQuery": "Bet Dwarka island Gujarat ferry Krishna"
+    },
+    {
+      "name": "Nageshwar Jyotirlinga Temple",
+      "category": "temple",
+      "description": "One of the twelve sacred Jyotirlingas of Lord Shiva, the Nageshwar temple stands 17 km from Dwarka surrounded by forested hillocks. The original ancient shrine has been expanded into a large modern complex dominated by a 125-foot seated Shiva statue visible for kilometres. The linga in the inner sanctum is believed to grant freedom from all poisons. It lies on the mandatory circuit for Dwarka pilgrims.",
+      "whyVisit": "Essential Jyotirlinga pilgrimage just 17 km from Dwarka on the same circuit.",
+      "bestTime": "Early morning puja, October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nageshwar Jyotirlinga Temple Dwarka Gujarat",
+      "imageQuery": "Nageshwar Jyotirlinga Temple Dwarka Shiva"
+    },
+    {
+      "name": "Gomti Ghat and Sangam",
+      "category": "religious",
+      "description": "The sacred confluence of the Gomti River with the Arabian Sea forms Dwarka's most spiritually charged spot. Stone ghats descend to the water where pilgrims take the mandatory holy dip before temple darshan. The Sudarshana Chakra column, Panchakup (five ancient wells), and Charan Tirtha — stone impressions believed to be Krishna's footprints — line the ghat. Evening aarti at the ghat with floating diyas is deeply atmospheric.",
+      "whyVisit": "Sacred confluence where pilgrims begin their Dwarka journey with ritual bathing.",
+      "bestTime": "Sunrise and sunset aarti",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gomti Ghat Dwarka Gujarat river confluence",
+      "imageQuery": "Gomti Ghat Dwarka Gujarat aarti river"
+    },
+    {
+      "name": "Dwarka Lighthouse",
+      "category": "viewpoint",
+      "description": "The 43-metre lighthouse at Dwarka's western shore offers panoramic views of the Arabian Sea, the Dwarkadhish temple spire, and the Gomti Creek from its observation platform. Operated by the Directorate General of Lighthouses, it is open to visitors in the afternoon. The surrounding rocky headland with crashing waves provides spectacular coastal photography, and dolphins are occasionally spotted offshore.",
+      "whyVisit": "Best panoramic view of the Dwarkadhish temple spire against the Arabian Sea.",
+      "bestTime": "Afternoon, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Dwarka Lighthouse Gujarat Arabian Sea",
+      "imageQuery": "Dwarka Lighthouse Gujarat sea view temple"
+    },
+    {
+      "name": "Rukmini Devi Temple",
+      "category": "temple",
+      "description": "A 12th-century temple dedicated to Rukmini, Krishna's principal queen, located 2 km outside Dwarka city. The intricate carvings on the exterior walls — celestial beings, musicians, and floral friezes — are considered among the finest Solanki-period temple sculpture in Gujarat. The separation from the Dwarkadhish complex reflects the mythological episode where Durvasa's curse forced Rukmini to reside apart from Krishna.",
+      "whyVisit": "Exquisite 12th-century Solanki carving in an undervisited temple with mythological depth.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Rukmini Devi Temple Dwarka Gujarat",
+      "imageQuery": "Rukmini Devi Temple Dwarka Gujarat carving"
+    },
+    {
+      "name": "Submerged City of Dwarka (Marine Archaeology)",
+      "category": "heritage",
+      "description": "Since the 1980s, the National Institute of Oceanography has uncovered stone walls, anchors, pottery, and what appear to be city structures extending 40 metres underwater off Dwarka's shore. Dated as far back as 9,000 years by some researchers, these finds correlate with ancient texts describing the flooding of Krishna's city. Glass-bottom boat tours offer glimpses; certified divers can arrange guided underwater explorations.",
+      "whyVisit": "The legendary sunken city of Krishna may actually exist — glass-bottom boats reveal the ruins.",
+      "bestTime": "October to March (clear water)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Submerged Dwarka underwater ruins Gujarat marine archaeology",
+      "imageQuery": "underwater Dwarka ruins Gujarat marine archaeology"
+    },
+    {
+      "name": "Shivrajpur Beach",
+      "category": "beach",
+      "description": "Gujarat's first Blue Flag certified beach, Shivrajpur lies 12 km north of Dwarka with shallow turquoise waters ideal for swimming and snorkelling. The beach is backed by casuarina trees and has minimal development. Coral patches close to shore shelter colourful reef fish, and the rocky northern end reveals tidal pools at low tide. Its Blue Flag certification guarantees clean water and managed facilities.",
+      "whyVisit": "Gujarat's first Blue Flag beach — clean, safe swimming and snorkelling near Dwarka.",
+      "bestTime": "October to March",
+      "duration": "2-4 hours",
+      "mapsSearch": "Shivrajpur Beach Dwarka Gujarat Blue Flag",
+      "imageQuery": "Shivrajpur Beach Dwarka Gujarat turquoise"
+    },
+    {
+      "name": "Dwarka Beach (Chakratirtha)",
+      "category": "beach",
+      "description": "The main beach at Dwarka stretches along the Arabian Sea at the base of the temple complex, where the Gomti meets the sea. Though not a swimming beach due to currents, it is one of India's most spiritually electric shorelines — pilgrims arriving at dawn for ritual bathing, temple flags visible above the skyline, and the crash of waves against ancient stone ghats creates an experience unique to Dwarka.",
+      "whyVisit": "Sacred beach at a Char Dham — the spiritual atmosphere is unlike any other in India.",
+      "bestTime": "Sunrise",
+      "duration": "1 hour",
+      "mapsSearch": "Dwarka beach Chakratirtha Gujarat",
+      "imageQuery": "Dwarka beach Gujarat pilgrims sunrise temple"
+    },
+    {
+      "name": "Gopi Talav",
+      "category": "lake",
+      "description": "A sacred freshwater lake 20 km from Dwarka where yellowish 'gopichandana' clay — used by Vaishnavas to apply tilak — is collected. The lake is associated with the gopis' grief after Krishna left Vrindavan; legend says they melted into this yellow clay from sorrow. The serene, tree-lined tank with a small temple on its bank creates an atmosphere of quiet contemplation distinct from Dwarka's busier sites.",
+      "whyVisit": "Sacred source of gopichandana clay — a quietly beautiful lake with deep mythological resonance.",
+      "bestTime": "Morning, October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "Gopi Talav Lake Dwarka Gujarat",
+      "imageQuery": "Gopi Talav lake Dwarka Gujarat sacred"
+    },
+    {
+      "name": "Okha Port and Marine National Park",
+      "category": "nature",
+      "description": "The small fishing port of Okha, 30 km from Dwarka, is the gateway to the Marine National Park of Gulf of Kutch — India's first marine protected area covering 163 sq km of coral reefs, mangroves, and seagrass beds. Glass-bottom boat and snorkelling tours reveal branching corals, sea turtles, puffer fish, and clownfish. The park protects one of India's most biodiverse coastal marine ecosystems.",
+      "whyVisit": "India's first marine national park with coral reefs and sea turtles near Dwarka.",
+      "bestTime": "October to March (calm seas)",
+      "duration": "Half day",
+      "mapsSearch": "Marine National Park Okha Gulf of Kutch Gujarat",
+      "imageQuery": "Marine National Park Gulf Kutch coral reef Gujarat"
+    },
+    {
+      "name": "Mithapur Salt Works and Coast",
+      "category": "nature",
+      "description": "The Tata Chemicals salt works at Mithapur, 22 km from Dwarka, creates a surreal industrial-natural landscape where vast salt evaporation pans turn pink, red, and white depending on the season due to halophyte microalgae. The adjacent coast with its rocky intertidal zone is excellent for birdwatching — flamingos, spoonbills, and Eurasian oystercatchers feed in the salt pan edges during winter.",
+      "whyVisit": "Salt pans that turn vivid pink and red — spectacular coastal birdwatching nearby.",
+      "bestTime": "November to February",
+      "duration": "2 hours",
+      "mapsSearch": "Mithapur salt works coast Dwarka Gujarat",
+      "imageQuery": "Mithapur salt pans pink Gujarat coast"
+    },
+    {
+      "name": "Arambhada Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "A small but ecologically rich sanctuary 10 km from Dwarka covering 34 sq km of dry deciduous scrub and grassland that provides habitat for chinkara gazelle, wolf, Indian fox, and a rich community of migratory and resident birds. The sanctuary is rarely visited and offers the chance for genuinely solitary wildlife encounters in a landscape characteristic of Saurashtra's western coast.",
+      "whyVisit": "Chinkara and wolves within 10 km of Dwarka — completely off the pilgrimage tourist trail.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Arambhada Wildlife Sanctuary Dwarka Gujarat",
+      "imageQuery": "Arambhada Wildlife Sanctuary Dwarka chinkara"
+    },
+    {
+      "name": "Samadhishwara Mahadev Temple, Dwarka",
+      "category": "temple",
+      "description": "An ancient Shaiva temple integrated into the foundation area of the Dwarkadhish complex, believed to mark the spot where Maharishi Durvasa performed penance. The temple's modest scale and weathered stonework contrast with the grand Vaishnava temple above, and it receives few visitors despite its antiquity. Its carvings show distinct Solanki influence and the lingam in the sanctum is claimed to be naturally formed (swayambhu).",
+      "whyVisit": "Ancient swayambhu Shiva shrine hidden within Dwarka's main temple precinct — rarely visited.",
+      "bestTime": "Morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Samadhishwara Mahadev Temple Dwarka Gujarat",
+      "imageQuery": "Samadhishwara Temple Dwarka ancient Shiva"
+    },
+    {
+      "name": "Pindara Village (Fishing Community)",
+      "category": "heritage",
+      "description": "A traditional Kharwa fishing community village near Dwarka where seasonal workers still build and repair wooden fishing dhows using techniques passed down for generations. Sunrise at the beach sees the entire fleet setting out simultaneously — a spectacular spectacle. The women of the village wear distinctive traditional costumes with heavy silver jewellery, and small fish-drying operations line the foreshore.",
+      "whyVisit": "Unfiltered Saurashtra fishing village life — wooden dhows and traditional jewellery unchanged.",
+      "bestTime": "Sunrise, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pindara fishing village Dwarka Gujarat coast",
+      "imageQuery": "Kharwa fishing village Dwarka Gujarat dhow"
+    }
+  ]
+}

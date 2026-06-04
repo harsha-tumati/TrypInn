@@ -1,0 +1,262 @@
+{
+  "slug": "amritsar",
+  "name": "Amritsar",
+  "state": "Punjab",
+  "tagline": "Where gold meets devotion in the heart of Punjab",
+  "categories": ["spiritual", "heritage", "pilgrimage"],
+  "highlights": ["home to the iconic golden temple", "gateway to india-pakistan wagah border"],
+  "attractions": [
+    {
+      "name": "Harmandir Sahib (Golden Temple)",
+      "category": "religious",
+      "description": "The holiest shrine in Sikhism, the Golden Temple sits at the center of a sacred pool called Amrit Sarovar. Its upper floors are clad in 750 kg of pure gold, reflecting brilliantly on the water day and night. Hundreds of thousands of pilgrims visit daily, and the free langar (community kitchen) serves over 100,000 meals every single day regardless of faith.",
+      "whyVisit": "One of the most spiritually charged and visually stunning sites in all of Asia.",
+      "bestTime": "Pre-dawn (4–6 AM) for the ethereal palki procession, or post-sunset for illuminated reflections",
+      "duration": "3-4 hours",
+      "mapsSearch": "Golden Temple Amritsar Punjab",
+      "imageQuery": "Golden Temple Amritsar reflection night"
+    },
+    {
+      "name": "Wagah Border Ceremony",
+      "category": "heritage",
+      "description": "Every evening at sunset, the India-Pakistan Wagah border comes alive with the Beating Retreat ceremony — a high-energy parade of synchronised drill by BSF and Pakistani Rangers. Soldiers perform gravity-defying high kicks and sharp maneuvers before the flags of both nations are lowered simultaneously. The atmosphere is electric, with thousands of spectators cheering from tiered stands on both sides.",
+      "whyVisit": "A unique geopolitical spectacle that blends nationalism, pageantry and rare cross-border proximity.",
+      "bestTime": "Late afternoon, 30 minutes before sunset (timing varies by season)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wagah Border Ceremony Amritsar",
+      "imageQuery": "Wagah Border ceremony soldiers India Pakistan"
+    },
+    {
+      "name": "Jallianwala Bagh",
+      "category": "heritage",
+      "description": "This walled public garden is the site of the 1919 Jallianwala Bagh massacre, where British troops under General Dyer opened fire on a peaceful gathering, killing hundreds. Bullet marks are still visible on the walls, and a narrow entrance passage recreates the terrifying trap. A flame burns perpetually at the martyrs' memorial, and a gallery documents the event with photographs and accounts.",
+      "whyVisit": "A sobering and essential memorial to one of colonial India's darkest chapters.",
+      "bestTime": "Morning or evening to avoid midday heat",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jallianwala Bagh Amritsar Punjab",
+      "imageQuery": "Jallianwala Bagh memorial Amritsar garden"
+    },
+    {
+      "name": "Partition Museum",
+      "category": "museum",
+      "description": "Housed in the historic Town Hall building, the Partition Museum is India's first museum dedicated to the 1947 Partition of British India. Over 14 galleries display personal testimonies, photographs, artefacts and maps documenting the largest mass migration in human history. Audio-visual installations and oral history booths make the exhibits viscerally immediate and deeply moving.",
+      "whyVisit": "An invaluable record of trauma and resilience that reshaped an entire subcontinent.",
+      "bestTime": "Weekday mornings for quieter galleries",
+      "duration": "2-3 hours",
+      "mapsSearch": "Partition Museum Town Hall Amritsar",
+      "imageQuery": "Partition Museum Amritsar Town Hall interior"
+    },
+    {
+      "name": "Durgiana Temple",
+      "category": "temple",
+      "description": "Often called the Silver Temple, the Durgiana Mandir is a Hindu temple dedicated to Goddess Durga, built in the 16th century and later renovated in a style deliberately echoing the Golden Temple — set within a sacred tank with a silver-adorned sanctum. The temple complex also houses shrines to Lakshmi-Narayan and is especially vibrant during Navratri and Janmashtami.",
+      "whyVisit": "A serene Hindu counterpart to the Golden Temple, just minutes away.",
+      "bestTime": "Early morning puja or Navratri festival nights",
+      "duration": "1-2 hours",
+      "mapsSearch": "Durgiana Temple Amritsar Punjab",
+      "imageQuery": "Durgiana Temple silver Amritsar lake"
+    },
+    {
+      "name": "Gobindgarh Fort",
+      "category": "fort",
+      "description": "An 18th-century fort at the heart of Amritsar, Gobindgarh was a strategic stronghold for the Sikh Empire under Maharaja Ranjit Singh and later held by the British. Restored and reopened as a heritage complex, it now hosts a museum of Sikh artifacts, a wax museum, laser and light shows, and live cultural performances that recreate Punjabi history with theatrical flair.",
+      "whyVisit": "The best single venue to immerse yourself in Sikh empire history and Punjabi culture.",
+      "bestTime": "Evening for the sound-and-light show",
+      "duration": "3-4 hours",
+      "mapsSearch": "Gobindgarh Fort Amritsar Punjab",
+      "imageQuery": "Gobindgarh Fort Amritsar heritage night show"
+    },
+    {
+      "name": "Maharaja Ranjit Singh Museum",
+      "parameter": "museum",
+      "name": "Maharaja Ranjit Singh Museum",
+      "category": "museum",
+      "description": "Set within Ram Bagh, one of the summer palaces of Maharaja Ranjit Singh, this museum displays an exceptional collection of armour, weapons, coins, miniature paintings and royal portraits from the Sikh Empire. The building itself — a graceful colonial-era structure surrounded by manicured gardens — is a heritage delight. The cannons and swords of the Lion of Punjab are the standout exhibits.",
+      "whyVisit": "Essential for understanding the brilliant military and cultural legacy of the Sikh Empire.",
+      "bestTime": "Morning on a weekday",
+      "duration": "1-2 hours",
+      "mapsSearch": "Maharaja Ranjit Singh Museum Ram Bagh Amritsar",
+      "imageQuery": "Maharaja Ranjit Singh Museum Ram Bagh Amritsar"
+    },
+    {
+      "name": "Akal Takht",
+      "category": "religious",
+      "description": "Located directly opposite the Golden Temple, Akal Takht is the highest temporal seat of authority in Sikhism, established in 1606 by Guru Hargobind Sahib. It is here that the Jathedar (high priest) issues religious edicts. The five-storey building is adorned with gold and marble, and houses historic weapons and gifts presented to Sikh Gurus. Witnessing the daily ardas ceremony here is profoundly moving.",
+      "whyVisit": "The supreme spiritual and political center of the Sikh faith, inseparable from the Golden Temple complex.",
+      "bestTime": "During morning or evening ardas prayers",
+      "duration": "30-60 minutes",
+      "mapsSearch": "Akal Takht Amritsar Punjab",
+      "imageQuery": "Akal Takht Golden Temple complex Amritsar"
+    },
+    {
+      "name": "Hall Bazaar",
+      "category": "market",
+      "description": "Amritsar's main shopping artery, Hall Bazaar is a bustling thoroughfare lined with shops selling Phulkari embroidery, Patiala salwars, jutis (mojri shoes), Amritsari papads, walnuts, dried fruits and silver jewellery. The street food stalls interspersed throughout the market serve lassi, kulcha-chole and jalebi-fafda. The old architecture of the lane adds historic character to the shopping experience.",
+      "whyVisit": "The most authentic place to shop for traditional Punjabi crafts, textiles and street food.",
+      "bestTime": "Late afternoon to evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hall Bazaar Amritsar Punjab",
+      "imageQuery": "Hall Bazaar Amritsar shopping street Punjab"
+    },
+    {
+      "name": "Langar at Golden Temple",
+      "category": "religious",
+      "description": "The Golden Temple's langar is the world's largest free kitchen, operated entirely by sevadars (volunteers). It runs 24 hours a day and feeds over 100,000 people daily, serving simple vegetarian food — dal, sabzi, chapati and kheer — on steel plates. Sitting cross-legged on the floor alongside pilgrims, tourists and the homeless is a humbling exercise in the Sikh principle of equality.",
+      "whyVisit": "Participating in langar seva is one of the most genuinely egalitarian experiences available anywhere in the world.",
+      "bestTime": "Lunch or dinner hours (noon–2 PM, 7–9 PM)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Golden Temple Langar Hall Amritsar",
+      "imageQuery": "Golden Temple langar community kitchen volunteers"
+    },
+    {
+      "name": "Amritsari Kulcha Trail (Kesar Da Dhaba)",
+      "category": "market",
+      "description": "Amritsar's culinary identity is inseparable from its stuffed kulchas, cooked in clay tandoors and served with white-butter-slicked chole and lassi. Kesar Da Dhaba, operating since 1916 on Shastri Market, is the most celebrated address for authentic Amritsari dal makhani and paneer. Lawrence Road and the lanes near the Golden Temple cluster dozens of legendary kulcha-chole joints.",
+      "whyVisit": "Amritsar is the undisputed kulcha capital of the world — the food alone justifies the trip.",
+      "bestTime": "Breakfast (8–11 AM) for the freshest kulchas",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kesar Da Dhaba Amritsar Punjab",
+      "imageQuery": "Amritsari kulcha chole street food Punjab"
+    },
+    {
+      "name": "Sri Harmandir Sahib Sarovar (Holy Pool)",
+      "category": "religious",
+      "description": "The Amrit Sarovar — Pool of Nectar — is the sacred rectangular tank surrounding the Golden Temple. Guru Ram Das began its excavation in 1577 and the city of Amritsar takes its name from it. Devotees perform ishnaan (ritual bathing) in the pool, believed to cure illnesses and cleanse sins. The white marble parikrama (circumambulatory pathway) encircling it is an act of devotion in itself.",
+      "whyVisit": "The spiritual nucleus of the entire Golden Temple complex and of Sikh faith worldwide.",
+      "bestTime": "Pre-dawn for the most atmospheric and uncrowded bathing",
+      "duration": "1 hour",
+      "mapsSearch": "Amrit Sarovar Golden Temple Amritsar",
+      "imageQuery": "Amrit Sarovar holy pool Golden Temple pilgrims"
+    },
+    {
+      "name": "Tarn Taran Sahib Gurudwara",
+      "category": "religious",
+      "description": "Located 22 km from Amritsar, Tarn Taran Sahib is one of the most important Sikh shrines outside of Amritsar, founded by Guru Arjan Dev in 1590. It features the largest sarovar (holy tank) in the world for a Sikh gurudwara, measuring 166 metres by 154 metres. The gurudwara is especially significant for its tradition of healing the sick, and draws enormous crowds on Sundays.",
+      "whyVisit": "An immersive Sikh pilgrimage experience away from the Golden Temple crowds, with the largest gurudwara sarovar in existence.",
+      "bestTime": "Sunday for the largest congregations; early morning otherwise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tarn Taran Sahib Gurudwara Punjab",
+      "imageQuery": "Tarn Taran Sahib Gurudwara sarovar Punjab"
+    },
+    {
+      "name": "Central Sikh Museum",
+      "category": "museum",
+      "description": "Situated within the Golden Temple complex, this museum on the first floor of the main gateway houses a remarkable collection of Sikh paintings, relics, manuscripts and historical artefacts spanning five centuries. Life-size portraits of the ten Sikh Gurus and graphic paintings depicting the martyrdom of Sikh heroes are among the most striking exhibits. Entry is free and the collection is deeply informative.",
+      "whyVisit": "The most accessible introduction to Sikh history and the lives of the Gurus.",
+      "bestTime": "After the morning darshan at the Golden Temple",
+      "duration": "1 hour",
+      "mapsSearch": "Central Sikh Museum Golden Temple Amritsar",
+      "imageQuery": "Central Sikh Museum paintings Gurus Amritsar"
+    },
+    {
+      "name": "Mata Lal Devi Temple",
+      "category": "temple",
+      "description": "An extraordinary subterranean Hindu temple dedicated to Mata Lal Devi, this labyrinthine cave shrine requires devotees to crawl through narrow passages, wade through shallow water and navigate small chambers to reach the inner sanctum. The temple is considered especially auspicious for women seeking fertility blessings. The experience is an unusual mix of spiritual devotion and playful adventure through tight rock-like tunnels.",
+      "whyVisit": "One of the most unusual temple experiences in Punjab — a crawl-through cave shrine unlike anything else.",
+      "bestTime": "Early morning when passages are less crowded",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mata Lal Devi Temple Amritsar Punjab",
+      "imageQuery": "Mata Lal Devi Temple cave shrine Amritsar"
+    },
+    {
+      "name": "Khalsa College",
+      "category": "heritage",
+      "description": "Established in 1892, Khalsa College is an architectural masterpiece blending Sikh and colonial Indo-Saracenic styles. Its main building — with sandstone arches, ornate domes, and colonnaded verandas — is considered one of the finest examples of early 20th-century institutional architecture in India. The expansive campus with manicured lawns is a favourite spot for photography. The college is still a functioning institution of higher learning.",
+      "whyVisit": "A stunning architectural gem that rarely features in tourist itineraries despite being one of India's most beautiful campuses.",
+      "bestTime": "Morning for the best light on the sandstone facade",
+      "duration": "1 hour",
+      "mapsSearch": "Khalsa College Amritsar Punjab",
+      "imageQuery": "Khalsa College architecture Amritsar sandstone building"
+    },
+    {
+      "name": "Pul Kanjari Heritage Complex",
+      "category": "heritage",
+      "description": "Located on the Amritsar-Lahore highway near the border town of Attari, Pul Kanjari is a 19th-century complex built by Maharaja Ranjit Singh as a rest-stop for his army. It features a gurudwara, a baoli (step-well), a sarovar, a temple and a dharamshala — all built together in a distinctive Sikh Empire architectural style. The site is off the usual tourist trail but is being restored as a heritage monument.",
+      "whyVisit": "A rare surviving ensemble of Sikh Empire architecture in a bucolic border setting, virtually crowd-free.",
+      "bestTime": "Morning or late afternoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pul Kanjari Heritage Complex Attari Amritsar",
+      "imageQuery": "Pul Kanjari heritage complex Sikh architecture Punjab"
+    },
+    {
+      "name": "Company Bagh (Lawrence Gardens)",
+      "category": "garden",
+      "description": "One of Amritsar's oldest public parks, Company Bagh was laid out during the British period and retains the Ram Bagh summer palace at its core. The gardens feature old trees, a jogging track, a zoo and the summer palace building that now houses the Maharaja Ranjit Singh Museum. Locals gather here at dawn and dusk for morning walks, yoga and leisurely evening strolls.",
+      "whyVisit": "A green oasis at the city's center combining a historic palace, museum and garden park in one space.",
+      "bestTime": "Early morning for a peaceful walk",
+      "duration": "1-2 hours",
+      "mapsSearch": "Company Bagh Ram Bagh Amritsar Punjab",
+      "imageQuery": "Ram Bagh garden Amritsar historic park Punjab"
+    },
+    {
+      "name": "Gurdwara Baba Atal Rai",
+      "category": "religious",
+      "description": "A nine-storey octagonal tower gurudwara built in memory of Baba Atal Rai, the young son of Guru Hargobind Sahib who gave up his life at age nine after performing a miracle. Each floor is adorned with frescoes depicting scenes from Guru Nanak Dev's life, making it a remarkable example of Sikh devotional painting. The tower is one of the tallest pre-colonial structures in Amritsar and visible from across the city.",
+      "whyVisit": "The most extraordinary example of Sikh fresco art in India, overlooked by most tourists focused on the Golden Temple.",
+      "bestTime": "Morning when natural light illuminates the frescoes",
+      "duration": "1 hour",
+      "mapsSearch": "Gurdwara Baba Atal Rai Amritsar Punjab",
+      "imageQuery": "Gurdwara Baba Atal Rai tower frescoes Amritsar"
+    },
+    {
+      "name": "Hussainiwala National Martyrs Memorial",
+      "category": "heritage",
+      "description": "Located at the Indo-Pakistan border along the Sutlej River, 35 km from Amritsar near Firozpur, this memorial marks the cremation site of freedom fighters Bhagat Singh, Rajguru and Sukhdev, hanged by the British in 1931. An eternal flame burns at the site, and a museum documents their revolutionary lives. The border retreat ceremony held here every evening is smaller and more intimate than Wagah.",
+      "whyVisit": "A deeply moving pilgrimage to the exact site where three of India's most celebrated revolutionaries were cremated.",
+      "bestTime": "Late afternoon for the border ceremony",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hussainiwala National Martyrs Memorial Firozpur Punjab",
+      "imageQuery": "Hussainiwala martyrs memorial Bhagat Singh Punjab"
+    },
+    {
+      "name": "Lohgarh Fort (Amritsar)",
+      "category": "fort",
+      "description": "Built by Guru Hargobind Sahib in the 17th century as a symbol of temporal Sikh sovereignty, Lohgarh Fort was one of the earliest fortifications built by the Sikh community. Though much of the original structure has disappeared over centuries, the site remains historically significant as the seat of Sikh military power before Gobindgarh Fort was built. A small gurudwara marks the original location within the old city.",
+      "whyVisit": "A historically overlooked Sikh heritage site that predates most well-known Amritsar monuments.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Lohgarh Fort Amritsar old city Punjab",
+      "imageQuery": "Lohgarh Fort Amritsar old city Sikh heritage"
+    },
+    {
+      "name": "Gurdwara Guru Ka Mahal",
+      "category": "religious",
+      "description": "Believed to be the original residence of Guru Arjan Dev, who compiled the Adi Granth (the Sikh scripture), Gurdwara Guru Ka Mahal is one of the oldest and most personally significant Sikh shrines in Amritsar. It is located in the densely woven lanes of the old city, far from the tourist trail. The intimate, quiet atmosphere of this gurudwara is in striking contrast to the busy Golden Temple complex nearby.",
+      "whyVisit": "One of the oldest and most historically intimate Sikh shrines in Amritsar, virtually unknown to outside visitors.",
+      "bestTime": "Early morning",
+      "duration": "30-60 minutes",
+      "mapsSearch": "Gurdwara Guru Ka Mahal Amritsar old city",
+      "imageQuery": "Gurdwara Guru Ka Mahal Amritsar historic shrine"
+    },
+    {
+      "name": "Shri Durgiana Temple Night Aarti",
+      "category": "religious",
+      "description": "The evening aarti ceremony at Durgiana Temple, held after sunset, involves priests waving oil lamps in rhythmic patterns before the deity while devotional music fills the sarovar courtyard. The reflection of the illuminated temple in the holy tank creates an atmosphere strikingly reminiscent of the Golden Temple at night. The ceremony is far less crowded than equivalent rituals at larger temples elsewhere in India.",
+      "whyVisit": "A hauntingly beautiful devotional ceremony in a setting that rivals the Golden Temple in atmospheric impact.",
+      "bestTime": "Dusk, around 7–8 PM",
+      "duration": "1 hour",
+      "mapsSearch": "Durgiana Temple evening aarti Amritsar",
+      "imageQuery": "Durgiana Temple aarti night reflection Amritsar"
+    },
+    {
+      "name": "Amritsar Walled City Lanes (Katra Jaimal Singh)",
+      "category": "heritage",
+      "description": "The medieval inner city of Amritsar, framed by the old city gates, is a labyrinth of narrow havelis, busy textile markets, and century-old sweets shops. Katra Jaimal Singh is the most atmospheric stretch — a wholesale fabric and saree market housed in crumbling but ornate buildings dating to the 19th century. The architecture, street life and smells of fresh bread and incense make it one of the most evocative urban spaces in northern India.",
+      "whyVisit": "A time-warp walk through living Punjabi urban heritage that few tourists explore beyond the surface.",
+      "bestTime": "Morning on weekdays when the market is in full swing",
+      "duration": "2-3 hours",
+      "mapsSearch": "Katra Jaimal Singh market Amritsar old city",
+      "imageQuery": "Amritsar old city walled lanes havelis Punjab"
+    },
+    {
+      "name": "Sri Guru Ram Dass Jee International Airport Viewing Gallery",
+      "category": "viewpoint",
+      "description": "Hidden gem: the terrace of the departure terminal offers a surprising elevated view of approaching aircraft against the flat Punjab landscape, and on exceptionally clear winter days, a distant outline of the Shivalik Hills. The rooftop chai stalls run by airport staff serve strong doodh-patti to early morning travellers and aviation enthusiasts who visit specifically for the unobstructed runway views.",
+      "whyVisit": "A quirky local favourite — a rooftop chai-and-planes experience that genuine Amritsar regulars swear by.",
+      "bestTime": "Early morning in winter for clearest visibility",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Sri Guru Ram Dass Jee International Airport Amritsar",
+      "imageQuery": "Amritsar airport terrace aircraft Punjab morning"
+    }
+  ]
+}

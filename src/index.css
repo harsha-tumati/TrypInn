@@ -4848,6 +4848,19 @@ html, body {
     max-width: 800px; margin-bottom: 36px;
 }
 
+/* Long-form SEO travel guide block */
+.mv-pagecontent {
+    max-width: 800px; margin: 56px 0 8px;
+}
+.mv-pagecontent h2 {
+    font-family: var(--font-display); font-style: italic;
+    font-size: 26px; color: var(--ink); margin-bottom: 18px;
+}
+.mv-pagecontent p {
+    font-size: 15.5px; line-height: 1.8; color: var(--ink-soft); margin-bottom: 18px;
+}
+.mv-pagecontent p:last-child { margin-bottom: 0; }
+
 /* Attractions grid */
 .mv-attractions-grid {
     display: grid;

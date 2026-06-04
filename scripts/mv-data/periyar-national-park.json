@@ -1,0 +1,197 @@
+{
+  "slug": "periyar-national-park",
+  "name": "Periyar National Park",
+  "state": "Kerala",
+  "tagline": "Wild elephants, misty spice hills and a shimmering jungle lake",
+  "categories": [
+    "wildlife",
+    "nature",
+    "backwater"
+  ],
+  "highlights": [
+    "periyar lake elephant boat safari",
+    "fragrant cardamom and pepper spice estates"
+  ],
+  "attractions": [
+    {
+      "name": "Periyar Lake Boat Safari",
+      "category": "wildlife",
+      "description": "The iconic Kerala Forest Development Corporation boat safaris cross the 26-sq-km artificial Periyar Lake created by the 1895 Mullaperiyar Dam. Herds of Asian elephants wade to their chests in the shallows, gaur stand on the shore at first light, and families of smooth-coated otters surf the boat's wake. Watching the mist lift off the Cardamom Hills while a tusker splashes 20 metres from the boat is one of South India's defining wildlife moments.",
+      "whyVisit": "The most accessible and breathtaking elephant-watching experience in Kerala.",
+      "bestTime": "September to April, 7 am first departure",
+      "duration": "2 hours",
+      "mapsSearch": "Periyar Lake Boat Safari Thekkady Kerala",
+      "imageQuery": "elephants Periyar Lake boat safari Thekkady"
+    },
+    {
+      "name": "Tiger Trail — Deep Forest Trek",
+      "category": "wildlife",
+      "description": "The Kerala Forest Department's flagship multi-day trek penetrates Periyar's core zone with an armed forest guard and certified naturalist, camping overnight inside the protected area. Participants may encounter tigers, leopards, sloth bears and Malabar giant squirrels in habitats completely off the standard tourist circuit. The three-day version covers roughly 40 km of elephant paths through pristine wet evergreen forest, crossing streams and ridgelines rarely accessed by visitors.",
+      "whyVisit": "Overnight in a living tiger forest — the most immersive wildlife stay in Kerala.",
+      "bestTime": "October to March",
+      "duration": "2-3 days",
+      "mapsSearch": "Tiger Trail deep forest trek Periyar Tiger Reserve Thekkady",
+      "imageQuery": "deep forest trek Periyar Tiger Reserve Kerala"
+    },
+    {
+      "name": "Kumily Spice Market",
+      "category": "market",
+      "description": "The bazaar town of Kumily, straddling the Kerala–Tamil Nadu border right beside the park, is one of India's most fragrant markets for buying cardamom, black pepper, cinnamon, nutmeg, and vanilla directly from plantation owners. Rows of open sacks overflow with produce, and traders demonstrate how to assess cardamom quality by colour and aroma. The market at dusk, lit by single bulbs against backdrop of spice-scented air, is a sensory experience in itself.",
+      "whyVisit": "Buy the finest Cardamom Hills spices directly from farmers at source prices.",
+      "bestTime": "October to March, afternoons",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kumily Spice Market Thekkady Kerala",
+      "imageQuery": "spice market Kumily Thekkady cardamom pepper"
+    },
+    {
+      "name": "Bamboo Rafting on Periyar River",
+      "category": "adventure",
+      "description": "The Kerala Eco Tourism programme runs full-day bamboo-raft excursions on the Periyar River's upstream channels, poling through narrow mangrove-fringed corridors where elephants frequently cross. Rangers stationed at camps along the route provide wildlife interpretation, and participants often disembark to track wildlife on foot under trained guide supervision. Unlike the crowded lake boats, rafts carry only six people, making wildlife much less disturbed.",
+      "whyVisit": "Drift silently through elephant country on a bamboo raft with almost no other tourists.",
+      "bestTime": "October to April, full-day starting 8 am",
+      "duration": "Full day",
+      "mapsSearch": "Bamboo Rafting Periyar Eco Tourism Thekkady Kerala",
+      "imageQuery": "bamboo rafting Periyar River elephant crossing Kerala"
+    },
+    {
+      "name": "Cardamom Hills Plantation Walk",
+      "category": "nature",
+      "description": "The slopes above Thekkady are carpeted in cardamom, pepper, tea and coffee estates that can be explored on guided walks arranged through plantation homestays. Guides explain why this micro-climate — 900–1,800 metres elevation, constant moisture and rich volcanic soil — produces cardamom that fetches a premium worldwide. The walk winds between tall shade trees draped in vanilla creepers, with the Ghats visible above and wild birds calling throughout.",
+      "whyVisit": "Understand where your kitchen spices come from inside their actual growing landscape.",
+      "bestTime": "September to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Cardamom plantation walk Thekkady Kumily Kerala",
+      "imageQuery": "cardamom plantation walk Thekkady Kerala hills"
+    },
+    {
+      "name": "Border Hiking Trail (Periyar – Kodaikanal Divide)",
+      "category": "adventure",
+      "description": "The 15-km border trail runs along the Western Ghat ridge at the Periyar–Kodaikanal divide, crossing shola grasslands and stunted evergreen patches at around 1,800 metres. On clear days the Tamil Nadu lowlands stretch to the horizon while the Periyar forest sinks into misty valleys below. Wild bison, Nilgiri tahr and endemic birds such as the Nilgiri flycatcher are commonly seen on this high-altitude route.",
+      "whyVisit": "A high ridge hike with a foot in two states and sweeping Western Ghats panoramas.",
+      "bestTime": "November to February",
+      "duration": "Full day",
+      "mapsSearch": "Periyar border hiking trail Western Ghats Thekkady Kerala",
+      "imageQuery": "Western Ghats ridge trail shola grassland Periyar"
+    },
+    {
+      "name": "Mangala Devi Temple",
+      "category": "temple",
+      "description": "Perched on a 1,337-metre peak deep inside the core of Periyar Tiger Reserve, the Mangala Devi Temple is open to the public only on the Tamil festival of Chithirai Pournami in April–May. On that single day thousands of pilgrims trek 15 km through forest to reach the ancient Dravidian shrine dedicated to a forest goddess. For the rest of the year the temple stands completely alone inside tiger territory, accessible only with special forest department permission.",
+      "whyVisit": "Visit an ancient forest goddess temple open to the public only one day per year.",
+      "bestTime": "Chithirai Pournami (April–May)",
+      "duration": "Full day trek",
+      "mapsSearch": "Mangala Devi Temple Periyar Tiger Reserve Kerala",
+      "imageQuery": "Mangala Devi Temple Periyar forest Kerala"
+    },
+    {
+      "name": "Elephant Junction, Kodanad",
+      "category": "wildlife",
+      "description": "Operated under Kerala Forest Department supervision, Elephant Junction near Thekkady allows visitors to interact ethically with retired timber-working elephants under the care of experienced mahouts. Programmes include watching the morning bath in the river, the feeding ritual and a traditional paint ceremony without riding. The adjacent forest camp provides a close-up view of elephant social behaviour and the human-elephant relationships that have shaped Kerala's culture for millennia.",
+      "whyVisit": "Responsible elephant interaction with ex-timber elephants and their life-long mahouts.",
+      "bestTime": "Year-round, mornings 8–11 am",
+      "duration": "2-3 hours",
+      "mapsSearch": "Elephant Junction Thekkady Kerala",
+      "imageQuery": "elephant bath Thekkady mahout Kerala river"
+    },
+    {
+      "name": "Murikkady Spice Garden",
+      "category": "garden",
+      "description": "One of the oldest demonstration spice gardens in Thekkady, Murikkady allows visitors to see every major Cardamom Hills spice and medicinal plant growing in situ with expert narration. The 20-minute guided walk passes black pepper climbing on areca palms, cardamom stools heavy with green pods, giant clove trees, and allspice shrubs. The on-site shop stocks organically certified products at competitive prices and the garden itself is shaded and fragrant.",
+      "whyVisit": "See every Kerala spice growing at once in a beautifully maintained heritage garden.",
+      "bestTime": "Year-round, mornings",
+      "duration": "1-2 hours",
+      "mapsSearch": "Murikkady Spice Garden Thekkady Kerala",
+      "imageQuery": "Murikkady spice garden cardamom pepper Kerala"
+    },
+    {
+      "name": "Chellarkovil Viewpoint",
+      "category": "viewpoint",
+      "description": "A 21-km drive from Kumily through the tea estates of Vandiperiyar leads to Chellarkovil, a dramatic cliff edge where the Western Ghats escarpment drops 900 metres into the Tamil Nadu plains. Sunrise here turns the plains into an orange sea of light below a sea of mist, while the Ghats wall rises dark green behind. The viewpoint is known locally but almost unknown to foreign tourists, offering a serene alternative to the crowded Munnar viewpoints.",
+      "whyVisit": "Arguably the most dramatic Western Ghats drop viewpoint in Kerala, with no crowds.",
+      "bestTime": "November to February, sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chellarkovil Viewpoint Vandiperiyar Idukki Kerala",
+      "imageQuery": "Chellarkovil viewpoint Western Ghats escarpment Kerala"
+    },
+    {
+      "name": "Gavi Eco Tourism Camp",
+      "category": "nature",
+      "description": "Accessible by a 4WD forest track or a 16-km trek from Kumily, Gavi is a high-altitude grassland clearing inside Periyar's buffer at 1,000 metres, sustained by Kerala Ecotourism. The camp sits beside a small reservoir where elephants drink at dusk and Nilgiri tahrs graze on surrounding slopes. Overnight stays allow listening to the nocturnal forest soundscape and observing endemic Malabar pied hornbills and lion-tailed macaques at dawn.",
+      "whyVisit": "Overnight in the forest near elephants and endemic birds without the Thekkady crowds.",
+      "bestTime": "October to February",
+      "duration": "Overnight",
+      "mapsSearch": "Gavi Eco Tourism Camp Pathanamthitta Kerala",
+      "imageQuery": "Gavi eco camp grassland Kerala elephant dusk"
+    },
+    {
+      "name": "Sabarimala Pilgrimage Route (Pamba to Sannidhanam)",
+      "category": "religious",
+      "description": "The 4.5-km forest trek from Pamba River to the Sabarimala Ayyappa shrine passes through the Periyar Tiger Reserve buffer, making it one of the world's largest annual pilgrimage routes through active wildlife territory. Tens of millions of devotees make the trek between November and January, wearing black and carrying irumudi kettu offerings. For non-pilgrims, the Pamba riverbank and the forest approach reveal the spiritual geography that defines much of south Kerala's cultural identity.",
+      "whyVisit": "Understand Kerala's most important and populous pilgrimage tradition in its forest setting.",
+      "bestTime": "November to January (Mandala and Makaravilakku seasons)",
+      "duration": "Full day",
+      "mapsSearch": "Sabarimala Pamba forest trek Kerala",
+      "imageQuery": "Sabarimala pilgrimage forest trek Pamba Kerala"
+    },
+    {
+      "name": "Tribal Heritage Museum, Thekkady",
+      "category": "museum",
+      "description": "Run by the Thekkady Eco Development Committee, this small but excellent museum documents the traditions, crafts and forest knowledge of the six tribal communities — Mutthuvan, Mannan, Paliyan, Urali, Malayarayan and Kadar — who have lived inside Periyar's forests for centuries. Hand-crafted tools, medicinal plant collections, oral poetry recordings and archival photographs provide context that transforms any Periyar forest visit from sightseeing to genuine understanding.",
+      "whyVisit": "Essential context for understanding Periyar's human heritage alongside its wildlife.",
+      "bestTime": "Year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Tribal Heritage Museum Thekkady Idukki Kerala",
+      "imageQuery": "tribal heritage museum Thekkady Kerala crafts"
+    },
+    {
+      "name": "Periyar Night Patrol Experience",
+      "category": "wildlife",
+      "description": "Kerala Ecotourism's night patrolling programme trains and deploys local tribespeople as forest watchers who take small groups on 3-hour walks along buffer-zone paths after dark. A headlamp reveals eyeshine of spotted deer, barking deer and gaur in the undergrowth, and the calls of Malabar flying frog, Ceylon frogmouth and Indian eagle-owl fill the forest. The programme directly channels conservation funds to indigenous families.",
+      "whyVisit": "Walk Periyar's forest after dark with tribal guides who have patrolled it for decades.",
+      "bestTime": "October to March, starts at 7 pm",
+      "duration": "3 hours",
+      "mapsSearch": "Periyar Night Patrol Eco Tourism Thekkady Kerala",
+      "imageQuery": "night patrol forest Periyar tribal guide Kerala"
+    },
+    {
+      "name": "Vandiperiyar Tea Estates",
+      "category": "nature",
+      "description": "The Vandiperiyar plateau 15 km north of Thekkady is carpeted in old-growth tea estates planted by British planters in the 1880s and still operating today. The elevation here produces a drier, crisper afternoon air than Thekkady, and the red-soil roads through the estates make for beautiful cycling or walking. Several estate bungalows from the colonial era have been converted to boutique stays with original furniture and planter-era libraries intact.",
+      "whyVisit": "Cycle through 130-year-old tea estates in a colonial planter bungalow landscape.",
+      "bestTime": "November to February",
+      "duration": "Half-day",
+      "mapsSearch": "Vandiperiyar Tea Estate Idukki Kerala",
+      "imageQuery": "Vandiperiyar tea estate colonial bungalow Kerala"
+    },
+    {
+      "name": "Connemara Tea Factory Tour",
+      "category": "heritage",
+      "description": "The Connemara Tea Factory at Vandanmedu processes Cardamom Hills tea using machines dating to the 1930s — some still bearing British engineering plates. A 45-minute guided tour walks through every stage from fresh leaf delivery through withering, rolling, fermenting, drying and grading, ending with a cupping session where a trained taster explains the difference between a first flush and a rain-season tea. The factory is architecturally intact and photogenic.",
+      "whyVisit": "Taste and trace a cup of Cardamom Hills tea from bush to cup in a heritage factory.",
+      "bestTime": "Year-round, weekdays 9 am–4 pm",
+      "duration": "1-2 hours",
+      "mapsSearch": "Connemara Tea Factory Vandanmedu Idukki Kerala",
+      "imageQuery": "tea factory tour Vandanmedu Cardamom Hills Kerala"
+    },
+    {
+      "name": "Malabar Giant Squirrel Watch, Periyar Forest Edge",
+      "category": "wildlife",
+      "description": "The Indian giant squirrel — Malabar subspecies — is a brilliant fox-red and cream arboreal mammal found in the tall trees along Periyar's forest edge roads. Thekkady's forest department knows a handful of trees where a family group feeds reliably between 7 and 9 am, and local naturalists take small groups to these spots in shared 4WDs. At nearly a metre in length including the tail, seeing one leap between canopy trees at speed is astonishing.",
+      "whyVisit": "A reliable encounter with the stunning Malabar giant squirrel, India's largest squirrel.",
+      "bestTime": "October to March, early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Malabar giant squirrel Periyar forest Thekkady Kerala",
+      "imageQuery": "Malabar giant squirrel Periyar forest Kerala"
+    },
+    {
+      "name": "Idamalayar Dam and Reservoir Hidden Viewpoint",
+      "category": "viewpoint",
+      "description": "A 40-km drive northeast of Thekkady brings visitors to Idamalayar, one of Kerala's most scenic dams set between forest ridges in Ernakulam district. Almost no tourist itineraries include it, yet the reservoir offers boat rides past forested hills where the occasional elephant track appears on the red laterite banks. The access road through rubber and jackfruit estates passes tribal settlements rarely seen on the main tourist circuit.",
+      "whyVisit": "Kerala's most scenic hidden reservoir with elephant-grazed shores and no tourist crowds.",
+      "bestTime": "November to March",
+      "duration": "Half-day",
+      "mapsSearch": "Idamalayar Dam Reservoir Ernakulam Kerala",
+      "imageQuery": "Idamalayar reservoir forested hills Kerala"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "slug": "mysuru",
+  "name": "Mysuru",
+  "state": "Karnataka",
+  "tagline": "City of Palaces where royalty still walks the streets",
+  "categories": [
+    "heritage",
+    "historical",
+    "city"
+  ],
+  "highlights": [
+    "mysore palace dazzling illuminations every sunday",
+    "dasara festival grandeur and elephant processions"
+  ],
+  "attractions": [
+    {
+      "name": "Mysore Palace",
+      "category": "palace",
+      "description": "The official residence of the Wadiyar dynasty and one of the most visited monuments in India, Mysore Palace is a masterpiece blending Indo-Saracenic, Mughal, Hindu, and Gothic styles. Built in 1912 by Henry Irwin, its golden domes and Durbar Hall — lined with stained glass, gilded columns, and a solid gold throne — are extraordinary. Every Sunday and on public holidays, 97,000 light bulbs illuminate the palace in a spectacle visible for kilometres.",
+      "whyVisit": "One of the most opulent and photogenic palaces in all of India — the Sunday illumination is unmissable.",
+      "bestTime": "Sunday evening for illumination (7–7:45 PM)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mysore Palace Karnataka",
+      "imageQuery": "Mysore Palace illuminated Sunday Karnataka"
+    },
+    {
+      "name": "Chamundeshwari Temple (Chamundi Hill)",
+      "category": "temple",
+      "description": "This Dravidian-style temple dedicated to the fierce goddess Chamundeshwari crowns the 1,062-metre Chamundi Hill overlooking Mysuru. The 40-metre-tall gopuram is visible from the city below. The pilgrim path up 1,008 carved stone steps passes the famous 5-metre Nandi bull carved from solid rock in 1659. The views of Mysuru spreading below are spectacular.",
+      "whyVisit": "Mysuru's guardian goddess temple with panoramic city views — the spiritual heart of the city.",
+      "bestTime": "Early morning or evening aarti",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chamundeshwari Temple Chamundi Hill Mysore",
+      "imageQuery": "Chamundi Hill temple Mysore Nandi statue"
+    },
+    {
+      "name": "Brindavan Gardens",
+      "category": "garden",
+      "description": "The terraced garden complex built in 1932 below the Krishnarajasagar (KRS) Dam is one of the most celebrated public gardens in India. Geometric flowerbeds, fountains, cypresses, and topiary extend over 60 acres. The musical fountain show at night — timed to film songs — draws thousands. The dam's backwaters at sunset are breathtaking.",
+      "whyVisit": "The most beautiful formal garden in South India, with a world-famous musical fountain show.",
+      "bestTime": "Evening for musical fountain",
+      "duration": "2-3 hours",
+      "mapsSearch": "Brindavan Gardens KRS Dam Mysore",
+      "imageQuery": "Brindavan Gardens KRS Dam fountains Mysore night"
+    },
+    {
+      "name": "Devaraja Market",
+      "category": "market",
+      "description": "Built during the Wadiyar era, this covered market stretching along Dhanvantri Road is one of the most colourful in South India. Flower sellers create enormous jasmine, marigold, and chrysanthemum garlands; fruit and vegetable vendors build geometric towers of produce; the sandalwood and incense section fills the air with fragrance. The photographic possibilities are endless.",
+      "whyVisit": "A visually and aromatically stunning market that is one of Karnataka's great daily spectacles.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Devaraja Market Mysore Dhanvantri Road",
+      "imageQuery": "Devaraja Market Mysore flower garlands colourful"
+    },
+    {
+      "name": "St. Philomena's Cathedral",
+      "category": "religious",
+      "description": "Built in 1936 in neo-Gothic style inspired by the Cathedral of Cologne, St. Philomena's has the tallest church spires in India at 55 metres. The blue-stained-glass windows depicting the life of Christ cast a beautiful coloured light over the interior. The crypt beneath the altar contains a statue of St. Philomena. The cathedral is the seat of the Diocese of Mysore.",
+      "whyVisit": "One of the finest neo-Gothic cathedrals in Asia, dramatic both inside and from the exterior.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St Philomena's Cathedral Mysore",
+      "imageQuery": "St Philomena Cathedral Mysore Gothic spires"
+    },
+    {
+      "name": "Mysore Zoo (Sri Chamarajendra Zoological Gardens)",
+      "category": "wildlife",
+      "description": "Established in 1892 and one of the oldest and most respected zoos in Asia, Mysore Zoo spans 157 acres and holds gorillas, white tigers, pygmy hippos, Asian elephants, chimpanzees, and rare birds. The moat-based enclosures replaced bars decades ago. The zoo has internationally recognised breeding programmes for endangered species including the Indian white tiger.",
+      "whyVisit": "One of Asia's best zoological gardens — particularly renowned for its gorilla and white tiger enclosures.",
+      "bestTime": "Morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Mysore Zoo Sri Chamarajendra Gardens",
+      "imageQuery": "Mysore Zoo white tiger gorilla Karnataka"
+    },
+    {
+      "name": "Jayachamarajendra Art Gallery (Jaganmohan Palace)",
+      "category": "museum",
+      "description": "Housed in the 19th-century Jaganmohan Palace, this art gallery holds one of the finest collections of Indian art in the country. Raja Ravi Varma oil paintings, Japanese ivory carvings, Mysore-style gold-leaf paintings, ancient musical instruments, and a priceless collection of Tanjore paintings fill the halls. The palace itself, with its ornate durbar hall, is worth the visit.",
+      "whyVisit": "The finest art collection in Karnataka, housed in a palace almost as grand as Mysore Palace itself.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jayachamarajendra Art Gallery Jaganmohan Palace Mysore",
+      "imageQuery": "Jaganmohan Palace Art Gallery Mysore Raja Ravi Varma"
+    },
+    {
+      "name": "Nagarhole National Park",
+      "category": "wildlife",
+      "description": "Part of the Nilgiri Biosphere Reserve, Nagarhole spreads over 643 sq km of teak and rosewood forest along the Kabini River. It holds one of India's densest populations of tigers and leopards, as well as the largest herd of Asian elephants. Morning and evening jeep safaris and boat safaris along the Kabini backwaters are exceptional for wildlife sightings.",
+      "whyVisit": "The finest wildlife experience within day-trip range of Mysuru, famous for huge elephant herds.",
+      "bestTime": "October to May, morning safaris",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Nagarhole National Park Kabini Karnataka",
+      "imageQuery": "Nagarhole National Park elephant herd Kabini river"
+    },
+    {
+      "name": "Ranganathittu Bird Sanctuary",
+      "category": "wildlife",
+      "description": "A cluster of six rocky islands in the Cauvery River, 16 km from Mysuru, Ranganathittu is Karnataka's largest bird sanctuary and one of India's most important colonial waterbird breeding sites. Painted storks, open-bill storks, spoonbills, and spot-billed pelicans nest here in thousands from June to November. Boat safaris glide past nesting trees within metres of the birds.",
+      "whyVisit": "The easiest place in South India to witness colonial waterbirds nesting at arm's length from a boat.",
+      "bestTime": "June to November",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ranganathittu Bird Sanctuary Mysore",
+      "imageQuery": "Ranganathittu Bird Sanctuary painted storks boat Mysore"
+    },
+    {
+      "name": "Somnathpur Hoysala Temple",
+      "category": "heritage",
+      "description": "The Keshava Temple at Somnathpur, 35 km from Mysuru, is the most complete and best-preserved Hoysala temple in existence. Built in 1268 by General Somanatha Dandanayaka, it is a triple-shrined, trikuta structure whose entire exterior surface is covered with intricate sculptural friezes — elephants, horses, lions, figures, and episodes from the Ramayana and Mahabharata — all carved in chloritic schist.",
+      "whyVisit": "The most perfectly preserved and exquisitely detailed Hoysala temple — a UNESCO candidate and sculptural masterpiece.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Keshava Temple Somnathpur Mysore Hoysala",
+      "imageQuery": "Keshava Temple Somnathpur Hoysala stone carvings"
+    },
+    {
+      "name": "Srirangapatna (Seringapatam)",
+      "category": "heritage",
+      "description": "The fortified island capital of Tipu Sultan in the Cauvery River, 16 km from Mysuru, contains the Ranganathaswamy Temple, Tipu's Summer Palace (Daria Daulat Bagh), the Gumbaz mausoleum of Tipu and Hyder Ali, and the breach through which British forces stormed the fort in 1799. The site is rich with the drama of the Anglo-Mysore wars.",
+      "whyVisit": "Walk the battlefield where Tipu Sultan fell — one of the most historically charged sites in South India.",
+      "bestTime": "Morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Srirangapatna Tipu Sultan fort Karnataka",
+      "imageQuery": "Srirangapatna fort Tipu Sultan Karnataka island"
+    },
+    {
+      "name": "Tipu Sultan's Summer Palace (Daria Daulat Bagh)",
+      "category": "palace",
+      "description": "Built in 1784 as Tipu Sultan's summer retreat on the island of Srirangapatna, this two-storey teak palace sits in a formal garden and is celebrated for its elaborate mural paintings. The western wall depicts Tipu's victory at the Battle of Pollilur in vivid detail — perhaps the most important battle painting from 18th-century India. The teak columns and arched corridors are intricate.",
+      "whyVisit": "The finest surviving mural paintings of Tipu Sultan's court and one of the most important 18th-century palaces in India.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Daria Daulat Bagh Srirangapatna Mysore",
+      "imageQuery": "Daria Daulat Bagh Tipu Sultan summer palace mural"
+    },
+    {
+      "name": "Mysore Silk Weaving Factory",
+      "category": "market",
+      "description": "The government-run Karnataka Silk Industries Corporation weaving factory on Mananthody Road gives guided tours of pure mulberry silk weaving on power looms and handlooms. The quality of Mysore silk — known for its weight, sheen, and distinctive zari border — is exceptional, and the factory showroom sells saris at fixed and fair prices directly to visitors.",
+      "whyVisit": "See the making of India's most prized silk — and buy at factory prices without bargaining.",
+      "bestTime": "Morning weekdays",
+      "duration": "1-2 hours",
+      "mapsSearch": "Karnataka Silk Industries Corporation Mysore factory",
+      "imageQuery": "Mysore silk weaving factory loom Karnataka"
+    },
+    {
+      "name": "Lalitha Mahal Palace",
+      "category": "palace",
+      "description": "Built in 1921 by the Maharaja of Mysore as a guest house for the Viceroy of India, Lalitha Mahal is the second largest palace in the state and is now a heritage hotel operated by the ITDC. The Italian marble staircase, grand ballroom, and Venetian-style dome are inspired by St. Paul's Cathedral in London. Non-guests can visit for lunch or high tea.",
+      "whyVisit": "A grand colonial-era palace where you can dine in vice-regal splendour — afternoon tea included.",
+      "bestTime": "Afternoon for tea",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lalitha Mahal Palace Hotel Mysore",
+      "imageQuery": "Lalitha Mahal Palace Mysore heritage hotel dome"
+    },
+    {
+      "name": "Karanji Lake Nature Park",
+      "category": "lake",
+      "description": "Adjacent to the zoo, Karanji Lake is a 90-acre freshwater lake enclosed within a nature park. A large butterfly park on the shore is among India's biggest, housing over 40 species. The lake attracts migratory birds from Siberia and Central Asia between November and March, and a floating walkway extends into the marsh for close-up birdwatching. Entry is free.",
+      "whyVisit": "An underrated urban nature sanctuary with excellent birdwatching and a giant butterfly conservatory.",
+      "bestTime": "Morning October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Karanji Lake Nature Park Mysore",
+      "imageQuery": "Karanji Lake Nature Park Mysore butterfly birds"
+    },
+    {
+      "name": "Folklore Museum (University of Mysore)",
+      "category": "museum",
+      "description": "The Folklore Museum at the University of Mysore campus holds a unique collection of Karnataka folk art — Yakshagana costumes and headdresses, bayalu seeme puppets, ritual masks, naga (serpent) stones, terracotta votives, traditional jewellery, and dolls used in the Navaratri festival. It is one of the richest folk art museums in South India and almost entirely unknown to tourists.",
+      "whyVisit": "The most comprehensive collection of Karnataka folk culture anywhere — a genuine hidden gem.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Folklore Museum University of Mysore",
+      "imageQuery": "Folklore Museum Mysore University Yakshagana costumes"
+    },
+    {
+      "name": "Melukote Temple Town",
+      "category": "religious",
+      "description": "Perched on a rocky hill 51 km from Mysuru, Melukote is one of the most sacred Vaishnava towns in South India. The Cheluvarayaswamy Temple, with its impressive gopuram visible from afar, houses a rare idol said to have been brought from Delhi. The Yoga Narasimha temple on the higher hill requires a climb but rewards with sweeping views. The town's Vairamudi festival draws half a million people.",
+      "whyVisit": "One of the most sacred and atmospheric Vaishnava pilgrimage towns in Karnataka — far from tourist crowds.",
+      "bestTime": "Non-festival weekday mornings; Vairamudi festival (March–April) for spectacle",
+      "duration": "3-4 hours",
+      "mapsSearch": "Melukote Cheluvarayaswamy Temple Karnataka",
+      "imageQuery": "Melukote temple hill Karnataka Vaishnava pilgrimage"
+    },
+    {
+      "name": "Mysore Racecourse",
+      "category": "heritage",
+      "description": "One of India's oldest racecourses, dating to 1875 and built during the Wadiyar era, the Mysore Racecourse holds meets from May to July and November to February. The Victorian grandstand, manicured turf, and the ceremonial atmosphere — horses draped in silk, mahouts in traditional dress — make it a living piece of colonial and royal heritage.",
+      "whyVisit": "A charming and atmospheric piece of living heritage rarely experienced by visitors to Mysuru.",
+      "bestTime": "Race days (weekends during season)",
+      "duration": "3-4 hours",
+      "mapsSearch": "Mysore Racecourse Karnataka",
+      "imageQuery": "Mysore Racecourse horse racing Karnataka grandstand"
+    },
+    {
+      "name": "Kukke Subramanya Temple",
+      "category": "religious",
+      "description": "Located 105 km southwest of Mysuru in the forest foothills of the Western Ghats, Kukke Subramanya is one of the holiest serpent-deity temples in India. Pilgrims come in enormous numbers for the Ashlesha Bali and Sarpa Samskara rituals to cure diseases believed caused by serpent curses. The temple is set in dense forest alongside the Kumara Dhara River, adding natural beauty.",
+      "whyVisit": "The most important serpent-deity temple in South India — a deeply atmospheric forest pilgrimage.",
+      "bestTime": "October to February",
+      "duration": "4-5 hours with travel",
+      "mapsSearch": "Kukke Subramanya Temple Karnataka",
+      "imageQuery": "Kukke Subramanya Temple forest river Karnataka"
+    },
+    {
+      "name": "Jaganmohan Palace's Statue of Maharaja",
+      "category": "viewpoint",
+      "description": "The broad tree-lined avenue leading to Mysore Palace, known as Mysore Palace Road, is most dramatic when viewed from the front of the Jaganmohan Palace looking back toward the Chamundi Hill. At sunset, when the palace is bathed in orange light and Chamundi Hill glows on the horizon, it is one of the most photogenic urban vistas in India.",
+      "whyVisit": "The classic Mysuru postcard view — Mysore Palace framed by Chamundi Hill at golden hour.",
+      "bestTime": "Sunset",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Mysore Palace Road viewpoint Karnataka",
+      "imageQuery": "Mysore Palace Road golden hour Chamundi Hill view"
+    },
+    {
+      "name": "Sandal Wood Oil Factory",
+      "category": "heritage",
+      "description": "Karnataka produces 70% of India's sandalwood, and the Government Sandalwood Oil Factory in Mysuru — the oldest in the world, established in 1916 — allows guided tours of the steam-distillation process where chips of Santalum album are processed into the world's most prized essential oil. The factory store sells genuine Mysore sandalwood products at government prices.",
+      "whyVisit": "A rare glimpse into the world's oldest sandalwood distillery — and the best place to buy genuine Mysore sandalwood.",
+      "bestTime": "Weekday morning",
+      "duration": "1 hour",
+      "mapsSearch": "Government Sandalwood Oil Factory Mysore",
+      "imageQuery": "Mysore sandalwood oil factory government Karnataka"
+    },
+    {
+      "name": "Biligiriranga Hills (BRT Wildlife Sanctuary)",
+      "category": "wildlife",
+      "description": "The Biligirirangaswamy Temple Wildlife Sanctuary, 100 km from Mysuru, lies at the biogeographic junction of the Western and Eastern Ghats and has one of the highest elephant densities in India — estimated at over 2,000. The forest also holds tigers, leopards, gaur, and dholes. The hilltop Biligiriranga (BR Hills) temple is sacred to the Soliga tribal community.",
+      "whyVisit": "Extraordinary wildlife density at the meeting point of two great mountain ranges, with genuine tribal cultural heritage.",
+      "bestTime": "October to May",
+      "duration": "Full day or overnight",
+      "mapsSearch": "BRT Wildlife Sanctuary BR Hills Karnataka",
+      "imageQuery": "BRT Wildlife Sanctuary BR Hills elephant forest Karnataka"
+    },
+    {
+      "name": "Jayalakshmi Vilas Mansion Heritage Museum",
+      "category": "museum",
+      "description": "Built in 1905 as a royal residence and now part of the University of Mysore campus, this Edwardian-era mansion contains a heritage museum of archaeology and folk art. The building itself — with its ballroom, carved ceilings, and period furniture — is a masterpiece of Mysore Indo-Saracenic architecture. It is virtually unknown to tourists despite being on the palace campus.",
+      "whyVisit": "The most undervisited heritage building in Mysuru — an immaculate Edwardian mansion frozen in time.",
+      "bestTime": "Weekday morning",
+      "duration": "1 hour",
+      "mapsSearch": "Jayalakshmi Vilas Mansion Museum Mysore University",
+      "imageQuery": "Jayalakshmi Vilas Mansion Mysore heritage building"
+    },
+    {
+      "name": "Nanjangud Temple (Srikanteshwara)",
+      "category": "temple",
+      "description": "The ancient Srikanteshwara temple at Nanjangud, 23 km from Mysuru on the banks of the Kabini River, is the most important Shiva temple in Karnataka's plains. The towering 40-metre gopuram was built in layers over different centuries; the inner sanctum houses a Shiva lingam said to have healing properties. The river ghat and the small temple town atmosphere are serene.",
+      "whyVisit": "The most sacred Shiva temple in the Mysuru plains — atmospheric, ancient, and seldom on tourist itineraries.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nanjangud Srikanteshwara Temple Karnataka",
+      "imageQuery": "Nanjangud Srikanteshwara Temple gopuram Karnataka"
+    },
+    {
+      "name": "Railway Museum Mysore",
+      "category": "museum",
+      "description": "The Southern Railway Museum near Mysore Junction houses a fascinating collection of vintage locomotives including a 1907 steam engine that once hauled the Maharaja's royal train, a narrow-gauge mountain engine, historic saloon coaches, and a collection of railway memorabilia. The museum is small but the machines are wonderfully atmospheric, particularly the wood-panelled royal saloon.",
+      "whyVisit": "A charming hidden gem for railway enthusiasts — the Maharaja's royal train carriage alone justifies a visit.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Railway Museum Mysore Junction Karnataka",
+      "imageQuery": "Railway Museum Mysore vintage steam locomotive Karnataka"
+    }
+  ]
+}

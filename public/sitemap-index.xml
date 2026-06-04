@@ -2,10 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://trypinn.com/sitemap-static.xml</loc>
-    <lastmod>2026-06-03T09:55:35.990Z</lastmod>
+    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://trypinn.com/sitemap-posts.xml</loc>
-    <lastmod>2026-06-03T09:55:35.990Z</lastmod>
+    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://trypinn.com/sitemap-must-visits.xml</loc>
+    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
   </sitemap>
 </sitemapindex>

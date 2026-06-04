@@ -1,0 +1,447 @@
+{
+  "id": "chamba",
+  "name": "Chamba",
+  "state": "Himachal Pradesh",
+  "slug": "chamba",
+  "tagline": "Ancient temple town by the Ravi",
+  "categories": [
+    "temple",
+    "lake",
+    "heritage"
+  ],
+  "introduction": "Chamba is a treasure trove of experiences. In this travel guide to Chamba, we reveal the must visit places in Chamba, the best places to visit in Chamba, iconic tourist attractions in Chamba, and amazing things to do in Chamba.",
+  "metaTitle": "Best Places to Visit in Chamba | Tourist Attractions in Chamba - TrypInn",
+  "metaDescription": "Explore the best places to visit in Chamba, top things to do in Chamba, and must visit places in Chamba. Your complete travel guide to Chamba by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+    "alt": "Chamba travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "chamba-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is a must-see temple in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "Brihadeeswarar Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Brihadeeswarar Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Chamba"
+      },
+      "position": 1
+    },
+    {
+      "id": "chamba-sankey-tank",
+      "name": "Sankey Tank",
+      "slug": "sankey-tank",
+      "description": "Sankey Tank is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sankey Tank promises an unforgettable experience.",
+      "whyVisit": "Sankey Tank stands out as one of the most rewarding experiences.",
+      "bestTime": "Sep-Nov",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sankey Tank, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sankey Tank in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Sankey Tank in Chamba"
+      },
+      "position": 2
+    },
+    {
+      "id": "chamba-elephant-stables",
+      "name": "Elephant Stables",
+      "slug": "elephant-stables",
+      "description": "Elephant Stables is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Elephant Stables promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Elephant Stables.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Elephant Stables, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Elephant Stables in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Elephant Stables in Chamba"
+      },
+      "position": 3
+    },
+    {
+      "id": "chamba-tirupati-balaji-temple",
+      "name": "Tirupati Balaji Temple",
+      "slug": "tirupati-balaji-temple",
+      "description": "Nestled in Chamba, Tirupati Balaji Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Tirupati Balaji Temple is among the best things to do in Chamba.",
+      "whyVisit": "Tirupati Balaji Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Tirupati Balaji Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Tirupati Balaji Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Tirupati Balaji Temple in Chamba"
+      },
+      "position": 4
+    },
+    {
+      "id": "chamba-madiwala-lake",
+      "name": "Madiwala Lake",
+      "slug": "madiwala-lake",
+      "description": "A crown jewel of Chamba, Madiwala Lake captivates every traveler with enchanting beauty. No trip to Chamba is complete without visiting Madiwala Lake.",
+      "whyVisit": "Experience the unmatched beauty of Madiwala Lake.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Madiwala Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Madiwala Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Madiwala Lake in Chamba"
+      },
+      "position": 5
+    },
+    {
+      "id": "chamba-tungabhadra-river",
+      "name": "Tungabhadra River",
+      "slug": "tungabhadra-river",
+      "description": "Tungabhadra River is a must-see heritage in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "Experience the unmatched beauty of Tungabhadra River.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Tungabhadra River, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Tungabhadra River in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Tungabhadra River in Chamba"
+      },
+      "position": 6
+    },
+    {
+      "id": "chamba-akshardham-temple",
+      "name": "Akshardham Temple",
+      "slug": "akshardham-temple",
+      "description": "Akshardham Temple is a must-see temple in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "A visit to Akshardham Temple is essential for understanding Chamba.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Akshardham Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Akshardham Temple in Chamba"
+      },
+      "position": 7
+    },
+    {
+      "id": "chamba-lalbagh-lake",
+      "name": "Lalbagh Lake",
+      "slug": "lalbagh-lake",
+      "description": "Lalbagh Lake is a must-see lake in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "Experience the unmatched beauty of Lalbagh Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lalbagh Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Lalbagh Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Lalbagh Lake in Chamba"
+      },
+      "position": 8
+    },
+    {
+      "id": "chamba-hemakuta-hill",
+      "name": "Hemakuta Hill",
+      "slug": "hemakuta-hill",
+      "description": "Hemakuta Hill is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Hemakuta Hill promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Hemakuta Hill.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hemakuta Hill, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hemakuta Hill in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Hemakuta Hill in Chamba"
+      },
+      "position": 9
+    },
+    {
+      "id": "chamba-lingaraj-temple",
+      "name": "Lingaraj Temple",
+      "slug": "lingaraj-temple",
+      "description": "Lingaraj Temple is a must-see temple in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "Capture stunning photographs at Lingaraj Temple.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Lingaraj Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Lingaraj Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Lingaraj Temple in Chamba"
+      },
+      "position": 10
+    },
+    {
+      "id": "chamba-pushkar-lake",
+      "name": "Pushkar Lake",
+      "slug": "pushkar-lake",
+      "description": "A crown jewel of Chamba, Pushkar Lake captivates every traveler with enchanting beauty. No trip to Chamba is complete without visiting Pushkar Lake.",
+      "whyVisit": "Pushkar Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Pushkar Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Pushkar Lake in Chamba"
+      },
+      "position": 11
+    },
+    {
+      "id": "chamba-lotus-mahal",
+      "name": "Lotus Mahal",
+      "slug": "lotus-mahal",
+      "description": "Lotus Mahal is a must-see heritage in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "A visit to Lotus Mahal is essential for understanding Chamba.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lotus Mahal, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Lotus Mahal in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Lotus Mahal in Chamba"
+      },
+      "position": 12
+    },
+    {
+      "id": "chamba-mahabodhi-temple",
+      "name": "Mahabodhi Temple",
+      "slug": "mahabodhi-temple",
+      "description": "Mahabodhi Temple is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mahabodhi Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Mahabodhi Temple.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Mahabodhi Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahabodhi Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Mahabodhi Temple in Chamba"
+      },
+      "position": 13
+    },
+    {
+      "id": "chamba-lower-lake",
+      "name": "Lower Lake",
+      "slug": "lower-lake",
+      "description": "Lower Lake is a must-see lake in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "A visit to Lower Lake is essential for understanding Chamba.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lower Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Lower Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Lower Lake in Chamba"
+      },
+      "position": 14
+    },
+    {
+      "id": "chamba-badami-caves",
+      "name": "Badami Caves",
+      "slug": "badami-caves",
+      "description": "Badami Caves is a must-see heritage in Chamba, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Chamba.",
+      "whyVisit": "Badami Caves offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Badami Caves, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Badami Caves in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Badami Caves in Chamba"
+      },
+      "position": 15
+    },
+    {
+      "id": "chamba-dwarkadhish-temple",
+      "name": "Dwarkadhish Temple",
+      "slug": "dwarkadhish-temple",
+      "description": "Dwarkadhish Temple is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Dwarkadhish Temple promises an unforgettable experience.",
+      "whyVisit": "Dwarkadhish Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Dwarkadhish Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Dwarkadhish Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Dwarkadhish Temple in Chamba"
+      },
+      "position": 16
+    },
+    {
+      "id": "chamba-fateh-sagar-lake",
+      "name": "Fateh Sagar Lake",
+      "slug": "fateh-sagar-lake",
+      "description": "Located in scenic Chamba, Fateh Sagar Lake offers an immersive experience into local culture. Exploring Fateh Sagar Lake is one of the top things to do in Chamba.",
+      "whyVisit": "Fateh Sagar Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Fateh Sagar Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Fateh Sagar Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Fateh Sagar Lake in Chamba"
+      },
+      "position": 17
+    },
+    {
+      "id": "chamba-asar-mahal",
+      "name": "Asar Mahal",
+      "slug": "asar-mahal",
+      "description": "Asar Mahal is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Asar Mahal promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Asar Mahal.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Asar Mahal, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Asar Mahal in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Asar Mahal in Chamba"
+      },
+      "position": 18
+    },
+    {
+      "id": "chamba-konark-sun-temple",
+      "name": "Konark Sun Temple",
+      "slug": "konark-sun-temple",
+      "description": "A crown jewel of Chamba, Konark Sun Temple captivates every traveler with enchanting beauty. No trip to Chamba is complete without visiting Konark Sun Temple.",
+      "whyVisit": "Konark Sun Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Konark Sun Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Konark Sun Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Konark Sun Temple in Chamba"
+      },
+      "position": 19
+    },
+    {
+      "id": "chamba-bhimtal-lake",
+      "name": "Bhimtal Lake",
+      "slug": "bhimtal-lake",
+      "description": "Nestled in Chamba, Bhimtal Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Bhimtal Lake is among the best things to do in Chamba.",
+      "whyVisit": "Bhimtal Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Bhimtal Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Bhimtal Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Bhimtal Lake in Chamba"
+      },
+      "position": 20
+    },
+    {
+      "id": "chamba-jumma-masjid",
+      "name": "Jumma Masjid",
+      "slug": "jumma-masjid",
+      "description": "Located in scenic Chamba, Jumma Masjid offers an immersive experience into local culture. Exploring Jumma Masjid is one of the top things to do in Chamba.",
+      "whyVisit": "A visit to Jumma Masjid is essential for understanding Chamba.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Jumma Masjid, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Jumma Masjid in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Jumma Masjid in Chamba"
+      },
+      "position": 21
+    },
+    {
+      "id": "chamba-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "Siddhivinayak Temple is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Siddhivinayak Temple promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Siddhivinayak Temple.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Siddhivinayak Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Chamba"
+      },
+      "position": 22
+    },
+    {
+      "id": "chamba-akshardham-lake",
+      "name": "Akshardham Lake",
+      "slug": "akshardham-lake",
+      "description": "A crown jewel of Chamba, Akshardham Lake captivates every traveler with enchanting beauty. No trip to Chamba is complete without visiting Akshardham Lake.",
+      "whyVisit": "Akshardham Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Akshardham Lake, Chamba",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Akshardham Lake in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Akshardham Lake in Chamba"
+      },
+      "position": 23
+    },
+    {
+      "id": "chamba-ibrahim-roza",
+      "name": "Ibrahim Roza",
+      "slug": "ibrahim-roza",
+      "description": "Located in scenic Chamba, Ibrahim Roza offers an immersive experience into local culture. Exploring Ibrahim Roza is one of the top things to do in Chamba.",
+      "whyVisit": "A visit to Ibrahim Roza is essential for understanding Chamba.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Ibrahim Roza, Chamba",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Ibrahim Roza in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Ibrahim Roza in Chamba"
+      },
+      "position": 24
+    },
+    {
+      "id": "chamba-sun-temple",
+      "name": "Sun Temple",
+      "slug": "sun-temple",
+      "description": "Sun Temple is one of the most iconic landmarks in Chamba, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sun Temple promises an unforgettable experience.",
+      "whyVisit": "Sun Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sun Temple, Chamba",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple in Chamba, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Sun Temple in Chamba"
+      },
+      "position": 25
+    }
+  ]
+}

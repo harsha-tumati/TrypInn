@@ -1,0 +1,447 @@
+{
+  "id": "jodhpur",
+  "name": "Jodhpur",
+  "state": "Rajasthan",
+  "slug": "jodhpur",
+  "tagline": "The Blue City dominated by the mighty Mehrangarh Fort",
+  "categories": [
+    "heritage",
+    "desert",
+    "city"
+  ],
+  "introduction": "Planning a trip to Jodhpur? This travel guide to Jodhpur covers the must visit places in Jodhpur, the best places to visit in Jodhpur, top tourist attractions in Jodhpur, and exciting things to do in Jodhpur.",
+  "metaTitle": "Best Places to Visit in Jodhpur | Tourist Attractions in Jodhpur - TrypInn",
+  "metaDescription": "Explore the best places to visit in Jodhpur, top things to do in Jodhpur, and must visit places in Jodhpur. Your complete travel guide to Jodhpur by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=1200&q=60",
+    "alt": "Jodhpur travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "jodhpur-mehrangarh-fort",
+      "name": "Mehrangarh Fort",
+      "slug": "mehrangarh-fort",
+      "description": "Mehrangarh Fort is a must-see fort in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Capture stunning photographs at Mehrangarh Fort.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Mehrangarh Fort, Jodhpur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Mehrangarh Fort in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Mehrangarh Fort in Jodhpur"
+      },
+      "position": 1
+    },
+    {
+      "id": "jodhpur-umaid-bhawan-palace",
+      "name": "Umaid Bhawan Palace",
+      "slug": "umaid-bhawan-palace",
+      "description": "A crown jewel of Jodhpur, Umaid Bhawan Palace captivates every traveler with enchanting beauty. No trip to Jodhpur is complete without visiting Umaid Bhawan Palace.",
+      "whyVisit": "A visit to Umaid Bhawan Palace is essential for understanding Jodhpur.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Umaid Bhawan Palace, Jodhpur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Umaid Bhawan Palace in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Umaid Bhawan Palace in Jodhpur"
+      },
+      "position": 2
+    },
+    {
+      "id": "jodhpur-jaswant-thada",
+      "name": "Jaswant Thada",
+      "slug": "jaswant-thada",
+      "description": "Jaswant Thada is a must-see heritage in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Jaswant Thada stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jaswant Thada, Jodhpur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Jaswant Thada in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Jaswant Thada in Jodhpur"
+      },
+      "position": 3
+    },
+    {
+      "id": "jodhpur-clock-tower-market",
+      "name": "Clock Tower Market",
+      "slug": "clock-tower-market",
+      "description": "Clock Tower Market is one of the most iconic landmarks in Jodhpur, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Clock Tower Market promises an unforgettable experience.",
+      "whyVisit": "Clock Tower Market stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Evening",
+      "mapsSearch": "Clock Tower Market, Jodhpur",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Clock Tower Market in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Clock Tower Market in Jodhpur"
+      },
+      "position": 4
+    },
+    {
+      "id": "jodhpur-mandore-gardens",
+      "name": "Mandore Gardens",
+      "slug": "mandore-gardens",
+      "description": "Mandore Gardens is a must-see garden in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Experience the unmatched beauty of Mandore Gardens.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mandore Gardens, Jodhpur",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Mandore Gardens in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Mandore Gardens in Jodhpur"
+      },
+      "position": 5
+    },
+    {
+      "id": "jodhpur-toorji-ka-jhalra",
+      "name": "Toorji Ka Jhalra",
+      "slug": "toorji-ka-jhalra",
+      "description": "Toorji Ka Jhalra is a must-see heritage in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "A visit to Toorji Ka Jhalra is essential for understanding Jodhpur.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Toorji Ka Jhalra, Jodhpur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Toorji Ka Jhalra in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Toorji Ka Jhalra in Jodhpur"
+      },
+      "position": 6
+    },
+    {
+      "id": "jodhpur-rao-jodha-desert-rock-park",
+      "name": "Rao Jodha Desert Rock Park",
+      "slug": "rao-jodha-desert-rock-park",
+      "description": "Rao Jodha Desert Rock Park is a must-see nature in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "A visit to Rao Jodha Desert Rock Park is essential for understanding Jodhpur.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Rao Jodha Desert Rock Park, Jodhpur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rao Jodha Desert Rock Park in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Rao Jodha Desert Rock Park in Jodhpur"
+      },
+      "position": 7
+    },
+    {
+      "id": "jodhpur-kaylana-lake",
+      "name": "Kaylana Lake",
+      "slug": "kaylana-lake",
+      "description": "Located in scenic Jodhpur, Kaylana Lake offers an immersive experience into local culture. Exploring Kaylana Lake is one of the top things to do in Jodhpur.",
+      "whyVisit": "Kaylana Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Kaylana Lake, Jodhpur",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kaylana Lake in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Kaylana Lake in Jodhpur"
+      },
+      "position": 8
+    },
+    {
+      "id": "jodhpur-balsamand-lake",
+      "name": "Balsamand Lake",
+      "slug": "balsamand-lake",
+      "description": "Balsamand Lake is a must-see lake in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Balsamand Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Balsamand Lake, Jodhpur",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Balsamand Lake in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Balsamand Lake in Jodhpur"
+      },
+      "position": 9
+    },
+    {
+      "id": "jodhpur-sardar-government-museum",
+      "name": "Sardar Government Museum",
+      "slug": "sardar-government-museum",
+      "description": "Sardar Government Museum is a must-see museum in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "A visit to Sardar Government Museum is essential for understanding Jodhpur.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Sardar Government Museum, Jodhpur",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Sardar Government Museum in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Sardar Government Museum in Jodhpur"
+      },
+      "position": 10
+    },
+    {
+      "id": "jodhpur-mahamandir-temple",
+      "name": "Mahamandir Temple",
+      "slug": "mahamandir-temple",
+      "description": "A crown jewel of Jodhpur, Mahamandir Temple captivates every traveler with enchanting beauty. No trip to Jodhpur is complete without visiting Mahamandir Temple.",
+      "whyVisit": "Experience the unmatched beauty of Mahamandir Temple.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Mahamandir Temple, Jodhpur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahamandir Temple in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Mahamandir Temple in Jodhpur"
+      },
+      "position": 11
+    },
+    {
+      "id": "jodhpur-chamunda-mata-temple",
+      "name": "Chamunda Mata Temple",
+      "slug": "chamunda-mata-temple",
+      "description": "Nestled in Jodhpur, Chamunda Mata Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Chamunda Mata Temple is among the best things to do in Jodhpur.",
+      "whyVisit": "Chamunda Mata Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Chamunda Mata Temple, Jodhpur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamunda Mata Temple in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Chamunda Mata Temple in Jodhpur"
+      },
+      "position": 12
+    },
+    {
+      "id": "jodhpur-sachiya-mata-temple",
+      "name": "Sachiya Mata Temple",
+      "slug": "sachiya-mata-temple",
+      "description": "Located in scenic Jodhpur, Sachiya Mata Temple offers an immersive experience into local culture. Exploring Sachiya Mata Temple is one of the top things to do in Jodhpur.",
+      "whyVisit": "A visit to Sachiya Mata Temple is essential for understanding Jodhpur.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sachiya Mata Temple, Jodhpur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sachiya Mata Temple in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Sachiya Mata Temple in Jodhpur"
+      },
+      "position": 13
+    },
+    {
+      "id": "jodhpur-osian-temples",
+      "name": "Osian Temples",
+      "slug": "osian-temples",
+      "description": "Osian Temples is a must-see temple in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Experience the unmatched beauty of Osian Temples.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Osian Temples, Jodhpur",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Osian Temples in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Osian Temples in Jodhpur"
+      },
+      "position": 14
+    },
+    {
+      "id": "jodhpur-nehru-park-jodhpur",
+      "name": "Nehru Park Jodhpur",
+      "slug": "nehru-park-jodhpur",
+      "description": "Nehru Park Jodhpur is a must-see park in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Nehru Park Jodhpur stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Nehru Park Jodhpur, Jodhpur",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Nehru Park Jodhpur in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Nehru Park Jodhpur in Jodhpur"
+      },
+      "position": 15
+    },
+    {
+      "id": "jodhpur-ghanta-ghar",
+      "name": "Ghanta Ghar",
+      "slug": "ghanta-ghar",
+      "description": "Ghanta Ghar is one of the most iconic landmarks in Jodhpur, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Ghanta Ghar promises an unforgettable experience.",
+      "whyVisit": "Ghanta Ghar offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ghanta Ghar, Jodhpur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Ghanta Ghar in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Ghanta Ghar in Jodhpur"
+      },
+      "position": 16
+    },
+    {
+      "id": "jodhpur-masuriya-hill",
+      "name": "Masuriya Hill",
+      "slug": "masuriya-hill",
+      "description": "Masuriya Hill is a must-see viewpoint in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Capture stunning photographs at Masuriya Hill.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Masuriya Hill, Jodhpur",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Masuriya Hill in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Masuriya Hill in Jodhpur"
+      },
+      "position": 17
+    },
+    {
+      "id": "jodhpur-phool-mahal",
+      "name": "Phool Mahal",
+      "slug": "phool-mahal",
+      "description": "Phool Mahal is a must-see palace in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Phool Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Afternoon",
+      "duration": "Full day",
+      "mapsSearch": "Phool Mahal, Jodhpur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Phool Mahal in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Phool Mahal in Jodhpur"
+      },
+      "position": 18
+    },
+    {
+      "id": "jodhpur-sheesh-mahal-mehrangarh",
+      "name": "Sheesh Mahal Mehrangarh",
+      "slug": "sheesh-mahal-mehrangarh",
+      "description": "Sheesh Mahal Mehrangarh is one of the most iconic landmarks in Jodhpur, drawing visitors with its timeless charm. This palace offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sheesh Mahal Mehrangarh promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Sheesh Mahal Mehrangarh.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sheesh Mahal Mehrangarh, Jodhpur",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Sheesh Mahal Mehrangarh in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Sheesh Mahal Mehrangarh in Jodhpur"
+      },
+      "position": 19
+    },
+    {
+      "id": "jodhpur-ranisar-padamsar-lakes",
+      "name": "Ranisar Padamsar Lakes",
+      "slug": "ranisar-padamsar-lakes",
+      "description": "A crown jewel of Jodhpur, Ranisar Padamsar Lakes captivates every traveler with enchanting beauty. No trip to Jodhpur is complete without visiting Ranisar Padamsar Lakes.",
+      "whyVisit": "Ranisar Padamsar Lakes offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Ranisar Padamsar Lakes, Jodhpur",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Ranisar Padamsar Lakes in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Ranisar Padamsar Lakes in Jodhpur"
+      },
+      "position": 20
+    },
+    {
+      "id": "jodhpur-sardarpura-market",
+      "name": "Sardarpura Market",
+      "slug": "sardarpura-market",
+      "description": "Located in scenic Jodhpur, Sardarpura Market offers an immersive experience into local culture. Exploring Sardarpura Market is one of the top things to do in Jodhpur.",
+      "whyVisit": "A visit to Sardarpura Market is essential for understanding Jodhpur.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sardarpura Market, Jodhpur",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Sardarpura Market in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Sardarpura Market in Jodhpur"
+      },
+      "position": 21
+    },
+    {
+      "id": "jodhpur-sojati-gate-market",
+      "name": "Sojati Gate Market",
+      "slug": "sojati-gate-market",
+      "description": "Nestled in Jodhpur, Sojati Gate Market stands as a testament to architectural brilliance. This renowned market attracts tourists who come to admire its stunning design. A visit to Sojati Gate Market is among the best things to do in Jodhpur.",
+      "whyVisit": "Sojati Gate Market offers a perfect blend of history and scenery.",
+      "bestTime": "Weekends",
+      "duration": "Evening",
+      "mapsSearch": "Sojati Gate Market, Jodhpur",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Sojati Gate Market in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Sojati Gate Market in Jodhpur"
+      },
+      "position": 22
+    },
+    {
+      "id": "jodhpur-khejrala-fort",
+      "name": "Khejrala Fort",
+      "slug": "khejrala-fort",
+      "description": "A crown jewel of Jodhpur, Khejrala Fort captivates every traveler with enchanting beauty. No trip to Jodhpur is complete without visiting Khejrala Fort.",
+      "whyVisit": "Khejrala Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khejrala Fort, Jodhpur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Khejrala Fort in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Khejrala Fort in Jodhpur"
+      },
+      "position": 23
+    },
+    {
+      "id": "jodhpur-nagaur-fort-day-trip",
+      "name": "Nagaur Fort Day Trip",
+      "slug": "nagaur-fort-day-trip",
+      "description": "Nagaur Fort Day Trip is a must-see fort in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Nagaur Fort Day Trip offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Nagaur Fort Day Trip, Jodhpur",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Nagaur Fort Day Trip in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Nagaur Fort Day Trip in Jodhpur"
+      },
+      "position": 24
+    },
+    {
+      "id": "jodhpur-bishnoi-village-safari",
+      "name": "Bishnoi Village Safari",
+      "slug": "bishnoi-village-safari",
+      "description": "Bishnoi Village Safari is a must-see heritage in Jodhpur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Jodhpur.",
+      "whyVisit": "Bishnoi Village Safari offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bishnoi Village Safari, Jodhpur",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Bishnoi Village Safari in Jodhpur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Bishnoi Village Safari in Jodhpur"
+      },
+      "position": 25
+    }
+  ]
+}

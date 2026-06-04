@@ -1,0 +1,447 @@
+{
+  "id": "pushkar",
+  "name": "Pushkar",
+  "state": "Rajasthan",
+  "slug": "pushkar",
+  "tagline": "A sacred lake town surrounded by desert hills and camel fairs",
+  "categories": [
+    "spiritual",
+    "desert",
+    "heritage"
+  ],
+  "introduction": "Planning a trip to Pushkar? This travel guide to Pushkar covers the must visit places in Pushkar, the best places to visit in Pushkar, top tourist attractions in Pushkar, and exciting things to do in Pushkar.",
+  "metaTitle": "Top Things to Do in Pushkar | Travel Guide to Pushkar - TrypInn",
+  "metaDescription": "Explore the best places to visit in Pushkar, top things to do in Pushkar, and must visit places in Pushkar. Your complete travel guide to Pushkar by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=1200&q=60",
+    "alt": "Pushkar travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "pushkar-pushkar-lake",
+      "name": "Pushkar Lake",
+      "slug": "pushkar-lake",
+      "description": "Nestled in Pushkar, Pushkar Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Pushkar Lake is among the best things to do in Pushkar.",
+      "whyVisit": "Pushkar Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Sep-Nov",
+      "duration": "Full day",
+      "mapsSearch": "Pushkar Lake, Pushkar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Lake in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Pushkar Lake in Pushkar"
+      },
+      "position": 1
+    },
+    {
+      "id": "pushkar-brahma-temple",
+      "name": "Brahma Temple",
+      "slug": "brahma-temple",
+      "description": "Brahma Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Brahma Temple promises an unforgettable experience.",
+      "whyVisit": "Brahma Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Brahma Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brahma Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Brahma Temple in Pushkar"
+      },
+      "position": 2
+    },
+    {
+      "id": "pushkar-savitri-temple",
+      "name": "Savitri Temple",
+      "slug": "savitri-temple",
+      "description": "A crown jewel of Pushkar, Savitri Temple captivates every traveler with enchanting beauty. No trip to Pushkar is complete without visiting Savitri Temple.",
+      "whyVisit": "Capture stunning photographs at Savitri Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Savitri Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Savitri Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Savitri Temple in Pushkar"
+      },
+      "position": 3
+    },
+    {
+      "id": "pushkar-pushkar-camel-fair-ground",
+      "name": "Pushkar Camel Fair Ground",
+      "slug": "pushkar-camel-fair-ground",
+      "description": "Pushkar Camel Fair Ground is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pushkar Camel Fair Ground promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Pushkar Camel Fair Ground.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Pushkar Camel Fair Ground, Pushkar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Camel Fair Ground in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Pushkar Camel Fair Ground in Pushkar"
+      },
+      "position": 4
+    },
+    {
+      "id": "pushkar-varaha-temple",
+      "name": "Varaha Temple",
+      "slug": "varaha-temple",
+      "description": "Varaha Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Varaha Temple promises an unforgettable experience.",
+      "whyVisit": "A visit to Varaha Temple is essential for understanding Pushkar.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Varaha Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Varaha Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Varaha Temple in Pushkar"
+      },
+      "position": 5
+    },
+    {
+      "id": "pushkar-rangji-temple",
+      "name": "Rangji Temple",
+      "slug": "rangji-temple",
+      "description": "Rangji Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rangji Temple promises an unforgettable experience.",
+      "whyVisit": "Rangji Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Rangji Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Rangji Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Rangji Temple in Pushkar"
+      },
+      "position": 6
+    },
+    {
+      "id": "pushkar-man-mahal",
+      "name": "Man Mahal",
+      "slug": "man-mahal",
+      "description": "Man Mahal is a must-see palace in Pushkar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pushkar.",
+      "whyVisit": "Man Mahal offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Man Mahal, Pushkar",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Man Mahal in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Man Mahal in Pushkar"
+      },
+      "position": 7
+    },
+    {
+      "id": "pushkar-rose-garden-pushkar",
+      "name": "Rose Garden Pushkar",
+      "slug": "rose-garden-pushkar",
+      "description": "Located in scenic Pushkar, Rose Garden Pushkar offers an immersive experience into local culture. Exploring Rose Garden Pushkar is one of the top things to do in Pushkar.",
+      "whyVisit": "Rose Garden Pushkar stands out as one of the most rewarding experiences.",
+      "bestTime": "Spring",
+      "duration": "2-3 hours",
+      "mapsSearch": "Rose Garden Pushkar, Pushkar",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Rose Garden Pushkar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Rose Garden Pushkar in Pushkar"
+      },
+      "position": 8
+    },
+    {
+      "id": "pushkar-pap-mochani-temple",
+      "name": "Pap Mochani Temple",
+      "slug": "pap-mochani-temple",
+      "description": "Pap Mochani Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pap Mochani Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Pap Mochani Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Pap Mochani Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Pap Mochani Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Pap Mochani Temple in Pushkar"
+      },
+      "position": 9
+    },
+    {
+      "id": "pushkar-gau-ghat",
+      "name": "Gau Ghat",
+      "slug": "gau-ghat",
+      "description": "A crown jewel of Pushkar, Gau Ghat captivates every traveler with enchanting beauty. No trip to Pushkar is complete without visiting Gau Ghat.",
+      "whyVisit": "Gau Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Gau Ghat, Pushkar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Gau Ghat in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Gau Ghat in Pushkar"
+      },
+      "position": 10
+    },
+    {
+      "id": "pushkar-apteshwar-temple",
+      "name": "Apteshwar Temple",
+      "slug": "apteshwar-temple",
+      "description": "Nestled in Pushkar, Apteshwar Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Apteshwar Temple is among the best things to do in Pushkar.",
+      "whyVisit": "A visit to Apteshwar Temple is essential for understanding Pushkar.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Apteshwar Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Apteshwar Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Apteshwar Temple in Pushkar"
+      },
+      "position": 11
+    },
+    {
+      "id": "pushkar-atmeshwar-temple",
+      "name": "Atmeshwar Temple",
+      "slug": "atmeshwar-temple",
+      "description": "Nestled in Pushkar, Atmeshwar Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Atmeshwar Temple is among the best things to do in Pushkar.",
+      "whyVisit": "Atmeshwar Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Atmeshwar Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Atmeshwar Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Atmeshwar Temple in Pushkar"
+      },
+      "position": 12
+    },
+    {
+      "id": "pushkar-naga-pahar",
+      "name": "Naga Pahar",
+      "slug": "naga-pahar",
+      "description": "Nestled in Pushkar, Naga Pahar stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Naga Pahar is among the best things to do in Pushkar.",
+      "whyVisit": "Naga Pahar offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Naga Pahar, Pushkar",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Naga Pahar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Naga Pahar in Pushkar"
+      },
+      "position": 13
+    },
+    {
+      "id": "pushkar-merta-city",
+      "name": "Merta City",
+      "slug": "merta-city",
+      "description": "Merta City is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Merta City promises an unforgettable experience.",
+      "whyVisit": "Merta City stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Merta City, Pushkar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Merta City in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Merta City in Pushkar"
+      },
+      "position": 14
+    },
+    {
+      "id": "pushkar-kishangarh-day-trip",
+      "name": "Kishangarh Day Trip",
+      "slug": "kishangarh-day-trip",
+      "description": "Kishangarh Day Trip is a must-see heritage in Pushkar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pushkar.",
+      "whyVisit": "Experience the unmatched beauty of Kishangarh Day Trip.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Kishangarh Day Trip, Pushkar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Kishangarh Day Trip in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Kishangarh Day Trip in Pushkar"
+      },
+      "position": 15
+    },
+    {
+      "id": "pushkar-desert-camping-pushkar",
+      "name": "Desert Camping Pushkar",
+      "slug": "desert-camping-pushkar",
+      "description": "Located in scenic Pushkar, Desert Camping Pushkar offers an immersive experience into local culture. Exploring Desert Camping Pushkar is one of the top things to do in Pushkar.",
+      "whyVisit": "Desert Camping Pushkar stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Jun",
+      "duration": "2-4 hours",
+      "mapsSearch": "Desert Camping Pushkar, Pushkar",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Desert Camping Pushkar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Desert Camping Pushkar in Pushkar"
+      },
+      "position": 16
+    },
+    {
+      "id": "pushkar-pushkar-bazaar",
+      "name": "Pushkar Bazaar",
+      "slug": "pushkar-bazaar",
+      "description": "Pushkar Bazaar is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pushkar Bazaar promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Pushkar Bazaar.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pushkar Bazaar, Pushkar",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Bazaar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Pushkar Bazaar in Pushkar"
+      },
+      "position": 17
+    },
+    {
+      "id": "pushkar-sunset-point-pushkar",
+      "name": "Sunset Point Pushkar",
+      "slug": "sunset-point-pushkar",
+      "description": "A crown jewel of Pushkar, Sunset Point Pushkar captivates every traveler with enchanting beauty. No trip to Pushkar is complete without visiting Sunset Point Pushkar.",
+      "whyVisit": "Capture stunning photographs at Sunset Point Pushkar.",
+      "bestTime": "Clear days",
+      "duration": "30-60 min",
+      "mapsSearch": "Sunset Point Pushkar, Pushkar",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Sunset Point Pushkar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Sunset Point Pushkar in Pushkar"
+      },
+      "position": 18
+    },
+    {
+      "id": "pushkar-ana-sagar-lake",
+      "name": "Ana Sagar Lake",
+      "slug": "ana-sagar-lake",
+      "description": "Located in scenic Pushkar, Ana Sagar Lake offers an immersive experience into local culture. Exploring Ana Sagar Lake is one of the top things to do in Pushkar.",
+      "whyVisit": "A visit to Ana Sagar Lake is essential for understanding Pushkar.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ana Sagar Lake, Pushkar",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Ana Sagar Lake in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Ana Sagar Lake in Pushkar"
+      },
+      "position": 19
+    },
+    {
+      "id": "pushkar-old-rangji-temple",
+      "name": "Old Rangji Temple",
+      "slug": "old-rangji-temple",
+      "description": "Nestled in Pushkar, Old Rangji Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Old Rangji Temple is among the best things to do in Pushkar.",
+      "whyVisit": "Experience the unmatched beauty of Old Rangji Temple.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Old Rangji Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Old Rangji Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Old Rangji Temple in Pushkar"
+      },
+      "position": 20
+    },
+    {
+      "id": "pushkar-mahadeva-temple",
+      "name": "Mahadeva Temple",
+      "slug": "mahadeva-temple",
+      "description": "Mahadeva Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mahadeva Temple promises an unforgettable experience.",
+      "whyVisit": "Mahadeva Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahadeva Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahadeva Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Mahadeva Temple in Pushkar"
+      },
+      "position": 21
+    },
+    {
+      "id": "pushkar-panchkund-shiva-temple",
+      "name": "Panchkund Shiva Temple",
+      "slug": "panchkund-shiva-temple",
+      "description": "A crown jewel of Pushkar, Panchkund Shiva Temple captivates every traveler with enchanting beauty. No trip to Pushkar is complete without visiting Panchkund Shiva Temple.",
+      "whyVisit": "Experience the unmatched beauty of Panchkund Shiva Temple.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Panchkund Shiva Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Panchkund Shiva Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Panchkund Shiva Temple in Pushkar"
+      },
+      "position": 22
+    },
+    {
+      "id": "pushkar-gayatrimata-temple",
+      "name": "Gayatrimata Temple",
+      "slug": "gayatrimata-temple",
+      "description": "Gayatrimata Temple is one of the most iconic landmarks in Pushkar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gayatrimata Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Gayatrimata Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gayatrimata Temple, Pushkar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Gayatrimata Temple in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Gayatrimata Temple in Pushkar"
+      },
+      "position": 23
+    },
+    {
+      "id": "pushkar-pushkar-yoga-garden",
+      "name": "Pushkar Yoga Garden",
+      "slug": "pushkar-yoga-garden",
+      "description": "Located in scenic Pushkar, Pushkar Yoga Garden offers an immersive experience into local culture. Exploring Pushkar Yoga Garden is one of the top things to do in Pushkar.",
+      "whyVisit": "Pushkar Yoga Garden offers a perfect blend of history and scenery.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pushkar Yoga Garden, Pushkar",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Yoga Garden in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Pushkar Yoga Garden in Pushkar"
+      },
+      "position": 24
+    },
+    {
+      "id": "pushkar-sarafa-bazaar",
+      "name": "Sarafa Bazaar",
+      "slug": "sarafa-bazaar",
+      "description": "Sarafa Bazaar is a must-see market in Pushkar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Pushkar.",
+      "whyVisit": "Capture stunning photographs at Sarafa Bazaar.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sarafa Bazaar, Pushkar",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Sarafa Bazaar in Pushkar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Sarafa Bazaar in Pushkar"
+      },
+      "position": 25
+    }
+  ]
+}

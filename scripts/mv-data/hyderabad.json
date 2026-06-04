@@ -1,0 +1,260 @@
+{
+  "slug": "hyderabad",
+  "name": "Hyderabad",
+  "state": "Telangana",
+  "tagline": "City of Nizams, pearls, and biryani perfection",
+  "categories": ["heritage", "city", "historical"],
+  "highlights": ["nizami heritage monuments and palaces", "world-famous hyderabadi dum biryani"],
+  "attractions": [
+    {
+      "name": "Charminar",
+      "category": "heritage",
+      "description": "The defining symbol of Hyderabad, this 56-metre-tall triumphal arch and mosque was built in 1591 by Muhammad Quli Qutb Shah to commemorate the founding of the city and the end of a plague. Four grand minarets rise at each corner, and the upper floor holds a functioning mosque. The surrounding labyrinthine bazaar — Laad Bazaar — sells bangles, pearls, and perfume.",
+      "whyVisit": "Hyderabad's most iconic monument and the gateway to its greatest street bazaar.",
+      "bestTime": "Early morning or 1 hour before sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Charminar Hyderabad",
+      "imageQuery": "Charminar Hyderabad monument evening"
+    },
+    {
+      "name": "Golconda Fort",
+      "category": "fort",
+      "description": "This colossal fortified citadel west of Hyderabad was built by the Qutb Shahi dynasty between the 13th and 17th centuries. Eight massive gateways, 87 semicircular bastions, and an ingenious acoustic system that carries a hand-clap from the entrance gate to the palace 1 km away still astonish visitors. The fort also once housed the Koh-i-Noor and Hope diamonds before they were looted.",
+      "whyVisit": "One of the most formidable and historically significant forts in India, with a world-class sound-and-light show at night.",
+      "bestTime": "Early morning or evening for the sound-and-light show",
+      "duration": "3-4 hours",
+      "mapsSearch": "Golconda Fort Hyderabad",
+      "imageQuery": "Golconda Fort Hyderabad battlements sunset"
+    },
+    {
+      "name": "Qutb Shahi Tombs",
+      "category": "heritage",
+      "description": "A necropolis of seven domed mausoleums housing the Qutb Shahi sultans lies just north of Golconda Fort. Built between the 16th and 17th centuries, the tombs blend Persian, Pathan, and Hindu architectural styles — each tomb rising on a plinth with pointed arches and decorated with stucco calligraphy. The complex was restored by the Aga Khan Trust and its gardens are immaculate.",
+      "whyVisit": "A serene and architecturally extraordinary necropolis that most visitors to Golconda miss entirely.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Qutb Shahi Tombs Hyderabad",
+      "imageQuery": "Qutb Shahi Tombs Hyderabad domed mausoleums"
+    },
+    {
+      "name": "Salar Jung Museum",
+      "category": "museum",
+      "description": "Housing the private collection of Mir Yousuf Ali Khan (Salar Jung III), this is one of the world's largest one-man art collections. Over 43,000 objects fill 38 galleries — Mughal jade, European paintings, Indian miniatures, Japanese lacquerware, a veiled Rebecca marble sculpture, and the famous double-figure clock that strikes every hour. The collection took three generations to assemble.",
+      "whyVisit": "One of the most eclectic and astonishing art collections in Asia, housed under a single roof.",
+      "bestTime": "Weekday morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Salar Jung Museum Hyderabad",
+      "imageQuery": "Salar Jung Museum Hyderabad gallery artefacts"
+    },
+    {
+      "name": "Hussain Sagar Lake",
+      "category": "lake",
+      "description": "Built in 1563 by Ibrahim Quli Qutb Shah, this vast 5.7 sq km lake sits in the heart of Hyderabad. At its centre stands a 16-metre monolithic Buddha statue on a small island, accessible by ferry from Lumbini Park and NTR Garden. The lakeside Boulevard is lined with cafes, necklace road is popular for evening drives, and the tank bund illuminates spectacularly after dark.",
+      "whyVisit": "The city's great communal waterfront, with the iconic Buddha statue at its heart.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hussain Sagar Lake Hyderabad",
+      "imageQuery": "Hussain Sagar Lake Buddha statue Hyderabad evening"
+    },
+    {
+      "name": "Chowmahalla Palace",
+      "category": "palace",
+      "description": "The official residence of the Asaf Jah dynasty (Nizams), Chowmahalla was built between 1857 and 1869 and is among the grandest palace complexes in India. The Durbar Hall with its Belgian crystal chandeliers and marble columns is breathtaking. The vintage car collection — including Rolls-Royces, Bentleys, and rare Studebakers — belongs to the Nizam's fleet.",
+      "whyVisit": "The most opulent Nizami palace open to the public, dripping with royal grandeur.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chowmahalla Palace Hyderabad",
+      "imageQuery": "Chowmahalla Palace Hyderabad Durbar Hall chandelier"
+    },
+    {
+      "name": "Falaknuma Palace",
+      "category": "palace",
+      "description": "Perched 150 metres above the city on a rocky outcrop, Falaknuma ('Mirror of the Sky') was the 19th-century palace of Nizam VI and is now the ultra-luxury Taj Falaknuma Hotel. Non-guests can book afternoon tea or a heritage tour. The Italian marble interiors, Venetian chandeliers, and the world's largest dining table seating 101 guests are breathtaking.",
+      "whyVisit": "The most spectacular palace in Hyderabad, with views that justify the climb.",
+      "bestTime": "Afternoon for heritage tea tour",
+      "duration": "2-3 hours",
+      "mapsSearch": "Falaknuma Palace Hyderabad Taj Hotel",
+      "imageQuery": "Falaknuma Palace Hyderabad hilltop Taj"
+    },
+    {
+      "name": "Laad Bazaar (Choodi Bazaar)",
+      "category": "market",
+      "description": "Hyderabad's oldest and most atmospheric market radiates from the arches of Charminar and has traded in lac bangles, perfumes, pearls, and embroidered fabrics for over four centuries. The narrow lanes are a riot of colour, with bangle sellers coating arms in intricate patterns, attar shops filling the air with jasmine and rose, and bridal trousseau stores stacked floor to ceiling.",
+      "whyVisit": "The most immersive and aromatic bazaar in Hyderabad — a complete sensory experience.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Laad Bazaar Hyderabad Charminar",
+      "imageQuery": "Laad Bazaar Hyderabad bangles market colourful"
+    },
+    {
+      "name": "Mecca Masjid",
+      "category": "religious",
+      "description": "One of the largest mosques in India and among the oldest in Hyderabad, Mecca Masjid was begun by Muhammad Quli Qutb Shah in 1617 and completed by Mughal emperor Aurangzeb in 1694. The central arch is 23 metres wide and the courtyard accommodates 10,000 worshippers. Bricks embedded in the central arch were made with soil brought from Mecca itself.",
+      "whyVisit": "A magnificent and historically resonant mosque — one of the great Mughal-era mosques of the Deccan.",
+      "bestTime": "Non-prayer hours morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Mecca Masjid Hyderabad",
+      "imageQuery": "Mecca Masjid Hyderabad grand mosque courtyard"
+    },
+    {
+      "name": "Birla Mandir Hyderabad",
+      "category": "temple",
+      "description": "Perched atop a 280-foot rocky hill called Naubath Pahad, the Birla Mandir is built entirely from pristine white Rajasthani marble and dedicated to Lord Venkateswara. Completed in 1976, the temple commands sweeping views over Hussain Sagar and the city skyline. The evening illumination of the white marble is especially beautiful, and the temple is open to all faiths.",
+      "whyVisit": "The most visually striking temple in Hyderabad, with the best city panorama from the hillside.",
+      "bestTime": "Evening for marble illumination and sunset views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Birla Mandir Hyderabad Naubath Pahad",
+      "imageQuery": "Birla Mandir white marble temple Hyderabad Hussain Sagar"
+    },
+    {
+      "name": "Ramoji Film City",
+      "category": "heritage",
+      "description": "The world's largest integrated film studio complex, certified by the Guinness World Records, sprawls over 2,000 acres on the outskirts of Hyderabad. Over 50 permanent film sets — ranging from a Japanese garden to a European street — can be toured, along with live entertainment shows, stunt performances, and behind-the-scenes studio tours. Hundreds of Bollywood and Telugu films are shot here annually.",
+      "whyVisit": "The most expansive film studio experience in the world — fascinating for cinema fans of any language.",
+      "bestTime": "Weekday to avoid crowds",
+      "duration": "Full day",
+      "mapsSearch": "Ramoji Film City Hyderabad",
+      "imageQuery": "Ramoji Film City Hyderabad film sets entrance"
+    },
+    {
+      "name": "Nehru Zoological Park",
+      "category": "wildlife",
+      "description": "One of India's largest and best-maintained zoological parks, covering 380 acres with over 1,500 animals representing 100 species. The lion safari and tiger safari are highlights, along with the nocturnal animal house, butterfly park, and prehistoric animal park. The zoo's conservation breeding programme for Indian rhinos and gharials is nationally significant.",
+      "whyVisit": "The best zoo in South India with excellent big-cat safaris.",
+      "bestTime": "Morning on weekdays",
+      "duration": "4-5 hours",
+      "mapsSearch": "Nehru Zoological Park Hyderabad",
+      "imageQuery": "Nehru Zoological Park Hyderabad tiger safari"
+    },
+    {
+      "name": "Paigah Tombs",
+      "category": "heritage",
+      "description": "The ornate mausoleums of the Paigah nobles — the Nizam's senior cavalry commanders — stand in a walled compound in Santoshnagar and represent some of the finest stucco work in India. Built between the 18th and 19th centuries, the white-and-black geometric tiles and delicate plasterwork inside resemble Islamic tilework from Persia and Central Asia. The complex is severely undervisited.",
+      "whyVisit": "Hyderabad's most overlooked architectural gem — extraordinarily detailed Nizami funerary art.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Paigah Tombs Hyderabad Santoshnagar",
+      "imageQuery": "Paigah Tombs Hyderabad stucco mosaic mausoleum"
+    },
+    {
+      "name": "Taramati Baradari",
+      "category": "heritage",
+      "description": "This magnificent 16th-century pavilion complex near Ibrahim Bagh was built by Ibrahim Quli Qutb Shah as a sarai and entertainment venue. Its 12 grand arches of Persian design have been meticulously restored and now serve as a cultural amphitheatre. Set against the backdrop of Golconda Fort's silhouette on the horizon, evening events here are atmospheric beyond compare.",
+      "whyVisit": "The most beautiful and atmospheric cultural venue in Hyderabad, lit by the Golconda skyline.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taramati Baradari Hyderabad Ibrahim Bagh",
+      "imageQuery": "Taramati Baradari Hyderabad arches evening"
+    },
+    {
+      "name": "Charminar Irani Chai",
+      "category": "market",
+      "description": "Hyderabad's beloved Irani chai culture — milky, slow-simmered tea served in small glasses with Osmania biscuits — is best experienced at one of the decades-old Iranian-style cafes around Charminar: Hotel Nimrah, Cafe Bahar, or any corner teahouse. The ritual of dipping an Osmania biscuit in Irani chai is as essential to Hyderabad as the biryani itself.",
+      "whyVisit": "An unmissable local ritual — the taste and atmosphere of Hyderabadi café culture in one cup.",
+      "bestTime": "Morning",
+      "duration": "30 minutes",
+      "mapsSearch": "Hotel Nimrah Irani Chai Charminar Hyderabad",
+      "imageQuery": "Irani chai Osmania biscuits Hyderabad cafe"
+    },
+    {
+      "name": "Chilkur Balaji Temple",
+      "category": "temple",
+      "description": "Known as the 'Visa Balaji Temple', this 500-year-old shrine 30 km from Hyderabad sees thousands of devotees weekly, many praying for overseas visa approval. Devotees circle the temple 11 times before petitioning, then 108 times after receiving the visa. No hundi (money box) exists — the temple accepts no donations, which makes it remarkably unique in India.",
+      "whyVisit": "A fascinating and unique temple that accepts no money — only circumambulations — and draws enormous faith.",
+      "bestTime": "Weekday morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chilkur Balaji Temple Hyderabad",
+      "imageQuery": "Chilkur Balaji Temple Hyderabad visa devotees"
+    },
+    {
+      "name": "Warangal Fort",
+      "category": "fort",
+      "description": "A 145 km day trip from Hyderabad, Warangal Fort was the capital of the Kakatiya dynasty in the 12th–13th centuries. The four grand stone gateways (kirtitoranas) with their intricately carved brackets and elephants are among the finest examples of Kakatiya art. The fort complex also contains the Swayambhu Shiva Temple and a large tank.",
+      "whyVisit": "The greatest Kakatiya architectural achievement and a stunning day trip from Hyderabad.",
+      "bestTime": "October to February, morning",
+      "duration": "5-6 hours with travel",
+      "mapsSearch": "Warangal Fort Telangana",
+      "imageQuery": "Warangal Fort Kakatiya gateways kirtitorana"
+    },
+    {
+      "name": "Keesaragutta Temple",
+      "category": "temple",
+      "description": "Set on a rocky hilltop 40 km from Hyderabad, this ancient Shiva temple is associated with the legend of Keesara Gutta — a sage who meditated here for years. The trek up the rocky hillside passes dozens of smaller shrines, and the views from the summit extend over the Deccan plateau. The temple is packed during Maha Shivaratri with an overnight festival.",
+      "whyVisit": "A short trek with historical temple reward and panoramic Deccan plateau views.",
+      "bestTime": "October to February, early morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Keesaragutta Temple Hyderabad",
+      "imageQuery": "Keesaragutta hilltop Shiva temple Hyderabad trek"
+    },
+    {
+      "name": "Sudha Cars Museum",
+      "category": "museum",
+      "description": "This quirky private museum in Bahadurpura houses an extraordinary collection of handmade cars shaped like everyday objects — a hamburger, a toilet, a cricket bat, a billiard ball, a camera, a suitcase, and more — all built by engineer K. Sudhakar, who has earned multiple Guinness World Records. Every vehicle is road-legal and many are driven regularly.",
+      "whyVisit": "One of the most delightfully eccentric museums in India — pure fun for all ages.",
+      "bestTime": "Morning",
+      "duration": "1 hour",
+      "mapsSearch": "Sudha Cars Museum Hyderabad",
+      "imageQuery": "Sudha Cars Museum Hyderabad quirky car shapes"
+    },
+    {
+      "name": "Mrugavani National Park",
+      "category": "wildlife",
+      "description": "A 3.8 sq km protected forest on the southern outskirts of Hyderabad, Mrugavani is home to leopards, spotted deer, jackals, monitor lizards, and over 600 plant species. Trekking trails wind through dry deciduous forest, and the silence feels remarkable given the city surrounding it. It is the closest wildlife experience to central Hyderabad.",
+      "whyVisit": "An astonishing pocket of wild forest just minutes from a major metropolitan area.",
+      "bestTime": "Early morning October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mrugavani National Park Hyderabad",
+      "imageQuery": "Mrugavani National Park Hyderabad forest deer"
+    },
+    {
+      "name": "Thousand Lights Mosque (Masjid-e-Alf Cheragh)",
+      "category": "religious",
+      "description": "This relatively modest but visually striking mosque in Nampally is said to have been illuminated by a thousand oil lamps during its inauguration — giving it the name. The white-washed structure with its graceful arches and twin minarets is a neighbourhood landmark and sees continuous use for daily prayers, with a particularly evocative atmosphere at Friday Jumu'ah.",
+      "whyVisit": "A charming neighbourhood mosque that captures everyday Islamic life in Hyderabad beautifully.",
+      "bestTime": "Friday Jumu'ah prayers (non-intrusive viewing)",
+      "duration": "20-30 minutes",
+      "mapsSearch": "Thousand Lights Mosque Hyderabad Nampally",
+      "imageQuery": "Thousand Lights Mosque Hyderabad white arches"
+    },
+    {
+      "name": "Shilparamam Craft Village",
+      "category": "market",
+      "description": "A 65-acre arts and crafts village in Hitech City brings together artisans from across Telangana and Andhra Pradesh selling Pochampally ikkat textiles, Nirmal paintings, Bidriware silver-inlaid metalwork, Kondapalli toys, and Kalamkari fabrics. Live demonstrations, open-air theatre, and a heritage village replica make it both a shopping destination and a cultural education.",
+      "whyVisit": "The best single destination to buy authentic Telangana and Andhra craft without bargaining stress.",
+      "bestTime": "Weekend morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Shilparamam Craft Village Hyderabad Hitech City",
+      "imageQuery": "Shilparamam craft village Hyderabad artisans textiles"
+    },
+    {
+      "name": "Ananthagiri Hills",
+      "category": "nature",
+      "description": "Located 80 km south of Hyderabad near Vikarabad, these densely forested hills rise to 677 metres and are the source of the Musi River. Waterfalls, coffee plantations, trekking trails, and the ancient Anantha Padmanabha Swamy temple make it a popular weekend escape. The misty forest in the monsoon season is particularly atmospheric.",
+      "whyVisit": "The most accessible hill-forest escape from Hyderabad, with waterfalls and coffee plantation air.",
+      "bestTime": "July to September (monsoon) or October to February",
+      "duration": "Full day",
+      "mapsSearch": "Ananthagiri Hills Vikarabad Telangana",
+      "imageQuery": "Ananthagiri Hills forest waterfall Vikarabad Telangana"
+    },
+    {
+      "name": "Purani Haveli",
+      "category": "palace",
+      "description": "The 200-year-old private palace of the sixth Nizam in old Hyderabad contains what is reputed to be the world's longest wardrobe — a teak-and-glass cabinet running 74 metres — built to house the Nizam's vast collection of ceremonial costumes. The palace museum also holds vintage cars, weapons, and the Nizam's personal effects in atmospheric, barely-restored rooms.",
+      "whyVisit": "A deeply atmospheric palace museum with genuinely unique royal artefacts rarely seen elsewhere.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Purani Haveli Museum Hyderabad",
+      "imageQuery": "Purani Haveli Hyderabad Nizam wardrobe palace museum"
+    },
+    {
+      "name": "Moula Ali Dargah & Hill",
+      "category": "religious",
+      "description": "A Sufi shrine dedicated to Hazrat Ali (the Prophet's son-in-law) perches dramatically atop a 100-metre granite hill in north Hyderabad. The climb up 400 steps passes prayer flags, incense smoke, and small shrines cut into the rock. The hilltop dargah is most electric on Thursdays and during the annual Urs festival when thousands gather for qawwali music through the night.",
+      "whyVisit": "A hidden gem — a hilltop Sufi shrine with spectacular city views almost unknown to outsiders.",
+      "bestTime": "Thursday evening or the annual Urs",
+      "duration": "1-2 hours",
+      "mapsSearch": "Moula Ali Dargah Hyderabad",
+      "imageQuery": "Moula Ali Dargah hilltop shrine Hyderabad steps"
+    }
+  ]
+}

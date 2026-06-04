@@ -1,0 +1,447 @@
+{
+  "id": "khajuraho",
+  "name": "Khajuraho",
+  "state": "Madhya Pradesh",
+  "slug": "khajuraho",
+  "tagline": "UNESCO temples of love and architecture",
+  "categories": [
+    "temple",
+    "monument",
+    "heritage"
+  ],
+  "introduction": "Planning a trip to Khajuraho? This travel guide to Khajuraho covers the must visit places in Khajuraho, the best places to visit in Khajuraho, top tourist attractions in Khajuraho, and exciting things to do in Khajuraho.",
+  "metaTitle": "Best Places to Visit in Khajuraho | Tourist Attractions in Khajuraho - TrypInn",
+  "metaDescription": "Find the best places to visit in Khajuraho, must visit places in Khajuraho, and tourist attractions in Khajuraho. Plan your Khajuraho trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=1200&q=60",
+    "alt": "Khajuraho travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "khajuraho-iskcon-temple",
+      "name": "ISKCON Temple",
+      "slug": "iskcon-temple",
+      "description": "ISKCON Temple is one of the most iconic landmarks in Khajuraho, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, ISKCON Temple promises an unforgettable experience.",
+      "whyVisit": "ISKCON Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "ISKCON Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, ISKCON Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "ISKCON Temple in Khajuraho"
+      },
+      "position": 1
+    },
+    {
+      "id": "khajuraho-safdarjung-tomb",
+      "name": "Safdarjung Tomb",
+      "slug": "safdarjung-tomb",
+      "description": "Safdarjung Tomb is one of the most iconic landmarks in Khajuraho, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Safdarjung Tomb promises an unforgettable experience.",
+      "whyVisit": "A visit to Safdarjung Tomb is essential for understanding Khajuraho.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Safdarjung Tomb, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Safdarjung Tomb in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Safdarjung Tomb in Khajuraho"
+      },
+      "position": 2
+    },
+    {
+      "id": "khajuraho-zenana-enclosure",
+      "name": "Zenana Enclosure",
+      "slug": "zenana-enclosure",
+      "description": "Zenana Enclosure is a must-see heritage in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Zenana Enclosure.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Zenana Enclosure, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Zenana Enclosure in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Zenana Enclosure in Khajuraho"
+      },
+      "position": 3
+    },
+    {
+      "id": "khajuraho-vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "slug": "vaishno-devi-temple",
+      "description": "Nestled in Khajuraho, Vaishno Devi Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Vaishno Devi Temple is among the best things to do in Khajuraho.",
+      "whyVisit": "Experience the unmatched beauty of Vaishno Devi Temple.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vaishno Devi Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vaishno Devi Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Vaishno Devi Temple in Khajuraho"
+      },
+      "position": 4
+    },
+    {
+      "id": "khajuraho-jantar-mantar",
+      "name": "Jantar Mantar",
+      "slug": "jantar-mantar",
+      "description": "Jantar Mantar is one of the most iconic landmarks in Khajuraho, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Jantar Mantar promises an unforgettable experience.",
+      "whyVisit": "Jantar Mantar stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jantar Mantar, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Jantar Mantar in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Jantar Mantar in Khajuraho"
+      },
+      "position": 5
+    },
+    {
+      "id": "khajuraho-malik-e-maidan",
+      "name": "Malik-e-Maidan",
+      "slug": "malik-e-maidan",
+      "description": "Located in scenic Khajuraho, Malik-e-Maidan offers an immersive experience into local culture. Exploring Malik-e-Maidan is one of the top things to do in Khajuraho.",
+      "whyVisit": "Malik-e-Maidan offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Malik-e-Maidan, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Malik-e-Maidan in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Malik-e-Maidan in Khajuraho"
+      },
+      "position": 6
+    },
+    {
+      "id": "khajuraho-konark-sun-temple",
+      "name": "Konark Sun Temple",
+      "slug": "konark-sun-temple",
+      "description": "Konark Sun Temple is a must-see temple in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Experience the unmatched beauty of Konark Sun Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Konark Sun Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Konark Sun Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Konark Sun Temple in Khajuraho"
+      },
+      "position": 7
+    },
+    {
+      "id": "khajuraho-taj-mahal",
+      "name": "Taj Mahal",
+      "slug": "taj-mahal",
+      "description": "Located in scenic Khajuraho, Taj Mahal offers an immersive experience into local culture. Exploring Taj Mahal is one of the top things to do in Khajuraho.",
+      "whyVisit": "Taj Mahal stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taj Mahal, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Taj Mahal in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Taj Mahal in Khajuraho"
+      },
+      "position": 8
+    },
+    {
+      "id": "khajuraho-vittala-temple",
+      "name": "Vittala Temple",
+      "slug": "vittala-temple",
+      "description": "Nestled in Khajuraho, Vittala Temple stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Vittala Temple is among the best things to do in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Vittala Temple.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Vittala Temple, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Vittala Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Vittala Temple in Khajuraho"
+      },
+      "position": 9
+    },
+    {
+      "id": "khajuraho-chamundi-temple",
+      "name": "Chamundi Temple",
+      "slug": "chamundi-temple",
+      "description": "Nestled in Khajuraho, Chamundi Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Chamundi Temple is among the best things to do in Khajuraho.",
+      "whyVisit": "Chamundi Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chamundi Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Chamundi Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Chamundi Temple in Khajuraho"
+      },
+      "position": 10
+    },
+    {
+      "id": "khajuraho-sun-temple-konark",
+      "name": "Sun Temple Konark",
+      "slug": "sun-temple-konark",
+      "description": "Sun Temple Konark is one of the most iconic landmarks in Khajuraho, drawing visitors with its timeless charm. This monument offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sun Temple Konark promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Sun Temple Konark.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sun Temple Konark, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple Konark in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Sun Temple Konark in Khajuraho"
+      },
+      "position": 11
+    },
+    {
+      "id": "khajuraho-aihole-temples",
+      "name": "Aihole Temples",
+      "slug": "aihole-temples",
+      "description": "A crown jewel of Khajuraho, Aihole Temples captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Aihole Temples.",
+      "whyVisit": "Aihole Temples offers a perfect blend of history and scenery.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aihole Temples, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Aihole Temples in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Aihole Temples in Khajuraho"
+      },
+      "position": 12
+    },
+    {
+      "id": "khajuraho-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Brihadeeswarar Temple is one of the most iconic landmarks in Khajuraho, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Brihadeeswarar Temple promises an unforgettable experience.",
+      "whyVisit": "Brihadeeswarar Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Brihadeeswarar Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Khajuraho"
+      },
+      "position": 13
+    },
+    {
+      "id": "khajuraho-victoria-memorial",
+      "name": "Victoria Memorial",
+      "slug": "victoria-memorial",
+      "description": "Victoria Memorial is a must-see monument in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Victoria Memorial.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Victoria Memorial, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Victoria Memorial in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Victoria Memorial in Khajuraho"
+      },
+      "position": 14
+    },
+    {
+      "id": "khajuraho-hazararama-temple",
+      "name": "Hazararama Temple",
+      "slug": "hazararama-temple",
+      "description": "A crown jewel of Khajuraho, Hazararama Temple captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Hazararama Temple.",
+      "whyVisit": "Experience the unmatched beauty of Hazararama Temple.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Hazararama Temple, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Hazararama Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Hazararama Temple in Khajuraho"
+      },
+      "position": 15
+    },
+    {
+      "id": "khajuraho-vitthal-temple",
+      "name": "Vitthal Temple",
+      "slug": "vitthal-temple",
+      "description": "A crown jewel of Khajuraho, Vitthal Temple captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Vitthal Temple.",
+      "whyVisit": "Vitthal Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Vitthal Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vitthal Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Vitthal Temple in Khajuraho"
+      },
+      "position": 16
+    },
+    {
+      "id": "khajuraho-hawa-mahal",
+      "name": "Hawa Mahal",
+      "slug": "hawa-mahal",
+      "description": "A crown jewel of Khajuraho, Hawa Mahal captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Hawa Mahal.",
+      "whyVisit": "Capture stunning photographs at Hawa Mahal.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hawa Mahal, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Hawa Mahal in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Hawa Mahal in Khajuraho"
+      },
+      "position": 17
+    },
+    {
+      "id": "khajuraho-monolithic-bull",
+      "name": "Monolithic Bull",
+      "slug": "monolithic-bull",
+      "description": "Located in scenic Khajuraho, Monolithic Bull offers an immersive experience into local culture. Exploring Monolithic Bull is one of the top things to do in Khajuraho.",
+      "whyVisit": "Monolithic Bull stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Monolithic Bull, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Monolithic Bull in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Monolithic Bull in Khajuraho"
+      },
+      "position": 18
+    },
+    {
+      "id": "khajuraho-mahabodhi-temple",
+      "name": "Mahabodhi Temple",
+      "slug": "mahabodhi-temple",
+      "description": "Located in scenic Khajuraho, Mahabodhi Temple offers an immersive experience into local culture. Exploring Mahabodhi Temple is one of the top things to do in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Mahabodhi Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mahabodhi Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahabodhi Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Mahabodhi Temple in Khajuraho"
+      },
+      "position": 19
+    },
+    {
+      "id": "khajuraho-itmad-ud-daulah",
+      "name": "Itmad-ud-Daulah",
+      "slug": "itmad-ud-daulah",
+      "description": "Itmad-ud-Daulah is a must-see monument in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Itmad-ud-Daulah.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Itmad-ud-Daulah, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Itmad-ud-Daulah in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Itmad-ud-Daulah in Khajuraho"
+      },
+      "position": 20
+    },
+    {
+      "id": "khajuraho-matanga-hill",
+      "name": "Matanga Hill",
+      "slug": "matanga-hill",
+      "description": "Matanga Hill is a must-see heritage in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Capture stunning photographs at Matanga Hill.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Matanga Hill, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Matanga Hill in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Matanga Hill in Khajuraho"
+      },
+      "position": 21
+    },
+    {
+      "id": "khajuraho-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "Siddhivinayak Temple is a must-see temple in Khajuraho, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Khajuraho.",
+      "whyVisit": "Siddhivinayak Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Siddhivinayak Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Khajuraho"
+      },
+      "position": 22
+    },
+    {
+      "id": "khajuraho-mahabalipuram-shore-temple",
+      "name": "Mahabalipuram Shore Temple",
+      "slug": "mahabalipuram-shore-temple",
+      "description": "A crown jewel of Khajuraho, Mahabalipuram Shore Temple captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Mahabalipuram Shore Temple.",
+      "whyVisit": "Capture stunning photographs at Mahabalipuram Shore Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Mahabalipuram Shore Temple, Khajuraho",
+      "category": "monument",
+      "imagePrompt": "Ultra realistic travel photography, Mahabalipuram Shore Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Mahabalipuram Shore Temple in Khajuraho"
+      },
+      "position": 23
+    },
+    {
+      "id": "khajuraho-ibrahim-roza",
+      "name": "Ibrahim Roza",
+      "slug": "ibrahim-roza",
+      "description": "Nestled in Khajuraho, Ibrahim Roza stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Ibrahim Roza is among the best things to do in Khajuraho.",
+      "whyVisit": "Ibrahim Roza stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "Full day",
+      "mapsSearch": "Ibrahim Roza, Khajuraho",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Ibrahim Roza in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Ibrahim Roza in Khajuraho"
+      },
+      "position": 24
+    },
+    {
+      "id": "khajuraho-golden-temple",
+      "name": "Golden Temple",
+      "slug": "golden-temple",
+      "description": "A crown jewel of Khajuraho, Golden Temple captivates every traveler with enchanting beauty. No trip to Khajuraho is complete without visiting Golden Temple.",
+      "whyVisit": "A visit to Golden Temple is essential for understanding Khajuraho.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Golden Temple, Khajuraho",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Golden Temple in Khajuraho, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Golden Temple in Khajuraho"
+      },
+      "position": 25
+    }
+  ]
+}

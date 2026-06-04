@@ -1,0 +1,267 @@
+{
+  "slug": "bhubaneswar",
+  "name": "Bhubaneswar",
+  "state": "Odisha",
+  "tagline": "Temple city of India where a thousand shrines shape the skyline",
+  "categories": [
+    "pilgrimage",
+    "heritage",
+    "spiritual"
+  ],
+  "highlights": [
+    "over 700 temples spanning ten centuries of Kalinga architecture",
+    "udayagiri and khandagiri caves carved by jain monks two millennia ago"
+  ],
+  "attractions": [
+    {
+      "name": "Lingaraja Temple",
+      "category": "temple",
+      "description": "The supreme monument of Kalinga architecture, Lingaraja was built around 1090–1100 CE under the Somavamshi dynasty. Its 54-metre deul (main tower) rises above a complex of 150 subsidiary shrines, its exterior carved with an astonishing density of deities, celestial dancers, erotic panels and mythological narratives. The presiding deity Harihara — a fusion of Shiva and Vishnu — is uniquely revered here. Non-Hindus may observe from a raised platform outside.",
+      "whyVisit": "See the finest example of Kalinga temple architecture ever built, still in daily active worship.",
+      "bestTime": "Early morning for aarti; October to March for weather",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lingaraja Temple Bhubaneswar Odisha",
+      "imageQuery": "Lingaraja Temple Bhubaneswar Kalinga architecture"
+    },
+    {
+      "name": "Udayagiri and Khandagiri Caves",
+      "category": "cave",
+      "description": "Twin sandstone hills facing each other on Bhubaneswar's western edge contain 33 rock-cut cells commissioned by Jain king Kharavela in the 1st century BCE. Udayagiri's Rani Gumpha (Queen's Cave) is the largest and most elaborately carved, with two-storey verandahs depicting royal processions, battles and festive scenes. Khandagiri's Navamuni Gumpha enshrines 24 Jain tirthankaras in finely polished relief.",
+      "whyVisit": "Explore 2,000-year-old royal Jain cave apartments with some of the earliest narrative sculpture in India.",
+      "bestTime": "Morning, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Udayagiri Khandagiri Caves Bhubaneswar",
+      "imageQuery": "Udayagiri Khandagiri caves Bhubaneswar Jain"
+    },
+    {
+      "name": "Mukteshvara Temple",
+      "category": "temple",
+      "description": "Built around 950 CE, Mukteshvara is often called the 'gem of Odishan architecture' for the refinement and balance of its proportions. Smaller than Lingaraja but more intricately carved, it features a perfectly preserved torana (arched gateway) — the only one of its kind in Odisha — adorned with tangled vine-work, female figures and playful monkeys. The gateway frames the deul in a picture of unusual beauty.",
+      "whyVisit": "Photograph the finest decorative gateway in Odisha framing a perfectly proportioned Shiva temple.",
+      "bestTime": "Morning light for photography, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Mukteshvara Temple Bhubaneswar Odisha",
+      "imageQuery": "Mukteshvara Temple Bhubaneswar torana gateway"
+    },
+    {
+      "name": "Rajarani Temple",
+      "category": "temple",
+      "description": "An 11th-century temple named for the reddish-gold laterite (raja-rani) stone used in its construction, Rajarani's deul is an unusually tall, turreted tower covered in an extraordinary array of guardian figures — the eight dikpalas (directional deities), nayikas (women in intimate poses) and celestial beings carved with consummate skill. The temple has no presiding deity and is managed as an archaeological site.",
+      "whyVisit": "Admire the most elaborate sculptural programme of any Odishan temple in a peaceful archaeological garden.",
+      "bestTime": "Morning, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rajarani Temple Bhubaneswar",
+      "imageQuery": "Rajarani Temple Bhubaneswar sculpture tower"
+    },
+    {
+      "name": "Parashurameshvara Temple",
+      "category": "temple",
+      "description": "One of the earliest surviving temples of the Kalinga style, Parashurameshvara dates from around 650 CE — making it over 1,350 years old and still in daily worship. Its latticed stone windows (khakhara-style rekha deul) are among the oldest examples of their type in India, and the temple's modest scale makes its extraordinary carved surface detail — nagas, kirtimukhas and amorous couples — especially accessible to close inspection.",
+      "whyVisit": "Touch stone carvings that have been venerated continuously for over 1,300 years.",
+      "bestTime": "Morning, year-round",
+      "duration": "45 minutes",
+      "mapsSearch": "Parashurameshvara Temple Bhubaneswar ancient",
+      "imageQuery": "Parashurameshvara Temple Bhubaneswar ancient Kalinga"
+    },
+    {
+      "name": "State Museum Odisha",
+      "category": "museum",
+      "description": "The premier museum of Odisha houses one of India's finest collections of Odishan sculpture, palm-leaf manuscripts, bronze idols and prehistoric artefacts. The sculpture gallery's 9th–12th century Paramabhattaraka idols from Ratnagiri are world-class. A separate gallery displays rare natural history specimens, and the arms and armour section traces the martial traditions of Kalinga's kings.",
+      "whyVisit": "See the world's richest collection of Odishan art and sculpture in one building.",
+      "bestTime": "Tuesday to Sunday, morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "State Museum Odisha Bhubaneswar",
+      "imageQuery": "State Museum Odisha Bhubaneswar sculpture gallery"
+    },
+    {
+      "name": "Bindu Sagar (Sacred Tank)",
+      "category": "lake",
+      "description": "A large rectangular sacred tank in the heart of old Bhubaneswar, Bindu Sagar is believed to contain a drop of water from every holy river in India. Over 100 temples line its banks, and ritual bathing at dawn when priests conduct pujas on the ghats, flower sellers heap lotus blossoms on the steps and temple bells echo across the water creates an atmosphere of uninterrupted antiquity.",
+      "whyVisit": "Bathe in a tank said to contain water from every sacred river in India, surrounded by a hundred temples.",
+      "bestTime": "Dawn, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bindu Sagar Sacred Tank Bhubaneswar",
+      "imageQuery": "Bindu Sagar tank Bhubaneswar dawn temples"
+    },
+    {
+      "name": "Odisha State Tribal Museum",
+      "category": "museum",
+      "description": "A dedicated ethnographic museum documenting the cultures of 62 tribal communities of Odisha, including the Dongria Kondh, Bonda and Soura peoples. Life-size village reconstructions, traditional ornaments, weapons, musical instruments and textile collections are displayed with commendable care. The museum also stocks an excellent collection of Soura paitkar paintings and rare Dhokra bronze castings available for purchase.",
+      "whyVisit": "Discover the extraordinary artistic and cultural diversity of Odisha's 62 tribal communities.",
+      "bestTime": "Tuesday to Sunday, morning",
+      "duration": "2 hours",
+      "mapsSearch": "Odisha State Tribal Museum Bhubaneswar",
+      "imageQuery": "Odisha Tribal Museum Bhubaneswar tribal art"
+    },
+    {
+      "name": "Dhauli Peace Pagoda",
+      "category": "religious",
+      "description": "On the hill where Emperor Ashoka fought the catastrophic Kalinga War in 261 BCE — which caused such loss of life that it converted him to Buddhism — a Japanese-built white Peace Pagoda (Shanti Stupa) gleams above the Daya River. The hill also preserves Ashoka's own rock edict proclaiming his remorse and his new dharma of non-violence, and a carved white elephant marks the spot where the Mauryan empire changed its course.",
+      "whyVisit": "Stand at the exact spot where one of history's most consequential conversions — from warrior to Buddhist — occurred.",
+      "bestTime": "Early morning for light and solitude, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Dhauli Peace Pagoda Bhubaneswar Ashoka",
+      "imageQuery": "Dhauli Peace Pagoda Bhubaneswar Ashoka edict"
+    },
+    {
+      "name": "Nandankanan Zoological Park",
+      "category": "wildlife",
+      "description": "One of India's premier zoological parks, Nandankanan is famous for being the first zoo in the world to successfully breed white tigers in captivity. Set within a natural forest beside Chandaka Wildlife Sanctuary and bordering Chilika Lake, it also houses gharial, Indian rhinoceros, clouded leopard and orangutans. A ropeway crosses over the zoo providing aerial wildlife views.",
+      "whyVisit": "See white tigers — bred here for the first time on earth — roaming near natural forest habitat.",
+      "bestTime": "October to March, early morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Nandankanan Zoological Park Bhubaneswar",
+      "imageQuery": "Nandankanan Zoo white tiger Bhubaneswar"
+    },
+    {
+      "name": "Ekamra Kanan (Botanical Garden)",
+      "category": "garden",
+      "description": "A beautifully maintained 165-acre botanical garden in northern Bhubaneswar, Ekamra Kanan contains over 1,000 plant species, a rose garden with 800 varieties, a lily pond, cactus house and a butterfly park. The garden is especially spectacular in November and December when thousands of dahlias and chrysanthemums bloom around the central lake, and migratory birds fill the woodland sections.",
+      "whyVisit": "Walk through 1,000 plant species and 800 rose varieties in bloom in one of Odisha's finest gardens.",
+      "bestTime": "November to January for flowers; October to February overall",
+      "duration": "2 hours",
+      "mapsSearch": "Ekamra Kanan Botanical Garden Bhubaneswar",
+      "imageQuery": "Ekamra Kanan botanical garden Bhubaneswar flowers"
+    },
+    {
+      "name": "Brahmeswara Temple",
+      "category": "temple",
+      "description": "A mid-11th century temple compound containing a central deul with four matching subsidiary shrines at the corners, Brahmeswara is celebrated for the finest female figures in Odishan temple sculpture. Its nagara shikhara is decorated with an unusually dense programme of nayikas in 64 different poses — combing hair, playing veena, applying kajal — executed with a delicacy that rivals Khajuraho.",
+      "whyVisit": "See the most gracefully carved female figures in all of Odishan sculpture in a rarely crowded setting.",
+      "bestTime": "Morning, year-round",
+      "duration": "45 minutes",
+      "mapsSearch": "Brahmeswara Temple Bhubaneswar",
+      "imageQuery": "Brahmeswara Temple Bhubaneswar sculpture nayika"
+    },
+    {
+      "name": "Craft Village (Ekamra Haat)",
+      "category": "market",
+      "description": "A state-run artisan village near the railway station where master craftspeople from across Odisha demonstrate and sell their work — Pattachitra painting on cloth and palm-leaf, silver filigree (tarakasi), stone carving, Sambalpuri ikat weaving, and Dhokra bronze casting. Unlike bazaar shops, artisans here work in open studios and are happy to explain their centuries-old techniques.",
+      "whyVisit": "Buy authentic Odisha handicrafts directly from master artisans working in open-air studios.",
+      "bestTime": "Morning to afternoon, year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ekamra Haat Craft Village Bhubaneswar",
+      "imageQuery": "Ekamra Haat craft market Bhubaneswar Pattachitra"
+    },
+    {
+      "name": "Museum of Tribal Arts and Artefacts",
+      "category": "museum",
+      "description": "Run by the Scheduled Castes and Tribes Research Institute, this museum in the old town complements the State Tribal Museum with a more focused collection of ritual objects: shaman's dance masks, buffalo-horn headdresses, konda brass jewellery and painted ancestral poles from Odisha's most isolated hill tribes. A small library of ethnographic films is available for on-site viewing.",
+      "whyVisit": "Handle and examine ritual objects from tribes so isolated that few anthropologists have documented them.",
+      "bestTime": "Tuesday to Saturday, morning",
+      "duration": "1 hour",
+      "mapsSearch": "Museum of Tribal Arts Artefacts Bhubaneswar",
+      "imageQuery": "tribal arts museum Bhubaneswar ritual objects"
+    },
+    {
+      "name": "Ananta Vasudeva Temple",
+      "category": "temple",
+      "description": "Built in 1278 CE by Princess Chandrikadevi, daughter of a Ganga king, Ananta Vasudeva is the only Vaishnavite temple in Bhubaneswar that dates from the classical period. Unlike the ubiquitous Shaiva shrines, its inner sanctum holds images of Vishnu, Balarama and Subhadra — the same trinity venerated at Puri's Jagannath Temple. The temple's kitchen (mahaprasad) serves free meals to pilgrims daily.",
+      "whyVisit": "Visit the city's only major Vaishnavite medieval temple and eat the legendary free temple meal.",
+      "bestTime": "Morning for darshan and prasad, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Ananta Vasudeva Temple Bhubaneswar",
+      "imageQuery": "Ananta Vasudeva Temple Bhubaneswar Vaishnavite"
+    },
+    {
+      "name": "Ratnagiri Buddhist Site",
+      "category": "heritage",
+      "description": "Located 100 km north of Bhubaneswar, Ratnagiri was one of the most important Buddhist tantric monasteries in Asia from the 5th to 12th centuries, contemporary with Nalanda. Its excavated site reveals two monasteries, a large stupa and over 700 sculptures. The Archaeological Museum on site houses the finest collection of Vajrayana Buddhist bronzes and stone images in Eastern India.",
+      "whyVisit": "Explore a Buddhist monastery that rivalled Nalanda — and whose treasures are almost entirely overlooked.",
+      "bestTime": "October to February",
+      "duration": "Half day",
+      "mapsSearch": "Ratnagiri Buddhist Monastery Odisha",
+      "imageQuery": "Ratnagiri Buddhist monastery Odisha sculpture"
+    },
+    {
+      "name": "Chilika Lake (Day Trip)",
+      "category": "wildlife",
+      "description": "Asia's largest coastal lagoon, Chilika lies 100 km south of Bhubaneswar and hosts over one million migratory birds each winter — flamingos, bar-headed geese, herons and Irrawaddy dolphins in its brackish channels. Boat trips from Satapada or Barkul cross the lagoon to dolphin territory. The 1,100 sq-km lake is also home to the Kalijai goddess temple on a small island.",
+      "whyVisit": "Spot Irrawaddy dolphins and a million migratory birds on Asia's largest coastal lagoon.",
+      "bestTime": "November to February for birds and dolphins",
+      "duration": "Full day",
+      "mapsSearch": "Chilika Lake Odisha boat safari",
+      "imageQuery": "Chilika Lake Odisha migratory birds dolphins"
+    },
+    {
+      "name": "Bhubaneswar Old Town Temple Walk",
+      "category": "heritage",
+      "description": "The Old Town (Ekamra Kshetra) square kilometre between Lingaraja and Bindu Sagar contains over 100 active temples within walking distance — a concentration of medieval religious architecture unmatched anywhere outside Varanasi or Madurai. A guided walk takes in Swarnajaleswar, Yameswar, Kedar Gouri and Uttareshvara temples, each with distinct iconographic programmes and priests conducting rituals.",
+      "whyVisit": "Walk through the densest concentration of living medieval temples outside Varanasi.",
+      "bestTime": "Early morning, October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Ekamra Kshetra Old Town temple walk Bhubaneswar",
+      "imageQuery": "Bhubaneswar old town temple complex Kalinga"
+    },
+    {
+      "name": "Iskcon Temple Bhubaneswar",
+      "category": "temple",
+      "description": "The ISKCON temple at Nayapali is among the most imposing in Eastern India, its white marble towers modelled on Vrindavan's gopuras. The evening Sandhya aarti is accompanied by thunderous mridanga drumming and melodious kirtan, and the opulent deity dresses are changed daily. The prasadam restaurant serves the finest thali in the city.",
+      "whyVisit": "Attend an spectacular evening Vaishnava aarti in one of Eastern India's grandest ISKCON temples.",
+      "bestTime": "Evening aarti (7 pm)",
+      "duration": "2 hours",
+      "mapsSearch": "ISKCON Temple Bhubaneswar Nayapali",
+      "imageQuery": "ISKCON Temple Bhubaneswar marble towers"
+    },
+    {
+      "name": "Tribal Haat, Unit-3 Market",
+      "category": "market",
+      "description": "Every Saturday morning, tribal artisans from the Kandhamal, Koraput and Mayurbhanj districts set up stalls in this weekly market near Unit-3, selling handmade bamboo furniture, turmeric, millet varieties, wild honey, lac bangles and organic forest produce. Buying directly from the tribes — many in traditional costume — is both an authentic cultural encounter and an act of direct economic support.",
+      "whyVisit": "Buy wild honey and bamboo crafts directly from tribal artisans in a completely non-touristy Saturday market.",
+      "bestTime": "Saturday morning, 7–11 am",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tribal Haat Unit-3 Bhubaneswar Saturday market",
+      "imageQuery": "tribal market Bhubaneswar bamboo craft Odisha"
+    },
+    {
+      "name": "Sisupalgarh Ancient City",
+      "category": "heritage",
+      "description": "On Bhubaneswar's southern edge lie the massive earthen ramparts of Sisupalgarh, a fortified city from the 3rd century BCE — contemporary with Ashoka — that covers an area of about 1.3 square kilometres. Archaeological excavations have revealed roads, granaries and iron tools in a grid layout. The ramparts, over 6 metres high in places and still visible, are among the oldest surviving city walls in South Asia.",
+      "whyVisit": "Walk the ramparts of a 2,300-year-old Mauryan-era city almost entirely unknown to tourists.",
+      "bestTime": "October to February, morning",
+      "duration": "2 hours",
+      "mapsSearch": "Sisupalgarh ancient city Bhubaneswar Mauryan",
+      "imageQuery": "Sisupalgarh ancient ramparts Bhubaneswar archaeological"
+    },
+    {
+      "name": "Nichhay Khai Basi (Local Odisha Breakfast Trail)",
+      "category": "market",
+      "description": "The stretch of market stalls near the old bus stand opens at 5 am serving pakhala (fermented rice water) with fried fish, mitha dali (sweetened lentils), kakara pitha (fried pancakes with coconut filling) and the reviving pahala rasagola, a softer, more syrup-soaked version of the classic Bengali sweet. Odisha's breakfast culture is distinct and brilliant, and this stretch is its best expression.",
+      "whyVisit": "Start a Bhubaneswar morning with pakhala and Odisha's own rasagola — a breakfast tradition you cannot find elsewhere.",
+      "bestTime": "5–9 am daily",
+      "duration": "1 hour",
+      "mapsSearch": "old bus stand breakfast stalls Bhubaneswar pakhala",
+      "imageQuery": "Odisha breakfast pakhala pitha Bhubaneswar street food"
+    },
+    {
+      "name": "Vaital Deul Temple",
+      "category": "temple",
+      "description": "An 8th-century Tantric temple dedicated to Chamunda — the most fearsome form of the goddess — Vaital Deul stands near Bindu Sagar with an unusual khakhara (wagon-vault) roof more typical of South Indian temples. Its interior houses a rare eight-armed Chamunda image standing on a corpse, flanked by Kali and Bhairava, carved with a fierce energy that gives this small temple an intensity far exceeding its size.",
+      "whyVisit": "Enter an 8th-century Tantric shrine containing some of the most powerful and unsettling goddess sculpture in India.",
+      "bestTime": "Morning, year-round",
+      "duration": "45 minutes",
+      "mapsSearch": "Vaital Deul Tantric Temple Bhubaneswar Chamunda",
+      "imageQuery": "Vaital Deul Temple Bhubaneswar Chamunda tantric"
+    },
+    {
+      "name": "Kedar Gouri Temple Complex",
+      "category": "temple",
+      "description": "Two adjacent temples dedicated to Shiva (Kedara) and Parvati (Gouri) form one of the old town's most visited pilgrimage circuits. Couples visit Gouri Shankar on Mondays and pray for marital happiness, and the combined complex is surrounded by small shrines, sadhus and a lingam tank. The intimate scale and neighbourhood devotional atmosphere here contrasts strikingly with the grand Lingaraja.",
+      "whyVisit": "Experience the intimate neighbourhood devotion of old Bhubaneswar at the city's most beloved couples' temple.",
+      "bestTime": "Monday morning for Shiva worship",
+      "duration": "1 hour",
+      "mapsSearch": "Kedar Gouri Temple Bhubaneswar old town",
+      "imageQuery": "Kedar Gouri Temple Bhubaneswar Shiva Parvati"
+    },
+    {
+      "name": "Puri (Day Trip)",
+      "category": "religious",
+      "description": "One of Hinduism's four sacred dhams (pilgrimage cities), Puri is just 60 km from Bhubaneswar and easily visited as a day trip. The 12th-century Jagannath Temple — with its 65-metre shikhara visible 30 km out to sea — is among the most sacred sites in India. The vast beach, seafood restaurants and the Pipli appliqué craft village along the road make the journey as rewarding as the destination.",
+      "whyVisit": "Visit one of Hinduism's four sacred dhams — the Jagannath Temple — and its famous sea-facing beach in a single day.",
+      "bestTime": "October to February",
+      "duration": "Full day",
+      "mapsSearch": "Jagannath Temple Puri Odisha",
+      "imageQuery": "Jagannath Temple Puri Odisha dham"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "slug": "gulmarg",
+  "name": "Gulmarg",
+  "state": "Jammu and Kashmir",
+  "tagline": "Asia's premier ski resort in the Himalayan meadows",
+  "categories": ["hill_station", "adventure", "nature"],
+  "highlights": ["world's highest gondola cable car", "powder skiing on pir panjal slopes"],
+  "attractions": [
+    {
+      "name": "Gulmarg Gondola",
+      "category": "adventure",
+      "description": "One of the world's highest and longest cable car systems, the Gulmarg Gondola runs in two phases: Phase 1 lifts visitors to Kongdori at 3,747 m, while Phase 2 ascends to the Apharwat Peak ridge at 4,267 m. Panoramic views of Nanga Parbat, the Pir Panjal range, and the Kashmir Valley spread out below in every direction.",
+      "whyVisit": "The highest cable car experience in India with jaw-dropping Himalayan vistas year-round.",
+      "bestTime": "December to March for skiing; April to June for clear mountain views",
+      "duration": "3-4 hours",
+      "mapsSearch": "Gulmarg Gondola Cable Car Gulmarg Jammu Kashmir",
+      "imageQuery": "Gulmarg gondola cable car Himalayas"
+    },
+    {
+      "name": "Apharwat Peak",
+      "category": "viewpoint",
+      "description": "At 4,267 m above sea level, Apharwat Peak is the crown of Gulmarg accessible via the gondola's second phase. This barren alpine ridge sits above the snowline for most of the year and offers unobstructed 360-degree views of Nanga Parbat (8,126 m) and surrounding glaciers. In winter it hosts some of the finest off-piste skiing terrain in Asia.",
+      "whyVisit": "Closest most visitors will ever get to a Himalayan summit without technical mountaineering.",
+      "bestTime": "December to April for snow; June to September for trekking",
+      "duration": "2-3 hours",
+      "mapsSearch": "Apharwat Peak Gulmarg Jammu Kashmir",
+      "imageQuery": "Apharwat Peak snow Gulmarg Kashmir"
+    },
+    {
+      "name": "Gulmarg Golf Course",
+      "category": "nature",
+      "description": "Established in 1891 by British officers, Gulmarg Golf Course is one of the highest and most scenic golf courses in the world, sitting at 2,650 m. The 18-hole course is ringed by fir and pine forests with a backdrop of snow-capped peaks. In winter the fairways transform into a meadow snowfield, while summer brings emerald greens.",
+      "whyVisit": "Play golf on a century-old Himalayan course with a backdrop unlike any other in the world.",
+      "bestTime": "May to October",
+      "duration": "3-5 hours",
+      "mapsSearch": "Gulmarg Golf Course Jammu Kashmir",
+      "imageQuery": "Gulmarg golf course Himalayas Kashmir"
+    },
+    {
+      "name": "Kongdori Meadow",
+      "category": "nature",
+      "description": "The intermediate station of the Gulmarg Gondola at 3,747 m, Kongdori opens onto a vast bowl of alpine meadow surrounded by fir forests and rocky ridgelines. In summer the plateau is carpeted in wildflowers and serves as the base for treks toward Alpather Lake. In winter it becomes the main ski area, with groomed runs and ski schools.",
+      "whyVisit": "An accessible high-altitude meadow with skiing, trekking, and sweeping Himalayan scenery.",
+      "bestTime": "December to March for skiing; May to September for trekking",
+      "duration": "2-4 hours",
+      "mapsSearch": "Kongdori Meadow Gulmarg Jammu Kashmir",
+      "imageQuery": "Kongdori meadow skiing Gulmarg"
+    },
+    {
+      "name": "Alpather Lake",
+      "category": "lake",
+      "description": "Situated at 4,511 m below the shadow of Apharwat Peak, Alpather is a glacially fed high-altitude lake that remains frozen until June even when the valley below is lush with summer. The 7 km trek from Kongdori traverses boulder fields and late-season snowfields to reach its vivid blue waters framed by raw, rocky peaks.",
+      "whyVisit": "A pristine frozen lake above 4,500 m accessible by a manageable half-day trek from Kongdori.",
+      "bestTime": "June to September",
+      "duration": "5-6 hours (full day trek)",
+      "mapsSearch": "Alpather Lake Gulmarg Jammu Kashmir",
+      "imageQuery": "Alpather Lake frozen Gulmarg Kashmir"
+    },
+    {
+      "name": "Baba Reshi Shrine",
+      "category": "religious",
+      "description": "Perched on the slopes below Gulmarg, the Baba Reshi Dargah is the tomb of Sheikh Hamza Makhdoom, a revered Kashmiri Sufi saint who renounced the Kashmiri royal court in the 16th century. The carved wooden shrine draws Hindu and Muslim pilgrims alike, who tie sacred threads and light incense in the surrounding walnut groves.",
+      "whyVisit": "A centuries-old interfaith shrine where Kashmiri Sufi tradition comes alive against a forest backdrop.",
+      "bestTime": "April to October",
+      "duration": "1 hour",
+      "mapsSearch": "Baba Reshi Shrine Gulmarg Jammu Kashmir",
+      "imageQuery": "Baba Reshi shrine Gulmarg Kashmir"
+    },
+    {
+      "name": "St. Mary's Church Gulmarg",
+      "category": "heritage",
+      "description": "Built in 1895 during the British Raj, St. Mary's Church stands near the main Gulmarg meadow amid towering deodar cedars. The simple stone structure retains original wooden pews and stained-glass windows. Its graveyard contains headstones of British officers and colonial-era residents, offering a quiet glimpse into Gulmarg's hill-station past.",
+      "whyVisit": "A beautifully preserved Victorian-era church that tells the colonial story of Kashmir's famous hill resort.",
+      "bestTime": "April to October",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St. Mary's Church Gulmarg Jammu Kashmir",
+      "imageQuery": "St Mary's Church Gulmarg colonial Kashmir"
+    },
+    {
+      "name": "Gulmarg Biosphere Reserve",
+      "category": "wildlife",
+      "description": "The forests and alpine meadows surrounding Gulmarg form part of a protected biosphere reserve sheltering Kashmir stag (hangul), Himalayan black bear, leopard, and musk deer. The treeline zone of dense fir and pine is prime birdwatching territory, hosting the Kashmir flycatcher, koklass pheasant, and western tragopan among over 100 documented species.",
+      "whyVisit": "Walk through protected Himalayan forest home to rare Kashmiri wildlife and exceptional birdlife.",
+      "bestTime": "May to October",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gulmarg Biosphere Reserve Jammu Kashmir",
+      "imageQuery": "Gulmarg forest alpine Kashmir wildlife"
+    },
+    {
+      "name": "Strawberry Valley",
+      "category": "nature",
+      "description": "A gentle glacial valley just below Gulmarg's main meadow where local farmers cultivate wild and cultivated strawberries during summer months. The valley is laced with small streams fed by snowmelt and offers easy walks through meadows thick with clover, cornflowers, and buttercups. Pony rides to the valley are a popular family excursion.",
+      "whyVisit": "A serene, easily walkable valley bursting with wildflowers and fresh strawberries in summer.",
+      "bestTime": "June to August",
+      "duration": "1-2 hours",
+      "mapsSearch": "Strawberry Valley Gulmarg Jammu Kashmir",
+      "imageQuery": "Strawberry Valley meadow Gulmarg Kashmir"
+    },
+    {
+      "name": "Ningle Nallah",
+      "category": "nature",
+      "description": "A rushing glacial stream that tumbles down from the Apharwat massif through dense pine and silver birch forests, Ningle Nallah is a popular picnic destination 8 km from Gulmarg. The banks are lined with smooth boulders and shallow pools ideal for wading, and the surrounding forest is frequented by Himalayan woodpeckers and grey-winged blackbirds.",
+      "whyVisit": "A crystal-clear mountain stream in a pristine pine forest — perfect for a peaceful riverside picnic.",
+      "bestTime": "May to September",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ningle Nallah Gulmarg Jammu Kashmir",
+      "imageQuery": "Ningle Nallah stream pine forest Gulmarg"
+    },
+    {
+      "name": "Ferozpur Nallah",
+      "category": "nature",
+      "description": "A broad, boulder-strewn glacial stream below the Gulmarg meadow, Ferozpur Nallah is a favourite local picnic spot framed by willows and poplars. The stream runs fast and clear in early summer with snowmelt; by August its banks are grassy and accessible. The short walk down from the main market passes through traditional Bakarwal encampments.",
+      "whyVisit": "A laid-back riverside escape from the busy Gulmarg meadow, popular with local families.",
+      "bestTime": "May to September",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ferozpur Nallah Gulmarg Jammu Kashmir",
+      "imageQuery": "Ferozpur Nallah stream Gulmarg Kashmir"
+    },
+    {
+      "name": "Gulmarg Main Meadow (Gaurimarg)",
+      "category": "nature",
+      "description": "The vast circular meadow at the heart of Gulmarg — its name means 'Meadow of Flowers' — spreads across nearly 3 km at 2,650 m. In spring and summer it is carpeted with violets, daisies, and forget-me-nots. This central bowl hosts cricket matches, pony rides, and the picturesque ring road walk that gives unbroken views of the surrounding peaks.",
+      "whyVisit": "The iconic flower-filled meadow that gives Gulmarg its name and its enduring romantic reputation.",
+      "bestTime": "April to June for wildflowers; December to February for snow",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gulmarg Meadow Jammu Kashmir",
+      "imageQuery": "Gulmarg meadow flowers snow Himalayas"
+    },
+    {
+      "name": "Maharani Temple",
+      "category": "temple",
+      "description": "Built in the early 20th century by Queen Mohini Bai Sisodia, wife of Maharaja Hari Singh of Kashmir, this Shiva temple stands on a small hillock at the edge of the Gulmarg meadow. The compact stone structure commands wide views across the bowl toward Apharwat and is surrounded by ancient deodar cedars that shelter it from winter snowfall.",
+      "whyVisit": "A royal-commissioned Shiva temple with the finest panoramic views of the Gulmarg bowl.",
+      "bestTime": "April to October",
+      "duration": "45 minutes",
+      "mapsSearch": "Maharani Temple Gulmarg Jammu Kashmir",
+      "imageQuery": "Maharani Temple Gulmarg Kashmir hillock"
+    },
+    {
+      "name": "Ski & Snowboard School Gulmarg",
+      "category": "adventure",
+      "description": "Operated through the Jammu & Kashmir Tourism Department and private outfitters, Gulmarg's ski schools offer lessons from certified instructors on the Kongdori slopes. With reliable natural snowfall from December through March and a vertical drop exceeding 1,400 m, the terrain suits beginners on gentle runs through to experts tackling Apharwat's steep couloirs.",
+      "whyVisit": "Learn to ski at one of Asia's top ski destinations with consistent Himalayan powder snow.",
+      "bestTime": "January to March",
+      "duration": "3-5 hours per session",
+      "mapsSearch": "Gulmarg Ski School Jammu Kashmir",
+      "imageQuery": "Gulmarg skiing powder snow Kashmir"
+    },
+    {
+      "name": "Frozen Ferozpur Nallah Ice Rink",
+      "category": "adventure",
+      "description": "During the deep winter months of January and February, a section of the Ferozpur Nallah freezes solid enough to serve as a natural ice rink. Locals and tourists skate on the smooth ice beneath snow-laden pine branches, and vendors sell kahwa tea and kangris (firepots) along the banks — a uniquely Kashmiri winter experience.",
+      "whyVisit": "Skate on a naturally frozen Himalayan stream — one of Kashmir's most magical winter pastimes.",
+      "bestTime": "January to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ferozpur Nallah ice skating Gulmarg Kashmir",
+      "imageQuery": "natural ice rink frozen stream Gulmarg Kashmir"
+    },
+    {
+      "name": "Tangmarg Base Village",
+      "category": "heritage",
+      "description": "The gateway village to Gulmarg, Tangmarg sits at 2,085 m and retains the character of a traditional Kashmiri mountain settlement. Its bazaar sells local woolens, saffron, and walnuts, and the surrounding apple and cherry orchards bloom spectacularly each April. The village is the last point accessible by standard vehicles before the Gulmarg road climbs steeply.",
+      "whyVisit": "Explore a living Kashmiri hill village famed for apple orchards, local crafts, and mountain views.",
+      "bestTime": "April for blossom; September to October for apple harvest",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tangmarg Village Jammu Kashmir",
+      "imageQuery": "Tangmarg village apple orchard Kashmir"
+    },
+    {
+      "name": "Khilanmarg Meadow",
+      "category": "nature",
+      "description": "A broad alpine plateau reached by a 6 km trek from the Gulmarg meadow, Khilanmarg sits at 3,100 m and offers arguably the finest ground-level panorama in the entire region: an unobstructed sweep taking in Nanga Parbat, Haramukh, and the full Pir Panjal wall. In winter it serves as a natural nursery slope for beginner skiers.",
+      "whyVisit": "The single best trekking viewpoint from Gulmarg, with an unbroken Himalayan horizon of 8,000 m peaks.",
+      "bestTime": "May to October for trekking; December to March for skiing",
+      "duration": "4-5 hours (round trip trek)",
+      "mapsSearch": "Khilanmarg Meadow Gulmarg Jammu Kashmir",
+      "imageQuery": "Khilanmarg meadow panorama Nanga Parbat Kashmir"
+    },
+    {
+      "name": "Drung Waterfall",
+      "category": "waterfall",
+      "description": "Located just off the Tangmarg-Gulmarg road near the village of Drung, this multi-tiered waterfall cascades down a fern-covered cliff face through a narrow forested gorge. Fed by snowmelt throughout summer, it peaks in June when the flow is at its most powerful. The roadside location makes it an easy stop on the drive up to Gulmarg.",
+      "whyVisit": "A spectacular roadside waterfall that makes the drive to Gulmarg even more scenic.",
+      "bestTime": "May to July",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Drung Waterfall Tangmarg Jammu Kashmir",
+      "imageQuery": "Drung waterfall Tangmarg Kashmir"
+    },
+    {
+      "name": "Frozen Alpather (Ski Touring Route)",
+      "category": "adventure",
+      "description": "For experienced backcountry skiers and snowboarders, the high traverse from Apharwat across to the frozen Alpather Lake and back via the Ziarat Nallah is regarded as one of the finest ski touring circuits in the Indian Himalaya. The 12 km circuit demands crampons, avalanche awareness, and a certified guide but rewards with untracked powder and glacier vistas.",
+      "whyVisit": "Premier backcountry ski touring route through glaciated Himalayan terrain above 4,000 m.",
+      "bestTime": "February to April",
+      "duration": "Full day (6-8 hours)",
+      "mapsSearch": "Alpather ski touring route Gulmarg Kashmir",
+      "imageQuery": "backcountry ski touring Apharwat Gulmarg"
+    },
+    {
+      "name": "Ferozepur Nallah Trout Fishing",
+      "category": "nature",
+      "description": "The Ferozpur and Ningle streams around Gulmarg hold healthy populations of brown and rainbow trout introduced during the colonial era. Angling permits are issued by the Jammu & Kashmir Fisheries Department, and the season runs from April to September. Fly fishing in the clear, cold channels beneath pine and willow canopies is a meditative contrast to the resort's busier activities.",
+      "whyVisit": "Fly-fish for Himalayan trout in crystal mountain streams with the Pir Panjal as a backdrop.",
+      "bestTime": "April to September",
+      "duration": "3-5 hours",
+      "mapsSearch": "trout fishing Gulmarg Ningle Nallah Jammu Kashmir",
+      "imageQuery": "trout fishing mountain stream Gulmarg Kashmir"
+    },
+    {
+      "name": "Gulmarg Winter Festival",
+      "category": "heritage",
+      "description": "Organised annually in January by the Jammu & Kashmir Tourism Department, the Gulmarg Winter Festival showcases competitive skiing, snowboarding demonstrations, and traditional Kashmiri folk performances against the backdrop of snow-covered meadows. Artisan stalls sell pashmina shawls, kashmiri wazwan food, and carved walnut woodwork, drawing visitors from across India.",
+      "whyVisit": "Experience Kashmiri mountain culture at its most festive alongside world-class snow sports.",
+      "bestTime": "January",
+      "duration": "Half day to full day",
+      "mapsSearch": "Gulmarg Winter Festival Jammu Kashmir",
+      "imageQuery": "Gulmarg Winter Festival skiing Kashmir"
+    },
+    {
+      "name": "Ziarat of Sheikh Noor-ud-Din",
+      "category": "religious",
+      "description": "A small Sufi shrine tucked within the forest above the Gulmarg meadow, dedicated to Sheikh Noor-ud-Din Noorani, the patron saint of Kashmir. The site is visited by local shepherds and Bakarwal nomads who pass through Gulmarg on their seasonal migrations, and it remains largely unknown to outside tourists — offering a rare window into the living pastoral Sufi tradition.",
+      "whyVisit": "A hidden forest shrine central to Kashmir's pastoral Sufi culture and visited by Bakarwal nomads.",
+      "bestTime": "June to September",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Ziarat Sheikh Noor ud Din Gulmarg Kashmir",
+      "imageQuery": "Sufi shrine forest Gulmarg Kashmir"
+    },
+    {
+      "name": "Heliskiing at Gulmarg",
+      "category": "adventure",
+      "description": "Heliskiing operations out of Gulmarg, run by certified operators under Jammu & Kashmir government guidelines, drop experienced skiers onto untouched faces of the Pir Panjal and Apharwat ridges above 4,500 m. The runs descend through steep couloirs and open powder fields rarely accessible otherwise, making this one of the most affordable heliskiing destinations in Asia.",
+      "whyVisit": "Heli-drop onto untouched Himalayan powder — Asia's most accessible and affordable heliskiing.",
+      "bestTime": "January to March",
+      "duration": "Full day",
+      "mapsSearch": "heliskiing Gulmarg Jammu Kashmir",
+      "imageQuery": "heliskiing Gulmarg Himalayan powder"
+    },
+    {
+      "name": "Gulmarg Gandola Phase-1 Sunrise Ride",
+      "category": "viewpoint",
+      "description": "Taking the first gondola car of the day to Kongdori at sunrise is a crowd-free experience few visitors bother to plan for. As the cabin lifts above the pine treeline, the Pir Panjal wall ignites in alpenglow — shades of salmon and gold sweeping across Apharwat — while the Kashmir Valley below is still shrouded in morning mist.",
+      "whyVisit": "Witness the Pir Panjal range at sunrise in alpenglow from an empty gondola cabin.",
+      "bestTime": "April to June (first ride at dawn)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gulmarg Gondola Phase 1 Kongdori Kashmir",
+      "imageQuery": "Gulmarg gondola sunrise alpenglow Himalayas"
+    },
+    {
+      "name": "Ningle Nallah Camping",
+      "category": "adventure",
+      "description": "The forest clearings along Ningle Nallah stream serve as permitted camping zones for small groups travelling with registered operators. Nights at this altitude are cold even in July, and the near-total absence of light pollution makes the star field extraordinary. Camp-fire kahwa, the sound of rushing water, and the silhouette of Apharwat against a Milky Way sky are the reward.",
+      "whyVisit": "Camp under a near-perfect Milky Way sky beside a glacial stream in undisturbed Himalayan forest.",
+      "bestTime": "June to September",
+      "duration": "Overnight",
+      "mapsSearch": "Ningle Nallah camping Gulmarg Kashmir",
+      "imageQuery": "camping Ningle Nallah night sky Gulmarg"
+    }
+  ]
+}

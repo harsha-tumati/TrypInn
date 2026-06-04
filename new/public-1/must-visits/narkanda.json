@@ -1,0 +1,447 @@
+{
+  "id": "narkanda",
+  "name": "Narkanda",
+  "state": "Himachal Pradesh",
+  "slug": "narkanda",
+  "tagline": "Apple country with Hatu Peak views",
+  "categories": [
+    "hill_station",
+    "nature",
+    "viewpoint"
+  ],
+  "introduction": "Planning a trip to Narkanda? This travel guide to Narkanda covers the must visit places in Narkanda, the best places to visit in Narkanda, top tourist attractions in Narkanda, and exciting things to do in Narkanda.",
+  "metaTitle": "Best Places to Visit in Narkanda | Tourist Attractions in Narkanda - TrypInn",
+  "metaDescription": "Find the best places to visit in Narkanda, must visit places in Narkanda, and tourist attractions in Narkanda. Plan your Narkanda trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+    "alt": "Narkanda travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "narkanda-laitkor-peak",
+      "name": "Laitkor Peak",
+      "slug": "laitkor-peak",
+      "description": "Laitkor Peak is one of the most iconic landmarks in Narkanda, drawing visitors with its timeless charm. This hill station offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Laitkor Peak promises an unforgettable experience.",
+      "whyVisit": "Laitkor Peak stands out as one of the most rewarding experiences.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Laitkor Peak, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Laitkor Peak in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Laitkor Peak in Narkanda"
+      },
+      "position": 1
+    },
+    {
+      "id": "narkanda-berinag",
+      "name": "Berinag",
+      "slug": "berinag",
+      "description": "Nestled in Narkanda, Berinag stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Berinag is among the best things to do in Narkanda.",
+      "whyVisit": "Capture stunning photographs at Berinag.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Berinag, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Berinag in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Berinag in Narkanda"
+      },
+      "position": 2
+    },
+    {
+      "id": "narkanda-skandagiri-view",
+      "name": "Skandagiri View",
+      "slug": "skandagiri-view",
+      "description": "A crown jewel of Narkanda, Skandagiri View captivates every traveler with enchanting beauty. No trip to Narkanda is complete without visiting Skandagiri View.",
+      "whyVisit": "Skandagiri View offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Quick",
+      "mapsSearch": "Skandagiri View, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Skandagiri View in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Skandagiri View in Narkanda"
+      },
+      "position": 3
+    },
+    {
+      "id": "narkanda-smit-village",
+      "name": "Smit Village",
+      "slug": "smit-village",
+      "description": "A crown jewel of Narkanda, Smit Village captivates every traveler with enchanting beauty. No trip to Narkanda is complete without visiting Smit Village.",
+      "whyVisit": "A visit to Smit Village is essential for understanding Narkanda.",
+      "bestTime": "Summer",
+      "duration": "Weekend",
+      "mapsSearch": "Smit Village, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Smit Village in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Smit Village in Narkanda"
+      },
+      "position": 4
+    },
+    {
+      "id": "narkanda-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "Nestled in Narkanda, Jim Corbett National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Jim Corbett National Park is among the best things to do in Narkanda.",
+      "whyVisit": "Experience the unmatched beauty of Jim Corbett National Park.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Jim Corbett National Park, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Narkanda"
+      },
+      "position": 5
+    },
+    {
+      "id": "narkanda-nandi-hills-view",
+      "name": "Nandi Hills View",
+      "slug": "nandi-hills-view",
+      "description": "Nestled in Narkanda, Nandi Hills View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Nandi Hills View is among the best things to do in Narkanda.",
+      "whyVisit": "A visit to Nandi Hills View is essential for understanding Narkanda.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Nandi Hills View, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Nandi Hills View in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Nandi Hills View in Narkanda"
+      },
+      "position": 6
+    },
+    {
+      "id": "narkanda-shillong-peak",
+      "name": "Shillong Peak",
+      "slug": "shillong-peak",
+      "description": "Shillong Peak is one of the most iconic landmarks in Narkanda, drawing visitors with its timeless charm. This hill station offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Shillong Peak promises an unforgettable experience.",
+      "whyVisit": "A visit to Shillong Peak is essential for understanding Narkanda.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Shillong Peak, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Shillong Peak in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Shillong Peak in Narkanda"
+      },
+      "position": 7
+    },
+    {
+      "id": "narkanda-valley-of-flowers",
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "Nestled in Narkanda, Valley of Flowers stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Valley of Flowers is among the best things to do in Narkanda.",
+      "whyVisit": "A visit to Valley of Flowers is essential for understanding Narkanda.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Valley of Flowers, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers in Narkanda"
+      },
+      "position": 8
+    },
+    {
+      "id": "narkanda-araku-valley-view",
+      "name": "Araku Valley View",
+      "slug": "araku-valley-view",
+      "description": "Araku Valley View is one of the most iconic landmarks in Narkanda, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Araku Valley View promises an unforgettable experience.",
+      "whyVisit": "Araku Valley View offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Araku Valley View, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Araku Valley View in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Araku Valley View in Narkanda"
+      },
+      "position": 9
+    },
+    {
+      "id": "narkanda-ward-lake",
+      "name": "Ward Lake",
+      "slug": "ward-lake",
+      "description": "Nestled in Narkanda, Ward Lake stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Ward Lake is among the best things to do in Narkanda.",
+      "whyVisit": "Ward Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Dec",
+      "duration": "Half day",
+      "mapsSearch": "Ward Lake, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Ward Lake in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Ward Lake in Narkanda"
+      },
+      "position": 10
+    },
+    {
+      "id": "narkanda-patal-bhuvaneshwar",
+      "name": "Patal Bhuvaneshwar",
+      "slug": "patal-bhuvaneshwar",
+      "description": "Nestled in Narkanda, Patal Bhuvaneshwar stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Patal Bhuvaneshwar is among the best things to do in Narkanda.",
+      "whyVisit": "A visit to Patal Bhuvaneshwar is essential for understanding Narkanda.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Patal Bhuvaneshwar, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Patal Bhuvaneshwar in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Patal Bhuvaneshwar in Narkanda"
+      },
+      "position": 11
+    },
+    {
+      "id": "narkanda-lovers-point",
+      "name": "Lovers Point",
+      "slug": "lovers-point",
+      "description": "Located in scenic Narkanda, Lovers Point offers an immersive experience into local culture. Exploring Lovers Point is one of the top things to do in Narkanda.",
+      "whyVisit": "Capture stunning photographs at Lovers Point.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Lovers Point, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lovers Point in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Lovers Point in Narkanda"
+      },
+      "position": 12
+    },
+    {
+      "id": "narkanda-police-bazar",
+      "name": "Police Bazar",
+      "slug": "police-bazar",
+      "description": "Police Bazar is a must-see hill station in Narkanda, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Narkanda.",
+      "whyVisit": "Experience the unmatched beauty of Police Bazar.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Police Bazar, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Police Bazar in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Police Bazar in Narkanda"
+      },
+      "position": 13
+    },
+    {
+      "id": "narkanda-hemkund-sahib",
+      "name": "Hemkund Sahib",
+      "slug": "hemkund-sahib",
+      "description": "Hemkund Sahib is a must-see nature in Narkanda, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Narkanda.",
+      "whyVisit": "A visit to Hemkund Sahib is essential for understanding Narkanda.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Hemkund Sahib, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Hemkund Sahib in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Hemkund Sahib in Narkanda"
+      },
+      "position": 14
+    },
+    {
+      "id": "narkanda-lambasingi-view",
+      "name": "Lambasingi View",
+      "slug": "lambasingi-view",
+      "description": "Lambasingi View is a must-see viewpoint in Narkanda, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Narkanda.",
+      "whyVisit": "Capture stunning photographs at Lambasingi View.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lambasingi View, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lambasingi View in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Lambasingi View in Narkanda"
+      },
+      "position": 15
+    },
+    {
+      "id": "narkanda-umiam-lake",
+      "name": "Umiam Lake",
+      "slug": "umiam-lake",
+      "description": "Umiam Lake is one of the most iconic landmarks in Narkanda, drawing visitors with its timeless charm. This hill station offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Umiam Lake promises an unforgettable experience.",
+      "whyVisit": "A visit to Umiam Lake is essential for understanding Narkanda.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Umiam Lake, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Umiam Lake in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Umiam Lake in Narkanda"
+      },
+      "position": 16
+    },
+    {
+      "id": "narkanda-champawat",
+      "name": "Champawat",
+      "slug": "champawat",
+      "description": "Located in scenic Narkanda, Champawat offers an immersive experience into local culture. Exploring Champawat is one of the top things to do in Narkanda.",
+      "whyVisit": "Champawat offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Champawat, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Champawat in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Champawat in Narkanda"
+      },
+      "position": 17
+    },
+    {
+      "id": "narkanda-honeymoon-point",
+      "name": "Honeymoon Point",
+      "slug": "honeymoon-point",
+      "description": "A crown jewel of Narkanda, Honeymoon Point captivates every traveler with enchanting beauty. No trip to Narkanda is complete without visiting Honeymoon Point.",
+      "whyVisit": "Honeymoon Point stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Honeymoon Point, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Honeymoon Point in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Honeymoon Point in Narkanda"
+      },
+      "position": 18
+    },
+    {
+      "id": "narkanda-thangkharang-park",
+      "name": "Thangkharang Park",
+      "slug": "thangkharang-park",
+      "description": "Nestled in Narkanda, Thangkharang Park stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Thangkharang Park is among the best things to do in Narkanda.",
+      "whyVisit": "Thangkharang Park offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Thangkharang Park, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Thangkharang Park in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Thangkharang Park in Narkanda"
+      },
+      "position": 19
+    },
+    {
+      "id": "narkanda-rajaji-national-park",
+      "name": "Rajaji National Park",
+      "slug": "rajaji-national-park",
+      "description": "Rajaji National Park is one of the most iconic landmarks in Narkanda, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rajaji National Park promises an unforgettable experience.",
+      "whyVisit": "Rajaji National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Rajaji National Park, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rajaji National Park in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Rajaji National Park in Narkanda"
+      },
+      "position": 20
+    },
+    {
+      "id": "narkanda-photo-point",
+      "name": "Photo Point",
+      "slug": "photo-point",
+      "description": "Nestled in Narkanda, Photo Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Photo Point is among the best things to do in Narkanda.",
+      "whyVisit": "Photo Point stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Quick",
+      "mapsSearch": "Photo Point, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Photo Point in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Photo Point in Narkanda"
+      },
+      "position": 21
+    },
+    {
+      "id": "narkanda-mawlynnong-village",
+      "name": "Mawlynnong Village",
+      "slug": "mawlynnong-village",
+      "description": "Nestled in Narkanda, Mawlynnong Village stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Mawlynnong Village is among the best things to do in Narkanda.",
+      "whyVisit": "A visit to Mawlynnong Village is essential for understanding Narkanda.",
+      "bestTime": "Year-round",
+      "duration": "2-3 days",
+      "mapsSearch": "Mawlynnong Village, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawlynnong Village in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Mawlynnong Village in Narkanda"
+      },
+      "position": 22
+    },
+    {
+      "id": "narkanda-sattal",
+      "name": "Sattal",
+      "slug": "sattal",
+      "description": "Located in scenic Narkanda, Sattal offers an immersive experience into local culture. Exploring Sattal is one of the top things to do in Narkanda.",
+      "whyVisit": "Capture stunning photographs at Sattal.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Sattal, Narkanda",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Sattal in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Sattal in Narkanda"
+      },
+      "position": 23
+    },
+    {
+      "id": "narkanda-kodaikanal-view",
+      "name": "Kodaikanal View",
+      "slug": "kodaikanal-view",
+      "description": "Nestled in Narkanda, Kodaikanal View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Kodaikanal View is among the best things to do in Narkanda.",
+      "whyVisit": "Kodaikanal View offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kodaikanal View, Narkanda",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kodaikanal View in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Kodaikanal View in Narkanda"
+      },
+      "position": 24
+    },
+    {
+      "id": "narkanda-cherrapunji",
+      "name": "Cherrapunji",
+      "slug": "cherrapunji",
+      "description": "Located in scenic Narkanda, Cherrapunji offers an immersive experience into local culture. Exploring Cherrapunji is one of the top things to do in Narkanda.",
+      "whyVisit": "Capture stunning photographs at Cherrapunji.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Cherrapunji, Narkanda",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Cherrapunji in Narkanda, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Cherrapunji in Narkanda"
+      },
+      "position": 25
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "id": "tirupati",
+  "name": "Tirupati",
+  "state": "Andhra Pradesh",
+  "slug": "tirupati",
+  "tagline": "The spiritual powerhouse",
+  "categories": [
+    "spiritual",
+    "heritage",
+    "nature"
+  ],
+  "introduction": "Tirupati is a treasure trove of experiences. In this travel guide to Tirupati, we reveal the must visit places in Tirupati, the best places to visit in Tirupati, iconic tourist attractions in Tirupati, and amazing things to do in Tirupati.",
+  "metaTitle": "Best Places to Visit in Tirupati | Tourist Attractions in Tirupati - TrypInn",
+  "metaDescription": "Find the best places to visit in Tirupati, must visit places in Tirupati, and tourist attractions in Tirupati. Plan your Tirupati trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=1200&q=60",
+    "alt": "Tirupati travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "tirupati-sri-venkateswara-temple",
+      "name": "Sri Venkateswara Temple",
+      "slug": "sri-venkateswara-temple",
+      "description": "Nestled in Tirupati, Sri Venkateswara Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Sri Venkateswara Temple is among the best things to do in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Sri Venkateswara Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Sri Venkateswara Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Venkateswara Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Sri Venkateswara Temple in Tirupati"
+      },
+      "position": 1
+    },
+    {
+      "id": "tirupati-talakona-waterfall",
+      "name": "Talakona Waterfall",
+      "slug": "talakona-waterfall",
+      "description": "Nestled in Tirupati, Talakona Waterfall stands as a testament to architectural brilliance. This renowned waterfall attracts tourists who come to admire its stunning design. A visit to Talakona Waterfall is among the best things to do in Tirupati.",
+      "whyVisit": "A visit to Talakona Waterfall is essential for understanding Tirupati.",
+      "bestTime": "Jul-Oct",
+      "duration": "1-2 hours",
+      "mapsSearch": "Talakona Waterfall, Tirupati",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Talakona Waterfall in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Talakona Waterfall in Tirupati"
+      },
+      "position": 2
+    },
+    {
+      "id": "tirupati-chandragiri-fort",
+      "name": "Chandragiri Fort",
+      "slug": "chandragiri-fort",
+      "description": "Nestled in Tirupati, Chandragiri Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Chandragiri Fort is among the best things to do in Tirupati.",
+      "whyVisit": "Chandragiri Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Chandragiri Fort, Tirupati",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Chandragiri Fort in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Chandragiri Fort in Tirupati"
+      },
+      "position": 3
+    },
+    {
+      "id": "tirupati-sri-padmavathi-temple",
+      "name": "Sri Padmavathi Temple",
+      "slug": "sri-padmavathi-temple",
+      "description": "A crown jewel of Tirupati, Sri Padmavathi Temple captivates every traveler with enchanting beauty. No trip to Tirupati is complete without visiting Sri Padmavathi Temple.",
+      "whyVisit": "Experience the unmatched beauty of Sri Padmavathi Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sri Padmavathi Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Padmavathi Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Sri Padmavathi Temple in Tirupati"
+      },
+      "position": 4
+    },
+    {
+      "id": "tirupati-kapila-theertham",
+      "name": "Kapila Theertham",
+      "slug": "kapila-theertham",
+      "description": "A crown jewel of Tirupati, Kapila Theertham captivates every traveler with enchanting beauty. No trip to Tirupati is complete without visiting Kapila Theertham.",
+      "whyVisit": "Experience the unmatched beauty of Kapila Theertham.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Kapila Theertham, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kapila Theertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Kapila Theertham in Tirupati"
+      },
+      "position": 5
+    },
+    {
+      "id": "tirupati-sri-kalahasti-temple",
+      "name": "Sri Kalahasti Temple",
+      "slug": "sri-kalahasti-temple",
+      "description": "Nestled in Tirupati, Sri Kalahasti Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Sri Kalahasti Temple is among the best things to do in Tirupati.",
+      "whyVisit": "Sri Kalahasti Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Sri Kalahasti Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Kalahasti Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Sri Kalahasti Temple in Tirupati"
+      },
+      "position": 6
+    },
+    {
+      "id": "tirupati-tirumala-deer-park",
+      "name": "Tirumala Deer Park",
+      "slug": "tirumala-deer-park",
+      "description": "Tirumala Deer Park is a must-see wildlife in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Tirumala Deer Park.",
+      "bestTime": "Safari",
+      "duration": "Half day",
+      "mapsSearch": "Tirumala Deer Park, Tirupati",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Tirumala Deer Park in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Tirumala Deer Park in Tirupati"
+      },
+      "position": 7
+    },
+    {
+      "id": "tirupati-silathoranam",
+      "name": "Silathoranam",
+      "slug": "silathoranam",
+      "description": "A crown jewel of Tirupati, Silathoranam captivates every traveler with enchanting beauty. No trip to Tirupati is complete without visiting Silathoranam.",
+      "whyVisit": "A visit to Silathoranam is essential for understanding Tirupati.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Silathoranam, Tirupati",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Silathoranam in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Silathoranam in Tirupati"
+      },
+      "position": 8
+    },
+    {
+      "id": "tirupati-sri-vari-museum",
+      "name": "Sri Vari Museum",
+      "slug": "sri-vari-museum",
+      "description": "Nestled in Tirupati, Sri Vari Museum stands as a testament to architectural brilliance. This renowned museum attracts tourists who come to admire its stunning design. A visit to Sri Vari Museum is among the best things to do in Tirupati.",
+      "whyVisit": "Sri Vari Museum offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sri Vari Museum, Tirupati",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Sri Vari Museum in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Sri Vari Museum in Tirupati"
+      },
+      "position": 9
+    },
+    {
+      "id": "tirupati-akasaganga-teertham",
+      "name": "Akasaganga Teertham",
+      "slug": "akasaganga-teertham",
+      "description": "Akasaganga Teertham is one of the most iconic landmarks in Tirupati, drawing visitors with its timeless charm. This waterfall offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Akasaganga Teertham promises an unforgettable experience.",
+      "whyVisit": "Akasaganga Teertham offers a perfect blend of history and scenery.",
+      "bestTime": "Post-monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Akasaganga Teertham, Tirupati",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Akasaganga Teertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Akasaganga Teertham in Tirupati"
+      },
+      "position": 10
+    },
+    {
+      "id": "tirupati-papavinasam-teertham",
+      "name": "Papavinasam Teertham",
+      "slug": "papavinasam-teertham",
+      "description": "Papavinasam Teertham is a must-see waterfall in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Papavinasam Teertham.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Papavinasam Teertham, Tirupati",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Papavinasam Teertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Papavinasam Teertham in Tirupati"
+      },
+      "position": 11
+    },
+    {
+      "id": "tirupati-chakra-teertham",
+      "name": "Chakra Teertham",
+      "slug": "chakra-teertham",
+      "description": "Nestled in Tirupati, Chakra Teertham stands as a testament to architectural brilliance. This renowned waterfall attracts tourists who come to admire its stunning design. A visit to Chakra Teertham is among the best things to do in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Chakra Teertham.",
+      "bestTime": "Monsoon",
+      "duration": "Quick",
+      "mapsSearch": "Chakra Teertham, Tirupati",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Chakra Teertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Chakra Teertham in Tirupati"
+      },
+      "position": 12
+    },
+    {
+      "id": "tirupati-sri-govindarajaswami-temple",
+      "name": "Sri Govindarajaswami Temple",
+      "slug": "sri-govindarajaswami-temple",
+      "description": "Sri Govindarajaswami Temple is a must-see temple in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Experience the unmatched beauty of Sri Govindarajaswami Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sri Govindarajaswami Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Govindarajaswami Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Sri Govindarajaswami Temple in Tirupati"
+      },
+      "position": 13
+    },
+    {
+      "id": "tirupati-iskcon-temple-tirupati",
+      "name": "ISKCON Temple Tirupati",
+      "slug": "iskcon-temple-tirupati",
+      "description": "ISKCON Temple Tirupati is a must-see temple in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "ISKCON Temple Tirupati stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "ISKCON Temple Tirupati, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, ISKCON Temple Tirupati in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "ISKCON Temple Tirupati in Tirupati"
+      },
+      "position": 14
+    },
+    {
+      "id": "tirupati-sri-bedi-anjaneyaswamy-temple",
+      "name": "Sri Bedi Anjaneyaswamy Temple",
+      "slug": "sri-bedi-anjaneyaswamy-temple",
+      "description": "Sri Bedi Anjaneyaswamy Temple is a must-see temple in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Sri Bedi Anjaneyaswamy Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sri Bedi Anjaneyaswamy Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sri Bedi Anjaneyaswamy Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Sri Bedi Anjaneyaswamy Temple in Tirupati"
+      },
+      "position": 15
+    },
+    {
+      "id": "tirupati-tumbura-teertham",
+      "name": "Tumbura Teertham",
+      "slug": "tumbura-teertham",
+      "description": "Tumbura Teertham is a must-see waterfall in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Tumbura Teertham.",
+      "bestTime": "Jul-Oct",
+      "duration": "Half day",
+      "mapsSearch": "Tumbura Teertham, Tirupati",
+      "category": "waterfall",
+      "imagePrompt": "Ultra realistic travel photography, Tumbura Teertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Tumbura Teertham in Tirupati"
+      },
+      "position": 16
+    },
+    {
+      "id": "tirupati-japali-teertham",
+      "name": "Japali Teertham",
+      "slug": "japali-teertham",
+      "description": "Japali Teertham is a must-see temple in Tirupati, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Tirupati.",
+      "whyVisit": "Japali Teertham offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Japali Teertham, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Japali Teertham in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Japali Teertham in Tirupati"
+      },
+      "position": 17
+    },
+    {
+      "id": "tirupati-srivari-padalu",
+      "name": "Srivari Padalu",
+      "slug": "srivari-padalu",
+      "description": "A crown jewel of Tirupati, Srivari Padalu captivates every traveler with enchanting beauty. No trip to Tirupati is complete without visiting Srivari Padalu.",
+      "whyVisit": "Srivari Padalu stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Srivari Padalu, Tirupati",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Srivari Padalu in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Srivari Padalu in Tirupati"
+      },
+      "position": 18
+    },
+    {
+      "id": "tirupati-sv-zoological-park",
+      "name": "SV Zoological Park",
+      "slug": "sv-zoological-park",
+      "description": "A crown jewel of Tirupati, SV Zoological Park captivates every traveler with enchanting beauty. No trip to Tirupati is complete without visiting SV Zoological Park.",
+      "whyVisit": "Experience the unmatched beauty of SV Zoological Park.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "SV Zoological Park, Tirupati",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, SV Zoological Park in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "SV Zoological Park in Tirupati"
+      },
+      "position": 19
+    },
+    {
+      "id": "tirupati-kalyani-dam",
+      "name": "Kalyani Dam",
+      "slug": "kalyani-dam",
+      "description": "Kalyani Dam is one of the most iconic landmarks in Tirupati, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kalyani Dam promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Kalyani Dam.",
+      "bestTime": "Sep-Nov",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kalyani Dam, Tirupati",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kalyani Dam in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Kalyani Dam in Tirupati"
+      },
+      "position": 20
+    },
+    {
+      "id": "tirupati-regional-science-centre",
+      "name": "Regional Science Centre",
+      "slug": "regional-science-centre",
+      "description": "Nestled in Tirupati, Regional Science Centre stands as a testament to architectural brilliance. This renowned museum attracts tourists who come to admire its stunning design. A visit to Regional Science Centre is among the best things to do in Tirupati.",
+      "whyVisit": "Capture stunning photographs at Regional Science Centre.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Regional Science Centre, Tirupati",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Regional Science Centre in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Regional Science Centre in Tirupati"
+      },
+      "position": 21
+    },
+    {
+      "id": "tirupati-karinji-vedanthangal",
+      "name": "Karinji Vedanthangal",
+      "slug": "karinji-vedanthangal",
+      "description": "Located in scenic Tirupati, Karinji Vedanthangal offers an immersive experience into local culture. Exploring Karinji Vedanthangal is one of the top things to do in Tirupati.",
+      "whyVisit": "Karinji Vedanthangal stands out as one of the most rewarding experiences.",
+      "bestTime": "Safari",
+      "duration": "2-3 hours",
+      "mapsSearch": "Karinji Vedanthangal, Tirupati",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Karinji Vedanthangal in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Karinji Vedanthangal in Tirupati"
+      },
+      "position": 22
+    },
+    {
+      "id": "tirupati-gurramkonda-fort",
+      "name": "Gurramkonda Fort",
+      "slug": "gurramkonda-fort",
+      "description": "Gurramkonda Fort is one of the most iconic landmarks in Tirupati, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gurramkonda Fort promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Gurramkonda Fort.",
+      "bestTime": "Nov-Feb",
+      "duration": "Sunset",
+      "mapsSearch": "Gurramkonda Fort, Tirupati",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Gurramkonda Fort in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Gurramkonda Fort in Tirupati"
+      },
+      "position": 23
+    },
+    {
+      "id": "tirupati-mamandur-rock-caves",
+      "name": "Mamandur Rock Caves",
+      "slug": "mamandur-rock-caves",
+      "description": "Nestled in Tirupati, Mamandur Rock Caves stands as a testament to architectural brilliance. This renowned cave attracts tourists who come to admire its stunning design. A visit to Mamandur Rock Caves is among the best things to do in Tirupati.",
+      "whyVisit": "Experience the unmatched beauty of Mamandur Rock Caves.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mamandur Rock Caves, Tirupati",
+      "category": "cave",
+      "imagePrompt": "Ultra realistic travel photography, Mamandur Rock Caves in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Mamandur Rock Caves in Tirupati"
+      },
+      "position": 24
+    },
+    {
+      "id": "tirupati-kalyana-venkateswara-temple",
+      "name": "Kalyana Venkateswara Temple",
+      "slug": "kalyana-venkateswara-temple",
+      "description": "Kalyana Venkateswara Temple is one of the most iconic landmarks in Tirupati, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kalyana Venkateswara Temple promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Kalyana Venkateswara Temple.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kalyana Venkateswara Temple, Tirupati",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kalyana Venkateswara Temple in Tirupati, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Kalyana Venkateswara Temple in Tirupati"
+      },
+      "position": 25
+    }
+  ]
+}

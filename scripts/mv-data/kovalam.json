@@ -1,0 +1,247 @@
+{
+  "slug": "kovalam",
+  "name": "Kovalam",
+  "state": "Kerala",
+  "tagline": "Kerala's lighthouse beach where coconut palms meet emerald waves",
+  "categories": [
+    "beach",
+    "backwater",
+    "spiritual"
+  ],
+  "highlights": [
+    "three crescent beaches in a sheltered bay beloved since the 1970s",
+    "ayurvedic capital of india with centuries-old treatment traditions"
+  ],
+  "attractions": [
+    {
+      "name": "Lighthouse Beach",
+      "category": "beach",
+      "description": "The most famous of Kovalam's three beaches, Lighthouse Beach takes its name from the red-and-white striped Vizhinjam lighthouse rising 30 metres above its southern headland. The 600-metre crescent of golden sand is bookended by rocky headlands, shaded by swaying palms, and lined with seafood restaurants and Ayurvedic massage parlours at its northern end. Swimming is relatively safe within the flagged zone.",
+      "whyVisit": "Kovalam's iconic beach with a lighthouse backdrop — the perfect Kerala crescent bay for swimming and sunsets.",
+      "bestTime": "October to March; sunrise and sunset",
+      "duration": "Half day to full day",
+      "mapsSearch": "Lighthouse Beach Kovalam Kerala",
+      "imageQuery": "Lighthouse Beach Kovalam Kerala coconut palms"
+    },
+    {
+      "name": "Kovalam Lighthouse",
+      "category": "viewpoint",
+      "description": "The Vizhinjam Lighthouse, built in 1972 on the rocky headland at the southern tip of Lighthouse Beach, opens its observation gallery to visitors for a few hours daily. The climb up 76 stairs delivers a 360-degree panorama: the three Kovalam beaches curving north, fishing boats at anchor in Vizhinjam harbour, the deep blue Arabian Sea to the west, and the Western Ghats ridgeline rising to the east.",
+      "whyVisit": "The best panoramic viewpoint over all three Kovalam beaches and the Arabian Sea, surprisingly underutilised.",
+      "bestTime": "Opening hours, best at golden hour",
+      "duration": "45 minutes",
+      "mapsSearch": "Vizhinjam Lighthouse Kovalam",
+      "imageQuery": "Kovalam lighthouse aerial view beaches Kerala"
+    },
+    {
+      "name": "Hawa Beach (Eve's Beach)",
+      "category": "beach",
+      "description": "The northernmost of Kovalam's three bays, Hawa Beach (also called Eve's Beach) is the widest and least commercialised, with a longer stretch of sand favoured by local fishing families. Traditional wooden vallom canoes are launched at dawn and return in the afternoon while women sort the catch on the beach. Fewer restaurants and no beach shacks mean a more authentic Kerala coastal scene.",
+      "whyVisit": "The most authentic of Kovalam's three beaches where traditional fishing life still plays out undisturbed.",
+      "bestTime": "Early morning for fishing boats",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hawa Beach Kovalam Kerala",
+      "imageQuery": "Hawa Beach Kovalam fishing boats Kerala"
+    },
+    {
+      "name": "Samudra Beach",
+      "category": "beach",
+      "description": "The central and most sheltered of the three bays, Samudra Beach sits in the deepest of the three coves with the calmest water and fewest vendors, making it popular with families and luxury hotel guests from the adjoining Taj Green Cove resort. The rocky promontory at the southern end has natural rock pools that fill with clear water at low tide and are perfect for children.",
+      "whyVisit": "Kovalam's quietest and most sheltered bay with rock pools and fewer crowds than Lighthouse Beach.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-4 hours",
+      "mapsSearch": "Samudra Beach Kovalam Kerala",
+      "imageQuery": "Samudra Beach Kovalam calm water Kerala"
+    },
+    {
+      "name": "Ayurvedic Treatment and Massage (Kovalam Strip)",
+      "category": "heritage",
+      "description": "Kerala Ayurveda reaches its most concentrated form along Kovalam's Beach Road, where dozens of Ayurvedic centres from basic parlours to elaborate hospital-grade retreat facilities offer the full classical treatment menu: Abhyanga (four-hand oil massage), Shirodhara (warm oil poured on the forehead), Pizhichil (oil bath), Nasyam, and Kizhi (herbal poultice pounding). Month-long Panchakarma purification programs are possible.",
+      "whyVisit": "India's most accessible concentration of classical Ayurvedic treatment — from a single session to a full month of traditional medicine.",
+      "bestTime": "October to March",
+      "duration": "1.5 hours per session; multi-day programs available",
+      "mapsSearch": "Ayurveda Centre Kovalam Beach Road",
+      "imageQuery": "Ayurvedic massage treatment Kerala Kovalam"
+    },
+    {
+      "name": "Vizhinjam Mosque and Fishing Harbour",
+      "category": "heritage",
+      "description": "The village of Vizhinjam, 2 km south of Kovalam, is home to one of Kerala's oldest mosques — a modest building of great historical importance to the region's long-established Muslim fishing community. The adjacent harbour is the most authentic working fishing port in the area, with large mechanised trawlers alongside small wooden canoes. The fish auction at the wharf between 6 and 8 am is chaotic and vivid.",
+      "whyVisit": "A morning fish auction at an active harbour — the most authentic coastal Kerala experience within walking distance of Kovalam.",
+      "bestTime": "6-8 am for the fish auction",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Vizhinjam Fishing Harbour Kerala",
+      "imageQuery": "Vizhinjam fishing harbour fish auction Kerala"
+    },
+    {
+      "name": "Vizhinjam Rock-Cut Cave Temple",
+      "category": "cave",
+      "description": "Carved from a single granite outcrop in the 8th century during the Pandya dynasty, the Vizhinjam Rock Cave Temple contains one of the earliest examples of Dravidian sculpture in Kerala — an unfinished figure of Shiva, a half-completed Dakshinamurthi panel, and a beautiful Harihara (Vishnu-Shiva composite) figure. Just 2 km south of Kovalam and almost always empty of visitors.",
+      "whyVisit": "An 8th-century rock-cut temple with Pandya-era sculpture, two minutes' walk from the harbour — almost nobody visits.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Vizhinjam Rock Cave Temple Kerala",
+      "imageQuery": "Vizhinjam rock cave temple sculpture Kerala"
+    },
+    {
+      "name": "Poovar Island and Estuary Boat Ride",
+      "category": "lake",
+      "description": "10 km south of Kovalam, Poovar is a remarkable geography — a narrow spit of land where the Neyyar River flows into a golden sand estuary surrounded on three sides by the Arabian Sea, with a mangrove backwater on the other. Motor launches navigate through the mangrove channels between exotic birdlife before emerging onto the estuary beach. The floating cottages of Poovar Island Resort occupy the estuary centre.",
+      "whyVisit": "A river mouth where backwaters, mangroves, and a golden estuary beach converge — one of Kerala's most scenic coastal landscapes.",
+      "bestTime": "Morning for birds, October to March",
+      "duration": "Half day",
+      "mapsSearch": "Poovar Island Estuary Kerala",
+      "imageQuery": "Poovar Island estuary golden beach Kerala"
+    },
+    {
+      "name": "Neyyar Dam and Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "30 km east of Kovalam, the Neyyar Dam creates a large reservoir backed by the forested slopes of the Western Ghats that form the Neyyar Wildlife Sanctuary. Boat safaris on the reservoir provide views of wild elephants, Mugger crocodiles basking on rocks, gaur, spotted deer, and bonnet macaques. A Lion Safari Park and a crocodile farm at the dam site add a more structured wildlife dimension.",
+      "whyVisit": "Wild elephants, crocodiles, and gaur visible from a reservoir boat safari in a Western Ghats forest just 30 km from the beach.",
+      "bestTime": "October to March, early morning safari",
+      "duration": "Half day",
+      "mapsSearch": "Neyyar Wildlife Sanctuary Kerala",
+      "imageQuery": "Neyyar Dam reservoir elephant safari Kerala"
+    },
+    {
+      "name": "Padmanabhapuram Palace",
+      "category": "palace",
+      "description": "45 km from Kovalam across the Tamil Nadu border, this 16th-century wooden palace complex was the seat of the Travancore kingdom and is the finest example of Kerala traditional architecture surviving in India. Its main hall, the 'Mantrasala', has intricately carved teak ceilings with 90 different flower patterns; the 'Nataksala' performance hall and the 'Thai Kottaram' (mother's palace) are equally extraordinary in their craftsmanship.",
+      "whyVisit": "The most magnificent wooden palace in India — 16th century teak craftsmanship on a scale and quality that simply stuns.",
+      "bestTime": "Morning, weekdays (closed Monday)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Padmanabhapuram Palace Kerala Tamil Nadu",
+      "imageQuery": "Padmanabhapuram Palace teak wood Kerala"
+    },
+    {
+      "name": "Sree Padmanabhaswamy Temple",
+      "category": "temple",
+      "description": "20 km from Kovalam in Thiruvananthapuram, this Vishnu temple is the tutelary deity of the Travancore royal family and made world headlines in 2011 when underground vaults were found to contain an estimated $22 billion in gold and jewels. The 16th-century temple's 7-storeyed Dravidian gopuram rises above the city's skyline. Only Hindus may enter the inner sanctum, but the gopuram is spectacular from outside.",
+      "whyVisit": "The richest temple in the world by vault inventory — a living shrine of extraordinary historical and artistic importance.",
+      "bestTime": "Morning puja between 6-8 am",
+      "duration": "1.5 hours",
+      "mapsSearch": "Sree Padmanabhaswamy Temple Thiruvananthapuram",
+      "imageQuery": "Padmanabhaswamy Temple gopuram Thiruvananthapuram"
+    },
+    {
+      "name": "Napier Museum Thiruvananthapuram",
+      "category": "museum",
+      "description": "Built in 1880 in an Indo-Saracenic style mixing Gothic, Mughal, and Kerala architectural elements into a unique synthesis, the Napier Museum houses one of India's finest collections of Kerala bronzes, ivory carvings, temple chariots, and 16th-19th century Travancore court artefacts. The adjacent Natural History Museum and the zoo within the same museum complex add a full-day cultural programme.",
+      "whyVisit": "The finest collection of Kerala traditional arts and bronzes under one roof, in one of India's most architecturally unusual museum buildings.",
+      "bestTime": "Morning, closed Monday",
+      "duration": "2-3 hours",
+      "mapsSearch": "Napier Museum Thiruvananthapuram",
+      "imageQuery": "Napier Museum Indo-Saracenic Thiruvananthapuram"
+    },
+    {
+      "name": "Kovalam Fish Market Sunrise",
+      "category": "market",
+      "description": "Each dawn the fishing boats that left Kovalam at 2 am return to the northern end of Hawa Beach between 5 and 7 am, and a spontaneous fish market erupts on the sand. Fisherwomen in bright sarees bid loudly for katti, seer fish, prawns, and swordfish while the boats are dragged up the sand by hand. Local restaurant owners select the day's catch from the nets, and the scene is over within two hours.",
+      "whyVisit": "A dawn fish auction on the beach where the catch is negotiated in the breaking surf — raw and beautiful Kerala coastal life.",
+      "bestTime": "5-7 am",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Kovalam Fish Market Beach",
+      "imageQuery": "Kovalam fish market dawn beach Kerala"
+    },
+    {
+      "name": "Thiruvallam Parasuraman Temple and Backwater Canoe",
+      "category": "lake",
+      "description": "8 km from Kovalam at Thiruvallam, the Parasuraman Temple stands on an island formed by a backwater canal, accessible only by canoe. The quiet backwater channel through coconut palms, rice paddies, and coir workshops is the most undisturbed waterway near Kovalam — utterly different from the Alappuzha houseboat circuits. Chinese fishing nets, cormorants drying wings, and the occasional kingfisher flash provide constant interest.",
+      "whyVisit": "A temple-island canoe trip through a quiet backwater canal that offers genuine Kerala waterway atmosphere without the houseboat crowds.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thiruvallam Backwater Canal Kerala",
+      "imageQuery": "Thiruvallam backwater canoe Kerala temple"
+    },
+    {
+      "name": "Agasthyarkoodam Trek",
+      "category": "adventure",
+      "description": "The highest peak in the Agasthyamalai Biosphere Reserve at 1,868 metres, Agasthyarkoodam is a challenging 2-day trek from the forest checkpost at Bonacaud. The trail climbs through shola grassland, endangered lion-tailed macaque territory, and near-virgin tropical montane forest to a rocky summit with views across the plains to the Arabian Sea. Entry requires permits from the Forest Department (January-March only).",
+      "whyVisit": "A rare permitted trek to a UNESCO-recognised peak through some of India's least-disturbed tropical montane forest.",
+      "bestTime": "January to March (permit season only)",
+      "duration": "2 days",
+      "mapsSearch": "Agasthyarkoodam Trek Kerala",
+      "imageQuery": "Agasthyarkoodam peak forest trek Kerala"
+    },
+    {
+      "name": "Varkala Cliff Beach",
+      "category": "beach",
+      "description": "54 km north of Kovalam, Varkala's laterite cliffs drop vertically to a clean beach below in one of Kerala's most dramatic coastal settings. The cliff-top path lined with yoga studios, open-air cafes, and Ayurvedic centres is Kerala's most bohemian coastal strip. The Janardana Swami Temple at the cliff's northern end is 2,000 years old and draws pilgrims alongside surfers. The beach is strong-current and better for watching than swimming.",
+      "whyVisit": "Kerala's most dramatic coastal scenery — laterite cliffs above a clean beach with a 2,000-year-old temple at one end.",
+      "bestTime": "October to March, sunset on the cliff",
+      "duration": "Full day trip from Kovalam",
+      "mapsSearch": "Varkala Cliff Beach Kerala",
+      "imageQuery": "Varkala cliff beach sunset Kerala"
+    },
+    {
+      "name": "Ponmudi Hill Station",
+      "category": "nature",
+      "description": "60 km northeast of Kovalam at 1,066 metres, Ponmudi is Thiruvananthapuram district's hill station — a compact ridge with tea gardens, misty valleys, and a spectacular serpentine road of 22 hairpin bends. The summit offers views across the Western Ghats forest and on clear days to the coastal plain and the sea. Butterfly watching is exceptional: over 130 species recorded including the Malabar banded peacock.",
+      "whyVisit": "A Western Ghats hill station an hour from the beach with 130+ butterfly species and views from coast to mountain.",
+      "bestTime": "October to March; July to September for waterfalls",
+      "duration": "Full day trip",
+      "mapsSearch": "Ponmudi Hill Station Kerala",
+      "imageQuery": "Ponmudi hill station Western Ghats Kerala mist"
+    },
+    {
+      "name": "Kovalam Sunset at Hawah Beach Headland",
+      "category": "viewpoint",
+      "description": "The low granite headland separating Hawa Beach from Samudra Beach provides an elevated west-facing platform that is Kovalam's best-kept sunset viewpoint. Unlike the lighthouse headland, this promontory is unfenced and free — local fishermen sit here in the evenings with their lines, and the silhouette of the lighthouse catches the last light against a sky that turns violet, gold, and deep rose over the Arabian Sea.",
+      "whyVisit": "Kovalam's least-visited headland with the most atmospheric sunset view — fishermen, lighthouse silhouette, and no ticket booth.",
+      "bestTime": "30 minutes before sunset",
+      "duration": "1 hour",
+      "mapsSearch": "Kovalam Beach Headland between Hawa Samudra",
+      "imageQuery": "Kovalam headland sunset Arabian Sea Kerala"
+    },
+    {
+      "name": "Kuthiramalika (Puthen Malika) Palace",
+      "category": "palace",
+      "description": "Adjacent to the Padmanabhaswamy Temple in Thiruvananthapuram, this late 18th-century wooden palace built by Maharaja Swathi Thirunal contains one of Kerala's best palace museums. Named for the 122 horse brackets (kuthi = horse) that support its roof eaves, it houses royal furniture, ivory thrones, Belgian crystal chandeliers, Tanjore portraits, and a collection of gifts from foreign dignitaries. The Kerala wooden architecture is impeccable.",
+      "whyVisit": "A hidden gem beside the famous temple — exquisite Kerala wooden palace architecture with a superb royal collection, usually uncrowded.",
+      "bestTime": "Morning, closed Monday",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Kuthiramalika Palace Museum Thiruvananthapuram",
+      "imageQuery": "Kuthiramalika Palace wooden architecture Kerala"
+    },
+    {
+      "name": "Aruvikkara Dam and Karikkakom Temple",
+      "category": "nature",
+      "description": "15 km from Kovalam, the Aruvikkara Dam on the Karamana River is surrounded by a small forest reserve where crocodiles bask on exposed rocks and otters can occasionally be spotted. The Karikkakom Chamundeshwari Temple on an island in the reservoir is reached by a footbridge and is an important local pilgrimage site. The riverine picnic grounds are popular with Thiruvananthapuram families at weekends.",
+      "whyVisit": "Wild crocodiles on a dam reservoir combined with an island temple — a distinctly unusual Kerala half-day outing.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Aruvikkara Dam Kerala",
+      "imageQuery": "Aruvikkara Dam river crocodile Kerala"
+    },
+    {
+      "name": "Bekal Fort",
+      "category": "fort",
+      "description": "470 km north of Kovalam at the Kerala-Karnataka border, Bekal Fort is the largest fort in Kerala, built in the 17th century on a promontory that juts into the Arabian Sea on three sides. The fort's famous keyhole-shaped observation tower rising from the water's edge is one of the most photographed structures in Kerala — particularly at sunset when the sea glows around it. A beautiful beach runs alongside the fort walls.",
+      "whyVisit": "Kerala's largest and most dramatically sea-sited fort — the keyhole tower above the waves is an iconic Kerala image.",
+      "bestTime": "Sunset, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Bekal Fort Kerala",
+      "imageQuery": "Bekal Fort keyhole tower Arabian Sea Kerala"
+    },
+    {
+      "name": "Chinese Fishing Nets at Vizhinjam",
+      "category": "heritage",
+      "description": "The Chinese cantilevered fishing nets (cheena vala) that define Kerala's coastal imagery are also present at Vizhinjam harbour, 2 km from Kovalam. The nets here see working use — they are lowered by a counterweight system of stones and levers into the harbour mouth at dusk and hauled up with their catch while tourists watch from the sea wall. Evening light on the wooden frames creates perfect photography.",
+      "whyVisit": "Traditional Chinese fishing nets in authentic working use at a live fishing harbour — more genuine than the tourist-oriented Kochi nets.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "1 hour",
+      "mapsSearch": "Chinese Fishing Nets Vizhinjam Kerala",
+      "imageQuery": "Chinese fishing nets Vizhinjam Kerala harbour"
+    },
+    {
+      "name": "Shangumugham Beach Sunset",
+      "category": "beach",
+      "description": "8 km north of Kovalam near Thiruvananthapuram Airport, Shangumugham Beach is the city's urban beach — a wide sandy shore backed by a concrete promenade with a sculptural installation of a reclining mermaid (Jalakanyadha, by sculptor Kanayi Kunhiraman) and a large aquarium building. The beach faces due west and the sunsets here are spectacular, with the mermaid silhouetted against the Arabian Sea sky.",
+      "whyVisit": "A legendary Kerala sunset framing an iconic mermaid sculpture against the Arabian Sea — beloved by locals, unknown to tourists.",
+      "bestTime": "Sunset",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Shangumugham Beach Thiruvananthapuram",
+      "imageQuery": "Shangumugham Beach mermaid sculpture sunset Kerala"
+    }
+  ]
+}

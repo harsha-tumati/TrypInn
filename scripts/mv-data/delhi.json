@@ -1,0 +1,260 @@
+{
+  "slug": "delhi",
+  "name": "Delhi",
+  "state": "Delhi",
+  "tagline": "Ancient empires and modern energy in one sprawling capital",
+  "categories": ["heritage", "historical", "city"],
+  "highlights": ["seven historic cities layered across millennia", "street food capital of north india"],
+  "attractions": [
+    {
+      "name": "Red Fort",
+      "category": "fort",
+      "description": "Shah Jahan's colossal sandstone citadel on the Yamuna's banks anchors Old Delhi's skyline. Built between 1638 and 1648, its 33-metre red sandstone walls enclose a world of marble palaces, audience halls, and the intricate Diwan-i-Khas where the legendary Peacock Throne once stood. The Sound and Light Show at dusk brings Mughal history vividly to life.",
+      "whyVisit": "The architectural crown of Mughal Delhi and India's most famous Independence Day venue.",
+      "bestTime": "October to March, early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Red Fort Delhi",
+      "imageQuery": "Red Fort Delhi sandstone walls"
+    },
+    {
+      "name": "Qutb Minar",
+      "category": "heritage",
+      "description": "At 72.5 metres, this fluted sandstone tower is the tallest brick minaret in the world and the centrepiece of the Qutb complex, a UNESCO World Heritage Site. Built in 1193 by Qutb-ud-din Aibak, it is ringed by India's first mosque, the rustless Iron Pillar dating to the 4th century, and the ruins of a never-completed second tower twice its planned height.",
+      "whyVisit": "A UNESCO-listed monument that marks the very beginning of the Delhi Sultanate.",
+      "bestTime": "November to February, morning",
+      "duration": "2 hours",
+      "mapsSearch": "Qutb Minar Delhi",
+      "imageQuery": "Qutb Minar minaret Delhi"
+    },
+    {
+      "name": "Humayun's Tomb",
+      "category": "heritage",
+      "description": "Built in 1572 by Humayun's widow Haji Begum, this UNESCO World Heritage monument is the subcontinent's first garden tomb and the direct architectural precursor to the Taj Mahal. Its double dome, red sandstone and white marble inlay, and formal charbagh garden laid out in strict Persian geometric quadrants set a template that defined Mughal funerary architecture for a century.",
+      "whyVisit": "The most serene and least-crowded of Delhi's big Mughal monuments, stunning at golden hour.",
+      "bestTime": "November to February, late afternoon",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Humayun's Tomb Delhi",
+      "imageQuery": "Humayun's Tomb garden Delhi"
+    },
+    {
+      "name": "India Gate",
+      "category": "heritage",
+      "description": "Edwin Lutyens's 42-metre triumphal arch on Rajpath (Kartavya Path) commemorates the 84,000 Indian soldiers who died in the First World War and the Third Anglo-Afghan War. The names of 13,300 soldiers are engraved on its face. The Amar Jawan Jyoti flame burned here for 50 years before being merged with the National War Memorial in 2022, which stands directly behind it.",
+      "whyVisit": "Delhi's most iconic landmark, framed by lawns where the whole city comes to picnic.",
+      "bestTime": "Evening when illuminated",
+      "duration": "1 hour",
+      "mapsSearch": "India Gate New Delhi",
+      "imageQuery": "India Gate illuminated New Delhi"
+    },
+    {
+      "name": "Lotus Temple",
+      "category": "religious",
+      "description": "Fariborz Sahba's 1986 Bahá'í House of Worship unfurls 27 free-standing marble-clad petals arranged in three tiers to form a perfect lotus flower. Open to people of all faiths, it seats 2,500 in silent meditation under a soaring 40-metre central dome. Nine surrounding pools reflect the white shell structure, making it one of the most visited buildings on earth by visitor count.",
+      "whyVisit": "An architectural marvel that welcomes all religions with profound, hushed calm.",
+      "bestTime": "October to March, weekday morning",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Lotus Temple Bahapur Delhi",
+      "imageQuery": "Lotus Temple white petals Delhi"
+    },
+    {
+      "name": "Jama Masjid",
+      "category": "religious",
+      "description": "Shah Jahan's great congregational mosque, completed in 1656, is India's largest active mosque and can hold 25,000 worshippers in its vast sandstone courtyard. Three marble-domed halls, two 40-metre minarets, and three ornate gateways frame an ablution tank at the centre. The view from the north minaret sweeps across the rooftops of Old Delhi all the way to Red Fort.",
+      "whyVisit": "The spiritual and visual heart of Old Delhi, most electrifying during Friday Jumu'ah prayers.",
+      "bestTime": "Early morning or just before sunset",
+      "duration": "1 hour",
+      "mapsSearch": "Jama Masjid Old Delhi",
+      "imageQuery": "Jama Masjid courtyard Old Delhi"
+    },
+    {
+      "name": "Chandni Chowk",
+      "category": "market",
+      "description": "One of Asia's oldest and busiest markets, laid out by Shah Jahan's daughter Jahanara in 1650 along a canal that once reflected moonlight. Today its narrow lanes specialise by trade — Kinari Bazaar for wedding trimmings, Dariba Kalan for silver, Khari Baoli for spices — while parathas at Paranthe Wali Gali and jalebis at Old Famous Jalebi Wala define its legendary street-food culture.",
+      "whyVisit": "The most sensory, chaotic, and authentic taste of Old Delhi's Mughal-era mercantile soul.",
+      "bestTime": "Morning on weekdays",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chandni Chowk Delhi",
+      "imageQuery": "Chandni Chowk market street Delhi"
+    },
+    {
+      "name": "Akshardham Temple",
+      "category": "temple",
+      "description": "Inaugurated in 2005, this BAPS Swaminarayan complex covers 100 acres on the Yamuna bank and holds the world's largest comprehensive Hindu temple by the Guinness World Records. Its central monument features 234 ornately carved pillars, 9 domes, 20,000 stone sculptures, and a 20-foot gold-leaf statue of Swaminarayan. The evening Sahaj Anand water show is a spectacular cultural spectacle.",
+      "whyVisit": "A modern temple of mind-boggling scale where devotion and master craftsmanship converge.",
+      "bestTime": "October to March, late afternoon into evening",
+      "duration": "3-4 hours",
+      "mapsSearch": "Akshardham Temple Delhi",
+      "imageQuery": "Akshardham Temple carved stone Delhi"
+    },
+    {
+      "name": "Hauz Khas Village",
+      "category": "heritage",
+      "description": "A 13th-century reservoir built by Alauddin Khalji and expanded by Firuz Shah Tughluq sits at the heart of this layered neighbourhood. Ruins of a madrasa, a mosque, and Firuz Shah's own tomb line the tank's edge, while below them an urban village of boutiques, galleries, and rooftop cafes has grown. Deer Park adjoins it with morning joggers and nesting birds.",
+      "whyVisit": "Where medieval ruins, a deer park, and Delhi's bohemian café scene collide in one small village.",
+      "bestTime": "Late afternoon to evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hauz Khas Village Delhi",
+      "imageQuery": "Hauz Khas ruins reservoir Delhi"
+    },
+    {
+      "name": "Raj Ghat",
+      "category": "heritage",
+      "description": "A simple black marble platform marks the spot on the Yamuna bank where Mahatma Gandhi was cremated on 31 January 1948. An eternal flame burns at its centre beneath a neem tree Gandhi planted. The surrounding park is landscaped with trees gifted by world leaders, and a small museum, Gandhi Darshan, displays photographs, letters, and personal effects from his life.",
+      "whyVisit": "A place of profound national pilgrimage and quiet reflection on Gandhi's enduring legacy.",
+      "bestTime": "Early morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Raj Ghat Delhi",
+      "imageQuery": "Raj Ghat Gandhi memorial Delhi"
+    },
+    {
+      "name": "Purana Qila",
+      "category": "fort",
+      "description": "One of Delhi's oldest citadels, built by both Sher Shah Suri and Humayun in the 1530s–40s on a site believed to be the ancient city of Indraprastha. Within its mile-long walls stand the elegant Qila-i-Kuhna Mosque, the octagonal Sher Mandal tower where Humayun fell to his death, and a small museum of excavated antiquities. A pleasant boating lake wraps around its western face.",
+      "whyVisit": "A largely uncrowded fort with excellent Mughal architecture and a relaxed atmosphere by the lake.",
+      "bestTime": "October to March, morning",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Purana Qila Delhi",
+      "imageQuery": "Purana Qila Old Fort Delhi"
+    },
+    {
+      "name": "National Museum Delhi",
+      "category": "museum",
+      "description": "India's largest museum houses over 200,000 artifacts spanning 5,000 years of Indian civilization across 60 galleries. Highlights include the Harappan gallery with Dancing Girl and Priest-King figurines, the Mughal miniature painting collection, Gandhara sculpture, the Amaravati marble friezes, Buddhist thangkas, and one of the world's finest collections of Indian decorative arts including jade, ivory, and textiles.",
+      "whyVisit": "The single best survey of Indian civilisation under one roof, essential for any first-time visitor.",
+      "bestTime": "Weekday morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "National Museum Janpath New Delhi",
+      "imageQuery": "National Museum Delhi artifacts gallery"
+    },
+    {
+      "name": "Lodi Garden",
+      "category": "park",
+      "description": "Seventy-five acres of sculpted park in the heart of South Delhi encircle the tombs of the Sayyid and Lodi dynasty rulers from the 15th and early 16th centuries. Mohammed Shah's dome, Sikander Lodi's octagonal tomb, Bada Gumbad's mosque, and the arched Athpula bridge are all set amid manicured lawns and bougainvillea hedges. Dawn brings birders; lunch hour brings office workers; dusk brings joggers.",
+      "whyVisit": "The loveliest urban park in Delhi where Mughal-era tombs serve as everyday park furniture.",
+      "bestTime": "Early morning or late afternoon",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Lodi Garden Delhi",
+      "imageQuery": "Lodi Garden tombs park Delhi"
+    },
+    {
+      "name": "Gurudwara Bangla Sahib",
+      "category": "religious",
+      "description": "This spectacular golden-domed Sikh gurdwara marks the site where the eighth Sikh Guru, Harkrishan Dev Ji, stayed in 1664 and used its sacred pond to heal smallpox victims. The sarovar (holy tank) glows at night under floodlights. The langar (community kitchen) feeds thousands daily with free vegetarian meals, and the sounds of kirtan (devotional music) fill the air around the clock.",
+      "whyVisit": "A living gurdwara of staggering beauty where the langar tradition offers a humbling experience.",
+      "bestTime": "Dawn prayers or evening",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Gurudwara Bangla Sahib Delhi",
+      "imageQuery": "Bangla Sahib Gurdwara golden dome Delhi"
+    },
+    {
+      "name": "Mehrauli Archaeological Park",
+      "category": "heritage",
+      "description": "A forested 200-acre park adjacent to the Qutb complex conceals over 100 medieval monuments in various states of ruin — tombs of Lodi and Sayyid nobles, a Mughal-era mosque, Balban's tomb (the oldest dome in India), and the little-known Jamali Kamali mosque and twin tombs. Peacocks roam freely between crumbling sandstone ruins largely overlooked by tourists.",
+      "whyVisit": "Delhi's most atmospheric ruin-walk, completely off the tourist circuit despite extraordinary monuments.",
+      "bestTime": "Early morning, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mehrauli Archaeological Park Delhi",
+      "imageQuery": "Mehrauli Archaeological Park ruins Delhi"
+    },
+    {
+      "name": "Dilli Haat",
+      "category": "market",
+      "description": "An open-air craft bazaar operated by the Delhi Tourism and Transport Development Corporation that rotates stalls from every Indian state on a fortnight cycle. Over 200 artisans sell dhokra metalwork, Pashmina shawls, Madhubani paintings, Warli textiles, and tribal jewellery. State food stalls running alongside serve regional dishes from Bengal, Nagaland, Gujarat, and Kerala within a single walk.",
+      "whyVisit": "The most accessible way to buy authentic Indian handicrafts from all 28 states in one place.",
+      "bestTime": "Evening, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dilli Haat INA Delhi",
+      "imageQuery": "Dilli Haat craft market Delhi"
+    },
+    {
+      "name": "Nizamuddin Dargah",
+      "category": "religious",
+      "description": "The marble shrine of the 14th-century Sufi saint Hazrat Nizamuddin Auliya draws pilgrims of every faith into a dense, incense-thick alley of rose petals and qawwali singers. Thursday evening qawwali sessions by hereditary singers echo under the shrine's canopied courtyard beside the graves of the poet Amir Khusrau and the Mughal princess Jahanara. Delhi's most spiritually charged experience.",
+      "whyVisit": "Thursday night qawwali at the dargah is the most moving musical and spiritual event in Delhi.",
+      "bestTime": "Thursday evening after sunset",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Nizamuddin Dargah Delhi",
+      "imageQuery": "Nizamuddin Dargah qawwali Delhi"
+    },
+    {
+      "name": "Safdarjung's Tomb",
+      "category": "heritage",
+      "description": "The last great Mughal garden tomb, built in 1754 for Nawab Safdarjung, Prime Minister of the Mughal Empire. Its sandstone and marble structure copies Humayun's Tomb on a smaller scale, flanked by four pavilions named Jangli Mahal, Moti Mahal, Badshah Pasand, and Saat Khamba. Being far less visited than Humayun's Tomb, it offers an almost solitary encounter with late Mughal architecture.",
+      "whyVisit": "A magnificent, rarely-crowded Mughal tomb you can have almost entirely to yourself.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Safdarjung Tomb Delhi",
+      "imageQuery": "Safdarjung Tomb garden New Delhi"
+    },
+    {
+      "name": "Connaught Place",
+      "category": "market",
+      "description": "Edwin Lutyens and Herbert Baker's 1933 Georgian-colonnaded circular plaza at the heart of New Delhi remains the city's most recognisable commercial hub. Its concentric inner and outer circles house flagship stores, heritage restaurants like Wengers and United Coffee House, and the underground Palika Bazaar. The central park anchors protests, performances, and the daily chess players who occupy its benches.",
+      "whyVisit": "The grand commercial heart of Lutyens' Delhi where heritage architecture meets street food culture.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Connaught Place New Delhi",
+      "imageQuery": "Connaught Place colonnades New Delhi"
+    },
+    {
+      "name": "Tughlaqabad Fort",
+      "category": "fort",
+      "description": "Ghiyas-ud-din Tughlaq built this massive fortified city in just four years between 1321 and 1325, and it was abandoned almost immediately after his death. The ruins of 13-km of jagged battlemented walls, 52 gates, a citadel, reservoir, and the founder's causeway-connected tomb survive in a desolate, wild state largely free of visitors, with feral peacocks and foxes roaming the rubble.",
+      "whyVisit": "Delhi's most dramatic and desolate fortress ruin — raw medieval scale with almost no crowds.",
+      "bestTime": "Early morning, October to February",
+      "duration": "2 hours",
+      "mapsSearch": "Tughlaqabad Fort Delhi",
+      "imageQuery": "Tughlaqabad Fort ruins Delhi"
+    },
+    {
+      "name": "ISKCON Temple Delhi",
+      "category": "temple",
+      "description": "The East of Kailash ISKCON complex, inaugurated in 1998, combines a gleaming white Krishna-Balaram temple with a robotics show illustrating the Bhagavad Gita's verses, a Vedic cultural museum, and a multi-cuisine restaurant serving sattvic food. The main temple hall's gold deity altar is elaborately decorated, and evening aarti at 7 pm draws thousands of devotees singing bhajans in unison.",
+      "whyVisit": "An accessible introduction to Vaishnav devotion with a world-class Gita museum and joyful kirtans.",
+      "bestTime": "Evening aarti, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "ISKCON Temple East of Kailash Delhi",
+      "imageQuery": "ISKCON Temple Delhi Krishna"
+    },
+    {
+      "name": "Agrasen ki Baoli",
+      "category": "heritage",
+      "description": "This 14th-century stepwell hidden on Hailey Road near Connaught Place descends 60 metres through 103 steps flanked by 108 arched niches. Legend attributes it to the mythical king Agrasen; the structure as it stands is medieval. Dark green moss covers the lower arches, and still water reflects the tiers in near-silence — extraordinary given its setting between glass office towers.",
+      "whyVisit": "A medieval stepwell hiding in the middle of modern Delhi, surreally atmospheric and uncrowded.",
+      "bestTime": "Morning on weekdays",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Agrasen ki Baoli Delhi",
+      "imageQuery": "Agrasen ki Baoli stepwell Delhi"
+    },
+    {
+      "name": "Sunder Nursery",
+      "category": "garden",
+      "description": "This 16th-century Mughal-era nursery beside Humayun's Tomb was restored into a 90-acre heritage park opened in 2018. Six Mughal-era monuments including Lakkarwala Burj and Azim Khan's Tomb are embedded within themed gardens of 300 tree species, a butterfly conservancy, a lake circuit, and a heritage bazaar. One of the most underrated green spaces in Asia.",
+      "whyVisit": "A beautifully restored Mughal garden with six monuments that almost nobody knows about.",
+      "bestTime": "Morning, October to March",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Sunder Nursery Delhi",
+      "imageQuery": "Sunder Nursery heritage park Delhi"
+    },
+    {
+      "name": "Coronation Durbar Obelisk",
+      "category": "heritage",
+      "description": "In a scrubby north Delhi park stands a monumental obelisk marking the site of the three great British Imperial Durbars of 1877, 1903, and 1911. Around it lie decapitated statues of King George V and various viceroys removed from central Delhi after Independence. The headless stone kings in the long grass create a haunting tableau of colonial history reversed, visited only by the most curious.",
+      "whyVisit": "The eeriest hidden history site in Delhi — decapitated imperial statues in an overgrown field.",
+      "bestTime": "Morning",
+      "duration": "45 minutes",
+      "mapsSearch": "Coronation Park Delhi Obelisk",
+      "imageQuery": "Coronation Park statues Delhi"
+    },
+    {
+      "name": "Majnu ka Tilla Tibetan Colony",
+      "category": "heritage",
+      "description": "A tight cluster of narrow alleyways on the Yamuna bank north of Delhi has housed Tibetan refugees since 1960. Tiny monasteries with painted prayer wheels, butter tea stalls, momos shops selling hand-folded dumplings, thangka painters at work, and shops selling turquoise jewellery and singing bowls create a pocket of Lhasa inside the Indian capital — utterly distinct from anything else in the city.",
+      "whyVisit": "A genuine Tibetan refugee village inside Delhi where butter tea and momos taste exactly like Dharamsala.",
+      "bestTime": "Morning for breakfast, afternoon for shopping",
+      "duration": "2 hours",
+      "mapsSearch": "Majnu ka Tilla Tibetan Colony Delhi",
+      "imageQuery": "Majnu ka Tilla Tibetan colony Delhi"
+    }
+  ]
+}

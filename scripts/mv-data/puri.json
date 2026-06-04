@@ -1,0 +1,250 @@
+{
+  "slug": "puri",
+  "name": "Puri",
+  "state": "Odisha",
+  "tagline": "Sacred Shore of Lord Jagannath on the Bay of Bengal",
+  "categories": ["pilgrimage", "beach", "heritage"],
+  "highlights": ["jagannath temple rath yatra chariot festival", "golden puri beach on bay of bengal"],
+  "attractions": [
+    {
+      "name": "Jagannath Temple",
+      "category": "temple",
+      "description": "One of the four sacred dhams of Hinduism, the Jagannath Temple towers 65 metres over Puri's skyline in a majestic Kalinga-style shikhara adorned with the Sudarshana Chakra and Nilachakra (blue wheel) on its summit. Built in the 12th century by King Anantavarman Chodaganga, the temple complex covers 10.7 acres with 120 subsidiary shrines. The wooden idols of Jagannath, Balabhadra, and Subhadra are ritually replaced every 12–19 years during the Nabakalebara ceremony.",
+      "whyVisit": "One of Hinduism's four holiest Char Dham pilgrimage sites, with 800 years of unbroken daily rituals.",
+      "bestTime": "Rath Yatra (June–July); early morning mangal arati at 5 am",
+      "duration": "3-4 hours",
+      "mapsSearch": "Jagannath Temple Puri Odisha",
+      "imageQuery": "Jagannath Temple Puri Kalinga architecture"
+    },
+    {
+      "name": "Rath Yatra (Chariot Festival)",
+      "category": "religious",
+      "description": "The world's largest chariot festival, held annually on Ashadha Shukla Dwitiya (June–July), when three massive wooden chariots — Nandighosa (Jagannath), Taladhwaja (Balabhadra), and Darpadalana (Subhadra) — are pulled by hundreds of thousands of devotees along the 3-km Grand Road (Bada Danda) from the main temple to Gundicha Temple. The Nandighosa chariot is 14 metres tall and weighs 200 tonnes. Over 1 million pilgrims attend annually.",
+      "whyVisit": "The oldest and largest chariot procession on Earth — a UNESCO-recognised Intangible Cultural Heritage event.",
+      "bestTime": "Ashadha Shukla Dwitiya (June–July)",
+      "duration": "Full day experience",
+      "mapsSearch": "Rath Yatra route Puri Grand Road Odisha",
+      "imageQuery": "Puri Rath Yatra chariot festival crowd"
+    },
+    {
+      "name": "Puri Beach (Swargadwar)",
+      "category": "beach",
+      "description": "A 7-km sweep of golden sand along the Bay of Bengal with thundering surf and excellent fishing village activity. The beach is divided into the sacred Swargadwar (Gateway to Heaven) cremation end and the tourist stretch at the eastern end. Local fishermen in brilliantly painted boats called 'Machhua' launch at dawn. The annual Sand Art Festival (December) transforms the beach into a gallery of monumental sand sculptures by masters like Sudarsan Pattnaik.",
+      "whyVisit": "A sacred beach where pilgrims scatter ashes, fishermen launch at dawn, and sand art masters sculpt masterpieces.",
+      "bestTime": "October to February; sunrise for fishing activity",
+      "duration": "2-3 hours",
+      "mapsSearch": "Puri Beach Swargadwar Odisha",
+      "imageQuery": "Puri beach fishermen boats Bay Bengal"
+    },
+    {
+      "name": "Gundicha Temple",
+      "category": "temple",
+      "description": "The 'Garden House of Lord Jagannath', a 12th-century temple 3 km from the main Jagannath shrine along the Grand Road. The deities of Jagannath, Balabhadra, and Subhadra reside here for 9 days during Rath Yatra — the only time they leave the main temple. The temple complex includes a sacred garden (Indradyumna tank) with fragrant flowers used for daily offerings. The inner sanctum has unusual absence of a main idol except during Rath Yatra.",
+      "whyVisit": "The divine 'aunt's home' where Jagannath spends 9 days during Rath Yatra — profoundly significant for devotees.",
+      "bestTime": "Rath Yatra period or early morning year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gundicha Temple Puri Odisha",
+      "imageQuery": "Gundicha Temple Puri Jagannath garden"
+    },
+    {
+      "name": "Konark Sun Temple",
+      "category": "heritage",
+      "description": "A UNESCO World Heritage Site 35 km from Puri, the 13th-century Konark Sun Temple is conceived as a colossal stone chariot of the sun god Surya, with 24 intricately carved wheels (each 3 metres in diameter) and seven stone horses. Built by King Narasimhadeva I in 1250 CE, its erotic sculptures, mythological friezes, and architectural precision are unmatched in the subcontinent. The main shikhara collapsed centuries ago but the jagamohana (porch) stands magnificently.",
+      "whyVisit": "One of India's greatest architectural masterpieces — a stone chariot frozen in time by a medieval king.",
+      "bestTime": "October to March; sunrise for golden light on stone",
+      "duration": "3-4 hours",
+      "mapsSearch": "Konark Sun Temple Odisha UNESCO",
+      "imageQuery": "Konark Sun Temple wheel stone chariot"
+    },
+    {
+      "name": "Chilika Lake",
+      "category": "wildlife",
+      "description": "Asia's largest coastal lagoon at 1,100 sq km, 40 km south of Puri, a Ramsar Wetland of International Importance. From November to January, over 1.6 million migratory birds arrive including flamingos, grey pelicans, bar-headed geese, and painted storks. The Irrawaddy dolphin — critically endangered — is reliably seen in the Satapada sector. The Kalijai Island temple in the lagoon is a celebrated pilgrimage site. Boat rides from Satapada and Barkul offer superb wildlife viewing.",
+      "whyVisit": "Asia's largest lagoon with Irrawaddy dolphins, 1.6 million migratory birds, and a sacred island temple.",
+      "bestTime": "November to February for migratory birds and dolphins",
+      "duration": "Full day",
+      "mapsSearch": "Chilika Lake Odisha dolphin bird watching",
+      "imageQuery": "Chilika Lake migratory birds Irrawaddy dolphins Odisha"
+    },
+    {
+      "name": "Lokanath Temple",
+      "category": "temple",
+      "description": "An ancient Shiva temple in the heart of Puri town, one of the most revered in Odisha, where the Shiva lingam is partially submerged in spring water that welled up naturally. The sanctum is unusually cool and dimly lit, with the lingam visible only through a window above the water level. During Shravana (July–August), millions bathe the lingam with sacred water brought from the Ganga. The temple is exempted from entry restrictions on non-Hindus that apply to Jagannath Temple.",
+      "whyVisit": "An ancient water-submerged Shiva lingam — Puri's most atmospheric and accessible temple for all visitors.",
+      "bestTime": "Shravana month (July–August)",
+      "duration": "1 hour",
+      "mapsSearch": "Lokanath Temple Puri Odisha Shiva",
+      "imageQuery": "Lokanath Temple Puri Shiva lingam water"
+    },
+    {
+      "name": "Raghurajpur Heritage Village",
+      "category": "heritage",
+      "description": "India's first heritage crafts village, 14 km from Puri, where every household is a workshop producing Pattachitra scroll paintings, palm-leaf engravings, stone carvings, and wooden lacquerware. Over 100 artisan families have practised these crafts for 800 generations. The Pattachitra tradition — intricate mythological narratives painted on cloth with natural pigments and lacquer finish — originated here. Artists welcome visitors to watch and commission original works.",
+      "whyVisit": "India's most concentrated hub of living classical art traditions, where 800-year-old crafts are taught from birth.",
+      "bestTime": "Year-round; weekday mornings for artisans at work",
+      "duration": "2-3 hours",
+      "mapsSearch": "Raghurajpur Heritage Village Puri Odisha Pattachitra",
+      "imageQuery": "Raghurajpur Pattachitra painting artisan Odisha"
+    },
+    {
+      "name": "Sakshigopal Temple",
+      "category": "temple",
+      "description": "A renowned 14th-century Vishnu temple 20 km from Puri enshrining a jet-black Krishna idol brought from Vrindavan by a Brahmin devotee, according to legend, to bear witness (sakshi) in a dispute. The idol known as Gopinath or Sakshigopal is uniquely portrayed standing rather than seated. The temple's legend — where Krishna walked from Vrindavan to Puri to testify for a devotee — makes it one of the most beloved pilgrimage stops in Odisha.",
+      "whyVisit": "A temple where Krishna 'walked from Vrindavan to bear witness' — one of India's most beloved miracle stories.",
+      "bestTime": "Krishna Janmashtami (August)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sakshigopal Temple Odisha Vishnu",
+      "imageQuery": "Sakshigopal Temple Vishnu Krishna Odisha"
+    },
+    {
+      "name": "Indradyumna Tank (Narendra Tank)",
+      "category": "religious",
+      "description": "The sacred tank adjoining Jagannath Temple, first excavated by King Indradyumna in the mythological period and renovated multiple times through history. The 3-hectare tank is used for the Chandan Yatra — a 21-day boat festival where the deities are taken out on decorated boats to the tank's centre. Surrounded by smaller shrines, ghats, and the constant background chanting from the main temple, the tank creates the quintessential Puri temple-town atmosphere.",
+      "whyVisit": "The sacred tank central to Puri's boat festival — the spiritual heart of the temple town.",
+      "bestTime": "Chandan Yatra (April–May); early morning",
+      "duration": "1 hour",
+      "mapsSearch": "Narendra Tank Indradyumna Tank Puri Odisha",
+      "imageQuery": "Narendra Tank Puri Chandan Yatra boats"
+    },
+    {
+      "name": "Sudarsan Crafts Museum",
+      "category": "museum",
+      "description": "A showcase museum and workshop complex on the Puri–Konark Marine Drive dedicated to Odisha's 27 classical craft traditions. Three floors display Pattachitra, silver filigree (Tarkashi), appliqué from Pipili, Dokra lost-wax metalwork, stone carving, and Sambalpuri weave. Live demonstrations by master craftsmen are conducted daily. The rooftop café serves Odia cuisine while overlooking the sea.",
+      "whyVisit": "The definitive overview of Odisha's 27 classical crafts under one roof with master craftsmen demonstrating live.",
+      "bestTime": "Morning for live demonstrations",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sudarsan Crafts Museum Puri Konark Marine Drive",
+      "imageQuery": "Sudarsan Crafts Museum Puri Odisha Pattachitra"
+    },
+    {
+      "name": "Puri–Konark Marine Drive",
+      "category": "nature",
+      "description": "A 35-km coastal road skirting the Bay of Bengal between Puri and Konark, one of India's most scenic coastal drives. The road passes casuarina groves, small fishing hamlets, the Chandrabhaga beach (site of the annual Konark Dance Festival), and the Astaranga viewpoint over the sea. Early mornings reveal hundreds of fishing boats dotting the horizon and Olive Ridley sea turtles occasionally visible from the shore.",
+      "whyVisit": "One of India's most beautiful coastal drives, connecting two of Odisha's greatest landmarks.",
+      "bestTime": "Early morning or sunset drive, November to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Puri Konark Marine Drive coastal road Odisha",
+      "imageQuery": "Puri Konark Marine Drive coastal casuarina"
+    },
+    {
+      "name": "State Museum of Tribal Arts and Artefacts (Bhubaneswar)",
+      "category": "museum",
+      "description": "Located 60 km from Puri in Bhubaneswar, this museum documents the material culture of Odisha's 62 Scheduled Tribes including the Kondhs, Bondas, Saura, and Dongria Kondhs. Exhibits include ritual masks, body jewellery, weapons, musical instruments, and textile samples. The Saura pictorial art tradition — with its remarkable similarity to Meso-American murals — receives special focus. A tribal craft bazaar on the grounds sells authenticated items.",
+      "whyVisit": "The most comprehensive collection of tribal art from Odisha's 62 indigenous communities.",
+      "bestTime": "Year-round; closed Monday",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tribal Arts Museum Bhubaneswar Odisha",
+      "imageQuery": "tribal art museum Odisha Bonda Kondh artefacts"
+    },
+    {
+      "name": "Lingaraj Temple, Bhubaneswar",
+      "category": "temple",
+      "description": "The crowning jewel of Bhubaneswar's ancient temple city, 60 km from Puri, the 11th-century Lingaraj temple soars 55 metres in quintessential Kalinga shikhara style. The lingam inside — Harihara, a composite of Shiva and Vishnu — is 8 feet in diameter and partially submerged in water. The walled precinct contains 50 subsidiary shrines. The tower is the finest example of mature Kalinga architecture anywhere in Odisha.",
+      "whyVisit": "The tallest and finest example of Kalinga temple architecture, representing the pinnacle of a 1,000-year tradition.",
+      "bestTime": "Mahashivaratri (February–March)",
+      "duration": "2 hours",
+      "mapsSearch": "Lingaraj Temple Bhubaneswar Odisha",
+      "imageQuery": "Lingaraj Temple Bhubaneswar Kalinga shikhara"
+    },
+    {
+      "name": "Chandrabhaga Beach",
+      "category": "beach",
+      "description": "A pristine 2-km beach 3 km east of Konark temple, far less crowded than Puri Beach and flanked by casuarina forest. The annual Chandrabhaga Mela (Magha Saptami, January–February) draws hundreds of thousands of pilgrims who bathe here at sunrise to honour Surya, the sun god of Konark. The beach is a Blue Flag certified beach with clean waters and excellent sunrise views — the sun rising over the Bay of Bengal directly in line with the Konark temple.",
+      "whyVisit": "A Blue Flag beach where sunrise worship of the sun god aligns with the Konark temple on the horizon.",
+      "bestTime": "Magha Saptami sunrise puja (January–February)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chandrabhaga Beach Konark Odisha",
+      "imageQuery": "Chandrabhaga Beach Konark sunrise pilgrims"
+    },
+    {
+      "name": "Pipili Appliqué Market",
+      "category": "market",
+      "description": "A roadside town 38 km from Puri that is the epicentre of Odisha's famous Pipili appliqué craft — vibrant fabric-patchwork canopies, lamp shades, garden umbrellas, wall hangings, and decorative items featuring stylised peacocks, elephants, and Jagannath motifs. The entire main street is lined with workshops and stalls overflowing with brilliantly coloured appliqué. Items range from ₹50 pocket ornaments to ₹15,000 ceremonial canopies.",
+      "whyVisit": "The global capital of colourful Indian appliqué craft — an unmissable riot of pattern and colour.",
+      "bestTime": "Morning for workshops in production",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pipili Applique market Odisha",
+      "imageQuery": "Pipili applique craft Odisha colorful market"
+    },
+    {
+      "name": "Chilika Wildlife Sanctuary Satapada",
+      "category": "wildlife",
+      "description": "The Satapada sector on Chilika Lake's eastern shore, 50 km from Puri, is the most reliable spot in Asia to observe Irrawaddy dolphins. Forest department motor-boats cruise the open lagoon at dawn and dusk when pods of 5–20 Irrawaddy dolphins surface regularly. The peninsula also has a view tower over the tidal inlet where the Daya River meets the sea, used by vast flocks of flamingo and pelican. Olive Ridley sea turtles nest on the adjacent Nalbana island shores.",
+      "whyVisit": "Asia's best destination for observing the rare Irrawaddy dolphin in its natural lagoon habitat.",
+      "bestTime": "November to February",
+      "duration": "Half day",
+      "mapsSearch": "Satapada Chilika Lake dolphin Odisha",
+      "imageQuery": "Satapada Chilika Lake Irrawaddy dolphin"
+    },
+    {
+      "name": "Odisha State Museum, Bhubaneswar",
+      "category": "museum",
+      "description": "The premier museum of Odisha, 60 km from Puri, with nine galleries covering Kalinga sculpture, numismatics, epigraphy, natural history, and arms. The sculpture gallery houses exquisite 7th–13th century stone panels from Udayagiri, Ratnagiri, and Lalitgiri Buddhist complexes including a 9th-century teaching Buddha panel of extraordinary refinement. The palm-leaf manuscript section preserves illustrated texts in Odia script dating to the 12th century.",
+      "whyVisit": "The finest collection of Kalinga Buddhist and Hindu sculpture in existence, from Odisha's golden centuries.",
+      "bestTime": "Year-round; closed Monday",
+      "duration": "2-3 hours",
+      "mapsSearch": "Odisha State Museum Bhubaneswar",
+      "imageQuery": "Odisha State Museum Buddhist sculpture Kalinga"
+    },
+    {
+      "name": "Dhabaleswar Island Temple",
+      "category": "temple",
+      "description": "A river-island Shiva temple 40 km from Puri in the Mahanadi River near Cuttack, accessible by a narrow bridge or country boat. The white-painted Shiva shrine on its small wooded island is a beloved local pilgrimage site. Devotees offer prayer at sunrise with the river flowing on both sides and egrets roosting in the riverside trees. The island is decorated with thousands of diyas on Mahashivaratri, creating a glittering spectacle.",
+      "whyVisit": "A serene Shiva temple on a river island with spectacular Mahashivaratri lamp celebrations.",
+      "bestTime": "Mahashivaratri (February–March)",
+      "duration": "2 hours",
+      "mapsSearch": "Dhabaleswar Island Temple Cuttack Odisha",
+      "imageQuery": "Dhabaleswar Island Temple Mahanadi Shiva Cuttack"
+    },
+    {
+      "name": "Marine Drive Sunset Point",
+      "category": "viewpoint",
+      "description": "A grassy headland at the Astaranga end of the Puri–Konark Marine Drive where the coastline bends westward, offering an unobstructed view of the sun setting into the Bay of Bengal — a rarity on India's east coast. Fishermen beach their boats here at dusk, and the silhouetted masts against a crimson sky are a classic Odia photographic composition. A small local tea and coconut stall caters to those who make the 40-km evening drive.",
+      "whyVisit": "One of India's few spots on the east coast where you can watch the sun set over the sea.",
+      "bestTime": "Sunset year-round, best October–March",
+      "duration": "1 hour",
+      "mapsSearch": "Astaranga beach sunset Odisha Puri",
+      "imageQuery": "Astaranga beach sunset Bay Bengal Odisha fishermen"
+    },
+    {
+      "name": "Biswanath Temple, Alarnath",
+      "category": "temple",
+      "description": "The Alarnath Vishnu temple at Brahmagiri, 25 km from Puri, is sanctified as the place Lord Jagannath himself goes during the Anabasara (fortnight of rest) preceding Rath Yatra, when the main Puri temple closes. During this period, Alarnath becomes the most important pilgrimage site in Odisha, visited by hundreds of thousands who cannot access the main Jagannath temple. The footprints of Lord Chaitanya are preserved on a stone slab here.",
+      "whyVisit": "The only temple Lord Jagannath 'visits' during his annual rest — Puri's most important satellite shrine.",
+      "bestTime": "Anabasara fortnight (June–July) before Rath Yatra",
+      "duration": "2 hours",
+      "mapsSearch": "Alarnath Temple Brahmagiri Puri Odisha",
+      "imageQuery": "Alarnath Temple Brahmagiri Vishnu Odisha"
+    },
+    {
+      "name": "Kakatpur Mangala Temple",
+      "category": "temple",
+      "description": "A powerful Shakti temple 35 km from Puri near the Prachi River, dedicated to Goddess Mangala in her terrifying form. The Devi here is considered so powerful that even the priests of Jagannath Temple seek her guidance for the sacred Nabakalebara ceremony (replacement of divine idols). According to tradition, the chief priests of Jagannath undertake a night vigil here during Nabakalebara, and the Devi reveals in a dream where the sacred neem tree for the new idol is hidden.",
+      "whyVisit": "The Shakti oracle who guides the Jagannath Temple's sacred idol-replacement ritual — a uniquely powerful shrine.",
+      "bestTime": "Navaratri (October) and Nabakalebara year",
+      "duration": "2 hours",
+      "mapsSearch": "Kakatpur Mangala Temple Puri Odisha",
+      "imageQuery": "Kakatpur Mangala Devi Temple Odisha Shakti"
+    },
+    {
+      "name": "Astrang Beach Village",
+      "category": "beach",
+      "description": "A remote coastal village 40 km south of Puri where the Kushabhadra River meets the sea, home to a large fishing community using traditional Palla fishing (massive shore-drawn seine nets). The beach is wild, undeveloped, and rarely visited by tourists. At dusk, dozens of colorfully painted boats anchor offshore and fishermen wade in to land catches of prawns and pomfret. Astrang hosts Odisha's largest traditional boat race festival in August.",
+      "whyVisit": "A completely untouched fishing village beach where ancient Odia maritime traditions survive intact.",
+      "bestTime": "August for boat race festival; December to February for calm sea",
+      "duration": "2-3 hours",
+      "mapsSearch": "Astrang beach Odisha Puri",
+      "imageQuery": "Astrang beach fishing boats Odisha village"
+    },
+    {
+      "name": "Sakhigopal-Brahmagiri Road Cashew Forests",
+      "category": "nature",
+      "description": "The 40-km stretch of road between Sakhigopal and Brahmagiri passes through one of Odisha's most extensive cashew plantations, where in February–March the hillsides blaze with white cashew flowers and the air is heavy with their sweet fragrance. Small cooperative societies along the road sell freshly harvested raw cashew nuts and cashew feni (local liquor). This is an authentic rural Odia experience entirely off the tourist radar.",
+      "whyVisit": "A beautiful February cashew-blossom drive through Odisha's agricultural heartland — completely unvisited by tourists.",
+      "bestTime": "February to March for blossoming",
+      "duration": "2-3 hours",
+      "mapsSearch": "Brahmagiri cashew plantation Puri Odisha",
+      "imageQuery": "cashew plantation Odisha flowering rural landscape"
+    }
+  ]
+}

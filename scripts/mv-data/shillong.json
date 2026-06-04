@@ -1,0 +1,260 @@
+{
+  "slug": "shillong",
+  "name": "Shillong",
+  "state": "Meghalaya",
+  "tagline": "Scotland of the East, alive with waterfalls and living roots",
+  "categories": ["hill_station", "nature", "adventure"],
+  "highlights": ["cascading waterfalls framing every hillside view", "unique living root bridges grown by khasi tribal communities"],
+  "attractions": [
+    {
+      "name": "Umiam Lake (Barapani)",
+      "category": "lake",
+      "description": "A vast reservoir created by the Umiam River dam 15 km from Shillong, Umiam Lake is one of Northeast India's most scenic bodies of water. Rolling pine-forested hills tumble to the shoreline on all sides. Motorboats, kayaking, water-scooters, and pedal boats are available through the Meghalaya Tourism resort. Sunrise here — when mist rolls off the water — is breathtaking.",
+      "whyVisit": "The largest and most scenic lake in Northeast India, offering watersports in a stunning highland pine-forest setting.",
+      "bestTime": "October to March for clear skies; morning for mist",
+      "duration": "2-3 hours",
+      "mapsSearch": "Umiam Lake Barapani Shillong Meghalaya",
+      "imageQuery": "Umiam Lake Barapani Shillong mist pine forest"
+    },
+    {
+      "name": "Don Bosco Centre for Indigenous Cultures",
+      "category": "museum",
+      "description": "The finest museum of Northeast India, the Don Bosco Centre in Shillong occupies a striking purpose-built seven-floor structure and documents the art, culture, dress, music, and ecology of all eight northeastern states. Over 8,000 artefacts are displayed including tribal jewellery, traditional weapons, musical instruments, and photographs from early anthropological expeditions. A skywalk on the roof offers city views.",
+      "whyVisit": "The definitive introduction to the staggering ethnic diversity of Northeast India, with world-class curation.",
+      "bestTime": "Any time; closed on Sundays",
+      "duration": "3-4 hours",
+      "mapsSearch": "Don Bosco Centre Indigenous Cultures Shillong",
+      "imageQuery": "Don Bosco Museum tribal culture Shillong Meghalaya"
+    },
+    {
+      "name": "Elephant Falls",
+      "category": "waterfall",
+      "description": "Shillong's most-visited waterfall falls in three distinct stages through dense subtropical forest 12 km from the city centre. The upper stage is wide and curtain-like; the second is the most dramatic with a 20-metre plunge; the lowest is surrounded by mossy boulders. The name comes from a rock resembling an elephant that was destroyed in the 1897 earthquake. A staircase descends between all three tiers.",
+      "whyVisit": "The accessibility of three waterfall stages in a single lush forest walk makes this the ideal introduction to Meghalaya's cascades.",
+      "bestTime": "June to October for maximum flow; October to January for clearer viewing",
+      "duration": "1-2 hours",
+      "mapsSearch": "Elephant Falls Shillong Meghalaya",
+      "imageQuery": "Elephant Falls three tiers Shillong Meghalaya"
+    },
+    {
+      "name": "Shillong Peak",
+      "category": "viewpoint",
+      "description": "The highest point in and around Shillong at 1,965 metres, Shillong Peak is controlled by the Indian Air Force and requires prior permission for civilian visits. On clear days the panorama encompasses the entire Khasi Hills plateau, the plains of Bangladesh to the south, and — in perfect winter conditions — a distant silver sliver of the Brahmaputra valley. The drive up through dense pine forest is rewarding in itself.",
+      "whyVisit": "The highest and most comprehensive panoramic viewpoint of Shillong and the surrounding Khasi Hills.",
+      "bestTime": "October to December for clearest visibility",
+      "duration": "2-3 hours",
+      "mapsSearch": "Shillong Peak Viewpoint Meghalaya",
+      "imageQuery": "Shillong Peak viewpoint panorama Khasi Hills Meghalaya"
+    },
+    {
+      "name": "Ward's Lake",
+      "category": "lake",
+      "description": "A horseshoe-shaped ornamental lake in the heart of Shillong's colonial Cantonment area, Ward's Lake was created in 1894 by the British as a recreation ground. The lake is surrounded by manicured gardens, flowering shrubs, and weeping willows. Paddleboats are available, and the arched central bridge is one of the most photographed colonial-era structures in the Northeast.",
+      "whyVisit": "A perfectly preserved piece of British colonial urban landscape design that still functions as Shillong's most beloved park.",
+      "bestTime": "Morning or late afternoon; October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ward's Lake Shillong Meghalaya",
+      "imageQuery": "Ward's Lake bridge colonial garden Shillong Meghalaya"
+    },
+    {
+      "name": "Dawki and Umngot River",
+      "category": "nature",
+      "description": "The Umngot River at Dawki, 80 km from Shillong on the Bangladesh border, has water so extraordinarily clear that boats appear to float in mid-air above the riverbed. The clarity results from the limestone geology of the Khasi Hills filtering the water. Boat rides on the river, a suspension bridge above the gorge, and the weekly riverside market make Dawki a full-day excursion from Shillong.",
+      "whyVisit": "The crystal-clear floating-boat illusion of the Umngot River is one of India's most visually extraordinary natural phenomena.",
+      "bestTime": "October to March for maximum clarity; monsoon turns the river turbid",
+      "duration": "Full day with travel",
+      "mapsSearch": "Dawki Umngot River Shillong Meghalaya",
+      "imageQuery": "Dawki Umngot river crystal clear boat Meghalaya"
+    },
+    {
+      "name": "Mawlynnong Village",
+      "category": "nature",
+      "description": "Declared Asia's cleanest village by Discover India magazine in 2003, Mawlynnong 90 km from Shillong maintains its pristine condition through strict community-led waste management. Bamboo dustbins line every path, and the village has complete sanitation coverage. A bamboo skywalk provides canopy-level views of the Bangladesh plains. The community also maintains a living root bridge used daily by residents.",
+      "whyVisit": "The contrast between Mawlynnong's obsessively maintained cleanliness and rural India's typical disorder is genuinely astonishing.",
+      "bestTime": "October to March",
+      "duration": "Half day with travel",
+      "mapsSearch": "Mawlynnong Village Meghalaya Asia Cleanest Village",
+      "imageQuery": "Mawlynnong village clean bamboo path Meghalaya"
+    },
+    {
+      "name": "Laitlum Canyons",
+      "category": "viewpoint",
+      "description": "Located 20 km from Shillong, Laitlum means 'end of hills' in Khasi, and the canyons here justify the name. The plateau-edge viewpoint plunges 600 metres in near-vertical cliffs into deep valleys below, with cloud shadows racing across the canyon walls. A short descent on stone steps leads to a grassy ledge from which the scale becomes overwhelming. On clear mornings the Bangladesh plains shimmer below the cloud layer.",
+      "whyVisit": "The most dramatic canyon viewpoint in Meghalaya, where the Khasi Hills literally end at a 600-metre cliff edge.",
+      "bestTime": "October to December for clear visibility; monsoon for cloud drama",
+      "duration": "2-3 hours",
+      "mapsSearch": "Laitlum Canyons Shillong Meghalaya",
+      "imageQuery": "Laitlum Canyons cliff valley Shillong Meghalaya"
+    },
+    {
+      "name": "Spread Eagle Falls (Bishop and Beadon Falls)",
+      "category": "waterfall",
+      "description": "Two waterfalls set side by side in the forest near Cherrapunji Road, 4 km from Shillong's city centre — Bishop Falls and Beadon Falls — plunge simultaneously into the same ravine, together resembling the wings of a spread eagle. The site is within a short walk of the road and is rarely crowded despite its proximity to the city.",
+      "whyVisit": "Two parallel waterfalls viewed together from a single vantage is a rare and scenic waterfall encounter close to the city.",
+      "bestTime": "June to November during and just after monsoon",
+      "duration": "45 minutes",
+      "mapsSearch": "Spread Eagle Falls Shillong Meghalaya",
+      "imageQuery": "Spread Eagle Falls Shillong Bishop Beadon waterfalls"
+    },
+    {
+      "name": "Khasi Heritage Village (Smit)",
+      "category": "heritage",
+      "description": "Smit, 11 km from Shillong, is the traditional capital of the Khyrim Syiemship and hosts the most important Khasi cultural festival — the Nongkrem Dance — every November. The village contains the sacred grove (Law Kyntang), the royal court (Seng Khasi), and traditional Khasi longhouses maintained in the pre-colonial style. The Nongkrem Dance with women in silk costumes and men in crowns of hornbill feathers is the most spectacular festival in the Northeast.",
+      "whyVisit": "The November Nongkrem Dance is the most elaborately costumed and culturally significant festival in Meghalaya.",
+      "bestTime": "November (5 days of Nongkrem festival); otherwise October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Smit Khasi Heritage Village Nongkrem Shillong",
+      "imageQuery": "Nongkrem dance Khasi traditional Smit Meghalaya"
+    },
+    {
+      "name": "Mawphlang Sacred Forest",
+      "category": "nature",
+      "description": "One of the best-preserved sacred groves in India, the Mawphlang Sacred Grove 25 km from Shillong has been protected by Khasi tradition for centuries — nothing may be removed, cut, or hunted within it. The ancient forest contains trees estimated to be 1,000 years old, rare orchids, and plants of medicinal significance in Khasi ethnobotany. Khasi guides who know the oral traditions accompany all visits.",
+      "whyVisit": "A millennium-old community-protected forest where Khasi tradition and biodiversity conservation are inseparably intertwined.",
+      "bestTime": "September to November for orchid blooms",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mawphlang Sacred Forest Shillong Meghalaya",
+      "imageQuery": "Mawphlang sacred forest ancient trees Meghalaya"
+    },
+    {
+      "name": "Shillong Golf Course",
+      "category": "nature",
+      "description": "One of the oldest golf courses in Asia and India's only natural-terrain golf course, established in 1898 by the British. The 18-hole course at 1,500 metres altitude is played on natural Khasi highland terrain — no flattening or artificial landscaping was done. The rolling fairways, dense pine-rimmed rough, and misty highland air make this a uniquely beautiful golf setting.",
+      "whyVisit": "Playing Asia's oldest natural-terrain golf course, unchanged in its essential contours from the colonial era.",
+      "bestTime": "October to March",
+      "duration": "4-5 hours for 18 holes",
+      "mapsSearch": "Shillong Golf Course Meghalaya India",
+      "imageQuery": "Shillong Golf Course natural terrain pine hills Meghalaya"
+    },
+    {
+      "name": "All Saints Cathedral, Shillong",
+      "category": "heritage",
+      "description": "A striking Anglican Gothic cathedral built in 1862 in the heart of Shillong, All Saints Cathedral has a stone tower, stained-glass windows, and a churchyard of British colonial graves. The church is still an active congregation. Its presence reflects the deep Christian missionary legacy in the Khasi Hills — today over 70% of Meghalaya's population is Christian — and the colonial urban planning that shaped Shillong.",
+      "whyVisit": "The best-preserved example of colonial ecclesiastical architecture in Northeast India, with an active Christian community.",
+      "bestTime": "Sunday morning service; October to March",
+      "duration": "45 minutes",
+      "mapsSearch": "All Saints Cathedral Shillong Meghalaya",
+      "imageQuery": "All Saints Cathedral Shillong colonial Gothic Meghalaya"
+    },
+    {
+      "name": "Police Bazar Market",
+      "category": "market",
+      "description": "Shillong's beating commercial heart, Police Bazar is a dense grid of shops, stalls, and vendor lanes stretching several city blocks. Khasi women in traditional jainsem dresses sell fresh turmeric, betel nut, and smoked pork at the daily wet market. The surrounding streets carry everything from local bamboo handicrafts to Northeast Indian music CDs and Khasi silver jewellery. The night market operates until 10 pm.",
+      "whyVisit": "The most vivid and authentic introduction to Khasi daily life, commerce, and food culture.",
+      "bestTime": "Morning for the wet market; evenings for the night market stalls",
+      "duration": "1-2 hours",
+      "mapsSearch": "Police Bazar Market Shillong Meghalaya",
+      "imageQuery": "Police Bazar market Shillong Khasi women stalls Meghalaya"
+    },
+    {
+      "name": "Nohkalikai Falls (Day Trip)",
+      "category": "waterfall",
+      "description": "The world's fourth-highest waterfall at 340 metres, Nohkalikai plunges from the edge of the Cherrapunji plateau into a stunning blue-green pool below. Named after a woman named Ka Likai who jumped from the cliff in grief, the waterfall is visible from a viewpoint 1 km from the Cherrapunji road. The plunge pool's vivid turquoise colour comes from dissolved minerals and is visible even from the top viewpoint.",
+      "whyVisit": "One of the world's highest plunge waterfalls, with a heartbreaking legend and a colour of pool water unlike anything else in India.",
+      "bestTime": "June to October for maximum flow; October to November for both flow and visibility",
+      "duration": "Half day with travel from Shillong",
+      "mapsSearch": "Nohkalikai Falls Cherrapunji Meghalaya",
+      "imageQuery": "Nohkalikai Falls Cherrapunji plunge pool Meghalaya"
+    },
+    {
+      "name": "Double-Decker Living Root Bridge (Nongriat)",
+      "category": "nature",
+      "description": "The double-decker living root bridge at Nongriat, 53 km from Shillong and near Cherrapunji, is the most extraordinary example of Khasi bio-engineering. Woven from the aerial roots of ancient rubber fig trees over 200-400 years, the two-tier bridge spans a river in the deeply forested War Khasi Hills. Access requires descending 3,500 steps into the valley and back — a 6-8 hour return trek.",
+      "whyVisit": "A living structure grown over centuries from tree roots — one of the most iconic images in Indian nature photography.",
+      "bestTime": "October to April for dry trail conditions; avoid heavy monsoon",
+      "duration": "Full day",
+      "mapsSearch": "Double Decker Living Root Bridge Nongriat Cherrapunji Meghalaya",
+      "imageQuery": "double decker living root bridge Nongriat Meghalaya"
+    },
+    {
+      "name": "Cherrapunji (Sohra) Village Market",
+      "category": "market",
+      "description": "The weekly Wednesday market at Sohra (Cherrapunji) is a Khasi highland market unchanged in character for generations. War Khasi tribal women bring their produce — forest mushrooms, dried fish, bamboo shoots, black rice, and jungle honey — by foot from remote valleys. The smoked meat section, with its distinctive smell and display of dried river fish, is particularly evocative.",
+      "whyVisit": "The most authentic highland tribal market within easy reach of Shillong, with genuinely remote forest produce.",
+      "bestTime": "Wednesday mornings from October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Sohra Cherrapunji Market Meghalaya Wednesday",
+      "imageQuery": "Sohra Cherrapunji market Khasi tribal women Meghalaya"
+    },
+    {
+      "name": "Mawkdok Dympep Valley Viewpoint",
+      "category": "viewpoint",
+      "description": "On the Shillong-Cherrapunji road, the Mawkdok viewpoint looks directly down the deep Dympep Valley, which plunges 500 metres into forested gorges that eventually drain toward Bangladesh. The viewpoint is also the site of a zip-line (flying fox) that launches visitors across the valley. The roadside stalls sell Khasi rice beer (Kiad um) and smoked pork rolls.",
+      "whyVisit": "A dramatic valley view combined with one of the longest zip-lines in Northeast India.",
+      "bestTime": "October to December for best visibility",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mawkdok Valley Viewpoint Shillong Cherrapunji Road Meghalaya",
+      "imageQuery": "Mawkdok valley viewpoint zipline Shillong Meghalaya"
+    },
+    {
+      "name": "Shillong Music Scene (Cloud 9 and Café Shillong)",
+      "category": "nightlife",
+      "description": "Shillong has a living rock music culture that has produced several of India's best-known indie bands. The local music scene centres on small live-music venues in Laban and Police Bazar where Khasi bands play original rock, metal, and country-influenced music nightly. The Welsh Christian missionaries introduced Western music in the 1840s, and the tradition of choral singing and guitar culture has been unbroken since.",
+      "whyVisit": "Hearing original live rock music played by Khasi musicians in a small venue is a cultural experience found nowhere else in India.",
+      "bestTime": "Thursday to Saturday evenings",
+      "duration": "2-3 hours",
+      "mapsSearch": "Live Music Venue Shillong Meghalaya",
+      "imageQuery": "Shillong rock music live band Khasi Meghalaya"
+    },
+    {
+      "name": "Kyllang Rock",
+      "category": "nature",
+      "description": "A massive granite dome rising 300 metres from the surrounding plateau, Kyllang Rock near Nongstoin 78 km from Shillong is sacred to the local Khasi people and is associated with the legend of the duel between two rock giants — Kyllang and Symper — for supremacy over the Khasi Hills. The 1-hour scramble to the summit rewards with a genuine 360-degree highland panorama.",
+      "whyVisit": "A sacred granite dome with an attached Khasi creation myth and an untouristy summit panorama of the deep Khasi Hills interior.",
+      "bestTime": "October to February",
+      "duration": "3-4 hours with travel",
+      "mapsSearch": "Kyllang Rock Nongstoin Meghalaya",
+      "imageQuery": "Kyllang Rock granite dome Khasi Hills Meghalaya"
+    },
+    {
+      "name": "Tyrna Village and Living Root Bridge Day Hike",
+      "category": "adventure",
+      "description": "Tyrna village is the trailhead for the double-decker root bridge descent to Nongriat. The village itself is a well-maintained Khasi settlement with traditional longhouses, a community kitchen, and the sound of the valley far below. The stone staircase beginning here, built by the community for monsoon access, descends past subsidiary single root bridges and river crossings before reaching the famed double-decker at Nongriat.",
+      "whyVisit": "The village trailhead experience — local food, traditional architecture, and the anticipation of the valley descent — frames the root bridge hike beautifully.",
+      "bestTime": "October to April",
+      "duration": "Full day",
+      "mapsSearch": "Tyrna Village Living Root Bridge Hike Meghalaya",
+      "imageQuery": "Tyrna village stone steps descent Meghalaya hike"
+    },
+    {
+      "name": "State Central Library, Shillong",
+      "category": "heritage",
+      "description": "Built in 1905 in the colonial classical style, the Meghalaya State Central Library near Wards Lake is the oldest library in Northeast India. Beyond its book collection, the building itself is a heritage monument with a double-columned facade and original woodwork. A small attached museum contains rare photographs of early Shillong, colonial-era documents, and natural history specimens collected by British administrators.",
+      "whyVisit": "The finest piece of Edwardian colonial architecture in Shillong, housing rare photographic records of the city's British-era past.",
+      "bestTime": "Weekday mornings",
+      "duration": "45 minutes",
+      "mapsSearch": "Meghalaya State Central Library Shillong",
+      "imageQuery": "Shillong State Library colonial building Meghalaya Edwardian"
+    },
+    {
+      "name": "Sohra (Cherrapunji) Eco-Park",
+      "category": "park",
+      "description": "Perched at the edge of the Cherrapunji plateau 53 km from Shillong, this park was developed to prevent further erosion of the plateau edge and to restore grassland ecology. Within the park, walking trails lead to multiple viewpoints above deep U-shaped valleys. The Seven Sisters Waterfall — seven parallel threads of water dropping 315 metres — is viewable from the park during the monsoon.",
+      "whyVisit": "A single plateau-edge park from which multiple valley viewpoints and the famous Seven Sisters Waterfall are accessible.",
+      "bestTime": "June to October for waterfalls; October to November for clear views",
+      "duration": "2-3 hours",
+      "mapsSearch": "Cherrapunji Eco-Park Sohra Meghalaya",
+      "imageQuery": "Cherrapunji eco park plateau valley viewpoint Meghalaya"
+    },
+    {
+      "name": "Nohsngithiang (Seven Sisters) Falls",
+      "category": "waterfall",
+      "description": "Seven separate streams from the Cherrapunji plateau converge to form seven parallel waterfalls — locally called Nohsngithiang — dropping 315 metres in unison into the Bangladesh-border valley. The full span is 70 metres wide. Viewable from the Cherrapunji Eco-Park, the falls flow only during and immediately after the monsoon (June-October). At peak monsoon, the combined roar can be heard from 2 km away.",
+      "whyVisit": "Seven parallel waterfalls dropping simultaneously from a 315-metre cliff is among the most extraordinary waterfall spectacles in Asia.",
+      "bestTime": "July to October during monsoon",
+      "duration": "1-2 hours from eco-park",
+      "mapsSearch": "Seven Sisters Falls Nohsngithiang Cherrapunji Meghalaya",
+      "imageQuery": "Seven Sisters Falls Nohsngithiang Cherrapunji Meghalaya monsoon"
+    },
+    {
+      "name": "Sohpetbneng Peak (Navel of Heaven)",
+      "category": "viewpoint",
+      "description": "Sacred to the Khasi people as U Lum Sohpetbneng — the peak from which the ancestors of the Khasi are believed to have descended from heaven — this 1,343-metre hill 25 km from Shillong has a simple stone monolith at the summit venerated by the Niam Khasi faith. The forested hilltop and the cultural significance make this a meditative rather than conventional tourist viewpoint.",
+      "whyVisit": "A sacred hilltop at the spiritual and mythological centre of Khasi cosmology, accessible to respectful visitors.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sohpetbneng Peak Navel Heaven Meghalaya Shillong",
+      "imageQuery": "Sohpetbneng Peak sacred hill Khasi Meghalaya"
+    }
+  ]
+}

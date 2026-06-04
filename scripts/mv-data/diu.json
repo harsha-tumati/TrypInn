@@ -1,0 +1,250 @@
+{
+  "slug": "diu",
+  "name": "Diu",
+  "state": "Daman and Diu",
+  "tagline": "Portuguese forts and Gujarati coastline where the Arabian Sea shines",
+  "categories": ["beach", "heritage", "island"],
+  "highlights": ["magnificent 16th-century portuguese fort at the island's eastern tip", "pristine uncrowded beaches along gujarat's driest coastline"],
+  "attractions": [
+    {
+      "name": "Diu Fort",
+      "category": "fort",
+      "description": "One of the best-preserved Portuguese forts in Asia, Diu Fort was built between 1535 and 1541 on a rocky promontory at the island's eastern tip where it is surrounded by the sea on three sides. The fort withstood two major Ottoman-Gujarati sieges in 1538 and 1546, making it a pivotal site of Indian Ocean history. The ramparts, bastions, moat, Portuguese church, lighthouse, and prison within the fort complex are all intact. The Indian Navy still controls part of the structure.",
+      "whyVisit": "One of Asia's finest preserved Portuguese forts — 500 years of Indian Ocean military history concentrated on a sea-surrounded promontory.",
+      "bestTime": "October to March; golden hour for photography",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diu Fort Gujarat coastal fort",
+      "imageQuery": "Diu Fort Portuguese ramparts sea Gujarat India"
+    },
+    {
+      "name": "Nagoa Beach",
+      "category": "beach",
+      "description": "Diu's longest and most popular beach, Nagoa stretches 1.5 km in a gentle horseshoe curve backed by a plantation of ancient hoka palms (Roystonea regia) — Cuban royal palms planted by the Portuguese that are now 200 years old. The beach has gentle surf suitable for swimming and windsurfing. The sand is fine and pale, and the water a clear turquoise. Unlike most Gujarati beaches, Nagoa has good facilities including beachside restaurants serving fresh seafood.",
+      "whyVisit": "Diu's finest beach — calm turquoise water, fine sand, and a dramatic backdrop of 200-year-old Portuguese-planted royal palms.",
+      "bestTime": "October to March; early morning for empty beach",
+      "duration": "Half day",
+      "mapsSearch": "Nagoa Beach Diu Gujarat",
+      "imageQuery": "Nagoa Beach Diu Gujarat hoka palms turquoise water"
+    },
+    {
+      "name": "St. Paul's Church",
+      "category": "religious",
+      "description": "Built by the Jesuits in 1610, St. Paul's Church in Diu town is one of the most elaborate Portuguese Baroque churches in India. The four-storey white facade, covered in carved stone ornamental work, faces the main town square. The interior has carved wooden walls, a gilded main altar, and painted ceiling panels depicting scenes from the life of St. Paul. Unlike Goa's churches which are often crowded, St. Paul's Diu is frequently visited by only a handful of people.",
+      "whyVisit": "India's most ornate Portuguese Baroque church facade outside Goa — a 17th-century masterpiece in almost complete solitude.",
+      "bestTime": "Year-round; morning for best interior light",
+      "duration": "1 hour",
+      "mapsSearch": "St Paul's Church Diu town Gujarat",
+      "imageQuery": "St Paul's Church Diu Portuguese Baroque facade Gujarat"
+    },
+    {
+      "name": "Diu Town (Old Portuguese Quarter)",
+      "category": "heritage",
+      "description": "The historic core of Diu town, separated from the fort by the main street, retains an extraordinary density of Portuguese colonial architecture — whitewashed townhouses with ornate carved wooden balconies, narrow cobblestone alleys, tiled doorsteps, and crumbling escutcheons above doorways. The town has a population of under 25,000 and most Portuguese-era structures are still inhabited. Walking the alleys in the early morning before the tourist shops open reveals a completely preserved colonial Goa-like atmosphere.",
+      "whyVisit": "A living Portuguese colonial town almost as intact as Old Goa — without Goa's tourist crowds.",
+      "bestTime": "Early morning (before 9 AM) October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diu Old Town Portuguese Quarter Gujarat",
+      "imageQuery": "Diu old town Portuguese colonial houses cobblestone Gujarat"
+    },
+    {
+      "name": "St. Thomas Church (Museum)",
+      "category": "museum",
+      "description": "Built in 1598 and decommissioned in the 1960s, the Church of St. Thomas in Diu town now operates as a museum of Portuguese-era artefacts under the Archaeological Survey of India. The vaulted stone interior houses carved stone panels, Christian sculptures, Portuguese inscriptions, and a collection of period weaponry. The 13-metre vaulted nave is structurally intact and the carved stone capitals are particularly fine examples of late Manueline style.",
+      "whyVisit": "A 16th-century Portuguese church converted into a museum of colonial history — the best introduction to Diu's heritage.",
+      "bestTime": "Year-round; closed Mondays",
+      "duration": "1 hour",
+      "mapsSearch": "St Thomas Church Museum Diu Gujarat",
+      "imageQuery": "St Thomas Church Diu museum Portuguese stone vault"
+    },
+    {
+      "name": "Chakratirth Beach",
+      "category": "beach",
+      "description": "Located on the north side of Diu island facing Gujarat's mainland, Chakratirth is a smaller, more intimate beach known for its spectacular sunsets. The beach has rocky outcrops at each end that provide natural protection and some of the clearest water in the Diu area. The promenade along the beach leads to a small hilltop with a Jain pilgrimage site — the Chakratirth or Footprint of Vishnu — marked by a circular impressioned rock.",
+      "whyVisit": "Diu's best sunset beach with the bonus of a Jain sacred site marked by an ancient rock impression at the hilltop.",
+      "bestTime": "Evening for sunset; October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Chakratirth Beach Diu Gujarat sunset",
+      "imageQuery": "Chakratirth Beach Diu sunset rocky Gujarat"
+    },
+    {
+      "name": "Gangeshwar Temple",
+      "category": "temple",
+      "description": "One of Diu's most unusual and atmospheric religious sites, the Gangeshwar Temple sits in a sea cave at the base of Diu's rocky coastline where five Shiva lingas of different sizes stand directly in the tidal surf. During high tide, the sea washes over the lingas, creating a natural abhisheka (ritual bathing) that devotees believe is the ocean itself performing puja. The cave is accessible via stone steps cut into the cliff.",
+      "whyVisit": "Five ancient Shiva lingas bathed by the Arabian Sea at high tide — one of India's most elemental and evocative temple sites.",
+      "bestTime": "High tide for sea-bathing of lingas; sunset for dramatic atmosphere",
+      "duration": "1 hour",
+      "mapsSearch": "Gangeshwar Temple Diu sea cave Gujarat",
+      "imageQuery": "Gangeshwar Temple Diu sea cave Shiva lingas tide Gujarat"
+    },
+    {
+      "name": "Ghogla Beach",
+      "category": "beach",
+      "description": "Located on the Gujarat mainland side of Diu (technically across the inlet), Ghogla is a long, undeveloped beach with calm shallow water ideal for children. The beach stretches 3 km with no commercial development and the only activity is occasional fishing by local Kharwa fishermen. The sand is slightly coarser than Nagoa and the water clarity slightly less, but the emptiness and the view back to Diu island across the inlet compensate entirely.",
+      "whyVisit": "Diu's most peaceful and least-visited beach — 3 km of empty sand with no development and a view across to Diu island.",
+      "bestTime": "October to March; early morning",
+      "duration": "Half day",
+      "mapsSearch": "Ghogla Beach Diu Gujarat mainland",
+      "imageQuery": "Ghogla Beach Diu Gujarat empty sand fishing"
+    },
+    {
+      "name": "INS Khukri Memorial",
+      "category": "heritage",
+      "description": "Commemorating INS Khukri — the Indian Navy frigate sunk on December 9, 1971 during the Indo-Pakistani War with the loss of 18 officers and 176 sailors, including Captain Mahendra Nath Mulla who chose to go down with his ship — the memorial at Diu's Jallandhar Beach is one of India's most solemn naval monuments. The statue of Captain Mulla and the detailed account of the battle are among the most moving military memorials in India.",
+      "whyVisit": "India's most significant naval memorial — the story of Captain Mulla's sacrifice is one of independent India's most heroic episodes.",
+      "bestTime": "Year-round; December 9 for anniversary ceremonies",
+      "duration": "1 hour",
+      "mapsSearch": "INS Khukri Memorial Diu Jallandhar Beach Gujarat",
+      "imageQuery": "INS Khukri Memorial Diu naval India 1971 war Gujarat"
+    },
+    {
+      "name": "Jallandhar Beach and Cave",
+      "category": "beach",
+      "description": "Diu's most dramatic stretch of coastline, Jallandhar Beach on the southern coast has towering sea-eroded limestone cliffs, a natural sea-arch visible at low tide, and a small but evocative sea cave used as a Hindu shrine. The rocky foreground gives the beach a more adventurous character than Nagoa's gentle curve. The INS Khukri Memorial sits at the beach's eastern end and the combination of history, geology, and sea views makes it Diu's most rewarding beach walk.",
+      "whyVisit": "Diu's most dramatic coastal geology — limestone cliffs, a sea arch, a cave shrine, and a naval memorial in a single beach walk.",
+      "bestTime": "Morning for clear water views; sunset for cliffs",
+      "duration": "2 hours",
+      "mapsSearch": "Jallandhar Beach Diu Gujarat caves arch",
+      "imageQuery": "Jallandhar Beach Diu limestone cliffs sea arch Gujarat"
+    },
+    {
+      "name": "Diu Museum (Fortim-do-Mar)",
+      "category": "museum",
+      "description": "Housed in the Fortaleza de São Sebastião — the inner fort built by the Portuguese in 1546 inside the main fortifications — the Diu Museum has a small but carefully curated collection of stone sculpture, brass artefacts, Christian religious iconography, and carved wooden furniture from the Portuguese colonial period. The museum building itself is the most historically important structure in the fort and its carved stone doorways show Manueline architectural features.",
+      "whyVisit": "The best collection of Diu's Portuguese colonial artefacts inside one of the fort's most historically significant buildings.",
+      "bestTime": "Year-round; closed Mondays",
+      "duration": "1 hour",
+      "mapsSearch": "Diu Fort Museum Fortaleza Gujarat",
+      "imageQuery": "Diu Fort Museum Portuguese artefacts stone sculpture Gujarat"
+    },
+    {
+      "name": "Pani Kotha (Sea Fort / Fortim-do-Mar)",
+      "category": "fort",
+      "description": "Connected to the main Diu Fort by a wooden drawbridge over the sea, the Pani Kotha (Sea Fort) is a smaller circular fortification built on a rock in the middle of the channel between Diu island and the Gujarat mainland. Today used as a lighthouse, the structure is accessible only on specific clearance and has extraordinary 360-degree views over the channel, the main fort, and the open sea. The name means 'water fort' in Gujarati.",
+      "whyVisit": "Stand on a circular fort in the middle of the sea channel — Diu's most dramatic maritime vantage point.",
+      "bestTime": "October to March; contact lighthouse authority for access",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pani Kotha Sea Fort Diu Gujarat lighthouse",
+      "imageQuery": "Pani Kotha sea fort Diu Gujarat channel island fort"
+    },
+    {
+      "name": "Naida Caves",
+      "category": "cave",
+      "description": "A network of interconnected caves and passages formed from ancient laterite rock just behind the Portuguese fort, the Naida Caves are an unexpected natural curiosity in the middle of Diu town. The caves were used as a quarry by the Portuguese for building stone and later served as water storage cisterns. The passages interconnect through small windows and stairways, and light filters through openings in the roof creating dramatic beams of illumination through the tunnels.",
+      "whyVisit": "Explore an underground network of 16th-century Portuguese-excavated stone chambers with dramatic natural light beams.",
+      "bestTime": "Midday for best light shafts",
+      "duration": "1 hour",
+      "mapsSearch": "Naida Caves Diu Gujarat underground",
+      "imageQuery": "Naida Caves Diu Gujarat underground passages light beams"
+    },
+    {
+      "name": "Diu Lighthouse",
+      "category": "heritage",
+      "description": "The operational lighthouse within Diu Fort, built on the original Portuguese tower, rises above the fort's highest bastion and offers a commanding view of the Arabian Sea, the Gujarat coastline, and the full extent of the island. The lighthouse department opens it for visitors on Sunday afternoons. From the gallery at the top, the full geometry of the Portuguese fort is visible below and the sea horizon is unobstructed in three directions.",
+      "whyVisit": "Climb inside an operational fort lighthouse for the best elevated view of Diu island and the Arabian Sea.",
+      "bestTime": "Sunday afternoon (visiting hours); October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Diu Lighthouse Fort Gujarat Arabian Sea",
+      "imageQuery": "Diu Lighthouse fort tower Gujarat Arabian Sea view"
+    },
+    {
+      "name": "Simbor Beach (Vanakbara Side)",
+      "category": "beach",
+      "description": "At the western tip of Diu island near the Vanakbara fishing village, Simbor Beach is known primarily as a sunrise beach. The eastward-facing cove catches the first light as it emerges over the Gujarat mainland and the silhouettes of departing fishing boats against the sunrise are one of the classic Diu photographs. The beach itself has coarse dark sand and is rarely visited by tourists — Vanakbara village's fish landing and the associated activity are the main draw.",
+      "whyVisit": "Diu's best sunrise beach — watch a fleet of fishing boats depart into the dawn light over Vanakbara's working harbour.",
+      "bestTime": "Sunrise year-round; early morning for fishing boat activity",
+      "duration": "2 hours",
+      "mapsSearch": "Vanakbara Simbor Beach Diu sunrise Gujarat",
+      "imageQuery": "Simbor Beach Vanakbara Diu sunrise fishing boats Gujarat"
+    },
+    {
+      "name": "Church of Our Lady of Mercy (Misericórdia)",
+      "category": "religious",
+      "description": "A 16th-century Portuguese church in Diu town that houses what is believed to be the oldest Christian image in Asia — a carved stone panel depicting the Virgin Mary in Manueline style, dating to the early 16th century. The church is smaller and less ornate than St. Paul's but its historical significance as a working congregation church predating the main Jesuit missions makes it particularly important. The Goa Inquisition archives include records of its foundation.",
+      "whyVisit": "One of Asia's oldest Christian images is kept in this working 16th-century parish church almost nobody visits.",
+      "bestTime": "Year-round; Sunday morning for service",
+      "duration": "30 minutes",
+      "mapsSearch": "Church of Our Lady of Mercy Misericordia Diu Gujarat",
+      "imageQuery": "Church Misericordia Diu Portuguese 16th century Gujarat"
+    },
+    {
+      "name": "Diu Town Night Fish Market",
+      "category": "market",
+      "description": "The fish market in Diu town near the harbour is most active after the evening boats return between 5 and 8 PM. Because Diu is a Union Territory without Gujarat's alcohol prohibition, it has an unusual combination of fresh seafood restaurants and unlicensed wine shops unique in the region. The evening market has lobster, crabs, squid, and diverse finfish laid on ice blocks, and the surrounding lanes have several restaurants that cook whatever you buy fresh on the spot.",
+      "whyVisit": "Buy seafood from landing boats and have it cooked immediately — Diu's freshest, cheapest seafood dinner experience.",
+      "bestTime": "5 to 8 PM year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Diu Town Fish Market Harbour evening Gujarat",
+      "imageQuery": "Diu fish market harbour evening seafood Gujarat night"
+    },
+    {
+      "name": "Vanakbara Harbour and Fishing Village",
+      "category": "heritage",
+      "description": "The original Kharwa fishing community village at Diu's western tip has been active as a maritime fishing community for over 600 years. The harbour has 200+ traditional wooden fishing boats and the boatyards on the outskirts still build and repair vessels using hand tools in the centuries-old tradition. The village has a distinctive cultural identity separate from both Portuguese and mainland Gujarati influence — the Kharwa people speak a dialect and follow customs unique to this coast.",
+      "whyVisit": "Walk through a living 600-year-old fishing village with traditional wooden boat building still practised by hand.",
+      "bestTime": "Early morning for boat departure; evening for return with catch",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vanakbara Harbour Fishing Village Diu Gujarat Kharwa",
+      "imageQuery": "Vanakbara harbour Diu traditional wooden fishing boats Kharwa Gujarat"
+    },
+    {
+      "name": "Sunset Point, Diu Fort Ramparts",
+      "category": "viewpoint",
+      "description": "The western-facing bastions of Diu Fort's main rampart provide the most dramatic sunset viewpoint in the territory. As the sun drops towards the Arabian Sea, the golden light picks out the carved stone details of the Portuguese battlements and the sea below the fort walls reflects the colour back up. This is the spot that local photographers and returning visitors consider the quintessential Diu image — fort walls, sea, and a sky on fire.",
+      "whyVisit": "Fort ramparts facing the setting Arabian Sea sun — the defining Diu image that photographers return for repeatedly.",
+      "bestTime": "30 minutes before sunset, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Diu Fort Sunset Point Ramparts Arabian Sea",
+      "imageQuery": "Diu Fort ramparts sunset Arabian Sea Portuguese bastion Gujarat"
+    },
+    {
+      "name": "Chapel of Our Lady of the Sea",
+      "category": "religious",
+      "description": "A tiny 16th-century Portuguese wayside chapel perched on a rocky outcrop on Diu's southern coast, the Chapel of Our Lady of the Sea (Nossa Senhora do Mar) was built by Portuguese sailors to protect fishing vessels. Its small interior holds only a dozen worshippers but its position — directly above the surf with no neighbouring buildings — makes it one of the most atmospherically located Christian buildings in India. The chapel is active and a local fishing family maintains it.",
+      "whyVisit": "The most dramatically positioned chapel in India — a tiny 16th-century Portuguese chapel alone on a rocky promontory above the sea.",
+      "bestTime": "Stormy monsoon weather for dramatic atmosphere; any season",
+      "duration": "30 minutes",
+      "mapsSearch": "Chapel Our Lady of Sea Diu Gujarat coast",
+      "imageQuery": "Chapel Our Lady Sea Diu rocky promontory Portuguese Gujarat"
+    },
+    {
+      "name": "Gomatimata Beach (Hidden South Coast)",
+      "category": "beach",
+      "description": "A seldom-visited stretch of rocky southern coastline between the fort and Chakratirth where the road ends and a short walk leads to natural stone pools at the sea's edge. The pools fill with clear water at high tide and are warm, rock-enclosed swimming pools by mid-morning. The surrounding rocks are home to nesting sea birds and the coastline here has dramatic basalt formations with sea grasses and small crabs in the lower intertidal zone.",
+      "whyVisit": "Natural tide pools cut into Diu's basalt coast — warm, clear, and entirely unknown to most visitors.",
+      "bestTime": "Morning after high tide, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Gomatimata Beach Diu south coast tide pools Gujarat",
+      "imageQuery": "Diu south coast tide pools basalt Gujarat hidden beach"
+    },
+    {
+      "name": "Shri Somnath Mahadev Temple (Diu)",
+      "category": "temple",
+      "description": "A significant Shiva temple inside Diu town, the Somnath Mahadev Temple complex has a prominent shikhara visible above the low-roofed Portuguese neighbourhood around it. The temple's original structure dates to the pre-Portuguese era and was one of the few Hindu temples the Portuguese permitted to continue functioning. The contrast of the Hindu temple rising above whitewashed colonial townhouses is a striking visual emblem of Diu's layered identity.",
+      "whyVisit": "A pre-Portuguese Shiva temple rising above colonial-era rooftops — the living symbol of Diu's dual Hindu-Portuguese heritage.",
+      "bestTime": "Year-round; morning puja",
+      "duration": "30 minutes",
+      "mapsSearch": "Somnath Mahadev Temple Diu town Gujarat",
+      "imageQuery": "Somnath Mahadev Temple Diu town Hindu Gujarat Portuguese neighbourhood"
+    },
+    {
+      "name": "Portuguese Cemetery (São Tomé)",
+      "category": "heritage",
+      "description": "Adjacent to the Church of St. Thomas, the Portuguese cemetery in Diu town contains some of the oldest surviving European grave inscriptions in Asia — tombstones of Portuguese soldiers, merchants, and priests dating from the 1540s onwards. Many inscriptions remain legible and record the names and ranks of individuals who died during the two Ottoman sieges. The cemetery is overgrown but managed and the Archaeological Survey has catalogued the inscriptions.",
+      "whyVisit": "Read 500-year-old inscriptions of Portuguese soldiers who died defending Diu — one of the oldest European cemeteries in Asia.",
+      "bestTime": "Year-round; morning for clear light",
+      "duration": "1 hour",
+      "mapsSearch": "Portuguese Cemetery Diu Gujarat colonial graves",
+      "imageQuery": "Portuguese Cemetery Diu Gujarat tombstones 16th century"
+    },
+    {
+      "name": "Sea Shell Museum, Diu",
+      "category": "museum",
+      "description": "A privately operated museum established by Captain Devji Lavji Fuletra, a retired merchant sailor who collected shells worldwide over 40 years at sea. The museum houses over 2,500 shells from all seven oceans including specimens of the rare Glory-of-the-Sea cone shell and giant tridacna clams. Though modest in scale, the collection's quality and the personal story behind it make it one of Diu's most unexpectedly delightful attractions.",
+      "whyVisit": "A retired sailor's life collection of 2,500 world shells including some of the ocean's rarest species — unexpectedly wonderful.",
+      "bestTime": "Year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Sea Shell Museum Diu Gujarat Captain Fuletra",
+      "imageQuery": "Sea Shell Museum Diu Gujarat rare shells collection"
+    }
+  ]
+}

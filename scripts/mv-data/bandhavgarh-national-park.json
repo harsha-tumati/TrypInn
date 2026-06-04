@@ -1,0 +1,200 @@
+{
+  "slug": "bandhavgarh-national-park",
+  "name": "Bandhavgarh National Park",
+  "state": "Madhya Pradesh",
+  "tagline": "India's tiger heartland hiding ancient forts and wild magic",
+  "categories": ["wildlife", "nature", "heritage"],
+  "highlights": ["highest tiger density in india", "ancient bandhavgarh fort atop jungle cliffs"],
+  "attractions": [
+    {
+      "name": "Tala Zone Tiger Safari",
+      "category": "wildlife",
+      "description": "The original and most celebrated buffer of Bandhavgarh, Tala Zone offers the highest probability of Bengal tiger sightings in any Indian reserve. Dense sal and mixed forests channel tigers along predictable nullah corridors, letting jeep safaris approach within metres. Resident tigresses like the famous Spotty lineage have been tracked here for generations, making behavioural observation exceptional.",
+      "whyVisit": "Best single chance in India to spot a wild Bengal tiger at close range.",
+      "bestTime": "October to March, morning safari 6–10 am",
+      "duration": "3-4 hours",
+      "mapsSearch": "Tala Gate Bandhavgarh National Park Madhya Pradesh",
+      "imageQuery": "Bengal tiger Bandhavgarh Tala zone"
+    },
+    {
+      "name": "Bandhavgarh Fort",
+      "category": "fort",
+      "description": "Perched 811 metres above the jungle on a sheer sandstone plateau, Bandhavgarh Fort is believed to be over 2,000 years old and is accessible only through the park on an elephant or on foot with a guide. Crumbling ramparts, a giant 10th-century reclining Vishnu carved into the rock face, and ancient tank ruins make this one of India's most atmospheric archaeological sites surrounded entirely by tiger habitat.",
+      "whyVisit": "Reach a 2,000-year-old fort surrounded by living tiger country — utterly unique.",
+      "bestTime": "November to February, mid-morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bandhavgarh Fort Umaria Madhya Pradesh",
+      "imageQuery": "Bandhavgarh Fort ancient ruins jungle"
+    },
+    {
+      "name": "Magdhi Zone Safari",
+      "category": "wildlife",
+      "description": "Magdhi Zone covers the southern buffer of Bandhavgarh and is celebrated for leopard sightings, sloth bear encounters and large herds of spotted deer and gaur. Less visited than Tala, it rewards patient observers with undisturbed predator-prey sequences. The terrain shifts from bamboo groves to open grassland meadows called maidans that are perfect for watching cats in the golden hour light.",
+      "whyVisit": "Superior leopard and sloth bear sightings with far fewer safari vehicles.",
+      "bestTime": "November to April, afternoon safari 2–6 pm",
+      "duration": "3-4 hours",
+      "mapsSearch": "Magdhi Gate Bandhavgarh National Park Madhya Pradesh",
+      "imageQuery": "leopard Magdhi zone Bandhavgarh safari"
+    },
+    {
+      "name": "Khitauli Zone Safari",
+      "category": "wildlife",
+      "description": "Khitauli forms the eastern range of Bandhavgarh and is prized for its vast open grasslands and the Johila River waterholes where wildlife congregates at dawn. Tigers resident in Khitauli tend to be less habituated to vehicles than Tala tigers, making encounters feel truly wild. The zone also shelters wild dogs, striped hyena and a healthy population of Indian rollers perched along the track edges.",
+      "whyVisit": "Open meadows make for cinematic photography of tigers and grassland birds.",
+      "bestTime": "February to May, morning safari",
+      "duration": "3-4 hours",
+      "mapsSearch": "Khitauli Gate Bandhavgarh National Park Madhya Pradesh",
+      "imageQuery": "tiger grassland Khitauli Bandhavgarh"
+    },
+    {
+      "name": "Shesh Shaiya — Reclining Vishnu Sculpture",
+      "category": "heritage",
+      "description": "Carved directly into the cliff face near Bandhavgarh Fort, this 11-metre-long reclining Vishnu — Anantashayana — is one of the largest rock-cut Vaishnava sculptures in Madhya Pradesh, dating to the 10th or 11th century. A natural spring flows year-round from the sculpture's base, and forest guards maintain a small active shrine here. Reaching it requires a forest department–permitted elephant ride from the Tala buffer.",
+      "whyVisit": "A colossal ancient sculpture hidden deep inside a living tiger forest.",
+      "bestTime": "October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Shesh Shaiya Bandhavgarh Fort Madhya Pradesh",
+      "imageQuery": "reclining Vishnu rock carving Bandhavgarh"
+    },
+    {
+      "name": "Bamera Reservoir Birdwatching",
+      "category": "nature",
+      "description": "The Bamera backwater on the Johila River borders Bandhavgarh's buffer zone and is an underrated birding spot holding large flocks of bar-headed goose and northern pintail in winter. Resident species include the Indian skimmer, lesser adjutant stork and the elusive black-necked stork. Crocodiles bask on sandbanks between October and March, and smooth-coated otters patrol the margins at dusk.",
+      "whyVisit": "Prime winter waterbird congregation beside the forest with zero crowds.",
+      "bestTime": "November to January, early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bamera Reservoir Bandhavgarh Umaria Madhya Pradesh",
+      "imageQuery": "Bamera reservoir waterbirds Bandhavgarh"
+    },
+    {
+      "name": "Tala Village Tribal Market",
+      "category": "market",
+      "description": "The weekly haat market in Tala village just outside the park gate brings Baiga tribal communities from surrounding forests to trade hand-woven textiles, forest produce, and distinctive beaded jewellery. Baiga women in traditional silver-coin necklaces and tattooed arms are still a common sight. Local dhaba cooks serve authentic Madhya Pradesh food including bafla bread with dal and fresh mahua sweets.",
+      "whyVisit": "Meet the Baiga forest community whose ancestral land became Bandhavgarh.",
+      "bestTime": "Saturday mornings, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tala Village Market Bandhavgarh Umaria",
+      "imageQuery": "Baiga tribal market Tala village Bandhavgarh"
+    },
+    {
+      "name": "Chakradhara Maidan",
+      "category": "wildlife",
+      "description": "Chakradhara is a sweeping open meadow inside Tala Zone where four or five tigers have historically been seen at the same time — a phenomenon almost unheard of in any reserve. At dawn, spotted deer and sambar pour onto the grass while king vultures wheel overhead scanning for kills. The clearing is also the site of a famous ancient well associated with Bandhavgarh Fort's water supply system.",
+      "whyVisit": "The most reliable meadow in India for witnessing multiple tigers simultaneously.",
+      "bestTime": "December to April, dawn safari",
+      "duration": "Included in Tala zone safari",
+      "mapsSearch": "Chakradhara Meadow Bandhavgarh Tala Zone",
+      "imageQuery": "Chakradhara meadow tigers Bandhavgarh"
+    },
+    {
+      "name": "Gauri Shankar Temple, Tala",
+      "category": "temple",
+      "description": "This small but historically significant Shiva temple sits at the entry village of Tala and predates the national park's creation. Intricately carved sandstone panels depicting Shaiva mythology decorate the outer walls, attributable to the Kalachuri dynasty of the 10th–12th centuries. The temple remains an active place of worship and the sound of morning aarti drifts into the jungle as the first safari jeeps depart the gate.",
+      "whyVisit": "Ancient Kalachuri-era stone carvings at a working temple beside tiger country.",
+      "bestTime": "Early morning before the safari",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Gauri Shankar Temple Tala Bandhavgarh",
+      "imageQuery": "Gauri Shankar temple sandstone Tala Bandhavgarh"
+    },
+    {
+      "name": "White Tiger Trail — Rewa Connection",
+      "category": "heritage",
+      "description": "Bandhavgarh is the birthplace of Mohan, the world's first documented white Bengal tiger, captured as a cub in 1951 by the Maharaja of Rewa from these very forests. A heritage trail run by some lodges traces the story of Mohan's discovery, the genetics of white tigers, and the subsequent captive breeding programmes. The Maharaja's historic hunting lodge inside the park adds a layer of colonial wildlife history.",
+      "whyVisit": "Walk the forest where all white tigers in the world trace their lineage.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "White Tiger Heritage Bandhavgarh Rewa Madhya Pradesh",
+      "imageQuery": "white tiger history Bandhavgarh Rewa"
+    },
+    {
+      "name": "Baghel Museum, Rewa (Day Trip)",
+      "category": "museum",
+      "description": "A 65-kilometre drive from Tala, the Baghel Museum inside Rewa's Govindgarh Fort houses the taxidermied specimen of Mohan the original white tiger alongside hunting trophies, royal howdahs, Baghela dynasty armour and detailed photographic records of Bandhavgarh's colonial-era wildlife. It is the only place to see Mohan in preserved form and is a compelling companion to any Bandhavgarh visit.",
+      "whyVisit": "See Mohan the original white tiger and understand Bandhavgarh's royal history.",
+      "bestTime": "Afternoon after morning safari",
+      "duration": "1-2 hours",
+      "mapsSearch": "Baghel Museum Govindgarh Fort Rewa Madhya Pradesh",
+      "imageQuery": "Baghel Museum white tiger Rewa fort"
+    },
+    {
+      "name": "Sloth Bear Watch, Magdhi",
+      "category": "wildlife",
+      "description": "Bandhavgarh holds one of India's densest sloth bear populations, and Magdhi Zone's rocky outcrops and mahua forest are the prime habitat. Bears descend to lick mahua blossoms and tear open wild bee nests in the sandstone boulders, often entirely ignoring safari vehicles. Sightings peak during the mahua flowering in February and March when the intoxicating scent blankets the forest floor.",
+      "whyVisit": "Guaranteed close-up sloth bear encounters during mahua season.",
+      "bestTime": "February to March, morning",
+      "duration": "Included in Magdhi safari",
+      "mapsSearch": "Magdhi Zone Sloth Bear Bandhavgarh Madhya Pradesh",
+      "imageQuery": "sloth bear Magdhi Bandhavgarh mahua forest"
+    },
+    {
+      "name": "Johila River Bed Drive",
+      "category": "nature",
+      "description": "The dry sandy bed of the Johila River runs along Bandhavgarh's eastern boundary and becomes a natural wildlife highway in the hot season. Tiger pugmarks, hyena tracks and the slides of smooth-coated otters are perfectly preserved in the sand, offering a tracking experience unlike a typical jeep trail. Mugger crocodiles are reliably seen basking on the central sand islands between November and April.",
+      "whyVisit": "Track pugmarks in pristine sand on a route that feels like true wilderness.",
+      "bestTime": "March to May",
+      "duration": "Included in Khitauli zone safari",
+      "mapsSearch": "Johila River Bandhavgarh National Park Umaria",
+      "imageQuery": "Johila River dry bed Bandhavgarh tiger track"
+    },
+    {
+      "name": "Night Sky Stargazing from Jungle Lodges",
+      "category": "nature",
+      "description": "Far from city light pollution in the highlands of the Vindhya Range, Bandhavgarh offers extraordinary dark skies between October and March. Several eco-lodges around Tala organise after-dinner stargazing sessions using telescopes, with guides pointing out the Milky Way, Saturn's rings and the Andromeda galaxy. The soundscape of the surrounding jungle — distant howl of a jackal, the alarm call of a deer — makes the experience uniquely immersive.",
+      "whyVisit": "Experience the Milky Way directly above tiger country on a clear winter night.",
+      "bestTime": "November to January, post-dinner",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tala Bandhavgarh jungle lodge stargazing Madhya Pradesh",
+      "imageQuery": "night sky Milky Way jungle Bandhavgarh Vindhya"
+    },
+    {
+      "name": "Panpatha Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Adjacent to Bandhavgarh's buffer and covering 245 sq km, Panpatha is an almost entirely undiscovered sanctuary through which some of Bandhavgarh's tigers range. A single forest rest house accepts limited visitors, offering a raw, unfiltered experience of central Indian jungle without another vehicle in sight. Nilgai, wolf, Indian wild cat and several tiger families have been recorded within its boundaries.",
+      "whyVisit": "Bandhavgarh-quality wildlife in a sanctuary where you may see no other tourists.",
+      "bestTime": "November to April",
+      "duration": "Half-day or overnight",
+      "mapsSearch": "Panpatha Wildlife Sanctuary Umaria Madhya Pradesh",
+      "imageQuery": "Panpatha Wildlife Sanctuary Madhya Pradesh forest"
+    },
+    {
+      "name": "Baiga Village Homestay Experience",
+      "category": "heritage",
+      "description": "Several Baiga tribal villages on the park periphery now offer guided homestay experiences connecting visitors to one of India's most ancient and least-assimilated indigenous communities. Baiga hosts demonstrate their distinctive linear tattooing, demonstrate preparation of forest herb medicines, and share oral traditions about the tiger as a protective ancestor spirit. Forest department–approved guides from within the community lead these sessions.",
+      "whyVisit": "Spend time with a tribal community that has lived beside tigers for centuries.",
+      "bestTime": "October to March",
+      "duration": "Half-day to overnight",
+      "mapsSearch": "Baiga village homestay Bandhavgarh Umaria Madhya Pradesh",
+      "imageQuery": "Baiga tribal village Bandhavgarh Madhya Pradesh"
+    },
+    {
+      "name": "Umaria Railway Town and Chandragiri Fort",
+      "category": "fort",
+      "description": "The gateway town of Umaria, 35 km from Tala, sits below the ruins of Chandragiri Fort, a Baghela dynasty outpost with panoramic views across the Vindhya plateau. The fort is entirely unrestored and unvisited, draped in wildflowers after the monsoon and giving a genuine off-the-beaten-path historical experience. Umaria's old bazaar retains the character of a central Indian railway junction with excellent jalebi and chai.",
+      "whyVisit": "A forgotten Baghela fort with zero tourists and sweeping Vindhya views.",
+      "bestTime": "October to February",
+      "duration": "2 hours",
+      "mapsSearch": "Chandragiri Fort Umaria Madhya Pradesh",
+      "imageQuery": "Chandragiri Fort Umaria Vindhya ruins"
+    },
+    {
+      "name": "Vulture Watch at Bone Cliffs",
+      "category": "wildlife",
+      "description": "The sandstone cliffs rising above Bandhavgarh's Tala buffer host one of Madhya Pradesh's few confirmed breeding colonies of the critically endangered long-billed and white-rumped vultures. Nesting pairs can be observed through binoculars or spotting scopes from designated viewpoints inside the park without disturbing the colony. The sight of ten to fifteen vultures spiralling on thermals above the tree canopy is deeply memorable.",
+      "whyVisit": "Witness critically endangered vultures nesting on ancient jungle cliffs.",
+      "bestTime": "November to March, mid-morning thermals",
+      "duration": "1 hour",
+      "mapsSearch": "Vulture cliff viewpoint Bandhavgarh Tala zone Madhya Pradesh",
+      "imageQuery": "long-billed vulture cliff colony Bandhavgarh"
+    },
+    {
+      "name": "Bijadandi Hidden Stream Walk",
+      "category": "nature",
+      "description": "Deep inside the Magdhi buffer, the Bijadandi stream carves a narrow gorge through laterite rock, creating small plunge pools fringed by giant Terminalia trees. This trail is offered only by a handful of specialist naturalist lodges as a short guided bush walk during the buffer zone activity window. The stream pools attract leopards to drink at dusk, and the gorge walls are laced with ancient rock paintings of hunters and animals.",
+      "whyVisit": "Hidden rock-art gorge where leopards drink — an undiscovered gem of Bandhavgarh.",
+      "bestTime": "October to March, late afternoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bijadandi stream Magdhi Bandhavgarh Madhya Pradesh",
+      "imageQuery": "jungle stream gorge rock paintings Bandhavgarh"
+    }
+  ]
+}

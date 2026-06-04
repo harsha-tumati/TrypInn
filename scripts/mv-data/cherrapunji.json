@@ -1,0 +1,260 @@
+{
+  "slug": "cherrapunji",
+  "name": "Cherrapunji",
+  "state": "Meghalaya",
+  "tagline": "World's wettest place, ancient roots, and cloud-filled valleys",
+  "categories": ["nature", "adventure", "hill_station"],
+  "highlights": ["world's highest and most powerful monsoon waterfalls", "living root bridges grown over centuries by khasi bio-engineers"],
+  "attractions": [
+    {
+      "name": "Nohkalikai Falls",
+      "category": "waterfall",
+      "description": "India's tallest plunge waterfall and the world's fourth highest at 340 metres, Nohkalikai drops in a single unbroken curtain from the edge of the Cherrapunji plateau into a vivid turquoise pool below. Named after the tragic story of Ka Likai, a local woman who leapt from the cliff, the falls are at their most awe-inspiring during monsoon when the volume is immense. The pool's blue-green colour is visible from the top viewpoint even 300 metres above.",
+      "whyVisit": "The single most dramatic waterfall in India — a 340-metre plunge into a turquoise pool with one of the most haunting local legends in Meghalaya.",
+      "bestTime": "June to October for full flow; October to November for both flow and clear sky",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nohkalikai Falls Cherrapunji Meghalaya",
+      "imageQuery": "Nohkalikai Falls Cherrapunji plunge pool turquoise Meghalaya"
+    },
+    {
+      "name": "Double-Decker Living Root Bridge, Nongriat",
+      "category": "nature",
+      "description": "The most famous living root bridge in the world, grown by the War Khasi community over 200-400 years by guiding the aerial roots of Ficus elastica trees across the Umshiang River. Uniquely, it has two tiers, one above the other, both fully functional. Reaching it requires a 3,500-step descent from Tyrna village and a 3-4 hour return trek through bamboo jungle and river crossings.",
+      "whyVisit": "An ancient bio-engineered bridge grown from living tree roots — one of the most iconic and photographed natural structures in South Asia.",
+      "bestTime": "October to April for manageable trekking conditions",
+      "duration": "Full day",
+      "mapsSearch": "Double Decker Living Root Bridge Nongriat Cherrapunji Meghalaya",
+      "imageQuery": "double decker living root bridge Nongriat Meghalaya river"
+    },
+    {
+      "name": "Seven Sisters Falls (Nohsngithiang)",
+      "category": "waterfall",
+      "description": "Seven distinct streams from the plateau surface converge and fall simultaneously as seven separate threads over a 70-metre-wide cliff face, dropping 315 metres into the deep valley below. Locally called Nohsngithiang, this is one of the widest waterfalls in India. The view from the Mawsmai Road viewpoint shows all seven falls in one frame; during peak monsoon the sound is deafening.",
+      "whyVisit": "The spectacle of seven parallel waterfalls falling simultaneously from a single 315-metre plateau edge is unmatched anywhere in India.",
+      "bestTime": "July to October for full flow",
+      "duration": "1-2 hours",
+      "mapsSearch": "Seven Sisters Falls Nohsngithiang Cherrapunji Meghalaya",
+      "imageQuery": "Seven Sisters Falls seven streams Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Mawsmai Cave",
+      "category": "cave",
+      "description": "The most accessible and well-illuminated of Cherrapunji's many limestone cave systems, Mawsmai Cave is a 150-metre passage through a narrow limestone karst cavern formed millions of years ago by underground water erosion. Stalactites and stalagmites line the passage, and in places the walls close to shoulder width. The cave is lit but not fully developed, preserving an authentic underground atmosphere.",
+      "whyVisit": "A walk through a narrow, dripping limestone cave with ancient formations is one of the most memorable short experiences in Meghalaya.",
+      "bestTime": "October to March for drier passages; cave is open year-round",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Mawsmai Cave Cherrapunji Meghalaya",
+      "imageQuery": "Mawsmai Cave limestone stalactites Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Cherrapunji Eco-Park and Valley Viewpoints",
+      "category": "park",
+      "description": "A well-maintained plateau-edge park developed by the Meghalaya government to protect the eroding rim of the Cherrapunji plateau. Multiple walking trails lead to five distinct viewpoints overlooking deeply carved U-shaped valleys that descend 400-600 metres to the Bangladesh plains below. On monsoon afternoons, clouds form in the valleys and race upward over the plateau rim in a dramatic inversion of normal weather.",
+      "whyVisit": "The best place to watch clouds form below you and rise over the plateau edge — a meteorological spectacle unique to the world's wettest region.",
+      "bestTime": "June to October for cloud formations; October to November for valley clarity",
+      "duration": "2-3 hours",
+      "mapsSearch": "Cherrapunji Eco Park Sohra Meghalaya",
+      "imageQuery": "Cherrapunji eco park valley clouds Meghalaya viewpoint"
+    },
+    {
+      "name": "Dainthlen Falls",
+      "category": "waterfall",
+      "description": "A powerful waterfall 5 km from Cherrapunji where the Kynmaw River drops 60 metres over a wide rock ledge. The local legend tells of a giant serpent (U Thlen) that was slain on this very rock by Khasi warriors, and the red tinge of the rocks is traditionally attributed to the serpent's blood. The viewing platform sits close enough to the falls for spray to reach visitors.",
+      "whyVisit": "A powerful waterfall with one of Meghalaya's most vivid and dark folklore traditions attached to the rock on which it falls.",
+      "bestTime": "June to November for strong flow",
+      "duration": "45 minutes",
+      "mapsSearch": "Dainthlen Falls Cherrapunji Meghalaya",
+      "imageQuery": "Dainthlen Falls Cherrapunji serpent rock Meghalaya"
+    },
+    {
+      "name": "Rainbow Falls, Nongriat",
+      "category": "waterfall",
+      "description": "A 90-metre waterfall about 2 km beyond the double-decker root bridge in the Nongriat valley, Rainbow Falls forms a permanent rainbow in its mist cloud when the sun is at the right angle between 10 am and 2 pm. The additional 2 km trek from the root bridge involves two river crossings by single-tier root bridge and traverses dense subtropical canyon forest.",
+      "whyVisit": "A permanent rainbow in a remote waterfall's mist — only reachable by the same valley trek as the famous root bridge.",
+      "bestTime": "October to March for best rainbow visibility and dry crossings; 10 am to 2 pm for the rainbow itself",
+      "duration": "Additional 2-3 hours from the root bridge",
+      "mapsSearch": "Rainbow Falls Nongriat Cherrapunji Meghalaya",
+      "imageQuery": "Rainbow Falls Nongriat Meghalaya rainbow mist waterfall"
+    },
+    {
+      "name": "Wakaba Falls",
+      "category": "waterfall",
+      "description": "A tall, elegant single-thread waterfall visible from the main Cherrapunji-Shillong road near Laitkynsew village. Wakaba is less visited than the major falls but offers one of the best road-visible waterfall compositions in Meghalaya — a clean vertical drop of 70 metres framed by green forested cliffs. The viewing area is a simple concrete platform but the fall itself is photogenic in any weather.",
+      "whyVisit": "A tall, photogenic waterfall visible directly from the main road — requires no trekking and is rarely crowded.",
+      "bestTime": "June to November",
+      "duration": "30 minutes",
+      "mapsSearch": "Wakaba Falls Laitkynsew Cherrapunji Meghalaya",
+      "imageQuery": "Wakaba Falls Cherrapunji road viewpoint Meghalaya"
+    },
+    {
+      "name": "Mawmluh Cave",
+      "category": "cave",
+      "description": "One of the longest cave systems in the Indian subcontinent at over 7 km, Mawmluh Cave near Mawsynram (also accessible from Cherrapunji) is a scientific treasure: its cave sediments contain one of the most detailed climate records in the world, used to date the period of the Meghalayan Age (4,200 years ago) now officially recognised by geologists worldwide. Guided tours enter 500 metres; caving expeditions go further.",
+      "whyVisit": "A cave whose sediments literally define a geologic Age — Mawmluh's scientific significance is global, its atmosphere primordially dark and dripping.",
+      "bestTime": "October to March for drier interior passages",
+      "duration": "2-3 hours for guided tour",
+      "mapsSearch": "Mawmluh Cave Cherrapunji Meghalaya",
+      "imageQuery": "Mawmluh Cave formations Cherrapunji Meghalaya karst"
+    },
+    {
+      "name": "Tyrna Village and Root Bridge Trail",
+      "category": "adventure",
+      "description": "The War Khasi village of Tyrna is the starting point for the double-decker root bridge descent. The village itself is worth experiencing before the trek begins: stone-paved lanes, traditional morung (community halls), and views from the plateau edge down into the Nongriat valley. Village women sell warm rice beer and chutneys at the trailhead. The community-built stone staircase descending 3,500 steps begins here.",
+      "whyVisit": "The village trailhead, with its traditional architecture and community atmosphere, sets the scene for one of India's great hiking experiences.",
+      "bestTime": "October to April",
+      "duration": "30 minutes for village; full day for complete trek",
+      "mapsSearch": "Tyrna Village Root Bridge Trek Cherrapunji Meghalaya",
+      "imageQuery": "Tyrna village trailhead stone steps Nongriat Meghalaya"
+    },
+    {
+      "name": "Krem Liat Prah Cave",
+      "category": "cave",
+      "description": "The longest sandstone cave in the world at over 31 km, Krem Liat Prah near Shnongrim (accessible with a guide from Cherrapunji) is a river cave with passages up to 30 metres wide. Explored only since 1993, much of the cave remains unmapped. The accessible section features underground rivers, boulder banks, and extraordinary fossil formations. A dedicated caving guide is essential.",
+      "whyVisit": "The world's longest sandstone cave — 31 km of passages in the Jaintia Hills, with active underground rivers and prehistoric formations.",
+      "bestTime": "November to March for lower underground water levels",
+      "duration": "Full day with guide",
+      "mapsSearch": "Krem Liat Prah Cave Meghalaya Jaintia Hills",
+      "imageQuery": "Krem Liat Prah cave sandstone Meghalaya caving"
+    },
+    {
+      "name": "Sohra (Cherrapunji) Village Bazaar",
+      "category": "market",
+      "description": "The weekly Wednesday market at the Sohra bazaar is the social and economic centre of the surrounding War Khasi villages. Produce from remote highland farms — black rice (Nongkynmaw), dried smoked fish from the Umiam River, jungle tubers, betel nut, banana flower, and medicinal plants — arrives by head-load from valleys hours away. The market operates from 7 am to noon and draws people from 20+ surrounding villages.",
+      "whyVisit": "An authentic mountain market where forest and river produce reaches buyers through a social gathering that is culturally unchanged for generations.",
+      "bestTime": "Wednesday mornings from October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Sohra Cherrapunji Bazaar Wednesday Market Meghalaya",
+      "imageQuery": "Sohra Cherrapunji bazaar tribal market Meghalaya produce"
+    },
+    {
+      "name": "Thangkharang Park and Bangladesh View",
+      "category": "viewpoint",
+      "description": "Thangkharang Park sits on the southern edge of the Cherrapunji plateau and offers the most unobstructed view into the Bangladesh plains from Indian soil. The park contains a small garden and viewpoints where — on clear days — the Bangladesh floodplain stretches to the horizon 500 metres below. The Kinshiang Falls (100 metres) and the smaller Kynrem Falls are also visible from within the park.",
+      "whyVisit": "The most panoramic view of Bangladesh from Indian territory, combined with two visible waterfalls from a single park.",
+      "bestTime": "October to January for clearest Bangladesh plains view",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thangkharang Park Cherrapunji Meghalaya",
+      "imageQuery": "Thangkharang Park Bangladesh plains view Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Kynrem Falls",
+      "category": "waterfall",
+      "description": "A 305-metre triple-stage waterfall within Thangkharang Park, Kynrem is one of the tallest waterfalls in India and flows with considerable volume from July to October. The three distinct drops are visible from the park viewpoint with the forest-covered plateau rim framing each tier. The name translates to 'standing stone' in Khasi, referring to a sacred monolith at the head of the falls.",
+      "whyVisit": "A 305-metre triple-tier waterfall viewable from within a park — the height and three-stage structure make it one of India's most impressive cascades.",
+      "bestTime": "July to October for full flow",
+      "duration": "1 hour within Thangkharang Park",
+      "mapsSearch": "Kynrem Falls Thangkharang Park Cherrapunji Meghalaya",
+      "imageQuery": "Kynrem Falls triple stage Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Wei Sawdong Falls",
+      "category": "waterfall",
+      "description": "A three-tiered waterfall 27 km from Cherrapunji, Wei Sawdong is dramatically less visited than the main sites but arguably more beautiful in its forest setting. The three tiers descend through dense subtropical jungle into a natural swimming pool at the base. The 1 km access trail crosses a river twice and passes through a bamboo grove. The lower pool is calm enough for swimming from November to March.",
+      "whyVisit": "A swimmable three-tier waterfall in pristine forest setting with no crowds — one of the genuine hidden gems of the Cherrapunji area.",
+      "bestTime": "November to February for swimming; July to October for full flow",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wei Sawdong Falls Cherrapunji Meghalaya",
+      "imageQuery": "Wei Sawdong Falls jungle pool Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Ramhah Falls and Village",
+      "category": "waterfall",
+      "description": "An unmarked waterfall 15 km from Cherrapunji visible from the road through the forest canopy, Ramhah is reached via a small Khasi village where locals sell banana wine. The fall drops 80 metres directly into the village boundary, and during monsoon the spray reaches the nearest houses. The combination of a functioning village community and a powerful waterfall a stone's throw from the houses is genuinely striking.",
+      "whyVisit": "A powerful waterfall that lands within the boundary of a traditional Khasi village — an intimate encounter between nature and community life.",
+      "bestTime": "July to November",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ramhah Falls Cherrapunji Meghalaya village",
+      "imageQuery": "Ramhah Falls Khasi village Cherrapunji Meghalaya waterfall"
+    },
+    {
+      "name": "Orange Root Bridge, Mynteng",
+      "category": "nature",
+      "description": "A single-tier living root bridge in the village of Mynteng, closer to Cherrapunji town than Nongriat and reached by a shorter 45-minute trail. The bridge is maintained by the village community and is in excellent condition. The surrounding area has secondary jungle with tree ferns and wild cardamom, and the quieter trail means the experience is more solitary than the popular Nongriat descent.",
+      "whyVisit": "A functioning living root bridge reachable in under an hour — ideal for those who cannot manage the full Nongriat day hike.",
+      "bestTime": "October to April",
+      "duration": "2-3 hours",
+      "mapsSearch": "Living Root Bridge Mynteng Cherrapunji Meghalaya",
+      "imageQuery": "single root bridge Mynteng Cherrapunji Meghalaya trail"
+    },
+    {
+      "name": "Mawkysiang Village Homestay Trek",
+      "category": "adventure",
+      "description": "A two-day trekking circuit from Cherrapunji that passes through three War Khasi villages — Mawkysiang, Mawthang, and Siej — connected by stone trails through forest and paddy terraces. Homestays in traditional thatched-roof longhouses are available. The route passes a single-tier root bridge, two river crossings, and a plateau-edge viewpoint that sees almost no tourist traffic.",
+      "whyVisit": "A multi-day trek through War Khasi highland villages staying in traditional homes — the most immersive cultural experience in the Cherrapunji area.",
+      "bestTime": "October to March",
+      "duration": "2 days",
+      "mapsSearch": "Mawkysiang Village Trek Cherrapunji Meghalaya",
+      "imageQuery": "War Khasi village trek Cherrapunji Meghalaya stone path"
+    },
+    {
+      "name": "Nohwet Village Bamboo Bridge",
+      "category": "nature",
+      "description": "Deep in the Nongriat valley beyond the double-decker bridge, the community of Nohwet maintains a large bamboo suspension bridge across the Umshiang River rebuilt every year before monsoon — a testament to the knowledge of local materials engineering passed through generations. The construction process in late October is itself a fascinating community event.",
+      "whyVisit": "A seasonal bamboo bridge rebuilt annually by community labour — a living example of traditional Khasi structural engineering completely distinct from the root bridges.",
+      "bestTime": "November to March (after seasonal rebuild)",
+      "duration": "Additional 1-2 hours from Nongriat",
+      "mapsSearch": "Nohwet Village Bamboo Bridge Nongriat Meghalaya",
+      "imageQuery": "Nohwet bamboo bridge Umshiang river Meghalaya"
+    },
+    {
+      "name": "Mawsynram Village (World's Wettest Place)",
+      "category": "nature",
+      "description": "Mawsynram 25 km from Cherrapunji holds the Guinness World Record for highest average annual rainfall at 11,872 mm — marginally exceeding Cherrapunji. The village itself is unremarkable but the surrounding landscape during monsoon is extraordinary: every surface is dripping, clouds move at walking pace, and waterfalls erupt from every hillside. The Mawjymbuin Cave inside contains a stalagmite formation revered as a Shiva lingam.",
+      "whyVisit": "Standing in the world's wettest place during monsoon — where the rain is not a weather event but a permanent condition of existence.",
+      "bestTime": "June to October for the full monsoon experience; October to March for accessible travel",
+      "duration": "Half day with travel from Cherrapunji",
+      "mapsSearch": "Mawsynram Village World Wettest Place Meghalaya",
+      "imageQuery": "Mawsynram village monsoon rain Meghalaya wettest place"
+    },
+    {
+      "name": "Lum Diengiei Peak Trek",
+      "category": "adventure",
+      "description": "A challenging single-day summit trek 10 km from Cherrapunji, Lum Diengiei rises to 1,466 metres through dense broadleaf forest. The summit is a rocky clearing with 360-degree views of the Cherrapunji plateau and the deep valleys leading to Bangladesh. The trail passes through land protected by traditional Khasi law, and bird diversity along the forested route is among the highest in Meghalaya.",
+      "whyVisit": "An undiscovered summit trek near Cherrapunji with excellent endemnic forest birds and plateau panoramas.",
+      "bestTime": "October to February",
+      "duration": "6-7 hours",
+      "mapsSearch": "Lum Diengiei Peak Trek Cherrapunji Meghalaya",
+      "imageQuery": "Lum Diengiei peak trek Cherrapunji Meghalaya forest"
+    },
+    {
+      "name": "Khoh Ramhah (Ramhah Rock)",
+      "category": "nature",
+      "description": "A sacred monolithic rock 20 metres tall near Sohra village, Khoh Ramhah is venerated in Khasi tradition as the home of a powerful spirit. The rock stands isolated in a clearing, and local Niam Khasi practitioners leave offerings of rice beer and betel nut at its base. Few foreign visitors reach it, and the surrounding agricultural landscape of millet terraces and orange orchards is genuinely scenic.",
+      "whyVisit": "An imposing sacred monolith at the centre of active Khasi animist faith practice — rare access to living non-Abrahamic highland religion.",
+      "bestTime": "October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Khoh Ramhah Sacred Rock Sohra Cherrapunji Meghalaya",
+      "imageQuery": "Khoh Ramhah monolith sacred rock Cherrapunji Meghalaya"
+    },
+    {
+      "name": "Nongriat Swimming Holes (Blue Lagoon)",
+      "category": "adventure",
+      "description": "Beyond the double-decker root bridge in the Nongriat valley, a series of natural pools in the Umshiang River have water of startling turquoise clarity. The deepest and most famous, known locally as the Blue Lagoon, is 4 metres deep with a naturally carved rock diving platform. The water is cold year-round but the colour and the surrounding dense jungle make this one of the most beautiful natural swim spots in Northeast India.",
+      "whyVisit": "A remote jungle swimming hole with turquoise water — accessible only by completing the full valley descent to the root bridge.",
+      "bestTime": "October to April for clear water",
+      "duration": "1-2 hours at the pools; part of the full Nongriat day",
+      "mapsSearch": "Nongriat Blue Lagoon Swimming Pool Meghalaya",
+      "imageQuery": "Nongriat blue lagoon swimming hole Meghalaya turquoise river"
+    },
+    {
+      "name": "Cheerapunjee Holiday Resort Orange Orchard",
+      "category": "nature",
+      "description": "The Cherrapunji area is one of the few places in India where orange cultivation thrives at altitude. Local farms around Sohra maintain small orange orchards harvested in November and December. Several roadside sellers offer fresh-squeezed Khasi orange juice — smaller and more intensely flavoured than commercial varieties. The scent during harvest season along the Cherrapunji road is distinctive and memorable.",
+      "whyVisit": "Khasi highland oranges are among India's most flavourful, and picking or buying directly from roadside orchards in November is a sensory delight.",
+      "bestTime": "November to December during harvest",
+      "duration": "30 minutes",
+      "mapsSearch": "Cherrapunji Orange Orchard Sohra Meghalaya",
+      "imageQuery": "Cherrapunji orange orchard Khasi harvest Meghalaya"
+    },
+    {
+      "name": "Phe Phe Falls",
+      "category": "waterfall",
+      "description": "A hidden waterfall 35 km from Cherrapunji near Mawsynram, Phe Phe requires a 45-minute river walk with several knee-deep crossings to reach. The payoff is a 30-metre fall plunging into a perfectly circular natural pool of electric-blue water, surrounded by canyon walls that never see direct sunlight. Almost no tourists reach it; the river approach is the entire experience.",
+      "whyVisit": "A circle-pool waterfall reachable only by river walk — the blue water and canyon walls create the most otherworldly waterfall scene near Cherrapunji.",
+      "bestTime": "October to March for clearest water and manageable river crossings",
+      "duration": "3-4 hours",
+      "mapsSearch": "Phe Phe Falls Mawsynram Meghalaya",
+      "imageQuery": "Phe Phe Falls blue pool canyon Meghalaya river"
+    }
+  ]
+}

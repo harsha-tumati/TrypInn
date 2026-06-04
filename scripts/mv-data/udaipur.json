@@ -1,0 +1,260 @@
+{
+  "slug": "udaipur",
+  "name": "Udaipur",
+  "state": "Rajasthan",
+  "tagline": "The City of Lakes where royalty meets romance",
+  "categories": ["heritage", "lake", "historical"],
+  "highlights": ["shimmering lake palaces at sunset", "medieval forts and ornate havelis"],
+  "attractions": [
+    {
+      "name": "City Palace",
+      "category": "palace",
+      "description": "The largest palace complex in Rajasthan, built over 400 years by successive Mewar maharanas, rises dramatically above Lake Pichola. Its labyrinthine courtyards, peacock mosaics, mirrored chambers, and ornate balconies blend Rajput, Mughal, and European architectural styles. The palace museum houses an extraordinary collection of miniature paintings, royal armor, and crystal. Views from the upper terraces sweep across the shimmering lake.",
+      "whyVisit": "No single structure better captures the grandeur and artistic legacy of the Mewar dynasty.",
+      "bestTime": "Morning, 9–11 AM before crowds peak",
+      "duration": "3-4 hours",
+      "mapsSearch": "City Palace Udaipur Rajasthan",
+      "imageQuery": "City Palace Udaipur lake"
+    },
+    {
+      "name": "Lake Pichola",
+      "category": "lake",
+      "description": "A glittering 4 km artificial lake created in 1362, framed by the Aravalli Hills and the marble-white City Palace. The lake's two famed island palaces — Jag Niwas and Jag Mandir — rise serenely from the water. Sunset boat rides are among the most iconic experiences in India, with the palace facades glowing amber and pink as the light fades across the water.",
+      "whyVisit": "The boat ride at dusk, with palaces and ghats lit by the setting sun, is simply unforgettable.",
+      "bestTime": "Sunset boat ride, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lake Pichola Udaipur",
+      "imageQuery": "Lake Pichola Udaipur sunset"
+    },
+    {
+      "name": "Lake Palace (Taj Lake Palace)",
+      "category": "palace",
+      "description": "Built in 1746 by Maharana Jagat Singh II, this white marble palace appears to float on Lake Pichola like a marble mirage. Once the royal summer retreat, it is now a legendary heritage hotel. Its floodlit silhouette at night, accessible by boat from the City Palace jetty, is one of India's most photographed images. Non-guests can visit for a meal or cocktail with advance reservation.",
+      "whyVisit": "Dining in a floating 18th-century palace on a Rajasthani lake is a once-in-a-lifetime experience.",
+      "bestTime": "Evening, October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taj Lake Palace Udaipur",
+      "imageQuery": "Lake Palace Udaipur floating marble"
+    },
+    {
+      "name": "Jag Mandir Island Palace",
+      "category": "palace",
+      "description": "Rising from the southern end of Lake Pichola, Jag Mandir is a 17th-century island palace known as the 'Lake Garden Palace.' Its ornate chattris, elephant sculptures, and the Gul Mahal pavilion make it a stunning retreat. Reached by a short boat ride, the island gardens offer sweeping views of the City Palace and the Aravalli Hills. Mughal emperor Shah Jahan reportedly found inspiration here for the Taj Mahal.",
+      "whyVisit": "The island garden café and architecture provide a peaceful escape from the mainland.",
+      "bestTime": "Morning, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Jag Mandir Island Palace Udaipur",
+      "imageQuery": "Jag Mandir island palace Udaipur"
+    },
+    {
+      "name": "Sajjangarh Palace (Monsoon Palace)",
+      "category": "palace",
+      "description": "Perched atop the 944-metre Bansdara peak of the Aravalli range, Sajjangarh was built by Maharana Sajjan Singh in 1884 as a monsoon retreat and astronomical centre. The ruined white palace commands panoramic views over Udaipur, its lakes, and the surrounding hills. At dusk, the city spreads out in shades of gold and blue far below, making this one of Rajasthan's finest viewpoints.",
+      "whyVisit": "The 360-degree sunset panorama of Udaipur's lakes and rooftops is spectacular.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Sajjangarh Monsoon Palace Udaipur",
+      "imageQuery": "Sajjangarh Monsoon Palace Udaipur hilltop"
+    },
+    {
+      "name": "Fateh Sagar Lake",
+      "category": "lake",
+      "description": "A large reservoir north of the city, connected to Lake Pichola by a canal, Fateh Sagar is edged by the Aravalli Hills and dotted with three islands. Nehru Park on the largest island is a popular weekend destination. The promenade along the lake's eastern shore is a favourite evening walk, with boat rides, roadside corn vendors, and views of Moti Magri hill. Udaipur Solar Observatory sits on one island.",
+      "whyVisit": "The lake promenade at dusk, with the hills reflected in calm water, is quintessentially Udaipur.",
+      "bestTime": "Evening, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Fateh Sagar Lake Udaipur",
+      "imageQuery": "Fateh Sagar Lake Udaipur promenade"
+    },
+    {
+      "name": "Jagdish Temple",
+      "category": "temple",
+      "description": "Built in 1651 by Maharana Jagat Singh I, this three-storey Indo-Aryan temple dedicated to Lord Vishnu is the largest and most magnificent temple in Udaipur. Its 79-step entrance stairway flanked by brass elephant statues, intricate carvings of deities, and constant ritual activity create a vibrant spiritual atmosphere. The sanctum houses a black stone image of Lord Vishnu as Jagannath, and evening aarti is particularly atmospheric.",
+      "whyVisit": "Evening aarti here, with chanting and incense smoke rising against carved stone, is deeply atmospheric.",
+      "bestTime": "Evening aarti, 7–8 PM",
+      "duration": "1 hour",
+      "mapsSearch": "Jagdish Temple Udaipur",
+      "imageQuery": "Jagdish Temple Udaipur carvings"
+    },
+    {
+      "name": "Saheliyon Ki Bari (Garden of the Maidens)",
+      "category": "garden",
+      "description": "Commissioned by Maharana Sangram Singh II in the 18th century as a garden retreat for the royal ladies-in-waiting, this intimate pleasure garden features marble fountains, lotus pools, carved kiosks, and elephant-shaped fountains that still function. Shaded by massive trees and cooled by its many water features, the garden is a peaceful sanctuary. The fountains were designed to be powered solely by rainfall-fed pressure from Fateh Sagar.",
+      "whyVisit": "A rare, beautifully preserved example of royal Mewar garden design and water engineering.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Saheliyon Ki Bari Udaipur",
+      "imageQuery": "Saheliyon Ki Bari garden Udaipur fountains"
+    },
+    {
+      "name": "Bagore Ki Haveli",
+      "category": "heritage",
+      "description": "Built by Amar Chand Badwa, prime minister of Mewar in the 18th century, this sprawling 138-room haveli on the Gangaur Ghat showcases the opulence of the Mewar nobility. Now a museum, it displays antique royal costumes, vintage photographs, hookahs, and the world's largest turban. Every evening the ground floor hosts a celebrated folk dance performance featuring puppet shows, Kalbeliya, and Bhavai dances.",
+      "whyVisit": "The evening cultural show is the best place in Udaipur to experience traditional Rajasthani folk arts.",
+      "bestTime": "Evening for cultural show, 7–8 PM",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Bagore Ki Haveli Udaipur",
+      "imageQuery": "Bagore Ki Haveli Udaipur cultural show"
+    },
+    {
+      "name": "Gangaur Ghat",
+      "category": "heritage",
+      "description": "One of Udaipur's most picturesque lakeside ghats, Gangaur Ghat sits at the foot of the City Palace complex along Lake Pichola. Stone steps descend to the water's edge, flanked by carved arches and colourful boats. It is the departure point for lake boat rides and transforms into a riot of colour and ceremony during the Gangaur festival in March–April, when processions and idols are launched from these very steps.",
+      "whyVisit": "This ghat at sunrise, with mist on the lake and early bathers, offers the most atmospheric photography in Udaipur.",
+      "bestTime": "Sunrise or late afternoon",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Gangaur Ghat Udaipur",
+      "imageQuery": "Gangaur Ghat Udaipur lake boats"
+    },
+    {
+      "name": "Shilpgram Crafts Village",
+      "category": "heritage",
+      "description": "A living museum of rural arts spread across 70 acres west of Fateh Sagar Lake, Shilpgram was established by the government to preserve and showcase traditional crafts of western India. Replica huts from five states display authentic lifestyles, while resident artisans demonstrate pottery, weaving, block printing, and tribal jewelry making. The annual Shilpgram Utsav in December draws performers and craftspeople from across the country.",
+      "whyVisit": "The best place near Udaipur to buy authentic tribal handicrafts directly from artisans.",
+      "bestTime": "Morning, October to March",
+      "duration": "2 hours",
+      "mapsSearch": "Shilpgram Crafts Village Udaipur",
+      "imageQuery": "Shilpgram craft village Udaipur artisans"
+    },
+    {
+      "name": "Vintage Car Museum",
+      "category": "museum",
+      "description": "Housed in a restored garage on the grounds of the Garden Hotel, the Udaipur Vintage Car Museum displays the royal family of Mewar's extraordinary personal fleet. Rolls-Royces, Cadillacs, Mercedes-Benzes, and a 1934 Vauxhall are among the 22 meticulously maintained vehicles. Star exhibits include the 1934 Rolls-Royce Phantom used to transport Queen Elizabeth II and a convertible used in the James Bond film 'Octopussy,' which was filmed in Udaipur.",
+      "whyVisit": "The Bond car and the Mewar maharajas' fleet tell a fascinating story of royal indulgence.",
+      "bestTime": "Morning, any season",
+      "duration": "45 minutes",
+      "mapsSearch": "Vintage Car Museum Udaipur",
+      "imageQuery": "Vintage Car Museum Udaipur Rolls Royce"
+    },
+    {
+      "name": "Kumbhalgarh Fort",
+      "category": "fort",
+      "description": "Rising above the Aravalli Hills 82 km north of Udaipur, Kumbhalgarh is a UNESCO World Heritage Site built by Maharana Kumbha in the 15th century. Its boundary wall stretches 36 km — the second longest continuous wall in the world after the Great Wall of China — enclosing 360 temples and the birthplace of Maharana Pratap. The fort's position at 1,100 m offers breathtaking views across the Aravalli range.",
+      "whyVisit": "The 36 km wall and the dramatic hilltop setting make it one of India's most impressive fortresses.",
+      "bestTime": "Morning, October to February",
+      "duration": "4-5 hours",
+      "mapsSearch": "Kumbhalgarh Fort Rajasthan",
+      "imageQuery": "Kumbhalgarh Fort wall Rajasthan"
+    },
+    {
+      "name": "Ranakpur Jain Temples",
+      "category": "temple",
+      "description": "Built in the 15th century and set in a forested valley 96 km from Udaipur, the Ranakpur Chaumukha Temple dedicated to Adinatha is among the finest Jain temples in the world. The complex contains 1,444 intricately carved marble pillars — no two identical — supporting 29 halls under 80 domes. Sunlight filtering through the latticed marble screens creates shifting patterns of shadow and light across the cool interior.",
+      "whyVisit": "The 1,444 uniquely carved pillars represent one of the greatest achievements of medieval Indian stonework.",
+      "bestTime": "Morning, noon light through marble screens",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ranakpur Jain Temple Rajasthan",
+      "imageQuery": "Ranakpur Jain Temple marble pillars"
+    },
+    {
+      "name": "Eklingji Temple Complex",
+      "category": "temple",
+      "description": "Located 22 km north of Udaipur at Kailashpuri, the Eklingji temple complex comprises 108 temples dedicated to Lord Shiva, the patron deity of the Mewar rulers. The main temple, rebuilt in the 15th century, houses a four-faced black marble lingam. The complex bustles every Monday with devotees, and the maharana of Udaipur still pays regular homage here as a tradition spanning centuries.",
+      "whyVisit": "One of Rajasthan's most sacred Shaivite shrines with an unbroken royal tradition of worship.",
+      "bestTime": "Monday mornings for active worship",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Eklingji Temple Udaipur",
+      "imageQuery": "Eklingji Temple Udaipur Shiva"
+    },
+    {
+      "name": "Haldi Ghati",
+      "category": "heritage",
+      "description": "This narrow mountain pass in the Aravalli Hills, 40 km from Udaipur, was the site of the legendary 1576 Battle of Haldighati where Maharana Pratap and his Chetak horse fought against the Mughal forces of Akbar. Named for its yellow soil resembling turmeric (haldi), the pass holds a museum, the samadhi (memorial) of Chetak, and the battlefield site that remains a powerful symbol of Rajput pride and resistance.",
+      "whyVisit": "A deeply evocative site for understanding the heroic legacy of Maharana Pratap.",
+      "bestTime": "Morning, October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Haldighati Rajasthan",
+      "imageQuery": "Haldighati pass Rajasthan Maharana Pratap"
+    },
+    {
+      "name": "Dudh Talai Lake and Musical Garden",
+      "category": "park",
+      "description": "A small, peaceful lake south of Lake Pichola, connected to it by a channel, Dudh Talai features a pleasant lakeside park and the Machi Magra hills where a musical fountain show operates in the evenings. The Deen Dayal Upadhyay Park on the hillside provides excellent panoramic views of Lake Pichola and the City Palace. Rope ways connect the park to the hilltop viewpoints.",
+      "whyVisit": "The hilltop viewpoint here gives a less-visited but stunning perspective of Lake Pichola.",
+      "bestTime": "Evening for the fountain show",
+      "duration": "1.5 hours",
+      "mapsSearch": "Dudh Talai Lake Udaipur",
+      "imageQuery": "Dudh Talai Lake Udaipur sunset"
+    },
+    {
+      "name": "Ahar Museum and Cenotaphs",
+      "category": "heritage",
+      "description": "On the eastern edge of Udaipur, Ahar is an archaeological site dating back 4,000 years to a Chalcolithic civilization. The museum displays artefacts including copper tools, pottery, and skeletal remains from excavations. Adjacent are the royal cenotaphs (chhatris) of the Mewar rulers — 19 large and 300 smaller marble memorials built at the cremation ground of the Mewar dynasty — a hauntingly beautiful and largely overlooked site.",
+      "whyVisit": "The royal cenotaph complex is one of Rajasthan's most atmospheric and undervisited heritage sites.",
+      "bestTime": "Morning, October to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Ahar Cenotaphs Museum Udaipur",
+      "imageQuery": "Ahar cenotaphs Udaipur royal chhatris"
+    },
+    {
+      "name": "Sukhadia Circle Fountain",
+      "category": "park",
+      "description": "Udaipur's most popular public gathering space, Sukhadia Circle features a large illuminated fountain at the centre of a roundabout on the northern approach to the city. The surrounding garden and promenade draw evening crowds for ice cream, street food, and family walks. The fountain's coloured lights after dark create a festive atmosphere, and the circle is surrounded by the city's best street-food carts selling churma, kachori, and local snacks.",
+      "whyVisit": "The ideal spot to join local evening life and sample authentic Rajasthani street snacks.",
+      "bestTime": "Evening after sunset",
+      "duration": "45 minutes",
+      "mapsSearch": "Sukhadia Circle Udaipur",
+      "imageQuery": "Sukhadia Circle fountain Udaipur evening"
+    },
+    {
+      "name": "Neemach Mata Temple",
+      "category": "temple",
+      "description": "Perched on a hilltop above Fateh Sagar Lake, Neemach Mata Temple is reached by a steep stairway of roughly 150 steps. The hilltop is crowned with a small but active shrine to the goddess Neemach Mata. The real draw is the breathtaking panoramic view from the summit — encompassing Fateh Sagar, the city, and the Aravalli range stretching to the horizon. Sunsets viewed from here are among the finest in Udaipur.",
+      "whyVisit": "The panoramic view from this lesser-known hilltop temple is arguably better than any rooftop restaurant.",
+      "bestTime": "Sunset, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Neemach Mata Temple Udaipur",
+      "imageQuery": "Neemach Mata Temple Udaipur hilltop view"
+    },
+    {
+      "name": "Ambrai Ghat",
+      "category": "heritage",
+      "description": "A quieter, atmospheric ghat on the western bank of Lake Pichola in the Amet Haveli area, Ambrai Ghat offers unobstructed views directly across to the City Palace and the Lake Palace. At dusk, with the palaces lit against the fading sky, the view from these stone steps is extraordinary. The adjacent Ambrai Restaurant is one of the most scenic dining spots in India, with tables set at the water's edge.",
+      "whyVisit": "The view of City Palace and Lake Palace from this ghat at dusk is the most romantic vista in Udaipur.",
+      "bestTime": "Sunset, dinner time",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Ambrai Ghat Udaipur",
+      "imageQuery": "Ambrai Ghat Udaipur City Palace view"
+    },
+    {
+      "name": "Jaisamand Lake (Dhebar Lake)",
+      "category": "lake",
+      "description": "Located 48 km southeast of Udaipur, Jaisamand is Asia's second-largest artificial lake, built in 1691 by Maharana Jai Singh by damming the Gomti River. The marble dam wall, royal cenotaphs, and Hawa Mahal pavilion at the water's edge are beautifully constructed. The lake's shores are home to Bhil and Mina tribal villages and the Jaisamand Wildlife Sanctuary. The boat ride to the marble island is serene and seldom crowded.",
+      "whyVisit": "A vast, tranquil lake with royal architecture that almost no other tourist visits — total peace.",
+      "bestTime": "Morning, October to February",
+      "duration": "3 hours",
+      "mapsSearch": "Jaisamand Lake Udaipur",
+      "imageQuery": "Jaisamand Lake Udaipur dam"
+    },
+    {
+      "name": "Gulab Bagh and Zoo",
+      "category": "garden",
+      "description": "Udaipur's largest garden, Gulab Bagh (Rose Garden), was laid out by Maharana Sajjan Singh in the late 19th century and covers 100 acres in the heart of the city. Named for its extensive collection of roses, the garden also contains a library, a toy train, a small zoo, and a deer park. The Saraswati Library inside the garden, established in 1878, is one of the oldest public libraries in Rajasthan.",
+      "whyVisit": "The peaceful gardens and historic library offer a surprising green retreat in the city centre.",
+      "bestTime": "Morning, November to February",
+      "duration": "1.5 hours",
+      "mapsSearch": "Gulab Bagh Zoo Udaipur",
+      "imageQuery": "Gulab Bagh garden Udaipur rose"
+    },
+    {
+      "name": "Badi Lake (Jiyan Sagar)",
+      "category": "lake",
+      "description": "A little-visited reservoir 12 km from Udaipur, Badi Lake was built by Maharana Raj Singh I in the 17th century. Its stepped stone ghats, small island shrine, and frame of the Aravalli Hills make it remarkably scenic. The lake attracts migratory birds in winter and is a favourite spot for local photographers seeking reflections of the hills. Almost no tourist groups visit — the entire lakeside feels like a well-kept local secret.",
+      "whyVisit": "An utterly peaceful lake with royal ghats and birdlife that almost no tourist ever finds.",
+      "bestTime": "Early morning, November to February for birds",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Badi Lake Udaipur Rajasthan",
+      "imageQuery": "Badi Lake Udaipur Aravalli hills"
+    },
+    {
+      "name": "Karni Mata Temple and Ropeway, Machla Magra",
+      "category": "temple",
+      "description": "Accessible by ropeway from near Dudh Talai Lake, the Karni Mata Temple sits atop the Machla Magra (Fish Hill) range. The hilltop complex combines a small but active temple with sweeping views across all of Udaipur's lakes simultaneously — Lake Pichola, Fateh Sagar, and the City Palace all visible from the same vantage point. Most visitors overlook this spot, arriving instead at the crowded City Palace, making this a genuine hidden gem.",
+      "whyVisit": "The only viewpoint in Udaipur where you can see all three lakes at once — and almost no one comes here.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "1 hour",
+      "mapsSearch": "Karni Mata Temple Ropeway Udaipur Machla Magra",
+      "imageQuery": "Machla Magra ropeway Udaipur three lakes view"
+    }
+  ]
+}

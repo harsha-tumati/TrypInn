@@ -1,0 +1,447 @@
+{
+  "id": "amritsar",
+  "name": "Amritsar",
+  "state": "Punjab",
+  "slug": "amritsar",
+  "tagline": "The spiritual and cultural heart of Sikhism",
+  "categories": [
+    "spiritual",
+    "heritage",
+    "city"
+  ],
+  "introduction": "Welcome to Amritsar, where history meets beauty. This travel guide to Amritsar highlights the must visit places in Amritsar, best places to visit in Amritsar, tourist attractions in Amritsar, and things to do in Amritsar.",
+  "metaTitle": "Top Things to Do in Amritsar | Travel Guide to Amritsar - TrypInn",
+  "metaDescription": "Explore the best places to visit in Amritsar, top things to do in Amritsar, and must visit places in Amritsar. Your complete travel guide to Amritsar by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=1200&q=60",
+    "alt": "Amritsar travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "amritsar-golden-temple",
+      "name": "Golden Temple",
+      "slug": "golden-temple",
+      "description": "Golden Temple is a must-see religious in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Capture stunning photographs at Golden Temple.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Golden Temple, Amritsar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Golden Temple in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Golden Temple in Amritsar"
+      },
+      "position": 1
+    },
+    {
+      "id": "amritsar-jallianwala-bagh",
+      "name": "Jallianwala Bagh",
+      "slug": "jallianwala-bagh",
+      "description": "A crown jewel of Amritsar, Jallianwala Bagh captivates every traveler with enchanting beauty. No trip to Amritsar is complete without visiting Jallianwala Bagh.",
+      "whyVisit": "Jallianwala Bagh stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jallianwala Bagh, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Jallianwala Bagh in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Jallianwala Bagh in Amritsar"
+      },
+      "position": 2
+    },
+    {
+      "id": "amritsar-wagah-border-ceremony",
+      "name": "Wagah Border Ceremony",
+      "slug": "wagah-border-ceremony",
+      "description": "Wagah Border Ceremony is one of the most iconic landmarks in Amritsar, drawing visitors with its timeless charm. This heritage offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Wagah Border Ceremony promises an unforgettable experience.",
+      "whyVisit": "A visit to Wagah Border Ceremony is essential for understanding Amritsar.",
+      "bestTime": "Nov-Feb",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wagah Border Ceremony, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Wagah Border Ceremony in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Wagah Border Ceremony in Amritsar"
+      },
+      "position": 3
+    },
+    {
+      "id": "amritsar-partition-museum",
+      "name": "Partition Museum",
+      "slug": "partition-museum",
+      "description": "Located in scenic Amritsar, Partition Museum offers an immersive experience into local culture. Exploring Partition Museum is one of the top things to do in Amritsar.",
+      "whyVisit": "Partition Museum stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Partition Museum, Amritsar",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Partition Museum in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Partition Museum in Amritsar"
+      },
+      "position": 4
+    },
+    {
+      "id": "amritsar-durgiana-temple",
+      "name": "Durgiana Temple",
+      "slug": "durgiana-temple",
+      "description": "Durgiana Temple is a must-see temple in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Durgiana Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Durgiana Temple, Amritsar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Durgiana Temple in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Durgiana Temple in Amritsar"
+      },
+      "position": 5
+    },
+    {
+      "id": "amritsar-gobindgarh-fort",
+      "name": "Gobindgarh Fort",
+      "slug": "gobindgarh-fort",
+      "description": "Gobindgarh Fort is one of the most iconic landmarks in Amritsar, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gobindgarh Fort promises an unforgettable experience.",
+      "whyVisit": "Gobindgarh Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Gobindgarh Fort, Amritsar",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Gobindgarh Fort in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Gobindgarh Fort in Amritsar"
+      },
+      "position": 6
+    },
+    {
+      "id": "amritsar-maharaja-ranjit-singh-museum",
+      "name": "Maharaja Ranjit Singh Museum",
+      "slug": "maharaja-ranjit-singh-museum",
+      "description": "Maharaja Ranjit Singh Museum is one of the most iconic landmarks in Amritsar, drawing visitors with its timeless charm. This museum offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Maharaja Ranjit Singh Museum promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Maharaja Ranjit Singh Museum.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Maharaja Ranjit Singh Museum, Amritsar",
+      "category": "museum",
+      "imagePrompt": "Ultra realistic travel photography, Maharaja Ranjit Singh Museum in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Maharaja Ranjit Singh Museum in Amritsar"
+      },
+      "position": 7
+    },
+    {
+      "id": "amritsar-jama-masjid-khairuddin",
+      "name": "Jama Masjid Khairuddin",
+      "slug": "jama-masjid-khairuddin",
+      "description": "Located in scenic Amritsar, Jama Masjid Khairuddin offers an immersive experience into local culture. Exploring Jama Masjid Khairuddin is one of the top things to do in Amritsar.",
+      "whyVisit": "Jama Masjid Khairuddin stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jama Masjid Khairuddin, Amritsar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Jama Masjid Khairuddin in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Jama Masjid Khairuddin in Amritsar"
+      },
+      "position": 8
+    },
+    {
+      "id": "amritsar-ram-bagh-garden",
+      "name": "Ram Bagh Garden",
+      "slug": "ram-bagh-garden",
+      "description": "Ram Bagh Garden is a must-see garden in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Capture stunning photographs at Ram Bagh Garden.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Ram Bagh Garden, Amritsar",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Ram Bagh Garden in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Ram Bagh Garden in Amritsar"
+      },
+      "position": 9
+    },
+    {
+      "id": "amritsar-pul-kanjri",
+      "name": "Pul Kanjri",
+      "slug": "pul-kanjri",
+      "description": "Nestled in Amritsar, Pul Kanjri stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Pul Kanjri is among the best things to do in Amritsar.",
+      "whyVisit": "Pul Kanjri stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pul Kanjri, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Pul Kanjri in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Pul Kanjri in Amritsar"
+      },
+      "position": 10
+    },
+    {
+      "id": "amritsar-bhalla-s-chaat-street",
+      "name": "Bhalla's Chaat Street",
+      "slug": "bhalla-s-chaat-street",
+      "description": "Bhalla's Chaat Street is one of the most iconic landmarks in Amritsar, drawing visitors with its timeless charm. This market offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bhalla's Chaat Street promises an unforgettable experience.",
+      "whyVisit": "Bhalla's Chaat Street stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhalla's Chaat Street, Amritsar",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Bhalla's Chaat Street in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Bhalla's Chaat Street in Amritsar"
+      },
+      "position": 11
+    },
+    {
+      "id": "amritsar-hall-bazaar",
+      "name": "Hall Bazaar",
+      "slug": "hall-bazaar",
+      "description": "Located in scenic Amritsar, Hall Bazaar offers an immersive experience into local culture. Exploring Hall Bazaar is one of the top things to do in Amritsar.",
+      "whyVisit": "Hall Bazaar stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "Half day",
+      "mapsSearch": "Hall Bazaar, Amritsar",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Hall Bazaar in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Hall Bazaar in Amritsar"
+      },
+      "position": 12
+    },
+    {
+      "id": "amritsar-gurdwara-baba-atal",
+      "name": "Gurdwara Baba Atal",
+      "slug": "gurdwara-baba-atal",
+      "description": "A crown jewel of Amritsar, Gurdwara Baba Atal captivates every traveler with enchanting beauty. No trip to Amritsar is complete without visiting Gurdwara Baba Atal.",
+      "whyVisit": "Experience the unmatched beauty of Gurdwara Baba Atal.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Gurdwara Baba Atal, Amritsar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Gurdwara Baba Atal in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Gurdwara Baba Atal in Amritsar"
+      },
+      "position": 13
+    },
+    {
+      "id": "amritsar-serai-amanat-khan",
+      "name": "Serai Amanat Khan",
+      "slug": "serai-amanat-khan",
+      "description": "Serai Amanat Khan is a must-see heritage in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Experience the unmatched beauty of Serai Amanat Khan.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Serai Amanat Khan, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Serai Amanat Khan in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Serai Amanat Khan in Amritsar"
+      },
+      "position": 14
+    },
+    {
+      "id": "amritsar-mata-lal-devi-temple",
+      "name": "Mata Lal Devi Temple",
+      "slug": "mata-lal-devi-temple",
+      "description": "Mata Lal Devi Temple is a must-see temple in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Mata Lal Devi Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Mata Lal Devi Temple, Amritsar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mata Lal Devi Temple in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Mata Lal Devi Temple in Amritsar"
+      },
+      "position": 15
+    },
+    {
+      "id": "amritsar-sadda-pind",
+      "name": "Sadda Pind",
+      "slug": "sadda-pind",
+      "description": "Nestled in Amritsar, Sadda Pind stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Sadda Pind is among the best things to do in Amritsar.",
+      "whyVisit": "Experience the unmatched beauty of Sadda Pind.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Sadda Pind, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Sadda Pind in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Sadda Pind in Amritsar"
+      },
+      "position": 16
+    },
+    {
+      "id": "amritsar-khalsa-college",
+      "name": "Khalsa College",
+      "slug": "khalsa-college",
+      "description": "Nestled in Amritsar, Khalsa College stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Khalsa College is among the best things to do in Amritsar.",
+      "whyVisit": "Capture stunning photographs at Khalsa College.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khalsa College, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Khalsa College in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Khalsa College in Amritsar"
+      },
+      "position": 17
+    },
+    {
+      "id": "amritsar-sun-city-amritsar",
+      "name": "Sun City Amritsar",
+      "slug": "sun-city-amritsar",
+      "description": "Nestled in Amritsar, Sun City Amritsar stands as a testament to architectural brilliance. This renowned park attracts tourists who come to admire its stunning design. A visit to Sun City Amritsar is among the best things to do in Amritsar.",
+      "whyVisit": "Experience the unmatched beauty of Sun City Amritsar.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sun City Amritsar, Amritsar",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Sun City Amritsar in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Sun City Amritsar in Amritsar"
+      },
+      "position": 18
+    },
+    {
+      "id": "amritsar-bharawan-da-dhaba",
+      "name": "Bharawan Da Dhaba",
+      "slug": "bharawan-da-dhaba",
+      "description": "Bharawan Da Dhaba is a must-see market in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Bharawan Da Dhaba offers a perfect blend of history and scenery.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bharawan Da Dhaba, Amritsar",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Bharawan Da Dhaba in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Bharawan Da Dhaba in Amritsar"
+      },
+      "position": 19
+    },
+    {
+      "id": "amritsar-gurdwara-tarn-taran-sahib",
+      "name": "Gurdwara Tarn Taran Sahib",
+      "slug": "gurdwara-tarn-taran-sahib",
+      "description": "Gurdwara Tarn Taran Sahib is one of the most iconic landmarks in Amritsar, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gurdwara Tarn Taran Sahib promises an unforgettable experience.",
+      "whyVisit": "A visit to Gurdwara Tarn Taran Sahib is essential for understanding Amritsar.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Gurdwara Tarn Taran Sahib, Amritsar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Gurdwara Tarn Taran Sahib in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Gurdwara Tarn Taran Sahib in Amritsar"
+      },
+      "position": 20
+    },
+    {
+      "id": "amritsar-harike-wetland",
+      "name": "Harike Wetland",
+      "slug": "harike-wetland",
+      "description": "Located in scenic Amritsar, Harike Wetland offers an immersive experience into local culture. Exploring Harike Wetland is one of the top things to do in Amritsar.",
+      "whyVisit": "Capture stunning photographs at Harike Wetland.",
+      "bestTime": "Safari",
+      "duration": "2-3 hours",
+      "mapsSearch": "Harike Wetland, Amritsar",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Harike Wetland in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Harike Wetland in Amritsar"
+      },
+      "position": 21
+    },
+    {
+      "id": "amritsar-rambagh-gardens",
+      "name": "Rambagh Gardens",
+      "slug": "rambagh-gardens",
+      "description": "Nestled in Amritsar, Rambagh Gardens stands as a testament to architectural brilliance. This renowned garden attracts tourists who come to admire its stunning design. A visit to Rambagh Gardens is among the best things to do in Amritsar.",
+      "whyVisit": "A visit to Rambagh Gardens is essential for understanding Amritsar.",
+      "bestTime": "Spring",
+      "duration": "1-2 hours",
+      "mapsSearch": "Rambagh Gardens, Amritsar",
+      "category": "garden",
+      "imagePrompt": "Ultra realistic travel photography, Rambagh Gardens in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Rambagh Gardens in Amritsar"
+      },
+      "position": 22
+    },
+    {
+      "id": "amritsar-company-bagh",
+      "name": "Company Bagh",
+      "slug": "company-bagh",
+      "description": "Company Bagh is a must-see park in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "A visit to Company Bagh is essential for understanding Amritsar.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Company Bagh, Amritsar",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Company Bagh in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Company Bagh in Amritsar"
+      },
+      "position": 23
+    },
+    {
+      "id": "amritsar-gurdwara-chheharta-sahib",
+      "name": "Gurdwara Chheharta Sahib",
+      "slug": "gurdwara-chheharta-sahib",
+      "description": "A crown jewel of Amritsar, Gurdwara Chheharta Sahib captivates every traveler with enchanting beauty. No trip to Amritsar is complete without visiting Gurdwara Chheharta Sahib.",
+      "whyVisit": "Capture stunning photographs at Gurdwara Chheharta Sahib.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Gurdwara Chheharta Sahib, Amritsar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Gurdwara Chheharta Sahib in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Gurdwara Chheharta Sahib in Amritsar"
+      },
+      "position": 24
+    },
+    {
+      "id": "amritsar-amritsar-heritage-walk",
+      "name": "Amritsar Heritage Walk",
+      "slug": "amritsar-heritage-walk",
+      "description": "Amritsar Heritage Walk is a must-see heritage in Amritsar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Amritsar.",
+      "whyVisit": "Amritsar Heritage Walk offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Amritsar Heritage Walk, Amritsar",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Amritsar Heritage Walk in Amritsar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Amritsar Heritage Walk in Amritsar"
+      },
+      "position": 25
+    }
+  ]
+}

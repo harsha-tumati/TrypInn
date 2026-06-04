@@ -1,0 +1,447 @@
+{
+  "id": "ajmer",
+  "name": "Ajmer",
+  "state": "Rajasthan",
+  "slug": "ajmer",
+  "tagline": "Holy shrine city ringed by Aravalli hills",
+  "categories": [
+    "religious",
+    "lake",
+    "fort"
+  ],
+  "introduction": "Planning a trip to Ajmer? This travel guide to Ajmer covers the must visit places in Ajmer, the best places to visit in Ajmer, top tourist attractions in Ajmer, and exciting things to do in Ajmer.",
+  "metaTitle": "Top Things to Do in Ajmer | Travel Guide to Ajmer - TrypInn",
+  "metaDescription": "Discover must visit places in Ajmer, best places to visit in Ajmer, and top tourist attractions in Ajmer. Plan your perfect trip with TrypInn travel guide to Ajmer.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+    "alt": "Ajmer travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "ajmer-hazratbal-shrine",
+      "name": "Hazratbal Shrine",
+      "slug": "hazratbal-shrine",
+      "description": "Hazratbal Shrine is a must-see religious in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "Hazratbal Shrine stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Hazratbal Shrine, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Hazratbal Shrine in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Hazratbal Shrine in Ajmer"
+      },
+      "position": 1
+    },
+    {
+      "id": "ajmer-paravur-lake",
+      "name": "Paravur Lake",
+      "slug": "paravur-lake",
+      "description": "Paravur Lake is a must-see lake in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "A visit to Paravur Lake is essential for understanding Ajmer.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Paravur Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Paravur Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Paravur Lake in Ajmer"
+      },
+      "position": 2
+    },
+    {
+      "id": "ajmer-kannur-fort",
+      "name": "Kannur Fort",
+      "slug": "kannur-fort",
+      "description": "A crown jewel of Ajmer, Kannur Fort captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Kannur Fort.",
+      "whyVisit": "Experience the unmatched beauty of Kannur Fort.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Kannur Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kannur Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Kannur Fort in Ajmer"
+      },
+      "position": 3
+    },
+    {
+      "id": "ajmer-ziarat-nund-rishi",
+      "name": "Ziarat Nund Rishi",
+      "slug": "ziarat-nund-rishi",
+      "description": "A crown jewel of Ajmer, Ziarat Nund Rishi captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Ziarat Nund Rishi.",
+      "whyVisit": "Ziarat Nund Rishi offers a perfect blend of history and scenery.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Ziarat Nund Rishi, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Nund Rishi in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Ziarat Nund Rishi in Ajmer"
+      },
+      "position": 4
+    },
+    {
+      "id": "ajmer-sattal-lake",
+      "name": "Sattal Lake",
+      "slug": "sattal-lake",
+      "description": "A crown jewel of Ajmer, Sattal Lake captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Sattal Lake.",
+      "whyVisit": "Sattal Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sattal Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sattal Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Sattal Lake in Ajmer"
+      },
+      "position": 5
+    },
+    {
+      "id": "ajmer-kumbhalgarh-fort",
+      "name": "Kumbhalgarh Fort",
+      "slug": "kumbhalgarh-fort",
+      "description": "Kumbhalgarh Fort is one of the most iconic landmarks in Ajmer, drawing visitors with its timeless charm. This fort offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kumbhalgarh Fort promises an unforgettable experience.",
+      "whyVisit": "Kumbhalgarh Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kumbhalgarh Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kumbhalgarh Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Kumbhalgarh Fort in Ajmer"
+      },
+      "position": 6
+    },
+    {
+      "id": "ajmer-shrine-of-shah-hamdan",
+      "name": "Shrine of Shah Hamdan",
+      "slug": "shrine-of-shah-hamdan",
+      "description": "Shrine of Shah Hamdan is a must-see religious in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "A visit to Shrine of Shah Hamdan is essential for understanding Ajmer.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Shrine of Shah Hamdan, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Shrine of Shah Hamdan in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Shrine of Shah Hamdan in Ajmer"
+      },
+      "position": 7
+    },
+    {
+      "id": "ajmer-pushkar-lake",
+      "name": "Pushkar Lake",
+      "slug": "pushkar-lake",
+      "description": "Located in scenic Ajmer, Pushkar Lake offers an immersive experience into local culture. Exploring Pushkar Lake is one of the top things to do in Ajmer.",
+      "whyVisit": "Capture stunning photographs at Pushkar Lake.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Pushkar Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pushkar Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Pushkar Lake in Ajmer"
+      },
+      "position": 8
+    },
+    {
+      "id": "ajmer-murud-janjira",
+      "name": "Murud Janjira",
+      "slug": "murud-janjira",
+      "description": "Murud Janjira is a must-see fort in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "Murud Janjira stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "Murud Janjira, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Murud Janjira in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Murud Janjira in Ajmer"
+      },
+      "position": 9
+    },
+    {
+      "id": "ajmer-ajmer-sharif-dargah",
+      "name": "Ajmer Sharif Dargah",
+      "slug": "ajmer-sharif-dargah",
+      "description": "Nestled in Ajmer, Ajmer Sharif Dargah stands as a testament to architectural brilliance. This renowned religious attracts tourists who come to admire its stunning design. A visit to Ajmer Sharif Dargah is among the best things to do in Ajmer.",
+      "whyVisit": "Ajmer Sharif Dargah offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ajmer Sharif Dargah, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ajmer Sharif Dargah in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Ajmer Sharif Dargah in Ajmer"
+      },
+      "position": 10
+    },
+    {
+      "id": "ajmer-sankey-tank",
+      "name": "Sankey Tank",
+      "slug": "sankey-tank",
+      "description": "Nestled in Ajmer, Sankey Tank stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Sankey Tank is among the best things to do in Ajmer.",
+      "whyVisit": "A visit to Sankey Tank is essential for understanding Ajmer.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sankey Tank, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sankey Tank in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Sankey Tank in Ajmer"
+      },
+      "position": 11
+    },
+    {
+      "id": "ajmer-red-fort",
+      "name": "Red Fort",
+      "slug": "red-fort",
+      "description": "Nestled in Ajmer, Red Fort stands as a testament to architectural brilliance. This renowned fort attracts tourists who come to admire its stunning design. A visit to Red Fort is among the best things to do in Ajmer.",
+      "whyVisit": "Capture stunning photographs at Red Fort.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Red Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Red Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Red Fort in Ajmer"
+      },
+      "position": 12
+    },
+    {
+      "id": "ajmer-moinuddin-chishti-dargah",
+      "name": "Moinuddin Chishti Dargah",
+      "slug": "moinuddin-chishti-dargah",
+      "description": "Moinuddin Chishti Dargah is one of the most iconic landmarks in Ajmer, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Moinuddin Chishti Dargah promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Moinuddin Chishti Dargah.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Moinuddin Chishti Dargah, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Moinuddin Chishti Dargah in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Moinuddin Chishti Dargah in Ajmer"
+      },
+      "position": 13
+    },
+    {
+      "id": "ajmer-pichola-lake",
+      "name": "Pichola Lake",
+      "slug": "pichola-lake",
+      "description": "A crown jewel of Ajmer, Pichola Lake captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Pichola Lake.",
+      "whyVisit": "Pichola Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "1-2 hours",
+      "mapsSearch": "Pichola Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pichola Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Pichola Lake in Ajmer"
+      },
+      "position": 14
+    },
+    {
+      "id": "ajmer-kangra-fort",
+      "name": "Kangra Fort",
+      "slug": "kangra-fort",
+      "description": "Kangra Fort is a must-see fort in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "Kangra Fort stands out as one of the most rewarding experiences.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kangra Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Kangra Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Kangra Fort in Ajmer"
+      },
+      "position": 15
+    },
+    {
+      "id": "ajmer-ziarat-makhdoom-sahib",
+      "name": "Ziarat Makhdoom Sahib",
+      "slug": "ziarat-makhdoom-sahib",
+      "description": "A crown jewel of Ajmer, Ziarat Makhdoom Sahib captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Ziarat Makhdoom Sahib.",
+      "whyVisit": "A visit to Ziarat Makhdoom Sahib is essential for understanding Ajmer.",
+      "bestTime": "Festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ziarat Makhdoom Sahib, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Makhdoom Sahib in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Ziarat Makhdoom Sahib in Ajmer"
+      },
+      "position": 16
+    },
+    {
+      "id": "ajmer-bellandur-lake",
+      "name": "Bellandur Lake",
+      "slug": "bellandur-lake",
+      "description": "Bellandur Lake is a must-see lake in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "Capture stunning photographs at Bellandur Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bellandur Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Bellandur Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Bellandur Lake in Ajmer"
+      },
+      "position": 17
+    },
+    {
+      "id": "ajmer-nahargarh-fort",
+      "name": "Nahargarh Fort",
+      "slug": "nahargarh-fort",
+      "description": "Located in scenic Ajmer, Nahargarh Fort offers an immersive experience into local culture. Exploring Nahargarh Fort is one of the top things to do in Ajmer.",
+      "whyVisit": "Nahargarh Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nahargarh Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Nahargarh Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Nahargarh Fort in Ajmer"
+      },
+      "position": 18
+    },
+    {
+      "id": "ajmer-ziarat-lal-ded",
+      "name": "Ziarat Lal Ded",
+      "slug": "ziarat-lal-ded",
+      "description": "Ziarat Lal Ded is a must-see religious in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "A visit to Ziarat Lal Ded is essential for understanding Ajmer.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Ziarat Lal Ded, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Lal Ded in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Ziarat Lal Ded in Ajmer"
+      },
+      "position": 19
+    },
+    {
+      "id": "ajmer-vembanad-lake",
+      "name": "Vembanad Lake",
+      "slug": "vembanad-lake",
+      "description": "Located in scenic Ajmer, Vembanad Lake offers an immersive experience into local culture. Exploring Vembanad Lake is one of the top things to do in Ajmer.",
+      "whyVisit": "A visit to Vembanad Lake is essential for understanding Ajmer.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vembanad Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Vembanad Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Vembanad Lake in Ajmer"
+      },
+      "position": 20
+    },
+    {
+      "id": "ajmer-st-angelo-fort",
+      "name": "St Angelo Fort",
+      "slug": "st-angelo-fort",
+      "description": "Located in scenic Ajmer, St Angelo Fort offers an immersive experience into local culture. Exploring St Angelo Fort is one of the top things to do in Ajmer.",
+      "whyVisit": "St Angelo Fort offers a perfect blend of history and scenery.",
+      "bestTime": "Sunset",
+      "duration": "Sunset",
+      "mapsSearch": "St Angelo Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, St Angelo Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "St Angelo Fort in Ajmer"
+      },
+      "position": 21
+    },
+    {
+      "id": "ajmer-ziarat-peer-baba",
+      "name": "Ziarat Peer Baba",
+      "slug": "ziarat-peer-baba",
+      "description": "Located in scenic Ajmer, Ziarat Peer Baba offers an immersive experience into local culture. Exploring Ziarat Peer Baba is one of the top things to do in Ajmer.",
+      "whyVisit": "Ziarat Peer Baba stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Ziarat Peer Baba, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Peer Baba in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Ziarat Peer Baba in Ajmer"
+      },
+      "position": 22
+    },
+    {
+      "id": "ajmer-madiwala-lake",
+      "name": "Madiwala Lake",
+      "slug": "madiwala-lake",
+      "description": "A crown jewel of Ajmer, Madiwala Lake captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Madiwala Lake.",
+      "whyVisit": "Madiwala Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sep-Nov",
+      "duration": "1-2 hours",
+      "mapsSearch": "Madiwala Lake, Ajmer",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Madiwala Lake in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Madiwala Lake in Ajmer"
+      },
+      "position": 23
+    },
+    {
+      "id": "ajmer-raigad-fort",
+      "name": "Raigad Fort",
+      "slug": "raigad-fort",
+      "description": "A crown jewel of Ajmer, Raigad Fort captivates every traveler with enchanting beauty. No trip to Ajmer is complete without visiting Raigad Fort.",
+      "whyVisit": "A visit to Raigad Fort is essential for understanding Ajmer.",
+      "bestTime": "Early morning",
+      "duration": "Sunset",
+      "mapsSearch": "Raigad Fort, Ajmer",
+      "category": "fort",
+      "imagePrompt": "Ultra realistic travel photography, Raigad Fort in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Raigad Fort in Ajmer"
+      },
+      "position": 24
+    },
+    {
+      "id": "ajmer-nund-rishi-shrine",
+      "name": "Nund Rishi Shrine",
+      "slug": "nund-rishi-shrine",
+      "description": "Nund Rishi Shrine is a must-see religious in Ajmer, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Ajmer.",
+      "whyVisit": "Nund Rishi Shrine offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Nund Rishi Shrine, Ajmer",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Nund Rishi Shrine in Ajmer, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Nund Rishi Shrine in Ajmer"
+      },
+      "position": 25
+    }
+  ]
+}

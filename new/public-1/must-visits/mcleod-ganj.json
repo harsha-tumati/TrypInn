@@ -1,0 +1,447 @@
+{
+  "id": "mcleod-ganj",
+  "name": "McLeod Ganj",
+  "state": "Himachal Pradesh",
+  "slug": "mcleod-ganj",
+  "tagline": "Little Lhasa of India",
+  "categories": [
+    "monastery",
+    "nature",
+    "viewpoint"
+  ],
+  "introduction": "Planning a trip to McLeod Ganj? This travel guide to McLeod Ganj covers the must visit places in McLeod Ganj, the best places to visit in McLeod Ganj, top tourist attractions in McLeod Ganj, and exciting things to do in McLeod Ganj.",
+  "metaTitle": "Best Places to Visit in McLeod Ganj | Tourist Attractions in McLeod Ganj - TrypInn",
+  "metaDescription": "Discover must visit places in McLeod Ganj, best places to visit in McLeod Ganj, and top tourist attractions in McLeod Ganj. Plan your perfect trip with TrypInn travel guide to McLeod Ganj.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1564507592033-7e4f13a7e7b6?fm=webp&w=1200&q=60",
+    "alt": "McLeod Ganj travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "mcleod-ganj-sela-pass",
+      "name": "Sela Pass",
+      "slug": "sela-pass",
+      "description": "Located in scenic McLeod Ganj, Sela Pass offers an immersive experience into local culture. Exploring Sela Pass is one of the top things to do in McLeod Ganj.",
+      "whyVisit": "Sela Pass offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Sela Pass, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Sela Pass in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Sela Pass in McLeod Ganj"
+      },
+      "position": 1
+    },
+    {
+      "id": "mcleod-ganj-sattal",
+      "name": "Sattal",
+      "slug": "sattal",
+      "description": "Sattal is a must-see nature in McLeod Ganj, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in McLeod Ganj.",
+      "whyVisit": "Sattal offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Sattal, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Sattal in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Sattal in McLeod Ganj"
+      },
+      "position": 2
+    },
+    {
+      "id": "mcleod-ganj-honeymoon-point",
+      "name": "Honeymoon Point",
+      "slug": "honeymoon-point",
+      "description": "Nestled in McLeod Ganj, Honeymoon Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Honeymoon Point is among the best things to do in McLeod Ganj.",
+      "whyVisit": "Experience the unmatched beauty of Honeymoon Point.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Honeymoon Point, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Honeymoon Point in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Honeymoon Point in McLeod Ganj"
+      },
+      "position": 3
+    },
+    {
+      "id": "mcleod-ganj-khinnamanii-monastery",
+      "name": "Khinnamanii Monastery",
+      "slug": "khinnamanii-monastery",
+      "description": "Nestled in McLeod Ganj, Khinnamanii Monastery stands as a testament to architectural brilliance. This renowned monastery attracts tourists who come to admire its stunning design. A visit to Khinnamanii Monastery is among the best things to do in McLeod Ganj.",
+      "whyVisit": "Capture stunning photographs at Khinnamanii Monastery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Khinnamanii Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Khinnamanii Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Khinnamanii Monastery in McLeod Ganj"
+      },
+      "position": 4
+    },
+    {
+      "id": "mcleod-ganj-rajaji-national-park",
+      "name": "Rajaji National Park",
+      "slug": "rajaji-national-park",
+      "description": "Rajaji National Park is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rajaji National Park promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Rajaji National Park.",
+      "bestTime": "Year-round",
+      "duration": "Multi-day",
+      "mapsSearch": "Rajaji National Park, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rajaji National Park in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Rajaji National Park in McLeod Ganj"
+      },
+      "position": 5
+    },
+    {
+      "id": "mcleod-ganj-lovers-point",
+      "name": "Lovers Point",
+      "slug": "lovers-point",
+      "description": "Nestled in McLeod Ganj, Lovers Point stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Lovers Point is among the best things to do in McLeod Ganj.",
+      "whyVisit": "Experience the unmatched beauty of Lovers Point.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Lovers Point, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Lovers Point in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Lovers Point in McLeod Ganj"
+      },
+      "position": 6
+    },
+    {
+      "id": "mcleod-ganj-dirang-monastery",
+      "name": "Dirang Monastery",
+      "slug": "dirang-monastery",
+      "description": "Located in scenic McLeod Ganj, Dirang Monastery offers an immersive experience into local culture. Exploring Dirang Monastery is one of the top things to do in McLeod Ganj.",
+      "whyVisit": "Capture stunning photographs at Dirang Monastery.",
+      "bestTime": "Jun-Aug",
+      "duration": "Half day",
+      "mapsSearch": "Dirang Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Dirang Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Dirang Monastery in McLeod Ganj"
+      },
+      "position": 7
+    },
+    {
+      "id": "mcleod-ganj-pithoragarh",
+      "name": "Pithoragarh",
+      "slug": "pithoragarh",
+      "description": "Nestled in McLeod Ganj, Pithoragarh stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Pithoragarh is among the best things to do in McLeod Ganj.",
+      "whyVisit": "Experience the unmatched beauty of Pithoragarh.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Pithoragarh, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Pithoragarh in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Pithoragarh in McLeod Ganj"
+      },
+      "position": 8
+    },
+    {
+      "id": "mcleod-ganj-ananthagiri-view",
+      "name": "Ananthagiri View",
+      "slug": "ananthagiri-view",
+      "description": "A crown jewel of McLeod Ganj, Ananthagiri View captivates every traveler with enchanting beauty. No trip to McLeod Ganj is complete without visiting Ananthagiri View.",
+      "whyVisit": "Capture stunning photographs at Ananthagiri View.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ananthagiri View, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Ananthagiri View in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Ananthagiri View in McLeod Ganj"
+      },
+      "position": 9
+    },
+    {
+      "id": "mcleod-ganj-samten-yongcha-monastery",
+      "name": "Samten Yongcha Monastery",
+      "slug": "samten-yongcha-monastery",
+      "description": "A crown jewel of McLeod Ganj, Samten Yongcha Monastery captivates every traveler with enchanting beauty. No trip to McLeod Ganj is complete without visiting Samten Yongcha Monastery.",
+      "whyVisit": "Experience the unmatched beauty of Samten Yongcha Monastery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Samten Yongcha Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Samten Yongcha Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Samten Yongcha Monastery in McLeod Ganj"
+      },
+      "position": 10
+    },
+    {
+      "id": "mcleod-ganj-bhimtal",
+      "name": "Bhimtal",
+      "slug": "bhimtal",
+      "description": "Bhimtal is a must-see nature in McLeod Ganj, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in McLeod Ganj.",
+      "whyVisit": "Capture stunning photographs at Bhimtal.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhimtal, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bhimtal in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Bhimtal in McLeod Ganj"
+      },
+      "position": 11
+    },
+    {
+      "id": "mcleod-ganj-panorama-point",
+      "name": "Panorama Point",
+      "slug": "panorama-point",
+      "description": "Panorama Point is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Panorama Point promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Panorama Point.",
+      "bestTime": "Sunrise",
+      "duration": "30-60 min",
+      "mapsSearch": "Panorama Point, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Panorama Point in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Panorama Point in McLeod Ganj"
+      },
+      "position": 12
+    },
+    {
+      "id": "mcleod-ganj-gorsam-chorten",
+      "name": "Gorsam Chorten",
+      "slug": "gorsam-chorten",
+      "description": "A crown jewel of McLeod Ganj, Gorsam Chorten captivates every traveler with enchanting beauty. No trip to McLeod Ganj is complete without visiting Gorsam Chorten.",
+      "whyVisit": "Gorsam Chorten stands out as one of the most rewarding experiences.",
+      "bestTime": "Jun-Aug",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gorsam Chorten, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Gorsam Chorten in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Gorsam Chorten in McLeod Ganj"
+      },
+      "position": 13
+    },
+    {
+      "id": "mcleod-ganj-valley-of-flowers",
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "Located in scenic McLeod Ganj, Valley of Flowers offers an immersive experience into local culture. Exploring Valley of Flowers is one of the top things to do in McLeod Ganj.",
+      "whyVisit": "Valley of Flowers stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Valley of Flowers, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers in McLeod Ganj"
+      },
+      "position": 14
+    },
+    {
+      "id": "mcleod-ganj-kodaikanal-view",
+      "name": "Kodaikanal View",
+      "slug": "kodaikanal-view",
+      "description": "Kodaikanal View is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kodaikanal View promises an unforgettable experience.",
+      "whyVisit": "Kodaikanal View stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunset",
+      "duration": "Quick",
+      "mapsSearch": "Kodaikanal View, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kodaikanal View in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Kodaikanal View in McLeod Ganj"
+      },
+      "position": 15
+    },
+    {
+      "id": "mcleod-ganj-urgelling-monastery",
+      "name": "Urgelling Monastery",
+      "slug": "urgelling-monastery",
+      "description": "A crown jewel of McLeod Ganj, Urgelling Monastery captivates every traveler with enchanting beauty. No trip to McLeod Ganj is complete without visiting Urgelling Monastery.",
+      "whyVisit": "Capture stunning photographs at Urgelling Monastery.",
+      "bestTime": "Morning prayer",
+      "duration": "2-3 hours",
+      "mapsSearch": "Urgelling Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Urgelling Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Urgelling Monastery in McLeod Ganj"
+      },
+      "position": 16
+    },
+    {
+      "id": "mcleod-ganj-bageshwar",
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "Bageshwar is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bageshwar promises an unforgettable experience.",
+      "whyVisit": "A visit to Bageshwar is essential for understanding McLeod Ganj.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Bageshwar, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bageshwar in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Bageshwar in McLeod Ganj"
+      },
+      "position": 17
+    },
+    {
+      "id": "mcleod-ganj-skandagiri-view",
+      "name": "Skandagiri View",
+      "slug": "skandagiri-view",
+      "description": "A crown jewel of McLeod Ganj, Skandagiri View captivates every traveler with enchanting beauty. No trip to McLeod Ganj is complete without visiting Skandagiri View.",
+      "whyVisit": "Experience the unmatched beauty of Skandagiri View.",
+      "bestTime": "Clear days",
+      "duration": "Quick",
+      "mapsSearch": "Skandagiri View, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Skandagiri View in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Skandagiri View in McLeod Ganj"
+      },
+      "position": 18
+    },
+    {
+      "id": "mcleod-ganj-lumla-monastery",
+      "name": "Lumla Monastery",
+      "slug": "lumla-monastery",
+      "description": "Lumla Monastery is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This monastery offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Lumla Monastery promises an unforgettable experience.",
+      "whyVisit": "Lumla Monastery stands out as one of the most rewarding experiences.",
+      "bestTime": "May-Sep",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lumla Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Lumla Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Lumla Monastery in McLeod Ganj"
+      },
+      "position": 19
+    },
+    {
+      "id": "mcleod-ganj-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nanda Devi National Park is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nanda Devi National Park promises an unforgettable experience.",
+      "whyVisit": "Nanda Devi National Park offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nanda Devi National Park, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in McLeod Ganj"
+      },
+      "position": 20
+    },
+    {
+      "id": "mcleod-ganj-kolli-hills-view",
+      "name": "Kolli Hills View",
+      "slug": "kolli-hills-view",
+      "description": "Located in scenic McLeod Ganj, Kolli Hills View offers an immersive experience into local culture. Exploring Kolli Hills View is one of the top things to do in McLeod Ganj.",
+      "whyVisit": "Capture stunning photographs at Kolli Hills View.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Kolli Hills View, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Kolli Hills View in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Kolli Hills View in McLeod Ganj"
+      },
+      "position": 21
+    },
+    {
+      "id": "mcleod-ganj-taktsang-palphug-monastery",
+      "name": "Taktsang Palphug Monastery",
+      "slug": "taktsang-palphug-monastery",
+      "description": "Taktsang Palphug Monastery is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This monastery offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Taktsang Palphug Monastery promises an unforgettable experience.",
+      "whyVisit": "Taktsang Palphug Monastery offers a perfect blend of history and scenery.",
+      "bestTime": "Jun-Aug",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taktsang Palphug Monastery, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Taktsang Palphug Monastery in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Taktsang Palphug Monastery in McLeod Ganj"
+      },
+      "position": 22
+    },
+    {
+      "id": "mcleod-ganj-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "Mukteshwar is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mukteshwar promises an unforgettable experience.",
+      "whyVisit": "Mukteshwar stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Mukteshwar, McLeod Ganj",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in McLeod Ganj"
+      },
+      "position": 23
+    },
+    {
+      "id": "mcleod-ganj-clouds-end-view",
+      "name": "Clouds End View",
+      "slug": "clouds-end-view",
+      "description": "Clouds End View is one of the most iconic landmarks in McLeod Ganj, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Clouds End View promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Clouds End View.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Clouds End View, McLeod Ganj",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Clouds End View in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Clouds End View in McLeod Ganj"
+      },
+      "position": 24
+    },
+    {
+      "id": "mcleod-ganj-gorichen-peak",
+      "name": "Gorichen Peak",
+      "slug": "gorichen-peak",
+      "description": "Located in scenic McLeod Ganj, Gorichen Peak offers an immersive experience into local culture. Exploring Gorichen Peak is one of the top things to do in McLeod Ganj.",
+      "whyVisit": "Gorichen Peak offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gorichen Peak, McLeod Ganj",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Gorichen Peak in McLeod Ganj, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Gorichen Peak in McLeod Ganj"
+      },
+      "position": 25
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "slug": "shimla",
+  "name": "Shimla",
+  "state": "Himachal Pradesh",
+  "tagline": "Queen of Hills wrapped in cedar and colonial charm",
+  "categories": ["hill_station", "heritage", "adventure"],
+  "highlights": ["colonial architecture on the ridge", "toy train through himalayan valleys"],
+  "attractions": [
+    {
+      "name": "The Ridge",
+      "category": "heritage",
+      "description": "The heart of Shimla, this broad open promenade stretches across the town centre offering panoramic views of the snow-capped Himalayan ranges. Flanked by colonial-era buildings, Christ Church, and the town library, The Ridge buzzes with locals and tourists alike. The open-air space hosts cultural events and provides the most iconic vantage of Shimla's skyline.",
+      "whyVisit": "The social and scenic centrepiece of Shimla with unmatched mountain panoramas.",
+      "bestTime": "Early morning or after snowfall in winter",
+      "duration": "1-2 hours",
+      "mapsSearch": "The Ridge Shimla Himachal Pradesh",
+      "imageQuery": "The Ridge Shimla promenade mountains"
+    },
+    {
+      "name": "Christ Church",
+      "category": "heritage",
+      "description": "The second oldest church in North India, consecrated in 1857, Christ Church dominates the eastern end of The Ridge with its neo-Gothic architecture, distinctive clock tower, and stunning pre-Raphaelite stained-glass windows depicting Faith, Hope, Charity, Fortitude, Patience, and Humility. The pale yellow facade is one of Shimla's most photographed colonial landmarks.",
+      "whyVisit": "An architectural gem of the British Raj era with remarkable stained-glass artistry.",
+      "bestTime": "Morning, especially Sunday service",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Christ Church Shimla Himachal Pradesh",
+      "imageQuery": "Christ Church Shimla colonial architecture"
+    },
+    {
+      "name": "Kalka-Shimla Toy Train",
+      "category": "heritage",
+      "description": "A UNESCO World Heritage railway, the Kalka-Shimla narrow-gauge line spans 96 kilometres through 102 tunnels and over 900 bridges, climbing from 656 m to 2076 m. Built between 1898 and 1903, the toy train winds through dense forests of oak and rhododendron, crossing spectacular Barog Tunnel, offering views that have captivated travellers for over a century.",
+      "whyVisit": "One of the world's great mountain railway journeys through breathtaking Himalayan scenery.",
+      "bestTime": "October to March for clear skies",
+      "duration": "5-6 hours (full journey)",
+      "mapsSearch": "Kalka Shimla Toy Train UNESCO railway",
+      "imageQuery": "Kalka Shimla toy train UNESCO mountain railway"
+    },
+    {
+      "name": "Jakhu Temple",
+      "category": "temple",
+      "description": "Perched at 8048 feet on Jakhu Hill, this ancient temple dedicated to Lord Hanuman is one of Shimla's most visited religious sites. A 33-metre statue of Hanuman towers over the hill and is visible from much of the town. The forested trail to the summit passes through a rhesus macaque colony and rewards with sweeping 360-degree views of the Shivalik ranges.",
+      "whyVisit": "Combines spiritual significance, wildlife encounters, and the finest panorama over Shimla.",
+      "bestTime": "Sunrise or early morning before crowds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jakhu Temple Shimla Himachal Pradesh",
+      "imageQuery": "Jakhu Temple Hanuman statue Shimla hilltop"
+    },
+    {
+      "name": "Shimla State Museum",
+      "category": "museum",
+      "description": "Housed in a grand colonial building dating from 1974, the Himachal State Museum holds over 13,000 artefacts including Pahari miniature paintings, bronze sculptures, temple wood carvings, numismatic collections, and colonial-era photographs. The 19th-century mansion building itself, with its sweeping lawns and Tudor-style facade, is as much a draw as its curated galleries.",
+      "whyVisit": "The best single repository of Himachali art, culture, and history in the region.",
+      "bestTime": "Weekday mornings for fewer crowds",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Himachal State Museum Shimla",
+      "imageQuery": "Himachal State Museum Shimla colonial building"
+    },
+    {
+      "name": "Mall Road",
+      "category": "market",
+      "description": "Shimla's famous pedestrian promenade stretches nearly two kilometres, lined with Victorian-era shops, bakeries, restaurants, and handicraft stalls. Motor traffic is banned, making it a leisurely stroll past landmarks like Gaiety Theatre, Scandal Point, and the Town Hall. Tibetan curio sellers, wool shops, and Himachali shawl vendors add a vibrant bazaar character to this colonial boulevard.",
+      "whyVisit": "The living pulse of Shimla — shopping, people-watching, and colonial architecture in one street.",
+      "bestTime": "Evening when it lights up",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mall Road Shimla pedestrian promenade",
+      "imageQuery": "Mall Road Shimla evening colonial shops"
+    },
+    {
+      "name": "Gaiety Theatre",
+      "category": "heritage",
+      "description": "Built in 1887 in Victorian Gothic style, the Gaiety Theatre is one of the oldest functioning heritage theatres in Asia. Rudyard Kipling, Lord Kitchener, and countless viceroys once trod its boards. Restored to its original grandeur, it hosts regular cultural performances and allows visitors to tour its ornate interior of carved wood balconies, velvet seats, and period fittings.",
+      "whyVisit": "A living museum of colonial performing arts with a storied Raj-era history.",
+      "bestTime": "During evening cultural performances",
+      "duration": "1 hour",
+      "mapsSearch": "Gaiety Theatre Shimla Mall Road",
+      "imageQuery": "Gaiety Theatre Shimla Victorian architecture"
+    },
+    {
+      "name": "Kufri",
+      "category": "adventure",
+      "description": "Situated 16 km from Shimla at 2622 metres, Kufri is a premier winter sports destination with slopes offering skiing and snowboarding from December to February. The Himalayan Nature Park here shelters snow leopards, barking deer, and Himalayan birds. In summer, yak rides and trekking routes through apple orchards and dense fir forests keep visitors engaged.",
+      "whyVisit": "Shimla's most accessible ski and snow-play destination with bonus wildlife encounters.",
+      "bestTime": "December to February for snow sports",
+      "duration": "Half day",
+      "mapsSearch": "Kufri Shimla skiing adventure Himachal Pradesh",
+      "imageQuery": "Kufri skiing snow Himachal Pradesh"
+    },
+    {
+      "name": "Chail",
+      "category": "nature",
+      "description": "Built by Maharaja Bhupinder Singh of Patiala in 1891 after being banished from Shimla, Chail sits at 2250 metres amid thick forests of pine and rhododendron. It houses the world's highest cricket ground (2444 m), a heritage palace hotel, and a wildlife sanctuary sheltering deer, pheasants, and leopards — all within 45 km of Shimla.",
+      "whyVisit": "Quieter and greener than Shimla, with the world's highest cricket pitch as a centrepiece.",
+      "bestTime": "April to June and September to November",
+      "duration": "Full day",
+      "mapsSearch": "Chail Himachal Pradesh palace cricket ground",
+      "imageQuery": "Chail highest cricket ground Himachal Pradesh"
+    },
+    {
+      "name": "Naldehra Golf Course",
+      "category": "nature",
+      "description": "Laid out by Lord Curzon in 1905 at 2044 metres, Naldehra is one of India's oldest and most scenic golf courses, with 9 holes weaving through a cedar and oak forest. Even non-golfers come for the cedar groves, pony rides, and stunning mountain panoramas. The annual Shimla Summer Festival frequently hosts equestrian events on these meadows.",
+      "whyVisit": "One of India's most atmospheric colonial-era golf courses set inside a fragrant cedar forest.",
+      "bestTime": "May to June and September to October",
+      "duration": "Half day",
+      "mapsSearch": "Naldehra Golf Course Shimla Himachal Pradesh",
+      "imageQuery": "Naldehra golf course cedar forest Shimla"
+    },
+    {
+      "name": "Tara Devi Temple",
+      "category": "temple",
+      "description": "Sitting on a forested hilltop 11 km from Shimla at 1851 metres, Tara Devi Temple is dedicated to the goddess Tara and is revered by Buddhists and Hindus alike. The approach winds through pine forest, and the temple complex commands sweeping views over the Shimla valley and the distant Shivalik foothills. A large Buddha statue stands peacefully on the grounds.",
+      "whyVisit": "A rare syncretic Hindu-Buddhist shrine with spectacular valley views and serene forest surrounds.",
+      "bestTime": "Navratri festivals or early morning",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Tara Devi Temple Shimla Himachal Pradesh",
+      "imageQuery": "Tara Devi Temple hilltop Shimla"
+    },
+    {
+      "name": "Annandale Ground",
+      "category": "heritage",
+      "description": "A flat plateau carved from the hillside during the British Raj, Annandale served as Shimla's primary recreation ground for polo, cricket, and horse racing for the colonial elite. Today maintained by the Indian Army, the ground retains its manicured turf and colonial heritage buildings. Visitors can explore the small army heritage museum on the premises.",
+      "whyVisit": "A rare flat green oasis in hilly Shimla steeped in Raj-era sporting history.",
+      "bestTime": "Morning for a peaceful walk",
+      "duration": "1 hour",
+      "mapsSearch": "Annandale Shimla army ground",
+      "imageQuery": "Annandale ground Shimla colonial army"
+    },
+    {
+      "name": "Chadwick Falls",
+      "category": "waterfall",
+      "description": "Located 7 km from Shimla near Summer Hill, Chadwick Falls plunges approximately 67 metres through dense forests of oak and rhododendron on the Glen forest trail. The falls are at their most dramatic during and just after the monsoon season, when the cascade turns thunderous. The walk to the falls passes through one of the greenest patches of forest near the city.",
+      "whyVisit": "The closest dramatic waterfall to Shimla, accessible via a pleasant forest trek.",
+      "bestTime": "July to September (monsoon)",
+      "duration": "2-3 hours including trek",
+      "mapsSearch": "Chadwick Falls Shimla Himachal Pradesh",
+      "imageQuery": "Chadwick Falls waterfall Shimla forest"
+    },
+    {
+      "name": "Summer Hill",
+      "category": "nature",
+      "description": "A quiet suburb 5 km from Shimla city centre, Summer Hill is where Mahatma Gandhi stayed at the Rajkumari Amrit Kaur residence during his visits to the Raj capital. The neighbourhood is blanketed in dense forest and is a departure point for the Chadwick Falls trek. The toy train stops here, making it easily accessible for a serene half-day excursion.",
+      "whyVisit": "A Gandhian heritage stop wrapped in peaceful forest, far from the Shimla tourist bustle.",
+      "bestTime": "Morning, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Summer Hill Shimla Himachal Pradesh",
+      "imageQuery": "Summer Hill Shimla forest toy train station"
+    },
+    {
+      "name": "Mashobra",
+      "category": "nature",
+      "description": "Just 12 km from Shimla, Mashobra sits amid orchards of apple, plum, and cherry trees at 2149 metres. Home to the Wildflower Hall luxury resort (originally Lord Kitchener's estate), the village is surrounded by dense deodar forests crisscrossed by walking trails. During blossom season in April, the valley turns pink and white — one of Himachal's most photogenic scenes.",
+      "whyVisit": "Apple country at its most picturesque, with heritage forest walks and orchard scenery.",
+      "bestTime": "April for blossoms, August to October for apple harvest",
+      "duration": "Half day",
+      "mapsSearch": "Mashobra Shimla apple orchards Himachal Pradesh",
+      "imageQuery": "Mashobra apple orchard blossom Shimla"
+    },
+    {
+      "name": "Shimla Scandal Point",
+      "category": "heritage",
+      "description": "At the junction of Mall Road and The Ridge, Scandal Point is said to be where the Maharaja of Patiala eloped with the Viceroy's daughter — a tale that may be apocryphal but remains delightfully persistent. Today it is a busy meeting point with splendid mountain views, street food vendors, and a statue of Lala Lajpat Rai, the independence leader.",
+      "whyVisit": "Shimla's most storied crossroads packed with colonial legend and mountain vistas.",
+      "bestTime": "Evening for atmosphere",
+      "duration": "30 minutes",
+      "mapsSearch": "Scandal Point Shimla Mall Road",
+      "imageQuery": "Scandal Point Shimla Mall Road ridge"
+    },
+    {
+      "name": "Himalayan Bird Park",
+      "category": "wildlife",
+      "description": "Tucked near the Chota Shimla area, this compact avian park maintained by the Himachal Pradesh Forest Department is home to Western Tragopan (the state bird), Monal pheasants, Snow partridges, and peacocks in semi-natural enclosures. The park provides a rare close-up look at high-altitude Himalayan bird species that are otherwise difficult to spot in the wild.",
+      "whyVisit": "The only place to reliably see Himachal's elusive state bird, the Western Tragopan.",
+      "bestTime": "Morning, year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Himalayan Bird Park Shimla Himachal Pradesh",
+      "imageQuery": "Western Tragopan Monal pheasant Himalayan bird park"
+    },
+    {
+      "name": "Sankat Mochan Temple",
+      "category": "temple",
+      "description": "A revered Hanuman temple situated on the Kalka-Shimla highway approximately 5 km from the city, Sankat Mochan commands a hillside position with excellent views of the Shimla valley and surrounding ridges. The temple is particularly busy on Tuesdays and Saturdays and hosts the colourful Sankat Mochan fair annually in October, drawing pilgrims from across Himachal.",
+      "whyVisit": "A peaceful hilltop shrine with valley views that escapes the crowds of central Shimla.",
+      "bestTime": "Tuesday and Saturday mornings or during the October fair",
+      "duration": "45 minutes",
+      "mapsSearch": "Sankat Mochan Temple Shimla Himachal Pradesh",
+      "imageQuery": "Sankat Mochan Temple Shimla valley view"
+    },
+    {
+      "name": "Tattapani Hot Springs",
+      "category": "nature",
+      "description": "Located 51 km from Shimla on the banks of the Sutlej River in Mandi district, Tattapani's sulphurous hot springs have been revered for their therapeutic properties for centuries. The springs maintain a temperature of around 54°C and bubble up directly from the riverbank. White-water rafting on the Sutlej rapids nearby makes it an adventure and wellness combination.",
+      "whyVisit": "Heal in naturally occurring hot springs beside a roaring Himalayan river.",
+      "bestTime": "October to March",
+      "duration": "Half to full day",
+      "mapsSearch": "Tattapani Hot Springs Shimla Sutlej River",
+      "imageQuery": "Tattapani hot springs Sutlej River Himachal Pradesh"
+    },
+    {
+      "name": "Kamna Devi Temple",
+      "category": "temple",
+      "description": "Perched at 2200 metres on a spur above Shimla's western edge, the small Kamna Devi Temple is reached via a 1-km forested footpath from Prospect Hill. The temple itself is modest, but the payoff is extraordinary — a 270-degree panorama taking in the Shimla townscape, the Shivalik ranges, and on clear days the distant Dhauladhar peaks above Dharamsala.",
+      "whyVisit": "Shimla's most rewarding viewpoint hiding behind a quiet forest trail and hilltop temple.",
+      "bestTime": "Clear winter mornings for full Himalayan visibility",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Kamna Devi Temple Prospect Hill Shimla",
+      "imageQuery": "Kamna Devi Prospect Hill panorama Shimla"
+    },
+    {
+      "name": "Shoolini Mata Temple",
+      "category": "temple",
+      "description": "The presiding deity of Solan district and patron goddess of Shimla region, Shoolini Mata Temple in Solan (28 km from Shimla) is a major pilgrimage site. The annual Shoolini fair in June draws hundreds of thousands. The temple sits on a forested ridge and is surrounded by a complex of smaller shrines, making the precinct a lively cultural site year-round.",
+      "whyVisit": "Experience one of Himachal's grandest religious fairs at a regionally important goddess temple.",
+      "bestTime": "Shoolini fair in June",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Shoolini Mata Temple Solan Himachal Pradesh",
+      "imageQuery": "Shoolini Mata Temple Solan Himachal Pradesh fair"
+    },
+    {
+      "name": "Craignano Nature Park",
+      "category": "park",
+      "description": "Located near Mashobra 13 km from Shimla, Craignano is a little-visited 80-acre reserve forest that once formed part of the private estate of a British officer. Trails wind through ancient cedar, oak, and rhododendron trees with abundant birdlife including Himalayan woodpeckers, flycatchers, and laughingthrushes. Entirely free of the commercial trappings found closer to the city.",
+      "whyVisit": "A genuine old-growth forest sanctuary that most Shimla tourists never discover.",
+      "bestTime": "April to June for birds and wildflowers",
+      "duration": "2-3 hours",
+      "mapsSearch": "Craignano Nature Park Mashobra Shimla",
+      "imageQuery": "Craignano forest Mashobra Shimla cedar trees"
+    },
+    {
+      "name": "Shaily Peak Trek",
+      "category": "adventure",
+      "description": "A rarely trekked summit at 3200 metres above Shimla, Shaily Peak is approached through the Shaily forest reserve from the village of Shoghi. The full-day hike traverses rhododendron thickets and high alpine meadows before topping out at a summit with unobstructed views of the Kinnaur and Spiti ranges — territory usually requiring a week-long expedition to reach otherwise.",
+      "whyVisit": "A strenuous but rewarding day-trek delivering high Himalayan panoramas with almost no other trekkers.",
+      "bestTime": "May to June and September to October",
+      "duration": "Full day (8-10 hours)",
+      "mapsSearch": "Shaily Peak Trek Shoghi Shimla Himachal Pradesh",
+      "imageQuery": "Shaily Peak alpine meadow Shimla trek"
+    },
+    {
+      "name": "Dhalli Tunnel and Cantonment",
+      "category": "heritage",
+      "description": "Dhalli Cantonment, 8 km from Shimla on the old Hindustan-Tibet Road, preserves one of the most intact Raj-era military settlements in Himachal. The tunnel through the ridge was cut manually in the 1850s. The surrounding area has barely changed in a century — stone churches, officers' bungalows, and parade grounds remain in their original configuration, virtually unknown to leisure tourists.",
+      "whyVisit": "An overlooked time-capsule of British Indian military architecture on the edge of Shimla.",
+      "bestTime": "Year-round, weekdays for quietest access",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dhalli Cantonment Shimla Himachal Pradesh",
+      "imageQuery": "Dhalli cantonment colonial Shimla old road"
+    },
+    {
+      "name": "Sipur Mahadev Temple",
+      "category": "temple",
+      "description": "Hidden in a narrow gorge of the Pabbar River Valley about 65 km from Shimla near Rampur Bushahr, the ancient Sipur Mahadev rock-cut shrine is set inside a natural cave behind a waterfall. The 8th-century Shiva lingam is draped in a perpetual mist from the falls. The site is unknown to mainstream tourism and requires a 2 km forest track walk from the nearest road.",
+      "whyVisit": "A genuinely secret cave shrine behind a waterfall — one of Himachal's most atmospheric hidden gems.",
+      "bestTime": "September to November after monsoon clears",
+      "duration": "2-3 hours including walk",
+      "mapsSearch": "Sipur Mahadev Temple Pabbar River Rampur Shimla",
+      "imageQuery": "Sipur Mahadev cave temple waterfall Pabbar valley"
+    }
+  ]
+}

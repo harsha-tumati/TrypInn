@@ -1,0 +1,250 @@
+{
+  "slug": "agra",
+  "name": "Agra",
+  "state": "Uttar Pradesh",
+  "tagline": "City of the Taj, Mughal Empire's Eternal Capital",
+  "categories": ["heritage", "historical", "city"],
+  "highlights": ["taj mahal world's greatest monument to love", "mughal empire agra fort and fatehpur sikri"],
+  "attractions": [
+    {
+      "name": "Taj Mahal",
+      "category": "heritage",
+      "description": "The world's most famous building and a UNESCO World Heritage Site, built by Mughal Emperor Shah Jahan between 1631 and 1653 as a mausoleum for his beloved wife Mumtaz Mahal. The central dome of white Makrana marble rises 73 metres; the four minarets lean slightly outward so they fall away from the tomb in an earthquake. The Pietra dura inlay work uses 28 varieties of semi-precious stone. The reflecting pool creates the famous doubled image that changes colour from pink at dawn to ivory by noon.",
+      "whyVisit": "The definitive monument to human love and Mughal artistry — one of the seven wonders of the modern world.",
+      "bestTime": "Sunrise for pink marble glow; full moon nights (pre-booked)",
+      "duration": "3-4 hours",
+      "mapsSearch": "Taj Mahal Agra Uttar Pradesh",
+      "imageQuery": "Taj Mahal sunrise marble reflection pool Agra"
+    },
+    {
+      "name": "Agra Fort (Lal Qila)",
+      "category": "fort",
+      "description": "A UNESCO World Heritage Site — a colossal Mughal fort complex covering 380,000 sq metres on the Yamuna riverbank, begun by Emperor Akbar in 1565 using red sandstone from Rajasthan. Inside the massive double walls lies a walled city containing palaces, mosques, audience halls, and gardens accumulated by Akbar, Jahangir, Shah Jahan, and Aurangzeb. The Musamman Burj tower, where Shah Jahan spent his last years gazing at the Taj Mahal, is its most poignant spot.",
+      "whyVisit": "A UNESCO fort-city housing 400 years of Mughal imperial architecture, with a heartbreaking view of the Taj.",
+      "bestTime": "Morning to avoid heat; October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Agra Fort Red Fort Uttar Pradesh",
+      "imageQuery": "Agra Fort red sandstone Mughal walls Yamuna"
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "category": "heritage",
+      "description": "A UNESCO World Heritage Site 37 km from Agra — a complete Mughal imperial city built by Emperor Akbar between 1569 and 1585 and abandoned after only 14 years, possibly due to water shortages. The sandstone complex preserves the Panch Mahal (five-storey pleasure palace), Diwan-i-Khas (private audience hall with a unique central column), Jodha Bai's palace, and the massive Buland Darwaza (Victory Gate — 54 metres high). The city is essentially a frozen-in-time 16th-century Mughal capital.",
+      "whyVisit": "A perfectly preserved 16th-century Mughal ghost city — the most complete example of Akbar-period architecture.",
+      "bestTime": "October to March; early morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Fatehpur Sikri UNESCO Agra Uttar Pradesh",
+      "imageQuery": "Fatehpur Sikri Buland Darwaza Mughal city Akbar"
+    },
+    {
+      "name": "Tomb of Itimad-ud-Daulah (Baby Taj)",
+      "category": "heritage",
+      "description": "A Mughal mausoleum built between 1622 and 1628 by Empress Nur Jahan for her father Mirza Ghiyas Beg, nicknamed the Baby Taj for its marble inlay work that directly inspired the Taj Mahal. This was the first Mughal structure built entirely of white marble with Pietra dura mosaic inlay — a prototype for the Taj. Less visited but arguably more intimate, the tomb is set in a formal charbagh garden beside the Yamuna and is especially photogenic at golden hour.",
+      "whyVisit": "The technical prototype of the Taj Mahal, built 20 years earlier — exquisite Pietra dura work without the tourist crowds.",
+      "bestTime": "Late afternoon golden hour",
+      "duration": "1-2 hours",
+      "mapsSearch": "Itmad Ud Daulah Tomb Baby Taj Agra",
+      "imageQuery": "Itmad Ud Daulah Baby Taj marble inlay Agra"
+    },
+    {
+      "name": "Mehtab Bagh (Moonlight Garden)",
+      "category": "garden",
+      "description": "A 16th-century Mughal charbagh garden on the Yamuna's north bank directly opposite the Taj Mahal, laid out by Emperor Babur and restored by the Archaeological Survey of India. The garden was originally designed so that Shah Jahan could view the Taj's reflection in the Yamuna floods. Today it provides the finest direct view of the Taj Mahal's rear facade and garden from across the river — with no ticket queues at the Taj gates — especially spectacular at sunset.",
+      "whyVisit": "The finest unobstructed sunset view of the Taj Mahal's back facade, across the Yamuna with no entry queues.",
+      "bestTime": "Sunset, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mehtab Bagh Moonlight Garden Agra Taj Mahal view",
+      "imageQuery": "Mehtab Bagh Taj Mahal view across Yamuna sunset"
+    },
+    {
+      "name": "Tomb of Akbar the Great, Sikandra",
+      "category": "heritage",
+      "description": "Emperor Akbar's self-designed mausoleum 10 km from Agra at Sikandra, begun during his lifetime and completed by Jahangir in 1613. The five-storey sandstone and marble pyramid rises 24 metres in a distinctive style that blends Hindu, Buddhist, Islamic, and Jain architectural elements — a physical manifestation of Akbar's syncretic Din-i-Ilahi philosophy. The surrounding 119-acre garden harbours spotted deer, nilgai, and langurs. The delicate inlay on the cenotaph room's ceiling is extraordinary.",
+      "whyVisit": "A pharaoh-like self-designed mausoleum embodying Akbar's revolutionary syncretic vision — surrounded by free-roaming deer.",
+      "bestTime": "Morning; October to February",
+      "duration": "2 hours",
+      "mapsSearch": "Tomb of Akbar Sikandra Agra Uttar Pradesh",
+      "imageQuery": "Akbar Tomb Sikandra Mughal sandstone garden deer"
+    },
+    {
+      "name": "Jama Masjid Agra",
+      "category": "religious",
+      "description": "Built by Shah Jahan in 1648 and dedicated to his eldest daughter Jahanara Begum, this massive congregational mosque accommodates 10,000 worshippers. The central dome is striped in red-and-white marble, and the interior courtyard measures 130x100 metres. Unlike the Delhi Jama Masjid (also by Shah Jahan), this mosque remains a working place of worship with daily prayers, and its Friday sermon draws thousands. The mosque is architecturally distinct for its black-and-white marble floor laid in a prayer-mat pattern.",
+      "whyVisit": "A magnificent congregational mosque by Shah Jahan dedicated to his daughter — less visited but equally grand.",
+      "bestTime": "Friday Jumu'ah prayer (12:30 pm); early morning",
+      "duration": "1 hour",
+      "mapsSearch": "Jama Masjid Agra Uttar Pradesh",
+      "imageQuery": "Jama Masjid Agra Shah Jahan mosque dome"
+    },
+    {
+      "name": "Chini Ka Rauza",
+      "category": "heritage",
+      "description": "A 17th-century Persian-style mausoleum 1 km from Itmad-ud-Daulah, the tomb of Allama Afzal Khan Mullah — Shah Jahan's Persian prime minister. The tomb is clad entirely in blue and white glazed Chinese-style tile work (chini ka rauza means 'China's tomb') representing the only Mughal structure with extensive enamelled tile decoration. Though partly ruined, the surviving tilework with floral arabesques and calligraphy is breathtaking. It receives only a fraction of the visitors of the nearby Taj.",
+      "whyVisit": "Agra's most unique monument — the only Mughal building clad in blue-and-white Chinese-style glazed tiles.",
+      "bestTime": "Morning for best light on tilework",
+      "duration": "45 minutes",
+      "mapsSearch": "Chini Ka Rauza Agra Yamuna riverside",
+      "imageQuery": "Chini Ka Rauza blue tile tomb Agra Mughal"
+    },
+    {
+      "name": "Kinari Bazaar (Old City Market)",
+      "category": "market",
+      "description": "Agra's centuries-old bazaar stretching from Jama Masjid through the old city, specialising in marble inlay souvenirs, zardozi (gold-thread embroidery), leather shoes, and Agra's famous petha (ash-gourd candy). The lane leading to the Jama Masjid sells traditional itr (attar) perfumes compounded in copper vessels as they have been since the Mughal period. The best marble Pietra dura workshops, where craftsmen use the same techniques as the Taj Mahal artisans, line the Taj Ganj area.",
+      "whyVisit": "Living Mughal marketplace where Taj Mahal artisans sell marble inlay and zardozi using 400-year-old techniques.",
+      "bestTime": "Morning, avoid Friday afternoons",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kinari Bazaar Agra old city market",
+      "imageQuery": "Kinari Bazaar Agra marble inlay market"
+    },
+    {
+      "name": "Ram Bagh (Aram Bagh)",
+      "category": "garden",
+      "description": "The oldest surviving Mughal garden in India, laid out by Emperor Babur in 1528 on the Yamuna bank north of Agra. The formal charbagh (four-quartered) layout with sunken flower beds, fountains, and raised terraces established the template for all subsequent Mughal gardens including those of the Taj Mahal. Babur himself was temporarily buried here before his remains were moved to Kabul. Beautifully restored by the Archaeological Survey, the garden is serene and lightly visited.",
+      "whyVisit": "India's oldest surviving Mughal garden — the prototype that inspired the Taj Mahal's own gardens, remarkably serene.",
+      "bestTime": "Morning, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ram Bagh Aram Bagh Agra Yamuna",
+      "imageQuery": "Ram Bagh Mughal garden Agra Babur Yamuna"
+    },
+    {
+      "name": "Dargah of Salim Chishti, Fatehpur Sikri",
+      "category": "religious",
+      "description": "The white marble dargah (tomb) of Sufi saint Sheikh Salim Chishti inside the Fatehpur Sikri complex, built by Emperor Akbar after the saint's prophecy enabled his son Jahangir's birth. The pierced marble jali screens (lattice windows) of the dargah are among the finest anywhere in the Mughal world, each panel a unique floral design. Pilgrims of all faiths tie threads to the jali while making wishes. The saint's tomb is tended by direct descendants of his family.",
+      "whyVisit": "The Sufi saint whose prophecy shaped the Mughal dynasty — his marble dargah has Agra's finest lattice screens.",
+      "bestTime": "Urs festival (October); Thursday evenings for qawwali",
+      "duration": "1 hour",
+      "mapsSearch": "Dargah Salim Chishti Fatehpur Sikri Agra",
+      "imageQuery": "Salim Chishti Dargah marble jali Fatehpur Sikri"
+    },
+    {
+      "name": "Agra Bear Rescue Facility (Wildlife SOS)",
+      "category": "wildlife",
+      "description": "The world's largest sloth bear sanctuary, 9 km from Agra, run by the NGO Wildlife SOS. Home to over 200 rescued dancing bears — victims of the banned Kalandar nomadic bear-dancing tradition. The facility rehabilitates bears in large naturalistic enclosures and conducts guided tours explaining the rescue stories of individual animals. Wildlife SOS also rescues leopards and elephants from Agra and the surrounding region, making this a uniquely compassionate wildlife visit.",
+      "whyVisit": "The world's largest bear sanctuary — a moving encounter with rescued dancing bears and India's wildlife conservation story.",
+      "bestTime": "Morning feeding time (8–10 am)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wildlife SOS Bear Rescue Facility Agra",
+      "imageQuery": "Wildlife SOS sloth bear rescue Agra sanctuary"
+    },
+    {
+      "name": "Chambal Safari (Chambal Wildlife Sanctuary)",
+      "category": "wildlife",
+      "description": "A riverine wildlife sanctuary 75 km from Agra along the pristine Chambal River, one of India's least-polluted rivers. Boat safaris encounter the critically endangered Gangetic river dolphin, gharial (fish-eating crocodilian), mugger crocodile, Indian skimmer, and sand-bar-nesting birds. The Chambal is the last major stronghold of the gharial — fewer than 1,000 remain globally. Early morning boat rides in winter mist are among India's most memorable wildlife experiences.",
+      "whyVisit": "India's last pristine river valley with gharials, Gangetic dolphins, and Indian skimmers — an unmissable wildlife day trip.",
+      "bestTime": "November to February, morning boat safari",
+      "duration": "Half day",
+      "mapsSearch": "Chambal Wildlife Sanctuary safari Agra gharial",
+      "imageQuery": "Chambal River gharial dolphin safari Agra"
+    },
+    {
+      "name": "Taj Museum (Inside Taj Mahal Complex)",
+      "category": "museum",
+      "description": "A small but excellent museum inside the western gate of the Taj Mahal complex, housed in a Mughal building, displaying original architectural drawings (farman documents), miniature paintings showing the Taj under construction, Mughal coins, and calligraphy panels from the monument. Of special interest are the original pietra dura stone samples used in the main tomb and a 17th-century marble sundial from the grounds. Free with Taj Mahal entry.",
+      "whyVisit": "The only place to see the Taj Mahal's original construction documents and pietra dura stone samples.",
+      "bestTime": "After darshan, when already inside the complex",
+      "duration": "45 minutes",
+      "mapsSearch": "Taj Museum Taj Mahal complex Agra",
+      "imageQuery": "Taj Mahal museum Mughal construction documents Agra"
+    },
+    {
+      "name": "Mankameshwar Temple",
+      "category": "temple",
+      "description": "One of Agra's most ancient Shiva temples on the Yamuna bank, reputedly 5,000 years old and believed to house a wish-fulfilling (mankameshwar) lingam. The temple is a major Shravana month destination when thousands bathe in the Yamuna and offer water to the lingam. The Yamuna riverfront location, with ghats and resident turtles in the water below, creates the rare experience of a Hindu sacred-river temple environment within Mughal Agra's landscape.",
+      "whyVisit": "Agra's oldest Shiva temple on the Yamuna — an ancient Hindu sacred-river experience within the Mughal city.",
+      "bestTime": "Shravana (July–August); Mahashivaratri",
+      "duration": "1 hour",
+      "mapsSearch": "Mankameshwar Temple Agra Yamuna",
+      "imageQuery": "Mankameshwar Temple Agra Shiva Yamuna ghat"
+    },
+    {
+      "name": "Taj Ganj Neighbourhood",
+      "category": "heritage",
+      "description": "The dense historic neighbourhood south of the Taj Mahal, built in the 17th century to house the craftsmen, traders, and caravanserais serving the tomb complex and the Mughal court. Its narrow lanes retain the original bazaar structure with Mughal-era havelis (mansions), caravanserai ruins, and workshops where third-generation marble inlay artisans still practise Pietra dura. Rooftop cafés in Taj Ganj offer unparalleled sunset views over the Taj without ticket charges.",
+      "whyVisit": "A living 17th-century bazaar where the Taj's original craftsmen settled — rooftop cafés with free Taj sunset views.",
+      "bestTime": "Late afternoon for rooftop Taj views",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taj Ganj neighbourhood Agra historic",
+      "imageQuery": "Taj Ganj Agra rooftop Taj Mahal view sunset"
+    },
+    {
+      "name": "Keetham Lake (Sur Sarovar Bird Sanctuary)",
+      "category": "wildlife",
+      "description": "A 750-hectare reservoir 20 km from Agra declared a Ramsar Wetland in 2020, hosting over 165 resident and migratory bird species including Sarus cranes (the world's tallest flying bird), bar-headed geese, greater flamingo, and painted storks. A Wildlife SOS crocodile rehabilitation centre on the lake shores houses rescued mugger crocodiles. Bicycle trails and a nature interpretation centre surround the lake.",
+      "whyVisit": "A Ramsar wetland near Agra with Sarus cranes, flamingos, and rescued crocodiles — perfectly combined with a Taj visit.",
+      "bestTime": "November to February for migratory birds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Keetham Lake Sur Sarovar Bird Sanctuary Agra",
+      "imageQuery": "Sur Sarovar Keetham Lake Sarus crane Agra"
+    },
+    {
+      "name": "Mariam Zamani Tomb (Church of Akbar's Queen)",
+      "category": "heritage",
+      "description": "The tomb of Mariam-uz-Zamani, Emperor Akbar's Hindu Rajput wife and mother of Jahangir, located at Sikandra near Akbar's own mausoleum. Built around 1623, the tomb is a fascinating hybrid structure with a Hindu chhatri-style superstructure and Mughal archways, reflecting the syncretic nature of Akbar's court. Uniquely, a Portuguese-style Cross was carved on the tomb's facade, possibly reflecting Akbar's Christian diplomatic connections or the queen's ecumenical outlook.",
+      "whyVisit": "A unique multi-faith tomb reflecting Akbar's extraordinary ecumenism — Hindu, Islamic, and Christian motifs on a single monument.",
+      "bestTime": "Morning combined with Akbar's Tomb visit",
+      "duration": "45 minutes",
+      "mapsSearch": "Mariam Zamani Tomb Sikandra Agra",
+      "imageQuery": "Mariam Zamani Tomb Sikandra Agra Mughal Hindu"
+    },
+    {
+      "name": "Soami Bagh Samadhi (Radha Soami Bagh)",
+      "category": "religious",
+      "description": "An ongoing marble mausoleum under continuous construction since 1904 dedicated to Huzur Maharaj Rai Saligram, founder of the Radha Soami spiritual movement. The Samadhi is designed to surpass the Taj Mahal in intricacy and beauty — marble craftsmen have worked on it for over 120 years, with no completion date set. The level of Pietra dura inlay and stone carving visible today rivals and in some opinions exceeds that of the Taj. Entry is free and all faiths are welcome.",
+      "whyVisit": "A 120-year ongoing marble masterpiece designed to surpass the Taj — still under construction and free to visit.",
+      "bestTime": "Morning for craftsmanship detail",
+      "duration": "1-2 hours",
+      "mapsSearch": "Soami Bagh Samadhi Radha Soami Agra",
+      "imageQuery": "Soami Bagh Samadhi marble inlay Agra Radha Soami"
+    },
+    {
+      "name": "Bateshwar Temple Complex",
+      "category": "temple",
+      "description": "A remarkable group of 101 Shiva temples on the Yamuna riverbank 70 km from Agra at Bateshwar, built between the 8th and 10th centuries CE by Gurjara-Pratihara rulers. The temples were heavily damaged and most lay in ruins until a remarkable ASI restoration project (2005–2015) rebuilt dozens using the original fallen stones. The Yamuna-side view of tiered white and ochre temples rising from the riverbank is one of North India's most spectacular temple-scapes.",
+      "whyVisit": "101 temples on the Yamuna bank — one of North India's most dramatic temple-scapes, painstakingly restored from ruins.",
+      "bestTime": "Early morning for mist over the Yamuna; Kartik Purnima fair (November)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bateshwar Temple Complex Agra Yamuna",
+      "imageQuery": "Bateshwar temples Yamuna river Agra ancient"
+    },
+    {
+      "name": "Guru Ka Tal Gurudwara",
+      "category": "religious",
+      "description": "A historically significant Sikh gurudwara 3 km from Agra Fort, marking the site where Guru Tegh Bahadur, the ninth Sikh Guru, was imprisoned by Emperor Aurangzeb in 1675 before being taken to Delhi for execution. The white marble gurudwara with a tank (sarovar) is a place of solemn reverence. The annual Gurpurab celebrations with langar (community kitchen) serving meals to 10,000 people daily is a magnificent expression of Sikh hospitality.",
+      "whyVisit": "A sacred Sikh site marking the imprisonment of the 9th Guru — a moving monument to religious freedom and sacrifice.",
+      "bestTime": "Guru Tegh Bahadur's Gurpurab (November–December)",
+      "duration": "1 hour",
+      "mapsSearch": "Guru Ka Tal Gurudwara Agra Uttar Pradesh",
+      "imageQuery": "Guru Ka Tal Gurudwara Agra Sikh temple tank"
+    },
+    {
+      "name": "Anguri Bagh (Grape Garden, Agra Fort)",
+      "category": "garden",
+      "description": "A meticulously restored 16th-century sunken charbagh garden inside Agra Fort, laid out by Emperor Shah Jahan for his harem. The name derives from grapevines planted along the marble trellises. The garden's geometric water channels, fountain basins, and flower beds conform precisely to Mughal garden cosmology. The surrounding Khas Mahal (private palace) and Shish Mahal (mirror palace) frame the garden, their white marble facades reflecting afternoon light into the beds.",
+      "whyVisit": "The finest restored Mughal pleasure garden inside the fort — a miniature paradise enclosed by mirror-inlaid palaces.",
+      "bestTime": "Late afternoon for light on marble",
+      "duration": "45 minutes (included in Agra Fort visit)",
+      "mapsSearch": "Anguri Bagh Agra Fort garden",
+      "imageQuery": "Anguri Bagh garden Agra Fort Shah Jahan marble"
+    },
+    {
+      "name": "Hathi Ghat (Elephant Ghat) and Yamuna Aarti",
+      "category": "religious",
+      "description": "A sandstone ghat on the Yamuna downstream from Agra Fort, used since Mughal times for elephant bathing and boat launches. Every evening at sunset, a small but atmospheric Yamuna aarti (fire ceremony) is conducted by local priests, drawing a modest crowd of devotees. The ghat offers a silent, unhurried view of the Taj Mahal's eastern facade reflected in the Yamuna — a perspective accessible to very few visitors who discover this spot.",
+      "whyVisit": "A hidden riverside ghat offering a rare Yamuna aarti and a secret eastern view of the Taj reflected in the river.",
+      "bestTime": "Sunset aarti, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Hathi Ghat Yamuna Agra riverside",
+      "imageQuery": "Yamuna ghat Agra sunset Taj Mahal reflection"
+    },
+    {
+      "name": "Taj Nature Walk (Taj Protection Zone Forest)",
+      "category": "nature",
+      "description": "A 3-sq-km protected forest directly east of the Taj Mahal, established to protect the monument from vehicular pollution. The electric-vehicle-only zone has created a rare urban wildlife corridor where nilgai, jungle fowl, mongoose, and monitor lizards live 500 metres from the Taj. A 2-km nature trail winds through the scrub forest with Taj Mahal spires visible above the treeline. A field guide leads 2-hour morning walks identifying migratory birds and local reptiles.",
+      "whyVisit": "A wildlife corridor created to protect the Taj — nilgai and monitor lizards with Taj spires visible through the trees.",
+      "bestTime": "Early morning 7–9 am bird walk",
+      "duration": "2 hours",
+      "mapsSearch": "Taj Nature Walk Agra eco park",
+      "imageQuery": "Taj Nature Walk forest nilgai Agra Taj Mahal trees"
+    }
+  ]
+}

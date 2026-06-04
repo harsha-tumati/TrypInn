@@ -1,0 +1,447 @@
+{
+  "id": "kinnaur",
+  "name": "Kinnaur",
+  "state": "Himachal Pradesh",
+  "slug": "kinnaur",
+  "tagline": "Apple orchards and Himalayan vistas",
+  "categories": [
+    "nature",
+    "village",
+    "monastery"
+  ],
+  "introduction": "Planning a trip to Kinnaur? This travel guide to Kinnaur covers the must visit places in Kinnaur, the best places to visit in Kinnaur, top tourist attractions in Kinnaur, and exciting things to do in Kinnaur.",
+  "metaTitle": "Best Places to Visit in Kinnaur | Tourist Attractions in Kinnaur - TrypInn",
+  "metaDescription": "Discover must visit places in Kinnaur, best places to visit in Kinnaur, and top tourist attractions in Kinnaur. Plan your perfect trip with TrypInn travel guide to Kinnaur.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=1200&q=60",
+    "alt": "Kinnaur travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "kinnaur-mukteshwar",
+      "name": "Mukteshwar",
+      "slug": "mukteshwar",
+      "description": "Mukteshwar is one of the most iconic landmarks in Kinnaur, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mukteshwar promises an unforgettable experience.",
+      "whyVisit": "A visit to Mukteshwar is essential for understanding Kinnaur.",
+      "bestTime": "Mar-Jun",
+      "duration": "Multi-day",
+      "mapsSearch": "Mukteshwar, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Mukteshwar in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Mukteshwar in Kinnaur"
+      },
+      "position": 1
+    },
+    {
+      "id": "kinnaur-cheese-village",
+      "name": "Cheese Village",
+      "slug": "cheese-village",
+      "description": "Cheese Village is a must-see village in Kinnaur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kinnaur.",
+      "whyVisit": "Experience the unmatched beauty of Cheese Village.",
+      "bestTime": "Year-round",
+      "duration": "Overnight",
+      "mapsSearch": "Cheese Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Cheese Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Cheese Village in Kinnaur"
+      },
+      "position": 2
+    },
+    {
+      "id": "kinnaur-urgelling-monastery",
+      "name": "Urgelling Monastery",
+      "slug": "urgelling-monastery",
+      "description": "A crown jewel of Kinnaur, Urgelling Monastery captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Urgelling Monastery.",
+      "whyVisit": "Urgelling Monastery offers a perfect blend of history and scenery.",
+      "bestTime": "May-Sep",
+      "duration": "2-3 hours",
+      "mapsSearch": "Urgelling Monastery, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Urgelling Monastery in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Urgelling Monastery in Kinnaur"
+      },
+      "position": 3
+    },
+    {
+      "id": "kinnaur-bageshwar",
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "A crown jewel of Kinnaur, Bageshwar captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Bageshwar.",
+      "whyVisit": "Experience the unmatched beauty of Bageshwar.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bageshwar, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Bageshwar in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Bageshwar in Kinnaur"
+      },
+      "position": 4
+    },
+    {
+      "id": "kinnaur-wine-village",
+      "name": "Wine Village",
+      "slug": "wine-village",
+      "description": "Nestled in Kinnaur, Wine Village stands as a testament to architectural brilliance. This renowned village attracts tourists who come to admire its stunning design. A visit to Wine Village is among the best things to do in Kinnaur.",
+      "whyVisit": "A visit to Wine Village is essential for understanding Kinnaur.",
+      "bestTime": "Festival",
+      "duration": "Overnight",
+      "mapsSearch": "Wine Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Wine Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Wine Village in Kinnaur"
+      },
+      "position": 5
+    },
+    {
+      "id": "kinnaur-brahma-dung-chung-ani-gompa",
+      "name": "Brahma-dung-chung Ani Gompa",
+      "slug": "brahma-dung-chung-ani-gompa",
+      "description": "A crown jewel of Kinnaur, Brahma-dung-chung Ani Gompa captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Brahma-dung-chung Ani Gompa.",
+      "whyVisit": "A visit to Brahma-dung-chung Ani Gompa is essential for understanding Kinnaur.",
+      "bestTime": "Morning prayer",
+      "duration": "Morning",
+      "mapsSearch": "Brahma-dung-chung Ani Gompa, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Brahma-dung-chung Ani Gompa in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Brahma-dung-chung Ani Gompa in Kinnaur"
+      },
+      "position": 6
+    },
+    {
+      "id": "kinnaur-lohaghat",
+      "name": "Lohaghat",
+      "slug": "lohaghat",
+      "description": "A crown jewel of Kinnaur, Lohaghat captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Lohaghat.",
+      "whyVisit": "Lohaghat offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lohaghat, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Lohaghat in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Lohaghat in Kinnaur"
+      },
+      "position": 7
+    },
+    {
+      "id": "kinnaur-artisan-village",
+      "name": "Artisan Village",
+      "slug": "artisan-village",
+      "description": "A crown jewel of Kinnaur, Artisan Village captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Artisan Village.",
+      "whyVisit": "Capture stunning photographs at Artisan Village.",
+      "bestTime": "Festival",
+      "duration": "Half day",
+      "mapsSearch": "Artisan Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Artisan Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Artisan Village in Kinnaur"
+      },
+      "position": 8
+    },
+    {
+      "id": "kinnaur-thubchog-gatsel-ling-monastery",
+      "name": "Thubchog Gatsel Ling Monastery",
+      "slug": "thubchog-gatsel-ling-monastery",
+      "description": "Thubchog Gatsel Ling Monastery is a must-see monastery in Kinnaur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kinnaur.",
+      "whyVisit": "Capture stunning photographs at Thubchog Gatsel Ling Monastery.",
+      "bestTime": "May-Sep",
+      "duration": "Morning",
+      "mapsSearch": "Thubchog Gatsel Ling Monastery, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Thubchog Gatsel Ling Monastery in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Thubchog Gatsel Ling Monastery in Kinnaur"
+      },
+      "position": 9
+    },
+    {
+      "id": "kinnaur-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Nestled in Kinnaur, Munsiyari stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Munsiyari is among the best things to do in Kinnaur.",
+      "whyVisit": "Experience the unmatched beauty of Munsiyari.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Munsiyari, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Kinnaur"
+      },
+      "position": 10
+    },
+    {
+      "id": "kinnaur-tourist-village",
+      "name": "Tourist Village",
+      "slug": "tourist-village",
+      "description": "Tourist Village is one of the most iconic landmarks in Kinnaur, drawing visitors with its timeless charm. This village offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Tourist Village promises an unforgettable experience.",
+      "whyVisit": "Tourist Village offers a perfect blend of history and scenery.",
+      "bestTime": "Harvest",
+      "duration": "Overnight",
+      "mapsSearch": "Tourist Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Tourist Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Tourist Village in Kinnaur"
+      },
+      "position": 11
+    },
+    {
+      "id": "kinnaur-gorichen-peak",
+      "name": "Gorichen Peak",
+      "slug": "gorichen-peak",
+      "description": "Gorichen Peak is a must-see monastery in Kinnaur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kinnaur.",
+      "whyVisit": "Experience the unmatched beauty of Gorichen Peak.",
+      "bestTime": "Jun-Aug",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gorichen Peak, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Gorichen Peak in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Gorichen Peak in Kinnaur"
+      },
+      "position": 12
+    },
+    {
+      "id": "kinnaur-kausani",
+      "name": "Kausani",
+      "slug": "kausani",
+      "description": "A crown jewel of Kinnaur, Kausani captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Kausani.",
+      "whyVisit": "A visit to Kausani is essential for understanding Kinnaur.",
+      "bestTime": "Oct-Mar",
+      "duration": "Multi-day",
+      "mapsSearch": "Kausani, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Kausani in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Kausani in Kinnaur"
+      },
+      "position": 13
+    },
+    {
+      "id": "kinnaur-homestay-village",
+      "name": "Homestay Village",
+      "slug": "homestay-village",
+      "description": "A crown jewel of Kinnaur, Homestay Village captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Homestay Village.",
+      "whyVisit": "Homestay Village stands out as one of the most rewarding experiences.",
+      "bestTime": "Harvest",
+      "duration": "Half day",
+      "mapsSearch": "Homestay Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Homestay Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Homestay Village in Kinnaur"
+      },
+      "position": 14
+    },
+    {
+      "id": "kinnaur-pangateng-tso-lake",
+      "name": "Pangateng Tso Lake",
+      "slug": "pangateng-tso-lake",
+      "description": "Pangateng Tso Lake is a must-see monastery in Kinnaur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kinnaur.",
+      "whyVisit": "Capture stunning photographs at Pangateng Tso Lake.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pangateng Tso Lake, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Pangateng Tso Lake in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Pangateng Tso Lake in Kinnaur"
+      },
+      "position": 15
+    },
+    {
+      "id": "kinnaur-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nanda Devi National Park is one of the most iconic landmarks in Kinnaur, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nanda Devi National Park promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Nanda Devi National Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Nanda Devi National Park, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Kinnaur"
+      },
+      "position": 16
+    },
+    {
+      "id": "kinnaur-tea-estate-village",
+      "name": "Tea Estate Village",
+      "slug": "tea-estate-village",
+      "description": "Nestled in Kinnaur, Tea Estate Village stands as a testament to architectural brilliance. This renowned village attracts tourists who come to admire its stunning design. A visit to Tea Estate Village is among the best things to do in Kinnaur.",
+      "whyVisit": "A visit to Tea Estate Village is essential for understanding Kinnaur.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Tea Estate Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Tea Estate Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Tea Estate Village in Kinnaur"
+      },
+      "position": 17
+    },
+    {
+      "id": "kinnaur-grl-monastery",
+      "name": "GRL Monastery",
+      "slug": "grl-monastery",
+      "description": "GRL Monastery is one of the most iconic landmarks in Kinnaur, drawing visitors with its timeless charm. This monastery offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, GRL Monastery promises an unforgettable experience.",
+      "whyVisit": "A visit to GRL Monastery is essential for understanding Kinnaur.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "GRL Monastery, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, GRL Monastery in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "GRL Monastery in Kinnaur"
+      },
+      "position": 18
+    },
+    {
+      "id": "kinnaur-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "A crown jewel of Kinnaur, Jim Corbett National Park captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Jim Corbett National Park.",
+      "whyVisit": "Capture stunning photographs at Jim Corbett National Park.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Jim Corbett National Park, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Kinnaur"
+      },
+      "position": 19
+    },
+    {
+      "id": "kinnaur-model-village",
+      "name": "Model Village",
+      "slug": "model-village",
+      "description": "A crown jewel of Kinnaur, Model Village captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Model Village.",
+      "whyVisit": "Experience the unmatched beauty of Model Village.",
+      "bestTime": "Harvest",
+      "duration": "Half day",
+      "mapsSearch": "Model Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Model Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Model Village in Kinnaur"
+      },
+      "position": 20
+    },
+    {
+      "id": "kinnaur-taktsang-palphug-monastery",
+      "name": "Taktsang Palphug Monastery",
+      "slug": "taktsang-palphug-monastery",
+      "description": "Located in scenic Kinnaur, Taktsang Palphug Monastery offers an immersive experience into local culture. Exploring Taktsang Palphug Monastery is one of the top things to do in Kinnaur.",
+      "whyVisit": "Taktsang Palphug Monastery offers a perfect blend of history and scenery.",
+      "bestTime": "Jun-Aug",
+      "duration": "2-3 hours",
+      "mapsSearch": "Taktsang Palphug Monastery, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Taktsang Palphug Monastery in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Taktsang Palphug Monastery in Kinnaur"
+      },
+      "position": 21
+    },
+    {
+      "id": "kinnaur-patal-bhuvaneshwar",
+      "name": "Patal Bhuvaneshwar",
+      "slug": "patal-bhuvaneshwar",
+      "description": "Patal Bhuvaneshwar is a must-see nature in Kinnaur, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kinnaur.",
+      "whyVisit": "Experience the unmatched beauty of Patal Bhuvaneshwar.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Patal Bhuvaneshwar, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Patal Bhuvaneshwar in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Patal Bhuvaneshwar in Kinnaur"
+      },
+      "position": 22
+    },
+    {
+      "id": "kinnaur-smart-village",
+      "name": "Smart Village",
+      "slug": "smart-village",
+      "description": "A crown jewel of Kinnaur, Smart Village captivates every traveler with enchanting beauty. No trip to Kinnaur is complete without visiting Smart Village.",
+      "whyVisit": "Smart Village offers a perfect blend of history and scenery.",
+      "bestTime": "Harvest",
+      "duration": "2-3 hours",
+      "mapsSearch": "Smart Village, Kinnaur",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Smart Village in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Smart Village in Kinnaur"
+      },
+      "position": 23
+    },
+    {
+      "id": "kinnaur-gorsam-chorten",
+      "name": "Gorsam Chorten",
+      "slug": "gorsam-chorten",
+      "description": "Located in scenic Kinnaur, Gorsam Chorten offers an immersive experience into local culture. Exploring Gorsam Chorten is one of the top things to do in Kinnaur.",
+      "whyVisit": "Gorsam Chorten stands out as one of the most rewarding experiences.",
+      "bestTime": "Jun-Aug",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gorsam Chorten, Kinnaur",
+      "category": "monastery",
+      "imagePrompt": "Ultra realistic travel photography, Gorsam Chorten in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Gorsam Chorten in Kinnaur"
+      },
+      "position": 24
+    },
+    {
+      "id": "kinnaur-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "Located in scenic Kinnaur, Gangolihat offers an immersive experience into local culture. Exploring Gangolihat is one of the top things to do in Kinnaur.",
+      "whyVisit": "Gangolihat offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gangolihat, Kinnaur",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Kinnaur, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Kinnaur"
+      },
+      "position": 25
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "slug": "jim-corbett-national-park",
+  "name": "Jim Corbett National Park",
+  "state": "Uttarakhand",
+  "tagline": "India's oldest park where tigers roam Himalayan foothills",
+  "categories": ["wildlife", "nature", "adventure"],
+  "highlights": ["bengal tiger safaris in dhikala zone", "ramganga river elephant and jeep rides"],
+  "attractions": [
+    {
+      "name": "Dhikala Zone Safari",
+      "category": "wildlife",
+      "description": "The crown jewel of Corbett, Dhikala is the largest and most biodiverse zone sitting at the heart of the park. The vast chaur grasslands alongside the Ramganga reservoir attract Bengal tigers, Asian elephants, leopards, and gharials. Canter safaris and overnight stays at Dhikala Forest Rest House make it unique among Indian national parks. Dawn game drives here offer unmatched wildlife density.",
+      "whyVisit": "The highest tiger-sighting probability and only overnight stay inside the core zone.",
+      "bestTime": "November to June, early morning drives",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Dhikala Zone Jim Corbett National Park Uttarakhand",
+      "imageQuery": "Bengal tiger Dhikala Corbett grassland"
+    },
+    {
+      "name": "Bijrani Zone Safari",
+      "category": "wildlife",
+      "description": "Bijrani is the most accessible and family-friendly zone of Corbett, just 1 km from Ramnagar. Sal forests, open grasslands called chauraha, and the Bijrani river basin make for excellent birding and tiger sighting. This zone is open to jeep safaris and consistently records high big-cat activity. The grasslands also shelter sambar, chital, and wild boar throughout the season.",
+      "whyVisit": "Easiest zone to reach from Ramnagar with reliable year-round tiger sightings.",
+      "bestTime": "November to May, dawn safaris",
+      "duration": "3-4 hours",
+      "mapsSearch": "Bijrani Zone Jim Corbett National Park",
+      "imageQuery": "tiger Bijrani zone Corbett jeep safari"
+    },
+    {
+      "name": "Jhirna Zone Safari",
+      "category": "wildlife",
+      "description": "Jhirna is the only Corbett zone open year-round, making it invaluable during the monsoon months when other zones close. Situated in the southern part of the park, its dry deciduous forests and seasonal streams attract sloth bears, leopards, and elephants. The zone is less crowded than Dhikala or Bijrani, giving visitors a more intimate wilderness experience.",
+      "whyVisit": "The sole open zone during monsoon and one of the best spots for sloth bear sightings.",
+      "bestTime": "Year-round; July to October for sloth bears",
+      "duration": "3-4 hours",
+      "mapsSearch": "Jhirna Zone Jim Corbett National Park Ramnagar",
+      "imageQuery": "sloth bear Jhirna Corbett forest"
+    },
+    {
+      "name": "Sitabani Zone (Buffer)",
+      "category": "wildlife",
+      "description": "Sitabani lies in Corbett's buffer zone and offers a serene, uncrowded alternative to the core zones. Dense mixed forest, an ancient Sita Mata temple, and the Kosi River corridor create an enchanting landscape. Unlike core zones, Sitabani does not require the standard permit quota, making last-minute safari bookings feasible. Leopards, elephants, and over 200 bird species are regularly spotted.",
+      "whyVisit": "A quiet, permit-flexible safari option combining wildlife with a centuries-old forest shrine.",
+      "bestTime": "October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Sitabani Zone Corbett Buffer Forest Uttarakhand",
+      "imageQuery": "Sitabani forest zone Corbett leopard"
+    },
+    {
+      "name": "Ramganga River",
+      "category": "nature",
+      "description": "The Ramganga is the lifeline of Jim Corbett, flowing through the park and forming the vast Ramganga reservoir. Mugger crocodiles bask on sandy banks, gharials navigate shallow channels, and mahseer fish draw anglers from across India. Elephant safaris ford the river at Dhikala, and the reservoir's shoreline is a premier birding circuit with over 600 species recorded inside the park.",
+      "whyVisit": "Spot crocodiles, gharials, and endemic birds along one of India's most scenic wildlife rivers.",
+      "bestTime": "November to March for clearest water and best birding",
+      "duration": "1-2 hours as part of safari",
+      "mapsSearch": "Ramganga River Dhikala Jim Corbett",
+      "imageQuery": "Ramganga river gharial crocodile Corbett"
+    },
+    {
+      "name": "Corbett Falls",
+      "category": "waterfall",
+      "description": "Located about 25 km from Ramnagar near Kaladhungi road, Corbett Falls is a 20-metre cascade tumbling through dense sal and teak forest. The waterfall is a popular picnic destination and is surrounded by forested hills that offer short nature walks. In the post-monsoon months the falls are at their most dramatic, with a strong white curtain of water and lush green surroundings.",
+      "whyVisit": "A refreshing natural waterfall just outside the park perfect for a morning excursion.",
+      "bestTime": "September to November after monsoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Corbett Falls Ramnagar Uttarakhand",
+      "imageQuery": "Corbett Falls waterfall Ramnagar forest"
+    },
+    {
+      "name": "Garjiya Devi Temple",
+      "category": "temple",
+      "description": "Perched dramatically on a rock outcrop above the Kosi River at the park's edge, Garjiya Devi temple is one of the most visually arresting shrines in Uttarakhand. The goddess Garjiya is revered as the protector of the forest and local communities. Pilgrims climb stone steps to the main sanctum while the river churns below. The Kartik Purnima fair in November draws thousands of devotees.",
+      "whyVisit": "A stunning riverside temple offering spiritual experience combined with panoramic forest views.",
+      "bestTime": "October to March; Kartik Purnima festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Garjiya Devi Temple Ramnagar Kosi River",
+      "imageQuery": "Garjiya Devi temple Kosi river Ramnagar"
+    },
+    {
+      "name": "Pakhro Zone Safari",
+      "category": "wildlife",
+      "description": "Pakhro is one of Corbett's lesser-visited eastern zones, accessed through Kotdwar in Pauri Garhwal district. The zone's mixed forest and grassland terrain bordering the Sonanadi Wildlife Sanctuary forms an extended wildlife corridor. Tiger and elephant sightings are consistent, and the relative lack of tourist traffic gives Pakhro a raw, undisturbed feel that experienced wildlife photographers value.",
+      "whyVisit": "Low-crowd zone with an unfiltered jungle experience and steady big-cat activity.",
+      "bestTime": "November to May",
+      "duration": "3-4 hours",
+      "mapsSearch": "Pakhro Zone Corbett Kotdwar Uttarakhand",
+      "imageQuery": "Pakhro zone tiger Corbett elephant herd"
+    },
+    {
+      "name": "Sonanadi Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Adjacent to Corbett's eastern boundary, Sonanadi forms a critical buffer zone and wildlife corridor. The sanctuary's dense sal forests along the Sonanadi river are prime elephant habitat, and the area records frequent tiger movements between Corbett and Rajaji. Far fewer tourists enter Sonanadi, making it one of the most authentic forest experiences in the region.",
+      "whyVisit": "Pristine elephant corridor with almost no crowds and raw wilderness access.",
+      "bestTime": "November to April",
+      "duration": "Half day",
+      "mapsSearch": "Sonanadi Wildlife Sanctuary Ramnagar Uttarakhand",
+      "imageQuery": "Asian elephant herd Sonanadi sanctuary forest"
+    },
+    {
+      "name": "Kosi River Rafting",
+      "category": "adventure",
+      "description": "The Kosi River flows along the southern boundary of Corbett, offering Grade I–II white-water rafting for beginners and families. Short stretches near Marchula and Kaladhungi provide enough rapids for a thrilling ride through forested gorges. The Kosi also draws anglers targeting the prized golden mahseer, one of the world's hardest-fighting freshwater fish. Evening campfires on the riverbank are a resort staple.",
+      "whyVisit": "Combine a river adventure with chances of spotting elephants and deer drinking at the banks.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kosi River Rafting Marchula Corbett Uttarakhand",
+      "imageQuery": "Kosi river rafting Corbett Uttarakhand forest"
+    },
+    {
+      "name": "Jim Corbett Museum, Kaladhungi",
+      "category": "museum",
+      "description": "The former winter home of legendary hunter-turned-conservationist Jim Corbett at Kaladhungi has been converted into a museum. Displays include his original furniture, hunting trophies, photographs, and manuscripts of his famous books such as 'Man-Eaters of Kumaon'. The house sits beneath the same mango groves Corbett described in his writings, giving visitors a vivid sense of colonial-era Kumaon.",
+      "whyVisit": "Step into the life of the man who inspired India's first national park and wildlife conservation movement.",
+      "bestTime": "October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Jim Corbett Museum Kaladhungi Uttarakhand",
+      "imageQuery": "Jim Corbett museum Kaladhungi heritage house"
+    },
+    {
+      "name": "Ramnagar Town",
+      "category": "market",
+      "description": "Ramnagar is the main gateway town to Corbett and the hub for safari permits, accommodation, and supplies. The bustling market near the Forest Department office sells spices, local honey, rudraksha beads, and jungle-themed souvenirs. Dhabas here serve excellent kumaoni rajma and bhang ki chutney. The town also houses the Corbett Tiger Reserve reception centre where all zone permits are issued.",
+      "whyVisit": "Essential stop for permits, local Kumaoni food, and last-minute safari gear before entering the park.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ramnagar Market Town Uttarakhand",
+      "imageQuery": "Ramnagar town market Kumaon Uttarakhand"
+    },
+    {
+      "name": "Durgadevi Zone Safari",
+      "category": "wildlife",
+      "description": "Durgadevi zone in the northeastern corner of Corbett is renowned for birding rather than mammal safaris. The zone borders the Ramganga river's upper reaches and is flanked by Himalayan foothills with altitudes above 1,200 metres. Over 580 species of birds have been recorded in Corbett, and Durgadevi's elevation gradient makes it one of the best places to spot both forest and high-altitude species.",
+      "whyVisit": "A birder's paradise with Himalayan species rarely seen in other Corbett zones.",
+      "bestTime": "November to April for migratory birds",
+      "duration": "3-4 hours",
+      "mapsSearch": "Durgadevi Zone Jim Corbett Uttarakhand",
+      "imageQuery": "birdwatching Durgadevi zone Corbett Himalayan"
+    },
+    {
+      "name": "Marchula Village",
+      "category": "nature",
+      "description": "Marchula is a quiet village on the Ramganga River downstream from the park, surrounded by forest and farmland. It serves as a base for angling, rafting, and nature walks in the buffer zone. Eco-lodges here offer front-row seats to elephant herds crossing the riverbank at dusk. The village has retained its traditional Kumaoni character far more than Ramnagar and offers genuine rural Uttarakhand hospitality.",
+      "whyVisit": "A peaceful riverside village ideal for slow-travel immersion in Kumaoni culture and nature.",
+      "bestTime": "October to March",
+      "duration": "Overnight stay recommended",
+      "mapsSearch": "Marchula Village Ramganga River Uttarakhand",
+      "imageQuery": "Marchula village Ramganga river Corbett ecotourism"
+    },
+    {
+      "name": "Nainital Hill Station",
+      "category": "nature",
+      "description": "Nainital, 65 km from Corbett, is the most famous hill station of the Kumaon Himalayas built around the crescent-shaped Naini Lake. Snow-capped peaks reflect in the lake waters, a ropeway climbs to Snow View Point at 2,270 metres, and the colonial-era Mall Road is lined with shops and cafés. Boat rides on Naini Lake at sunrise are among the most memorable experiences in Uttarakhand.",
+      "whyVisit": "Pair your wildlife safari with a classic Himalayan hill-station escape just an hour away.",
+      "bestTime": "March to June; October to November",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Nainital Naini Lake Uttarakhand",
+      "imageQuery": "Naini Lake Nainital hill station Himalaya"
+    },
+    {
+      "name": "Corbett Waterfall Eco Trail",
+      "category": "adventure",
+      "description": "A guided nature walk leading through sal and mixed forest to a series of small cascades near the Corbett Falls area. The trail is managed by local naturalists and passes through habitat zones that show evidence of elephant activity — broken bamboo, pugmarks in mud. Short stretches of the trail follow the seasonal stream, with birdlife and butterflies adding to the experience.",
+      "whyVisit": "An immersive on-foot forest experience that most jeep-safari tourists completely miss.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Corbett Waterfall Eco Trail Ramnagar Nature Walk",
+      "imageQuery": "nature trail sal forest Corbett eco walk"
+    },
+    {
+      "name": "Kaladungi Forest Rest House",
+      "category": "heritage",
+      "description": "Jim Corbett's bungalow at Kaladhungi served as his winter retreat from 1913 onward. Now maintained by the forest department as a heritage property, the original structure — with its thick walls, wide verandah, and mango orchard — evokes the atmosphere of Corbett's writing. The adjacent orchards border the forest fringe where pugmarks and elephant droppings still appear at dawn.",
+      "whyVisit": "Sleep where Corbett himself camped, with forest and history meeting on your doorstep.",
+      "bestTime": "November to March",
+      "duration": "Overnight stay",
+      "mapsSearch": "Kaladhungi Forest Rest House Jim Corbett Uttarakhand",
+      "imageQuery": "Kaladhungi bungalow Jim Corbett heritage colonial"
+    },
+    {
+      "name": "Bijrani Chaur Grasslands",
+      "category": "wildlife",
+      "description": "The chaur grasslands within Bijrani zone are patches of tall elephant grass interspersed with sal forest that act as prime hunting grounds for tigers. Early morning drives through these clearings frequently yield sightings of chital, hog deer, wild boar, and the occasional tiger at the grass edge. The grasslands are also excellent for spotting crested serpent eagles and changeable hawk-eagles perched on dead trees.",
+      "whyVisit": "Open grassland terrain gives unobstructed views of predators and prey that dense forest hides.",
+      "bestTime": "February to May when grass is cut short",
+      "duration": "2-3 hours as part of zone safari",
+      "mapsSearch": "Bijrani Chaur Grasslands Jim Corbett Uttarakhand",
+      "imageQuery": "chital deer grassland Corbett tiger chaur"
+    },
+    {
+      "name": "Phakuli Hill Viewpoint",
+      "category": "viewpoint",
+      "description": "Rising on the northern edge of the Corbett landscape near Ramnagar, Phakuli Hill offers sweeping panoramic views across the Terai grasslands and Ramganga valley. On clear winter mornings the permanent snowfields of Nanda Devi and Trishul peaks are visible above the forest canopy. This is one of the few elevated viewpoints accessible near the park and is popular for sunrise photography.",
+      "whyVisit": "Rare elevated vantage point combining Himalayan peak views with the park's forest canopy below.",
+      "bestTime": "November to February for clear Himalayan views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Phakuli Hill Viewpoint Ramnagar Corbett Uttarakhand",
+      "imageQuery": "Phakuli hill viewpoint Himalaya Corbett forest sunrise"
+    },
+    {
+      "name": "Ramganga Reservoir Boating",
+      "category": "nature",
+      "description": "The Ramganga reservoir within Dhikala zone is a large human-made lake that has dramatically increased the park's water resources and wildlife concentration. Boat rides on the reservoir — available as part of Dhikala packages — offer sightings of gharials sunbathing on spits, otters in the shallows, and large crocodile herds. The reservoir's flooded tree stumps form surreal photographic compositions at sunset.",
+      "whyVisit": "A rare opportunity to explore India's wildlife from the water with gharial and crocodile sightings.",
+      "bestTime": "November to May",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ramganga Reservoir Dhikala Corbett boating",
+      "imageQuery": "Ramganga reservoir boat crocodile gharial Corbett"
+    }
+  ]
+}

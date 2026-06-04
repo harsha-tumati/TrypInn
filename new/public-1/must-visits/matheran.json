@@ -1,0 +1,447 @@
+{
+  "id": "matheran",
+  "name": "Matheran",
+  "state": "Maharashtra",
+  "slug": "matheran",
+  "tagline": "Asia only automobile-free hill station",
+  "categories": [
+    "hill_station",
+    "viewpoint",
+    "park"
+  ],
+  "introduction": "Matheran is a treasure trove of experiences. In this travel guide to Matheran, we reveal the must visit places in Matheran, the best places to visit in Matheran, iconic tourist attractions in Matheran, and amazing things to do in Matheran.",
+  "metaTitle": "Top Things to Do in Matheran | Travel Guide to Matheran - TrypInn",
+  "metaDescription": "Discover must visit places in Matheran, best places to visit in Matheran, and top tourist attractions in Matheran. Plan your perfect trip with TrypInn travel guide to Matheran.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=1200&q=60",
+    "alt": "Matheran travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "matheran-krang-suri-falls",
+      "name": "Krang Suri Falls",
+      "slug": "krang-suri-falls",
+      "description": "Located in scenic Matheran, Krang Suri Falls offers an immersive experience into local culture. Exploring Krang Suri Falls is one of the top things to do in Matheran.",
+      "whyVisit": "Experience the unmatched beauty of Krang Suri Falls.",
+      "bestTime": "Year-round",
+      "duration": "Weekend",
+      "mapsSearch": "Krang Suri Falls, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Krang Suri Falls in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Krang Suri Falls in Matheran"
+      },
+      "position": 1
+    },
+    {
+      "id": "matheran-clouds-end-view",
+      "name": "Clouds End View",
+      "slug": "clouds-end-view",
+      "description": "Located in scenic Matheran, Clouds End View offers an immersive experience into local culture. Exploring Clouds End View is one of the top things to do in Matheran.",
+      "whyVisit": "Clouds End View offers a perfect blend of history and scenery.",
+      "bestTime": "Clear days",
+      "duration": "Sunset",
+      "mapsSearch": "Clouds End View, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Clouds End View in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Clouds End View in Matheran"
+      },
+      "position": 2
+    },
+    {
+      "id": "matheran-mangrove-park",
+      "name": "Mangrove Park",
+      "slug": "mangrove-park",
+      "description": "A crown jewel of Matheran, Mangrove Park captivates every traveler with enchanting beauty. No trip to Matheran is complete without visiting Mangrove Park.",
+      "whyVisit": "Capture stunning photographs at Mangrove Park.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Mangrove Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Mangrove Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Mangrove Park in Matheran"
+      },
+      "position": 3
+    },
+    {
+      "id": "matheran-police-bazar",
+      "name": "Police Bazar",
+      "slug": "police-bazar",
+      "description": "Nestled in Matheran, Police Bazar stands as a testament to architectural brilliance. This renowned hill station attracts tourists who come to admire its stunning design. A visit to Police Bazar is among the best things to do in Matheran.",
+      "whyVisit": "Experience the unmatched beauty of Police Bazar.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Police Bazar, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Police Bazar in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Police Bazar in Matheran"
+      },
+      "position": 4
+    },
+    {
+      "id": "matheran-echo-point",
+      "name": "Echo Point",
+      "slug": "echo-point",
+      "description": "Located in scenic Matheran, Echo Point offers an immersive experience into local culture. Exploring Echo Point is one of the top things to do in Matheran.",
+      "whyVisit": "A visit to Echo Point is essential for understanding Matheran.",
+      "bestTime": "Clear days",
+      "duration": "Sunset",
+      "mapsSearch": "Echo Point, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Echo Point in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Echo Point in Matheran"
+      },
+      "position": 5
+    },
+    {
+      "id": "matheran-zoological-park",
+      "name": "Zoological Park",
+      "slug": "zoological-park",
+      "description": "Zoological Park is a must-see park in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "Capture stunning photographs at Zoological Park.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Zoological Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Zoological Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Zoological Park in Matheran"
+      },
+      "position": 6
+    },
+    {
+      "id": "matheran-mawsynram",
+      "name": "Mawsynram",
+      "slug": "mawsynram",
+      "description": "Mawsynram is a must-see hill station in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "Mawsynram stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Dec",
+      "duration": "2-3 days",
+      "mapsSearch": "Mawsynram, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawsynram in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Mawsynram in Matheran"
+      },
+      "position": 7
+    },
+    {
+      "id": "matheran-mahendragiri-view",
+      "name": "Mahendragiri View",
+      "slug": "mahendragiri-view",
+      "description": "Nestled in Matheran, Mahendragiri View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Mahendragiri View is among the best things to do in Matheran.",
+      "whyVisit": "A visit to Mahendragiri View is essential for understanding Matheran.",
+      "bestTime": "Sunset",
+      "duration": "Quick",
+      "mapsSearch": "Mahendragiri View, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Mahendragiri View in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Mahendragiri View in Matheran"
+      },
+      "position": 8
+    },
+    {
+      "id": "matheran-nehru-park",
+      "name": "Nehru Park",
+      "slug": "nehru-park",
+      "description": "Nehru Park is a must-see park in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "A visit to Nehru Park is essential for understanding Matheran.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nehru Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Nehru Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Nehru Park in Matheran"
+      },
+      "position": 9
+    },
+    {
+      "id": "matheran-cherrapunji",
+      "name": "Cherrapunji",
+      "slug": "cherrapunji",
+      "description": "Cherrapunji is a must-see hill station in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "A visit to Cherrapunji is essential for understanding Matheran.",
+      "bestTime": "Summer",
+      "duration": "Full day",
+      "mapsSearch": "Cherrapunji, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Cherrapunji in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Cherrapunji in Matheran"
+      },
+      "position": 10
+    },
+    {
+      "id": "matheran-photo-point",
+      "name": "Photo Point",
+      "slug": "photo-point",
+      "description": "Located in scenic Matheran, Photo Point offers an immersive experience into local culture. Exploring Photo Point is one of the top things to do in Matheran.",
+      "whyVisit": "Photo Point offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Photo Point, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Photo Point in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Photo Point in Matheran"
+      },
+      "position": 11
+    },
+    {
+      "id": "matheran-lodi-gardens",
+      "name": "Lodi Gardens",
+      "slug": "lodi-gardens",
+      "description": "Nestled in Matheran, Lodi Gardens stands as a testament to architectural brilliance. This renowned park attracts tourists who come to admire its stunning design. A visit to Lodi Gardens is among the best things to do in Matheran.",
+      "whyVisit": "Lodi Gardens offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lodi Gardens, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Lodi Gardens in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Lodi Gardens in Matheran"
+      },
+      "position": 12
+    },
+    {
+      "id": "matheran-nohkalikai-falls",
+      "name": "Nohkalikai Falls",
+      "slug": "nohkalikai-falls",
+      "description": "Nohkalikai Falls is one of the most iconic landmarks in Matheran, drawing visitors with its timeless charm. This hill station offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nohkalikai Falls promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Nohkalikai Falls.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Nohkalikai Falls, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Nohkalikai Falls in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Nohkalikai Falls in Matheran"
+      },
+      "position": 13
+    },
+    {
+      "id": "matheran-doddabetta-peak",
+      "name": "Doddabetta Peak",
+      "slug": "doddabetta-peak",
+      "description": "A crown jewel of Matheran, Doddabetta Peak captivates every traveler with enchanting beauty. No trip to Matheran is complete without visiting Doddabetta Peak.",
+      "whyVisit": "A visit to Doddabetta Peak is essential for understanding Matheran.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Doddabetta Peak, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Doddabetta Peak in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Doddabetta Peak in Matheran"
+      },
+      "position": 14
+    },
+    {
+      "id": "matheran-national-park",
+      "name": "National Park",
+      "slug": "national-park",
+      "description": "Nestled in Matheran, National Park stands as a testament to architectural brilliance. This renowned park attracts tourists who come to admire its stunning design. A visit to National Park is among the best things to do in Matheran.",
+      "whyVisit": "National Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "National Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, National Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "National Park in Matheran"
+      },
+      "position": 15
+    },
+    {
+      "id": "matheran-cathedral-of-mary",
+      "name": "Cathedral of Mary",
+      "slug": "cathedral-of-mary",
+      "description": "Cathedral of Mary is a must-see hill station in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "Cathedral of Mary offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Weekend",
+      "mapsSearch": "Cathedral of Mary, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Cathedral of Mary in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Cathedral of Mary in Matheran"
+      },
+      "position": 16
+    },
+    {
+      "id": "matheran-ananthagiri-view",
+      "name": "Ananthagiri View",
+      "slug": "ananthagiri-view",
+      "description": "Located in scenic Matheran, Ananthagiri View offers an immersive experience into local culture. Exploring Ananthagiri View is one of the top things to do in Matheran.",
+      "whyVisit": "Ananthagiri View offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Ananthagiri View, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Ananthagiri View in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Ananthagiri View in Matheran"
+      },
+      "position": 17
+    },
+    {
+      "id": "matheran-wetland-park",
+      "name": "Wetland Park",
+      "slug": "wetland-park",
+      "description": "Wetland Park is one of the most iconic landmarks in Matheran, drawing visitors with its timeless charm. This park offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Wetland Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Wetland Park.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Wetland Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Wetland Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Wetland Park in Matheran"
+      },
+      "position": 18
+    },
+    {
+      "id": "matheran-mawkdok-valley",
+      "name": "Mawkdok Valley",
+      "slug": "mawkdok-valley",
+      "description": "A crown jewel of Matheran, Mawkdok Valley captivates every traveler with enchanting beauty. No trip to Matheran is complete without visiting Mawkdok Valley.",
+      "whyVisit": "A visit to Mawkdok Valley is essential for understanding Matheran.",
+      "bestTime": "Oct-Dec",
+      "duration": "Half day",
+      "mapsSearch": "Mawkdok Valley, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Mawkdok Valley in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Mawkdok Valley in Matheran"
+      },
+      "position": 19
+    },
+    {
+      "id": "matheran-valley-view-point",
+      "name": "Valley View Point",
+      "slug": "valley-view-point",
+      "description": "Located in scenic Matheran, Valley View Point offers an immersive experience into local culture. Exploring Valley View Point is one of the top things to do in Matheran.",
+      "whyVisit": "Valley View Point stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Valley View Point, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Valley View Point in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Valley View Point in Matheran"
+      },
+      "position": 20
+    },
+    {
+      "id": "matheran-butterfly-park",
+      "name": "Butterfly Park",
+      "slug": "butterfly-park",
+      "description": "A crown jewel of Matheran, Butterfly Park captivates every traveler with enchanting beauty. No trip to Matheran is complete without visiting Butterfly Park.",
+      "whyVisit": "A visit to Butterfly Park is essential for understanding Matheran.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Butterfly Park, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Butterfly Park in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Butterfly Park in Matheran"
+      },
+      "position": 21
+    },
+    {
+      "id": "matheran-shillong-peak",
+      "name": "Shillong Peak",
+      "slug": "shillong-peak",
+      "description": "Shillong Peak is a must-see hill station in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "Experience the unmatched beauty of Shillong Peak.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Shillong Peak, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Shillong Peak in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Shillong Peak in Matheran"
+      },
+      "position": 22
+    },
+    {
+      "id": "matheran-tiger-hill-view",
+      "name": "Tiger Hill View",
+      "slug": "tiger-hill-view",
+      "description": "Nestled in Matheran, Tiger Hill View stands as a testament to architectural brilliance. This renowned viewpoint attracts tourists who come to admire its stunning design. A visit to Tiger Hill View is among the best things to do in Matheran.",
+      "whyVisit": "Tiger Hill View stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Tiger Hill View, Matheran",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Tiger Hill View in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Tiger Hill View in Matheran"
+      },
+      "position": 23
+    },
+    {
+      "id": "matheran-rose-garden",
+      "name": "Rose Garden",
+      "slug": "rose-garden",
+      "description": "Rose Garden is one of the most iconic landmarks in Matheran, drawing visitors with its timeless charm. This park offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rose Garden promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Rose Garden.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Rose Garden, Matheran",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Rose Garden in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Rose Garden in Matheran"
+      },
+      "position": 24
+    },
+    {
+      "id": "matheran-don-bosco-museum",
+      "name": "Don Bosco Museum",
+      "slug": "don-bosco-museum",
+      "description": "Don Bosco Museum is a must-see hill station in Matheran, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Matheran.",
+      "whyVisit": "Experience the unmatched beauty of Don Bosco Museum.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Don Bosco Museum, Matheran",
+      "category": "hill_station",
+      "imagePrompt": "Ultra realistic travel photography, Don Bosco Museum in Matheran, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Don Bosco Museum in Matheran"
+      },
+      "position": 25
+    }
+  ]
+}

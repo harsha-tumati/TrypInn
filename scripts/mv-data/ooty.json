@@ -1,0 +1,260 @@
+{
+  "slug": "ooty",
+  "name": "Ooty",
+  "state": "Tamil Nadu",
+  "tagline": "Queen of the Nilgiris where tea and mist collide",
+  "categories": ["hill_station", "nature", "heritage"],
+  "highlights": ["rolling tea estates blanketing the nilgiri hills", "toy train through eucalyptus and shola forests"],
+  "attractions": [
+    {
+      "name": "Nilgiri Mountain Railway",
+      "category": "heritage",
+      "description": "A UNESCO World Heritage rack railway, the Nilgiri Mountain Railway climbs from Mettupalayam at 326 m to Ooty at 2203 m over 46 km using a unique rack-and-pinion system on the steepest section. Inaugurated in 1908, the toy train passes through 16 tunnels and 250 bridges, threading through tea estates, shola forests, and tribal villages — a journey of extraordinary scenic richness.",
+      "whyVisit": "One of three UNESCO mountain railways in India, offering a steam-hauled journey through Nilgiri landscape.",
+      "bestTime": "October to June for clear views",
+      "duration": "4-5 hours (Mettupalayam to Ooty)",
+      "mapsSearch": "Nilgiri Mountain Railway Ooty Tamil Nadu UNESCO",
+      "imageQuery": "Nilgiri mountain railway toy train Ooty tea estate"
+    },
+    {
+      "name": "Ooty Botanical Gardens",
+      "category": "garden",
+      "description": "Established in 1848 by the Marquis of Tweeddale and spread across 55 acres on the slopes of the Doddabetta peak, the Government Botanical Gardens contain over 650 plant species including a 20-million-year-old fossilised tree trunk, Italian-style terraced lawns, and a renowned collection of tree ferns, orchids, and Nilgiri rhododendrons. The annual May flower show draws hundreds of thousands of visitors.",
+      "whyVisit": "One of South India's finest botanical collections with a fossilised tree that predates the Himalayas.",
+      "bestTime": "May for the flower show, or morning year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Government Botanical Gardens Ooty Tamil Nadu",
+      "imageQuery": "Ooty botanical gardens terraced lawns Nilgiris"
+    },
+    {
+      "name": "Doddabetta Peak",
+      "category": "viewpoint",
+      "description": "At 2637 metres, Doddabetta is the highest point in the Nilgiri Hills and all of South India. A paved road and short walk reach the twin-telescope observation tower at the summit where, on clear days, the plains of Coimbatore and the Bay of Bengal are visible. The slopes are draped in montane shola forests and the surrounding land is protected as part of the Nilgiri Biosphere Reserve.",
+      "whyVisit": "The roof of South India with views extending to the Bay of Bengal on cloudless days.",
+      "bestTime": "November to February for clearest skies",
+      "duration": "1-2 hours",
+      "mapsSearch": "Doddabetta Peak Ooty Nilgiri Hills Tamil Nadu",
+      "imageQuery": "Doddabetta Peak summit Ooty Nilgiri view"
+    },
+    {
+      "name": "Ooty Lake",
+      "category": "lake",
+      "description": "Constructed by John Sullivan, founder of Ooty, in 1825 by damming the Kamaraj Sagar, the 65-acre Ooty Lake is nestled among eucalyptus groves and offers pedal boats, rowboats, and motor boats. The surrounding parkland hosts a mini-train ride for families. The lake looks particularly atmospheric at dawn when low mist clings to the water's surface and the Nilgiri hills frame the horizon.",
+      "whyVisit": "A scenic colonial-era lake perfect for a misty morning boat ride.",
+      "bestTime": "Early morning for mist effects",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ooty Lake Tamil Nadu boating",
+      "imageQuery": "Ooty Lake boating mist eucalyptus"
+    },
+    {
+      "name": "Mudumalai National Park",
+      "category": "wildlife",
+      "description": "Part of the Nilgiri Biosphere Reserve and bordering Karnataka and Kerala, Mudumalai is one of India's oldest wildlife sanctuaries (established 1940) and one of the most accessible tiger reserves. Teak forests and grasslands shelter around 50 tigers, 600 elephants, gaur, leopards, sloth bears, and over 250 bird species. Canter safaris and elephant rides operate from Theppakadu.",
+      "whyVisit": "One of India's best places to see wild elephants, with reliable tiger sightings at dawn.",
+      "bestTime": "February to May and September to November",
+      "duration": "Full day",
+      "mapsSearch": "Mudumalai National Park Tiger Reserve Tamil Nadu",
+      "imageQuery": "Mudumalai elephant safari wildlife Tamil Nadu"
+    },
+    {
+      "name": "Tea Museum Ooty",
+      "category": "museum",
+      "description": "Run by Tamil Nadu Tea Plantation Corporation (TANTEA) near Doddabetta, the Tea Museum traces the full story of Nilgiri tea from its 1835 introduction by British planters to modern mass production. Exhibits include century-old rolling machines, withering troughs, and fermentation chambers still in use, alongside a detailed history of how tea transformed the Nilgiri economy and landscape.",
+      "whyVisit": "Watch Nilgiri tea being processed in original Victorian-era machinery still operating today.",
+      "bestTime": "Morning when processing is active, year-round",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Tea Museum Ooty TANTEA Tamil Nadu",
+      "imageQuery": "Tea Museum Ooty Nilgiri tea factory processing"
+    },
+    {
+      "name": "Avalanche Lake",
+      "category": "lake",
+      "description": "Twenty-eight kilometres from Ooty at 2286 metres, Avalanche Lake sits at the head of a pristine valley carved out by a massive 1823 landslide that lent it its name. The crystal-clear lake and surrounding shola forest are part of the Nilgiri Biosphere Reserve. Trout fishing is permitted here, and the valley is carpeted with Nilgiri aster and wild strawberries in season.",
+      "whyVisit": "One of the Nilgiris' most pristine and scenically dramatic lakes set in protected forest.",
+      "bestTime": "November to February",
+      "duration": "Half day",
+      "mapsSearch": "Avalanche Lake Ooty Nilgiri Tamil Nadu",
+      "imageQuery": "Avalanche Lake Ooty shola forest Nilgiris"
+    },
+    {
+      "name": "Rose Garden Ooty",
+      "category": "garden",
+      "description": "The largest rose garden in India, Ooty's Rose Garden is spread across 10 acres on the slopes of Elk Hill and contains over 20,000 varieties of roses belonging to 2,800 species, including rare and exotic cultivars alongside heritage Indian varieties. Terraced in five levels, the garden is maintained by the Tamil Nadu Horticulture Department and peaks in bloom between April and June.",
+      "whyVisit": "India's most comprehensive rose collection in a spectacular terraced hillside setting.",
+      "bestTime": "April to June for peak bloom",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Rose Garden Ooty Tamil Nadu Elk Hill",
+      "imageQuery": "Ooty rose garden terraced hillside 20000 varieties"
+    },
+    {
+      "name": "Pykara Lake and Falls",
+      "category": "waterfall",
+      "description": "Nineteen kilometres from Ooty on the road to Mysore, the Pykara River cascades in two stages — the upper falls drop 61 m and the lower falls 55 m — through dense shola forest. The forest-ringed reservoir above is popular for speed-boating and is set against a backdrop of rolling Nilgiri grasslands. Gaur and sambar often graze near the water's edge at dawn.",
+      "whyVisit": "Twin cascades through protected shola forest with wild gaur often visible at the reservoir.",
+      "bestTime": "July to September for full flow; November to February for wildlife",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pykara Falls Ooty Tamil Nadu",
+      "imageQuery": "Pykara falls waterfall Ooty shola forest"
+    },
+    {
+      "name": "Toda Tribal Settlement",
+      "category": "heritage",
+      "description": "The Toda are the indigenous pastoralists of the Nilgiris, famous for their barrel-vaulted stone and thatch munds (hamlets) shaped like half-cylinders. Several Toda settlements are accessible near Ooty, including the village at Bearhola. Their intricately embroidered shawls, sacred buffalo rituals, and unique polyandrous society have been studied by anthropologists since the 19th century.",
+      "whyVisit": "Meet one of India's most culturally distinct indigenous peoples in their natural highland environment.",
+      "bestTime": "Morning, any time of year",
+      "duration": "1-2 hours",
+      "mapsSearch": "Toda Tribal Village Ooty Nilgiri Tamil Nadu",
+      "imageQuery": "Toda tribal settlement barrel hut Nilgiris Ooty"
+    },
+    {
+      "name": "Emerald Lake",
+      "category": "lake",
+      "description": "Forty kilometres from Ooty near Gudalur, the Emerald Reservoir is a stunningly green irrigation dam surrounded by tea estates and shola forest. Part of the Silent Valley catchment area, the surrounding Nilgiri grasslands and forest host gaur, spotted deer, jungle cats, and rare birds including the Nilgiri pipit. The narrow road approaching the lake passes through some of the most verdant Nilgiri countryside.",
+      "whyVisit": "A brilliant emerald lake set in wild Nilgiri grasslands, virtually free of tourist infrastructure.",
+      "bestTime": "November to January for clear skies and bird activity",
+      "duration": "Half day",
+      "mapsSearch": "Emerald Lake Ooty Nilgiri Tamil Nadu",
+      "imageQuery": "Emerald Lake Ooty Nilgiri green reservoir"
+    },
+    {
+      "name": "Kamraj Sagar Dam",
+      "category": "nature",
+      "description": "Also known as the Upper Bhavani Dam, Kamraj Sagar is a broad reservoir 40 km from Ooty surrounded by some of the Nilgiris' finest grassland habitat. The expansive shola-grassland mosaic here is critical elephant corridor and is notable for excellent birding — Nilgiri flycatcher, Nilgiri wood pigeon, and Montagu's harrier are regularly seen. The dam wall walkway offers cinematic views.",
+      "whyVisit": "Wild Nilgiri grasslands and a critical elephant corridor with exceptional bird diversity.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Upper Bhavani Dam Kamraj Sagar Ooty Tamil Nadu",
+      "imageQuery": "Upper Bhavani Dam Nilgiri grassland Ooty"
+    },
+    {
+      "name": "St. Stephen's Church Ooty",
+      "category": "heritage",
+      "description": "The oldest church in the Nilgiris, St. Stephen's was built in 1829 using timber salvaged from Tipu Sultan's palace at Srirangapatna. The Gothic structure features hand-painted stained-glass windows, solid teak pews, and a graveyard of British planters and officials that reads like a compendium of early Raj history. The church still holds services and is maintained in immaculate condition.",
+      "whyVisit": "A living Raj-era church with Tipu Sultan palace timber and a graveyard full of colonial-era history.",
+      "bestTime": "Morning, any day",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St. Stephen's Church Ooty Tamil Nadu",
+      "imageQuery": "St Stephens Church Ooty colonial heritage Nilgiris"
+    },
+    {
+      "name": "Ooty Tibetan Market",
+      "category": "market",
+      "description": "Located near the bus stand in central Ooty, the Tibetan refugee market is a maze of stalls selling Tibetan jewellery, carpets, prayer flags, thangka paintings, and warm woolens. The Tibetan community settled here in the 1960s and their handmade goods — especially turquoise-set silver jewellery and hand-knotted rugs — represent exceptional value compared to tourist shops elsewhere.",
+      "whyVisit": "Authentic Tibetan handicrafts at fair prices from a settled community of skilled artisans.",
+      "bestTime": "Morning for best selection",
+      "duration": "1 hour",
+      "mapsSearch": "Tibetan Market Ooty Tamil Nadu",
+      "imageQuery": "Tibetan market Ooty handicrafts jewellery"
+    },
+    {
+      "name": "Elk Hill Murugan Temple",
+      "category": "temple",
+      "description": "Crowning Elk Hill above central Ooty, this Murugan temple is reached by a ropeway (the only one in the Nilgiris) or a staircase of 300 steps. The summit offers sweeping 360-degree views over Ooty town, the surrounding tea estates, and the Doddabetta ridge. The ropeway ride itself, floating above eucalyptus canopy with Nilgiri peaks all around, is a highlight of any Ooty visit.",
+      "whyVisit": "The best panoramic view over Ooty town, reached by the Nilgiris' only ropeway.",
+      "bestTime": "Clear morning or late afternoon",
+      "duration": "1 hour",
+      "mapsSearch": "Elk Hill Murugan Temple Ropeway Ooty Tamil Nadu",
+      "imageQuery": "Elk Hill ropeway Ooty Murugan Temple panorama"
+    },
+    {
+      "name": "Wenlock Downs",
+      "category": "nature",
+      "description": "Rolling grassland meadows 15 km from Ooty near the 9th Milestone on the Gudalur road, Wenlock Downs are the quintessential Nilgiri landscape — vast expanses of undulating grass dotted with shola forest patches that inspired John Sullivan's original description of the Nilgiris as 'an India above India'. Used for horse riding and as a filming location for Bollywood blockbusters.",
+      "whyVisit": "The most cinematic of Nilgiri grasslands, beloved by horseback riders and film directors.",
+      "bestTime": "October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Wenlock Downs Ooty 9th Mile Nilgiri Tamil Nadu",
+      "imageQuery": "Wenlock Downs Ooty rolling grassland Nilgiri"
+    },
+    {
+      "name": "Lamb's Rock Coonoor",
+      "category": "viewpoint",
+      "description": "Situated 9 km from Coonoor (30 km from Ooty), Lamb's Rock is a cliff-top viewpoint at 1600 metres offering mesmerising views over the Coimbatore plains, Mettupalayam valley, and the sea of tea gardens cascading down the Nilgiri escarpment. The viewpoint was named after a British officer and the walk from Coonoor through tea estates is as rewarding as the destination.",
+      "whyVisit": "The most dramatic cliff-edge viewpoint in the Nilgiris with an uninterrupted view to the plains.",
+      "bestTime": "Early morning before mist rises",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Lamb's Rock Coonoor Nilgiri Tamil Nadu",
+      "imageQuery": "Lambs Rock Coonoor viewpoint Nilgiri tea estate"
+    },
+    {
+      "name": "Sim's Park Coonoor",
+      "category": "garden",
+      "description": "A 12-hectare botanical garden in Coonoor founded in 1874, Sim's Park is built on a steep valley slope and features a collection of 1000+ plant species including giant magnolias, tree ferns, camellias, and a grove of Japanese cherry trees. Less visited than the Ooty gardens, it retains a more intimate character and hosts the annual summer fruit and vegetable show.",
+      "whyVisit": "A quieter, hillside alternative to the Ooty gardens with a more intimate colonial character.",
+      "bestTime": "March to May",
+      "duration": "1.5 hours",
+      "mapsSearch": "Sim's Park Coonoor Nilgiri Tamil Nadu",
+      "imageQuery": "Sims Park Coonoor botanical garden Nilgiri"
+    },
+    {
+      "name": "Hidden Valley Ooty",
+      "category": "nature",
+      "description": "A little-signposted natural amphitheatre of shola forest and grassland situated 10 km from Ooty towards Kotagiri, Hidden Valley is a birder's paradise hosting Nilgiri laughingthrush, Black-and-orange flycatcher, and Nilgiri flycatcher. Streams of clear water run through the valley floor and the site is virtually unvisited by mainstream tourists, accessible via a rough track from the highway.",
+      "whyVisit": "A pristine Nilgiri grassland-shola mosaic with endemic birds and zero tourist infrastructure.",
+      "bestTime": "October to April",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hidden Valley Ooty Kotagiri Nilgiri Tamil Nadu",
+      "imageQuery": "Hidden Valley shola forest grassland Ooty Nilgiri"
+    },
+    {
+      "name": "Kamaraj Sagar Viewpoint",
+      "category": "viewpoint",
+      "description": "A little-known roadside viewpoint on the Gudalur-Ooty highway above Kamaraj Sagar reservoir, this spot looks out over a vast panorama of Nilgiri ridgelines receding in blue layers to the horizon, with the reservoir glittering below. Paragliders sometimes launch from the grassy escarpment edge and the location is a favoured dawn photography spot for Nilgiri landscape shooters.",
+      "whyVisit": "An unmarked but spectacular dawn viewpoint over layered Nilgiri ridges rarely found in guidebooks.",
+      "bestTime": "Dawn to 8am",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Kamaraj Sagar Viewpoint Ooty Gudalur Highway Tamil Nadu",
+      "imageQuery": "Nilgiri ridgeline panorama reservoir viewpoint Ooty"
+    },
+    {
+      "name": "Toda Mund Bearhola",
+      "category": "heritage",
+      "description": "The Bearhola Toda settlement on the northern edge of Ooty is one of the most accessible authentic Toda hamlets, where barrel-vaulted stone munds can be seen alongside operating buffalo pens sacred to Toda religion. Community-authorised visits allow travellers to learn about embroidery traditions (putkuli) and observe the sacred buffalo dairy. An encounter unavailable through any commercial tour.",
+      "whyVisit": "The most authentic access point to living Toda buffalo culture on the plateau edge above Ooty.",
+      "bestTime": "Morning any time of year",
+      "duration": "1-2 hours",
+      "mapsSearch": "Toda Mund Bearhola Ooty Nilgiri Tamil Nadu",
+      "imageQuery": "Toda mund bearhola barrel hut buffalo Nilgiri"
+    },
+    {
+      "name": "Kodanad Viewpoint",
+      "category": "viewpoint",
+      "description": "Thirty-two kilometres east of Ooty near Kotagiri, the Kodanad viewpoint sits on the eastern escarpment of the Nilgiris at 2000 metres, peering down a near-vertical 1000 m drop to the Mysore plateau. Tea estates cascade down the slopes below and on a clear day the Erode and Salem districts spread out 50 km to the east. Largely unknown to Ooty package tourists.",
+      "whyVisit": "A stomach-dropping cliff-edge viewpoint above the eastern Nilgiri escarpment with zero commercialisation.",
+      "bestTime": "Morning before haze builds",
+      "duration": "1 hour",
+      "mapsSearch": "Kodanad Viewpoint Kotagiri Nilgiri Tamil Nadu",
+      "imageQuery": "Kodanad viewpoint escarpment Kotagiri Nilgiri"
+    },
+    {
+      "name": "Long Valley Shola Reserve",
+      "category": "nature",
+      "description": "A protected shola forest corridor 22 km from Ooty along the road to Gudalur, Long Valley is one of the Nilgiris' most intact high-altitude wetland-shola-grassland mosaics. The forest holds endemic amphibians including Nilgiri marshall frog, the extremely rare Nilgiri tahr near the escarpment edges, and an outstanding array of endemic butterflies. No commercial facilities exist.",
+      "whyVisit": "One of the Nilgiris' most ecologically intact corners — endemic wildlife in a completely uncommercialised setting.",
+      "bestTime": "November to February",
+      "duration": "Half day",
+      "mapsSearch": "Long Valley Shola Ooty Gudalur Tamil Nadu",
+      "imageQuery": "shola forest wetland Nilgiri Ooty endemic wildlife"
+    },
+    {
+      "name": "Ketti Valley Viewpoint",
+      "category": "viewpoint",
+      "description": "Midway along the Nilgiri Mountain Railway between Coonoor and Ooty, the Ketti Valley is often described as the second largest valley in the world after Kangra Valley by some sources. The viewpoint above the railway at Ketti gives a sweeping look over a patchwork of tea estates, eucalyptus plantations, and the silver thread of the Devala River 600 metres below.",
+      "whyVisit": "A little-visited valley overlook offering the classic Nilgiri patchwork landscape rarely seen from road level.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Ketti Valley Viewpoint Ooty Nilgiri Mountain Railway Tamil Nadu",
+      "imageQuery": "Ketti Valley viewpoint tea estate Nilgiri railway"
+    },
+    {
+      "name": "Silent Valley Tribal Walk",
+      "category": "adventure",
+      "description": "A forest department-permitted guided walk of 8-12 km through the buffer zone of the Silent Valley biosphere corridor south of Ooty near Mukkurthi National Park. Led by Irula tribal trackers who have inhabited these forests for millennia, the walk covers subtropical montane forest, river crossing, and meadows where Nilgiri tahr are regularly spotted. Permits required, numbers strictly controlled.",
+      "whyVisit": "A tracker-led wilderness walk into one of the last pristine Nilgiri wilderness corridors.",
+      "bestTime": "October to March",
+      "duration": "Full day",
+      "mapsSearch": "Mukkurthi National Park Nilgiri tahr trek Ooty Tamil Nadu",
+      "imageQuery": "Nilgiri tahr Mukkurthi National Park shola forest trek"
+    }
+  ]
+}

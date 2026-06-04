@@ -1,0 +1,190 @@
+{
+  "slug": "mahabaleshwar",
+  "name": "Mahabaleshwar",
+  "state": "Maharashtra",
+  "tagline": "Strawberry hills and valley views above the Sahyadri clouds",
+  "categories": ["hill_station", "nature", "heritage"],
+  "highlights": ["freshest strawberries and cream at 1,372 m altitude", "over twenty panoramic viewpoints above the krishna valley"],
+  "attractions": [
+    {
+      "name": "Arthur's Seat Viewpoint",
+      "category": "viewpoint",
+      "description": "Called the \"Queen of Points,\" Arthur's Seat is Mahabaleshwar's highest and most spectacular viewpoint at 1,470 m, perched on the edge of a sheer cliff above the Savitri River gorge. The view sweeps across three distinct valley systems simultaneously, and on clear winter mornings the distant Deccan plateau is visible. A natural stone seat on the edge, where according to legend no bird ever sits, gives the point its enduring mystique.",
+      "whyVisit": "The finest panoramic viewpoint in Maharashtra hill stations, bar none.",
+      "bestTime": "November to February for crystalline visibility; summer evenings for dramatic cloud inversions",
+      "duration": "1-2 hours",
+      "mapsSearch": "Arthur's Seat Mahabaleshwar Maharashtra",
+      "imageQuery": "Arthur's Seat Mahabaleshwar valley viewpoint"
+    },
+    {
+      "name": "Venna Lake",
+      "category": "lake",
+      "description": "Built in 1842 by Appasaheb Maharaj of Satara, Venna Lake is a serene 28-acre reservoir surrounded by dense pine forest in the heart of Mahabaleshwar town. Horse riding along the perimeter, rowboating on the glassy water, and corn stalls along the promenade define the classic hill-station experience here. The lake reflects the surrounding forest perfectly on still mornings, and paddle boats shaped like swans are a perennial family favourite.",
+      "whyVisit": "The quintessential Mahabaleshwar experience — boating on a pine-fringed colonial-era lake.",
+      "bestTime": "October to June; mornings for misty reflections, evenings for a cooler stroll",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Venna Lake Mahabaleshwar Maharashtra",
+      "imageQuery": "Venna Lake Mahabaleshwar boating pine trees"
+    },
+    {
+      "name": "Pratapgad Fort",
+      "category": "fort",
+      "description": "Built in 1656 on orders of Chhatrapati Shivaji Maharaj, Pratapgad is among the most historically charged forts in Maharashtra. It was here in 1659 that Shivaji assassinated Bijapur general Afzal Khan, a pivotal moment in the Maratha rise to power. The fort stands at 1,080 m surrounded by forested hills, and the twin fortifications — the lower fort and upper citadel — are connected by steep stone stairways. A large bronze Shivaji statue dominates the main entrance plaza.",
+      "whyVisit": "The site of Shivaji's most decisive military triumph, with excellent preservation and historical depth.",
+      "bestTime": "October to February for clear views; avoid weekend crowds by visiting weekdays",
+      "duration": "3-4 hours including the 15-minute drive from Mahabaleshwar",
+      "mapsSearch": "Pratapgad Fort Mahabaleshwar Maharashtra",
+      "imageQuery": "Pratapgad Fort Maharashtra Shivaji Sahyadri"
+    },
+    {
+      "name": "Mahabaleshwar Temple (Panchganga Mandir)",
+      "category": "temple",
+      "description": "The ancient Mahabaleshwar Shiva temple in Old Mahabaleshwar is the religious heart of the hill station, giving it its name — \"Great God of Strength.\" The main sanctum houses the Mahabali lingam, a self-formed (swayambhu) Shiva lingam believed to be thousands of years old. Inside the temple complex, five sacred rivers are said to originate from the mouth of a cow-face sculpture, making it one of Maharashtra's most revered pilgrimage sites.",
+      "whyVisit": "The source of five rivers and the ancient temple that gives Mahabaleshwar its sacred name.",
+      "bestTime": "Early morning for peaceful darshan before tour groups arrive",
+      "duration": "1 hour",
+      "mapsSearch": "Mahabaleshwar Temple Old Mahabaleshwar Maharashtra",
+      "imageQuery": "Mahabaleshwar Shiva temple old town Maharashtra"
+    },
+    {
+      "name": "Wilson Point (Sunrise Point)",
+      "category": "viewpoint",
+      "description": "At 1,439 m, Wilson Point is the highest point in Mahabaleshwar and the only viewpoint that offers both sunrise and sunset vistas. Named after Sir Leslie Wilson, a former Governor of Bombay, it commands a 360-degree panorama. The sunrise from Wilson Point — watching dawn light sweep across the Deccan plains while the Sahyadri valleys fill slowly with gold — is consistently rated among Maharashtra's most moving natural experiences.",
+      "whyVisit": "Mahabaleshwar's highest point and the only spot offering both sunrise and sunset panoramas.",
+      "bestTime": "Early morning (5:30–7:00 AM) for sunrise; full moon nights for extraordinary views",
+      "duration": "1-2 hours",
+      "mapsSearch": "Wilson Point Mahabaleshwar Maharashtra",
+      "imageQuery": "Wilson Point sunrise Mahabaleshwar panorama"
+    },
+    {
+      "name": "Strawberry Farms of Mahabaleshwar",
+      "category": "nature",
+      "description": "Mahabaleshwar produces over 85% of India's strawberry crop, and the fields draping the hillsides around the town are at their most productive from November to May. Farm visits allow visitors to pick strawberries directly, taste multiple varieties — including the large Camarosa and the intensely flavoured Sweet Charlie — and buy fresh strawberries, strawberry cream, jam, squash, and wine at the farm gate. The iconic roadside bowls of fresh strawberries and cream are mandatory.",
+      "whyVisit": "The richest strawberry-picking experience in India, with direct farm access.",
+      "bestTime": "November to May at peak production; January–February for peak flavour",
+      "duration": "1-2 hours",
+      "mapsSearch": "strawberry farm Mahabaleshwar Maharashtra",
+      "imageQuery": "strawberry farm Mahabaleshwar picking Maharashtra"
+    },
+    {
+      "name": "Lingmala Waterfall",
+      "category": "waterfall",
+      "description": "The most spectacular waterfall near Mahabaleshwar, Lingmala plunges 600 ft (183 m) in two tiers through dense deciduous forest accessible via a 1.5 km forest trail. The upper falls are viewable from a safety railing, and a longer trail leads to the base of the lower falls. During peak monsoon (July–August) the volume of water is thunderous and the surrounding forest is a vivid emerald. The trail passes through excellent birdwatching territory.",
+      "whyVisit": "The tallest and most dramatic waterfall accessible from Mahabaleshwar town.",
+      "bestTime": "July to October for maximum flow; October–November for a manageable trail with good water",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lingmala Waterfall Mahabaleshwar Maharashtra",
+      "imageQuery": "Lingmala Waterfall Mahabaleshwar Maharashtra monsoon"
+    },
+    {
+      "name": "Elephant's Head Point (Needle Hole Point)",
+      "category": "viewpoint",
+      "description": "A twin natural rock formation on a cliff edge at the end of a short forest trail, where one rock is shaped like an elephant's head and a natural hole in the second rock frames a precise circular view of the valley below — the needle hole. The combination of the sculptural rocks and the framed valley view makes this one of Mahabaleshwar's most photographed spots, and the surrounding forest walk is pleasant even if the views are less expansive than Arthur's Seat.",
+      "whyVisit": "A unique natural rock arch that frames the valley like a camera lens.",
+      "bestTime": "November to February for clear valley frames; morning light is best for photography",
+      "duration": "1 hour",
+      "mapsSearch": "Elephant's Head Point Mahabaleshwar Maharashtra",
+      "imageQuery": "Elephant Head Point needle hole Mahabaleshwar rock"
+    },
+    {
+      "name": "Panchgani Table Land",
+      "category": "nature",
+      "description": "Asia's second-longest mountain plateau, the Panchgani Table Land stretches for 1.5 km at 1,334 m, a flat-top basalt mesa with sweeping views of five valleys (panchgani = five hills). Horse riding, ATV biking, and para-gliding operate here. The flat expanse is used as a film shooting location, and the edge provides dramatic views of the Krishna River far below. The combination of vast openness and edge-cliff drops is unique in the Sahyadri.",
+      "whyVisit": "India's largest natural volcanic plateau, offering near-edge views of five valleys simultaneously.",
+      "bestTime": "October to May; sunset for vivid golden light across the plateau",
+      "duration": "2-3 hours",
+      "mapsSearch": "Panchgani Table Land Maharashtra viewpoint",
+      "imageQuery": "Panchgani Table Land plateau Maharashtra sunset"
+    },
+    {
+      "name": "Mapro Garden",
+      "category": "garden",
+      "description": "The garden and factory outlet of Mahabaleshwar's famous Mapro fruit products company sits amid manicured landscaping 8 km from the town centre. Visitors can taste freshly made strawberry crush, mulberry juice, rose syrup, and jamuns directly at sampling stalls, tour the mini-factory, and buy the full range of Mapro preserves and crushes. The rose garden section is in bloom from October to February, and the cafe serves fresh strawberry dishes year-round.",
+      "whyVisit": "The source of Mahabaleshwar's most iconic fruit products, with free tastings and a beautiful garden.",
+      "bestTime": "October to May; weekday mornings to avoid crowds",
+      "duration": "1.5-2 hours",
+      "mapsSearch": "Mapro Garden Mahabaleshwar Maharashtra",
+      "imageQuery": "Mapro Garden Mahabaleshwar strawberry Maharashtra"
+    },
+    {
+      "name": "Kate's Point",
+      "category": "viewpoint",
+      "description": "One of the classic points on the Mahabaleshwar driving circuit, Kate's Point offers a direct view into the Dhom Dam reservoir below — a vivid blue body of water framed by dry Deccan hills that contrasts sharply with the lush Sahyadri escarpment you stand on. The viewpoint is named after Sir Charles Malet's wife Catherine, who reportedly favoured this outlook. The sunset effect here, with the reservoir turning deep orange-gold, is particularly striking.",
+      "whyVisit": "The most dramatic water-meets-escarpment viewpoint on the Mahabaleshwar circuit.",
+      "bestTime": "Late afternoon for the reservoir's golden reflections",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Kate's Point Mahabaleshwar Maharashtra",
+      "imageQuery": "Kate's Point Mahabaleshwar Dhom Dam view"
+    },
+    {
+      "name": "Lodwick Point",
+      "category": "viewpoint",
+      "description": "The oldest viewpoint in Mahabaleshwar, developed by General Lodwick in 1824 — just two years after the British discovered the plateau — and marked by a memorial stone still standing on the cliff edge. The view is a classic Sahyadri escarpment panorama looking south toward Pratapgad and the Konkan coast. The forest trail from the main road to the point passes through a canopy of silver oak and mango trees that were planted by the British colonial administration.",
+      "whyVisit": "Historical significance as Mahabaleshwar's original viewpoint, with 200-year-old colonial-planted forest.",
+      "bestTime": "October to February for clearest views and coolest forest walk",
+      "duration": "1 hour",
+      "mapsSearch": "Lodwick Point Mahabaleshwar Maharashtra",
+      "imageQuery": "Lodwick Point Mahabaleshwar colonial viewpoint"
+    },
+    {
+      "name": "Tapola (Mini Kashmir)",
+      "category": "lake",
+      "description": "The village of Tapola, 28 km from Mahabaleshwar on the backwaters of Shivsagar Lake (formed by Koyna Dam), is nicknamed Mini Kashmir for its serene lakeside setting backed by forested Western Ghats hills. Boat rides on the glassy backwaters to nearby forts, kayaking, and fishing are the main draws. The 90-minute boat excursion to Vasota Fort through jungle-lined waterways is one of Maharashtra's most unusual heritage experiences.",
+      "whyVisit": "Boat rides through jungle backwaters to a remote forest fort — one of Maharashtra's best hidden itineraries.",
+      "bestTime": "October to February for calm backwaters and clear forest trails",
+      "duration": "Full day from Mahabaleshwar",
+      "mapsSearch": "Tapola Mahabaleshwar Shivsagar Lake Maharashtra",
+      "imageQuery": "Tapola backwaters Shivsagar Lake Maharashtra boat"
+    },
+    {
+      "name": "Connaught Peak (Mount Malcolm)",
+      "category": "viewpoint",
+      "description": "The second-highest peak in Mahabaleshwar at 1,383 m, Connaught Peak (named after the Duke of Connaught) offers a forested walk of about 2 km from the main road through tall silver oak groves. The summit viewpoint looks directly down on Venna Lake below and across to Wilson Point. Far fewer visitors make it here than to Venna Lake or Arthur's Seat, making it one of the best spots for quiet forest immersion in the hill station.",
+      "whyVisit": "A peaceful forest peak walk above the crowds with a direct aerial view of Venna Lake.",
+      "bestTime": "Early morning for birdsong and misty forest light",
+      "duration": "2 hours return walk",
+      "mapsSearch": "Connaught Peak Mahabaleshwar Maharashtra",
+      "imageQuery": "Connaught Peak Mahabaleshwar forest walk"
+    },
+    {
+      "name": "Krishnabai Temple",
+      "category": "temple",
+      "description": "A small but architecturally exquisite 19th-century temple in Old Mahabaleshwar dedicated to the goddess of the Krishna River. An ornate stone spout shaped like a cow's head on the temple wall is said to mark the point where the Krishna River originates, and the water flows year-round regardless of drought. The intricate black stone Hemadpanthi carvings on the facade are exceptional, and the setting in the old bazaar quarter gives the visit a lived-in atmosphere.",
+      "whyVisit": "The traditionally recognised source of the Krishna River — one of the sacred origins of the Deccan's lifeline.",
+      "bestTime": "Early morning for rituals before tourist groups arrive",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Krishnabai Temple Old Mahabaleshwar Maharashtra",
+      "imageQuery": "Krishnabai Temple Mahabaleshwar Krishna river source"
+    },
+    {
+      "name": "Babington Point",
+      "category": "viewpoint",
+      "description": "A quiet, less-frequented viewpoint on the Mahabaleshwar plateau's northern edge that looks across the Koyna River gorge toward the Chandoli National Park forests. The undisturbed forest walk to the point passes through areas rich in Malabar giant squirrels, Indian paradise flycatchers, and Malabar whistling thrush. The point itself is a flat rocky ledge with a chest-high parapet wall and sweeping views of forested ridges — no valley towns, just wilderness.",
+      "whyVisit": "Mahabaleshwar's most secluded viewpoint, facing wilderness rather than towns or reservoirs.",
+      "bestTime": "October to February for birdwatching; post-monsoon for vivid green forest",
+      "duration": "1.5 hours including forest walk",
+      "mapsSearch": "Babington Point Mahabaleshwar Maharashtra",
+      "imageQuery": "Babington Point Mahabaleshwar forested ridge"
+    },
+    {
+      "name": "Old Mahabaleshwar Bazaar",
+      "category": "market",
+      "description": "The original British-era market street of Old Mahabaleshwar preserves colonial stone shopfronts alongside traditional Maharashtrian traders selling fresh mulberries, raspberries, wood-pressed oils, and dried local herbs. The chaats here use fresh local fruit as key ingredients — aam poli (raw mango sheets) and kokum sharbat are unique to this market. Walking the narrow lane at the end of a day's sightseeing, sampling as you go, is one of Mahabaleshwar's simplest and best pleasures.",
+      "whyVisit": "The most authentic market in Maharashtra's hill stations with genuinely local produce.",
+      "bestTime": "Late afternoon when daily farm deliveries are fresh on the stalls",
+      "duration": "1 hour",
+      "mapsSearch": "Old Mahabaleshwar bazaar market Maharashtra",
+      "imageQuery": "Old Mahabaleshwar bazaar market fruit stalls"
+    },
+    {
+      "name": "Vasota Fort (Vyaghragad)",
+      "category": "fort",
+      "description": "Reached only by boat across Shivsagar Lake from Tapola and then a 3 km jungle trek, Vasota is Mahabaleshwar's most remote and least-visited fort. The 1,169 m summit is almost entirely covered in dense jungle, with leopards, Malabar giant squirrels, and large birds of prey regularly spotted on the approach. The fort is a Maharashtra biodiversity hot spot as well as a Maratha heritage site, and the combined boat-and-trek approach is an adventure in itself.",
+      "whyVisit": "The most adventurous fort approach in the Sahyadri — by boat through jungle, then trek to a wildlife-rich summit.",
+      "bestTime": "October to March for safe trekking and clear lake conditions",
+      "duration": "Full day from Tapola; consider overnight",
+      "mapsSearch": "Vasota Fort Tapola Koyna Maharashtra trek",
+      "imageQuery": "Vasota Fort jungle Koyna backwaters Maharashtra"
+    }
+  ]
+}

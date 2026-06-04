@@ -1,0 +1,447 @@
+{
+  "id": "sundarbans",
+  "name": "Sundarbans",
+  "state": "West Bengal",
+  "slug": "sundarbans",
+  "tagline": "Mangrove kingdom of the Royal Bengal Tiger",
+  "categories": [
+    "wildlife",
+    "nature",
+    "river"
+  ],
+  "introduction": "Planning a trip to Sundarbans? This travel guide to Sundarbans covers the must visit places in Sundarbans, the best places to visit in Sundarbans, top tourist attractions in Sundarbans, and exciting things to do in Sundarbans.",
+  "metaTitle": "Best Places to Visit in Sundarbans | Tourist Attractions in Sundarbans - TrypInn",
+  "metaDescription": "Explore the best places to visit in Sundarbans, top things to do in Sundarbans, and must visit places in Sundarbans. Your complete travel guide to Sundarbans by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+    "alt": "Sundarbans travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "sundarbans-pobitora-wildlife-sanctuary",
+      "name": "Pobitora Wildlife Sanctuary",
+      "slug": "pobitora-wildlife-sanctuary",
+      "description": "Pobitora Wildlife Sanctuary is a must-see wildlife in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "Capture stunning photographs at Pobitora Wildlife Sanctuary.",
+      "bestTime": "Early morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Pobitora Wildlife Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Pobitora Wildlife Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Pobitora Wildlife Sanctuary in Sundarbans"
+      },
+      "position": 1
+    },
+    {
+      "id": "sundarbans-champawat",
+      "name": "Champawat",
+      "slug": "champawat",
+      "description": "Champawat is a must-see nature in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "Experience the unmatched beauty of Champawat.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Champawat, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Champawat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Champawat in Sundarbans"
+      },
+      "position": 2
+    },
+    {
+      "id": "sundarbans-namo-ghat",
+      "name": "Namo Ghat",
+      "slug": "namo-ghat",
+      "description": "Nestled in Sundarbans, Namo Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Namo Ghat is among the best things to do in Sundarbans.",
+      "whyVisit": "Namo Ghat offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Namo Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Namo Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Namo Ghat in Sundarbans"
+      },
+      "position": 3
+    },
+    {
+      "id": "sundarbans-orang-national-park",
+      "name": "Orang National Park",
+      "slug": "orang-national-park",
+      "description": "Orang National Park is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Orang National Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Orang National Park.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Orang National Park, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Orang National Park in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Orang National Park in Sundarbans"
+      },
+      "position": 4
+    },
+    {
+      "id": "sundarbans-munsiyari",
+      "name": "Munsiyari",
+      "slug": "munsiyari",
+      "description": "Nestled in Sundarbans, Munsiyari stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Munsiyari is among the best things to do in Sundarbans.",
+      "whyVisit": "Munsiyari offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Munsiyari, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Munsiyari in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Munsiyari in Sundarbans"
+      },
+      "position": 5
+    },
+    {
+      "id": "sundarbans-gola-ghat",
+      "name": "Gola Ghat",
+      "slug": "gola-ghat",
+      "description": "Gola Ghat is a must-see river in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "A visit to Gola Ghat is essential for understanding Sundarbans.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gola Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Gola Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Gola Ghat in Sundarbans"
+      },
+      "position": 6
+    },
+    {
+      "id": "sundarbans-hollongapar-gibbon-sanctuary",
+      "name": "Hollongapar Gibbon Sanctuary",
+      "slug": "hollongapar-gibbon-sanctuary",
+      "description": "Nestled in Sundarbans, Hollongapar Gibbon Sanctuary stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Hollongapar Gibbon Sanctuary is among the best things to do in Sundarbans.",
+      "whyVisit": "Hollongapar Gibbon Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hollongapar Gibbon Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Hollongapar Gibbon Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Hollongapar Gibbon Sanctuary in Sundarbans"
+      },
+      "position": 7
+    },
+    {
+      "id": "sundarbans-chaukori",
+      "name": "Chaukori",
+      "slug": "chaukori",
+      "description": "Chaukori is a must-see nature in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "Capture stunning photographs at Chaukori.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Chaukori, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Chaukori in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Chaukori in Sundarbans"
+      },
+      "position": 8
+    },
+    {
+      "id": "sundarbans-chausathi-ghat",
+      "name": "Chausathi Ghat",
+      "slug": "chausathi-ghat",
+      "description": "Chausathi Ghat is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chausathi Ghat promises an unforgettable experience.",
+      "whyVisit": "Chausathi Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Chausathi Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Chausathi Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Chausathi Ghat in Sundarbans"
+      },
+      "position": 9
+    },
+    {
+      "id": "sundarbans-bornadi-wildlife-sanctuary",
+      "name": "Bornadi Wildlife Sanctuary",
+      "slug": "bornadi-wildlife-sanctuary",
+      "description": "Bornadi Wildlife Sanctuary is a must-see wildlife in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "A visit to Bornadi Wildlife Sanctuary is essential for understanding Sundarbans.",
+      "bestTime": "Safari",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bornadi Wildlife Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Bornadi Wildlife Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Bornadi Wildlife Sanctuary in Sundarbans"
+      },
+      "position": 10
+    },
+    {
+      "id": "sundarbans-jim-corbett-national-park",
+      "name": "Jim Corbett National Park",
+      "slug": "jim-corbett-national-park",
+      "description": "Located in scenic Sundarbans, Jim Corbett National Park offers an immersive experience into local culture. Exploring Jim Corbett National Park is one of the top things to do in Sundarbans.",
+      "whyVisit": "A visit to Jim Corbett National Park is essential for understanding Sundarbans.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Jim Corbett National Park, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Jim Corbett National Park in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Jim Corbett National Park in Sundarbans"
+      },
+      "position": 11
+    },
+    {
+      "id": "sundarbans-ahilyabai-ghat",
+      "name": "Ahilyabai Ghat",
+      "slug": "ahilyabai-ghat",
+      "description": "Ahilyabai Ghat is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Ahilyabai Ghat promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Ahilyabai Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ahilyabai Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ahilyabai Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Ahilyabai Ghat in Sundarbans"
+      },
+      "position": 12
+    },
+    {
+      "id": "sundarbans-raimona-national-park",
+      "name": "Raimona National Park",
+      "slug": "raimona-national-park",
+      "description": "Raimona National Park is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Raimona National Park promises an unforgettable experience.",
+      "whyVisit": "Raimona National Park stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Raimona National Park, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Raimona National Park in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Raimona National Park in Sundarbans"
+      },
+      "position": 13
+    },
+    {
+      "id": "sundarbans-almora",
+      "name": "Almora",
+      "slug": "almora",
+      "description": "Located in scenic Sundarbans, Almora offers an immersive experience into local culture. Exploring Almora is one of the top things to do in Sundarbans.",
+      "whyVisit": "Experience the unmatched beauty of Almora.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Almora, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Almora in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Almora in Sundarbans"
+      },
+      "position": 14
+    },
+    {
+      "id": "sundarbans-harishchandra-ghat",
+      "name": "Harishchandra Ghat",
+      "slug": "harishchandra-ghat",
+      "description": "Nestled in Sundarbans, Harishchandra Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Harishchandra Ghat is among the best things to do in Sundarbans.",
+      "whyVisit": "A visit to Harishchandra Ghat is essential for understanding Sundarbans.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Harishchandra Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Harishchandra Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Harishchandra Ghat in Sundarbans"
+      },
+      "position": 15
+    },
+    {
+      "id": "sundarbans-hoollongapar-gibbon-sanctuary",
+      "name": "Hoollongapar Gibbon Sanctuary",
+      "slug": "hoollongapar-gibbon-sanctuary",
+      "description": "A crown jewel of Sundarbans, Hoollongapar Gibbon Sanctuary captivates every traveler with enchanting beauty. No trip to Sundarbans is complete without visiting Hoollongapar Gibbon Sanctuary.",
+      "whyVisit": "Hoollongapar Gibbon Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Dry season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Hoollongapar Gibbon Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Hoollongapar Gibbon Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Hoollongapar Gibbon Sanctuary in Sundarbans"
+      },
+      "position": 16
+    },
+    {
+      "id": "sundarbans-valley-of-flowers",
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "Nestled in Sundarbans, Valley of Flowers stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Valley of Flowers is among the best things to do in Sundarbans.",
+      "whyVisit": "A visit to Valley of Flowers is essential for understanding Sundarbans.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Valley of Flowers, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers in Sundarbans"
+      },
+      "position": 17
+    },
+    {
+      "id": "sundarbans-scindia-ghat",
+      "name": "Scindia Ghat",
+      "slug": "scindia-ghat",
+      "description": "Scindia Ghat is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Scindia Ghat promises an unforgettable experience.",
+      "whyVisit": "Scindia Ghat offers a perfect blend of history and scenery.",
+      "bestTime": "Monsoon",
+      "duration": "Sunset",
+      "mapsSearch": "Scindia Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Scindia Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Scindia Ghat in Sundarbans"
+      },
+      "position": 18
+    },
+    {
+      "id": "sundarbans-deepor-beel",
+      "name": "Deepor Beel",
+      "slug": "deepor-beel",
+      "description": "Deepor Beel is one of the most iconic landmarks in Sundarbans, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Deepor Beel promises an unforgettable experience.",
+      "whyVisit": "Deepor Beel offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "Half day",
+      "mapsSearch": "Deepor Beel, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Deepor Beel in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Deepor Beel in Sundarbans"
+      },
+      "position": 19
+    },
+    {
+      "id": "sundarbans-gangolihat",
+      "name": "Gangolihat",
+      "slug": "gangolihat",
+      "description": "Gangolihat is a must-see nature in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "Gangolihat stands out as one of the most rewarding experiences.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gangolihat, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gangolihat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Gangolihat in Sundarbans"
+      },
+      "position": 20
+    },
+    {
+      "id": "sundarbans-assi-ghat",
+      "name": "Assi Ghat",
+      "slug": "assi-ghat",
+      "description": "Assi Ghat is a must-see river in Sundarbans, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Sundarbans.",
+      "whyVisit": "A visit to Assi Ghat is essential for understanding Sundarbans.",
+      "bestTime": "Monsoon",
+      "duration": "Half day",
+      "mapsSearch": "Assi Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Assi Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Assi Ghat in Sundarbans"
+      },
+      "position": 21
+    },
+    {
+      "id": "sundarbans-karbi-anglong-wildlife-sanctuary",
+      "name": "Karbi Anglong Wildlife Sanctuary",
+      "slug": "karbi-anglong-wildlife-sanctuary",
+      "description": "Nestled in Sundarbans, Karbi Anglong Wildlife Sanctuary stands as a testament to architectural brilliance. This renowned wildlife attracts tourists who come to admire its stunning design. A visit to Karbi Anglong Wildlife Sanctuary is among the best things to do in Sundarbans.",
+      "whyVisit": "Karbi Anglong Wildlife Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Dry season",
+      "duration": "3-4 hours",
+      "mapsSearch": "Karbi Anglong Wildlife Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Karbi Anglong Wildlife Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Karbi Anglong Wildlife Sanctuary in Sundarbans"
+      },
+      "position": 22
+    },
+    {
+      "id": "sundarbans-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nestled in Sundarbans, Nanda Devi National Park stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Nanda Devi National Park is among the best things to do in Sundarbans.",
+      "whyVisit": "Capture stunning photographs at Nanda Devi National Park.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Nanda Devi National Park, Sundarbans",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Sundarbans"
+      },
+      "position": 23
+    },
+    {
+      "id": "sundarbans-vishnu-ghat",
+      "name": "Vishnu Ghat",
+      "slug": "vishnu-ghat",
+      "description": "A crown jewel of Sundarbans, Vishnu Ghat captivates every traveler with enchanting beauty. No trip to Sundarbans is complete without visiting Vishnu Ghat.",
+      "whyVisit": "Vishnu Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vishnu Ghat, Sundarbans",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Vishnu Ghat in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Vishnu Ghat in Sundarbans"
+      },
+      "position": 24
+    },
+    {
+      "id": "sundarbans-laokhowa-wildlife-sanctuary",
+      "name": "Laokhowa Wildlife Sanctuary",
+      "slug": "laokhowa-wildlife-sanctuary",
+      "description": "A crown jewel of Sundarbans, Laokhowa Wildlife Sanctuary captivates every traveler with enchanting beauty. No trip to Sundarbans is complete without visiting Laokhowa Wildlife Sanctuary.",
+      "whyVisit": "Laokhowa Wildlife Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Laokhowa Wildlife Sanctuary, Sundarbans",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Laokhowa Wildlife Sanctuary in Sundarbans, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Laokhowa Wildlife Sanctuary in Sundarbans"
+      },
+      "position": 25
+    }
+  ]
+}

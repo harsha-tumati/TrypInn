@@ -1,0 +1,447 @@
+{
+  "id": "auli",
+  "name": "Auli",
+  "state": "Uttarakhand",
+  "slug": "auli",
+  "tagline": "India's premier ski resort with panoramic Himalayan views",
+  "categories": [
+    "mountain",
+    "adventure",
+    "nature"
+  ],
+  "introduction": "Planning a trip to Auli? This travel guide to Auli covers the must visit places in Auli, the best places to visit in Auli, top tourist attractions in Auli, and exciting things to do in Auli.",
+  "metaTitle": "Best Places to Visit in Auli | Tourist Attractions in Auli - TrypInn",
+  "metaDescription": "Explore the best places to visit in Auli, top things to do in Auli, and must visit places in Auli. Your complete travel guide to Auli by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=1200&q=60",
+    "alt": "Auli travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "auli-auli-ski-resort",
+      "name": "Auli Ski Resort",
+      "slug": "auli-ski-resort",
+      "description": "Nestled in Auli, Auli Ski Resort stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Auli Ski Resort is among the best things to do in Auli.",
+      "whyVisit": "Capture stunning photographs at Auli Ski Resort.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Auli Ski Resort, Auli",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Auli Ski Resort in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Auli Ski Resort in Auli"
+      },
+      "position": 1
+    },
+    {
+      "id": "auli-gurso-bugyal",
+      "name": "Gurso Bugyal",
+      "slug": "gurso-bugyal",
+      "description": "Gurso Bugyal is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Gurso Bugyal promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Gurso Bugyal.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Gurso Bugyal, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Gurso Bugyal in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Gurso Bugyal in Auli"
+      },
+      "position": 2
+    },
+    {
+      "id": "auli-kwani-bugyal",
+      "name": "Kwani Bugyal",
+      "slug": "kwani-bugyal",
+      "description": "Located in scenic Auli, Kwani Bugyal offers an immersive experience into local culture. Exploring Kwani Bugyal is one of the top things to do in Auli.",
+      "whyVisit": "Capture stunning photographs at Kwani Bugyal.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kwani Bugyal, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Kwani Bugyal in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Kwani Bugyal in Auli"
+      },
+      "position": 3
+    },
+    {
+      "id": "auli-chenab-lake",
+      "name": "Chenab Lake",
+      "slug": "chenab-lake",
+      "description": "Located in scenic Auli, Chenab Lake offers an immersive experience into local culture. Exploring Chenab Lake is one of the top things to do in Auli.",
+      "whyVisit": "Experience the unmatched beauty of Chenab Lake.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Chenab Lake, Auli",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Chenab Lake in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Chenab Lake in Auli"
+      },
+      "position": 4
+    },
+    {
+      "id": "auli-joshimath",
+      "name": "Joshimath",
+      "slug": "joshimath",
+      "description": "Nestled in Auli, Joshimath stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Joshimath is among the best things to do in Auli.",
+      "whyVisit": "Capture stunning photographs at Joshimath.",
+      "bestTime": "Early morning",
+      "duration": "Half day",
+      "mapsSearch": "Joshimath, Auli",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Joshimath in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Joshimath in Auli"
+      },
+      "position": 5
+    },
+    {
+      "id": "auli-nanda-devi-peak-view",
+      "name": "Nanda Devi Peak View",
+      "slug": "nanda-devi-peak-view",
+      "description": "A crown jewel of Auli, Nanda Devi Peak View captivates every traveler with enchanting beauty. No trip to Auli is complete without visiting Nanda Devi Peak View.",
+      "whyVisit": "Experience the unmatched beauty of Nanda Devi Peak View.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Nanda Devi Peak View, Auli",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi Peak View in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi Peak View in Auli"
+      },
+      "position": 6
+    },
+    {
+      "id": "auli-trishul-peak",
+      "name": "Trishul Peak",
+      "slug": "trishul-peak",
+      "description": "Trishul Peak is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This viewpoint offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Trishul Peak promises an unforgettable experience.",
+      "whyVisit": "A visit to Trishul Peak is essential for understanding Auli.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Trishul Peak, Auli",
+      "category": "viewpoint",
+      "imagePrompt": "Ultra realistic travel photography, Trishul Peak in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Trishul Peak in Auli"
+      },
+      "position": 7
+    },
+    {
+      "id": "auli-auli-ropeway",
+      "name": "Auli Ropeway",
+      "slug": "auli-ropeway",
+      "description": "A crown jewel of Auli, Auli Ropeway captivates every traveler with enchanting beauty. No trip to Auli is complete without visiting Auli Ropeway.",
+      "whyVisit": "Experience the unmatched beauty of Auli Ropeway.",
+      "bestTime": "Oct-Jun",
+      "duration": "2-4 hours",
+      "mapsSearch": "Auli Ropeway, Auli",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Auli Ropeway in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Auli Ropeway in Auli"
+      },
+      "position": 8
+    },
+    {
+      "id": "auli-saildhar-tapovan",
+      "name": "Saildhar Tapovan",
+      "slug": "saildhar-tapovan",
+      "description": "Saildhar Tapovan is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This nature offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Saildhar Tapovan promises an unforgettable experience.",
+      "whyVisit": "Saildhar Tapovan offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Full day",
+      "mapsSearch": "Saildhar Tapovan, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Saildhar Tapovan in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Saildhar Tapovan in Auli"
+      },
+      "position": 9
+    },
+    {
+      "id": "auli-narsingh-temple",
+      "name": "Narsingh Temple",
+      "slug": "narsingh-temple",
+      "description": "Narsingh Temple is a must-see temple in Auli, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Auli.",
+      "whyVisit": "Capture stunning photographs at Narsingh Temple.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Narsingh Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Narsingh Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Narsingh Temple in Auli"
+      },
+      "position": 10
+    },
+    {
+      "id": "auli-vishnuprayag",
+      "name": "Vishnuprayag",
+      "slug": "vishnuprayag",
+      "description": "Vishnuprayag is a must-see nature in Auli, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Auli.",
+      "whyVisit": "A visit to Vishnuprayag is essential for understanding Auli.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vishnuprayag, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Vishnuprayag in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Vishnuprayag in Auli"
+      },
+      "position": 11
+    },
+    {
+      "id": "auli-tapovan-hot-springs",
+      "name": "Tapovan Hot Springs",
+      "slug": "tapovan-hot-springs",
+      "description": "A crown jewel of Auli, Tapovan Hot Springs captivates every traveler with enchanting beauty. No trip to Auli is complete without visiting Tapovan Hot Springs.",
+      "whyVisit": "Capture stunning photographs at Tapovan Hot Springs.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Tapovan Hot Springs, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Tapovan Hot Springs in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Tapovan Hot Springs in Auli"
+      },
+      "position": 12
+    },
+    {
+      "id": "auli-bhavishya-badri-temple",
+      "name": "Bhavishya Badri Temple",
+      "slug": "bhavishya-badri-temple",
+      "description": "A crown jewel of Auli, Bhavishya Badri Temple captivates every traveler with enchanting beauty. No trip to Auli is complete without visiting Bhavishya Badri Temple.",
+      "whyVisit": "Capture stunning photographs at Bhavishya Badri Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhavishya Badri Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Bhavishya Badri Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Bhavishya Badri Temple in Auli"
+      },
+      "position": 13
+    },
+    {
+      "id": "auli-auli-artificial-lake",
+      "name": "Auli Artificial Lake",
+      "slug": "auli-artificial-lake",
+      "description": "Auli Artificial Lake is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Auli Artificial Lake promises an unforgettable experience.",
+      "whyVisit": "Auli Artificial Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Auli Artificial Lake, Auli",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Auli Artificial Lake in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Auli Artificial Lake in Auli"
+      },
+      "position": 14
+    },
+    {
+      "id": "auli-nanda-devi-national-park",
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "Nanda Devi National Park is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Nanda Devi National Park promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Nanda Devi National Park.",
+      "bestTime": "Dry season",
+      "duration": "Full day",
+      "mapsSearch": "Nanda Devi National Park, Auli",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Nanda Devi National Park in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Nanda Devi National Park in Auli"
+      },
+      "position": 15
+    },
+    {
+      "id": "auli-valley-of-flowers-trek",
+      "name": "Valley of Flowers Trek",
+      "slug": "valley-of-flowers-trek",
+      "description": "Nestled in Auli, Valley of Flowers Trek stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Valley of Flowers Trek is among the best things to do in Auli.",
+      "whyVisit": "Valley of Flowers Trek stands out as one of the most rewarding experiences.",
+      "bestTime": "Pre-monsoon",
+      "duration": "Full day",
+      "mapsSearch": "Valley of Flowers Trek, Auli",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Valley of Flowers Trek in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Valley of Flowers Trek in Auli"
+      },
+      "position": 16
+    },
+    {
+      "id": "auli-hemkund-sahib",
+      "name": "Hemkund Sahib",
+      "slug": "hemkund-sahib",
+      "description": "Located in scenic Auli, Hemkund Sahib offers an immersive experience into local culture. Exploring Hemkund Sahib is one of the top things to do in Auli.",
+      "whyVisit": "Experience the unmatched beauty of Hemkund Sahib.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Hemkund Sahib, Auli",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Hemkund Sahib in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Hemkund Sahib in Auli"
+      },
+      "position": 17
+    },
+    {
+      "id": "auli-badrinath-temple",
+      "name": "Badrinath Temple",
+      "slug": "badrinath-temple",
+      "description": "A crown jewel of Auli, Badrinath Temple captivates every traveler with enchanting beauty. No trip to Auli is complete without visiting Badrinath Temple.",
+      "whyVisit": "Experience the unmatched beauty of Badrinath Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Badrinath Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Badrinath Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Badrinath Temple in Auli"
+      },
+      "position": 18
+    },
+    {
+      "id": "auli-kalpeshwar-temple",
+      "name": "Kalpeshwar Temple",
+      "slug": "kalpeshwar-temple",
+      "description": "Kalpeshwar Temple is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kalpeshwar Temple promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Kalpeshwar Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Kalpeshwar Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kalpeshwar Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Kalpeshwar Temple in Auli"
+      },
+      "position": 19
+    },
+    {
+      "id": "auli-rudranath-temple",
+      "name": "Rudranath Temple",
+      "slug": "rudranath-temple",
+      "description": "Rudranath Temple is one of the most iconic landmarks in Auli, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rudranath Temple promises an unforgettable experience.",
+      "whyVisit": "Rudranath Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Rudranath Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Rudranath Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Rudranath Temple in Auli"
+      },
+      "position": 20
+    },
+    {
+      "id": "auli-tungnath-temple",
+      "name": "Tungnath Temple",
+      "slug": "tungnath-temple",
+      "description": "Located in scenic Auli, Tungnath Temple offers an immersive experience into local culture. Exploring Tungnath Temple is one of the top things to do in Auli.",
+      "whyVisit": "Tungnath Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Tungnath Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Tungnath Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Tungnath Temple in Auli"
+      },
+      "position": 21
+    },
+    {
+      "id": "auli-deoria-tal",
+      "name": "Deoria Tal",
+      "slug": "deoria-tal",
+      "description": "Nestled in Auli, Deoria Tal stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Deoria Tal is among the best things to do in Auli.",
+      "whyVisit": "Capture stunning photographs at Deoria Tal.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Deoria Tal, Auli",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Deoria Tal in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Deoria Tal in Auli"
+      },
+      "position": 22
+    },
+    {
+      "id": "auli-chandrashila-peak",
+      "name": "Chandrashila Peak",
+      "slug": "chandrashila-peak",
+      "description": "Nestled in Auli, Chandrashila Peak stands as a testament to architectural brilliance. This renowned adventure attracts tourists who come to admire its stunning design. A visit to Chandrashila Peak is among the best things to do in Auli.",
+      "whyVisit": "Chandrashila Peak stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Jun",
+      "duration": "2-4 hours",
+      "mapsSearch": "Chandrashila Peak, Auli",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Chandrashila Peak in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Chandrashila Peak in Auli"
+      },
+      "position": 23
+    },
+    {
+      "id": "auli-rudraprayag",
+      "name": "Rudraprayag",
+      "slug": "rudraprayag",
+      "description": "Nestled in Auli, Rudraprayag stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Rudraprayag is among the best things to do in Auli.",
+      "whyVisit": "Rudraprayag stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "Multi-day",
+      "mapsSearch": "Rudraprayag, Auli",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Rudraprayag in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Rudraprayag in Auli"
+      },
+      "position": 24
+    },
+    {
+      "id": "auli-dunagiri-temple",
+      "name": "Dunagiri Temple",
+      "slug": "dunagiri-temple",
+      "description": "Nestled in Auli, Dunagiri Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Dunagiri Temple is among the best things to do in Auli.",
+      "whyVisit": "Experience the unmatched beauty of Dunagiri Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Dunagiri Temple, Auli",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Dunagiri Temple in Auli, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Dunagiri Temple in Auli"
+      },
+      "position": 25
+    }
+  ]
+}

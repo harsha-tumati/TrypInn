@@ -1,0 +1,267 @@
+{
+  "slug": "dharamshala",
+  "name": "Dharamshala",
+  "state": "Himachal Pradesh",
+  "tagline": "Little Lhasa in the Himalayas, where Tibet lives on",
+  "categories": [
+    "hill_station",
+    "spiritual",
+    "adventure"
+  ],
+  "highlights": [
+    "seat of the dalai lama and tibetan government in exile",
+    "dhauladhar range trekking above 4000 metres"
+  ],
+  "attractions": [
+    {
+      "name": "Namgyal Monastery (McLeod Ganj)",
+      "category": "monastery",
+      "description": "The personal monastery of the 14th Dalai Lama, Namgyal Monastery at McLeod Ganj is the largest Tibetan monastery outside Tibet, home to over 200 monks. The main prayer hall is a riot of gold, thangkas, and butter lamps; monks debate in the courtyard in the traditional Tibetan style. When the Dalai Lama teaches here, tens of thousands gather on the hillside.",
+      "whyVisit": "The spiritual heart of the Tibetan exile community and the closest most visitors will get to the Dalai Lama's world.",
+      "bestTime": "Morning for prayers, or during teaching sessions",
+      "duration": "1-2 hours",
+      "mapsSearch": "Namgyal Monastery McLeod Ganj Dharamshala",
+      "imageQuery": "Namgyal Monastery McLeod Ganj Tibetan monks prayer"
+    },
+    {
+      "name": "Tsuglagkhang Complex",
+      "category": "monastery",
+      "description": "The Tsuglagkhang temple complex adjacent to Namgyal Monastery is the religious and emotional centre of the Tibetan exile community. It houses a gilded 5-metre Shakyamuni Buddha flanked by Padmasambhava and Avalokitesvara. The complex includes the Tibet Museum — a moving account of the Chinese occupation — and the Dalai Lama's residence behind it.",
+      "whyVisit": "The most sacred Buddhist complex in the Tibetan exile world — deeply moving for any visitor.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tsuglagkhang Complex McLeod Ganj Dharamshala",
+      "imageQuery": "Tsuglagkhang temple McLeod Ganj golden Buddha Tibetan"
+    },
+    {
+      "name": "Triund Trek",
+      "category": "adventure",
+      "description": "The most popular trek in the Dharamshala area ascends 9 km through oak and rhododendron forest to the broad ridge of Triund at 2,875 metres, directly below the sheer Dhauladhar cliffs. The campsite at the top looks back over the entire Kangra Valley and forward to the snow-streaked Dhauladhar wall. The trek takes 3–4 hours up and is suitable for fit beginners.",
+      "whyVisit": "The most rewarding accessible trek in the western Himalayas — stunning Dhauladhar views within a day's walk.",
+      "bestTime": "March to June or September to November",
+      "duration": "Full day or overnight",
+      "mapsSearch": "Triund Trek Dharamshala McLeod Ganj",
+      "imageQuery": "Triund Trek ridge Dhauladhar mountains Dharamshala camp"
+    },
+    {
+      "name": "Bhagsu Nag Temple and Waterfall",
+      "category": "temple",
+      "description": "The ancient Bhagsu Nag temple, dedicated to Lord Shiva, sits at the foot of a ravine 2 km from McLeod Ganj. According to legend, it was built after the king of Gada defeated the serpent deity Bhagsunag. A 30-minute walk beyond the temple leads to the Bhagsu Waterfall, which crashes through a narrow gorge into a pool — cold, vivid, and visited year-round.",
+      "whyVisit": "A sacred temple and waterfall hike within walking distance of McLeod Ganj — the most popular short excursion.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhagsu Nag Temple Waterfall McLeod Ganj Dharamshala",
+      "imageQuery": "Bhagsu Nag Waterfall McLeod Ganj Dharamshala canyon"
+    },
+    {
+      "name": "Dharamshala Cricket Ground (HPCA Stadium)",
+      "category": "heritage",
+      "description": "The Himachal Pradesh Cricket Association Stadium at 1,457 metres is the highest cricket ground in the world to have hosted international Test and ODI matches. Spectators watch with the snow-capped Dhauladhar range framing the outfield — an utterly unique sporting view. The stadium can be toured on non-match days, and the mountain backdrop makes even a casual visit memorable.",
+      "whyVisit": "The most dramatically scenic cricket stadium on earth — snow peaks at square leg.",
+      "bestTime": "Match days or morning non-match tours",
+      "duration": "1-2 hours",
+      "mapsSearch": "HPCA Cricket Stadium Dharamshala",
+      "imageQuery": "HPCA Cricket Stadium Dharamshala Dhauladhar mountains"
+    },
+    {
+      "name": "Kangra Fort",
+      "category": "fort",
+      "description": "One of the oldest and largest forts in the Himalayas, Kangra Fort stands on a rocky bluff at the confluence of the Banganga and Manjhi rivers, 18 km from Dharamshala. Fortified since at least the 4th century, it withstood sieges by Mahmud of Ghazni and Akbar. The fort complex contains several Hindu temples, the ruins of vast palaces, and views of the Kangra Valley that are extraordinary.",
+      "whyVisit": "One of the most strategically spectacular and historically rich forts in the Indian Himalayas.",
+      "bestTime": "October to March, morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Kangra Fort Himachal Pradesh",
+      "imageQuery": "Kangra Fort Himalayas cliff valley Himachal Pradesh"
+    },
+    {
+      "name": "Tibet Museum",
+      "category": "museum",
+      "description": "Situated within the Tsuglagkhang complex, the Tibet Museum documents the Chinese invasion of Tibet, the destruction of monasteries, and the exile experience with photographs, personal testimonies, and archival footage. It is one of the most emotionally affecting museums in India and provides essential context for understanding the Tibetan community in Dharamshala.",
+      "whyVisit": "A powerful and essential introduction to the Tibetan struggle — one of the most moving small museums in Asia.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Tibet Museum McLeod Ganj Dharamshala",
+      "imageQuery": "Tibet Museum McLeod Ganj Dharamshala Tibetan exile photographs"
+    },
+    {
+      "name": "Norbulingka Institute",
+      "category": "heritage",
+      "description": "Located at Sidhpur, 3 km south of Dharamshala, the Norbulingka Institute was established in 1988 to preserve Tibetan arts and culture. Master craftspeople here produce thangka paintings, wood carvings, embroidery, and cast bronze statues using techniques unchanged for centuries. The institute's garden is modelled on the Norbulingka summer palace in Lhasa, and the Deden Tsuglagkhang temple on the grounds is beautiful.",
+      "whyVisit": "The finest centre of living Tibetan craftsmanship anywhere — and a contemplative garden sanctuary.",
+      "bestTime": "Weekday morning to see artisans at work",
+      "duration": "2-3 hours",
+      "mapsSearch": "Norbulingka Institute Sidhpur Dharamshala",
+      "imageQuery": "Norbulingka Institute Tibetan art thangka crafts Dharamshala"
+    },
+    {
+      "name": "Masrur Rock-cut Temples",
+      "category": "heritage",
+      "description": "A group of 8th-century rock-cut Hindu temples carved into a single sandstone ridge at Masrur, 40 km from Dharamshala, represent a unique and rarely visited architectural achievement. The temples — dedicated to Shiva, Parvati, and the Pandavas — were carved directly from the mountain and badly damaged by an earthquake in 1905, but the surviving sculpture and the mountain backdrop are stunning.",
+      "whyVisit": "One of the most important and least-known rock-cut temple sites in India — remarkably uncrowded.",
+      "bestTime": "October to March, morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Masrur Rock Cut Temples Kangra Himachal Pradesh",
+      "imageQuery": "Masrur rock cut Hindu temples Kangra Himachal Pradesh"
+    },
+    {
+      "name": "Dal Lake Dharamshala",
+      "category": "lake",
+      "description": "Not to be confused with its famous Kashmir namesake, the Dal Lake near Dharamshala is a small and peaceful reservoir 2 km from McLeod Ganj surrounded by Deodar cedar forest and overlooked by the Dhauladhar peaks. The lakeside Tibetan temple and the mirror reflection of the mountains on calm mornings make it deeply photogenic. The cedar forest walk around the lake is particularly beautiful.",
+      "whyVisit": "A serene mountain lake with Dhauladhar reflections, easy to reach and almost entirely peaceful.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dal Lake Dharamshala McLeod Ganj",
+      "imageQuery": "Dal Lake Dharamshala Deodar forest mountain reflection"
+    },
+    {
+      "name": "Gyuto Monastery",
+      "category": "monastery",
+      "description": "The Gyuto Tantric Monastery is the residence of the 17th Karmapa (Urgyen Trinley Dorje) — the third highest figure in Tibetan Buddhism after the Dalai Lama and Panchen Lama. The main prayer hall holds a magnificent 20-metre Maitreya Buddha and the monks practise the ancient deep-throat multiphonic chanting for which the Gyuto school is world-famous.",
+      "whyVisit": "The residence of the Karmapa — a deeply significant Tibetan Buddhist site with extraordinary tantric chanting.",
+      "bestTime": "Morning prayer sessions",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gyuto Monastery Karmapa Dharamshala",
+      "imageQuery": "Gyuto Monastery Karmapa Maitreya Buddha Dharamshala"
+    },
+    {
+      "name": "Kangra Valley Toy Train",
+      "category": "heritage",
+      "description": "The narrow-gauge Kangra Valley Railway runs 164 km from Pathankot to Joginder Nagar through one of the most scenic valleys in the sub-Himalayan foothills. The train crosses 971 bridges and passes through 2 tunnels with the Dhauladhar range framing the north and the Shivalik hills to the south. The Nagrota to Dharamshala Road section is the most dramatic.",
+      "whyVisit": "One of India's most scenic heritage railway journeys — the Kangra Valley in miniature from a narrow-gauge carriage.",
+      "bestTime": "October to March",
+      "duration": "Half day journey",
+      "mapsSearch": "Kangra Valley Railway toy train Dharamshala",
+      "imageQuery": "Kangra Valley Railway toy train narrow gauge Himalayas"
+    },
+    {
+      "name": "Naddi Viewpoint",
+      "category": "viewpoint",
+      "description": "The hillside settlement of Naddi, 3 km north of McLeod Ganj, sits on an open spur with an unobstructed south-facing panorama of the Kangra Valley 3,000 metres below and the Dhauladhar wall to the north. On clear winter mornings, the snow on the higher peaks glows pink at sunrise. Paragliders launch from the meadow at Naddi for flights to Bir Billing.",
+      "whyVisit": "The finest panoramic viewpoint above Dharamshala — Kangra Valley and Dhauladhar at their most spectacular.",
+      "bestTime": "Sunrise, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Naddi Viewpoint McLeod Ganj Dharamshala",
+      "imageQuery": "Naddi Viewpoint Kangra Valley Dhauladhar Dharamshala sunrise"
+    },
+    {
+      "name": "Bir Billing (Paragliding Capital)",
+      "category": "adventure",
+      "description": "The village of Bir, 60 km east of Dharamshala, and the launch site at Billing (2,400 m) together form the best paragliding site in Asia and one of the finest in the world. Thermals are consistent and the landing meadow in Bir is safe and well organised. Tandem flights lasting 25–40 minutes and multi-day flying courses are available. The Paragliding World Cup is held here.",
+      "whyVisit": "The finest tandem paragliding experience in Asia — soaring over Himalayan foothills with the Dhauladhar above.",
+      "bestTime": "October to November or March to May",
+      "duration": "Half day including travel",
+      "mapsSearch": "Bir Billing Paragliding Himachal Pradesh",
+      "imageQuery": "Bir Billing paragliding Himalayan foothills Himachal Pradesh"
+    },
+    {
+      "name": "Kalachakra Temple",
+      "category": "temple",
+      "description": "The Kalachakra Temple in McLeod Ganj houses the Kalachakra sand mandala, a sacred cosmological diagram reconstructed for the Dalai Lama's Kalachakra ceremony in 1992. The elaborate paintings of the Kalachakra tantra — a meditation on time and cyclical existence — cover the walls in intricate, jewel-like detail. The temple is the most artistically elaborate in McLeod Ganj.",
+      "whyVisit": "The most artistically intricate Tibetan Buddhist temple in Dharamshala — a masterpiece of tantra art.",
+      "bestTime": "Morning",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Kalachakra Temple McLeod Ganj Dharamshala",
+      "imageQuery": "Kalachakra Temple McLeod Ganj mandala Tibetan art"
+    },
+    {
+      "name": "Mcleod Ganj Market (Temple Road)",
+      "category": "market",
+      "description": "The main commercial street of McLeod Ganj is lined with Tibetan-owned shops selling hand-rolled butter candles, prayer wheels, singing bowls, thangka paintings, turquoise jewellery, hand-knitted woollens, and Tibetan herbal medicines. Cafes in between serve butter tea, momos, and yak cheese. The market buzzes with a mix of Tibetan refugees, Buddhist travellers, and Israeli backpackers.",
+      "whyVisit": "The most authentic Tibetan shopping street outside Tibet — genuine refugee crafts at fair prices.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Temple Road Market McLeod Ganj Dharamshala",
+      "imageQuery": "McLeod Ganj market Temple Road Tibetan shops Dharamshala"
+    },
+    {
+      "name": "Dharamkot Village and Rock Climbing",
+      "category": "adventure",
+      "description": "The small village of Dharamkot, just above McLeod Ganj, is the base for rock climbing on the granite slabs of the Dhauladhar foothills. Routes ranging from beginner level to 7b+ sport grades ascend polished rock with mountain and valley views. The Dharamkot Climbing Club and several international operators run guided sessions and multi-day courses year-round.",
+      "whyVisit": "The best rock climbing destination in the western Himalayas with routes for all abilities above a stunning valley.",
+      "bestTime": "March to May or September to November",
+      "duration": "Half day to full day",
+      "mapsSearch": "Dharamkot Rock Climbing McLeod Ganj Dharamshala",
+      "imageQuery": "rock climbing Dharamkot McLeod Ganj Dhauladhar Himalaya"
+    },
+    {
+      "name": "Bhagsunag Café Culture",
+      "category": "nightlife",
+      "description": "The path from McLeod Ganj to Bhagsu and Dharamkot is lined with rooftop cafes serving Israeli hummus, wood-fired pizza, momos, and mushroom omelettes against backdrop views of the valley. Shiva Cafe, Illiterati Books and Coffee, and McLeod's Tibetan Cafe are institutions with relaxed live music, secondhand books, and an alternative community atmosphere. Sunset from these terraces is magical.",
+      "whyVisit": "One of India's great café cultures — a relaxed, alternative rooftop scene with world-class mountain views.",
+      "bestTime": "Late afternoon to sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhagsu café McLeod Ganj Dharamshala rooftop",
+      "imageQuery": "Bhagsu McLeod Ganj rooftop cafe Dharamshala mountains"
+    },
+    {
+      "name": "Dhauladhar Trek (Indrahar Pass)",
+      "category": "adventure",
+      "description": "The Indrahar Pass crossing (4,342 m) is the most challenging and rewarding multi-day trek from Dharamshala, taking 3–4 days to cross the Dhauladhar range to the Chamba valley. The trail from McLeod Ganj passes Triund, the high camp at Lahesh Cave, and the final steep snowfield to the pass. On the far side, views of the Pir Panjal range open up — a true Himalayan wilderness experience.",
+      "whyVisit": "The most epic multi-day trek accessible from Dharamshala — a genuine high Himalayan crossing.",
+      "bestTime": "June to October",
+      "duration": "3-4 days",
+      "mapsSearch": "Indrahar Pass Trek Dharamshala Dhauladhar",
+      "imageQuery": "Indrahar Pass trek snow Dhauladhar Dharamshala Himalayas"
+    },
+    {
+      "name": "Jawlamukhi Temple",
+      "category": "religious",
+      "description": "Located 60 km from Dharamshala near Kangra, the Jawlamukhi (also Jwalamukhi) temple is one of the 51 Shakti Peethas and one of Himachal Pradesh's most revered shrines. Rather than an idol, the deity manifests as seven naturally occurring blue-flame gas vents emerging from the rock — flames that have burned continuously for millennia without any fuel source. Akbar attempted to extinguish them and failed.",
+      "whyVisit": "One of the most extraordinary natural phenomena in Hinduism — eternal blue flames emerging from the earth.",
+      "bestTime": "October to March",
+      "duration": "3-4 hours with travel",
+      "mapsSearch": "Jwala Mukhi Temple Kangra Himachal Pradesh",
+      "imageQuery": "Jwalamukhi Temple eternal flame Kangra Himachal Pradesh"
+    },
+    {
+      "name": "Men-Tsee-Khang (Tibetan Medical Institute)",
+      "category": "heritage",
+      "description": "The Tibetan Medical and Astro Institute in McLeod Ganj trains doctors in the 2,500-year-old tradition of Sowa Rigpa (Tibetan medicine). Visitors can book consultations with Tibetan doctors who diagnose through pulse reading and urine analysis, and the attached pharmacy dispenses herbal Tibetan medicines. A small museum explains the history of Tibetan medicine with medical thangkas.",
+      "whyVisit": "A rare and genuine encounter with the ancient Tibetan medical tradition — still practised exactly as it was centuries ago.",
+      "bestTime": "Weekday morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Men-Tsee-Khang Tibetan Medical Institute McLeod Ganj",
+      "imageQuery": "Men Tsee Khang Tibetan Medical Institute McLeod Ganj herbs"
+    },
+    {
+      "name": "Chamunda Devi Temple",
+      "category": "religious",
+      "description": "The Chamunda Devi temple sits dramatically on a crag above the Baner River gorge 10 km west of Dharamshala. One of the principal Shakti Peethas of Himachal Pradesh, it is dedicated to the fierce form of Durga. The adjacent Baner River is considered sacred and the ghats below the temple fill with pilgrims. The setting — mountainside, river gorge, dense forest — is among the most dramatic of any temple in Himachal.",
+      "whyVisit": "A dramatically located Shakti Peetha in a mountain gorge — one of the most atmospheric temples in Himachal Pradesh.",
+      "bestTime": "Morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chamunda Devi Temple Dharamshala Kangra",
+      "imageQuery": "Chamunda Devi Temple gorge river Dharamshala Himachal Pradesh"
+    },
+    {
+      "name": "Tushita Meditation Centre",
+      "category": "religious",
+      "description": "Tushita, nestled in pine forest above McLeod Ganj, is one of the most respected centres for learning Tibetan Buddhist meditation in the world. Ten-day introductory retreats fill months in advance; drop-in Monday sessions are available for visitors. The forest setting, the quality of teaching, and the international community of practitioners make it a profound stop.",
+      "whyVisit": "World-class Tibetan Buddhist teaching in a forest retreat — one of the best places on earth to learn meditation.",
+      "bestTime": "Drop-in Mondays or during scheduled retreats",
+      "duration": "Half day to multi-day retreat",
+      "mapsSearch": "Tushita Meditation Centre McLeod Ganj Dharamshala",
+      "imageQuery": "Tushita Meditation Centre forest McLeod Ganj Dharamshala pine"
+    },
+    {
+      "name": "Gaggal-Kangra Airport Viewpoint",
+      "category": "viewpoint",
+      "description": "The perimeter road along Gaggal Airport's northern fence — used by locals for morning walks — offers one of the most accessible unobstructed views of the Dhauladhar range, with the peaks rising directly behind the airport's single runway. At sunrise in winter, the snow on the Dhauladhar glows above a sea of valley mist, and aircraft approaches against the mountain backdrop are spectacular.",
+      "whyVisit": "A wildly photogenic and almost unknown viewpoint — planes landing against a wall of Himalayan snow.",
+      "bestTime": "Sunrise, November to February",
+      "duration": "30-45 minutes",
+      "mapsSearch": "Gaggal Airport viewpoint Kangra Dharamshala",
+      "imageQuery": "Kangra airport Dhauladhar mountains Himalayan backdrop runway"
+    },
+    {
+      "name": "Dolma Ling Nunnery",
+      "category": "monastery",
+      "description": "Located at Sidhpur near Norbulingka, Dolma Ling Nunnery is home to over 200 Tibetan Buddhist nuns who pursue the same rigorous philosophical and debating curriculum previously available only to monks. The nunnery is a significant institution in the movement to restore gender equality in Tibetan Buddhism. Visitors are welcome and the morning prayers at dawn are open to guests.",
+      "whyVisit": "A pioneering institution restoring gender equality in Tibetan Buddhism — rarely visited but deeply significant.",
+      "bestTime": "Dawn prayers",
+      "duration": "1-2 hours",
+      "mapsSearch": "Dolma Ling Nunnery Sidhpur Dharamshala",
+      "imageQuery": "Dolma Ling Nunnery Tibetan Buddhist nuns Dharamshala"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "slug": "tarkarli",
+  "name": "Tarkarli",
+  "state": "Maharashtra",
+  "tagline": "Konkan's turquoise secret — coral reefs, forts and cashew-scented shores",
+  "categories": ["beach", "adventure", "heritage"],
+  "highlights": ["clearest water and best scuba diving on the konkan coast", "sindhudurg fort — shivaji's sea fortress built on a coral island"],
+  "attractions": [
+    {
+      "name": "Tarkarli Beach",
+      "category": "beach",
+      "description": "Tarkarli Beach stretches for nearly 8 km along the Konkan coast with powdery white sand and water so clear that the sandy bottom is visible at 3 metres depth. The Karli and Mochi rivers merge into the sea here, creating a backwater ecosystem on one side and open Arabian Sea on the other. The absence of large hotel development keeps the beach relatively uncrowded, and the fishing village atmosphere — with dozens of coloured boats drawn up on shore — has changed little in generations.",
+      "whyVisit": "The clearest, most pristine long beach on the Konkan coast within reach of Pune and Mumbai.",
+      "bestTime": "October to February",
+      "duration": "Half-day to full day",
+      "mapsSearch": "Tarkarli Beach Sindhudurg Maharashtra",
+      "imageQuery": "Tarkarli beach clear water Konkan Maharashtra"
+    },
+    {
+      "name": "Sindhudurg Fort",
+      "category": "fort",
+      "description": "Built by Chhatrapati Shivaji Maharaj between 1664 and 1667 on a 48-acre coral island barely 500 metres offshore, Sindhudurg is one of India's most extraordinary sea fortresses. Its 3-km perimeter wall was cemented with lead, tree sap and limestone at the base to resist wave action, and 52 bastions studded with Portuguese-style cannon emplacements have survived 360 years intact. Inside the walls, a Shiva temple enshrines a handprint and footprint reputedly left by Shivaji himself during the foundation laying.",
+      "whyVisit": "Walk inside the 1664 sea fort Shivaji built to control the Arabian Sea — still intact 360 years on.",
+      "bestTime": "October to February, morning to avoid heat inside the walls",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sindhudurg Fort Malvan Maharashtra",
+      "imageQuery": "Sindhudurg Fort sea Malvan Shivaji Maharashtra"
+    },
+    {
+      "name": "Tarkarli Scuba Diving",
+      "category": "adventure",
+      "description": "The Malvan Marine Sanctuary waters off Tarkarli and Malvan hold the richest coral reef ecosystem on India's west coast, with table corals, staghorn corals and brain corals sheltering parrotfish, moray eels, puffer fish, lion fish and occasionally whale sharks. Certified PADI dive operators run beginner introduction dives in the shallow 5–8 metre reefs and certified open-water dives to 18 metres on deeper walls. Water visibility between November and February regularly exceeds 12 metres.",
+      "whyVisit": "The best scuba diving on the entire west coast of India for coral and fish diversity.",
+      "bestTime": "November to February (peak visibility)",
+      "duration": "2-4 hours",
+      "mapsSearch": "Tarkarli scuba diving Malvan Marine Sanctuary Maharashtra",
+      "imageQuery": "scuba diving coral reef Tarkarli Malvan Maharashtra"
+    },
+    {
+      "name": "Malvan Marine Sanctuary Snorkelling",
+      "category": "adventure",
+      "description": "The declared marine sanctuary between Malvan and Tarkarli is accessible to non-divers through glass-bottomed boat rides and guided snorkel sessions in 2–4 metre depths over living coral heads. Schools of sergeant major fish, trumpetfish and blue-spotted stingrays are easily visible without diving qualification, and the sanctuary rules prohibit anchoring or touching corals, keeping the ecosystem in relatively good health. Local fishing families now supplement income as certified snorkel guides.",
+      "whyVisit": "Snorkel over a government-protected coral reef on India's west coast without a diving qualification.",
+      "bestTime": "November to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Malvan Marine Sanctuary snorkelling Maharashtra",
+      "imageQuery": "snorkelling Malvan Marine Sanctuary coral Maharashtra"
+    },
+    {
+      "name": "Karli Backwater Kayaking",
+      "category": "adventure",
+      "description": "The Karli River estuary behind Tarkarli Beach is a serene mangrove-fringed backwater where kayaks can paddle upstream for 5–6 km through tunnels of Avicennia mangroves before reaching the freshwater zone. Kingfishers, grey herons and brahminy kites are abundant along the banks, and smooth-coated otters hunt in the early morning. Several MTDC-approved operators offer sunset kayaking on the estuary when the water turns gold and the mangroves fill with the sound of roosting egrets.",
+      "whyVisit": "Paddle through a mangrove labyrinth at sunset with kingfishers and otters as company.",
+      "bestTime": "October to March, sunrise or sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Karli backwater kayaking Tarkarli Maharashtra",
+      "imageQuery": "kayaking Karli backwater mangroves Tarkarli Maharashtra"
+    },
+    {
+      "name": "Malvan Town Seafood Market",
+      "category": "market",
+      "description": "Malvan's morning fish landing at the main jetty is one of the Konkan coast's most vivid scenes: boats returning from night fishing unload crates of tiger prawns, pomfret, surmai kingfish, crabs and tiny silver khodwa fish onto the concrete floor while auctioneers manage rapid-fire bidding. The adjacent market runs until 10 am, with the freshest catch available to buyers and to the local curry houses that cook it the same afternoon. The surrounding lanes hold spice sellers stocking Malvani masala blends.",
+      "whyVisit": "Buy line-caught pomfret and prawns at the pre-dawn auction from the boats that caught them overnight.",
+      "bestTime": "November to February, 6–10 am",
+      "duration": "1-2 hours",
+      "mapsSearch": "Malvan fish market jetty Sindhudurg Maharashtra",
+      "imageQuery": "Malvan fish market landing jetty pomfret Maharashtra"
+    },
+    {
+      "name": "Malvani Cuisine Cooking Class",
+      "category": "heritage",
+      "description": "Malvani cuisine is one of Maharashtra's most distinctive regional traditions, defined by the use of fresh coconut, kokum, tirphal (Sichuan pepper variant) and a 12-spice Malvani masala that varies household to household. Several homestays and local women's cooperatives around Tarkarli offer half-day cooking classes where participants make kombdi vade (country chicken with fried rice bread), solkadhi (coconut-kokum drink), and fresh coconut prawn curry using produce from the morning market.",
+      "whyVisit": "Learn to cook authentic Malvani curry with a family whose recipe has never reached a cookbook.",
+      "bestTime": "October to March",
+      "duration": "3-4 hours",
+      "mapsSearch": "Malvani cooking class Tarkarli Malvan Maharashtra",
+      "imageQuery": "Malvani cooking class kombdi vade prawn curry Konkan"
+    },
+    {
+      "name": "Rock Garden Beach, Nivati",
+      "category": "beach",
+      "description": "South of Tarkarli, the small cove at Nivati is flanked by distinctive black basalt rock formations that have been sculpted by wave action into arches, pillars and pools. The beach itself is barely 200 metres long but the combination of dark rock, white water and coconut palms makes it one of the most photogenic spots on the Konkan coast. The promontory above Nivati gives a panoramic view of the Arabian Sea and on clear days the rock of Sindhudurg Fort is visible to the north.",
+      "whyVisit": "The Konkan coast's most photogenic rock-and-surf cove — virtually unknown outside local travellers.",
+      "bestTime": "October to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Nivati Rock Garden Beach Sindhudurg Maharashtra",
+      "imageQuery": "Nivati rock garden beach basalt cove Konkan Maharashtra"
+    },
+    {
+      "name": "Vijaydurg Fort",
+      "category": "fort",
+      "description": "Fifty kilometres north of Tarkarli, Vijaydurg is the oldest and most formidable sea fort on the Konkan coast, originally constructed by the Shilahar dynasty in the 9th century and massively expanded by the Maratha admiral Kanhoji Angre in the early 18th century. Triple walls, a 27-metre watch tower and an underwater chain boom once stretched across the harbour entrance to trap enemy ships. The fort has no crowds and the view from its bastions over the Wagad estuary is magnificent.",
+      "whyVisit": "The oldest and most architecturally complete sea fort on the entire Konkan coast — and almost no visitors.",
+      "bestTime": "October to February",
+      "duration": "3-4 hours",
+      "mapsSearch": "Vijaydurg Fort Sindhudurg Maharashtra",
+      "imageQuery": "Vijaydurg Fort sea walls Konkan Maharashtra Maratha"
+    },
+    {
+      "name": "Devbagh Beach and Island",
+      "category": "island",
+      "description": "The island of Devbagh sits where the Karli River meets the Arabian Sea, accessible by a 5-minute boat ride from Tarkarli. The island has a government eco-resort and walking path through casuarina forest to a deserted beach on the seaward side where dolphins are regularly seen offshore between October and February. Devbagh is the base for dolphin-watching boat excursions into the open sea, and the confluence of river and ocean creates excellent snorkelling conditions on the lee side.",
+      "whyVisit": "A car-free island at a river mouth with dolphins offshore and deserted forest beaches.",
+      "bestTime": "November to February",
+      "duration": "Half-day to overnight",
+      "mapsSearch": "Devbagh Island Tarkarli Sindhudurg Maharashtra",
+      "imageQuery": "Devbagh island beach dolphins Tarkarli Maharashtra"
+    },
+    {
+      "name": "Dolphin Watching Cruise",
+      "category": "wildlife",
+      "description": "The waters between Devbagh, Malvan and Vingorla hold a resident population of Indo-Pacific humpback dolphins and spinner dolphins that are seen year-round but most reliably between October and March. Local fishermen operate two-hour morning boat excursions to their feeding grounds, where dolphins sometimes approach and bow-ride the boat. Manta rays, flying fish and occasional whale sharks have been recorded in these waters between December and February.",
+      "whyVisit": "Reliable close-up dolphin encounters with resident pods in protected marine sanctuary waters.",
+      "bestTime": "November to February, morning",
+      "duration": "2 hours",
+      "mapsSearch": "Dolphin watching cruise Malvan Tarkarli Maharashtra",
+      "imageQuery": "dolphin watching boat Malvan Tarkarli Arabian Sea"
+    },
+    {
+      "name": "Cashew Country Walk and Feni Tasting",
+      "category": "nature",
+      "description": "The low laterite hills behind Tarkarli and Malvan are covered in cashew orchards that bloom white between February and April, filling the warm sea air with a sweet honey scent. Local farmers distil cashew apple juice into feni — Konkan's traditional spirit — in open-fire copper pot stills set up under the trees during harvest. A walk through the orchards in March, watching families gather fallen cashew apples and feeding the still, is a quintessential Konkan cultural experience.",
+      "whyVisit": "Walk through cashew orchards in full blossom and taste fresh-distilled feni from the still.",
+      "bestTime": "February to April (cashew season)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Cashew orchard walk Malvan Sindhudurg Maharashtra",
+      "imageQuery": "cashew orchard blossom Konkan Maharashtra feni distilling"
+    },
+    {
+      "name": "Tsunami Island (Kondura), Malvan",
+      "category": "island",
+      "description": "Kondura — dubbed Tsunami Island by locals after the 2004 Indian Ocean tsunami reshaped its sandbar — is a low-lying strip of sand that appears seasonally at low tide opposite Malvan and offers wade-in access across ankle-deep water. The sandbar forms a perfect lagoon ideal for wading, and the shallow warm water here is where Malvan fishermen dry their catch on bamboo racks in the morning sun. The island disappears under seasonal water level changes, giving every visit a slightly different character.",
+      "whyVisit": "Wade to a seasonal sandbar island that disappears and reappears with the tides.",
+      "bestTime": "November to January, low tide mornings",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kondura Tsunami Island Malvan Maharashtra",
+      "imageQuery": "Tsunami Island Kondura sandbar Malvan Maharashtra"
+    },
+    {
+      "name": "Achara Village Konkan Homestay",
+      "category": "heritage",
+      "description": "The village of Achara, 10 km south of Tarkarli, has pioneered a form of village tourism where Konkan Hindu households open traditional red-laterite-and-tile homes to guests. Meals are served on banana leaves in the central courtyard, featuring the full range of Malvani home cooking including dried bombil (Bombay duck) pickle, jackfruit sabzi and rice cooked in an earthen pot. Evenings on the veranda with the sound of the sea and village rhythms are genuinely restorative.",
+      "whyVisit": "Stay in a 100-year-old Konkan laterite house and eat home-cooked Malvani food from a family kitchen.",
+      "bestTime": "October to March",
+      "duration": "Overnight to multi-day",
+      "mapsSearch": "Achara village homestay Sindhudurg Maharashtra",
+      "imageQuery": "Konkan village homestay laterite house Achara Maharashtra"
+    },
+    {
+      "name": "Vengurla Rock Lighthouse Beach",
+      "category": "beach",
+      "description": "Forty kilometres south of Tarkarli, Vengurla's small harbour is guarded by a working British-era lighthouse on a rocky island, and the beach curving away from the town is wide, deserted and backed by casuarina windbreaks. The offshore rocks are a breeding ground for seabirds including the brown noddy, and the beach at Vengurla Rocks Marine National Park boundary is one of the rare Konkan sites where Olive Ridley sea turtles nest between October and February.",
+      "whyVisit": "Walk a sea turtle nesting beach beside a colonial lighthouse with almost no other visitors.",
+      "bestTime": "November to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vengurla Rock lighthouse beach Sindhudurg Maharashtra",
+      "imageQuery": "Vengurla lighthouse beach sea turtle Sindhudurg Maharashtra"
+    },
+    {
+      "name": "Night Fishing with Local Fishermen",
+      "category": "adventure",
+      "description": "Trawler captains from Malvan and Tarkarli accept occasional overnight passengers on their 12-hour fishing expeditions into the open Arabian Sea. Departing at dusk, passengers watch the coast lights fade and the stars emerge before lines are set for pomfret, surmai and deep-water shrimp. The pre-dawn return brings the boat into Malvan harbour just in time to watch the same catch sold at the morning landing — a complete circle from sea to market.",
+      "whyVisit": "Join a night trawl on the Arabian Sea and follow your catch from ocean to the morning auction.",
+      "bestTime": "November to February, arranged through local fishing cooperative",
+      "duration": "12 hours overnight",
+      "mapsSearch": "Malvan night fishing trawler Maharashtra",
+      "imageQuery": "night fishing trawler Arabian Sea Malvan Maharashtra"
+    },
+    {
+      "name": "Sawantwadi Palace and Lacquerware Market",
+      "category": "palace",
+      "description": "The Sawantwadi royal palace, 60 km from Tarkarli, was the seat of the Bhonsle kings who ruled this Konkan principality until 1947. The palace still functions as a royal residence but the ground floor workshops are open to visitors watching the Chitari community produce their famous lacquerware toys — painted wooden snakes, elephants and playing card sets that were exported to royal courts across 18th-century India. The market outside sells these directly from the craftspeople.",
+      "whyVisit": "Watch GI-tagged lacquerware being hand-painted by artisans in a living royal palace.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Sawantwadi Palace lacquerware market Sindhudurg Maharashtra",
+      "imageQuery": "Sawantwadi palace lacquerware toys craft Konkan"
+    },
+    {
+      "name": "Amboli Hill Station Waterfall Trek",
+      "category": "waterfall",
+      "description": "The Amboli plateau, 90 km inland from Tarkarli at 690 metres, marks the Western Ghats' edge and is one of the wettest spots in India, generating six major waterfalls within walking distance of the hill station. The highest-rainfall microclimate harbours endemic amphibians including the Amboli toad and the Amboli night frog, both discovered in this single valley. The contrast between the humid Ghats interior and Tarkarli's sun-drenched coast — separated by 90 minutes — makes a two-night Amboli stop a compelling addition.",
+      "whyVisit": "Step from Konkan sunshine into an endemic-species waterfall plateau that receives some of India's highest rainfall.",
+      "bestTime": "October to January (post-monsoon waterfalls at peak)",
+      "duration": "Half-day to overnight",
+      "mapsSearch": "Amboli Hill Station waterfalls Sindhudurg Maharashtra",
+      "imageQuery": "Amboli waterfall Western Ghats Sindhudurg Maharashtra"
+    }
+  ]
+}

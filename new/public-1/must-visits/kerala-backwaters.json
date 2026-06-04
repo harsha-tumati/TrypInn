@@ -1,0 +1,447 @@
+{
+  "id": "kerala-backwaters",
+  "name": "Kerala Backwaters",
+  "state": "Kerala",
+  "slug": "kerala-backwaters",
+  "tagline": "Serene waterways, houseboats, and coconut-fringed village life",
+  "categories": [
+    "backwater",
+    "nature",
+    "heritage"
+  ],
+  "introduction": "Kerala Backwaters is a treasure trove of experiences. In this travel guide to Kerala Backwaters, we reveal the must visit places in Kerala Backwaters, the best places to visit in Kerala Backwaters, iconic tourist attractions in Kerala Backwaters, and amazing things to do in Kerala Backwaters.",
+  "metaTitle": "Must Visit Places in Kerala Backwaters | Best Places to Visit in Kerala Backwaters - TrypInn",
+  "metaDescription": "Find the best places to visit in Kerala Backwaters, must visit places in Kerala Backwaters, and tourist attractions in Kerala Backwaters. Plan your Kerala Backwaters trip with TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=1200&q=60",
+    "alt": "Kerala Backwaters travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "kerala-backwaters-alleppey-houseboat-cruise",
+      "name": "Alleppey Houseboat Cruise",
+      "slug": "alleppey-houseboat-cruise",
+      "description": "A crown jewel of Kerala Backwaters, Alleppey Houseboat Cruise captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Alleppey Houseboat Cruise.",
+      "whyVisit": "Capture stunning photographs at Alleppey Houseboat Cruise.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Alleppey Houseboat Cruise, Kerala Backwaters",
+      "category": "backwater",
+      "imagePrompt": "Ultra realistic travel photography, Alleppey Houseboat Cruise in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Alleppey Houseboat Cruise in Kerala Backwaters"
+      },
+      "position": 1
+    },
+    {
+      "id": "kerala-backwaters-kumarakom-bird-sanctuary",
+      "name": "Kumarakom Bird Sanctuary",
+      "slug": "kumarakom-bird-sanctuary",
+      "description": "Kumarakom Bird Sanctuary is one of the most iconic landmarks in Kerala Backwaters, drawing visitors with its timeless charm. This wildlife offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kumarakom Bird Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Kumarakom Bird Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Safari",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kumarakom Bird Sanctuary, Kerala Backwaters",
+      "category": "wildlife",
+      "imagePrompt": "Ultra realistic travel photography, Kumarakom Bird Sanctuary in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Kumarakom Bird Sanctuary in Kerala Backwaters"
+      },
+      "position": 2
+    },
+    {
+      "id": "kerala-backwaters-vembanad-lake",
+      "name": "Vembanad Lake",
+      "slug": "vembanad-lake",
+      "description": "A crown jewel of Kerala Backwaters, Vembanad Lake captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Vembanad Lake.",
+      "whyVisit": "Experience the unmatched beauty of Vembanad Lake.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vembanad Lake, Kerala Backwaters",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Vembanad Lake in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Vembanad Lake in Kerala Backwaters"
+      },
+      "position": 3
+    },
+    {
+      "id": "kerala-backwaters-pathiramanal-island",
+      "name": "Pathiramanal Island",
+      "slug": "pathiramanal-island",
+      "description": "Nestled in Kerala Backwaters, Pathiramanal Island stands as a testament to architectural brilliance. This renowned island attracts tourists who come to admire its stunning design. A visit to Pathiramanal Island is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "Capture stunning photographs at Pathiramanal Island.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Pathiramanal Island, Kerala Backwaters",
+      "category": "island",
+      "imagePrompt": "Ultra realistic travel photography, Pathiramanal Island in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Pathiramanal Island in Kerala Backwaters"
+      },
+      "position": 4
+    },
+    {
+      "id": "kerala-backwaters-kuttanad-region",
+      "name": "Kuttanad Region",
+      "slug": "kuttanad-region",
+      "description": "A crown jewel of Kerala Backwaters, Kuttanad Region captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Kuttanad Region.",
+      "whyVisit": "A visit to Kuttanad Region is essential for understanding Kerala Backwaters.",
+      "bestTime": "Sunset",
+      "duration": "Half day",
+      "mapsSearch": "Kuttanad Region, Kerala Backwaters",
+      "category": "backwater",
+      "imagePrompt": "Ultra realistic travel photography, Kuttanad Region in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Kuttanad Region in Kerala Backwaters"
+      },
+      "position": 5
+    },
+    {
+      "id": "kerala-backwaters-marari-beach",
+      "name": "Marari Beach",
+      "slug": "marari-beach",
+      "description": "Marari Beach is one of the most iconic landmarks in Kerala Backwaters, drawing visitors with its timeless charm. This beach offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Marari Beach promises an unforgettable experience.",
+      "whyVisit": "A visit to Marari Beach is essential for understanding Kerala Backwaters.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Marari Beach, Kerala Backwaters",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Marari Beach in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Marari Beach in Kerala Backwaters"
+      },
+      "position": 6
+    },
+    {
+      "id": "kerala-backwaters-ambalappuzha-temple",
+      "name": "Ambalappuzha Temple",
+      "slug": "ambalappuzha-temple",
+      "description": "A crown jewel of Kerala Backwaters, Ambalappuzha Temple captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Ambalappuzha Temple.",
+      "whyVisit": "Ambalappuzha Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Ambalappuzha Temple, Kerala Backwaters",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ambalappuzha Temple in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Ambalappuzha Temple in Kerala Backwaters"
+      },
+      "position": 7
+    },
+    {
+      "id": "kerala-backwaters-st-mary-s-forane-church",
+      "name": "St. Mary's Forane Church",
+      "slug": "st-mary-s-forane-church",
+      "description": "Nestled in Kerala Backwaters, St. Mary's Forane Church stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to St. Mary's Forane Church is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "A visit to St. Mary's Forane Church is essential for understanding Kerala Backwaters.",
+      "bestTime": "Nov-Feb",
+      "duration": "1-2 hours",
+      "mapsSearch": "St. Mary's Forane Church, Kerala Backwaters",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, St. Mary's Forane Church in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "St. Mary's Forane Church in Kerala Backwaters"
+      },
+      "position": 8
+    },
+    {
+      "id": "kerala-backwaters-karumadi-kuttan",
+      "name": "Karumadi Kuttan",
+      "slug": "karumadi-kuttan",
+      "description": "A crown jewel of Kerala Backwaters, Karumadi Kuttan captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Karumadi Kuttan.",
+      "whyVisit": "Experience the unmatched beauty of Karumadi Kuttan.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Karumadi Kuttan, Kerala Backwaters",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Karumadi Kuttan in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Karumadi Kuttan in Kerala Backwaters"
+      },
+      "position": 9
+    },
+    {
+      "id": "kerala-backwaters-punnamada-lake",
+      "name": "Punnamada Lake",
+      "slug": "punnamada-lake",
+      "description": "Nestled in Kerala Backwaters, Punnamada Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Punnamada Lake is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "A visit to Punnamada Lake is essential for understanding Kerala Backwaters.",
+      "bestTime": "Mar-Jun",
+      "duration": "1-2 hours",
+      "mapsSearch": "Punnamada Lake, Kerala Backwaters",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Punnamada Lake in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Punnamada Lake in Kerala Backwaters"
+      },
+      "position": 10
+    },
+    {
+      "id": "kerala-backwaters-krishnapuram-palace",
+      "name": "Krishnapuram Palace",
+      "slug": "krishnapuram-palace",
+      "description": "Krishnapuram Palace is a must-see palace in Kerala Backwaters, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kerala Backwaters.",
+      "whyVisit": "Experience the unmatched beauty of Krishnapuram Palace.",
+      "bestTime": "Afternoon",
+      "duration": "Half day",
+      "mapsSearch": "Krishnapuram Palace, Kerala Backwaters",
+      "category": "palace",
+      "imagePrompt": "Ultra realistic travel photography, Krishnapuram Palace in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Krishnapuram Palace in Kerala Backwaters"
+      },
+      "position": 11
+    },
+    {
+      "id": "kerala-backwaters-thottappally-beach",
+      "name": "Thottappally Beach",
+      "slug": "thottappally-beach",
+      "description": "Thottappally Beach is a must-see beach in Kerala Backwaters, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kerala Backwaters.",
+      "whyVisit": "Capture stunning photographs at Thottappally Beach.",
+      "bestTime": "Nov-Feb",
+      "duration": "Half day",
+      "mapsSearch": "Thottappally Beach, Kerala Backwaters",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Thottappally Beach in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Thottappally Beach in Kerala Backwaters"
+      },
+      "position": 12
+    },
+    {
+      "id": "kerala-backwaters-r-block",
+      "name": "R Block",
+      "slug": "r-block",
+      "description": "Located in scenic Kerala Backwaters, R Block offers an immersive experience into local culture. Exploring R Block is one of the top things to do in Kerala Backwaters.",
+      "whyVisit": "Capture stunning photographs at R Block.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "R Block, Kerala Backwaters",
+      "category": "backwater",
+      "imagePrompt": "Ultra realistic travel photography, R Block in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "R Block in Kerala Backwaters"
+      },
+      "position": 13
+    },
+    {
+      "id": "kerala-backwaters-chavara-bhavan",
+      "name": "Chavara Bhavan",
+      "slug": "chavara-bhavan",
+      "description": "Nestled in Kerala Backwaters, Chavara Bhavan stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Chavara Bhavan is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "Experience the unmatched beauty of Chavara Bhavan.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chavara Bhavan, Kerala Backwaters",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Chavara Bhavan in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Chavara Bhavan in Kerala Backwaters"
+      },
+      "position": 14
+    },
+    {
+      "id": "kerala-backwaters-mannarasala-temple",
+      "name": "Mannarasala Temple",
+      "slug": "mannarasala-temple",
+      "description": "A crown jewel of Kerala Backwaters, Mannarasala Temple captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Mannarasala Temple.",
+      "whyVisit": "Mannarasala Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mannarasala Temple, Kerala Backwaters",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mannarasala Temple in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Mannarasala Temple in Kerala Backwaters"
+      },
+      "position": 15
+    },
+    {
+      "id": "kerala-backwaters-triveni-floating-market",
+      "name": "Triveni Floating Market",
+      "slug": "triveni-floating-market",
+      "description": "A crown jewel of Kerala Backwaters, Triveni Floating Market captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Triveni Floating Market.",
+      "whyVisit": "A visit to Triveni Floating Market is essential for understanding Kerala Backwaters.",
+      "bestTime": "Year-round",
+      "duration": "Evening",
+      "mapsSearch": "Triveni Floating Market, Kerala Backwaters",
+      "category": "market",
+      "imagePrompt": "Ultra realistic travel photography, Triveni Floating Market in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Triveni Floating Market in Kerala Backwaters"
+      },
+      "position": 16
+    },
+    {
+      "id": "kerala-backwaters-kavalam-backwaters",
+      "name": "Kavalam Backwaters",
+      "slug": "kavalam-backwaters",
+      "description": "Kavalam Backwaters is one of the most iconic landmarks in Kerala Backwaters, drawing visitors with its timeless charm. This backwater offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Kavalam Backwaters promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Kavalam Backwaters.",
+      "bestTime": "Sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kavalam Backwaters, Kerala Backwaters",
+      "category": "backwater",
+      "imagePrompt": "Ultra realistic travel photography, Kavalam Backwaters in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Kavalam Backwaters in Kerala Backwaters"
+      },
+      "position": 17
+    },
+    {
+      "id": "kerala-backwaters-pulinkunnu",
+      "name": "Pulinkunnu",
+      "slug": "pulinkunnu",
+      "description": "Pulinkunnu is one of the most iconic landmarks in Kerala Backwaters, drawing visitors with its timeless charm. This backwater offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Pulinkunnu promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Pulinkunnu.",
+      "bestTime": "Sunset",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pulinkunnu, Kerala Backwaters",
+      "category": "backwater",
+      "imagePrompt": "Ultra realistic travel photography, Pulinkunnu in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Pulinkunnu in Kerala Backwaters"
+      },
+      "position": 18
+    },
+    {
+      "id": "kerala-backwaters-nedumudi-village",
+      "name": "Nedumudi Village",
+      "slug": "nedumudi-village",
+      "description": "A crown jewel of Kerala Backwaters, Nedumudi Village captivates every traveler with enchanting beauty. No trip to Kerala Backwaters is complete without visiting Nedumudi Village.",
+      "whyVisit": "A visit to Nedumudi Village is essential for understanding Kerala Backwaters.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Nedumudi Village, Kerala Backwaters",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Nedumudi Village in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Nedumudi Village in Kerala Backwaters"
+      },
+      "position": 19
+    },
+    {
+      "id": "kerala-backwaters-champakulam-church",
+      "name": "Champakulam Church",
+      "slug": "champakulam-church",
+      "description": "Nestled in Kerala Backwaters, Champakulam Church stands as a testament to architectural brilliance. This renowned heritage attracts tourists who come to admire its stunning design. A visit to Champakulam Church is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "Capture stunning photographs at Champakulam Church.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Champakulam Church, Kerala Backwaters",
+      "category": "heritage",
+      "imagePrompt": "Ultra realistic travel photography, Champakulam Church in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Champakulam Church in Kerala Backwaters"
+      },
+      "position": 20
+    },
+    {
+      "id": "kerala-backwaters-alappuzha-beach",
+      "name": "Alappuzha Beach",
+      "slug": "alappuzha-beach",
+      "description": "Nestled in Kerala Backwaters, Alappuzha Beach stands as a testament to architectural brilliance. This renowned beach attracts tourists who come to admire its stunning design. A visit to Alappuzha Beach is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "Capture stunning photographs at Alappuzha Beach.",
+      "bestTime": "Sunrise",
+      "duration": "Full day",
+      "mapsSearch": "Alappuzha Beach, Kerala Backwaters",
+      "category": "beach",
+      "imagePrompt": "Ultra realistic travel photography, Alappuzha Beach in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Alappuzha Beach in Kerala Backwaters"
+      },
+      "position": 21
+    },
+    {
+      "id": "kerala-backwaters-vijay-beach-park",
+      "name": "Vijay Beach Park",
+      "slug": "vijay-beach-park",
+      "description": "Vijay Beach Park is a must-see park in Kerala Backwaters, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kerala Backwaters.",
+      "whyVisit": "Experience the unmatched beauty of Vijay Beach Park.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Vijay Beach Park, Kerala Backwaters",
+      "category": "park",
+      "imagePrompt": "Ultra realistic travel photography, Vijay Beach Park in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Vijay Beach Park in Kerala Backwaters"
+      },
+      "position": 22
+    },
+    {
+      "id": "kerala-backwaters-mullakkal-temple",
+      "name": "Mullakkal Temple",
+      "slug": "mullakkal-temple",
+      "description": "Mullakkal Temple is one of the most iconic landmarks in Kerala Backwaters, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Mullakkal Temple promises an unforgettable experience.",
+      "whyVisit": "Mullakkal Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Mullakkal Temple, Kerala Backwaters",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mullakkal Temple in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Mullakkal Temple in Kerala Backwaters"
+      },
+      "position": 23
+    },
+    {
+      "id": "kerala-backwaters-kuttanad-kayaking",
+      "name": "Kuttanad Kayaking",
+      "slug": "kuttanad-kayaking",
+      "description": "Kuttanad Kayaking is a must-see adventure in Kerala Backwaters, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kerala Backwaters.",
+      "whyVisit": "Kuttanad Kayaking offers a perfect blend of history and scenery.",
+      "bestTime": "Summer",
+      "duration": "Half day",
+      "mapsSearch": "Kuttanad Kayaking, Kerala Backwaters",
+      "category": "adventure",
+      "imagePrompt": "Ultra realistic travel photography, Kuttanad Kayaking in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Kuttanad Kayaking in Kerala Backwaters"
+      },
+      "position": 24
+    },
+    {
+      "id": "kerala-backwaters-coconut-groves-of-kumarakom",
+      "name": "Coconut Groves of Kumarakom",
+      "slug": "coconut-groves-of-kumarakom",
+      "description": "Nestled in Kerala Backwaters, Coconut Groves of Kumarakom stands as a testament to architectural brilliance. This renowned nature attracts tourists who come to admire its stunning design. A visit to Coconut Groves of Kumarakom is among the best things to do in Kerala Backwaters.",
+      "whyVisit": "Coconut Groves of Kumarakom stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Coconut Groves of Kumarakom, Kerala Backwaters",
+      "category": "nature",
+      "imagePrompt": "Ultra realistic travel photography, Coconut Groves of Kumarakom in Kerala Backwaters, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Coconut Groves of Kumarakom in Kerala Backwaters"
+      },
+      "position": 25
+    }
+  ]
+}

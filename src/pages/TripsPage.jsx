@@ -85,6 +85,22 @@ const HOT_DESTINATIONS = [
     },
 ];
 
+// Must-visit destination-type → emoji, for the homepage preview tags.
+const MV_TAG_EMOJI = {
+    beach: '🏖️', mountain: '🏔️', heritage: '🏛️', spiritual: '🙏', adventure: '🧗',
+    nature: '🌿', wildlife: '🐅', hill_station: '⛰️', city: '🏙️', desert: '🏜️',
+    island: '🏝️', backwater: '🚣', lake: '💧', historical: '📜', pilgrimage: '🕉️',
+    nightlife: '🌙',
+};
+
+// Featured must-visit guides shown on the homepage. Acts as the no-JS / prerender
+// fallback; at runtime the top 3 are pulled live from /must-visits/index.json.
+const MV_FEATURED_FALLBACK = [
+    { slug: 'goa', name: 'Goa', tagline: "Sun, sand, and Portuguese heritage on India's western coast", coverImage: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=400&q=60', attractionCount: 25, categories: ['beach', 'heritage', 'city'] },
+    { slug: 'leh-ladakh', name: 'Leh-Ladakh', tagline: 'High-altitude passes, turquoise lakes, and ancient Buddhist monasteries', coverImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=400&q=60', attractionCount: 25, categories: ['mountain', 'adventure', 'spiritual'] },
+    { slug: 'jaipur', name: 'Jaipur', tagline: 'The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur', coverImage: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=400&q=60', attractionCount: 25, categories: ['heritage', 'city', 'historical'] },
+];
+
 // Travel-vibe shortcuts — each kicks off a trip seeded with a destination.
 const VIBES = [
     { emoji: '🏖️', label: 'Beach days', dest: 'Goa, India', c: '#FF6B4A' },
@@ -182,6 +198,7 @@ export default function TripsPage() {
 
     const [trips, setTrips] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [mvFeatured, setMvFeatured] = useState(MV_FEATURED_FALLBACK);
     const [showAIChat, setShowAIChat] = useState(false);
     const [chatMessages, setChatMessages] = useState([
         { id: '1', type: 'ai', content: "Hey! I'm your Trypinn AI concierge ✨ Tell me a vibe, a budget or a city — I'll help you build the trip." },
@@ -258,6 +275,21 @@ export default function TripsPage() {
     useEffect(() => {
         document.documentElement.classList.add('hide-scrollbar');
         return () => document.documentElement.classList.remove('hide-scrollbar');
+    }, []);
+
+    // Pull the top 3 must-visit guides live so the homepage preview always
+    // matches the directory (counts, images, tags). Falls back silently.
+    useEffect(() => {
+        let cancelled = false;
+        fetch('/must-visits/index.json')
+            .then(r => (r.ok ? r.json() : null))
+            .then(list => {
+                if (!cancelled && Array.isArray(list) && list.length) {
+                    setMvFeatured(list.slice(0, 3));
+                }
+            })
+            .catch(() => { /* keep fallback */ });
+        return () => { cancelled = true; };
     }, []);
 
     function openTrip(trip) {
@@ -570,23 +602,19 @@ export default function TripsPage() {
                     <p className="hp-section-sub">Curated guides with top attractions, hidden gems, and everything you need to plan.</p>
                 </Reveal>
                 <div className="hp-mv-grid">
-                    {[
-                        { slug: 'goa', name: 'Goa', tagline: 'Sun, sand, and Portuguese heritage on India\'s western coast', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=webp&w=400&q=60', count: 28, tags: ['beach', 'nightlife', 'heritage'] },
-                        { slug: 'jaipur', name: 'Jaipur', tagline: 'The Pink City — royal forts, vibrant bazaars, and Rajasthani grandeur', image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=400&q=60', count: 26, tags: ['heritage', 'city', 'desert'] },
-                        { slug: 'leh-ladakh', name: 'Leh-Ladakh', tagline: 'High-altitude passes, turquoise lakes, and ancient Buddhist monasteries', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=400&q=60', count: 27, tags: ['mountain', 'adventure', 'spiritual'] },
-                    ].map(dest => (
+                    {mvFeatured.map(dest => (
                         <Reveal key={dest.slug} className="mv-card" as="div">
                             <Link to={`/must-visits/${dest.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
                                 <div className="mv-card-img">
-                                    <img src={dest.image} alt={`Must visit places in ${dest.name}`} loading="lazy" width="400" height="250" />
-                                    <span className="mv-card-count">{dest.count} places</span>
+                                    <img src={dest.coverImage} alt={`Must visit places in ${dest.name}`} loading="lazy" width="400" height="250" />
+                                    <span className="mv-card-count">{dest.attractionCount} places</span>
                                 </div>
                                 <div className="mv-card-body">
                                     <h3>{dest.name}</h3>
                                     <p className="mv-card-tagline">{dest.tagline}</p>
                                     <div className="mv-card-tags">
-                                        {dest.tags.map(t => (
-                                            <span key={t} className="mv-tag">{t === 'beach' ? '🏖️' : t === 'heritage' ? '🏛️' : t === 'nightlife' ? '🌙' : t === 'city' ? '🏙️' : t === 'desert' ? '🏜️' : t === 'mountain' ? '🏔️' : t === 'adventure' ? '🧗' : t === 'spiritual' ? '🙏' : '📍'} {t.charAt(0).toUpperCase() + t.slice(1)}</span>
+                                        {(dest.categories || []).slice(0, 3).map(t => (
+                                            <span key={t} className="mv-tag">{MV_TAG_EMOJI[t] || '📍'} {t.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase())}</span>
                                         ))}
                                     </div>
                                 </div>

@@ -1,0 +1,447 @@
+{
+  "id": "kumarakom",
+  "name": "Kumarakom",
+  "state": "Kerala",
+  "slug": "kumarakom",
+  "tagline": "Serene backwater village on Vembanad Lake",
+  "categories": [
+    "backwaters",
+    "bird",
+    "lake"
+  ],
+  "introduction": "Kumarakom is a treasure trove of experiences. In this travel guide to Kumarakom, we reveal the must visit places in Kumarakom, the best places to visit in Kumarakom, iconic tourist attractions in Kumarakom, and amazing things to do in Kumarakom.",
+  "metaTitle": "Top Things to Do in Kumarakom | Travel Guide to Kumarakom - TrypInn",
+  "metaDescription": "Explore the best places to visit in Kumarakom, top things to do in Kumarakom, and must visit places in Kumarakom. Your complete travel guide to Kumarakom by TrypInn.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=1200&q=60",
+    "alt": "Kumarakom travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "kumarakom-village-homestay",
+      "name": "Village Homestay",
+      "slug": "village-homestay",
+      "description": "A crown jewel of Kumarakom, Village Homestay captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Village Homestay.",
+      "whyVisit": "Village Homestay offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Village Homestay, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Village Homestay in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Village Homestay in Kumarakom"
+      },
+      "position": 1
+    },
+    {
+      "id": "kumarakom-thol-lake-bird-sanctuary",
+      "name": "Thol Lake Bird Sanctuary",
+      "slug": "thol-lake-bird-sanctuary",
+      "description": "A crown jewel of Kumarakom, Thol Lake Bird Sanctuary captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Thol Lake Bird Sanctuary.",
+      "whyVisit": "Capture stunning photographs at Thol Lake Bird Sanctuary.",
+      "bestTime": "Morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Thol Lake Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Thol Lake Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Thol Lake Bird Sanctuary in Kumarakom"
+      },
+      "position": 2
+    },
+    {
+      "id": "kumarakom-sattal-lake",
+      "name": "Sattal Lake",
+      "slug": "sattal-lake",
+      "description": "Nestled in Kumarakom, Sattal Lake stands as a testament to architectural brilliance. This renowned lake attracts tourists who come to admire its stunning design. A visit to Sattal Lake is among the best things to do in Kumarakom.",
+      "whyVisit": "Capture stunning photographs at Sattal Lake.",
+      "bestTime": "Year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sattal Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sattal Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Sattal Lake in Kumarakom"
+      },
+      "position": 3
+    },
+    {
+      "id": "kumarakom-vembanad-lake-cruise",
+      "name": "Vembanad Lake Cruise",
+      "slug": "vembanad-lake-cruise",
+      "description": "Nestled in Kumarakom, Vembanad Lake Cruise stands as a testament to architectural brilliance. This renowned backwaters attracts tourists who come to admire its stunning design. A visit to Vembanad Lake Cruise is among the best things to do in Kumarakom.",
+      "whyVisit": "Vembanad Lake Cruise stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Vembanad Lake Cruise, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Vembanad Lake Cruise in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Vembanad Lake Cruise in Kumarakom"
+      },
+      "position": 4
+    },
+    {
+      "id": "kumarakom-ranganathittu-bird-sanctuary",
+      "name": "Ranganathittu Bird Sanctuary",
+      "slug": "ranganathittu-bird-sanctuary",
+      "description": "Located in scenic Kumarakom, Ranganathittu Bird Sanctuary offers an immersive experience into local culture. Exploring Ranganathittu Bird Sanctuary is one of the top things to do in Kumarakom.",
+      "whyVisit": "Capture stunning photographs at Ranganathittu Bird Sanctuary.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ranganathittu Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Ranganathittu Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Ranganathittu Bird Sanctuary in Kumarakom"
+      },
+      "position": 5
+    },
+    {
+      "id": "kumarakom-kankaria-lake",
+      "name": "Kankaria Lake",
+      "slug": "kankaria-lake",
+      "description": "Kankaria Lake is a must-see lake in Kumarakom, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kumarakom.",
+      "whyVisit": "Kankaria Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kankaria Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Kankaria Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Kankaria Lake in Kumarakom"
+      },
+      "position": 6
+    },
+    {
+      "id": "kumarakom-kozhikode-backwaters",
+      "name": "Kozhikode Backwaters",
+      "slug": "kozhikode-backwaters",
+      "description": "Located in scenic Kumarakom, Kozhikode Backwaters offers an immersive experience into local culture. Exploring Kozhikode Backwaters is one of the top things to do in Kumarakom.",
+      "whyVisit": "Kozhikode Backwaters offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Kozhikode Backwaters, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Kozhikode Backwaters in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Kozhikode Backwaters in Kumarakom"
+      },
+      "position": 7
+    },
+    {
+      "id": "kumarakom-nal-sarovar-bird-sanctuary",
+      "name": "Nal Sarovar Bird Sanctuary",
+      "slug": "nal-sarovar-bird-sanctuary",
+      "description": "Nal Sarovar Bird Sanctuary is a must-see bird in Kumarakom, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kumarakom.",
+      "whyVisit": "A visit to Nal Sarovar Bird Sanctuary is essential for understanding Kumarakom.",
+      "bestTime": "Migratory season",
+      "duration": "Half day",
+      "mapsSearch": "Nal Sarovar Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Nal Sarovar Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Nal Sarovar Bird Sanctuary in Kumarakom"
+      },
+      "position": 8
+    },
+    {
+      "id": "kumarakom-lower-lake",
+      "name": "Lower Lake",
+      "slug": "lower-lake",
+      "description": "A crown jewel of Kumarakom, Lower Lake captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Lower Lake.",
+      "whyVisit": "Experience the unmatched beauty of Lower Lake.",
+      "bestTime": "Sep-Nov",
+      "duration": "2-3 hours",
+      "mapsSearch": "Lower Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Lower Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Lower Lake in Kumarakom"
+      },
+      "position": 9
+    },
+    {
+      "id": "kumarakom-kuttanad-backwaters",
+      "name": "Kuttanad Backwaters",
+      "slug": "kuttanad-backwaters",
+      "description": "Located in scenic Kumarakom, Kuttanad Backwaters offers an immersive experience into local culture. Exploring Kuttanad Backwaters is one of the top things to do in Kumarakom.",
+      "whyVisit": "Capture stunning photographs at Kuttanad Backwaters.",
+      "bestTime": "Oct-Mar",
+      "duration": "Full day",
+      "mapsSearch": "Kuttanad Backwaters, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Kuttanad Backwaters in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kuttanad Backwaters in Kumarakom"
+      },
+      "position": 10
+    },
+    {
+      "id": "kumarakom-mayani-bird-sanctuary",
+      "name": "Mayani Bird Sanctuary",
+      "slug": "mayani-bird-sanctuary",
+      "description": "Mayani Bird Sanctuary is a must-see bird in Kumarakom, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Kumarakom.",
+      "whyVisit": "Mayani Bird Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Morning",
+      "duration": "Morning",
+      "mapsSearch": "Mayani Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Mayani Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Mayani Bird Sanctuary in Kumarakom"
+      },
+      "position": 11
+    },
+    {
+      "id": "kumarakom-sasthamkotta-lake",
+      "name": "Sasthamkotta Lake",
+      "slug": "sasthamkotta-lake",
+      "description": "Sasthamkotta Lake is one of the most iconic landmarks in Kumarakom, drawing visitors with its timeless charm. This lake offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sasthamkotta Lake promises an unforgettable experience.",
+      "whyVisit": "Experience the unmatched beauty of Sasthamkotta Lake.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Sasthamkotta Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Sasthamkotta Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Sasthamkotta Lake in Kumarakom"
+      },
+      "position": 12
+    },
+    {
+      "id": "kumarakom-bird-watching",
+      "name": "Bird Watching",
+      "slug": "bird-watching",
+      "description": "Bird Watching is one of the most iconic landmarks in Kumarakom, drawing visitors with its timeless charm. This backwaters offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bird Watching promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Bird Watching.",
+      "bestTime": "Houseboat",
+      "duration": "Full day",
+      "mapsSearch": "Bird Watching, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Bird Watching in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Bird Watching in Kumarakom"
+      },
+      "position": 13
+    },
+    {
+      "id": "kumarakom-okhla-bird-sanctuary",
+      "name": "Okhla Bird Sanctuary",
+      "slug": "okhla-bird-sanctuary",
+      "description": "Located in scenic Kumarakom, Okhla Bird Sanctuary offers an immersive experience into local culture. Exploring Okhla Bird Sanctuary is one of the top things to do in Kumarakom.",
+      "whyVisit": "Capture stunning photographs at Okhla Bird Sanctuary.",
+      "bestTime": "Migratory season",
+      "duration": "Morning",
+      "mapsSearch": "Okhla Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Okhla Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Okhla Bird Sanctuary in Kumarakom"
+      },
+      "position": 14
+    },
+    {
+      "id": "kumarakom-pichola-lake",
+      "name": "Pichola Lake",
+      "slug": "pichola-lake",
+      "description": "A crown jewel of Kumarakom, Pichola Lake captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Pichola Lake.",
+      "whyVisit": "Pichola Lake stands out as one of the most rewarding experiences.",
+      "bestTime": "Sep-Nov",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pichola Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Pichola Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Pichola Lake in Kumarakom"
+      },
+      "position": 15
+    },
+    {
+      "id": "kumarakom-munroe-island",
+      "name": "Munroe Island",
+      "slug": "munroe-island",
+      "description": "Located in scenic Kumarakom, Munroe Island offers an immersive experience into local culture. Exploring Munroe Island is one of the top things to do in Kumarakom.",
+      "whyVisit": "Capture stunning photographs at Munroe Island.",
+      "bestTime": "Houseboat",
+      "duration": "Overnight",
+      "mapsSearch": "Munroe Island, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Munroe Island in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Munroe Island in Kumarakom"
+      },
+      "position": 16
+    },
+    {
+      "id": "kumarakom-chhari-dhand-wetland",
+      "name": "Chhari Dhand Wetland",
+      "slug": "chhari-dhand-wetland",
+      "description": "Nestled in Kumarakom, Chhari Dhand Wetland stands as a testament to architectural brilliance. This renowned bird attracts tourists who come to admire its stunning design. A visit to Chhari Dhand Wetland is among the best things to do in Kumarakom.",
+      "whyVisit": "A visit to Chhari Dhand Wetland is essential for understanding Kumarakom.",
+      "bestTime": "Oct-Mar",
+      "duration": "Morning",
+      "mapsSearch": "Chhari Dhand Wetland, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Chhari Dhand Wetland in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Chhari Dhand Wetland in Kumarakom"
+      },
+      "position": 17
+    },
+    {
+      "id": "kumarakom-dal-lake",
+      "name": "Dal Lake",
+      "slug": "dal-lake",
+      "description": "A crown jewel of Kumarakom, Dal Lake captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Dal Lake.",
+      "whyVisit": "Dal Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Half day",
+      "mapsSearch": "Dal Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Dal Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Dal Lake in Kumarakom"
+      },
+      "position": 18
+    },
+    {
+      "id": "kumarakom-thottappally-beach",
+      "name": "Thottappally Beach",
+      "slug": "thottappally-beach",
+      "description": "Located in scenic Kumarakom, Thottappally Beach offers an immersive experience into local culture. Exploring Thottappally Beach is one of the top things to do in Kumarakom.",
+      "whyVisit": "Experience the unmatched beauty of Thottappally Beach.",
+      "bestTime": "Houseboat",
+      "duration": "Full day",
+      "mapsSearch": "Thottappally Beach, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Thottappally Beach in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Thottappally Beach in Kumarakom"
+      },
+      "position": 19
+    },
+    {
+      "id": "kumarakom-chilika-lake-bird-sanctuary",
+      "name": "Chilika Lake Bird Sanctuary",
+      "slug": "chilika-lake-bird-sanctuary",
+      "description": "Chilika Lake Bird Sanctuary is one of the most iconic landmarks in Kumarakom, drawing visitors with its timeless charm. This bird offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Chilika Lake Bird Sanctuary promises an unforgettable experience.",
+      "whyVisit": "Chilika Lake Bird Sanctuary offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Chilika Lake Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Chilika Lake Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Chilika Lake Bird Sanctuary in Kumarakom"
+      },
+      "position": 20
+    },
+    {
+      "id": "kumarakom-naukuchiatal",
+      "name": "Naukuchiatal",
+      "slug": "naukuchiatal",
+      "description": "Located in scenic Kumarakom, Naukuchiatal offers an immersive experience into local culture. Exploring Naukuchiatal is one of the top things to do in Kumarakom.",
+      "whyVisit": "Experience the unmatched beauty of Naukuchiatal.",
+      "bestTime": "Mar-Jun",
+      "duration": "2-3 hours",
+      "mapsSearch": "Naukuchiatal, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Naukuchiatal in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Naukuchiatal in Kumarakom"
+      },
+      "position": 21
+    },
+    {
+      "id": "kumarakom-kochi-backwaters",
+      "name": "Kochi Backwaters",
+      "slug": "kochi-backwaters",
+      "description": "Located in scenic Kumarakom, Kochi Backwaters offers an immersive experience into local culture. Exploring Kochi Backwaters is one of the top things to do in Kumarakom.",
+      "whyVisit": "Kochi Backwaters stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Kochi Backwaters, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Kochi Backwaters in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Kochi Backwaters in Kumarakom"
+      },
+      "position": 22
+    },
+    {
+      "id": "kumarakom-vedanthangal-bird-sanctuary",
+      "name": "Vedanthangal Bird Sanctuary",
+      "slug": "vedanthangal-bird-sanctuary",
+      "description": "A crown jewel of Kumarakom, Vedanthangal Bird Sanctuary captivates every traveler with enchanting beauty. No trip to Kumarakom is complete without visiting Vedanthangal Bird Sanctuary.",
+      "whyVisit": "Vedanthangal Bird Sanctuary stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Vedanthangal Bird Sanctuary, Kumarakom",
+      "category": "bird",
+      "imagePrompt": "Ultra realistic travel photography, Vedanthangal Bird Sanctuary in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Vedanthangal Bird Sanctuary in Kumarakom"
+      },
+      "position": 23
+    },
+    {
+      "id": "kumarakom-ulsoor-lake",
+      "name": "Ulsoor Lake",
+      "slug": "ulsoor-lake",
+      "description": "Located in scenic Kumarakom, Ulsoor Lake offers an immersive experience into local culture. Exploring Ulsoor Lake is one of the top things to do in Kumarakom.",
+      "whyVisit": "Ulsoor Lake offers a perfect blend of history and scenery.",
+      "bestTime": "Mar-Jun",
+      "duration": "Half day",
+      "mapsSearch": "Ulsoor Lake, Kumarakom",
+      "category": "lake",
+      "imagePrompt": "Ultra realistic travel photography, Ulsoor Lake in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Ulsoor Lake in Kumarakom"
+      },
+      "position": 24
+    },
+    {
+      "id": "kumarakom-canoe-ride",
+      "name": "Canoe Ride",
+      "slug": "canoe-ride",
+      "description": "Nestled in Kumarakom, Canoe Ride stands as a testament to architectural brilliance. This renowned backwaters attracts tourists who come to admire its stunning design. A visit to Canoe Ride is among the best things to do in Kumarakom.",
+      "whyVisit": "Canoe Ride offers a perfect blend of history and scenery.",
+      "bestTime": "Houseboat",
+      "duration": "2-3 hours",
+      "mapsSearch": "Canoe Ride, Kumarakom",
+      "category": "backwaters",
+      "imagePrompt": "Ultra realistic travel photography, Canoe Ride in Kumarakom, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Canoe Ride in Kumarakom"
+      },
+      "position": 25
+    }
+  ]
+}

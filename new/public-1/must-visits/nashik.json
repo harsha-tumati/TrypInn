@@ -1,0 +1,447 @@
+{
+  "id": "nashik",
+  "name": "Nashik",
+  "state": "Maharashtra",
+  "slug": "nashik",
+  "tagline": "Wine country and sacred Godavari ghats",
+  "categories": [
+    "temple",
+    "river",
+    "village"
+  ],
+  "introduction": "Nashik is a treasure trove of experiences. In this travel guide to Nashik, we reveal the must visit places in Nashik, the best places to visit in Nashik, iconic tourist attractions in Nashik, and amazing things to do in Nashik.",
+  "metaTitle": "Best Places to Visit in Nashik | Tourist Attractions in Nashik - TrypInn",
+  "metaDescription": "Discover must visit places in Nashik, best places to visit in Nashik, and top tourist attractions in Nashik. Plan your perfect trip with TrypInn travel guide to Nashik.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1564507592033-7e4f13a7e7b6?fm=webp&w=1200&q=60",
+    "alt": "Nashik travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "nashik-meenakshi-temple",
+      "name": "Meenakshi Temple",
+      "slug": "meenakshi-temple",
+      "description": "Meenakshi Temple is one of the most iconic landmarks in Nashik, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Meenakshi Temple promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Meenakshi Temple.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Meenakshi Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Meenakshi Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Meenakshi Temple in Nashik"
+      },
+      "position": 1
+    },
+    {
+      "id": "nashik-kedar-ghat",
+      "name": "Kedar Ghat",
+      "slug": "kedar-ghat",
+      "description": "Kedar Ghat is a must-see river in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "A visit to Kedar Ghat is essential for understanding Nashik.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kedar Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Kedar Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Kedar Ghat in Nashik"
+      },
+      "position": 2
+    },
+    {
+      "id": "nashik-coffee-estate-village",
+      "name": "Coffee Estate Village",
+      "slug": "coffee-estate-village",
+      "description": "Coffee Estate Village is a must-see village in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Experience the unmatched beauty of Coffee Estate Village.",
+      "bestTime": "Harvest",
+      "duration": "Overnight",
+      "mapsSearch": "Coffee Estate Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Coffee Estate Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Coffee Estate Village in Nashik"
+      },
+      "position": 3
+    },
+    {
+      "id": "nashik-mahabodhi-temple",
+      "name": "Mahabodhi Temple",
+      "slug": "mahabodhi-temple",
+      "description": "Mahabodhi Temple is a must-see temple in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Experience the unmatched beauty of Mahabodhi Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Mahabodhi Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahabodhi Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Mahabodhi Temple in Nashik"
+      },
+      "position": 4
+    },
+    {
+      "id": "nashik-ganga-aarti-ghat",
+      "name": "Ganga Aarti Ghat",
+      "slug": "ganga-aarti-ghat",
+      "description": "Nestled in Nashik, Ganga Aarti Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Ganga Aarti Ghat is among the best things to do in Nashik.",
+      "whyVisit": "Capture stunning photographs at Ganga Aarti Ghat.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Ganga Aarti Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ganga Aarti Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Ganga Aarti Ghat in Nashik"
+      },
+      "position": 5
+    },
+    {
+      "id": "nashik-handloom-village",
+      "name": "Handloom Village",
+      "slug": "handloom-village",
+      "description": "Nestled in Nashik, Handloom Village stands as a testament to architectural brilliance. This renowned village attracts tourists who come to admire its stunning design. A visit to Handloom Village is among the best things to do in Nashik.",
+      "whyVisit": "Handloom Village stands out as one of the most rewarding experiences.",
+      "bestTime": "Harvest",
+      "duration": "Half day",
+      "mapsSearch": "Handloom Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Handloom Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Handloom Village in Nashik"
+      },
+      "position": 6
+    },
+    {
+      "id": "nashik-birla-mandir",
+      "name": "Birla Mandir",
+      "slug": "birla-mandir",
+      "description": "A crown jewel of Nashik, Birla Mandir captivates every traveler with enchanting beauty. No trip to Nashik is complete without visiting Birla Mandir.",
+      "whyVisit": "Experience the unmatched beauty of Birla Mandir.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Birla Mandir, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Birla Mandir in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Birla Mandir in Nashik"
+      },
+      "position": 7
+    },
+    {
+      "id": "nashik-ahilyabai-ghat",
+      "name": "Ahilyabai Ghat",
+      "slug": "ahilyabai-ghat",
+      "description": "Nestled in Nashik, Ahilyabai Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Ahilyabai Ghat is among the best things to do in Nashik.",
+      "whyVisit": "Ahilyabai Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "Sunset",
+      "mapsSearch": "Ahilyabai Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ahilyabai Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Ahilyabai Ghat in Nashik"
+      },
+      "position": 8
+    },
+    {
+      "id": "nashik-homestay-village",
+      "name": "Homestay Village",
+      "slug": "homestay-village",
+      "description": "Homestay Village is a must-see village in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Experience the unmatched beauty of Homestay Village.",
+      "bestTime": "Year-round",
+      "duration": "2-3 hours",
+      "mapsSearch": "Homestay Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Homestay Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Homestay Village in Nashik"
+      },
+      "position": 9
+    },
+    {
+      "id": "nashik-sun-temple",
+      "name": "Sun Temple",
+      "slug": "sun-temple",
+      "description": "Sun Temple is one of the most iconic landmarks in Nashik, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Sun Temple promises an unforgettable experience.",
+      "whyVisit": "Sun Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Sun Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Sun Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Sun Temple in Nashik"
+      },
+      "position": 10
+    },
+    {
+      "id": "nashik-bhadaini-ghat",
+      "name": "Bhadaini Ghat",
+      "slug": "bhadaini-ghat",
+      "description": "Bhadaini Ghat is one of the most iconic landmarks in Nashik, drawing visitors with its timeless charm. This river offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Bhadaini Ghat promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Bhadaini Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhadaini Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Bhadaini Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Bhadaini Ghat in Nashik"
+      },
+      "position": 11
+    },
+    {
+      "id": "nashik-rice-terrace-village",
+      "name": "Rice Terrace Village",
+      "slug": "rice-terrace-village",
+      "description": "Rice Terrace Village is one of the most iconic landmarks in Nashik, drawing visitors with its timeless charm. This village offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Rice Terrace Village promises an unforgettable experience.",
+      "whyVisit": "Capture stunning photographs at Rice Terrace Village.",
+      "bestTime": "Oct-Mar",
+      "duration": "Half day",
+      "mapsSearch": "Rice Terrace Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Rice Terrace Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Rice Terrace Village in Nashik"
+      },
+      "position": 12
+    },
+    {
+      "id": "nashik-padmanabhaswamy-temple",
+      "name": "Padmanabhaswamy Temple",
+      "slug": "padmanabhaswamy-temple",
+      "description": "Padmanabhaswamy Temple is a must-see temple in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Capture stunning photographs at Padmanabhaswamy Temple.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Padmanabhaswamy Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Padmanabhaswamy Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Padmanabhaswamy Temple in Nashik"
+      },
+      "position": 13
+    },
+    {
+      "id": "nashik-namo-ghat",
+      "name": "Namo Ghat",
+      "slug": "namo-ghat",
+      "description": "A crown jewel of Nashik, Namo Ghat captivates every traveler with enchanting beauty. No trip to Nashik is complete without visiting Namo Ghat.",
+      "whyVisit": "Capture stunning photographs at Namo Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "1-2 hours",
+      "mapsSearch": "Namo Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Namo Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Namo Ghat in Nashik"
+      },
+      "position": 14
+    },
+    {
+      "id": "nashik-pottery-village",
+      "name": "Pottery Village",
+      "slug": "pottery-village",
+      "description": "Located in scenic Nashik, Pottery Village offers an immersive experience into local culture. Exploring Pottery Village is one of the top things to do in Nashik.",
+      "whyVisit": "Pottery Village offers a perfect blend of history and scenery.",
+      "bestTime": "Year-round",
+      "duration": "Overnight",
+      "mapsSearch": "Pottery Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Pottery Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Pottery Village in Nashik"
+      },
+      "position": 15
+    },
+    {
+      "id": "nashik-vitthal-temple",
+      "name": "Vitthal Temple",
+      "slug": "vitthal-temple",
+      "description": "A crown jewel of Nashik, Vitthal Temple captivates every traveler with enchanting beauty. No trip to Nashik is complete without visiting Vitthal Temple.",
+      "whyVisit": "Experience the unmatched beauty of Vitthal Temple.",
+      "bestTime": "Festival",
+      "duration": "Morning",
+      "mapsSearch": "Vitthal Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vitthal Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Vitthal Temple in Nashik"
+      },
+      "position": 16
+    },
+    {
+      "id": "nashik-munshi-ghat",
+      "name": "Munshi Ghat",
+      "slug": "munshi-ghat",
+      "description": "Munshi Ghat is a must-see river in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Capture stunning photographs at Munshi Ghat.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Munshi Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Munshi Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Munshi Ghat in Nashik"
+      },
+      "position": 17
+    },
+    {
+      "id": "nashik-smart-village",
+      "name": "Smart Village",
+      "slug": "smart-village",
+      "description": "Smart Village is a must-see village in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Smart Village stands out as one of the most rewarding experiences.",
+      "bestTime": "Oct-Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Smart Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Smart Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Smart Village in Nashik"
+      },
+      "position": 18
+    },
+    {
+      "id": "nashik-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "A crown jewel of Nashik, Kashi Vishwanath Temple captivates every traveler with enchanting beauty. No trip to Nashik is complete without visiting Kashi Vishwanath Temple.",
+      "whyVisit": "A visit to Kashi Vishwanath Temple is essential for understanding Nashik.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kashi Vishwanath Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Nashik"
+      },
+      "position": 19
+    },
+    {
+      "id": "nashik-bundi-ghat",
+      "name": "Bundi Ghat",
+      "slug": "bundi-ghat",
+      "description": "Located in scenic Nashik, Bundi Ghat offers an immersive experience into local culture. Exploring Bundi Ghat is one of the top things to do in Nashik.",
+      "whyVisit": "Experience the unmatched beauty of Bundi Ghat.",
+      "bestTime": "Monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bundi Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Bundi Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Bundi Ghat in Nashik"
+      },
+      "position": 20
+    },
+    {
+      "id": "nashik-honey-village",
+      "name": "Honey Village",
+      "slug": "honey-village",
+      "description": "Honey Village is a must-see village in Nashik, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Nashik.",
+      "whyVisit": "Capture stunning photographs at Honey Village.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Honey Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Honey Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Honey Village in Nashik"
+      },
+      "position": 21
+    },
+    {
+      "id": "nashik-kamakhya-temple",
+      "name": "Kamakhya Temple",
+      "slug": "kamakhya-temple",
+      "description": "A crown jewel of Nashik, Kamakhya Temple captivates every traveler with enchanting beauty. No trip to Nashik is complete without visiting Kamakhya Temple.",
+      "whyVisit": "Experience the unmatched beauty of Kamakhya Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kamakhya Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kamakhya Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Kamakhya Temple in Nashik"
+      },
+      "position": 22
+    },
+    {
+      "id": "nashik-chausathi-ghat",
+      "name": "Chausathi Ghat",
+      "slug": "chausathi-ghat",
+      "description": "Nestled in Nashik, Chausathi Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Chausathi Ghat is among the best things to do in Nashik.",
+      "whyVisit": "Experience the unmatched beauty of Chausathi Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chausathi Ghat, Nashik",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Chausathi Ghat in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Chausathi Ghat in Nashik"
+      },
+      "position": 23
+    },
+    {
+      "id": "nashik-tea-estate-village",
+      "name": "Tea Estate Village",
+      "slug": "tea-estate-village",
+      "description": "Located in scenic Nashik, Tea Estate Village offers an immersive experience into local culture. Exploring Tea Estate Village is one of the top things to do in Nashik.",
+      "whyVisit": "Tea Estate Village offers a perfect blend of history and scenery.",
+      "bestTime": "Harvest",
+      "duration": "Overnight",
+      "mapsSearch": "Tea Estate Village, Nashik",
+      "category": "village",
+      "imagePrompt": "Ultra realistic travel photography, Tea Estate Village in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Tea Estate Village in Nashik"
+      },
+      "position": 24
+    },
+    {
+      "id": "nashik-lingaraj-temple",
+      "name": "Lingaraj Temple",
+      "slug": "lingaraj-temple",
+      "description": "Lingaraj Temple is one of the most iconic landmarks in Nashik, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Lingaraj Temple promises an unforgettable experience.",
+      "whyVisit": "Lingaraj Temple stands out as one of the most rewarding experiences.",
+      "bestTime": "Festival",
+      "duration": "Full day",
+      "mapsSearch": "Lingaraj Temple, Nashik",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Lingaraj Temple in Nashik, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Lingaraj Temple in Nashik"
+      },
+      "position": 25
+    }
+  ]
+}

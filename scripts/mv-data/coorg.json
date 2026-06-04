@@ -1,0 +1,260 @@
+{
+  "slug": "coorg",
+  "name": "Coorg",
+  "state": "Karnataka",
+  "tagline": "Scotland of India — coffee, mist, and warrior heritage",
+  "categories": ["hill_station", "nature", "adventure"],
+  "highlights": ["aromatic coffee and spice estates at every turn", "fierce Kodava culture and ancient forest temples"],
+  "attractions": [
+    {
+      "name": "Abbey Falls",
+      "category": "waterfall",
+      "description": "Eleven kilometres from Madikeri, Abbey Falls drops 70 metres through a narrow gorge framed by overhanging coffee and spice plantations, the spray cooling the dense jungle air. The falls are at full volume from July to October when the Coorg monsoon is at its peak. A short suspension bridge at the viewpoint swings gently over the river and the roar of water below it fills the entire valley.",
+      "whyVisit": "Coorg's most dramatic and accessible waterfall, framed by the coffee plantations that define the region.",
+      "bestTime": "July to January for maximum volume and lush surroundings",
+      "duration": "1-2 hours",
+      "mapsSearch": "Abbey Falls Madikeri Coorg",
+      "imageQuery": "Abbey Falls Madikeri Coorg waterfall jungle"
+    },
+    {
+      "name": "Raja's Seat, Madikeri",
+      "category": "viewpoint",
+      "description": "A cliffside garden in the heart of Madikeri town, Raja's Seat — literally 'the seat of the king' — is where the Kodava rajas reportedly sat to watch the sun set over the Western Ghats. On clear evenings, the panorama encompasses layers of forested ridges fading into the plains of Mysore in the east. A small musical fountain in the garden adds to its appeal as a family gathering spot.",
+      "whyVisit": "Madikeri's signature sunset viewpoint, historically the leisure garden of Coorg's royal family.",
+      "bestTime": "Sunset, October to February for clear skies",
+      "duration": "1 hour",
+      "mapsSearch": "Raja's Seat Madikeri Coorg",
+      "imageQuery": "Raja's Seat Madikeri sunset Western Ghats view"
+    },
+    {
+      "name": "Namdroling Monastery (Golden Temple), Bylakuppe",
+      "category": "monastery",
+      "description": "Built in 1963 as the heart of the Tibetan refugee settlement at Bylakuppe — one of the largest outside Tibet — the Namdroling Monastery's Golden Temple is a dazzling complex of golden spires, prayer wheels, and richly decorated shrines. The main hall houses three 18-metre gold-and-copper Buddha statues — Padmasambhava, Amitabha, and Shakyamuni — surrounded by thousands of smaller gilt figures.",
+      "whyVisit": "The largest Tibetan Buddhist monastery in South India, whose Golden Temple rivals those in Lhasa for richness of decoration.",
+      "bestTime": "October to March; spectacular during Tibetan New Year (Losar) in Feb–Mar",
+      "duration": "2-3 hours",
+      "mapsSearch": "Namdroling Monastery Golden Temple Bylakuppe Coorg",
+      "imageQuery": "Namdroling Golden Temple Bylakuppe Tibetan monastery"
+    },
+    {
+      "name": "Talacauvery",
+      "category": "religious",
+      "description": "At 1,276 metres in the Brahmagiri Hills, Talacauvery is the sacred source of the River Kaveri — one of South India's holiest rivers, venerated for over 2,000 years. A small tank fed by a spring marks the precise source, and the Brahmagiri Temple complex above it draws pilgrims from across Karnataka and Tamil Nadu. The tank overflows on a specific annual date (Kaveri Sankramana, usually October 17) triggering massive pilgrimages.",
+      "whyVisit": "The sacred origin of the Kaveri River — one of Hinduism's holiest sites and a centre of pilgrimage for 2,000 years.",
+      "bestTime": "October for the Kaveri Sankramana festival; year-round for the trek to Brahmagiri summit",
+      "duration": "2-3 hours",
+      "mapsSearch": "Talacauvery Kaveri Source Coorg Karnataka",
+      "imageQuery": "Talacauvery Kaveri source temple Coorg pilgrims"
+    },
+    {
+      "name": "Brahmagiri Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Covering 181 sq km of the Brahmagiri Hills on the Kerala-Karnataka border, this sanctuary is part of the Nilgiri Biosphere Reserve and protects tigers, leopards, Asian elephants, gaur, and the rare lion-tailed macaque. The forests here transition between moist deciduous, semi-evergreen, and shola types as altitude rises. A trek to the Brahmagiri summit (1,608 m) passes through all three forest types.",
+      "whyVisit": "Core Nilgiri Biosphere tiger habitat with arguably the most diverse forest ecology in the entire Western Ghats.",
+      "bestTime": "November to March",
+      "duration": "Full day",
+      "mapsSearch": "Brahmagiri Wildlife Sanctuary Coorg Karnataka",
+      "imageQuery": "Brahmagiri Wildlife Sanctuary forest Western Ghats Coorg"
+    },
+    {
+      "name": "Madikeri Fort",
+      "category": "fort",
+      "description": "Built originally in mud by Mudduraja in the 17th century and rebuilt in stone by Tipu Sultan in 1781, Madikeri Fort dominates the centre of Coorg's capital. The British captured and modified it in 1834, adding a chapel that is now a museum housing Kodava sculptures, coins, and weapons. Within the fort walls stand a temple and a church side by side — a unique coexistence that reflects Coorg's layered history.",
+      "whyVisit": "The only fort in India where a Hindu temple and a Christian church stand inside the same compound, reflecting Coorg's unique history.",
+      "bestTime": "Year-round; morning before tourist crowds",
+      "duration": "1-2 hours",
+      "mapsSearch": "Madikeri Fort Coorg Karnataka",
+      "imageQuery": "Madikeri Fort Coorg Karnataka historic"
+    },
+    {
+      "name": "Dubare Elephant Camp",
+      "category": "wildlife",
+      "description": "On the banks of the Kaveri River, Dubare is the Karnataka Forest Department's working elephant camp where domesticated elephants from the state's forest operations are stabled. Morning visitors can assist mahouts with bathing, feeding, and grooming the elephants. The camp sits within the Dubare Reserve Forest and the river crossing point here is a regular elephant corridor — wild herds cross at dawn.",
+      "whyVisit": "The most accessible and ethical elephant interaction experience in South India, managed by the forest department.",
+      "bestTime": "Morning (6–9 AM) for bathing and feeding session",
+      "duration": "2-3 hours",
+      "mapsSearch": "Dubare Elephant Camp Coorg Kaveri",
+      "imageQuery": "Dubare Elephant Camp Coorg Kaveri river bathing"
+    },
+    {
+      "name": "Coffee Estate Walk, Coorg",
+      "category": "nature",
+      "description": "The estates around Gonikoppal, Siddapur, and Virajpet produce both arabica and robusta coffee under the shade of silver oak and jackfruit trees, with cardamom growing as an understorey crop. Many estates offer guided walks during the October-January harvest, when red berries hang from every branch and the air smells of ripening fruit and spice. Some estates allow visitors to participate in manual picking.",
+      "whyVisit": "India's premier coffee-growing region — walking through a harvest-season estate engages all five senses at once.",
+      "bestTime": "October to January for harvest; April to May for blooming (white, jasmine-like flowers)",
+      "duration": "2-3 hours",
+      "mapsSearch": "Coffee Estate Tour Coorg Karnataka",
+      "imageQuery": "coffee estate Coorg Karnataka arabica harvest"
+    },
+    {
+      "name": "Nagarhole National Park (Rajiv Gandhi NP)",
+      "category": "wildlife",
+      "description": "Bordering Coorg's eastern plains, Nagarhole is one of India's finest tiger and wild elephant reserves, part of the Nilgiri Biosphere. Safari jeeps depart from Veeranahosahalli gate into dense teak and rosewood forest intersected by Kabini River tributaries. Leopard sightings are among the most reliable in India here, and the park holds over 250 tigers by recent estimates.",
+      "whyVisit": "One of India's highest-density tiger and leopard reserves with excellent safari infrastructure and near-daily big cat sightings.",
+      "bestTime": "October to May; evening safaris during October-February for best light",
+      "duration": "Half to full day",
+      "mapsSearch": "Nagarhole National Park Coorg Karnataka safari",
+      "imageQuery": "Nagarhole National Park tiger leopard safari Karnataka"
+    },
+    {
+      "name": "Iruppu Falls",
+      "category": "waterfall",
+      "description": "Located on the edge of the Brahmagiri Hills within the Nagarhole forest zone, the Iruppu Falls (also called Lakshmana Tirtha Falls) cascade 170 metres in two stages over ancient black rock. The river's source is a sacred spring near the Rameshwara Temple above. The temple legitimises the site as a pilgrimage destination, and the combination of sacred spring, temple, and dramatic waterfall draws both tourists and devotees.",
+      "whyVisit": "The tallest and most dramatic waterfall in the Coorg region, set in a forest wildlife corridor with both religious and natural significance.",
+      "bestTime": "July to January",
+      "duration": "2-3 hours",
+      "mapsSearch": "Iruppu Falls Nagarhole Coorg Karnataka",
+      "imageQuery": "Iruppu Falls Coorg waterfall Brahmagiri forest"
+    },
+    {
+      "name": "Omkareshwara Temple, Madikeri",
+      "category": "temple",
+      "description": "Built in 1820 by Lingarajendra II, the Omkareshwara Temple in Madikeri's town centre is an architectural hybrid unlike any other in India — its style blends Islamic, Gothic, and Kerala architectural elements under a central dome reminiscent of a mosque, with four corner towers. The temple is dedicated to Lord Shiva and a still pond with goldfish fills the courtyard in front of it.",
+      "whyVisit": "India's most architecturally unusual Hindu temple, whose Islamic-Gothic-Hindu blend is found nowhere else on the subcontinent.",
+      "bestTime": "Morning puja; year-round",
+      "duration": "45 minutes",
+      "mapsSearch": "Omkareshwara Temple Madikeri Coorg",
+      "imageQuery": "Omkareshwara Temple Madikeri Coorg hybrid architecture"
+    },
+    {
+      "name": "Mandalpatti Viewpoint",
+      "category": "viewpoint",
+      "description": "Accessible only by 4WD jeep from Abbey Falls Road, Mandalpatti rises to 1,400 metres on a rolling open grassland plateau above the tree line. The plateau gives a 270-degree panorama of the Coorg highlands — layered coffee and spice-covered ridges receding in every direction with no development visible. On clear mornings, Coorg's sea of clouds fills the valleys below the plateau edge, creating a famous 'above the clouds' effect.",
+      "whyVisit": "Coorg's most dramatic 'above the clouds' viewpoint, accessible only by jeep, with zero commercial development at the summit.",
+      "bestTime": "October to January for morning cloud sea; early morning for best effect",
+      "duration": "Half day including jeep ride",
+      "mapsSearch": "Mandalpatti Viewpoint Coorg Karnataka",
+      "imageQuery": "Mandalpatti viewpoint Coorg above clouds grassland"
+    },
+    {
+      "name": "Pushpagiri Wildlife Sanctuary",
+      "category": "wildlife",
+      "description": "Abutting the Kukke Subramanya temple town to the west of Coorg, Pushpagiri (1,712 m) is one of the Western Ghats' most diverse sanctuaries, protecting lion-tailed macaque, Malabar giant squirrel, and the near-mythical golden gecko. The primary forest here has the highest diversity of frog species per square kilometre of any site in India. Trekking permits are issued from Ombattu Gudda range office.",
+      "whyVisit": "The Western Ghats' most species-dense forest for amphibians and rare primates, almost unknown outside specialist naturalists.",
+      "bestTime": "October to February for wildlife; June to August for frogs",
+      "duration": "Full day",
+      "mapsSearch": "Pushpagiri Wildlife Sanctuary Coorg Karnataka",
+      "imageQuery": "Pushpagiri Wildlife Sanctuary forest Coorg lion-tailed macaque"
+    },
+    {
+      "name": "Bylakuppe Tibetan Colony",
+      "category": "heritage",
+      "description": "India's first and largest Tibetan refugee settlement, established in 1961, Bylakuppe houses over 70,000 Tibetan exiles across three camps. Tibetan-language schools, monasteries, weaving centres, and restaurants line the settlement's broad streets. The Sera Mey and Sera Jey monasteries — both relocated replicas of the original Sera Monastery in Lhasa — are active centres of Buddhist learning with hundreds of monks in residence.",
+      "whyVisit": "The most authentic Tibetan community outside Tibet, where traditional language, religion, and crafts are vigorously maintained.",
+      "bestTime": "October to March; especially during Losar (Tibetan New Year)",
+      "duration": "Half to full day",
+      "mapsSearch": "Bylakuppe Tibetan Colony Karnataka",
+      "imageQuery": "Bylakuppe Tibetan colony Karnataka monastery settlement"
+    },
+    {
+      "name": "Honnamana Kere Lake",
+      "category": "lake",
+      "description": "The largest natural lake in Karnataka, the Honnamana Kere near Karike in Coorg sits at 1,145 metres and covers 52 acres surrounded by forests. The lake is sacred to the Kodava community — the warrior caste whose martial traditions include the annual Kailpodh festival. Migratory birds from Siberia and Central Asia winter here in significant numbers between November and February.",
+      "whyVisit": "Karnataka's largest natural lake with spiritual significance to the Kodava people and excellent winter birding.",
+      "bestTime": "November to February for migratory birds",
+      "duration": "2 hours",
+      "mapsSearch": "Honnamana Kere Lake Coorg Karnataka",
+      "imageQuery": "Honnamana Kere Lake Coorg natural lake birds"
+    },
+    {
+      "name": "Tadiandamol Peak Trek",
+      "category": "adventure",
+      "description": "At 1,748 metres, Tadiandamol is the highest peak in Coorg and the third-highest in Karnataka. The 7-km trail from Kakkabe village climbs through shola forest and open grassland to a broad, windy summit with panoramic views of the Western Ghats from Brahmagiri to Kudremukh. The trek is moderately challenging and can be completed in one day, with camping permitted at the summit.",
+      "whyVisit": "Coorg's highest summit trek — a moderate but rewarding climb through multiple forest types with sweeping Ghats panoramas.",
+      "bestTime": "October to February",
+      "duration": "6-7 hours return",
+      "mapsSearch": "Tadiandamol Trek Kakkabe Coorg",
+      "imageQuery": "Tadiandamol peak trek Coorg summit grassland"
+    },
+    {
+      "name": "Kodava Traditional Houses (Ain Mane)",
+      "category": "heritage",
+      "description": "The ancestral homesteads of the Kodava warrior community — called 'ain mane' — are distinctive architectural forms built around a central courtyard with a sacred nagakallu (serpent stone) in the compound. Some families open their homesteads to visitors, particularly around festivals. The Coorg Heritage Village near Madikeri preserves authentic examples of this architecture alongside Kodava weapons, costumes, and musical instruments.",
+      "whyVisit": "A window into one of India's most fiercely independent warrior cultures, whose architecture, customs, and martial traditions are unique.",
+      "bestTime": "November to February; particularly during Kailpodh festival (October)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Kodava Ain Mane Heritage Coorg Karnataka",
+      "imageQuery": "Kodava traditional house Coorg ain mane heritage"
+    },
+    {
+      "name": "Kaveri Nisargadhama",
+      "category": "nature",
+      "description": "A forested island formed by the Kaveri River 2 km from Kushalnagar, Kaveri Nisargadhama is a nature park within the river itself, connected to the bank by a rope bridge that sways above the rushing water. The island has dense bamboo groves, a herd of resident elephants kept by the Forest Department, deer, and a remarkable dawn soundscape from jungle birds.",
+      "whyVisit": "A forested river island accessible by a swinging rope bridge — one of India's most scenic wildlife parks in a riverine setting.",
+      "bestTime": "October to May",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kaveri Nisargadhama Kushalnagar Coorg",
+      "imageQuery": "Kaveri Nisargadhama island forest rope bridge Coorg"
+    },
+    {
+      "name": "Bhagamandala",
+      "category": "religious",
+      "description": "At the Triveni Sangama where the Kaveri, Kannike, and the mythical Sujyothi rivers meet, Bhagamandala is one of South India's most significant pilgrimage confluences. The Bhagandeshwara Temple complex here dates back to the 10th century and reflects Kerala-style architecture with sloping tiled roofs. Pilgrims take a ritual bath at the sangama before sunrise.",
+      "whyVisit": "The sacred river confluence where Hindu pilgrims have bathed for over 1,000 years, with a beautifully preserved 10th-century temple.",
+      "bestTime": "Sunrise; or during Kaveri Sankramana (October) for the annual festival",
+      "duration": "1-2 hours",
+      "mapsSearch": "Bhagamandala Temple Triveni Sangama Coorg",
+      "imageQuery": "Bhagamandala temple Coorg Kaveri confluence pilgrims"
+    },
+    {
+      "name": "Kote Betta (Palangala)",
+      "category": "adventure",
+      "description": "An isolated flat-topped hill (1,620 m) above the town of Virajpet, Kote Betta has a motorable road to within 1 km of the summit followed by a steep trail through grassland. The summit plateau has a forest department watchtower and gives views across the Brahmagiri range to the west and the Mysore plateau to the east. The area is known among local naturalists for leopard sightings at dusk.",
+      "whyVisit": "A less-visited summit with the most complete east-west panorama in Coorg, reliably quiet even during peak season.",
+      "bestTime": "October to February",
+      "duration": "3-4 hours return",
+      "mapsSearch": "Kote Betta Palangala Virajpet Coorg",
+      "imageQuery": "Kote Betta summit Virajpet Coorg panorama"
+    },
+    {
+      "name": "Coorg Spice Plantations (Cardamom and Pepper)",
+      "category": "nature",
+      "description": "The forests and estate understoreys of Coorg grow large cardamom (Amomum subulatum) and Malabar black pepper (Piper nigrum) alongside coffee. Estates around Virajpet and Pollibetta often combine all three on a single property. Guided harvest walks during October-January reveal the curious way pepper vines twine up living trees and large cardamom grows in shaded damp gullies, while the scent in the air is intoxicating.",
+      "whyVisit": "One of India's most aromatic agricultural landscapes — the source of the same pepper traded along the ancient Silk Road.",
+      "bestTime": "October to January for harvest season",
+      "duration": "2-3 hours",
+      "mapsSearch": "Spice Plantation Tour Coorg Karnataka cardamom",
+      "imageQuery": "cardamom pepper spice plantation Coorg Karnataka"
+    },
+    {
+      "name": "Chelavara Falls",
+      "category": "waterfall",
+      "description": "Located 23 km from Madikeri near the village of Napoklu, Chelavara Falls is a two-tiered cascade hidden behind private coffee estate land accessible by a trail through the plantation. The lower tier drops into a wide pool ideal for swimming. Being off the main tourist circuit, Chelavara rarely has more than a handful of visitors even in peak season, and the surrounding coffee bushes make the approach uniquely aromatic.",
+      "whyVisit": "Coorg's most secluded and swimmable waterfall, hidden within a working coffee estate far from the tourist trail.",
+      "bestTime": "July to February",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chelavara Falls Napoklu Coorg",
+      "imageQuery": "Chelavara Falls Napoklu Coorg hidden waterfall"
+    },
+    {
+      "name": "Nalknad Palace (Napoklu)",
+      "category": "palace",
+      "description": "Built in 1792 by Vira Rajendra, the last independent Raja of Coorg, the Nalknad Palace near Napoklu village is a compact but elegant example of the Kodava royal architectural style — low-pitched tiled roofs, teak columns, and lotus-carved stonework. The palace is maintained by the Archaeological Survey of India and retains its original carved doors, ceilings, and royal armoury. It receives almost no visitors despite being in excellent condition.",
+      "whyVisit": "The palace of Coorg's last independent ruler — one of the best-preserved royal residences in South India, completely overlooked by tourists.",
+      "bestTime": "Year-round; closed Fridays",
+      "duration": "1 hour",
+      "mapsSearch": "Nalknad Palace Napoklu Coorg Karnataka",
+      "imageQuery": "Nalknad Palace Coorg Kodava heritage royal"
+    },
+    {
+      "name": "Thadiyandamol Sunrise Camp",
+      "category": "adventure",
+      "description": "The Karnataka Forest Department and licensed operators run overnight camping on the lower slopes of Tadiandamol, allowing trekkers to summit for sunrise. The camp at around 1,500 m is in a forest clearing where the sounds of nocturnal wildlife fill the darkness. Gaur are frequently encountered on the summit trail at dawn, and the first light on the western ridges of the Ghats is one of Coorg's finest natural spectacles.",
+      "whyVisit": "A legal overnight wilderness camp on Coorg's highest mountain, with gaur encounters at dawn and a private Ghats sunrise.",
+      "bestTime": "October to February",
+      "duration": "Overnight (depart afternoon, return next morning)",
+      "mapsSearch": "Tadiandamol Sunrise Camp Kakkabe Coorg",
+      "imageQuery": "Tadiandamol sunrise camp forest Coorg overnight"
+    },
+    {
+      "name": "Siddapur Village and Arabica Micro-Estates",
+      "category": "heritage",
+      "description": "The small village of Siddapur 20 km north of Madikeri is surrounded by boutique arabica estates producing some of Karnataka's most sought-after specialty coffee — individual lots of 100–300 kg that sell at premium to specialty roasters globally. The village has several family-run homestays where guests wake to the smell of the morning roast, learn manual pulping, and cup coffee alongside the farmers who grew it.",
+      "whyVisit": "Ground zero for India's specialty coffee movement — the most authentic farm-to-cup experience available in Coorg.",
+      "bestTime": "October to January for harvest",
+      "duration": "Overnight to 2 nights",
+      "mapsSearch": "Siddapur Coffee Village Coorg Karnataka",
+      "imageQuery": "Siddapur arabica coffee estate Coorg specialty"
+    }
+  ]
+}

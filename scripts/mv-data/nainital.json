@@ -1,0 +1,260 @@
+{
+  "slug": "nainital",
+  "name": "Nainital",
+  "state": "Uttarakhand",
+  "tagline": "A jewel lake cradled in the cradle of the Kumaon Himalayas",
+  "categories": ["hill_station", "lake", "nature"],
+  "highlights": ["naini lake shimmering beneath seven encircling hills", "kumaon himalayas visible on clear winter mornings"],
+  "attractions": [
+    {
+      "name": "Naini Lake",
+      "category": "lake",
+      "description": "The crescent-shaped Naini Lake at 2084 metres is the soul of Nainital, a natural freshwater lake formed by a tectonic depression in the Kumaon Himalayan foothills. Seven hills — Ayarpata, Deopata, Handi-Bandi, Cheena, Alma, Lariya-Kanta, and Sher-ka-Danda — encircle the lake. Rowing and sailing boats glide across the surface while the surrounding Flats and Mallital promenades hum with life.",
+      "whyVisit": "The defining heart of Nainital — boat across its mirror surface for views of the seven surrounding hills.",
+      "bestTime": "October to March for clarity",
+      "duration": "2-3 hours",
+      "mapsSearch": "Naini Lake Nainital Uttarakhand",
+      "imageQuery": "Naini Lake Nainital boat seven hills reflection"
+    },
+    {
+      "name": "Naina Devi Temple",
+      "category": "temple",
+      "description": "Situated on the northern bank of Naini Lake at Mallital, the Naina Devi Temple is one of the 64 Shakti Peethas of India, marking where the eye (naina) of Sati fell as Vishnu's Sudarshana Chakra dismembered her body. The current temple, rebuilt after an 1880 landslide, receives thousands of pilgrims daily. The lake itself is believed to be the sacred eye of Sati.",
+      "whyVisit": "One of India's 64 Shakti Peethas, where mythology, the lake, and living devotion converge.",
+      "bestTime": "Navratri festivals (March-April and September-October)",
+      "duration": "1 hour",
+      "mapsSearch": "Naina Devi Temple Nainital Uttarakhand",
+      "imageQuery": "Naina Devi Temple Nainital Shakti Peetha lakeside"
+    },
+    {
+      "name": "Snow View Point",
+      "category": "viewpoint",
+      "description": "Reached by ropeway from Mallital in 4 minutes or by pony trail, Snow View at 2270 metres is Nainital's most popular panoramic viewpoint. On clear days between October and March it provides an unbroken view of Nanda Devi (7816 m), Trishul (7120 m), and Nanda Kot, the great peaks of Kumaon spread in a glittering white arc. The ropeway ride over the lake and town is spectacular in its own right.",
+      "whyVisit": "The easiest accessible view of the Kumaon high Himalaya from Nainital, including Nanda Devi.",
+      "bestTime": "October to March, early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Snow View Point Nainital Uttarakhand ropeway",
+      "imageQuery": "Snow View Point Nainital Nanda Devi Himalaya ropeway"
+    },
+    {
+      "name": "Tiffin Top (Dorothy's Seat)",
+      "category": "viewpoint",
+      "description": "Named after Dorothy Kellett, a British artist who often painted here and died in an air crash in 1936, Tiffin Top is a grassy knoll at 2292 metres on Ayarpata Hill. Reached by a 1-hour forest walk or pony ride, the viewpoint offers sweeping panoramas over Nainital lake, the Himalayan snowline, and the forested Kumaon valleys stretching south to the Terai. An idyllic picnic spot.",
+      "whyVisit": "The finest combination of lake view and Himalayan panorama — best reached on foot through oak forest.",
+      "bestTime": "October to April, morning",
+      "duration": "3-4 hours including trek",
+      "mapsSearch": "Tiffin Top Dorothy's Seat Nainital Uttarakhand",
+      "imageQuery": "Tiffin Top Nainital lake view Himalaya panorama"
+    },
+    {
+      "name": "Nainital Zoo",
+      "category": "wildlife",
+      "description": "Officially the G.B. Pant High Altitude Zoo, established in 1984 at 2100 metres, this is one of India's few mountain zoos housing species adapted to high-altitude Himalayan environments. Residents include snow leopards, red pandas (a species currently not seen in any Indian zoo outside this altitude zone), Himalayan black bears, wolves, and mountain quails in large natural enclosures.",
+      "whyVisit": "Home to one of India's few captive red pandas and rare Himalayan snow leopards.",
+      "bestTime": "Morning, year-round",
+      "duration": "2 hours",
+      "mapsSearch": "G.B. Pant High Altitude Zoo Nainital Uttarakhand",
+      "imageQuery": "Nainital zoo snow leopard red panda high altitude"
+    },
+    {
+      "name": "The Mall Road Nainital",
+      "category": "market",
+      "description": "The 1.5-km lakeside promenade of Nainital's Mall Road runs along the western bank connecting Tallital to Mallital. Lined with hotels, bakeries, woolen shops, and restaurants, it is closed to motorised traffic during peak hours. The Flats — a large open ground at Mallital reclaimed from the lake — hosts the evening market and serves as Nainital's social heart for cricket and kite-flying.",
+      "whyVisit": "The lakeside promenade where all of Nainital's energy concentrates at evening.",
+      "bestTime": "Evening",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mall Road Nainital Uttarakhand lakeside",
+      "imageQuery": "Mall Road Nainital lakeside promenade evening"
+    },
+    {
+      "name": "Naini Peak (Cheena Peak)",
+      "category": "adventure",
+      "description": "The highest point around Nainital at 2611 metres, Naini Peak (also called Cheena Peak) offers the most commanding bird's-eye view of the crescent lake far below and the full panorama of Kumaon peaks. The 6-km trail from the ropeway station passes through oak and rhododendron forest. The summit is also accessible on horseback and reveals a broader landscape than Snow View.",
+      "whyVisit": "The highest accessible viewpoint around Nainital with a bird's-eye look straight down at the lake.",
+      "bestTime": "October to April, early morning",
+      "duration": "4-5 hours trek",
+      "mapsSearch": "Cheena Peak Naini Peak Nainital Uttarakhand",
+      "imageQuery": "Cheena Peak Nainital summit lake panorama"
+    },
+    {
+      "name": "Eco Cave Gardens",
+      "category": "cave",
+      "description": "A unique network of six interconnected natural caves on the slopes below Tiffin Top at Nainital, the Eco Cave Gardens replicate the underground habitats of local fauna. Each cave is named after an animal — panther, bat, flying fox, apes — and requires crawling through narrow rock passages. A hanging garden, a musical fountain, and interpretive panels add educational value for families.",
+      "whyVisit": "A fun and educational cave network that takes visitors into simulated Himalayan animal habitats.",
+      "bestTime": "Morning on weekdays to avoid crowds",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Eco Cave Gardens Nainital Uttarakhand",
+      "imageQuery": "Eco Cave Gardens Nainital rock caves hanging garden"
+    },
+    {
+      "name": "Bhimtal Lake",
+      "category": "lake",
+      "description": "Twenty-two kilometres from Nainital, Bhimtal Lake is larger than Naini Lake and sits at 1370 metres in a quieter, more rural setting. Named after the Pandava hero Bhima, the lake is famous for its central island housing an aquarium of Himalayan freshwater fish species. Boating, fishing, and kayaking are available, and the surrounding market town retains a genuine Kumaoni character.",
+      "whyVisit": "A larger, calmer, and less commercialised alternative to Naini with a unique island aquarium.",
+      "bestTime": "September to November",
+      "duration": "Half day",
+      "mapsSearch": "Bhimtal Lake Uttarakhand aquarium island",
+      "imageQuery": "Bhimtal Lake Uttarakhand island aquarium boating"
+    },
+    {
+      "name": "Sattal",
+      "category": "lake",
+      "description": "Eighteen kilometres from Nainital, Sattal (Seven Lakes) is a cluster of seven interconnected freshwater lakes at 1370 metres set in dense, largely undisturbed oak and rhododendron forest. The lakes — Nal Damayanti Tal, Ram Tal, Sita Tal, Laxman Tal, Purn Tal, Sukha Tal, and Garur Tal — are a premier bird watching destination with over 500 species recorded, including the Himalayan rubythroat and Ward's trogon.",
+      "whyVisit": "One of India's finest inland birding destinations with 500+ species around seven pristine lakes.",
+      "bestTime": "November to April for bird activity",
+      "duration": "Full day",
+      "mapsSearch": "Sattal Seven Lakes Nainital Uttarakhand birding",
+      "imageQuery": "Sattal seven lakes Uttarakhand birding forest"
+    },
+    {
+      "name": "Jim Corbett National Park",
+      "category": "wildlife",
+      "description": "India's oldest national park, established in 1936 as Hailey National Park and renamed after the legendary hunter-conservationist Jim Corbett, the park covers 521 sq km of dense sal forest, grasslands, and Ramganga river valleys. It holds over 200 tigers, 600 elephants, gharials, and 600+ bird species. Multiple zones — Dhikala, Bijrani, Jhirna, Durga Devi — offer distinct safari experiences.",
+      "whyVisit": "India's birthplace of tiger conservation and still one of the most reliable places in Asia to see wild tigers.",
+      "bestTime": "November to June, especially February to May",
+      "duration": "2-3 days",
+      "mapsSearch": "Jim Corbett National Park Ramnagar Uttarakhand",
+      "imageQuery": "Jim Corbett National Park tiger safari Ramganga"
+    },
+    {
+      "name": "Naukuchiatal",
+      "category": "lake",
+      "description": "The deepest lake in the Kumaon Hills at 40.3 metres depth and named for its nine corners, Naukuchiatal sits 26 km from Nainital at 1220 metres surrounded by pine and oak forest. Its nine banks are considered sacred and legend holds that seeing all nine corners from a single point brings liberation. The lake is popular for paragliding, zip-lining, and water zorbing.",
+      "whyVisit": "Nainital's deepest lake, sacred for its nine corners and popular for adventure water sports.",
+      "bestTime": "October to March",
+      "duration": "Half day",
+      "mapsSearch": "Naukuchiatal Lake Nainital Uttarakhand nine corners",
+      "imageQuery": "Naukuchiatal nine corner lake Uttarakhand pine forest"
+    },
+    {
+      "name": "Corbett Falls",
+      "category": "waterfall",
+      "description": "Located 25 km from Nainital near Kaladhungi on the way to Corbett, these 18-metre cascades drop through a dense sal forest ravine. Jim Corbett, who lived at the adjacent Kaladhungi house, walked to these falls frequently. The jungle pool at the base is clear enough for swimming. The nearby Jim Corbett Museum at Kaladhungi is the author-hunter's ancestral home, maintained as a heritage site.",
+      "whyVisit": "A beautiful waterfall linked to Jim Corbett heritage, with a swimmable jungle pool below.",
+      "bestTime": "September to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Corbett Falls Kaladhungi Nainital Uttarakhand",
+      "imageQuery": "Corbett Falls waterfall Kaladhungi sal forest Uttarakhand"
+    },
+    {
+      "name": "Pangot Bird Sanctuary",
+      "category": "wildlife",
+      "description": "A small hamlet 15 km from Nainital on the Kilbury road, Pangot sits at 2100 metres within the Nainital Bird Sanctuary — a 7 sq km protected area of dense oak, rhododendron, and pine forest. Over 580 bird species have been recorded including Koklass pheasant, Kalij pheasant, Himalayan griffon, and the tiny Rufous-bellied niltava. The forest rest house here is one of Uttarakhand's finest birding bases.",
+      "whyVisit": "One of North India's premier high-altitude birding destinations with over 580 recorded species.",
+      "bestTime": "April to June and September to November",
+      "duration": "Full day",
+      "mapsSearch": "Pangot Bird Sanctuary Nainital Uttarakhand",
+      "imageQuery": "Pangot birding Nainital Koklass pheasant oak forest"
+    },
+    {
+      "name": "Ramgarh Orchard Villages",
+      "category": "nature",
+      "description": "Situated 24 km from Nainital at 1789 metres, Ramgarh is the fruit bowl of Kumaon — terraced orchards of peach, apricot, plum, and pear cascade down valley slopes, and in spring the blossom transforms the valley into a sea of pink and white. Rabindranath Tagore spent extended periods here in the early 20th century composing at his rest house, still preserved as a memorial.",
+      "whyVisit": "Kumaon's finest orchard valley with a Tagore heritage connection and spectacular spring blossom.",
+      "bestTime": "March to April for blossom, August for harvest",
+      "duration": "Half day",
+      "mapsSearch": "Ramgarh Orchard Nainital Uttarakhand Tagore",
+      "imageQuery": "Ramgarh orchard blossom Kumaon Uttarakhand"
+    },
+    {
+      "name": "Mukteshwar",
+      "category": "viewpoint",
+      "description": "Fifty kilometres from Nainital at 2286 metres, Mukteshwar takes its name from an ancient Shiva temple (Mukteshwar Dham) on the highest peak in the region. The village offers arguably the finest close-up view of the central Himalayan peaks from any road-accessible point in Uttarakhand — Nanda Devi, Trishul, and Panchachuli are all visible. The Chauli Ki Jali cliff offers rock climbing and rappelling.",
+      "whyVisit": "The clearest close-range view of Nanda Devi and the Kumaon peaks from any road-accessible location.",
+      "bestTime": "October to March",
+      "duration": "Full day",
+      "mapsSearch": "Mukteshwar Nainital Uttarakhand Himalaya view",
+      "imageQuery": "Mukteshwar Nanda Devi Himalaya panorama Uttarakhand"
+    },
+    {
+      "name": "Khurpatal Lake",
+      "category": "lake",
+      "description": "Sitting in a forest bowl 12 km from Nainital at 1635 metres, Khurpatal (meaning lake of a horse's hoof print) is a small, deep green lake of remarkable clarity almost entirely ringed by dense forest and receiving very few visitors. It has no commercial boating and the village of Khurpa surrounding it maintains a genuinely rural Kumaoni character. The water turns brilliant emerald in afternoon light.",
+      "whyVisit": "Nainital's closest pristine lake with no commercialisation — striking emerald water in a forest bowl.",
+      "bestTime": "October to April",
+      "duration": "1-2 hours",
+      "mapsSearch": "Khurpatal Lake Nainital Uttarakhand",
+      "imageQuery": "Khurpatal lake emerald forest Nainital Uttarakhand"
+    },
+    {
+      "name": "Hanuman Garhi Temple",
+      "category": "temple",
+      "description": "Perched on a hilltop 3 km from Nainital at 1951 metres on the Almora road, Hanuman Garhi Temple is positioned to capture a breathtaking western view of the setting sun behind the Himalayan snowline — a spectacle that draws large crowds at dusk. The temple complex includes a striking 25-foot Hanuman statue and several subsidiary shrines. The hilltop is also a beloved star-gazing point on clear nights.",
+      "whyVisit": "The best sunset point in Nainital with the snowline silhouetted against the orange sky.",
+      "bestTime": "Sunset, October to March",
+      "duration": "1-1.5 hours",
+      "mapsSearch": "Hanuman Garhi Temple Nainital Uttarakhand",
+      "imageQuery": "Hanuman Garhi Temple Nainital sunset Himalaya"
+    },
+    {
+      "name": "Aryabhatta Research Observatory",
+      "category": "heritage",
+      "description": "The Aryabhatta Research Institute of Observational Sciences (ARIES) operates a 1.04-metre optical telescope on Manora Peak, 3 km from Nainital at 1950 metres. Limited public viewing nights (arranged through the institute) allow visitors to observe planets and star clusters through professional-grade telescopes. The site was chosen for its exceptional dark sky clarity — among the best in South Asia.",
+      "whyVisit": "View planets through a metre-class telescope from one of South Asia's premium dark sky sites.",
+      "bestTime": "October to May for clear dark skies",
+      "duration": "2-3 hours (evening visit)",
+      "mapsSearch": "ARIES Observatory Nainital Manora Peak Uttarakhand",
+      "imageQuery": "ARIES observatory telescope Nainital Manora Peak"
+    },
+    {
+      "name": "Bhowali Market and Fruit Town",
+      "category": "market",
+      "description": "The gateway town to Nainital 11 km below, Bhowali hosts the largest fruit and vegetable wholesale market in Kumaon. Apple, pear, peach, and Kumaoni rhododendron juice are sold in stalls lining the main bazaar. The town also has a famous government tuberculosis sanatorium dating from 1912, when Bhowali's clean mountain air was prescribed as a cure, and a noted chaat bazar.",
+      "whyVisit": "Buy Kumaoni apples, rhododendron squash, and seasonal hill produce directly from farmers at source.",
+      "bestTime": "August to October for apple season",
+      "duration": "1 hour",
+      "mapsSearch": "Bhowali Fruit Market Nainital Uttarakhand",
+      "imageQuery": "Bhowali fruit market Kumaon apple Nainital"
+    },
+    {
+      "name": "Kilbury Forest Camp",
+      "category": "nature",
+      "description": "At 2223 metres on the forested ridge above Nainital, Kilbury is the starting point for some of the finest forest walks in Kumaon through oak, rhododendron, and mixed temperate forest. The Uttarakhand Forest Department operates a small camp here. Pre-dawn walks regularly produce Khalij pheasant, Himalayan barbet, and on lucky mornings, a glimpse of a shy barking deer or even leopard pugmarks.",
+      "whyVisit": "Pre-dawn forest birding at Nainital's highest and least-visited ridge, with resident leopards in the area.",
+      "bestTime": "April to June for birds, October to November for forest colour",
+      "duration": "Half day or overnight",
+      "mapsSearch": "Kilbury Forest Camp Nainital Uttarakhand",
+      "imageQuery": "Kilbury forest Nainital birding oak rhododendron"
+    },
+    {
+      "name": "St. John in the Wilderness Church",
+      "category": "heritage",
+      "description": "Built in 1846 in the Gothic style among dense oak trees near the Tallital end of Nainital, St. John in the Wilderness is one of the oldest churches in the Kumaon Himalayas. The stone nave contains a stained-glass window installed in memory of those killed in the Great Landslide of 1880, which buried 151 people. The churchyard has graves dating back to 1842.",
+      "whyVisit": "A hauntingly beautiful Gothic church in oak forest with memorials to Nainital's deadliest disaster.",
+      "bestTime": "Weekday morning for quiet",
+      "duration": "30-45 minutes",
+      "mapsSearch": "St. John in the Wilderness Church Nainital Uttarakhand",
+      "imageQuery": "St John Wilderness Church Nainital Gothic colonial"
+    },
+    {
+      "name": "China Peak Forest Trail",
+      "category": "adventure",
+      "description": "The 4-km trail from Nainital's ropeway station through largely undisturbed oak-rhododendron forest to Naini Peak (China Peak) at 2611 metres is the finest half-day forest walk in the immediate area. The path rarely exceeds 5 walkers at any time, passes a small shepherd's hut halfway, and tops out at a promontory with 360-degree views of Nainital lake, the Himalayan chain, and the Terai forests.",
+      "whyVisit": "A quiet forest climb to Nainital's highest point with complete solitude above 2400 metres.",
+      "bestTime": "October to April morning",
+      "duration": "4-5 hours",
+      "mapsSearch": "China Peak Forest Trail Nainital Uttarakhand",
+      "imageQuery": "China Peak Nainital forest trail 360 degree view"
+    },
+    {
+      "name": "Ghorakhal Golu Devta Temple",
+      "category": "temple",
+      "description": "Twenty kilometres from Nainital at 1768 metres in the village of Ghorakhal, this temple is one of the most unusual sacred sites in the Himalayas. Kumaoni folk deity Golu Devta (the deity of justice) receives petitions written on court-stamp paper and tied alongside hundreds of thousands of bells — the hillside shrine is draped in a cacophony of metal. When justice is delivered, devotees return to hang more bells as thanks.",
+      "whyVisit": "One of India's most extraordinary folk-religious sites — a hillside draped in tens of thousands of petition bells.",
+      "bestTime": "Any time, busiest on Sundays",
+      "duration": "1 hour",
+      "mapsSearch": "Golu Devta Temple Ghorakhal Nainital Uttarakhand",
+      "imageQuery": "Golu Devta Ghorakhal temple bells petitions Kumaon"
+    },
+    {
+      "name": "Padampuri Ashram and Village",
+      "category": "nature",
+      "description": "A forgotten valley 32 km from Nainital below the Bhimtal-Bhowali ridge at 1200 metres, Padampuri is centred on an ancient ashram in a riverine forest of sal, sheesham, and fig trees. A small nature study centre and medicinal plant garden have been established by a conservation NGO. The village surrounding it is entirely unaffected by tourism and offers a vivid slice of rural Kumaoni life.",
+      "whyVisit": "A completely off-grid river valley with an ancient ashram and conservation plant garden tourists never find.",
+      "bestTime": "October to March",
+      "duration": "Half day",
+      "mapsSearch": "Padampuri Ashram Bhimtal Nainital Uttarakhand",
+      "imageQuery": "Padampuri valley sal forest ashram Kumaon Uttarakhand"
+    }
+  ]
+}

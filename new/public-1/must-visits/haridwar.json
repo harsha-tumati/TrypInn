@@ -1,0 +1,447 @@
+{
+  "id": "haridwar",
+  "name": "Haridwar",
+  "state": "Uttarakhand",
+  "slug": "haridwar",
+  "tagline": "Ancient holy city at the Ganges foothills",
+  "categories": [
+    "temple",
+    "religious",
+    "river"
+  ],
+  "introduction": "Planning a trip to Haridwar? This travel guide to Haridwar covers the must visit places in Haridwar, the best places to visit in Haridwar, top tourist attractions in Haridwar, and exciting things to do in Haridwar.",
+  "metaTitle": "Must Visit Places in Haridwar | Best Places to Visit in Haridwar - TrypInn",
+  "metaDescription": "Discover must visit places in Haridwar, best places to visit in Haridwar, and top tourist attractions in Haridwar. Plan your perfect trip with TrypInn travel guide to Haridwar.",
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=1200&q=60",
+    "alt": "Haridwar travel guide"
+  },
+  "totalAttractions": 25,
+  "attractions": [
+    {
+      "id": "haridwar-vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "slug": "vaishno-devi-temple",
+      "description": "A crown jewel of Haridwar, Vaishno Devi Temple captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Vaishno Devi Temple.",
+      "whyVisit": "Capture stunning photographs at Vaishno Devi Temple.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Vaishno Devi Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Vaishno Devi Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1477587458883-47145ed94245?fm=webp&w=800&q=60",
+        "alt": "Vaishno Devi Temple in Haridwar"
+      },
+      "position": 1
+    },
+    {
+      "id": "haridwar-moinuddin-chishti-dargah",
+      "name": "Moinuddin Chishti Dargah",
+      "slug": "moinuddin-chishti-dargah",
+      "description": "Nestled in Haridwar, Moinuddin Chishti Dargah stands as a testament to architectural brilliance. This renowned religious attracts tourists who come to admire its stunning design. A visit to Moinuddin Chishti Dargah is among the best things to do in Haridwar.",
+      "whyVisit": "Capture stunning photographs at Moinuddin Chishti Dargah.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Moinuddin Chishti Dargah, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Moinuddin Chishti Dargah in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?fm=webp&w=800&q=60",
+        "alt": "Moinuddin Chishti Dargah in Haridwar"
+      },
+      "position": 2
+    },
+    {
+      "id": "haridwar-ganga-aarti-ghat",
+      "name": "Ganga Aarti Ghat",
+      "slug": "ganga-aarti-ghat",
+      "description": "Nestled in Haridwar, Ganga Aarti Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Ganga Aarti Ghat is among the best things to do in Haridwar.",
+      "whyVisit": "Ganga Aarti Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Ganga Aarti Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Ganga Aarti Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=webp&w=800&q=60",
+        "alt": "Ganga Aarti Ghat in Haridwar"
+      },
+      "position": 3
+    },
+    {
+      "id": "haridwar-khajuraho-temples",
+      "name": "Khajuraho Temples",
+      "slug": "khajuraho-temples",
+      "description": "Khajuraho Temples is one of the most iconic landmarks in Haridwar, drawing visitors with its timeless charm. This temple offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Khajuraho Temples promises an unforgettable experience.",
+      "whyVisit": "Khajuraho Temples stands out as one of the most rewarding experiences.",
+      "bestTime": "Early morning",
+      "duration": "1-2 hours",
+      "mapsSearch": "Khajuraho Temples, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Khajuraho Temples in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=800&q=60",
+        "alt": "Khajuraho Temples in Haridwar"
+      },
+      "position": 4
+    },
+    {
+      "id": "haridwar-makhdoom-sahib-shrine",
+      "name": "Makhdoom Sahib Shrine",
+      "slug": "makhdoom-sahib-shrine",
+      "description": "Makhdoom Sahib Shrine is one of the most iconic landmarks in Haridwar, drawing visitors with its timeless charm. This religious offers a unique glimpse into the region rich heritage. Whether you are a history enthusiast or casual traveler, Makhdoom Sahib Shrine promises an unforgettable experience.",
+      "whyVisit": "A visit to Makhdoom Sahib Shrine is essential for understanding Haridwar.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Makhdoom Sahib Shrine, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Makhdoom Sahib Shrine in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60",
+        "alt": "Makhdoom Sahib Shrine in Haridwar"
+      },
+      "position": 5
+    },
+    {
+      "id": "haridwar-scindia-ghat",
+      "name": "Scindia Ghat",
+      "slug": "scindia-ghat",
+      "description": "Nestled in Haridwar, Scindia Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Scindia Ghat is among the best things to do in Haridwar.",
+      "whyVisit": "Experience the unmatched beauty of Scindia Ghat.",
+      "bestTime": "Evening",
+      "duration": "Sunset",
+      "mapsSearch": "Scindia Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Scindia Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=800&q=60",
+        "alt": "Scindia Ghat in Haridwar"
+      },
+      "position": 6
+    },
+    {
+      "id": "haridwar-ranakpur-temple",
+      "name": "Ranakpur Temple",
+      "slug": "ranakpur-temple",
+      "description": "Ranakpur Temple is a must-see temple in Haridwar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Haridwar.",
+      "whyVisit": "Capture stunning photographs at Ranakpur Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ranakpur Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Ranakpur Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fm=webp&w=800&q=60",
+        "alt": "Ranakpur Temple in Haridwar"
+      },
+      "position": 7
+    },
+    {
+      "id": "haridwar-salim-chishti-tomb",
+      "name": "Salim Chishti Tomb",
+      "slug": "salim-chishti-tomb",
+      "description": "Located in scenic Haridwar, Salim Chishti Tomb offers an immersive experience into local culture. Exploring Salim Chishti Tomb is one of the top things to do in Haridwar.",
+      "whyVisit": "Experience the unmatched beauty of Salim Chishti Tomb.",
+      "bestTime": "Year-round",
+      "duration": "30-60 min",
+      "mapsSearch": "Salim Chishti Tomb, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Salim Chishti Tomb in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=800&q=60",
+        "alt": "Salim Chishti Tomb in Haridwar"
+      },
+      "position": 8
+    },
+    {
+      "id": "haridwar-namo-ghat",
+      "name": "Namo Ghat",
+      "slug": "namo-ghat",
+      "description": "Located in scenic Haridwar, Namo Ghat offers an immersive experience into local culture. Exploring Namo Ghat is one of the top things to do in Haridwar.",
+      "whyVisit": "A visit to Namo Ghat is essential for understanding Haridwar.",
+      "bestTime": "Evening",
+      "duration": "Half day",
+      "mapsSearch": "Namo Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Namo Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504150558240-1defce0f4ce0?fm=webp&w=800&q=60",
+        "alt": "Namo Ghat in Haridwar"
+      },
+      "position": 9
+    },
+    {
+      "id": "haridwar-kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "slug": "kashi-vishwanath-temple",
+      "description": "Kashi Vishwanath Temple is a must-see temple in Haridwar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Haridwar.",
+      "whyVisit": "Kashi Vishwanath Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Kashi Vishwanath Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Kashi Vishwanath Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=800&q=60",
+        "alt": "Kashi Vishwanath Temple in Haridwar"
+      },
+      "position": 10
+    },
+    {
+      "id": "haridwar-ziarat-habba-khatoon",
+      "name": "Ziarat Habba Khatoon",
+      "slug": "ziarat-habba-khatoon",
+      "description": "A crown jewel of Haridwar, Ziarat Habba Khatoon captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Ziarat Habba Khatoon.",
+      "whyVisit": "Ziarat Habba Khatoon stands out as one of the most rewarding experiences.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Ziarat Habba Khatoon, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Habba Khatoon in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=800&q=60",
+        "alt": "Ziarat Habba Khatoon in Haridwar"
+      },
+      "position": 11
+    },
+    {
+      "id": "haridwar-gaay-ghat",
+      "name": "Gaay Ghat",
+      "slug": "gaay-ghat",
+      "description": "Nestled in Haridwar, Gaay Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Gaay Ghat is among the best things to do in Haridwar.",
+      "whyVisit": "Capture stunning photographs at Gaay Ghat.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gaay Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Gaay Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=800&q=60",
+        "alt": "Gaay Ghat in Haridwar"
+      },
+      "position": 12
+    },
+    {
+      "id": "haridwar-brihadeeswarar-temple",
+      "name": "Brihadeeswarar Temple",
+      "slug": "brihadeeswarar-temple",
+      "description": "Located in scenic Haridwar, Brihadeeswarar Temple offers an immersive experience into local culture. Exploring Brihadeeswarar Temple is one of the top things to do in Haridwar.",
+      "whyVisit": "A visit to Brihadeeswarar Temple is essential for understanding Haridwar.",
+      "bestTime": "Festival",
+      "duration": "30-60 min",
+      "mapsSearch": "Brihadeeswarar Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Brihadeeswarar Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=800&q=60",
+        "alt": "Brihadeeswarar Temple in Haridwar"
+      },
+      "position": 13
+    },
+    {
+      "id": "haridwar-ziarat-peer-dastgeer-sahib",
+      "name": "Ziarat Peer Dastgeer Sahib",
+      "slug": "ziarat-peer-dastgeer-sahib",
+      "description": "Located in scenic Haridwar, Ziarat Peer Dastgeer Sahib offers an immersive experience into local culture. Exploring Ziarat Peer Dastgeer Sahib is one of the top things to do in Haridwar.",
+      "whyVisit": "A visit to Ziarat Peer Dastgeer Sahib is essential for understanding Haridwar.",
+      "bestTime": "Early morning",
+      "duration": "Full day",
+      "mapsSearch": "Ziarat Peer Dastgeer Sahib, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Peer Dastgeer Sahib in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=800&q=60",
+        "alt": "Ziarat Peer Dastgeer Sahib in Haridwar"
+      },
+      "position": 14
+    },
+    {
+      "id": "haridwar-bhadaini-ghat",
+      "name": "Bhadaini Ghat",
+      "slug": "bhadaini-ghat",
+      "description": "A crown jewel of Haridwar, Bhadaini Ghat captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Bhadaini Ghat.",
+      "whyVisit": "Bhadaini Ghat stands out as one of the most rewarding experiences.",
+      "bestTime": "Monsoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhadaini Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Bhadaini Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=800&q=60",
+        "alt": "Bhadaini Ghat in Haridwar"
+      },
+      "position": 15
+    },
+    {
+      "id": "haridwar-meenakshi-temple",
+      "name": "Meenakshi Temple",
+      "slug": "meenakshi-temple",
+      "description": "Meenakshi Temple is a must-see temple in Haridwar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Haridwar.",
+      "whyVisit": "Capture stunning photographs at Meenakshi Temple.",
+      "bestTime": "Oct-Mar",
+      "duration": "30-60 min",
+      "mapsSearch": "Meenakshi Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Meenakshi Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=800&q=60",
+        "alt": "Meenakshi Temple in Haridwar"
+      },
+      "position": 16
+    },
+    {
+      "id": "haridwar-ajmer-sharif-dargah",
+      "name": "Ajmer Sharif Dargah",
+      "slug": "ajmer-sharif-dargah",
+      "description": "A crown jewel of Haridwar, Ajmer Sharif Dargah captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Ajmer Sharif Dargah.",
+      "whyVisit": "Experience the unmatched beauty of Ajmer Sharif Dargah.",
+      "bestTime": "Early morning",
+      "duration": "30-60 min",
+      "mapsSearch": "Ajmer Sharif Dargah, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ajmer Sharif Dargah in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=800&q=60",
+        "alt": "Ajmer Sharif Dargah in Haridwar"
+      },
+      "position": 17
+    },
+    {
+      "id": "haridwar-assi-ghat",
+      "name": "Assi Ghat",
+      "slug": "assi-ghat",
+      "description": "A crown jewel of Haridwar, Assi Ghat captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Assi Ghat.",
+      "whyVisit": "Assi Ghat offers a perfect blend of history and scenery.",
+      "bestTime": "Sunrise",
+      "duration": "Half day",
+      "mapsSearch": "Assi Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Assi Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=800&q=60",
+        "alt": "Assi Ghat in Haridwar"
+      },
+      "position": 18
+    },
+    {
+      "id": "haridwar-dwarkadhish-temple",
+      "name": "Dwarkadhish Temple",
+      "slug": "dwarkadhish-temple",
+      "description": "A crown jewel of Haridwar, Dwarkadhish Temple captivates every traveler with enchanting beauty. No trip to Haridwar is complete without visiting Dwarkadhish Temple.",
+      "whyVisit": "A visit to Dwarkadhish Temple is essential for understanding Haridwar.",
+      "bestTime": "Year-round",
+      "duration": "Morning",
+      "mapsSearch": "Dwarkadhish Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Dwarkadhish Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=800&q=60",
+        "alt": "Dwarkadhish Temple in Haridwar"
+      },
+      "position": 19
+    },
+    {
+      "id": "haridwar-peer-kho-cave-shrine",
+      "name": "Peer Kho Cave Shrine",
+      "slug": "peer-kho-cave-shrine",
+      "description": "Nestled in Haridwar, Peer Kho Cave Shrine stands as a testament to architectural brilliance. This renowned religious attracts tourists who come to admire its stunning design. A visit to Peer Kho Cave Shrine is among the best things to do in Haridwar.",
+      "whyVisit": "A visit to Peer Kho Cave Shrine is essential for understanding Haridwar.",
+      "bestTime": "Year-round",
+      "duration": "Full day",
+      "mapsSearch": "Peer Kho Cave Shrine, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Peer Kho Cave Shrine in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=webp&w=800&q=60",
+        "alt": "Peer Kho Cave Shrine in Haridwar"
+      },
+      "position": 20
+    },
+    {
+      "id": "haridwar-vishnu-ghat",
+      "name": "Vishnu Ghat",
+      "slug": "vishnu-ghat",
+      "description": "Vishnu Ghat is a must-see river in Haridwar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Haridwar.",
+      "whyVisit": "Experience the unmatched beauty of Vishnu Ghat.",
+      "bestTime": "Sunrise",
+      "duration": "Sunset",
+      "mapsSearch": "Vishnu Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Vishnu Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?fm=webp&w=800&q=60",
+        "alt": "Vishnu Ghat in Haridwar"
+      },
+      "position": 21
+    },
+    {
+      "id": "haridwar-mahabodhi-temple",
+      "name": "Mahabodhi Temple",
+      "slug": "mahabodhi-temple",
+      "description": "Mahabodhi Temple is a must-see temple in Haridwar, celebrated for breathtaking views and historical importance. It remains one of the top tourist attractions in Haridwar.",
+      "whyVisit": "A visit to Mahabodhi Temple is essential for understanding Haridwar.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Mahabodhi Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Mahabodhi Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1504280390367-c479b9be15ae?fm=webp&w=800&q=60",
+        "alt": "Mahabodhi Temple in Haridwar"
+      },
+      "position": 22
+    },
+    {
+      "id": "haridwar-ziarat-batmaloo",
+      "name": "Ziarat Batmaloo",
+      "slug": "ziarat-batmaloo",
+      "description": "Nestled in Haridwar, Ziarat Batmaloo stands as a testament to architectural brilliance. This renowned religious attracts tourists who come to admire its stunning design. A visit to Ziarat Batmaloo is among the best things to do in Haridwar.",
+      "whyVisit": "Ziarat Batmaloo offers a perfect blend of history and scenery.",
+      "bestTime": "Oct-Mar",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ziarat Batmaloo, Haridwar",
+      "category": "religious",
+      "imagePrompt": "Ultra realistic travel photography, Ziarat Batmaloo in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?fm=webp&w=800&q=60",
+        "alt": "Ziarat Batmaloo in Haridwar"
+      },
+      "position": 23
+    },
+    {
+      "id": "haridwar-tulsi-ghat",
+      "name": "Tulsi Ghat",
+      "slug": "tulsi-ghat",
+      "description": "Nestled in Haridwar, Tulsi Ghat stands as a testament to architectural brilliance. This renowned river attracts tourists who come to admire its stunning design. A visit to Tulsi Ghat is among the best things to do in Haridwar.",
+      "whyVisit": "Tulsi Ghat offers a perfect blend of history and scenery.",
+      "bestTime": "Evening",
+      "duration": "2-3 hours",
+      "mapsSearch": "Tulsi Ghat, Haridwar",
+      "category": "river",
+      "imagePrompt": "Ultra realistic travel photography, Tulsi Ghat in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1561361513-9e9f6e2e4e9e?fm=webp&w=800&q=60",
+        "alt": "Tulsi Ghat in Haridwar"
+      },
+      "position": 24
+    },
+    {
+      "id": "haridwar-siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "slug": "siddhivinayak-temple",
+      "description": "Nestled in Haridwar, Siddhivinayak Temple stands as a testament to architectural brilliance. This renowned temple attracts tourists who come to admire its stunning design. A visit to Siddhivinayak Temple is among the best things to do in Haridwar.",
+      "whyVisit": "Siddhivinayak Temple offers a perfect blend of history and scenery.",
+      "bestTime": "Early morning",
+      "duration": "Morning",
+      "mapsSearch": "Siddhivinayak Temple, Haridwar",
+      "category": "temple",
+      "imagePrompt": "Ultra realistic travel photography, Siddhivinayak Temple in Haridwar, India, dramatic golden hour lighting, cinematic composition, vivid colors, high detail, 8K quality, no text, no watermark",
+      "coverImage": {
+        "url": "https://images.unsplash.com/photo-1548013146-7b0b8c9e5a6f?fm=webp&w=800&q=60",
+        "alt": "Siddhivinayak Temple in Haridwar"
+      },
+      "position": 25
+    }
+  ]
+}

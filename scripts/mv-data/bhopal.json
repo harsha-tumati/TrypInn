@@ -1,0 +1,260 @@
+{
+  "slug": "bhopal",
+  "name": "Bhopal",
+  "state": "Madhya Pradesh",
+  "tagline": "City of Lakes where history meets vibrant culture",
+  "categories": ["heritage", "lake", "historical"],
+  "highlights": ["twin lakes shimmering at the heart of the city", "ancient rock art at bhimbetka"],
+  "attractions": [
+    {
+      "name": "Upper Lake (Bada Talab)",
+      "category": "lake",
+      "description": "One of the oldest man-made lakes in India, built in the 11th century by Raja Bhoj, Upper Lake stretches over 36 square kilometres and forms the shimmering centrepiece of Bhopal. The breezy shoreline at VIP Road is ideal for evening walks, while boat clubs offer paddleboats and speedboats. Migratory birds flock here in winter, and the sunset over the water turns the horizon molten gold.",
+      "whyVisit": "Experience the soul of Bhopal at its ancient, sprawling centrepiece lake.",
+      "bestTime": "October to March, evenings",
+      "duration": "2-3 hours",
+      "mapsSearch": "Upper Lake Bhopal Bada Talab",
+      "imageQuery": "Upper Lake Bhopal sunset"
+    },
+    {
+      "name": "Bhimbetka Rock Shelters",
+      "category": "cave",
+      "description": "A UNESCO World Heritage Site set in the forested Vindhya Hills, 46 km south of Bhopal, Bhimbetka contains over 700 rock shelters adorned with prehistoric cave paintings dating back 30,000 years. Vivid ochre and white figures of hunters, animals and dancers crowd the sandstone walls, offering an unbroken visual record of human life from the Upper Palaeolithic to the medieval era.",
+      "whyVisit": "Walk among humanity's oldest surviving artwork in a hauntingly beautiful jungle setting.",
+      "bestTime": "October to February, morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Bhimbetka Rock Shelters UNESCO Madhya Pradesh",
+      "imageQuery": "Bhimbetka rock shelters cave paintings"
+    },
+    {
+      "name": "Taj-ul-Masajid",
+      "category": "religious",
+      "description": "Among the largest mosques in Asia, Taj-ul-Masajid was commissioned by Nawab Shah Jahan Begum in the 19th century and completed only in the 1980s. Its three gleaming white domes and two towering pink minarets dominate the old-city skyline. The cavernous prayer hall accommodates tens of thousands of worshippers, and the vast pink-sandstone courtyard is serene even on busy days.",
+      "whyVisit": "Stand before one of Asia's grandest mosques and absorb its monumental scale.",
+      "bestTime": "Early morning or late afternoon (avoid Friday prayer time)",
+      "duration": "1-2 hours",
+      "mapsSearch": "Taj-ul-Masajid Bhopal",
+      "imageQuery": "Taj-ul-Masajid mosque Bhopal"
+    },
+    {
+      "name": "Sanchi Stupa",
+      "category": "heritage",
+      "description": "Located 46 km from Bhopal, this UNESCO World Heritage Site contains the oldest stone structures in India. Emperor Ashoka commissioned the Great Stupa in the 3rd century BCE to enshrine relics of the Buddha. The intricately carved toranas (gateways) depict scenes from the Jataka tales with extraordinary skill. The hilltop complex commands sweeping views of the Madhya Pradesh plains.",
+      "whyVisit": "Visit the finest surviving Buddhist monuments in the world, right in Bhopal's backyard.",
+      "bestTime": "October to March, early morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Sanchi Stupa UNESCO Madhya Pradesh",
+      "imageQuery": "Sanchi Stupa Buddhist monuments Madhya Pradesh"
+    },
+    {
+      "name": "Shaukat Mahal",
+      "category": "heritage",
+      "description": "A striking 19th-century palace standing in the heart of the old city's Chowk bazaar, Shaukat Mahal blends European Gothic and Post-Renaissance styles in a way rarely seen on the subcontinent. Its turrets, arched windows and ornate plasterwork reflect the cosmopolitan tastes of the Bhopal Begums who commissioned it. The adjacent Sadar Manzil served as the hall of public audience.",
+      "whyVisit": "Marvel at this eccentric Indo-European architectural oddity tucked inside a bustling bazaar.",
+      "bestTime": "Morning, October to March",
+      "duration": "1 hour",
+      "mapsSearch": "Shaukat Mahal Bhopal Chowk",
+      "imageQuery": "Shaukat Mahal Bhopal heritage building"
+    },
+    {
+      "name": "Gohar Mahal",
+      "category": "palace",
+      "description": "Built in 1820 by Qudsia Begum, the first female ruler of Bhopal, Gohar Mahal sits gracefully on the banks of Upper Lake. Its elegant blend of Hindu and Mughal architecture — carved jharokhas, arcaded verandahs and a broad riverside terrace — speaks to the Begums' syncretic vision. The palace now hosts cultural fairs and craft exhibitions in its spacious courtyard.",
+      "whyVisit": "Explore a palace built by one of India's most remarkable ruling queens.",
+      "bestTime": "October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Gohar Mahal Bhopal",
+      "imageQuery": "Gohar Mahal palace Bhopal lake"
+    },
+    {
+      "name": "State Museum of Madhya Pradesh",
+      "category": "museum",
+      "description": "Housed in a colonial-era building near Lower Lake, this museum holds one of Central India's finest collections of sculpture, archaeology and natural history. Highlights include 10th-century Paramara-dynasty stone carvings, terracotta figurines from Harappan-era sites, medieval bronze idols and a gallery of tribal art from Madhya Pradesh's Gond and Baiga communities.",
+      "whyVisit": "Get the richest single overview of Central India's art and archaeology in one visit.",
+      "bestTime": "Morning, Tuesday to Sunday",
+      "duration": "2 hours",
+      "mapsSearch": "State Museum Madhya Pradesh Bhopal",
+      "imageQuery": "State Museum Bhopal sculpture gallery"
+    },
+    {
+      "name": "Van Vihar National Park",
+      "category": "wildlife",
+      "description": "A unique national park within city limits, Van Vihar spreads over 445 hectares along the shore of Upper Lake. Its open enclosures house tigers, leopards, Asiatic lions, wolves, sloth bears and crocodiles in near-natural settings. A scenic road through the park makes it accessible by car and bicycle, offering the rare thrill of spotting big cats against a city backdrop.",
+      "whyVisit": "See India's big cats up close without leaving the city boundaries.",
+      "bestTime": "October to March, early morning",
+      "duration": "2-3 hours",
+      "mapsSearch": "Van Vihar National Park Bhopal",
+      "imageQuery": "Van Vihar National Park Bhopal tiger"
+    },
+    {
+      "name": "Birla Mandir (Lakshmi Narayan Temple)",
+      "category": "temple",
+      "description": "Perched on a low hill overlooking Upper Lake, this immaculate white marble temple was built by the Birla family in 1964. Dedicated to Lakshmi and Narayan, it follows the Nagara style with a soaring shikhara. The attached Birla Museum houses an outstanding collection of 10th–12th century Parmara sculptures recovered from sites across Madhya Pradesh.",
+      "whyVisit": "Combine worship with superb medieval sculpture and panoramic lake views.",
+      "bestTime": "Evening for aarti, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Birla Mandir Lakshmi Narayan Temple Bhopal",
+      "imageQuery": "Birla Mandir white marble temple Bhopal"
+    },
+    {
+      "name": "Raisen Fort",
+      "category": "fort",
+      "description": "Rising dramatically on a 1,550-foot hill 45 km from Bhopal, Raisen Fort is a massive 16th-century Rajput stronghold that controlled the trade routes between the Deccan and North India. Its ramparts enclose palaces, baolis (stepwells), mosques, temples and a remarkable cannon inscribed with Persian verses. The climb rewards visitors with sweeping views of the Narmada valley.",
+      "whyVisit": "Discover a largely unvisited hilltop fortress with extraordinary panoramic views.",
+      "bestTime": "October to February, morning",
+      "duration": "3-4 hours",
+      "mapsSearch": "Raisen Fort Madhya Pradesh",
+      "imageQuery": "Raisen Fort hilltop Madhya Pradesh"
+    },
+    {
+      "name": "Moti Masjid",
+      "category": "religious",
+      "description": "Built in 1860 by Sikander Jehan Begum, Moti Masjid (Pearl Mosque) is a miniature but exquisitely detailed mosque modelled on Delhi's Jama Masjid. Its two slender minarets capped with golden finials and a pair of elegant domes in white and red sandstone create a refined, jewel-like silhouette above the crowded old-city lanes.",
+      "whyVisit": "See an architectural gem that distils Mughal grandeur into an intimate scale.",
+      "bestTime": "Morning, outside prayer times",
+      "duration": "45 minutes",
+      "mapsSearch": "Moti Masjid Bhopal",
+      "imageQuery": "Moti Masjid Bhopal mosque minaret"
+    },
+    {
+      "name": "Lower Lake (Chhota Talab)",
+      "category": "lake",
+      "description": "Separated from Upper Lake by a narrow causeway, Lower Lake is a smaller, lively water body ringed by parks, eateries and the historic Chowk bazaar. The lake-facing promenade is packed with families in the evening, and colourful boats dot the water. Nearby Kamla Park provides green space for a leisurely stroll with views across both lakes.",
+      "whyVisit": "Enjoy Bhopal's lively evening lakeside culture at the city's most accessible waterfront.",
+      "bestTime": "Evening year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "Lower Lake Chhota Talab Bhopal",
+      "imageQuery": "Lower Lake Bhopal evening promenade"
+    },
+    {
+      "name": "Chowk Bazaar",
+      "category": "market",
+      "description": "The labyrinthine heart of old Bhopal, Chowk Bazaar has traded in zardozi embroidery, silver jewellery and hand-printed fabrics for over a century. Narrow lanes burst with colour: bangle sellers, attarwalas (perfume dealers), street food stalls serving paya and nihari, and tailors stitching shararas by hand. The bazaar preserves the Nawabi culture that once defined Central India.",
+      "whyVisit": "Dive into Bhopal's Nawabi street culture and pick up unrivalled zardozi handicrafts.",
+      "bestTime": "Morning to afternoon, avoid Friday afternoon",
+      "duration": "2-3 hours",
+      "mapsSearch": "Chowk Bazaar Bhopal old city",
+      "imageQuery": "Chowk Bazaar Bhopal market streets"
+    },
+    {
+      "name": "Tribal Museum (Tribal Habitat)",
+      "category": "museum",
+      "description": "Designed by architect Charles Correa and run by the Madhya Pradesh Tribal Research and Development Institute, this extraordinary museum showcases the living cultures of 46 tribal groups of Madhya Pradesh. Floor-to-ceiling Gond murals, life-size recreations of tribal homes, intricate Bastar ironwork and Dhokra bronze figures make this one of India's most immersive ethnographic experiences.",
+      "whyVisit": "Encounter the astounding artistic traditions of Central India's indigenous peoples.",
+      "bestTime": "Morning, Tuesday to Sunday",
+      "duration": "2 hours",
+      "mapsSearch": "Tribal Museum Bhopal Shyamla Hills",
+      "imageQuery": "Tribal Museum Bhopal Gond mural"
+    },
+    {
+      "name": "Islamnagar (Raisen Road)",
+      "category": "heritage",
+      "description": "A forgotten Mughal-era capital 11 km from Bhopal, Islamnagar was built by Afghan ruler Dost Mohammed Khan in the early 18th century. Its walled complex contains two palaces — Rani Mahal and Chaman Mahal — adorned with faded frescoes, ornate arches and a hamam (royal bathhouse) with star-perforated ceilings that cast celestial patterns of light.",
+      "whyVisit": "Explore a rarely visited Mughal garden-palace almost entirely to yourself.",
+      "bestTime": "October to February",
+      "duration": "2 hours",
+      "mapsSearch": "Islamnagar Palace Bhopal",
+      "imageQuery": "Islamnagar Palace Bhopal Mughal"
+    },
+    {
+      "name": "Bharat Bhavan",
+      "category": "museum",
+      "description": "A pioneering multi-arts centre designed by Charles Correa and inaugurated in 1982, Bharat Bhavan occupies a landscaped hillside above Upper Lake. Its curving rooflines shelter galleries of adivasi (tribal) and modern Indian art, an open-air amphitheatre, a repertory theatre and a library of Indian classical and folk music. It remains one of India's most architecturally adventurous cultural spaces.",
+      "whyVisit": "Experience cutting-edge Indian contemporary art in a landmark modernist building.",
+      "bestTime": "Tuesday to Sunday, afternoon",
+      "duration": "2 hours",
+      "mapsSearch": "Bharat Bhavan Bhopal",
+      "imageQuery": "Bharat Bhavan arts centre Bhopal"
+    },
+    {
+      "name": "Udayagiri Caves",
+      "category": "cave",
+      "description": "Carved into a sandstone hill 58 km from Bhopal near Vidisha, Udayagiri's 20 rock-cut caves date from the Gupta period (4th–5th centuries CE) and contain some of the finest early Hindu sculpture in existence. Cave 5 houses a monumental relief of Varaha (the boar avatar of Vishnu) rescuing the earth goddess — a masterpiece of Gupta iconography towering over 3 metres high.",
+      "whyVisit": "See a Gupta-era Varaha relief that ranks among the greatest sculptures in Indian art.",
+      "bestTime": "October to March, morning",
+      "duration": "2 hours",
+      "mapsSearch": "Udayagiri Caves Vidisha Madhya Pradesh",
+      "imageQuery": "Udayagiri Caves Gupta sculpture Vidisha"
+    },
+    {
+      "name": "Kerwa Dam and Reservoir",
+      "category": "nature",
+      "description": "Set amid lush forests on Bhopal's southeastern fringe, Kerwa Dam is a tranquil escape from the city. The surrounding Kerwa Forest Reserve is excellent for birdwatching — over 200 species have been recorded — and the rocky hillside trails attract hikers. In the monsoon, dozens of seasonal waterfalls thread through the forest, and the reservoir turns a vivid jade green.",
+      "whyVisit": "Hike through monsoon forests and birdwatch beside a peaceful reservoir near the city.",
+      "bestTime": "July to September for waterfalls; October to February for birding",
+      "duration": "3-4 hours",
+      "mapsSearch": "Kerwa Dam Bhopal reservoir",
+      "imageQuery": "Kerwa Dam reservoir Bhopal forest"
+    },
+    {
+      "name": "DB City Mall Food Street",
+      "category": "nightlife",
+      "description": "While malls are not typically traveller highlights, DB City's open-air food court is Bhopal's most vibrant evening gathering spot, where locals and students converge nightly for poha-jalebi, bhutte ki kees, korma, and a dozen regional sweets unique to Madhya Pradesh. The energy peaks between 7 and 10 pm, offering an authentic snapshot of modern Bhopal's food culture.",
+      "whyVisit": "Taste the full range of Bhopal's street-food culture in one lively evening.",
+      "bestTime": "Evening, year-round",
+      "duration": "1-2 hours",
+      "mapsSearch": "DB City Mall Bhopal food court",
+      "imageQuery": "Bhopal street food market evening"
+    },
+    {
+      "name": "Lakshmi Narayan Temple, Bittan Market",
+      "category": "temple",
+      "description": "A neighbourhood Vaishnavite temple near Bittan Market whose inner sanctum contains some of the most delicately carved black-stone idols in the city. The temple complex holds daily bhajan sessions that draw local devotees and has a small but beautifully tended garden courtyard. It offers a glimpse of everyday Hindu devotional life away from tourist circuits.",
+      "whyVisit": "Experience authentic daily temple worship in a neighbourhood setting.",
+      "bestTime": "Early morning aarti (6–7 am)",
+      "duration": "45 minutes",
+      "mapsSearch": "Lakshmi Narayan Temple Bittan Market Bhopal",
+      "imageQuery": "Hindu temple Bhopal neighbourhood devotees"
+    },
+    {
+      "name": "Saair Sapna Boat Club",
+      "category": "adventure",
+      "description": "Operated on the shores of Upper Lake, Saair Sapna Boat Club is Bhopal's most popular destination for water sports. Visitors can try jet-skiing, kayaking, parasailing over the lake and pedalo rides. The club is busiest on weekends when families queue for rides, and the panoramic backdrop of forested hills and the distant city skyline adds to the drama.",
+      "whyVisit": "Try parasailing or jet-skiing with a panoramic lake-and-city backdrop.",
+      "bestTime": "October to March, afternoon",
+      "duration": "2 hours",
+      "mapsSearch": "Saair Sapna Boat Club Upper Lake Bhopal",
+      "imageQuery": "boating Upper Lake Bhopal water sports"
+    },
+    {
+      "name": "Baobab Trees of Bhopal",
+      "category": "nature",
+      "description": "Scattered across the old city near Jama Masjid Road and the Nawabi-era gardens, a cluster of centuries-old African baobab trees — locally called gorakh imli — are believed to have been brought to Bhopal by Arab traders. Their immense bottle-shaped trunks, some measuring more than 10 metres in girth, are a botanical curiosity and a little-known city landmark.",
+      "whyVisit": "See giant African baobab trees transplanted to Central India centuries ago by Silk Road traders.",
+      "bestTime": "Year-round",
+      "duration": "30 minutes",
+      "mapsSearch": "Baobab trees Bhopal old city",
+      "imageQuery": "baobab tree Bhopal ancient trunk"
+    },
+    {
+      "name": "Noor-us-Sabah Palace",
+      "category": "palace",
+      "description": "Now converted into a heritage hotel, this 1920s palace of the Nawabs of Bhopal sits on a ridge overlooking Upper Lake. Even if not staying overnight, visitors can explore the ornate public areas: chandeliered banquet halls, a Durbar room hung with royal portraits, and sweeping lake-view terraces. The palace is the finest example of the Nawabs' later, more Westernised architectural taste.",
+      "whyVisit": "Tour a real Nawabi palace with unobstructed sunset views over the lake.",
+      "bestTime": "Late afternoon for sunset, October to March",
+      "duration": "1-2 hours",
+      "mapsSearch": "Noor-us-Sabah Palace Bhopal hotel",
+      "imageQuery": "Noor-us-Sabah Palace heritage hotel Bhopal lake"
+    },
+    {
+      "name": "Patra Nala Waterfall",
+      "category": "waterfall",
+      "description": "A monsoon-season secret hidden within the Kerwa Forest on Bhopal's outskirts, Patra Nala tumbles roughly 30 feet over a basalt shelf into a clear pool. The trail to the falls winds through sal and teak forest alive with langurs and peafowl. Virtually unknown outside the city, it is a favourite weekend escape for Bhopal's university students during August and September.",
+      "whyVisit": "Discover a hidden jungle waterfall that almost no tourist ever reaches.",
+      "bestTime": "July to September",
+      "duration": "3 hours including trek",
+      "mapsSearch": "Patra Nala Waterfall Bhopal Kerwa",
+      "imageQuery": "monsoon waterfall Bhopal forest hidden"
+    },
+    {
+      "name": "Mangalgarh Fort Ruins",
+      "category": "fort",
+      "description": "A crumbling hilltop fort on the northwestern outskirts of Bhopal, Mangalgarh was a pre-Nawabi Gond stronghold repurposed as a watchtower by successive rulers. Its broken battlements are tangled with wild fig trees and offer one of the quietest, most atmospheric high-points above the city, with unobstructed views of Upper Lake and the Aravalli foothills beyond.",
+      "whyVisit": "Climb a forgotten Gond fortress for sweeping lake views almost entirely alone.",
+      "bestTime": "Sunrise or late afternoon, October to February",
+      "duration": "1-2 hours",
+      "mapsSearch": "Mangalgarh Fort Bhopal ruins",
+      "imageQuery": "Mangalgarh Fort ruins Bhopal hilltop"
+    }
+  ]
+}

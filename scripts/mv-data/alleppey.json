@@ -1,0 +1,260 @@
+{
+  "slug": "alleppey",
+  "name": "Alleppey",
+  "state": "Kerala",
+  "tagline": "Glide through Kerala's timeless network of emerald backwaters",
+  "categories": ["backwater", "beach", "nature"],
+  "highlights": ["overnight houseboat journeys on vembanad lake", "91-km long alleppey beach at the edge of the arabian sea"],
+  "attractions": [
+    {
+      "name": "Alleppey Houseboat Cruise (Vembanad Lake)",
+      "category": "lake",
+      "description": "A kettuvallam — a traditional rice barge converted into a floating home — drifting overnight across Vembanad, Kerala's largest lake, is the defining Alleppey experience. Houseboats range from simple one-bedroom vessels to luxury floating villas with air conditioning and chefs. The route passes through narrow canals, village ghats, fishermen casting square Chinese nets, and sunsets that turn the lake copper. No experience quite like it exists anywhere else in India.",
+      "whyVisit": "The most iconic backwater experience in India — sleeping on the water inside a traditional rice barge.",
+      "bestTime": "November to February for calm water and cool nights",
+      "duration": "Overnight (24 hours)",
+      "mapsSearch": "Alleppey Houseboat Cruise Vembanad Lake Kerala",
+      "imageQuery": "Alleppey houseboat backwaters Vembanad lake Kerala"
+    },
+    {
+      "name": "Alleppey Beach",
+      "category": "beach",
+      "description": "Stretching north of the Alleppey pier, this wide, flat beach on the Arabian Sea is famous for its 140-year-old lighthouse — one of the tallest in Kerala — and for the century-old sea-facing promenade. The beach is particularly dramatic during the monsoon, when massive waves crash into the concrete sea wall. At the northern end, the Krishnapuram-Mullakkal festival brings thousands of pilgrims during Onam season.",
+      "whyVisit": "A working beach town's seafront where a Victorian lighthouse, crashing monsoon waves and fishing activity converge.",
+      "bestTime": "October to March for calm seas; June to August for dramatic monsoon surf",
+      "duration": "2-3 hours",
+      "mapsSearch": "Alleppey Beach Kerala promenade",
+      "imageQuery": "Alleppey beach lighthouse Arabian Sea Kerala"
+    },
+    {
+      "name": "Nehru Trophy Boat Race",
+      "category": "heritage",
+      "description": "Held on the second Saturday of August in Punnamada Lake, the Nehru Trophy Snake Boat Race is India's most famous water festival. Chundan vallams — 100-foot-long war canoes crewed by up to 100 oarsmen — race over a 1.3-km course to the thundering rhythm of vanchipattu (boat song). Inaugurated in 1952 by Prime Minister Nehru, the race draws 200,000 spectators. Competing teams represent entire villages who train for months.",
+      "whyVisit": "India's largest and most spectacular traditional boat race — a UNESCO-recognised cultural event of extraordinary energy.",
+      "bestTime": "Second Saturday of August annually",
+      "duration": "Full day",
+      "mapsSearch": "Nehru Trophy Boat Race Punnamada Lake Alleppey",
+      "imageQuery": "Nehru Trophy snake boat race Alleppey chundan vallam"
+    },
+    {
+      "name": "Punnamada Lake",
+      "category": "lake",
+      "description": "The largest lake in Alleppey district and the finishing lake for the Nehru Trophy races, Punnamada spans 8 sq km and connects directly to the Vembanad system. Its shores are lined with Chinese fishing nets — large wooden-framed cantilevered structures that dip and rise with the tide — and narrow shaded canal villages where residents navigate by country boat. Kayaking through the lake's inner channels at dawn is profoundly peaceful.",
+      "whyVisit": "The heart of Alleppey's backwater system — best explored by kayak at dawn when the lake is a mirror.",
+      "bestTime": "Early morning year-round; Onam season for festivity",
+      "duration": "2-4 hours",
+      "mapsSearch": "Punnamada Lake Alleppey Kerala",
+      "imageQuery": "Punnamada Lake Alleppey Chinese fishing nets sunrise"
+    },
+    {
+      "name": "Krishnapuram Palace",
+      "category": "palace",
+      "description": "Located 47 km south of Alleppey near Kayamkulam, this 18th-century Travancore palace is a superb example of Kerala's distinctive architectural style — sloping gabled roofs, narrow windows with carved wooden shutters, and an enclosed courtyard. The palace museum houses an exceptional collection of Travancore royal artefacts including Kerala murals, sculptures, and a celebrated 49-square-metre painting depicting the Battle of Mahabharata — one of the largest murals in Kerala.",
+      "whyVisit": "Kerala's best preserved 18th-century palace museum with the largest mural painting in the state.",
+      "bestTime": "October to March; closed Mondays",
+      "duration": "2 hours",
+      "mapsSearch": "Krishnapuram Palace Museum Kayamkulam Kerala",
+      "imageQuery": "Krishnapuram Palace Kayamkulam Travancore Kerala mural"
+    },
+    {
+      "name": "Revi Karunakaran Museum",
+      "category": "museum",
+      "description": "An extraordinary private museum at Alleppey's outskirts housing one of India's most eccentric and magnificent private collections — antique dolls, sculptures, Venetian glass, furniture, porcelain, clocks, and Belgian mirrors amassed over six decades by industrialist Revi Karunakaran. The building itself, with its high wooden ceilings, serves as a showcase for the collection's astonishing breadth. Few visitors expect such opulence in a backwater town.",
+      "whyVisit": "One of India's most surprising private museums — an Aladdin's cave of global antiques in a Kerala backwater town.",
+      "bestTime": "Year-round; morning for good light",
+      "duration": "1-2 hours",
+      "mapsSearch": "Revi Karunakaran Museum Alleppey Kerala",
+      "imageQuery": "Revi Karunakaran Museum Alleppey antiques dolls Kerala"
+    },
+    {
+      "name": "St. Andrew's Basilica, Arthunkal",
+      "category": "religious",
+      "description": "Built by Portuguese missionaries in the 16th century and elevated to a basilica in 2010, St. Andrew's at Arthunkal on the sea coast north of Alleppey is one of the most venerated Catholic shrines in Kerala. The January feast of St. Sebastian draws 300,000 pilgrims who walk barefoot from as far as Kochi, crawling the last metres on their knees. The basilica faces the beach and its whitewashed facade glows at sunset.",
+      "whyVisit": "Kerala's most dramatic Catholic pilgrimage site — a 16th-century Portuguese basilica facing the Arabian Sea.",
+      "bestTime": "January feast (Perunnal) for pilgrimage; October to March for pleasant visits",
+      "duration": "1-2 hours",
+      "mapsSearch": "St Andrew's Basilica Arthunkal Alleppey",
+      "imageQuery": "St Andrew's Basilica Arthunkal Kerala Portuguese church"
+    },
+    {
+      "name": "Coir Village, Pathiramanal Island",
+      "category": "nature",
+      "description": "A small island accessible only by boat in Vembanad Lake, Pathiramanal (meaning 'midnight sand') is a bird sanctuary and natural reserve hosting over 50 species of migratory birds including rare vagrant species from Siberia and Central Asia during winter. The surrounding shallow lake is a key wintering site for pintails, garganey, and various waders. The only access is by country boat from Thakazhy — there is no tourist infrastructure.",
+      "whyVisit": "A car-free island bird sanctuary in the middle of Vembanad Lake, reachable only by country boat.",
+      "bestTime": "November to February for migratory birds",
+      "duration": "2-3 hours",
+      "mapsSearch": "Pathiramanal Island Vembanad Lake Alleppey",
+      "imageQuery": "Pathiramanal island Vembanad Lake birds Alleppey"
+    },
+    {
+      "name": "Marari Beach",
+      "category": "beach",
+      "description": "Located 14 km north of Alleppey, Marari is one of Kerala's finest beaches — a wide, clean, palm-fringed stretch virtually free of commercialisation. The beach village of Mararikulam retains its traditional fishing character with thatch-roofed huts, drying fish, and hand-painted catamarans. The fishing activity is most active at 5 AM when the boats come in, and the entire catch is auctioned on the sand within minutes.",
+      "whyVisit": "Kerala's most unspoilt easily accessible beach — wide, clean, and still dominated by traditional fishing rather than tourism.",
+      "bestTime": "October to March; early morning for fishing activity",
+      "duration": "Half day",
+      "mapsSearch": "Marari Beach Alleppey Kerala",
+      "imageQuery": "Marari beach Alleppey fishing village Kerala palm"
+    },
+    {
+      "name": "Kumarakom Bird Sanctuary (from Alleppey)",
+      "category": "wildlife",
+      "description": "Just 16 km from Alleppey across Vembanad Lake, Kumarakom Bird Sanctuary occupies 14 hectares on the lake's eastern shore and records over 100 bird species including the rare purple heron, waterhen, and large flocks of cormorants. The sanctuary is best combined with an Alleppey houseboat trip — houseboats often anchor near Kumarakom at dawn and guests wake to the sound of water birds.",
+      "whyVisit": "India's most bird-rich small sanctuary, perfectly positioned to combine with an Alleppey houseboat overnight.",
+      "bestTime": "June to August for nesting herons; November to February for migratory species",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kumarakom Bird Sanctuary Vembanad Lake Kerala",
+      "imageQuery": "Kumarakom bird sanctuary heron Vembanad backwaters"
+    },
+    {
+      "name": "Ambalappuzha Sri Krishna Temple",
+      "category": "temple",
+      "description": "Built in the 8th century and expanded by the Travancore kings, the Ambalappuzha Sree Krishna Temple is famed for its palpayasam — a sweet rice pudding offered free to all devotees every day, tracing a legend of a chess match between Lord Krishna and a king. The temple's complex of shrines, carved wooden ceilings, and the giant brass lamp tower (deepastambha) is one of the finest examples of Kerala temple architecture.",
+      "whyVisit": "A living 8th-century Kerala temple where the legendary palpayasam rice pudding is served free to all visitors daily.",
+      "bestTime": "Year-round; early morning for temple rituals; Onam for special pujas",
+      "duration": "1-2 hours",
+      "mapsSearch": "Ambalappuzha Sree Krishna Temple Kerala",
+      "imageQuery": "Ambalappuzha Sri Krishna Temple Kerala traditional architecture"
+    },
+    {
+      "name": "Alleppey Lighthouse",
+      "category": "heritage",
+      "description": "Completed in 1862 and rising 37 metres above the beach, the Alleppey Lighthouse is one of the tallest lighthouses in Kerala. It remains operational and visitors can climb the circular iron staircase to the lamp room for an unobstructed 360-degree view over the Arabian Sea, the Vembanad Lake mouth, and the flat backwater landscape stretching inland. The lighthouse department opens it for two hours each afternoon.",
+      "whyVisit": "A Victorian-era operational lighthouse with the best elevated view of Alleppey town and the Arabian Sea coast.",
+      "bestTime": "3:30 to 5:30 PM daily (official viewing hours)",
+      "duration": "1 hour",
+      "mapsSearch": "Alleppey Lighthouse Kerala beach",
+      "imageQuery": "Alleppey lighthouse Kerala Victorian beach"
+    },
+    {
+      "name": "Canoe Village Tour, Kuttanad",
+      "category": "nature",
+      "description": "Kuttanad — the rice bowl of Kerala — is one of the few places in the world where farming is done 1 to 2 metres below sea level, with rice paddies reclaimed from the lake. A guided canoe tour through the narrow shaded canal villages of Kuttanad takes visitors past paddy fields, toddy tapper co-operatives, coir-weaving households, and village churches that double as community centers. This is the real backwater Kerala beyond houseboat routes.",
+      "whyVisit": "The only place in India where rice grows below sea level — explored best from a narrow country canoe at water level.",
+      "bestTime": "August to November for green paddy; December to March for harvest",
+      "duration": "3-4 hours",
+      "mapsSearch": "Kuttanad Canoe Village Tour Alleppey Kerala",
+      "imageQuery": "Kuttanad village canoe paddy below sea level Kerala"
+    },
+    {
+      "name": "Chambakulam Church and Museum",
+      "category": "religious",
+      "description": "The St. Mary's Forane Church at Chambakulam, founded in the 4th century by St. Thomas the Apostle according to local tradition, houses an important collection of Syrian Christian artefacts. The adjacent museum displays copper plate inscriptions, antique liturgical objects, and a 1,600-year-old stone cross. The annual Chambakulam Moolam Boat Race in July draws teams from villages across the Kuttanad region.",
+      "whyVisit": "One of India's oldest Christian foundations — a 4th-century church with genuine Syrian Christian antiquities on the backwater village.",
+      "bestTime": "October to March; July for boat race",
+      "duration": "1-2 hours",
+      "mapsSearch": "Chambakulam St Mary's Church Museum Alleppey",
+      "imageQuery": "Chambakulam church Syrian Christian Kerala backwater"
+    },
+    {
+      "name": "Vembanad Lake Sunset Cruise",
+      "category": "lake",
+      "description": "A short sunset boat cruise from Alleppey town heading west across Vembanad towards the lake mouth at Thanneermukkom is one of the most photogenic experiences in Kerala. As the sun drops into the Arabian Sea, silhouettes of Chinese fishing nets, fishermen in narrow vallams, and waterbirds flying to roost create a series of classic Kerala images. Many houseboats slow to anchor for the sunset and the entire lake becomes a stage.",
+      "whyVisit": "The classic Kerala silhouette shot — fishing nets against a blazing Arabian Sea sunset from the middle of Vembanad.",
+      "bestTime": "October to March, 30 minutes before sunset",
+      "duration": "2 hours",
+      "mapsSearch": "Vembanad Lake sunset cruise Alleppey boat",
+      "imageQuery": "Vembanad Lake sunset Alleppey fishing net silhouette"
+    },
+    {
+      "name": "Thanneermukkom Bund",
+      "category": "heritage",
+      "description": "India's longest freshwater-saltwater dividing structure, the Thanneermukkom Bund stretches 1.1 km across Vembanad Lake, separating the saltwater northern section from the freshwater southern Kuttanad region. Built in 1975, the bridge-like bund now carries a road and offers extraordinary views across the full width of the lake in both directions. At dawn, hundreds of birds concentrate at the barrier where the two water types meet.",
+      "whyVisit": "Walk or drive across India's longest lake bund with open water views in both directions — a dramatic engineering landmark.",
+      "bestTime": "Early morning for birds; sunset for colours over open water",
+      "duration": "1 hour",
+      "mapsSearch": "Thanneermukkom Bund Vembanad Lake Kerala",
+      "imageQuery": "Thanneermukkom Bund Vembanad Lake Kerala freshwater"
+    },
+    {
+      "name": "Coir Making Village, Thycattussery",
+      "category": "heritage",
+      "description": "The village of Thycattussery near Cherthala, a short drive from Alleppey, is one of the few remaining places where traditional coir (coconut fibre) rope is spun and woven by hand. Women sit at low wooden spinning frames in front of their homes, extracting and twisting coconut husk fibre into rope using techniques unchanged for centuries. Alleppey district produces 60% of all Indian coir exports and the industry employs 400,000 workers.",
+      "whyVisit": "Watch the industry that gave Alleppey its name — India's coir capital — practised by hand in a living village workshop.",
+      "bestTime": "Year-round; morning for most active work",
+      "duration": "1-2 hours",
+      "mapsSearch": "Coir Village Thycattussery Cherthala Alleppey Kerala",
+      "imageQuery": "coir spinning village Alleppey coconut fibre Kerala women"
+    },
+    {
+      "name": "Mullakkal Rajarajeswari Temple",
+      "category": "temple",
+      "description": "At the centre of Alleppey town, the Mullakkal Devi Temple is the civic heart of the city. The presiding deity Rajarajeswari is considered the protector of Alleppey, and the 10-day Mullakal Utsavam festival in November draws over 100,000 devotees to processions of caparisoned elephants, traditional percussion ensembles, and lamp-lit boat processions on the nearby canal. The temple's inner sanctum murals are particularly fine.",
+      "whyVisit": "The spiritual core of Alleppey — best experienced during the November elephant procession festival.",
+      "bestTime": "November for Mullakal Utsavam; year-round",
+      "duration": "1 hour",
+      "mapsSearch": "Mullakkal Rajarajeswari Temple Alleppey town centre",
+      "imageQuery": "Mullakkal Temple Alleppey Kerala elephant festival"
+    },
+    {
+      "name": "Alappuzha Heritage Centre (DTPC)",
+      "category": "museum",
+      "description": "The District Tourism Promotion Council's heritage gallery traces the history of Alleppey from its founding as a planned port town by Dewan Raja Kesavadas in 1762 through its rise as India's coir-export capital under British rule. Exhibits include historical maps, colonial trade records, photographs of the original warehouses along the canal, and models of traditional boat types. The building itself is a restored colonial-era structure.",
+      "whyVisit": "The best introduction to Alleppey's often-overlooked history as a planned city and colonial trading port.",
+      "bestTime": "Year-round; closed Sundays",
+      "duration": "1 hour",
+      "mapsSearch": "Alappuzha Heritage Centre DTPC Alleppey",
+      "imageQuery": "Alleppey heritage museum DTPC colonial history Kerala"
+    },
+    {
+      "name": "Arthunkal Beach",
+      "category": "beach",
+      "description": "Immediately in front of the St. Andrew's Basilica, the Arthunkal Beach is a quiet stretch of dark sand backed by a thick coconut grove. The beach is primarily used by local fishermen whose colourfully painted boats are drawn up on the sand each morning. At low tide the flat exposed sand extends 200 metres seaward, and the combination of whitewashed basilica against the beach and sky makes for extraordinary photography.",
+      "whyVisit": "A quiet fishing beach directly below a 16th-century Portuguese basilica — one of Kerala's most photographed coastal scenes.",
+      "bestTime": "Early morning when fishing boats return; sunset",
+      "duration": "1-2 hours",
+      "mapsSearch": "Arthunkal Beach Kerala Alleppey",
+      "imageQuery": "Arthunkal beach basilica fishing boat Kerala"
+    },
+    {
+      "name": "Kuttanad Paddy Fields Sunrise Walk",
+      "category": "nature",
+      "description": "The below-sea-level paddy fields of Kuttanad are most beautiful at dawn when ground mist hangs over the water-level paddies and herons stalk the bunds between fields. The main road between Alleppey and Changanacherry runs along raised embankments with paddy on both sides, and at sunrise the flat light and mist create a landscape entirely unlike the rest of India. Local farmers begin transplanting or harvesting from 6 AM.",
+      "whyVisit": "India's only below-sea-level farming landscape — a surreal flooded plain most beautiful in dawn mist.",
+      "bestTime": "Early morning August to November for green rice; December for golden harvest",
+      "duration": "2 hours",
+      "mapsSearch": "Kuttanad paddy fields sunrise Alleppey Kerala",
+      "imageQuery": "Kuttanad below sea level paddy fields dawn mist Kerala"
+    },
+    {
+      "name": "Chinese Fishing Nets, Alleppey Canal",
+      "category": "heritage",
+      "description": "Though the giant cantilevered Chinese fishing nets are most associated with Kochi, Alleppey's canal network has its own smaller but more intimate versions at the lake's edge near the Punnamada area. These nets are actively used by fishermen each morning and evening, and watching the counterweighted arms rise and dip — hauling fresh fish into a basket — is one of the quintessential Kerala images. Many are now centuries old in design.",
+      "whyVisit": "Photograph working Chinese fishing nets used daily by local fishermen in an intimate backwater setting.",
+      "bestTime": "Early morning and evening during fishing activity",
+      "duration": "1 hour",
+      "mapsSearch": "Chinese Fishing Nets Alleppey canal Punnamada",
+      "imageQuery": "Chinese fishing nets Alleppey backwater canal Kerala"
+    },
+    {
+      "name": "Motorbike Village Circuit, Canal Villages",
+      "category": "adventure",
+      "description": "Renting a bicycle or motorbike and heading into the narrow canal-bank roads west of Alleppey town reveals a Kerala unknown to houseboat tourists — labyrinthine lanes where houses extend on stilts over the canal, children swim between boat piers, and toddy shops serve coconut sap wine at wooden tables above the water. This self-guided loop covers 20-25 km of flat, shaded lanes through working villages.",
+      "whyVisit": "Escape the houseboat crowds and discover the real canal villages that surround Alleppey by bicycle at water level.",
+      "bestTime": "Morning, October to March",
+      "duration": "Half day",
+      "mapsSearch": "Alleppey canal village bicycle tour Kerala",
+      "imageQuery": "Alleppey canal village bicycle Kerala backwater lane"
+    },
+    {
+      "name": "Thakazhy (Birthplace of Thakazhi Sivasankara Pillai)",
+      "category": "heritage",
+      "description": "The village of Thakazhy, deep in Kuttanad, is the birthplace of legendary Malayalam novelist Thakazhi Sivasankara Pillai whose Chemmeen (1956) — the story of a fisherman's family — became the first Indian regional novel to be widely translated and filmed internationally. The village, surrounded by water on three sides, is exactly as Pillai described it and serves as a moving literary pilgrimage for Malayalam readers.",
+      "whyVisit": "Visit the village that inspired Chemmeen — one of India's greatest literary works — unchanged from its mid-century setting.",
+      "bestTime": "October to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Thakazhy village Kuttanad Alleppey literary",
+      "imageQuery": "Thakazhy village Kuttanad backwater Kerala Chemmeen"
+    },
+    {
+      "name": "Kumarapuram Mangrove Canal",
+      "category": "nature",
+      "description": "A narrow, rarely visited canal system north of Alleppey where the backwaters meet dense mangrove forest — one of the last intact mangrove pockets in Kerala's central backwater zone. A canoe or kayak journey through the tunnels of mangrove root arches takes 2-3 hours and passes no habitation. Kingfishers, egrets, and the rare mangrove whistler are regularly seen, and the light filtering through the root canopy is extraordinary.",
+      "whyVisit": "A hidden mangrove canal system that feels like a primeval wilderness just 8 km from Alleppey town.",
+      "bestTime": "Morning, November to March",
+      "duration": "2-3 hours",
+      "mapsSearch": "Kumarapuram mangrove canal Alleppey Kerala",
+      "imageQuery": "mangrove canal Alleppey kayak Kerala backwater roots"
+    }
+  ]
+}
