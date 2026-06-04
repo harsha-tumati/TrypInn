@@ -30,7 +30,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Taj Mahal in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "taj-mahal",
       "position": 1,
-      "coverImage": "https://images.unsplash.com/photo-1587135941948-670b381f08ce?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=webp&w=800&q=60"
     },
     {
       "name": "Agra Fort",
@@ -43,7 +43,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Agra Fort in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "agra-fort",
       "position": 2,
-      "coverImage": "https://images.unsplash.com/photo-1713729991304-d0b6c328560e?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1577123308384-27bce45e7495?fm=webp&w=800&q=60"
     },
     {
       "name": "Fatehpur Sikri",
@@ -56,7 +56,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Fatehpur Sikri in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "fatehpur-sikri",
       "position": 3,
-      "coverImage": "https://images.unsplash.com/photo-1717761558642-32cbeccbee7e?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1697644297524-ee2e2e098f37?fm=webp&w=800&q=60"
     },
     {
       "name": "Mehtab Bagh",
@@ -69,7 +69,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Mehtab Bagh in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "mehtab-bagh",
       "position": 4,
-      "coverImage": "https://images.unsplash.com/photo-1748433069400-3d7b4ac6b3e6?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60"
     },
     {
       "name": "Itimad-ud-Daulah (Baby Taj)",
@@ -82,7 +82,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Itimad-ud-Daulah (Baby Taj) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "itimad-ud-daulah-baby-taj",
       "position": 5,
-      "coverImage": "https://images.unsplash.com/photo-1523980006075-26ae40675d41?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=webp&w=800&q=60"
     },
     {
       "name": "Taj Mahal at Moonlight (Full Moon Night Viewing)",
@@ -108,7 +108,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Akbar's Tomb, Sikandra in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "akbars-tomb-sikandra",
       "position": 7,
-      "coverImage": "https://images.unsplash.com/photo-1690668570273-8c47fe57e83d?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1600073203776-b04b581c2d14?fm=webp&w=800&q=60"
     },
     {
       "name": "Taj Museum",
@@ -121,7 +121,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Taj Museum in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "taj-museum",
       "position": 8,
-      "coverImage": "https://images.unsplash.com/photo-1619947494583-29fc109e01d7?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?fm=webp&w=800&q=60"
     },
     {
       "name": "Jama Masjid Agra",
@@ -134,7 +134,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Jama Masjid Agra in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "jama-masjid-agra",
       "position": 9,
-      "coverImage": "https://images.unsplash.com/photo-1637301625903-e25a30ba1bb5?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1680081721818-3ac29886caa9?fm=webp&w=800&q=60"
     },
     {
       "name": "Kinari Bazaar (Agra's Old Market)",
@@ -147,7 +147,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Kinari Bazaar (Agra's Old Market) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "kinari-bazaar-agras-old-market",
       "position": 10,
-      "coverImage": "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1567255097545-018d2b9c414c?fm=webp&w=800&q=60"
     },
     {
       "name": "Tomb of Mariam-uz-Zamani (Mariam's Tomb)",
@@ -160,7 +160,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Tomb of Mariam-uz-Zamani (Mariam's Tomb) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "tomb-of-mariam-uz-zamani-mariams-tomb",
       "position": 11,
-      "coverImage": "https://images.unsplash.com/photo-1643882784878-9d44eebedef2?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?fm=webp&w=800&q=60"
     },
     {
       "name": "Chini Ka Rauza",
@@ -173,7 +173,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Chini Ka Rauza in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "chini-ka-rauza",
       "position": 12,
-      "coverImage": "https://images.unsplash.com/photo-1672215048670-d8c04e1ec7e0?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60"
     },
     {
       "name": "Keetham Lake (Sur Sarovar Bird Sanctuary)",
@@ -186,7 +186,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Keetham Lake (Sur Sarovar Bird Sanctuary) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "keetham-lake-sur-sarovar-bird-sanctuary",
       "position": 13,
-      "coverImage": "https://images.unsplash.com/photo-1600261669797-1bb7b27939be?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1532664189809-02133fee698d?fm=webp&w=800&q=60"
     },
     {
       "name": "Swami Bagh Samadhi (Radhasoami Temple)",
@@ -199,7 +199,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Swami Bagh Samadhi (Radhasoami Temple) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "swami-bagh-samadhi-radhasoami-temple",
       "position": 14,
-      "coverImage": "https://images.unsplash.com/photo-1646725357528-bd1c2164b6af?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?fm=webp&w=800&q=60"
     },
     {
       "name": "Bateshwar Temple Complex",
@@ -212,7 +212,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Bateshwar Temple Complex in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "bateshwar-temple-complex",
       "position": 15,
-      "coverImage": "https://images.unsplash.com/photo-1629200017674-ee2c5578e21a?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1592635196078-9fdc757f27f4?fm=webp&w=800&q=60"
     },
     {
       "name": "Agra Bear Rescue Facility",
@@ -225,7 +225,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Agra Bear Rescue Facility in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "agra-bear-rescue-facility",
       "position": 16,
-      "coverImage": "https://images.unsplash.com/photo-1670153922218-1b3a16e248c1?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1664170745532-155e651a6360?fm=webp&w=800&q=60"
     },
     {
       "name": "Ram Bagh (Aram Bagh)",
@@ -238,7 +238,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Ram Bagh (Aram Bagh) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "ram-bagh-aram-bagh",
       "position": 17,
-      "coverImage": "https://images.unsplash.com/photo-1617889206384-259371f2c511?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60"
     },
     {
       "name": "Taj Nature Walk",
@@ -251,7 +251,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Taj Nature Walk in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "taj-nature-walk",
       "position": 18,
-      "coverImage": "https://images.unsplash.com/photo-1629634185226-ca03ff4c446c?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?fm=webp&w=800&q=60"
     },
     {
       "name": "Mankameshwar Temple",
@@ -264,7 +264,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Mankameshwar Temple in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "mankameshwar-temple",
       "position": 19,
-      "coverImage": "https://images.unsplash.com/photo-1713690847764-48bbcd865fb0?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1756586477944-2c9096b95015?fm=webp&w=800&q=60"
     },
     {
       "name": "Chambal Safari (National Chambal Sanctuary)",
@@ -277,7 +277,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Chambal Safari (National Chambal Sanctuary) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "chambal-safari-national-chambal-sanctuary",
       "position": 20,
-      "coverImage": "https://images.unsplash.com/photo-1658741962826-9750b2457069?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1567255097545-018d2b9c414c?fm=webp&w=800&q=60"
     },
     {
       "name": "Agra Fort Sunset View (Musamman Burj)",
@@ -290,7 +290,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Agra Fort Sunset View (Musamman Burj) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "agra-fort-sunset-view-musamman-burj",
       "position": 21,
-      "coverImage": "https://images.unsplash.com/photo-1708684939578-38c1ba0bbc7f?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?fm=webp&w=800&q=60"
     },
     {
       "name": "St. John's College Church, Agra",
@@ -303,7 +303,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, St. John's College Church, Agra in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "st-johns-college-church-agra",
       "position": 22,
-      "coverImage": "https://images.unsplash.com/photo-1759995607263-867e3696ee00?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1619947494583-29fc109e01d7?fm=webp&w=800&q=60"
     },
     {
       "name": "Taj Mahal Eastern Gate (Sunrise Entry)",
@@ -316,7 +316,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Taj Mahal Eastern Gate (Sunrise Entry) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "taj-mahal-eastern-gate-sunrise-entry",
       "position": 23,
-      "coverImage": "https://images.unsplash.com/photo-1575489181784-a99aa58e4bb5?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1548013146-72479768bada?fm=webp&w=800&q=60"
     },
     {
       "name": "Anguri Bagh (Grape Garden), Agra Fort",
@@ -342,7 +342,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Taj Mahal Calligraphy (Main Gate and Iwans) in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "taj-mahal-calligraphy-main-gate-and-iwans",
       "position": 25,
-      "coverImage": "https://images.unsplash.com/photo-1697644297524-ee2e2e098f37?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1577123308384-27bce45e7495?fm=webp&w=800&q=60"
     },
     {
       "name": "Agra's Petha Factories, Noori Gate",
@@ -355,7 +355,7 @@
       "imagePrompt": "Ultra realistic travel photography, golden hour lighting, vibrant colors, Agra's Petha Factories, Noori Gate in Taj Mahal, tourists enjoying the view, DSLR quality, 4k, cinematic composition, highly detailed",
       "slug": "agras-petha-factories-noori-gate",
       "position": 26,
-      "coverImage": "https://images.unsplash.com/photo-1702175605824-427df95987bd?fm=webp&w=800&q=60"
+      "coverImage": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?fm=webp&w=800&q=60"
     }
   ]
 }

@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://trypinn.com/sitemap-static.xml</loc>
-    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
+    <lastmod>2026-06-04T16:55:16.159Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://trypinn.com/sitemap-posts.xml</loc>
-    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
+    <loc>https://trypinn.com/sitemap-travel-guides.xml</loc>
+    <lastmod>2026-06-04T16:55:16.159Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://trypinn.com/sitemap-must-visits.xml</loc>
-    <lastmod>2026-06-04T12:31:22.833Z</lastmod>
+    <lastmod>2026-06-04T16:55:16.159Z</lastmod>
   </sitemap>
 </sitemapindex>

@@ -5,7 +5,7 @@
  * Outputs:
  *   public/sitemap.xml          → Sitemap index (primary entry point)
  *   public/sitemap-static.xml   → Static marketing pages
- *   public/sitemap-posts.xml    → Travel guide posts with image extensions
+ *   public/sitemap-travel-guides.xml    → Travel guide posts with image extensions
  *   public/rss.xml              → RSS 2.0 feed with media extensions
  *
  * SEO features:
@@ -251,7 +251,7 @@ function buildSitemapIndex(hasMustVisits = false) {
   xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
   xml += `  </sitemap>\n`;
   xml += `  <sitemap>\n`;
-  xml += `    <loc>${DOMAIN}/sitemap-posts.xml</loc>\n`;
+  xml += `    <loc>${DOMAIN}/sitemap-travel-guides.xml</loc>\n`;
   xml += `    <lastmod>${TODAY_ISO}</lastmod>\n`;
   xml += `  </sitemap>\n`;
   
@@ -359,8 +359,8 @@ function main() {
 
   // 2. Sitemap posts (original + generated)
   const sitemapPosts = buildSitemapPosts(ORIGINAL_POSTS, generatedPosts);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-posts.xml'), sitemapPosts);
-  console.log(`✅ sitemap-posts.xml   → ${ORIGINAL_POSTS.length + generatedPosts.length} URLs`);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-travel-guides.xml'), sitemapPosts);
+  console.log(`✅ sitemap-travel-guides.xml   → ${ORIGINAL_POSTS.length + generatedPosts.length} URLs`);
 
   let hasMustVisits = false;
   const sitemapMustVisits = buildSitemapMustVisits();
