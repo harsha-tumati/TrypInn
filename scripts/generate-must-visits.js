@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
-const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY });
 const OUT_DIR = path.resolve(__dirname, '../public/must-visits');
 
 fs.mkdirSync(OUT_DIR, { recursive: true });

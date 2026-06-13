@@ -427,9 +427,8 @@ export default function TripsPage() {
                 .join('\n');
             // We use getSuggestions with a travel-assistant prompt
             const prompt = `You are a friendly AI travel concierge for Trypinn. Answer this travel question helpfully and concisely (2-4 sentences max). Conversation so far:\n${history}\n\nUser: ${userMsg}`;
-            // Directly call openai chat via a lightweight fetch
-            const { default: OpenAI } = await import('openai');
-            const openai = new OpenAI({ apiKey: import.meta.env.VITE_OPENAI_API_KEY, dangerouslyAllowBrowser: true });
+            // Directly call our proxy via the openai config helper
+            const { default: openai } = await import('../config/openai');
             const completion = await openai.chat.completions.create({
                 model: 'gpt-4o-mini',
                 messages: [{ role: 'user', content: prompt }],

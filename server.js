@@ -176,6 +176,35 @@ const server = serve({
         const url = new URL(req.url);
         const method = req.method.toUpperCase();
 
+        if (url.pathname === '/api/openai/chat') {
+            if (method !== 'POST') {
+                return new Response('Method not allowed', { status: 405, headers: { allow: 'POST' } });
+            }
+            const apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
+            if (!apiKey) {
+                return new Response(JSON.stringify({ error: 'OpenAI API key not configured' }), { status: 500, headers: { 'content-type': 'application/json' } });
+            }
+            try {
+                const body = await req.json();
+                const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify(body)
+                });
+                const data = await openaiRes.json();
+                return new Response(JSON.stringify(data), {
+                    status: openaiRes.status,
+                    headers: { 'content-type': 'application/json' }
+                });
+            } catch (err) {
+                console.error('[openai proxy error]', err);
+                return new Response(JSON.stringify({ error: 'Failed to proxy request' }), { status: 500, headers: { 'content-type': 'application/json' } });
+            }
+        }
+
         if (method !== 'GET' && method !== 'HEAD') {
             return new Response('Method not allowed', {
                 status: 405,

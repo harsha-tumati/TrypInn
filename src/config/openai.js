@@ -1,28 +1,32 @@
 // src/config/openai.js
-// The OpenAI SDK is loaded dynamically so it NEVER lands in the initial
-// vendor chunk — this saves ~120KB on routes that don't use AI (e.g. /blog).
-let _client = null;
-
-async function getOpenAI() {
-    if (_client) return _client;
-    const [{ default: OpenAI }] = await Promise.all([
-        import('openai'),
-    ]);
-    const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-    if (!apiKey) {
-        throw new Error(
-            'AI features are unavailable — VITE_OPENAI_API_KEY is not set. Add it to your .env file.'
-        );
-    }
-    _client = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
-    return _client;
-}
-
-// Lazily fetch the chat completions API — the client (and the SDK) are only
-// loaded on the first AI call, so blog visitors never pay the download cost.
+// The OpenAI API calls are now proxied through our backend (server.js)
+// to prevent exposing the API key and to avoid CORS issues in production.
 const openai = {
     get chat() {
-        return { completions: { create: async (...args) => (await getOpenAI()).chat.completions.create(...args) } };
+        return {
+            completions: {
+                create: async (body) => {
+                    const res = await fetch('/api/openai/chat', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(body)
+                    });
+                    
+                    if (!res.ok) {
+                        const errData = await res.json().catch(() => ({}));
+                        throw new Error(errData.error || `OpenAI API error: ${res.statusText}`);
+                    }
+                    
+                    const data = await res.json();
+                    if (data.error) {
+                        throw new Error(data.error.message || `OpenAI API error`);
+                    }
+                    return data;
+                }
+            }
+        };
     },
 };
 
