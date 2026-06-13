@@ -127,7 +127,7 @@ function TripLayout() {
             async function loadTrip() {
                 try {
                     const [{ db }, { doc, getDoc }] = await Promise.all([
-                        import('./config/firebase'),
+                        import('./config/firebase').then(m => m.getFirebase()),
                         import('firebase/firestore'),
                     ]);
                     const tripSnap = await getDoc(doc(db, 'trips', tripId));

@@ -263,13 +263,13 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
 
           <p style={{ fontSize:13, fontWeight:600, color:'#475569', marginBottom:12 }}>What kind of stop is this?</p>
           <div style={{ display:'flex', gap:12, marginBottom:20, flexDirection: isMobile ? 'column' : 'row' }}>
-            <div onClick={() => setMode('specific')}
+            <div onClick={() => { setMode('specific'); if (!input.trim()) inputRef.current?.focus(); }}
               style={{ flex:1, padding:'14px 12px', borderRadius:14, border:`2px solid ${mode==='specific'?'#1E3A8A':'#e2e8f0'}`, background: mode==='specific'?'#EEF3FC':'#fafafa', cursor:'pointer', textAlign:'center', transition:'all 200ms' }}>
               <div style={{ fontSize:24, marginBottom:6 }}>📍</div>
               <div style={{ fontSize:13, fontWeight:700, color: mode==='specific'?'#1E3A8A':'#0f172a' }}>Specific Place</div>
               <div style={{ fontSize:11, color:'#64748b', marginTop:3 }}>I know exactly what I want to visit</div>
             </div>
-            <div onClick={() => setMode('region')}
+            <div onClick={() => { setMode('region'); if (!input.trim()) inputRef.current?.focus(); }}
               style={{ flex:1, padding:'14px 12px', borderRadius:14, border:`2px solid ${mode==='region'?'#1E3A8A':'#e2e8f0'}`, background: mode==='region'?'#EEF3FC':'#fafafa', cursor:'pointer', textAlign:'center', transition:'all 200ms' }}>
               <div style={{ fontSize:24, marginBottom:6 }}>🗺️</div>
               <div style={{ fontSize:13, fontWeight:700, color: mode==='region'?'#1E3A8A':'#0f172a' }}>Explore Region</div>

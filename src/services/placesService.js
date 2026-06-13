@@ -81,7 +81,7 @@ export async function getPlaceDetails(placeId) {
         const place = new Place({ id: placeId });
         await place.fetchFields({ fields: ['rating', 'photos', 'displayName'] });
         const photos = place.photos || [];
-        return {
+        console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
             rating: place.rating ?? null,
             imageUrls: photos.slice(0, 5).map(p => p.getURI?.({ maxWidth: 400 })).filter(Boolean),
             imageUrl: photos[0]?.getURI?.({ maxWidth: 400 }) || null,
@@ -244,7 +244,8 @@ export async function searchNearby({ lat, lng, query, radius = 2000 }) {
         });
         return (places || []).map((r) => {
             const photos = r.photos || [];
-            return {
+        console.log("[DEBUG findPlaceByName]", name, "Photos count:", photos.length);
+            console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
                 name: typeof r.displayName === 'string' ? r.displayName : (r.displayName?.text || query),
                 description: r.formattedAddress || '',
                 lat: r.location?.lat?.() ?? null,
@@ -329,7 +330,7 @@ export async function getOptimizedRoute(places) {
             optimizeWaypoints: true,
             travelMode: window.google.maps.TravelMode.DRIVING,
         });
-        return {
+        console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
             directionsResult: result,
             orderedPlaces: [places[0], ...result.routes[0].waypoint_order.map(i => places[i + 1]), places[places.length - 1]],
         };

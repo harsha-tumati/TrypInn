@@ -1194,6 +1194,12 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   flex-direction: column;
   position: relative;
 }
+.trip-content-modern > main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
 
 /* ── Expenses Page ───────────────────────────────────────────── */
 .expenses-page {
