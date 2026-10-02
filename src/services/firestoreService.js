@@ -325,7 +325,7 @@ export async function closePoll(pollId, _tripId) {
 
 // ─── MESSAGES ─────────────────────────────────────────────────────────────────
 
-export async function sendMessage({ tripId, uid, text, placeRef = null, senderName, senderPhoto }) {
+export async function sendMessage({ tripId, uid, text, placeRef = null, senderName, senderPhoto, mentions = [] }) {
     const { db, collection, addDoc, serverTimestamp } = await getFirebase();
     await addDoc(collection(db, 'messages'), {
         tripId,
@@ -334,6 +334,10 @@ export async function sendMessage({ tripId, uid, text, placeRef = null, senderNa
         senderPhoto: senderPhoto || null,
         text,
         placeRef: placeRef || null,
+        // Who this message tagged: [{ id, label, kind }]. Recorded at send
+        // time so the uids survive a later display-name change, and so the
+        // bubble does not have to guess which words were mentions.
+        mentions: mentions.length ? mentions : [],
         timestamp: serverTimestamp(),
     });
 }

@@ -5,6 +5,8 @@ import { useState, useEffect, memo, useMemo, useCallback } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { MapPin, Clock, Calendar, ChevronRight, Search, ArrowLeft, ExternalLink, Star, Compass, Filter } from 'lucide-react';
 import usePageSeo, { schemas } from '../hooks/usePageSeo';
+import SmartImage from '../components/SmartImage';
+import { SIZES } from '../utils/imageUrl';
 
 // ── Category config ──
 const CATEGORIES = {
@@ -73,19 +75,25 @@ function MustVisitsSkeleton() {
     );
 }
 
+// Shown when both the optimised and the original photo URL fail.
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&ar=16:10&w=800&q=60';
+
 // ── Destination Card (for directory) ──
-const DestinationCard = memo(function DestinationCard({ dest }) {
+const DestinationCard = memo(function DestinationCard({ dest, idx = 99 }) {
     return (
         <Link to={`/must-visits/${dest.slug}`} className="mv-card" aria-label={`Must visit places in ${dest.name}`}>
             <div className="mv-card-img">
-                <img
+                <SmartImage
                     src={dest.coverImage}
                     alt={`Must visit places in ${dest.name}`}
-                    loading="lazy"
-                    decoding="async"
                     width="400"
                     height="250"
-                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60'; }}
+                    sizes={SIZES.mvCard}
+                    ratio="16:10"
+                    baseWidth={400}
+                    maxWidth={640}
+                    fallbackSrc={FALLBACK_IMAGE}
+                    eager={idx < 6}
                 />
                 <span className="mv-card-count">{dest.attractionCount} places</span>
             </div>
@@ -105,21 +113,24 @@ const DestinationCard = memo(function DestinationCard({ dest }) {
 });
 
 // ── Attraction Card (for detail page) ──
-const AttractionCard = memo(function AttractionCard({ attraction, destination }) {
+const AttractionCard = memo(function AttractionCard({ attraction, destination, idx = 99 }) {
     const [expanded, setExpanded] = useState(false);
     const cat = CATEGORIES[attraction.category] || { label: attraction.category, emoji: '📍', color: '#6366f1' };
 
     return (
         <article className={`mv-attraction${expanded ? ' is-expanded' : ''}`} onClick={() => setExpanded(e => !e)}>
             <div className="mv-attraction-img">
-                <img
+                <SmartImage
                     src={attraction.coverImage}
                     alt={attraction.name}
-                    loading="lazy"
-                    decoding="async"
                     width="400"
                     height="250"
-                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?fm=webp&w=800&q=60'; }}
+                    sizes={SIZES.mvCard}
+                    ratio="16:10"
+                    baseWidth={400}
+                    maxWidth={640}
+                    fallbackSrc={FALLBACK_IMAGE}
+                    eager={idx < 6}
                 />
                 <span className="mv-attraction-badge" style={{ background: cat.color }}>
                     {cat.emoji} {cat.label}
@@ -270,8 +281,8 @@ const MustVisitsDirectory = memo(function MustVisitsDirectory({ destinations }) 
                     </div>
                 ) : (
                     <div className="mv-grid">
-                        {filtered.map(dest => (
-                            <DestinationCard key={dest.slug} dest={dest} />
+                        {filtered.map((dest, i) => (
+                            <DestinationCard key={dest.slug} dest={dest} idx={i} />
                         ))}
                     </div>
                 )}
@@ -386,6 +397,7 @@ const MustVisitsDetail = memo(function MustVisitsDetail({ data }) {
                             key={attraction.slug || i}
                             attraction={attraction}
                             destination={data.name}
+                            idx={i}
                         />
                     ))}
                 </div>

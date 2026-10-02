@@ -238,12 +238,21 @@ const server = serve({
                 cache = 'public, max-age=3600';
             }
 
-            // Only use precompressed (.br/.gz) variants for hashed /assets/
-            // files. For everything else (sitemap.xml, robots.txt, etc.), serve
-            // the uncompressed original — the reverse proxy handles live
-            // compression. This avoids issues where the proxy strips the
-            // Content-Encoding header but passes raw compressed bytes through.
-            const fileEncodings = url.pathname.startsWith('/assets/') ? encodings : [];
+            // Serve precompressed (.br/.gz) variants for hashed /assets/ and
+            // for the JSON data the app fetches at runtime. blogs/index.json
+            // alone is 466 kB raw against 42 kB brotli, and it gates the blog
+            // list: every cover image waits behind it.
+            //
+            // Everything else (sitemap.xml, robots.txt, manifest) still goes
+            // out uncompressed on purpose. Those are read by crawlers and
+            // tooling rather than the app, and a reverse proxy that strips
+            // Content-Encoding while passing the compressed bytes through
+            // would corrupt them. /assets/ has always relied on precompression
+            // through the same proxy, so the data paths carry no new risk.
+            const PRECOMPRESSED_PREFIXES = ['/assets/', '/blogs/', '/must-visits/', '/trip-plans/'];
+            const fileEncodings = PRECOMPRESSED_PREFIXES.some(p => url.pathname.startsWith(p))
+                ? encodings
+                : [];
 
             const fromEmbed = serveEmbedded(rel, { cache, encodings: fileEncodings });
             if (fromEmbed) return fromEmbed;

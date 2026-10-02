@@ -1,6 +1,8 @@
 // src/pages/ChatPage.jsx
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useTrip } from '../context/TripContext';
+import useMentions, { mentionsAi } from '../hooks/useMentions';
+import MentionMenu from '../components/MentionMenu';
 import { useAuth } from '../context/AuthContext';
 import { useGuestMode } from '../context/GuestModeContext';
 import { sendMessage } from '../services/firestoreService';
@@ -8,6 +10,33 @@ import { chatWithAssistant } from '../config/openai';
 import { formatTimestamp } from '../utils/dateHelpers';
 import { Send, Sparkles, Users } from 'lucide-react';
 import usePageSeo from '../hooks/usePageSeo';
+
+// Split a message body so mentions can be styled. Tokens come from the
+// message's own `mentions` array where present; older messages predate that
+// field, so `@ai` is always recognised as a fallback.
+function renderMessageText(text, mentions) {
+    const tokens = new Set(['@ai']);
+    for (const m of mentions || []) {
+        if (m.kind === 'ai') tokens.add('@ai');
+        else if (m.label) tokens.add(`@${m.label.split(' ')[0]}`);
+    }
+    const escaped = [...tokens]
+        .sort((a, b) => b.length - a.length)          // longest first, so @ai never eats @aisha
+        .map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (escaped.length === 0) return text;
+
+    const re = new RegExp(`(${escaped.join('|')})(?![\\p{L}\\p{N}_])`, 'giu');
+    // split() with one capture group interleaves the matches, so every odd
+    // index is a mention. Testing each part against the regex instead would be
+    // wrong — a /g/ regex carries lastIndex between calls.
+    const parts = text.split(re);
+    if (parts.length === 1) return text;
+    return parts.map((part, i) =>
+        i % 2 === 1
+            ? <mark key={i} className="chat-mention">{part}</mark>
+            : part
+    );
+}
 
 export default function ChatPage() {
     usePageSeo({ title: 'Trip Chat', robots: 'noindex, nofollow' });
@@ -17,6 +46,7 @@ export default function ChatPage() {
     const [text, setText] = useState('');
     const [aiTyping, setAiTyping] = useState(false);
     const bottomRef = useRef(null);
+    const textareaRef = useRef(null);
 
     useEffect(() => {
         bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -41,11 +71,40 @@ export default function ChatPage() {
         return uid?.charAt(0).toUpperCase() || 'U';
     };
 
+    // What "@" offers. The assistant is pinned first because it is the one
+    // mention that does something rather than just notifying a person, and
+    // `@ai` stays the literal token so the existing trigger below still fires.
+    const mentionOptions = useMemo(() => {
+        const ai = {
+            id: 'ai_assistant',
+            token: '@ai',
+            label: 'Trypinn AI',
+            sublabel: 'Ask for travel advice',
+            kind: 'ai',
+        };
+        const people = members
+            .filter(m => m.uid !== user?.uid)
+            .map(m => ({
+                id: m.uid,
+                token: `@${(m.name || 'member').split(' ')[0]}`,
+                label: m.name || 'Member',
+                sublabel: m.role === 'admin' ? 'Trip admin' : null,
+                kind: 'member',
+                initial: getMemberInitial(m.name, m.uid),
+                color: getMemberColor(m.uid),
+            }));
+        return [ai, ...people];
+    }, [members, user?.uid]); // eslint-disable-line react-hooks/exhaustive-deps
+
+    const mentions = useMentions({ value: text, onChange: setText, textareaRef, options: mentionOptions });
+
     async function handleSend() {
         if (!user) { alert('Please sign in to send messages.'); return; }
         if (!text.trim()) return;
         const content = text.trim();
+        const mentioned = mentions.mentionsIn(content);
         setText('');
+        mentions.reset();
 
         await sendMessage({
             tripId: selectedTrip.id,
@@ -53,9 +112,10 @@ export default function ChatPage() {
             senderName: userProfile?.name || user?.displayName || 'Traveler',
             senderPhoto: userProfile?.photoURL || user?.photoURL || null,
             text: content,
+            mentions: mentioned,
         });
 
-        if (content.toLowerCase().includes('@ai')) {
+        if (mentionsAi(content)) {
             setAiTyping(true);
             try {
                 const tripContext = {
@@ -93,6 +153,9 @@ export default function ChatPage() {
     }
 
     function handleKeyDown(e) {
+        // The menu gets first refusal: while it is open, Enter picks a name
+        // rather than sending a half-typed message.
+        if (mentions.handleKeyDown(e)) return;
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
             handleSend();
@@ -124,7 +187,7 @@ export default function ChatPage() {
                         <div style={{ minWidth: 0 }}>
                             <h2 style={{ fontSize: 'clamp(16px, 2.2vw, 19px)', fontWeight: 800, color: 'var(--text-primary)', margin: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', letterSpacing: '-0.4px' }}>Trip Chat</h2>
                             <p style={{ fontSize: 12.5, color: 'var(--text-tertiary)', margin: 0, fontWeight: 500 }}>
-                                Type <code style={{ background: 'rgba(91,92,246,0.1)', color: 'var(--color-indigo)', padding: '1px 6px', borderRadius: 6, fontFamily: 'inherit', fontWeight: 700 }}>@ai</code> for instant travel advice
+                                Type <code style={{ background: 'rgba(91,92,246,0.1)', color: 'var(--color-indigo)', padding: '1px 6px', borderRadius: 6, fontFamily: 'inherit', fontWeight: 700 }}>@</code> to mention someone · <code style={{ background: 'rgba(91,92,246,0.1)', color: 'var(--color-indigo)', padding: '1px 6px', borderRadius: 6, fontFamily: 'inherit', fontWeight: 700 }}>@ai</code> for travel advice
                             </p>
                         </div>
                     </div>
@@ -229,7 +292,7 @@ export default function ChatPage() {
                                     className={`chat-bubble ${isAI ? 'chat-bubble-ai' : isMe ? 'chat-bubble-user' : 'chat-bubble-other'}`}
                                     style={{ maxWidth: '100%', wordBreak: 'break-word' }}
                                 >
-                                    {msg.text}
+                                    {renderMessageText(msg.text, msg.mentions)}
                                 </div>
                             </div>
                         </div>
@@ -282,14 +345,28 @@ export default function ChatPage() {
                         flexDirection: 'column',
                         boxShadow: 'var(--shadow-sm)',
                         transition: 'border-color var(--transition-fast), box-shadow var(--transition-fast)',
+                        position: 'relative',
                     }}>
+                        {mentions.open && (
+                            <MentionMenu
+                                items={mentions.items}
+                                activeIndex={mentions.activeIndex}
+                                onPick={mentions.choose}
+                                onHover={mentions.setActiveIndex}
+                            />
+                        )}
                         <label htmlFor="chat-textarea" className="sr-only" style={{ position: 'absolute', left: -9999 }}>Message</label>
                         <textarea
                             id="chat-textarea"
-                            placeholder="Write a message…  hint: type @ai to chat with the AI"
+                            ref={textareaRef}
+                            placeholder="Write a message…  type @ to mention someone or the AI"
                             value={text}
-                            onChange={(e) => setText(e.target.value)}
+                            onChange={mentions.handleChange}
                             onKeyDown={handleKeyDown}
+                            onSelect={mentions.handleSelect}
+                            onBlur={mentions.close}
+                            aria-autocomplete="list"
+                            aria-expanded={mentions.open}
                             rows={1}
                             style={{ border: 'none', background: 'transparent', width: '100%', resize: 'none', fontSize: 15, color: 'var(--text-primary)', outline: 'none', marginBottom: 12, minHeight: 26, fontFamily: 'inherit', lineHeight: 1.5 }}
                         />

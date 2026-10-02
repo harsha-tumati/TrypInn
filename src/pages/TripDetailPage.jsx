@@ -39,7 +39,13 @@ function ImageCarousel({ images, name }) {
     const arrowSize = isMobile ? 36 : 24;
     return (
         <div style={{ position: 'relative', width: '100%', height: isMobile ? 140 : 120, borderRadius: 8, overflow: 'hidden', margin: '6px 0', touchAction: 'pan-y' }}>
-            <img src={images[idx]} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img
+                src={images[idx]}
+                alt={name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                loading="lazy"
+                decoding="async"
+            />
             {images.length > 1 && (
                 <>
                     <button type="button" onClick={(e) => { e.stopPropagation(); setIdx(i => (i === 0 ? images.length - 1 : i - 1)); }} aria-label="Previous photo" style={{ position: 'absolute', left: 4, top: '50%', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.5)', color: '#fff', border: 'none', borderRadius: '50%', width: arrowSize, height: arrowSize, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 36, minWidth: 36, WebkitTapHighlightColor: 'transparent' }}>‹</button>

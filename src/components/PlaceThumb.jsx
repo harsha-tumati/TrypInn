@@ -59,7 +59,15 @@ export default function PlaceThumb({ place, size = 60, radius = 12, className = 
             style={{ width: size, height: size, borderRadius: radius, fontSize: Math.round(size * 0.42) }}
         >
             {showImg ? (
-                <img src={src} alt={place?.name || ''} loading="lazy" onError={() => setFailed(true)} />
+                <img
+                    src={src}
+                    alt={place?.name || ''}
+                    loading="lazy"
+                    decoding="async"
+                    width={size}
+                    height={size}
+                    onError={() => setFailed(true)}
+                />
             ) : (
                 <span aria-hidden="true">{emojiFor(place?.category)}</span>
             )}
