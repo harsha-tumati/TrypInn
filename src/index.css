@@ -2059,7 +2059,7 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   border-color: rgba(30, 58, 138, 0.2);
 }
 
-.blog-card-img { aspect-ratio: 16 / 10; overflow: hidden; flex-shrink: 0; }
+.blog-card-img { aspect-ratio: 16 / 10; overflow: hidden; flex-shrink: 0; background: var(--inset); }
 .blog-card-img img {
   width: 100%;
   height: 100%;
@@ -2154,6 +2154,32 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   box-shadow: var(--shadow-md);
 }
 .blog-back-btn:hover { transform: translateX(-2px); box-shadow: var(--shadow-lg); }
+
+/* On a phone the hero is only 290px tall and the title fills most of it, so a
+   full-width pill sat on top of the headline. Shrink it, then drop the label
+   entirely on the narrowest screens — the arrow plus the aria-label is enough. */
+@media (max-width: 767px) {
+  .blog-back-btn {
+    top: calc(var(--navbar-height) + 8px);
+    padding: 7px 13px;
+    gap: 6px;
+    font-size: 12.5px;
+  }
+}
+@media (max-width: 480px) {
+  /* Icon only. 44px square keeps it a usable tap target even without a label
+     — the accessible name lives on aria-label. */
+  .blog-back-btn {
+    top: calc(var(--navbar-height) + 8px);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .blog-back-label { display: none; }
+}
 .blog-detail-hero { position: relative; height: clamp(360px, 52vw, 560px); overflow: hidden; }
 .blog-detail-hero img { width: 100%; height: 100%; object-fit: cover; }
 /* Darken the top of the cover so the navbar + back button stay legible. */
@@ -2178,7 +2204,7 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
 }
 .blog-detail-hero-content h1 {
   font-family: var(--font-display); font-style: italic;
-  font-size: clamp(34px, 5vw, 58px);
+  font-size: clamp(27px, 5vw, 58px);
   font-weight: 400;
   margin-bottom: 12px;
   line-height: 1.02;
@@ -3814,7 +3840,7 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   .blog-grid { gap: 20px; }
   .blog-card-body { padding: 22px; }
   .blog-detail-body { padding: 32px 18px 80px; }
-  .blog-detail-hero { height: 290px; }
+  .blog-detail-hero { height: 330px; }
   .blog-cta { padding: 40px 26px; }
   .planner-main, .itinerary-main { padding: 20px; }
 }
@@ -4360,8 +4386,11 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
   position: relative; height: 150px;
   display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px;
 }
-.hp-trip-collage > span { background-size: cover; background-position: center; }
-.hp-trip-collage > span:first-child { grid-row: 1 / 3; }
+.hp-trip-collage > img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  background: var(--inset);   /* shows through until the photo arrives */
+}
+.hp-trip-collage > img:first-child { grid-row: 1 / 3; }
 .hp-trip-collage-fade {
   position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(180deg, transparent 55%, rgba(17, 24, 39, 0.34));
@@ -4797,6 +4826,10 @@ html, body {
     border-radius: var(--radius-lg); overflow: hidden;
     text-decoration: none; color: inherit; display: flex; flex-direction: column;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    /* The directory renders all 100 destinations at once — skip layout and
+       paint for the ones that are nowhere near the viewport. */
+    content-visibility: auto;
+    contain-intrinsic-height: auto 340px;
 }
 .mv-card:hover {
     transform: translateY(-5px);
@@ -4805,6 +4838,7 @@ html, body {
 }
 .mv-card-img {
     aspect-ratio: 16/10; overflow: hidden; position: relative; flex-shrink: 0;
+    background: var(--inset);
 }
 .mv-card-img img {
     width: 100%; height: 100%; object-fit: cover;
@@ -4879,6 +4913,8 @@ html, body {
     background: var(--paper); border: 1px solid var(--line);
     border-radius: var(--radius-lg); overflow: hidden; cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    content-visibility: auto;
+    contain-intrinsic-height: auto 360px;
 }
 .mv-attraction:hover {
     transform: translateY(-3px);
@@ -4886,7 +4922,7 @@ html, body {
     border-color: rgba(30,58,138,0.15);
 }
 .mv-attraction.is-expanded { border-color: rgba(30,58,138,0.25); box-shadow: var(--shadow-lg); }
-.mv-attraction-img { aspect-ratio: 16/10; overflow: hidden; position: relative; }
+.mv-attraction-img { aspect-ratio: 16/10; overflow: hidden; position: relative; background: var(--inset); }
 .mv-attraction-img img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow); }
 .mv-attraction:hover .mv-attraction-img img { transform: scale(1.04); }
 .mv-attraction-badge {
@@ -5000,4 +5036,222 @@ html, body {
 @media print {
   body::before, body::after { display: none; }
   .navbar, .trip-top-nav-unified, .mobile-panel-toggle, .ai-chat-panel { display: none !important; }
+}
+
+
+/* ── SmartImage ──
+   The element paints nothing until the file arrives, so the parent's
+   background shows through as a placeholder. `is-loaded` is added on load and
+   runs a single fade, which keeps the default (and no-JS) state visible. */
+.tp-img.is-loaded { animation: tp-img-in 0.35s var(--ease-out, ease) both; }
+@keyframes tp-img-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .tp-img.is-loaded { animation: none; }
+}
+
+/* ── Trip plan CTA (blog detail) ──────────────────────────────────────────
+   Sits between the article body and the related links, so the reader acts
+   while they're still in the destination. */
+.tp-cta {
+  margin: 48px 0 8px;
+  padding: clamp(22px, 3.2vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+}
+.tp-cta-head h2 {
+  margin: 0 0 6px;
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.tp-cta-head p { margin: 0; color: var(--ink-muted); font-size: 0.95rem; line-height: 1.55; }
+
+/* Destination chooser for roundup posts */
+.tp-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.tp-option {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 9px 14px; cursor: pointer; text-align: left;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--paper); color: var(--text-primary);
+  transition: border-color var(--transition), background var(--transition);
+}
+.tp-option:hover { border-color: rgba(30, 58, 138, 0.35); }
+.tp-option.is-active { border-color: var(--color-primary); background: var(--inset); }
+.tp-option-name { font-weight: 650; font-size: 0.92rem; }
+.tp-option-meta { font-size: 0.78rem; color: var(--ink-muted); }
+
+/* Actions */
+.tp-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.tp-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 20px; min-height: 46px; cursor: pointer;
+  font-size: 0.95rem; font-weight: 650; border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.tp-btn:disabled { opacity: 0.65; cursor: default; }
+.tp-btn:not(:disabled):hover { transform: translateY(-1px); }
+.tp-btn-primary { background: var(--grad-accent); color: var(--ink-on-accent); box-shadow: var(--shadow-sm); }
+.tp-btn-ghost { background: var(--paper); color: var(--text-primary); border-color: var(--line); }
+.tp-btn-ghost:hover { border-color: rgba(30, 58, 138, 0.35); }
+.tp-spin { animation: spin 1s linear infinite; }
+
+/* Estimate panel */
+.tp-estimate { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
+.tp-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tp-tier {
+  display: flex; flex-direction: column; gap: 3px; padding: 12px 10px;
+  cursor: pointer; text-align: left;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--paper); color: var(--text-primary);
+  transition: border-color var(--transition), background var(--transition);
+}
+.tp-tier.is-active { border-color: var(--color-primary); background: var(--inset); }
+.tp-tier-label { font-size: 0.78rem; color: var(--ink-muted); font-weight: 600; }
+.tp-tier-total { font-size: clamp(0.95rem, 2.2vw, 1.1rem); font-weight: 800; letter-spacing: -0.3px; }
+.tp-tier-blurb { margin: 10px 0 0; font-size: 0.85rem; color: var(--ink-muted); }
+
+.tp-steppers { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.tp-stepper {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  flex: 1 1 160px; padding: 8px 10px 8px 14px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+}
+.tp-stepper-label { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--ink-muted); }
+.tp-stepper-controls { display: flex; align-items: center; gap: 4px; }
+.tp-stepper-controls button {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; min-width: 30px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 50%;
+  background: var(--paper); color: var(--text-primary);
+}
+.tp-stepper-controls button:disabled { opacity: 0.4; cursor: default; }
+.tp-stepper-value { min-width: 24px; text-align: center; font-weight: 700; font-size: 0.95rem; }
+
+.tp-breakdown { list-style: none; margin: 18px 0 0; padding: 0; }
+.tp-breakdown li {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 9px 0; font-size: 0.9rem; color: var(--ink-soft);
+  border-bottom: 1px solid var(--line);
+}
+.tp-breakdown li:last-child { border-bottom: none; }
+.tp-breakdown-total { font-weight: 750; color: var(--text-primary) !important; padding-top: 12px !important; }
+
+.tp-disclaimer { margin: 12px 0 0; font-size: 0.8rem; color: var(--ink-muted); line-height: 1.5; }
+.tp-error { margin: 14px 0 0; font-size: 0.88rem; color: #b91c1c; }
+.tp-foot {
+  display: flex; align-items: center; gap: 5px; flex-wrap: wrap;
+  margin: 18px 0 0; font-size: 0.82rem; color: var(--ink-muted);
+}
+
+@media (max-width: 560px) {
+  .tp-tiers { grid-template-columns: 1fr; }
+  .tp-actions .tp-btn { flex: 1 1 100%; }
+}
+
+/* Visually hidden, still announced by screen readers. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* ── Chat @mentions ───────────────────────────────────────────────────────
+   The menu sits above the composer: the composer is already pinned to the
+   bottom of the viewport, and on a phone the keyboard covers anything below
+   it. */
+.mention-menu {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  max-height: 264px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 16px 40px -12px rgba(15, 23, 42, 0.22), 0 2px 8px rgba(15, 23, 42, 0.08);
+  padding: 6px;
+  z-index: 40;
+  animation: mention-in 0.14s var(--ease-out, ease);
+}
+@keyframes mention-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .mention-menu { animation: none; } }
+
+.mention-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-primary);
+}
+.mention-item.is-active { background: var(--inset); }
+
+.mention-avatar {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #fff;
+  /* The assistant gets the brand gradient; members get their own colour,
+     set inline so it matches their avatar elsewhere in the thread. */
+  background: linear-gradient(135deg, var(--color-indigo, #5B5CF6), var(--color-violet, #8B5CF6));
+}
+
+.mention-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.mention-name {
+  font-size: 13.5px; font-weight: 650; line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.mention-sub { font-size: 11.5px; color: var(--text-muted); line-height: 1.3; }
+.mention-token {
+  flex-shrink: 0; font-size: 11.5px; font-weight: 600;
+  color: var(--text-muted); padding: 2px 7px; border-radius: 6px;
+  background: rgba(15, 23, 42, 0.05);
+}
+.mention-item.is-active .mention-token { background: rgba(91, 92, 246, 0.12); color: var(--color-indigo, #5B5CF6); }
+
+/* A mention inside a sent message. */
+.chat-mention {
+  background: rgba(91, 92, 246, 0.14);
+  color: inherit;
+  font-weight: 650;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+/* On the sender's own (dark) bubble the tint needs to be lighter, not darker. */
+.chat-bubble-user .chat-mention { background: rgba(255, 255, 255, 0.22); }
+
+
+/* Phone: the article hero has to fit a back button, the tag row, a headline
+   that often runs to three lines, and the byline inside 330px. Tightening the
+   padding is what stops the title block rising under the button. */
+@media (max-width: 480px) {
+  .blog-detail-hero-content {
+    padding: 18px 18px 20px;
+    /* Bounded at the top by the back button's zone, not just anchored to the
+       bottom. A long headline or a wrapping tag row used to push this block
+       upward until it sat under the button; now it simply cannot. */
+    top: calc(var(--navbar-height) + 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .blog-detail-hero-content h1 { margin-bottom: 8px; }
+  /* Keep the tag row to one line so it costs a predictable amount of height. */
+  .blog-detail-hero-content .blog-card-tags { flex-wrap: nowrap; overflow: hidden; }
+  .blog-detail-hero-content .blog-tag:nth-child(n+4) { display: none; }
 }

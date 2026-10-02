@@ -41,6 +41,11 @@
   <!-- ── Resource hints ── -->
   <link rel="dns-prefetch" href="https://images.unsplash.com" />
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <!-- Place thumbnails inside a trip come from Google's photo CDNs. Only a
+       DNS hint: these load after the app boots, so a held-open connection
+       would compete with the critical path rather than help it. -->
+  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+  <link rel="dns-prefetch" href="https://maps.googleapis.com" />
 
   <!-- ── RSS feed discovery ── -->
   <link rel="alternate" type="application/rss+xml" title="Trypinn Travel Guides" href="/rss.xml" />

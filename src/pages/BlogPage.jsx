@@ -1,8 +1,11 @@
 // src/pages/BlogPage.jsx — SEO Blog Section (max AEO/DEO)
-import { useState, useEffect, useLayoutEffect, useCallback, useMemo, useTransition, memo } from 'react';
+import { useState, useEffect, useLayoutEffect, useCallback, useMemo, useRef, useTransition, memo } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock, User, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import usePageSeo, { schemas } from '../hooks/usePageSeo';
+import SmartImage from '../components/SmartImage';
+import TripPlanCta from '../components/TripPlanCta';
+import { SIZES } from '../utils/imageUrl';
 
 // ── AEO: Extract H2 headings + following paragraph as FAQ items ──
 function extractFaqsFromContent(content) {
@@ -702,7 +705,7 @@ function renderMarkdown(text) {
             if (match) {
                 elements.push(
                     <figure key={i} style={{ margin: '24px 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
-                        <img src={match[2]} alt={match[1]} style={{ width: '100%', maxHeight: '450px', objectFit: 'cover', display: 'block' }} loading="lazy" decoding="async" width="800" height="500" />
+                        <SmartImage src={match[2]} alt={match[1]} style={{ width: '100%', maxHeight: '450px', objectFit: 'cover', display: 'block' }} width="800" height="500" sizes={SIZES.articleBody} ratio="16:10" baseWidth={800} maxWidth={1080} />
                         <figcaption style={{ padding: '10px 16px', fontSize: '0.85rem', color: '#6b7280', background: '#f9fafb', textAlign: 'center' }}>{match[1]}</figcaption>
                     </figure>
                 );
@@ -764,7 +767,7 @@ const BlogCard = memo(function BlogCard({ post, idx, onSelect }) {
                 style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
             >
                 <div className="blog-card-img">
-                    <img src={post.coverImage} alt={post.title} loading={idx < 4 ? 'eager' : 'lazy'} decoding="async" width="400" height="250" fetchPriority={idx === 0 ? 'high' : undefined} />
+                    <SmartImage src={post.coverImage} alt={post.title} width="400" height="250" sizes={SIZES.blogCard} ratio="16:10" baseWidth={400} maxWidth={640} priority={idx < 2} eager={idx < 6} />
                 </div>
                 <div className="blog-card-body">
                     <div className="blog-card-tags">
@@ -794,43 +797,17 @@ const BlogList = memo(function BlogList({ posts, onSelectPost }) {
         jsonLd: schemas.CollectionPage('Trypinn Travel Guides', [...ORIGINAL_POSTS, ...posts].slice(0, 20)),
     });
     const [page, setPage] = useState(1);
-    const [renderCount, setRenderCount] = useState(4);
-
-    // Preload above-the-fold images
-    useEffect(() => {
-        const featured = ORIGINAL_POSTS.filter(p => p.featured);
-        const allPosts = [...featured, ...posts.filter(p => !p.featured)];
-        const visible = allPosts.slice(0, POSTS_PER_PAGE);
-        const preloadLinks = [];
-        visible.slice(0, 3).forEach(post => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.as = 'image';
-            link.href = post.coverImage;
-            link.fetchPriority = 'high';
-            document.head.appendChild(link);
-            preloadLinks.push(link);
-        });
-        return () => {
-            preloadLinks.forEach(l => l.remove());
-        };
-    }, [posts, page]);
-
-    // Defer below-fold cards
-    useEffect(() => {
-        setRenderCount(4);
-        const total = Math.min(POSTS_PER_PAGE, posts.length + ORIGINAL_POSTS.length);
-        if (total <= 4) {
-            setRenderCount(total);
-            return;
-        }
-        const schedule = typeof requestIdleCallback !== 'undefined' ? requestIdleCallback : (cb) => setTimeout(cb, 200);
-        const id = schedule(() => setRenderCount(total), { timeout: 600 });
-        return () => {
-            if (typeof cancelIdleCallback !== 'undefined') cancelIdleCallback(id);
-            else clearTimeout(id);
-        };
-    }, [posts, page]);
+    // Cover images are prioritised by BlogCard itself: `priority` marks the
+    // two LCP candidates, `eager` covers the rest of the first two rows. A
+    // manual <link preload> would have to duplicate SmartImage's srcset and
+    // sizes exactly, or the browser treats it as a different resource and
+    // downloads each cover twice.
+    //
+    // The grid used to render four cards and defer the rest to an idle
+    // callback. With twelve cards under `content-visibility: auto` that bought
+    // no measurable main-thread time (profiling showed zero long tasks) and
+    // cost a second render of the whole grid, which held the later covers out
+    // of the DOM and stopped them being fetched.
 
     const featured = ORIGINAL_POSTS.filter(p => p.featured);
     const allPosts = [...featured, ...posts.filter(p => !p.featured)];
@@ -850,20 +827,8 @@ const BlogList = memo(function BlogList({ posts, onSelectPost }) {
             <div className="blog-container">
                 <h2 className="blog-section-title">All articles ({posts.length + ORIGINAL_POSTS.length})</h2>
                 <div className="blog-grid">
-                    {visible.slice(0, renderCount).map((post, idx) => (
+                    {visible.map((post, idx) => (
                         <BlogCard key={post.id} post={post} idx={idx} onSelect={onSelectPost} />
-                    ))}
-                    {renderCount < visible.length && Array.from({ length: visible.length - renderCount }).map((_, i) => (
-                        <article key={`skel-${i}`} className="blog-card" style={{ cursor: 'default' }} aria-hidden="true">
-                            <div className="blog-card-img" style={{ background: '#e5e7eb' }} />
-                            <div className="blog-card-body">
-                                <div style={{ height: 16, width: '40%', background: '#e5e7eb', borderRadius: 4, marginBottom: 12 }} />
-                                <div style={{ height: 24, width: '90%', background: '#e5e7eb', borderRadius: 4, marginBottom: 8 }} />
-                                <div style={{ height: 16, width: '95%', background: '#e5e7eb', borderRadius: 4, marginBottom: 4 }} />
-                                <div style={{ height: 16, width: '80%', background: '#e5e7eb', borderRadius: 4, marginBottom: 16 }} />
-                                <div style={{ height: 14, width: '50%', background: '#e5e7eb', borderRadius: 4, marginTop: 'auto' }} />
-                            </div>
-                        </article>
                     ))}
                 </div>
 
@@ -915,7 +880,7 @@ function RelatedArticles({ currentPost, allPosts }) {
                     <article key={post.id} className="blog-card" style={{ minWidth: 0 }}>
                         <Link to={`/travel-guides/${post.id}`} className="blog-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
                             <div className="blog-card-img" style={{ height: 140 }}>
-                                <img src={post.coverImage} alt={post.title} loading="lazy" decoding="async" width="300" height="140" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <SmartImage src={post.coverImage} alt={post.title} width="300" height="140" sizes={SIZES.thumb} ratio="15:7" baseWidth={320} maxWidth={640} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <div className="blog-card-body" style={{ padding: 12 }}>
                                 <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600, lineHeight: 1.35, color: '#111827' }}>{post.title}</h4>
@@ -986,10 +951,17 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
             </nav>
 
             <header className="blog-detail-hero">
-                <img src={post.coverImage} alt={post.title} fetchPriority="high" decoding="async" width="800" height="500" itemProp="image" />
+                {/* LCP element. It was pulling a 800px file for a full-bleed
+                    slot — blurry on any desktop. At 1080/q55 it is both
+                    sharper and smaller than before, and capped at 1440 so a
+                    high-DPR screen can't drag a 300kB file into the LCP. */}
+                <SmartImage src={post.coverImage} alt={post.title} width="1440" height="810" sizes={SIZES.hero} ratio="16:9" quality={55} baseWidth={1080} maxWidth={1440} priority itemProp="image" />
                 <div className="overlay" />
-                <button type="button" className="blog-back-btn" onClick={onBack}>
-                    <ArrowLeft size={18} /> Back to all articles
+                {/* aria-label carries the full wording: the visible text is
+                    hidden on phones, where the button is icon-only. */}
+                <button type="button" className="blog-back-btn" onClick={onBack} aria-label="Back to all articles">
+                    <ArrowLeft size={18} aria-hidden="true" />
+                    <span className="blog-back-label">Back to all articles</span>
                 </button>
                 <div className="blog-detail-hero-content">
                     <div className="blog-card-tags">
@@ -1042,7 +1014,7 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
                                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)'; }}
                                 >
                                     <figure style={{ width: '100%', height: 'clamp(140px, 30vw, 180px)', backgroundColor: '#f3f4f6', margin: 0 }}>
-                                        <img src={place.image} alt={place.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" decoding="async" width="220" height="180" />
+                                        <SmartImage src={place.image} alt={place.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} width="220" height="180" sizes={SIZES.thumb} baseWidth={320} maxWidth={640} />
                                     </figure>
                                     <div style={{ padding: 'clamp(12px, 2vw, 16px)' }}>
                                         <h4 style={{ margin: 0, fontSize: 'clamp(1rem, 2.2vw, 1.1rem)', fontWeight: 700, color: '#111827', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{place.name}</h4>
@@ -1057,14 +1029,21 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
                     </section>
                 )}
 
+                {/* Plan this trip — only on guides that resolved to a cached
+                    plan (see scripts/generate-trip-plans.js). Advice posts like
+                    the visa explainers carry no planId and render nothing. */}
+                {post.planId && <TripPlanCta planId={post.planId} postTitle={post.title} />}
+
                 {/* Related Articles — DEO internal linking */}
                 <RelatedArticles currentPost={post} allPosts={allPosts} />
 
-                <footer className="blog-cta">
-                    <h2>Ready to plan your trip?</h2>
-                    <p>Start collaborating with your group in real-time on Trypinn</p>
-                    <Link to="/trips" className="blog-cta-btn">Start Planning Free →</Link>
-                </footer>
+                {!post.planId && (
+                    <footer className="blog-cta">
+                        <h2>Ready to plan your trip?</h2>
+                        <p>Start collaborating with your group in real-time on Trypinn</p>
+                        <Link to="/trips" className="blog-cta-btn">Start Planning Free →</Link>
+                    </footer>
+                )}
             </div>
         </article>
     );
@@ -1076,7 +1055,11 @@ export default function BlogPage() {
     const navigate = useNavigate();
     const [selectedPostId, setSelectedPostId] = useState(null);
     const [generatedPosts, setGeneratedPosts] = useState([]);
-    const [generatedMap, setGeneratedMap] = useState(new Map());
+    // Post cache. A ref rather than state: it is only ever read to avoid a
+    // refetch, never rendered. As state it was a dependency of the detail
+    // effect that also wrote to it, so every article refetched itself in a
+    // loop and the spinner never cleared.
+    const postCache = useRef(new Map());
     const [loadingIndex, setLoadingIndex] = useState(true);
     const [loadingPost, setLoadingPost] = useState(false);
     const [detailPost, setDetailPost] = useState(null);
@@ -1092,9 +1075,11 @@ export default function BlogPage() {
                 .then(data => {
                     if (cancelled) return;
                     setGeneratedPosts(data);
-                    const map = new Map();
-                    for (const p of data) map.set(p.id, p);
-                    setGeneratedMap(map);
+                    // Index entries carry no body, so only seed ids we have
+                    // not already fetched in full.
+                    for (const p of data) {
+                        if (!postCache.current.has(p.id)) postCache.current.set(p.id, p);
+                    }
                     setLoadingIndex(false);
                 })
                 .catch(err => {
@@ -1123,29 +1108,35 @@ export default function BlogPage() {
             setDetailPost(original);
             return;
         }
-        const cached = generatedMap.get(activePostId);
+        const cached = postCache.current.get(activePostId);
         if (cached && cached.content) {
             setDetailPost(cached);
+            setLoadingPost(false);
             return;
         }
-        setLoadingPost(true);
+
         let cancelled = false;
+        setLoadingPost(true);
         fetch(`/blogs/content/${activePostId}.json`)
-            .then(r => r.json())
+            .then(r => {
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                return r.json();
+            })
             .then(data => {
+                // Cache even if this run was superseded — the body is valid
+                // and the newer run can use it instead of refetching.
+                postCache.current.set(activePostId, data);
                 if (!cancelled) {
                     setDetailPost(data);
-                    setGeneratedMap(prev => new Map(prev).set(activePostId, data));
+                    setLoadingPost(false);
                 }
             })
             .catch(err => {
                 if (import.meta.env.DEV) console.error('Failed to load post:', err);
-            })
-            .finally(() => {
                 if (!cancelled) setLoadingPost(false);
             });
         return () => { cancelled = true; };
-    }, [activePostId, generatedMap]);
+    }, [activePostId]);
 
     // Build unified post list for related articles
     const allPosts = useMemo(() => {

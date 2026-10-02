@@ -10,6 +10,9 @@
   "scripts": {
     "dev": "bun --bun vite",
     "build": "bun --bun vite build && bun run scripts/prerender.js && bun run scripts/post-build.js",
+    "plans": "bun run scripts/generate-trip-plans.js",
+    "plans:refresh": "bun run scripts/generate-trip-plans.js --dist",
+    "plans:force": "bun run scripts/generate-trip-plans.js --force --dist",
     "preview": "bun --bun vite preview",
     "start": "bun run server.js",
     "lint": "eslint .",

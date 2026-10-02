@@ -1,6 +1,8 @@
 // src/pages/TripsPage.jsx — Trypinn home (Gen-Z vibrant revamp)
 import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import SmartImage from '../components/SmartImage';
+import { SIZES } from '../utils/imageUrl';
 import { useAuth } from '../context/AuthContext';
 import { useTrip } from '../context/TripContext';
 // firestoreService and placesService are dynamically imported where needed
@@ -126,7 +128,7 @@ const QUOTES = [
 const COLLAGE_IMAGES = [
     'https://images.unsplash.com/photo-1501504905252-473c47e087f8?fm=webp&w=170&q=60',
     'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1504150558240-1bdefce0f4ce?fm=webp&w=170&q=60',
+    'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=webp&w=170&q=60',
     'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=170&q=60',
     'https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=170&q=60',
     'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=170&q=60',
@@ -451,8 +453,20 @@ export default function TripsPage() {
         <div key={trip.id} className={`hp-trip-card${past ? ' is-past' : ''}`} onClick={() => openTrip(trip)} role="button" tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter') openTrip(trip); }}>
             <div className="hp-trip-collage">
+                {/* The first tile spans both rows, so it is twice the width
+                    of the two beside it and needs its own sizes. */}
                 {getTripImages(trip.id).map((img, i) => (
-                    <span key={i} style={{ backgroundImage: `url(${img})`, filter: past ? 'grayscale(0.55)' : 'none' }} />
+                    <SmartImage
+                        key={i}
+                        src={img}
+                        alt=""
+                        aria-hidden="true"
+                        ratio="3:2"
+                        sizes={i === 0 ? SIZES.tripCollageMain : SIZES.tripCollageSide}
+                        baseWidth={i === 0 ? 320 : 160}
+                        maxWidth={i === 0 ? 640 : 320}
+                        style={{ filter: past ? 'grayscale(0.55)' : 'none' }}
+                    />
                 ))}
                 {!isTripClaimed(trip) && <span className="hp-trip-draft">Draft</span>}
                 <span className="hp-trip-collage-fade" />
@@ -557,7 +571,7 @@ export default function TripsPage() {
                         <Reveal key={dest.name} delay={(i % 3) * 90} className={`hp-tilt hp-tilt-${i % 3}`}>
                             <div className="hp-dest-card">
                                 <div className="hp-dest-img" onClick={() => navigate(`/travel-guides/${dest.name.toLowerCase().replace(/,?\s+/g, '-')}`)}>
-                                    <img src={dest.image} alt={dest.name} loading="lazy" width="300" height="198" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" />
+                                    <SmartImage src={dest.image} alt={dest.name} width="300" height="198" sizes={SIZES.destCard} ratio="3:2" baseWidth={480} maxWidth={960} eager={i < 6} />
                                     <span className="hp-dest-badge">{dest.badge}</span>
                                     <span className="hp-dest-rating"><Star size={12} fill="#fff" color="#fff" aria-hidden="true" /> {dest.rating}</span>
                                 </div>
@@ -605,7 +619,7 @@ export default function TripsPage() {
                         <Reveal key={dest.slug} className="mv-card" as="div">
                             <Link to={`/must-visits/${dest.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
                                 <div className="mv-card-img">
-                                    <img src={dest.coverImage} alt={`Must visit places in ${dest.name}`} loading="lazy" width="400" height="250" />
+                                    <SmartImage src={dest.coverImage} alt={`Must visit places in ${dest.name}`} width="400" height="250" sizes={SIZES.mvCard} ratio="16:10" baseWidth={400} maxWidth={640} />
                                     <span className="mv-card-count">{dest.attractionCount} places</span>
                                 </div>
                                 <div className="mv-card-body">
