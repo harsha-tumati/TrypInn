@@ -2,21 +2,18 @@
   <defs>
     <linearGradient id="t" x1="4" y1="2" x2="60" y2="62" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#2F4FA8"/>
-      <stop offset="1" stop-color="#162A66"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
     </linearGradient>
-    <linearGradient id="p" x1="16" y1="12" x2="48" y2="52" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FBBF3B"/>
-      <stop offset="1" stop-color="#FF6B4A"/>
-    </linearGradient>
-    <radialGradient id="s" cx="0.32" cy="0.2" r="0.85">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
-      <stop offset="0.65" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
+    <clipPath id="pin">
+      <path clip-rule="evenodd" d="M24 44 C21.2 40 12 31.2 12 18 A12 12 0 0 1 36 18 C36 31.2 26.8 40 24 44 Z M19.4 18 A4.6 4.6 0 1 0 28.6 18 A4.6 4.6 0 1 0 19.4 18 Z"/>
+    </clipPath>
   </defs>
   <rect width="64" height="64" rx="15" fill="url(#t)"/>
-  <rect width="64" height="64" rx="15" fill="url(#s)"/>
-  <path transform="translate(6.4 6.4) scale(1.6)" fill-rule="evenodd"
-    d="M16 2.4 C9.7 2.4 4.6 7.4 4.6 13.6 C4.6 21.6 13.4 27.3 16 29.6 C18.6 27.3 27.4 21.6 27.4 13.6 C27.4 7.4 22.3 2.4 16 2.4 Z M11.3 13.5 A4.7 4.7 0 1 0 20.7 13.5 A4.7 4.7 0 1 0 11.3 13.5 Z"
-    fill="url(#p)"/>
-  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="14.4" fill="none" stroke="#ffffff" stroke-opacity="0.16"/>
+  <g transform="translate(4.4 3.25) scale(1.15)">
+    <g clip-path="url(#pin)">
+      <polygon points="0,0 21,0 17,48 0,48" fill="#FFFFFF"/>
+      <polygon points="21,0 29,0 26,48 17,48" fill="#FF6B4A"/>
+      <polygon points="29,0 48,0 48,48 26,48" fill="#C7D2FE"/>
+    </g>
+  </g>
 </svg>

@@ -2,7 +2,7 @@
 // Network-first for navigations, cache-first for static assets.
 // Includes offline fallback, cache-size limits, and navigation preload.
 
-const CACHE = 'trypinn-v3';
+const CACHE = 'trypinn-v4';
 const SHELL = [
     '/',
     '/index.html',
@@ -10,6 +10,8 @@ const SHELL = [
     '/manifest.json',
     '/icon-192.png',
     '/icon-512.png',
+    '/icon-maskable-512.png',
+    '/apple-touch-icon.png',
 ];
 
 // Maximum number of runtime-cached assets (fonts, images, JS chunks, etc.)

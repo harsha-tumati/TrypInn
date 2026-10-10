@@ -43,12 +43,12 @@ export default function LoginPage() {
                 {/* Brand */}
                 <div className="login-brand">
                     <div className="login-logo" aria-hidden="true">
-                        <BrandMark size={44} />
+                        <BrandMark size={54} />
                     </div>
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                         <span className="eyebrow">Travel · Together</span>
                     </div>
-                    <h1 className="login-app-name">Trypinn</h1>
+                    <h1 className="login-app-name">trypinn</h1>
                     <p className="login-tagline">Plan trips together, effortlessly.</p>
                 </div>
 
