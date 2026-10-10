@@ -49,7 +49,7 @@ export default function JoinTripPage() {
     return (
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16, background: 'var(--bg-primary)' }}>
             <div className="navbar-brand-icon" style={{ width: 52, height: 52, borderRadius: 16 }}>
-                <BrandMark size={28} />
+                <BrandMark size={34} />
             </div>
             <div className="spinner spinner-lg" />
             <span style={{ color: 'var(--text-tertiary)', fontSize: 14 }}>Opening trip…</span>

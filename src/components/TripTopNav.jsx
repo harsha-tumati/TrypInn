@@ -53,7 +53,7 @@ export default function TripTopNav() {
         <div className="trip-top-nav-unified" role="navigation" aria-label="Trip workspace">
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0, minWidth: 0 }}>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }} aria-label="Trypinn home">
-                    <div className="navbar-brand-icon" style={{ width: 34, height: 34, borderRadius: 11 }} aria-hidden="true"><BrandMark size={19} /></div>
+                    <div className="navbar-brand-icon" style={{ width: 34, height: 34, borderRadius: 11 }} aria-hidden="true"><BrandMark size={23} /></div>
                 </Link>
                 <button
                     type="button"

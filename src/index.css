@@ -954,11 +954,12 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
 }
 .navbar-brand:hover .navbar-brand-icon { transform: rotate(-9deg) scale(1.07); }
 .navbar-brand-name {
-  font-family: var(--font-display); font-style: italic;
-  font-size: 22px;
-  font-weight: 400;
+  font-family: var(--font);
+  font-size: 21px;
+  font-weight: 800;
   color: var(--ink);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.045em;
+  line-height: 1;
 }
 .navbar-actions { display: flex; align-items: center; gap: 7px; }
 .navbar-link {
@@ -2580,11 +2581,11 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   color: var(--accent-bright);
 }
 .login-app-name {
-  font-family: var(--font-display); font-style: italic;
-  font-size: 50px;
-  font-weight: 400;
+  font-family: var(--font);
+  font-size: 46px;
+  font-weight: 800;
   color: var(--ink);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
   margin: 0;
   line-height: 1;
 }
@@ -3948,7 +3949,7 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   .chat-bubble { max-width: 86%; font-size: 13px; }
   input, select, textarea { font-size: 16px; }
   .login-card { padding: 34px 24px; border-radius: var(--radius-xl); }
-  .login-app-name { font-size: 42px; }
+  .login-app-name { font-size: 40px; }
   .join-card { padding: 30px 22px; border-radius: var(--radius-lg); }
   .join-meta-grid { grid-template-columns: 1fr; }
   .join-trip-name { font-size: 30px; }
