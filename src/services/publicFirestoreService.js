@@ -32,7 +32,7 @@ function docToObj(doc) {
     return { id, ...parseFields(doc.fields || {}) };
 }
 
-async function runQuery(collectionId, filters = []) {
+async function runQuery(collectionId, filters = [], { select, limit } = {}) {
     const url = `${BASE}:runQuery`;
     const body = {
         structuredQuery: {
@@ -59,6 +59,10 @@ async function runQuery(collectionId, filters = []) {
                         }
                     }
                     : undefined,
+            // Only these fields come back — keeps responses small and leaves
+            // out anything a listing shouldn't hand to strangers.
+            ...(select ? { select: { fields: select.map(fieldPath => ({ fieldPath })) } } : {}),
+            ...(limit ? { limit } : {}),
         }
     };
 
@@ -108,3 +112,42 @@ export async function publicIsTripMember(tripId, userId) {
     const doc = await getDoc('tripMembers', `${tripId}_${userId}`);
     return !!doc;
 }
+
+// ── Public trips ─────────────────────────────────────────────────────────────
+// Trips their organisers chose to list publicly (Invite → "List publicly").
+// Only listing fields are fetched: never invite codes, members or places.
+const LISTING_FIELDS = [
+    'name', 'destination', 'startDate', 'endDate', 'isPublic', 'publishedAt',
+    'publicStopCount', 'publicHighlights', 'organiserName', 'routeShape', 'placeOrder',
+];
+
+/**
+ * Public trips that haven't ended, soonest first; undated ones after, newest
+ * listing first.
+ */
+export async function publicListTrips({ limit = 60 } = {}) {
+    const rows = await runQuery('trips', [
+        { field: 'isPublic', value: { booleanValue: true } },
+    ], { select: LISTING_FIELDS, limit });
+    const today = new Date().toISOString().slice(0, 10);
+    return rows
+        .filter(t => !t.endDate || t.endDate >= today)
+        .sort((a, b) => {
+            if (a.startDate && b.startDate) return a.startDate.localeCompare(b.startDate);
+            if (a.startDate) return -1;
+            if (b.startDate) return 1;
+            return String(b.publishedAt || '').localeCompare(String(a.publishedAt || ''));
+        });
+}
+
+/**
+ * Coordinates of a trip's stops, for drawing its cover when the trip has no
+ * stored routeShape yet (trips planned before covers existed). Only lat/lng
+ * are fetched.
+ */
+export async function publicGetTripStops(tripId) {
+    return runQuery('places', [
+        { field: 'tripId', value: { stringValue: tripId } },
+    ], { select: ['lat', 'lng', 'skipInRoute'] });
+}
+

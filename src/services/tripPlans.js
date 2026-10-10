@@ -197,7 +197,7 @@ export async function createTripFromItinerary({ option, budget = null }) {
     })));
     // Without an explicit order the planner sorts by creation time, which a
     // parallel write could scramble. Pin it to the article's order.
-    await updatePlaceOrder(tripId, ids);
+    await updatePlaceOrder(tripId, ids, stops.map((s, i) => ({ ...s, id: ids[i] })));
 
     addDraftId(tripId);
     return tripId;

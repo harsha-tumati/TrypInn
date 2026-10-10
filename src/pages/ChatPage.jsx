@@ -38,12 +38,21 @@ function renderMessageText(text, mentions) {
     );
 }
 
+// Unsent messages, per trip, for the session — switching tabs mid-sentence
+// used to throw the draft away.
+const drafts = new Map();
+
 export default function ChatPage() {
     usePageSeo({ title: 'Trip Chat', robots: 'noindex, nofollow' });
     const { messages, selectedTrip, places, members } = useTrip();
     const { user, userProfile } = useAuth();
     const isGuest = useGuestMode();
-    const [text, setText] = useState('');
+    const draftKey = selectedTrip?.id || '';
+    const [text, setText] = useState(() => drafts.get(draftKey) || '');
+    useEffect(() => {
+        if (!draftKey) return;
+        if (text) drafts.set(draftKey, text); else drafts.delete(draftKey);
+    }, [draftKey, text]);
     const [aiTyping, setAiTyping] = useState(false);
     const bottomRef = useRef(null);
     const textareaRef = useRef(null);

@@ -8,7 +8,7 @@ import { useAuth } from '../context/AuthContext';
 import { Map, AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 import { getEnRouteSuggestions } from '../config/openai';
 import { enrichPlacesWithGoogle, searchNearby, reverseGeocode, getPersonalRoute, getPlaceDetails } from '../services/placesService';
-import { addPlaces, togglePlaceSelected, createPoll, deletePlace, updateTripStatus, updateMemberLocation, updatePlaceOrder, updateRouteConfig } from '../services/firestoreService';
+import { addPlaces, updatePlace, createPoll, deletePlace, updateTripStatus, updateMemberLocation, updatePlaceOrder, updateRouteConfig } from '../services/firestoreService';
 import { getOptimizedRoute } from '../services/routeService';
 import { hasCoords } from '../utils/geo';
 import { MAPS_ENABLED } from '../config/maps';
@@ -17,9 +17,9 @@ import MapRoute from '../components/MapRoute';
 import PlaceAutocomplete from '../components/PlaceAutocomplete';
 import BottomSheet from '../components/BottomSheet';
 import PlaceThumb from '../components/PlaceThumb';
-import { Sparkles, Search, Plus, X, Trash2, ExternalLink, Globe, Navigation, LocateFixed, StopCircle, ArrowUp, ArrowDown, Route as RouteIcon, ChevronLeft } from 'lucide-react';
-import { TRENDING } from './TripsPage';
+import { Sparkles, Search, Plus, X, Trash2, ExternalLink, Navigation, LocateFixed, StopCircle, ArrowUp, ArrowDown, Route as RouteIcon, ChevronLeft } from 'lucide-react';
 import { useIsMobile } from '../hooks/useIsMobile';
+import ShareTripDialog from '../components/ShareTripDialog';
 import usePageSeo from '../hooks/usePageSeo';
 
 const markerColors = { ai: '#EA4335', food: '#F29900', hidden_gem: '#34A853', nearby: '#4285F4', selected: '#EA4335', pinned: '#EA4335' };
@@ -59,6 +59,11 @@ function ImageCarousel({ images, name }) {
     );
 }
 
+// AI stops found along a trip's route, kept for the session: closing the map
+// and opening it again shouldn't drop them (and pay to find them again).
+// (globalThis.Map: `Map` in this file is the Google Maps component.)
+const aiStopsByTrip = new globalThis.Map();
+
 export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     usePageSeo({ title: 'Trip Map', robots: 'noindex, nofollow' });
     const { selectedTrip, setSelectedTrip, places, routeResult, setRouteResult, members } = useTrip();
@@ -67,7 +72,6 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
     const [loadingEnRoute, setLoadingEnRoute] = useState(false);
     const [, setLoadingRoute] = useState(false);
-    const [showTrending, setShowTrending] = useState(false);
     const [selectedPlace, setSelectedPlace] = useState(null);
     const [bottomTab, setBottomTab] = useState('places');
     const [sheetSnap, setSheetSnap] = useState('half');
@@ -79,7 +83,10 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     const [routeError, setRouteError] = useState('');
     const [aiError, setAiError] = useState('');
     const [addingLoc, setAddingLoc] = useState(false);
-    const [temporarySuggestions, setTemporarySuggestions] = useState([]);
+    const [temporarySuggestions, setTemporarySuggestions] = useState(() => aiStopsByTrip.get(selectedTrip?.id) || []);
+    useEffect(() => {
+        if (selectedTrip?.id) aiStopsByTrip.set(selectedTrip.id, temporarySuggestions);
+    }, [selectedTrip?.id, temporarySuggestions]);
     const [detourInfo, setDetourInfo] = useState('');
     const [myLocation, setMyLocation] = useState(null);
     const [personalRouteResult, setPersonalRouteResult] = useState(null);
@@ -90,7 +97,12 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     // Derived straight from the trip — no mirrored state, no sync effect needed.
     const isOptimized = trip?.routeConfig?.optimize ?? true;
 
-    const selectedPlaces = useMemo(() => places.filter((p) => p.selected && p.lat), [places]);
+    // Every stop with a location is on the route by default; tapping a card
+    // takes it off (skipInRoute) or puts it back. The map used to start with
+    // nothing selected, so a full trip showed no route until each stop was
+    // tapped.
+    const inRoute = (p) => !p.skipInRoute;
+    const selectedPlaces = useMemo(() => places.filter((p) => p.lat && !p.skipInRoute), [places]);
     const allMapPlaces = useMemo(() => places.filter((p) => p.lat), [places]);
 
     const handleMovePlace = async (index, direction) => {
@@ -104,14 +116,14 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
         const newOrder = newPlaces.map(p => p.id);
         setSelectedTrip({ ...trip, placeOrder: newOrder });
-        await updatePlaceOrder(trip.id, newOrder);
+        await updatePlaceOrder(trip.id, newOrder, places);
     };
 
     async function showRoute(optimizeOverride = null) {
         // Only a geocoded starting point counts as a routable endpoint.
         const minPlaces = hasCoords(trip.startingPoint) ? 1 : 2;
         if (selectedPlaces.length < minPlaces) {
-            setRouteError(`Select at least ${minPlaces} place${minPlaces > 1 ? 's' : ''} for a route. Currently ${selectedPlaces.length} selected. Tap place cards to select them.`);
+            setRouteError(`A route needs at least ${minPlaces} place${minPlaces > 1 ? 's' : ''} with a location. Add places, or tap a greyed-out card to put it back on the route.`);
             return;
         }
         setLoadingRoute(true);
@@ -125,9 +137,9 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     const orderedIds = result.directionsResult.customOrderedPlaces
                         .map(p => p.id)
                         .filter(id => id);
-                    const unselectedIds = places.filter(p => !p.selected).map(p => p.id);
+                    const unselectedIds = places.filter(p => !selectedPlaces.includes(p)).map(p => p.id);
                     const newOrder = [...orderedIds, ...unselectedIds];
-                    await updatePlaceOrder(trip.id, newOrder);
+                    await updatePlaceOrder(trip.id, newOrder, places);
                 }
             } else {
                 setRouteError('Could not compute route. Check Google Directions API is enabled.');
@@ -209,6 +221,19 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         calculateDetour();
         return () => { isMounted = false; };
     }, [selectedPlace, routeResult, selectedPlaces, trip?.startingPoint, trip?.endingPoint]);
+
+    // Warnings clear themselves; a stale one ("calculate a route first") used
+    // to sit over the map long after the route was there.
+    useEffect(() => {
+        if (!aiError) return;
+        const t = setTimeout(() => setAiError(''), 6000);
+        return () => clearTimeout(t);
+    }, [aiError]);
+    useEffect(() => {
+        if (!routeError) return;
+        const t = setTimeout(() => setRouteError(''), 9000);
+        return () => clearTimeout(t);
+    }, [routeError]);
 
     // When the trip leaves the "active" state, clear live-tracking state.
     const tripActive = trip?.status === 'active';
@@ -292,15 +317,18 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             : { lat: 20.5937, lng: 78.9629 };
 
     async function fetchEnRouteSuggestions() {
-        if (!routeResult || selectedPlaces.length < 2) {
-            setAiError('Calculate a route with at least 2 places first before asking for AI suggestions.');
+        // Any drawn route will do — the home point plus one stop is a route.
+        if (!routeResult) {
+            setAiError('Select places in the Places tab to build a route first, then ask for AI stops.');
             return;
         }
+        setAiError('');
+        const routePoints = routeResult.customOrderedPlaces?.length >= 2 ? routeResult.customOrderedPlaces : selectedPlaces;
         setLoadingEnRoute(true);
         setBottomTab('ai');
         if (sheetSnap === 'peek') setSheetSnap('half');
         try {
-            const rawSuggestions = await getEnRouteSuggestions(selectedPlaces);
+            const rawSuggestions = await getEnRouteSuggestions(routePoints);
             if (rawSuggestions.en_route_places) {
                 const enriched = await enrichPlacesWithGoogle(rawSuggestions.en_route_places);
                 const nonOptRoute = await getOptimizedRoute(selectedPlaces, trip?.startingPoint || null, false, trip?.endingPoint || null);
@@ -312,10 +340,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     let detourText = '';
                     if (currentDuration > 0) {
                         try {
-                            const originalOrigin = selectedPlaces[0];
-                            const originalDest = selectedPlaces[selectedPlaces.length - 1];
-                            const originalWaypoints = selectedPlaces.slice(1, -1);
-                            const newRoutePoints = [originalOrigin, ...originalWaypoints, p, originalDest];
+                            // With one selected place the route runs from the
+                            // home point, so the detour goes before that place.
+                            const newRoutePoints = selectedPlaces.length >= 2
+                                ? [selectedPlaces[0], ...selectedPlaces.slice(1, -1), p, selectedPlaces[selectedPlaces.length - 1]]
+                                : [p, ...selectedPlaces];
                             const newRoute = await getOptimizedRoute(newRoutePoints, trip?.startingPoint || null, false, trip?.endingPoint || null);
                             if (newRoute?.directionsResult) {
                                 let newDuration = 0;
@@ -407,29 +436,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     }
 
     async function toggleSelect(place) {
-        await togglePlaceSelected(place.id, !place.selected);
+        await updatePlace(place.id, { skipInRoute: inRoute(place) });
     }
 
     async function addNearbyToMap(place) {
         await addPlaces(trip.id, [{ ...place, selected: false }]);
-    }
-
-    const shareUrl = `${window.location.origin}/join/${trip.inviteCode}`;
-
-    async function shareInvite() {
-        if (navigator.share) {
-            try {
-                await navigator.share({
-                    title: `Join my trip "${trip.name}" on Trypinn`,
-                    text: trip.description || `Join my trip "${trip.name}" on Trypinn!`,
-                    url: shareUrl,
-                });
-                return;
-            } catch {
-                // User cancelled or share failed — fall through to modal
-            }
-        }
-        setShareOpen(true);
     }
 
     async function handleCreatePoll() {
@@ -444,6 +455,42 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
     function togglePollPlace(placeId) {
         setPollPlaces((prev) => prev.includes(placeId) ? prev.filter((id) => id !== placeId) : [...prev, placeId]);
+    }
+
+    // Turn-by-turn hand-off: the route's stops in order, from wherever the
+    // traveller is now. Google Maps links carry at most 9 waypoints, so a
+    // longer route opens its first ten stops.
+    const navStops = (routeResult?.customOrderedPlaces?.length ? routeResult.customOrderedPlaces : selectedPlaces)
+        .filter(p => p && !p.isStartingPoint && p.lat != null);
+    const navLeg = navStops.slice(0, 10);
+    const googleMapsUrl = navLeg.length
+        ? 'https://www.google.com/maps/dir/?api=1&travelmode=driving'
+            + `&destination=${navLeg[navLeg.length - 1].lat},${navLeg[navLeg.length - 1].lng}`
+            + (navLeg.length > 1 ? `&waypoints=${encodeURIComponent(navLeg.slice(0, -1).map(p => `${p.lat},${p.lng}`).join('|'))}` : '')
+        : null;
+
+    async function startNavigation() {
+        if (!routeResult) {
+            setRouteError('Add at least two places with a location to build a route first.');
+            setBottomTab('places');
+            return;
+        }
+        setRouteError('');
+        // Asking for location inside the click keeps the browser's permission
+        // prompt tied to a user gesture. Sharing location needs an account.
+        if (user) setIsTrackingLocation(true);
+        try {
+            await updateTripStatus(trip.id, 'active');
+        } catch {
+            setIsTrackingLocation(false);
+            setRouteError(user ? 'Could not start navigation. Please try again.' : 'Sign in to start navigation on this trip.');
+        }
+    }
+
+    async function endNavigation() {
+        setIsTrackingLocation(false);
+        try { await updateTripStatus(trip.id, 'planning'); }
+        catch { setRouteError('Could not end the trip. Please try again.'); }
     }
 
     const selectTab = (id) => { setBottomTab(id); if (sheetSnap === 'peek') setSheetSnap('half'); };
@@ -477,7 +524,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     return (
                         <AdvancedMarker key={place.id} position={{ lat: place.lat, lng: place.lng }} title={place.name} onClick={() => setSelectedPlace(place)}>
                             <Pin
-                                background={place.selected ? markerColors.selected : (markerColors[place.category] || markerColors.ai)}
+                                background={inRoute(place) ? markerColors.selected : (markerColors[place.category] || markerColors.ai)}
                                 glyphColor="#fff"
                                 borderColor="transparent"
                                 glyph={seqLetter || undefined}
@@ -488,13 +535,6 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 {temporarySuggestions.map((place, i) => (
                     <AdvancedMarker key={`temp_${i}`} position={{ lat: place.lat, lng: place.lng }} title={place.name} onClick={() => setSelectedPlace({ ...place, isTemp: true })}>
                         <Pin background="#1E1E3F" glyphColor="#FDE047" borderColor="#FDE047" scale={0.8} />
-                    </AdvancedMarker>
-                ))}
-                {showTrending && TRENDING.filter(t => !allMapPlaces.find(p => p.name === t.name)).map(t => (
-                    <AdvancedMarker key={`trending_${t.name}`} position={{ lat: t.lat, lng: t.lng }} onClick={() => setSelectedPlace({ ...t, isTemp: true, category: 'trending', description: 'Popular global destination' })}>
-                        <div style={{ background: 'rgba(30, 58, 138,0.85)', borderRadius: 20, padding: '4px 10px', fontSize: 11, fontWeight: 700, color: '#fff', display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer', border: '2px solid rgba(255,255,255,0.3)', whiteSpace: 'nowrap' }}>
-                            <span>{t.emoji}</span> {t.name.split(',')[0]}
-                        </div>
                     </AdvancedMarker>
                 ))}
                 {nearbyResults.map((p, i) => (
@@ -523,8 +563,8 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                 </p>
                             )}
                             {!selectedPlace.isTemp && (
-                                <p style={{ fontSize: 11, color: selectedPlace.selected ? '#16a34a' : '#888', marginBottom: 6 }}>
-                                    {selectedPlace.selected ? '✅ Selected for route' : 'Tap the card to select'}
+                                <p style={{ fontSize: 11, color: inRoute(selectedPlace) ? '#16a34a' : '#888', marginBottom: 6 }}>
+                                    {inRoute(selectedPlace) ? '✅ On the route' : 'Not on the route — tap its card to add it'}
                                 </p>
                             )}
                             <div style={{ display: 'flex', gap: 6, marginTop: 8 }}>
@@ -605,23 +645,16 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 })}
             </Map>
 
-            {/* Back to the Plan / Itinerary screen — top-right */}
-            {onExitMap && (
-                <button type="button" className="tm-back" onClick={onExitMap} aria-label={`Back to ${exitLabel}`}>
-                    <ChevronLeft size={17} aria-hidden="true" /> {exitLabel}
-                </button>
-            )}
-
-            {/* Floating controls — top-left */}
+            {/* Floating controls — top-left, led by the way back to the Plan /
+                Itinerary screen */}
             <div className="tm-controls">
-                <button type="button" className="tm-ctrl" onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute} title="AI stops on your route" aria-label="Find AI stops on your route">
-                    {loadingEnRoute ? <span className="spinner spinner-sm" /> : <Sparkles size={20} />}
-                </button>
+                {onExitMap && (
+                    <button type="button" className="tm-back" onClick={onExitMap} aria-label={`Back to ${exitLabel}`}>
+                        <ChevronLeft size={17} aria-hidden="true" /> {exitLabel}
+                    </button>
+                )}
                 <button type="button" className={`tm-ctrl${isOptimized ? ' active' : ''}`} onClick={handleToggleOptimize} title={isOptimized ? 'Route optimized' : 'Optimize route'} aria-label="Optimize route" aria-pressed={isOptimized}>
                     <RouteIcon size={20} />
-                </button>
-                <button type="button" className={`tm-ctrl${showTrending ? ' active' : ''}`} onClick={() => setShowTrending(v => !v)} title="Trending destinations" aria-label="Toggle trending destinations" aria-pressed={showTrending}>
-                    <Globe size={20} />
                 </button>
             </div>
 
@@ -667,11 +700,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     {bottomTab === 'places' && (
                         <>
                             <div style={{ position: 'relative', marginBottom: 14 }}>
-                                <Search size={16} color="#6b7280" style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', zIndex: 1 }} />
+                                {/* PlaceAutocomplete draws its own search icon. */}
                                 <PlaceAutocomplete
                                     onPlaceSelected={handlePlaceSelected}
                                     placeholder="Search a place to add…"
-                                    style={{ width: '100%', background: 'var(--paper)', border: '1px solid var(--line-strong)', borderRadius: 12, padding: '13px 16px 13px 40px', fontSize: 15, outline: 'none' }}
+                                    style={{ width: '100%', background: 'var(--paper)', border: '1px solid var(--line-strong)', borderRadius: 12 }}
                                 />
                                 {addingLoc && <div className="spinner spinner-sm" style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)' }} />}
                             </div>
@@ -685,7 +718,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             ) : (
                                 <div className="tm-list">
                                     {places.map((p, index) => (
-                                        <div key={p.id} className={`tm-card${p.selected ? ' selected' : ''}`} onClick={() => toggleSelect(p)}>
+                                        <div key={p.id} className={`tm-card${inRoute(p) && p.lat ? ' selected' : ' off-route'}`} onClick={() => toggleSelect(p)} title={inRoute(p) ? 'Tap to take off the route' : 'Tap to add to the route'}>
                                             <PlaceThumb place={p} size={60} />
                                             <div className="tm-card-main">
                                                 <div className="tm-card-name">{p.name}</div>
@@ -693,7 +726,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                                 <div className="tm-card-meta">
                                                     <span className="tm-chip" style={{ textTransform: 'capitalize' }}>{p.category || 'place'}</span>
                                                     {p.rating && <span className="tm-chip amber">⭐ {p.rating}</span>}
-                                                    <span className={`tm-chip${p.selected ? ' on' : ''}`}>{p.selected ? '✓ In route' : 'Tap to select'}</span>
+                                                    <span className={`tm-chip${inRoute(p) && p.lat ? ' on' : ''}`}>{!p.lat ? 'No location' : inRoute(p) ? '✓ On route' : 'Off route'}</span>
                                                 </div>
                                             </div>
                                             <div className="tm-card-actions" onClick={(e) => e.stopPropagation()}>
@@ -743,7 +776,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             <div className="tm-empty">
                                 <span style={{ fontSize: 38 }}>🛣️</span>
                                 <strong>No route yet</strong>
-                                <span>Select at least two places in the Places tab to build a route.</span>
+                                <span>Add at least two places with a location to see the route.</span>
                             </div>
                         )
                     )}
@@ -810,7 +843,10 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             <div className="tm-empty">
                                 <span style={{ fontSize: 38 }}>✨</span>
                                 <strong>No AI stops yet</strong>
-                                <span>Tap the ✨ button on the map to find interesting stops along your route.</span>
+                                <span>Let AI find interesting stops along your route.</span>
+                                <button type="button" className="btn btn-accent" style={{ marginTop: 6 }} onClick={fetchEnRouteSuggestions} disabled={loadingEnRoute}>
+                                    <Sparkles size={15} aria-hidden="true" /> Find AI stops
+                                </button>
                             </div>
                         ) : (
                             <div className="tm-list">
@@ -841,17 +877,35 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     )}
                 </div>
 
+                {trip.status === 'active' && (
+                    <div className="tm-nav-status" role="status">
+                        <span className="tm-nav-dot" aria-hidden="true" />
+                        <span>
+                            <strong>Navigating</strong>
+                            {navStops.length > 0 && <> · {navStops.length} stop{navStops.length > 1 ? 's' : ''}{routeDistanceKm ? ` · ${routeDistanceKm} km` : ''}</>}
+                            {myLocation ? ' · sharing your location' : ''}
+                        </span>
+                        {navStops.length > navLeg.length && <span className="tm-nav-note">Google Maps opens the first {navLeg.length} stops.</span>}
+                    </div>
+                )}
                 <div className="tm-sheet-footer">
                     {trip.status !== 'active' ? (
-                        <button type="button" className="btn btn-primary" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'active')}>
-                            <Navigation size={16} /> Start Navigation
+                        <button type="button" className="btn btn-primary" style={{ flex: 1 }} onClick={startNavigation}>
+                            <Navigation size={16} aria-hidden="true" /> Start Navigation
                         </button>
                     ) : (
-                        <button type="button" className="btn btn-danger" style={{ flex: 1 }} onClick={() => updateTripStatus(trip.id, 'planning')}>
-                            <StopCircle size={16} /> End Trip
-                        </button>
+                        <>
+                            {googleMapsUrl && (
+                                <a className="btn btn-primary" style={{ flex: 1 }} href={googleMapsUrl} target="_blank" rel="noreferrer">
+                                    <Navigation size={16} aria-hidden="true" /> Open in Google Maps
+                                </a>
+                            )}
+                            <button type="button" className="btn btn-danger" style={googleMapsUrl ? undefined : { flex: 1 }} onClick={endNavigation}>
+                                <StopCircle size={16} aria-hidden="true" /> End
+                            </button>
+                        </>
                     )}
-                    <button type="button" className="btn btn-secondary" onClick={shareInvite}>Share</button>
+                    <button type="button" className="btn btn-secondary" onClick={() => setShareOpen(true)}>Share</button>
                 </div>
             </BottomSheet>
 
@@ -875,36 +929,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 </div>
             </Modal>
 
-            {/* Share Modal */}
-            <Modal open={shareOpen} onClose={() => setShareOpen(false)} title="Share Trip Invite">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                    <p style={{ color: '#64748b', fontSize: 14, margin: 0 }}>
-                        Anyone with this link can view the trip overview and join.
-                    </p>
-                    <div style={{ display: 'flex', gap: 8 }}>
-                        <input
-                            readOnly
-                            value={shareUrl}
-                            onClick={(e) => e.target.select()}
-                            style={{ flex: 1, padding: '10px 12px', borderRadius: 8, border: '1px solid #e2e8f0', fontSize: 14, color: '#0f172a', background: '#f8fafc', outline: 'none' }}
-                        />
-                        <button type="button"
-                            onClick={() => { navigator.clipboard.writeText(shareUrl); setAiError('✅ Link copied!'); setTimeout(() => setAiError(''), 2000); setShareOpen(false); }}
-                            style={{ background: '#0f172a', color: '#fff', border: 'none', padding: '10px 16px', borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: 'pointer', minHeight: 44, whiteSpace: 'nowrap' }}
-                        >
-                            Copy Link
-                        </button>
-                    </div>
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                        <a href={`https://wa.me/?text=${encodeURIComponent(`Join my trip "${trip.name}" on Trypinn! ${shareUrl}`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#22c55e', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            WhatsApp
-                        </a>
-                        <a href={`https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(`Join my trip "${trip.name}" on Trypinn!`)}`} target="_blank" rel="noreferrer" style={{ flex: 1, background: '#3b82f6', color: '#fff', textDecoration: 'none', padding: '10px', borderRadius: 8, fontSize: 13, fontWeight: 600, textAlign: 'center', minHeight: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            Telegram
-                        </a>
-                    </div>
-                </div>
-            </Modal>
+            {shareOpen && <ShareTripDialog open onClose={() => setShareOpen(false)} />}
         </div>
     );
 }

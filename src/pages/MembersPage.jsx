@@ -1,24 +1,18 @@
 import React from 'react';
 import { useTrip } from '../context/TripContext';
-import { Users, Shield, Link as LinkIcon, Check } from 'lucide-react';
+import { Users, Shield, UserPlus } from 'lucide-react';
 import { useState } from 'react';
 import { useGuestMode } from '../context/GuestModeContext';
+import ShareTripDialog, { useIsTripOrganiser } from '../components/ShareTripDialog';
+import JoinRequestsList from '../components/JoinRequestsList';
 import usePageSeo from '../hooks/usePageSeo';
 
 export default function MembersPage() {
     usePageSeo({ title: 'Trip Members', robots: 'noindex, nofollow' });
-    const { members, selectedTrip } = useTrip();
+    const { members, selectedTrip, joinRequests } = useTrip();
     const isGuest = useGuestMode();
-    const [copied, setCopied] = useState(false);
-
-    const handleInvite = () => {
-        if (!selectedTrip?.inviteCode) return;
-        const shareUrl = `${window.location.origin}/join/${selectedTrip.inviteCode}`;
-        navigator.clipboard.writeText(shareUrl).then(() => {
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        });
-    };
+    const isOrganiser = useIsTripOrganiser();
+    const [shareOpen, setShareOpen] = useState(false);
 
     // Determine deterministic vivid colours for members
     const memberColors = [
@@ -49,18 +43,27 @@ export default function MembersPage() {
                         {members.length} {members.length === 1 ? 'person is' : 'people are'} on this trip.
                     </p>
                 </div>
-                {!isGuest && selectedTrip?.inviteCode && (
+                {!isGuest && selectedTrip && (
                     <button
                         type="button"
-                        onClick={handleInvite}
+                        onClick={() => setShareOpen(true)}
                         className="btn btn-accent btn-md"
                         style={{ display: 'flex', alignItems: 'center', gap: 6 }}
                     >
-                        {copied ? <Check size={16} /> : <LinkIcon size={16} />}
-                        {copied ? 'Link Copied!' : 'Copy Invite Link'}
+                        <UserPlus size={16} aria-hidden="true" /> Invite people
                     </button>
                 )}
             </div>
+            {shareOpen && <ShareTripDialog open onClose={() => setShareOpen(false)} />}
+
+            {isOrganiser && joinRequests.length > 0 && (
+                <section className="glass-card-static" style={{ padding: 20, marginBottom: 24 }} aria-label="Requests to join">
+                    <h2 style={{ fontSize: 16, fontWeight: 800, margin: '0 0 12px', color: 'var(--text-primary)' }}>
+                        {joinRequests.length} {joinRequests.length === 1 ? 'person wants' : 'people want'} to join
+                    </h2>
+                    <JoinRequestsList />
+                </section>
+            )}
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
                 {members.map((m, idx) => (
@@ -82,7 +85,7 @@ export default function MembersPage() {
                                 {m.name || 'Traveler'}
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--text-tertiary)', fontWeight: 600 }}>
-                                {m.role === 'owner' ? (
+                                {m.role === 'owner' || m.role === 'admin' ? (
                                     <>
                                         <Shield size={14} color="var(--color-indigo)" />
                                         <span style={{ color: 'var(--color-indigo)' }}>Trip Owner</span>

@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, NavLink, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LogOut, BookOpen, Plus, LogIn, MapPin } from 'lucide-react';
+import { LogOut, BookOpen, Plus, LogIn, MapPin, Globe } from 'lucide-react';
 import BrandMark from './BrandMark';
 
 export default function Navbar() {
@@ -60,6 +60,15 @@ export default function Navbar() {
                         <span className="navbar-link-label">My trips</span>
                     </a>
                 )}
+
+                <NavLink
+                    to="/public-trips"
+                    className={({ isActive }) => `navbar-link${isActive ? ' active' : ''}`}
+                    aria-label="Public Trips"
+                >
+                    <Globe size={15} aria-hidden="true" />
+                    <span className="navbar-link-label">Public Trips</span>
+                </NavLink>
 
                 <NavLink
                     to="/travel-guides"

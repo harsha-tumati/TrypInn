@@ -372,7 +372,6 @@ export default function ExpensesPage() {
                                 value={form.category}
                                 onChange={(e) => setForm({...form, category: e.target.value})}
                                 className="input-field"
-                                style={{ paddingRight: 36, cursor: 'pointer' }}
                             >
                                 {Object.keys(CATEGORY_META).map(k => (
                                     <option key={k} value={k}>{CATEGORY_META[k].emoji}  {k}</option>
