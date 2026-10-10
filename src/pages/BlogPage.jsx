@@ -4,7 +4,7 @@ import { Link, useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock, User, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import usePageSeo, { schemas } from '../hooks/usePageSeo';
 import SmartImage from '../components/SmartImage';
-import TripPlanCta from '../components/TripPlanCta';
+import ItineraryCard from '../components/ItineraryCard';
 import { SIZES } from '../utils/imageUrl';
 
 // ── AEO: Extract H2 headings + following paragraph as FAQ items ──
@@ -649,14 +649,38 @@ Build your Kerala road trip step-by-step with **Trypinn**, allowing everyone in 
 ];
 
 // ── AEO: Render markdown with semantic HTML, anchor IDs on H2s, figure/figcaption ──
-function renderMarkdown(text) {
+// Accent- and case-insensitive, so "Gjirokastër" style headings still match.
+const foldText = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+/**
+ * @param {string} text  article markdown
+ * @param {{anchor: string, element: JSX.Element}} [insert]  optional block to
+ *   place at the END of the section whose ## heading starts with `anchor` —
+ *   i.e. right after the article's own description of the route. If the
+ *   heading is ever renamed, the block falls back to the end of the article
+ *   rather than disappearing.
+ */
+function renderMarkdown(text, insert) {
     const lines = text.split('\n');
     const elements = [];
     let i = 0;
     const usedSlugs = new Set();
+    const anchor = insert ? foldText(insert.anchor) : null;
+    let inAnchor = false;
+    let inserted = !insert;
 
     while (i < lines.length) {
         const line = lines[i];
+
+        if (line.startsWith('## ') && !inserted) {
+            if (inAnchor) {
+                elements.push(insert.element);
+                inserted = true;
+                inAnchor = false;
+            } else if (foldText(line.slice(3).trim()).startsWith(anchor)) {
+                inAnchor = true;
+            }
+        }
 
         if (line.startsWith('## ')) {
             const headingText = line.slice(3);
@@ -718,6 +742,7 @@ function renderMarkdown(text) {
         }
         i++;
     }
+    if (!inserted) elements.push(insert.element);
     return elements;
 }
 
@@ -991,7 +1016,13 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
             </header>
 
             <div className="blog-detail-body">
-                <div className="blog-article">{useMemo(() => renderMarkdown(post.content), [post.content])}</div>
+                <div className="blog-article">{useMemo(() => renderMarkdown(
+                    post.content,
+                    post.itinerary && {
+                        anchor: post.itinerary.anchor,
+                        element: <ItineraryCard key="itinerary-card" itinerary={post.itinerary} />,
+                    },
+                ), [post.content, post.itinerary])}</div>
 
                 {post.suggestedPlaces && post.suggestedPlaces.length > 0 && (
                     <section style={{ marginTop: 48, marginBottom: 32 }} aria-label="Suggested places">
@@ -1029,15 +1060,14 @@ function BlogDetail({ post, onBack, allPosts = [] }) {
                     </section>
                 )}
 
-                {/* Plan this trip — only on guides that resolved to a cached
-                    plan (see scripts/generate-trip-plans.js). Advice posts like
-                    the visa explainers carry no planId and render nothing. */}
-                {post.planId && <TripPlanCta planId={post.planId} postTitle={post.title} />}
+                {/* Guides that describe a trip carry their itinerary card
+                    inside the article (see renderMarkdown); everything else
+                    keeps the general call to action below. */}
 
                 {/* Related Articles — DEO internal linking */}
                 <RelatedArticles currentPost={post} allPosts={allPosts} />
 
-                {!post.planId && (
+                {!post.itinerary && (
                     <footer className="blog-cta">
                         <h2>Ready to plan your trip?</h2>
                         <p>Start collaborating with your group in real-time on Trypinn</p>

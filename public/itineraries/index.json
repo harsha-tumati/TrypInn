@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-10-03T04:49:22.499Z",
+  "blogs": [
+    {
+      "id": "albania-riviera-travel-guide",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "albania-ten-days",
+          "title": "Albania in ten days",
+          "days": 10,
+          "stops": 14,
+          "located": 14
+        }
+      ]
+    },
+    {
+      "id": "uzbekistan-silk-road-itinerary",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "uzbekistan-ten-days",
+          "title": "The Silk Road in ten days",
+          "days": 10,
+          "stops": 14,
+          "located": 14
+        }
+      ]
+    },
+    {
+      "id": "saudi-arabia-first-timers-guide",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "saudi-ten-days",
+          "title": "Saudi Arabia in ten days",
+          "days": 10,
+          "stops": 13,
+          "located": 13
+        }
+      ]
+    },
+    {
+      "id": "vietnam-ten-day-itinerary",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "vietnam-north-centre",
+          "title": "North and Centre",
+          "days": 10,
+          "stops": 11,
+          "located": 11
+        },
+        {
+          "id": "vietnam-south-centre",
+          "title": "South and Centre",
+          "days": 10,
+          "stops": 9,
+          "located": 9
+        }
+      ]
+    },
+    {
+      "id": "japan-beyond-tokyo-kyoto",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "japan-two-weeks",
+          "title": "Japan beyond the classics",
+          "days": 14,
+          "stops": 14,
+          "located": 14
+        }
+      ]
+    },
+    {
+      "id": "georgia-armenia-caucasus-road-trip",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "caucasus-two-weeks",
+          "title": "Georgia and Armenia in two weeks",
+          "days": 14,
+          "stops": 20,
+          "located": 20
+        }
+      ]
+    },
+    {
+      "id": "montenegro-slovenia-adriatic-alpine",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "montenegro-week",
+          "title": "Montenegro in a week",
+          "days": 7,
+          "stops": 9,
+          "located": 9
+        },
+        {
+          "id": "slovenia-week",
+          "title": "Slovenia in a week",
+          "days": 8,
+          "stops": 15,
+          "located": 15
+        }
+      ]
+    },
+    {
+      "id": "krabi-over-phuket-thailand-quieter-coast",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "krabi-twelve-days",
+          "title": "Krabi and the islands in twelve days",
+          "days": 12,
+          "stops": 8,
+          "located": 8
+        }
+      ]
+    },
+    {
+      "id": "northeast-india-itinerary",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "northeast-two-weeks",
+          "title": "Northeast India in two weeks",
+          "days": 14,
+          "stops": 9,
+          "located": 9
+        }
+      ]
+    },
+    {
+      "id": "greece-beyond-santorini-islands",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "cyclades-ten-days",
+          "title": "The Cyclades in ten days",
+          "days": 10,
+          "stops": 14,
+          "located": 14
+        }
+      ]
+    },
+    {
+      "id": "portugal-spain-rail-trip",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "iberia-by-rail",
+          "title": "Lisbon to Barcelona by train",
+          "days": 17,
+          "stops": 27,
+          "located": 27
+        }
+      ]
+    },
+    {
+      "id": "kashmir-spiti-sikkim-mountain-trips",
+      "source": "hand-written",
+      "options": [
+        {
+          "id": "kashmir-route",
+          "title": "Kashmir",
+          "days": null,
+          "stops": 7,
+          "located": 7
+        },
+        {
+          "id": "spiti-route",
+          "title": "Spiti Valley",
+          "days": 10,
+          "stops": 11,
+          "located": 11
+        },
+        {
+          "id": "sikkim-route",
+          "title": "Sikkim",
+          "days": null,
+          "stops": 7,
+          "located": 7
+        }
+      ]
+    }
+  ]
+}

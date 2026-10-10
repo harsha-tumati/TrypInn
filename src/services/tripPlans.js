@@ -119,6 +119,90 @@ export async function createTripFromPlan({ plan, days, people, tierKey = 'midRan
     return tripId;
 }
 
+/** "Days 1–2" / "Day 3" / "" for a leg, as the article labels it. */
+export function dayLabel(days) {
+    if (!days) return '';
+    return /[–-]/.test(days) ? `Days ${days}` : `Day ${days}`;
+}
+
+/**
+ * Turn a suggested itinerary into a draft trip and return its id.
+ *
+ * Mirrors the home page's "plan a trip" flow (anonymous draft, start and end
+ * points set), but every stop already carries coordinates and a Google place
+ * id from build time, so the planner opens with the whole route pinned. That
+ * matters: the itinerary page drops any place without coordinates.
+ *
+ * Stops are saved in the article's order and the order is written to the trip,
+ * and each stop's description carries its day label so the planner list reads
+ * the way the blog does.
+ */
+export async function createTripFromItinerary({ option, budget = null }) {
+    const [{ createTrip, addPlaces, updatePlaceOrder }, { addDraftId }] = await Promise.all([
+        import('./firestoreService'),
+        import('../utils/draftTrips'),
+    ]);
+
+    let stops = option.legs.flatMap(leg => leg.stops.map(s => ({
+        ...s,
+        description: [dayLabel(leg.days), leg.base].filter(Boolean).join(' · '),
+    })));
+
+    // Build-time lookup normally covers every stop. If one was missed, fall
+    // back to resolving it now rather than saving a pin-less place.
+    if (stops.some(s => s.lat == null)) {
+        try {
+            const { MAPS_ENABLED } = await import('../config/maps');
+            if (MAPS_ENABLED) {
+                const { enrichPlacesWithGoogle } = await import('./placesService');
+                const missing = stops.filter(s => s.lat == null);
+                const enriched = await enrichPlacesWithGoogle(missing, option.country);
+                const byName = new Map(enriched.map(e => [e.name, e]));
+                stops = stops.map(s => (s.lat == null && byName.get(s.name)?.lat != null
+                    ? { ...s, lat: byName.get(s.name).lat, lng: byName.get(s.name).lng, placeId: byName.get(s.name).googlePlaceId || s.placeId }
+                    : s));
+            }
+        } catch { /* keep what we have */ }
+    }
+
+    const located = stops.filter(s => s.lat != null);
+    const toPoint = s => (s ? { name: s.name, lat: s.lat, lng: s.lng, placeId: s.placeId || null, formatted: s.address || '' } : null);
+    const summary = option.legs
+        .map(l => [dayLabel(l.days), l.base].filter(Boolean).join(' '))
+        .join(' → ');
+
+    const tripId = await createTrip({
+        name: option.title,
+        destination: option.countries?.join(', ') || option.country,
+        description: summary,
+        startDate: null,
+        endDate: null,
+        budget,
+        userId: null, // anonymous draft, claimed later — same as the home page flow
+        startingPoint: toPoint(located[0]),
+        endingPoint: toPoint(located[located.length - 1]),
+    });
+
+    const ids = await addPlaces(tripId, stops.map(s => ({
+        name: s.name,
+        description: s.description,
+        category: s.cat || 'place',
+        estimatedMinutes: s.min || 90,
+        lat: s.lat ?? null,
+        lng: s.lng ?? null,
+        imageUrl: null,           // PlaceThumb fetches a real photo from the place id
+        placeId: s.placeId || null,
+        googlePlaceId: s.placeId || null,
+        source: 'itinerary',
+    })));
+    // Without an explicit order the planner sorts by creation time, which a
+    // parallel write could scramble. Pin it to the article's order.
+    await updatePlaceOrder(tripId, ids);
+
+    addDraftId(tripId);
+    return tripId;
+}
+
 /** ₹1,23,456 — Indian digit grouping, matching the rest of the app. */
 export function formatInr(n) {
     if (n == null || Number.isNaN(n)) return '—';
