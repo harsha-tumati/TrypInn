@@ -13,6 +13,8 @@
     "plans": "bun run scripts/generate-trip-plans.js",
     "plans:refresh": "bun run scripts/generate-trip-plans.js --dist",
     "plans:force": "bun run scripts/generate-trip-plans.js --force --dist",
+    "itineraries": "bun run scripts/build-itineraries.js",
+    "itineraries:gpt": "bun run scripts/build-itineraries.js --gpt",
     "preview": "bun --bun vite preview",
     "start": "bun run server.js",
     "lint": "eslint .",

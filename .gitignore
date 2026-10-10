@@ -35,3 +35,8 @@ lighthouse-report*.json
 bundle-stats.html
 
 .claude/
+# Build caches. The Places cache holds coordinates, which Google allows
+# caching for at most 30 days, so it stays out of version history.
+scripts/.itinerary-places-cache.json
+scripts/.itinerary-gpt-cache.json
+scripts/.trip-plan-cache.json

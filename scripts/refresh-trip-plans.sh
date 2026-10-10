@@ -47,6 +47,9 @@ fi
 
 echo "[$(date -Is)] refreshing trip plans${1:+ ($1)}"
 
-bun run scripts/generate-trip-plans.js --dist "$@"
+# Itinerary cards: re-resolves any stop whose coordinates are older than 25
+# days (Google's terms allow caching lat/lng for at most 30). Add --gpt once the
+# OpenAI key works to extract itineraries from new trip-shaped posts.
+bun run scripts/build-itineraries.js --dist "$@"
 
 echo "[$(date -Is)] done"

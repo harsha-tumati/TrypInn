@@ -209,8 +209,28 @@ function roundMoney(n) {
  * @param {number} people   party size the totals are shown for
  */
 export function buildEstimate(country, days, people = 2) {
-    const band = bandFor(country);
-    const known = Boolean(COUNTRY_COSTS[country]);
+    return estimateFromBand(bandFor(country), Boolean(COUNTRY_COSTS[country]), days, people);
+}
+
+/**
+ * Estimate for a trip that crosses borders — Georgia into Armenia, Lisbon to
+ * Barcelona. Each country's band is weighted by the days spent there, so a
+ * fortnight that is mostly Spain costs like Spain rather than an average of
+ * Spain and Portugal.
+ *
+ * @param {Array<{country: string, days: number}>} spans
+ */
+export function buildBlendedEstimate(spans, days, people = 2) {
+    const total = spans.reduce((n, s) => n + s.days, 0);
+    if (!total) return buildEstimate(spans[0]?.country, days, people);
+    const band = [0, 1, 2].map(i =>
+        Math.round(spans.reduce((n, s) => n + bandFor(s.country)[i] * s.days, 0) / total)
+    );
+    const known = spans.every(s => COUNTRY_COSTS[s.country]);
+    return estimateFromBand(band, known, days, people);
+}
+
+function estimateFromBand(band, known, days, people) {
 
     const tiers = {};
     for (const tier of TIERS) {
