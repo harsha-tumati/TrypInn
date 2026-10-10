@@ -94,6 +94,11 @@ export default defineConfig({
         'is-in', 'is-past', 'is-claimed', 'is-guest',
         // Animation classes toggled by IntersectionObserver or state
         'fade-in', 'fade-in-up', 'slide-in',
+        // Class names built at runtime (`theme-${id}`, `hp-tilt-${i % 3}`):
+        // PurgeCSS only keeps names it finds written out in the source, so
+        // without these the trip-cover palettes and the destination-card tilt
+        // were stripped from production CSS.
+        /^theme-/, /^hp-tilt-/,
       ]
     }),
     compression({ algorithm: 'brotliCompress' }),

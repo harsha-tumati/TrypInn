@@ -3026,10 +3026,11 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   border-radius: var(--radius-full);
 }
 
-/* Plan screen → single scrolling column on phones */
-@media (max-width: 767px) {
+/* Plan screen → single scrolling column on tablets and phones (the 340px
+   sidebar left a tablet's stops only ~420px). */
+@media (max-width: 1023px) {
   .planner-page { display: block; height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; }
-  .planner-main { display: block; overflow: visible; padding: 18px 16px 6px; }
+  .planner-main { display: block; overflow: visible; padding: 24px var(--gutter, 24px) 6px; }
   .planner-sidebar {
     width: 100%;
     border-left: none;
@@ -5924,3 +5925,66 @@ body.is-dragging-stop * { cursor: grabbing !important; user-select: none !import
 }
 .trip-cover .hp-trip-draft { left: auto; right: 10px; }
 .trip-cover-stamp { top: auto; bottom: 12px; }
+
+/* ══ Layout system ═════════════════════════════════════════════════════════
+   One content width and one gutter, shared by the navbar and every page, so
+   page edges line up with the navbar at any screen size or aspect ratio.
+   Pages used to pick their own widths (1080 / 1160 / 1180 / 1200 / 1320px),
+   so content sat 40–90px outside the navbar on wide screens. The width grows
+   with the screen (1080px on laptops up to 1440px on very wide monitors),
+   the gutter from 16px on phones to 40px on desktops. */
+:root {
+  --gutter: clamp(16px, 3.2vw, 40px);
+  --page-max: clamp(1080px, 72vw, 1440px);
+}
+.navbar {
+  width: min(var(--page-max), calc(100% - 2 * var(--gutter)));
+  max-width: none;
+}
+.page-container,
+.blog-container,
+.mv-container {
+  max-width: calc(var(--page-max) + 2 * var(--gutter));
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+.hp-section {
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+.hp-section > *,
+.hp-trips-label { max-width: var(--page-max); }
+/* Card grids fill the width: as many ~300px columns as fit, so a wide screen
+   gets four or five instead of three stretched ones, and a phone gets one. */
+.hp-trips-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.hp-stats-grid {
+  max-width: calc(var(--page-max) + 2 * var(--gutter));
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+.hp-hero,
+.hp-finalcta {
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+/* Trip workspace: the planner and itinerary fill the screen, but their
+   content stays a readable column, centred — on a 2560px monitor stop cards
+   were 2000px wide, with each stop's controls far from its name. */
+.planner-main > *,
+.itinerary-main > * {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Trip tabs: centred only while they fit. With justify-content: center an
+   overflowing row spills past its left edge where it can't be scrolled to,
+   so the first tabs were unreachable on mid-size screens. Auto margins centre
+   it when there's room and collapse to a normal scroll when there isn't. */
+.trip-pill-tabs { justify-content: flex-start; }
+.trip-pill-tabs > :first-child { margin-left: auto; }
+.trip-pill-tabs > :last-child { margin-right: auto; }
+/* Tablets and small laptops: icons only, except the tab you're on. */
+@media (min-width: 768px) and (max-width: 1180px) {
+  .trip-pill-tab:not(.active) .trip-tab-label { display: none; }
+  .trip-pill-tab:not(.active) { padding-left: 11px; padding-right: 11px; }
+}
