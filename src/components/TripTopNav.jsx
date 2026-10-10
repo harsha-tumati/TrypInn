@@ -90,6 +90,7 @@ export default function TripTopNav() {
                         end={end}
                         className={({ isActive }) => `trip-pill-tab${isActive ? ' active' : ''}`}
                         aria-label={label}
+                        title={label}
                     >
                         <Icon size={15} aria-hidden="true" />
                         <span className="trip-tab-label">{label}</span>

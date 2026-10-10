@@ -121,6 +121,10 @@ function ItineraryContent({ onOpenMap }) {
     });
     const [activeView, setActiveView] = useState(initial.activeView); // 'full' | 0 | 1 | 2 ...
     const isMobile = useIsMobile();
+    // Below 1024px the AI sidebar folds into a bar under the timeline instead
+    // of taking a third of a tablet's width. (isMobile still drives the
+    // phone-sized spacing and type.)
+    const isNarrow = useIsMobile(1024);
 
     // Smart Timeline States
     const [dayStartTime, setDayStartTime] = useState(initial.dayStartTime);
@@ -1027,7 +1031,7 @@ function ItineraryContent({ onOpenMap }) {
     const formatTabDate = (d) => d ? `${MONTHS_SHORT[d.getMonth()]} ${d.getDate()} · ${WEEKDAYS[d.getDay()]}` : '';
 
     return (
-        <div className="itinerary-page" style={{ flexDirection: isMobile ? 'column' : 'row', overflowX: 'hidden' }}>
+        <div className="itinerary-page" style={{ flexDirection: isNarrow ? 'column' : 'row', overflowX: 'hidden' }}>
             {/* Left Main Area */}
             <div className="itinerary-main" style={{ padding: isMobile ? '20px 16px' : '36px 44px', overflowX: 'hidden' }}>
                 {isDraft && (
@@ -1529,7 +1533,7 @@ function ItineraryContent({ onOpenMap }) {
             </div>
 
             {/* Right Sidebar - Tabbed: AI Suggestions / On the Way / Nearby */}
-            {isMobile && sidebarMinimized ? (
+            {isNarrow && sidebarMinimized ? (
                 /* Mobile Minimized Handle */
                 <button type="button"
                     onClick={() => setSidebarMinimized(false)}
@@ -1547,7 +1551,7 @@ function ItineraryContent({ onOpenMap }) {
                     }</span>
                 </button>
             ) : (
-            <div style={{ width: isMobile ? '100%' : 320, background: 'rgba(255,255,255,0.72)', backdropFilter: 'blur(20px) saturate(180%)', WebkitBackdropFilter: 'blur(20px) saturate(180%)', borderLeft: isMobile ? 'none' : '1px solid rgba(255,255,255,0.5)', borderTop: isMobile ? '1px solid rgba(255,255,255,0.5)' : 'none', padding: isMobile ? '16px 0' : '24px 0', overflowY: 'auto', display: 'flex', flexDirection: 'column', boxShadow: '-8px 0 32px rgba(15,23,42,0.08)', flexShrink: 0 }}>
+            <div style={{ width: isNarrow ? '100%' : 320, background: 'rgba(255,255,255,0.72)', backdropFilter: 'blur(20px) saturate(180%)', WebkitBackdropFilter: 'blur(20px) saturate(180%)', borderLeft: isNarrow ? 'none' : '1px solid rgba(255,255,255,0.5)', borderTop: isNarrow ? '1px solid rgba(255,255,255,0.5)' : 'none', padding: isNarrow ? '16px 0' : '24px 0', overflowY: 'auto', display: 'flex', flexDirection: 'column', boxShadow: '-8px 0 32px rgba(15,23,42,0.08)', flexShrink: 0 }}>
                 {/* Sidebar Tabs */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '0 16px', marginBottom: 20, overflowX: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                     {[{ id: 'ai', label: '✨ AI' }, { id: 'onway', label: '🛣️ On the Way' }, { id: 'nearby', label: '🔍 Nearby' }].map(tab => (
@@ -1563,7 +1567,7 @@ function ItineraryContent({ onOpenMap }) {
                             }}
                         >{tab.label}</button>
                     ))}
-                    {isMobile && (
+                    {isNarrow && (
                         <button type="button"
                             onClick={() => setSidebarMinimized(true)}
                             title="Minimize"
