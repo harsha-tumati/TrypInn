@@ -100,7 +100,8 @@ export async function getUserTrips(userId) {
     const membersSnap = await getDocs(
         query(collection(db, 'tripMembers'), where('uid', '==', userId))
     );
-    const tripIds = membersSnap.docs.map((d) => d.data().tripId);
+    // A pending join request isn't membership yet.
+    const tripIds = membersSnap.docs.filter((d) => d.data().role !== 'pending').map((d) => d.data().tripId);
 
     if (tripIds.length === 0) return [];
 
@@ -153,7 +154,8 @@ export async function joinTripByCode(inviteCode, userId) {
     const memberRef = doc(db, 'tripMembers', memberDocId);
     const memberSnap = await getDoc(memberRef);
 
-    if (!memberSnap.exists()) {
+    // A direct invite link also lets someone in whose request is still pending.
+    if (!memberSnap.exists() || memberSnap.data().role === 'pending') {
         await setDoc(memberRef, {
             tripId,
             uid: userId,
@@ -166,11 +168,42 @@ export async function joinTripByCode(inviteCode, userId) {
     return tripId;
 }
 
+// ─── JOIN REQUESTS ────────────────────────────────────────────────────────────
+// A request to join is a tripMembers doc with role 'pending': it lives where
+// membership lives, so approving it is a one-field change, and the member
+// lists filter it out until then.
+
+export async function requestToJoinTrip(tripId, userId) {
+    const { db, doc, getDoc, setDoc, serverTimestamp } = await getFirebase();
+    const memberRef = doc(db, 'tripMembers', `${tripId}_${userId}`);
+    const snap = await getDoc(memberRef);
+    if (snap.exists()) return snap.data().role; // already a member, or already asked
+    await setDoc(memberRef, {
+        tripId,
+        uid: userId,
+        role: 'pending',
+        requestedAt: serverTimestamp(),
+        currentLocation: null,
+        locationUpdatedAt: null,
+    });
+    return 'pending';
+}
+
+export async function approveJoinRequest(tripId, userId) {
+    const { db, doc, updateDoc, serverTimestamp } = await getFirebase();
+    await updateDoc(doc(db, 'tripMembers', `${tripId}_${userId}`), { role: 'member', joinedAt: serverTimestamp() });
+}
+
+export async function declineJoinRequest(tripId, userId) {
+    const { db, doc, deleteDoc } = await getFirebase();
+    await deleteDoc(doc(db, 'tripMembers', `${tripId}_${userId}`));
+}
+
 export async function getTripMembers(tripId) {
     const { db, query, collection, where, getDocs, getDoc, doc } = await getFirebase();
     const q = query(collection(db, 'tripMembers'), where('tripId', '==', tripId));
     const snap = await getDocs(q);
-    const memberDocs = snap.docs.map((d) => d.data());
+    const memberDocs = snap.docs.map((d) => d.data()).filter((m) => m.role !== 'pending');
 
     const members = [];
     for (const m of memberDocs) {
@@ -206,7 +239,9 @@ export async function addPlaces(tripId, placesArray) {
     for (const p of placesArray) {
         let existingId = null;
 
-        if (p.id && !p.id.startsWith('stop-')) {
+        // Planner stops that were never saved carry local ids (stop-…,
+        // region-…, route-…); there is no doc to look up for those.
+        if (p.id && !/^(stop|region|route)-/.test(p.id)) {
             const docRef = doc(db, 'places', p.id);
             const docSnap = await getDoc(docRef);
             if (docSnap.exists() && docSnap.data().tripId === tripId) {
@@ -230,6 +265,7 @@ export async function addPlaces(tripId, placesArray) {
             if (p.lng !== undefined) updates.lng = p.lng;
             if (p.imageUrl !== undefined) updates.imageUrl = p.imageUrl;
             if (p.description !== undefined) updates.description = p.description;
+            if (p.group !== undefined) updates.group = p.group;
 
             if (Object.keys(updates).length > 0) {
                 await updateDoc(doc(db, 'places', existingId), updates);
@@ -252,6 +288,11 @@ export async function addPlaces(tripId, placesArray) {
 export async function togglePlaceSelected(placeId, selected) {
     const { db, updateDoc, doc } = await getFirebase();
     await updateDoc(doc(db, 'places', placeId), { selected });
+}
+
+export async function updatePlace(placeId, fields) {
+    const { db, updateDoc, doc } = await getFirebase();
+    await updateDoc(doc(db, 'places', placeId), fields);
 }
 
 export async function updatePlaceDuration(placeId, estimatedMinutes) {

@@ -3,13 +3,15 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, useNavigate, useParams, useLocation, Link } from 'react-router-dom';
 import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
-import { Calendar, IndianRupee, MessageCircle, ArrowLeft, BarChart3, LogOut, LogIn, Sparkles, UserPlus, Check, Users } from 'lucide-react';
+import { Calendar, IndianRupee, MessageCircle, ArrowLeft, BarChart3, LogOut, LogIn, Sparkles, UserPlus, Users } from 'lucide-react';
 import { isTripClaimed } from '../utils/draftTrips';
 import BrandMark from './BrandMark';
+import ShareTripDialog, { useIsTripOrganiser } from './ShareTripDialog';
+import { useGuestMode } from '../context/GuestModeContext';
 
 export default function TripTopNav() {
     const { tripId } = useParams();
-    const { selectedTrip, places } = useTrip();
+    const { selectedTrip, places, joinRequests } = useTrip();
     const { user, userProfile, loading, signOut } = useAuth();
     const navigate = useNavigate();
     const { pathname } = useLocation();
@@ -26,15 +28,10 @@ export default function TripTopNav() {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    const [copied, setCopied] = useState(false);
-    const handleInvite = () => {
-        if (!selectedTrip?.inviteCode) return;
-        const shareUrl = `${window.location.origin}/join/${selectedTrip.inviteCode}`;
-        navigator.clipboard.writeText(shareUrl).then(() => {
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        });
-    };
+    const [shareOpen, setShareOpen] = useState(false);
+    const isGuest = useGuestMode();
+    const isOrganiser = useIsTripOrganiser();
+    const pendingCount = isOrganiser ? joinRequests.length : 0;
 
     // Map is intentionally not a tab — it's a floating toggle inside the
     // Plan and Itinerary screens (see MapToggleButton).
@@ -101,17 +98,18 @@ export default function TripTopNav() {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
-                {selectedTrip?.inviteCode && (
+                {selectedTrip && !isGuest && (
                     <button
                         type="button"
-                        onClick={handleInvite}
+                        onClick={() => setShareOpen(true)}
                         style={{
+                            position: 'relative',
                             display: 'flex',
                             alignItems: 'center',
                             gap: 6,
-                            background: copied ? '#d1fae5' : '#EEF3FC',
-                            color: copied ? '#059669' : '#1E3A8A',
-                            border: `1px solid ${copied ? '#34d399' : '#BFD0F0'}`,
+                            background: '#EEF3FC',
+                            color: '#1E3A8A',
+                            border: '1px solid #BFD0F0',
                             padding: '6px 12px',
                             borderRadius: 20,
                             fontSize: 13,
@@ -119,12 +117,15 @@ export default function TripTopNav() {
                             cursor: 'pointer',
                             transition: 'all 0.2s',
                         }}
-                        aria-label="Invite friends to trip"
+                        aria-label={pendingCount ? `Invite friends — ${pendingCount} waiting to join` : 'Invite friends to trip'}
+                        aria-haspopup="dialog"
                     >
-                        {copied ? <Check size={14} /> : <UserPlus size={14} />}
-                        {copied ? 'Copied' : 'Invite'}
+                        <UserPlus size={14} aria-hidden="true" />
+                        Invite
+                        {pendingCount > 0 && <span className="invite-badge" aria-hidden="true">{pendingCount}</span>}
                     </button>
                 )}
+                {shareOpen && <ShareTripDialog open onClose={() => setShareOpen(false)} />}
                 {loading ? (
                     <div style={{ width: 34, height: 34 }} aria-hidden="true" />
                 ) : user ? (

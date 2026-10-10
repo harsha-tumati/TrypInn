@@ -30,7 +30,7 @@ const MustVisitsPage = lazy(() => import('./pages/MustVisitsPage'));
 
 import { isTripClaimed } from './utils/draftTrips';
 
-import { Users, LogIn, Loader } from 'lucide-react';
+import { Users, LogIn, Loader, Clock } from 'lucide-react';
 import { GuestModeProvider } from './context/GuestModeContext';
 
 // ── Suspense fallback ────────────────────────────────────────────────
@@ -42,59 +42,79 @@ function RouteFallback() {
     );
 }
 
+// Shown to someone looking at a trip they're not on. With a direct invite
+// link (?invite=CODE) they can join straight away; otherwise they can ask to
+// join, and an organiser approves the request from the share dialog.
 function GuestJoinBanner({ inviteCode }) {
-    const { selectedTrip } = useTrip();
+    const { selectedTrip, joinRequests } = useTrip();
     const { user } = useAuth();
     const navigate = useNavigate();
     const [, setSearchParams] = useSearchParams();
-    const [joining, setJoining] = useState(false);
-    const [done, setDone] = useState(false);
+    const [busy, setBusy] = useState(false);
+    const [error, setError] = useState('');
 
-    if (done) return null;
+    const requested = !!user && joinRequests.some(r => r.uid === user.uid);
+    const direct = !!inviteCode;
 
-    async function handleJoin() {
+    async function handleClick() {
         if (!user) {
             navigate('/login', { state: { from: window.location.pathname + window.location.search } });
             return;
         }
-        setJoining(true);
+        setBusy(true);
+        setError('');
         try {
-            const { joinTripByCode } = await import('./services/firestoreService');
-            await joinTripByCode(inviteCode, user.uid);
-            setDone(true);
-            setSearchParams({}); // Clear query if present
+            const { joinTripByCode, requestToJoinTrip } = await import('./services/firestoreService');
+            if (direct) {
+                await joinTripByCode(inviteCode, user.uid);
+                setSearchParams({}); // the live members list now includes them
+            } else {
+                await requestToJoinTrip(selectedTrip.id, user.uid);
+            }
         } catch (e) {
             if (import.meta.env.DEV) console.error(e);
+            setError(direct ? 'Could not join. The link may have expired.' : 'Could not send your request. Please try again.');
         } finally {
-            setJoining(false);
+            setBusy(false);
         }
     }
 
+    const tripName = <strong>{selectedTrip?.name || 'this trip'}</strong>;
+    const message = requested
+        ? <>Request sent — you’ll get full access to {tripName} once an organiser approves.</>
+        : <>You're viewing {tripName} as a guest
+            {!user && <span style={{ opacity: 0.8, fontWeight: 400 }}> — sign in to {direct ? 'join' : 'ask to join'} and collaborate</span>}</>;
+    const label = !user
+        ? (direct ? 'Sign in to join' : 'Sign in to ask')
+        : direct ? 'Join trip' : 'Ask to join';
+
     return (
-        <div style={{
-            background: 'linear-gradient(90deg, #1E3A8A 0%, #3b5de7 100%)',
+        <div role="status" style={{
+            background: requested ? 'linear-gradient(90deg, #047857 0%, #10b981 100%)' : 'linear-gradient(90deg, #1E3A8A 0%, #3b5de7 100%)',
             color: '#fff', padding: '10px 20px',
             display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap',
             zIndex: 50, flexShrink: 0,
         }}>
-            <Users size={16} style={{ flexShrink: 0 }} />
+            {requested ? <Clock size={16} style={{ flexShrink: 0 }} aria-hidden="true" /> : <Users size={16} style={{ flexShrink: 0 }} aria-hidden="true" />}
             <span style={{ flex: 1, fontSize: 13, fontWeight: 600, minWidth: 0 }}>
-                You're viewing <strong>{selectedTrip?.name || 'this trip'}</strong> as a guest
-                {!user && <span style={{ opacity: 0.8, fontWeight: 400 }}> — sign in to join and collaborate</span>}
+                {message}
+                {error && <span style={{ display: 'block', fontWeight: 500, opacity: 0.9 }}>{error}</span>}
             </span>
-            <button type="button"
-                onClick={handleJoin}
-                disabled={joining}
-                style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    background: '#fff', color: '#1E3A8A',
-                    border: 'none', borderRadius: 20, padding: '6px 16px',
-                    fontSize: 13, fontWeight: 700, cursor: 'pointer', flexShrink: 0,
-                }}
-            >
-                {joining ? <Loader size={14} style={{ animation: 'spin 1s linear infinite' }} /> : <LogIn size={14} />}
-                {user ? 'Join Trip' : 'Sign in to Join'}
-            </button>
+            {!requested && (
+                <button type="button"
+                    onClick={handleClick}
+                    disabled={busy}
+                    style={{
+                        display: 'flex', alignItems: 'center', gap: 6,
+                        background: '#fff', color: '#1E3A8A',
+                        border: 'none', borderRadius: 20, padding: '6px 16px',
+                        fontSize: 13, fontWeight: 700, cursor: 'pointer', flexShrink: 0,
+                    }}
+                >
+                    {busy ? <Loader size={14} style={{ animation: 'spin 1s linear infinite' }} /> : <LogIn size={14} />}
+                    {label}
+                </button>
+            )}
         </div>
     );
 }
@@ -121,34 +141,42 @@ function TripLayout() {
         }
     }
 
+    // Keep the trip live. A one-off read left every screen showing the trip
+    // as it was when opened — Start Navigation wrote status 'active' and the
+    // button never changed, and edits by other members never appeared.
     useEffect(() => {
-        if (!selectedTrip || selectedTrip.id !== tripId) {
-            // Load trip from Firestore if navigating directly
-            async function loadTrip() {
-                try {
-                    const [{ db }, { doc, getDoc }] = await Promise.all([
-                        import('./config/firebase').then(m => m.getFirebase()),
-                        import('firebase/firestore'),
-                    ]);
-                    const tripSnap = await getDoc(doc(db, 'trips', tripId));
-                    if (tripSnap.exists()) {
-                        setSelectedTrip({ id: tripSnap.id, ...tripSnap.data() });
-                    }
-                } catch (e) {
-                    if (import.meta.env.DEV) console.error('Failed to load trip:', e);
-                }
+        if (!tripId) return;
+        let unsub = null;
+        let cancelled = false;
+        (async () => {
+            try {
+                const [{ db }, { doc, onSnapshot }] = await Promise.all([
+                    import('./config/firebase').then(m => m.getFirebase()),
+                    import('firebase/firestore'),
+                ]);
+                if (cancelled) return;
+                unsub = onSnapshot(doc(db, 'trips', tripId), (snap) => {
+                    if (snap.exists()) setSelectedTrip({ id: snap.id, ...snap.data() });
+                }, (e) => {
+                    if (import.meta.env.DEV) console.error('Trip listener failed:', e);
+                });
+            } catch (e) {
+                if (import.meta.env.DEV) console.error('Failed to load trip:', e);
             }
-            loadTrip();
-        }
-    }, [tripId, selectedTrip, setSelectedTrip]);
+        })();
+        return () => { cancelled = true; if (unsub) unsub(); };
+    }, [tripId, setSelectedTrip]);
 
-    const activeInviteCode = inviteCodeParam || selectedTrip?.inviteCode;
+    // Only a code from the link itself grants direct entry. The trip's own
+    // code is never offered to a guest — that would turn every view of the
+    // trip into a join link and make "ask to join" meaningless.
+    const activeInviteCode = inviteCodeParam || null;
 
     return (
         <GuestModeProvider isGuest={isGuest}>
             <div className="trip-layout-modern">
                 <TripTopNav />
-                {isGuest && activeInviteCode && <GuestJoinBanner inviteCode={activeInviteCode} />}
+                {isGuest && <GuestJoinBanner inviteCode={activeInviteCode} />}
                 <div className="trip-content-modern">
                     <Outlet />
                 </div>

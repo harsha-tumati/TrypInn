@@ -1,12 +1,12 @@
 // src/pages/ItineraryPage.jsx
-import { Fragment, useState, useEffect, useMemo } from 'react';
+import { Fragment, useState, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
 import { getOptimizedRoute, computeLegDurations } from '../services/routeService';
 import { hasCoords } from '../utils/geo';
 import { getSuggestions, getPlaceVisitDurations } from '../config/openai';
 import { enrichPlacesWithGoogle } from '../services/placesService';
-import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, claimTrip } from '../services/firestoreService';
+import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, updateTrip, claimTrip } from '../services/firestoreService';
 import { useGuestMode } from '../context/GuestModeContext';
 import LocationAutocomplete from '../components/LocationAutocomplete';
 import { isTripClaimed, removeDraftId } from '../utils/draftTrips';
@@ -21,6 +21,81 @@ import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
 import usePageSeo from '../hooks/usePageSeo';
 
+// ── Keeping the schedule steady ─────────────────────────────────────────────
+// Leaving this tab unmounts the page. Without help it came back blank and
+// rebuilt itself — default durations, no route, then the route and AI timings
+// landing a moment later — so breaks appeared, moved and vanished, and every
+// edit was lost. Two things fix that:
+//   • sessionState / routeCache keep everything for the session, so coming
+//     back to the tab restores the page exactly, with no recalculation;
+//   • the person's edits are saved on the trip (trip.schedule), so they also
+//     survive a reload and reach the trip's other members.
+
+const sessionState = new Map(); // tripId -> last state of this page
+const routeCache = new Map();   // route signature -> directions result
+const ROUTE_CACHE_LIMIT = 30;
+
+const asSet = (list) => new Set(list || []);
+const asFlags = (list) => Object.fromEntries((list || []).map(k => [k, true]));
+const flagsOf = (obj) => Object.keys(obj || {}).filter(k => obj[k]).sort();
+
+/** JSON with sorted keys — Firestore doesn't keep map keys in order. */
+function stableJson(value) {
+    if (Array.isArray(value)) return `[${value.map(stableJson).join(',')}]`;
+    if (value && typeof value === 'object') {
+        return `{${Object.keys(value).sort().map(k => `${JSON.stringify(k)}:${stableJson(value[k])}`).join(',')}}`;
+    }
+    return JSON.stringify(value ?? null);
+}
+
+/** The schedule edits a person has made, in the shape saved on the trip. */
+function scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays }) {
+    const durations = {};
+    Object.keys(userOverrides).forEach(id => {
+        if (userOverrides[id] && placeDurations[id] != null) durations[id] = placeDurations[id];
+    });
+    return {
+        dayStartTime,
+        durations,
+        cancelledBreaks: flagsOf(cancelledBreaks),
+        deletedBreaks: flagsOf(deletedBreaks),
+        manualBreaks: manualBreaks || {},
+        forcedDayBreaks: [...forcedDayBreaks].sort(),
+        forcedDayMerges: [...forcedDayMerges].sort(),
+        removedNightStays: [...removedNightStays].sort(),
+    };
+}
+
+/** Page state seeded from what's saved on the trip. */
+function stateFromTrip(trip) {
+    const saved = trip?.schedule || {};
+    const durations = saved.durations || {};
+    return {
+        dayStartTime: saved.dayStartTime || '09:00',
+        placeDurations: { ...durations },
+        userOverrides: asFlags(Object.keys(durations)),
+        cancelledBreaks: asFlags(saved.cancelledBreaks),
+        deletedBreaks: asFlags(saved.deletedBreaks),
+        manualBreaks: saved.manualBreaks || {},
+        forcedDayBreaks: asSet(saved.forcedDayBreaks),
+        forcedDayMerges: asSet(saved.forcedDayMerges),
+        removedNightStays: asSet(saved.removedNightStays),
+    };
+}
+
+const savedScheduleJson = (trip) => (trip ? stableJson(scheduleOf(stateFromTrip(trip))) : null);
+
+/** Identifies a route by its stops, in order — the same stops reuse it. */
+function routeSignature(places, trip) {
+    const pt = (p) => (hasCoords(p) ? `${Number(p.lat).toFixed(5)},${Number(p.lng).toFixed(5)}` : '-');
+    return [pt(trip?.startingPoint), ...places.filter(p => p.lat).map(p => `${p.id}:${pt(p)}`), pt(trip?.endingPoint)].join('|');
+}
+
+function rememberRoute(sig, result) {
+    routeCache.set(sig, result);
+    if (routeCache.size > ROUTE_CACHE_LIMIT) routeCache.delete(routeCache.keys().next().value);
+}
+
 function ItineraryContent({ onOpenMap }) {
     const { selectedTrip, setSelectedTrip, places } = useTrip();
     const { user } = useAuth();
@@ -28,31 +103,117 @@ function ItineraryContent({ onOpenMap }) {
     const navigate = useNavigate();
     const { tripId } = useParams();
     const [loadingAI, setLoadingAI] = useState(false);
-    const [aiSuggestions, setAiSuggestions] = useState([]);
-    const [activeView, setActiveView] = useState('full'); // 'full' | 0 | 1 | 2 ...
+    const [aiSuggestions, setAiSuggestions] = useState(() => sessionState.get(tripId)?.aiSuggestions || []);
+    // Where this page starts: as it was left this session, else as saved on
+    // the trip, else defaults (the trip itself may still be loading).
+    const [initial] = useState(() => {
+        const session = sessionState.get(tripId);
+        if (session) return session;
+        const trip = selectedTrip?.id === tripId ? selectedTrip : null;
+        return {
+            ...stateFromTrip(trip),
+            aiDaysMeta: {},
+            openLegs: new Set(),
+            activeView: 'full',
+            remoteJson: savedScheduleJson(trip),
+            lastWrittenJson: null,
+        };
+    });
+    const [activeView, setActiveView] = useState(initial.activeView); // 'full' | 0 | 1 | 2 ...
     const isMobile = useIsMobile();
 
     // Smart Timeline States
-    const [dayStartTime, setDayStartTime] = useState('09:00');
-    const [placeDurations, setPlaceDurations] = useState({}); // placeId -> duration in minutes
-    const [userOverrides, setUserOverrides] = useState({}); // placeIds the user has manually edited
-    const [aiDaysMeta, setAiDaysMeta] = useState({}); // placeId -> recommended days (from AI)
+    const [dayStartTime, setDayStartTime] = useState(initial.dayStartTime);
+    const [placeDurations, setPlaceDurations] = useState(initial.placeDurations); // placeId -> duration in minutes
+    // Drive legs whose breaks are expanded; all are folded by default.
+    const [openLegs, setOpenLegs] = useState(initial.openLegs);
+    const toggleLeg = (key) => setOpenLegs(prev => {
+        const next = new Set(prev);
+        if (next.has(key)) next.delete(key); else next.add(key);
+        return next;
+    });
+    const [userOverrides, setUserOverrides] = useState(initial.userOverrides); // placeIds the user has manually edited
+    const [aiDaysMeta, setAiDaysMeta] = useState(initial.aiDaysMeta); // placeId -> recommended days (from AI)
     const [loadingDurations, setLoadingDurations] = useState(false);
-    const [cancelledBreaks, setCancelledBreaks] = useState({});
-    const [deletedBreaks, setDeletedBreaks] = useState({}); // breakId -> true (permanently removed)
-    const [manualBreaks, setManualBreaks] = useState({}); // transitIdx -> [{id, name, type, duration}]
-    const [itineraryRoute, setItineraryRoute] = useState(null);
-    const [forcedDayBreaks, setForcedDayBreaks] = useState(new Set()); // placeIds forced to next day
-    const [forcedDayMerges, setForcedDayMerges] = useState(new Set()); // placeIds where midnight split is suppressed
-    const [removedNightStays, setRemovedNightStays] = useState(new Set()); // placeIds where hotel night-stay is manually removed
-    const [sidebarTab, setSidebarTab] = useState('ai'); // 'ai' | 'onway' | 'nearby'
+    const [cancelledBreaks, setCancelledBreaks] = useState(initial.cancelledBreaks);
+    const [deletedBreaks, setDeletedBreaks] = useState(initial.deletedBreaks); // breakId -> true (permanently removed)
+    const [manualBreaks, setManualBreaks] = useState(initial.manualBreaks); // transitIdx -> [{id, name, type, duration}]
+    const [routeState, setRouteState] = useState(null); // { sig, result } — latest route fetched here
+    const [forcedDayBreaks, setForcedDayBreaks] = useState(initial.forcedDayBreaks); // placeIds forced to next day
+    const [forcedDayMerges, setForcedDayMerges] = useState(initial.forcedDayMerges); // placeIds where midnight split is suppressed
+    const [removedNightStays, setRemovedNightStays] = useState(initial.removedNightStays); // placeIds where hotel night-stay is manually removed
+
+    // ── Schedule sync with the trip ──────────────────────────────────────────
+    // remoteJson: the saved schedule this page has caught up with.
+    // lastWrittenJson: the last schedule this page saved itself.
+    const [remoteJson, setRemoteJson] = useState(initial.remoteJson);
+    const [lastWrittenJson, setLastWrittenJson] = useState(initial.lastWrittenJson);
+    const tripReady = selectedTrip?.id === tripId;
+    const currentRemoteJson = tripReady ? savedScheduleJson(selectedTrip) : null;
+    if (tripReady && currentRemoteJson !== remoteJson) {
+        // The saved schedule changed (first load, or another member edited
+        // it). Adopt it — unless it's just our own save coming back.
+        setRemoteJson(currentRemoteJson);
+        if (currentRemoteJson !== lastWrittenJson) {
+            const saved = stateFromTrip(selectedTrip);
+            setDayStartTime(saved.dayStartTime);
+            setUserOverrides(saved.userOverrides);
+            // Keep AI estimates for everything the saved edits don't cover.
+            setPlaceDurations(prev => {
+                const next = {};
+                Object.entries(prev).forEach(([id, mins]) => { if (!userOverrides[id]) next[id] = mins; });
+                return { ...next, ...saved.placeDurations };
+            });
+            setCancelledBreaks(saved.cancelledBreaks);
+            setDeletedBreaks(saved.deletedBreaks);
+            setManualBreaks(saved.manualBreaks);
+            setForcedDayBreaks(saved.forcedDayBreaks);
+            setForcedDayMerges(saved.forcedDayMerges);
+            setRemovedNightStays(saved.removedNightStays);
+        }
+    }
+
+    const schedule = useMemo(
+        () => scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays }),
+        [dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays],
+    );
+    const scheduleJson = stableJson(schedule);
+
+    // Save edits to the trip shortly after they're made. Only once the saved
+    // schedule has been read (never overwrite it with defaults), and only
+    // when something actually differs from it.
+    const canSave = tripReady && !isGuest && remoteJson === currentRemoteJson;
+    useEffect(() => {
+        if (!canSave || scheduleJson === currentRemoteJson) return;
+        const t = setTimeout(() => {
+            setLastWrittenJson(scheduleJson);
+            updateTrip(tripId, { schedule }).catch(e => console.error('Saving the schedule failed', e));
+        }, 800);
+        return () => clearTimeout(t);
+        // schedule is captured with scheduleJson; it carries no other changes.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [canSave, scheduleJson, currentRemoteJson, tripId]);
+
+    const [sidebarTab, setSidebarTab] = useState(initial.sidebarTab || 'ai'); // 'ai' | 'onway' | 'nearby'
     const [sidebarMinimized, setSidebarMinimized] = useState(true);
-    const [nearbyQuery, setNearbyQuery] = useState('');
-    const [nearbyResults, setNearbyResults] = useState([]);
+    const [nearbyQuery, setNearbyQuery] = useState(initial.nearbyQuery || '');
+    const [nearbyResults, setNearbyResults] = useState(initial.nearbyResults || []);
     const [loadingNearby, setLoadingNearby] = useState(false);
-    const [onWayResults, setOnWayResults] = useState([]);
+    const [onWayResults, setOnWayResults] = useState(initial.onWayResults || []);
     const [loadingOnWay, setLoadingOnWay] = useState(false);
     const [editingBreak, setEditingBreak] = useState(null); // { isNew, id, transitIdx, type, duration, afterDriveMinutes, maxTransitMinutes }
+
+    // Remember the page for this session, so a tab switch restores it as is.
+    useEffect(() => {
+        sessionState.set(tripId, {
+            dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
+            manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, openLegs, activeView,
+            remoteJson, lastWrittenJson,
+            aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults,
+        });
+    }, [tripId, dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
+        manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, openLegs, activeView, remoteJson, lastWrittenJson,
+        aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults]);
 
     // ── Draft → profile claiming ─────────────────────────────────────────────
     // A trip is created anonymously as a draft. Claiming it to a profile is
@@ -120,12 +281,18 @@ function ItineraryContent({ onOpenMap }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [placesKey, placeOrderKey]);
 
+    // The trip the sidebar's results belong to. Restored results already
+    // belong to this trip, so coming back to the tab doesn't wipe them.
+    const sidebarTripRef = useRef(sessionState.has(tripId) ? tripId : null);
     useEffect(() => {
-        // Immediately clear stale suggestions from the previous trip
-        setAiSuggestions([]);
-        setOnWayResults([]);
-        setNearbyResults([]);
-        setNearbyQuery('');
+        // Clear suggestions left over from a different trip
+        if (sidebarTripRef.current !== selectedTrip?.id) {
+            setAiSuggestions([]);
+            setOnWayResults([]);
+            setNearbyResults([]);
+            setNearbyQuery('');
+        }
+        sidebarTripRef.current = selectedTrip?.id;
 
         // Fetch AI suggestions for sidebar — cached by trip ID in localStorage
         let isMounted = true;
@@ -202,7 +369,6 @@ function ItineraryContent({ onOpenMap }) {
         if (!placesToQuery.length) return;
 
         async function fetchDurations() {
-            setLoadingDurations(true);
             try {
                 const cacheKey = `ai_durations_v2_${placesToQuery.map(p => p.id).join('-')}`;
                 let result = null;
@@ -211,6 +377,9 @@ function ItineraryContent({ onOpenMap }) {
                     try { result = JSON.parse(cached); } catch { /* invalid JSON, ignore */ }
                 }
                 if (!result) {
+                    // Only a real request shows "AI timing…" — a cache hit
+                    // would just flash it.
+                    setLoadingDurations(true);
                     result = await getPlaceVisitDurations(placesToQuery);
                     try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch { /* quota or storage unavailable */ }
                 }
@@ -260,16 +429,40 @@ function ItineraryContent({ onOpenMap }) {
         } catch (e) { console.error('Failed to add place to itinerary', e); }
     };
 
-    const handleMovePlace = async (index, direction) => {
-        if (direction === -1 && index === 0) return;
-        if (direction === 1 && index === orderedPlaces.length - 1) return;
+    // ── Reordering: drag a stop by its handle, or nudge it with ▲ / ▼ ────────
+    // Cards glide to their new places (FLIP): note where every card is just
+    // before the order changes, then animate each from there once it moves.
+    const flipFrom = useRef(null);
+    const captureCardPositions = () => {
+        flipFrom.current = new Map(
+            [...document.querySelectorAll('[data-stop-id]')].map(el => [el.dataset.stopId, el.getBoundingClientRect().top]),
+        );
+    };
+    useLayoutEffect(() => {
+        const from = flipFrom.current;
+        flipFrom.current = null;
+        if (!from || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+        document.querySelectorAll('[data-stop-id]').forEach(el => {
+            const before = from.get(el.dataset.stopId);
+            if (before == null) return;
+            const delta = before - el.getBoundingClientRect().top;
+            if (Math.abs(delta) < 1) return;
+            el.style.transition = 'none';
+            el.style.transform = `translateY(${delta}px)`;
+            requestAnimationFrame(() => {
+                el.style.transition = 'transform 280ms cubic-bezier(0.2, 0.8, 0.2, 1)';
+                el.style.transform = '';
+            });
+        });
+    }, [placeOrderKey]);
 
+    const reorderPlace = async (fromIndex, toIndex) => {
+        if (fromIndex < 0 || toIndex < 0 || toIndex >= orderedPlaces.length || fromIndex === toIndex) return;
         const newPlaces = [...orderedPlaces];
-        const temp = newPlaces[index];
-        newPlaces[index] = newPlaces[index + direction];
-        newPlaces[index + direction] = temp;
-
+        const [moved] = newPlaces.splice(fromIndex, 1);
+        newPlaces.splice(toIndex, 0, moved);
         const newOrder = newPlaces.map(p => p.id);
+        captureCardPositions();
 
         // Optimistic UI update for immediate visual feedback
         setSelectedTrip(prev => ({
@@ -282,6 +475,95 @@ function ItineraryContent({ onOpenMap }) {
         await updateRouteConfig(selectedTrip.id, { optimize: false });
     };
 
+    const handleMovePlace = (index, direction) => reorderPlace(index, index + direction);
+
+    // Drag: a floating copy of the card follows the pointer (mouse or touch),
+    // a line marks where it will land, and the list scrolls near its edges.
+    // All of it is plain DOM work outside React, so dragging stays smooth.
+    const [draggingId, setDraggingId] = useState(null);
+    const startDrag = (e, place) => {
+        if (e.button > 0 || e.target.closest('button')) return; // the ▲ / ▼ still click
+        const card = e.currentTarget.closest('[data-stop-id]');
+        const scroller = document.querySelector('.itinerary-main');
+        const fromIndex = orderedPlaces.findIndex(p => p.id === place.id);
+        if (!card || fromIndex === -1) return;
+        e.preventDefault();
+
+        const rect = card.getBoundingClientRect();
+        const grabOffset = e.clientY - rect.top;
+        const ghost = card.cloneNode(true);
+        ghost.removeAttribute('data-stop-id');
+        Object.assign(ghost.style, {
+            position: 'fixed', left: `${rect.left}px`, top: `${rect.top}px`, width: `${rect.width}px`,
+            margin: 0, zIndex: 3000, pointerEvents: 'none', transition: 'none',
+            transform: 'scale(1.02)', boxShadow: '0 24px 48px rgba(15,23,42,0.22)', opacity: '0.96',
+        });
+        const line = document.createElement('div');
+        line.className = 'itin-drop-line';
+        document.body.append(ghost, line);
+        document.body.classList.add('is-dragging-stop');
+        setDraggingId(place.id);
+
+        let toIndex = fromIndex;
+        let lastY = e.clientY;
+        let scrollSpeed = 0;
+
+        const locate = (y) => {
+            // Other visible cards, in trip order. In a single-day view only
+            // that day's stops are on screen.
+            const others = [...document.querySelectorAll('[data-stop-id]')]
+                .filter(el => el.dataset.stopId !== place.id)
+                .map(el => ({ el, rect: el.getBoundingClientRect(), index: orderedPlaces.findIndex(p => p.id === el.dataset.stopId) }))
+                .filter(o => o.index !== -1)
+                .sort((a, b) => a.index - b.index);
+            if (!others.length) return;
+            const below = others.find(o => y < o.rect.top + o.rect.height / 2);
+            const without = (i) => (i > fromIndex ? i - 1 : i);
+            const anchor = below || others[others.length - 1];
+            toIndex = below ? without(below.index) : without(anchor.index) + 1;
+            const lineY = below ? below.rect.top - 9 : anchor.rect.bottom + 1;
+            Object.assign(line.style, { top: `${lineY}px`, left: `${anchor.rect.left}px`, width: `${anchor.rect.width}px` });
+            line.classList.toggle('is-noop', toIndex === fromIndex);
+        };
+
+        const move = (ev) => {
+            lastY = ev.clientY;
+            ghost.style.top = `${ev.clientY - grabOffset}px`;
+            locate(ev.clientY);
+            const box = scroller?.getBoundingClientRect();
+            if (!box) return;
+            const edge = 90;
+            scrollSpeed = ev.clientY < box.top + edge ? -Math.ceil((box.top + edge - ev.clientY) / 6)
+                : ev.clientY > box.bottom - edge ? Math.ceil((ev.clientY - (box.bottom - edge)) / 6) : 0;
+        };
+        const tick = setInterval(() => {
+            if (!scrollSpeed || !scroller) return;
+            scroller.scrollTop += scrollSpeed;
+            locate(lastY);
+        }, 16);
+
+        const finish = (commit) => {
+            clearInterval(tick);
+            window.removeEventListener('pointermove', move);
+            window.removeEventListener('pointerup', onUp);
+            window.removeEventListener('pointercancel', onCancel);
+            window.removeEventListener('keydown', onKey);
+            ghost.remove();
+            line.remove();
+            document.body.classList.remove('is-dragging-stop');
+            setDraggingId(null);
+            if (commit && toIndex !== fromIndex) reorderPlace(fromIndex, toIndex);
+        };
+        const onUp = () => finish(true);
+        const onCancel = () => finish(false);
+        const onKey = (ev) => { if (ev.key === 'Escape') finish(false); };
+        window.addEventListener('pointermove', move);
+        window.addEventListener('pointerup', onUp);
+        window.addEventListener('pointercancel', onCancel);
+        window.addEventListener('keydown', onKey);
+        locate(e.clientY);
+    };
+
     const formatDuration = (totalMinutes) => {
         if (totalMinutes < 60) return `${totalMinutes} mins`;
         const hrs = Math.floor(totalMinutes / 60);
@@ -291,9 +573,15 @@ function ItineraryContent({ onOpenMap }) {
 
     const routesLibrary = useMapsLibrary('routes');
 
-    // Dynamically calculate route for current sequence (no optimization)
+    // Route for the current sequence (no optimization). Cached by its stops,
+    // so returning to this tab — or the trip doc updating for any other
+    // reason — reuses it instead of fetching and redrawing the schedule.
+    const routeSig = routeSignature(places, selectedTrip);
+    const itineraryRoute = (routeState?.sig === routeSig ? routeState.result : routeCache.get(routeSig)) || routeState?.result || null;
     useEffect(() => {
         let isMounted = true;
+        const sig = routeSig;
+        if (routeCache.has(sig)) return;
         const fetchRoute = async () => {
             if (!routesLibrary || !places || places.length === 0) return;
             const validPlaces = places.filter(p => p.lat);
@@ -313,8 +601,9 @@ function ItineraryContent({ onOpenMap }) {
             try {
                 // optimize = false ensures we get transit times for the EXACT sequence user arranged
                 const res = await getOptimizedRoute(sortedValid, selectedTrip?.startingPoint || null, false, selectedTrip?.endingPoint || null);
-                if (isMounted && res) {
-                    setItineraryRoute(res.directionsResult);
+                if (res) {
+                    rememberRoute(sig, res.directionsResult);
+                    if (isMounted) setRouteState({ sig, result: res.directionsResult });
                 }
             } catch (e) {
                 console.error('Failed to fetch route for itinerary, falling back to RouteMatrix', e);
@@ -325,7 +614,7 @@ function ItineraryContent({ onOpenMap }) {
 
                 if (placesToMap.length >= 2) {
                     const metrics = await computeLegDurations(placesToMap);
-                    if (isMounted && metrics.length) {
+                    if (metrics.length) {
                         const legs = metrics.map((m) => ({
                             duration: { value: m.duration || 0 },
                             distance: {
@@ -334,7 +623,9 @@ function ItineraryContent({ onOpenMap }) {
                                     : 'Unroutable',
                             },
                         }));
-                        setItineraryRoute({ routes: [{ legs }] });
+                        const result = { routes: [{ legs }] };
+                        rememberRoute(sig, result);
+                        if (isMounted) setRouteState({ sig, result });
                     }
                 }
             }
@@ -342,7 +633,9 @@ function ItineraryContent({ onOpenMap }) {
 
         fetchRoute();
         return () => { isMounted = false; };
-    }, [places, selectedTrip?.placeOrder, selectedTrip?.startingPoint, selectedTrip?.endingPoint, routesLibrary]);
+        // routeSig captures every input that changes the route.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [routeSig, routesLibrary]);
 
     // Calculate intelligent timeline
     const timeline = useMemo(() => {
@@ -462,29 +755,39 @@ function ItineraryContent({ onOpenMap }) {
                 // Identify when during the drive we'd hit meal times & rest intervals
                 const suggestedBreaks = [];
 
-                // Rest stops: every 120 min of drive time
-                const numRests = Math.floor(rawTransitMinutes / 120);
+                // Tea breaks: one every 3 hours of driving, never at the moment
+                // of arrival (a 6-hour drive gets one, at the 3-hour mark).
+                const numRests = Math.max(0, Math.ceil(rawTransitMinutes / 180) - 1);
                 for (let i = 0; i < numRests; i++) {
                     const restAt = new Date(driveStart);
-                    restAt.setMinutes(restAt.getMinutes() + (i + 1) * 120);
+                    restAt.setMinutes(restAt.getMinutes() + (i + 1) * 180);
                     suggestedBreaks.push({ id: `transit-${idx}-rest-${i}`, name: 'Rest Stop', type: 'rest', defaultDuration: 15, scheduledAt: restAt });
                 }
 
-                // Meal breaks: if drive crosses 1PM or 8PM
+                // Meal breaks at breakfast, lunch and dinner time on every day the
+                // drive spans — a 14-hour overnight drive gets dinner and the next
+                // morning's breakfast. The first day keeps its original ids so
+                // edits saved against them still apply.
                 if (rawTransitMinutes >= 60) {
                     const driveEnd = new Date(driveStart);
                     driveEnd.setMinutes(driveEnd.getMinutes() + rawTransitMinutes);
-
-                    const lunchToday = new Date(driveStart);
-                    lunchToday.setHours(13, 0, 0, 0);
-                    if (lunchToday > driveStart && lunchToday < driveEnd) {
-                        suggestedBreaks.push({ id: `transit-${idx}-lunch`, name: 'Lunch Stop', type: 'meal', defaultDuration: 60, scheduledAt: lunchToday });
-                    }
-
-                    const dinnerToday = new Date(driveStart);
-                    dinnerToday.setHours(20, 0, 0, 0);
-                    if (dinnerToday > driveStart && dinnerToday < driveEnd) {
-                        suggestedBreaks.push({ id: `transit-${idx}-dinner`, name: 'Dinner Stop', type: 'meal', defaultDuration: 60, scheduledAt: dinnerToday });
+                    const MEALS = [
+                        ['breakfast', 'Breakfast Stop', 8, 30],
+                        ['lunch', 'Lunch Stop', 13, 60],
+                        ['dinner', 'Dinner Stop', 20, 60],
+                    ];
+                    for (let d = 0; d < 7; d++) {
+                        const day = new Date(driveStart);
+                        day.setDate(day.getDate() + d);
+                        day.setHours(0, 0, 0, 0);
+                        if (day > driveEnd) break;
+                        for (const [key, name, hour, minutes] of MEALS) {
+                            const at = new Date(day);
+                            at.setHours(hour, 0, 0, 0);
+                            if (at > driveStart && at < driveEnd) {
+                                suggestedBreaks.push({ id: `transit-${idx}-${key}${d ? `-d${d}` : ''}`, name, type: 'meal', defaultDuration: minutes, scheduledAt: at });
+                            }
+                        }
                     }
                 }
 
@@ -904,19 +1207,24 @@ function ItineraryContent({ onOpenMap }) {
                                             <div style={{ width: 2, flex: 1, background: '#94a3b8', margin: '4px 0' }} />
                                         </div>
 
-                                        <div style={{
+                                        <div data-stop-id={(!place.isStartingPoint && !place.isEndingPoint && !isCarryOver) ? place.id : undefined} style={{
                                             flex: 1, display: 'flex', alignItems: 'center', background: isCarryOver ? 'rgba(245,243,255,0.85)' : 'rgba(255,255,255,0.8)',
                                             border: `1px solid ${isCarryOver ? 'rgba(221,214,254,0.6)' : 'rgba(255,255,255,0.5)'}`, borderRadius: 16, padding: isMobile ? '12px' : '16px',
                                             boxShadow: '0 8px 32px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.6)', position: 'relative', marginBottom: 16,
-                                            opacity: (place.isStartingPoint || place.isEndingPoint) ? 0.9 : 1,
+                                            opacity: draggingId === place.id ? 0.35 : (place.isStartingPoint || place.isEndingPoint) ? 0.9 : 1,
                                             flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0,
                                             backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)'
                                         }}>
                                             {/* Drag Handle (Hidden for start/end and guests) */}
                                             {!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest && (
-                                                <div style={{ display:'flex', flexDirection:'column', paddingRight: isMobile ? 12 : 16, borderRight:'1px solid #f1f5f9', cursor:'pointer', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}>
+                                                <div
+                                                    className="itin-drag-handle"
+                                                    onPointerDown={(e) => startDrag(e, place)}
+                                                    title="Drag to reorder"
+                                                    style={{ display:'flex', flexDirection:'column', paddingRight: isMobile ? 12 : 16, borderRight:'1px solid #f1f5f9', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}
+                                                >
                                                     <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▲</button>
-                                                    <GripVertical size={16} style={{ margin: '4px 0' }} />
+                                                    <GripVertical size={18} style={{ margin: '4px 0' }} aria-hidden="true" />
                                                     <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▼</button>
                                                 </div>
                                             )}
@@ -1089,25 +1397,51 @@ function ItineraryContent({ onOpenMap }) {
                                             <div style={{ width: 32, display: 'flex', justifyContent: 'center', marginRight: 16 }}>
                                                 <div style={{ width: 2, height: 40, background: '#94a3b8' }} />
                                             </div>
-                                            {(transitMinutes > 0 || transitDistance === 'Unroutable') && (
+                                            {(transitMinutes > 0 || transitDistance === 'Unroutable') && (() => {
+                                                // Meals (and night stays) always show under the drive. Tea
+                                                // breaks fold into one line ("6 tea breaks · 1 hr 30 mins");
+                                                // the arrow opens the full list, in time order, for editing.
+                                                const legKey = `${place.id}-${isCarryOver ? 'carry' : 'main'}`;
+                                                const open = openLegs.has(legKey);
+                                                const events = transitEvents || [];
+                                                const teas = events.filter(e => e.type === 'rest');
+                                                const activeTeas = teas.filter(e => !e.isCancelled);
+                                                const skipped = teas.length - activeTeas.length;
+                                                const teaMinutes = activeTeas.reduce((n, e) => n + (e.duration || 0), 0);
+                                                const summary = activeTeas.length
+                                                    ? `${activeTeas.length} tea break${activeTeas.length > 1 ? 's' : ''} · ${formatDuration(teaMinutes)}`
+                                                    : 'Add a break';
+                                                const shown = open ? events : events.filter(e => e.type !== 'rest');
+                                                return (
                                                 <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
                                                     {transitDistance === 'Unroutable' ? (
                                                         <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#ef4444', fontSize: 13, fontWeight: 600, paddingLeft: 32, marginBottom: 8 }}>
                                                             ⚠️ Route unavailable (Flight or ferry required)
                                                         </div>
-                                                    ) : transitEvents.length === 0 ? (
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#3b82f6', fontSize: 13, fontWeight: 600, paddingLeft: 32, marginBottom: 8 }}>
-                                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                                                            Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#6b7280', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
-                                                        </div>
                                                     ) : (
-                                                        <div style={{ paddingLeft: 32, marginBottom: 4, flex: 1, paddingRight: 32 }}>
-                                                            <div style={{ color: '#3b82f6', fontSize: 13, fontWeight: 600, marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
+                                                        <div className="itin-drive">
+                                                            <span className="itin-drive-label">
                                                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
                                                                 Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#6b7280', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
-                                                            </div>
+                                                            </span>
+                                                            <button
+                                                                type="button"
+                                                                className={`itin-breaks-toggle${open ? ' is-open' : ''}`}
+                                                                onClick={() => toggleLeg(legKey)}
+                                                                aria-expanded={open}
+                                                                aria-label={`${summary}${skipped ? `, ${skipped} skipped` : ''} — ${open ? 'hide' : 'show and edit'} breaks`}
+                                                            >
+                                                                <span aria-hidden="true">{activeTeas.length ? '☕' : '＋'}</span>
+                                                                {summary}
+                                                                {skipped > 0 && <span className="itin-breaks-skipped">· {skipped} skipped</span>}
+                                                                <ChevronDown size={14} className="itin-breaks-chevron" aria-hidden="true" />
+                                                            </button>
+                                                        </div>
+                                                    )}
 
-                                                            {transitEvents.map(event => (
+                                                    {transitDistance !== 'Unroutable' && (open || shown.length > 0) && (
+                                                        <div className="itin-breaks">
+                                                            {shown.map(event => (
                                                                 <div key={event.id} style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 22, marginTop: 4, flexWrap: 'wrap' }}>
                                                                     {!event.isCancelled ? (
                                                                         <>
@@ -1141,11 +1475,9 @@ function ItineraryContent({ onOpenMap }) {
                                                                     )}
                                                                 </div>
                                                             ))}
-                                                        </div>
-                                                    )}
 
-                                                    {/* Add Break buttons — always visible */}
-                                                    <div style={{ display: 'flex', gap: 8, marginLeft: 54, marginTop: 4, marginBottom: 8, flexWrap: 'wrap' }}>
+                                                            {open && (
+                                                            <div style={{ display: 'flex', gap: 8, marginLeft: 22, marginTop: 8, marginBottom: 8, flexWrap: 'wrap' }}>
                                                         <button type="button"
                                                             onClick={() => addManualBreak(idx, 'meal')}
                                                             style={{ background: 'none', border: '1px dashed #f59e0b', color: '#f59e0b', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 10px' : '2px 8px', borderRadius: 4, fontWeight: 600, minHeight:32 }}
@@ -1159,8 +1491,12 @@ function ItineraryContent({ onOpenMap }) {
                                                             style={{ background: 'none', border: '1px dashed #172E6E', color: '#172E6E', fontSize: 10, cursor: 'pointer', padding: isMobile ? '4px 10px' : '2px 8px', borderRadius: 4, fontWeight: 600, minHeight:32 }}
                                                         >+ Night Stay</button>
                                                     </div>
+                                                            )}
+                                                        </div>
+                                                    )}
                                                 </div>
-                                            )}
+                                                );
+                                            })()}
                                         </div>
                                     )}
                                 </Fragment>

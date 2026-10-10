@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 
 export default function Modal({ open, onClose, title, subtitle, children, dismissable = true, size = 'md' }) {
@@ -18,7 +19,11 @@ export default function Modal({ open, onClose, title, subtitle, children, dismis
 
     const maxWidths = { sm: 420, md: 540, lg: 680 };
 
-    return (
+    // Rendered into <body>: a modal opened from inside a blurred or transformed
+    // container (the trip nav bar has backdrop-filter) would otherwise be
+    // positioned against that container instead of the viewport, and spill
+    // off the top of the screen.
+    return createPortal(
         <div
             className="modal-overlay"
             onClick={dismissable ? onClose : undefined}
@@ -56,6 +61,7 @@ export default function Modal({ open, onClose, title, subtitle, children, dismis
                 {subtitle && <p className="modal-subtitle">{subtitle}</p>}
                 {children}
             </div>
-        </div>
+        </div>,
+        document.body,
     );
 }

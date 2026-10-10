@@ -22,6 +22,7 @@ export function TripProvider({ children }) {
     const [messages, setMessages] = useState([]);
     const [expenses, setExpenses] = useState([]);
     const [members, setMembers] = useState([]);
+    const [joinRequests, setJoinRequests] = useState([]); // people asking to join, awaiting approval
     const [routeResult, setRouteResult] = useState(null);
     const [activeTripId, setActiveTripId] = useState(null);
     const [collabActive, setCollabActive] = useState(false);
@@ -39,6 +40,7 @@ export function TripProvider({ children }) {
             setMessages([]);
             setExpenses([]);
             setMembers([]);
+            setJoinRequests([]);
             setRouteResult(null);
         }
     }, [currentTripId, activeTripId]);
@@ -51,6 +53,7 @@ export function TripProvider({ children }) {
                 setMessages([]);
                 setExpenses([]);
                 setMembers([]);
+                setJoinRequests([]);
             }
         }
     }, [collaborationReady, collabActive]);
@@ -72,13 +75,18 @@ export function TripProvider({ children }) {
         return () => { if (unsub) unsub(); };
     }, [currentTripId]);
 
+    // Keyed on the order's contents, not the array: the trip doc is live, and
+    // every snapshot hands over a fresh placeOrder array even when nothing in
+    // it changed — which would re-sort and re-render every page using places.
+    const placeOrderKey = selectedTrip?.placeOrder?.join(',') ?? '';
     const sortedPlaces = useMemo(() => {
         if (!places) return [];
         const copy = [...places];
-        if (selectedTrip?.placeOrder && selectedTrip.placeOrder.length > 0) {
+        const placeOrder = placeOrderKey ? placeOrderKey.split(',') : [];
+        if (placeOrder.length > 0) {
             copy.sort((a, b) => {
-                const idxA = selectedTrip.placeOrder.indexOf(a.id);
-                const idxB = selectedTrip.placeOrder.indexOf(b.id);
+                const idxA = placeOrder.indexOf(a.id);
+                const idxB = placeOrder.indexOf(b.id);
                 if (idxA !== -1 && idxB !== -1) return idxA - idxB;
                 if (idxA !== -1) return -1;
                 if (idxB !== -1) return 1;
@@ -86,7 +94,7 @@ export function TripProvider({ children }) {
             });
         }
         return copy;
-    }, [places, selectedTrip?.placeOrder]);
+    }, [places, placeOrderKey]);
 
     // Real-time listener for polls
     useEffect(() => {
@@ -171,6 +179,7 @@ export function TripProvider({ children }) {
                         return {
                             ...userCache[m.uid],
                             role: m.role,
+                            requestedAt: m.requestedAt || null,
                             currentLocation: m.currentLocation,
                             locationUpdatedAt: m.locationUpdatedAt,
                             uid: m.uid,
@@ -178,7 +187,9 @@ export function TripProvider({ children }) {
                     })
                 );
 
-                if (isMounted) setMembers(enrichedMembers);
+                if (!isMounted) return;
+                setMembers(enrichedMembers.filter((m) => m.role !== 'pending'));
+                setJoinRequests(enrichedMembers.filter((m) => m.role === 'pending'));
             });
         })();
 
@@ -199,6 +210,7 @@ export function TripProvider({ children }) {
                 expenses,
                 members,
                 setMembers,
+                joinRequests,
                 routeResult,
                 setRouteResult,
             }}

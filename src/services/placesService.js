@@ -81,7 +81,7 @@ export async function getPlaceDetails(placeId) {
         const place = new Place({ id: placeId });
         await place.fetchFields({ fields: ['rating', 'photos', 'displayName'] });
         const photos = place.photos || [];
-        console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
+        return {
             rating: place.rating ?? null,
             imageUrls: photos.slice(0, 5).map(p => p.getURI?.({ maxWidth: 400 })).filter(Boolean),
             imageUrl: photos[0]?.getURI?.({ maxWidth: 400 }) || null,
@@ -92,43 +92,142 @@ export async function getPlaceDetails(placeId) {
     }
 }
 
-// In-memory cache so the same place is only looked up once per session.
-// Stores the in-flight promise too, which dedupes concurrent lookups.
+// ── Place photos ────────────────────────────────────────────────────────────
+// Thumbnails call Places API (New) over REST rather than through the Maps JS
+// library: a fetch can start the moment a thumbnail mounts, instead of first
+// waiting for the whole Maps script to download and boot.
+const PLACES_KEY = (import.meta.env.VITE_GOOGLE_PLACES_API_KEY || import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '').trim();
+
+async function placesRest(path, fieldMask, body) {
+    const res = await fetch(`https://places.googleapis.com/v1/${path}`, {
+        method: body ? 'POST' : 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Goog-Api-Key': PLACES_KEY,
+            'X-Goog-FieldMask': fieldMask,
+        },
+        body: body ? JSON.stringify(body) : undefined,
+    });
+    if (!res.ok) throw new Error(`Places API ${res.status}`);
+    return res.json();
+}
+
+function photoResult(photos) {
+    const urls = (photos || []).slice(0, 5)
+        .map(p => (p?.name ? `https://places.googleapis.com/v1/${p.name}/media?maxWidthPx=400&key=${PLACES_KEY}` : null))
+        .filter(Boolean);
+    return urls.length ? { imageUrl: urls[0], imageUrls: urls } : null;
+}
+
+// Name → place id, kept across reloads. Google's terms allow place ids to be
+// stored indefinitely (photo URLs may not be), so this is what we persist: on
+// the next visit a thumbnail goes straight to its place instead of searching
+// for it by name again.
+const PLACE_ID_STORE = 'trypinn_place_ids_v1';
+const PLACE_ID_LIMIT = 800;
+let _placeIds = null;
+
+function placeIds() {
+    if (_placeIds) return _placeIds;
+    try { _placeIds = JSON.parse(localStorage.getItem(PLACE_ID_STORE)) || {}; } catch { _placeIds = {}; }
+    return _placeIds;
+}
+
+function rememberPlaceId(key, id) {
+    const ids = placeIds();
+    if (ids[key] === id) return;
+    ids[key] = id;
+    const keys = Object.keys(ids);
+    if (keys.length > PLACE_ID_LIMIT) keys.slice(0, keys.length - PLACE_ID_LIMIT).forEach(k => delete ids[k]);
+    try { localStorage.setItem(PLACE_ID_STORE, JSON.stringify(ids)); } catch { /* storage full or unavailable */ }
+}
+
+function placeKey(place) {
+    const at = place.lat != null && place.lng != null ? `@${Number(place.lat).toFixed(3)},${Number(place.lng).toFixed(3)}` : '';
+    return `${(place.name || '').trim().toLowerCase()}${at}`;
+}
+
+async function lookupPhotoRest(place) {
+    const id = place.googlePlaceId || placeIds()[placeKey(place)];
+    if (id) {
+        const d = await placesRest(`places/${encodeURIComponent(id)}`, 'photos');
+        const r = photoResult(d.photos);
+        if (r) return r;
+    }
+    const body = { textQuery: place.name, maxResultCount: 1 };
+    if (place.lat != null && place.lng != null) {
+        body.locationBias = { circle: { center: { latitude: Number(place.lat), longitude: Number(place.lng) }, radius: 50000 } };
+    }
+    const found = (await placesRest('places:searchText', 'places.id,places.photos,places.rating', body)).places?.[0];
+    if (!found) return null;
+    if (!place.googlePlaceId) rememberPlaceId(placeKey(place), found.id);
+    const r = photoResult(found.photos);
+    return r && { ...r, rating: found.rating ?? null };
+}
+
+// The older path through the Maps JS library — used only if a REST call is
+// refused (a key restricted to the JS API, say).
+async function lookupPhotoJs(place) {
+    if (place.googlePlaceId) {
+        const d = await getPlaceDetails(place.googlePlaceId);
+        if (d?.imageUrl) return d;
+    }
+    const bias = (place.lat && place.lng) ? { lat: place.lat, lng: place.lng } : null;
+    const found = await findPlaceByName(place.name, bias);
+    if (found?.imageUrl) return { imageUrl: found.imageUrl, imageUrls: found.imageUrls, rating: found.rating };
+    if (found?.placeId) {
+        const d = await getPlaceDetails(found.placeId);
+        if (d?.imageUrl) return d;
+    }
+    return null;
+}
+
+// In-memory cache so the same place is only looked up once per session (tab
+// switches reuse it). Stores the in-flight promise too, which dedupes
+// concurrent lookups.
 const _placeImageCache = new Map();
+const _resolvedImages = new Map(); // key -> result, for synchronous reads
+let _restRefused = false;
+
+/** A photo this session has already found for the place, without waiting. */
+export function peekPlaceImage(place) {
+    if (!place?.name && !place?.googlePlaceId) return null;
+    return _resolvedImages.get(place.googlePlaceId || placeKey(place)) || null;
+}
 
 /**
  * Best-effort: resolve a real Google photo for a place that has none.
- * Tries its googlePlaceId first, then a name+location text search.
  * Returns { imageUrl, imageUrls, rating } or null.
  */
 export function fetchPlaceImage(place) {
-    const key = place?.googlePlaceId || place?.name;
-    if (!key) return Promise.resolve(null);
+    if (!place?.name && !place?.googlePlaceId) return Promise.resolve(null);
+    const key = place.googlePlaceId || placeKey(place);
     if (_placeImageCache.has(key)) return _placeImageCache.get(key);
 
     const lookup = (async () => {
+        if (PLACES_KEY && !_restRefused) {
+            try {
+                return await lookupPhotoRest(place);
+            } catch (e) {
+                // A 403 means the key won't take REST calls; stop trying them.
+                if (/ 40[13]$/.test(e.message)) _restRefused = true;
+            }
+        }
         try {
-            if (place.googlePlaceId) {
-                const d = await getPlaceDetails(place.googlePlaceId);
-                if (d?.imageUrl) return d;
-            }
-            const bias = (place.lat && place.lng) ? { lat: place.lat, lng: place.lng } : null;
-            const found = await findPlaceByName(place.name, bias);
-            if (found?.imageUrl) return { imageUrl: found.imageUrl, imageUrls: found.imageUrls, rating: found.rating };
-            if (found?.placeId) {
-                const d = await getPlaceDetails(found.placeId);
-                if (d?.imageUrl) return d;
-            }
+            return await lookupPhotoJs(place);
         } catch (e) {
             console.warn('fetchPlaceImage failed for', place?.name, e);
+            return null;
         }
-        return null;
     })();
 
     _placeImageCache.set(key, lookup);
     // Don't permanently cache a miss — allow a later retry (e.g. once the
     // Places library has finished loading, or after a transient failure).
-    lookup.then((res) => { if (!res) _placeImageCache.delete(key); });
+    lookup.then((res) => {
+        if (res) _resolvedImages.set(key, res);
+        else _placeImageCache.delete(key);
+    });
     return lookup;
 }
 
@@ -244,8 +343,7 @@ export async function searchNearby({ lat, lng, query, radius = 2000 }) {
         });
         return (places || []).map((r) => {
             const photos = r.photos || [];
-        console.log("[DEBUG findPlaceByName]", name, "Photos count:", photos.length);
-            console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
+            return {
                 name: typeof r.displayName === 'string' ? r.displayName : (r.displayName?.text || query),
                 description: r.formattedAddress || '',
                 lat: r.location?.lat?.() ?? null,
@@ -330,7 +428,7 @@ export async function getOptimizedRoute(places) {
             optimizeWaypoints: true,
             travelMode: window.google.maps.TravelMode.DRIVING,
         });
-        console.log("[findPlaceByName SUCCESS]", r.id, photos.length); return {
+        return {
             directionsResult: result,
             orderedPlaces: [places[0], ...result.routes[0].waypoint_order.map(i => places[i + 1]), places[places.length - 1]],
         };

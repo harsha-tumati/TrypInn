@@ -1,8 +1,8 @@
 // src/pages/PlannerPage.jsx
-import React, { useState, useMemo } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { useTrip } from '../context/TripContext';
 import { useGuestMode } from '../context/GuestModeContext';
-import { addPlaces, updatePlaceOrder, deletePlace, updateTrip } from '../services/firestoreService';
+import { addPlaces, updatePlace, updatePlaceOrder, deletePlace, updateTrip } from '../services/firestoreService';
 import { enrichPlacesWithGoogle, forwardGeocode } from '../services/placesService';
 import LocationAutocomplete from '../components/LocationAutocomplete';
 import DatePicker from 'react-datepicker';
@@ -12,7 +12,7 @@ import { getRegionPlaces, getRouteMustVisits } from '../config/openai';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
 import { MAPS_ENABLED } from '../config/maps';
-import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil } from 'lucide-react';
+import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass } from 'lucide-react';
 import ReadMore from '../components/ReadMore';
 import Modal from '../components/Modal';
 import { formatDate } from '../utils/dateHelpers';
@@ -34,8 +34,79 @@ function placeToStop(p) {
     lng: p.lng,
     imageUrl: p.imageUrl || null,
     googlePlaceId: p.googlePlaceId || null,
+    group: p.group || null,
     geocoding: false,
   };
+}
+
+// Stops added in the planner but not yet written to Firestore.
+const isLocalId = (id) => /^(stop|region|route)-/.test(id || '');
+const normName = (s) => (s || '').trim().toLowerCase();
+
+// A, B, … Z, then 27, 28 — past Z the alphabet runs out.
+const stopLetter = (i) => (i < 26 ? String.fromCharCode(65 + i) : String(i + 1));
+
+// "goa, india" → "Goa". The region's name is the group's heading.
+function regionLabel(text) {
+  const first = (text || '').split(',')[0].trim();
+  return first === first.toLowerCase() ? first.replace(/\b\w/g, c => c.toUpperCase()) : first;
+}
+
+// Consecutive stops picked from the same explored region render as one block,
+// nested under the region's name. Everything else is a block of one.
+function groupStops(stops) {
+  const blocks = [];
+  stops.forEach((stop, index) => {
+    const last = blocks[blocks.length - 1];
+    if (stop.group && last?.group === stop.group) last.entries.push({ stop, index });
+    else blocks.push({ key: stop.group ? `region:${stop.id}` : stop.id, group: stop.group || null, entries: [{ stop, index }] });
+  });
+  return blocks;
+}
+
+const SYNCED_FIELDS = ['estimatedMinutes', 'group', 'lat', 'lng', 'description'];
+const fieldValue = (key, v) => (key === 'description' ? (v || '') : (v ?? null));
+
+/**
+ * Write the planner's stops to the trip. Returns the saved ids in order, plus
+ * a map from local ids to the doc ids they were saved under.
+ *
+ * This runs after every edit, so it avoids a read per stop: places the trip
+ * already has are updated directly (and only when something changed), and
+ * only new stops go through addPlaces. Saved places the planner no longer
+ * lists are deleted.
+ */
+async function savePlan(tripId, stops, savedPlaces) {
+  const saved = new Map(savedPlaces.filter(p => p.tripId === tripId).map(p => [p.id, p]));
+  const toSave = stops.filter(s => s.lat).map(s => ({
+    id: s.id,
+    name: s.name, description: s.description || '', category: s.category || '',
+    lat: s.lat, lng: s.lng, imageUrl: s.imageUrl || null, estimatedMinutes: s.estimatedMinutes || 60,
+    group: s.group || null,
+  }));
+
+  const fresh = toSave.filter(s => !saved.has(s.id));
+  const freshIds = fresh.length ? await addPlaces(tripId, fresh) : [];
+
+  await Promise.all(toSave.filter(s => saved.has(s.id)).map(s => {
+    const place = saved.get(s.id);
+    const fields = {};
+    for (const key of SYNCED_FIELDS) {
+      if (fieldValue(key, place[key]) !== fieldValue(key, s[key])) fields[key] = fieldValue(key, s[key]);
+    }
+    return Object.keys(fields).length ? updatePlace(s.id, fields) : null;
+  }));
+
+  let f = 0;
+  const ids = toSave.map(s => (saved.has(s.id) ? s.id : freshIds[f++]));
+  // A saved place still listed without coordinates is kept, not deleted.
+  const keep = new Set([...ids, ...stops.map(s => s.id)]);
+  await Promise.all([...saved.keys()].filter(id => !keep.has(id)).map(id => deletePlace(id)));
+  await updatePlaceOrder(tripId, ids);
+
+  const idMap = {};
+  toSave.forEach((s, i) => { if (s.id !== ids[i]) idMap[s.id] = ids[i]; });
+  return { ids, idMap };
 }
 
 function formatMins(m) {
@@ -75,11 +146,12 @@ function waitForPlaces(timeout = 10000) {
 }
 
 // ── RegionModal: pick specific places inside a region ───────────────────────
-function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache, setCache }) {
-  const [places, setPlaces] = useState(cache[regionName] || []);
-  const [loading, setLoading] = useState(!cache[regionName]);
+function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose, cache, setCache }) {
+  const [places, setPlaces] = useState(cache[label] || []);
+  const [loading, setLoading] = useState(!cache[label]);
   const [selected, setSelected] = useState({});
-  const [excluded, setExcluded] = useState([...existingStopsNames, ...(cache[regionName] || []).map(p => p.name)]);
+  const [excluded, setExcluded] = useState([...existingStopsNames, ...(cache[label] || []).map(p => p.name)]);
+  const inTrip = new Set(existingStopsNames.map(normName));
   const isMobile = useIsMobile();
 
   const loadMore = async () => {
@@ -91,7 +163,7 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
       const enriched = await enrichPlacesWithGoogle(aiPlaces, regionName).catch(() => aiPlaces);
       const newPlaces = [...places, ...enriched];
       setPlaces(newPlaces);
-      setCache(c => ({ ...c, [regionName]: newPlaces }));
+      setCache(c => ({ ...c, [label]: newPlaces }));
       setExcluded(e => [...e, ...aiPlaces.map(a => a.name)]);
     } catch (e) {
       console.error(e);
@@ -104,11 +176,12 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
     // One-shot fetch when the modal mounts; loadMore owns its own loading
     // state and must not refire on cache/region identity changes.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (!cache[regionName]) loadMore();
+    if (!cache[label]) loadMore();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const toggle = (i) => setSelected(p => ({ ...p, [i]: !p[i] }));
+  // Places already in the trip are shown, but can't be picked twice.
+  const toggle = (i) => { if (!inTrip.has(normName(places[i]?.name))) setSelected(p => ({ ...p, [i]: !p[i] })); };
   const pickedCount = Object.values(selected).filter(Boolean).length;
 
   return (
@@ -117,7 +190,7 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
         <div style={{ padding: isMobile ? '16px 16px 12px' : '24px 24px 16px', borderBottom:'1px solid #f1f5f9', flexShrink:0 }}>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
             <div>
-              <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Explore {regionName} ✨</h2>
+              <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Explore {label} ✨</h2>
               <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>Pick the spots you want to visit</p>
             </div>
             <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
@@ -132,9 +205,11 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
           ) : (
             <>
             <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
-              {places.map((p, i) => (
-                <div key={i} onClick={() => toggle(i)}
-                  style={{ display:'flex', alignItems:'stretch', gap: isMobile ? 12 : 16, padding:'12px', borderRadius:16, border: selected[i] ? '2px solid #1E3A8A' : '1px solid #e2e8f0', background: selected[i] ? '#EEF3FC' : '#fff', cursor:'pointer', transition:'all 200ms', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
+              {places.map((p, i) => {
+                const added = inTrip.has(normName(p.name));
+                return (
+                <div key={i} onClick={() => toggle(i)} aria-disabled={added || undefined}
+                  style={{ display:'flex', alignItems:'stretch', gap: isMobile ? 12 : 16, padding:'12px', borderRadius:16, border: selected[i] ? '2px solid #1E3A8A' : '1px solid #e2e8f0', background: selected[i] ? '#EEF3FC' : '#fff', cursor: added ? 'default' : 'pointer', opacity: added ? 0.55 : 1, transition:'all 200ms', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
                   
                   {/* Photo Thumbnail */}
                   <div style={{ position:'relative', flexShrink:0 }}>
@@ -162,10 +237,12 @@ function RegionModal({ regionName, existingStopsNames, onConfirm, onClose, cache
                     <div style={{ display:'flex', gap:8, marginTop:8, flexWrap:'wrap' }}>
                       {p.estimatedMinutes && <div style={{ fontSize:11, color:'#1E3A8A', fontWeight:700, background:'#E5EDFB', padding:'2px 8px', borderRadius:6 }}>⏱ {formatMins(p.estimatedMinutes)}</div>}
                       <div style={{ fontSize:11, color:'#64748b', fontWeight:600, background:'#f1f5f9', padding:'2px 8px', borderRadius:6, textTransform:'capitalize' }}>{p.category}</div>
+                      {added && <div style={{ fontSize:11, color:'#047857', fontWeight:700, background:'#d1fae5', padding:'2px 8px', borderRadius:6 }}>✓ In your trip</div>}
                     </div>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
             
             {loading && (
@@ -241,10 +318,10 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
     // Check if the user selected a place from the dropdown and didn't alter the text
     if (selectedPlaceInfo && input.trim() === selectedPlaceInfo.name) {
       if (mode === 'specific') onAddSpecific(selectedPlaceInfo.name, selectedPlaceInfo);
-      else if (mode === 'region') onExploreRegion(selectedPlaceInfo.formatted || selectedPlaceInfo.name);
+      else if (mode === 'region') onExploreRegion(selectedPlaceInfo.formatted || selectedPlaceInfo.name, selectedPlaceInfo.name);
     } else {
       if (mode === 'specific') onAddSpecific(input.trim());
-      else if (mode === 'region') onExploreRegion(input.trim());
+      else if (mode === 'region') onExploreRegion(input.trim(), input.trim());
     }
   };
 
@@ -525,6 +602,11 @@ function EditTripModal({ trip, onClose, onSaved }) {
   );
 }
 
+// AI suggestions for regions and routes, kept for the session. They're paid
+// calls; leaving the tab and reopening an explorer shouldn't repeat them.
+const regionSuggestions = {};
+const routeSuggestions = {};
+
 // ── Main PlannerContent ──────────────────────────────────────────────────────
 function PlannerContent({ onOpenMap }) {
   const { selectedTrip, setSelectedTrip, places } = useTrip();
@@ -533,18 +615,19 @@ function PlannerContent({ onOpenMap }) {
   const isMobile = useIsMobile();
   const isGuest = useGuestMode();
 
-  // plannerStops: [{ id, name, description, category, estimatedMinutes, lat, lng, geocoding }]
+  // plannerStops: [{ id, name, description, category, estimatedMinutes, lat, lng, group, geocoding }]
   const [stops, setStops] = useState([]);
   const [trackedTripId, setTrackedTripId] = useState(tripId);
   const [trackedPlacesSig, setTrackedPlacesSig] = useState('');
   const [showEditTrip, setShowEditTrip] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
-  const [regionModal, setRegionModal] = useState(null); // regionName string
+  const [regionModal, setRegionModal] = useState(null); // { query, label }
   const [routeModal, setRouteModal] = useState(null); // { fromName, toName, afterIndex }
-  const [regionCache, setRegionCache] = useState({});
-  const [routeCache, setRouteCache] = useState({});
+  const [regionCache, setRegionCache] = useState(() => ({ ...regionSuggestions }));
+  const [routeCache, setRouteCache] = useState(() => ({ ...routeSuggestions }));
+  useEffect(() => { Object.assign(regionSuggestions, regionCache); }, [regionCache]);
+  useEffect(() => { Object.assign(routeSuggestions, routeCache); }, [routeCache]);
   const [, setGeocodingId] = useState(null);
-  const [saving, setSaving] = useState(false);
   const [nearbyQuery, setNearbyQuery] = useState('');
   const [nearbyResults, setNearbyResults] = useState([]);
   const [loadingNearby, setLoadingNearby] = useState(false);
@@ -554,7 +637,7 @@ function PlannerContent({ onOpenMap }) {
     setNearbyResults([]);
     setNearbyQuery('');
   }, [selectedTrip?.id]);
-  
+
   // Keep the editable `stops` list in sync with the trip's saved places.
   // Done synchronously during render (React's sanctioned "adjust state when a
   // prop changes" pattern) so there is no cascading-render effect.
@@ -565,52 +648,153 @@ function PlannerContent({ onOpenMap }) {
     setTrackedPlacesSig(placesSig);
     setStops(places.map(placeToStop));
   } else if (placesSig !== trackedPlacesSig) {
-    // Same trip, saved place set changed (e.g. edited from the map view) —
-    // reconcile without discarding the user's local, not-yet-saved edits.
+    // Same trip, saved place set changed (e.g. edited from the map view, or
+    // our own autosave landing) — reconcile without discarding the user's
+    // local, not-yet-saved edits.
     const prevPlaceIds = new Set(trackedPlacesSig ? trackedPlacesSig.split(',') : []);
     const currentPlaceIds = new Set(places.map(p => p.id));
     setTrackedPlacesSig(placesSig);
     setStops(prev => {
       const existingIds = new Set(prev.map(s => s.id));
       // Drop stops that came from Firestore but have since been deleted there
-      // (e.g. removed in map mode) — otherwise saveAndGo would re-create them.
-      // Locally-added, not-yet-saved stops are kept: their ids were never in
-      // `places`, so they can't match prevPlaceIds.
+      // (e.g. removed in map mode) — otherwise the next save would re-create
+      // them. Locally-added, not-yet-saved stops are kept: their ids were
+      // never in `places`, so they can't match prevPlaceIds.
       const pruned = prev.filter(s => !(prevPlaceIds.has(s.id) && !currentPlaceIds.has(s.id)));
-      // Pull in places that are genuinely new since the last sync (in current
-      // `places` but not in prevPlaceIds). A saved place the user removed
-      // locally in the planner stays in prevPlaceIds, so it is NOT re-added —
-      // it stays removed as the user intended.
-      const newFromMap = places
-        .filter(p => !existingIds.has(p.id) && !prevPlaceIds.has(p.id))
-        .map(placeToStop);
-      if (newFromMap.length === 0 && pruned.length === prev.length) return prev;
-      return [...pruned, ...newFromMap];
+      // Places that are genuinely new since the last sync. A saved place the
+      // user removed locally stays in prevPlaceIds, so it is NOT re-added.
+      const incoming = places.filter(p => !existingIds.has(p.id) && !prevPlaceIds.has(p.id));
+      // A stop saved from here comes back under its new doc id, often before
+      // the save call returns. Adopt that id rather than listing it twice.
+      let adopted = false;
+      const merged = pruned.map(s => {
+        if (!isLocalId(s.id)) return s;
+        const at = incoming.findIndex(p => normName(p.name) === normName(s.name));
+        if (at === -1) return s;
+        adopted = true;
+        return { ...s, id: incoming.splice(at, 1)[0].id };
+      });
+      if (!adopted && incoming.length === 0 && pruned.length === prev.length) return prev;
+      return [...merged, ...incoming.map(placeToStop)];
     });
   }
+
+  // ── Autosave ──────────────────────────────────────────────────────────────
+  // Every edit is written to the trip shortly after it's made, so switching
+  // to the Itinerary tab (or closing the planner any other way) never loses
+  // stops. Only the user's own edits trigger a save — a change arriving from
+  // Firestore (another member, the map view) must not be written back over.
+  const [editVersion, setEditVersion] = useState(0);
+  const [savedVersion, setSavedVersion] = useState(0);
+  const [saveError, setSaveError] = useState(false);
+  const [leaving, setLeaving] = useState(false);
+  const stopsRef = useRef(stops);
+  const placesRef = useRef(places);
+  const tripIdRef = useRef(tripId);
+  const versionRef = useRef(editVersion);
+  const pendingRef = useRef(null); // trip id with an edit waiting to be saved
+  const chainRef = useRef(Promise.resolve());
+
+  useEffect(() => {
+    stopsRef.current = stops;
+    placesRef.current = places;
+    tripIdRef.current = tripId;
+    versionRef.current = editVersion;
+  });
+
+  /** setStops for a user edit: same signature, but schedules a save. */
+  const edit = useCallback((update) => {
+    setStops(update);
+    setEditVersion(v => v + 1);
+  }, []);
+
+  // Saves run one at a time, each with the latest stops, so a slow save can
+  // never land after a newer one and undo it.
+  const flush = useCallback(() => {
+    const tid = pendingRef.current;
+    pendingRef.current = null;
+    if (!tid || tid !== tripIdRef.current) return chainRef.current;
+    chainRef.current = chainRef.current.then(async () => {
+      const version = versionRef.current;
+      try {
+        const { ids, idMap } = await savePlan(tid, stopsRef.current, placesRef.current);
+        setSelectedTrip(prev => (prev?.id === tid ? { ...prev, placeOrder: ids } : prev));
+        if (Object.keys(idMap).length) setStops(prev => prev.map(s => (idMap[s.id] ? { ...s, id: idMap[s.id] } : s)));
+        setSavedVersion(v => Math.max(v, version));
+        setSaveError(false);
+      } catch (e) {
+        console.error('Saving the plan failed', e);
+        setSaveError(true);
+      }
+    });
+    return chainRef.current;
+  }, [setSelectedTrip]);
+
+  useEffect(() => {
+    if (editVersion === 0 || isGuest || !tripId) return;
+    pendingRef.current = tripId;
+    const t = setTimeout(flush, 700);
+    return () => clearTimeout(t);
+  }, [editVersion, isGuest, tripId, flush]);
+
+  // Leaving the planner (Itinerary tab, back button, trip list) saves
+  // whatever is still waiting rather than dropping it.
+  useEffect(() => () => { flush(); }, [flush]);
+
+  const retrySave = () => {
+    pendingRef.current = tripId;
+    flush();
+  };
+
+  const goToItinerary = async () => {
+    setLeaving(true);
+    if (editVersion > savedVersion) pendingRef.current = tripId;
+    await flush();
+    navigate(`/trip/${tripId}/itinerary`);
+  };
 
   // Force-load the Places library so RegionModal/RouteModal can enrich places.
   useMapsLibrary('places');
 
-  const removeStop = (id) => setStops(p => p.filter(s => s.id !== id));
+  const hasName = (list, name) => list.some(s => normName(s.name) === normName(name));
 
+  const removeStop = (id) => edit(p => p.filter(s => s.id !== id));
+
+  // Swap a stop with its neighbour. Inside a region the buttons only offer
+  // moves within that region, so a stop never leaves its group this way.
   const moveStop = (index, direction) => {
-    if (direction === -1 && index === 0) return;
-    if (direction === 1 && index === stops.length - 1) return;
-    setStops(prev => {
-      const newStops = [...prev];
-      const temp = newStops[index];
-      newStops[index] = newStops[index + direction];
-      newStops[index + direction] = temp;
-      return newStops;
+    edit(prev => {
+      const j = index + direction;
+      if (j < 0 || j >= prev.length) return prev;
+      const next = [...prev];
+      [next[index], next[j]] = [next[j], next[index]];
+      return next;
     });
+  };
+
+  // Move a whole block — a lone stop, or a region with all its places — past
+  // the neighbouring block, so moving a stop never splits a region apart.
+  const moveBlock = (blockIndex, direction) => {
+    edit(prev => {
+      const blocks = groupStops(prev);
+      const j = blockIndex + direction;
+      if (j < 0 || j >= blocks.length) return prev;
+      [blocks[blockIndex], blocks[j]] = [blocks[j], blocks[blockIndex]];
+      return blocks.flatMap(b => b.entries.map(e => e.stop));
+    });
+  };
+
+  const removeBlock = (block) => {
+    const ids = new Set(block.entries.map(e => e.stop.id));
+    edit(p => p.filter(s => !ids.has(s.id)));
   };
 
   const addSpecificStop = async (name, placeObj = null) => {
     setShowAddModal(false);
+    if (hasName(stops, placeObj?.name || name)) return; // already in the trip
     const id = `stop-${Date.now()}`;
     if (placeObj) {
-      setStops(p => [...p, {
+      edit(p => [...p, {
         id, name: placeObj.name, description: placeObj.formatted || '', category: 'default',
         estimatedMinutes: 60, lat: placeObj.lat, lng: placeObj.lng, imageUrl: placeObj.imageUrl || null, geocoding: false
       }]);
@@ -620,7 +804,7 @@ function PlannerContent({ onOpenMap }) {
       setGeocodingId(id);
       try {
         const geo = await geocodeName(name);
-        setStops(p => p.map(s => s.id === id ? { ...s, lat: geo?.lat, lng: geo?.lng, description: geo?.formatted || '', geocoding: false } : s));
+        edit(p => p.map(s => s.id === id ? { ...s, lat: geo?.lat, lng: geo?.lng, description: geo?.formatted || '', geocoding: false } : s));
       } catch {
         setStops(p => p.map(s => s.id === id ? { ...s, geocoding: false } : s));
       }
@@ -628,89 +812,207 @@ function PlannerContent({ onOpenMap }) {
     }
   };
 
-  const openRegionExplorer = (regionName) => {
+  const openRegionExplorer = (query, label) => {
     setShowAddModal(false);
-    setRegionModal(regionName);
+    setRegionModal({ query, label: regionLabel(label || query) });
   };
 
-  const confirmRegionPicks = async (pickedPlaces) => {
+  // Places picked from a region join that region's block — appended after
+  // its last place if the region is already in the trip, else at the end.
+  const confirmRegionPicks = (pickedPlaces) => {
+    const region = regionModal;
     setRegionModal(null);
-    const newStops = pickedPlaces.map((p, i) => ({
-      id: `region-${Date.now()}-${i}`,
-      name: p.name,
-      description: p.description || '',
-      category: p.category || 'default',
-      estimatedMinutes: p.estimatedMinutes || 90,
-      lat: p.lat || null,
-      lng: p.lng || null,
-      imageUrl: p.imageUrl || null,
-      geocoding: false,
-    }));
-    setStops(p => [...p, ...newStops]);
+    const stamp = Date.now();
+    edit(prev => {
+      let at = -1;
+      for (let i = prev.length - 1; i >= 0; i--) {
+        if (prev[i].group && normName(prev[i].group) === normName(region.label)) { at = i; break; }
+      }
+      const group = at === -1 ? region.label : prev[at].group;
+      const fresh = pickedPlaces
+        .filter(p => !hasName(prev, p.name))
+        .map((p, i) => ({
+          id: `region-${stamp}-${i}`,
+          name: p.name,
+          description: p.description || '',
+          category: p.category || 'default',
+          estimatedMinutes: p.estimatedMinutes || 90,
+          lat: p.lat || null,
+          lng: p.lng || null,
+          imageUrl: p.imageUrl || null,
+          group,
+          geocoding: false,
+        }));
+      if (!fresh.length) return prev;
+      if (at === -1) return [...prev, ...fresh];
+      return [...prev.slice(0, at + 1), ...fresh, ...prev.slice(at + 1)];
+    });
   };
 
   const insertRouteStops = (pickedPlaces) => {
     if (!routeModal) return;
     const { afterIndex } = routeModal;
     setRouteModal(null);
-    const newStops = pickedPlaces.map((p, i) => ({
-      id: `route-${Date.now()}-${i}`,
-      name: p.name,
-      description: p.description || '',
-      category: p.category || 'default',
-      estimatedMinutes: p.estimatedMinutes || 60,
-      lat: p.lat || null,
-      lng: p.lng || null,
-      imageUrl: p.imageUrl || null,
-      geocoding: false,
-    }));
-    setStops(p => {
+    const stamp = Date.now();
+    edit(p => {
+      const newStops = pickedPlaces.filter(pl => !hasName(p, pl.name)).map((pl, i) => ({
+        id: `route-${stamp}-${i}`,
+        name: pl.name,
+        description: pl.description || '',
+        category: pl.category || 'default',
+        estimatedMinutes: pl.estimatedMinutes || 60,
+        lat: pl.lat || null,
+        lng: pl.lng || null,
+        imageUrl: pl.imageUrl || null,
+        geocoding: false,
+      }));
       const copy = [...p];
       copy.splice(afterIndex + 1, 0, ...newStops);
       return copy;
     });
   };
 
-  const saveAndGo = async () => {
-    if (!stops.length) return;
-    setSaving(true);
-    try {
-      const toSave = stops.filter(s => s.lat).map(s => ({
-        id: s.id,
-        name: s.name, description: s.description || '', category: s.category || '',
-        lat: s.lat, lng: s.lng, imageUrl: s.imageUrl || null, estimatedMinutes: s.estimatedMinutes || 60,
-      }));
-      const ids = await addPlaces(tripId, toSave);
-      
-      // Delete places from Firestore that were removed in the Planner UI
-      const deletedIds = places.map(p => p.id).filter(id => !ids.includes(id));
-      for (const id of deletedIds) {
-        await deletePlace(id);
-      }
+  // Only geocoded endpoints become timeline stops — a typed-only label has no
+  // coordinates and would render an unplaceable pin.
+  const startStop = hasCoords(selectedTrip?.startingPoint)
+    ? { id:'_start', name:selectedTrip.startingPoint.name, lat:selectedTrip.startingPoint.lat, lng:selectedTrip.startingPoint.lng, description:'Trip starts here', category:'start', estimatedMinutes:0, imageUrl:null }
+    : null;
+  const endStop = hasCoords(selectedTrip?.endingPoint)
+    ? { id:'_end', name:selectedTrip.endingPoint.name, lat:selectedTrip.endingPoint.lat, lng:selectedTrip.endingPoint.lng, description:'Trip ends here', category:'end', estimatedMinutes:0, imageUrl:null }
+    : null;
+  const blocks = groupStops(stops);
+  const isEmpty = !startStop && !endStop && stops.length === 0;
 
-      await updatePlaceOrder(tripId, ids);
-      setSelectedTrip(prev => ({ ...prev, placeOrder: ids }));
-      navigate(`/trip/${tripId}/itinerary`);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setSaving(false);
-    }
+  // One stop on the timeline: its node (letter, or 🏠 / 🏁) and its card.
+  // Nested stops sit inside a region's thread, one size smaller.
+  const renderStop = (stop, { kind = 'stop', index = -1, nested = false, canUp = false, canDown = false, onMove, isLast = false } = {}) => {
+    const isStart = kind === 'start';
+    const isEnd = kind === 'end';
+    const isReal = kind === 'stop';
+    const letter = isStart ? '🏠' : isEnd ? '🏁' : stopLetter(index);
+    const nodeBg = isStart ? 'linear-gradient(135deg,#10B981,#059669)' : isEnd ? 'linear-gradient(135deg,#EF4444,#B91C1C)' : 'linear-gradient(135deg,#1E3A8A,#1E3A8A)';
+    const node = nested ? 26 : 32;
+    return (
+      <div key={stop.id} style={{ display:'flex', alignItems:'flex-start', gap: nested ? 10 : 12 }}>
+        {/* Timeline node */}
+        <div style={{ display:'flex', flexDirection:'column', alignItems:'center', alignSelf:'stretch', paddingTop: nested ? 8 : 4, width: nested ? 28 : 36, flexShrink:0 }}>
+          <div style={{ width:node, height:node, borderRadius:'50%', background:nodeBg, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize: isStart || isEnd ? 14 : nested ? 11 : 13 }}>
+            {letter}
+          </div>
+          {!isLast && <div style={{ width:2, flex:1, minHeight: nested ? 16 : 40, background:'#e2e8f0', margin:'6px 0' }}/>}
+        </div>
+
+        <div className="planner-stop-card" style={{ flex: 1, minWidth: 0, padding: nested ? (isMobile ? '10px 12px' : '12px 16px') : (isMobile ? '14px 16px' : '16px 20px'), marginBottom: nested ? 8 : 0, background: 'rgba(255,255,255,0.86)', backdropFilter: 'blur(18px) saturate(180%)', WebkitBackdropFilter: 'blur(18px) saturate(180%)' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0 }}>
+            <div style={{ display:'flex', alignItems:'center', gap:12, flex:1, minWidth:0 }}>
+              <PlaceThumb place={stop} size={nested ? 40 : 48} radius={8} />
+              <div style={{ minWidth:0 }}>
+                <div style={{ fontSize: nested ? 14 : 15, fontWeight:700, color:'#0f172a', display:'flex', alignItems:'center', gap:8, flexWrap:'wrap' }}>
+                  {stop.name}
+                  {isReal && stop.geocoding && <Loader size={12} style={{ color:'#1E3A8A', animation:'spin 1s linear infinite' }}/>}
+                  {isReal && !stop.lat && !stop.geocoding && <span style={{ fontSize:10, color:'#ef4444', fontWeight:600, background:'#fee2e2', padding:'1px 6px', borderRadius:4 }}>No location</span>}
+                  {isStart && <span style={{ fontSize:10, color:'#059669', fontWeight:600, background:'#d1fae5', padding:'1px 6px', borderRadius:4 }}>Start</span>}
+                  {isEnd && <span style={{ fontSize:10, color:'#b91c1c', fontWeight:600, background:'#fee2e2', padding:'1px 6px', borderRadius:4 }}>End</span>}
+                </div>
+                <StopDescription text={stop.description} />
+              </div>
+            </div>
+            {isReal && !isGuest && (
+              <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0, marginLeft: isMobile ? (nested ? 52 : 60) : 0 }}>
+                {/* Reorder buttons */}
+                <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
+                  <button type="button" onClick={() => onMove(-1)} disabled={!canUp} title="Move up" aria-label={`Move ${stop.name} up`} style={{ background:'none', border:'none', cursor: canUp ? 'pointer' : 'default', color: canUp ? '#64748b' : '#cbd5e1', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
+                    <ArrowUp size={14} />
+                  </button>
+                  <button type="button" onClick={() => onMove(1)} disabled={!canDown} title="Move down" aria-label={`Move ${stop.name} down`} style={{ background:'none', border:'none', cursor: canDown ? 'pointer' : 'default', color: canDown ? '#64748b' : '#cbd5e1', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
+                    <ArrowDown size={14} />
+                  </button>
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:4, background:'#f1f5f9', borderRadius:8, padding: isMobile ? '6px 12px' : '4px 10px' }}>
+                  <Clock size={12} color="#1E3A8A"/>
+                  <input type="number" min={15} step={15} value={stop.estimatedMinutes} aria-label={`Minutes at ${stop.name}`}
+                    onChange={e => edit(p => p.map(s => s.id === stop.id ? {...s, estimatedMinutes: parseInt(e.target.value)||30} : s))}
+                    style={{ width:isMobile ? 60 : 52, border:'none', background:'transparent', fontSize:16, fontWeight:700, color:'#0f172a', outline:'none', textAlign:'center' }}/>
+                  <span style={{ fontSize:11, color:'#64748b' }}>min</span>
+                </div>
+                <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
+              </div>
+            )}
+            {isReal && isGuest && (
+              <div style={{ display:'flex', alignItems:'center', gap:4, background:'#f1f5f9', borderRadius:8, padding: isMobile ? '6px 12px' : '4px 10px', flexShrink:0, marginLeft: isMobile ? 60 : 0 }}>
+                <Clock size={12} color="#94a3b8"/>
+                <span style={{ fontSize:14, fontWeight:700, color:'#64748b', minWidth: isMobile ? 40 : 32, textAlign:'center' }}>{stop.estimatedMinutes}</span>
+                <span style={{ fontSize:11, color:'#94a3b8' }}>min</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
   };
 
-  const displayStops = useMemo(() => {
-    const result = [];
-    // Only geocoded endpoints become map stops — a typed-only label has no
-    // coordinates and would render an unplaceable pin.
-    if (hasCoords(selectedTrip?.startingPoint)) {
-      result.push({ id:'_start', name:selectedTrip.startingPoint.name, lat:selectedTrip.startingPoint.lat, lng:selectedTrip.startingPoint.lng, _type:'start', description:'Trip starts here', category:'start', estimatedMinutes:0, imageUrl:null, geocoding:false });
-    }
-    result.push(...stops);
-    if (hasCoords(selectedTrip?.endingPoint)) {
-      result.push({ id:'_end', name:selectedTrip.endingPoint.name, lat:selectedTrip.endingPoint.lat, lng:selectedTrip.endingPoint.lng, _type:'end', description:'Trip ends here', category:'end', estimatedMinutes:0, imageUrl:null, geocoding:false });
-    }
-    return result;
-  }, [stops, selectedTrip?.startingPoint, selectedTrip?.endingPoint]);
+  // An explored region: its own node and heading, with the places picked
+  // there threaded underneath.
+  const renderRegion = (block, b, isLast) => {
+    const count = block.entries.length;
+    const minutes = block.entries.reduce((n, e) => n + (e.stop.estimatedMinutes || 0), 0);
+    return (
+      <div key={block.key} style={{ display:'flex', alignItems:'flex-start', gap:12 }}>
+        {/* On a phone the region box takes the full width instead — its own
+            thread already carries the timeline, and every pixel counts. */}
+        {!isMobile && (
+          <div style={{ display:'flex', flexDirection:'column', alignItems:'center', alignSelf:'stretch', paddingTop:4, width:36, flexShrink:0 }}>
+            <div className="planner-region-node" aria-hidden="true"><Compass size={16} /></div>
+            {!isLast && <div style={{ width:2, flex:1, minHeight:40, background:'#e2e8f0', margin:'6px 0' }}/>}
+          </div>
+        )}
+        <section className="planner-region" aria-label={`${block.group}: ${count} place${count > 1 ? 's' : ''}`}>
+          <div className="planner-region-head">
+            <div style={{ minWidth:0 }}>
+              <span className="planner-region-kicker">Region</span>
+              <h3 className="planner-region-name">{block.group}</h3>
+              <span className="planner-region-meta">{count} place{count > 1 ? 's' : ''}{minutes ? ` · ${formatMins(minutes)}` : ''}</span>
+            </div>
+            {!isGuest && (
+              <div className="planner-region-actions">
+                <button type="button" className="planner-region-add" onClick={() => setRegionModal({ query: block.group, label: block.group })}>
+                  <Plus size={14} aria-hidden="true" /> Add places
+                </button>
+                <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
+                  <button type="button" onClick={() => moveBlock(b, -1)} disabled={b === 0} title="Move region up" aria-label={`Move ${block.group} up`} className="planner-region-icon"><ArrowUp size={14} /></button>
+                  <button type="button" onClick={() => moveBlock(b, 1)} disabled={b === blocks.length - 1} title="Move region down" aria-label={`Move ${block.group} down`} className="planner-region-icon"><ArrowDown size={14} /></button>
+                </div>
+                <button type="button" onClick={() => removeBlock(block)} title="Remove region" aria-label={`Remove ${block.group} and its places`} className="planner-region-icon is-danger"><X size={16} /></button>
+              </div>
+            )}
+          </div>
+          <div className="planner-region-thread">
+            {block.entries.map((e, k) => renderStop(e.stop, {
+              index: e.index,
+              nested: true,
+              canUp: k > 0,
+              canDown: k < count - 1,
+              onMove: dir => moveStop(e.index, dir),
+              isLast: k === count - 1,
+            }))}
+          </div>
+        </section>
+      </div>
+    );
+  };
+
+  // "See must-visits on the way" between two consecutive blocks.
+  const renderRouteButton = (from, to) => (
+    <div style={{ margin: isMobile ? '4px 0 4px 44px' : '4px 0 4px 48px' }}>
+      <button type="button" onClick={() => setRouteModal({ fromName: from.stop.name, toName: to.stop.name, afterIndex: from.index, fromCoords: from.stop.lat ? { lat: from.stop.lat, lng: from.stop.lng } : null, toCoords: to.stop.lat ? { lat: to.stop.lat, lng: to.stop.lng } : null })} className="planner-route-btn">
+        <Route size={12}/> See must-visits on the way
+      </button>
+    </div>
+  );
+
+  const pendingSave = editVersion > savedVersion;
+  const canOpenItinerary = stops.some(s => s.lat) || places.length > 0;
+  const missingCount = stops.filter(s => !s.lat).length;
 
   return (
     <div className="planner-page">
@@ -775,7 +1077,7 @@ function PlannerContent({ onOpenMap }) {
         )}
 
         {/* Stops list */}
-        {displayStops.length === 0 && (
+        {isEmpty && (
           <div className="glass-card-static" style={{ padding: isMobile ? '36px 24px' : '48px 32px', textAlign: 'center', border: '2px dashed rgba(91,92,246,0.25)' }}>
             <div style={{ fontSize: 56, marginBottom: 16, animation: 'floatSoft 4s ease-in-out infinite', display: 'inline-block', filter: 'drop-shadow(0 6px 16px rgba(91,92,246,0.18))' }} aria-hidden="true">🗺️</div>
             <h3 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text-primary)', marginBottom: 6, letterSpacing: '-0.4px' }}>Your trip is a blank canvas</h3>
@@ -784,83 +1086,30 @@ function PlannerContent({ onOpenMap }) {
         )}
 
         <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-          {displayStops.map((stop, idx) => {
-            const isStart = stop._type === 'start';
-            const isEnd = stop._type === 'end';
-            const isReal = !isStart && !isEnd;
-            const realIndex = isReal ? idx - (displayStops[0]?._type === 'start' ? 1 : 0) : -1;
-            const letter = isStart ? '🏠' : isEnd ? '🏁' : String.fromCharCode(65 + realIndex);
-            const nodeBg = isStart ? 'linear-gradient(135deg,#10B981,#059669)' : isEnd ? 'linear-gradient(135deg,#EF4444,#B91C1C)' : 'linear-gradient(135deg,#1E3A8A,#1E3A8A)';
+          {startStop && renderStop(startStop, { kind: 'start', isLast: blocks.length === 0 && !endStop })}
+
+          {blocks.map((block, b) => {
+            const isLastBlock = b === blocks.length - 1;
+            const next = blocks[b + 1];
+            const last = block.entries[block.entries.length - 1];
             return (
-              <React.Fragment key={stop.id}>
-                {/* Stop card */}
-                <div style={{ display:'flex', alignItems:'flex-start', gap:12 }}>
-                  {/* Timeline node */}
-                  <div style={{ display:'flex', flexDirection:'column', alignItems:'center', paddingTop:4, width:36, flexShrink:0 }}>
-                    <div style={{ width:32, height:32, borderRadius:'50%', background:nodeBg, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize:isStart||isEnd?14:13 }}>
-                      {letter}
-                    </div>
-                    {idx < displayStops.length - 1 && <div style={{ width:2, flex:1, minHeight:40, background:'#e2e8f0', margin:'6px 0' }}/>}
-                  </div>
-
-                  <div className="planner-stop-card" style={{ flex: 1, padding: isMobile ? '14px 16px' : '16px 20px', marginBottom: 0, background: 'rgba(255,255,255,0.86)', backdropFilter: 'blur(18px) saturate(180%)', WebkitBackdropFilter: 'blur(18px) saturate(180%)' }}>
-                    <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0 }}>
-                      <div style={{ display:'flex', alignItems:'center', gap:12, flex:1, minWidth:0 }}>
-                        <PlaceThumb place={stop} size={48} radius={8} />
-                        <div style={{ minWidth:0 }}>
-                          <div style={{ fontSize:15, fontWeight:700, color:'#0f172a', display:'flex', alignItems:'center', gap:8, flexWrap:'wrap' }}>
-                            {stop.name}
-                            {isReal && stop.geocoding && <Loader size={12} style={{ color:'#1E3A8A', animation:'spin 1s linear infinite' }}/>}
-                            {isReal && !stop.lat && !stop.geocoding && <span style={{ fontSize:10, color:'#ef4444', fontWeight:600, background:'#fee2e2', padding:'1px 6px', borderRadius:4 }}>No location</span>}
-                            {isStart && <span style={{ fontSize:10, color:'#059669', fontWeight:600, background:'#d1fae5', padding:'1px 6px', borderRadius:4 }}>Start</span>}
-                            {isEnd && <span style={{ fontSize:10, color:'#b91c1c', fontWeight:600, background:'#fee2e2', padding:'1px 6px', borderRadius:4 }}>End</span>}
-                          </div>
-                          <StopDescription text={stop.description} />
-                        </div>
-                      </div>
-                      {isReal && !isGuest && (
-                        <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0, marginLeft: isMobile ? 60 : 0 }}>
-                          {/* Reorder buttons */}
-                          <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
-                            <button type="button" onClick={() => moveStop(realIndex, -1)} disabled={realIndex === 0} title="Move up" aria-label="Move stop up" style={{ background:'none', border:'none', cursor: realIndex === 0 ? 'default' : 'pointer', color: realIndex === 0 ? '#94a3b8' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
-                              <ArrowUp size={14} />
-                            </button>
-                            <button type="button" onClick={() => moveStop(realIndex, 1)} disabled={realIndex === stops.length - 1} title="Move down" aria-label="Move stop down" style={{ background:'none', border:'none', cursor: realIndex === stops.length - 1 ? 'default' : 'pointer', color: realIndex === stops.length - 1 ? '#94a3b8' : '#94a3b8', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
-                              <ArrowDown size={14} />
-                            </button>
-                          </div>
-                          <div style={{ display:'flex', alignItems:'center', gap:4, background:'#f1f5f9', borderRadius:8, padding: isMobile ? '6px 12px' : '4px 10px' }}>
-                            <Clock size={12} color="#1E3A8A"/>
-                            <input type="number" min={15} step={15} value={stop.estimatedMinutes}
-                              onChange={e => setStops(p => p.map(s => s.id === stop.id ? {...s, estimatedMinutes: parseInt(e.target.value)||30} : s))}
-                              style={{ width:isMobile ? 60 : 52, border:'none', background:'transparent', fontSize:16, fontWeight:700, color:'#0f172a', outline:'none', textAlign:'center' }}/>
-                            <span style={{ fontSize:11, color:'#64748b' }}>min</span>
-                          </div>
-                          <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
-                        </div>
-                      )}
-                      {isReal && isGuest && (
-                        <div style={{ display:'flex', alignItems:'center', gap:4, background:'#f1f5f9', borderRadius:8, padding: isMobile ? '6px 12px' : '4px 10px', flexShrink:0, marginLeft: isMobile ? 60 : 0 }}>
-                          <Clock size={12} color="#94a3b8"/>
-                          <span style={{ fontSize:14, fontWeight:700, color:'#64748b', minWidth: isMobile ? 40 : 32, textAlign:'center' }}>{stop.estimatedMinutes}</span>
-                          <span style={{ fontSize:11, color:'#94a3b8' }}>min</span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Route suggestions between real consecutive stops — hidden for guests */}
-                {isReal && !isGuest && realIndex < stops.length - 1 && stops[realIndex + 1] && (
-                  <div style={{ margin: isMobile ? '4px 0 4px 44px' : '4px 0 4px 48px' }}>
-                    <button type="button" onClick={() => setRouteModal({ fromName: stop.name, toName: stops[realIndex + 1].name, afterIndex: realIndex, fromCoords: stop.lat ? { lat: stop.lat, lng: stop.lng } : null, toCoords: stops[realIndex + 1]?.lat ? { lat: stops[realIndex + 1].lat, lng: stops[realIndex + 1].lng } : null })} className="planner-route-btn">
-                      <Route size={12}/> See must-visits on the way
-                    </button>
-                  </div>
-                )}
+              <React.Fragment key={block.key}>
+                {block.group
+                  ? renderRegion(block, b, isLastBlock && !endStop)
+                  : renderStop(last.stop, {
+                      index: last.index,
+                      canUp: b > 0,
+                      canDown: !isLastBlock,
+                      onMove: dir => moveBlock(b, dir),
+                      isLast: isLastBlock && !endStop,
+                    })}
+                {/* Route suggestions between consecutive blocks — hidden for guests */}
+                {!isGuest && next && renderRouteButton(last, next.entries[0])}
               </React.Fragment>
             );
           })}
+
+          {endStop && renderStop(endStop, { kind: 'end', isLast: true })}
         </div>
 
         {/* Add stop button — hidden for guests */}
@@ -947,7 +1196,7 @@ function PlannerContent({ onOpenMap }) {
                       </ReadMore>
                       {r.rating && <div style={{ fontSize:10, color:'#f59e0b', marginTop:2 }}>⭐ {r.rating}</div>}
                     </div>
-                    <button type="button" 
+                    <button type="button"
                       onClick={(e) => { e.stopPropagation(); addSpecificStop(r.name, { ...r, formatted: r.description }); }}
                       style={{ flexShrink:0, background:'#EEF3FC', color:'#1E3A8A', border:'none', borderRadius:8, padding:'6px 10px', fontSize:12, fontWeight:700, cursor:'pointer', alignSelf:'center' }}>
                       + Add
@@ -958,12 +1207,13 @@ function PlannerContent({ onOpenMap }) {
             </>
         </div>
 
-        {/* Pinned Build/Navigate button */}
+        {/* Pinned itinerary button. The plan saves itself, so this only has
+            to wait for a save in flight before opening the itinerary. */}
         <div style={{ padding: '14px', borderTop: '1px solid var(--border-subtle)', background: 'rgba(255,255,255,0.5)' }}>
           {isGuest ? (
             <div style={{ textAlign: 'center', padding: '4px 0' }}>
               <div style={{ fontSize: 13, color: '#64748b', marginBottom: 12 }}>🔒 Join this trip to edit the plan</div>
-              <button type="button" 
+              <button type="button"
                 onClick={() => navigate(`/trip/${selectedTrip.id}/itinerary`)}
                 className="planner-build-btn"
                 style={{ background: '#f8fafc', color: '#334155', border: '1px solid #e2e8f0', cursor: 'pointer' }}
@@ -971,33 +1221,36 @@ function PlannerContent({ onOpenMap }) {
                 Go to itinerary <ChevronRight size={16} />
               </button>
             </div>
-          ) : (() => {
-            const hasChanges = stops.length !== places.length || stops.some((s, i) => s.id !== places[i].id);
-            const isAlreadyBuilt = !hasChanges && places.length > 0;
-            const canBuild = stops.filter(s => s.lat).length > 0;
-            const isDisabled = (!isAlreadyBuilt && !canBuild) || saving;
-            
-            return (
-              <button type="button" 
-                onClick={isAlreadyBuilt ? () => navigate(`/trip/${selectedTrip.id}/itinerary`) : saveAndGo} 
-                disabled={isDisabled} 
-                className={`planner-build-btn ${isAlreadyBuilt ? 'is-built' : ''}`} 
-                aria-label={isAlreadyBuilt ? "Go to itinerary" : "Build full itinerary from stops"}
-                style={isAlreadyBuilt ? { background: 'linear-gradient(135deg, #10b981, #059669)', color: '#fff', cursor: 'pointer' } : undefined}
+          ) : (
+            <>
+              <button type="button"
+                onClick={goToItinerary}
+                disabled={!canOpenItinerary || leaving}
+                className={`planner-build-btn ${canOpenItinerary ? 'is-built' : ''}`}
+                style={canOpenItinerary ? { background: 'linear-gradient(135deg, #10b981, #059669)', color: '#fff', cursor: 'pointer' } : undefined}
               >
-                {saving ? (
-                  <><Loader size={16} style={{ animation:'spin 1s linear infinite' }} aria-hidden="true"/> Building your trip…</>
-                ) : isAlreadyBuilt ? (
-                  <>Go to itinerary <ChevronRight size={16} aria-hidden="true"/></>
+                {leaving ? (
+                  <><Loader size={16} style={{ animation:'spin 1s linear infinite' }} aria-hidden="true"/> Saving your trip…</>
                 ) : (
-                  <>Build my itinerary <ChevronRight size={16} aria-hidden="true"/></>
+                  <>Go to itinerary <ChevronRight size={16} aria-hidden="true"/></>
                 )}
               </button>
-            );
-          })()}
-          {!isGuest && stops.filter(s=>!s.lat).length > 0 && (
+              {editVersion > 0 && (
+                <p className="planner-save-status" role="status">
+                  {saveError ? (
+                    <>Couldn’t save your changes. <button type="button" onClick={retrySave}>Try again</button></>
+                  ) : pendingSave ? (
+                    <><Loader size={12} style={{ animation:'spin 1s linear infinite' }} aria-hidden="true"/> Saving…</>
+                  ) : (
+                    <><Check size={12} aria-hidden="true"/> All changes saved</>
+                  )}
+                </p>
+              )}
+            </>
+          )}
+          {!isGuest && missingCount > 0 && (
             <p style={{ fontSize: 11.5, color: '#b45309', textAlign:'center', margin:'10px 0 0', display: 'inline-flex', alignItems: 'center', gap: 4, justifyContent: 'center', width: '100%', fontWeight: 600 }}>
-              ⚠️ {stops.filter(s=>!s.lat).length} stop(s) missing location
+              ⚠️ {missingCount} stop(s) missing location — they won’t be saved
             </p>
           )}
         </div>
@@ -1012,7 +1265,7 @@ function PlannerContent({ onOpenMap }) {
         />
       )}
       {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer}/>}
-      {regionModal && <RegionModal regionName={regionModal} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks}/>}
+      {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks}/>}
       {routeModal && <RouteModal fromName={routeModal.fromName} toName={routeModal.toName} fromCoords={routeModal.fromCoords} toCoords={routeModal.toCoords} existingStopsNames={stops.map(s => s.name)} cache={routeCache} setCache={setRouteCache} onClose={() => setRouteModal(null)} onConfirm={insertRouteStops}/>}
     </div>
   );
