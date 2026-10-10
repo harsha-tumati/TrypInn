@@ -3,6 +3,9 @@ import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react'
 import { useNavigate, Link } from 'react-router-dom';
 import SmartImage from '../components/SmartImage';
 import { SIZES } from '../utils/imageUrl';
+import TripCover from '../components/TripCover';
+import usePublicTrips from '../hooks/usePublicTrips';
+import { PublicTripsGrid, PublicTripsEmpty } from '../components/PublicTripsGrid';
 import { useAuth } from '../context/AuthContext';
 import { useTrip } from '../context/TripContext';
 // firestoreService and placesService are dynamically imported where needed
@@ -125,40 +128,6 @@ const QUOTES = [
     { emoji: '💫', text: 'The AI found a waterfall none of us had ever heard of. Easily the trip of the year.', name: 'Meher', meta: 'Delhi · 21' },
 ];
 
-const COLLAGE_IMAGES = [
-    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1488085061387-422e29b40080?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1537996194471-e657df975ab4?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1508672019048-805c876b67e2?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1500835556837-99ac94a94552?fm=webp&w=170&q=60',
-    'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?fm=webp&w=170&q=60',
-];
-
-// Deterministic trio of images for a trip card collage, keyed by trip id.
-function getTripImages(tripId) {
-    let hash = 0;
-    if (tripId) {
-        for (let i = 0; i < tripId.length; i++) {
-            hash = tripId.charCodeAt(i) + ((hash << 5) - hash);
-        }
-    }
-    hash = Math.abs(hash);
-    return [
-        COLLAGE_IMAGES[hash % COLLAGE_IMAGES.length],
-        COLLAGE_IMAGES[(hash + 5) % COLLAGE_IMAGES.length],
-        COLLAGE_IMAGES[(hash + 9) % COLLAGE_IMAGES.length],
-    ];
-}
-
 // Scroll-reveal wrapper — fades + lifts content in once it enters the viewport.
 function Reveal({ children, className = '', delay = 0, as: Tag = 'div' }) {
     const ref = useRef(null);
@@ -195,6 +164,9 @@ export default function TripsPage() {
     const { setSelectedTrip } = useTrip();
     const navigate = useNavigate();
     const windowWidth = useWindowWidth();
+    // Deferred until the browser is idle: the hero and the rest of the page
+    // load first.
+    const { trips: publicTrips, error: publicTripsError } = usePublicTrips({ defer: true });
     const isMobile = windowWidth < 768;
     const location = useLocation();
 
@@ -452,25 +424,9 @@ export default function TripsPage() {
     const renderTripCard = (trip, past = false) => (
         <div key={trip.id} className={`hp-trip-card${past ? ' is-past' : ''}`} onClick={() => openTrip(trip)} role="button" tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter') openTrip(trip); }}>
-            <div className="hp-trip-collage">
-                {/* The first tile spans both rows, so it is twice the width
-                    of the two beside it and needs its own sizes. */}
-                {getTripImages(trip.id).map((img, i) => (
-                    <SmartImage
-                        key={i}
-                        src={img}
-                        alt=""
-                        aria-hidden="true"
-                        ratio="3:2"
-                        sizes={i === 0 ? SIZES.tripCollageMain : SIZES.tripCollageSide}
-                        baseWidth={i === 0 ? 320 : 160}
-                        maxWidth={i === 0 ? 640 : 320}
-                        style={{ filter: past ? 'grayscale(0.55)' : 'none' }}
-                    />
-                ))}
+            <TripCover trip={trip} past={past} withEndpoints>
                 {!isTripClaimed(trip) && <span className="hp-trip-draft">Draft</span>}
-                <span className="hp-trip-collage-fade" />
-            </div>
+            </TripCover>
             <div className="hp-trip-body">
                 <h3>{trip.name}</h3>
                 <div className="hp-trip-meta"><MapPin size={13} aria-hidden="true" /><span>{trip.destination || 'Somewhere amazing'}</span></div>
@@ -640,6 +596,22 @@ export default function TripsPage() {
                         See all must-visit guides <ChevronRight size={16} />
                     </Link>
                 </Reveal>
+            </section>
+
+            {/* ══ PUBLIC TRIPS ══ */}
+            <section className="hp-section" id="public-trips-section">
+                <Reveal className="hp-head hp-head-row">
+                    <div>
+                        <span className="hp-kicker"><Users size={13} aria-hidden="true" /> Open trips</span>
+                        <h2 className="hp-h2">Join a trip that's already planned 🎒</h2>
+                        <p className="hp-section-sub">Trips travellers have opened up — look through the plan and ask to join.</p>
+                    </div>
+                    <Link to="/public-trips" className="hp-mv-see-all" style={{ margin: 0 }}>
+                        See all public trips <ChevronRight size={16} />
+                    </Link>
+                </Reveal>
+                <PublicTripsGrid trips={publicTrips} limit={6} />
+                {publicTrips && !publicTrips.length && <PublicTripsEmpty error={publicTripsError} />}
             </section>
 
             {/* ══ HOW IT WORKS ══ */}

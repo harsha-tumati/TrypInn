@@ -12,12 +12,15 @@
 // A draft trip (not yet saved to a profile) has no members to add, so it just
 // gets its link and a note on how to control access.
 import { useState } from 'react';
-import { Check, Copy, Clock, Link as LinkIcon, UserPlus } from 'lucide-react';
+import { Check, Copy, Clock, Globe, Link as LinkIcon, Loader, UserPlus } from 'lucide-react';
 import Modal from './Modal';
 import JoinRequestsList from './JoinRequestsList';
 import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
 import { isTripClaimed } from '../utils/draftTrips';
+import { publicSummaryFor } from '../utils/publicTrips';
+import { routeShapeFrom } from '../utils/routeShape';
+import { setTripPublic } from '../services/firestoreService';
 
 /** True when the signed-in user organises this trip (and so approves requests). */
 export function useIsTripOrganiser() {
@@ -44,10 +47,13 @@ const MODES = [
 ];
 
 export default function ShareTripDialog({ open, onClose }) {
-    const { selectedTrip: trip, joinRequests } = useTrip();
+    const { selectedTrip: trip, joinRequests, places } = useTrip();
+    const { userProfile } = useAuth();
     const isOrganiser = useIsTripOrganiser();
     const [mode, setMode] = useState('request');
     const [copied, setCopied] = useState(false);
+    const [publishing, setPublishing] = useState(false);
+    const [publishError, setPublishError] = useState('');
 
     if (!trip) return null;
 
@@ -58,6 +64,24 @@ export default function ShareTripDialog({ open, onClose }) {
     const url = claimed && activeMode === 'join'
         ? `${origin}/join/${trip.inviteCode}`
         : `${origin}/trip/${trip.id}`;
+
+    // List the trip on the home page's public trips, or take it off. The
+    // live trip listener reflects the change back into the switch.
+    const togglePublic = async () => {
+        setPublishing(true);
+        setPublishError('');
+        try {
+            await setTripPublic(trip.id, trip.isPublic ? null : {
+                ...publicSummaryFor(places),
+                routeShape: routeShapeFrom(places),
+                organiserName: userProfile?.name || 'A Trypinn traveller',
+            });
+        } catch (e) {
+            setPublishError(e?.message || 'That didn’t go through. Please try again.');
+        } finally {
+            setPublishing(false);
+        }
+    };
 
     const copy = async () => {
         try {
@@ -115,6 +139,35 @@ export default function ShareTripDialog({ open, onClose }) {
                 </button>
             </div>
 
+
+            {claimed && isOrganiser && (
+                <div className="share-public">
+                    <span className="share-mode-icon" aria-hidden="true"><Globe size={17} /></span>
+                    <span className="share-mode-text">
+                        <span className="share-mode-label">List on Public Trips</span>
+                        <span className="share-mode-hint">
+                            {trip.isPublic
+                                ? 'Shown on the home page and the Public Trips tab. People ask to join, and you approve them.'
+                                : 'Show this trip on the home page so travellers can find it and ask to join. You approve everyone.'}
+                        </span>
+                    </span>
+                    <button
+                        type="button"
+                        role="switch"
+                        aria-checked={!!trip.isPublic}
+                        aria-label="List this trip publicly"
+                        className={`share-switch${trip.isPublic ? ' is-on' : ''}`}
+                        onClick={togglePublic}
+                        disabled={publishing}
+                    >
+                        {publishing ? <Loader size={12} className="tp-spin" aria-hidden="true" /> : <span className="share-switch-knob" aria-hidden="true" />}
+                    </button>
+                    {publishError && <p className="tp-error" role="alert" style={{ width: '100%', margin: '6px 0 0' }}>{publishError}</p>}
+                </div>
+            )}
+            {claimed && !isOrganiser && trip.isPublic && (
+                <p className="share-note share-note-info">This trip is listed on Public Trips.</p>
+            )}
 
             {claimed && isOrganiser && (
                 <div className="share-requests">

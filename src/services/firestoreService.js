@@ -1,5 +1,6 @@
 // src/services/firestoreService.js
 import { nanoid } from '../utils/nanoid';
+import { routeShapeFrom, orderPlaces } from '../utils/routeShape';
 
 async function getFirebase() {
     const [{ db }, { collection, doc, addDoc, setDoc, updateDoc, deleteDoc, getDoc, getDocs, query, where, serverTimestamp }] =
@@ -80,9 +81,26 @@ export async function updateTripStatus(tripId, status) {
     await updateDoc(doc(db, 'trips', tripId), { status });
 }
 
-export async function updatePlaceOrder(tripId, placeOrder) {
+// ─── PUBLIC LISTING ───────────────────────────────────────────────────────────
+// A public trip carries a small summary for its card on the home page, so the
+// listing never has to read the trip's places or members.
+
+export async function setTripPublic(tripId, summary) {
+    const { db, updateDoc, doc, serverTimestamp } = await getFirebase();
+    await updateDoc(doc(db, 'trips', tripId), summary
+        ? { isPublic: true, publishedAt: serverTimestamp(), ...summary }
+        : { isPublic: false });
+}
+
+/**
+ * Save the stops' order. Pass the places too and the trip's routeShape (the
+ * outline its card cover draws) is refreshed in the same write.
+ */
+export async function updatePlaceOrder(tripId, placeOrder, places = null) {
     const { db, updateDoc, doc } = await getFirebase();
-    await updateDoc(doc(db, 'trips', tripId), { placeOrder });
+    const fields = { placeOrder };
+    if (places) fields.routeShape = routeShapeFrom(orderPlaces(places, placeOrder));
+    await updateDoc(doc(db, 'trips', tripId), fields);
 }
 
 export async function updateRouteConfig(tripId, routeConfig) {

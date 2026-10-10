@@ -4500,11 +4500,14 @@ html.hide-scrollbar::-webkit-scrollbar { display: none; }
 }
 .hp-trip-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .hp-trip-collage {
-  position: relative; height: 150px;
-  display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px;
+  position: relative; height: 150px; overflow: hidden;
+  /* minmax(0, …): plain 1fr tracks won't shrink below a photo's natural
+     height, so on wide cards the photos grew past 150px and covered the
+     trip's title. */
+  display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); gap: 3px;
 }
 .hp-trip-collage > img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  width: 100%; height: 100%; min-height: 0; object-fit: cover; display: block;
   background: var(--inset);   /* shows through until the photo arrives */
 }
 .hp-trip-collage > img:first-child { grid-row: 1 / 3; }
@@ -5693,3 +5696,231 @@ body.is-dragging-stop * { cursor: grabbing !important; user-select: none !import
   background: #3b82f6;
 }
 .itin-drop-line.is-noop { opacity: 0; }
+
+/* ── Public trips ─────────────────────────────────────────────── */
+.pt-card { text-decoration: none; color: inherit; display: block; }
+.pt-open-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.95);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+.pt-highlights {
+  list-style: none;
+  margin: 8px 0 2px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.pt-highlights li {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #EEF3FC;
+  color: #1E3A8A;
+  font-size: 11.5px;
+  font-weight: 600;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pt-highlights li.pt-more { background: #f1f5f9; color: #64748b; }
+.pt-by {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+.pt-skeleton {
+  height: 300px;
+  border-radius: var(--radius-lg, 20px);
+  background: linear-gradient(90deg, #eef2f7 25%, #f8fafc 50%, #eef2f7 75%);
+  background-size: 200% 100%;
+  animation: ptShimmer 1.4s linear infinite;
+}
+@keyframes ptShimmer { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .pt-skeleton { animation: none; } }
+.pt-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 36px 24px;
+  border: 1.5px dashed rgba(30, 58, 138, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.pt-empty strong { color: var(--text-primary); font-size: 16px; }
+.pt-empty svg { color: var(--accent); }
+.pt-page { padding-bottom: 48px; }
+.pt-header { margin-bottom: 26px; max-width: 720px; }
+.pt-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 0 14px;
+  min-height: 48px;
+  border-radius: 14px;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  color: var(--text-tertiary);
+}
+.pt-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.12); }
+.pt-search input { flex: 1; min-width: 0; border: none; outline: none; background: transparent; font: inherit; font-size: 15px; color: var(--text-primary); }
+.pt-nomatch { margin-top: 18px; color: var(--text-tertiary); }
+.pt-nomatch button { border: none; background: none; padding: 0; color: var(--accent); font: inherit; text-decoration: underline; cursor: pointer; }
+.pt-foot { margin-top: 32px; color: var(--text-tertiary); font-size: 14px; }
+.pt-foot a { color: var(--accent); font-weight: 600; }
+
+/* Share dialog: the "List on Public Trips" switch */
+.share-public {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1.5px solid var(--line);
+  background: var(--paper);
+}
+.share-switch {
+  position: relative;
+  width: 44px;
+  height: 26px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 999px;
+  background: #cbd5e1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+  color: #fff;
+}
+.share-switch.is-on { background: #10b981; }
+.share-switch:disabled { cursor: progress; }
+.share-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.25);
+  transition: transform var(--transition-fast);
+}
+.share-switch.is-on .share-switch-knob { transform: translateX(18px); }
+.share-note-info { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; margin-top: 16px; }
+
+/* ── Trip cover: route poster ─────────────────────────────────── */
+.trip-cover {
+  --c1: #4c1d95; --c2: #be185d; --ink-c: #fdf2f8; --route: #fff; --dot: #fbcfe8;
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 85% 10%, rgba(255, 255, 255, 0.16), transparent 55%),
+    linear-gradient(135deg, var(--c1), var(--c2));
+  color: var(--ink-c);
+  isolation: isolate;
+}
+.trip-cover.theme-sea      { --c1: #0f4c5c; --c2: #0e9aa7; --dot: #a7f3d0; }
+.trip-cover.theme-mountain { --c1: #1e1b4b; --c2: #3b5bdb; --dot: #c7d2fe; }
+.trip-cover.theme-desert   { --c1: #7c2d12; --c2: #d97706; --dot: #fde68a; }
+.trip-cover.theme-forest   { --c1: #14532d; --c2: #15803d; --dot: #bbf7d0; }
+.trip-cover-contours {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  fill: none; stroke: rgba(255, 255, 255, 0.09); stroke-width: 1.2;
+  z-index: -1;
+}
+.trip-cover-emoji {
+  position: absolute; right: -6px; bottom: -14px;
+  font-size: 84px; line-height: 1; opacity: 0.13;
+  filter: saturate(0.6);
+  z-index: -1;
+}
+.trip-cover-text {
+  position: absolute; left: 16px; top: 14px; bottom: 12px;
+  width: 42%;
+  display: flex; flex-direction: column; gap: 3px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+.trip-cover-code {
+  font-size: 22px; font-weight: 800; letter-spacing: 0.06em;
+  line-height: 1.1; white-space: nowrap;
+}
+.trip-cover-name {
+  font-size: 11.5px; font-weight: 600; opacity: 0.85;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.trip-cover-facts {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 3px 9px; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.02em;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.trip-cover-route {
+  position: absolute; right: 8px; top: 8px; bottom: 8px;
+  width: 58%; height: calc(100% - 16px);
+  overflow: visible;
+}
+.trip-cover-path-glow {
+  fill: none; stroke: var(--dot); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round;
+  opacity: 0.22; filter: blur(3px);
+}
+.trip-cover-path {
+  fill: none; stroke: var(--route); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 1; stroke-dashoffset: 0;
+  animation: tripCoverDraw 1.1s cubic-bezier(0.3, 0.7, 0.2, 1) both;
+}
+.trip-cover-path.is-idle { stroke-dasharray: 0.012 0.018; opacity: 0.45; animation: none; }
+.trip-cover-stop { fill: var(--dot); stroke: rgba(0, 0, 0, 0.18); stroke-width: 0.6; }
+.trip-cover-start { fill: none; stroke: #fff; stroke-width: 2.2; }
+.trip-cover-end { fill: #fff; }
+.trip-cover-end-halo { fill: var(--dot); opacity: 0.35; }
+.trip-cover-end-halo.is-pulse { animation: tripCoverPulse 2.2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes tripCoverDraw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes tripCoverPulse { 0% { transform: scale(0.6); opacity: 0.5; } 100% { transform: scale(1.6); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .trip-cover-path, .trip-cover-end-halo.is-pulse { animation: none; }
+}
+/* A finished trip: faded, with a used-ticket stamp. */
+.trip-cover.is-past { filter: grayscale(0.75) brightness(0.92); }
+.trip-cover-stamp {
+  position: absolute; right: 14px; top: 12px;
+  padding: 3px 9px;
+  border: 2px solid rgba(255, 255, 255, 0.75); border-radius: 6px;
+  color: #fff; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+  transform: rotate(-8deg); opacity: 0.85;
+}
+.trip-cover .hp-trip-draft,
+.trip-cover .pt-open-badge { z-index: 2; }
+.trip-cover .pt-open-badge { left: auto; right: 10px; top: 10px; }
+@media (max-width: 480px) {
+  .trip-cover-code { font-size: 19px; }
+  .trip-cover-text { width: 46%; }
+}
+.trip-cover .hp-trip-draft { left: auto; right: 10px; }
+.trip-cover-stamp { top: auto; bottom: 12px; }

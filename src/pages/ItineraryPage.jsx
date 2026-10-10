@@ -471,7 +471,7 @@ function ItineraryContent({ onOpenMap }) {
             routeConfig: { ...prev.routeConfig, optimize: false }
         }));
 
-        await updatePlaceOrder(selectedTrip.id, newOrder);
+        await updatePlaceOrder(selectedTrip.id, newOrder, newPlaces);
         await updateRouteConfig(selectedTrip.id, { optimize: false });
     };
 

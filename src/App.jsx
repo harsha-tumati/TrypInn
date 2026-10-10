@@ -27,6 +27,7 @@ const JoinTripPage = lazy(() => import('./pages/JoinTripPage'));
 const PlannerPage = lazy(() => import('./pages/PlannerPage'));
 const MembersPage = lazy(() => import('./pages/MembersPage'));
 const MustVisitsPage = lazy(() => import('./pages/MustVisitsPage'));
+const PublicTripsPage = lazy(() => import('./pages/PublicTripsPage'));
 
 import { isTripClaimed } from './utils/draftTrips';
 
@@ -256,6 +257,7 @@ function AppRoutes() {
                 <Route path="/travel-guides" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
                 <Route path="/travel-guides/:postId" element={<><Navbar /><main id="main-content"><BlogPage /></main></>} />
 
+                <Route path="/public-trips" element={<><Navbar /><main id="main-content"><PublicTripsPage /></main></>} />
                 <Route path="/must-visits" element={<><Navbar /><main id="main-content"><MustVisitsPage /></main></>} />
                 <Route path="/must-visits/:destination" element={<><Navbar /><main id="main-content"><MustVisitsPage /></main></>} />
                 {/* SEO redirect: old /blog paths → /travel-guides */}

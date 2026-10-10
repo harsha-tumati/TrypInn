@@ -116,7 +116,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
 
         const newOrder = newPlaces.map(p => p.id);
         setSelectedTrip({ ...trip, placeOrder: newOrder });
-        await updatePlaceOrder(trip.id, newOrder);
+        await updatePlaceOrder(trip.id, newOrder, places);
     };
 
     async function showRoute(optimizeOverride = null) {
@@ -139,7 +139,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         .filter(id => id);
                     const unselectedIds = places.filter(p => !selectedPlaces.includes(p)).map(p => p.id);
                     const newOrder = [...orderedIds, ...unselectedIds];
-                    await updatePlaceOrder(trip.id, newOrder);
+                    await updatePlaceOrder(trip.id, newOrder, places);
                 }
             } else {
                 setRouteError('Could not compute route. Check Google Directions API is enabled.');

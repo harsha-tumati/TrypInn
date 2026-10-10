@@ -21,6 +21,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
 import usePageSeo from '../hooks/usePageSeo';
+import { publicSummaryFor } from '../utils/publicTrips';
 
 // Map a Firestore place doc to an editable planner stop.
 function placeToStop(p) {
@@ -102,7 +103,7 @@ async function savePlan(tripId, stops, savedPlaces) {
   // A saved place still listed without coordinates is kept, not deleted.
   const keep = new Set([...ids, ...stops.map(s => s.id)]);
   await Promise.all([...saved.keys()].filter(id => !keep.has(id)).map(id => deletePlace(id)));
-  await updatePlaceOrder(tripId, ids);
+  await updatePlaceOrder(tripId, ids, toSave.map((s, i) => ({ ...s, id: ids[i] })));
 
   const idMap = {};
   toSave.forEach((s, i) => { if (s.id !== ids[i]) idMap[s.id] = ids[i]; });
@@ -692,6 +693,7 @@ function PlannerContent({ onOpenMap }) {
   const placesRef = useRef(places);
   const tripIdRef = useRef(tripId);
   const versionRef = useRef(editVersion);
+  const isPublicRef = useRef(!!selectedTrip?.isPublic);
   const pendingRef = useRef(null); // trip id with an edit waiting to be saved
   const chainRef = useRef(Promise.resolve());
 
@@ -700,6 +702,7 @@ function PlannerContent({ onOpenMap }) {
     placesRef.current = places;
     tripIdRef.current = tripId;
     versionRef.current = editVersion;
+    isPublicRef.current = !!selectedTrip?.isPublic;
   });
 
   /** setStops for a user edit: same signature, but schedules a save. */
@@ -720,6 +723,8 @@ function PlannerContent({ onOpenMap }) {
         const { ids, idMap } = await savePlan(tid, stopsRef.current, placesRef.current);
         setSelectedTrip(prev => (prev?.id === tid ? { ...prev, placeOrder: ids } : prev));
         if (Object.keys(idMap).length) setStops(prev => prev.map(s => (idMap[s.id] ? { ...s, id: idMap[s.id] } : s)));
+        // A publicly listed trip keeps its card's stop count and highlights current.
+        if (isPublicRef.current) await updateTrip(tid, publicSummaryFor(stopsRef.current));
         setSavedVersion(v => Math.max(v, version));
         setSaveError(false);
       } catch (e) {
