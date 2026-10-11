@@ -1295,6 +1295,21 @@ function ItineraryContent({ onOpenMap }) {
                             const isCarryOver = !!item.isCarryOver; // night-stay from prev day shown as starting point
                             const dayBoundaryDayIndex = item.dayBoundaryDayIndex !== undefined ? item.dayBoundaryDayIndex : -1;
 
+                            const canReorder = !place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest;
+                            const dragHandle = canReorder ? (
+                                                <div
+                                                    className="itin-drag-handle"
+                                                    onPointerDown={(e) => startDrag(e, place)}
+                                                    title="Drag to reorder"
+                                                    style={isMobile
+                                                        ? { display:'flex', flexDirection:'row', alignItems:'center', color:'#94a3b8', flexShrink:0, marginLeft:'auto' }
+                                                        : { display:'flex', flexDirection:'column', paddingRight: 16, borderRight:'1px solid #f1f5f9', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}
+                                                >
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} earlier`}>▲</button>
+                                                    <GripVertical size={isMobile ? 16 : 18} style={{ margin: isMobile ? '0 2px' : '4px 0' }} aria-hidden="true" />
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} later`}>▼</button>
+                                                </div>
+                            ) : null;
                             return (
                                 <Fragment key={`${place.id}-${isCarryOver ? 'carry' : 'main'}`}>
                                     {/* Day boundary banner — shown before first item of Day 2+ */}
@@ -1348,29 +1363,16 @@ function ItineraryContent({ onOpenMap }) {
                                         </div>
 
                                         <div data-stop-id={(!place.isStartingPoint && !place.isEndingPoint && !isCarryOver) ? place.id : undefined} style={{
-                                            flex: 1, display: 'flex', background: isCarryOver ? 'rgba(245,243,255,0.85)' : 'rgba(255,255,255,0.8)',
-                                            border: `1px solid ${isCarryOver ? 'rgba(221,214,254,0.6)' : 'rgba(255,255,255,0.5)'}`, borderRadius: 16, padding: isMobile ? '12px' : '16px',
+                                            flex: 1, minWidth: 0, display: 'flex', background: isCarryOver ? 'rgba(245,243,255,0.85)' : 'rgba(255,255,255,0.8)',
+                                            border: `1px solid ${isCarryOver ? 'rgba(221,214,254,0.6)' : 'rgba(255,255,255,0.5)'}`, borderRadius: isMobile ? 18 : 16, padding: '16px',
                                             boxShadow: '0 8px 32px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.6)', position: 'relative', marginBottom: 16,
                                             opacity: draggingId === place.id ? 0.35 : (place.isStartingPoint || place.isEndingPoint) ? 0.9 : 1,
                                             flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0,
                                             alignItems: isMobile ? 'flex-start' : 'center',
                                             backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)'
                                         }} className={isMobile ? 'itin-card is-compact' : 'itin-card'}>
-                                            {/* Drag Handle (Hidden for start/end and guests) */}
-                                            {!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest && (
-                                                <div
-                                                    className="itin-drag-handle"
-                                                    onPointerDown={(e) => startDrag(e, place)}
-                                                    title="Drag to reorder"
-                                                    style={isMobile
-                                                        ? { position:'absolute', top:6, right:6, display:'flex', flexDirection:'row', alignItems:'center', color:'#94a3b8', zIndex:1 }
-                                                        : { display:'flex', flexDirection:'column', paddingRight: 16, borderRight:'1px solid #f1f5f9', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}
-                                                >
-                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} earlier`}>▲</button>
-                                                    <GripVertical size={isMobile ? 16 : 18} style={{ margin: isMobile ? '0 2px' : '4px 0' }} aria-hidden="true" />
-                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} later`}>▼</button>
-                                                </div>
-                                            )}
+                                            {/* Drag Handle (Hidden for start/end and guests) — on phones it sits beside the time */}
+                                            {!isMobile && dragHandle}
 
                                             {/* Image (on phones it sits in the header, beside the name) */}
                                             {!isMobile && <div style={{ marginLeft: (!place.isStartingPoint && !place.isEndingPoint) ? 16 : 0, flexShrink: 0 }}>
@@ -1409,13 +1411,13 @@ function ItineraryContent({ onOpenMap }) {
                                                             </div>
                                                         )}
                                                         {isMobile ? (
-                                                            <div className="itin-card-head" style={{ paddingRight: (!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest) ? 96 : 0 }}>
+                                                            <div className="itin-card-head">
                                                                 <PlaceThumb
                                                                     place={(place.isStartingPoint || place.isEndingPoint)
                                                                         ? { ...place, category: place.isStartingPoint ? 'start' : 'end' }
                                                                         : place}
-                                                                    size={48}
-                                                                    radius={10}
+                                                                    size={60}
+                                                                    radius={12}
                                                                 />
                                                                 <div style={{ minWidth: 0 }}>
                                                                     <div className="itin-card-name">{place.name}</div>
@@ -1433,7 +1435,7 @@ function ItineraryContent({ onOpenMap }) {
                                                     </div>
                                                     {/* Duration Edit (Hidden for Start/End) */}
                                                     {!place.isStartingPoint && !place.isEndingPoint && (
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? 6 : 8, background: '#f8fafc', padding: isMobile ? '6px 10px' : '6px 12px', borderRadius: isMobile ? 12 : 8, border: '1px solid #e2e8f0', position: 'relative', flexShrink: 0, marginTop: isMobile ? 10 : 0, flexWrap: 'wrap', width: isMobile ? '100%' : 'auto', maxWidth: '100%', boxSizing: 'border-box' }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? 6 : 8, background: '#f8fafc', padding: isMobile ? '6px 10px' : '6px 12px', borderRadius: isMobile ? 12 : 8, border: '1px solid #e2e8f0', position: 'relative', flexShrink: 0, marginTop: isMobile ? 14 : 0, flexWrap: 'wrap', width: isMobile ? '100%' : 'auto', maxWidth: '100%', boxSizing: 'border-box' }}>
                                                             <Clock size={14} color="#64748b" />
                                                             <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>{isMobile ? 'Stay' : 'Visit Duration:'}</span>
                                                             {isGuest ? (
@@ -1472,8 +1474,9 @@ function ItineraryContent({ onOpenMap }) {
                                                     )}
                                                 </div>
 
-                                                <div style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? 8 : 12, flexWrap: 'wrap', flexDirection: isMobile ? 'column' : 'row', marginTop: isMobile ? 10 : 0 }}>
-                                                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                                <div style={{ display: 'flex', alignItems: isMobile ? 'stretch' : 'center', gap: isMobile ? 10 : 12, flexWrap: 'wrap', flexDirection: isMobile ? 'column' : 'row', marginTop: isMobile ? 14 : 0 }}>
+                                                    <div style={isMobile ? { display: 'flex', alignItems: 'flex-start', gap: 8 } : { display: 'flex', flexDirection: 'column' }}>
+                                                    <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
                                                         {!place.isStartingPoint && !isCarryOver && !isGuest ? (
                                                             <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                                                                 <TimePicker
@@ -1519,6 +1522,8 @@ function ItineraryContent({ onOpenMap }) {
                                                                 until {departureTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                                             </div>
                                                         )}
+                                                    </div>
+                                                    {isMobile && dragHandle}
                                                     </div>
 
                                                     {potentialPlaceMeal > 0 && !placeMealCancelled && (
