@@ -10,7 +10,7 @@ import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, up
 import { useGuestMode } from '../context/GuestModeContext';
 import LocationAutocomplete from '../components/LocationAutocomplete';
 import { isTripClaimed, removeDraftId } from '../utils/draftTrips';
-import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Sparkles, BookmarkPlus } from 'lucide-react';
+import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Sparkles, BookmarkPlus, Pencil, RotateCcw } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
@@ -48,8 +48,23 @@ function stableJson(value) {
     return JSON.stringify(value ?? null);
 }
 
+// Times the person set by hand, overriding the estimates:
+//   drives     — "<fromId>><toId>" → minutes behind the wheel for that leg
+//   mealTimes  — break id → "HH:MM" the meal starts
+//   visitTimes — place id → "HH:MM" they arrive there
+const EMPTY_TIME_EDITS = { drives: {}, mealTimes: {}, visitTimes: {} };
+const timeEditsOf = (t) => ({ drives: { ...(t?.drives || {}) }, mealTimes: { ...(t?.mealTimes || {}) }, visitTimes: { ...(t?.visitTimes || {}) } });
+/** `base`'s calendar day at the clock time "HH:MM". */
+function atClock(base, hhmm) {
+    const [h, m] = hhmm.split(':').map(Number);
+    const d = new Date(base);
+    d.setHours(h, m, 0, 0);
+    return d;
+}
+const toHHMM = (d) => `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+
 /** The schedule edits a person has made, in the shape saved on the trip. */
-function scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays }) {
+function scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits }) {
     const durations = {};
     Object.keys(userOverrides).forEach(id => {
         if (userOverrides[id] && placeDurations[id] != null) durations[id] = placeDurations[id];
@@ -63,6 +78,7 @@ function scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBrea
         forcedDayBreaks: [...forcedDayBreaks].sort(),
         forcedDayMerges: [...forcedDayMerges].sort(),
         removedNightStays: [...removedNightStays].sort(),
+        timeEdits: timeEditsOf(timeEdits),
     };
 }
 
@@ -80,6 +96,7 @@ function stateFromTrip(trip) {
         forcedDayBreaks: asSet(saved.forcedDayBreaks),
         forcedDayMerges: asSet(saved.forcedDayMerges),
         removedNightStays: asSet(saved.removedNightStays),
+        timeEdits: timeEditsOf(saved.timeEdits),
     };
 }
 
@@ -94,6 +111,55 @@ function routeSignature(places, trip) {
 function rememberRoute(sig, result) {
     routeCache.set(sig, result);
     if (routeCache.size > ROUTE_CACHE_LIMIT) routeCache.delete(routeCache.keys().next().value);
+}
+
+/**
+ * "Drive 14 hr 26 mins" — tap to set your own drive time for a leg; once
+ * changed, a reset puts back the road estimate.
+ */
+function DriveTime({ minutes, expected, edited, distance, format, readOnly, onChange }) {
+    const [editing, setEditing] = useState(false);
+    const h = Math.floor(minutes / 60);
+    const m = minutes % 60;
+    const set = (hours, mins) => onChange(Math.max(0, hours) * 60 + Math.min(59, Math.max(0, mins)));
+    const icon = <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>;
+    const dist = distance && <span className="itin-drive-dist">({distance})</span>;
+
+    if (readOnly) {
+        return <span className="itin-drive-label">{icon} Drive {format(minutes)} {dist}</span>;
+    }
+    if (editing) {
+        return (
+            <span className="itin-drive-label itin-drive-editor">
+                {icon} Drive
+                <input type="number" min="0" inputMode="numeric" value={h} aria-label="Drive hours"
+                    onChange={(e) => set(parseInt(e.target.value, 10) || 0, m)} />
+                <span>h</span>
+                <input type="number" min="0" max="59" step="5" inputMode="numeric" value={m} aria-label="Drive minutes"
+                    onChange={(e) => set(h, parseInt(e.target.value, 10) || 0)} />
+                <span>m</span>
+                <button type="button" className="itin-drive-done" onClick={() => setEditing(false)}>Done</button>
+                {edited && (
+                    <button type="button" className="itin-time-reset" onClick={() => { onChange(null); setEditing(false); }}>
+                        <RotateCcw size={12} aria-hidden="true" /> Reset to {format(expected)}
+                    </button>
+                )}
+            </span>
+        );
+    }
+    return (
+        <span className="itin-drive-label">
+            <button type="button" className="itin-drive-edit" onClick={() => setEditing(true)} title="Change the drive time">
+                {icon} Drive {format(minutes)} <Pencil size={12} aria-hidden="true" className="itin-edit-icon" />
+            </button>
+            {dist}
+            {edited && (
+                <button type="button" className="itin-time-reset" onClick={() => onChange(null)} title={`Back to the road estimate (${format(expected)})`}>
+                    <RotateCcw size={12} aria-hidden="true" /> Reset
+                </button>
+            )}
+        </span>
+    );
 }
 
 function ItineraryContent({ onOpenMap }) {
@@ -146,6 +212,13 @@ function ItineraryContent({ onOpenMap }) {
     const [forcedDayBreaks, setForcedDayBreaks] = useState(initial.forcedDayBreaks); // placeIds forced to next day
     const [forcedDayMerges, setForcedDayMerges] = useState(initial.forcedDayMerges); // placeIds where midnight split is suppressed
     const [removedNightStays, setRemovedNightStays] = useState(initial.removedNightStays); // placeIds where hotel night-stay is manually removed
+    const [timeEdits, setTimeEdits] = useState(initial.timeEdits || EMPTY_TIME_EDITS); // hand-set drive, meal and visit times
+    /** Set (or with null, clear) one hand-set time. */
+    const setTimeEdit = (kind, key, value) => setTimeEdits(prev => {
+        const next = { ...prev[kind] };
+        if (value == null || value === '') delete next[key]; else next[key] = value;
+        return { ...prev, [kind]: next };
+    });
 
     // ── Schedule sync with the trip ──────────────────────────────────────────
     // remoteJson: the saved schedule this page has caught up with.
@@ -174,12 +247,13 @@ function ItineraryContent({ onOpenMap }) {
             setForcedDayBreaks(saved.forcedDayBreaks);
             setForcedDayMerges(saved.forcedDayMerges);
             setRemovedNightStays(saved.removedNightStays);
+            setTimeEdits(saved.timeEdits);
         }
     }
 
     const schedule = useMemo(
-        () => scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays }),
-        [dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays],
+        () => scheduleOf({ dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits }),
+        [dayStartTime, placeDurations, userOverrides, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits],
     );
     const scheduleJson = stableJson(schedule);
 
@@ -211,12 +285,12 @@ function ItineraryContent({ onOpenMap }) {
     useEffect(() => {
         sessionState.set(tripId, {
             dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
-            manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, openLegs, activeView,
+            manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits, openLegs, activeView,
             remoteJson, lastWrittenJson,
             aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults,
         });
     }, [tripId, dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
-        manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, openLegs, activeView, remoteJson, lastWrittenJson,
+        manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits, openLegs, activeView, remoteJson, lastWrittenJson,
         aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults]);
 
     // ── Draft → profile claiming ─────────────────────────────────────────────
@@ -686,6 +760,19 @@ function ItineraryContent({ onOpenMap }) {
                 }
             }
 
+            // A visit time set by hand wins over the estimate. It's taken on the
+            // estimate's day, or the neighbouring one when that's closer
+            // (estimate 23:40, set 00:30 → just after midnight).
+            const estimatedArrival = new Date(currentTime);
+            const visitAt = !place.isStartingPoint ? timeEdits.visitTimes[place.id] : null;
+            if (visitAt) {
+                const target = atClock(currentTime, visitAt);
+                const diff = target - currentTime;
+                if (diff < -12 * 3600e3) target.setDate(target.getDate() + 1);
+                else if (diff > 12 * 3600e3) target.setDate(target.getDate() - 1);
+                currentTime = target;
+            }
+
             const arrivalTime = new Date(currentTime);
             const arrivalHour = arrivalTime.getHours();
 
@@ -741,6 +828,9 @@ function ItineraryContent({ onOpenMap }) {
             let transitMinutes = 0;
             let transitDistance = "";
             let transitEvents = [];
+            const legId = `${place.id}>${placesToMap[idx + 1]?.id || ''}`;
+            let expectedTransitMinutes = 0;
+            const driveEdited = timeEdits.drives[legId] != null;
 
             // Check if we have route data for transit to NEXT place
             if (itineraryRoute?.routes?.[0]?.legs?.[idx]) {
@@ -752,6 +842,9 @@ function ItineraryContent({ onOpenMap }) {
                 // Smart transit buffers
                 if (transitMinutes > 30) transitMinutes += 5;
                 if (transitMinutes > 120) transitMinutes += 15;
+                expectedTransitMinutes = transitMinutes;
+                // The person knows this road better than the estimate.
+                if (driveEdited) transitMinutes = Math.max(0, Number(timeEdits.drives[legId]) || 0);
 
                 const rawTransitMinutes = transitMinutes;
                 const driveStart = new Date(departureTime);
@@ -789,7 +882,9 @@ function ItineraryContent({ onOpenMap }) {
                             const at = new Date(day);
                             at.setHours(hour, 0, 0, 0);
                             if (at > driveStart && at < driveEnd) {
-                                suggestedBreaks.push({ id: `transit-${idx}-${key}${d ? `-d${d}` : ''}`, name, type: 'meal', defaultDuration: minutes, scheduledAt: at });
+                                const id = `transit-${idx}-${key}${d ? `-d${d}` : ''}`;
+                                const fixedAt = timeEdits.mealTimes[id];
+                                suggestedBreaks.push({ id, name, type: 'meal', defaultDuration: minutes, scheduledAt: fixedAt ? atClock(at, fixedAt) : at, fixed: !!fixedAt });
                             }
                         }
                     }
@@ -802,11 +897,13 @@ function ItineraryContent({ onOpenMap }) {
                 const manualForLeg = (manualBreaks[idx] || []);
                 const allBreaks = [
                     ...suggestedBreaks,
-                    ...manualForLeg.map(b => ({
-                        ...b,
-                        scheduledAt: new Date(driveStart.getTime() + (b.afterDriveMinutes !== undefined ? b.afterDriveMinutes : rawTransitMinutes) * 60000)
-                    }))
+                    ...manualForLeg.map(b => {
+                        const at = new Date(driveStart.getTime() + (b.afterDriveMinutes !== undefined ? b.afterDriveMinutes : rawTransitMinutes) * 60000);
+                        const fixedAt = timeEdits.mealTimes[b.id];
+                        return { ...b, scheduledAt: fixedAt ? atClock(at, fixedAt) : at, fixed: !!fixedAt };
+                    })
                 ];
+                allBreaks.sort((a, b) => a.scheduledAt - b.scheduledAt);
 
                 // Calculate break arrival times: scheduled position + preceding break durations
                 let totalBreakTime = 0;
@@ -815,8 +912,18 @@ function ItineraryContent({ onOpenMap }) {
                     const isCancelled = !!cancelledBreaks[brk.id];
                     let finalDuration = placeDurations[brk.id] !== undefined ? placeDurations[brk.id] : brk.defaultDuration;
 
-                    const eventArrival = new Date(brk.scheduledAt);
-                    eventArrival.setMinutes(eventArrival.getMinutes() + totalBreakTime);
+                    // A meal time set by hand is a wall-clock time, kept within
+                    // the drive; others sit at their point in the drive, pushed
+                    // back by the breaks before them.
+                    let eventArrival;
+                    if (brk.fixed) {
+                        const lo = driveStart.getTime();
+                        const hi = lo + (rawTransitMinutes + totalBreakTime) * 60000;
+                        eventArrival = new Date(Math.min(hi, Math.max(lo, brk.scheduledAt.getTime())));
+                    } else {
+                        eventArrival = new Date(brk.scheduledAt);
+                        eventArrival.setMinutes(eventArrival.getMinutes() + totalBreakTime);
+                    }
 
                     if (brk.type === 'night_stay' && !isCancelled && placeDurations[brk.id] === undefined) {
                         const nextMorning = new Date(eventArrival);
@@ -845,6 +952,7 @@ function ItineraryContent({ onOpenMap }) {
                         departureTime: eventDeparture,
                         isCancelled,
                         isManual: !!brk.isManual,
+                        timeEdited: !!brk.fixed,
                         afterDriveMinutes: brk.afterDriveMinutes !== undefined ? brk.afterDriveMinutes : Math.max(0, Math.round((brk.scheduledAt - driveStart) / 60000)),
                         maxTransitMinutes: rawTransitMinutes
                     });
@@ -861,6 +969,11 @@ function ItineraryContent({ onOpenMap }) {
             return {
                 place,
                 arrivalTime,
+                estimatedArrival,
+                visitTimeEdited: !!visitAt,
+                legId,
+                expectedTransitMinutes,
+                driveEdited,
                 departureTime,
                 durationMinutes,
                 transitMinutes,
@@ -876,7 +989,7 @@ function ItineraryContent({ onOpenMap }) {
                 transitEvents
             };
         });
-    }, [orderedPlaces, dayStartTime, placeDurations, itineraryRoute, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, userOverrides, selectedTrip?.startingPoint, selectedTrip?.endingPoint]);
+    }, [orderedPlaces, dayStartTime, placeDurations, itineraryRoute, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, userOverrides, timeEdits, selectedTrip?.startingPoint, selectedTrip?.endingPoint]);
 
     const handleDurationChange = (placeId, minutes) => {
         setUserOverrides(prev => ({ ...prev, [placeId]: true }));
@@ -1312,9 +1425,37 @@ function ItineraryContent({ onOpenMap }) {
 
                                                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
                                                     <div style={{ display: 'flex', flexDirection: 'column' }}>
-                                                        <div style={{ color: '#0f172a', fontWeight: 700, fontSize: 15 }}>
-                                                            {arrivalTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                                                        </div>
+                                                        {!place.isStartingPoint && !isCarryOver && !isGuest ? (
+                                                            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                                                <input
+                                                                    type="time"
+                                                                    className="itin-time-input is-visit"
+                                                                    value={toHHMM(arrivalTime)}
+                                                                    onChange={(e) => e.target.value && setTimeEdit('visitTimes', place.id, e.target.value)}
+                                                                    aria-label={`Time you get to ${place.name}`}
+                                                                    title="Change when you visit"
+                                                                />
+                                                                {item.visitTimeEdited && (
+                                                                    <button type="button" className="itin-time-reset" onClick={() => setTimeEdit('visitTimes', place.id, null)} title={`Back to the estimate (${item.estimatedArrival.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })})`} aria-label={`Reset the time for ${place.name}`}>
+                                                                        <RotateCcw size={12} aria-hidden="true" />
+                                                                    </button>
+                                                                )}
+                                                            </div>
+                                                        ) : (
+                                                            <div style={{ color: '#0f172a', fontWeight: 700, fontSize: 15 }}>
+                                                                {arrivalTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                                            </div>
+                                                        )}
+                                                        {item.visitTimeEdited && !isCarryOver && arrivalTime - item.estimatedArrival < -60000 && (
+                                                            <div className="itin-time-warn">
+                                                                ⚠ By road you’d get here around {item.estimatedArrival.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                                            </div>
+                                                        )}
+                                                        {item.visitTimeEdited && !isCarryOver && arrivalTime - item.estimatedArrival > 60000 && (
+                                                            <div className="itin-time-note">
+                                                                {formatDuration(Math.round((arrivalTime - item.estimatedArrival) / 60000))} free before this
+                                                            </div>
+                                                        )}
                                                         {!place.isStartingPoint && !place.isEndingPoint && (
                                                             <div style={{ color: '#6b7280', fontSize: 11, fontWeight: 500, marginTop: 2 }}>
                                                                 until {departureTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
@@ -1424,10 +1565,15 @@ function ItineraryContent({ onOpenMap }) {
                                                         </div>
                                                     ) : (
                                                         <div className="itin-drive">
-                                                            <span className="itin-drive-label">
-                                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                                                                Drive {formatDuration(transitMinutes)} {transitDistance && <span style={{ color: '#6b7280', fontWeight: 500, fontSize: 12 }}>({transitDistance})</span>}
-                                                            </span>
+                                                            <DriveTime
+                                                                minutes={transitMinutes}
+                                                                expected={item.expectedTransitMinutes}
+                                                                edited={item.driveEdited}
+                                                                distance={transitDistance}
+                                                                format={formatDuration}
+                                                                readOnly={isGuest}
+                                                                onChange={(mins) => setTimeEdit('drives', item.legId, mins)}
+                                                            />
                                                             <button
                                                                 type="button"
                                                                 className={`itin-breaks-toggle${open ? ' is-open' : ''}`}
@@ -1452,9 +1598,28 @@ function ItineraryContent({ onOpenMap }) {
                                                                             <span style={{ color: event.type === 'meal' ? '#f59e0b' : event.type === 'night_stay' ? '#172E6E' : '#10b981', fontSize: 12 }}>
                                                                                 {event.type === 'meal' ? '🍽️' : event.type === 'night_stay' ? '🏨' : '☕'}
                                                                             </span>
-                                                                            <span style={{ color: '#475569', fontSize: 12, fontWeight: 600 }}>
-                                                                                {event.arrivalTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                                                                            </span>
+                                                                            {event.type === 'meal' && !isGuest ? (
+                                                                                <>
+                                                                                    <input
+                                                                                        type="time"
+                                                                                        className="itin-time-input"
+                                                                                        value={toHHMM(event.arrivalTime)}
+                                                                                        onChange={(e) => e.target.value && setTimeEdit('mealTimes', event.id, e.target.value)}
+                                                                                        aria-label={`${event.name} time`}
+                                                                                        title="Change when you stop to eat"
+                                                                                        style={{ fontSize: isMobile ? 16 : 12 }}
+                                                                                    />
+                                                                                    {event.timeEdited && (
+                                                                                        <button type="button" className="itin-time-reset" onClick={() => setTimeEdit('mealTimes', event.id, null)} title="Back to the usual meal time" aria-label={`Reset ${event.name.toLowerCase()} time`}>
+                                                                                            <RotateCcw size={11} aria-hidden="true" />
+                                                                                        </button>
+                                                                                    )}
+                                                                                </>
+                                                                            ) : (
+                                                                                <span style={{ color: '#475569', fontSize: 12, fontWeight: 600 }}>
+                                                                                    {event.arrivalTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                                                                </span>
+                                                                            )}
                                                                             <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                                                                                 <input
                                                                                     type="number"
