@@ -1,6 +1,7 @@
 // src/context/AuthContext.jsx
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useContext, useState, useEffect, useLayoutEffect, useCallback } from 'react';
 import { firebaseConfigured } from '../config/firebaseConfig';
+import { readAuthHint, writeAuthHint } from '../utils/authHint';
 
 const AuthContext = createContext(null);
 
@@ -8,6 +9,14 @@ export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [userProfile, setUserProfile] = useState(null);
     const [loading, setLoading] = useState(firebaseConfigured);
+    // Who was signed in last time, so the navbar can show the account straight
+    // away instead of waiting for Firebase. Read in a layout effect so the
+    // first render still matches the prerendered (signed-out) homepage HTML.
+    const [authHint, setAuthHint] = useState(null);
+    useLayoutEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- must run after hydration, before paint
+        setAuthHint(readAuthHint());
+    }, []);
 
     const ensureUserProfile = useCallback(async (db, firebaseUser) => {
         const { doc, setDoc, getDoc, serverTimestamp } = await import('firebase/firestore');
@@ -49,7 +58,16 @@ export function AuthProvider({ children }) {
                     if (firebaseUser) {
                         setUser(firebaseUser);
                         try {
-                            setUserProfile(await ensureUserProfile(db, firebaseUser));
+                            const profile = await ensureUserProfile(db, firebaseUser);
+                            if (cancelled) return;
+                            setUserProfile(profile);
+                            const hint = {
+                                uid: firebaseUser.uid,
+                                name: profile?.name || firebaseUser.displayName || '',
+                                email: profile?.email || firebaseUser.email || '',
+                            };
+                            writeAuthHint(hint);
+                            setAuthHint(hint);
                         } catch (e) {
                             if (import.meta.env.DEV) console.error('Failed to load user profile:', e);
                             setUserProfile(null);
@@ -57,6 +75,8 @@ export function AuthProvider({ children }) {
                     } else {
                         setUser(null);
                         setUserProfile(null);
+                        writeAuthHint(null);
+                        setAuthHint(null);
                     }
                     setLoading(false);
                 },
@@ -70,11 +90,16 @@ export function AuthProvider({ children }) {
             );
         };
 
-        // Defer Firebase auth init until the browser is idle — this keeps the
-        // main thread free during initial paint and dramatically improves TBT
-        // on mobile (where the 500KB Firebase chunk would otherwise jank).
-        const scheduleIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
-        idleId = scheduleIdle(startAuth, { timeout: 3000 });
+        // Returning signed-in users need Firebase for everything they see, so
+        // start it right away. Everyone else defers it until the browser is
+        // idle — this keeps the main thread free during initial paint and
+        // improves TBT on mobile (the Firebase chunk is ~500KB).
+        if (readAuthHint()) {
+            startAuth();
+        } else {
+            const scheduleIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
+            idleId = scheduleIdle(startAuth, { timeout: 3000 });
+        }
 
         return () => {
             cancelled = true;
@@ -104,13 +129,15 @@ export function AuthProvider({ children }) {
         ]);
         try {
             await firebaseSignOut(auth);
+            writeAuthHint(null);
+            setAuthHint(null);
         } catch (error) {
             if (import.meta.env.DEV) console.error('Sign-out error:', error);
         }
     }, []);
 
     return (
-        <AuthContext.Provider value={{ user, userProfile, loading, signInWithGoogle, signOut }}>
+        <AuthContext.Provider value={{ user, userProfile, loading, authHint, signInWithGoogle, signOut }}>
             {children}
         </AuthContext.Provider>
     );

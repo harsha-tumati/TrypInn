@@ -6,7 +6,12 @@ import { LogOut, BookOpen, Plus, LogIn, MapPin, Globe } from 'lucide-react';
 import BrandMark from './BrandMark';
 
 export default function Navbar() {
-    const { user, userProfile, loading, signOut } = useAuth();
+    const { user, userProfile, loading, authHint, signOut } = useAuth();
+    // While Firebase is still confirming the session, show the account
+    // remembered from last time instead of an empty slot.
+    const signedIn = !!user || (loading && !!authHint);
+    const profileName = userProfile?.name || user?.displayName || authHint?.name || '';
+    const profileEmail = userProfile?.email || user?.email || authHint?.email || '';
     const navigate = useNavigate();
     const { pathname } = useLocation();
     const [showDropdown, setShowDropdown] = useState(false);
@@ -44,7 +49,7 @@ export default function Navbar() {
             </Link>
 
             <div className="navbar-actions">
-                {user && (
+                {signedIn && (
                     <a
                         href="/#my-trips-section"
                         className="navbar-link"
@@ -84,24 +89,24 @@ export default function Navbar() {
                     <span className="navbar-cta-label">Plan a trip</span>
                 </button>
 
-                {loading ? null : user ? (
+                {signedIn ? (
                     <div className="navbar-profile" ref={dropdownRef}>
                         <button
                             type="button"
                             className="navbar-avatar"
                             onClick={() => setShowDropdown(v => !v)}
-                            title={userProfile?.name || 'User'}
+                            title={profileName || 'User'}
                             aria-haspopup="menu"
                             aria-expanded={showDropdown}
-                            aria-label={`Account menu for ${userProfile?.name || 'user'}`}
+                            aria-label={`Account menu for ${profileName || 'user'}`}
                         >
-                            {userProfile?.name?.[0]?.toUpperCase() || 'U'}
+                            {profileName?.[0]?.toUpperCase() || 'U'}
                         </button>
                         {showDropdown && (
                             <div className="profile-dropdown" role="menu">
                                 <div className="profile-dropdown-header">
-                                    <div className="profile-dropdown-name">{userProfile?.name || 'Traveler'}</div>
-                                    <div className="profile-dropdown-email">{userProfile?.email || ''}</div>
+                                    <div className="profile-dropdown-name">{profileName || 'Traveler'}</div>
+                                    <div className="profile-dropdown-email">{profileEmail}</div>
                                 </div>
                                 <div className="profile-dropdown-divider"></div>
                                 <button type="button" className="profile-signout-btn" onClick={handleSignOut} role="menuitem">

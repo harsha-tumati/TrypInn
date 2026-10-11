@@ -123,6 +123,7 @@ export async function getUserTrips(userId) {
 
     if (tripIds.length === 0) return [];
 
+    const roles = new Map(membersSnap.docs.map((d) => [d.data().tripId, d.data().role]));
     const trips = [];
     for (const tripId of tripIds) {
         const tripSnap = await getDoc(doc(db, 'trips', tripId));
@@ -130,6 +131,29 @@ export async function getUserTrips(userId) {
             trips.push({ id: tripSnap.id, ...tripSnap.data() });
         }
     }
+
+    // Organisers see how many people are waiting to join each of their trips,
+    // so a request sent from Public Trips or a shared link isn't missed.
+    const organised = trips
+        .filter((t) => t.createdBy === userId || ['admin', 'owner'].includes(roles.get(t.id)))
+        .map((t) => t.id);
+    if (organised.length) {
+        try {
+            const pending = new Map();
+            for (let i = 0; i < organised.length; i += 30) {
+                const snap = await getDocs(query(
+                    collection(db, 'tripMembers'),
+                    where('tripId', 'in', organised.slice(i, i + 30)),
+                    where('role', '==', 'pending'),
+                ));
+                snap.docs.forEach((d) => pending.set(d.data().tripId, (pending.get(d.data().tripId) || 0) + 1));
+            }
+            for (const t of trips) t.pendingRequests = pending.get(t.id) || 0;
+        } catch (e) {
+            if (import.meta.env.DEV) console.warn('Could not count join requests:', e);
+        }
+    }
+
     return trips.sort((a, b) => {
         const aTime = a.createdAt?.seconds || 0;
         const bTime = b.createdAt?.seconds || 0;

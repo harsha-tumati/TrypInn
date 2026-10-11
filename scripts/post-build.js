@@ -97,16 +97,41 @@ function ruleIsNeeded(block) {
 // namespace (matched by prefix above) and defer only other-route styles — those
 // elements aren't in the homepage DOM, so deferring them is invisible to the
 // page and to the a11y audit, and it shrinks the document for a faster paint.
-let criticalCSS = '';
-let restCSS = '';
-for (const block of splitTopLevel(fullCSS)) {
-  const trimmed = block.trim();
-  if (!trimmed) continue;
-  // At-rules (@font-face/@keyframes/@media/@supports/:root) — keep inline.
-  if (trimmed.startsWith('@') || !trimmed.includes('{')) { criticalCSS += block; continue; }
-  if (ruleIsNeeded(trimmed)) criticalCSS += block;
-  else restCSS += block;
+//
+// Cascade order matters: the deferred sheet loads AFTER the inline CSS, so a
+// rule that overrides another must end up in the same sheet as (and after) the
+// rule it overrides. So @media/@supports blocks are split rule by rule too —
+// a phone layout override for a planner class goes to the deferred sheet with
+// the planner's base rule, instead of staying inline where the later-loading
+// base rule would beat it. A rule that styles both a homepage class and an
+// other-route class goes to both sheets, keeping its place in each.
+function ruleIsFullyNeeded(block) {
+  const selectorPart = block.slice(0, block.indexOf('{'));
+  return selectorPart.split(',').every(selectorIsNeeded);
 }
+const GROUPING_AT_RULE = /^@(media|supports|container|layer)\b/;
+function splitCSS(css) {
+  let critical = '';
+  let rest = '';
+  for (const block of splitTopLevel(css)) {
+    const trimmed = block.trim();
+    if (!trimmed) continue;
+    if (GROUPING_AT_RULE.test(trimmed) && trimmed.includes('{')) {
+      const open = trimmed.indexOf('{');
+      const prelude = trimmed.slice(0, open);
+      const inner = splitCSS(trimmed.slice(open + 1, trimmed.lastIndexOf('}')));
+      if (inner.critical.trim()) critical += `${prelude}{${inner.critical}}`;
+      if (inner.rest.trim()) rest += `${prelude}{${inner.rest}}`;
+      continue;
+    }
+    // Other at-rules (@font-face/@keyframes/@import/@charset) — keep inline.
+    if (trimmed.startsWith('@') || !trimmed.includes('{')) { critical += block; continue; }
+    if (ruleIsNeeded(trimmed)) critical += block;
+    if (!ruleIsFullyNeeded(trimmed)) rest += block;
+  }
+  return { critical, rest };
+}
+const { critical: criticalCSS, rest: restCSS } = splitCSS(fullCSS);
 
 const critName = '';
 if (cssLinks.length > 0) {
