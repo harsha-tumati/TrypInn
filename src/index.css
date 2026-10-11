@@ -5652,6 +5652,40 @@ html, body {
   font-size: 13px;
   font-weight: 600;
 }
+/* Hand-editable times on the itinerary: drive length, meal and visit times */
+.itin-drive-edit {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 2px 6px; margin: -2px -6px; border: none; border-radius: 8px;
+  background: transparent; color: inherit; font: inherit; cursor: pointer;
+}
+.itin-drive-edit:hover { background: rgba(30, 58, 138, 0.07); }
+.itin-edit-icon { opacity: 0.55; }
+.itin-drive-edit:hover .itin-edit-icon { opacity: 1; }
+.itin-drive-dist { color: #6b7280; font-weight: 500; font-size: 12px; }
+.itin-drive-editor { flex-wrap: wrap; }
+.itin-drive-editor input {
+  width: 56px; padding: 4px 6px; border: 1px solid #94a3b8; border-radius: 6px;
+  font: inherit; font-size: 16px; font-weight: 700; color: #0f172a; text-align: center;
+}
+.itin-drive-editor span { color: #64748b; font-weight: 500; }
+.itin-drive-done {
+  padding: 4px 12px; border: none; border-radius: 999px; cursor: pointer;
+  background: var(--accent); color: #fff; font: inherit; font-size: 12px; font-weight: 700;
+}
+.itin-time-reset {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 6px; border: none; border-radius: 6px; background: transparent; cursor: pointer;
+  color: #64748b; font: inherit; font-size: 11.5px; font-weight: 600;
+}
+.itin-time-reset:hover { color: var(--accent); background: rgba(30, 58, 138, 0.07); }
+.itin-time-input {
+  padding: 2px 4px; border: 1px solid transparent; border-radius: 6px;
+  background: transparent; color: #475569; font: inherit; font-weight: 700; cursor: pointer;
+}
+.itin-time-input:hover, .itin-time-input:focus { border-color: #94a3b8; background: #fff; outline: none; }
+.itin-time-input.is-visit { color: #0f172a; font-size: 16px; margin-left: -4px; }
+.itin-time-warn { margin-top: 2px; font-size: 11px; font-weight: 600; color: #b45309; }
+.itin-time-note { margin-top: 2px; font-size: 11px; font-weight: 500; color: #0f766e; }
 .itin-breaks-toggle {
   display: inline-flex;
   align-items: center;
