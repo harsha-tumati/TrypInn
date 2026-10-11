@@ -5800,12 +5800,17 @@ html, body {
 .tp-reset:hover { color: var(--accent); background: rgba(30, 58, 138, 0.07); }
 .itin-time-warn { margin-top: 2px; font-size: 11px; font-weight: 600; color: #b45309; }
 /* Itinerary stop card — compact phone layout */
-.itin-card-head { display: flex; align-items: center; gap: 10px; min-height: 48px; }
-.itin-card-name { font-size: 15px; font-weight: 700; color: #0f172a; line-height: 1.25; }
+.itin-card-head { display: flex; align-items: center; gap: 12px; min-height: 60px; }
+.itin-card-head > :first-child { flex-shrink: 0; }
+.itin-card-name { font-size: 16.5px; font-weight: 800; color: #0f172a; line-height: 1.25; letter-spacing: -0.01em; }
+/* Two lines, then an ellipsis — a single unbreakable line made the card
+   wider than the phone for long descriptions. */
 .itin-card-desc {
-  margin-top: 2px; font-size: 12.5px; color: #64748b;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  margin-top: 4px; font-size: 13px; line-height: 1.4; color: #64748b;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  overflow-wrap: anywhere;
 }
+.itin-card.is-compact .tp-trigger.tp-visit { font-size: 18px; }
 .itin-meal-pill {
   display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;
   padding: 4px 6px 4px 10px; border-radius: 12px; background: #fffbeb; border: 1px solid #fde68a;
