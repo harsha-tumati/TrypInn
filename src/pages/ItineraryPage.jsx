@@ -648,6 +648,7 @@ function ItineraryContent({ onOpenMap }) {
         locate(e.clientY);
     };
 
+    const formatShort = (m) => (m < 60 ? `${m}m` : `${Math.floor(m / 60)}h${m % 60 ? ` ${m % 60}m` : ''}`);
     const formatDuration = (totalMinutes) => {
         if (totalMinutes < 60) return `${totalMinutes} mins`;
         const hrs = Math.floor(totalMinutes / 60);
@@ -1347,40 +1348,43 @@ function ItineraryContent({ onOpenMap }) {
                                         </div>
 
                                         <div data-stop-id={(!place.isStartingPoint && !place.isEndingPoint && !isCarryOver) ? place.id : undefined} style={{
-                                            flex: 1, display: 'flex', alignItems: 'center', background: isCarryOver ? 'rgba(245,243,255,0.85)' : 'rgba(255,255,255,0.8)',
+                                            flex: 1, display: 'flex', background: isCarryOver ? 'rgba(245,243,255,0.85)' : 'rgba(255,255,255,0.8)',
                                             border: `1px solid ${isCarryOver ? 'rgba(221,214,254,0.6)' : 'rgba(255,255,255,0.5)'}`, borderRadius: 16, padding: isMobile ? '12px' : '16px',
                                             boxShadow: '0 8px 32px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.6)', position: 'relative', marginBottom: 16,
                                             opacity: draggingId === place.id ? 0.35 : (place.isStartingPoint || place.isEndingPoint) ? 0.9 : 1,
                                             flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0,
+                                            alignItems: isMobile ? 'flex-start' : 'center',
                                             backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)'
-                                        }}>
+                                        }} className={isMobile ? 'itin-card is-compact' : 'itin-card'}>
                                             {/* Drag Handle (Hidden for start/end and guests) */}
                                             {!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest && (
                                                 <div
                                                     className="itin-drag-handle"
                                                     onPointerDown={(e) => startDrag(e, place)}
                                                     title="Drag to reorder"
-                                                    style={{ display:'flex', flexDirection:'column', paddingRight: isMobile ? 12 : 16, borderRight:'1px solid #f1f5f9', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}
+                                                    style={isMobile
+                                                        ? { position:'absolute', top:6, right:6, display:'flex', flexDirection:'row', alignItems:'center', color:'#94a3b8', zIndex:1 }
+                                                        : { display:'flex', flexDirection:'column', paddingRight: 16, borderRight:'1px solid #f1f5f9', color:'#94a3b8', alignItems:'center', justifyContent:'center' }}
                                                 >
-                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▲</button>
-                                                    <GripVertical size={18} style={{ margin: '4px 0' }} aria-hidden="true" />
-                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth:44, minHeight:22, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>▼</button>
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), -1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === 0} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === 0 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} earlier`}>▲</button>
+                                                    <GripVertical size={isMobile ? 16 : 18} style={{ margin: isMobile ? '0 2px' : '4px 0' }} aria-hidden="true" />
+                                                    <button type="button" onClick={() => handleMovePlace(orderedPlaces.findIndex(p => p.id === place.id), 1)} disabled={orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1} style={{ background: 'none', border: 'none', cursor: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? 'default' : 'pointer', color: orderedPlaces.findIndex(p => p.id === place.id) === orderedPlaces.length - 1 ? '#e2e8f0' : '#6b7280', minWidth: isMobile ? 30 : 44, minHeight: isMobile ? 32 : 22, display:'flex', alignItems:'center', justifyContent:'center', fontSize: isMobile ? 13 : 16 }} aria-label={`Move ${place.name} later`}>▼</button>
                                                 </div>
                                             )}
 
-                                            {/* Image */}
-                                            <div style={{ marginLeft: (!place.isStartingPoint && !place.isEndingPoint) ? (isMobile ? 12 : 16) : 0, flexShrink: 0 }}>
+                                            {/* Image (on phones it sits in the header, beside the name) */}
+                                            {!isMobile && <div style={{ marginLeft: (!place.isStartingPoint && !place.isEndingPoint) ? 16 : 0, flexShrink: 0 }}>
                                                 <PlaceThumb
                                                     place={(place.isStartingPoint || place.isEndingPoint)
                                                         ? { ...place, category: place.isStartingPoint ? 'start' : 'end' }
                                                         : place}
-                                                    size={isMobile ? 60 : 80}
+                                                    size={80}
                                                     radius={12}
                                                 />
-                                            </div>
+                                            </div>}
 
                                             {/* Content */}
-                                            <div style={{ flex: 1, marginLeft: isMobile ? 12 : 16, minWidth: 0 }}>
+                                            <div style={{ flex: isMobile ? '1 1 100%' : 1, marginLeft: isMobile ? 0 : 16, minWidth: 0 }}>
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0 }}>
                                                     <div style={{ flex: isMobile ? '1 1 100%' : 1, minWidth: 0 }}>
                                                         {isCarryOver && (
@@ -1404,23 +1408,42 @@ function ItineraryContent({ onOpenMap }) {
                                                                 )}
                                                             </div>
                                                         )}
-                                                        <div style={{ fontSize: isMobile ? 15 : 16, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>{place.name}</div>
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#64748b', fontSize: 13, marginBottom: 8 }}>
-                                                            <MapPin size={12} /> <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: isMobile ? 160 : 250 }}>{place.description || place.name}</span>
-                                                        </div>
+                                                        {isMobile ? (
+                                                            <div className="itin-card-head" style={{ paddingRight: (!place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest) ? 96 : 0 }}>
+                                                                <PlaceThumb
+                                                                    place={(place.isStartingPoint || place.isEndingPoint)
+                                                                        ? { ...place, category: place.isStartingPoint ? 'start' : 'end' }
+                                                                        : place}
+                                                                    size={48}
+                                                                    radius={10}
+                                                                />
+                                                                <div style={{ minWidth: 0 }}>
+                                                                    <div className="itin-card-name">{place.name}</div>
+                                                                    <div className="itin-card-desc">{place.description || place.name}</div>
+                                                                </div>
+                                                            </div>
+                                                        ) : (
+                                                            <>
+                                                                <div style={{ fontSize: 16, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>{place.name}</div>
+                                                                <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#64748b', fontSize: 13, marginBottom: 8 }}>
+                                                                    <MapPin size={12} /> <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 250 }}>{place.description || place.name}</span>
+                                                                </div>
+                                                            </>
+                                                        )}
                                                     </div>
                                                     {/* Duration Edit (Hidden for Start/End) */}
                                                     {!place.isStartingPoint && !place.isEndingPoint && (
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? 6 : 8, background: '#f8fafc', padding: isMobile ? '6px 8px' : '6px 12px', borderRadius: 8, border: '1px solid #e2e8f0', position: 'relative', flexShrink: 0, marginTop: isMobile ? 6 : 0, width: isMobile ? '100%' : 'auto', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? 6 : 8, background: '#f8fafc', padding: isMobile ? '6px 10px' : '6px 12px', borderRadius: isMobile ? 12 : 8, border: '1px solid #e2e8f0', position: 'relative', flexShrink: 0, marginTop: isMobile ? 10 : 0, flexWrap: 'wrap', width: isMobile ? '100%' : 'auto', maxWidth: '100%', boxSizing: 'border-box' }}>
                                                             <Clock size={14} color="#64748b" />
-                                                            <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>Visit Duration:</span>
+                                                            <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>{isMobile ? 'Stay' : 'Visit Duration:'}</span>
                                                             {isGuest ? (
                                                                 <span style={{ fontSize: 15, fontWeight: 700, color: '#0f172a' }}>{durationMinutes} <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>min</span></span>
                                                             ) : (
-                                                                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                                                                <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', ...(isMobile ? { flex: '1 1 0', minWidth: 0 } : {}) }}>
                                                                     <input
                                                                         type="number"
                                                                         min="0"
+                                                                        inputMode="numeric"
                                                                         value={durationMinutes}
                                                                         onChange={(e) => handleDurationChange(place.id, parseInt(e.target.value) || 0)}
                                                                         style={{ width: isMobile ? 64 : 56, padding: isMobile ? '6px' : '4px', borderRadius: 6, border: '1px solid #94a3b8', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
@@ -1438,7 +1461,7 @@ function ItineraryContent({ onOpenMap }) {
                                                                             onClick={() => handleDurationChange(place.id, aiDurations[place.id])}
                                                                             title={`Use the AI estimate for ${place.name}${aiDaysMeta[place.id] > 1 ? ` — it suggests ${aiDaysMeta[place.id]} days here` : ''}. Updates the Plan tab too.`}
                                                                         >
-                                                                            AI ✦ {formatDuration(aiDurations[place.id])}
+                                                                            AI ✦ {isMobile ? formatShort(aiDurations[place.id]) : formatDuration(aiDurations[place.id])}
                                                                             {aiDaysMeta[place.id] > 1 && <span> · {aiDaysMeta[place.id]} days</span>}
                                                                             <span className="itin-ai-use">Use</span>
                                                                         </button>
@@ -1449,7 +1472,7 @@ function ItineraryContent({ onOpenMap }) {
                                                     )}
                                                 </div>
 
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+                                                <div style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? 8 : 12, flexWrap: 'wrap', flexDirection: isMobile ? 'column' : 'row', marginTop: isMobile ? 10 : 0 }}>
                                                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                                                         {!place.isStartingPoint && !isCarryOver && !isGuest ? (
                                                             <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
@@ -1492,15 +1515,15 @@ function ItineraryContent({ onOpenMap }) {
                                                             </div>
                                                         )}
                                                         {!place.isStartingPoint && !place.isEndingPoint && (
-                                                            <div style={{ color: '#6b7280', fontSize: 11, fontWeight: 500, marginTop: 2 }}>
+                                                            <div style={{ color: '#6b7280', fontSize: isMobile ? 12 : 11, fontWeight: 500, marginTop: 2 }}>
                                                                 until {departureTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                                             </div>
                                                         )}
                                                     </div>
 
                                                     {potentialPlaceMeal > 0 && !placeMealCancelled && (
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 12, flexWrap: 'wrap' }}>
-                                                            <span style={{ color: '#94a3b8' }}>•</span>
+                                                        <div className={isMobile ? 'itin-meal-pill' : undefined} style={isMobile ? undefined : { display: 'flex', alignItems: 'center', gap: 6, marginLeft: 12, flexWrap: 'wrap' }}>
+                                                            {!isMobile && <span style={{ color: '#94a3b8' }}>•</span>}
                                                             <span style={{ color: '#f59e0b', fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 4 }}>
                                                                 🍽️ meal break
                                                             </span>
