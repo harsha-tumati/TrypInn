@@ -205,6 +205,12 @@ function ItineraryContent({ onOpenMap }) {
     });
     const [userOverrides, setUserOverrides] = useState(initial.userOverrides); // placeIds the user has manually edited
     const [aiDaysMeta, setAiDaysMeta] = useState(initial.aiDaysMeta); // placeId -> recommended days (from AI)
+    // AI visit-length estimates are only suggestions. A stop's own
+    // estimatedMinutes — the number shown and edited on the Plan tab — is what
+    // the itinerary uses, so both tabs always agree.
+    const [aiDurations, setAiDurations] = useState(initial.aiDurations || {}); // placeId -> AI minutes
+    // Edits typed here, shown at once until the saved stop catches up.
+    const [pendingDurations, setPendingDurations] = useState({});
     const [loadingDurations, setLoadingDurations] = useState(false);
     const [cancelledBreaks, setCancelledBreaks] = useState(initial.cancelledBreaks);
     const [deletedBreaks, setDeletedBreaks] = useState(initial.deletedBreaks); // breakId -> true (permanently removed)
@@ -285,12 +291,12 @@ function ItineraryContent({ onOpenMap }) {
     // Remember the page for this session, so a tab switch restores it as is.
     useEffect(() => {
         sessionState.set(tripId, {
-            dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
+            dayStartTime, placeDurations, userOverrides, aiDaysMeta, aiDurations, cancelledBreaks, deletedBreaks,
             manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits, openLegs, activeView,
             remoteJson, lastWrittenJson,
             aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults,
         });
-    }, [tripId, dayStartTime, placeDurations, userOverrides, aiDaysMeta, cancelledBreaks, deletedBreaks,
+    }, [tripId, dayStartTime, placeDurations, userOverrides, aiDaysMeta, aiDurations, cancelledBreaks, deletedBreaks,
         manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits, openLegs, activeView, remoteJson, lastWrittenJson,
         aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults]);
 
@@ -343,7 +349,9 @@ function ItineraryContent({ onOpenMap }) {
     // Sort places by saved order. Memoised so its identity is stable across
     // renders — effects can depend on it directly without signature hacks.
     const placeOrderKey = selectedTrip?.placeOrder?.join(',') ?? '';
-    const placesKey = places.map(p => `${p.id}:${p.lat ?? ''}`).join(',');
+    // Includes each stop's minutes: a visit length changed on the Plan tab must
+    // re-time the itinerary straight away, not after a reload.
+    const placesKey = places.map(p => `${p.id}:${p.lat ?? ''}:${p.estimatedMinutes ?? ''}`).join(',');
     const orderedPlaces = useMemo(() => {
         const list = places.filter(p => p.lat);
         if (selectedTrip?.placeOrder) {
@@ -443,8 +451,10 @@ function ItineraryContent({ onOpenMap }) {
             p.name.toLowerCase().includes('hostel') ||
             p.name.toLowerCase().includes('inn');
 
-        // Only query non-hotel places that don't yet have a user override
-        const placesToQuery = visitable.filter(p => !userOverrides[p.id] && !isHotel(p));
+        // Estimates are only suggestions now, so ask about every non-hotel
+        // stop. The cache key is the stop ids alone, so editing a visit length
+        // never triggers another AI request.
+        const placesToQuery = visitable.filter(p => !isHotel(p));
         if (!placesToQuery.length) return;
 
         async function fetchDurations() {
@@ -464,13 +474,7 @@ function ItineraryContent({ onOpenMap }) {
                 }
                 if (isMounted) {
                     // result = { durations: { [id]: mins }, daysMeta: { [id]: days } }
-                    setPlaceDurations(prev => {
-                        const updated = { ...prev };
-                        Object.entries(result.durations || result).forEach(([id, mins]) => {
-                            if (!userOverrides[id]) updated[id] = mins;
-                        });
-                        return updated;
-                    });
+                    setAiDurations(prev => ({ ...prev, ...(result.durations || result) }));
                     if (result.daysMeta) {
                         setAiDaysMeta(prev => ({ ...prev, ...result.daysMeta }));
                     }
@@ -484,8 +488,8 @@ function ItineraryContent({ onOpenMap }) {
 
         fetchDurations();
         return () => { isMounted = false; };
-        // Re-run only when the set of places changes — userOverrides is read
-        // as a live filter and must not retrigger fetches on its own.
+        // Re-run only when the set of places changes; the localStorage cache
+        // keeps reruns for the same stops from calling the AI again.
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [orderedPlaces]);
 
@@ -789,9 +793,14 @@ function ItineraryContent({ onOpenMap }) {
             const isStartOrEnd = place.isStartingPoint || place.isEndingPoint;
             const defaultDuration = isNightStay ? 840 : (isCheckInStop ? 60 : (isStartOrEnd ? 0 : 120));
 
-            let durationMinutes = placeDurations[place.id] !== undefined
-                ? placeDurations[place.id]
-                : (place.estimatedMinutes !== undefined ? place.estimatedMinutes : defaultDuration);
+            // Real stops: the stop's own minutes — the number the Plan tab
+            // shows, with the same 60-minute fallback — so both tabs agree.
+            // (AI estimates are offered as a suggestion, never applied
+            // silently.) Start/end points have no stop record, so their edits
+            // live in the schedule.
+            let durationMinutes = isStartOrEnd
+                ? (placeDurations[place.id] ?? place.estimatedMinutes ?? defaultDuration)
+                : (pendingDurations[place.id] ?? place.estimatedMinutes ?? (isHotelType ? defaultDuration : 60));
 
             // Force night stay to 840 unless the user explicitly edited the duration THIS session
             if (isNightStay && !userOverrides[place.id]) {
@@ -990,15 +999,26 @@ function ItineraryContent({ onOpenMap }) {
                 transitEvents
             };
         });
-    }, [orderedPlaces, dayStartTime, placeDurations, itineraryRoute, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, userOverrides, timeEdits, selectedTrip?.startingPoint, selectedTrip?.endingPoint]);
+    }, [orderedPlaces, dayStartTime, placeDurations, pendingDurations, itineraryRoute, cancelledBreaks, deletedBreaks, manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, userOverrides, timeEdits, selectedTrip?.startingPoint, selectedTrip?.endingPoint]);
 
     const handleDurationChange = (placeId, minutes) => {
         setUserOverrides(prev => ({ ...prev, [placeId]: true }));
         setPlaceDurations(prev => ({ ...prev, [placeId]: minutes }));
         if (!placeId.startsWith('transit-') && !placeId.startsWith('place-meal-') && !placeId.startsWith('manual-') && !placeId.startsWith('start-point') && !placeId.startsWith('end-point')) {
-            updatePlaceDuration(placeId, minutes).catch(console.error);
+            // A real stop: save it on the stop itself, so the Plan tab shows
+            // the same number.
+            setPendingDurations(prev => ({ ...prev, [placeId]: minutes }));
+            updatePlaceDuration(placeId, minutes).catch((e) => {
+                console.error(e);
+                setPendingDurations(prev => { const n = { ...prev }; delete n[placeId]; return n; });
+            });
         }
     };
+
+    // Drop typed values once the saved stop shows them.
+    const pendingCaughtUp = Object.keys(pendingDurations).length > 0
+        && Object.entries(pendingDurations).every(([id, mins]) => places.find(p => p.id === id)?.estimatedMinutes === mins);
+    if (pendingCaughtUp) setPendingDurations({});
 
     const toggleBreak = (breakId) => {
         setCancelledBreaks(prev => ({ ...prev, [breakId]: !prev[breakId] }));
@@ -1246,7 +1266,7 @@ function ItineraryContent({ onOpenMap }) {
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18, padding: '12px 16px', background: 'rgba(91,92,246,0.06)', borderRadius: 14, border: '1px solid rgba(91,92,246,0.18)' }}>
                         <MapPin size={16} color="var(--color-indigo)" aria-hidden="true" />
                         <span style={{ fontSize: 13, color: 'var(--color-indigo-deep)', fontWeight: 600, flex: 1 }}>
-                            Want to add or reorder stops? Use the Plan tab.
+                            Want to add stops? Use the Plan tab.
                         </span>
                         <button type="button" onClick={() => navigate(`/trip/${tripId}`)} className="btn btn-accent btn-sm">
                             Open Plan <ArrowRight size={12} aria-hidden="true" />
@@ -1395,11 +1415,6 @@ function ItineraryContent({ onOpenMap }) {
                                                             <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>Visit Duration:</span>
                                                             {isGuest ? (
                                                                 <span style={{ fontSize: 15, fontWeight: 700, color: '#0f172a' }}>{durationMinutes} <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>min</span></span>
-                                                            ) : loadingDurations && !userOverrides[place.id] ? (
-                                                                <span style={{ fontSize: 11, color: '#1E3A8A', fontWeight: 600, display: 'flex', alignItems: 'center', gap: 4 }}>
-                                                                    <span className="spinner" style={{ width: 10, height: 10, border: '2px solid #E5EDFB', borderTopColor: '#1E3A8A', borderRadius: '50%', display: 'inline-block', animation: 'spin 0.8s linear infinite' }} />
-                                                                    AI timing…
-                                                                </span>
                                                             ) : (
                                                                 <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                                                                     <input
@@ -1410,13 +1425,22 @@ function ItineraryContent({ onOpenMap }) {
                                                                         style={{ width: isMobile ? 64 : 56, padding: isMobile ? '6px' : '4px', borderRadius: 6, border: '1px solid #94a3b8', fontSize: 16, fontWeight: 700, color: '#0f172a', textAlign: 'center', outline: 'none' }}
                                                                     />
                                                                     <span style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>min</span>
-                                                                    {!userOverrides[place.id] && placeDurations[place.id] !== undefined && (
-                                                                        <span title="AI suggested" style={{ fontSize: 10, color: '#1E3A8A', fontWeight: 700, background: '#E5EDFB', padding: '1px 5px', borderRadius: 3 }}>AI ✦</span>
-                                                                    )}
-                                                                    {aiDaysMeta[place.id] > 1 && (
-                                                                        <span title={`AI recommends ${aiDaysMeta[place.id]} days here`} style={{ fontSize: 10, color: '#0369a1', fontWeight: 700, background: '#e0f2fe', padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap' }}>
-                                                                            📅 {aiDaysMeta[place.id]}-day destination
+                                                                    {loadingDurations && aiDurations[place.id] == null && (
+                                                                        <span className="itin-ai-thinking" aria-live="polite">
+                                                                            <span className="spinner" aria-hidden="true" /> AI timing…
                                                                         </span>
+                                                                    )}
+                                                                    {aiDurations[place.id] != null && aiDurations[place.id] !== durationMinutes && !isNightStay && (
+                                                                        <button
+                                                                            type="button"
+                                                                            className="itin-ai-suggest"
+                                                                            onClick={() => handleDurationChange(place.id, aiDurations[place.id])}
+                                                                            title={`Use the AI estimate for ${place.name}${aiDaysMeta[place.id] > 1 ? ` — it suggests ${aiDaysMeta[place.id]} days here` : ''}. Updates the Plan tab too.`}
+                                                                        >
+                                                                            AI ✦ {formatDuration(aiDurations[place.id])}
+                                                                            {aiDaysMeta[place.id] > 1 && <span> · {aiDaysMeta[place.id]} days</span>}
+                                                                            <span className="itin-ai-use">Use</span>
+                                                                        </button>
                                                                     )}
                                                                 </div>
                                                             )}
