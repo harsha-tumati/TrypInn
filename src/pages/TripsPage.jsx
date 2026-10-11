@@ -29,7 +29,7 @@ const DateRangePicker = lazy(() => import('../components/DateRangePicker'));
 const LocationAutocomplete = lazy(() => import('../components/LocationAutocomplete'));
 import {
     Plus, Link2, MapPin, Calendar, Users, Sparkles, Star, MessageCircle,
-    Send, X, ArrowRight, Compass, Flame, Quote, Zap, ChevronRight, BookOpen,
+    Send, X, ArrowRight, Compass, Flame, Quote, Zap, ChevronRight, BookOpen, UserPlus,
 } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 
@@ -426,6 +426,16 @@ export default function TripsPage() {
             onKeyDown={(e) => { if (e.key === 'Enter') openTrip(trip); }}>
             <TripCover trip={trip} past={past} withEndpoints>
                 {!isTripClaimed(trip) && <span className="hp-trip-draft">Draft</span>}
+                {trip.pendingRequests > 0 && (
+                    <button
+                        type="button"
+                        className="hp-trip-requests"
+                        onClick={(e) => { e.stopPropagation(); setSelectedTrip(trip); navigate(`/trip/${trip.id}/members`); }}
+                    >
+                        <UserPlus size={12} aria-hidden="true" />
+                        {trip.pendingRequests} {trip.pendingRequests === 1 ? 'request' : 'requests'} to join
+                    </button>
+                )}
             </TripCover>
             <div className="hp-trip-body">
                 <h3>{trip.name}</h3>

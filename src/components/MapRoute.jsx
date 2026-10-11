@@ -13,6 +13,7 @@ export default function MapRoute({ directionsResult, color = '#1A73E8', isDashed
         const renderer = new routesLibrary.DirectionsRenderer({
             map,
             suppressMarkers: true, // We draw our own custom markers
+            preserveViewport: true, // MapCamera owns the camera
             polylineOptions: {
                 strokeColor: isDashed ? 'transparent' : color,
                 strokeWeight: 6,

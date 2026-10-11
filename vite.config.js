@@ -110,6 +110,9 @@ export default defineConfig({
     allowedHosts: true
   },
   build: {
+    // Keep media queries as `max-width` — the minifier otherwise rewrites them
+    // to range syntax (`width<=1023px`), which Safari only reads from iOS 16.4.
+    cssTarget: ['safari14', 'chrome90', 'firefox90', 'edge90'],
     rollupOptions: {
       output: {
         manualChunks(id) {

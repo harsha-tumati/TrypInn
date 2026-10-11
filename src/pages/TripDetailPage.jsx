@@ -14,10 +14,11 @@ import { hasCoords } from '../utils/geo';
 import { MAPS_ENABLED } from '../config/maps';
 import Modal from '../components/Modal';
 import MapRoute from '../components/MapRoute';
+import MapCamera from '../components/MapCamera';
 import PlaceAutocomplete from '../components/PlaceAutocomplete';
 import BottomSheet from '../components/BottomSheet';
 import PlaceThumb from '../components/PlaceThumb';
-import { Sparkles, Search, Plus, X, Trash2, ExternalLink, Navigation, LocateFixed, StopCircle, ArrowUp, ArrowDown, Route as RouteIcon, ChevronLeft } from 'lucide-react';
+import { Sparkles, Search, Plus, X, Trash2, ExternalLink, Navigation, LocateFixed, StopCircle, ArrowUp, ArrowDown, Route as RouteIcon, ChevronLeft, Maximize2, Crosshair } from 'lucide-react';
 import { useIsMobile } from '../hooks/useIsMobile';
 import ShareTripDialog from '../components/ShareTripDialog';
 import usePageSeo from '../hooks/usePageSeo';
@@ -73,6 +74,9 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     const [loadingEnRoute, setLoadingEnRoute] = useState(false);
     const [, setLoadingRoute] = useState(false);
     const [selectedPlace, setSelectedPlace] = useState(null);
+    // Camera: a stop to glide to, and a counter for "show the whole trip".
+    const [focus, setFocus] = useState({ place: null, n: 0 });
+    const [fitNonce, setFitNonce] = useState(0);
     const [bottomTab, setBottomTab] = useState('places');
     const [sheetSnap, setSheetSnap] = useState('half');
     const [nearbyResults, setNearbyResults] = useState([]);
@@ -502,6 +506,32 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         ? Math.round(routeResult.routes[0]?.legs.reduce((a, l) => a + l.duration.value, 0) / 3600)
         : null;
 
+    // ── Camera framing ── Everything that matters right now: the route (its
+    // stops, start/end and the road geometry's bounds) or, with no route, every
+    // located stop — plus any AI / nearby results just fetched.
+    const routeStops = routeResult?.customOrderedPlaces?.length ? routeResult.customOrderedPlaces : selectedPlaces;
+    const routeBoundsPts = (() => {
+        const b = routeResult?.routes?.[0]?.bounds;
+        if (!b) return [];
+        if (typeof b.getNorthEast === 'function') return [b.getNorthEast().toJSON(), b.getSouthWest().toJSON()];
+        if (Number.isFinite(b.north)) return [{ lat: b.north, lng: b.east }, { lat: b.south, lng: b.west }];
+        return [];
+    })();
+    const cameraPoints = [
+        ...(routeResult ? [...routeStops, ...routeBoundsPts] : allMapPlaces),
+        ...(hasCoords(trip.startingPoint) ? [trip.startingPoint] : []),
+        ...(hasCoords(trip.endingPoint) ? [trip.endingPoint] : []),
+        ...temporarySuggestions,
+        ...nearbyResults,
+    ].filter((p) => p && Number.isFinite(p.lat) && Number.isFinite(p.lng));
+    const cameraKey = cameraPoints.map((p) => `${p.lat.toFixed(4)},${p.lng.toFixed(4)}`).join('|');
+    const showOnMap = (p) => {
+        if (!p?.lat) return;
+        setFocus((f) => ({ place: { lat: p.lat, lng: p.lng }, n: f.n + 1 }));
+        setSelectedPlace(p);
+        if (sheetSnap === 'full') setSheetSnap('half');
+    };
+
     return (
         <div className="tm-root">
             <Map
@@ -515,6 +545,14 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 clickableIcons={false}
                 onClick={handleMapClick}
             >
+                <MapCamera
+                    points={cameraPoints}
+                    fitKey={cameraKey}
+                    focus={focus.place}
+                    focusKey={focus.n}
+                    refitKey={sheetSnap}
+                    fitNonce={fitNonce}
+                />
                 {places.filter((p) => p.lat).map((place) => {
                     let seqLetter = null;
                     if (routeResult?.customOrderedPlaces) {
@@ -653,6 +691,9 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         <ChevronLeft size={17} aria-hidden="true" /> {exitLabel}
                     </button>
                 )}
+                <button type="button" className="tm-ctrl" onClick={() => { setSelectedPlace(null); setFitNonce((n) => n + 1); }} title="Show the whole trip" aria-label="Show the whole trip">
+                    <Maximize2 size={18} />
+                </button>
                 <button type="button" className={`tm-ctrl${isOptimized ? ' active' : ''}`} onClick={handleToggleOptimize} title={isOptimized ? 'Route optimized' : 'Optimize route'} aria-label="Optimize route" aria-pressed={isOptimized}>
                     <RouteIcon size={20} />
                 </button>
@@ -730,6 +771,9 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                                                 </div>
                                             </div>
                                             <div className="tm-card-actions" onClick={(e) => e.stopPropagation()}>
+                                                {p.lat && (
+                                                    <button type="button" className="tm-icon-btn" onClick={() => showOnMap(p)} aria-label={`Show ${p.name} on the map`} title="Show on map"><Crosshair size={15} /></button>
+                                                )}
                                                 <button type="button" className="tm-icon-btn" onClick={() => handleMovePlace(index, -1)} disabled={index === 0} aria-label="Move up"><ArrowUp size={15} /></button>
                                                 <button type="button" className="tm-icon-btn" onClick={() => handleMovePlace(index, 1)} disabled={index === places.length - 1} aria-label="Move down"><ArrowDown size={15} /></button>
                                                 <button type="button" className="tm-icon-btn" onClick={() => togglePollPlace(p.id)} aria-label="Add to poll" title={pollPlaces.includes(p.id) ? 'In poll' : 'Add to poll'}>

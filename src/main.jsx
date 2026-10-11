@@ -1,4 +1,5 @@
 import './index.css';
+import { readAuthHint } from './utils/authHint';
 
 // ── Deferred ("lazy") hydration ──────────────────────────────────────────────
 // The homepage ("/") is fully prerendered into #root at build time and styled
@@ -16,6 +17,11 @@ import './index.css';
 const rootEl = document.getElementById('root');
 const isHome = window.location.pathname === '/';
 const hasPrerender = !!rootEl && rootEl.children.length > 0;
+// Someone was signed in on this device last time. The prerendered homepage is
+// the signed-out version, so hide its "Log in" button and boot straight away —
+// a signed-in visitor needs the app (and their trips) immediately.
+const hasAuthHint = !!readAuthHint();
+if (hasAuthHint) document.documentElement.classList.add('has-auth-hint');
 
 let booted = false;
 function boot() {
@@ -40,7 +46,7 @@ function boot() {
   });
 }
 
-if (isHome && hasPrerender) {
+if (isHome && hasPrerender && !hasAuthHint) {
   // Production homepage: prerendered markup is already on screen, so wait for the
   // first user intent before booting React. These gestures all precede a
   // meaningful action (a tap's pointerdown/touchstart fires before its click).

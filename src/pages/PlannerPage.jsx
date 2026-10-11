@@ -909,7 +909,9 @@ function PlannerContent({ onOpenMap }) {
 
         <div className="planner-stop-card" style={{ flex: 1, minWidth: 0, padding: nested ? (isMobile ? '10px 12px' : '12px 16px') : (isMobile ? '14px 16px' : '16px 20px'), marginBottom: nested ? 8 : 0, background: 'rgba(255,255,255,0.86)', backdropFilter: 'blur(18px) saturate(180%)', WebkitBackdropFilter: 'blur(18px) saturate(180%)' }}>
           <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0 }}>
-            <div style={{ display:'flex', alignItems:'center', gap:12, flex:1, minWidth:0 }}>
+            {/* On phones the name keeps ~200px; the minutes box wraps below
+                it instead of squeezing the name to a letter per line. */}
+            <div style={{ display:'flex', alignItems:'center', gap:12, flex: isMobile ? '1 1 200px' : 1, minWidth:0 }}>
               <PlaceThumb place={stop} size={nested ? 40 : 48} radius={8} />
               <div style={{ minWidth:0 }}>
                 <div style={{ fontSize: nested ? 14 : 15, fontWeight:700, color:'#0f172a', display:'flex', alignItems:'center', gap:8, flexWrap:'wrap' }}>
