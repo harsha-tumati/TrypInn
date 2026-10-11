@@ -20,6 +20,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
+import ReviewPicks from '../components/ReviewPicks';
+import { formatBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 import { publicSummaryFor } from '../utils/publicTrips';
 
@@ -36,6 +38,8 @@ function placeToStop(p) {
     imageUrl: p.imageUrl || null,
     googlePlaceId: p.googlePlaceId || null,
     group: p.group || null,
+    bestTime: p.bestTime || null,
+    bestTimeReason: p.bestTimeReason || null,
     geocoding: false,
   };
 }
@@ -84,6 +88,7 @@ async function savePlan(tripId, stops, savedPlaces) {
     name: s.name, description: s.description || '', category: s.category || '',
     lat: s.lat, lng: s.lng, imageUrl: s.imageUrl || null, estimatedMinutes: s.estimatedMinutes || 60,
     group: s.group || null,
+    ...(s.bestTime ? { bestTime: s.bestTime, bestTimeReason: s.bestTimeReason || null } : {}),
   }));
 
   const fresh = toSave.filter(s => !saved.has(s.id));
@@ -184,6 +189,8 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
   // Places already in the trip are shown, but can't be picked twice.
   const toggle = (i) => { if (!inTrip.has(normName(places[i]?.name))) setSelected(p => ({ ...p, [i]: !p[i] })); };
   const pickedCount = Object.values(selected).filter(Boolean).length;
+  // After picking: a review step with the AI's visit lengths and best times.
+  const [reviewing, setReviewing] = useState(false);
 
   return (
     <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.55)', zIndex:1000, display:'flex', alignItems:'center', justifyContent:'center', padding: isMobile ? 12 : 16 }}>
@@ -192,11 +199,19 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
             <div>
               <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Explore {label} ✨</h2>
-              <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>Pick the spots you want to visit</p>
+              <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>{reviewing ? 'Check the timings before adding' : 'Pick the spots you want to visit'}</p>
             </div>
             <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
           </div>
         </div>
+        {reviewing ? (
+          <ReviewPicks
+            picks={places.filter((_, i) => selected[i])}
+            area={regionName}
+            onBack={() => setReviewing(false)}
+            onConfirm={onConfirm}
+          />
+        ) : (<>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
           {places.length === 0 && loading ? (
             <div style={{ display:'flex', flexDirection:'column', alignItems:'center', padding: isMobile ? 40 : 60, gap:16 }}>
@@ -237,6 +252,7 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
                     <div style={{ fontSize:13, color:'#475569', marginTop:4, lineHeight:1.5, display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical', overflow:'hidden' }}>{p.description}</div>
                     <div style={{ display:'flex', gap:8, marginTop:8, flexWrap:'wrap' }}>
                       {p.estimatedMinutes && <div style={{ fontSize:11, color:'#1E3A8A', fontWeight:700, background:'#E5EDFB', padding:'2px 8px', borderRadius:6 }}>⏱ {formatMins(p.estimatedMinutes)}</div>}
+                      {formatBestTime(p.bestTime) && <div title={p.bestTimeReason || 'Best time to visit'} style={{ fontSize:11, color:'#92400e', fontWeight:700, background:'#fef3c7', padding:'2px 8px', borderRadius:6 }}>☀ Best {formatBestTime(p.bestTime)}</div>}
                       <div style={{ fontSize:11, color:'#64748b', fontWeight:600, background:'#f1f5f9', padding:'2px 8px', borderRadius:6, textTransform:'capitalize' }}>{p.category}</div>
                       {added && <div style={{ fontSize:11, color:'#047857', fontWeight:700, background:'#d1fae5', padding:'2px 8px', borderRadius:6 }}>✓ In your trip</div>}
                     </div>
@@ -263,11 +279,12 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
         </div>
         <div style={{ padding: isMobile ? '12px 16px' : '16px 24px', borderTop:'1px solid #f1f5f9', flexShrink:0 }}>
           <button type="button" disabled={pickedCount === 0}
-            onClick={() => onConfirm(places.filter((_, i) => selected[i]))}
+            onClick={() => setReviewing(true)}
             style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#6b7280', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
             Add {pickedCount > 0 ? `${pickedCount} place${pickedCount>1?'s':''}` : 'places'} to trip
           </button>
         </div>
+        </>)}
       </div>
     </div>
   );
@@ -427,6 +444,8 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
 
   const toggle = (i) => setSelected(p => ({ ...p, [i]: !p[i] }));
   const pickedCount = Object.values(selected).filter(Boolean).length;
+  // After picking: a review step with the AI's visit lengths and best times.
+  const [reviewing, setReviewing] = useState(false);
 
   return (
     <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.55)', zIndex:1000, display:'flex', alignItems:'center', justifyContent:'center', padding: isMobile ? 12 : 16 }}>
@@ -435,11 +454,19 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
             <div>
               <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Must-visits on the way 🚗</h2>
-              <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>Between {fromName} & {toName}</p>
+              <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>{reviewing ? 'Check the timings before adding' : <>Between {fromName} & {toName}</>}</p>
             </div>
             <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
           </div>
         </div>
+        {reviewing ? (
+          <ReviewPicks
+            picks={places.filter((_, i) => selected[i])}
+            area={`${fromName} and ${toName}`}
+            onBack={() => setReviewing(false)}
+            onConfirm={onConfirm}
+          />
+        ) : (<>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
           <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
             {places.map((p, i) => (
@@ -466,6 +493,7 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
                   <div style={{ fontSize:13, color:'#475569', marginTop:4, lineHeight:1.5, display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical', overflow:'hidden' }}>{p.description}</div>
                   <div style={{ display:'flex', gap:8, marginTop:8, flexWrap:'wrap', alignItems:'center' }}>
                     {p.estimatedMinutes && <div style={{ fontSize:11, color:'#1E3A8A', fontWeight:700, background:'#E5EDFB', padding:'2px 8px', borderRadius:6 }}>⏱ {formatMins(p.estimatedMinutes)}</div>}
+                      {formatBestTime(p.bestTime) && <div title={p.bestTimeReason || 'Best time to visit'} style={{ fontSize:11, color:'#92400e', fontWeight:700, background:'#fef3c7', padding:'2px 8px', borderRadius:6 }}>☀ Best {formatBestTime(p.bestTime)}</div>}
                     <div style={{ fontSize:11, color:'#64748b', fontWeight:600, background:'#f1f5f9', padding:'2px 8px', borderRadius:6, textTransform:'capitalize' }}>{p.category}</div>
                     {(() => {
                       const detour = calcDetourKm(fromCoords, toCoords, p.lat, p.lng);
@@ -498,11 +526,12 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
         </div>
         <div style={{ padding: isMobile ? '12px 16px' : '16px 24px', borderTop:'1px solid #f1f5f9', flexShrink:0 }}>
           <button type="button" disabled={pickedCount === 0}
-            onClick={() => onConfirm(places.filter((_, i) => selected[i]))}
+            onClick={() => setReviewing(true)}
             style={{ width:'100%', padding:'12px', borderRadius:12, border:'none', background: pickedCount > 0 ? 'linear-gradient(135deg,#1E3A8A,#1E3A8A)' : '#e2e8f0', color: pickedCount > 0 ? '#fff' : '#6b7280', fontWeight:700, fontSize:15, cursor: pickedCount > 0 ? 'pointer' : 'default', transition:'all 200ms', minHeight:44 }}>
             Add {pickedCount > 0 ? `${pickedCount} place${pickedCount>1?'s':''}` : 'places'} to trip
           </button>
         </div>
+        </>)}
       </div>
     </div>
   );
@@ -850,6 +879,8 @@ function PlannerContent({ onOpenMap }) {
           lng: p.lng || null,
           imageUrl: p.imageUrl || null,
           group,
+          bestTime: p.bestTime || null,
+          bestTimeReason: p.bestTimeReason || null,
           geocoding: false,
         }));
       if (!fresh.length) return prev;
@@ -873,6 +904,8 @@ function PlannerContent({ onOpenMap }) {
         lat: pl.lat || null,
         lng: pl.lng || null,
         imageUrl: pl.imageUrl || null,
+        bestTime: pl.bestTime || null,
+        bestTimeReason: pl.bestTimeReason || null,
         geocoding: false,
       }));
       const copy = [...p];

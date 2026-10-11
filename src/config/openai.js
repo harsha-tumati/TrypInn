@@ -230,12 +230,13 @@ export async function getRegionPlaces(regionName, excludeNames = []) {
             {
                 role: 'user',
                 content: `Suggest top places to visit inside: "${regionName}".${excludeStr}\nReturn JSON:
-{"places": [{"name": "Specific Place Name", "description": "What it is and why visit", "category": "beach|temple|museum|viewpoint|market|heritage|nature|food", "estimatedMinutes": 120}]}
-Include 6-8 varied places. Names must be the actual attraction name, not the city.`,
+{"places": [{"name": "Specific Place Name", "description": "What it is and why visit", "category": "beach|temple|museum|viewpoint|market|heritage|nature|food", "estimatedMinutes": 120, "bestTime": "06:00-08:00", "bestTimeReason": "Short reason, max 8 words"}]}
+Include 6-8 varied places. Names must be the actual attraction name, not the city.
+bestTime is the best time of day to be there, as a 24-hour "HH:MM-HH:MM" window within opening hours (e.g. sunrise beaches early, markets in the evening, museums mid-morning).`,
             },
         ],
         response_format: { type: 'json_object' },
-        max_tokens: 1200,
+        max_tokens: 1600,
     });
     return JSON.parse(response.choices[0].message.content);
 }
@@ -256,14 +257,39 @@ export async function getRouteMustVisits(fromName, toName, excludeNames = []) {
             {
                 role: 'user',
                 content: `What are the must-visit stops between "${fromName}" and "${toName}" on a road trip?${excludeStr}\nReturn JSON:
-{"suggestions": [{"name": "Place Name", "description": "Why stop here", "category": "beach|temple|viewpoint|food|nature|heritage", "estimatedMinutes": 60}]}`,
+{"suggestions": [{"name": "Place Name", "description": "Why stop here", "category": "beach|temple|viewpoint|food|nature|heritage", "estimatedMinutes": 60, "bestTime": "16:00-18:00", "bestTimeReason": "Short reason, max 8 words"}]}
+bestTime is the best time of day to be there, as a 24-hour "HH:MM-HH:MM" window within opening hours.`,
             },
         ],
         response_format: { type: 'json_object' },
-        max_tokens: 800,
+        max_tokens: 1000,
     });
     return JSON.parse(response.choices[0].message.content);
 }
 
 export default openai;
 
+/**
+ * Best time of day to visit each place, for places suggested before the
+ * suggestion prompts asked for it.
+ * Returns { times: { [name]: { bestTime: "HH:MM-HH:MM", reason } } }
+ */
+export async function getBestVisitTimes(places, area = '') {
+    const list = places.map(p => `- ${p.name}${p.category ? ` (${p.category})` : ''}`).join('\n');
+    const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: [
+            {
+                role: 'system',
+                content: 'You are a local travel expert. For each place, give the best time of day to visit, within its opening hours, as a 24-hour "HH:MM-HH:MM" window, with a reason of at most 8 words. Return only valid JSON.',
+            },
+            {
+                role: 'user',
+                content: `Places${area ? ` in or near ${area}` : ''}:\n${list}\nReturn JSON: {"times": {"Exact Place Name": {"bestTime": "06:00-08:00", "reason": "Sunrise over the bay"}}}`,
+            },
+        ],
+        response_format: { type: 'json_object' },
+        max_tokens: 700,
+    });
+    return JSON.parse(response.choices[0].message.content);
+}
