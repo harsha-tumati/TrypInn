@@ -415,6 +415,9 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         finally { setAddingLoc(false); }
     }
 
+    // Tap-anywhere-to-add is switched off for now: a stray tap on the map
+    // added a new stop and re-routed the whole trip. Kept here to bring back.
+    /*
     async function handleMapClick(e) {
         const lat = e.detail.latLng.lat;
         const lng = e.detail.latLng.lng;
@@ -438,6 +441,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             }]);
         } catch (e) { console.error(e); }
     }
+    */
 
     async function toggleSelect(place) {
         await updatePlace(place.id, { skipInRoute: inRoute(place) });
@@ -543,7 +547,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 gestureHandling="greedy"
                 disableDefaultUI={true}
                 clickableIcons={false}
-                onClick={handleMapClick}
+                // onClick={handleMapClick} — tap-to-add disabled, see handleMapClick
             >
                 <MapCamera
                     points={cameraPoints}
@@ -694,9 +698,11 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                 <button type="button" className="tm-ctrl" onClick={() => { setSelectedPlace(null); setFitNonce((n) => n + 1); }} title="Show the whole trip" aria-label="Show the whole trip">
                     <Maximize2 size={18} />
                 </button>
+{/* Optimize / recalculate route — hidden for now.
                 <button type="button" className={`tm-ctrl${isOptimized ? ' active' : ''}`} onClick={handleToggleOptimize} title={isOptimized ? 'Route optimized' : 'Optimize route'} aria-label="Optimize route" aria-pressed={isOptimized}>
                     <RouteIcon size={20} />
                 </button>
+                */}
             </div>
 
             {/* Toasts — top-center */}
