@@ -19,6 +19,7 @@ import Modal from '../components/Modal';
 import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
+import TimePicker from '../components/TimePicker';
 import usePageSeo from '../hooks/usePageSeo';
 
 // ── Keeping the schedule steady ─────────────────────────────────────────────
@@ -1233,11 +1234,11 @@ function ItineraryContent({ onOpenMap }) {
                         </div>
                         <div style={{ marginLeft: 16, display: 'flex', alignItems: 'center', gap: 12, background: 'rgba(255,255,255,0.8)', padding: isMobile ? '10px 16px' : '12px 24px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.5)', boxShadow: '0 8px 32px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.6)', flex: 1, backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' }}>
                             <span style={{ fontSize: isMobile ? 14 : 15, fontWeight: 700, color: '#0f172a' }}>Day Starts At:</span>
-                            <input
-                                type="time"
+                            <TimePicker
                                 value={dayStartTime}
-                                onChange={(e) => setDayStartTime(e.target.value)}
-                                style={{ padding: isMobile ? '8px 10px' : '6px 12px', borderRadius: 8, border: '1px solid #94a3b8', fontSize: isMobile ? 16 : 15, fontWeight: 600, outline: 'none', color: '#0f172a', background: '#f8fafc' }}
+                                onChange={setDayStartTime}
+                                label="Day starts at"
+                                className="tp-daystart"
                             />
                         </div>
                     </div>
@@ -1427,13 +1428,14 @@ function ItineraryContent({ onOpenMap }) {
                                                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                                                         {!place.isStartingPoint && !isCarryOver && !isGuest ? (
                                                             <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                                                                <input
-                                                                    type="time"
-                                                                    className="itin-time-input is-visit"
+                                                                <TimePicker
                                                                     value={toHHMM(arrivalTime)}
-                                                                    onChange={(e) => e.target.value && setTimeEdit('visitTimes', place.id, e.target.value)}
-                                                                    aria-label={`Time you get to ${place.name}`}
+                                                                    onChange={(t) => setTimeEdit('visitTimes', place.id, t)}
+                                                                    label={`Time you get to ${place.name}`}
                                                                     title="Change when you visit"
+                                                                    className="tp-visit"
+                                                                    onReset={item.visitTimeEdited ? () => setTimeEdit('visitTimes', place.id, null) : undefined}
+                                                                    resetLabel={`Estimate (${item.estimatedArrival.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })})`}
                                                                 />
                                                                 {item.visitTimeEdited && (
                                                                     <button type="button" className="itin-time-reset" onClick={() => setTimeEdit('visitTimes', place.id, null)} title={`Back to the estimate (${item.estimatedArrival.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })})`} aria-label={`Reset the time for ${place.name}`}>
@@ -1600,14 +1602,14 @@ function ItineraryContent({ onOpenMap }) {
                                                                             </span>
                                                                             {event.type === 'meal' && !isGuest ? (
                                                                                 <>
-                                                                                    <input
-                                                                                        type="time"
-                                                                                        className="itin-time-input"
+                                                                                    <TimePicker
                                                                                         value={toHHMM(event.arrivalTime)}
-                                                                                        onChange={(e) => e.target.value && setTimeEdit('mealTimes', event.id, e.target.value)}
-                                                                                        aria-label={`${event.name} time`}
+                                                                                        onChange={(t) => setTimeEdit('mealTimes', event.id, t)}
+                                                                                        label={`${event.name} time`}
                                                                                         title="Change when you stop to eat"
-                                                                                        style={{ fontSize: isMobile ? 16 : 12 }}
+                                                                                        className="tp-meal"
+                                                                                        onReset={event.timeEdited ? () => setTimeEdit('mealTimes', event.id, null) : undefined}
+                                                                                        resetLabel="Usual time"
                                                                                     />
                                                                                     {event.timeEdited && (
                                                                                         <button type="button" className="itin-time-reset" onClick={() => setTimeEdit('mealTimes', event.id, null)} title="Back to the usual meal time" aria-label={`Reset ${event.name.toLowerCase()} time`}>
