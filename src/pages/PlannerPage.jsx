@@ -12,7 +12,7 @@ import { getRegionPlaces, getRouteMustVisits } from '../config/openai';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
 import { MAPS_ENABLED } from '../config/maps';
-import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass } from 'lucide-react';
+import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass, ChevronUp, ChevronDown, Search } from 'lucide-react';
 import ReadMore from '../components/ReadMore';
 import Modal from '../components/Modal';
 import { formatDate } from '../utils/dateHelpers';
@@ -614,6 +614,10 @@ function PlannerContent({ onOpenMap }) {
   const { tripId } = useParams();
   const navigate = useNavigate();
   const isMobile = useIsMobile();
+  // Below 1024px the discovery sidebar folds into a dock under the plan:
+  // collapsed by default, expandable, with "Go to itinerary" always in reach.
+  const isNarrow = useIsMobile(1024);
+  const [discoverOpen, setDiscoverOpen] = useState(false);
   const isGuest = useGuestMode();
 
   // plannerStops: [{ id, name, description, category, estimatedMinutes, lat, lng, group, geocoding }]
@@ -1022,9 +1026,9 @@ function PlannerContent({ onOpenMap }) {
   const missingCount = stops.filter(s => !s.lat).length;
 
   return (
-    <div className="planner-page">
+    <div className="planner-page" style={isNarrow ? { display: 'flex', flexDirection: 'column', overflow: 'hidden' } : undefined}>
       {/* Main panel */}
-      <div className="planner-main">
+      <div className="planner-main" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch' } : undefined}>
         {/* Header */}
         <div className="trip-head">
           <div className="trip-head-text">
@@ -1128,12 +1132,34 @@ function PlannerContent({ onOpenMap }) {
       </div>
 
       {/* Right panel: Tabbed Discovery Sidebar + Pinned Build Itinerary */}
-      <aside className="planner-sidebar">
+      <aside
+        className={`planner-sidebar${isNarrow ? ' is-docked' : ''}`}
+        style={isNarrow ? {
+          width: '100%', flexShrink: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden',
+          maxHeight: discoverOpen ? '62%' : 'none', borderLeft: 'none', borderTop: '1px solid var(--line)',
+          background: 'rgba(255,255,255,0.96)', boxShadow: '0 -12px 32px -18px rgba(15,23,42,0.35)', padding: 0,
+        } : undefined}
+      >
 
-        <div className="planner-discover-head">Discover more places</div>
+        {isNarrow ? (
+          <button
+            type="button"
+            className="planner-discover-toggle"
+            onClick={() => setDiscoverOpen(v => !v)}
+            aria-expanded={discoverOpen}
+            aria-controls="planner-discover-panel"
+          >
+            <Search size={15} aria-hidden="true" />
+            <span>Discover more places</span>
+            {discoverOpen ? <ChevronDown size={17} aria-hidden="true" /> : <ChevronUp size={17} aria-hidden="true" />}
+          </button>
+        ) : (
+          <div className="planner-discover-head">Discover more places</div>
+        )}
 
         {/* Sidebar content — scrollable */}
-        <div className="planner-sidebar-content">
+        {(!isNarrow || discoverOpen) && (
+        <div id="planner-discover-panel" className="planner-sidebar-content" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', padding: '4px 16px 12px' } : undefined}>
 
             <>
               <p style={{ fontSize: 12, color: '#64748b', marginBottom: 10 }}>Search near your first stop</p>
@@ -1213,13 +1239,14 @@ function PlannerContent({ onOpenMap }) {
               </div>
             </>
         </div>
+        )}
 
         {/* Pinned itinerary button. The plan saves itself, so this only has
             to wait for a save in flight before opening the itinerary. */}
-        <div style={{ padding: '14px', borderTop: '1px solid var(--border-subtle)', background: 'rgba(255,255,255,0.5)' }}>
+        <div style={{ padding: isNarrow ? '10px 16px 12px' : '14px', borderTop: '1px solid var(--border-subtle)', background: 'rgba(255,255,255,0.5)', flexShrink: 0 }}>
           {isGuest ? (
             <div style={{ textAlign: 'center', padding: '4px 0' }}>
-              <div style={{ fontSize: 13, color: '#64748b', marginBottom: 12 }}>🔒 Join this trip to edit the plan</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginBottom: isNarrow ? 8 : 12 }}>🔒 Join this trip to edit the plan</div>
               <button type="button"
                 onClick={() => navigate(`/trip/${selectedTrip.id}/itinerary`)}
                 className="planner-build-btn"

@@ -3049,6 +3049,15 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   .trip-head-title { font-size: 25px; }
   .trip-head { margin-bottom: 16px; }
 }
+.planner-discover-toggle {
+  display: flex; align-items: center; gap: 8px; width: 100%;
+  min-height: 48px; padding: 0 16px; flex-shrink: 0;
+  border: none; background: transparent; cursor: pointer;
+  font: inherit; font-size: 13px; font-weight: 700; color: var(--ink);
+  text-align: left;
+}
+.planner-discover-toggle span { flex: 1; }
+.planner-discover-toggle svg:first-child { color: var(--accent); }
 .planner-sidebar-tabs {
   padding: 18px 14px 14px;
   border-bottom: 1px solid var(--line);
