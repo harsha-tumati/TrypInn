@@ -20,6 +20,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
 import TimePicker from '../components/TimePicker';
+import { formatBestTime, isWithinBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 
 // ── Keeping the schedule steady ─────────────────────────────────────────────
@@ -1480,6 +1481,14 @@ function ItineraryContent({ onOpenMap }) {
                                                         {item.visitTimeEdited && !isCarryOver && arrivalTime - item.estimatedArrival > 60000 && (
                                                             <div className="itin-time-note">
                                                                 {formatDuration(Math.round((arrivalTime - item.estimatedArrival) / 60000))} free before this
+                                                            </div>
+                                                        )}
+                                                        {formatBestTime(place.bestTime) && !isCarryOver && (
+                                                            <div
+                                                                className={`itin-best${isWithinBestTime(place.bestTime, arrivalTime) ? ' is-good' : ''}`}
+                                                                title={place.bestTimeReason ? `AI: ${place.bestTimeReason}` : 'AI’s best time to visit'}
+                                                            >
+                                                                ☀ {isWithinBestTime(place.bestTime, arrivalTime) ? 'Good time · ' : ''}best {formatBestTime(place.bestTime)}
                                                             </div>
                                                         )}
                                                         {!place.isStartingPoint && !place.isEndingPoint && (

@@ -5691,6 +5691,58 @@ html, body {
 }
 .itin-ai-thinking { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: #1E3A8A; }
 .itin-ai-thinking .spinner { width: 10px; height: 10px; border-width: 2px; }
+/* ReviewPicks — check AI visit lengths and best times before adding places */
+.rp-body { flex: 1; overflow-y: auto; padding: 16px 24px; }
+.rp-intro {
+  margin: 0 0 14px; padding: 10px 12px; border-radius: 10px;
+  background: #F5F8FE; color: #1E3A8A; font-size: 13px; font-weight: 600; line-height: 1.45;
+}
+.rp-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.rp-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px; border: 1px solid #e2e8f0; border-radius: 14px; background: #fff;
+}
+.rp-main { flex: 1; min-width: 0; }
+.rp-name { font-size: 14.5px; font-weight: 800; color: #0f172a; }
+.rp-best {
+  display: flex; align-items: flex-start; gap: 5px; margin-top: 4px;
+  font-size: 12px; color: #92400e; line-height: 1.4;
+}
+.rp-best svg { flex-shrink: 0; margin-top: 2px; }
+.rp-best b { font-weight: 700; }
+.rp-muted { color: #94a3b8; }
+.rp-spin { animation: spin 1s linear infinite; color: #1E3A8A; }
+.rp-duration { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+.rp-stepper {
+  display: flex; align-items: center; gap: 2px;
+  padding: 3px; border: 1px solid #cbd5e1; border-radius: 999px; background: #fff;
+}
+.rp-stepper button {
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border: none; border-radius: 50%;
+  background: #f1f5f9; color: #1E3A8A; cursor: pointer;
+}
+.rp-stepper button:hover:not(:disabled) { background: #E5EDFB; }
+.rp-stepper button:disabled { opacity: 0.4; cursor: default; }
+.rp-value { min-width: 56px; text-align: center; font-size: 14px; font-weight: 800; color: #0f172a; font-variant-numeric: tabular-nums; }
+.rp-ai { font-size: 10.5px; font-weight: 700; color: #1E3A8A; }
+.rp-reset {
+  display: inline-flex; align-items: center; gap: 3px; padding: 0 4px;
+  border: none; background: none; cursor: pointer;
+  font: inherit; font-size: 10.5px; font-weight: 700; color: #64748b;
+}
+.rp-reset:hover { color: var(--accent); }
+.rp-foot { display: flex; gap: 10px; padding: 16px 24px; border-top: 1px solid #f1f5f9; flex-shrink: 0; }
+.rp-back, .rp-add { min-height: 44px; border-radius: 12px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; }
+.rp-back { padding: 0 18px; border: 1px solid #e2e8f0; background: #fff; color: #334155; }
+.rp-add { flex: 1; border: none; background: #1E3A8A; color: #fff; }
+@media (max-width: 560px) {
+  .rp-body { padding: 12px 16px; }
+  .rp-foot { padding: 12px 16px; }
+  .rp-item { flex-wrap: wrap; }
+  .rp-main { flex-basis: calc(100% - 64px); }
+  .rp-duration { flex-direction: row; width: 100%; justify-content: space-between; padding-left: 64px; }
+}
 /* TimePicker — trigger and popover */
 .tp-trigger {
   display: inline-flex; align-items: center; gap: 6px;
@@ -5747,6 +5799,11 @@ html, body {
 }
 .tp-reset:hover { color: var(--accent); background: rgba(30, 58, 138, 0.07); }
 .itin-time-warn { margin-top: 2px; font-size: 11px; font-weight: 600; color: #b45309; }
+.itin-best {
+  display: inline-block; margin-top: 4px; padding: 1px 7px; border-radius: 6px;
+  background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 700; white-space: nowrap;
+}
+.itin-best.is-good { background: #dcfce7; color: #166534; }
 .itin-time-note { margin-top: 2px; font-size: 11px; font-weight: 500; color: #0f766e; }
 .itin-breaks-toggle {
   display: inline-flex;
