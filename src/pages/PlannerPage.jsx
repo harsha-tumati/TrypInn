@@ -2,7 +2,9 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { useTrip } from '../context/TripContext';
 import { useGuestMode } from '../context/GuestModeContext';
-import { addPlaces, updatePlace, updatePlaceOrder, deletePlace, updateTrip } from '../services/firestoreService';
+import { useAuth } from '../context/AuthContext';
+import { isTripClaimed } from '../utils/draftTrips';
+import { addPlaces, updatePlace, updatePlaceOrder, deletePlace, updateTrip, createStopPoll } from '../services/firestoreService';
 import { enrichPlacesWithGoogle, forwardGeocode } from '../services/placesService';
 import LocationAutocomplete from '../components/LocationAutocomplete';
 import DatePicker from 'react-datepicker';
@@ -12,7 +14,7 @@ import { getRegionPlaces, getRouteMustVisits } from '../config/openai';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
 import { MAPS_ENABLED } from '../config/maps';
-import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass, ChevronUp, ChevronDown, Search } from 'lucide-react';
+import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass, Search, Vote } from 'lucide-react';
 import ReadMore from '../components/ReadMore';
 import Modal from '../components/Modal';
 import { formatDate } from '../utils/dateHelpers';
@@ -152,7 +154,7 @@ function waitForPlaces(timeout = 10000) {
 }
 
 // ── RegionModal: pick specific places inside a region ───────────────────────
-function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose, cache, setCache }) {
+function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose, cache, setCache, canPoll }) {
   const [places, setPlaces] = useState(cache[label] || []);
   const [loading, setLoading] = useState(!cache[label]);
   const [selected, setSelected] = useState({});
@@ -210,6 +212,7 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
             area={regionName}
             onBack={() => setReviewing(false)}
             onConfirm={onConfirm}
+            canPoll={canPoll}
           />
         ) : (<>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
@@ -291,8 +294,9 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
 }
 
 // ── AddStopModal: specific vs region choice ──────────────────────────────────
-function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
+function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll }) {
   const [input, setInput] = useState('');
+  const [askCrew, setAskCrew] = useState(false);
   const [selectedPlaceInfo, setSelectedPlaceInfo] = useState(null);
   const [mode, setMode] = useState(null); // null | 'specific' | 'region'
   const inputRef = React.useRef(null);
@@ -335,10 +339,10 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
     
     // Check if the user selected a place from the dropdown and didn't alter the text
     if (selectedPlaceInfo && input.trim() === selectedPlaceInfo.name) {
-      if (mode === 'specific') onAddSpecific(selectedPlaceInfo.name, selectedPlaceInfo);
+      if (mode === 'specific') onAddSpecific(selectedPlaceInfo.name, selectedPlaceInfo, { askCrew });
       else if (mode === 'region') onExploreRegion(selectedPlaceInfo.formatted || selectedPlaceInfo.name, selectedPlaceInfo.name);
     } else {
-      if (mode === 'specific') onAddSpecific(input.trim());
+      if (mode === 'specific') onAddSpecific(input.trim(), null, { askCrew });
       else if (mode === 'region') onExploreRegion(input.trim(), input.trim());
     }
   };
@@ -371,6 +375,14 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion }) {
               <div style={{ fontSize:11, color:'#64748b', marginTop:3 }}>Show me what's there, I'll pick</div>
             </div>
           </div>
+
+          {canPoll && mode === 'specific' && (
+            <label className="planner-ask-crew">
+              <input type="checkbox" checked={askCrew} onChange={e => setAskCrew(e.target.checked)} />
+              <Vote size={16} aria-hidden="true" />
+              <span><strong>Let the crew vote</strong> on whether to keep this stop</span>
+            </label>
+          )}
 
           <button type="button" disabled={!input.trim() || !mode} onClick={handleSubmit}
             style={{ width:'100%', padding:'13px', borderRadius:12, border:'none', background: (!input.trim()||!mode)?'#e2e8f0':'linear-gradient(135deg,#1E3A8A,#1E3A8A)', color:(!input.trim()||!mode)?'#6b7280':'#fff', fontWeight:700, fontSize:15, cursor:(!input.trim()||!mode)?'default':'pointer', transition:'all 200ms', minHeight:44 }}>
@@ -408,7 +420,7 @@ function calcDetourKm(fromCoords, toCoords, viaLat, viaLng) {
 }
 
 // ── RouteModal: AI must-visits between two stops ────────────────────────────
-function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames, onConfirm, onClose, cache, setCache }) {
+function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames, onConfirm, onClose, cache, setCache, canPoll }) {
   const cacheKey = `${fromName}-${toName}`;
   const [places, setPlaces] = useState(cache[cacheKey] || []);
   const [loading, setLoading] = useState(!cache[cacheKey]);
@@ -465,6 +477,7 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
             area={`${fromName} and ${toName}`}
             onBack={() => setReviewing(false)}
             onConfirm={onConfirm}
+            canPoll={canPoll}
           />
         ) : (<>
         <div style={{ flex:1, overflowY:'auto', padding: isMobile ? '12px 16px' : '16px 24px' }}>
@@ -639,7 +652,8 @@ const routeSuggestions = {};
 
 // ── Main PlannerContent ──────────────────────────────────────────────────────
 function PlannerContent({ onOpenMap }) {
-  const { selectedTrip, setSelectedTrip, places } = useTrip();
+  const { selectedTrip, setSelectedTrip, places, polls } = useTrip();
+  const { user } = useAuth();
   const { tripId } = useParams();
   const navigate = useNavigate();
   const isMobile = useIsMobile();
@@ -827,7 +841,30 @@ function PlannerContent({ onOpenMap }) {
     edit(p => p.filter(s => !ids.has(s.id)));
   };
 
-  const addSpecificStop = async (name, placeObj = null) => {
+  // ── Crew votes on stops ──────────────────────────────────────────────────
+  // Polls are a saved-trip feature (like the Polls tab), so only members of a
+  // claimed trip can start one.
+  const canPoll = !isGuest && !!user && isTripClaimed(selectedTrip);
+  const openStopPoll = (name) => (polls || []).find(p =>
+    p.kind === 'include' && p.status === 'open' && p.subjectName?.trim().toLowerCase() === name?.trim().toLowerCase());
+  const [pollBusy, setPollBusy] = useState(null);
+  const askCrew = async (names) => {
+    if (!canPoll) return;
+    for (const name of names) {
+      if (!name || openStopPoll(name)) continue;
+      const saved = places.find(p => p.name?.trim().toLowerCase() === name.trim().toLowerCase());
+      try {
+        await createStopPoll({ tripId: selectedTrip.id, placeName: name, placeId: saved?.id || null, createdBy: user.uid });
+      } catch (e) { console.error('Could not start the poll', e); }
+    }
+  };
+  const askCrewAbout = async (stop) => {
+    setPollBusy(stop.id);
+    try { await askCrew([stop.name]); } finally { setPollBusy(null); }
+  };
+
+  const addSpecificStop = async (name, placeObj = null, opts = {}) => {
+    if (opts.askCrew) askCrew([placeObj?.name || name]);
     setShowAddModal(false);
     if (hasName(stops, placeObj?.name || name)) return; // already in the trip
     const id = `stop-${Date.now()}`;
@@ -857,7 +894,8 @@ function PlannerContent({ onOpenMap }) {
 
   // Places picked from a region join that region's block — appended after
   // its last place if the region is already in the trip, else at the end.
-  const confirmRegionPicks = (pickedPlaces) => {
+  const confirmRegionPicks = (pickedPlaces, opts = {}) => {
+    if (opts.askCrew) askCrew(pickedPlaces.map(p => p.name));
     const region = regionModal;
     setRegionModal(null);
     const stamp = Date.now();
@@ -889,7 +927,8 @@ function PlannerContent({ onOpenMap }) {
     });
   };
 
-  const insertRouteStops = (pickedPlaces) => {
+  const insertRouteStops = (pickedPlaces, opts = {}) => {
+    if (opts.askCrew) askCrew(pickedPlaces.map(p => p.name));
     if (!routeModal) return;
     const { afterIndex } = routeModal;
     setRouteModal(null);
@@ -979,6 +1018,15 @@ function PlannerContent({ onOpenMap }) {
                     style={{ width:isMobile ? 60 : 52, border:'none', background:'transparent', fontSize:16, fontWeight:700, color:'#0f172a', outline:'none', textAlign:'center' }}/>
                   <span style={{ fontSize:11, color:'#64748b' }}>min</span>
                 </div>
+                {canPoll && (openStopPoll(stop.name) ? (
+                  <button type="button" className="planner-vote-chip is-live" onClick={() => navigate(`/trip/${selectedTrip.id}/polls`)} title="The crew is voting on this stop — see the poll">
+                    <Vote size={14} aria-hidden="true" /> Voting
+                  </button>
+                ) : (
+                  <button type="button" className="planner-vote-chip" onClick={() => askCrewAbout(stop)} disabled={pollBusy === stop.id} aria-label={`Ask the crew whether to keep ${stop.name}`} title="Ask the crew whether to keep this stop">
+                    <Vote size={14} aria-hidden="true" />{!isMobile && <span>{pollBusy === stop.id ? 'Starting…' : 'Ask crew'}</span>}
+                  </button>
+                ))}
                 <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
               </div>
             )}
@@ -1057,6 +1105,88 @@ function PlannerContent({ onOpenMap }) {
   const pendingSave = editVersion > savedVersion;
   const canOpenItinerary = stops.some(s => s.lat) || places.length > 0;
   const missingCount = stops.filter(s => !s.lat).length;
+
+  // Nearby search: chips, a search box and results to add. Shown in the
+  // sidebar on desktop and in the "Discover nearby" pop-up on smaller screens.
+  const discoverBody = (
+            <>
+              <p style={{ fontSize: 12, color: '#64748b', marginBottom: 10 }}>Search near your first stop</p>
+              {/* Quick suggestion chips */}
+              <div style={{ display:'flex', gap:6, flexWrap:'wrap', marginBottom:10 }}>
+                {['cafe', 'restaurant', 'temple', 'museum', 'park', 'hotel', 'beach', 'mall', 'ATM', 'pharmacy'].map(chip => (
+                  <button type="button" key={chip} onClick={async () => {
+                    setNearbyQuery(chip);
+                    if (!stops.find(s=>s.lat)) return;
+                    setLoadingNearby(true);
+                    try {
+                      const { searchNearby } = await import('../services/placesService');
+                      const first = stops.find(s=>s.lat);
+                      const r = await searchNearby({ lat:first.lat, lng:first.lng, query:chip });
+                      setNearbyResults(r);
+                    } catch { /* ignore */ } finally { setLoadingNearby(false); }
+                  }}
+                    style={{ padding:'5px 10px', borderRadius:20, border:'1px solid #e2e8f0', background: nearbyQuery === chip ? '#1E3A8A' : '#f8fafc', color: nearbyQuery === chip ? '#fff' : '#475569', fontSize:11, fontWeight:600, cursor:'pointer', transition:'all 150ms', whiteSpace:'nowrap' }}
+                  >{chip}</button>
+                ))}
+              </div>
+              <div style={{ display:'flex', gap:6, marginBottom:10 }}>
+                <div style={{ flex: 1 }}>
+                  <LocationAutocomplete
+                    value={nearbyQuery}
+                    onChange={(val) => setNearbyQuery(val)}
+                    onSelect={async (p) => {
+                      if (!p) return;
+                      const query = p.name;
+                      setNearbyQuery(query);
+                      if (!stops.find(s=>s.lat)) return;
+                      setLoadingNearby(true);
+                      try {
+                        const { searchNearby } = await import('../services/placesService');
+                        const first = stops.find(s=>s.lat);
+                        const r = await searchNearby({ lat:first.lat, lng:first.lng, query });
+                        setNearbyResults(r);
+                      } catch { /* ignore */ } finally { setLoadingNearby(false); }
+                    }}
+                    placeholder="e.g. cafe, temple…"
+                  />
+                </div>
+                <button type="button"
+                  onClick={async () => {
+                    if (!nearbyQuery.trim() || !stops.find(s=>s.lat)) return;
+                    setLoadingNearby(true);
+                    try {
+                      const { searchNearby } = await import('../services/placesService');
+                      const first = stops.find(s=>s.lat);
+                      const r = await searchNearby({ lat:first.lat, lng:first.lng, query:nearbyQuery.trim() });
+                      setNearbyResults(r);
+                    } catch { /* ignore */ } finally { setLoadingNearby(false); }
+                  }}
+                  style={{ padding:'7px 12px', borderRadius:7, border:'none', background:'#0f172a', color:'#fff', fontWeight:700, cursor:'pointer', fontSize:12, minHeight:36 }}
+                >{loadingNearby ? '…' : '🔍'}</button>
+              </div>
+              <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
+                {nearbyResults.map((r,i) => (
+                  <div key={i} style={{ display:'flex', gap:10, padding:'10px', border:'1px solid #e2e8f0', borderRadius:10, cursor:'pointer' }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor='#BFD0F0'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor='#e2e8f0'}>
+                    <PlaceThumb place={r} size={48} radius={8} />
+                    <div style={{ flex:1, minWidth:0 }}>
+                      <div style={{ fontSize:12, fontWeight:700, color:'#0f172a', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{r.name}</div>
+                      <ReadMore lines={2} className="compact" fadeHeight={22}>
+                        <span style={{ fontSize: 11, color: '#64748b', lineHeight: 1.4 }}>{r.description}</span>
+                      </ReadMore>
+                      {r.rating && <div style={{ fontSize:10, color:'#f59e0b', marginTop:2 }}>⭐ {r.rating}</div>}
+                    </div>
+                    <button type="button"
+                      onClick={(e) => { e.stopPropagation(); addSpecificStop(r.name, { ...r, formatted: r.description }); }}
+                      style={{ flexShrink:0, background:'#EEF3FC', color:'#1E3A8A', border:'none', borderRadius:8, padding:'6px 10px', fontSize:12, fontWeight:700, cursor:'pointer', alignSelf:'center' }}>
+                      + Add
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </>
+  );
 
   return (
     <div className="planner-page" style={isNarrow ? { display: 'flex', flexDirection: 'column', overflow: 'hidden' } : undefined}>
@@ -1171,119 +1301,38 @@ function PlannerContent({ onOpenMap }) {
 
         {/* Add stop button — hidden for guests */}
         {!isGuest && (
-          <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>
-            <Plus size={18}/> Add stop
-          </button>
+          <div className={isNarrow ? 'planner-add-row' : undefined}>
+            <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>
+              <Plus size={18}/> Add stop
+            </button>
+            {isNarrow && (
+              <button type="button" onClick={() => setDiscoverOpen(true)} className="planner-discover-btn">
+                <Search size={17} aria-hidden="true"/> Discover nearby
+              </button>
+            )}
+          </div>
         )}
       </div>
 
       {/* Right panel: Tabbed Discovery Sidebar + Pinned Build Itinerary */}
+      {(!isNarrow || isGuest || editVersion > 0 || missingCount > 0) && (
       <aside
         className={`planner-sidebar${isNarrow ? ' is-docked' : ''}`}
         style={isNarrow ? {
           width: '100%', flexShrink: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden',
-          maxHeight: discoverOpen ? '62%' : 'none', borderLeft: 'none', borderTop: '1px solid var(--line)',
-          background: 'rgba(255,255,255,0.96)', boxShadow: '0 -12px 32px -18px rgba(15,23,42,0.35)', padding: 0,
+          borderLeft: 'none', borderTop: '1px solid var(--line)',
+          background: 'rgba(255,255,255,0.96)', padding: 0,
         } : undefined}
       >
 
-        {isNarrow ? (
-          <button
-            type="button"
-            className="planner-discover-toggle"
-            onClick={() => setDiscoverOpen(v => !v)}
-            aria-expanded={discoverOpen}
-            aria-controls="planner-discover-panel"
-          >
-            <Search size={15} aria-hidden="true" />
-            <span>Discover more places</span>
-            {discoverOpen ? <ChevronDown size={17} aria-hidden="true" /> : <ChevronUp size={17} aria-hidden="true" />}
-          </button>
-        ) : (
-          <div className="planner-discover-head">Discover more places</div>
-        )}
+        {/* On phones and tablets the discovery tools open from the "Discover
+            nearby" button under the stops instead of a pull-up bar. */}
+        {!isNarrow && <div className="planner-discover-head">Discover more places</div>}
 
         {/* Sidebar content — scrollable */}
-        {(!isNarrow || discoverOpen) && (
-        <div id="planner-discover-panel" className="planner-sidebar-content" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', padding: '4px 16px 12px' } : undefined}>
-
-            <>
-              <p style={{ fontSize: 12, color: '#64748b', marginBottom: 10 }}>Search near your first stop</p>
-              {/* Quick suggestion chips */}
-              <div style={{ display:'flex', gap:6, flexWrap:'wrap', marginBottom:10 }}>
-                {['cafe', 'restaurant', 'temple', 'museum', 'park', 'hotel', 'beach', 'mall', 'ATM', 'pharmacy'].map(chip => (
-                  <button type="button" key={chip} onClick={async () => {
-                    setNearbyQuery(chip);
-                    if (!stops.find(s=>s.lat)) return;
-                    setLoadingNearby(true);
-                    try {
-                      const { searchNearby } = await import('../services/placesService');
-                      const first = stops.find(s=>s.lat);
-                      const r = await searchNearby({ lat:first.lat, lng:first.lng, query:chip });
-                      setNearbyResults(r);
-                    } catch { /* ignore */ } finally { setLoadingNearby(false); }
-                  }}
-                    style={{ padding:'5px 10px', borderRadius:20, border:'1px solid #e2e8f0', background: nearbyQuery === chip ? '#1E3A8A' : '#f8fafc', color: nearbyQuery === chip ? '#fff' : '#475569', fontSize:11, fontWeight:600, cursor:'pointer', transition:'all 150ms', whiteSpace:'nowrap' }}
-                  >{chip}</button>
-                ))}
-              </div>
-              <div style={{ display:'flex', gap:6, marginBottom:10 }}>
-                <div style={{ flex: 1 }}>
-                  <LocationAutocomplete
-                    value={nearbyQuery}
-                    onChange={(val) => setNearbyQuery(val)}
-                    onSelect={async (p) => {
-                      if (!p) return;
-                      const query = p.name;
-                      setNearbyQuery(query);
-                      if (!stops.find(s=>s.lat)) return;
-                      setLoadingNearby(true);
-                      try {
-                        const { searchNearby } = await import('../services/placesService');
-                        const first = stops.find(s=>s.lat);
-                        const r = await searchNearby({ lat:first.lat, lng:first.lng, query });
-                        setNearbyResults(r);
-                      } catch { /* ignore */ } finally { setLoadingNearby(false); }
-                    }}
-                    placeholder="e.g. cafe, temple…"
-                  />
-                </div>
-                <button type="button"
-                  onClick={async () => {
-                    if (!nearbyQuery.trim() || !stops.find(s=>s.lat)) return;
-                    setLoadingNearby(true);
-                    try {
-                      const { searchNearby } = await import('../services/placesService');
-                      const first = stops.find(s=>s.lat);
-                      const r = await searchNearby({ lat:first.lat, lng:first.lng, query:nearbyQuery.trim() });
-                      setNearbyResults(r);
-                    } catch { /* ignore */ } finally { setLoadingNearby(false); }
-                  }}
-                  style={{ padding:'7px 12px', borderRadius:7, border:'none', background:'#0f172a', color:'#fff', fontWeight:700, cursor:'pointer', fontSize:12, minHeight:36 }}
-                >{loadingNearby ? '…' : '🔍'}</button>
-              </div>
-              <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-                {nearbyResults.map((r,i) => (
-                  <div key={i} style={{ display:'flex', gap:10, padding:'10px', border:'1px solid #e2e8f0', borderRadius:10, cursor:'pointer' }}
-                    onMouseEnter={e => e.currentTarget.style.borderColor='#BFD0F0'}
-                    onMouseLeave={e => e.currentTarget.style.borderColor='#e2e8f0'}>
-                    <PlaceThumb place={r} size={48} radius={8} />
-                    <div style={{ flex:1, minWidth:0 }}>
-                      <div style={{ fontSize:12, fontWeight:700, color:'#0f172a', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{r.name}</div>
-                      <ReadMore lines={2} className="compact" fadeHeight={22}>
-                        <span style={{ fontSize: 11, color: '#64748b', lineHeight: 1.4 }}>{r.description}</span>
-                      </ReadMore>
-                      {r.rating && <div style={{ fontSize:10, color:'#f59e0b', marginTop:2 }}>⭐ {r.rating}</div>}
-                    </div>
-                    <button type="button"
-                      onClick={(e) => { e.stopPropagation(); addSpecificStop(r.name, { ...r, formatted: r.description }); }}
-                      style={{ flexShrink:0, background:'#EEF3FC', color:'#1E3A8A', border:'none', borderRadius:8, padding:'6px 10px', fontSize:12, fontWeight:700, cursor:'pointer', alignSelf:'center' }}>
-                      + Add
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </>
+        {!isNarrow && (
+        <div id="planner-discover-panel" className="planner-sidebar-content">
+          {discoverBody}
         </div>
         )}
 
@@ -1339,6 +1388,14 @@ function PlannerContent({ onOpenMap }) {
         </div>
         )}
       </aside>
+      )}
+
+      {/* Phones and tablets: discovery tools in a pop-up */}
+      <Modal open={isNarrow && discoverOpen} onClose={() => setDiscoverOpen(false)} title="Discover nearby" subtitle="Cafes, temples, beaches and more near your first stop">
+        <div className="planner-sidebar-content planner-discover-modal">
+          {discoverBody}
+        </div>
+      </Modal>
 
       {/* Modals */}
       {showEditTrip && selectedTrip && (
@@ -1348,9 +1405,9 @@ function PlannerContent({ onOpenMap }) {
           onSaved={(fields) => setSelectedTrip({ ...selectedTrip, ...fields })}
         />
       )}
-      {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer}/>}
-      {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks}/>}
-      {routeModal && <RouteModal fromName={routeModal.fromName} toName={routeModal.toName} fromCoords={routeModal.fromCoords} toCoords={routeModal.toCoords} existingStopsNames={stops.map(s => s.name)} cache={routeCache} setCache={setRouteCache} onClose={() => setRouteModal(null)} onConfirm={insertRouteStops}/>}
+      {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer} canPoll={canPoll}/>}
+      {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks} canPoll={canPoll}/>}
+      {routeModal && <RouteModal fromName={routeModal.fromName} toName={routeModal.toName} fromCoords={routeModal.fromCoords} toCoords={routeModal.toCoords} existingStopsNames={stops.map(s => s.name)} cache={routeCache} setCache={setRouteCache} onClose={() => setRouteModal(null)} onConfirm={insertRouteStops} canPoll={canPoll}/>}
     </div>
   );
 }

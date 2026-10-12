@@ -363,6 +363,30 @@ export async function createPoll({ tripId, title, placeIds, createdBy }) {
     return ref.id;
 }
 
+/**
+ * A yes/no poll on whether to keep one stop ("Should we visit Baga Beach?").
+ * Options use the same { placeId, votes } shape as place polls, with
+ * placeId 'yes' / 'no' and a label, so voting and closing work unchanged.
+ */
+export async function createStopPoll({ tripId, placeName, placeId = null, createdBy }) {
+    const { db, collection, addDoc, serverTimestamp } = await getFirebase();
+    const ref = await addDoc(collection(db, 'polls'), {
+        tripId,
+        kind: 'include',
+        title: `Should we visit ${placeName}?`,
+        subjectName: placeName,
+        subjectPlaceId: placeId,
+        options: [
+            { placeId: 'yes', label: 'Yes, keep it', votes: [] },
+            { placeId: 'no', label: 'No, skip it', votes: [] },
+        ],
+        status: 'open',
+        createdBy,
+        createdAt: serverTimestamp(),
+    });
+    return ref.id;
+}
+
 export async function castVote({ pollId, placeId, userId }) {
     const { db, doc, getDoc, updateDoc } = await getFirebase();
     const pollRef = doc(db, 'polls', pollId);
@@ -400,7 +424,9 @@ export async function closePoll(pollId, _tripId) {
 
     await updateDoc(pollRef, { status: 'closed', winnerId });
 
-    if (winnerId) {
+    // A place poll's winner is a place to add to the route. A yes/no stop
+    // poll only records the answer — removing a stop is left to the people.
+    if (winnerId && data.kind !== 'include') {
         await togglePlaceSelected(winnerId, true);
     }
     return winnerId;

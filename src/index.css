@@ -1344,7 +1344,10 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
 /* While Chat is open the document never scrolls — only the message list.
    --app-h is the visible height (it shrinks when a phone keyboard opens). */
 html.chat-lock, html.chat-lock body { height: 100%; overflow: hidden; overscroll-behavior: none; }
-html.chat-lock .trip-layout-modern { height: var(--app-h, 100dvh); }
+html.chat-lock .trip-layout-modern {
+  position: fixed; left: 0; right: 0;
+  top: var(--app-top, 0px); height: var(--app-h, 100dvh);
+}
 html.chat-lock .trip-content-modern, html.chat-lock .trip-content-modern > main { overflow: hidden; }
 html.kb-open .trip-bottom-nav { display: none !important; }
 .chat-container { min-width: 0; max-width: 100%; overflow-x: hidden; }
@@ -3092,6 +3095,31 @@ html.kb-open .trip-bottom-nav { display: none !important; }
   color: var(--accent); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
 }
 .planner-start-chip:hover { background: #E5EDFB; }
+.planner-ask-crew {
+  display: flex; align-items: center; gap: 8px; margin: 0 0 16px;
+  padding: 10px 12px; border-radius: 12px; background: #F5F3FF; border: 1px solid #DDD6FE;
+  font-size: 13px; color: #4C1D95; cursor: pointer; line-height: 1.35;
+}
+.planner-ask-crew input { width: 18px; height: 18px; accent-color: #6D28D9; flex-shrink: 0; }
+.planner-ask-crew svg { color: #6D28D9; flex-shrink: 0; }
+.rp-ask-crew { margin: 0 24px 0; }
+@media (max-width: 560px) { .rp-ask-crew { margin: 0 16px; } }
+.planner-vote-chip {
+  display: inline-flex; align-items: center; gap: 5px; min-height: 32px;
+  padding: 0 10px; border-radius: 999px; border: 1px solid #DDD6FE; background: #fff;
+  color: #6D28D9; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap;
+}
+.planner-vote-chip:hover:not(:disabled) { background: #F5F3FF; }
+.planner-vote-chip.is-live { background: #6D28D9; border-color: #6D28D9; color: #fff; }
+.planner-add-row { display: flex; gap: 10px; }
+.planner-add-row .planner-add-btn { flex: 1; margin: 0; }
+.planner-discover-btn {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 0 14px; border-radius: 16px; border: 1.5px solid #BFD0F0;
+  background: #F5F8FE; color: var(--accent); font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+}
+.planner-discover-modal { padding: 0; overflow: visible; }
+.planner-discover-modal > p:first-child { display: none; }
 .planner-discover-toggle {
   display: flex; align-items: center; gap: 8px; width: 100%;
   min-height: 48px; padding: 0 16px; flex-shrink: 0;

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
 import { useGuestMode } from '../context/GuestModeContext';
-import { castVote, closePoll } from '../services/firestoreService';
+import { castVote, closePoll, deletePlace } from '../services/firestoreService';
 import { BarChart3, Crown, Sparkles, Vote } from 'lucide-react';
 import usePageSeo from '../hooks/usePageSeo';
 
@@ -23,15 +23,36 @@ export default function PollsPage() {
     async function handleClose(pollId) {
         setClosing(pollId);
         try {
+            const poll = polls.find((p) => p.id === pollId);
             const winnerId = await closePoll(pollId, selectedTrip.id);
-            const winningPlace = places.find((p) => p.id === winnerId);
-            alert(`Poll closed — Winner: ${winningPlace?.name || 'Unknown'}`);
+            if (poll?.kind === 'include') {
+                alert(winnerId === 'no'
+                    ? `Poll closed — the crew would skip ${poll.subjectName}.`
+                    : winnerId === 'yes' ? `Poll closed — ${poll.subjectName} stays in the plan.` : 'Poll closed — no votes.');
+            } else {
+                const winningPlace = places.find((p) => p.id === winnerId);
+                alert(`Poll closed — Winner: ${winningPlace?.name || 'Unknown'}`);
+            }
         } catch (e) { alert(e.message); }
         finally { setClosing(null); }
     }
 
-    function getPlaceName(placeId) {
-        return places.find((p) => p.id === placeId)?.name || placeId;
+    function getOptionLabel(opt) {
+        return opt.label || places.find((p) => p.id === opt.placeId)?.name || opt.placeId;
+    }
+
+    // The stop a yes/no poll is about (by id, else by name — the stop may not
+    // have been saved yet when the poll was started).
+    const subjectOf = (poll) => places.find((p) => p.id === poll.subjectPlaceId)
+        || places.find((p) => p.name?.trim().toLowerCase() === poll.subjectName?.trim().toLowerCase());
+    const [removing, setRemoving] = useState(null);
+    async function removeSubject(poll) {
+        const stop = subjectOf(poll);
+        if (!stop || !window.confirm(`Remove ${stop.name} from the plan?`)) return;
+        setRemoving(poll.id);
+        try { await deletePlace(stop.id); }
+        catch (e) { alert(e.message); }
+        finally { setRemoving(null); }
     }
 
     const openPolls = polls.filter(p => p.status === 'open').length;
@@ -45,7 +66,7 @@ export default function PollsPage() {
                     <h1 className="page-title" style={{ marginTop: 6 }}>Polls</h1>
                     <p className="page-subtitle">
                         {polls.length === 0
-                            ? 'Resolve group disagreements democratically. Create polls from the Map view.'
+                            ? 'Resolve group disagreements democratically. Put a stop to a vote from the Plan tab, or compare places on the Map.'
                             : `${openPolls} live · ${closedPolls} closed · cast your vote and see the winner instantly.`}
                     </p>
                 </div>
@@ -55,7 +76,7 @@ export default function PollsPage() {
                 <div className="empty-state">
                     <div className="empty-state-icon">🗳️</div>
                     <div className="empty-state-title">No polls yet</div>
-                    <div className="empty-state-text">Head to the Map tab, select two or more places, and create a poll so the whole crew can vote.</div>
+                    <div className="empty-state-text">On the Plan tab, tap 🗳 on any stop to ask the crew whether to keep it — or pick two or more places on the Map to vote between them.</div>
                 </div>
             ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
@@ -114,7 +135,7 @@ export default function PollsPage() {
                                                 aria-pressed={isMine}
                                             >
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
-                                                    <span style={{ fontWeight: 700, fontSize: 'clamp(13px, 1.8vw, 15px)', color: 'var(--text-primary)' }}>{getPlaceName(opt.placeId)}</span>
+                                                    <span style={{ fontWeight: 700, fontSize: 'clamp(13px, 1.8vw, 15px)', color: 'var(--text-primary)' }}>{getOptionLabel(opt)}</span>
                                                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                                                         {isMine && <span className="badge badge-indigo" style={{ padding: '2px 8px', fontSize: 10 }}>Your vote</span>}
                                                         {isWinner && <Crown size={16} color="var(--color-amber)" aria-hidden="true" />}
@@ -150,9 +171,24 @@ export default function PollsPage() {
                                             : <><Sparkles size={16} aria-hidden="true" /> Close poll & lock in winner</>}
                                     </button>
                                 )}
-                                {!isOpen && (
+                                {!isOpen && poll.kind !== 'include' && (
                                     <div style={{ marginTop: 16, padding: 12, background: 'rgba(245,158,11,0.08)', borderRadius: 12, border: '1px solid rgba(245,158,11,0.22)', display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#92400e', fontWeight: 600 }}>
                                         <Vote size={16} aria-hidden="true" /> Winner added to your trip stops.
+                                    </div>
+                                )}
+                                {!isOpen && poll.kind === 'include' && (
+                                    <div style={{ marginTop: 16, padding: 12, background: 'rgba(245,158,11,0.08)', borderRadius: 12, border: '1px solid rgba(245,158,11,0.22)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap', fontSize: 13, color: '#92400e', fontWeight: 600 }}>
+                                        <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                            <Vote size={16} aria-hidden="true" />
+                                            {poll.winnerId === 'no'
+                                                ? `The crew would skip ${poll.subjectName}.`
+                                                : poll.winnerId === 'yes' ? `${poll.subjectName} stays in the plan.` : 'No votes were cast.'}
+                                        </span>
+                                        {poll.winnerId === 'no' && !isGuest && subjectOf(poll) && (
+                                            <button type="button" className="btn btn-ghost btn-sm" onClick={() => removeSubject(poll)} disabled={removing === poll.id}>
+                                                {removing === poll.id ? 'Removing…' : `Remove ${poll.subjectName} from the plan`}
+                                            </button>
+                                        )}
                                     </div>
                                 )}
                             </div>

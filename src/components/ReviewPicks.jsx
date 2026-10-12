@@ -3,7 +3,7 @@
 // suggested visit length (which you can change) and the AI's best time of day
 // to be there. Used by the Explore-region and must-visits-on-the-way modals.
 import { useEffect, useState } from 'react';
-import { Minus, Plus, RotateCcw, Sun, Loader } from 'lucide-react';
+import { Minus, Plus, RotateCcw, Sun, Loader, Vote } from 'lucide-react';
 import PlaceThumb from './PlaceThumb';
 import { formatBestTime } from '../utils/bestTime';
 
@@ -18,7 +18,8 @@ function formatMins(m) {
     return r ? `${h}h ${r}m` : `${h}h`;
 }
 
-export default function ReviewPicks({ picks, area, onBack, onConfirm, footerPadding }) {
+export default function ReviewPicks({ picks, area, onBack, onConfirm, footerPadding, canPoll = false }) {
+    const [askCrew, setAskCrew] = useState(false);
     const suggested = picks.map((p) => p.estimatedMinutes || 60);
     const [minutes, setMinutes] = useState(suggested);
     // Best times: from the suggestion itself, else asked for here.
@@ -57,7 +58,7 @@ export default function ReviewPicks({ picks, area, onBack, onConfirm, footerPadd
         ...p,
         estimatedMinutes: minutes[i],
         ...(times[i] ? { bestTime: times[i].bestTime, bestTimeReason: times[i].reason } : {}),
-    })));
+    })), { askCrew: canPoll && askCrew });
 
     return (
         <>
@@ -106,6 +107,13 @@ export default function ReviewPicks({ picks, area, onBack, onConfirm, footerPadd
                     })}
                 </ul>
             </div>
+            {canPoll && (
+                <label className="planner-ask-crew rp-ask-crew">
+                    <input type="checkbox" checked={askCrew} onChange={(e) => setAskCrew(e.target.checked)} />
+                    <Vote size={16} aria-hidden="true" />
+                    <span><strong>Let the crew vote</strong> on whether to keep {picks.length > 1 ? 'each of these' : 'this stop'}</span>
+                </label>
+            )}
             <div className="rp-foot" style={footerPadding ? { padding: footerPadding } : undefined}>
                 <button type="button" className="rp-back" onClick={onBack}>Back</button>
                 <button type="button" className="rp-add" onClick={confirm}>
