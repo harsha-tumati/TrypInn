@@ -845,17 +845,31 @@ function PlannerContent({ onOpenMap }) {
   // Polls are a saved-trip feature (like the Polls tab), so only members of a
   // claimed trip can start one.
   const canPoll = !isGuest && !!user && isTripClaimed(selectedTrip);
-  const openStopPoll = (name) => (polls || []).find(p =>
-    p.kind === 'include' && p.status === 'open' && p.subjectName?.trim().toLowerCase() === name?.trim().toLowerCase());
+  // Names polled this session count as "voting" straight away — before the
+  // new poll arrives from Firestore — so a quick second tap can't start a
+  // duplicate.
+  const [startedPolls, setStartedPolls] = useState(() => new Map()); // name -> polls it had when started
+  const norm = (n) => n?.trim().toLowerCase() || '';
+  const stopPolls = (name) => (polls || []).filter(p => p.kind === 'include' && norm(p.subjectName) === norm(name));
+  const openStopPoll = (name) => {
+    const found = stopPolls(name);
+    if (found.some(p => p.status === 'open')) return true;
+    // Just started and not back from Firestore yet.
+    return startedPolls.has(norm(name)) && found.length <= startedPolls.get(norm(name));
+  };
   const [pollBusy, setPollBusy] = useState(null);
   const askCrew = async (names) => {
     if (!canPoll) return;
     for (const name of names) {
       if (!name || openStopPoll(name)) continue;
+      setStartedPolls(prev => new Map(prev).set(norm(name), stopPolls(name).length));
       const saved = places.find(p => p.name?.trim().toLowerCase() === name.trim().toLowerCase());
       try {
         await createStopPoll({ tripId: selectedTrip.id, placeName: name, placeId: saved?.id || null, createdBy: user.uid });
-      } catch (e) { console.error('Could not start the poll', e); }
+      } catch (e) {
+        console.error('Could not start the poll', e);
+        setStartedPolls(prev => { const n = new Map(prev); n.delete(norm(name)); return n; });
+      }
     }
   };
   const askCrewAbout = async (stop) => {
@@ -1001,7 +1015,7 @@ function PlannerContent({ onOpenMap }) {
               </div>
             </div>
             {isReal && !isGuest && (
-              <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0, marginLeft: isMobile ? (nested ? 52 : 60) : 0 }}>
+              <div style={{ display:'flex', alignItems:'center', gap: isMobile ? 6 : 8, flexShrink: isMobile ? 1 : 0, flexWrap: isMobile ? 'wrap' : 'nowrap', minWidth: 0, marginLeft: isMobile ? (nested ? 52 : 60) : 0 }}>
                 {/* Reorder buttons */}
                 <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
                   <button type="button" onClick={() => onMove(-1)} disabled={!canUp} title="Move up" aria-label={`Move ${stop.name} up`} style={{ background:'none', border:'none', cursor: canUp ? 'pointer' : 'default', color: canUp ? '#64748b' : '#cbd5e1', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
@@ -1019,8 +1033,8 @@ function PlannerContent({ onOpenMap }) {
                   <span style={{ fontSize:11, color:'#64748b' }}>min</span>
                 </div>
                 {canPoll && (openStopPoll(stop.name) ? (
-                  <button type="button" className="planner-vote-chip is-live" onClick={() => navigate(`/trip/${selectedTrip.id}/polls`)} title="The crew is voting on this stop — see the poll">
-                    <Vote size={14} aria-hidden="true" /> Voting
+                  <button type="button" className="planner-vote-chip is-live" onClick={() => navigate(`/trip/${selectedTrip.id}/polls`)} title="The crew is voting on this stop — see the poll" aria-label={`The crew is voting on ${stop.name} — see the poll`}>
+                    <Vote size={14} aria-hidden="true" />{!isMobile && ' Voting'}
                   </button>
                 ) : (
                   <button type="button" className="planner-vote-chip" onClick={() => askCrewAbout(stop)} disabled={pollBusy === stop.id} aria-label={`Ask the crew whether to keep ${stop.name}`} title="Ask the crew whether to keep this stop">
@@ -1191,7 +1205,7 @@ function PlannerContent({ onOpenMap }) {
   return (
     <div className="planner-page" style={isNarrow ? { display: 'flex', flexDirection: 'column', overflow: 'hidden' } : undefined}>
       {/* Main panel */}
-      <div className="planner-main" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch' } : undefined}>
+      <div className="planner-main" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', overflowX: 'hidden', WebkitOverflowScrolling: 'touch' } : undefined}>
         {/* Header */}
         <div className="trip-head">
           <div className="trip-head-text">
