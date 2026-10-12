@@ -7,7 +7,7 @@ import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
 import { Map, AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 import { getEnRouteSuggestions } from '../config/openai';
-import { enrichPlacesWithGoogle, searchNearby, reverseGeocode, getPersonalRoute, getPlaceDetails } from '../services/placesService';
+import { enrichPlacesWithGoogle, searchNearby, reverseGeocode, getPersonalRoute, getPlaceDetails, findPlaceIdNear } from '../services/placesService';
 import { addPlaces, updatePlace, createPoll, deletePlace, updateTripStatus, updateMemberLocation, updatePlaceOrder, updateRouteConfig } from '../services/firestoreService';
 import { getOptimizedRoute } from '../services/routeService';
 import { hasCoords } from '../utils/geo';
@@ -300,6 +300,28 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         fetchPersonalRoute();
     }, [tripActive, selectedPlaces, myLocation]);
 
+    // Google Maps links name each place by its Google place ID. Stops saved
+    // before IDs were kept would open as bare coordinates — unnamed pins on
+    // the nearest road — so look their places up around each pin.
+    const routeStart = trip?.startingPoint ? { ...trip.startingPoint, id: '_start' } : null;
+    const routeEnd = trip?.endingPoint ? { ...trip.endingPoint, id: '_end' } : routeStart;
+    const [foundPlaceIds, setFoundPlaceIds] = useState({});
+    const routeForIds = routeResult?.customOrderedPlaces?.length ? routeResult.customOrderedPlaces : selectedPlaces;
+    const idLookupKey = JSON.stringify([routeStart, ...routeForIds.filter(p => p && !p.isStartingPoint).slice(0, 10), routeEnd]
+        .filter(p => p && p.lat != null && p.name && !p.googlePlaceId && !p.placeId)
+        .map(p => ({ id: p.id, name: p.name, lat: p.lat, lng: p.lng })));
+    useEffect(() => {
+        const missing = JSON.parse(idLookupKey);
+        if (!missing.length) return;
+        let alive = true;
+        Promise.all(missing.map(async p => [p.id, await findPlaceIdNear(p).catch(() => null)]))
+            .then(pairs => {
+                const ids = Object.fromEntries(pairs.filter(([, v]) => v));
+                if (alive && Object.keys(ids).length) setFoundPlaceIds(prev => ({ ...prev, ...ids }));
+            });
+        return () => { alive = false; };
+    }, [idLookupKey]);
+
     if (!trip) return <div className="page-container"><p>No trip selected.</p></div>;
 
     // Defensive: the map cannot render without a Google Maps key / APIProvider.
@@ -474,17 +496,14 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
     const navStops = (routeResult?.customOrderedPlaces?.length ? routeResult.customOrderedPlaces : selectedPlaces)
         .filter(p => p && !p.isStartingPoint && p.lat != null);
     const navLeg = navStops.slice(0, 10);
-    const googleMapsUrl = navLeg.length
-        ? 'https://www.google.com/maps/dir/?api=1&travelmode=driving'
-            + `&destination=${navLeg[navLeg.length - 1].lat},${navLeg[navLeg.length - 1].lng}`
-            + (navLeg.length > 1 ? `&waypoints=${encodeURIComponent(navLeg.slice(0, -1).map(p => `${p.lat},${p.lng}`).join('|'))}` : '')
-        : null;
+    const googleMapsUrl = googleMapsRouteUrl({ stops: navLeg, placeIds: foundPlaceIds, fromHere: true }).url;
 
     // The whole plan in Google Maps: start → every stop on the route → end.
     const fullRoute = googleMapsRouteUrl({
-        start: trip?.startingPoint,
+        start: routeStart,
         stops: navStops,
-        end: trip?.endingPoint || trip?.startingPoint,
+        end: routeEnd,
+        placeIds: foundPlaceIds,
     });
 
     async function startNavigation() {
