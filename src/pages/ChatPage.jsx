@@ -67,11 +67,15 @@ export default function ChatPage() {
         const root = document.documentElement;
         const vv = window.visualViewport;
         root.classList.add('chat-lock');
+        // iOS also pans the visual viewport down (offsetTop) when the
+        // keyboard opens, and the page can't be scrolled back under it — so
+        // the layout follows the visible area's position as well as its size.
         const fit = () => {
             if (!vv) return;
             root.style.setProperty('--app-h', `${Math.round(vv.height)}px`);
+            root.style.setProperty('--app-top', `${Math.round(vv.offsetTop)}px`);
             root.classList.toggle('kb-open', vv.height < window.innerHeight * 0.8);
-            if (window.scrollY || vv.offsetTop) window.scrollTo(0, 0);
+            if (window.scrollY) window.scrollTo(0, 0);
         };
         fit();
         vv?.addEventListener('resize', fit);
@@ -81,6 +85,7 @@ export default function ChatPage() {
             vv?.removeEventListener('scroll', fit);
             root.classList.remove('chat-lock', 'kb-open');
             root.style.removeProperty('--app-h');
+            root.style.removeProperty('--app-top');
         };
     }, []);
     const textareaRef = useRef(null);
@@ -381,9 +386,11 @@ export default function ChatPage() {
                         background: '#fff',
                         border: '1.5px solid var(--border-medium)',
                         borderRadius: 16,
-                        padding: 'clamp(10px, 1.5vw, 14px) clamp(14px, 2vw, 18px)',
+                        padding: isMobile ? '6px 6px 6px 14px' : 'clamp(10px, 1.5vw, 14px) clamp(14px, 2vw, 18px)',
                         display: 'flex',
-                        flexDirection: 'column',
+                        flexDirection: isMobile ? 'row' : 'column',
+                        alignItems: isMobile ? 'flex-end' : 'stretch',
+                        gap: isMobile ? 8 : 0,
                         boxShadow: 'var(--shadow-sm)',
                         transition: 'border-color var(--transition-fast), box-shadow var(--transition-fast)',
                         position: 'relative',
@@ -409,10 +416,10 @@ export default function ChatPage() {
                             aria-autocomplete="list"
                             aria-expanded={mentions.open}
                             rows={1}
-                            style={{ border: 'none', background: 'transparent', width: '100%', resize: 'none', fontSize: 16, color: 'var(--text-primary)', outline: 'none', marginBottom: isMobile ? 8 : 12, minHeight: 26, fontFamily: 'inherit', lineHeight: 1.5 }}
+                            style={{ border: 'none', background: 'transparent', width: '100%', resize: 'none', fontSize: 16, color: 'var(--text-primary)', outline: 'none', marginBottom: isMobile ? 0 : 12, minHeight: 26, alignSelf: 'center', flex: isMobile ? 1 : undefined, padding: isMobile ? '8px 0' : 0, fontFamily: 'inherit', lineHeight: 1.5 }}
                         />
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-                            <div style={{ fontSize: 11.5, color: 'var(--text-muted)', fontWeight: 500, visibility: isMobile ? 'hidden' : 'visible' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexShrink: 0 }}>
+                            <div style={{ fontSize: 11.5, color: 'var(--text-muted)', fontWeight: 500, display: isMobile ? 'none' : 'block' }}>
                                 <kbd style={{ background: 'rgba(15,23,42,0.06)', padding: '2px 6px', borderRadius: 5, fontFamily: 'inherit', fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)' }}>Enter</kbd> to send · <kbd style={{ background: 'rgba(15,23,42,0.06)', padding: '2px 6px', borderRadius: 5, fontFamily: 'inherit', fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)' }}>Shift+Enter</kbd> new line
                             </div>
                             <button

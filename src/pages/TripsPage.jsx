@@ -32,6 +32,7 @@ import {
     Send, X, ArrowRight, Compass, Flame, Quote, Zap, ChevronRight, BookOpen, UserPlus,
 } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { scrollToSection } from '../utils/scrollToSection';
 
 // Trending destinations — also imported by other pages (map, etc.)
 export const TRENDING = [
@@ -221,6 +222,14 @@ export default function TripsPage() {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location.state]);
+
+    // Arriving from "My trips" on another page (/#my-trips-section): land on
+    // the section once the trip list has loaded, so it doesn't move after.
+    useEffect(() => {
+        if (location.hash !== '#my-trips-section' || loading) return;
+        const id = requestAnimationFrame(() => scrollToSection('my-trips-section'));
+        return () => cancelAnimationFrame(id);
+    }, [location.hash, loading]);
 
     // Defer trip fetching until after initial paint to avoid blocking LCP
     useEffect(() => {

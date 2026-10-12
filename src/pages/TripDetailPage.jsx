@@ -28,9 +28,11 @@ const markerColors = { ai: '#EA4335', food: '#F29900', hidden_gem: '#34A853', ne
 const TABS = [
     { id: 'places', label: 'Places', icon: '📍' },
     { id: 'route', label: 'Route', icon: '🛣️' },
-    { id: 'on_the_way', label: 'On route', icon: '🧭' },
+    // AI tabs are switched off for now to keep the map simple — the code
+    // below (fetchEnRouteSuggestions, their panels and pins) is kept, commented.
+    // { id: 'on_the_way', label: 'On route', icon: '🧭' },
     { id: 'nearby', label: 'Nearby', icon: '🔍' },
-    { id: 'ai', label: 'AI stops', icon: '✨' },
+    // { id: 'ai', label: 'AI stops', icon: '✨' },
 ];
 
 function ImageCarousel({ images, name }) {
@@ -525,7 +527,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
         ...(routeResult ? [...routeStops, ...routeBoundsPts] : allMapPlaces),
         ...(hasCoords(trip.startingPoint) ? [trip.startingPoint] : []),
         ...(hasCoords(trip.endingPoint) ? [trip.endingPoint] : []),
-        ...temporarySuggestions,
+        // ...temporarySuggestions, // AI stops — switched off (see TABS)
         ...nearbyResults,
     ].filter((p) => p && Number.isFinite(p.lat) && Number.isFinite(p.lng));
     const cameraKey = cameraPoints.map((p) => `${p.lat.toFixed(4)},${p.lng.toFixed(4)}`).join('|');
@@ -574,11 +576,13 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         </AdvancedMarker>
                     );
                 })}
+                {/* AI stop pins — switched off with the AI tabs (see TABS).
                 {temporarySuggestions.map((place, i) => (
                     <AdvancedMarker key={`temp_${i}`} position={{ lat: place.lat, lng: place.lng }} title={place.name} onClick={() => setSelectedPlace({ ...place, isTemp: true })}>
                         <Pin background="#1E1E3F" glyphColor="#FDE047" borderColor="#FDE047" scale={0.8} />
                     </AdvancedMarker>
                 ))}
+                */}
                 {nearbyResults.map((p, i) => (
                     <AdvancedMarker key={`nearby_${i}`} position={{ lat: p.lat, lng: p.lng }} title={p.name}>
                         <Pin background={markerColors.nearby} glyphColor="#fff" borderColor="transparent" />
@@ -831,6 +835,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         )
                     )}
 
+                    {/* AI "On route" panel — switched off (see TABS).
                     {bottomTab === 'on_the_way' && (
                         <div className="tm-empty">
                             <span style={{ fontSize: 38 }}>🧭</span>
@@ -845,6 +850,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             </button>
                         </div>
                     )}
+                    */}
 
                     {bottomTab === 'nearby' && (
                         <>
@@ -883,6 +889,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                         </>
                     )}
 
+                    {/* AI "AI stops" panel — switched off (see TABS).
                     {bottomTab === 'ai' && (
                         loadingEnRoute ? (
                             <div className="tm-empty">
@@ -925,6 +932,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             </div>
                         )
                     )}
+                    */}
                 </div>
 
                 {trip.status === 'active' && (

@@ -4,6 +4,7 @@ import { Link, useNavigate, NavLink, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { LogOut, BookOpen, Plus, LogIn, MapPin, Globe } from 'lucide-react';
 import BrandMark from './BrandMark';
+import { scrollToSection } from '../utils/scrollToSection';
 
 export default function Navbar() {
     const { user, userProfile, loading, authHint, signOut } = useAuth();
@@ -55,10 +56,11 @@ export default function Navbar() {
                         className="navbar-link"
                         aria-label="My trips"
                         onClick={(e) => {
-                            if (pathname === '/') {
-                                e.preventDefault();
-                                document.getElementById('my-trips-section')?.scrollIntoView({ behavior: 'smooth' });
-                            }
+                            // Stay in the app (a plain link reloaded the page) and
+                            // let the homepage land on the section once it's ready.
+                            e.preventDefault();
+                            if (pathname === '/') scrollToSection('my-trips-section');
+                            else navigate('/#my-trips-section');
                         }}
                     >
                         <MapPin size={15} aria-hidden="true" />
