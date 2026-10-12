@@ -1341,6 +1341,13 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
 }
 
 /* ── Chat ────────────────────────────────────────────────────── */
+/* While Chat is open the document never scrolls — only the message list.
+   --app-h is the visible height (it shrinks when a phone keyboard opens). */
+html.chat-lock, html.chat-lock body { height: 100%; overflow: hidden; overscroll-behavior: none; }
+html.chat-lock .trip-layout-modern { height: var(--app-h, 100dvh); }
+html.chat-lock .trip-content-modern, html.chat-lock .trip-content-modern > main { overflow: hidden; }
+html.kb-open .trip-bottom-nav { display: none !important; }
+.chat-container { min-width: 0; max-width: 100%; overflow-x: hidden; }
 .chat-container { display: flex; flex-direction: column; height: 100%; }
 .chat-header {
   background: rgba(251, 250, 248, 0.86);

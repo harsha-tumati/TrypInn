@@ -10,6 +10,7 @@ import { chatWithAssistant } from '../config/openai';
 import { formatTimestamp } from '../utils/dateHelpers';
 import { Send, Sparkles, Users } from 'lucide-react';
 import usePageSeo from '../hooks/usePageSeo';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 // Split a message body so mentions can be styled. Tokens come from the
 // message's own `mentions` array where present; older messages predate that
@@ -55,6 +56,33 @@ export default function ChatPage() {
     }, [draftKey, text]);
     const [aiTyping, setAiTyping] = useState(false);
     const bottomRef = useRef(null);
+    const isMobile = useIsMobile();
+
+    // Chat behaves like a messaging app: the page itself never scrolls, only
+    // the messages do. On phones the keyboard shrinks the *visual* viewport
+    // and Safari would slide the whole page up to keep the input in view, so
+    // the trip layout is sized to the visible area instead (--app-h), and the
+    // bottom tab bar steps aside while typing.
+    useEffect(() => {
+        const root = document.documentElement;
+        const vv = window.visualViewport;
+        root.classList.add('chat-lock');
+        const fit = () => {
+            if (!vv) return;
+            root.style.setProperty('--app-h', `${Math.round(vv.height)}px`);
+            root.classList.toggle('kb-open', vv.height < window.innerHeight * 0.8);
+            if (window.scrollY || vv.offsetTop) window.scrollTo(0, 0);
+        };
+        fit();
+        vv?.addEventListener('resize', fit);
+        vv?.addEventListener('scroll', fit);
+        return () => {
+            vv?.removeEventListener('resize', fit);
+            vv?.removeEventListener('scroll', fit);
+            root.classList.remove('chat-lock', 'kb-open');
+            root.style.removeProperty('--app-h');
+        };
+    }, []);
     const textareaRef = useRef(null);
 
     useEffect(() => {
@@ -227,7 +255,11 @@ export default function ChatPage() {
             <div
                 style={{
                     flex: 1,
+                    minHeight: 0,
                     overflowY: 'auto',
+                    overflowX: 'hidden',
+                    overscrollBehavior: 'contain',
+                    WebkitOverflowScrolling: 'touch',
                     padding: 'clamp(16px, 2.4vw, 32px) clamp(16px, 3vw, 36px)',
                     display: 'flex',
                     flexDirection: 'column',
@@ -368,7 +400,7 @@ export default function ChatPage() {
                         <textarea
                             id="chat-textarea"
                             ref={textareaRef}
-                            placeholder="Write a message…  type @ to mention someone or the AI"
+                            placeholder={isMobile ? 'Message… @ to mention' : 'Write a message…  type @ to mention someone or the AI'}
                             value={text}
                             onChange={mentions.handleChange}
                             onKeyDown={handleKeyDown}
@@ -377,10 +409,10 @@ export default function ChatPage() {
                             aria-autocomplete="list"
                             aria-expanded={mentions.open}
                             rows={1}
-                            style={{ border: 'none', background: 'transparent', width: '100%', resize: 'none', fontSize: 15, color: 'var(--text-primary)', outline: 'none', marginBottom: 12, minHeight: 26, fontFamily: 'inherit', lineHeight: 1.5 }}
+                            style={{ border: 'none', background: 'transparent', width: '100%', resize: 'none', fontSize: 16, color: 'var(--text-primary)', outline: 'none', marginBottom: isMobile ? 8 : 12, minHeight: 26, fontFamily: 'inherit', lineHeight: 1.5 }}
                         />
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-                            <div style={{ fontSize: 11.5, color: 'var(--text-muted)', fontWeight: 500 }}>
+                            <div style={{ fontSize: 11.5, color: 'var(--text-muted)', fontWeight: 500, visibility: isMobile ? 'hidden' : 'visible' }}>
                                 <kbd style={{ background: 'rgba(15,23,42,0.06)', padding: '2px 6px', borderRadius: 5, fontFamily: 'inherit', fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)' }}>Enter</kbd> to send · <kbd style={{ background: 'rgba(15,23,42,0.06)', padding: '2px 6px', borderRadius: 5, fontFamily: 'inherit', fontSize: 11, fontWeight: 600, color: 'var(--text-secondary)' }}>Shift+Enter</kbd> new line
                             </div>
                             <button
