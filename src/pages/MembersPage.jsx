@@ -1,18 +1,14 @@
 import React from 'react';
 import { useTrip } from '../context/TripContext';
-import { Users, Shield, UserPlus } from 'lucide-react';
-import { useState } from 'react';
-import { useGuestMode } from '../context/GuestModeContext';
-import ShareTripDialog, { useIsTripOrganiser } from '../components/ShareTripDialog';
+import { Users, Shield } from 'lucide-react';
+import { useIsTripOrganiser } from '../components/ShareTripDialog';
 import JoinRequestsList from '../components/JoinRequestsList';
 import usePageSeo from '../hooks/usePageSeo';
 
 export default function MembersPage() {
     usePageSeo({ title: 'Trip Members', robots: 'noindex, nofollow' });
-    const { members, selectedTrip, joinRequests } = useTrip();
-    const isGuest = useGuestMode();
+    const { members, joinRequests } = useTrip();
     const isOrganiser = useIsTripOrganiser();
-    const [shareOpen, setShareOpen] = useState(false);
 
     // Determine deterministic vivid colours for members
     const memberColors = [
@@ -43,18 +39,8 @@ export default function MembersPage() {
                         {members.length} {members.length === 1 ? 'person is' : 'people are'} on this trip.
                     </p>
                 </div>
-                {!isGuest && selectedTrip && (
-                    <button
-                        type="button"
-                        onClick={() => setShareOpen(true)}
-                        className="btn btn-accent btn-md"
-                        style={{ display: 'flex', alignItems: 'center', gap: 6 }}
-                    >
-                        <UserPlus size={16} aria-hidden="true" /> Invite people
-                    </button>
-                )}
+                {/* Inviting lives in the top bar's Invite button, on every trip screen. */}
             </div>
-            {shareOpen && <ShareTripDialog open onClose={() => setShareOpen(false)} />}
 
             {isOrganiser && joinRequests.length > 0 && (
                 <section className="glass-card-static" style={{ padding: 20, marginBottom: 24 }} aria-label="Requests to join">
