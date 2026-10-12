@@ -315,6 +315,7 @@ export async function addPlaces(tripId, placesArray) {
             if (p.imageUrl !== undefined) updates.imageUrl = p.imageUrl;
             if (p.description !== undefined) updates.description = p.description;
             if (p.group !== undefined) updates.group = p.group;
+            if (p.googlePlaceId) updates.googlePlaceId = p.googlePlaceId;
 
             if (Object.keys(updates).length > 0) {
                 await updateDoc(doc(db, 'places', existingId), updates);

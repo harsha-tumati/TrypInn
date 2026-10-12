@@ -28,10 +28,16 @@ function geocodePlace(name, location) {
         geocoder.geocode({ address }, (results, status) => {
             if (status === 'OK' && results?.length > 0) {
                 const r = results[0];
+                const vp = r.geometry.viewport;
                 resolve({
                     lat: r.geometry.location.lat(),
                     lng: r.geometry.location.lng(),
                     placeId: r.place_id,
+                    // Corner to corner of the area, for judging what's "nearby".
+                    spanKm: vp ? distanceKm(
+                        { lat: vp.getNorthEast().lat(), lng: vp.getNorthEast().lng() },
+                        { lat: vp.getSouthWest().lat(), lng: vp.getSouthWest().lng() },
+                    ) : 0,
                 });
             } else {
                 resolve(null);
@@ -147,6 +153,65 @@ function placeKey(place) {
     return `${(place.name || '').trim().toLowerCase()}${at}`;
 }
 
+// Straight-line distance in km between two { lat, lng }.
+function distanceKm(a, b) {
+    const rad = (d) => (d * Math.PI) / 180;
+    const dLat = rad(b.lat - a.lat);
+    const dLng = rad(b.lng - a.lng);
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(dLng / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(h));
+}
+
+// A match for a named place this far from where we expected it is a
+// different place with the same name ("Rock Beach" in another city). A big
+// destination (a state, a country) widens it to its own size.
+const MAX_MATCH_KM = 120;
+const matchRadiusKm = (geo) => Math.max(MAX_MATCH_KM, geo?.spanKm || 0);
+// A saved stop's own place is within a short walk of its pin.
+const NEAR_PIN_KM = 3;
+
+/**
+ * The Google place ID of a stop saved without one, found by name right
+ * around its pin. Used for "Open in Google Maps", so the link names real
+ * places instead of dropping pins. Remembered across reloads.
+ */
+export async function findPlaceIdNear(place) {
+    if (!place?.name || place.lat == null || place.lng == null) return null;
+    const key = placeKey(place);
+    const known = placeIds()[key];
+    if (known) return known;
+    const pin = { lat: Number(place.lat), lng: Number(place.lng) };
+    let found = null;
+    if (PLACES_KEY && !_restRefused) {
+        try {
+            const r = (await placesRest('places:searchText', 'places.id,places.location', {
+                textQuery: place.name,
+                maxResultCount: 1,
+                locationBias: { circle: { center: { latitude: pin.lat, longitude: pin.lng }, radius: 2000 } },
+            })).places?.[0];
+            if (r?.location) found = { id: r.id, lat: r.location.latitude, lng: r.location.longitude };
+        } catch (e) {
+            if (/ 40[13]$/.test(e.message)) _restRefused = true;
+        }
+    }
+    if (!found) {
+        try {
+            const Place = (await getPlacesLib())?.Place;
+            const { places } = Place ? await Place.searchByText({
+                textQuery: place.name,
+                fields: ['id', 'location'],
+                locationBias: { center: pin, radius: 2000 },
+                maxResultCount: 1,
+            }) : { places: [] };
+            const r = places?.[0];
+            if (r?.location) found = { id: r.id, lat: r.location.lat(), lng: r.location.lng() };
+        } catch { /* no ID; the link falls back to coordinates */ }
+    }
+    if (!found || distanceKm(pin, found) > NEAR_PIN_KM) return null;
+    rememberPlaceId(key, found.id);
+    return found.id;
+}
+
 async function lookupPhotoRest(place) {
     const id = place.googlePlaceId || placeIds()[placeKey(place)];
     if (id) {
@@ -235,13 +300,16 @@ export function fetchPlaceImage(place) {
  * Find a named place (attraction) via the new Places API text search.
  * Much more accurate than the Geocoder for named tourist spots.
  */
-async function findPlaceByName(name, locationBias) {
+async function findPlaceByName(name, locationBias, area = '', maxKm = 0) {
     if (!name) return null;
     const Place = (await getPlacesLib())?.Place;
     if (!Place) return null;
     try {
+        // Naming the area keeps "Rock Beach" in Pondicherry, not some other
+        // Rock Beach; the bias alone is only a preference.
+        const inName = area && name.toLowerCase().includes(area.toLowerCase());
         const request = {
-            textQuery: name,
+            textQuery: area && !inName ? `${name}, ${area}` : name,
             fields: ['id', 'displayName', 'location', 'rating', 'photos'],
             maxResultCount: 1,
         };
@@ -251,6 +319,8 @@ async function findPlaceByName(name, locationBias) {
         const { places } = await Place.searchByText(request);
         const r = places?.[0];
         if (!r) return null;
+        const at = { lat: r.location?.lat?.(), lng: r.location?.lng?.() };
+        if (locationBias && at.lat != null && distanceKm(locationBias, at) > (maxKm || MAX_MATCH_KM)) return null;
         const photos = r.photos || [];
         return {
             placeId: r.id,
@@ -274,11 +344,17 @@ export async function enrichPlacesWithGoogle(places, destination) {
     // Geocode the destination once for a location bias
     const destGeo = destination ? await geocodePlace(destination, '').catch(() => null) : null;
     const locationBias = destGeo ? { lat: destGeo.lat, lng: destGeo.lng } : null;
+    // One place ("Pondicherry") goes into each search; a route ("Chennai →
+    // Pondicherry") spans too much to name, so it only biases.
+    const area = destination && !/->|→|\|/.test(destination) && destination.length <= 40 ? destination.trim() : '';
+    // A geocoder hit far from the destination is a namesake elsewhere.
+    const maxKm = matchRadiusKm(destGeo);
+    const nearEnough = (geo) => !geo || !locationBias || distanceKm(locationBias, geo) <= maxKm;
 
     const promises = places.map(async (place) => {
         try {
             // findPlaceFromText gives us the correct attraction placeId, photos, and location
-            const found = await findPlaceByName(place.name, locationBias);
+            const found = await findPlaceByName(place.name, locationBias, area, maxKm);
             if (found?.placeId && !found.imageUrl) {
                 // Has placeId but no inline photos — fetch details
                 const details = await getPlaceDetails(found.placeId);
@@ -306,7 +382,8 @@ export async function enrichPlacesWithGoogle(places, destination) {
                 };
             }
             // Fallback: geocoder
-            const geo = await geocodePlace(place.name, destination);
+            let geo = await geocodePlace(place.name, destination);
+            if (!nearEnough(geo)) geo = null;
             let details = null;
             if (geo?.placeId) details = await getPlaceDetails(geo.placeId);
             return {

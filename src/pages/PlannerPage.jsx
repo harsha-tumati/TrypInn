@@ -72,7 +72,7 @@ function groupStops(stops) {
   return blocks;
 }
 
-const SYNCED_FIELDS = ['estimatedMinutes', 'group', 'lat', 'lng', 'description'];
+const SYNCED_FIELDS = ['estimatedMinutes', 'group', 'lat', 'lng', 'description', 'googlePlaceId'];
 const fieldValue = (key, v) => (key === 'description' ? (v || '') : (v ?? null));
 
 /**
@@ -90,7 +90,7 @@ async function savePlan(tripId, stops, savedPlaces) {
     id: s.id,
     name: s.name, description: s.description || '', category: s.category || '',
     lat: s.lat, lng: s.lng, imageUrl: s.imageUrl || null, estimatedMinutes: s.estimatedMinutes || 60,
-    group: s.group || null,
+    group: s.group || null, googlePlaceId: s.googlePlaceId || null,
     ...(s.bestTime ? { bestTime: s.bestTime, bestTimeReason: s.bestTimeReason || null } : {}),
   }));
 
@@ -926,7 +926,8 @@ function PlannerContent({ onOpenMap }) {
     if (placeObj) {
       edit(p => [...p, {
         id, name: placeObj.name, description: placeObj.formatted || '', category: 'default',
-        estimatedMinutes: 60, lat: placeObj.lat, lng: placeObj.lng, imageUrl: placeObj.imageUrl || null, geocoding: false
+        estimatedMinutes: 60, lat: placeObj.lat, lng: placeObj.lng, imageUrl: placeObj.imageUrl || null,
+        googlePlaceId: placeObj.googlePlaceId || placeObj.placeId || null, geocoding: false
       }]);
     } else {
       const tempStop = { id, name, description: '', category: 'default', estimatedMinutes: 60, lat: null, lng: null, geocoding: true };
@@ -934,7 +935,7 @@ function PlannerContent({ onOpenMap }) {
       setGeocodingId(id);
       try {
         const geo = await geocodeName(name);
-        edit(p => p.map(s => s.id === id ? { ...s, lat: geo?.lat, lng: geo?.lng, description: geo?.formatted || '', geocoding: false } : s));
+        edit(p => p.map(s => s.id === id ? { ...s, lat: geo?.lat, lng: geo?.lng, googlePlaceId: geo?.placeId || null, description: geo?.formatted || '', geocoding: false } : s));
       } catch {
         setStops(p => p.map(s => s.id === id ? { ...s, geocoding: false } : s));
       }
@@ -971,6 +972,7 @@ function PlannerContent({ onOpenMap }) {
           lat: p.lat || null,
           lng: p.lng || null,
           imageUrl: p.imageUrl || null,
+          googlePlaceId: p.googlePlaceId || p.placeId || null,
           group,
           bestTime: p.bestTime || null,
           bestTimeReason: p.bestTimeReason || null,
@@ -998,6 +1000,7 @@ function PlannerContent({ onOpenMap }) {
         lat: pl.lat || null,
         lng: pl.lng || null,
         imageUrl: pl.imageUrl || null,
+        googlePlaceId: pl.googlePlaceId || pl.placeId || null,
         bestTime: pl.bestTime || null,
         bestTimeReason: pl.bestTimeReason || null,
         geocoding: false,
