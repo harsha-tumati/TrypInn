@@ -1276,21 +1276,24 @@ function PlannerContent({ onOpenMap }) {
 
         {/* Pinned itinerary button. The plan saves itself, so this only has
             to wait for a save in flight before opening the itinerary. */}
+        {(!isNarrow || isGuest || editVersion > 0 || missingCount > 0) && (
         <div style={{ padding: isNarrow ? '10px 16px 12px' : '14px', borderTop: '1px solid var(--border-subtle)', background: 'rgba(255,255,255,0.5)', flexShrink: 0 }}>
+          {/* On phones and tablets the Itinerary tab is always on screen, so
+              the dock doesn't repeat it with its own button. */}
           {isGuest ? (
             <div style={{ textAlign: 'center', padding: '4px 0' }}>
-              <div style={{ fontSize: 13, color: '#64748b', marginBottom: isNarrow ? 8 : 12 }}>🔒 Join this trip to edit the plan</div>
-              <button type="button"
+              <div style={{ fontSize: 13, color: '#64748b', marginBottom: isNarrow ? 0 : 12 }}>🔒 Join this trip to edit the plan</div>
+              {!isNarrow && <button type="button"
                 onClick={() => navigate(`/trip/${selectedTrip.id}/itinerary`)}
                 className="planner-build-btn"
                 style={{ background: '#f8fafc', color: '#334155', border: '1px solid #e2e8f0', cursor: 'pointer' }}
               >
                 Go to itinerary <ChevronRight size={16} />
-              </button>
+              </button>}
             </div>
           ) : (
             <>
-              <button type="button"
+              {!isNarrow && <button type="button"
                 onClick={goToItinerary}
                 disabled={!canOpenItinerary || leaving}
                 className={`planner-build-btn ${canOpenItinerary ? 'is-built' : ''}`}
@@ -1301,7 +1304,7 @@ function PlannerContent({ onOpenMap }) {
                 ) : (
                   <>Go to itinerary <ChevronRight size={16} aria-hidden="true"/></>
                 )}
-              </button>
+              </button>}
               {editVersion > 0 && (
                 <p className="planner-save-status" role="status">
                   {saveError ? (
@@ -1321,6 +1324,7 @@ function PlannerContent({ onOpenMap }) {
             </p>
           )}
         </div>
+        )}
       </aside>
 
       {/* Modals */}
