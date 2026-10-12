@@ -14,7 +14,7 @@ import { getRegionPlaces, getRouteMustVisits } from '../config/openai';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
 import { MAPS_ENABLED } from '../config/maps';
-import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass, Search, Vote } from 'lucide-react';
+import { Plus, X, Clock, ChevronRight, Loader, Star, Route, ArrowUp, ArrowDown, Map as MapIcon, MapPin, Calendar, Pencil, Check, Compass, Search, Vote, GripVertical } from 'lucide-react';
 import ReadMore from '../components/ReadMore';
 import Modal from '../components/Modal';
 import { formatDate } from '../utils/dateHelpers';
@@ -23,6 +23,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
 import ReviewPicks from '../components/ReviewPicks';
+import { startDragReorder } from '../utils/dragReorder';
 import { formatBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 import { publicSummaryFor } from '../utils/publicTrips';
@@ -836,6 +837,46 @@ function PlannerContent({ onOpenMap }) {
     });
   };
 
+  // Drag-to-reorder: a lone stop or a whole region among the top-level
+  // blocks, or a place within its own region (the same moves the arrows
+  // offer, just any distance at once).
+  const moveBlockTo = (from, to) => {
+    edit(prev => {
+      const blocks = groupStops(prev);
+      if (!blocks[from]) return prev;
+      const [moved] = blocks.splice(from, 1);
+      blocks.splice(to, 0, moved);
+      return blocks.flatMap(b => b.entries.map(e => e.stop));
+    });
+  };
+  const moveWithinRegion = (ids, from, to) => {
+    edit(prev => {
+      const start = prev.findIndex(s => s.id === ids[0]);
+      if (start === -1) return prev;
+      const region = prev.slice(start, start + ids.length);
+      const [moved] = region.splice(from, 1);
+      region.splice(to, 0, moved);
+      return [...prev.slice(0, start), ...region, ...prev.slice(start + ids.length)];
+    });
+  };
+  const beginDrag = (e, onDrop) => startDragReorder(e, {
+    itemEl: e.currentTarget.closest('[data-drag-scope]'),
+    scroller: document.querySelector('.planner-main'),
+    onDrop,
+  });
+  const dragGrip = (label, onDrop) => (
+    <button
+      type="button"
+      className="planner-drag-grip itin-drag-handle"
+      onPointerDown={(e) => beginDrag(e, onDrop)}
+      onClick={(e) => e.preventDefault()}
+      aria-label={`Drag to reorder ${label}`}
+      title="Drag to reorder"
+    >
+      <GripVertical size={18} aria-hidden="true" />
+    </button>
+  );
+
   const removeBlock = (block) => {
     const ids = new Set(block.entries.map(e => e.stop.id));
     edit(p => p.filter(s => !ids.has(s.id)));
@@ -980,7 +1021,7 @@ function PlannerContent({ onOpenMap }) {
 
   // One stop on the timeline: its node (letter, or 🏠 / 🏁) and its card.
   // Nested stops sit inside a region's thread, one size smaller.
-  const renderStop = (stop, { kind = 'stop', index = -1, nested = false, canUp = false, canDown = false, onMove, isLast = false } = {}) => {
+  const renderStop = (stop, { kind = 'stop', index = -1, nested = false, canUp = false, canDown = false, onMove, isLast = false, drag = null } = {}) => {
     const isStart = kind === 'start';
     const isEnd = kind === 'end';
     const isReal = kind === 'stop';
@@ -988,7 +1029,8 @@ function PlannerContent({ onOpenMap }) {
     const nodeBg = isStart ? 'linear-gradient(135deg,#10B981,#059669)' : isEnd ? 'linear-gradient(135deg,#EF4444,#B91C1C)' : 'linear-gradient(135deg,#1E3A8A,#1E3A8A)';
     const node = nested ? 26 : 32;
     return (
-      <div key={stop.id} style={{ display:'flex', alignItems:'flex-start', gap: nested ? 10 : 12 }}>
+      <div key={stop.id} style={{ display:'flex', alignItems:'flex-start', gap: nested ? 10 : 12 }}
+        data-drag-scope={drag?.scope} data-drag-index={drag?.index}>
         {/* Timeline node */}
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', alignSelf:'stretch', paddingTop: nested ? 8 : 4, width: nested ? 28 : 36, flexShrink:0 }}>
           <div style={{ width:node, height:node, borderRadius:'50%', background:nodeBg, color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize: isStart || isEnd ? 14 : nested ? 11 : 13 }}>
@@ -1015,16 +1057,18 @@ function PlannerContent({ onOpenMap }) {
               </div>
             </div>
             {isReal && !isGuest && (
-              <div style={{ display:'flex', alignItems:'center', gap: isMobile ? 6 : 8, flexShrink: isMobile ? 1 : 0, flexWrap: isMobile ? 'wrap' : 'nowrap', minWidth: 0, marginLeft: isMobile ? (nested ? 52 : 60) : 0 }}>
+              <div style={{ display:'flex', alignItems:'center', gap: isMobile ? 6 : 8, flexShrink: isMobile ? 1 : 0, minWidth: 0, width: isMobile ? '100%' : 'auto' }}>
+                {/* Drag handle (phones: instead of the arrows) */}
+                {drag && dragGrip(stop.name, drag.onDrop)}
                 {/* Reorder buttons */}
-                <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
+                {!isMobile && <div style={{ display:'flex', flexDirection:'column', gap:2 }}>
                   <button type="button" onClick={() => onMove(-1)} disabled={!canUp} title="Move up" aria-label={`Move ${stop.name} up`} style={{ background:'none', border:'none', cursor: canUp ? 'pointer' : 'default', color: canUp ? '#64748b' : '#cbd5e1', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
                     <ArrowUp size={14} />
                   </button>
                   <button type="button" onClick={() => onMove(1)} disabled={!canDown} title="Move down" aria-label={`Move ${stop.name} down`} style={{ background:'none', border:'none', cursor: canDown ? 'pointer' : 'default', color: canDown ? '#64748b' : '#cbd5e1', padding:2, borderRadius:4, display:'flex', alignItems:'center', justifyContent:'center', minHeight:28, minWidth:32 }}>
                     <ArrowDown size={14} />
                   </button>
-                </div>
+                </div>}
                 <div style={{ display:'flex', alignItems:'center', gap:4, background:'#f1f5f9', borderRadius:8, padding: isMobile ? '6px 12px' : '4px 10px' }}>
                   <Clock size={12} color="#1E3A8A"/>
                   <input type="number" min={15} step={15} value={stop.estimatedMinutes} aria-label={`Minutes at ${stop.name}`}
@@ -1041,7 +1085,7 @@ function PlannerContent({ onOpenMap }) {
                     <Vote size={14} aria-hidden="true" />{!isMobile && <span>{pollBusy === stop.id ? 'Starting…' : 'Ask crew'}</span>}
                   </button>
                 ))}
-                <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={16}/></button>
+                <button type="button" onClick={() => removeStop(stop.id)} aria-label={`Remove ${stop.name}`} title="Remove stop" style={{ background:'none', border:'none', cursor:'pointer', color:'#ef4444', padding:4, borderRadius:6, minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center', marginLeft: isMobile ? 'auto' : 0 }}><X size={16}/></button>
               </div>
             )}
             {isReal && isGuest && (
@@ -1063,7 +1107,7 @@ function PlannerContent({ onOpenMap }) {
     const count = block.entries.length;
     const minutes = block.entries.reduce((n, e) => n + (e.stop.estimatedMinutes || 0), 0);
     return (
-      <div key={block.key} style={{ display:'flex', alignItems:'flex-start', gap:12 }}>
+      <div key={block.key} style={{ display:'flex', alignItems:'flex-start', gap:12 }} data-drag-scope="top" data-drag-index={b}>
         {/* On a phone the region box takes the full width instead — its own
             thread already carries the timeline, and every pixel counts. */}
         {!isMobile && (
@@ -1081,6 +1125,7 @@ function PlannerContent({ onOpenMap }) {
             </div>
             {!isGuest && (
               <div className="planner-region-actions">
+                {dragGrip(block.group, moveBlockTo)}
                 <button type="button" className="planner-region-add" onClick={() => setRegionModal({ query: block.group, label: block.group })}>
                   <Plus size={14} aria-hidden="true" /> Add places
                 </button>
@@ -1100,6 +1145,11 @@ function PlannerContent({ onOpenMap }) {
               canDown: k < count - 1,
               onMove: dir => moveStop(e.index, dir),
               isLast: k === count - 1,
+              drag: count > 1 ? {
+                scope: `region-${block.key}`,
+                index: k,
+                onDrop: (from, to) => moveWithinRegion(block.entries.map(x => x.stop.id), from, to),
+              } : null,
             }))}
           </div>
         </section>
@@ -1290,6 +1340,7 @@ function PlannerContent({ onOpenMap }) {
                       canDown: !isLastBlock,
                       onMove: dir => moveBlock(b, dir),
                       isLast: isLastBlock && !endStop,
+                      drag: blocks.length > 1 ? { scope: 'top', index: b, onDrop: moveBlockTo } : null,
                     })}
                 {/* Route suggestions between consecutive blocks — hidden for guests */}
                 {!isGuest && next && renderRouteButton(last, next.entries[0])}
