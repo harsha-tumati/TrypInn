@@ -1,5 +1,5 @@
 // src/pages/TripsPage.jsx — Trypinn home (Gen-Z vibrant revamp)
-import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo, lazy, Suspense } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import SmartImage from '../components/SmartImage';
 import { SIZES } from '../utils/imageUrl';
@@ -160,8 +160,25 @@ function useWindowWidth() {
     return width;
 }
 
+// The signed-in user's trip list, kept on this device so it shows instantly
+// on the next visit (refreshed from Firestore right after). Invite codes are
+// left out.
+const TRIPS_CACHE = 'trypinn_trips_cache_v1:';
+function readTripsCache(uid) {
+    if (!uid) return null;
+    try { return JSON.parse(localStorage.getItem(TRIPS_CACHE + uid) || 'null'); } catch { return null; }
+}
+function writeTripsCache(uid, trips) {
+    if (!uid) return;
+    try {
+        // eslint-disable-next-line no-unused-vars
+        const slim = trips.slice(0, 30).map(({ inviteCode, ...t }) => t);
+        localStorage.setItem(TRIPS_CACHE + uid, JSON.stringify(slim));
+    } catch { /* storage full or blocked — the cache is only a head start */ }
+}
+
 export default function TripsPage() {
-    const { user } = useAuth();
+    const { user, loading: authLoading, authHint } = useAuth();
     const { setSelectedTrip } = useTrip();
     const navigate = useNavigate();
     const windowWidth = useWindowWidth();
@@ -198,16 +215,19 @@ export default function TripsPage() {
     // created on this device. Drafts are tracked in localStorage.
     const fetchAllTrips = useCallback(async () => {
         const { getUserTrips, getTripsByIds } = await import('../services/firestoreService');
-        const claimed = user ? await getUserTrips(user.uid) : [];
         const draftIds = getDraftIds();
-        const draftTrips = draftIds.length ? await getTripsByIds(draftIds) : [];
+        // Claimed trips and drafts at the same time.
+        const [claimed, draftTrips] = await Promise.all([
+            user ? getUserTrips(user.uid) : [],
+            draftIds.length ? getTripsByIds(draftIds) : [],
+        ]);
         const claimedIds = new Set(claimed.map((t) => t.id));
         const drafts = draftTrips.filter((t) => !isTripClaimed(t) && !claimedIds.has(t.id));
         return [...drafts, ...claimed];
     }, [user]);
 
     const loadTrips = useCallback(async () => {
-        try { setTrips(await fetchAllTrips()); }
+        try { const list = await fetchAllTrips(); setTrips(list); writeTripsCache(user?.uid, list); }
         catch (e) { console.error(e); }
         finally { setLoading(false); }
     }, [fetchAllTrips]);
@@ -231,28 +251,35 @@ export default function TripsPage() {
         return () => cancelAnimationFrame(id);
     }, [location.hash, loading]);
 
-    // Defer trip fetching until after initial paint to avoid blocking LCP
+    // Show the trips from last visit straight away (kept on this device per
+    // account) while the fresh list loads.
+    const cacheUid = user?.uid || authHint?.uid || null;
+    const cachedTrips = useMemo(() => readTripsCache(cacheUid), [cacheUid]);
+    const listTrips = loading && cachedTrips?.length ? cachedTrips : trips;
+    const listLoading = loading && !cachedTrips?.length;
+
+    // Load the trip list. Someone signed in last time waits for their session
+    // first — loading before it's confirmed found only drafts, and the list
+    // showed empty until a second pass.
     useEffect(() => {
+        if (authLoading && authHint) return;
         let cancelled = false;
-        const schedule = typeof requestIdleCallback !== 'undefined'
-            ? requestIdleCallback
-            : (cb) => setTimeout(cb, 200);
-        const id = schedule(async () => {
+        (async () => {
             try {
                 const result = await fetchAllTrips();
-                if (!cancelled) setTrips(result);
+                if (cancelled) return;
+                setTrips(result);
+                writeTripsCache(user?.uid, result);
             } catch (e) {
                 console.error(e);
             } finally {
                 if (!cancelled) setLoading(false);
             }
-        });
-        return () => {
-            cancelled = true;
-            if (typeof cancelIdleCallback !== 'undefined') cancelIdleCallback(id);
-            else clearTimeout(id);
-        };
-    }, [fetchAllTrips]);
+        })();
+        return () => { cancelled = true; };
+        // user is read through fetchAllTrips
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [fetchAllTrips, authLoading, authHint]);
 
     // Hide the browser scrollbar while the home page is mounted, for a
     // cleaner full-bleed landing. Scrolling itself still works.
@@ -422,8 +449,8 @@ export default function TripsPage() {
         }
     }
 
-    const upcomingTrips = trips.filter(t => !t.endDate || new Date(t.endDate) >= new Date());
-    const pastTrips = trips.filter(t => t.endDate && new Date(t.endDate) < new Date());
+    const upcomingTrips = listTrips.filter(t => !t.endDate || new Date(t.endDate) >= new Date());
+    const pastTrips = listTrips.filter(t => t.endDate && new Date(t.endDate) < new Date());
 
     const renderTripCard = (trip, past = false) => (
         <div key={trip.id} className={`hp-trip-card${past ? ' is-past' : ''}`} onClick={() => openTrip(trip)} role="button" tabIndex={0}
@@ -686,9 +713,9 @@ export default function TripsPage() {
                     </button>
                 </Reveal>
 
-                {loading ? (
+                {listLoading ? (
                     <div className="hp-trips-loading"><div className="spinner" /></div>
-                ) : trips.length === 0 ? (
+                ) : listTrips.length === 0 ? (
                     <Reveal className="hp-empty">
                         <div className="hp-empty-emoji">🧭</div>
                         <h3>No trips yet — let's fix that</h3>

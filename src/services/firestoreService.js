@@ -66,14 +66,9 @@ export async function claimTrip(tripId, userId) {
 
 export async function getTripsByIds(ids) {
     const { db, getDoc, doc } = await getFirebase();
-    const trips = [];
-    for (const id of ids || []) {
-        try {
-            const snap = await getDoc(doc(db, 'trips', id));
-            if (snap.exists()) trips.push({ id: snap.id, ...snap.data() });
-        } catch { /* skip unreadable/missing draft */ }
-    }
-    return trips;
+    // In parallel; a missing or unreadable draft is skipped.
+    const snaps = await Promise.all((ids || []).map((id) => getDoc(doc(db, 'trips', id)).catch(() => null)));
+    return snaps.filter((snap) => snap?.exists()).map((snap) => ({ id: snap.id, ...snap.data() }));
 }
 
 export async function updateTripStatus(tripId, status) {
@@ -124,34 +119,46 @@ export async function getUserTrips(userId) {
     if (tripIds.length === 0) return [];
 
     const roles = new Map(membersSnap.docs.map((d) => [d.data().tripId, d.data().role]));
-    const trips = [];
-    for (const tripId of tripIds) {
-        const tripSnap = await getDoc(doc(db, 'trips', tripId));
-        if (tripSnap.exists()) {
-            trips.push({ id: tripSnap.id, ...tripSnap.data() });
-        }
-    }
 
     // Organisers see how many people are waiting to join each of their trips,
-    // so a request sent from Public Trips or a shared link isn't missed.
-    const organised = trips
-        .filter((t) => t.createdBy === userId || ['admin', 'owner'].includes(roles.get(t.id)))
-        .map((t) => t.id);
-    if (organised.length) {
-        try {
-            const pending = new Map();
-            for (let i = 0; i < organised.length; i += 30) {
-                const snap = await getDocs(query(
-                    collection(db, 'tripMembers'),
-                    where('tripId', 'in', organised.slice(i, i + 30)),
-                    where('role', '==', 'pending'),
-                ));
-                snap.docs.forEach((d) => pending.set(d.data().tripId, (pending.get(d.data().tripId) || 0) + 1));
-            }
-            for (const t of trips) t.pendingRequests = pending.get(t.id) || 0;
-        } catch (e) {
-            if (import.meta.env.DEV) console.warn('Could not count join requests:', e);
-        }
+    // so a request sent from Public Trips or a shared link isn't missed. These
+    // counts are fetched alongside the trips (by role), not after them.
+    const organisedByRole = tripIds.filter((id) => ['admin', 'owner'].includes(roles.get(id)));
+    const countPending = async (ids) => {
+        const pending = new Map();
+        const chunks = [];
+        for (let i = 0; i < ids.length; i += 30) chunks.push(ids.slice(i, i + 30));
+        await Promise.all(chunks.map(async (chunk) => {
+            const snap = await getDocs(query(
+                collection(db, 'tripMembers'),
+                where('tripId', 'in', chunk),
+                where('role', '==', 'pending'),
+            ));
+            snap.docs.forEach((d) => pending.set(d.data().tripId, (pending.get(d.data().tripId) || 0) + 1));
+        }));
+        return pending;
+    };
+
+    // Every trip at once — one after another, ten trips meant ten round trips.
+    const [snaps, pending] = await Promise.all([
+        Promise.all(tripIds.map((id) => getDoc(doc(db, 'trips', id)).catch(() => null))),
+        organisedByRole.length
+            ? countPending(organisedByRole).catch((e) => {
+                if (import.meta.env.DEV) console.warn('Could not count join requests:', e);
+                return new Map();
+            })
+            : Promise.resolve(new Map()),
+    ]);
+    const trips = snaps.filter((snap) => snap?.exists()).map((snap) => ({ id: snap.id, ...snap.data() }));
+
+    // Trips this user created but holds no organiser role on (older data).
+    const missed = trips.filter((t) => t.createdBy === userId && !organisedByRole.includes(t.id)).map((t) => t.id);
+    if (missed.length) {
+        const more = await countPending(missed).catch(() => new Map());
+        more.forEach((n, id) => pending.set(id, n));
+    }
+    for (const t of trips) {
+        if (t.createdBy === userId || organisedByRole.includes(t.id)) t.pendingRequests = pending.get(t.id) || 0;
     }
 
     return trips.sort((a, b) => {

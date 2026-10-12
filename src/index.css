@@ -3131,13 +3131,21 @@ html.kb-open .trip-bottom-nav { display: none !important; }
 }
 .planner-vote-chip:hover:not(:disabled) { background: #F5F3FF; }
 .planner-vote-chip.is-live { background: #6D28D9; border-color: #6D28D9; color: #fff; }
-.planner-add-row { display: flex; gap: 10px; }
-.planner-add-row .planner-add-btn { flex: 1; margin: 0; }
-.planner-discover-btn {
-  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  min-height: 48px; padding: 0 14px; border-radius: 16px; border: 1.5px solid #BFD0F0;
-  background: #F5F8FE; color: var(--accent); font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+/* Add stop + Discover nearby: two equal halves, same height and shape. */
+.planner-add-row { display: flex; gap: 10px; margin-top: 18px; }
+.planner-add-row .planner-add-btn,
+.planner-add-row .planner-discover-btn {
+  flex: 1 1 0; min-width: 0; width: auto; margin: 0;
+  height: 52px; min-height: 52px; padding: 0 10px; box-sizing: border-box;
+  border-radius: var(--radius-md); white-space: nowrap;
+  font-size: 15px; font-weight: 700; gap: 7px;
 }
+.planner-discover-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1.5px solid #BFD0F0; background: #F5F8FE; color: var(--accent);
+  font-family: inherit; cursor: pointer;
+}
+.planner-discover-btn:hover { background: #E5EDFB; }
 .planner-discover-modal { padding: 0; overflow: visible; }
 .planner-discover-modal > p:first-child { display: none; }
 .planner-discover-toggle {

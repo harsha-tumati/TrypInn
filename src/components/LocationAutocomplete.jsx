@@ -30,8 +30,18 @@ export default function LocationAutocomplete({ value, onChange, onSelect, placeh
     const sessionRef = useRef(null);
     const reqRef = useRef(0);
     const timerRef = useRef(null);
+    const blurTimer = useRef(null);
 
-    useEffect(() => () => clearTimeout(timerRef.current), []);
+    useEffect(() => () => { clearTimeout(timerRef.current); clearTimeout(blurTimer.current); }, []);
+
+    // On iPhones a tap on a suggestion blurs the field *before* its click
+    // arrives. Closing the list on blur removed the suggestion being tapped,
+    // so nothing got picked. Close a moment later instead; a pick or a new
+    // focus cancels it.
+    const closeSoon = () => {
+        clearTimeout(blurTimer.current);
+        blurTimer.current = setTimeout(() => setOpen(false), 250);
+    };
 
     const search = (text) => {
         clearTimeout(timerRef.current);
@@ -69,6 +79,7 @@ export default function LocationAutocomplete({ value, onChange, onSelect, placeh
 
     const pick = async (item) => {
         if (!item) return;
+        clearTimeout(blurTimer.current);
         setOpen(false);
         setItems([]);
         onChange?.(item.main);
@@ -141,8 +152,8 @@ export default function LocationAutocomplete({ value, onChange, onSelect, placeh
                 value={value || ''}
                 onChange={handleChange}
                 onKeyDown={onKeyDown}
-                onFocus={() => { if (items.length && !confirmed) setOpen(true); }}
-                onBlur={() => setOpen(false)}
+                onFocus={() => { clearTimeout(blurTimer.current); if (items.length && !confirmed) setOpen(true); }}
+                onBlur={closeSoon}
                 placeholder={placeholder}
                 aria-label={ariaLabel || placeholder}
                 role="combobox"
