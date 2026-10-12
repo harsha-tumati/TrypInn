@@ -947,11 +947,15 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                     </div>
                 )}
                 <div className="tm-sheet-footer">
+                    {/* Start Navigation is switched off for now — startNavigation()
+                        is kept. A trip already navigating still gets Open in
+                        Google Maps and End below, so it can be stopped.
                     {trip.status !== 'active' ? (
                         <button type="button" className="btn btn-primary" style={{ flex: 1 }} onClick={startNavigation}>
                             <Navigation size={16} aria-hidden="true" /> Start Navigation
                         </button>
-                    ) : (
+                    ) : ( */}
+                    {trip.status === 'active' && (
                         <>
                             {googleMapsUrl && (
                                 <a className="btn btn-primary" style={{ flex: 1 }} href={googleMapsUrl} target="_blank" rel="noreferrer">
@@ -963,7 +967,7 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             </button>
                         </>
                     )}
-                    <button type="button" className="btn btn-secondary" onClick={() => setShareOpen(true)}>Share</button>
+                    <button type="button" className="btn btn-secondary" style={trip.status === 'active' ? undefined : { flex: 1 }} onClick={() => setShareOpen(true)}>Share</button>
                 </div>
             </BottomSheet>
 

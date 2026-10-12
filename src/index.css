@@ -3095,6 +3095,20 @@ html.kb-open .trip-bottom-nav { display: none !important; }
   color: var(--accent); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
 }
 .planner-start-chip:hover { background: #E5EDFB; }
+.poll-notice {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 20px;
+  padding: 12px 12px 12px 16px; border-radius: 14px; font-size: 14px; font-weight: 600;
+  animation: pollNoticeIn 0.25s var(--ease-out, ease-out);
+}
+.poll-notice span { flex: 1; min-width: 0; }
+.poll-notice button {
+  display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;
+  border: none; border-radius: 8px; background: transparent; color: inherit; cursor: pointer; opacity: 0.7;
+}
+.poll-notice button:hover { opacity: 1; background: rgba(15, 23, 42, 0.06); }
+.poll-notice.is-success { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+.poll-notice.is-error { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+@keyframes pollNoticeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 .planner-ask-crew {
   display: flex; align-items: center; gap: 8px; margin: 0 0 16px;
   padding: 10px 12px; border-radius: 12px; background: #F5F3FF; border: 1px solid #DDD6FE;

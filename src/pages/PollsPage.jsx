@@ -1,10 +1,10 @@
 // src/pages/PollsPage.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTrip } from '../context/TripContext';
 import { useAuth } from '../context/AuthContext';
 import { useGuestMode } from '../context/GuestModeContext';
 import { castVote, closePoll, deletePlace } from '../services/firestoreService';
-import { BarChart3, Crown, Sparkles, Vote } from 'lucide-react';
+import { BarChart3, Crown, Sparkles, Vote, X, CheckCircle2, AlertCircle } from 'lucide-react';
 import usePageSeo from '../hooks/usePageSeo';
 
 export default function PollsPage() {
@@ -13,11 +13,19 @@ export default function PollsPage() {
     const { user } = useAuth();
     const isGuest = useGuestMode();
     const [closing, setClosing] = useState(null);
+    // Results and errors show as a banner on the page, not a browser alert.
+    const [notice, setNotice] = useState(null); // { tone: 'success' | 'error', text }
+    const say = (text, tone = 'success') => setNotice({ text, tone });
+    useEffect(() => {
+        if (!notice) return;
+        const t = setTimeout(() => setNotice(null), 6000);
+        return () => clearTimeout(t);
+    }, [notice]);
 
     async function handleVote(pollId, placeId) {
-        if (!user) { alert('Please sign in to vote.'); return; }
+        if (!user) { say('Sign in to vote.', 'error'); return; }
         try { await castVote({ pollId, placeId, userId: user?.uid }); }
-        catch (e) { alert(e.message); }
+        catch (e) { say(`Couldn't save your vote — ${e.message}`, 'error'); }
     }
 
     async function handleClose(pollId) {
@@ -26,14 +34,14 @@ export default function PollsPage() {
             const poll = polls.find((p) => p.id === pollId);
             const winnerId = await closePoll(pollId, selectedTrip.id);
             if (poll?.kind === 'include') {
-                alert(winnerId === 'no'
-                    ? `Poll closed — the crew would skip ${poll.subjectName}.`
-                    : winnerId === 'yes' ? `Poll closed — ${poll.subjectName} stays in the plan.` : 'Poll closed — no votes.');
+                say(winnerId === 'no'
+                    ? `Poll closed — the crew would skip ${poll.subjectName}. You can remove it below.`
+                    : winnerId === 'yes' ? `Poll closed — ${poll.subjectName} stays in the plan.` : 'Poll closed — no one voted.');
             } else {
                 const winningPlace = places.find((p) => p.id === winnerId);
-                alert(`Poll closed — Winner: ${winningPlace?.name || 'Unknown'}`);
+                say(winningPlace ? `Poll closed — ${winningPlace.name} won and is on your route.` : 'Poll closed — no one voted.');
             }
-        } catch (e) { alert(e.message); }
+        } catch (e) { say(`Couldn't close the poll — ${e.message}`, 'error'); }
         finally { setClosing(null); }
     }
 
@@ -46,13 +54,16 @@ export default function PollsPage() {
     const subjectOf = (poll) => places.find((p) => p.id === poll.subjectPlaceId)
         || places.find((p) => p.name?.trim().toLowerCase() === poll.subjectName?.trim().toLowerCase());
     const [removing, setRemoving] = useState(null);
+    const [confirmRemove, setConfirmRemove] = useState(null); // poll id asking "are you sure?"
     async function removeSubject(poll) {
         const stop = subjectOf(poll);
-        if (!stop || !window.confirm(`Remove ${stop.name} from the plan?`)) return;
+        if (!stop) return;
         setRemoving(poll.id);
-        try { await deletePlace(stop.id); }
-        catch (e) { alert(e.message); }
-        finally { setRemoving(null); }
+        try {
+            await deletePlace(stop.id);
+            say(`${stop.name} was removed from the plan.`);
+        } catch (e) { say(`Couldn't remove ${stop.name} — ${e.message}`, 'error'); }
+        finally { setRemoving(null); setConfirmRemove(null); }
     }
 
     const openPolls = polls.filter(p => p.status === 'open').length;
@@ -71,6 +82,14 @@ export default function PollsPage() {
                     </p>
                 </div>
             </div>
+
+            {notice && (
+                <div className={`poll-notice is-${notice.tone}`} role={notice.tone === 'error' ? 'alert' : 'status'}>
+                    {notice.tone === 'error' ? <AlertCircle size={18} aria-hidden="true" /> : <CheckCircle2 size={18} aria-hidden="true" />}
+                    <span>{notice.text}</span>
+                    <button type="button" onClick={() => setNotice(null)} aria-label="Dismiss"><X size={16} /></button>
+                </div>
+            )}
 
             {polls.length === 0 ? (
                 <div className="empty-state">
@@ -185,9 +204,18 @@ export default function PollsPage() {
                                                 : poll.winnerId === 'yes' ? `${poll.subjectName} stays in the plan.` : 'No votes were cast.'}
                                         </span>
                                         {poll.winnerId === 'no' && !isGuest && subjectOf(poll) && (
-                                            <button type="button" className="btn btn-ghost btn-sm" onClick={() => removeSubject(poll)} disabled={removing === poll.id}>
-                                                {removing === poll.id ? 'Removing…' : `Remove ${poll.subjectName} from the plan`}
-                                            </button>
+                                            confirmRemove === poll.id ? (
+                                                <span style={{ display: 'flex', gap: 8 }}>
+                                                    <button type="button" className="btn btn-danger btn-sm" onClick={() => removeSubject(poll)} disabled={removing === poll.id}>
+                                                        {removing === poll.id ? 'Removing…' : `Yes, remove ${poll.subjectName}`}
+                                                    </button>
+                                                    <button type="button" className="btn btn-ghost btn-sm" onClick={() => setConfirmRemove(null)}>Keep it</button>
+                                                </span>
+                                            ) : (
+                                                <button type="button" className="btn btn-ghost btn-sm" onClick={() => setConfirmRemove(poll.id)}>
+                                                    Remove {poll.subjectName} from the plan
+                                                </button>
+                                            )
                                         )}
                                     </div>
                                 )}
