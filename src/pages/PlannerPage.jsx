@@ -1367,7 +1367,7 @@ function PlannerContent({ onOpenMap }) {
         {/* Add stop button — hidden for guests */}
         {!isGuest && (
           <div className={isNarrow ? 'planner-add-row' : undefined}>
-            <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>
+            <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={isNarrow ? undefined : { padding: '12px 20px' }}>
               <Plus size={18}/> Add stop
             </button>
             {isNarrow && (
