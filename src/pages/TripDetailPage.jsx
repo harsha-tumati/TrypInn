@@ -15,6 +15,7 @@ import { MAPS_ENABLED } from '../config/maps';
 import Modal from '../components/Modal';
 import MapRoute from '../components/MapRoute';
 import MapCamera from '../components/MapCamera';
+import { googleMapsRouteUrl } from '../utils/googleMapsRoute';
 import PlaceAutocomplete from '../components/PlaceAutocomplete';
 import BottomSheet from '../components/BottomSheet';
 import PlaceThumb from '../components/PlaceThumb';
@@ -478,6 +479,13 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
             + `&destination=${navLeg[navLeg.length - 1].lat},${navLeg[navLeg.length - 1].lng}`
             + (navLeg.length > 1 ? `&waypoints=${encodeURIComponent(navLeg.slice(0, -1).map(p => `${p.lat},${p.lng}`).join('|'))}` : '')
         : null;
+
+    // The whole plan in Google Maps: start → every stop on the route → end.
+    const fullRoute = googleMapsRouteUrl({
+        start: trip?.startingPoint,
+        stops: navStops,
+        end: trip?.endingPoint || trip?.startingPoint,
+    });
 
     async function startNavigation() {
         if (!routeResult) {
@@ -967,7 +975,19 @@ export default function MapView({ onExitMap, exitLabel = 'Back' }) {
                             </button>
                         </>
                     )}
-                    <button type="button" className="btn btn-secondary" style={trip.status === 'active' ? undefined : { flex: 1 }} onClick={() => setShareOpen(true)}>Share</button>
+                    {trip.status !== 'active' && fullRoute.url && (
+                        <a
+                            className="btn btn-primary"
+                            style={{ flex: 1 }}
+                            href={fullRoute.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={fullRoute.truncated ? `Google Maps takes 10 points — this opens the first 10 of ${fullRoute.total}.` : 'Open the whole route in Google Maps'}
+                        >
+                            <ExternalLink size={16} aria-hidden="true" /> {fullRoute.truncated ? 'Google Maps (first 10)' : 'Open in Google Maps'}
+                        </a>
+                    )}
+                    <button type="button" className="btn btn-secondary" style={trip.status === 'active' || fullRoute.url ? undefined : { flex: 1 }} onClick={() => setShareOpen(true)}>Share</button>
                 </div>
             </BottomSheet>
 

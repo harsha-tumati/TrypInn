@@ -3109,6 +3109,12 @@ html.kb-open .trip-bottom-nav { display: none !important; }
 .poll-notice.is-success { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
 .poll-notice.is-error { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
 @keyframes pollNoticeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.planner-drag-grip {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 36px; height: 40px; padding: 0; border: none; border-radius: 10px;
+  background: transparent; color: #94a3b8;
+}
+.planner-drag-grip:hover { background: #f1f5f9; color: #475569; }
 .planner-ask-crew {
   display: flex; align-items: center; gap: 8px; margin: 0 0 16px;
   padding: 10px 12px; border-radius: 12px; background: #F5F3FF; border: 1px solid #DDD6FE;
