@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { NavLink, useParams, useLocation } from 'react-router-dom';
 import { useTrip } from '../context/TripContext';
 import { isTripClaimed } from '../utils/draftTrips';
-import { Calendar, IndianRupee, MessageCircle, BarChart3, Sparkles, BookOpen, MoreHorizontal, Users } from 'lucide-react';
+import { Calendar, IndianRupee, MessageCircle, BarChart3, Sparkles, MoreHorizontal, Users } from 'lucide-react';
 
 export default function TripBottomNav() {
     const { tripId } = useParams();
@@ -24,7 +24,6 @@ export default function TripBottomNav() {
             { to: 'chat', icon: MessageCircle, label: 'Chat' },
             { to: 'polls', icon: BarChart3, label: 'Polls' },
         ] : []),
-        { to: '/travel-guides', icon: BookOpen, label: 'Guides', absolute: true },
     ];
 
     const hrefFor = (t) => (t.absolute ? t.to : `/trip/${tripId}${t.to ? '/' + t.to : ''}`);
