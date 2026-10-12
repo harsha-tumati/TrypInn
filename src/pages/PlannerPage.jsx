@@ -1156,6 +1156,19 @@ function PlannerContent({ onOpenMap }) {
           {endStop && renderStop(endStop, { kind: 'end', isLast: true })}
         </div>
 
+        {/* A new trip has no stops yet: offer the places picked when it was
+            created (its destination) as regions to explore. */}
+        {!isGuest && stops.length === 0 && (selectedTrip?.destination || '').trim() && (
+          <div className="planner-start-with">
+            <span className="planner-start-with-label">Start with</span>
+            {selectedTrip.destination.split(',').map(d => d.trim()).filter(Boolean).slice(0, 4).map(d => (
+              <button key={d} type="button" className="planner-start-chip" onClick={() => setRegionModal({ query: d, label: d })}>
+                <Compass size={15} aria-hidden="true" /> Explore {d}
+              </button>
+            ))}
+          </div>
+        )}
+
         {/* Add stop button — hidden for guests */}
         {!isGuest && (
           <button type="button" onClick={() => setShowAddModal(true)} className="planner-add-btn" style={{ padding: isMobile ? '14px 20px' : '12px 20px' }}>

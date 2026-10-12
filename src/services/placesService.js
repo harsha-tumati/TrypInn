@@ -457,3 +457,94 @@ export async function getPersonalRoute(originLatLng, destinationPlace) {
         return null;
     }
 }
+
+// ── Location search (autocomplete) ───────────────────────────────────────────
+// Called straight over REST so suggestions start before the Maps JS library
+// has loaded, with a per-typing-session token so a search and the place picked
+// from it are billed as one session. Falls back to the JS library's legacy
+// AutocompleteService when REST is refused for this key.
+const _acCache = new Map(); // "query" -> suggestions
+let _acRestRefused = false;
+
+export function newPlacesSessionToken() {
+    return globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
+/** Suggestions for typed text: [{ placeId, main, secondary }]. */
+export async function autocompletePlaces(input, sessionToken) {
+    const q = input.trim();
+    if (q.length < 1) return [];
+    const key = q.toLowerCase();
+    if (_acCache.has(key)) return _acCache.get(key);
+
+    let items = null;
+    if (PLACES_KEY && !_acRestRefused) {
+        try {
+            const r = await placesRest('places:autocomplete', '*', { input: q, sessionToken });
+            items = (r.suggestions || [])
+                .map(s => s.placePrediction)
+                .filter(Boolean)
+                .map(p => ({
+                    placeId: p.placeId,
+                    main: p.structuredFormat?.mainText?.text || p.text?.text || '',
+                    secondary: p.structuredFormat?.secondaryText?.text || '',
+                }));
+        } catch (e) {
+            if (/ 40[13]$/.test(e.message)) _acRestRefused = true;
+            else throw e;
+        }
+    }
+    if (!items) items = await autocompleteJs(q, sessionToken);
+    _acCache.set(key, items);
+    if (_acCache.size > 200) _acCache.delete(_acCache.keys().next().value);
+    return items;
+}
+
+async function autocompleteJs(q, sessionToken) {
+    const lib = await getPlacesLib();
+    if (!lib?.AutocompleteSuggestion) return [];
+    const req = { input: q };
+    if (lib.AutocompleteSessionToken) req.sessionToken = sessionToken instanceof lib.AutocompleteSessionToken ? sessionToken : new lib.AutocompleteSessionToken();
+    const { suggestions = [] } = await lib.AutocompleteSuggestion.fetchAutocompleteSuggestions(req).catch(() => ({}));
+    return suggestions.map(s => s.placePrediction).filter(Boolean).map(p => ({
+        placeId: p.placeId,
+        main: p.mainText?.text || p.text?.text || '',
+        secondary: p.secondaryText?.text || '',
+    }));
+}
+
+/** Coordinates and names for a picked suggestion. */
+export async function resolvePlace(placeId, sessionToken) {
+    if (PLACES_KEY && !_acRestRefused) {
+        try {
+            const d = await placesRest(
+                `places/${encodeURIComponent(placeId)}${sessionToken ? `?sessionToken=${encodeURIComponent(sessionToken)}` : ''}`,
+                'id,displayName,formattedAddress,location',
+            );
+            if (d.location) {
+                return {
+                    name: d.displayName?.text || d.formattedAddress?.split(',')[0] || '',
+                    formatted: d.formattedAddress || '',
+                    lat: d.location.latitude,
+                    lng: d.location.longitude,
+                    placeId: d.id || placeId,
+                };
+            }
+        } catch (e) {
+            if (/ 40[13]$/.test(e.message)) _acRestRefused = true;
+            else throw e;
+        }
+    }
+    const lib = await getPlacesLib();
+    if (!lib?.Place) throw new Error('Places library unavailable');
+    const place = new lib.Place({ id: placeId });
+    await place.fetchFields({ fields: ['displayName', 'formattedAddress', 'location'] });
+    if (!place.location) throw new Error('Place has no location');
+    return {
+        name: place.displayName || place.formattedAddress?.split(',')[0] || '',
+        formatted: place.formattedAddress || '',
+        lat: place.location.lat(),
+        lng: place.location.lng(),
+        placeId,
+    };
+}

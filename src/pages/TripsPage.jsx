@@ -189,6 +189,7 @@ export default function TripsPage() {
     const [endName, setEndName] = useState('');
     const [endPoint, setEndPoint] = useState(null);
     const [nameSeed, setNameSeed] = useState(0);
+    const [tripName, setTripName] = useState('');
     const [createError, setCreateError] = useState('');
     const [creating, setCreating] = useState(false);
 
@@ -277,6 +278,7 @@ export default function TripsPage() {
         setStartName(''); setStartPoint(null);
         setDifferentEnd(false);
         setEndName(''); setEndPoint(null);
+        setTripName('');
         setCreateError('');
         setNameSeed((s) => s + 1);
     }
@@ -291,8 +293,11 @@ export default function TripsPage() {
         setCreateOpen(true);
     }
 
+    // Named after where they're headed: places picked in the homepage search,
+    // else a different end point. (Never the start — "Hyderabad Getaway" for
+    // a trip leaving Hyderabad reads wrong.)
     const suggestedTripName = suggestTripName({
-        destination: tripPlaces[0]?.name || '',
+        destination: tripPlaces[0]?.name || (differentEnd ? endName : ''),
         startDate: createForm.startDate,
         seed: nameSeed,
     });
@@ -306,11 +311,10 @@ export default function TripsPage() {
             setCreateError('Add where your trip ends — or uncheck the different-ending option.');
             return;
         }
-        if (tripPlaces.length === 0) { setCreateError('Add at least one place you want to visit.'); return; }
         setCreateError('');
         setCreating(true);
         try {
-            const [{ createTrip, addPlaces }, { forwardGeocode }] = await Promise.all([
+            const [{ createTrip }, { forwardGeocode }] = await Promise.all([
                 import('../services/firestoreService'),
                 import('../services/placesService'),
             ]);
@@ -335,13 +339,15 @@ export default function TripsPage() {
             const resolvedEnd = differentEnd
                 ? await geocodeIfNeeded(endPoint || { name: endName.trim() })
                 : resolvedStart;
-            const resolvedPlaces = await Promise.all(tripPlaces.map(geocodeIfNeeded));
 
             const startDateStr = createForm.startDate ? createForm.startDate.toISOString().split('T')[0] : null;
             const endDateStr = createForm.endDate ? createForm.endDate.toISOString().split('T')[0] : null;
-            const destination = resolvedPlaces.map(p => p.name).join(', ');
+            // Stops are added on the Plan tab, each with its own visit length.
+            // Places picked in the homepage search only set the destination
+            // (offered there as regions to explore), never 60-minute stops.
+            const destination = tripPlaces.map(p => p.name).join(', ') || (differentEnd ? resolvedEnd?.name || '' : '');
             const tripId = await createTrip({
-                name: suggestedTripName,
+                name: tripName.trim() || suggestedTripName,
                 destination,
                 startDate: startDateStr,
                 endDate: endDateStr,
@@ -350,17 +356,6 @@ export default function TripsPage() {
                 startingPoint: resolvedStart,
                 endingPoint: resolvedEnd,
             });
-            await addPlaces(tripId, resolvedPlaces.map(p => ({
-                name: p.name,
-                lat: p.lat ?? null,
-                lng: p.lng ?? null,
-                description: p.formatted || '',
-                category: 'destination',
-                estimatedMinutes: 0,
-                imageUrl: null,
-                placeId: p.placeId ?? null,
-                source: 'user',
-            })));
             addDraftId(tripId);
             setCreateOpen(false);
             loadTrips();
@@ -829,7 +824,7 @@ export default function TripsPage() {
 
             {/* ══ PLAN A TRIP MODAL ══ */}
             <Modal open={createOpen} onClose={() => setCreateOpen(false)} title="Plan a trip"
-                subtitle="Pick where you're going and set your dates — we'll handle the rest.">
+                subtitle="Tell us where you start and when — you'll add places on the Plan tab.">
                 <form onSubmit={handleCreateTrip} className="create-trip-form">
                     <div>
                         <label className="input-label" htmlFor="trip-start">Starting Point</label>
@@ -865,25 +860,23 @@ export default function TripsPage() {
                     )}
 
                     <div>
-                        <label className="input-label" htmlFor="trip-places">Places you want to visit</label>
-                        <Suspense fallback={<div className="input-field" style={{ minHeight: 48 }}>Loading…</div>}>
-                            <PlacesPicker
-                                id="trip-places"
-                                places={tripPlaces}
-                                onChange={(next) => { setTripPlaces(next); if (next.length) setCreateError(''); }}
-                            />
-                        </Suspense>
-                        {tripPlaces.length === 0 ? (
-                            <p className="field-hint">
-                                {MAPS_ENABLED
-                                    ? 'Search and add one or more destinations.'
-                                    : 'Add one or more destinations. Live map search turns on once a Google Maps API key is configured.'}
-                            </p>
-                        ) : (
-                            <p className="field-hint">
-                                We'll name this trip <strong>"{suggestedTripName}"</strong>.
-                            </p>
-                        )}
+                        <label className="input-label" htmlFor="trip-name">
+                            Trip name <span className="input-label-hint">optional</span>
+                        </label>
+                        <input
+                            id="trip-name"
+                            type="text"
+                            className="input-field"
+                            value={tripName}
+                            maxLength={60}
+                            placeholder={suggestedTripName}
+                            onChange={(e) => setTripName(e.target.value)}
+                        />
+                        <p className="field-hint">
+                            {tripPlaces.length > 0
+                                ? <>You’ll explore <strong>{tripPlaces.map(p => p.name).join(', ')}</strong> and add stops on the Plan tab next.</>
+                                : 'You’ll add the places to visit on the Plan tab next.'}
+                        </p>
                     </div>
 
                     <div>
