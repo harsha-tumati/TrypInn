@@ -2898,6 +2898,34 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   font-size: 10px;
   font-weight: 700;
 }
+/* LocationAutocomplete — our own suggestion list, anchored under the field */
+.location-input-loading {
+  position: absolute; right: 44px; top: 50%; transform: translateY(-50%);
+  display: flex; color: var(--accent);
+}
+.location-input-loading svg { animation: spin 0.9s linear infinite; }
+.location-input-ac-list {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 60;
+  margin: 0; padding: 6px; list-style: none;
+  max-height: 320px; overflow-y: auto; overscroll-behavior: contain;
+  background: #fff; border: 1px solid var(--line, #e2e8f0); border-radius: 14px;
+  box-shadow: 0 18px 40px -16px rgba(15, 23, 42, 0.35);
+}
+.location-input-ac-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 10px; border-radius: 10px; cursor: pointer;
+  min-height: 44px; box-sizing: border-box;
+}
+.location-input-ac-item.is-active { background: #F1F5FD; }
+.location-input-ac-pin { flex-shrink: 0; margin-top: 2px; color: #94a3b8; }
+.location-input-ac-item.is-active .location-input-ac-pin { color: var(--accent); }
+.location-input-ac-text { display: flex; flex-direction: column; min-width: 0; }
+.location-input-ac-main { font-size: 14.5px; font-weight: 700; color: #0f172a; }
+.location-input-ac-sub {
+  font-size: 12.5px; color: #64748b; margin-top: 1px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.location-input-ac-attr { padding: 6px 10px 2px; text-align: right; font-size: 10.5px; color: #94a3b8; }
 .location-confirmed-icon {
   position: absolute;
   right: 44px;
@@ -3049,6 +3077,14 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   .trip-head-title { font-size: 25px; }
   .trip-head { margin-bottom: 16px; }
 }
+.planner-start-with { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 4px 0 14px; }
+.planner-start-with-label { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-right: 2px; }
+.planner-start-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 14px; border-radius: 999px; border: 1px solid #BFD0F0; background: #F5F8FE;
+  color: var(--accent); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.planner-start-chip:hover { background: #E5EDFB; }
 .planner-discover-toggle {
   display: flex; align-items: center; gap: 8px; width: 100%;
   min-height: 48px; padding: 0 16px; flex-shrink: 0;
