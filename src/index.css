@@ -6281,3 +6281,144 @@ body.is-dragging-stop * { cursor: grabbing !important; user-select: none !import
   .trip-pill-tab:not(.active) .trip-tab-label { display: none; }
   .trip-pill-tab:not(.active) { padding-left: 11px; padding-right: 11px; }
 }
+
+/* ── Plan a trip, one question at a time (CreateTripWizard) ─────────────── */
+.ctw-overlay {
+  position: fixed; inset: 0; z-index: 1200;
+  background: rgba(27, 25, 37, 0.5);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.ctw-panel {
+  position: relative;
+  width: min(640px, 100%);
+  /* One steady size for every step: the window doesn't jump between
+     questions, and a search field's suggestion list fits under it. */
+  height: min(620px, calc(100dvh - 48px));
+  overflow-y: auto;
+  background: var(--paper);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px -20px rgba(17, 24, 39, 0.45);
+  padding: 18px 32px 28px;
+  display: flex; flex-direction: column;
+  animation: ctw-in 180ms ease-out;
+}
+@keyframes ctw-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.ctw-top { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.ctw-icon-btn {
+  width: 38px; height: 38px; flex-shrink: 0; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--film); border: 1px solid var(--line); color: var(--ink-soft); cursor: pointer;
+}
+.ctw-icon-btn:hover { background: var(--film-hover); color: var(--ink); }
+.ctw-icon-spacer { width: 38px; flex-shrink: 0; }
+.ctw-progress { flex: 1; display: flex; gap: 6px; }
+.ctw-progress span { flex: 1; height: 5px; border-radius: 99px; background: var(--inset); transition: background 200ms; }
+.ctw-progress span.is-done { background: var(--accent); }
+.ctw-body { flex: 1; min-height: 0; animation: ctw-step 200ms ease-out; }
+@keyframes ctw-step { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+.ctw-step { margin: 0 0 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-muted); }
+.ctw-question { margin: 0; font-size: clamp(26px, 5vw, 34px); line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); outline: none; }
+.ctw-hint { margin: 8px 0 20px; font-size: 15px; color: var(--ink-muted); }
+.ctw-body .location-input, .ctw-input { min-height: 54px; font-size: 16px; }
+.ctw-chips { margin-top: 14px; }
+.ctw-check { margin: 18px 0 12px; font-size: 14.5px; }
+.ctw-note { margin: 0; font-size: 13.5px; color: var(--ink-muted); }
+.ctw-date-summary {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 12px 14px; margin-bottom: 14px; border-radius: 14px;
+  background: var(--base); border: 1px solid var(--line);
+  font-size: 15px; font-weight: 600; color: var(--ink);
+}
+.ctw-muted { color: var(--ink-muted); font-weight: 500; }
+.ctw-link { margin-left: auto; background: none; border: 0; color: var(--accent); font-weight: 600; font-size: 14px; cursor: pointer; padding: 0 2px; }
+.ctw-calendar .react-datepicker {
+  width: 100%; display: flex; gap: 8px; border: 0 !important; box-shadow: none !important;
+  font-family: inherit; background: transparent !important;
+}
+.ctw-calendar .react-datepicker__month-container { flex: 1; float: none; min-width: 0; }
+.ctw-calendar .react-datepicker__header { background: transparent !important; border-bottom: 0 !important; padding-top: 4px; }
+.ctw-calendar .react-datepicker__current-month { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.ctw-calendar .react-datepicker__navigation { top: 4px; }
+.ctw-calendar .react-datepicker__month { margin: 0; }
+.ctw-calendar .react-datepicker__week,
+.ctw-calendar .react-datepicker__day-names { display: grid; grid-template-columns: repeat(7, 1fr); }
+.ctw-calendar .react-datepicker__day-name,
+.ctw-calendar .react-datepicker__day {
+  width: auto; margin: 2px 1px; line-height: 40px; font-size: 14px;
+}
+.ctw-calendar .react-datepicker__day-name { line-height: 24px; color: var(--ink-muted) !important; font-weight: 600; font-size: 12px; }
+.ctw-calendar .react-datepicker__day--in-range,
+.ctw-calendar .react-datepicker__day--in-selecting-range { background: rgba(30, 58, 138, 0.12) !important; color: var(--ink) !important; border-radius: 0 !important; }
+.ctw-calendar .react-datepicker__day--range-start,
+.ctw-calendar .react-datepicker__day--range-end,
+.ctw-calendar .react-datepicker__day--selecting-range-start,
+.ctw-calendar .react-datepicker__day--selected {
+  background: var(--accent) !important; color: #fff !important; border-radius: 10px !important; font-weight: 700;
+}
+.ctw-calendar .react-datepicker__day--disabled { color: var(--ink-faint) !important; opacity: 0.45; }
+.ctw-calendar .react-datepicker__day--outside-month { visibility: hidden; }
+.ctw-calendar .react-datepicker__day--keyboard-selected:not(.react-datepicker__day--in-range) { background: transparent !important; }
+.ctw-budget-label { display: block; margin-top: 22px; }
+.ctw-summary { list-style: none; margin: 22px 0 0; padding: 4px 14px; border-radius: 14px; background: var(--base); border: 1px solid var(--line); }
+.ctw-summary li { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-size: 14.5px; color: var(--ink-soft); }
+.ctw-summary li + li { border-top: 1px solid var(--line-soft); }
+.ctw-summary li > svg { flex-shrink: 0; color: var(--accent); }
+.ctw-summary li > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.ctw-edit { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; border: 0; background: transparent; color: var(--ink-muted); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.ctw-edit:hover { background: var(--film-hover); color: var(--accent); }
+.ctw-error { margin-top: 14px; }
+.ctw-foot { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-top: 26px; }
+.ctw-next { min-width: 150px; height: 50px; font-size: 15.5px; border-radius: 14px; }
+
+@media (max-width: 640px) {
+  .ctw-overlay { padding: 0; align-items: stretch; }
+  .ctw-panel {
+    width: 100%; height: 100dvh; border-radius: 0;
+    padding: max(12px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+  }
+  .ctw-top { margin-bottom: 18px; }
+  .ctw-hint { font-size: 14.5px; margin-bottom: 16px; }
+  /* The button sits right under the answer, not at the screen's bottom
+     edge, where the iPhone keyboard would cover it. */
+  .ctw-body { flex: none; }
+  .ctw-foot { margin-top: 24px; }
+  .ctw-foot .btn { flex: 1; }
+  .ctw-next { min-width: 0; }
+  .ctw-calendar .react-datepicker__day { line-height: 44px; }
+}
+.ctw-choices { display: grid; gap: 12px; }
+.ctw-choice {
+  display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+  padding: 18px; border-radius: 16px; cursor: pointer;
+  background: var(--paper); border: 1.5px solid var(--line-strong);
+  transition: border-color 150ms, background 150ms, transform 150ms;
+}
+.ctw-choice:hover:not(:disabled) { border-color: var(--accent); background: var(--film-hover); }
+.ctw-choice:active:not(:disabled) { transform: scale(0.99); }
+.ctw-choice:disabled { cursor: progress; opacity: 0.75; }
+.ctw-choice-icon {
+  width: 44px; height: 44px; flex-shrink: 0; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(30, 58, 138, 0.10); color: var(--accent);
+}
+.ctw-choice-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ctw-choice-title { font-size: 16px; font-weight: 700; color: var(--ink); }
+.ctw-choice-hint { font-size: 13.5px; color: var(--ink-muted); }
+.ctw-share-row { margin-top: 0; }
+.ctw-share-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.ctw-share-actions .btn { flex: 1 1 auto; justify-content: center; text-decoration: none; }
+.ctw-suggest {
+  margin-top: 12px; display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 14px; border-radius: 99px; cursor: pointer;
+  background: var(--film-hover); border: 1px solid rgba(30, 58, 138, 0.18);
+  color: var(--accent); font-size: 14px; font-weight: 600;
+}
+.ctw-kind {
+  margin-left: 2px; padding: 1px 7px; border-radius: 99px;
+  background: rgba(30, 58, 138, 0.10); color: var(--accent);
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase;
+}
+.ctw-spot-note { margin-top: 12px; }

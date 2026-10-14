@@ -13,12 +13,15 @@ async function getFirebase() {
 
 // ─── TRIPS ────────────────────────────────────────────────────────────────────
 
-export async function createTrip({ name, destination, description, startDate, endDate, budget, userId, startingPoint, endingPoint }) {
+export async function createTrip({ name, destination, destinationPlaces, description, startDate, endDate, budget, userId, startingPoint, endingPoint }) {
     const { db, collection, addDoc, serverTimestamp, setDoc, doc } = await getFirebase();
     const inviteCode = nanoid(8);
     const tripRef = await addDoc(collection(db, 'trips'), {
         name,
         destination,
+        // Each "Where to?" answer, marked 'area' (explore it) or 'place'
+        // (a stop of its own) for the planner.
+        destinationPlaces: destinationPlaces || [],
         description: description || '',
         startDate,
         endDate,

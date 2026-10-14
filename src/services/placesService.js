@@ -340,21 +340,28 @@ async function findPlaceByName(name, locationBias, area = '', maxKm = 0) {
  * Enrich AI-suggested places with real coordinates, ratings, and images.
  * Uses findPlaceFromText (more accurate than Geocoder for named attractions).
  */
-export async function enrichPlacesWithGoogle(places, destination) {
+// `near` ({ lat, lng, km }) anchors the search on known coordinates instead
+// of geocoding `destination`: a stop's name alone can geocode to a namesake
+// ("Macca Masjid" lands in Kalaburagi, 170 km from Hyderabad's).
+export async function enrichPlacesWithGoogle(places, destination, { near = null } = {}) {
     // Geocode the destination once for a location bias
-    const destGeo = destination ? await geocodePlace(destination, '').catch(() => null) : null;
-    const locationBias = destGeo ? { lat: destGeo.lat, lng: destGeo.lng } : null;
+    const destGeo = near ? null : destination ? await geocodePlace(destination, '').catch(() => null) : null;
+    const locationBias = near ? { lat: near.lat, lng: near.lng } : destGeo ? { lat: destGeo.lat, lng: destGeo.lng } : null;
     // One place ("Pondicherry") goes into each search; a route ("Chennai →
     // Pondicherry") spans too much to name, so it only biases.
-    const area = destination && !/->|→|\|/.test(destination) && destination.length <= 40 ? destination.trim() : '';
+    const area = !near && destination && !/->|→|\|/.test(destination) && destination.length <= 40 ? destination.trim() : '';
     // A geocoder hit far from the destination is a namesake elsewhere.
-    const maxKm = matchRadiusKm(destGeo);
+    const maxKm = near ? Math.max(MAX_MATCH_KM, near.km || 0) : matchRadiusKm(destGeo);
     const nearEnough = (geo) => !geo || !locationBias || distanceKm(locationBias, geo) <= maxKm;
 
     const promises = places.map(async (place) => {
         try {
             // findPlaceFromText gives us the correct attraction placeId, photos, and location
-            const found = await findPlaceByName(place.name, locationBias, area, maxKm);
+            // Naming the area can also sink a search: on-the-way picks pass a
+            // stop's name ("Macca Masjid"), and "Qutb Shahi Tombs, Macca
+            // Masjid" finds nothing. Then try the name alone, near the area.
+            const found = await findPlaceByName(place.name, locationBias, area, maxKm)
+                || (area ? await findPlaceByName(place.name, locationBias, '', maxKm) : null);
             if (found?.placeId && !found.imageUrl) {
                 // Has placeId but no inline photos — fetch details
                 const details = await getPlaceDetails(found.placeId);
@@ -382,7 +389,8 @@ export async function enrichPlacesWithGoogle(places, destination) {
                 };
             }
             // Fallback: geocoder
-            let geo = await geocodePlace(place.name, destination);
+            let geo = await geocodePlace(place.name, near ? '' : destination);
+            if (!geo && destination && !near) geo = await geocodePlace(place.name, '');
             if (!nearEnough(geo)) geo = null;
             let details = null;
             if (geo?.placeId) details = await getPlaceDetails(geo.placeId);
@@ -565,6 +573,7 @@ export async function autocompletePlaces(input, sessionToken) {
                     placeId: p.placeId,
                     main: p.structuredFormat?.mainText?.text || p.text?.text || '',
                     secondary: p.structuredFormat?.secondaryText?.text || '',
+                    types: p.types || [],
                 }));
         } catch (e) {
             if (/ 40[13]$/.test(e.message)) _acRestRefused = true;
@@ -587,7 +596,25 @@ async function autocompleteJs(q, sessionToken) {
         placeId: p.placeId,
         main: p.mainText?.text || p.text?.text || '',
         secondary: p.secondaryText?.text || '',
+        types: p.types || [],
     }));
+}
+
+// Google place types that name an area to explore (a city, a state, a
+// neighbourhood) rather than one place to visit (a fort, a beach, a café).
+const AREA_TYPES = new Set([
+    'locality', 'sublocality', 'sublocality_level_1', 'neighborhood', 'postal_town',
+    'administrative_area_level_1', 'administrative_area_level_2', 'administrative_area_level_3',
+    'administrative_area_level_4', 'country', 'colloquial_area', 'archipelago', 'political',
+]);
+
+/**
+ * 'area' or 'place' for a picked suggestion's types. Unknown types (a typed
+ * name that was never picked) count as an area.
+ */
+export function placeKind(types) {
+    if (!types?.length) return 'area';
+    return types.some(t => AREA_TYPES.has(t)) ? 'area' : 'place';
 }
 
 /** Coordinates and names for a picked suggestion. */
@@ -596,7 +623,7 @@ export async function resolvePlace(placeId, sessionToken) {
         try {
             const d = await placesRest(
                 `places/${encodeURIComponent(placeId)}${sessionToken ? `?sessionToken=${encodeURIComponent(sessionToken)}` : ''}`,
-                'id,displayName,formattedAddress,location',
+                'id,displayName,formattedAddress,location,types',
             );
             if (d.location) {
                 return {
@@ -605,6 +632,7 @@ export async function resolvePlace(placeId, sessionToken) {
                     lat: d.location.latitude,
                     lng: d.location.longitude,
                     placeId: d.id || placeId,
+                    types: d.types || [],
                 };
             }
         } catch (e) {
@@ -615,7 +643,7 @@ export async function resolvePlace(placeId, sessionToken) {
     const lib = await getPlacesLib();
     if (!lib?.Place) throw new Error('Places library unavailable');
     const place = new lib.Place({ id: placeId });
-    await place.fetchFields({ fields: ['displayName', 'formattedAddress', 'location'] });
+    await place.fetchFields({ fields: ['displayName', 'formattedAddress', 'location', 'types'] });
     if (!place.location) throw new Error('Place has no location');
     return {
         name: place.displayName || place.formattedAddress?.split(',')[0] || '',
@@ -623,5 +651,6 @@ export async function resolvePlace(placeId, sessionToken) {
         lat: place.location.lat(),
         lng: place.location.lng(),
         placeId,
+        types: place.types || [],
     };
 }

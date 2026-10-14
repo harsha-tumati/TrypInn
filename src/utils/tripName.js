@@ -29,3 +29,29 @@ export function suggestTripName({ destination, startingPoint, startDate, seed } 
     if (place) return `${place} ${flavor} ${year}`;
     return `My ${flavor} ${year}`;
 }
+
+// A word in front makes each made-up name its own: two trips from Chennai
+// don't both end up "Getaway from Chennai".
+const MOODS = ['Breezy', 'Sunny', 'Easy', 'Grand', 'Golden', 'Wild', 'Spontaneous', 'Lazy', 'Big', 'Little', 'Starry', 'Salty'];
+
+/**
+ * A name for a trip left unnamed when it's created: "Breezy Goa Getaway ·
+ * 22 Oct" from where it's headed and when, else "Breezy Getaway from
+ * Chennai" (from, because the start is where people leave, not where
+ * they're going).
+ * @param {object} opts
+ * @param {string} [opts.destination] - first place answered in "Where to?"
+ * @param {string} [opts.startingPoint] - starting location name
+ * @param {Date|string} [opts.startDate] - trip start date
+ * @param {number} [opts.seed] - keeps the word stable across renders
+ */
+export function suggestGetawayName({ destination, startingPoint, startDate, seed } = {}) {
+    const mood = MOODS[(seed ?? Math.floor(Math.random() * MOODS.length)) % MOODS.length];
+    const to = titleCase(firstPlace(destination));
+    const from = titleCase(firstPlace(startingPoint));
+    const when = startDate
+        ? new Date(startDate).toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })
+        : '';
+    const base = to ? `${mood} ${to} Getaway` : `${mood} Getaway${from ? ` from ${from}` : ''}`;
+    return `${base}${when ? ` · ${when}` : ''}`;
+}

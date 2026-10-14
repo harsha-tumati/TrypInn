@@ -12,7 +12,6 @@ import { useTrip } from '../context/TripContext';
 // to keep them out of the critical initial bundle.
 import { getDraftIds, addDraftId, isTripClaimed } from '../utils/draftTrips';
 import { formatDate } from '../utils/dateHelpers';
-import { suggestTripName } from '../utils/tripName';
 import { hasCoords } from '../utils/geo';
 import { MAPS_ENABLED } from '../config/maps';
 // PlacesPicker renders in the above-the-fold hero, so it is imported eagerly
@@ -20,13 +19,9 @@ import { MAPS_ENABLED } from '../config/maps';
 // swap, keeping LCP fast. Its Maps dependency is already on the homepage path
 // via MapsProvider, so this adds no extra initial chunk.
 import PlacesPicker from '../components/PlacesPicker';
-// Modal is always present in the homepage tree (rendered with open=false), so a
-// lazy import would suspend during prerender and collapse the page to the route
-// spinner. Import it eagerly; its heavy children below stay lazy (the closed
-// modal returns null, so they are never rendered until the modal opens).
-import Modal from '../components/Modal';
-const DateRangePicker = lazy(() => import('../components/DateRangePicker'));
-const LocationAutocomplete = lazy(() => import('../components/LocationAutocomplete'));
+// Only rendered once "Plan a trip" is tapped, so it never suspends the
+// prerendered homepage.
+const CreateTripWizard = lazy(() => import('../components/CreateTripWizard'));
 import {
     Plus, Link2, MapPin, Calendar, Users, Sparkles, Star, MessageCircle,
     Send, X, ArrowRight, Compass, Flame, Quote, Zap, ChevronRight, BookOpen, UserPlus,
@@ -150,16 +145,6 @@ function Reveal({ children, className = '', delay = 0, as: Tag = 'div' }) {
     );
 }
 
-function useWindowWidth() {
-    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1280);
-    useEffect(() => {
-        const onResize = () => setWidth(window.innerWidth);
-        window.addEventListener('resize', onResize);
-        return () => window.removeEventListener('resize', onResize);
-    }, []);
-    return width;
-}
-
 // The signed-in user's trip list, kept on this device so it shows instantly
 // on the next visit (refreshed from Firestore right after). Invite codes are
 // left out.
@@ -177,15 +162,33 @@ function writeTripsCache(uid, trips) {
     } catch { /* storage full or blocked — the cache is only a head start */ }
 }
 
+// The AI's visit length (minutes, by index) and best time of day (by
+// lowercased name) for places added as stops when a trip is created. Capped
+// at 6 seconds: a slow answer leaves the defaults rather than holding up
+// the new trip.
+async function stopTimings(spots, area) {
+    const ask = (async () => {
+        const { getPlaceVisitDurations, getBestVisitTimes } = await import('../config/openai');
+        const [d, t] = await Promise.all([
+            getPlaceVisitDurations(spots.map((p, i) => ({ id: i, name: p.name, description: p.formatted || '' }))).catch(() => null),
+            getBestVisitTimes(spots, area).catch(() => null),
+        ]);
+        return {
+            minutes: d?.durations || {},
+            times: Object.fromEntries(Object.entries(t?.times || {}).map(([k, v]) => [k.trim().toLowerCase(), v])),
+        };
+    })();
+    const timeout = new Promise((resolve) => setTimeout(() => resolve(null), 6000));
+    return Promise.race([ask.catch(() => null), timeout]);
+}
+
 export default function TripsPage() {
     const { user, loading: authLoading, authHint } = useAuth();
     const { setSelectedTrip } = useTrip();
     const navigate = useNavigate();
-    const windowWidth = useWindowWidth();
     // Deferred until the browser is idle: the hero and the rest of the page
     // load first.
     const { trips: publicTrips, error: publicTripsError } = usePublicTrips({ defer: true });
-    const isMobile = windowWidth < 768;
     const location = useLocation();
 
     const [trips, setTrips] = useState([]);
@@ -199,17 +202,11 @@ export default function TripsPage() {
 
     // Modals
     const [createOpen, setCreateOpen] = useState(false);
-    const [createForm, setCreateForm] = useState({ startDate: null, endDate: null, budget: '' });
+    // Places picked in the homepage search; they prefill "Where to?".
     const [tripPlaces, setTripPlaces] = useState([]);
-    const [startName, setStartName] = useState('');
-    const [startPoint, setStartPoint] = useState(null);
-    const [differentEnd, setDifferentEnd] = useState(false);
-    const [endName, setEndName] = useState('');
-    const [endPoint, setEndPoint] = useState(null);
-    const [nameSeed, setNameSeed] = useState(0);
-    const [tripName, setTripName] = useState('');
-    const [createError, setCreateError] = useState('');
-    const [creating, setCreating] = useState(false);
+    const [wizardPlaces, setWizardPlaces] = useState([]);
+    // A fresh wizard (empty answers) each time it opens.
+    const [wizardKey, setWizardKey] = useState(0);
 
     // A trip list = the signed-in user's claimed trips + anonymous drafts
     // created on this device. Drafts are tracked in localStorage.
@@ -235,8 +232,7 @@ export default function TripsPage() {
     // Open the create modal when the router state requests it (e.g. from Navbar button)
     useEffect(() => {
         if (location.state?.openPlanModal) {
-            resetCreateForm();
-            setCreateOpen(true);
+            openWizard();
             // Clear the state so refreshing or navigating back doesn't re-trigger
             navigate('.', { replace: true, state: {} });
         }
@@ -308,101 +304,109 @@ export default function TripsPage() {
         navigate(`/trip/${trip.id}`);
     }
 
-    function resetCreateForm(places = []) {
-        setCreateForm({ startDate: null, endDate: null, budget: '' });
-        setTripPlaces(places);
-        setStartName(''); setStartPoint(null);
-        setDifferentEnd(false);
-        setEndName(''); setEndPoint(null);
-        setTripName('');
-        setCreateError('');
-        setNameSeed((s) => s + 1);
+    function openWizard(places = []) {
+        setWizardPlaces(places);
+        setWizardKey((k) => k + 1);
+        setCreateOpen(true);
     }
 
     function openCreateEmpty() {
-        resetCreateForm();
-        setCreateOpen(true);
+        openWizard();
     }
 
     function openCreateForDest(destName) {
-        resetCreateForm(destName ? [{ name: destName }] : []);
-        setCreateOpen(true);
-    }
-
-    // Named after where they're headed: places picked in the homepage search,
-    // else a different end point. (Never the start — "Hyderabad Getaway" for
-    // a trip leaving Hyderabad reads wrong.)
-    const suggestedTripName = suggestTripName({
-        destination: tripPlaces[0]?.name || (differentEnd ? endName : ''),
-        startDate: createForm.startDate,
-        seed: nameSeed,
-    });
-
-    async function handleCreateTrip(e) {
-        e.preventDefault();
-        // Planning never requires login — every trip starts as an anonymous
-        // draft. It's claimed to a profile later via "Add to my profile".
-        if (!startName.trim()) { setCreateError('Add where your trip starts.'); return; }
-        if (differentEnd && !endName.trim()) {
-            setCreateError('Add where your trip ends — or uncheck the different-ending option.');
-            return;
-        }
-        setCreateError('');
-        setCreating(true);
-        try {
-            const [{ createTrip }, { forwardGeocode }] = await Promise.all([
-                import('../services/firestoreService'),
-                import('../services/placesService'),
-            ]);
-            const geocodeIfNeeded = async (place) => {
-                if (!place || hasCoords(place) || !MAPS_ENABLED) return place;
-                try {
-                    const geo = await forwardGeocode(place.name);
-                    if (!geo) return place;
-                    return {
-                        ...place,
-                        lat: geo.lat,
-                        lng: geo.lng,
-                        placeId: place.placeId || geo.placeId,
-                        formatted: place.formatted || geo.formatted,
-                    };
-                } catch {
-                    return place;
-                }
-            };
-
-            const resolvedStart = await geocodeIfNeeded(startPoint || { name: startName.trim() });
-            const resolvedEnd = differentEnd
-                ? await geocodeIfNeeded(endPoint || { name: endName.trim() })
-                : resolvedStart;
-
-            const startDateStr = createForm.startDate ? createForm.startDate.toISOString().split('T')[0] : null;
-            const endDateStr = createForm.endDate ? createForm.endDate.toISOString().split('T')[0] : null;
-            // Stops are added on the Plan tab, each with its own visit length.
-            // Places picked in the homepage search only set the destination
-            // (offered there as regions to explore), never 60-minute stops.
-            const destination = tripPlaces.map(p => p.name).join(', ') || (differentEnd ? resolvedEnd?.name || '' : '');
-            const tripId = await createTrip({
-                name: tripName.trim() || suggestedTripName,
-                destination,
-                startDate: startDateStr,
-                endDate: endDateStr,
-                budget: createForm.budget || null,
-                userId: null, // anonymous draft — claimed later from the itinerary
-                startingPoint: resolvedStart,
-                endingPoint: resolvedEnd,
-            });
-            addDraftId(tripId);
-            setCreateOpen(false);
-            loadTrips();
-            navigate(`/trip/${tripId}`);
-        } catch (e) { setCreateError(e.message); }
-        finally { setCreating(false); }
+        openWizard(destName ? [{ name: destName }] : []);
     }
 
     function handlePlanFromSearch() {
-        setNameSeed((s) => s + 1);
-        setCreateOpen(true);
+        openWizard(tripPlaces);
+    }
+
+    // A calendar day as YYYY-MM-DD in local time. (toISOString() is UTC, so
+    // midnight in India came out as the day before.)
+    const ymd = (d) => (d ? `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` : null);
+
+    // Planning never requires login: every trip starts as an anonymous draft,
+    // claimed to a profile later via "Add to my profile". Resolves to the new
+    // trip's id; errors are thrown back to the wizard, which shows them.
+    async function handleCreateTrip({ places, startDate, endDate, start, end, name, budget }) {
+        const [{ createTrip, addPlaces, updatePlaceOrder }, { forwardGeocode, placeKind }] = await Promise.all([
+            import('../services/firestoreService'),
+            import('../services/placesService'),
+        ]);
+        // A specific place answered in "Where to?" (a fort, a restaurant) goes
+        // straight into the plan as a stop. Its visit length and best time
+        // come from the AI, asked while the trip saves.
+        const spots = places.filter((p) => placeKind(p.types) === 'place' && hasCoords(p));
+        const timingsAsked = spots.length ? stopTimings(spots, places.filter((p) => !spots.includes(p)).map((p) => p.name).join(', ')) : null;
+        const geocodeIfNeeded = async (place) => {
+            if (!place || hasCoords(place) || !MAPS_ENABLED) return place;
+            try {
+                const geo = await forwardGeocode(place.name);
+                if (!geo) return place;
+                return {
+                    ...place,
+                    lat: geo.lat,
+                    lng: geo.lng,
+                    placeId: place.placeId || geo.placeId,
+                    formatted: place.formatted || geo.formatted,
+                };
+            } catch {
+                return place;
+            }
+        };
+
+        const [resolvedStart, resolvedEnd] = await Promise.all([
+            geocodeIfNeeded(start),
+            end ? geocodeIfNeeded(end) : null,
+        ]);
+        // Areas answered in "Where to?" set the destination; they're offered
+        // as regions to explore on the Plan tab.
+        const tripId = await createTrip({
+            name,
+            destination: places.map((p) => p.name).join(', '),
+            destinationPlaces: places.map((p) => ({
+                name: p.name,
+                kind: placeKind(p.types),
+                lat: p.lat ?? null,
+                lng: p.lng ?? null,
+                placeId: p.placeId || null,
+                formatted: p.formatted || '',
+            })),
+            startDate: ymd(startDate),
+            endDate: ymd(endDate),
+            budget,
+            userId: null, // anonymous draft — claimed later from the itinerary
+            startingPoint: resolvedStart,
+            endingPoint: resolvedEnd || resolvedStart,
+        });
+        if (spots.length) {
+            const { minutes = {}, times = {} } = (await timingsAsked) || {};
+            const ids = await addPlaces(tripId, spots.map((p, i) => {
+                const best = times[p.name.trim().toLowerCase()];
+                return {
+                    name: p.name,
+                    description: p.formatted || '',
+                    category: 'default',
+                    lat: p.lat,
+                    lng: p.lng,
+                    imageUrl: null,
+                    googlePlaceId: p.placeId || null,
+                    estimatedMinutes: minutes[i] || 60,
+                    group: null,
+                    ...(best?.bestTime ? { bestTime: best.bestTime, bestTimeReason: best.reason || null } : {}),
+                };
+            }));
+            await updatePlaceOrder(tripId, ids);
+        }
+        addDraftId(tripId);
+        loadTrips();
+        return tripId;
+    }
+
+    function openNewTrip(tripId) {
+        setCreateOpen(false);
+        navigate(`/trip/${tripId}`);
     }
 
     const chatEndRef = useRef(null);
@@ -858,96 +862,19 @@ export default function TripsPage() {
                 </div>
             )}
 
-            {/* ══ PLAN A TRIP MODAL ══ */}
-            <Modal open={createOpen} onClose={() => setCreateOpen(false)} title="Plan a trip"
-                subtitle="Tell us where you start and when — you'll add places on the Plan tab.">
-                <form onSubmit={handleCreateTrip} className="create-trip-form">
-                    <div>
-                        <label className="input-label" htmlFor="trip-start">Starting Point</label>
-                        <LocationAutocomplete
-                            id="trip-start"
-                            autoFocus
-                            value={startName}
-                            placeholder="Where does your trip start?"
-                            onChange={(t) => { setStartName(t); if (t.trim()) setCreateError(''); }}
-                            onSelect={(p) => { setStartPoint(p); if (p) setStartName(p.name); }}
-                        />
-                        <label className="checkbox-row" style={{ marginTop: 12 }}>
-                            <input
-                                type="checkbox"
-                                checked={differentEnd}
-                                onChange={(e) => setDifferentEnd(e.target.checked)}
-                            />
-                            <span>My trip ends at a different place</span>
-                        </label>
-                    </div>
-
-                    {differentEnd && (
-                        <div>
-                            <label className="input-label" htmlFor="trip-end">Ending Point</label>
-                            <LocationAutocomplete
-                                id="trip-end"
-                                value={endName}
-                                placeholder="Where does your trip end?"
-                                onChange={(t) => { setEndName(t); if (t.trim()) setCreateError(''); }}
-                                onSelect={(p) => { setEndPoint(p); if (p) setEndName(p.name); }}
-                            />
-                        </div>
-                    )}
-
-                    <div>
-                        <label className="input-label" htmlFor="trip-name">
-                            Trip name <span className="input-label-hint">optional</span>
-                        </label>
-                        <input
-                            id="trip-name"
-                            type="text"
-                            className="input-field"
-                            value={tripName}
-                            maxLength={60}
-                            placeholder={suggestedTripName}
-                            onChange={(e) => setTripName(e.target.value)}
-                        />
-                        <p className="field-hint">
-                            {tripPlaces.length > 0
-                                ? <>You’ll explore <strong>{tripPlaces.map(p => p.name).join(', ')}</strong> and add stops on the Plan tab next.</>
-                                : 'You’ll add the places to visit on the Plan tab next.'}
-                        </p>
-                    </div>
-
-                    <div>
-                        <label className="input-label">Trip Dates</label>
-                        <Suspense fallback={<div className="input-field" style={{ minHeight: 48 }}>Loading…</div>}>
-                            <DateRangePicker
-                                startDate={createForm.startDate}
-                                endDate={createForm.endDate}
-                                onStartChange={(date) => setCreateForm({ ...createForm, startDate: date })}
-                                onEndChange={(date) => setCreateForm({ ...createForm, endDate: date })}
-                                isMobile={isMobile}
-                            />
-                        </Suspense>
-                    </div>
-
-                    <div>
-                        <label className="input-label" htmlFor="modal-budget">
-                            Estimated Budget <span className="input-label-hint">optional</span>
-                        </label>
-                        <div className="input-prefix-wrap">
-                            <span className="input-prefix">₹</span>
-                            <input id="modal-budget" type="number" min="0" className="input-field" placeholder="15,000" value={createForm.budget} onChange={e => setCreateForm({ ...createForm, budget: e.target.value })} />
-                        </div>
-                    </div>
-
-                    {createError && <p className="form-error">{createError}</p>}
-
-                    <div className="modal-actions">
-                        <button type="button" className="btn btn-ghost btn-md" onClick={() => setCreateOpen(false)}>Cancel</button>
-                        <button type="submit" className="btn btn-primary btn-md" disabled={creating}>
-                            {creating ? <div className="spinner spinner-sm" /> : 'Plan a Trip →'}
-                        </button>
-                    </div>
-                </form>
-            </Modal>
+            {/* ══ PLAN A TRIP, ONE QUESTION AT A TIME ══ */}
+            {createOpen && (
+                <Suspense fallback={null}>
+                    <CreateTripWizard
+                        key={wizardKey}
+                        open
+                        initialPlaces={wizardPlaces}
+                        onClose={() => setCreateOpen(false)}
+                        onCreate={handleCreateTrip}
+                        onOpenTrip={openNewTrip}
+                    />
+                </Suspense>
+            )}
         </div>
     );
 }

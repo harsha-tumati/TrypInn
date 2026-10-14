@@ -87,7 +87,12 @@ export default function LocationAutocomplete({ value, onChange, onSelect, placeh
         try {
             const { resolvePlace } = await import('../services/placesService');
             const place = await resolvePlace(item.placeId, sessionRef.current);
-            const result = { ...place, name: item.main || place.name, formatted: place.formatted || [item.main, item.secondary].filter(Boolean).join(', ') };
+            const result = {
+                ...place,
+                name: item.main || place.name,
+                formatted: place.formatted || [item.main, item.secondary].filter(Boolean).join(', '),
+                types: place.types?.length ? place.types : (item.types || []),
+            };
             onSelect?.(result);
             if (clearOnSelect) {
                 onChange?.('');
