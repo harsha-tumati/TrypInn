@@ -47,6 +47,9 @@ function placeToStop(p) {
   };
 }
 
+// A local id for a stop added by hand, until it's saved.
+const newStopId = () => `stop-${Date.now()}`;
+
 // Stops added in the planner but not yet written to Firestore.
 const isLocalId = (id) => /^(stop|region|route)-/.test(id || '');
 const normName = (s) => (s || '').trim().toLowerCase();
@@ -155,7 +158,9 @@ function waitForPlaces(timeout = 10000) {
 }
 
 // ── RegionModal: pick specific places inside a region ───────────────────────
-function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose, cache, setCache, canPoll }) {
+// aiQuery: what to ask the AI for when it isn't simply the region's name ("the
+// area around Charminar"); regionName still keeps the matches in the right city.
+function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, onConfirm, onClose, cache, setCache, canPoll }) {
   const [places, setPlaces] = useState(cache[label] || []);
   const [loading, setLoading] = useState(!cache[label]);
   const [selected, setSelected] = useState({});
@@ -166,7 +171,7 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
   const loadMore = async () => {
     setLoading(true);
     try {
-      const r = await getRegionPlaces(regionName, excluded);
+      const r = await getRegionPlaces(aiQuery || regionName, excluded);
       const aiPlaces = r.places || [];
       await waitForPlaces().catch(() => {});
       const enriched = await enrichPlacesWithGoogle(aiPlaces, regionName).catch(() => aiPlaces);
@@ -201,7 +206,7 @@ function RegionModal({ regionName, label, existingStopsNames, onConfirm, onClose
         <div style={{ padding: isMobile ? '16px 16px 12px' : '24px 24px 16px', borderBottom:'1px solid #f1f5f9', flexShrink:0 }}>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
             <div>
-              <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>Explore {label} ✨</h2>
+              <h2 style={{ fontSize: isMobile ? 18 : 20, fontWeight:800, color:'#0f172a', margin:0 }}>{title || `Explore ${label}`} ✨</h2>
               <p style={{ fontSize:14, color:'#64748b', margin:'4px 0 0' }}>{reviewing ? 'Check the timings before adding' : 'Pick the spots you want to visit'}</p>
             </div>
             <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={24}/></button>
@@ -435,7 +440,13 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
       const r = await getRouteMustVisits(fromName, toName, excluded);
       const aiPlaces = r.suggestions || [];
       await waitForPlaces().catch(() => {});
-      const enriched = await enrichPlacesWithGoogle(aiPlaces, fromName).catch(() => aiPlaces);
+      // Anchored halfway between the two stops, wide enough to reach both.
+      const near = fromCoords && toCoords ? {
+        lat: (fromCoords.lat + toCoords.lat) / 2,
+        lng: (fromCoords.lng + toCoords.lng) / 2,
+        km: haversineKm(fromCoords.lat, fromCoords.lng, toCoords.lat, toCoords.lng),
+      } : (fromCoords || toCoords) ? { ...(fromCoords || toCoords), km: 0 } : null;
+      const enriched = await enrichPlacesWithGoogle(aiPlaces, fromName, { near }).catch(() => aiPlaces);
       const newPlaces = [...places, ...enriched];
       setPlaces(newPlaces);
       setCache(c => ({ ...c, [cacheKey]: newPlaces }));
@@ -922,7 +933,7 @@ function PlannerContent({ onOpenMap }) {
     if (opts.askCrew) askCrew([placeObj?.name || name]);
     setShowAddModal(false);
     if (hasName(stops, placeObj?.name || name)) return; // already in the trip
-    const id = `stop-${Date.now()}`;
+    const id = newStopId();
     if (placeObj) {
       edit(p => [...p, {
         id, name: placeObj.name, description: placeObj.formatted || '', category: 'default',
@@ -1020,6 +1031,29 @@ function PlannerContent({ onOpenMap }) {
     ? { id:'_end', name:selectedTrip.endingPoint.name, lat:selectedTrip.endingPoint.lat, lng:selectedTrip.endingPoint.lng, description:'Trip ends here', category:'end', estimatedMinutes:0, imageUrl:null }
     : null;
   const blocks = groupStops(stops);
+  // The trip's "Where to?" answers with nothing from them in the plan yet.
+  // An area counts as explored once a stop belongs to its region. A specific
+  // place (a fort, a restaurant) is added as a stop when the trip is created,
+  // or with one tap here; after that, what's left is exploring the area
+  // around it, "Near X". Trips from before places were marked area/place
+  // only have the destination text: every name there is an area.
+  const destinations = selectedTrip?.destinationPlaces?.length
+    ? selectedTrip.destinationPlaces
+    : (selectedTrip?.destination || '').split(',').map(d => ({ name: d.trim(), kind: 'area' })).filter(d => d.name);
+  const destLabel = (d) => (d.kind === 'place' ? `Near ${d.name}` : regionLabel(d.name));
+  const isStop = (d) => stops.some(s => normName(s.name) === normName(d.name));
+  const unexplored = destinations
+    .filter((d, i, all) => all.findIndex(x => normName(x.name) === normName(d.name)) === i)
+    .filter(d => !stops.some(s => normName(s.group) === normName(destLabel(d))) && (d.kind === 'place' || !isStop(d)))
+    .slice(0, 4);
+  const exploreDestination = (d) => setRegionModal(d.kind === 'place'
+    ? {
+      query: d.formatted || d.name,
+      aiQuery: `the area within about 3 km of ${d.name}${d.formatted ? ` (${d.formatted})` : ''}, including ${d.name} itself`,
+      label: destLabel(d),
+      title: `Explore near ${d.name}`,
+    }
+    : { query: d.name, label: destLabel(d) });
   const isEmpty = !startStop && !endStop && stops.length === 0;
 
   // One stop on the timeline: its node (letter, or 🏠 / 🏁) and its card.
@@ -1354,16 +1388,23 @@ function PlannerContent({ onOpenMap }) {
           {endStop && renderStop(endStop, { kind: 'end', isLast: true })}
         </div>
 
-        {/* A new trip has no stops yet: offer the places picked when it was
-            created (its destination) as regions to explore. */}
-        {!isGuest && stops.length === 0 && (selectedTrip?.destination || '').trim() && (
+        {/* The places answered in "Where to?" (the trip's destination) stay on
+            offer as regions to explore until each one has stops of its own.
+            (Only offering them on an empty plan meant that exploring the
+            first destination hid the rest.) */}
+        {!isGuest && unexplored.length > 0 && (
           <div className="planner-start-with">
-            <span className="planner-start-with-label">Start with</span>
-            {selectedTrip.destination.split(',').map(d => d.trim()).filter(Boolean).slice(0, 4).map(d => (
-              <button key={d} type="button" className="planner-start-chip" onClick={() => setRegionModal({ query: d, label: d })}>
-                <Compass size={15} aria-hidden="true" /> Explore {d}
+            <span className="planner-start-with-label">{stops.length ? 'Still to explore' : 'Start with'}</span>
+            {unexplored.map(d => (d.kind === 'place' && !isStop(d) ? (
+              <button key={d.name} type="button" className="planner-start-chip"
+                onClick={() => addSpecificStop(d.name, d.lat != null ? { ...d, googlePlaceId: d.placeId } : null)}>
+                <Plus size={15} aria-hidden="true" /> Add {d.name}
               </button>
-            ))}
+            ) : (
+              <button key={d.name} type="button" className="planner-start-chip" onClick={() => exploreDestination(d)}>
+                <Compass size={15} aria-hidden="true" /> {d.kind === 'place' ? `Explore near ${d.name}` : `Explore ${d.name}`}
+              </button>
+            )))}
           </div>
         )}
 
@@ -1474,7 +1515,7 @@ function PlannerContent({ onOpenMap }) {
         />
       )}
       {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer} canPoll={canPoll}/>}
-      {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks} canPoll={canPoll}/>}
+      {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} aiQuery={regionModal.aiQuery} title={regionModal.title} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks} canPoll={canPoll}/>}
       {routeModal && <RouteModal fromName={routeModal.fromName} toName={routeModal.toName} fromCoords={routeModal.fromCoords} toCoords={routeModal.toCoords} existingStopsNames={stops.map(s => s.name)} cache={routeCache} setCache={setRouteCache} onClose={() => setRouteModal(null)} onConfirm={insertRouteStops} canPoll={canPoll}/>}
     </div>
   );
