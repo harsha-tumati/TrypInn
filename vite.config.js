@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import purgeCSS from 'vite-plugin-purgecss'
 import { compression } from 'vite-plugin-compression2'
+import { forwardAi } from './ai-proxy.js'
 
 function openaiProxyDevPlugin() {
   return {
@@ -19,28 +20,10 @@ function openaiProxyDevPlugin() {
         req.on('end', async () => {
           try {
             const env = loadEnv('', process.cwd(), '');
-            const apiKey = env.OPENAI_API_KEY || env.VITE_OPENAI_API_KEY;
-
-            if (!apiKey) {
-              res.statusCode = 500;
-              res.setHeader('Content-Type', 'application/json');
-              res.end(JSON.stringify({ error: 'OpenAI API key not configured' }));
-              return;
-            }
-
-            const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${apiKey}`
-                },
-                body: bodyStr
-            });
-
-            const data = await openaiRes.text();
-            res.statusCode = openaiRes.status;
+            const { status, json } = await forwardAi(JSON.parse(bodyStr || '{}'), env);
+            res.statusCode = status;
             res.setHeader('Content-Type', 'application/json');
-            res.end(data);
+            res.end(JSON.stringify(json));
           } catch (err) {
              res.statusCode = 500;
              res.setHeader('Content-Type', 'application/json');
