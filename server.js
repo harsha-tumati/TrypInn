@@ -7,6 +7,7 @@ import { file, serve } from 'bun';
 import { join as nodeJoin, posix } from 'node:path';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { forwardAi } from './ai-proxy.js';
 
 // Use POSIX path semantics for URL <-> manifest key mapping so the
 // behaviour is identical on Linux/macOS/Windows (URLs are always /-separated).
@@ -180,27 +181,11 @@ const server = serve({
             if (method !== 'POST') {
                 return new Response('Method not allowed', { status: 405, headers: { allow: 'POST' } });
             }
-            const apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
-            if (!apiKey) {
-                return new Response(JSON.stringify({ error: 'OpenAI API key not configured' }), { status: 500, headers: { 'content-type': 'application/json' } });
-            }
             try {
-                const body = await req.json();
-                const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${apiKey}`
-                    },
-                    body: JSON.stringify(body)
-                });
-                const data = await openaiRes.json();
-                return new Response(JSON.stringify(data), {
-                    status: openaiRes.status,
-                    headers: { 'content-type': 'application/json' }
-                });
+                const { status, json } = await forwardAi(await req.json(), process.env);
+                return new Response(JSON.stringify(json), { status, headers: { 'content-type': 'application/json' } });
             } catch (err) {
-                console.error('[openai proxy error]', err);
+                console.error('[ai proxy error]', err);
                 return new Response(JSON.stringify({ error: 'Failed to proxy request' }), { status: 500, headers: { 'content-type': 'application/json' } });
             }
         }
