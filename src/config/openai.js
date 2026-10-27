@@ -31,6 +31,33 @@ const openai = {
 };
 
 /**
+ * The JSON in an AI answer, in the shape the prompt asked for. Models don't
+ * always follow the wrapper: asked for {"suggestions": [...]}, Gemini about
+ * half the time sends just the [...] list, which read as "no suggestions"
+ * and left the screen empty. So:
+ *   listKey   — a bare list (or an object holding one other list) is put
+ *               back under this key
+ *   objectKey — an object missing this key is taken to be its contents
+ * A stray ```json fence around the answer is ignored too.
+ */
+function readJson(response, { listKey, objectKey } = {}) {
+    const raw = response.choices?.[0]?.message?.content || '';
+    const text = raw.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+    const parsed = JSON.parse(text);
+    if (listKey) {
+        if (Array.isArray(parsed)) return { [listKey]: parsed };
+        if (parsed && !Array.isArray(parsed[listKey])) {
+            const lists = Object.values(parsed).filter(Array.isArray);
+            if (lists.length === 1) return { ...parsed, [listKey]: lists[0] };
+        }
+    }
+    if (objectKey && parsed && !Array.isArray(parsed) && !(objectKey in parsed)) {
+        return { [objectKey]: parsed };
+    }
+    return parsed;
+}
+
+/**
  * Get AI-powered destination suggestions using GPT-4o Mini.
  * Returns structured JSON: { places, food_places, hidden_gems }
  */
@@ -58,8 +85,7 @@ Include at least 5 places, 4 food places, and 3 hidden gems. Always include the 
         max_tokens: 1500,
     });
 
-    const content = response.choices[0].message.content;
-    return JSON.parse(content);
+    return readJson(response);
 }
 
 /**
@@ -96,8 +122,7 @@ Return JSON in this exact format:
         max_tokens: 2000,
     });
 
-    const content = response.choices[0].message.content;
-    return JSON.parse(content);
+    return readJson(response);
 }
 
 /**
@@ -154,8 +179,7 @@ Return JSON in this exact format:
         max_tokens: 1000,
     });
 
-    const content = response.choices[0].message.content;
-    return JSON.parse(content);
+    return readJson(response, { listKey: 'en_route_places' });
 }
 
 /**
@@ -200,8 +224,7 @@ export async function getPlaceVisitDurations(places) {
         max_tokens: 1000,
     });
 
-    const content = response.choices[0].message.content;
-    const parsed = JSON.parse(content);
+    const parsed = readJson(response, { listKey: 'places' });
     const durations = {};
     const daysMeta = {};
     (parsed.places || parsed.durations || []).forEach(item => {
@@ -238,7 +261,7 @@ bestTime is the best time of day to be there, as a 24-hour "HH:MM-HH:MM" window 
         response_format: { type: 'json_object' },
         max_tokens: 1600,
     });
-    return JSON.parse(response.choices[0].message.content);
+    return readJson(response, { listKey: 'places' });
 }
 
 /**
@@ -264,7 +287,7 @@ bestTime is the best time of day to be there, as a 24-hour "HH:MM-HH:MM" window 
         response_format: { type: 'json_object' },
         max_tokens: 1000,
     });
-    return JSON.parse(response.choices[0].message.content);
+    return readJson(response, { listKey: 'suggestions' });
 }
 
 export default openai;
@@ -291,5 +314,5 @@ export async function getBestVisitTimes(places, area = '') {
         response_format: { type: 'json_object' },
         max_tokens: 700,
     });
-    return JSON.parse(response.choices[0].message.content);
+    return readJson(response, { objectKey: 'times' });
 }

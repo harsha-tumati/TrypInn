@@ -1,17 +1,16 @@
 // src/pages/ItineraryPage.jsx
 import { Fragment, useState, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useTrip } from '../context/TripContext';
-import { useAuth } from '../context/AuthContext';
 import { getOptimizedRoute, computeLegDurations } from '../services/routeService';
 import { hasCoords } from '../utils/geo';
 import { getSuggestions, getPlaceVisitDurations } from '../config/openai';
 import { enrichPlacesWithGoogle } from '../services/placesService';
-import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, updateTrip, claimTrip } from '../services/firestoreService';
+import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, updateTrip } from '../services/firestoreService';
 import { useGuestMode } from '../context/GuestModeContext';
 import LocationAutocomplete from '../components/LocationAutocomplete';
-import { isTripClaimed, removeDraftId } from '../utils/draftTrips';
-import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Sparkles, BookmarkPlus, Pencil, RotateCcw } from 'lucide-react';
+import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Pencil, RotateCcw } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
+import DraftClaimBanner from '../components/DraftClaimBanner';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
 import MapsProvider from '../components/MapsProvider';
 import { MAPS_ENABLED } from '../config/maps';
@@ -166,7 +165,6 @@ function DriveTime({ minutes, expected, edited, distance, format, readOnly, onCh
 
 function ItineraryContent({ onOpenMap }) {
     const { selectedTrip, setSelectedTrip, places } = useTrip();
-    const { user } = useAuth();
     const isGuest = useGuestMode();
     const navigate = useNavigate();
     const { tripId } = useParams();
@@ -301,52 +299,6 @@ function ItineraryContent({ onOpenMap }) {
         manualBreaks, forcedDayBreaks, forcedDayMerges, removedNightStays, timeEdits, openLegs, activeView, remoteJson, lastWrittenJson,
         aiSuggestions, sidebarTab, nearbyQuery, nearbyResults, onWayResults]);
 
-    // ── Draft → profile claiming ─────────────────────────────────────────────
-    // A trip is created anonymously as a draft. Claiming it to a profile is
-    // what unlocks the collaborative tabs (Expenses, Chat, Polls).
-    const isDraft = !!selectedTrip && !isTripClaimed(selectedTrip);
-    const [claiming, setClaiming] = useState(false);
-    const [claimError, setClaimError] = useState('');
-
-    async function handleClaim() {
-        if (!selectedTrip || claiming) return;
-        // Saving to a profile needs an account — bounce to login, then resume
-        // the claim automatically once the user lands back on this page.
-        if (!user) {
-            try { sessionStorage.setItem('trypinn_claim', selectedTrip.id); } catch { /* storage unavailable */ }
-            navigate('/login', { state: { from: `/trip/${selectedTrip.id}/itinerary` } });
-            return;
-        }
-        setClaiming(true);
-        setClaimError('');
-        try {
-            await claimTrip(selectedTrip.id, user.uid);
-            removeDraftId(selectedTrip.id);
-            setSelectedTrip({ ...selectedTrip, claimed: true, createdBy: user.uid });
-        } catch (e) {
-            setClaimError(e.message || 'Could not save this trip. Please try again.');
-        } finally {
-            setClaiming(false);
-        }
-    }
-
-    // Resume a pending claim after the user signs in (see handleClaim).
-    useEffect(() => {
-        if (!user || !selectedTrip) return;
-        let pending = null;
-        try { pending = sessionStorage.getItem('trypinn_claim'); } catch { /* storage unavailable */ }
-        if (pending !== selectedTrip.id || isTripClaimed(selectedTrip)) return;
-        try { sessionStorage.removeItem('trypinn_claim'); } catch { /* storage unavailable */ }
-        (async () => {
-            try {
-                await claimTrip(selectedTrip.id, user.uid);
-                removeDraftId(selectedTrip.id);
-                setSelectedTrip({ ...selectedTrip, claimed: true, createdBy: user.uid });
-            } catch (e) {
-                console.error('Auto-claim failed', e);
-            }
-        })();
-    }, [user, selectedTrip, setSelectedTrip]);
     // Sort places by saved order. Memoised so its identity is stable across
     // renders — effects can depend on it directly without signature hacks.
     const placeOrderKey = selectedTrip?.placeOrder?.join(',') ?? '';
@@ -1170,22 +1122,7 @@ function ItineraryContent({ onOpenMap }) {
         <div className="itinerary-page" style={{ flexDirection: isNarrow ? 'column' : 'row', overflowX: 'hidden' }}>
             {/* Left Main Area */}
             <div className="itinerary-main" style={{ padding: isMobile ? '20px 16px' : '36px 44px', overflowX: 'hidden' }}>
-                {isDraft && (
-                    <div className="claim-banner">
-                        <div className="claim-banner-text">
-                            <div className="claim-banner-title">
-                                <Sparkles size={16} aria-hidden="true" /> This trip is a draft
-                            </div>
-                            <p>Save it to your profile to unlock group expenses, chat and polls — and keep it synced across your devices.</p>
-                            {claimError && <p className="claim-banner-error">{claimError}</p>}
-                        </div>
-                        <button type="button" className="claim-banner-btn" onClick={handleClaim} disabled={claiming}>
-                            {claiming
-                                ? <div className="spinner spinner-sm" style={{ borderTopColor: '#fff', borderColor: 'rgba(255,255,255,0.4)' }} aria-hidden="true" />
-                                : <><BookmarkPlus size={16} aria-hidden="true" /> Add to my profile</>}
-                        </button>
-                    </div>
-                )}
+                <DraftClaimBanner returnTo={`/trip/${tripId}/itinerary`} />
                 <div className="trip-head">
                     <div className="trip-head-text">
                         <span className="eyebrow" style={{ color: 'var(--color-teal)' }}>Day by day</span>
