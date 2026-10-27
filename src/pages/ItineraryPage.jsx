@@ -321,6 +321,25 @@ function ItineraryContent({ onOpenMap }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [placesKey, placeOrderKey]);
 
+    // A place planned twice (the hotel you come back to, a city on the way
+    // there and back): id → 2 for its second visit, 3 for its third…
+    const repeatVisit = useMemo(() => {
+        const seen = new Map();
+        const out = {};
+        orderedPlaces.forEach(p => {
+            const key = (p.name || '').trim().toLowerCase();
+            const n = (seen.get(key) || 0) + 1;
+            seen.set(key, n);
+            if (n > 1) out[p.id] = n;
+        });
+        return out;
+    }, [orderedPlaces]);
+    const visitTag = (place) => repeatVisit[place.id] ? (
+        <span style={{ fontSize: 10, color: '#92400e', fontWeight: 600, background: '#fef3c7', padding: '1px 6px', borderRadius: 4, marginLeft: 8, verticalAlign: 'middle' }}>
+            {repeatVisit[place.id] === 2 ? '2nd' : repeatVisit[place.id] === 3 ? '3rd' : `${repeatVisit[place.id]}th`} visit
+        </span>
+    ) : null;
+
     // The trip the sidebar's results belong to. Restored results already
     // belong to this trip, so coming back to the tab doesn't wipe them.
     const sidebarTripRef = useRef(sessionState.has(tripId) ? tripId : null);
@@ -1357,13 +1376,13 @@ function ItineraryContent({ onOpenMap }) {
                                                                     radius={12}
                                                                 />
                                                                 <div style={{ minWidth: 0 }}>
-                                                                    <div className="itin-card-name">{place.name}</div>
+                                                                    <div className="itin-card-name">{place.name}{visitTag(place)}</div>
                                                                     <div className="itin-card-desc">{place.description || place.name}</div>
                                                                 </div>
                                                             </div>
                                                         ) : (
                                                             <>
-                                                                <div style={{ fontSize: 16, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>{place.name}</div>
+                                                                <div style={{ fontSize: 16, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>{place.name}{visitTag(place)}</div>
                                                                 <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#64748b', fontSize: 13, marginBottom: 8 }}>
                                                                     <MapPin size={12} /> <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 250 }}>{place.description || place.name}</span>
                                                                 </div>
