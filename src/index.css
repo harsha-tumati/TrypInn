@@ -5901,6 +5901,16 @@ html, body {
 /* Itinerary stop card — compact phone layout */
 .itin-card-head { display: flex; align-items: center; gap: 12px; min-height: 60px; }
 .itin-card-head > :first-child { flex-shrink: 0; }
+/* Itinerary: a region from the Plan tab opens with a small heading, and its
+   places carry a thin accent on the left so the run reads as one group. */
+.itin-region-head {
+  display: flex; align-items: center; gap: 6px; min-width: 0;
+  margin: 4px 0 10px 48px; color: #1E3A8A; font-size: 13px;
+}
+.itin-region-head svg { flex-shrink: 0; }
+.itin-region-name { font-weight: 800; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.itin-region-meta { color: #64748b; font-weight: 600; white-space: nowrap; }
+.itin-card.in-region { border-left: 3px solid #c7d2fe !important; }
 .itin-card-name { font-size: 16.5px; font-weight: 800; color: #0f172a; line-height: 1.25; letter-spacing: -0.01em; }
 /* Two lines, then an ellipsis — a single unbreakable line made the card
    wider than the phone for long descriptions. */
