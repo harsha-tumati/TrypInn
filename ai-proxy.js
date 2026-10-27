@@ -44,11 +44,20 @@ export function aiUpstream(body, env) {
 export async function forwardAi(body, env) {
     const up = aiUpstream(body, env);
     if (up.error) return { status: 500, json: { error: up.error } };
-    const res = await fetch(up.url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${up.key}` },
-        body: JSON.stringify(up.body),
-    });
+    // Gemini's free tier sometimes answers "too many requests" (429) or
+    // "overloaded" (503) for a moment, e.g. when the app asks several things
+    // at once. Two short retries ride that out instead of failing the screen.
+    let res;
+    for (let attempt = 0; ; attempt++) {
+        res = await fetch(up.url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${up.key}` },
+            body: JSON.stringify(up.body),
+        });
+        if (![429, 500, 503].includes(res.status) || attempt === 2) break;
+        console.warn(`[ai proxy] ${up.provider} ${res.status}, retrying`);
+        await new Promise((r) => setTimeout(r, 1200 * (attempt + 1)));
+    }
     const text = await res.text();
     let json;
     try { json = JSON.parse(text); } catch { json = { error: `AI provider returned ${res.status}` }; }

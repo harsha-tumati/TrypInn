@@ -24,6 +24,8 @@ import MapView from './TripDetailPage';
 import PlaceThumb from '../components/PlaceThumb';
 import ReviewPicks from '../components/ReviewPicks';
 import { startDragReorder } from '../utils/dragReorder';
+import { regionLabel, prefetchedRegion } from '../utils/regionPrefetch';
+import DraftClaimBanner from '../components/DraftClaimBanner';
 import { formatBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 import { publicSummaryFor } from '../utils/publicTrips';
@@ -57,11 +59,6 @@ const normName = (s) => (s || '').trim().toLowerCase();
 // A, B, … Z, then 27, 28 — past Z the alphabet runs out.
 const stopLetter = (i) => (i < 26 ? String.fromCharCode(65 + i) : String(i + 1));
 
-// "goa, india" → "Goa". The region's name is the group's heading.
-function regionLabel(text) {
-  const first = (text || '').split(',')[0].trim();
-  return first === first.toLowerCase() ? first.replace(/\b\w/g, c => c.toUpperCase()) : first;
-}
 
 // Consecutive stops picked from the same explored region render as one block,
 // nested under the region's name. Everything else is a block of one.
@@ -167,12 +164,17 @@ function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, on
   const [excluded, setExcluded] = useState([...existingStopsNames, ...(cache[label] || []).map(p => p.name)]);
   const inTrip = new Set(existingStopsNames.map(normName));
   const isMobile = useIsMobile();
+  // Set when the AI couldn't answer, so the list says so instead of
+  // showing nothing.
+  const [failed, setFailed] = useState(false);
 
   const loadMore = async () => {
     setLoading(true);
+    setFailed(false);
     try {
       const r = await getRegionPlaces(aiQuery || regionName, excluded);
       const aiPlaces = r.places || [];
+      if (!aiPlaces.length) throw new Error('No places came back');
       await waitForPlaces().catch(() => {});
       const enriched = await enrichPlacesWithGoogle(aiPlaces, regionName).catch(() => aiPlaces);
       const newPlaces = [...places, ...enriched];
@@ -181,6 +183,7 @@ function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, on
       setExcluded(e => [...e, ...aiPlaces.map(a => a.name)]);
     } catch (e) {
       console.error(e);
+      setFailed(true);
     } finally {
       setLoading(false);
     }
@@ -189,8 +192,24 @@ function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, on
   React.useEffect(() => {
     // One-shot fetch when the modal mounts; loadMore owns its own loading
     // state and must not refire on cache/region identity changes.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (!cache[label]) loadMore();
+    if (cache[label]) return;
+    // Places fetched ahead (while the trip was being created) open at once,
+    // or as soon as that fetch lands; otherwise ask now.
+    const ahead = !aiQuery && prefetchedRegion(label);
+    if (!ahead) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      loadMore();
+      return;
+    }
+    let alive = true;
+    ahead.then((found) => {
+      if (!alive) return;
+      setPlaces(found);
+      setCache(c => ({ ...c, [label]: found }));
+      setExcluded(e => [...e, ...found.map(p => p.name)]);
+      setLoading(false);
+    }).catch(() => { if (alive) loadMore(); });
+    return () => { alive = false; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -278,9 +297,14 @@ function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, on
               </div>
             )}
             
+            {!loading && failed && (
+              <div role="alert" style={{ textAlign:'center', padding: places.length ? '12px 8px 0' : '32px 8px 8px', color:'#475569', fontSize:14 }}>
+                {places.length ? 'Couldn’t load more places just now.' : 'Couldn’t find places just now. The AI is busy; give it a moment.'}
+              </div>
+            )}
             {!loading && (
               <button type="button" onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:12, width:'100%' }}>
-                + Load more places
+                {failed ? 'Try again' : '+ Load more places'}
               </button>
             )}
           </>
@@ -305,40 +329,7 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll }) {
   const [askCrew, setAskCrew] = useState(false);
   const [selectedPlaceInfo, setSelectedPlaceInfo] = useState(null);
   const [mode, setMode] = useState(null); // null | 'specific' | 'region'
-  const inputRef = React.useRef(null);
-  const placesLib = useMapsLibrary('places');
-  const acRef = React.useRef(null);
   const isMobile = useIsMobile();
-
-  React.useEffect(() => {
-    if (!placesLib || !inputRef.current || acRef.current) return;
-    const ac = new placesLib.Autocomplete(inputRef.current, {
-      fields: ['name', 'formatted_address', 'geometry', 'place_id', 'photos'],
-    });
-    acRef.current = ac;
-    ac.addListener('place_changed', () => {
-      const place = ac.getPlace();
-      if (!place || !place.name) return;
-      const name = place.name || place.formatted_address?.split(',')[0];
-      setInput(name);
-      if (inputRef.current) inputRef.current.value = name;
-      
-      if (place.geometry?.location) {
-        setSelectedPlaceInfo({
-          name: name,
-          formatted: place.formatted_address,
-          lat: place.geometry.location.lat(),
-          lng: place.geometry.location.lng(),
-          imageUrl: place.photos?.[0]?.getUrl({ maxWidth: 400 }) || null,
-        });
-      }
-    });
-    
-    // Prevent enter from submitting the form when selecting autocomplete
-    inputRef.current.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') e.preventDefault();
-    });
-  }, [placesLib]);
 
   const handleSubmit = () => {
     if (!input.trim()) return;
@@ -355,26 +346,40 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll }) {
 
   return (
     <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.55)', zIndex:999, display:'flex', alignItems:'center', justifyContent:'center', padding: isMobile ? 12 : 16 }}>
-      <div style={{ background:'#fff', borderRadius:20, width:'100%', maxWidth:460, overflow:'hidden', boxShadow:'0 24px 60px rgba(0,0,0,0.25)' }}>
+      <div style={{ background:'#fff', borderRadius:20, width:'100%', maxWidth:460, overflow:'visible', boxShadow:'0 24px 60px rgba(0,0,0,0.25)' }}>
         <div style={{ padding: isMobile ? 20 : 24 }}>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:20 }}>
             <h2 style={{ fontSize: isMobile ? 16 : 18, fontWeight:800, color:'#0f172a', margin:0 }}>Add a stop</h2>
             <button type="button" onClick={onClose} aria-label="Close" style={{ background:'none', border:'none', cursor:'pointer', color:'#6b7280', minWidth:44, minHeight:44, display:'flex', alignItems:'center', justifyContent:'center' }}><X size={20}/></button>
           </div>
-          <input ref={inputRef} value={input} onChange={e => { setInput(e.target.value); setSelectedPlaceInfo(null); }} placeholder="e.g. Puducherry  or  Hotel Amigos"
-            style={{ width:'100%', padding:'12px 16px', borderRadius:12, border:'1.5px solid #e2e8f0', fontSize:16, outline:'none', marginBottom:20, boxSizing:'border-box', color:'#0f172a' }}
-            onKeyDown={e => { if(e.key==='Enter' && mode) handleSubmit(); }}
-            autoFocus/>
+          {/* The same search as everywhere else in the app (Google's own
+              widget looked dated and floated loose under the modal). */}
+          <div style={{ marginBottom:20 }}>
+            <LocationAutocomplete
+              id="add-stop-search"
+              autoFocus
+              value={input}
+              placeholder="e.g. Puducherry  or  Hotel Amigos"
+              ariaLabel="Search a place or area"
+              onChange={(t) => { setInput(t); setSelectedPlaceInfo(null); }}
+              onSelect={(p) => {
+                if (!p) return;
+                setInput(p.name);
+                setSelectedPlaceInfo({ name: p.name, formatted: p.formatted, lat: p.lat, lng: p.lng, placeId: p.placeId, imageUrl: null });
+              }}
+              onEnterText={() => { if (mode) handleSubmit(); }}
+            />
+          </div>
 
           <p style={{ fontSize:13, fontWeight:600, color:'#475569', marginBottom:12 }}>What kind of stop is this?</p>
           <div style={{ display:'flex', gap:12, marginBottom:20, flexDirection: isMobile ? 'column' : 'row' }}>
-            <div onClick={() => { setMode('specific'); if (!input.trim()) inputRef.current?.focus(); }}
+            <div onClick={() => { setMode('specific'); if (!input.trim()) document.getElementById('add-stop-search')?.focus(); }}
               style={{ flex:1, padding:'14px 12px', borderRadius:14, border:`2px solid ${mode==='specific'?'#1E3A8A':'#e2e8f0'}`, background: mode==='specific'?'#EEF3FC':'#fafafa', cursor:'pointer', textAlign:'center', transition:'all 200ms' }}>
               <div style={{ fontSize:24, marginBottom:6 }}>📍</div>
               <div style={{ fontSize:13, fontWeight:700, color: mode==='specific'?'#1E3A8A':'#0f172a' }}>Specific Place</div>
               <div style={{ fontSize:11, color:'#64748b', marginTop:3 }}>I know exactly what I want to visit</div>
             </div>
-            <div onClick={() => { setMode('region'); if (!input.trim()) inputRef.current?.focus(); }}
+            <div onClick={() => { setMode('region'); if (!input.trim()) document.getElementById('add-stop-search')?.focus(); }}
               style={{ flex:1, padding:'14px 12px', borderRadius:14, border:`2px solid ${mode==='region'?'#1E3A8A':'#e2e8f0'}`, background: mode==='region'?'#EEF3FC':'#fafafa', cursor:'pointer', textAlign:'center', transition:'all 200ms' }}>
               <div style={{ fontSize:24, marginBottom:6 }}>🗺️</div>
               <div style={{ fontSize:13, fontWeight:700, color: mode==='region'?'#1E3A8A':'#0f172a' }}>Explore Region</div>
@@ -433,12 +438,17 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
   const [selected, setSelected] = useState({});
   const [excluded, setExcluded] = useState([...existingStopsNames, ...(cache[cacheKey] || []).map(p => p.name)]);
   const isMobile = useIsMobile();
+  // Set when the AI couldn't answer, so the list says so instead of
+  // showing nothing.
+  const [failed, setFailed] = useState(false);
 
   const loadMore = async () => {
     setLoading(true);
+    setFailed(false);
     try {
       const r = await getRouteMustVisits(fromName, toName, excluded);
       const aiPlaces = r.suggestions || [];
+      if (!aiPlaces.length) throw new Error('No places came back');
       await waitForPlaces().catch(() => {});
       // Anchored halfway between the two stops, wide enough to reach both.
       const near = fromCoords && toCoords ? {
@@ -453,6 +463,7 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
       setExcluded(e => [...e, ...aiPlaces.map(a => a.name)]);
     } catch (e) {
       console.error(e);
+      setFailed(true);
     } finally {
       setLoading(false);
     }
@@ -542,9 +553,14 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
               </div>
             )}
             
+            {!loading && failed && (
+              <div role="alert" style={{ textAlign:'center', padding: places.length ? '12px 8px 0' : '32px 8px 8px', color:'#475569', fontSize:14 }}>
+                {places.length ? 'Couldn’t load more places just now.' : 'Couldn’t find places just now. The AI is busy; give it a moment.'}
+              </div>
+            )}
             {!loading && (
               <button type="button" onClick={loadMore} style={{ background:'none', border:'1px dashed #BFD0F0', borderRadius:12, padding:'14px', color:'#1E3A8A', fontWeight:700, fontSize:14, cursor:'pointer', marginTop:8, width:'100%' }}>
-                + Load more places
+                {failed ? 'Try again' : '+ Load more places'}
               </button>
             )}
           </div>
@@ -1044,8 +1060,7 @@ function PlannerContent({ onOpenMap }) {
   const isStop = (d) => stops.some(s => normName(s.name) === normName(d.name));
   const unexplored = destinations
     .filter((d, i, all) => all.findIndex(x => normName(x.name) === normName(d.name)) === i)
-    .filter(d => !stops.some(s => normName(s.group) === normName(destLabel(d))) && (d.kind === 'place' || !isStop(d)))
-    .slice(0, 4);
+    .filter(d => !stops.some(s => normName(s.group) === normName(destLabel(d))) && (d.kind === 'place' || !isStop(d)));
   const exploreDestination = (d) => setRegionModal(d.kind === 'place'
     ? {
       query: d.formatted || d.name,
@@ -1293,6 +1308,8 @@ function PlannerContent({ onOpenMap }) {
     <div className="planner-page" style={isNarrow ? { display: 'flex', flexDirection: 'column', overflow: 'hidden' } : undefined}>
       {/* Main panel */}
       <div className="planner-main" style={isNarrow ? { flex: 1, minHeight: 0, overflowY: 'auto', overflowX: 'hidden', WebkitOverflowScrolling: 'touch' } : undefined}>
+        {/* "This trip is a draft — Add to my profile", as on the Itinerary tab. */}
+        {!isGuest && <DraftClaimBanner returnTo={`/trip/${tripId}`} />}
         {/* Header */}
         <div className="trip-head">
           <div className="trip-head-text">

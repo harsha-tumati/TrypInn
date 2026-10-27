@@ -12,6 +12,7 @@ import { ArrowLeft, X, MapPin, CalendarDays, Navigation, Pencil, Flag, UserPlus,
 import { MAPS_ENABLED } from '../config/maps';
 import { suggestGetawayName } from '../utils/tripName';
 import { useIsMobile } from '../hooks/useIsMobile';
+import { prefetchRegion } from '../utils/regionPrefetch';
 
 // Same rule as placeKind() in placesService, kept here so this step doesn't
 // load the Places code just to label a chip.
@@ -104,6 +105,12 @@ export default function CreateTripWizard({ open, initialPlaces = [], onClose, on
             const typed = draft.trim();
             if (!places.length && !typed) { setError('Pick where you’re headed.'); return; }
             if (typed) addPlace({ name: typed });
+            // Start loading each area's places now, while the rest of the
+            // questions are answered, so "Explore Goa" on the Plan tab opens
+            // with them ready. Specific places become stops; they need none.
+            [...places, ...(typed ? [{ name: typed }] : [])]
+                .filter((p) => !isSpot(p))
+                .forEach((p) => prefetchRegion(p.name).catch(() => {}));
         }
         if (key === 'start') {
             if (!startName.trim()) { setError('Add where your trip starts.'); return; }
