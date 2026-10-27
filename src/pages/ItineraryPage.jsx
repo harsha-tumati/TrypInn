@@ -8,7 +8,7 @@ import { enrichPlacesWithGoogle } from '../services/placesService';
 import { addPlaces, updatePlaceOrder, updatePlaceDuration, updateRouteConfig, updateTrip } from '../services/firestoreService';
 import { useGuestMode } from '../context/GuestModeContext';
 import LocationAutocomplete from '../components/LocationAutocomplete';
-import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Pencil, RotateCcw } from 'lucide-react';
+import { GripVertical, Clock, MapPin, ArrowRight, ChevronUp, ChevronDown, Map as MapIcon, Pencil, RotateCcw, Compass } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
 import DraftClaimBanner from '../components/DraftClaimBanner';
 import { useMapsLibrary } from '@vis.gl/react-google-maps';
@@ -334,6 +334,22 @@ function ItineraryContent({ onOpenMap }) {
         });
         return out;
     }, [orderedPlaces]);
+    // Regions from the Plan tab ("Kalpa", "Chandigarh"): each place in one
+    // maps to its run of consecutive places there, so the timeline can open
+    // each region with a small heading, as the Plan tab groups them.
+    const regionOf = useMemo(() => {
+        const out = {};
+        let run = null;
+        orderedPlaces.forEach(p => {
+            const name = (p.group || '').trim();
+            if (!name) { run = null; return; }
+            if (!run || run.key !== name.toLowerCase()) run = { key: name.toLowerCase(), name, count: 0 };
+            run.count++;
+            out[p.id] = run;
+        });
+        return out;
+    }, [orderedPlaces]);
+
     const visitTag = (place) => repeatVisit[place.id] ? (
         <span style={{ fontSize: 10, color: '#92400e', fontWeight: 600, background: '#fef3c7', padding: '1px 6px', borderRadius: 4, marginLeft: 8, verticalAlign: 'middle' }}>
             {repeatVisit[place.id] === 2 ? '2nd' : repeatVisit[place.id] === 3 ? '3rd' : `${repeatVisit[place.id]}th`} visit
@@ -1252,6 +1268,12 @@ function ItineraryContent({ onOpenMap }) {
                             const dayBoundaryDayIndex = item.dayBoundaryDayIndex !== undefined ? item.dayBoundaryDayIndex : -1;
 
                             const canReorder = !place.isStartingPoint && !place.isEndingPoint && !isCarryOver && !isGuest;
+                            // A heading where a region starts (or where a day
+                            // view picks up partway through one).
+                            const region = !isCarryOver ? regionOf[place.id] : null;
+                            // (Last night's hotel, repeated at the top of a day, doesn't count.)
+                            const prevItem = visibleTimeline.slice(0, visibleIdx).filter(it => !it.isCarryOver).pop();
+                            const showRegion = region && (!prevItem || regionOf[prevItem.place.id] !== region);
                             const dragHandle = canReorder ? (
                                                 <div
                                                     className="itin-drag-handle"
@@ -1305,6 +1327,13 @@ function ItineraryContent({ onOpenMap }) {
                                             <div style={{ flex: 1, height: 2, background: 'linear-gradient(90deg, #e2e8f0, transparent)', borderRadius: 2 }} />
                                         </div>
                                     )}
+                                    {showRegion && (
+                                        <div className="itin-region-head">
+                                            <Compass size={14} aria-hidden="true" />
+                                            <span className="itin-region-name">{region.name}</span>
+                                            <span className="itin-region-meta">· {region.count} place{region.count > 1 ? 's' : ''}</span>
+                                        </div>
+                                    )}
                                     <div style={{ display: 'flex', position: 'relative' }}>
                                         {/* Timeline Node & Line */}
                                         <div style={{ width: 32, display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: 16 }}>
@@ -1326,7 +1355,7 @@ function ItineraryContent({ onOpenMap }) {
                                             flexWrap: isMobile ? 'wrap' : 'nowrap', gap: isMobile ? 8 : 0,
                                             alignItems: isMobile ? 'flex-start' : 'center',
                                             backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)'
-                                        }} className={isMobile ? 'itin-card is-compact' : 'itin-card'}>
+                                        }} className={`itin-card${isMobile ? ' is-compact' : ''}${region ? ' in-region' : ''}`}>
                                             {/* Drag Handle (Hidden for start/end and guests) — on phones it sits beside the time */}
                                             {!isMobile && dragHandle}
 
