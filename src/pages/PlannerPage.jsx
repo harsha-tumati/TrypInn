@@ -29,6 +29,7 @@ import DraftClaimBanner from '../components/DraftClaimBanner';
 import { formatBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 import { publicSummaryFor } from '../utils/publicTrips';
+import { bestInsertIndex, centreOf } from '../utils/routeInsert';
 
 // Map a Firestore place doc to an editable planner stop.
 function placeToStop(p) {
@@ -55,6 +56,7 @@ const newStopId = () => `stop-${Date.now()}`;
 // Stops added in the planner but not yet written to Firestore.
 const isLocalId = (id) => /^(stop|region|route)-/.test(id || '');
 const normName = (s) => (s || '').trim().toLowerCase();
+const ordinal = (n) => `${n}${n % 10 === 2 && n % 100 !== 12 ? 'nd' : n % 10 === 3 && n % 100 !== 13 ? 'rd' : n % 10 === 1 && n % 100 !== 11 ? 'st' : 'th'}`;
 
 // A, B, … Z, then 27, 28 — past Z the alphabet runs out.
 const stopLetter = (i) => (i < 26 ? String.fromCharCode(65 + i) : String(i + 1));
@@ -324,22 +326,25 @@ function RegionModal({ regionName, aiQuery, title, label, existingStopsNames, on
 }
 
 // ── AddStopModal: specific vs region choice ──────────────────────────────────
-function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll }) {
+function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll, existingNames }) {
   const [input, setInput] = useState('');
   const [askCrew, setAskCrew] = useState(false);
   const [selectedPlaceInfo, setSelectedPlaceInfo] = useState(null);
   const [mode, setMode] = useState(null); // null | 'specific' | 'region'
   const isMobile = useIsMobile();
+  // A place already in the trip can be added again on purpose, e.g. the
+  // hotel you return to, or a city you pass through both ways.
+  const isRepeat = mode === 'specific' && !!existingNames?.has(normName(input));
 
   const handleSubmit = () => {
     if (!input.trim()) return;
-    
+
     // Check if the user selected a place from the dropdown and didn't alter the text
     if (selectedPlaceInfo && input.trim() === selectedPlaceInfo.name) {
-      if (mode === 'specific') onAddSpecific(selectedPlaceInfo.name, selectedPlaceInfo, { askCrew });
+      if (mode === 'specific') onAddSpecific(selectedPlaceInfo.name, selectedPlaceInfo, { askCrew, again: isRepeat });
       else if (mode === 'region') onExploreRegion(selectedPlaceInfo.formatted || selectedPlaceInfo.name, selectedPlaceInfo.name);
     } else {
-      if (mode === 'specific') onAddSpecific(input.trim(), null, { askCrew });
+      if (mode === 'specific') onAddSpecific(input.trim(), null, { askCrew, again: isRepeat });
       else if (mode === 'region') onExploreRegion(input.trim(), input.trim());
     }
   };
@@ -395,9 +400,15 @@ function AddStopModal({ onClose, onAddSpecific, onExploreRegion, canPoll }) {
             </label>
           )}
 
+          {isRepeat && (
+            <p role="status" style={{ fontSize:13, color:'#92400e', background:'#fef3c7', borderRadius:10, padding:'10px 12px', margin:'0 0 14px', lineHeight:1.45 }}>
+              <strong>{input.trim()}</strong> is already in your trip. Adding it again plans a second visit, like passing through on the way back.
+            </p>
+          )}
+
           <button type="button" disabled={!input.trim() || !mode} onClick={handleSubmit}
             style={{ width:'100%', padding:'13px', borderRadius:12, border:'none', background: (!input.trim()||!mode)?'#e2e8f0':'linear-gradient(135deg,#1E3A8A,#1E3A8A)', color:(!input.trim()||!mode)?'#6b7280':'#fff', fontWeight:700, fontSize:15, cursor:(!input.trim()||!mode)?'default':'pointer', transition:'all 200ms', minHeight:44 }}>
-            {mode==='region' ? '🗺️ Explore places' : mode==='specific' ? '📍 Add stop' : 'Select type above'}
+            {mode==='region' ? '🗺️ Explore places' : isRepeat ? '🔁 Add another visit' : mode==='specific' ? '📍 Add stop' : 'Select type above'}
           </button>
         </div>
       </div>
@@ -837,6 +848,11 @@ function PlannerContent({ onOpenMap }) {
   useMapsLibrary('places');
 
   const hasName = (list, name) => list.some(s => normName(s.name) === normName(name));
+  // 1 for a place's first appearance in the trip, 2 for its repeat, and so on.
+  const visitNumber = (stop) => {
+    const at = stops.findIndex(s => s.id === stop.id);
+    return stops.slice(0, at + 1).filter(s => normName(s.name) === normName(stop.name)).length;
+  };
 
   const removeStop = (id) => edit(p => p.filter(s => s.id !== id));
 
@@ -945,24 +961,41 @@ function PlannerContent({ onOpenMap }) {
     try { await askCrew([stop.name]); } finally { setPollBusy(null); }
   };
 
+  // New places go where they fit on the route (see routeInsert), so the
+  // Plan's order is the itinerary's order. A repeat visit goes at the end:
+  // next to its first visit would make it pointless.
+  const placeNew = (list, items, point, again = false) => {
+    const at = again ? list.length : bestInsertIndex(list, groupStops(list).map(b => b.entries[0].index), point,
+      { start: selectedTrip?.startingPoint, end: selectedTrip?.endingPoint });
+    return [...list.slice(0, at), ...items, ...list.slice(at)];
+  };
+
   const addSpecificStop = async (name, placeObj = null, opts = {}) => {
     if (opts.askCrew) askCrew([placeObj?.name || name]);
     setShowAddModal(false);
-    if (hasName(stops, placeObj?.name || name)) return; // already in the trip
+    // Already in the trip: only added again when the traveller chose to.
+    if (!opts.again && hasName(stops, placeObj?.name || name)) return;
     const id = newStopId();
     if (placeObj) {
-      edit(p => [...p, {
+      const stop = {
         id, name: placeObj.name, description: placeObj.formatted || '', category: 'default',
         estimatedMinutes: 60, lat: placeObj.lat, lng: placeObj.lng, imageUrl: placeObj.imageUrl || null,
         googlePlaceId: placeObj.googlePlaceId || placeObj.placeId || null, geocoding: false
-      }]);
+      };
+      edit(p => placeNew(p, [stop], stop, opts.again));
     } else {
       const tempStop = { id, name, description: '', category: 'default', estimatedMinutes: 60, lat: null, lng: null, geocoding: true };
       setStops(p => [...p, tempStop]);
       setGeocodingId(id);
       try {
         const geo = await geocodeName(name);
-        edit(p => p.map(s => s.id === id ? { ...s, lat: geo?.lat, lng: geo?.lng, googlePlaceId: geo?.placeId || null, description: geo?.formatted || '', geocoding: false } : s));
+        // Shown at the end while it's looked up, then moved to where it fits.
+        edit(p => {
+          const found = p.find(s => s.id === id);
+          if (!found) return p;
+          const located = { ...found, lat: geo?.lat, lng: geo?.lng, googlePlaceId: geo?.placeId || null, description: geo?.formatted || '', geocoding: false };
+          return placeNew(p.filter(s => s.id !== id), [located], located, opts.again);
+        });
       } catch {
         setStops(p => p.map(s => s.id === id ? { ...s, geocoding: false } : s));
       }
@@ -976,7 +1009,8 @@ function PlannerContent({ onOpenMap }) {
   };
 
   // Places picked from a region join that region's block — appended after
-  // its last place if the region is already in the trip, else at the end.
+  // its last place if the region is already in the trip, else wherever the
+  // region fits on the route.
   const confirmRegionPicks = (pickedPlaces, opts = {}) => {
     if (opts.askCrew) askCrew(pickedPlaces.map(p => p.name));
     const region = regionModal;
@@ -1006,7 +1040,7 @@ function PlannerContent({ onOpenMap }) {
           geocoding: false,
         }));
       if (!fresh.length) return prev;
-      if (at === -1) return [...prev, ...fresh];
+      if (at === -1) return placeNew(prev, fresh, centreOf(fresh));
       return [...prev.slice(0, at + 1), ...fresh, ...prev.slice(at + 1)];
     });
   };
@@ -1100,6 +1134,7 @@ function PlannerContent({ onOpenMap }) {
               <div style={{ minWidth:0 }}>
                 <div style={{ fontSize: nested ? 14 : 15, fontWeight:700, color:'#0f172a', display:'flex', alignItems:'center', gap:8, flexWrap:'wrap' }}>
                   {stop.name}
+                  {isReal && visitNumber(stop) > 1 && <span style={{ fontSize:10, color:'#92400e', fontWeight:600, background:'#fef3c7', padding:'1px 6px', borderRadius:4 }}>{ordinal(visitNumber(stop))} visit</span>}
                   {isReal && stop.geocoding && <Loader size={12} style={{ color:'#1E3A8A', animation:'spin 1s linear infinite' }}/>}
                   {isReal && !stop.lat && !stop.geocoding && <span style={{ fontSize:10, color:'#ef4444', fontWeight:600, background:'#fee2e2', padding:'1px 6px', borderRadius:4 }}>No location</span>}
                   {isStart && <span style={{ fontSize:10, color:'#059669', fontWeight:600, background:'#d1fae5', padding:'1px 6px', borderRadius:4 }}>Start</span>}
@@ -1531,7 +1566,8 @@ function PlannerContent({ onOpenMap }) {
           onSaved={(fields) => setSelectedTrip({ ...selectedTrip, ...fields })}
         />
       )}
-      {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer} canPoll={canPoll}/>}
+      {showAddModal && <AddStopModal onClose={() => setShowAddModal(false)} onAddSpecific={addSpecificStop} onExploreRegion={openRegionExplorer} canPoll={canPoll}
+        existingNames={new Set(stops.map(s => normName(s.name)))}/>}
       {regionModal && <RegionModal key={regionModal.label} regionName={regionModal.query} aiQuery={regionModal.aiQuery} title={regionModal.title} label={regionModal.label} existingStopsNames={stops.map(s => s.name)} cache={regionCache} setCache={setRegionCache} onClose={() => setRegionModal(null)} onConfirm={confirmRegionPicks} canPoll={canPoll}/>}
       {routeModal && <RouteModal fromName={routeModal.fromName} toName={routeModal.toName} fromCoords={routeModal.fromCoords} toCoords={routeModal.toCoords} existingStopsNames={stops.map(s => s.name)} cache={routeCache} setCache={setRouteCache} onClose={() => setRouteModal(null)} onConfirm={insertRouteStops} canPoll={canPoll}/>}
     </div>
