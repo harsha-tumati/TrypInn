@@ -21,6 +21,8 @@ import PlaceThumb from '../components/PlaceThumb';
 import TimePicker from '../components/TimePicker';
 import { formatBestTime, isWithinBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
+import { isAmong } from '../utils/placeMatch';
+import { routeLegs, routeStopsFor, prefetchRouteLegs } from '../utils/routeStopsPrefetch';
 
 // ── Keeping the schedule steady ─────────────────────────────────────────────
 // Leaving this tab unmounts the page. Without help it came back blank and
@@ -170,6 +172,7 @@ function ItineraryContent({ onOpenMap }) {
     const { tripId } = useParams();
     const [loadingAI, setLoadingAI] = useState(false);
     const [aiSuggestions, setAiSuggestions] = useState(() => sessionState.get(tripId)?.aiSuggestions || []);
+    const [aiRefresh, setAiRefresh] = useState(0);
     // Where this page starts: as it was left this session, else as saved on
     // the trip, else defaults (the trip itself may still be loading).
     const [initial] = useState(() => {
@@ -375,8 +378,8 @@ function ItineraryContent({ onOpenMap }) {
             if (!selectedTrip?.id) return;
 
             // Check localStorage cache first
-            const cacheKey = `ai_suggestions_${selectedTrip.id}`;
-            const cached = localStorage.getItem(cacheKey);
+            const cacheKey = `ai_suggestions_v2_${selectedTrip.id}`;
+            const cached = aiRefresh ? null : localStorage.getItem(cacheKey);
             if (cached) {
                 try {
                     const parsed = JSON.parse(cached);
@@ -392,11 +395,17 @@ function ItineraryContent({ onOpenMap }) {
                 const promptContext = orderedPlaces.length > 0
                     ? `Route passing through: ${orderedPlaces.slice(0, 3).map(p => p.name).join(' -> ')}`
                     : selectedTrip?.destination || 'popular tourist places';
-                const suggestions = await getSuggestions(promptContext);
+                const planned = orderedPlaces.filter(p => !p.isStartingPoint && !p.isEndingPoint);
+                // "More ideas" also skips what was just suggested.
+                const skip = [...planned, ...(aiRefresh ? aiSuggestions : [])].map(p => p.name);
+                const suggestions = await getSuggestions(promptContext, skip);
+                // A few spare: the AI may still name stops already in the trip
+                // (they're filtered out when shown), and more get added later.
                 const allPlaces = [
                     ...(suggestions.places || []).map((p) => ({ ...p, category: 'historical' })),
+                    ...(suggestions.hidden_gems || []).map((p) => ({ ...p, category: 'hidden gem' })),
                     ...(suggestions.food_places || []).map((p) => ({ ...p, category: 'food' })),
-                ].slice(0, 4); // Take top 4
+                ].filter(p => !isAmong(p, planned)).slice(0, 8);
 
                 // Enrich AI suggestions with Google images
                 const enriched = await enrichPlacesWithGoogle(allPlaces, selectedTrip?.destination || '');
@@ -419,8 +428,49 @@ function ItineraryContent({ onOpenMap }) {
         return () => { isMounted = false; };
         // Intentionally keyed on trip id only — AI suggestions are cached per
         // trip; re-running on every orderedPlaces edit would waste API calls.
+        // "More ideas" (aiRefresh) asks again, skipping the cache.
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selectedTrip?.id]);
+    }, [selectedTrip?.id, aiRefresh]);
+
+    // The trip's real drives (start → first stop, region → region, → end).
+    // Their must-visit stops start loading in the background as soon as the
+    // itinerary opens, so "Find stops on my route" answers at once.
+    const routeLegsList = useMemo(
+        () => routeLegs(orderedPlaces, selectedTrip?.startingPoint, selectedTrip?.endingPoint || selectedTrip?.startingPoint),
+        [orderedPlaces, selectedTrip?.startingPoint, selectedTrip?.endingPoint],
+    );
+    const legsKey = routeLegsList.map(l => `${l.from.name}>${l.to.name}`).join('|');
+    useEffect(() => {
+        if (!routeLegsList.length) return;
+        const t = setTimeout(() => { prefetchRouteLegs(routeLegsList); }, 1500);
+        return () => clearTimeout(t);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [legsKey]);
+
+    const findStopsOnRoute = async () => {
+        if (!routeLegsList.length) return;
+        setLoadingOnWay(true);
+        try {
+            const perLeg = await Promise.allSettled(routeLegsList.map(l => routeStopsFor(l.from, l.to)));
+            const results = [];
+            perLeg.forEach((r, i) => {
+                if (r.status !== 'fulfilled') return;
+                const { from, to } = routeLegsList[i];
+                r.value.forEach(s => results.push({ ...s, between: `${from.name} → ${to.name}` }));
+            });
+            setOnWayResults(results);
+        } catch (e) { console.error(e); } finally { setLoadingOnWay(false); }
+    };
+    // Stops already in the trip don't show up again, and a place on two
+    // drives (out and back) is listed once.
+    const shownOnWay = useMemo(() => onWayResults.filter((r, i) =>
+        !isAmong(r, orderedPlaces) && !isAmong(r, onWayResults.slice(0, i))), [onWayResults, orderedPlaces]);
+
+    // Suggestions minus anything that's in the trip by now.
+    const shownSuggestions = useMemo(
+        () => aiSuggestions.filter(s => !isAmong(s, orderedPlaces)).slice(0, 4),
+        [aiSuggestions, orderedPlaces],
+    );
 
     // Fetch AI-suggested visit durations whenever the place list changes
     useEffect(() => {
@@ -1109,6 +1159,34 @@ function ItineraryContent({ onOpenMap }) {
         return groups;
     }, [timeline, forcedDayMerges]);
 
+    // Which day each stop falls on, and whether it opens that day — for the
+    // "Next day" / "Previous day" buttons on the cards.
+    const dayOf = useMemo(() => {
+        const out = {};
+        dayGroups.forEach((group, d) => group.forEach((item, i) => {
+            if (!item.isCarryOver) out[item.place.id] = { day: d, first: i === 0 };
+        }));
+        return out;
+    }, [dayGroups]);
+
+    // Start a new day at this stop (it and the stops after it move on a day).
+    const moveToNextDay = (placeId) => {
+        setForcedDayMerges(prev => { const n = new Set(prev); n.delete(placeId); return n; });
+        setForcedDayBreaks(prev => new Set([...prev, placeId]));
+    };
+    // Put the first stop of a day back on the day before: undo a push, drop
+    // the night's hotel stay that ended that day, or stop the midnight split.
+    const moveToPreviousDay = (placeId) => {
+        if (forcedDayBreaks.has(placeId)) {
+            setForcedDayBreaks(prev => { const n = new Set(prev); n.delete(placeId); return n; });
+            return;
+        }
+        const prevDay = dayGroups[(dayOf[placeId]?.day ?? 0) - 1] || [];
+        const lastBefore = prevDay[prevDay.length - 1];
+        if (lastBefore?.isNightStay) setRemovedNightStays(prev => new Set([...prev, lastBefore.place.id]));
+        else setForcedDayMerges(prev => new Set([...prev, placeId]));
+    };
+
     const visibleTimeline = useMemo(() => {
         if (activeView === 'full') {
             const full = [];
@@ -1507,6 +1585,22 @@ function ItineraryContent({ onOpenMap }) {
                                                                 until {departureTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                                             </div>
                                                         )}
+                                                        {canReorder && dayOf[place.id] && (dayOf[place.id].first ? dayOf[place.id].day > 0 : !isAfterHours) && (
+                                                            <div className="itin-daymove">
+                                                                {dayOf[place.id].first ? (
+                                                                    <button type="button" onClick={() => moveToPreviousDay(place.id)}
+                                                                        aria-label={`Move ${place.name} to Day ${dayOf[place.id].day}`}>
+                                                                        ← Day {dayOf[place.id].day}
+                                                                    </button>
+                                                                ) : (
+                                                                    <button type="button" onClick={() => moveToNextDay(place.id)}
+                                                                        aria-label={`Move ${place.name} and the stops after it to the next day`}
+                                                                        title="Starts the next day here; the stops after it move along">
+                                                                        Next day →
+                                                                    </button>
+                                                                )}
+                                                            </div>
+                                                        )}
                                                     </div>
                                                     {isMobile && dragHandle}
                                                     </div>
@@ -1807,7 +1901,12 @@ function ItineraryContent({ onOpenMap }) {
                                 </div>
                             ) : (
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                                    {aiSuggestions.map((sug, i) => (
+                                    {shownSuggestions.length === 0 && (
+                                        <div style={{ textAlign: 'center', padding: '24px 8px', fontSize: 13, color: '#64748b', lineHeight: 1.5 }}>
+                                            {aiSuggestions.length ? 'Everything suggested so far is already in your trip.' : 'No suggestions yet.'}
+                                        </div>
+                                    )}
+                                    {shownSuggestions.map((sug, i) => (
                                         <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: 12, border: '1px solid #f1f5f9', borderRadius: 12, cursor: 'pointer', transition: 'border 200ms' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#94a3b8'} onMouseLeave={e => e.currentTarget.style.borderColor = '#f1f5f9'}>
                                             <PlaceThumb place={sug} size={60} radius={8} />
                                             <div style={{ flex: 1 }}>
@@ -1816,6 +1915,9 @@ function ItineraryContent({ onOpenMap }) {
                                             </div>
                                         </div>
                                     ))}
+                                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => setAiRefresh(n => n + 1)} style={{ alignSelf: 'center' }}>
+                                        ✨ More ideas
+                                    </button>
                                 </div>
                             )}
                         </>
@@ -1826,24 +1928,16 @@ function ItineraryContent({ onOpenMap }) {
                         <>
                             <p style={{ fontSize: 13, color: '#64748b', marginBottom: 16 }}>Must-visit stops between your route checkpoints</p>
                             <button type="button"
-                                onClick={async () => {
-                                    if (orderedPlaces.length < 2) return;
-                                    setLoadingOnWay(true);
-                                    try {
-                                        const { getRouteMustVisits } = await import('../config/openai');
-                                        const results = [];
-                                        for (let i = 0; i < orderedPlaces.length - 1; i++) {
-                                            const r = await getRouteMustVisits(orderedPlaces[i].name, orderedPlaces[i + 1].name, []);
-                                            (r.suggestions || []).forEach(s => results.push({ ...s, between: `${orderedPlaces[i].name} → ${orderedPlaces[i + 1].name}` }));
-                                        }
-                                        setOnWayResults(results);
-                                    } catch (e) { console.error(e); } finally { setLoadingOnWay(false); }
-                                }}
+                                onClick={findStopsOnRoute}
+                                disabled={loadingOnWay || !routeLegsList.length}
                                 style={{ width: '100%', padding: '10px', borderRadius: 10, border: 'none', background: '#0f172a', color: '#fff', fontWeight: 700, fontSize: 13, cursor: 'pointer', marginBottom: 16, minHeight:40 }}
                             >{loadingOnWay ? 'Fetching…' : '🛣️ Find stops on my route'}</button>
-                            {onWayResults.length > 0 && (
+                            {!routeLegsList.length && (
+                                <p style={{ fontSize: 12, color: '#94a3b8', marginTop: -8 }}>Your stops are close together, so there's no long drive to search along.</p>
+                            )}
+                            {shownOnWay.length > 0 && (
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                                    {onWayResults.map((r, i) => (
+                                    {shownOnWay.map((r, i) => (
                                         <div key={i} style={{ display: 'flex', gap: 10, padding: '10px 12px', border: '1px solid #e2e8f0', borderRadius: 10, alignItems: 'flex-start' }}>
                                             <PlaceThumb place={r} size={52} radius={8} />
                                             <div style={{ flex: 1, minWidth: 0 }}>

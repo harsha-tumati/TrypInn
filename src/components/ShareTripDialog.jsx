@@ -11,6 +11,11 @@
 //
 // A draft trip (not yet saved to a profile) has no members to add, so it just
 // gets its link and a note on how to control access.
+//
+// Changes to the link access and the public listing are staged, then saved
+// with "Save changes" (closing the dialog discards them). The saved access
+// is kept on the trip as `linkAccess`; with "ask to join" saved, direct-join
+// links handed out earlier only let people ask (see GuestJoinBanner).
 import { useState } from 'react';
 import { Check, Copy, Clock, Globe, Link as LinkIcon, Loader, UserPlus } from 'lucide-react';
 import Modal from './Modal';
@@ -20,7 +25,7 @@ import { useAuth } from '../context/AuthContext';
 import { isTripClaimed } from '../utils/draftTrips';
 import { publicSummaryFor } from '../utils/publicTrips';
 import { routeShapeFrom } from '../utils/routeShape';
-import { setTripPublic } from '../services/firestoreService';
+import { setTripPublic, updateTrip } from '../services/firestoreService';
 
 /** True when the signed-in user organises this trip (and so approves requests). */
 export function useIsTripOrganiser() {
@@ -50,40 +55,61 @@ export default function ShareTripDialog({ open, onClose }) {
     const { selectedTrip: trip, joinRequests, places } = useTrip();
     const { userProfile } = useAuth();
     const isOrganiser = useIsTripOrganiser();
-    const [mode, setMode] = useState('request');
+    // Unsaved choices; null means "as saved on the trip".
+    const [draftMode, setDraftMode] = useState(null);
+    const [draftPublic, setDraftPublic] = useState(null);
     const [copied, setCopied] = useState(false);
-    const [publishing, setPublishing] = useState(false);
-    const [publishError, setPublishError] = useState('');
+    const [saving, setSaving] = useState(false);
+    const [saved, setSaved] = useState(false);
+    const [saveError, setSaveError] = useState('');
 
     if (!trip) return null;
 
     const origin = window.location.origin;
     const claimed = isTripClaimed(trip);
     const canDirect = claimed && isOrganiser && !!trip.inviteCode;
-    const activeMode = canDirect ? mode : 'request';
+    const savedMode = trip.linkAccess === 'join' ? 'join' : 'request';
+    const activeMode = canDirect ? (draftMode ?? savedMode) : 'request';
+    const isPublic = draftPublic ?? !!trip.isPublic;
+    const modeChanged = canDirect && activeMode !== savedMode;
+    const publicChanged = isPublic !== !!trip.isPublic;
+    const dirty = modeChanged || publicChanged;
     const url = claimed && activeMode === 'join'
         ? `${origin}/join/${trip.inviteCode}`
         : `${origin}/trip/${trip.id}`;
 
-    // List the trip on the home page's public trips, or take it off. The
-    // live trip listener reflects the change back into the switch.
-    const togglePublic = async () => {
-        setPublishing(true);
-        setPublishError('');
+    const discard = () => { setDraftMode(null); setDraftPublic(null); setSaveError(''); };
+    const close = () => { discard(); setSaved(false); onClose(); };
+
+    // Write the staged changes. The live trip listener then reflects them
+    // back, so the drafts can be cleared.
+    const save = async () => {
+        setSaving(true);
+        setSaveError('');
         try {
-            await setTripPublic(trip.id, trip.isPublic ? null : {
-                ...publicSummaryFor(places),
-                routeShape: routeShapeFrom(places),
-                organiserName: userProfile?.name || 'A Trypinn traveller',
-            });
+            if (modeChanged) await updateTrip(trip.id, { linkAccess: activeMode });
+            if (publicChanged) {
+                await setTripPublic(trip.id, isPublic ? {
+                    ...publicSummaryFor(places),
+                    routeShape: routeShapeFrom(places),
+                    organiserName: userProfile?.name || 'A Trypinn traveller',
+                } : null);
+            }
+            discard();
+            setSaved(true);
+            setTimeout(() => setSaved(false), 2500);
+            return true;
         } catch (e) {
-            setPublishError(e?.message || 'That didn’t go through. Please try again.');
+            setSaveError(e?.message || 'That didn’t go through. Please try again.');
+            return false;
         } finally {
-            setPublishing(false);
+            setSaving(false);
         }
     };
 
+    // The copied link only works as described once its access is saved.
     const copy = async () => {
+        if (modeChanged && !(await save())) return;
         try {
             await navigator.clipboard.writeText(url);
             setCopied(true);
@@ -93,7 +119,7 @@ export default function ShareTripDialog({ open, onClose }) {
 
 
     return (
-        <Modal open={open} onClose={onClose} title={`Share “${trip.name}”`} size="md">
+        <Modal open={open} onClose={close} title={`Share “${trip.name}”`} size="md">
             {claimed ? (
                 <>
                     <p className="share-section-label">Link access</p>
@@ -109,7 +135,7 @@ export default function ShareTripDialog({ open, onClose }) {
                                     aria-checked={activeMode === m.id}
                                     disabled={disabled}
                                     className={`share-mode${activeMode === m.id ? ' is-active' : ''}`}
-                                    onClick={() => { setMode(m.id); setCopied(false); }}
+                                    onClick={() => { setDraftMode(m.id); setCopied(false); setSaved(false); }}
                                 >
                                     <span className="share-mode-icon" aria-hidden="true"><Icon size={17} /></span>
                                     <span className="share-mode-text">
@@ -134,7 +160,7 @@ export default function ShareTripDialog({ open, onClose }) {
             <div className="share-link-row">
                 <span className="share-link-icon" aria-hidden="true"><LinkIcon size={15} /></span>
                 <input readOnly value={url} onFocus={e => e.target.select()} aria-label="Share link" className="share-link-input" />
-                <button type="button" className="btn btn-primary btn-md" onClick={copy} style={{ whiteSpace: 'nowrap' }}>
+                <button type="button" className="btn btn-primary btn-md" onClick={copy} disabled={saving} style={{ whiteSpace: 'nowrap' }}>
                     {copied ? <><Check size={15} aria-hidden="true" /> Copied</> : <><Copy size={15} aria-hidden="true" /> Copy link</>}
                 </button>
             </div>
@@ -146,7 +172,7 @@ export default function ShareTripDialog({ open, onClose }) {
                     <span className="share-mode-text">
                         <span className="share-mode-label">List on Public Trips</span>
                         <span className="share-mode-hint">
-                            {trip.isPublic
+                            {isPublic
                                 ? 'Shown on the home page and the Public Trips tab. People ask to join, and you approve them.'
                                 : 'Show this trip on the home page so travellers can find it and ask to join. You approve everyone.'}
                         </span>
@@ -154,15 +180,35 @@ export default function ShareTripDialog({ open, onClose }) {
                     <button
                         type="button"
                         role="switch"
-                        aria-checked={!!trip.isPublic}
+                        aria-checked={isPublic}
                         aria-label="List this trip publicly"
-                        className={`share-switch${trip.isPublic ? ' is-on' : ''}`}
-                        onClick={togglePublic}
-                        disabled={publishing}
+                        className={`share-switch${isPublic ? ' is-on' : ''}`}
+                        onClick={() => { setDraftPublic(!isPublic); setSaved(false); }}
+                        disabled={saving}
                     >
-                        {publishing ? <Loader size={12} className="tp-spin" aria-hidden="true" /> : <span className="share-switch-knob" aria-hidden="true" />}
+                        <span className="share-switch-knob" aria-hidden="true" />
                     </button>
-                    {publishError && <p className="tp-error" role="alert" style={{ width: '100%', margin: '6px 0 0' }}>{publishError}</p>}
+                </div>
+            )}
+
+            {claimed && isOrganiser && (
+                <div className="share-footer">
+                    <span className="share-footer-status" role="status">
+                        {saveError
+                            ? <span className="tp-error">{saveError}</span>
+                            : dirty ? 'You have unsaved changes.'
+                            : saved ? <><Check size={14} aria-hidden="true" /> Saved</> : null}
+                    </span>
+                    {dirty ? (
+                        <>
+                            <button type="button" className="btn btn-ghost btn-md" onClick={discard} disabled={saving}>Discard</button>
+                            <button type="button" className="btn btn-primary btn-md" onClick={save} disabled={saving}>
+                                {saving ? <Loader size={15} className="tp-spin" aria-hidden="true" /> : <Check size={15} aria-hidden="true" />} Save changes
+                            </button>
+                        </>
+                    ) : (
+                        <button type="button" className="btn btn-secondary btn-md" onClick={close}>Done</button>
+                    )}
                 </div>
             )}
             {claimed && !isOrganiser && trip.isPublic && (

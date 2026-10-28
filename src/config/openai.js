@@ -61,7 +61,7 @@ function readJson(response, { listKey, objectKey } = {}) {
  * Get AI-powered destination suggestions using GPT-4o Mini.
  * Returns structured JSON: { places, food_places, hidden_gems }
  */
-export async function getSuggestions(destination) {
+export async function getSuggestions(destination, exclude = []) {
     const response = await openai.chat.completions.create({
         model: 'gpt-4o-mini',
         messages: [
@@ -78,7 +78,8 @@ export async function getSuggestions(destination) {
   "food_places": [{ "name": "Restaurant Name, City", "description": "" }],
   "hidden_gems": [{ "name": "Place Name, City", "description": "" }]
 }
-Include at least 5 places, 4 food places, and 3 hidden gems. Always include the city name in the "name" field.`,
+Include at least 5 places, 4 food places, and 3 hidden gems. Always include the city name in the "name" field.${exclude.length ? `
+Already in the trip, so do not suggest these again: ${exclude.join('; ')}.` : ''}`,
             },
         ],
         response_format: { type: 'json_object' },
