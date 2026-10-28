@@ -29,6 +29,8 @@ import DraftClaimBanner from '../components/DraftClaimBanner';
 import { formatBestTime } from '../utils/bestTime';
 import usePageSeo from '../hooks/usePageSeo';
 import { publicSummaryFor } from '../utils/publicTrips';
+import { prefetchedRouteStops } from '../utils/routeStopsPrefetch';
+import { isAmong } from '../utils/placeMatch';
 import { bestInsertIndex, centreOf } from '../utils/routeInsert';
 
 // Map a Firestore place doc to an editable planner stop.
@@ -457,6 +459,17 @@ function RouteModal({ fromName, toName, fromCoords, toCoords, existingStopsNames
     setLoading(true);
     setFailed(false);
     try {
+      // First look: the drive's stops may already be loaded (the itinerary
+      // fetches them in the background), and they come enriched.
+      const early = !places.length && prefetchedRouteStops(fromName, toName);
+      const ready = (early ? await early.catch(() => null) : null)
+        ?.filter(p => !isAmong(p, existingStopsNames.map(name => ({ name }))));
+      if (ready?.length) {
+        setPlaces(ready);
+        setCache(c => ({ ...c, [cacheKey]: ready }));
+        setExcluded(e => [...e, ...ready.map(a => a.name)]);
+        return;
+      }
       const r = await getRouteMustVisits(fromName, toName, excluded);
       const aiPlaces = r.suggestions || [];
       if (!aiPlaces.length) throw new Error('No places came back');

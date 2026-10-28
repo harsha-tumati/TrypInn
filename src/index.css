@@ -1125,7 +1125,7 @@ textarea.input-field { line-height: 1.6; resize: vertical; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 26px;
+  padding: 0 max(26px, env(safe-area-inset-right)) 0 max(26px, env(safe-area-inset-left));
   height: var(--trip-nav-height);
   background: rgba(251, 250, 248, 0.86);
   backdrop-filter: blur(20px) saturate(160%);
@@ -3939,7 +3939,7 @@ html.kb-open .trip-bottom-nav { display: none !important; }
     gap: 2px;
     flex-shrink: 0;
     height: calc(var(--trip-bottom-nav-h) + env(safe-area-inset-bottom));
-    padding: 0 6px env(safe-area-inset-bottom);
+    padding: 0 max(6px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(6px, env(safe-area-inset-left));
     background: rgba(251, 250, 248, 0.97);
     backdrop-filter: blur(20px) saturate(160%);
     -webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -3956,6 +3956,7 @@ html.kb-open .trip-bottom-nav { display: none !important; }
     justify-content: center;
     gap: 3px;
     padding: 6px 2px;
+    border: 0; /* "More" is a <button>: no browser border */
     border-radius: var(--radius-sm);
     color: var(--ink-faint);
     font-family: var(--font);
@@ -4023,7 +4024,7 @@ html.kb-open .trip-bottom-nav { display: none !important; }
   body { font-size: 14.5px; }
   .page-container { padding: 24px 16px 80px; }
   .page-title { font-size: 36px; }
-  .trip-top-nav-unified { padding: 0 12px; height: 58px; gap: 10px; }
+  .trip-top-nav-unified { padding: 0 max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left)); height: 58px; gap: 10px; }
   .trip-pill-tabs { justify-content: flex-start; padding: 3px; max-width: none; }
   .trip-pill-tab { padding: 7px 12px; font-size: 11px; }
   .trip-title-header { max-width: 96px; font-size: 16px; }
@@ -4775,9 +4776,26 @@ html, body {
 
 /* ── Standalone-specific tweaks ───────────────────────────────── */
 @media (display-mode: standalone) {
-  /* Push content below the phone's status bar / notch */
-  html {
+  /* Installed to the home screen, the page runs under the phone's status
+     bar (black-translucent). Content starts below it, and every screen
+     that's sized to the viewport subtracts it, so nothing is pushed past
+     the bottom edge (the trip tab bar used to be cut off by exactly this). */
+  body {
     padding-top: env(safe-area-inset-top);
+  }
+  #root {
+    min-height: calc(100dvh - env(safe-area-inset-top));
+  }
+  .trip-layout-modern {
+    height: calc(100dvh - env(safe-area-inset-top));
+  }
+  html.chat-lock .trip-layout-modern {
+    top: calc(var(--app-top, 0px) + env(safe-area-inset-top));
+    height: calc(var(--app-h, 100dvh) - env(safe-area-inset-top));
+  }
+  /* The floating navbar sticks below the status bar, not under it. */
+  .navbar {
+    top: calc(12px + env(safe-area-inset-top));
   }
 
   /* Color the status-bar safe area to match the nav background */
@@ -5648,6 +5666,14 @@ html, body {
   outline: none;
 }
 .share-link-input:focus { border-color: var(--accent); }
+.share-footer {
+  display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap;
+  margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line);
+}
+.share-footer-status {
+  flex: 1 1 160px; display: flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--ink-soft);
+}
 .share-requests { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
 @media (max-width: 480px) {
   .share-link-row { flex-wrap: wrap; }
@@ -5910,6 +5936,12 @@ html, body {
 .itin-region-head svg { flex-shrink: 0; }
 .itin-region-name { font-weight: 800; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .itin-region-meta { color: #64748b; font-weight: 600; white-space: nowrap; }
+.itin-daymove { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+.itin-daymove button {
+  background: #EEF3FC; color: #1E3A8A; border: 1px solid #BFD0F0; border-radius: 999px;
+  padding: 4px 12px; min-height: 30px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer;
+}
+.itin-daymove button:hover { background: #dfe8f9; }
 .itin-card.in-region { border-left: 3px solid #c7d2fe !important; }
 .itin-card-name { font-size: 16.5px; font-weight: 800; color: #0f172a; line-height: 1.25; letter-spacing: -0.01em; }
 /* Two lines, then an ellipsis — a single unbreakable line made the card

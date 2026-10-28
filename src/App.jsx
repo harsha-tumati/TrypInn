@@ -55,7 +55,9 @@ function GuestJoinBanner({ inviteCode }) {
     const [error, setError] = useState('');
 
     const requested = !!user && joinRequests.some(r => r.uid === user.uid);
-    const direct = !!inviteCode;
+    // An organiser who switched the trip to "ask to join" turns old direct
+    // links into requests too.
+    const direct = !!inviteCode && selectedTrip?.linkAccess !== 'request';
 
     async function handleClick() {
         if (!user) {
